@@ -1321,6 +1321,78 @@
    ]
   },
   {
+   "slug": "la-macchina-dei-sogni",
+   "lang": "it",
+   "title": "La macchina dei sogni",
+   "author": "Roberto Fader",
+   "genre": "Fantasy · Mistero",
+   "cover": "novels/la-macchina-dei-sogni/cover.jpg",
+   "adult": true,
+   "description": "Irina è una psicologa. Un paziente le racconta un sogno terribile: i quattro cavalieri dell’apocalisse. Quella stessa notte, Irina sogna la stessa cosa.\nPoi arriva Pietro, un ricercatore che ha costruito una macchina per entrare nei sogni e restare coscienti. Tra scacchiere viventi, re minacciosi e città in rovina, Irina scopre che qualcuno vuole aprire la porta tra il mondo dei sogni e quello reale.\nUn romanzo breve in italiano di livello A2, con approfondimenti culturali, grammatica ed esercizi alla fine.",
+   "chapters": [
+    {
+     "file": "01.md",
+     "title": "I sogni del paziente"
+    },
+    {
+     "file": "02.md",
+     "title": "La vedova nel sogno"
+    },
+    {
+     "file": "03.md",
+     "title": "Il laboratorio dei sogni"
+    },
+    {
+     "file": "04.md",
+     "title": "La scacchiera dei sogni"
+    },
+    {
+     "file": "05.md",
+     "title": "L’amica che aiuta"
+    },
+    {
+     "file": "06.md",
+     "title": "Il piano per fermarlo"
+    },
+    {
+     "file": "07.md",
+     "title": "La battaglia nel sogno"
+    },
+    {
+     "file": "08.md",
+     "title": "Il nuovo potere"
+    },
+    {
+     "file": "09.md",
+     "title": "L’ultimo viaggio"
+    },
+    {
+     "file": "10.md",
+     "title": "Il nuovo inizio"
+    },
+    {
+     "file": "11.md",
+     "title": "Approfondimenti",
+     "label": "Appendice"
+    },
+    {
+     "file": "12.md",
+     "title": "Grammatica della storia – livello A2",
+     "label": "Appendice"
+    },
+    {
+     "file": "13.md",
+     "title": "Esercizi di riconoscimento",
+     "label": "Appendice"
+    },
+    {
+     "file": "14.md",
+     "title": "Risposte agli esercizi",
+     "label": "Appendice"
+    }
+   ]
+  },
+  {
    "slug": "do-outro-lado-do-mundo",
    "lang": "pt",
    "title": "Do outro lado do mundo",
