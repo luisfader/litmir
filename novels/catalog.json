@@ -2010,68 +2010,73 @@
    "slug": "podzemni-tajemstvi",
    "lang": "cs",
    "title": "Podzemní tajemství",
-   "description": "Luis a Natálie chtějí uspořádat tajný koncert v pražském podzemí — a objeví tam víc, než čekali. Román pro začátečníky se slovíčky a cvičeními.",
+   "description": "Bordó sukně, která zachránila Prahu.\nLuis je hudebník z Argentiny. V pražské kavárně potká Janu a s fotografem Markem a průvodkyní Lucií se vydá do pražského podzemí. Jeho hudba tam probudí smutnou princeznu Ludmilu… Četba pro úroveň A1–A2 se slovíčky ke každé kapitole.",
    "chapters": [
     {
      "file": "01.md",
-     "title": "Kapitola 1"
+     "title": "Seznam postav",
+     "label": "Postavy"
     },
     {
      "file": "02.md",
-     "title": "Luisův syntezátor"
+     "title": "Káva"
     },
     {
      "file": "03.md",
-     "title": "Hudba v podzemí"
+     "title": "Krátká sukně"
     },
     {
      "file": "04.md",
-     "title": "Tajná místnost"
+     "title": "Bordó sukně"
     },
     {
      "file": "05.md",
-     "title": "Princezna Lucie"
+     "title": "Koncert v podzemí"
     },
     {
      "file": "06.md",
-     "title": "Láska a tajemství"
+     "title": "Princezna z hradu"
     },
     {
      "file": "07.md",
-     "title": "Melodie z hradu"
+     "title": "Mark a Lucie"
     },
     {
      "file": "08.md",
-     "title": "Praha patří Lucii"
+     "title": "Noc u Jany"
     },
     {
      "file": "09.md",
-     "title": "Píseň samoty"
+     "title": "Praha patří princezně"
     },
     {
      "file": "10.md",
-     "title": "Čarodějný dar"
+     "title": "Píseň samoty"
     },
     {
      "file": "11.md",
-     "title": "Strážce podzemí"
+     "title": "Rituál"
     },
     {
      "file": "12.md",
-     "title": "Bitva o lásku"
+     "title": "Strážce podzemí"
     },
     {
      "file": "13.md",
-     "title": "Útěk a slzy"
+     "title": "Bitva v srdci podzemí"
     },
     {
      "file": "14.md",
-     "title": "Poslední bitva a nový začátek"
+     "title": "Slzy a tajná místnost"
     },
     {
      "file": "15.md",
-     "title": "Cvičení",
-     "label": "Příloha"
+     "title": "Poslední bitva a nový začátek"
+    },
+    {
+     "file": "16.md",
+     "title": "Nejdůležitější věta",
+     "label": "Epilog"
     }
    ]
   },

@@ -107,6 +107,8 @@ article.chapter h2{font-family:var(--display);font-weight:500;text-align:center;
 article.chapter h2 ~ p{text-align:left;font-size:.92em}
 article.chapter .blank{display:inline-block;min-width:4.5em;border-bottom:1px solid var(--muted);vertical-align:-.15em}
 .tbl{overflow-x:auto;margin:1em 0}
+article.chapter ul{font-size:.9em;columns:2 16em;column-gap:2em;padding-left:1.2em;margin:0 0 1.2em}
+article.chapter li{break-inside:avoid;margin-bottom:.25em}
 article.chapter table{border-collapse:collapse;font-size:.85em;width:100%}
 article.chapter th,article.chapter td{border-bottom:1px solid var(--line);padding:6px 10px;text-align:left}
 article.chapter th{font-family:var(--sans);font-size:.8em;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
@@ -193,6 +195,7 @@ function renderText(md){
     if (/^#{3,6}\s/.test(b)) return "<h3>" + inline(b.replace(/^#+\s*/,"")) + "</h3>";
     if (/^\|/.test(b)) { const rows = b.split("\n").filter(r => !/^\|[\s|:-]+\|?$/.test(r)).map(r => r.replace(/^\||\|$/g,"").split("|").map(c => inline(c.trim())));
       return '<div class="tbl"><table>' + rows.map((r,i) => "<tr>" + r.map(c => i ? "<td>"+c+"</td>" : "<th>"+c+"</th>").join("") + "</tr>").join("") + "</table></div>"; }
+    if (/^- /.test(b) && b.split("\n").every(r => /^- /.test(r))) return "<ul>" + b.split("\n").map(r => "<li>" + inline(r.slice(2)) + "</li>").join("") + "</ul>";
     if (/^>/.test(b)) return "<blockquote><p>" + inline(b.replace(/^>\s?/gm,"")).replace(/\n/g,"<br>") + "</p></blockquote>";
     return "<p>" + inline(b).replace(/\n/g,"<br>") + "</p>";
   }).join("\n");
