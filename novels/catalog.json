@@ -1,0 +1,21 @@
+{
+  "novels": [
+    {
+      "slug": "primer",
+      "year": 2026,
+      "title": { "ru": "Пример романа", "es": "Novela de ejemplo", "it": "Romanzo di esempio", "en": "Sample Novel" },
+      "description": {
+        "ru": "Временная запись, чтобы показать, как будет выглядеть сайт. Её заменят настоящие романы.",
+        "es": "Entrada provisional para mostrar cómo se verá el sitio. La sustituirán las novelas reales.",
+        "it": "Voce provvisoria per mostrare l'aspetto del sito. Sarà sostituita dai romanzi veri.",
+        "en": "A placeholder entry to show how the site will look. It will be replaced by the real novels."
+      },
+      "languages": {
+        "ru": [ { "file": "01.md", "title": "Начало" }, { "file": "02.md", "title": "Дорога" } ],
+        "es": [ { "file": "01.md", "title": "El comienzo" }, { "file": "02.md", "title": "El camino" } ],
+        "it": [ { "file": "01.md", "title": "L'inizio" } ],
+        "en": [ { "file": "01.md", "title": "The Beginning" }, { "file": "02.md", "title": "The Road" } ]
+      }
+    }
+  ]
+}

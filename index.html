@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Литературный мир — Роберт Фейдер</title>
+<meta name="description" content="Литературный мир: романы Роберта Фейдера на русском, испанском, итальянском и английском.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f1e7; --paper:#fbf8f2; --ink:#2a2420; --muted:#7a6f64; --line:#e2d8c8;
+  --accent:#8c2f2f; --accent-soft:#f0e2dc; --shadow:0 1px 2px rgba(60,40,20,.06),0 8px 24px rgba(60,40,20,.07);
+  --serif:"PT Serif",Georgia,serif; --display:"Cormorant Garamond","PT Serif",Georgia,serif;
+  --sans:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --read-size:20px;
+}
+:root[data-theme="dark"]{
+  --bg:#16130f; --paper:#1d1914; --ink:#e9e1d4; --muted:#a19584; --line:#332c24;
+  --accent:#d98c7a; --accent-soft:#2c211c; --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35);
+}
+:root[data-theme="sepia"]{
+  --bg:#efe2c8; --paper:#f4e9d3; --ink:#3b2f22; --muted:#7d6a52; --line:#dcc9a6;
+  --accent:#8a4b20; --accent-soft:#ead7b5;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme]){
+    --bg:#16130f; --paper:#1d1914; --ink:#e9e1d4; --muted:#a19584; --line:#332c24;
+    --accent:#d98c7a; --accent-soft:#2c211c; --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35);
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif);line-height:1.6;min-height:100vh;display:flex;flex-direction:column}
+a{color:inherit}
+button{font:inherit;color:inherit}
+.wrap{width:100%;max-width:1080px;margin:0 auto;padding:0 20px}
+
+/* Header */
+header.top{border-bottom:1px solid var(--line);background:var(--bg);position:sticky;top:0;z-index:10}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;height:60px}
+.brand{font-family:var(--display);font-size:24px;font-weight:600;text-decoration:none;letter-spacing:.01em;white-space:nowrap}
+.brand small{font-family:var(--sans);font-size:12px;color:var(--muted);font-weight:500;margin-left:8px;letter-spacing:.04em;text-transform:uppercase}
+.langs{display:flex;gap:2px;font-family:var(--sans);font-size:13px}
+.langs button{border:0;background:none;padding:6px 8px;border-radius:6px;cursor:pointer;color:var(--muted);font-weight:600;letter-spacing:.04em}
+.langs button[aria-pressed="true"]{color:var(--accent);background:var(--accent-soft)}
+.langs button:hover{color:var(--ink)}
+
+main{flex:1}
+footer{border-top:1px solid var(--line);color:var(--muted);font-family:var(--sans);font-size:13px;padding:24px 0;text-align:center}
+
+/* Home */
+.hero{padding:72px 0 40px;text-align:center}
+.hero .eyebrow{font-family:var(--sans);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-weight:600}
+.hero h1{font-family:var(--display);font-weight:500;font-size:clamp(44px,8vw,80px);line-height:1.02;margin:14px 0 16px}
+.hero p{max-width:560px;margin:0 auto;color:var(--muted);font-size:18px}
+.ornament{color:var(--accent);font-size:20px;margin:28px 0 0;letter-spacing:.5em}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:28px;padding:24px 0 72px}
+.card{text-decoration:none;display:flex;flex-direction:column;gap:12px}
+.cover{aspect-ratio:2/3;border-radius:4px 10px 10px 4px;box-shadow:var(--shadow);overflow:hidden;position:relative;transition:transform .2s ease}
+.card:hover .cover{transform:translateY(-4px)}
+.cover img{width:100%;height:100%;object-fit:cover;display:block}
+.cover.gen{display:flex;flex-direction:column;justify-content:space-between;padding:22px 18px;color:#fbf6ec}
+.cover.gen::before{content:"";position:absolute;left:0;top:0;bottom:0;width:10px;background:rgba(0,0,0,.18)}
+.cover.gen .ct{font-family:var(--display);font-size:28px;line-height:1.05;font-weight:600}
+.cover.gen .ca{font-family:var(--sans);font-size:11px;letter-spacing:.16em;text-transform:uppercase;opacity:.85}
+.card h3{font-family:var(--display);font-size:24px;font-weight:600;margin:0;line-height:1.15}
+.card .meta{font-family:var(--sans);font-size:12px;color:var(--muted);display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.pill{border:1px solid var(--line);border-radius:999px;padding:1px 7px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;font-size:10.5px}
+.pill.off{opacity:.4}
+.empty{text-align:center;color:var(--muted);padding:40px 0 80px;font-size:18px}
+
+/* Novel page */
+.novel{display:grid;grid-template-columns:260px 1fr;gap:48px;padding:48px 0 72px}
+.novel .cover{max-width:260px}
+.novel h1{font-family:var(--display);font-weight:500;font-size:clamp(38px,6vw,58px);line-height:1.05;margin:0 0 6px}
+.novel .by{font-family:var(--sans);color:var(--muted);font-size:14px;margin-bottom:22px}
+.novel .desc{font-size:18px;margin-bottom:28px}
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--sans);font-size:14px;font-weight:600;background:var(--accent);color:#fff;text-decoration:none;padding:11px 18px;border-radius:8px;border:0;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:36px}
+.toc h2{font-family:var(--sans);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:0 0 8px;font-weight:600}
+.toc ol{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.toc li a{display:flex;gap:16px;padding:13px 4px;border-bottom:1px solid var(--line);text-decoration:none;font-size:18px}
+.toc li a:hover{color:var(--accent)}
+.toc .n{font-family:var(--sans);color:var(--muted);font-size:13px;min-width:26px;padding-top:4px}
+.toc .done .n::after{content:" ✓";color:var(--accent)}
+.notice{font-family:var(--sans);font-size:14px;background:var(--accent-soft);border-radius:8px;padding:12px 14px;margin-bottom:24px}
+.notice a{color:var(--accent);font-weight:600;cursor:pointer}
+
+/* Reader */
+.reader-bar{position:sticky;top:60px;z-index:9;background:var(--bg);border-bottom:1px solid var(--line)}
+.reader-bar .wrap{display:flex;align-items:center;justify-content:space-between;height:46px;font-family:var(--sans);font-size:13px;gap:10px}
+.reader-bar .crumb{color:var(--muted);text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tools{display:flex;gap:4px;align-items:center}
+.tools button{border:1px solid var(--line);background:var(--paper);border-radius:6px;padding:4px 9px;cursor:pointer;font-weight:600;font-size:13px}
+.tools .sw{width:24px;height:24px;padding:0;border-radius:50%}
+.progress{height:2px;background:var(--accent);width:0;transition:width .1s}
+article.chapter{max-width:680px;margin:0 auto;padding:56px 20px 40px;font-size:var(--read-size);line-height:1.75}
+article.chapter .kicker{font-family:var(--sans);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);text-align:center;font-weight:600}
+article.chapter h1{font-family:var(--display);font-weight:500;text-align:center;font-size:1.9em;line-height:1.15;margin:10px 0 40px}
+article.chapter p{margin:0 0 1.1em;text-align:justify;hyphens:auto}
+article.chapter hr{border:0;text-align:center;margin:2em 0}
+article.chapter h2{font-family:var(--display);font-weight:500;text-align:center;font-size:1.4em;margin:1.6em 0 .8em}
+article.chapter hr::after{content:"⁂";color:var(--muted)}
+article.chapter blockquote{margin:1.2em 0;padding-left:1em;border-left:2px solid var(--line);color:var(--muted);font-style:italic}
+.pager{max-width:680px;margin:0 auto 80px;padding:0 20px;display:flex;justify-content:space-between;gap:12px}
+.pager a{flex:1;border:1px solid var(--line);border-radius:10px;padding:14px 16px;text-decoration:none;font-family:var(--sans);font-size:13px;color:var(--muted)}
+.pager a b{display:block;color:var(--ink);font-family:var(--serif);font-size:17px;font-weight:400;margin-top:2px}
+.pager a.next{text-align:right}
+.pager a:hover{border-color:var(--accent)}
+.loading{text-align:center;color:var(--muted);padding:80px 0;font-family:var(--sans)}
+
+@media (max-width:720px){
+  .novel{grid-template-columns:1fr;gap:28px;padding-top:28px}
+  .novel .cover{max-width:200px}
+  .brand small{display:none}
+  .grid{grid-template-columns:repeat(2,1fr);gap:18px}
+  .card h3{font-size:20px}
+  .cover.gen .ct{font-size:22px}
+  article.chapter{padding-top:36px}
+  article.chapter p{text-align:left}
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#/" id="brand">Литературный мир<small>Robert Fader</small></a>
+    <nav class="langs" id="langs" aria-label="Language"></nav>
+  </div>
+</header>
+<main id="app"><div class="loading">…</div></main>
+<footer><div class="wrap" id="foot"></div></footer>
+
+<script>
+const LANGS = ["ru","es","it","en"];
+const UI = {
+  ru:{tag:"Романы", hero:"Литературный мир", sub:"Романы Роберта Фейдера. Читайте онлайн бесплатно — на русском, испанском, итальянском и английском.", author:"Роберт Фейдер", start:"Начать читать", cont:"Продолжить", contents:"Содержание", chapter:"Глава", prev:"Назад", next:"Далее", back:"Все романы", empty:"Скоро здесь появятся романы.", notIn:"Этот роман пока недоступен на русском. Доступные языки:", foot:"© Роберт Фейдер. Все права защищены.", chapters:n=>n+" "+plural(n,["глава","главы","глав"]), notFound:"Страница не найдена."},
+  es:{tag:"Novelas", hero:"Mundo literario", sub:"Las novelas de Robert Fader. Léelas en línea gratis, en ruso, español, italiano e inglés.", author:"Robert Fader", start:"Empezar a leer", cont:"Continuar", contents:"Índice", chapter:"Capítulo", prev:"Anterior", next:"Siguiente", back:"Todas las novelas", empty:"Pronto aparecerán aquí las novelas.", notIn:"Esta novela aún no está disponible en español. Idiomas disponibles:", foot:"© Robert Fader. Todos los derechos reservados.", chapters:n=>n+(n===1?" capítulo":" capítulos"), notFound:"Página no encontrada."},
+  it:{tag:"Romanzi", hero:"Mondo letterario", sub:"I romanzi di Robert Fader. Leggili online gratuitamente, in russo, spagnolo, italiano e inglese.", author:"Robert Fader", start:"Inizia a leggere", cont:"Continua", contents:"Indice", chapter:"Capitolo", prev:"Precedente", next:"Successivo", back:"Tutti i romanzi", empty:"Presto qui appariranno i romanzi.", notIn:"Questo romanzo non è ancora disponibile in italiano. Lingue disponibili:", foot:"© Robert Fader. Tutti i diritti riservati.", chapters:n=>n+(n===1?" capitolo":" capitoli"), notFound:"Pagina non trovata."},
+  en:{tag:"Novels", hero:"Literary World", sub:"The novels of Robert Fader. Read them online for free, in Russian, Spanish, Italian and English.", author:"Robert Fader", start:"Start reading", cont:"Continue", contents:"Contents", chapter:"Chapter", prev:"Previous", next:"Next", back:"All novels", empty:"Novels will appear here soon.", notIn:"This novel isn't available in English yet. Available languages:", foot:"© Robert Fader. All rights reserved.", chapters:n=>n+(n===1?" chapter":" chapters"), notFound:"Page not found."}
+};
+const LANG_NAMES = {ru:"Русский", es:"Español", it:"Italiano", en:"English"};
+function plural(n,f){const a=n%10,b=n%100;return a===1&&b!==11?f[0]:a>=2&&a<=4&&(b<10||b>=20)?f[1]:f[2]}
+
+const store = {
+  get(k,d){try{const v=localStorage.getItem("lm:"+k);return v===null?d:JSON.parse(v)}catch(e){return d}},
+  set(k,v){try{localStorage.setItem("lm:"+k,JSON.stringify(v))}catch(e){}}
+};
+let lang = store.get("lang", null) || (LANGS.find(l => (navigator.language||"").startsWith(l)) || "ru");
+let catalog = null;
+const app = document.getElementById("app");
+const t = k => UI[lang][k];
+const pick = obj => obj ? (obj[lang] || obj.ru || obj[Object.keys(obj)[0]] || "") : "";
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+function inline(s){ return esc(s).replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>").replace(/(^|[^*])\*(?!\s)(.+?)\*/g,"$1<em>$2</em>").replace(/(^|\W)_(?!\s)(.+?)_(?=\W|$)/g,"$1<em>$2</em>"); }
+function renderText(md){
+  return md.replace(/\r/g,"").split(/\n\s*\n/).map(b => b.trim()).filter(Boolean).map(b => {
+    if (/^(\*\s*){3,}$|^(-\s*){3,}$|^⁂$/.test(b)) return "<hr>";
+    if (/^#{2,6}\s/.test(b)) return "<h2>" + inline(b.replace(/^#+\s*/,"")) + "</h2>";
+    if (/^>/.test(b)) return "<blockquote><p>" + inline(b.replace(/^>\s?/gm,"")).replace(/\n/g,"<br>") + "</p></blockquote>";
+    return "<p>" + inline(b).replace(/\n/g,"<br>") + "</p>";
+  }).join("\n");
+}
+
+function applyTheme(){
+  const th = store.get("theme", null);
+  if (th) document.documentElement.dataset.theme = th; else delete document.documentElement.dataset.theme;
+  document.documentElement.style.setProperty("--read-size", store.get("size", 20) + "px");
+}
+
+function renderChrome(){
+  document.documentElement.lang = lang;
+  document.getElementById("brand").innerHTML = esc(t("hero")) + "<small>" + esc(t("author")) + "</small>";
+  document.getElementById("foot").textContent = t("foot");
+  document.getElementById("langs").innerHTML = LANGS.map(l =>
+    `<button data-l="${l}" aria-pressed="${l===lang}" title="${LANG_NAMES[l]}">${l.toUpperCase()}</button>`).join("");
+}
+document.getElementById("langs").addEventListener("click", e => {
+  const l = e.target.dataset && e.target.dataset.l; if (!l) return;
+  lang = l; store.set("lang", l); renderChrome(); route();
+});
+
+const PALETTE = ["#7a2e2e","#2f4a5c","#4b5b35","#5a3b5f","#8a5a24","#2e4f4a","#3d3a6b","#6b3a2a"];
+function coverHTML(n){
+  if (n.cover) return `<div class="cover"><img src="${esc(n.cover)}" alt="${esc(pick(n.title))}" loading="lazy"></div>`;
+  let h=0; for (const c of n.slug) h=(h*31+c.charCodeAt(0))>>>0;
+  const c = n.color || PALETTE[h % PALETTE.length];
+  return `<div class="cover gen" style="background:linear-gradient(160deg,${c},color-mix(in srgb,${c} 70%,#000))">
+    <span class="ca">${esc(t("author"))}</span><span class="ct">${esc(pick(n.title))}</span><span class="ca">${esc(n.year||"")}</span></div>`;
+}
+function availLangs(n){ return LANGS.filter(l => n.languages && n.languages[l]); }
+function chaptersIn(n, l){ return (n.languages && n.languages[l]) || []; }
+
+function home(){
+  document.title = t("hero") + " — " + t("author");
+  const list = catalog.novels.filter(n => !n.hidden);
+  app.innerHTML = `
+  <section class="hero wrap">
+    <div class="eyebrow">${esc(t("tag"))}</div>
+    <h1>${esc(t("hero"))}</h1>
+    <p>${esc(t("sub"))}</p>
+    <div class="ornament">✦ ✦ ✦</div>
+  </section>
+  <section class="wrap">
+    ${list.length ? `<div class="grid">${list.map(n => {
+      const av = availLangs(n), here = chaptersIn(n, lang).length;
+      return `<a class="card" href="#/${esc(n.slug)}">${coverHTML(n)}
+        <h3>${esc(pick(n.title))}</h3>
+        <div class="meta">${here ? esc(t("chapters")(here)) + " ·" : ""} ${LANGS.map(l => `<span class="pill ${av.includes(l)?"":"off"}">${l}</span>`).join("")}</div></a>`;
+    }).join("")}</div>` : `<div class="empty">${esc(t("empty"))}</div>`}
+  </section>`;
+}
+
+function novelPage(n){
+  document.title = pick(n.title) + " — " + t("author");
+  const av = availLangs(n), chs = chaptersIn(n, lang);
+  const done = store.get("done:"+n.slug+":"+lang, []);
+  const last = store.get("last:"+n.slug+":"+lang, null);
+  app.innerHTML = `
+  <section class="wrap novel">
+    <div>${coverHTML(n)}</div>
+    <div>
+      <h1>${esc(pick(n.title))}</h1>
+      <div class="by">${esc(t("author"))}${n.year ? " · " + esc(n.year) : ""}</div>
+      ${!chs.length ? `<div class="notice">${esc(t("notIn"))} ${av.map(l => `<a data-switch="${l}">${LANG_NAMES[l]}</a>`).join(", ")}</div>` : ""}
+      ${pick(n.description) ? `<div class="desc">${esc(pick(n.description))}</div>` : ""}
+      ${chs.length ? `<div class="actions">
+        ${last ? `<a class="btn" href="#/${n.slug}/${last}">${esc(t("cont"))} · ${esc(t("chapter"))} ${last}</a>` : ""}
+        <a class="btn ${last ? "ghost" : ""}" href="#/${n.slug}/1">${esc(t("start"))}</a></div>
+      <div class="toc"><h2>${esc(t("contents"))}</h2><ol>
+        ${chs.map((c,i) => `<li class="${done.includes(i+1)?"done":""}"><a href="#/${n.slug}/${i+1}"><span class="n">${i+1}</span><span>${esc(c.title || (t("chapter")+" "+(i+1)))}</span></a></li>`).join("")}
+      </ol></div>` : ""}
+    </div>
+  </section>`;
+  app.querySelectorAll("[data-switch]").forEach(a => a.onclick = () => { lang = a.dataset.switch; store.set("lang", lang); renderChrome(); route(); });
+}
+
+async function reader(n, idx){
+  const chs = chaptersIn(n, lang);
+  if (!chs.length) return novelPage(n);
+  const i = Math.min(Math.max(idx,1), chs.length), c = chs[i-1];
+  app.innerHTML = `<div class="loading">…</div>`;
+  let md = "";
+  try {
+    const r = await fetch(`novels/${n.slug}/${lang}/${c.file}`);
+    if (!r.ok) throw 0; md = await r.text();
+  } catch(e) { md = "*—*"; }
+  const title = c.title || (t("chapter") + " " + i);
+  document.title = title + " · " + pick(n.title);
+  md = md.replace(/^#\s+.*\n+/, ""); // the chapter title is shown from the catalog
+  app.innerHTML = `
+  <div class="reader-bar"><div class="wrap">
+    <a class="crumb" href="#/${n.slug}">← ${esc(pick(n.title))}</a>
+    <div class="tools">
+      <button id="aminus" aria-label="A−">A−</button><button id="aplus" aria-label="A+">A+</button>
+      <button class="sw" data-th="light" style="background:#fbf8f2" aria-label="light"></button>
+      <button class="sw" data-th="sepia" style="background:#efe2c8" aria-label="sepia"></button>
+      <button class="sw" data-th="dark" style="background:#1d1914" aria-label="dark"></button>
+    </div></div><div class="progress" id="prog"></div></div>
+  <article class="chapter">
+    <div class="kicker">${esc(t("chapter"))} ${i}</div>
+    <h1>${esc(title)}</h1>
+    ${renderText(md)}
+  </article>
+  <nav class="pager">
+    ${i>1 ? `<a href="#/${n.slug}/${i-1}">← ${esc(t("prev"))}<b>${esc(chs[i-2].title || t("chapter")+" "+(i-1))}</b></a>` : `<span style="flex:1"></span>`}
+    ${i<chs.length ? `<a class="next" href="#/${n.slug}/${i+1}">${esc(t("next"))} →<b>${esc(chs[i].title || t("chapter")+" "+(i+1))}</b></a>` : `<a class="next" href="#/">${esc(t("back"))} →<b>${esc(t("hero"))}</b></a>`}
+  </nav>`;
+  window.scrollTo(0,0);
+  store.set("last:"+n.slug+":"+lang, i);
+  const doneKey = "done:"+n.slug+":"+lang;
+  const size = d => { const s = Math.min(28, Math.max(15, store.get("size",20)+d)); store.set("size", s); applyTheme(); };
+  document.getElementById("aminus").onclick = () => size(-1);
+  document.getElementById("aplus").onclick = () => size(1);
+  app.querySelectorAll("[data-th]").forEach(b => b.onclick = () => { store.set("theme", b.dataset.th); applyTheme(); });
+  const prog = document.getElementById("prog");
+  window.onscroll = () => {
+    const h = document.documentElement.scrollHeight - innerHeight;
+    const p = h > 0 ? Math.min(1, scrollY / h) : 1;
+    prog.style.width = (p*100) + "%";
+    if (p > .95) { const d = store.get(doneKey, []); if (!d.includes(i)) { d.push(i); store.set(doneKey, d); } }
+  };
+}
+
+function route(){
+  window.onscroll = null;
+  if (!catalog) return;
+  const parts = location.hash.replace(/^#\/?/, "").split("/").filter(Boolean);
+  if (!parts.length) return home();
+  const n = catalog.novels.find(x => x.slug === decodeURIComponent(parts[0]));
+  if (!n) { app.innerHTML = `<div class="empty">${esc(t("notFound"))}</div>`; return; }
+  if (parts[1]) return reader(n, parseInt(parts[1],10) || 1);
+  novelPage(n);
+}
+window.addEventListener("hashchange", route);
+
+applyTheme(); renderChrome();
+fetch("novels/catalog.json", {cache:"no-cache"}).then(r => r.json()).then(j => { catalog = j; route(); })
+  .catch(() => { catalog = {novels:[]}; route(); });
+</script>
+</body>
+</html>
