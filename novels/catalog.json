@@ -3053,6 +3053,53 @@
    "cover": "novels/el-impostor/cover.jpg"
   },
   {
+   "slug": "las-coordenadas-del-amor",
+   "lang": "es",
+   "title": "Las coordenadas del amor",
+   "author": "Luis Fader",
+   "genre": "Aventura · Fantasía · Romance",
+   "description": "Alejandro es arqueólogo y busca en el bosque una ciudad perdida que casi nadie cree real. Con Lucía, experta en mapas, y el joven Matías, encuentra una brújula extraña: en lugar de N, S, E, O, tiene las letras E, S, C, R.\nUn mapa antiguo, una frase en eslavo antiguo y la puerta de un templo los llevan a un mundo de nieve, matrioshkas mágicas, una guardiana misteriosa y un dragón de tres cabezas… en busca de aquello que todos los seres humanos anhelan.",
+   "chapters": [
+    {
+     "file": "01.md",
+     "title": "La brújula extraña"
+    },
+    {
+     "file": "02.md",
+     "title": "El mapa y la leyenda"
+    },
+    {
+     "file": "03.md",
+     "title": "La puerta del templo"
+    },
+    {
+     "file": "04.md",
+     "title": "La guardiana de la tundra"
+    },
+    {
+     "file": "05.md",
+     "title": "El secreto de la matrioshka"
+    },
+    {
+     "file": "06.md",
+     "title": "Traición y sacrificio"
+    },
+    {
+     "file": "07.md",
+     "title": "El corazón de la bestia"
+    },
+    {
+     "file": "08.md",
+     "title": "La ciudad del alma"
+    },
+    {
+     "file": "09.md",
+     "title": "Dossiers de personajes",
+     "label": "Apéndice"
+    }
+   ]
+  },
+  {
    "slug": "divlji-chas",
    "lang": "sr",
    "title": "Дивљи час",
