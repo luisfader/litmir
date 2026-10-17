@@ -959,10 +959,11 @@
    "genre": "Постапокалипсис · Приключения · Любовный роман",
    "description": "После глобальной катастрофы мир превратился в руины. Роберт едет на старом мотоцикле по разрушенным улицам и верит, что где-то ещё остались люди, готовые построить новый мир.\nТак рождается «Наша Утопия» — крепость, где выжившие пытаются жить без страха и жадности. Но дикари у ворот, интриги внутри стен и запутанные чувства — между Робертом, виолончелисткой Натальей и архитектором Луисом — ставят мечту под угрозу.",
    "translations": {
-    "eo": "la-antausento",
     "it": "presentimento",
     "es": "la-corazonada",
-    "isv": "predcutje"
+    "eo": "la-antausento",
+    "isv": "predcutje",
+    "tr": "col-gulu"
    },
    "chapters": [
     {
@@ -1760,9 +1761,10 @@
    "description": "Dopo la catastrofe globale, il mondo è un deserto di rovine e silenzio. Robert attraversa le strade distrutte sulla sua vecchia moto, convinto che da qualche parte esistano ancora persone pronte a costruire un mondo nuovo.\nCosì nasce «La Nostra Utopia», una fortezza dove i sopravvissuti cercano di vivere senza paura né avidità. Ma i selvaggi alle porte, i tradimenti dentro le mura e i sentimenti intrecciati mettono il sogno in pericolo.",
    "translations": {
     "ru": "predchuvstvie",
-    "eo": "la-antausento",
     "es": "la-corazonada",
-    "isv": "predcutje"
+    "eo": "la-antausento",
+    "isv": "predcutje",
+    "tr": "col-gulu"
    },
    "chapters": [
     {
@@ -2349,7 +2351,14 @@
      "title": "Kendiliğinden Açan",
      "label": "Son"
     }
-   ]
+   ],
+   "translations": {
+    "ru": "predchuvstvie",
+    "it": "presentimento",
+    "es": "la-corazonada",
+    "eo": "la-antausento",
+    "isv": "predcutje"
+   }
   },
   {
    "slug": "lluvia-de-meteoritos",
@@ -2827,7 +2836,8 @@
     "ru": "predchuvstvie",
     "it": "presentimento",
     "eo": "la-antausento",
-    "isv": "predcutje"
+    "isv": "predcutje",
+    "tr": "col-gulu"
    },
    "chapters": [
     {
@@ -3518,7 +3528,8 @@
     "ru": "predchuvstvie",
     "it": "presentimento",
     "es": "la-corazonada",
-    "isv": "predcutje"
+    "isv": "predcutje",
+    "tr": "col-gulu"
    }
   },
   {
@@ -3532,8 +3543,9 @@
    "translations": {
     "ru": "predchuvstvie",
     "it": "presentimento",
+    "es": "la-corazonada",
     "eo": "la-antausento",
-    "es": "la-corazonada"
+    "tr": "col-gulu"
    },
    "chapters": [
     {
