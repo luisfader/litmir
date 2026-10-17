@@ -958,7 +958,8 @@
    "genre": "Постапокалипсис · Приключения · Любовный роман",
    "description": "После глобальной катастрофы мир превратился в руины. Роберт едет на старом мотоцикле по разрушенным улицам и верит, что где-то ещё остались люди, готовые построить новый мир.\nТак рождается «Наша Утопия» — крепость, где выжившие пытаются жить без страха и жадности. Но дикари у ворот, интриги внутри стен и запутанные чувства — между Робертом, виолончелисткой Натальей и архитектором Луисом — ставят мечту под угрозу.",
    "translations": {
-    "eo": "la-antausento"
+    "eo": "la-antausento",
+    "it": "presentimento"
    },
    "chapters": [
     {
@@ -1613,6 +1614,127 @@
      "file": "14.md",
      "title": "Risposte agli esercizi",
      "label": "Appendice"
+    }
+   ]
+  },
+  {
+   "slug": "presentimento",
+   "lang": "it",
+   "title": "Presentimento",
+   "author": "Roberto Fader",
+   "genre": "Post-apocalittico · Avventura · Romanzo d’amore",
+   "cover": "novels/presentimento/cover.jpg",
+   "description": "Dopo la catastrofe globale, il mondo è un deserto di rovine e silenzio. Robert attraversa le strade distrutte sulla sua vecchia moto, convinto che da qualche parte esistano ancora persone pronte a costruire un mondo nuovo.\nCosì nasce «La Nostra Utopia», una fortezza dove i sopravvissuti cercano di vivere senza paura né avidità. Ma i selvaggi alle porte, i tradimenti dentro le mura e i sentimenti intrecciati mettono il sogno in pericolo.",
+   "translations": {
+    "ru": "predchuvstvie",
+    "eo": "la-antausento"
+   },
+   "chapters": [
+    {
+     "file": "01.md",
+     "title": "Il Silenzio del Mondo"
+    },
+    {
+     "file": "02.md",
+     "title": "La Scelta"
+    },
+    {
+     "file": "03.md",
+     "title": "La Fabbrica di Sogni e Acciaio"
+    },
+    {
+     "file": "04.md",
+     "title": "I Pilastri della Nuova Alba"
+    },
+    {
+     "file": "05.md",
+     "title": "Conversazione al Caffè \"Rose Rosse\""
+    },
+    {
+     "file": "06.md",
+     "title": "Luci nella Notte"
+    },
+    {
+     "file": "07.md",
+     "title": "L'Orizzonte da Esplorare"
+    },
+    {
+     "file": "08.md",
+     "title": "L'Allarme dei Selvaggi"
+    },
+    {
+     "file": "09.md",
+     "title": "La Bandiera Bianca e la Tempesta"
+    },
+    {
+     "file": "10.md",
+     "title": "Il Prezzo della Pace"
+    },
+    {
+     "file": "11.md",
+     "title": "I Muri e i Silenzi"
+    },
+    {
+     "file": "12.md",
+     "title": "Giochi d'Ombra"
+    },
+    {
+     "file": "13.md",
+     "title": "Segnali dal Mondo Esterno"
+    },
+    {
+     "file": "14.md",
+     "title": "La Missione delle Ombre"
+    },
+    {
+     "file": "15.md",
+     "title": "Presagi e Scoperte"
+    },
+    {
+     "file": "16.md",
+     "title": "Cuori Fragili e Segreti Sepolti"
+    },
+    {
+     "file": "17.md",
+     "title": "Il Prigioniero"
+    },
+    {
+     "file": "18.md",
+     "title": "Il Prezzo dell'Iniziativa"
+    },
+    {
+     "file": "19.md",
+     "title": "Fantasmi del Passato"
+    },
+    {
+     "file": "20.md",
+     "title": "L'Aculeo del Tradimento"
+    },
+    {
+     "file": "21.md",
+     "title": "Il Traditore e il Trasmettitore"
+    },
+    {
+     "file": "22.md",
+     "title": "L’Assedio e la Voce"
+    },
+    {
+     "file": "23.md",
+     "title": "La Canzone e il Cannone"
+    },
+    {
+     "file": "24.md",
+     "title": "Il Prezzo della Vittoria"
+    },
+    {
+     "file": "25.md",
+     "title": "Il Cerchio che si Chiude",
+     "label": "Capitolo finale"
+    },
+    {
+     "file": "26.md",
+     "title": "Liberi di Ricominciare",
+     "label": "Epilogo"
     }
    ]
   },
@@ -2513,7 +2635,8 @@
    ],
    "cover": "novels/la-antausento/cover.jpg",
    "translations": {
-    "ru": "predchuvstvie"
+    "ru": "predchuvstvie",
+    "it": "presentimento"
    }
   }
  ]
