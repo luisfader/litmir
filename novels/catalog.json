@@ -2233,6 +2233,64 @@
      "title": "Крај хаоса и почетак љубави"
     }
    ]
+  },
+  {
+   "slug": "la-antausento",
+   "lang": "eo",
+   "title": "La Antaŭsento",
+   "author": "Robert Fader",
+   "genre": "Postapokalipso · Aventuro",
+   "description": "Post la apokalipso, la mondo estas dezerto de ruinoj. Robert rajdas sian malnovan motorciklon tra la silento, certa ke ie ankoraŭ restas spuro de civilizo.\nLa sono de violonĉelo kondukas lin al Natalia, kaj kune ili ekkonstruas utopion por la postvivantoj — kun siaj propraj lingvoj, reguloj kaj revoj. Sed libereco bezonas hejmon, kaj hejmo bezonas defendon.",
+   "chapters": [
+    {
+     "file": "01.md",
+     "title": "La Voĉo Sub la Ĉielo"
+    },
+    {
+     "file": "02.md",
+     "title": "La Renkontiĝo de Du Animoj"
+    },
+    {
+     "file": "03.md",
+     "title": "La Monteto de Komencoj"
+    },
+    {
+     "file": "04.md",
+     "title": "La Kaptitoj de Nova Misio"
+    },
+    {
+     "file": "05.md",
+     "title": "La Flamo de Libereco"
+    },
+    {
+     "file": "06.md",
+     "title": "La Fundamentoj kaj la Fendo"
+    },
+    {
+     "file": "07.md",
+     "title": "Neĝo kaj Stranga Lumo"
+    },
+    {
+     "file": "08.md",
+     "title": "La Ombro super la Neĝo"
+    },
+    {
+     "file": "09.md",
+     "title": "Disiĝo en la Konsilio"
+    },
+    {
+     "file": "10.md",
+     "title": "Koro kaj Kaŭzo"
+    },
+    {
+     "file": "11.md",
+     "title": "Ultimato kaj Rezisto"
+    },
+    {
+     "file": "12.md",
+     "title": "La Vojo de la Tuneloj"
+    }
+   ]
   }
  ]
 }
