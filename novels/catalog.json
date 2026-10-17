@@ -1803,6 +1803,85 @@
    ]
   },
   {
+   "slug": "la-squadra-invincibile",
+   "lang": "it",
+   "title": "La squadra invincibile",
+   "author": "Roberto Fader",
+   "genre": "Commedia · Sport · Avventura",
+   "cover": "novels/la-squadra-invincibile/cover.jpg",
+   "description": "Fabio è il portiere dei Leoni, una delle squadre migliori della città. Ma quando le ragazze delle Aquile li sfidano e li battono 5-1, il suo orgoglio va in pezzi: deve scoprire il loro segreto.\nSorelle infiltrate, fidanzate che cambiano squadra, baci-trappola e una misteriosa hacker trasformano la rivalità in un gioco sempre più pericoloso… finché dietro le partite non appare qualcosa di molto più grande.\nUn romanzo in italiano che parte semplice e cresce capitolo dopo capitolo.",
+   "chapters": [
+    {
+     "file": "01.md",
+     "title": "La sconfitta inaspettata"
+    },
+    {
+     "file": "02.md",
+     "title": "L’infiltrata"
+    },
+    {
+     "file": "03.md",
+     "title": "Il segreto delle Aquile"
+    },
+    {
+     "file": "04.md",
+     "title": "Il doppio gioco"
+    },
+    {
+     "file": "05.md",
+     "title": "La verità e la sconfitta"
+    },
+    {
+     "file": "06.md",
+     "title": "La nuova squadra"
+    },
+    {
+     "file": "07.md",
+     "title": "La vendetta dell'allenatore"
+    },
+    {
+     "file": "08.md",
+     "title": "Il bacio e la trappola"
+    },
+    {
+     "file": "09.md",
+     "title": "Il Tradimento e il Nuovo Piano"
+    },
+    {
+     "file": "10.md",
+     "title": "La Verità Scoperta"
+    },
+    {
+     "file": "11.md",
+     "title": "Le Aquile sparano"
+    },
+    {
+     "file": "12.md",
+     "title": "L’agente segreto e la pioggia"
+    },
+    {
+     "file": "13.md",
+     "title": "Il piano segreto"
+    },
+    {
+     "file": "14.md",
+     "title": "L’alleanza impossibile"
+    },
+    {
+     "file": "15.md",
+     "title": "La sfida finale"
+    },
+    {
+     "file": "16.md",
+     "title": "La partita più importante"
+    },
+    {
+     "file": "17.md",
+     "title": "Tutti per uno"
+    }
+   ]
+  },
+  {
    "slug": "do-outro-lado-do-mundo",
    "lang": "pt",
    "title": "Do outro lado do mundo",
