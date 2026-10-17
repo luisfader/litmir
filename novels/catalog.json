@@ -2291,6 +2291,61 @@
    ]
   },
   {
+   "slug": "col-gulu",
+   "lang": "tr",
+   "title": "Çöl Gülü",
+   "author": "Robert Fader",
+   "genre": "Kıyamet sonrası · Macera · Aşk",
+   "description": "Büyük Felaket'ten bu yana üç yıl geçti. Robert, yirminci yüzyıldan kalma eski motosikletiyle çölün kızgın sessizliğini yırtarak hâlâ hayatta kalan insanları arıyor.\nYolu, asilerin kampında Rosa ile kesişir. Birlikte turkuaz duvarlı bir kale, kendi kurallarıyla bir ütopya kurmaya çalışırlar; ama vahşiler, mancınıklar ve içeriden gelen ihanetler bu hayali tehdit eder.",
+   "chapters": [
+    {
+     "file": "01.md",
+     "title": "Kum ve Kan"
+    },
+    {
+     "file": "02.md",
+     "title": "Asilerin Kampı"
+    },
+    {
+     "file": "03.md",
+     "title": "Turkuaz Duvarlar"
+    },
+    {
+     "file": "04.md",
+     "title": "Yağmur Gecesi"
+    },
+    {
+     "file": "05.md",
+     "title": "Kalede Bir Yabancı"
+    },
+    {
+     "file": "06.md",
+     "title": "Mancınıklar"
+    },
+    {
+     "file": "07.md",
+     "title": "Çöl Gülü"
+    },
+    {
+     "file": "08.md",
+     "title": "Düello"
+    },
+    {
+     "file": "09.md",
+     "title": "Darbe"
+    },
+    {
+     "file": "10.md",
+     "title": "Aşkın Gücü"
+    },
+    {
+     "file": "11.md",
+     "title": "Kendiliğinden Açan",
+     "label": "Son"
+    }
+   ]
+  },
+  {
    "slug": "lluvia-de-meteoritos",
    "lang": "es",
    "title": "Lluvia de meteoritos",
