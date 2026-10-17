@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Литературный мир — Роберт Фейдер</title>
-<meta name="description" content="Литературный мир: романы Роберта Фейдера на русском, испанском, итальянском и английском.">
+<title>Литературный мир — Роберт Фадер</title>
+<meta name="description" content="Литературный мир — романы Роберта Фадера.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -43,7 +43,7 @@ header.top .wrap{display:flex;align-items:center;justify-content:space-between;g
 .brand{font-family:var(--display);font-size:24px;font-weight:600;text-decoration:none;letter-spacing:.01em;white-space:nowrap}
 .brand small{font-family:var(--sans);font-size:12px;color:var(--muted);font-weight:500;margin-left:8px;letter-spacing:.04em;text-transform:uppercase}
 .langs{display:flex;gap:2px;font-family:var(--sans);font-size:13px}
-.langs button{border:0;background:none;padding:6px 8px;border-radius:6px;cursor:pointer;color:var(--muted);font-weight:600;letter-spacing:.04em}
+.langs button{border:0;background:none;padding:6px 7px;border-radius:6px;cursor:pointer;color:var(--muted);font-weight:600;letter-spacing:.04em}
 .langs button[aria-pressed="true"]{color:var(--accent);background:var(--accent-soft)}
 .langs button:hover{color:var(--ink)}
 
@@ -119,6 +119,17 @@ article.chapter blockquote{margin:1.2em 0;padding-left:1em;border-left:2px solid
 .pager a:hover{border-color:var(--accent)}
 .loading{text-align:center;color:var(--muted);padding:80px 0;font-family:var(--sans)}
 
+article.chapter figure{margin:2em -20px;text-align:center}
+article.chapter figure img{max-width:100%;max-height:72vh;width:auto;height:auto;border-radius:6px;box-shadow:var(--shadow)}
+article.chapter h3{font-family:var(--sans);font-size:.72em;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:2em 0 .8em;font-weight:600}
+.badge18{position:absolute;top:10px;right:10px;background:#b3261e;color:#fff;font-family:var(--sans);font-weight:700;font-size:12px;padding:3px 7px;border-radius:6px;letter-spacing:.02em;z-index:2}
+.badge18.big{position:static;display:inline-block;font-size:22px;padding:8px 14px;border-radius:10px;margin-bottom:18px}
+.pill.adult{background:#b3261e;color:#fff;border-color:#b3261e}
+.gate{text-align:center;padding:90px 20px;max-width:560px}
+.gate h1{font-family:var(--display);font-weight:500;font-size:44px;margin:0 0 10px}
+.gate p{color:var(--muted);font-size:18px;margin:0 0 28px}
+.toc li.extra a{font-style:italic;color:var(--muted)}
+.langs{flex-wrap:wrap;justify-content:flex-end}
 @media (max-width:720px){
   .novel{grid-template-columns:1fr;gap:28px;padding-top:28px}
   .novel .cover{max-width:200px}
@@ -142,32 +153,37 @@ article.chapter blockquote{margin:1.2em 0;padding-left:1em;border-left:2px solid
 <footer><div class="wrap" id="foot"></div></footer>
 
 <script>
-const LANGS = ["ru","es","it","en"];
+const LANGS = ["ru","es","it","en","pt","cs"];
+const LANG_NAMES = {ru:"Русский", es:"Español", it:"Italiano", en:"English", pt:"Português", cs:"Čeština"};
 const UI = {
-  ru:{tag:"Романы", hero:"Литературный мир", sub:"Романы Роберта Фейдера. Читайте онлайн бесплатно — на русском, испанском, итальянском и английском.", author:"Роберт Фейдер", start:"Начать читать", cont:"Продолжить", contents:"Содержание", chapter:"Глава", prev:"Назад", next:"Далее", back:"Все романы", empty:"Скоро здесь появятся романы.", notIn:"Этот роман пока недоступен на русском. Доступные языки:", foot:"© Роберт Фейдер. Все права защищены.", chapters:n=>n+" "+plural(n,["глава","главы","глав"]), notFound:"Страница не найдена."},
-  es:{tag:"Novelas", hero:"Mundo literario", sub:"Las novelas de Robert Fader. Léelas en línea gratis, en ruso, español, italiano e inglés.", author:"Robert Fader", start:"Empezar a leer", cont:"Continuar", contents:"Índice", chapter:"Capítulo", prev:"Anterior", next:"Siguiente", back:"Todas las novelas", empty:"Pronto aparecerán aquí las novelas.", notIn:"Esta novela aún no está disponible en español. Idiomas disponibles:", foot:"© Robert Fader. Todos los derechos reservados.", chapters:n=>n+(n===1?" capítulo":" capítulos"), notFound:"Página no encontrada."},
-  it:{tag:"Romanzi", hero:"Mondo letterario", sub:"I romanzi di Robert Fader. Leggili online gratuitamente, in russo, spagnolo, italiano e inglese.", author:"Robert Fader", start:"Inizia a leggere", cont:"Continua", contents:"Indice", chapter:"Capitolo", prev:"Precedente", next:"Successivo", back:"Tutti i romanzi", empty:"Presto qui appariranno i romanzi.", notIn:"Questo romanzo non è ancora disponibile in italiano. Lingue disponibili:", foot:"© Robert Fader. Tutti i diritti riservati.", chapters:n=>n+(n===1?" capitolo":" capitoli"), notFound:"Pagina non trovata."},
-  en:{tag:"Novels", hero:"Literary World", sub:"The novels of Robert Fader. Read them online for free, in Russian, Spanish, Italian and English.", author:"Robert Fader", start:"Start reading", cont:"Continue", contents:"Contents", chapter:"Chapter", prev:"Previous", next:"Next", back:"All novels", empty:"Novels will appear here soon.", notIn:"This novel isn't available in English yet. Available languages:", foot:"© Robert Fader. All rights reserved.", chapters:n=>n+(n===1?" chapter":" chapters"), notFound:"Page not found."}
+  ru:{tag:"Романы", hero:"Литературный мир", sub:"Романы Роберта Фадера на русском языке. Читайте онлайн бесплатно.", author:"Роберт Фадер", start:"Начать читать", cont:"Продолжить", contents:"Содержание", chapter:"Глава", prev:"Назад", next:"Далее", back:"Все романы", empty:"Романов на русском языке пока нет. Скоро появятся!", foot:"© Роберт Фадер. Все права защищены.", chapters:n=>n+" "+plural(n,["глава","главы","глав"]), notFound:"Страница не найдена.", also:"Этот роман есть и на других языках:", adultT:"Только для взрослых", adultP:"Этот роман содержит откровенные сцены и предназначен для читателей старше 18 лет.", adultYes:"Мне есть 18 лет", adultNo:"Вернуться"},
+  es:{tag:"Novelas", hero:"Mundo literario", sub:"Las novelas de Robert Fader en español. Léelas en línea gratis.", author:"Robert Fader", start:"Empezar a leer", cont:"Continuar", contents:"Índice", chapter:"Capítulo", prev:"Anterior", next:"Siguiente", back:"Todas las novelas", empty:"Todavía no hay novelas en español. ¡Pronto llegarán!", foot:"© Robert Fader. Todos los derechos reservados.", chapters:n=>n+(n===1?" capítulo":" capítulos"), notFound:"Página no encontrada.", also:"Esta novela también está en otros idiomas:", adultT:"Solo para adultos", adultP:"Esta novela contiene escenas explícitas y es solo para mayores de 18 años.", adultYes:"Tengo 18 años o más", adultNo:"Volver"},
+  it:{tag:"Romanzi", hero:"Mondo letterario", sub:"I romanzi di Robert Fader in italiano. Leggili online gratuitamente.", author:"Robert Fader", start:"Inizia a leggere", cont:"Continua", contents:"Indice", chapter:"Capitolo", prev:"Precedente", next:"Successivo", back:"Tutti i romanzi", empty:"Non ci sono ancora romanzi in italiano. Arriveranno presto!", foot:"© Robert Fader. Tutti i diritti riservati.", chapters:n=>n+(n===1?" capitolo":" capitoli"), notFound:"Pagina non trovata.", also:"Questo romanzo è disponibile anche in altre lingue:", adultT:"Solo per adulti", adultP:"Questo romanzo contiene scene esplicite ed è riservato ai maggiori di 18 anni.", adultYes:"Ho almeno 18 anni", adultNo:"Torna indietro"},
+  en:{tag:"Novels", hero:"Literary World", sub:"Robert Fader's novels in English. Read them online for free.", author:"Robert Fader", start:"Start reading", cont:"Continue", contents:"Contents", chapter:"Chapter", prev:"Previous", next:"Next", back:"All novels", empty:"No novels in English yet. Coming soon!", foot:"© Robert Fader. All rights reserved.", chapters:n=>n+(n===1?" chapter":" chapters"), notFound:"Page not found.", also:"This novel is also available in:", adultT:"Adults only", adultP:"This novel contains explicit scenes and is for readers aged 18 and over.", adultYes:"I am 18 or older", adultNo:"Go back"},
+  pt:{tag:"Romances", hero:"Mundo literário", sub:"Os romances de Robert Fader em português. Leia online de graça.", author:"Robert Fader", start:"Começar a ler", cont:"Continuar", contents:"Índice", chapter:"Capítulo", prev:"Anterior", next:"Seguinte", back:"Todos os romances", empty:"Ainda não há romances em português. Em breve!", foot:"© Robert Fader. Todos os direitos reservados.", chapters:n=>n+(n===1?" capítulo":" capítulos"), notFound:"Página não encontrada.", also:"Este romance também está disponível em:", adultT:"Somente para adultos", adultP:"Este romance contém cenas explícitas e é destinado a maiores de 18 anos.", adultYes:"Tenho 18 anos ou mais", adultNo:"Voltar"},
+  cs:{tag:"Romány", hero:"Literární svět", sub:"Romány Roberta Fadera v češtině. Čtěte online zdarma.", author:"Robert Fader", start:"Začít číst", cont:"Pokračovat", contents:"Obsah", chapter:"Kapitola", prev:"Předchozí", next:"Další", back:"Všechny romány", empty:"Zatím tu nejsou žádné romány v češtině. Brzy přibudou!", foot:"© Robert Fader. Všechna práva vyhrazena.", chapters:n=>n+" "+(n===1?"kapitola":n>=2&&n<=4?"kapitoly":"kapitol"), notFound:"Stránka nenalezena.", also:"Tento román je k dispozici i v jiných jazycích:", adultT:"Pouze pro dospělé", adultP:"Tento román obsahuje explicitní scény a je určen čtenářům starším 18 let.", adultYes:"Je mi 18 let nebo více", adultNo:"Zpět"}
 };
-const LANG_NAMES = {ru:"Русский", es:"Español", it:"Italiano", en:"English"};
 function plural(n,f){const a=n%10,b=n%100;return a===1&&b!==11?f[0]:a>=2&&a<=4&&(b<10||b>=20)?f[1]:f[2]}
 
 const store = {
   get(k,d){try{const v=localStorage.getItem("lm:"+k);return v===null?d:JSON.parse(v)}catch(e){return d}},
   set(k,v){try{localStorage.setItem("lm:"+k,JSON.stringify(v))}catch(e){}}
 };
-let lang = store.get("lang", null) || (LANGS.find(l => (navigator.language||"").startsWith(l)) || "ru");
+let lang = store.get("lang", null);
+if (!LANGS.includes(lang)) lang = LANGS.find(l => (navigator.language||"").toLowerCase().startsWith(l)) || "ru";
 let catalog = null;
 const app = document.getElementById("app");
 const t = k => UI[lang][k];
-const pick = obj => obj ? (obj[lang] || obj.ru || obj[Object.keys(obj)[0]] || "") : "";
-const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 
 function inline(s){ return esc(s).replace(/_{2,}/g,"\u0001").replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>").replace(/(^|[^*])\*(?!\s)(.+?)\*/g,"$1<em>$2</em>").replace(/(^|\W)_(?!\s)(.+?)_(?=\W|$)/g,"$1<em>$2</em>").replace(/\u0001/g,'<span class="blank"></span>'); }
 function renderText(md){
   return md.replace(/\r/g,"").split(/\n\s*\n/).map(b => b.trim()).filter(Boolean).map(b => {
     if (/^(\*\s*){3,}$|^(-\s*){3,}$|^⁂$/.test(b)) return "<hr>";
-    if (/^#{2,6}\s/.test(b)) return "<h2>" + inline(b.replace(/^#+\s*/,"")) + "</h2>";
+    let m = b.match(/^!\[([^\]]*)\]\(([^)\s]+)\)$/);
+    if (m) return `<figure><img src="${esc(m[2])}" alt="${esc(m[1])}" loading="lazy"></figure>`;
+    if (/^##\s/.test(b)) return "<h2>" + inline(b.replace(/^#+\s*/,"")) + "</h2>";
+    if (/^#{3,6}\s/.test(b)) return "<h3>" + inline(b.replace(/^#+\s*/,"")) + "</h3>";
     if (/^\|/.test(b)) { const rows = b.split("\n").filter(r => !/^\|[\s|:-]+\|?$/.test(r)).map(r => r.replace(/^\||\|$/g,"").split("|").map(c => inline(c.trim())));
       return '<div class="tbl"><table>' + rows.map((r,i) => "<tr>" + r.map(c => i ? "<td>"+c+"</td>" : "<th>"+c+"</th>").join("") + "</tr>").join("") + "</table></div>"; }
     if (/^>/.test(b)) return "<blockquote><p>" + inline(b.replace(/^>\s?/gm,"")).replace(/\n/g,"<br>") + "</p></blockquote>";
@@ -181,6 +197,7 @@ function applyTheme(){
   document.documentElement.style.setProperty("--read-size", store.get("size", 20) + "px");
 }
 
+function setLang(l){ lang = l; store.set("lang", l); renderChrome(); }
 function renderChrome(){
   document.documentElement.lang = lang;
   document.getElementById("brand").innerHTML = esc(t("hero")) + "<small>" + esc(t("author")) + "</small>";
@@ -190,23 +207,27 @@ function renderChrome(){
 }
 document.getElementById("langs").addEventListener("click", e => {
   const l = e.target.dataset && e.target.dataset.l; if (!l) return;
-  lang = l; store.set("lang", l); renderChrome(); route();
+  setLang(l);
+  if (location.hash && location.hash !== "#/") location.hash = "#/"; else route();
 });
 
 const PALETTE = ["#7a2e2e","#2f4a5c","#4b5b35","#5a3b5f","#8a5a24","#2e4f4a","#3d3a6b","#6b3a2a"];
+function author(n){ return UI[n.lang] ? UI[n.lang].author : t("author"); }
 function coverHTML(n){
-  if (n.cover) return `<div class="cover"><img src="${esc(n.cover)}" alt="${esc(pick(n.title))}" loading="lazy"></div>`;
+  const badge = n.adult ? `<span class="badge18">18+</span>` : "";
+  if (n.cover) return `<div class="cover"><img src="${esc(n.cover)}" alt="${esc(n.title)}" loading="lazy">${badge}</div>`;
   let h=0; for (const c of n.slug) h=(h*31+c.charCodeAt(0))>>>0;
   const c = n.color || PALETTE[h % PALETTE.length];
   return `<div class="cover gen" style="background:linear-gradient(160deg,${c},color-mix(in srgb,${c} 70%,#000))">
-    <span class="ca">${esc(t("author"))}</span><span class="ct">${esc(pick(n.title))}</span><span class="ca">${esc(n.year||"")}</span></div>`;
+    <span class="ca">${esc(author(n))}</span><span class="ct">${esc(n.title)}</span><span class="ca">${esc(n.year||"")}</span>${badge}</div>`;
 }
-function availLangs(n){ return LANGS.filter(l => n.languages && n.languages[l]); }
-function chaptersIn(n, l){ return (n.languages && n.languages[l]) || []; }
+const chapterTitle = (n, c, i) => c.title || (UI[n.lang].chapter + " " + i);
+// Numbered chapters only count entries without a label (prefaces/appendices have one)
+function chapterNo(n, i){ let k = 0; for (let j = 0; j < i; j++) if (!n.chapters[j].label) k++; return k; }
 
 function home(){
   document.title = t("hero") + " — " + t("author");
-  const list = catalog.novels.filter(n => !n.hidden);
+  const list = catalog.novels.filter(n => !n.hidden && n.lang === lang);
   app.innerHTML = `
   <section class="hero wrap">
     <div class="eyebrow">${esc(t("tag"))}</div>
@@ -216,72 +237,86 @@ function home(){
   </section>
   <section class="wrap">
     ${list.length ? `<div class="grid">${list.map(n => {
-      const av = availLangs(n), here = chaptersIn(n, lang).length;
+      const nch = n.chapters.filter(c => !c.label).length;
       return `<a class="card" href="#/${esc(n.slug)}">${coverHTML(n)}
-        <h3>${esc(pick(n.title))}</h3>
-        <div class="meta">${here ? esc(t("chapters")(here)) + " ·" : ""} ${LANGS.map(l => `<span class="pill ${av.includes(l)?"":"off"}">${l}</span>`).join("")}</div></a>`;
+        <h3>${esc(n.title)}</h3>
+        <div class="meta">${n.genre ? esc(n.genre) + " · " : ""}${esc(t("chapters")(nch))}${n.adult ? ' <span class="pill adult">18+</span>' : ""}</div></a>`;
     }).join("")}</div>` : `<div class="empty">${esc(t("empty"))}</div>`}
   </section>`;
 }
 
+function adultOk(n){ return !n.adult || store.get("adult", false); }
+function adultGate(n){
+  document.title = UI[n.lang].adultT;
+  app.innerHTML = `<section class="wrap gate"><div class="badge18 big">18+</div>
+    <h1>${esc(t("adultT"))}</h1><p>${esc(t("adultP"))}</p>
+    <div class="actions" style="justify-content:center"><button class="btn" id="ok18">${esc(t("adultYes"))}</button>
+    <a class="btn ghost" href="#/">${esc(t("adultNo"))}</a></div></section>`;
+  document.getElementById("ok18").onclick = () => { store.set("adult", true); route(); };
+}
+
 function novelPage(n){
-  document.title = pick(n.title) + " — " + t("author");
-  const av = availLangs(n), chs = chaptersIn(n, lang);
-  const done = store.get("done:"+n.slug+":"+lang, []);
-  const last = store.get("last:"+n.slug+":"+lang, null);
+  if (lang !== n.lang) setLang(n.lang);
+  document.title = n.title + " — " + author(n);
+  const chs = n.chapters;
+  const done = store.get("done:"+n.slug, []);
+  const last = store.get("last:"+n.slug, null);
+  const firstStory = Math.max(1, chs.findIndex(c => !c.label) + 1);
+  const tr = Object.entries(n.translations || {}).map(([l, s]) => `<a href="#/${esc(s)}">${LANG_NAMES[l]}</a>`);
   app.innerHTML = `
   <section class="wrap novel">
     <div>${coverHTML(n)}</div>
     <div>
-      <h1>${esc(pick(n.title))}</h1>
-      <div class="by">${esc(t("author"))}${n.year ? " · " + esc(n.year) : ""}</div>
-      ${!chs.length ? `<div class="notice">${esc(t("notIn"))} ${av.map(l => `<a data-switch="${l}">${LANG_NAMES[l]}</a>`).join(", ")}</div>` : ""}
-      ${pick(n.description) ? `<div class="desc">${esc(pick(n.description))}</div>` : ""}
-      ${chs.length ? `<div class="actions">
-        ${last ? `<a class="btn" href="#/${n.slug}/${last}">${esc(t("cont"))} · ${esc(t("chapter"))} ${last}</a>` : ""}
-        <a class="btn ${last ? "ghost" : ""}" href="#/${n.slug}/1">${esc(t("start"))}</a></div>
+      <h1>${esc(n.title)}</h1>
+      <div class="by">${esc(author(n))}${n.genre ? " · " + esc(n.genre) : ""}${n.year ? " · " + esc(n.year) : ""}${n.adult ? ' <span class="pill adult">18+</span>' : ""}</div>
+      ${n.description ? `<div class="desc">${esc(n.description)}</div>` : ""}
+      ${tr.length ? `<div class="notice">${esc(t("also"))} ${tr.join(", ")}</div>` : ""}
+      <div class="actions">
+        ${last ? `<a class="btn" href="#/${n.slug}/${last}">${esc(t("cont"))} · ${esc(chapterTitle(n, chs[last-1] || {}, last))}</a>` : ""}
+        <a class="btn ${last ? "ghost" : ""}" href="#/${n.slug}/${firstStory}">${esc(t("start"))}</a></div>
       <div class="toc"><h2>${esc(t("contents"))}</h2><ol>
-        ${chs.map((c,i) => `<li class="${done.includes(i+1)?"done":""}"><a href="#/${n.slug}/${i+1}"><span class="n">${i+1}</span><span>${esc(c.title || (t("chapter")+" "+(i+1)))}</span></a></li>`).join("")}
-      </ol></div>` : ""}
+        ${chs.map((c,i) => `<li class="${done.includes(i+1)?"done":""} ${c.label?"extra":""}"><a href="#/${n.slug}/${i+1}"><span class="n">${c.label ? "·" : chapterNo(n, i+1)}</span><span>${esc(chapterTitle(n, c, chapterNo(n, i+1)))}</span></a></li>`).join("")}
+      </ol></div>
     </div>
   </section>`;
-  app.querySelectorAll("[data-switch]").forEach(a => a.onclick = () => { lang = a.dataset.switch; store.set("lang", lang); renderChrome(); route(); });
 }
 
 async function reader(n, idx){
-  const chs = chaptersIn(n, lang);
-  if (!chs.length) return novelPage(n);
+  if (lang !== n.lang) setLang(n.lang);
+  const chs = n.chapters;
   const i = Math.min(Math.max(idx,1), chs.length), c = chs[i-1];
+  const L = UI[n.lang];
   app.innerHTML = `<div class="loading">…</div>`;
   let md = "";
-  try {
-    const r = await fetch(`novels/${n.slug}/${lang}/${c.file}`);
-    if (!r.ok) throw 0; md = await r.text();
-  } catch(e) { md = "*—*"; }
-  const title = c.title || (t("chapter") + " " + i);
-  document.title = title + " · " + pick(n.title);
-  md = md.replace(/^#\s+.*\n+/, ""); // the chapter title is shown from the catalog
+  try { const r = await fetch(`novels/${n.slug}/${c.file}`); if (!r.ok) throw 0; md = await r.text(); }
+  catch(e) { md = "*—*"; }
+  const num = chapterNo(n, i);
+  const title = chapterTitle(n, c, num);
+  const label = c.label || (L.chapter + " " + num);
+  const titleOf = j => chapterTitle(n, chs[j-1], chapterNo(n, j));
+  document.title = title + " · " + n.title;
+  md = md.replace(/^#\s+.*\n+/, "");
   app.innerHTML = `
   <div class="reader-bar"><div class="wrap">
-    <a class="crumb" href="#/${n.slug}">← ${esc(pick(n.title))}</a>
+    <a class="crumb" href="#/${n.slug}">← ${esc(n.title)}</a>
     <div class="tools">
       <button id="aminus" aria-label="A−">A−</button><button id="aplus" aria-label="A+">A+</button>
       <button class="sw" data-th="light" style="background:#fbf8f2" aria-label="light"></button>
       <button class="sw" data-th="sepia" style="background:#efe2c8" aria-label="sepia"></button>
       <button class="sw" data-th="dark" style="background:#1d1914" aria-label="dark"></button>
     </div></div><div class="progress" id="prog"></div></div>
-  <article class="chapter">
-    <div class="kicker">${esc(c.label || (t("chapter") + " " + i))}</div>
+  <article class="chapter" lang="${n.lang}">
+    <div class="kicker">${esc(label)}</div>
     <h1>${esc(title)}</h1>
     ${renderText(md)}
   </article>
   <nav class="pager">
-    ${i>1 ? `<a href="#/${n.slug}/${i-1}">← ${esc(t("prev"))}<b>${esc(chs[i-2].title || t("chapter")+" "+(i-1))}</b></a>` : `<span style="flex:1"></span>`}
-    ${i<chs.length ? `<a class="next" href="#/${n.slug}/${i+1}">${esc(t("next"))} →<b>${esc(chs[i].title || t("chapter")+" "+(i+1))}</b></a>` : `<a class="next" href="#/">${esc(t("back"))} →<b>${esc(t("hero"))}</b></a>`}
+    ${i>1 ? `<a href="#/${n.slug}/${i-1}">← ${esc(t("prev"))}<b>${esc(titleOf(i-1))}</b></a>` : `<span style="flex:1"></span>`}
+    ${i<chs.length ? `<a class="next" href="#/${n.slug}/${i+1}">${esc(t("next"))} →<b>${esc(titleOf(i+1))}</b></a>` : `<a class="next" href="#/">${esc(t("back"))} →<b>${esc(t("hero"))}</b></a>`}
   </nav>`;
   window.scrollTo(0,0);
-  store.set("last:"+n.slug+":"+lang, i);
-  const doneKey = "done:"+n.slug+":"+lang;
+  store.set("last:"+n.slug, i);
+  const doneKey = "done:"+n.slug;
   const size = d => { const s = Math.min(28, Math.max(15, store.get("size",20)+d)); store.set("size", s); applyTheme(); };
   document.getElementById("aminus").onclick = () => size(-1);
   document.getElementById("aplus").onclick = () => size(1);
@@ -302,6 +337,7 @@ function route(){
   if (!parts.length) return home();
   const n = catalog.novels.find(x => x.slug === decodeURIComponent(parts[0]));
   if (!n) { app.innerHTML = `<div class="empty">${esc(t("notFound"))}</div>`; return; }
+  if (!adultOk(n)) return adultGate(n);
   if (parts[1]) return reader(n, parseInt(parts[1],10) || 1);
   novelPage(n);
 }

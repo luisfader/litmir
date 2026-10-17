@@ -1,74 +1,375 @@
 {
-  "novels": [
+ "novels": [
+  {
+   "slug": "zvezdnyj-roman",
+   "lang": "ru",
+   "title": "Звёздный роман",
+   "genre": "Романтическая фантастика",
+   "cover": "novels/zvezdnyj-roman/cover.jpg",
+   "description": "Лаура приезжает в тихую деревню, чтобы ненадолго спрятаться от прошлого, но одна упавшая звезда меняет всё. Из леса приходит Лусиано — прекрасный незнакомец, связанный с исчезнувшей Атлантидой и древней силой, которую пробуждает сама Лаура. Теперь им предстоит пройти между двумя мирами, узнать тайну собственного происхождения и решить, способна ли любовь стать силой, которая спасёт не только их, но и Землю.",
+   "chapters": [
     {
-      "slug": "la-citta-triste",
-      "year": 2025,
-      "title": {
-        "ru": "Печальный город",
-        "es": "La ciudad triste",
-        "it": "La città triste",
-        "en": "The Sad City"
-      },
-      "description": {
-        "ru": "В городе Синеа новый президент запрещает улыбаться. Франко и Кьяра решают вернуть людям радость. Роман на итальянском языке для уровня A1, с упражнениями после глав.",
-        "es": "En la ciudad de Sinea, el nuevo presidente prohíbe sonreír. Franco y Chiara deciden devolverle la alegría a la gente. Novela en italiano de nivel A1, con ejercicios después de los capítulos.",
-        "it": "Nella città di Sinea il nuovo presidente vieta i sorrisi. Franco e Chiara decidono di restituire la felicità alla gente. Romanzo per studenti di livello A1, con esercizi dopo i capitoli.",
-        "en": "In the city of Sinea, the new president bans smiling. Franco and Chiara set out to give people their joy back. An A1-level Italian novel with exercises after the chapters."
-      },
-      "languages": {
-        "it": [
-          {
-            "file": "01.md",
-            "title": "Il Ministero dei Sentimenti"
-          },
-          {
-            "file": "02.md",
-            "title": "L'incontro con Chiara"
-          },
-          {
-            "file": "03.md",
-            "title": "L'invito segreto"
-          },
-          {
-            "file": "04.md",
-            "title": "La riunione segreta e il caffè"
-          },
-          {
-            "file": "05.md",
-            "title": "Pericolo in piazza"
-          },
-          {
-            "file": "06.md",
-            "title": "Il nascondiglio sotterraneo"
-          },
-          {
-            "file": "07.md",
-            "title": "Il progetto «Risatomat»"
-          },
-          {
-            "file": "08.md",
-            "title": "La risata nella città triste"
-          },
-          {
-            "file": "09.md",
-            "title": "Il nuovo inizio"
-          },
-          {
-            "file": "10.md",
-            "title": "La sorpresa sul palco"
-          },
-          {
-            "file": "11.md",
-            "title": "Test finale",
-            "label": "Appendice"
-          },
-          {
-            "file": "12.md",
-            "title": "Guida dei personaggi",
-            "label": "Appendice"
-          }
-        ]
-      }
+     "file": "01.md",
+     "title": "Падение"
+    },
+    {
+     "file": "02.md",
+     "title": "Соседские слухи"
+    },
+    {
+     "file": "03.md",
+     "title": "Чёрный камень"
+    },
+    {
+     "file": "04.md",
+     "title": "Он"
+    },
+    {
+     "file": "05.md",
+     "title": "Лусиано"
+    },
+    {
+     "file": "06.md",
+     "title": "Бегство"
+    },
+    {
+     "file": "07.md",
+     "title": "Пробуждение ключа"
+    },
+    {
+     "file": "08.md",
+     "title": "Потом всё объясню"
+    },
+    {
+     "file": "09.md",
+     "title": "Там, где светятся звёзды"
+    },
+    {
+     "file": "10.md",
+     "title": "Слияние миров"
+    },
+    {
+     "file": "11.md",
+     "title": "Энергия звёзд"
+    },
+    {
+     "file": "12.md",
+     "title": "Цена силы"
+    },
+    {
+     "file": "13.md",
+     "title": "Сердце мира"
+    },
+    {
+     "file": "14.md",
+     "title": "Печать пробуждения"
+    },
+    {
+     "file": "15.md",
+     "title": "Цена крови"
+    },
+    {
+     "file": "16.md",
+     "title": "Дыхание жизни"
+    },
+    {
+     "file": "17.md",
+     "title": "Рождённые от света"
+    },
+    {
+     "file": "18.md",
+     "title": "Возвращение к истокам"
+    },
+    {
+     "file": "19.md",
+     "title": "В двух мирах"
     }
-  ]
+   ]
+  },
+  {
+   "slug": "la-citta-triste",
+   "lang": "it",
+   "title": "La città triste",
+   "year": 2025,
+   "description": "Nella città di Sinea il nuovo presidente vieta i sorrisi. Franco e Chiara decidono di restituire la felicità alla gente. Romanzo per studenti di livello A1, con esercizi dopo i capitoli.",
+   "chapters": [
+    {
+     "file": "01.md",
+     "title": "Il Ministero dei Sentimenti"
+    },
+    {
+     "file": "02.md",
+     "title": "L'incontro con Chiara"
+    },
+    {
+     "file": "03.md",
+     "title": "L'invito segreto"
+    },
+    {
+     "file": "04.md",
+     "title": "La riunione segreta e il caffè"
+    },
+    {
+     "file": "05.md",
+     "title": "Pericolo in piazza"
+    },
+    {
+     "file": "06.md",
+     "title": "Il nascondiglio sotterraneo"
+    },
+    {
+     "file": "07.md",
+     "title": "Il progetto «Risatomat»"
+    },
+    {
+     "file": "08.md",
+     "title": "La risata nella città triste"
+    },
+    {
+     "file": "09.md",
+     "title": "Il nuovo inizio"
+    },
+    {
+     "file": "10.md",
+     "title": "La sorpresa sul palco"
+    },
+    {
+     "file": "11.md",
+     "title": "Test finale",
+     "label": "Appendice"
+    },
+    {
+     "file": "12.md",
+     "title": "Guida dei personaggi",
+     "label": "Appendice"
+    }
+   ]
+  },
+  {
+   "slug": "il-treno-fantasma",
+   "lang": "it",
+   "title": "Il treno fantasma",
+   "description": "Marco è un detective triste: cerca il treno fantasma che porta via le persone, e con lui la sua ragazza Alice. Romanzo per chi studia l'italiano, con vocabolario, grammatica ed esercizi.",
+   "chapters": [
+    {
+     "file": "01.md",
+     "title": "Prefazione",
+     "label": "Dall'autore"
+    },
+    {
+     "file": "02.md",
+     "title": "La tristezza di Marco"
+    },
+    {
+     "file": "03.md",
+     "title": "Alice e il treno fantasma"
+    },
+    {
+     "file": "04.md",
+     "title": "Marco e l'uomo grasso"
+    },
+    {
+     "file": "05.md",
+     "title": "Alice e l'ispettore"
+    },
+    {
+     "file": "06.md",
+     "title": "Marco e il capostazione"
+    },
+    {
+     "file": "07.md",
+     "title": "Alice e Matteo"
+    },
+    {
+     "file": "08.md",
+     "title": "Marco e la gente seria"
+    },
+    {
+     "file": "09.md",
+     "title": "Alice, Matteo e la fuga"
+    },
+    {
+     "file": "10.md",
+     "title": "Marco paga il conto"
+    },
+    {
+     "file": "11.md",
+     "title": "Confessioni sul treno"
+    },
+    {
+     "file": "12.md",
+     "title": "Il libro misterioso"
+    },
+    {
+     "file": "13.md",
+     "title": "Il vagone confessionale"
+    },
+    {
+     "file": "14.md",
+     "title": "Il prezzo della gelosia"
+    },
+    {
+     "file": "15.md",
+     "title": "Il colpo sul treno"
+    },
+    {
+     "file": "16.md",
+     "title": "In trappola"
+    },
+    {
+     "file": "17.md",
+     "title": "Fuga nel vagone campeggio"
+    },
+    {
+     "file": "18.md",
+     "title": "Il labirinto delle verità"
+    },
+    {
+     "file": "19.md",
+     "title": "La grande fuga"
+    },
+    {
+     "file": "20.md",
+     "title": "La verità sul Treno Fantasma"
+    },
+    {
+     "file": "21.md",
+     "title": "Ricordi e una proposta",
+     "label": "Capitolo finale"
+    },
+    {
+     "file": "22.md",
+     "title": "Riassunto dei capitoli",
+     "label": "Appendice"
+    },
+    {
+     "file": "23.md",
+     "title": "Esercizi",
+     "label": "Appendice"
+    }
+   ]
+  },
+  {
+   "slug": "do-outro-lado-do-mundo",
+   "lang": "pt",
+   "title": "Do outro lado do mundo",
+   "description": "Luiz tem 20 anos e prometeu conhecer Natalia, que mora do outro lado do mundo. Sem dinheiro para a passagem, ele aceita qualquer desafio para cumprir a promessa. Com vocabulário e exercícios.",
+   "chapters": [
+    {
+     "file": "01.md",
+     "title": "Capítulo 1"
+    },
+    {
+     "file": "02.md",
+     "title": "O Jogo"
+    },
+    {
+     "file": "03.md",
+     "title": "A Guitarra"
+    },
+    {
+     "file": "04.md",
+     "title": "O Show Surpreendente"
+    },
+    {
+     "file": "05.md",
+     "title": "O Interrogatório"
+    },
+    {
+     "file": "06.md",
+     "title": "Os Planos de Moscou"
+    },
+    {
+     "file": "07.md",
+     "title": "A Corrida Milagrosa"
+    },
+    {
+     "file": "08.md",
+     "title": "A Revelação e a Fuga"
+    },
+    {
+     "file": "09.md",
+     "title": "O Voo da Magia"
+    },
+    {
+     "file": "10.md",
+     "title": "O Encontro Mágico em Moscou"
+    },
+    {
+     "file": "11.md",
+     "title": "Exercícios",
+     "label": "Apêndice"
+    }
+   ]
+  },
+  {
+   "slug": "podzemni-tajemstvi",
+   "lang": "cs",
+   "title": "Podzemní tajemství",
+   "description": "Luis a Natálie chtějí uspořádat tajný koncert v pražském podzemí — a objeví tam víc, než čekali. Román pro začátečníky se slovíčky a cvičeními.",
+   "chapters": [
+    {
+     "file": "01.md",
+     "title": "Kapitola 1"
+    },
+    {
+     "file": "02.md",
+     "title": "Luisův syntezátor"
+    },
+    {
+     "file": "03.md",
+     "title": "Hudba v podzemí"
+    },
+    {
+     "file": "04.md",
+     "title": "Tajná místnost"
+    },
+    {
+     "file": "05.md",
+     "title": "Princezna Lucie"
+    },
+    {
+     "file": "06.md",
+     "title": "Láska a tajemství"
+    },
+    {
+     "file": "07.md",
+     "title": "Melodie z hradu"
+    },
+    {
+     "file": "08.md",
+     "title": "Praha patří Lucii"
+    },
+    {
+     "file": "09.md",
+     "title": "Píseň samoty"
+    },
+    {
+     "file": "10.md",
+     "title": "Čarodějný dar"
+    },
+    {
+     "file": "11.md",
+     "title": "Strážce podzemí"
+    },
+    {
+     "file": "12.md",
+     "title": "Bitva o lásku"
+    },
+    {
+     "file": "13.md",
+     "title": "Útěk a slzy"
+    },
+    {
+     "file": "14.md",
+     "title": "Poslední bitva a nový začátek"
+    },
+    {
+     "file": "15.md",
+     "title": "Cvičení",
+     "label": "Příloha"
+    }
+   ]
+  }
+ ]
 }

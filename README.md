@@ -1,13 +1,13 @@
 # Литературный мир — Robert Fader
 
-Sitio web para leer las novelas de Robert Fader en cuatro idiomas: ruso, español, italiano e inglés.
+Sitio web para leer las novelas de Robert Fader. Cada idioma (RU, ES, IT, EN, PT, CS) muestra solo las novelas escritas en ese idioma.
 
 ## Estructura
 
 ```
 index.html                  el sitio completo (no necesita compilación)
 novels/catalog.json         lista de novelas, títulos, descripciones y capítulos
-novels/<novela>/<idioma>/   un archivo .md por capítulo (01.md, 02.md, …)
+novels/<novela>/            un archivo .md por capítulo (01.md, 02.md, …)
 ```
 
 ## Añadir una novela
@@ -20,4 +20,12 @@ Formato del texto: párrafos separados por una línea en blanco, `*cursiva*`, `*
 
 ## Publicación
 
-GitHub → Settings → Pages → Source: *Deploy from a branch* → rama `main`, carpeta `/ (root)`.
+
+
+## Novelas para adultos
+
+Añadir `"adult": true` a la novela en `catalog.json`: aparece la marca 18+ y se pide confirmación de edad antes de leer.
+
+## Traducciones
+
+Si una novela existe en otro idioma, añadir `"translations": {"es": "slug-de-la-version-espanola"}`.
