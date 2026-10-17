@@ -1995,6 +1995,56 @@
    ]
   },
   {
+   "slug": "the-date",
+   "lang": "en",
+   "title": "The Date",
+   "author": "Luis Fader",
+   "genre": "Comedy · Mystery",
+   "description": "Two years ago, Frank Stevenson’s brother Tom went on an online date and never came back. The police called it an accident, but Frank, a private detective, is sure a woman killed him.\nSo he creates a fake profile as “Mark” and starts dating: a woman who asks too many questions, one who talks to the moon, a lawyer, a violin player… Each date is stranger than the last — and the truth is the strangest of all.\nA short novel in simple English (level A1), with vocabulary, grammar and speaking exercises after every chapter.",
+   "chapters": [
+    {
+     "file": "01.md",
+     "title": "The Beginning"
+    },
+    {
+     "file": "02.md",
+     "title": "The Wrong Woman"
+    },
+    {
+     "file": "03.md",
+     "title": "The Crazy Date"
+    },
+    {
+     "file": "04.md",
+     "title": "The Suspicious Kiss"
+    },
+    {
+     "file": "05.md",
+     "title": "The Ex-Files"
+    },
+    {
+     "file": "06.md",
+     "title": "The Lawyer"
+    },
+    {
+     "file": "07.md",
+     "title": "The Violin Player"
+    },
+    {
+     "file": "08.md",
+     "title": "The Big Surprise"
+    },
+    {
+     "file": "09.md",
+     "title": "The Confrontation"
+    },
+    {
+     "file": "10.md",
+     "title": "A New Beginning"
+    }
+   ]
+  },
+  {
    "slug": "la-voix",
    "lang": "fr",
    "title": "La voix",
