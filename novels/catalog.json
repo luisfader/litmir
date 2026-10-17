@@ -1509,6 +1509,325 @@
    ]
   },
   {
+   "slug": "el-misterio-de-los-fader",
+   "lang": "es",
+   "title": "El misterio de los Fader",
+   "author": "Luis Fader",
+   "year": 2025,
+   "genre": "Aventura · Misterio · Humor",
+   "cover": "novels/el-misterio-de-los-fader/cover.jpg",
+   "adult": true,
+   "description": "Un secreto envuelve a la familia. Los antepasados están ahí, pero no se ven. Una maldición acecha a los Fader.\nLuis y Natalia viajan de Moscú a Mendoza y resolverán el gran misterio. Un brebaje, una historia trágica y una pizca de humor hacen de este relato una aventura entretenida y cautivante.",
+   "chapters": [
+    {
+     "file": "01.md",
+     "title": "Prólogo",
+     "label": "Del autor"
+    },
+    {
+     "file": "02.md",
+     "title": "Un encuentro inolvidable"
+    },
+    {
+     "file": "03.md",
+     "title": "Buenas noticias"
+    },
+    {
+     "file": "04.md",
+     "title": "Un intercambio con sabor alemán"
+    },
+    {
+     "file": "05.md",
+     "title": "El encuentro en Mendoza"
+    },
+    {
+     "file": "06.md",
+     "title": "En el parque"
+    },
+    {
+     "file": "07.md",
+     "title": "La Reina Inesperada de la Vendimia"
+    },
+    {
+     "file": "08.md",
+     "title": "El pasado dando pistas"
+    },
+    {
+     "file": "09.md",
+     "title": "La Plaza de las Sombras"
+    },
+    {
+     "file": "10.md",
+     "title": "Fama y Misterios"
+    },
+    {
+     "file": "11.md",
+     "title": "La cena lujosa"
+    },
+    {
+     "file": "12.md",
+     "title": "La Finca de los Sueños"
+    },
+    {
+     "file": "13.md",
+     "title": "El pasado que persigue"
+    },
+    {
+     "file": "14.md",
+     "title": "El Secreto de las Montañas Azules"
+    },
+    {
+     "file": "15.md",
+     "title": "El Sueño de la Comuna"
+    },
+    {
+     "file": "16.md",
+     "title": "El amanecer de los secretos"
+    },
+    {
+     "file": "17.md",
+     "title": "La mañana en los viñedos"
+    },
+    {
+     "file": "18.md",
+     "title": "La protesta en la finca Fader"
+    },
+    {
+     "file": "19.md",
+     "title": "El héroe fallido"
+    },
+    {
+     "file": "20.md",
+     "title": "La Ira de Karl"
+    },
+    {
+     "file": "21.md",
+     "title": "El Resplandor de las Uvas"
+    },
+    {
+     "file": "22.md",
+     "title": "Las sombras de Cacheuta"
+    },
+    {
+     "file": "23.md",
+     "title": "El Sueño de la Conquista"
+    },
+    {
+     "file": "24.md",
+     "title": "La Entrevista en Canal 9"
+    },
+    {
+     "file": "25.md",
+     "title": "El Refugiado y el General"
+    },
+    {
+     "file": "26.md",
+     "title": "La Revelación Interrumpida"
+    },
+    {
+     "file": "27.md",
+     "title": "Otra de los Fader"
+    },
+    {
+     "file": "28.md",
+     "title": "El Zorro de la Montaña"
+    },
+    {
+     "file": "29.md",
+     "title": "El Juego del Poder"
+    },
+    {
+     "file": "30.md",
+     "title": "El Encuentro en la Mansión Fader"
+    },
+    {
+     "file": "31.md",
+     "title": "El Pacto secreto"
+    },
+    {
+     "file": "32.md",
+     "title": "La Tertulia del Poder"
+    },
+    {
+     "file": "33.md",
+     "title": "El Zorro Protector"
+    },
+    {
+     "file": "34.md",
+     "title": "El juego de poder en Buenos Aires"
+    },
+    {
+     "file": "35.md",
+     "title": "La traición en la facultad"
+    },
+    {
+     "file": "36.md",
+     "title": "Las Uvas Mágicas y las Noticias del Día"
+    },
+    {
+     "file": "37.md",
+     "title": "Las teorías de conspiración"
+    },
+    {
+     "file": "38.md",
+     "title": "El secreto en los cuadros de Fader"
+    },
+    {
+     "file": "39.md",
+     "title": "La confesión de Adolfo"
+    },
+    {
+     "file": "40.md",
+     "title": "La Vía Blanca"
+    },
+    {
+     "file": "41.md",
+     "title": "La reunión en la Catedral del Challao"
+    },
+    {
+     "file": "42.md",
+     "title": "La Noche en el Centro y el Encuentro con el Pasado"
+    },
+    {
+     "file": "43.md",
+     "title": "La Plaza de los recuerdos"
+    },
+    {
+     "file": "44.md",
+     "title": "La Explicación de Karl Fader"
+    },
+    {
+     "file": "45.md",
+     "title": "El Carrusel de las Emociones"
+    },
+    {
+     "file": "46.md",
+     "title": "La logia desconocida"
+    },
+    {
+     "file": "47.md",
+     "title": "Luis Fader El conductor"
+    },
+    {
+     "file": "48.md",
+     "title": "Votación y tensión"
+    },
+    {
+     "file": "49.md",
+     "title": "La Revancha de la Historia"
+    },
+    {
+     "file": "50.md",
+     "title": "La Batalla en el Anfiteatro"
+    },
+    {
+     "file": "51.md",
+     "title": "Luis el inmortal"
+    },
+    {
+     "file": "52.md",
+     "title": "El final de una era y el comienzo de una nueva"
+    },
+    {
+     "file": "53.md",
+     "title": "Capítulo final",
+     "label": "Final"
+    }
+   ]
+  },
+  {
+   "slug": "el-tren-fantasma",
+   "lang": "es",
+   "title": "El tren fantasma",
+   "author": "Luis Fader",
+   "genre": "Comedia · Misterio · Fantasía",
+   "description": "Marcos, un detective de la ciudad de Sinea, busca a su novia Alicia, desaparecida desde hace una semana. Todas las pistas llevan al tren fantasma, que aparece de noche y se lleva a la gente.\nA bordo lo esperan vagones imposibles, zombies que cantan desafinados, un juez inflexible y monos con motosierra: una comedia de misterio donde los miedos se vuelven absurdos.\nEl español empieza muy sencillo y crece capítulo a capítulo, ideal para practicar la lectura.",
+   "chapters": [
+    {
+     "file": "01.md",
+     "title": "Prólogo",
+     "label": "Del autor"
+    },
+    {
+     "file": "02.md",
+     "title": "Marcos el detective"
+    },
+    {
+     "file": "03.md",
+     "title": "Misterio en la estación central"
+    },
+    {
+     "file": "04.md",
+     "title": "La conversación con el jefe de la estación"
+    },
+    {
+     "file": "05.md",
+     "title": "El tren aparece"
+    },
+    {
+     "file": "06.md",
+     "title": "Marcos en el tren fantasma"
+    },
+    {
+     "file": "07.md",
+     "title": "La decisión de Marcos"
+    },
+    {
+     "file": "08.md",
+     "title": "El vagón restaurante"
+    },
+    {
+     "file": "09.md",
+     "title": "El vagón biblioteca"
+    },
+    {
+     "file": "10.md",
+     "title": "El vagón piscina"
+    },
+    {
+     "file": "11.md",
+     "title": "El Secreto de la Discoteca"
+    },
+    {
+     "file": "12.md",
+     "title": "¡Ataque Zombie en el Tren!"
+    },
+    {
+     "file": "13.md",
+     "title": "El vagón del juicio final"
+    },
+    {
+     "file": "14.md",
+     "title": "Juicio, amor y traición"
+    },
+    {
+     "file": "15.md",
+     "title": "El vagón prisión y la canción que rompió el hechizo"
+    },
+    {
+     "file": "16.md",
+     "title": "El camino a la locomotora"
+    },
+    {
+     "file": "17.md",
+     "title": "Confesiones en el vagón confesionario"
+    },
+    {
+     "file": "18.md",
+     "title": "El último combate en el tren fantasma"
+    },
+    {
+     "file": "19.md",
+     "title": "Regreso a Sinea"
+    },
+    {
+     "file": "20.md",
+     "title": "Dossiers del tren fantasma",
+     "label": "Apéndice"
+    }
+   ]
+  },
+  {
    "slug": "divlji-chas",
    "lang": "sr",
    "title": "Дивљи час",
