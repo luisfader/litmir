@@ -169,7 +169,10 @@
      "label": "Дополнение"
     }
    ],
-   "adult": true
+   "adult": true,
+   "translations": {
+    "sr": "divlji-chas"
+   }
   },
   {
    "slug": "dikij-chas-2",
@@ -613,6 +616,54 @@
    ]
   },
   {
+   "slug": "vlyublennye-lebedi",
+   "lang": "ru",
+   "title": "Влюблённые лебеди",
+   "description": "Знаменитая певица Оксана бежит от славы и разбитого сердца в заснеженный Устюг. Но местный знахарь Степан, отвергнутый ею, превращает её в хрустального лебедя. Сказка о любви, прощении и чуде посреди русской зимы.",
+   "chapters": [
+    {
+     "file": "01.md",
+     "title": ""
+    },
+    {
+     "file": "02.md",
+     "title": ""
+    },
+    {
+     "file": "03.md",
+     "title": ""
+    },
+    {
+     "file": "04.md",
+     "title": ""
+    },
+    {
+     "file": "05.md",
+     "title": ""
+    },
+    {
+     "file": "06.md",
+     "title": ""
+    },
+    {
+     "file": "07.md",
+     "title": ""
+    },
+    {
+     "file": "08.md",
+     "title": ""
+    },
+    {
+     "file": "09.md",
+     "title": ""
+    },
+    {
+     "file": "10.md",
+     "title": ""
+    }
+   ]
+  },
+  {
    "slug": "zvezdnyj-roman",
    "lang": "ru",
    "title": "Звёздный роман",
@@ -993,6 +1044,182 @@
    ]
   },
   {
+   "slug": "maschera-di-venezia",
+   "lang": "it",
+   "title": "Maschera di Venezia",
+   "description": "Venezia, 20 febbraio 2025. In una notte di Carnevale un uomo in fuga stringe tra le mani un piccolo oggetto avvolto in un panno scuro. Da quel momento, tra calli, maschere e antichi segreti, nulla sarà più come prima.",
+   "chapters": [
+    {
+     "file": "01.md",
+     "title": "Il Carnevale"
+    },
+    {
+     "file": "02.md",
+     "title": "L’Incontro nella Folla"
+    },
+    {
+     "file": "03.md",
+     "title": "La Teoria delle Acque"
+    },
+    {
+     "file": "04.md",
+     "title": "Il Ballo dei Misteri"
+    },
+    {
+     "file": "05.md",
+     "title": "Il Segreto dei Simboli"
+    },
+    {
+     "file": "06.md",
+     "title": "La Loggia"
+    },
+    {
+     "file": "07.md",
+     "title": "L’Interrogatorio"
+    },
+    {
+     "file": "08.md",
+     "title": "Il Bacio nel Caos"
+    },
+    {
+     "file": "09.md",
+     "title": "Il Segreto delle Acque Perdute"
+    },
+    {
+     "file": "10.md",
+     "title": "La Rivelazione della Loggia"
+    },
+    {
+     "file": "11.md",
+     "title": "La Gondola dei Segreti"
+    },
+    {
+     "file": "12.md",
+     "title": "Gli Occhi nel Buio"
+    },
+    {
+     "file": "13.md",
+     "title": "La Prova del Cuore Puro"
+    },
+    {
+     "file": "14.md",
+     "title": "Il Potere della Maschera"
+    },
+    {
+     "file": "15.md",
+     "title": "Il Tradimento del Sangue"
+    },
+    {
+     "file": "16.md",
+     "title": "Il Giudizio delle Acque"
+    },
+    {
+     "file": "17.md",
+     "title": "La Trappola della Loggia"
+    },
+    {
+     "file": "18.md",
+     "title": "L'Ordine del Coprifuoco"
+    },
+    {
+     "file": "19.md",
+     "title": "\"Il Ritorno Malizioso\""
+    },
+    {
+     "file": "20.md",
+     "title": "\"Allarme Matevirus - #RestaACasa\""
+    },
+    {
+     "file": "21.md",
+     "title": "il Segreto Del Cuore"
+    },
+    {
+     "file": "22.md",
+     "title": "Fuga nella Laguna"
+    },
+    {
+     "file": "23.md",
+     "title": "Il Messaggio e la Battaglia"
+    },
+    {
+     "file": "24.md",
+     "title": "Cena e Confessioni Sotterranee"
+    },
+    {
+     "file": "25.md",
+     "title": "La Caccia all'Argentino"
+    },
+    {
+     "file": "26.md",
+     "title": "La Caduta della Maschera"
+    },
+    {
+     "file": "27.md",
+     "title": "La Rivolta del Popolo"
+    },
+    {
+     "file": "28.md",
+     "title": "La Rivolta e il Ritorno della Maschera"
+    },
+    {
+     "file": "29.md",
+     "title": "L'Assalto e la Purificazione"
+    },
+    {
+     "file": "30.md",
+     "title": "La Chiamata di Roma"
+    }
+   ]
+  },
+  {
+   "slug": "ladro-di-cuori-2",
+   "lang": "it",
+   "title": "Ladro di cuori 2",
+   "description": "Alessio e Claudia vivono a Malaga con nuovi nomi, Marcos e Laura, lontani dal furto del Botticelli che li ha resi ricercati dall'Interpol. Ma una sera, sul lungomare, un uomo in completo nero comincia a seguirli con lo sguardo.",
+   "chapters": [
+    {
+     "file": "01.md",
+     "title": "Le onde di Malaga"
+    },
+    {
+     "file": "02.md",
+     "title": "Il Violino d'Oro"
+    },
+    {
+     "file": "03.md",
+     "title": "La Decisione"
+    },
+    {
+     "file": "04.md",
+     "title": "Il Bar La Luna"
+    },
+    {
+     "file": "05.md",
+     "title": "Note di Gelosia"
+    },
+    {
+     "file": "06.md",
+     "title": "Il Concorso e il Cuore di Don Salvatore"
+    },
+    {
+     "file": "07.md",
+     "title": "L'ipnosi e il Cuore Spezzato"
+    },
+    {
+     "file": "08.md",
+     "title": "La Serata Fatale"
+    },
+    {
+     "file": "09.md",
+     "title": "La Grande Fuga e l'Amaro Tradimento"
+    },
+    {
+     "file": "10.md",
+     "title": "Il Violino dell'Addio"
+    }
+   ]
+  },
+  {
    "slug": "do-outro-lado-do-mundo",
    "lang": "pt",
    "title": "Do outro lado do mundo",
@@ -1181,6 +1408,235 @@
      "file": "14.md",
      "title": "Порядок путешествия Ольги",
      "label": "Приложение"
+    }
+   ]
+  },
+  {
+   "slug": "lluvia-de-meteoritos",
+   "lang": "es",
+   "title": "Lluvia de meteoritos",
+   "description": "Elena tiene cuarenta años y lleva más de veinte casada con Felipe, un hombre autoritario. Una tarde en Sinea, un encuentro inesperado con un joven desconocido empieza a cambiarle la vida, mientras en el cielo se prepara una lluvia de meteoritos.",
+   "chapters": [
+    {
+     "file": "01.md",
+     "title": "Un Encuentro Inesperado"
+    },
+    {
+     "file": "02.md",
+     "title": "El Regreso a la Rutina"
+    },
+    {
+     "file": "03.md",
+     "title": "La Clase de Español"
+    },
+    {
+     "file": "04.md",
+     "title": "La Misión de Felipe"
+    },
+    {
+     "file": "05.md",
+     "title": "La Identidad de Luciano"
+    },
+    {
+     "file": "06.md",
+     "title": "La Confrontación"
+    },
+    {
+     "file": "07.md",
+     "title": "La Alianza"
+    },
+    {
+     "file": "08.md",
+     "title": "La Conexión Cósmica"
+    },
+    {
+     "file": "09.md",
+     "title": "El Anuncio de Felipe"
+    },
+    {
+     "file": "10.md",
+     "title": "La Huida hacia la Torre"
+    },
+    {
+     "file": "11.md",
+     "title": "El Escándalo en Vivo"
+    },
+    {
+     "file": "12.md",
+     "title": "El decreto de emergencia"
+    },
+    {
+     "file": "13.md",
+     "title": "Semillas de Rebelión"
+    },
+    {
+     "file": "14.md",
+     "title": "La Cúpula de Cristal y la Semilla de Esperanza"
+    },
+    {
+     "file": "15.md",
+     "title": "El Rey de Cristal"
+    },
+    {
+     "file": "16.md",
+     "title": "El Aliento de la Vida"
+    },
+    {
+     "file": "17.md",
+     "title": "Jaque"
+    },
+    {
+     "file": "18.md",
+     "title": "El Avance de los Huracanes de Acero"
+    },
+    {
+     "file": "19.md",
+     "title": "La Tormenta y la Semilla"
+    },
+    {
+     "file": "20.md",
+     "title": "La Revelación"
+    },
+    {
+     "file": "21.md",
+     "title": "La danza de los meteoritos y una nueva esperanza"
+    },
+    {
+     "file": "22.md",
+     "title": "Epílogo",
+     "label": "Epílogo"
+    }
+   ]
+  },
+  {
+   "slug": "divlji-chas",
+   "lang": "sr",
+   "title": "Дивљи час",
+   "adult": true,
+   "translations": {
+    "ru": "dikij-chas"
+   },
+   "description": "Луис је туриста у Београду. На улици Кнез Михаилова удари га електрични тротинет — на њему је Наташа. Она жели да му покаже свој град, а Београд крије тајне о којима нико не говори.",
+   "chapters": [
+    {
+     "file": "01.md",
+     "title": "Сусрет у Београду"
+    },
+    {
+     "file": "02.md",
+     "title": "Тајна Београда"
+    },
+    {
+     "file": "03.md",
+     "title": "Ноћ под пуним месецом"
+    },
+    {
+     "file": "04.md",
+     "title": "Завера у кули"
+    },
+    {
+     "file": "05.md",
+     "title": "Слике будућности"
+    },
+    {
+     "file": "06.md",
+     "title": "Камен и тајна"
+    },
+    {
+     "file": "07.md",
+     "title": "Улицама Београда"
+    },
+    {
+     "file": "08.md",
+     "title": "Тајна порука"
+    },
+    {
+     "file": "09.md",
+     "title": "Тајна страница"
+    },
+    {
+     "file": "10.md",
+     "title": "Мапа и страст"
+    },
+    {
+     "file": "11.md",
+     "title": "План у кули"
+    },
+    {
+     "file": "12.md",
+     "title": "Калемегдан – Прво место"
+    },
+    {
+     "file": "13.md",
+     "title": "Сукоб са Рускињама"
+    },
+    {
+     "file": "14.md",
+     "title": "Страст у стану"
+    },
+    {
+     "file": "15.md",
+     "title": "Наредба за Наташу"
+    },
+    {
+     "file": "16.md",
+     "title": "Легенда и страст"
+    },
+    {
+     "file": "17.md",
+     "title": "Тајна руских агената"
+    },
+    {
+     "file": "18.md",
+     "title": "Софијина тајна"
+    },
+    {
+     "file": "19.md",
+     "title": "Хладно осветљење"
+    },
+    {
+     "file": "20.md",
+     "title": "Трећа камена"
+    },
+    {
+     "file": "21.md",
+     "title": "Софијина игра"
+    },
+    {
+     "file": "22.md",
+     "title": "Предлог за брак"
+    },
+    {
+     "file": "23.md",
+     "title": "Артанова судбина"
+    },
+    {
+     "file": "24.md",
+     "title": "Трагање за четвртим каменом"
+    },
+    {
+     "file": "25.md",
+     "title": "Заробљени"
+    },
+    {
+     "file": "26.md",
+     "title": "Откровение"
+    },
+    {
+     "file": "27.md",
+     "title": "Судар интереса"
+    },
+    {
+     "file": "28.md",
+     "title": "Припреме за битку"
+    },
+    {
+     "file": "29.md",
+     "title": "Епска битка за Београд"
+    },
+    {
+     "file": "30.md",
+     "title": "Крај хаоса и почетак љубави"
     }
    ]
   }
