@@ -959,7 +959,8 @@
    "description": "После глобальной катастрофы мир превратился в руины. Роберт едет на старом мотоцикле по разрушенным улицам и верит, что где-то ещё остались люди, готовые построить новый мир.\nТак рождается «Наша Утопия» — крепость, где выжившие пытаются жить без страха и жадности. Но дикари у ворот, интриги внутри стен и запутанные чувства — между Робертом, виолончелисткой Натальей и архитектором Луисом — ставят мечту под угрозу.",
    "translations": {
     "eo": "la-antausento",
-    "it": "presentimento"
+    "it": "presentimento",
+    "es": "la-corazonada"
    },
    "chapters": [
     {
@@ -1688,7 +1689,8 @@
    "description": "Dopo la catastrofe globale, il mondo è un deserto di rovine e silenzio. Robert attraversa le strade distrutte sulla sua vecchia moto, convinto che da qualche parte esistano ancora persone pronte a costruire un mondo nuovo.\nCosì nasce «La Nostra Utopia», una fortezza dove i sopravvissuti cercano di vivere senza paura né avidità. Ma i selvaggi alle porte, i tradimenti dentro le mura e i sentimenti intrecciati mettono il sogno in pericolo.",
    "translations": {
     "ru": "predchuvstvie",
-    "eo": "la-antausento"
+    "eo": "la-antausento",
+    "es": "la-corazonada"
    },
    "chapters": [
     {
@@ -2552,6 +2554,166 @@
    ]
   },
   {
+   "slug": "la-corazonada",
+   "lang": "es",
+   "title": "La Corazonada",
+   "author": "Luis Fader",
+   "genre": "Postapocalíptico · Aventura · Romance",
+   "description": "Tras dos años de invierno nuclear, la radiación desaparece y Robert sale por fin de su búnker. Recorre en su vieja motocicleta un mundo en ruinas, convencido de que en algún lugar todavía quedan personas dispuestas a empezar de nuevo.\nAsí nace la Utopía Turquesa, una fortaleza donde los sobrevivientes intentan vivir sin miedo ni codicia. Pero los salvajes, la Prepotencia Central y los sentimientos cruzados entre sus habitantes ponen el sueño en peligro.",
+   "translations": {
+    "ru": "predchuvstvie",
+    "it": "presentimento",
+    "eo": "la-antausento"
+   },
+   "chapters": [
+    {
+     "file": "01.md",
+     "title": "Respirar"
+    },
+    {
+     "file": "02.md",
+     "title": "El Precio de la Utopía"
+    },
+    {
+     "file": "03.md",
+     "title": "El amargo sabor del ayer"
+    },
+    {
+     "file": "04.md",
+     "title": "El mágico atardecer"
+    },
+    {
+     "file": "05.md",
+     "title": "La Amenaza de la Barbarie"
+    },
+    {
+     "file": "06.md",
+     "title": "Un Refugio en el Desierto"
+    },
+    {
+     "file": "07.md",
+     "title": "La Llegada a la Colina"
+    },
+    {
+     "file": "08.md",
+     "title": "La Primera Expedición"
+    },
+    {
+     "file": "09.md",
+     "title": "El Territorio Turquesa"
+    },
+    {
+     "file": "10.md",
+     "title": "Sueño Turquesa"
+    },
+    {
+     "file": "11.md",
+     "title": "Latidos en la Fortaleza Turquesa"
+    },
+    {
+     "file": "12.md",
+     "title": "La Misión del Agradecimiento"
+    },
+    {
+     "file": "13.md",
+     "title": "La Sombra en la Mina"
+    },
+    {
+     "file": "14.md",
+     "title": "La amenaza latente"
+    },
+    {
+     "file": "15.md",
+     "title": "El Disenso"
+    },
+    {
+     "file": "16.md",
+     "title": "Bajo la luz de la luna"
+    },
+    {
+     "file": "17.md",
+     "title": "Los Parlamentarios"
+    },
+    {
+     "file": "18.md",
+     "title": "Preparativos y Latidos"
+    },
+    {
+     "file": "19.md",
+     "title": "Sin Vuelta Atrás"
+    },
+    {
+     "file": "20.md",
+     "title": "El Precio de la Victoria"
+    },
+    {
+     "file": "21.md",
+     "title": "La Derrota y la Verdad"
+    },
+    {
+     "file": "22.md",
+     "title": "El Nombre en la Oscuridad"
+    },
+    {
+     "file": "23.md",
+     "title": "La Paz y la Sombra"
+    },
+    {
+     "file": "24.md",
+     "title": "La Despedida Inesperada"
+    },
+    {
+     "file": "25.md",
+     "title": "El Eco de la Utopía"
+    },
+    {
+     "file": "26.md",
+     "title": "El Encuentro en la Montaña"
+    },
+    {
+     "file": "27.md",
+     "title": "La Utopía en Marcha"
+    },
+    {
+     "file": "28.md",
+     "title": "La Tormenta que se Avecina"
+    },
+    {
+     "file": "29.md",
+     "title": "La Llamada de la Resistencia"
+    },
+    {
+     "file": "30.md",
+     "title": "La Canción de los Libres"
+    },
+    {
+     "file": "31.md",
+     "title": "La Sangre en la Arena"
+    },
+    {
+     "file": "32.md",
+     "title": "El Precio de la Victoria"
+    },
+    {
+     "file": "33.md",
+     "title": "El Umbral del Juicio Final"
+    },
+    {
+     "file": "34.md",
+     "title": "El Precio de la Victoria"
+    },
+    {
+     "file": "35.md",
+     "title": "Bajo un Cielo Turquesa"
+    },
+    {
+     "file": "36.md",
+     "title": "La Sombra del Triunfo",
+     "label": "Epílogo"
+    }
+   ]
+  },
+  {
    "slug": "divlji-chas",
    "lang": "sr",
    "title": "Дивљи час",
@@ -2743,7 +2905,8 @@
    "cover": "novels/la-antausento/cover.jpg",
    "translations": {
     "ru": "predchuvstvie",
-    "it": "presentimento"
+    "it": "presentimento",
+    "es": "la-corazonada"
    }
   }
  ]
