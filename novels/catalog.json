@@ -1075,6 +1075,67 @@
    "cover": "novels/predchuvstvie/cover.jpg"
   },
   {
+   "slug": "tajnyj-gorod",
+   "lang": "ru",
+   "title": "Тайный город",
+   "author": "Роберт Фадер",
+   "genre": "Приключения · Фэнтези",
+   "description": "Мартин — преподаватель испанского, писатель, музыкант и художник — знакомится в парке с Мариной, светловолосой девушкой с голубыми глазами. Вскоре она признаётся: она родом из города, скрытого под землёй.\nКогда жадные захватчики находят вход в Тайный город, Мартину и его жителям предстоит решить, как защитить свой дом.\nВ конце книги — грамматика испанского языка, ключевые слова романа и описание главных персонажей для тех, кто изучает испанский.",
+   "translations": {
+    "es": "la-ciudad-secreta"
+   },
+   "chapters": [
+    {
+     "file": "01.md",
+     "title": "Они знакомятся"
+    },
+    {
+     "file": "02.md",
+     "title": "Марина признается в правде"
+    },
+    {
+     "file": "03.md",
+     "title": "Визит в Тайный город"
+    },
+    {
+     "file": "04.md",
+     "title": "Угроза проникла"
+    },
+    {
+     "file": "05.md",
+     "title": "Совет города"
+    },
+    {
+     "file": "06.md",
+     "title": "Решение города"
+    },
+    {
+     "file": "07.md",
+     "title": "Ловушка Тайного города"
+    },
+    {
+     "file": "08.md",
+     "title": "Решение всех",
+     "label": "Заключительная глава"
+    },
+    {
+     "file": "09.md",
+     "title": "Грамматика испанского языка",
+     "label": "Приложение"
+    },
+    {
+     "file": "10.md",
+     "title": "Ключевые слова романа",
+     "label": "Приложение"
+    },
+    {
+     "file": "11.md",
+     "title": "Главные персонажи",
+     "label": "Приложение"
+    }
+   ]
+  },
+  {
    "slug": "la-citta-triste",
    "lang": "it",
    "title": "La città triste",
@@ -2443,6 +2504,52 @@
     }
    ],
    "cover": "novels/el-tren-fantasma/cover.jpg"
+  },
+  {
+   "slug": "la-ciudad-secreta",
+   "lang": "es",
+   "title": "La ciudad secreta",
+   "author": "Luis Fader",
+   "genre": "Aventura · Fantasía",
+   "description": "Martín, profesor de español, escritor, músico y dibujante, conoce en el parque a Marina, una mujer rubia de ojos azules que lee un libro sobre ciudades antiguas. Pronto ella le confiesa la verdad: viene de una ciudad oculta bajo la tierra.\nCuando unos invasores codiciosos descubren la entrada, Martín y los habitantes de la Ciudad Secreta deberán decidir cómo proteger su hogar.\nUna novela corta en español sencillo, con ejercicios de gramática, léxico y comprensión al final de cada capítulo.",
+   "translations": {
+    "ru": "tajnyj-gorod"
+   },
+   "chapters": [
+    {
+     "file": "01.md",
+     "title": "Se conocen"
+    },
+    {
+     "file": "02.md",
+     "title": "Marina confiesa la verdad"
+    },
+    {
+     "file": "03.md",
+     "title": "La visita a Ciudad Secreta"
+    },
+    {
+     "file": "04.md",
+     "title": "La Amenaza Infiltrada"
+    },
+    {
+     "file": "05.md",
+     "title": "El Consejo de la Ciudad"
+    },
+    {
+     "file": "06.md",
+     "title": "La Decisión de la Ciudad"
+    },
+    {
+     "file": "07.md",
+     "title": "La Trampa de la Ciudad Secreta"
+    },
+    {
+     "file": "08.md",
+     "title": "La Decisión de Todos",
+     "label": "Capítulo final"
+    }
+   ]
   },
   {
    "slug": "divlji-chas",
