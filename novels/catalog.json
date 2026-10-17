@@ -1561,6 +1561,73 @@
    "cover": "novels/maschera-di-venezia/cover.jpg"
   },
   {
+   "slug": "ladro-di-cuori",
+   "lang": "it",
+   "title": "Ladro di cuori",
+   "author": "Roberto Fader",
+   "genre": "Romanzo · Avventura",
+   "year": 2026,
+   "cover": "novels/ladro-di-cuori/cover.jpg",
+   "description": "Alessio vive a Firenze, ama l’arte e cerca sempre una nuova avventura. Un giorno legge un articolo su Laura Bellini, una ricca collezionista, e gli viene un’idea pericolosa: entrare nella sua villa sulle colline e rubare un piccolo quadro.\nIl piano sembra semplice. Ma quella notte sarà proprio Laura a decidere come continua la sua avventura.\nEdizione illustrata per chi studia l’italiano: ogni capitolo ha un lessico italiano-russo e otto attività; alla fine trovi la traduzione russa completa e le soluzioni.",
+   "chapters": [
+    {
+     "file": "01.md",
+     "title": "Come usare questo libro",
+     "label": "Introduzione"
+    },
+    {
+     "file": "02.md",
+     "title": "Il piano di Alessio"
+    },
+    {
+     "file": "03.md",
+     "title": "Il piano si complica"
+    },
+    {
+     "file": "04.md",
+     "title": "Una sfida difficile"
+    },
+    {
+     "file": "05.md",
+     "title": "La missione di Alessio"
+    },
+    {
+     "file": "06.md",
+     "title": "La fuga inaspettata"
+    },
+    {
+     "file": "07.md",
+     "title": "Il falsario di opere d'arte"
+    },
+    {
+     "file": "08.md",
+     "title": "La scoperta"
+    },
+    {
+     "file": "09.md",
+     "title": "In questura"
+    },
+    {
+     "file": "10.md",
+     "title": "Il ritorno da Luca"
+    },
+    {
+     "file": "11.md",
+     "title": "La fuga e il nuovo inizio"
+    },
+    {
+     "file": "12.md",
+     "title": "Перевод на русский",
+     "label": "Traduzione"
+    },
+    {
+     "file": "13.md",
+     "title": "Soluzioni",
+     "label": "Appendice"
+    }
+   ]
+  },
+  {
    "slug": "ladro-di-cuori-2",
    "lang": "it",
    "title": "Ladro di cuori 2",
