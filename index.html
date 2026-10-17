@@ -113,6 +113,8 @@ article.chapter th{font-family:var(--sans);font-size:.8em;text-transform:upperca
 article.chapter hr::after{content:"⁂";color:var(--muted)}
 article.chapter blockquote{margin:1.2em 0;padding-left:1em;border-left:2px solid var(--line);color:var(--muted);font-style:italic}
 .pager{max-width:680px;margin:0 auto 80px;padding:0 20px;display:flex;justify-content:space-between;gap:12px}
+.comments{max-width:680px;margin:-32px auto 80px;padding:0 20px}
+.comments h2{font-family:var(--display);font-weight:500;font-size:28px;margin:0 0 16px;padding-top:28px;border-top:1px solid var(--line)}
 .pager a{flex:1;border:1px solid var(--line);border-radius:10px;padding:14px 16px;text-decoration:none;font-family:var(--sans);font-size:13px;color:var(--muted)}
 .pager a b{display:block;color:var(--ink);font-family:var(--serif);font-size:17px;font-weight:400;margin-top:2px}
 .pager a.next{text-align:right}
@@ -192,10 +194,38 @@ function renderText(md){
   }).join("\n");
 }
 
+/* Comments (Giscus, stored in GitHub Discussions of the repository) */
+const GISCUS = { repo:"luisfader/litmir", repoId:"R_kgDOVM8Utg", category:"Announcements", categoryId:"" };
+const COMMENTS_T = {ru:"Комментарии", es:"Comentarios", it:"Commenti", en:"Comments", pt:"Comentários", cs:"Komentáře", sr:"Коментари"};
+const GISCUS_LANG = {ru:"ru", es:"es", it:"it", en:"en", pt:"pt", cs:"cs", sr:"ru"};
+function giscusTheme(){
+  const th = store.get("theme", null);
+  if (th === "dark") return "dark_dimmed";
+  if (th === "light" || th === "sepia") return "light";
+  return matchMedia("(prefers-color-scheme: dark)").matches ? "dark_dimmed" : "light";
+}
+function mountComments(n, c){
+  const box = document.getElementById("comments");
+  if (!box || !GISCUS.categoryId) { if (box) box.remove(); return; }
+  box.innerHTML = `<h2>${esc(COMMENTS_T[n.lang] || COMMENTS_T.en)}</h2>`;
+  const s = document.createElement("script");
+  s.src = "https://giscus.app/client.js"; s.async = true; s.crossOrigin = "anonymous";
+  const a = { repo:GISCUS.repo, "repo-id":GISCUS.repoId, category:GISCUS.category, "category-id":GISCUS.categoryId,
+    mapping:"specific", term:n.slug + "/" + c.file.replace(/\.md$/,""), strict:"1", "reactions-enabled":"1",
+    "emit-metadata":"0", "input-position":"top", theme:giscusTheme(), lang:GISCUS_LANG[n.lang] || "en", loading:"lazy" };
+  for (const k in a) s.setAttribute("data-" + k, a[k]);
+  box.appendChild(s);
+}
+function syncGiscusTheme(){
+  const f = document.querySelector("iframe.giscus-frame");
+  if (f) f.contentWindow.postMessage({giscus:{setConfig:{theme:giscusTheme()}}}, "https://giscus.app");
+}
+
 function applyTheme(){
   const th = store.get("theme", null);
   if (th) document.documentElement.dataset.theme = th; else delete document.documentElement.dataset.theme;
   document.documentElement.style.setProperty("--read-size", store.get("size", 20) + "px");
+  syncGiscusTheme();
 }
 
 function setLang(l){ lang = l; store.set("lang", l); renderChrome(); }
@@ -314,8 +344,10 @@ async function reader(n, idx){
   <nav class="pager">
     ${i>1 ? `<a href="#/${n.slug}/${i-1}">← ${esc(t("prev"))}<b>${esc(titleOf(i-1))}</b></a>` : `<span style="flex:1"></span>`}
     ${i<chs.length ? `<a class="next" href="#/${n.slug}/${i+1}">${esc(t("next"))} →<b>${esc(titleOf(i+1))}</b></a>` : `<a class="next" href="#/">${esc(t("back"))} →<b>${esc(t("hero"))}</b></a>`}
-  </nav>`;
+  </nav>
+  <section class="comments" id="comments"></section>`;
   window.scrollTo(0,0);
+  mountComments(n, c);
   store.set("last:"+n.slug, i);
   const doneKey = "done:"+n.slug;
   const size = d => { const s = Math.min(28, Math.max(15, store.get("size",20)+d)); store.set("size", s); applyTheme(); };
