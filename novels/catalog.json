@@ -1687,6 +1687,101 @@
    ]
   },
   {
+   "slug": "la-voix",
+   "lang": "fr",
+   "title": "La voix",
+   "author": "Robert Fader",
+   "genre": "Fantastique · Mystère",
+   "description": "Un groupe de dauphins disparaît mystérieusement du parc de Sinea. Cette nuit-là, Sasha, une employée de bureau fatiguée, rêve d’un dauphin argenté qui essaie de lui dire quelque chose.\nCe n’était qu’un rêve… du moins le croit-elle. Bientôt, une voix venue de la mer l’entraîne, avec son amie Oxana, dans une lutte secrète contre une force obscure qui menace toute la ville.",
+   "chapters": [
+    {
+     "file": "01.md",
+     "title": "Le Rêve du Dauphin"
+    },
+    {
+     "file": "02.md",
+     "title": "La Voix"
+    },
+    {
+     "file": "03.md",
+     "title": "Une Réunion Secrète"
+    },
+    {
+     "file": "04.md",
+     "title": "L'Énigme de la Nuit"
+    },
+    {
+     "file": "05.md",
+     "title": "L’Appel des Eaux"
+    },
+    {
+     "file": "06.md",
+     "title": "Les Ombres de la Nuit"
+    },
+    {
+     "file": "07.md",
+     "title": "Le Message du Dauphin"
+    },
+    {
+     "file": "08.md",
+     "title": "L’Alliance des Profondeurs"
+    },
+    {
+     "file": "09.md",
+     "title": "Le Rivage des Résistants"
+    },
+    {
+     "file": "10.md",
+     "title": "Le Plan des Profondeurs"
+    },
+    {
+     "file": "11.md",
+     "title": "L'Infiltration"
+    },
+    {
+     "file": "12.md",
+     "title": "Le Prix de la Lumière"
+    },
+    {
+     "file": "13.md",
+     "title": "L'Appel des Abysses"
+    },
+    {
+     "file": "14.md",
+     "title": "La Salle du Cœur Noir"
+    },
+    {
+     "file": "15.md",
+     "title": "Le Sacrifice d'Ael"
+    },
+    {
+     "file": "16.md",
+     "title": "Le Chant de la Libération"
+    },
+    {
+     "file": "17.md",
+     "title": "L'Effondrement des Ombres"
+    },
+    {
+     "file": "18.md",
+     "title": "L'Aube de Sinea"
+    },
+    {
+     "file": "19.md",
+     "title": "La Reconstruction et le Phare"
+    },
+    {
+     "file": "20.md",
+     "title": "Les Adieux et les Promesses"
+    },
+    {
+     "file": "21.md",
+     "title": "Une Paix Vigilante",
+     "label": "Épilogue"
+    }
+   ]
+  },
+  {
    "slug": "lluvia-de-meteoritos",
    "lang": "es",
    "title": "Lluvia de meteoritos",
