@@ -2977,6 +2977,80 @@
    "cover": "novels/la-chica-del-retrato/cover.jpg"
   },
   {
+   "slug": "el-impostor",
+   "lang": "es",
+   "title": "El impostor",
+   "author": "Luis Fader",
+   "genre": "Comedia romántica · Fantasía",
+   "description": "Una novela de amor, anillos y algo más.\nUn domingo en Sinea, Leonardo le pide matrimonio a Sofía… y ella dice que no, porque así lo manda su horóscopo. La misma caja de anillos pasa de mano en mano y de rechazo en rechazo, mientras la ciudad sufre una extraña epidemia de «noes».\nPara recuperar el amor, tres hombres desafortunados se apuntan al taller de Andrés Cortés, el famoso «experto en relaciones»… sin saber que detrás de todo se esconde algo mucho más grande.",
+   "chapters": [
+    {
+     "file": "01.md",
+     "title": "Dos anillos en el parque"
+    },
+    {
+     "file": "02.md",
+     "title": "La mala suerte de Juan Carlos"
+    },
+    {
+     "file": "03.md",
+     "title": "La misteriosa coincidencia"
+    },
+    {
+     "file": "04.md",
+     "title": "El taller del amor"
+    },
+    {
+     "file": "05.md",
+     "title": "La primera clase del maestro"
+    },
+    {
+     "file": "06.md",
+     "title": "Lo que esconde el maestro"
+    },
+    {
+     "file": "07.md",
+     "title": "Prohibido enamorarse"
+    },
+    {
+     "file": "08.md",
+     "title": "La fábrica de desamor"
+    },
+    {
+     "file": "09.md",
+     "title": "La reunión secreta"
+    },
+    {
+     "file": "10.md",
+     "title": "Una ciudad gris"
+    },
+    {
+     "file": "11.md",
+     "title": "El seductor y la tirana"
+    },
+    {
+     "file": "12.md",
+     "title": "El plan"
+    },
+    {
+     "file": "13.md",
+     "title": "El corazón de la máquina"
+    },
+    {
+     "file": "14.md",
+     "title": "La caída de Doña Destino"
+    },
+    {
+     "file": "15.md",
+     "title": "La cuenta final"
+    },
+    {
+     "file": "16.md",
+     "title": "Tres bodas y una moto"
+    }
+   ]
+  },
+  {
    "slug": "divlji-chas",
    "lang": "sr",
    "title": "Дивљи час",
