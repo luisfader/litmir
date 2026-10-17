@@ -212,7 +212,7 @@ document.getElementById("langs").addEventListener("click", e => {
 });
 
 const PALETTE = ["#7a2e2e","#2f4a5c","#4b5b35","#5a3b5f","#8a5a24","#2e4f4a","#3d3a6b","#6b3a2a"];
-function author(n){ return UI[n.lang] ? UI[n.lang].author : t("author"); }
+function author(n){ return n.author || (UI[n.lang] ? UI[n.lang].author : t("author")); }
 function coverHTML(n){
   const badge = n.adult ? `<span class="badge18">18+</span>` : "";
   if (n.cover) return `<div class="cover"><img src="${esc(n.cover)}" alt="${esc(n.title)}" loading="lazy">${badge}</div>`;

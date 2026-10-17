@@ -860,6 +860,136 @@
    ]
   },
   {
+   "slug": "la-nevicata-rosa",
+   "lang": "it",
+   "title": "La Nevicata Rosa",
+   "author": "Roberto Fader",
+   "cover": "novels/la-nevicata-rosa/cover.jpg",
+   "description": "Carlotta e Lorenzo si incontrano per la prima volta in un piccolo caffè di Firenze, dopo mesi di lettere digitali. Poi su Firenze comincia a cadere una neve rosa, e con lei arrivano un omicidio, segreti nascosti dietro i quadri e una congrega che vuole rubare i colori del mondo.",
+   "chapters": [
+    {
+     "file": "01.md",
+     "title": "Incontro a Firenze"
+    },
+    {
+     "file": "02.md",
+     "title": "La Nevicata Dorata"
+    },
+    {
+     "file": "03.md",
+     "title": "Dialogo dopo l’Omicidio"
+    },
+    {
+     "file": "04.md",
+     "title": "La Rivelazione"
+    },
+    {
+     "file": "05.md",
+     "title": "La Verità dietro il Pannello"
+    },
+    {
+     "file": "06.md",
+     "title": "Fuga nella Notte"
+    },
+    {
+     "file": "07.md",
+     "title": "Rifugio in Toscana"
+    },
+    {
+     "file": "08.md",
+     "title": "Il Piano e il Guizzo"
+    },
+    {
+     "file": "09.md",
+     "title": "Confessioni sotto la neve rosa"
+    },
+    {
+     "file": "10.md",
+     "title": "Operazione Botticelli"
+    },
+    {
+     "file": "11.md",
+     "title": "Dossier e Delizia Rosa"
+    },
+    {
+     "file": "12.md",
+     "title": "Il Controllo"
+    },
+    {
+     "file": "13.md",
+     "title": "La Sacca del Sindaco"
+    },
+    {
+     "file": "14.md",
+     "title": "Troppo Facile"
+    },
+    {
+     "file": "15.md",
+     "title": "L'Eredita del Furto"
+    },
+    {
+     "file": "16.md",
+     "title": "Il Vuoto e la Confessione"
+    },
+    {
+     "file": "17.md",
+     "title": "Il Risveglio del Vuoto"
+    },
+    {
+     "file": "18.md",
+     "title": "La Congrega dei Cromatisti"
+    },
+    {
+     "file": "19.md",
+     "title": "Il Teatro del Silenzio"
+    },
+    {
+     "file": "20.md",
+     "title": "Il Guerriero delle Idee"
+    },
+    {
+     "file": "21.md",
+     "title": "Il Furto della Sorgente"
+    },
+    {
+     "file": "22.md",
+     "title": "L'Incarnazione della Regina"
+    },
+    {
+     "file": "23.md",
+     "title": "L'Alba di una Regina"
+    },
+    {
+     "file": "24.md",
+     "title": "Il Nuovo Ordine"
+    },
+    {
+     "file": "25.md",
+     "title": "L'Ombra di Eredi dei Cromatisti"
+    },
+    {
+     "file": "26.md",
+     "title": "Il Matrimonio dei Due Regni"
+    },
+    {
+     "file": "27.md",
+     "title": "La Nascita dell'Erede"
+    },
+    {
+     "file": "28.md",
+     "title": "La Trappola degli Specchi"
+    },
+    {
+     "file": "29.md",
+     "title": "Il Patto dei Colori"
+    },
+    {
+     "file": "30.md",
+     "title": "L'Eterna Fioritura"
+    }
+   ]
+  },
+  {
    "slug": "do-outro-lado-do-mundo",
    "lang": "pt",
    "title": "Do outro lado do mundo",
@@ -978,6 +1108,76 @@
      "file": "15.md",
      "title": "Cvičení",
      "label": "Příloha"
+    }
+   ]
+  },
+  {
+   "slug": "a-man-from-the-future",
+   "lang": "en",
+   "title": "A Man from the Future",
+   "author": "Luis Fader",
+   "cover": "novels/a-man-from-the-future/cover.jpg",
+   "description": "Alex lives in Moscow in the year 3024, in a world without women, and dreams of finding love. A time machine takes him to Moscow in 2024, where even a cup of coffee is an adventure — and where he meets Olga. An easy reader in the Present Simple, with vocabulary, exercises, a Russian translation and answers.",
+   "chapters": [
+    {
+     "file": "01.md",
+     "title": "Как работать с книгой",
+     "label": "Для читателя"
+    },
+    {
+     "file": "02.md",
+     "title": "A Man from the Future"
+    },
+    {
+     "file": "03.md",
+     "title": "A New Beginning"
+    },
+    {
+     "file": "04.md",
+     "title": "Come with Me to the Future Baby"
+    },
+    {
+     "file": "05.md",
+     "title": "A Helping Hand"
+    },
+    {
+     "file": "06.md",
+     "title": "A Funny Mistake"
+    },
+    {
+     "file": "07.md",
+     "title": "A Wild Date"
+    },
+    {
+     "file": "08.md",
+     "title": "The Police Station"
+    },
+    {
+     "file": "09.md",
+     "title": "The Time Machine"
+    },
+    {
+     "file": "10.md",
+     "title": "Two Olgas in 2024"
+    },
+    {
+     "file": "11.md",
+     "title": "A Love Beyond Time"
+    },
+    {
+     "file": "12.md",
+     "title": "Русский перевод",
+     "label": "Приложение"
+    },
+    {
+     "file": "13.md",
+     "title": "Answer key",
+     "label": "Приложение"
+    },
+    {
+     "file": "14.md",
+     "title": "Порядок путешествия Ольги",
+     "label": "Приложение"
     }
    ]
   }
