@@ -168,7 +168,8 @@
      "title": "Говорит Змай!",
      "label": "Дополнение"
     }
-   ]
+   ],
+   "adult": true
   },
   {
    "slug": "dikij-chas-2",
@@ -418,7 +419,8 @@
      "title": "Глоссарий к роману «Дикий час»",
      "label": "Дополнение"
     }
-   ]
+   ],
+   "adult": true
   },
   {
    "slug": "pokhititel-serdec",
@@ -694,7 +696,8 @@
      "file": "19.md",
      "title": "В двух мирах"
     }
-   ]
+   ],
+   "adult": true
   },
   {
    "slug": "la-citta-triste",
