@@ -2714,6 +2714,60 @@
    ]
   },
   {
+   "slug": "anomalia",
+   "lang": "es",
+   "title": "Anomalía",
+   "author": "Luis Fader",
+   "genre": "Fantasía urbana · Humor · Aventura",
+   "description": "Una tarde de calor en Mendoza, Julieta se queda plantada por una cita de una app, mientras los altavoces anuncian una extraña «anomalía magnética» que nadie se toma en serio.\nEn un pequeño taller conoce a Mauro, un artesano que le regala un zorro de madera tallado por él. Desde ese momento, el tiempo y el espacio dejan de comportarse como deberían, y Julieta se ve arrastrada a una aventura disparatada por la Argentina, con portales, patrullas y un zorro que habla.",
+   "chapters": [
+    {
+     "file": "01.md",
+     "title": "La anomalía"
+    },
+    {
+     "file": "02.md",
+     "title": "Confusión en la plaza"
+    },
+    {
+     "file": "03.md",
+     "title": "El Misterio del Zorro"
+    },
+    {
+     "file": "04.md",
+     "title": "El Regreso"
+    },
+    {
+     "file": "05.md",
+     "title": "La loca"
+    },
+    {
+     "file": "06.md",
+     "title": "Cambio de Aire"
+    },
+    {
+     "file": "07.md",
+     "title": "El Zorro Habla"
+    },
+    {
+     "file": "08.md",
+     "title": "Patadas, Portales y un Mauro Desmayado"
+    },
+    {
+     "file": "09.md",
+     "title": "La Clase del Zorro"
+    },
+    {
+     "file": "10.md",
+     "title": "La Patrulla Jaguar y el Pingüino Vengativo"
+    },
+    {
+     "file": "11.md",
+     "title": "El Tío, el Yate y la Patrulla Zorro"
+    }
+   ]
+  },
+  {
    "slug": "divlji-chas",
    "lang": "sr",
    "title": "Дивљи час",
