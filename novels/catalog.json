@@ -960,7 +960,8 @@
    "translations": {
     "eo": "la-antausento",
     "it": "presentimento",
-    "es": "la-corazonada"
+    "es": "la-corazonada",
+    "isv": "predcutje"
    },
    "chapters": [
     {
@@ -1759,7 +1760,8 @@
    "translations": {
     "ru": "predchuvstvie",
     "eo": "la-antausento",
-    "es": "la-corazonada"
+    "es": "la-corazonada",
+    "isv": "predcutje"
    },
    "chapters": [
     {
@@ -2762,7 +2764,8 @@
    "translations": {
     "ru": "predchuvstvie",
     "it": "presentimento",
-    "eo": "la-antausento"
+    "eo": "la-antausento",
+    "isv": "predcutje"
    },
    "chapters": [
     {
@@ -3451,8 +3454,138 @@
    "translations": {
     "ru": "predchuvstvie",
     "it": "presentimento",
-    "es": "la-corazonada"
+    "es": "la-corazonada",
+    "isv": "predcutje"
    }
+  },
+  {
+   "slug": "predcutje",
+   "lang": "isv",
+   "title": "Prědčutje",
+   "author": "Robert Fader",
+   "genre": "Postapokalipsa · Prigoda · Ljubov",
+   "cover": "novels/predcutje/cover.jpg",
+   "description": "Jaderna zima okončila se. Robert jěde na starom motocyklu po mrtvom grodu i věruje, že někde ješče sut živi ljudi, gotovi postaviti novy svět.\nTako rodi se utopija — tvrdynja, kde prěživši hčut žiti bez straha i žadnosti. No divjaki pred vratami, zavěry v stěnah i zapletene čuvstva stavjat mečtu v opasnost.",
+   "translations": {
+    "ru": "predchuvstvie",
+    "it": "presentimento",
+    "eo": "la-antausento",
+    "es": "la-corazonada"
+   },
+   "chapters": [
+    {
+     "file": "01.md",
+     "title": "Iskry budućnosti"
+    },
+    {
+     "file": "02.md",
+     "title": "Pustynja i gorsko prěbyvališče"
+    },
+    {
+     "file": "03.md",
+     "title": "Ognj duše"
+    },
+    {
+     "file": "04.md",
+     "title": "Zvuk i viděnja"
+    },
+    {
+     "file": "05.md",
+     "title": "Oni idut"
+    },
+    {
+     "file": "06.md",
+     "title": "Věrnost i slěd"
+    },
+    {
+     "file": "07.md",
+     "title": "Stara moč i novy uznik"
+    },
+    {
+     "file": "08.md",
+     "title": "Ognjišče i utopija"
+    },
+    {
+     "file": "09.md",
+     "title": "Prvy kamenj"
+    },
+    {
+     "file": "10.md",
+     "title": "Tvrdynja světla"
+    },
+    {
+     "file": "11.md",
+     "title": "Neznajomi u vrat"
+    },
+    {
+     "file": "12.md",
+     "title": "Lekcija o divjakah"
+    },
+    {
+     "file": "13.md",
+     "title": "Razvědyvateljna misija"
+    },
+    {
+     "file": "14.md",
+     "title": "Těžke spominanja i legke nadeždy"
+    },
+    {
+     "file": "15.md",
+     "title": "Prěd licami divjakov"
+    },
+    {
+     "file": "16.md",
+     "title": "Běg s planom"
+    },
+    {
+     "file": "17.md",
+     "title": "Nočna krov i odkrytje"
+    },
+    {
+     "file": "18.md",
+     "title": "Světlo v noči i krov na rukah"
+    },
+    {
+     "file": "19.md",
+     "title": "Pěsok i krov"
+    },
+    {
+     "file": "20.md",
+     "title": "Nedovoljstvo i zavěry"
+    },
+    {
+     "file": "21.md",
+     "title": "Prikaz"
+    },
+    {
+     "file": "22.md",
+     "title": "Teple objatja v srdcu pustynje"
+    },
+    {
+     "file": "23.md",
+     "title": "Plěnniki svěsti"
+    },
+    {
+     "file": "24.md",
+     "title": "Izbor bez puti"
+    },
+    {
+     "file": "25.md",
+     "title": "Sovět v těni"
+    },
+    {
+     "file": "26.md",
+     "title": "Spust v peklo"
+    },
+    {
+     "file": "27.md",
+     "title": "Liceměrje vlasti"
+    },
+    {
+     "file": "28.md",
+     "title": "Boj, izměna i sud"
+    }
+   ]
   }
  ]
 }
