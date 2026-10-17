@@ -2818,6 +2818,81 @@
    ]
   },
   {
+   "slug": "la-chica-del-retrato",
+   "lang": "es",
+   "title": "La chica del retrato",
+   "author": "Luis Fader",
+   "genre": "Misterio · Suspenso",
+   "description": "Tatiana tiene veinticinco años, trabaja en una tienda de deportes en Sinea y comparte sus fotos en las redes. Una mañana, la policía llama a su puerta: alguien ha atacado la página de un banco y ha dejado en la pantalla un retrato de ella.\nLos ataques se multiplican, la ciudad se queda a oscuras y una voz misteriosa dice estar enamorada de «la chica del retrato». Con la ayuda de la agente Laura Rivera, Tatiana tendrá que descubrir quién se esconde detrás… aunque la verdad esté más cerca de lo que imagina.",
+   "chapters": [
+    {
+     "file": "01.md",
+     "title": "Una visita inesperada"
+    },
+    {
+     "file": "02.md",
+     "title": "La trampa digital"
+    },
+    {
+     "file": "03.md",
+     "title": "Las lágrimas del pintor"
+    },
+    {
+     "file": "04.md",
+     "title": "Entre amigos"
+    },
+    {
+     "file": "05.md",
+     "title": "La ciudad a oscuras"
+    },
+    {
+     "file": "06.md",
+     "title": "Un lugar seguro"
+    },
+    {
+     "file": "07.md",
+     "title": "Un mensaje a las seis"
+    },
+    {
+     "file": "08.md",
+     "title": "La sonrisa"
+    },
+    {
+     "file": "09.md",
+     "title": "El código del espejo"
+    },
+    {
+     "file": "10.md",
+     "title": "La verdad de Iván"
+    },
+    {
+     "file": "11.md",
+     "title": "Un recuerdo de la infancia"
+    },
+    {
+     "file": "12.md",
+     "title": "Una contraseña antigua"
+    },
+    {
+     "file": "13.md",
+     "title": "La amiga perfecta"
+    },
+    {
+     "file": "14.md",
+     "title": "Tres noticias diferentes"
+    },
+    {
+     "file": "15.md",
+     "title": "La verdad"
+    },
+    {
+     "file": "16.md",
+     "title": "Un mes después",
+     "label": "Epílogo"
+    }
+   ]
+  },
+  {
    "slug": "divlji-chas",
    "lang": "sr",
    "title": "Дивљи час",
