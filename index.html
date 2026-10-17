@@ -104,6 +104,12 @@ article.chapter h1{font-family:var(--display);font-weight:500;text-align:center;
 article.chapter p{margin:0 0 1.1em;text-align:justify;hyphens:auto}
 article.chapter hr{border:0;text-align:center;margin:2em 0}
 article.chapter h2{font-family:var(--display);font-weight:500;text-align:center;font-size:1.4em;margin:1.6em 0 .8em}
+article.chapter h2 ~ p{text-align:left;font-size:.92em}
+article.chapter .blank{display:inline-block;min-width:4.5em;border-bottom:1px solid var(--muted);vertical-align:-.15em}
+.tbl{overflow-x:auto;margin:1em 0}
+article.chapter table{border-collapse:collapse;font-size:.85em;width:100%}
+article.chapter th,article.chapter td{border-bottom:1px solid var(--line);padding:6px 10px;text-align:left}
+article.chapter th{font-family:var(--sans);font-size:.8em;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
 article.chapter hr::after{content:"⁂";color:var(--muted)}
 article.chapter blockquote{margin:1.2em 0;padding-left:1em;border-left:2px solid var(--line);color:var(--muted);font-style:italic}
 .pager{max-width:680px;margin:0 auto 80px;padding:0 20px;display:flex;justify-content:space-between;gap:12px}
@@ -157,11 +163,13 @@ const t = k => UI[lang][k];
 const pick = obj => obj ? (obj[lang] || obj.ru || obj[Object.keys(obj)[0]] || "") : "";
 const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 
-function inline(s){ return esc(s).replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>").replace(/(^|[^*])\*(?!\s)(.+?)\*/g,"$1<em>$2</em>").replace(/(^|\W)_(?!\s)(.+?)_(?=\W|$)/g,"$1<em>$2</em>"); }
+function inline(s){ return esc(s).replace(/_{2,}/g,"\u0001").replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>").replace(/(^|[^*])\*(?!\s)(.+?)\*/g,"$1<em>$2</em>").replace(/(^|\W)_(?!\s)(.+?)_(?=\W|$)/g,"$1<em>$2</em>").replace(/\u0001/g,'<span class="blank"></span>'); }
 function renderText(md){
   return md.replace(/\r/g,"").split(/\n\s*\n/).map(b => b.trim()).filter(Boolean).map(b => {
     if (/^(\*\s*){3,}$|^(-\s*){3,}$|^⁂$/.test(b)) return "<hr>";
     if (/^#{2,6}\s/.test(b)) return "<h2>" + inline(b.replace(/^#+\s*/,"")) + "</h2>";
+    if (/^\|/.test(b)) { const rows = b.split("\n").filter(r => !/^\|[\s|:-]+\|?$/.test(r)).map(r => r.replace(/^\||\|$/g,"").split("|").map(c => inline(c.trim())));
+      return '<div class="tbl"><table>' + rows.map((r,i) => "<tr>" + r.map(c => i ? "<td>"+c+"</td>" : "<th>"+c+"</th>").join("") + "</tr>").join("") + "</table></div>"; }
     if (/^>/.test(b)) return "<blockquote><p>" + inline(b.replace(/^>\s?/gm,"")).replace(/\n/g,"<br>") + "</p></blockquote>";
     return "<p>" + inline(b).replace(/\n/g,"<br>") + "</p>";
   }).join("\n");
@@ -263,7 +271,7 @@ async function reader(n, idx){
       <button class="sw" data-th="dark" style="background:#1d1914" aria-label="dark"></button>
     </div></div><div class="progress" id="prog"></div></div>
   <article class="chapter">
-    <div class="kicker">${esc(t("chapter"))} ${i}</div>
+    <div class="kicker">${esc(c.label || (t("chapter") + " " + i))}</div>
     <h1>${esc(title)}</h1>
     ${renderText(md)}
   </article>

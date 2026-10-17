@@ -1,20 +1,73 @@
 {
   "novels": [
     {
-      "slug": "primer",
-      "year": 2026,
-      "title": { "ru": "Пример романа", "es": "Novela de ejemplo", "it": "Romanzo di esempio", "en": "Sample Novel" },
+      "slug": "la-citta-triste",
+      "year": 2025,
+      "title": {
+        "ru": "Печальный город",
+        "es": "La ciudad triste",
+        "it": "La città triste",
+        "en": "The Sad City"
+      },
       "description": {
-        "ru": "Временная запись, чтобы показать, как будет выглядеть сайт. Её заменят настоящие романы.",
-        "es": "Entrada provisional para mostrar cómo se verá el sitio. La sustituirán las novelas reales.",
-        "it": "Voce provvisoria per mostrare l'aspetto del sito. Sarà sostituita dai romanzi veri.",
-        "en": "A placeholder entry to show how the site will look. It will be replaced by the real novels."
+        "ru": "В городе Синеа новый президент запрещает улыбаться. Франко и Кьяра решают вернуть людям радость. Роман на итальянском языке для уровня A1, с упражнениями после глав.",
+        "es": "En la ciudad de Sinea, el nuevo presidente prohíbe sonreír. Franco y Chiara deciden devolverle la alegría a la gente. Novela en italiano de nivel A1, con ejercicios después de los capítulos.",
+        "it": "Nella città di Sinea il nuovo presidente vieta i sorrisi. Franco e Chiara decidono di restituire la felicità alla gente. Romanzo per studenti di livello A1, con esercizi dopo i capitoli.",
+        "en": "In the city of Sinea, the new president bans smiling. Franco and Chiara set out to give people their joy back. An A1-level Italian novel with exercises after the chapters."
       },
       "languages": {
-        "ru": [ { "file": "01.md", "title": "Начало" }, { "file": "02.md", "title": "Дорога" } ],
-        "es": [ { "file": "01.md", "title": "El comienzo" }, { "file": "02.md", "title": "El camino" } ],
-        "it": [ { "file": "01.md", "title": "L'inizio" } ],
-        "en": [ { "file": "01.md", "title": "The Beginning" }, { "file": "02.md", "title": "The Road" } ]
+        "it": [
+          {
+            "file": "01.md",
+            "title": "Il Ministero dei Sentimenti"
+          },
+          {
+            "file": "02.md",
+            "title": "L'incontro con Chiara"
+          },
+          {
+            "file": "03.md",
+            "title": "L'invito segreto"
+          },
+          {
+            "file": "04.md",
+            "title": "La riunione segreta e il caffè"
+          },
+          {
+            "file": "05.md",
+            "title": "Pericolo in piazza"
+          },
+          {
+            "file": "06.md",
+            "title": "Il nascondiglio sotterraneo"
+          },
+          {
+            "file": "07.md",
+            "title": "Il progetto «Risatomat»"
+          },
+          {
+            "file": "08.md",
+            "title": "La risata nella città triste"
+          },
+          {
+            "file": "09.md",
+            "title": "Il nuovo inizio"
+          },
+          {
+            "file": "10.md",
+            "title": "La sorpresa sul palco"
+          },
+          {
+            "file": "11.md",
+            "title": "Test finale",
+            "label": "Appendice"
+          },
+          {
+            "file": "12.md",
+            "title": "Guida dei personaggi",
+            "label": "Appendice"
+          }
+        ]
       }
     }
   ]
