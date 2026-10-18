@@ -93,7 +93,8 @@
     "Библиотекар",
     "Артан на коњу"
    ],
-   "answer": 0
+   "answer": 0,
+   "img": "test/trotinet.jpg"
   },
   {
    "type": "build",
