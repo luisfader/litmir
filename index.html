@@ -217,6 +217,8 @@ article.chapter h3{font-family:var(--sans);font-size:.72em;letter-spacing:.12em;
 @keyframes lsShake{20%,60%{transform:translateX(-4px)}40%,80%{transform:translateX(4px)}}
 .ls-snd{border:0;background:none;font-size:18px;cursor:pointer;padding:4px;opacity:.75}
 .ls-stage{padding-top:18px}
+.ls-stage .ls-img{margin-bottom:14px}
+.ls-stage .ls-img img{max-height:180px}
 .ls-stage.in{animation:lsIn .35s ease}
 @keyframes lsIn{from{opacity:0;transform:translateX(24px)}to{opacity:1;transform:none}}
 .ls-img{margin:0 0 20px;text-align:center}
@@ -224,7 +226,10 @@ article.chapter h3{font-family:var(--sans);font-size:.72em;letter-spacing:.12em;
 .ls-target{color:var(--accent);white-space:nowrap}
 .ls-pics{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px}
 .ls-opt.pic{flex-direction:column;align-items:stretch;gap:10px;padding:10px;text-align:center}
-.ls-opt.pic img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:10px;background:var(--line)}
+.ls-opt.pic img{width:100%;aspect-ratio:1;object-fit:contain;border-radius:10px;background:#fff}
+.ls-hero{position:relative;max-width:420px;margin:0 auto 18px}
+.ls-hero img{width:100%;max-height:340px;object-fit:cover;border-radius:22px;border:2px solid var(--line);box-shadow:var(--shadow);display:block}
+.ls-hero .ls-mascot{position:absolute;left:-26px;bottom:-30px;width:96px;height:112px;margin:0}
 .ls-opt.pic span{display:flex;align-items:center;justify-content:center;gap:8px;font-size:17px}
 .ls-q{font-size:clamp(22px,4.5vw,28px);font-weight:800;margin:0 0 22px;color:var(--ink)}
 .ls-word{display:flex;align-items:center;justify-content:center;gap:12px;font-family:var(--display);font-size:clamp(38px,8vw,54px);font-weight:600;margin:6px 0 26px;color:var(--ink)}
@@ -730,7 +735,7 @@ async function lesson(n, i, c){
   function intro(){
     const best = store.get(key, null);
     app.innerHTML = `<section class="ls ls-intro">
-      <div class="ls-mascot bounce">${M()}</div>
+      ${data.hero ? `<div class="ls-hero"><img src="novels/${n.slug}/${esc(data.hero)}" alt=""><div class="ls-mascot bounce">${M()}</div></div>` : `<div class="ls-mascot bounce">${M()}</div>`}
       <div class="ls-kicker">${esc(c.label || "Test")}</div>
       <h1>${esc(data.title || c.title)}</h1>
       <p class="ls-sub">${esc(data.subtitle || "")}</p>

@@ -29,7 +29,8 @@
     "puente",
     "biblioteca"
    ],
-   "answer": 0
+   "answer": 0,
+   "img": "test/kalemegdan.jpg"
   },
   {
    "type": "match",
@@ -55,6 +56,30 @@
      "тротинет",
      "patinete"
     ]
+   ]
+  },
+  {
+   "type": "picture",
+   "prompt": "¿Cuál es",
+   "word": "un regalo",
+   "answer": 0,
+   "options": [
+    {
+     "img": "test/poklon.jpg",
+     "word": "поклон"
+    },
+    {
+     "img": "test/cvece.jpg",
+     "word": "цвеће"
+    },
+    {
+     "img": "test/pismo.jpg",
+     "word": "писмо"
+    },
+    {
+     "img": "test/knjige.jpg",
+     "word": "књиге"
+    }
    ]
   },
   {
@@ -85,6 +110,20 @@
     "тајну",
     "је"
    ]
+  },
+  {
+   "type": "story",
+   "prompt": "Mira la ilustración",
+   "img": "test/zalazak.jpg",
+   "question": "Где седе Луис и Наташа када сунце залази?",
+   "es": "¿Dónde se sientan Luis y Nataša cuando se pone el sol?",
+   "options": [
+    "На Калемегдану, поред реке",
+    "У Народној библиотеци",
+    "У кули Небојша",
+    "На Авали"
+   ],
+   "answer": 0
   },
   {
    "type": "fill",
@@ -164,6 +203,30 @@
    "answer": 0
   },
   {
+   "type": "picture",
+   "prompt": "¿Cuál es",
+   "word": "el dragón",
+   "answer": 0,
+   "options": [
+    {
+     "img": "test/zmaj.jpg",
+     "word": "змај"
+    },
+    {
+     "img": "test/top.jpg",
+     "word": "тврђава"
+    },
+    {
+     "img": "test/spomenik.jpg",
+     "word": "споменик"
+    },
+    {
+     "img": "test/reka.jpg",
+     "word": "река"
+    }
+   ]
+  },
+  {
    "type": "write",
    "prompt": "Escribe en serbio",
    "es": "dragón",
@@ -224,6 +287,20 @@
     "је",
     "мој"
    ]
+  },
+  {
+   "type": "story",
+   "prompt": "Mira la ilustración",
+   "img": "test/kafic.jpg",
+   "question": "Шта пију Луис и Наташа?",
+   "es": "¿Qué beben Luis y Nataša?",
+   "options": [
+    "Кафу",
+    "Чај",
+    "Вино",
+    "Сок"
+   ],
+   "answer": 0
   },
   {
    "type": "story",
@@ -324,5 +401,6 @@
    ],
    "hint": "Puedes escribir en cirílico o en latino."
   }
- ]
+ ],
+ "hero": "test/zmaj-beograd.jpg"
 }
