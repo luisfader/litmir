@@ -1344,6 +1344,16 @@
      "title": "Интервью с Луисом Фадером",
      "label": "Интервью"
     }
+   ],
+   "soundtrack": [
+    {
+     "file": "music/01.mp3",
+     "title": "Северная любовь"
+    },
+    {
+     "file": "music/02.mp3",
+     "title": "La mujer que espera"
+    }
    ]
   },
   {

@@ -138,12 +138,27 @@ article.chapter h3{font-family:var(--sans);font-size:.72em;letter-spacing:.12em;
   .novel{grid-template-columns:1fr;gap:28px;padding-top:28px}
   .novel .cover{max-width:200px}
   .brand small{display:none}
+  .brand{flex:none}
+  .langs{flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;min-width:0;scrollbar-width:none;-webkit-mask-image:linear-gradient(90deg,#000 85%,transparent)}
+  .langs::-webkit-scrollbar{display:none}
   .grid{grid-template-columns:repeat(2,1fr);gap:18px}
   .card h3{font-size:20px}
   .cover.gen .ct{font-size:22px}
   article.chapter{padding-top:36px}
   article.chapter p{text-align:left}
 }
+/* Soundtrack */
+.music{position:fixed;right:16px;bottom:16px;z-index:20;display:none;align-items:center;gap:6px;background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:5px 6px 5px 5px;box-shadow:0 6px 20px rgba(0,0,0,.12);font-family:var(--sans);font-size:13px;max-width:calc(100vw - 32px)}
+.music.on{display:flex}
+.music.on ~ footer{padding-bottom:76px}
+.music button{border:0;background:transparent;color:var(--ink);cursor:pointer;width:32px;height:32px;border-radius:50%;font-size:14px;line-height:1;flex:none}
+.music button.play{background:var(--accent);color:#fff}
+.music button:hover{background:var(--accent-soft)}
+.music button.play:hover{background:var(--accent)}
+.music .mt{color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:180px;padding:0 2px}
+.music .mt b{color:var(--ink);font-weight:600}
+.music input{width:70px;accent-color:var(--accent)}
+@media (max-width:520px){.music input{display:none}.music .mt{max-width:140px}}
 </style>
 </head>
 <body>
@@ -154,6 +169,12 @@ article.chapter h3{font-family:var(--sans);font-size:.72em;letter-spacing:.12em;
   </div>
 </header>
 <main id="app"><div class="loading">…</div></main>
+<div class="music" id="music" role="region" aria-label="Soundtrack">
+  <button class="play" id="mPlay" aria-label="Play">▶</button>
+  <span class="mt" id="mTitle"></span>
+  <button id="mNext" aria-label="Next track">⏭</button>
+  <input type="range" id="mVol" min="0" max="1" step="0.05" aria-label="Volume">
+</div>
 <footer><div class="wrap" id="foot"></div></footer>
 
 <script>
@@ -371,12 +392,37 @@ async function reader(n, idx){
   };
 }
 
+/* Soundtrack: optional, never autoplays; keeps playing across chapters of the same novel */
+const music = { el:new Audio(), novel:null, i:0 };
+music.el.preload = "none";
+music.el.volume = store.get("vol", 0.5);
+function mTrack(){ return music.novel.soundtrack[music.i]; }
+function mLoad(){ const tk = mTrack(); music.el.src = `novels/${music.novel.slug}/${tk.file}`;
+  document.getElementById("mTitle").innerHTML = `♪ <b>${esc(tk.title)}</b>`; }
+function mSync(){ const b = document.getElementById("mPlay"); const on = !music.el.paused;
+  b.textContent = on ? "❚❚" : "▶"; b.setAttribute("aria-label", on ? "Pause" : "Play"); }
+function setSoundtrack(n){
+  const box = document.getElementById("music");
+  const has = n && n.soundtrack && n.soundtrack.length;
+  if (music.novel && (!has || music.novel.slug !== n.slug)) { music.el.pause(); music.el.removeAttribute("src"); music.novel = null; }
+  if (!has) { box.classList.remove("on"); return; }
+  if (!music.novel) { music.novel = n; music.i = 0; mLoad(); }
+  box.classList.add("on"); mSync();
+}
+document.getElementById("mPlay").onclick = () => { music.el.paused ? music.el.play().catch(()=>{}) : music.el.pause(); };
+document.getElementById("mNext").onclick = () => { const was = !music.el.paused; music.i = (music.i+1) % music.novel.soundtrack.length; mLoad(); if (was) music.el.play().catch(()=>{}); };
+music.el.onended = () => { music.i = (music.i+1) % music.novel.soundtrack.length; mLoad(); music.el.play().catch(()=>{}); };
+music.el.onplay = music.el.onpause = mSync;
+const vol = document.getElementById("mVol"); vol.value = music.el.volume;
+vol.oninput = () => { music.el.volume = +vol.value; store.set("vol", +vol.value); };
+
 function route(){
   window.onscroll = null;
   if (!catalog) return;
   const parts = location.hash.replace(/^#\/?/, "").split("/").filter(Boolean);
+  const n = parts.length ? catalog.novels.find(x => x.slug === decodeURIComponent(parts[0])) : null;
+  setSoundtrack(n && adultOk(n) ? n : null);
   if (!parts.length) return home();
-  const n = catalog.novels.find(x => x.slug === decodeURIComponent(parts[0]));
   if (!n) { app.innerHTML = `<div class="empty">${esc(t("notFound"))}</div>`; return; }
   if (!adultOk(n)) return adultGate(n);
   if (parts[1]) return reader(n, parseInt(parts[1],10) || 1);
