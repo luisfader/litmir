@@ -3498,7 +3498,7 @@
    "title": "Las coordenadas del amor",
    "author": "Luis Fader",
    "genre": "Aventura · Fantasía · Romance",
-   "description": "Alejandro es arqueólogo y busca en el bosque una ciudad perdida que casi nadie cree real. Con Lucía, experta en mapas, y el joven Matías, encuentra una brújula extraña: en lugar de N, S, E, O, tiene las letras E, S, C, R.\nUn mapa antiguo, una frase en eslavo antiguo y la puerta de un templo los llevan a un mundo de nieve, matrioshkas mágicas, una guardiana misteriosa y un dragón de tres cabezas… en busca de aquello que todos los seres humanos anhelan.",
+   "description": "Alejandro es arqueólogo y busca en el bosque una ciudad perdida que casi nadie cree real. Con Lucía, experta en mapas, el joven Matías y un guía que solo piensa en el oro, encuentra una brújula extraña: en lugar de N, S, E, O, tiene las letras E, S, C, R.\nUn mapa antiguo, una frase en eslavo antiguo y la puerta de un templo los llevan a un mundo de nieve, matrioshkas mágicas, una guardiana misteriosa y un dragón de tres cabezas… en busca de aquello que todos los seres humanos anhelan.",
    "chapters": [
     {
      "file": "01.md",
@@ -3518,24 +3518,31 @@
     },
     {
      "file": "05.md",
-     "title": "El secreto de la matrioshka"
+     "title": "Una noche en la tundra"
     },
     {
      "file": "06.md",
-     "title": "Traición y sacrificio"
+     "title": "El secreto de la matrioshka"
     },
     {
      "file": "07.md",
-     "title": "El corazón de la bestia"
+     "title": "Traición y sacrificio"
     },
     {
      "file": "08.md",
-     "title": "La ciudad del alma"
+     "title": "El paso de las almas heladas"
     },
     {
      "file": "09.md",
-     "title": "Dossiers de personajes",
-     "label": "Apéndice"
+     "title": "El corazón de la bestia"
+    },
+    {
+     "file": "10.md",
+     "title": "La ciudad del alma"
+    },
+    {
+     "file": "11.md",
+     "title": "Dossiers de personajes"
     }
    ],
    "cover": "novels/las-coordenadas-del-amor/cover.jpg"
