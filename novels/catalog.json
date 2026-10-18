@@ -1387,7 +1387,8 @@
      "title": "Возвращение в Мендосу"
     }
    ],
-   "wip": true
+   "wip": true,
+   "rating": "16+"
   },
   {
    "slug": "la-citta-triste",
@@ -2733,7 +2734,6 @@
    "year": 2025,
    "genre": "Aventura · Misterio · Humor",
    "cover": "novels/el-misterio-de-los-fader/cover.jpg",
-   "adult": true,
    "description": "Un secreto envuelve a la familia. Los antepasados están ahí, pero no se ven. Una maldición acecha a los Fader.\nLuis y Natalia viajan de Moscú a Mendoza y resolverán el gran misterio. Un brebaje, una historia trágica y una pizca de humor hacen de este relato una aventura entretenida y cautivante.",
    "chapters": [
     {
@@ -2953,7 +2953,8 @@
    ],
    "translations": {
     "ru": "tajna-semi-fader"
-   }
+   },
+   "rating": "16+"
   },
   {
    "slug": "el-tren-fantasma",

@@ -359,7 +359,7 @@ function home(){
       const nch = n.chapters.filter(c => !c.label).length;
       return `<a class="card" href="#/${esc(n.slug)}">${coverHTML(n)}
         <h3>${esc(n.title)}</h3>
-        <div class="meta">${n.genre ? esc(n.genre) + " · " : ""}${esc(t("chapters")(nch))}${n.study ? ` <span class="pill study">${esc(t("study"))}</span>` : ""}${n.wip ? ` <span class="pill wip">${esc(t("wip"))}</span>` : ""}${n.adult ? ' <span class="pill adult">18+</span>' : ""}</div></a>`;
+        <div class="meta">${n.genre ? esc(n.genre) + " · " : ""}${esc(t("chapters")(nch))}${n.study ? ` <span class="pill study">${esc(t("study"))}</span>` : ""}${n.wip ? ` <span class="pill wip">${esc(t("wip"))}</span>` : ""}${n.adult ? ' <span class="pill adult">18+</span>' : ""}${!n.adult && n.rating ? ` <span class="pill">${esc(n.rating)}</span>` : ""}</div></a>`;
     }).join("")}</div>` : `<div class="empty">${esc(t("empty"))}</div>`}
   </section>`;
 }
@@ -387,7 +387,7 @@ function novelPage(n){
     <div>${coverHTML(n)}</div>
     <div>
       <h1>${esc(n.title)}</h1>
-      <div class="by">${esc(author(n))}${n.genre ? " · " + esc(n.genre) : ""}${n.year ? " · " + esc(n.year) : ""}${n.study ? ` <span class="pill study">${esc(t("study"))}</span>` : ""}${n.wip ? ` <span class="pill wip">${esc(t("wip"))}</span>` : ""}${n.adult ? ' <span class="pill adult">18+</span>' : ""}</div>
+      <div class="by">${esc(author(n))}${n.genre ? " · " + esc(n.genre) : ""}${n.year ? " · " + esc(n.year) : ""}${n.study ? ` <span class="pill study">${esc(t("study"))}</span>` : ""}${n.wip ? ` <span class="pill wip">${esc(t("wip"))}</span>` : ""}${n.adult ? ' <span class="pill adult">18+</span>' : ""}${!n.adult && n.rating ? ` <span class="pill">${esc(n.rating)}</span>` : ""}</div>
       ${n.description ? `<div class="desc">${esc(n.description)}</div>` : ""}
       ${n.study ? `<div class="notice">📖 ${esc(t("studyNote"))}</div>` : ""}
       ${n.wip ? `<div class="notice">✎ ${esc(t("wipNote"))}</div>` : ""}
