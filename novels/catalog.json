@@ -1284,7 +1284,10 @@
      "title": "Интервью с Робертом Фадером, автором романа «Опасное свидание»",
      "label": "Интервью"
     }
-   ]
+   ],
+   "translations": {
+    "en": "the-date"
+   }
   },
   {
    "slug": "la-citta-triste",
@@ -2348,7 +2351,10 @@
      "file": "10.md",
      "title": "A New Beginning"
     }
-   ]
+   ],
+   "translations": {
+    "ru": "opasnoe-svidanie"
+   }
   },
   {
    "slug": "la-voix",
