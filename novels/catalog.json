@@ -1,1 +1,1 @@
-$(cat /tmp/catalog_updated.json)
+$(cat /tmp/catalog_original.json)
