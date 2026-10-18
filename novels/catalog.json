@@ -1144,68 +1144,6 @@
    "cover": "novels/predchuvstvie/cover.jpg"
   },
   {
-   "slug": "tajnyj-gorod",
-   "lang": "ru",
-   "title": "Тайный город",
-   "author": "Роберт Фадер",
-   "genre": "Приключения · Фэнтези",
-   "description": "Мартин — преподаватель испанского, писатель, музыкант и художник — знакомится в парке с Мариной, светловолосой девушкой с голубыми глазами. Вскоре она признаётся: она родом из города, скрытого под землёй.\nКогда жадные захватчики находят вход в Тайный город, Мартину и его жителям предстоит решить, как защитить свой дом.\nВ конце книги — грамматика испанского языка, ключевые слова романа и описание главных персонажей для тех, кто изучает испанский.",
-   "translations": {
-    "es": "la-ciudad-secreta"
-   },
-   "chapters": [
-    {
-     "file": "01.md",
-     "title": "Они знакомятся"
-    },
-    {
-     "file": "02.md",
-     "title": "Марина признается в правде"
-    },
-    {
-     "file": "03.md",
-     "title": "Визит в Тайный город"
-    },
-    {
-     "file": "04.md",
-     "title": "Угроза проникла"
-    },
-    {
-     "file": "05.md",
-     "title": "Совет города"
-    },
-    {
-     "file": "06.md",
-     "title": "Решение города"
-    },
-    {
-     "file": "07.md",
-     "title": "Ловушка Тайного города"
-    },
-    {
-     "file": "08.md",
-     "title": "Решение всех",
-     "label": "Заключительная глава"
-    },
-    {
-     "file": "09.md",
-     "title": "Грамматика испанского языка",
-     "label": "Приложение"
-    },
-    {
-     "file": "10.md",
-     "title": "Ключевые слова романа",
-     "label": "Приложение"
-    },
-    {
-     "file": "11.md",
-     "title": "Главные персонажи",
-     "label": "Приложение"
-    }
-   ],
-   "cover": "novels/tajnyj-gorod/cover.jpg"
-  },
-  {
    "slug": "opasnoe-svidanie",
    "lang": "ru",
    "title": "Опасное свидание",
@@ -3105,9 +3043,6 @@
    "author": "Luis Fader",
    "genre": "Aventura · Fantasía",
    "description": "Martín, profesor de español, conoce en el parque a Marina, una mujer rubia de ojos azules que lee un libro sobre ciudades antiguas. Pronto ella le cuenta la verdad: viene de una ciudad secreta, escondida debajo de las montañas.\nCuando unos hombres que solo quieren oro descubren la entrada, Martín y los habitantes de la Ciudad Secreta tienen que decidir cómo proteger su hogar.\nUna novela corta en español fácil para alumnos de nivel A1–A2. Cada capítulo tiene vocabulario con traducción al ruso, ejercicios de comprensión, gramática y vocabulario, y preguntas para hablar. Al final: resumen de gramática, glosario y soluciones.",
-   "translations": {
-    "ru": "tajnyj-gorod"
-   },
    "chapters": [
     {
      "file": "00.md",
