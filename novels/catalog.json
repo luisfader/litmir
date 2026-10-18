@@ -963,7 +963,8 @@
     "es": "la-corazonada",
     "eo": "la-antausento",
     "isv": "predcutje",
-    "tr": "col-gulu"
+    "tr": "col-gulu",
+    "de": "vorahnung"
    },
    "chapters": [
     {
@@ -1914,7 +1915,8 @@
     "es": "la-corazonada",
     "eo": "la-antausento",
     "isv": "predcutje",
-    "tr": "col-gulu"
+    "tr": "col-gulu",
+    "de": "vorahnung"
    },
    "chapters": [
     {
@@ -2512,7 +2514,8 @@
     "it": "presentimento",
     "es": "la-corazonada",
     "eo": "la-antausento",
-    "isv": "predcutje"
+    "isv": "predcutje",
+    "de": "vorahnung"
    }
   },
   {
@@ -2992,7 +2995,8 @@
     "it": "presentimento",
     "eo": "la-antausento",
     "isv": "predcutje",
-    "tr": "col-gulu"
+    "tr": "col-gulu",
+    "de": "vorahnung"
    },
    "chapters": [
     {
@@ -3684,7 +3688,8 @@
     "it": "presentimento",
     "es": "la-corazonada",
     "isv": "predcutje",
-    "tr": "col-gulu"
+    "tr": "col-gulu",
+    "de": "vorahnung"
    }
   },
   {
@@ -3700,7 +3705,8 @@
     "it": "presentimento",
     "es": "la-corazonada",
     "eo": "la-antausento",
-    "tr": "col-gulu"
+    "tr": "col-gulu",
+    "de": "vorahnung"
    },
    "chapters": [
     {
@@ -3814,6 +3820,44 @@
     {
      "file": "28.md",
      "title": "Boj, izměna i sud"
+    }
+   ]
+  },
+  {
+   "slug": "vorahnung",
+   "lang": "de",
+   "title": "Vorahnung",
+   "author": "Robert Fader",
+   "genre": "Postapokalypse · Abenteuer · Liebesroman",
+   "description": "Robert lernt die Ärztin Natalia kennen, und sie verlieben sich. Dann beginnt der Krieg, und sie werden getrennt. Zwei Jahre sucht Robert seine Frau – ohne Erfolg.\nAus der Verzweiflung entsteht ein Traum: eine türkisfarbene Festung, „Unsere Utopie“. Doch draußen in der Wüste warten die Wilden, und Robert muss wählen zwischen Vergangenheit und Gegenwart.",
+   "translations": {
+    "ru": "predchuvstvie",
+    "it": "presentimento",
+    "es": "la-corazonada",
+    "eo": "la-antausento",
+    "isv": "predcutje",
+    "tr": "col-gulu"
+   },
+   "chapters": [
+    {
+     "file": "01.md",
+     "title": "Die Ärztin"
+    },
+    {
+     "file": "02.md",
+     "title": "Der Krieg"
+    },
+    {
+     "file": "03.md",
+     "title": "Die Festung"
+    },
+    {
+     "file": "04.md",
+     "title": "Die Wilden"
+    },
+    {
+     "file": "05.md",
+     "title": "Die Rückkehr"
     }
    ]
   }
