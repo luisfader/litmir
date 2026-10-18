@@ -105,6 +105,10 @@ article.chapter p{margin:0 0 1.1em;text-align:justify;hyphens:auto}
 article.chapter hr{border:0;text-align:center;margin:2em 0}
 article.chapter h2{font-family:var(--display);font-weight:500;text-align:center;font-size:1.4em;margin:1.6em 0 .8em}
 article.chapter h2 ~ p{text-align:left;font-size:.92em}
+article.chapter .gloss{cursor:help;border-bottom:1.5px dotted var(--accent);-webkit-tap-highlight-color:transparent;outline:none}
+article.chapter .gloss:focus-visible{background:var(--accent-soft);border-radius:3px}
+#glossTip{position:fixed;z-index:50;max-width:min(280px,calc(100vw - 24px));padding:6px 11px;border-radius:8px;background:var(--ink);color:var(--paper);font-family:var(--sans);font-size:14px;line-height:1.35;box-shadow:var(--shadow);pointer-events:none;opacity:0;transform:translateY(4px);transition:opacity .12s,transform .12s}
+#glossTip.on{opacity:1;transform:none}
 article.chapter .blank{display:inline-block;min-width:4.5em;border-bottom:1px solid var(--muted);vertical-align:-.15em}
 .tbl{overflow-x:auto;margin:1em 0}
 article.chapter ul{font-size:.9em;columns:2 16em;column-gap:2em;padding-left:1.2em;margin:0 0 1.2em}
@@ -213,7 +217,7 @@ const app = document.getElementById("app");
 const t = k => UI[lang][k];
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 
-function inline(s){ return esc(s).replace(/_{2,}/g,"\u0001").replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>").replace(/(^|[^*])\*(?!\s)(.+?)\*/g,"$1<em>$2</em>").replace(/(^|\W)_(?!\s)(.+?)_(?=\W|$)/g,"$1<em>$2</em>").replace(/\u0001/g,'<span class="blank"></span>'); }
+function inline(s){ return esc(s).replace(/\*\*([^*]+)\*\*\{([^}]+)\}/g,'<strong class="gloss" tabindex="0" data-tr="$2">$1</strong>').replace(/_{2,}/g,"\u0001").replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>").replace(/(^|[^*])\*(?!\s)(.+?)\*/g,"$1<em>$2</em>").replace(/(^|\W)_(?!\s)(.+?)_(?=\W|$)/g,"$1<em>$2</em>").replace(/\u0001/g,'<span class="blank"></span>'); }
 function renderText(md){
   return md.replace(/\r/g,"").split(/\n\s*\n/).map(b => b.trim()).filter(Boolean).map(b => {
     if (/^(\*\s*){3,}$|^(-\s*){3,}$|^⁂$/.test(b)) return "<hr>";
@@ -442,6 +446,30 @@ window.addEventListener("hashchange", route);
 applyTheme(); renderChrome();
 fetch("novels/catalog.json", {cache:"no-cache"}).then(r => r.json()).then(j => { catalog = j; route(); })
   .catch(() => { catalog = {novels:[]}; route(); });
+
+/* Glosses: **palabra**{перевод} shows the translation on hover, focus or tap */
+(function(){
+  let tip = null, cur = null, shownAt = 0, ptr = false;
+  function show(el){
+    if (!tip){ tip = document.createElement("div"); tip.id = "glossTip"; tip.setAttribute("role","tooltip"); document.body.appendChild(tip); }
+    if (cur !== el) shownAt = Date.now(); cur = el; tip.textContent = el.dataset.tr; tip.classList.add("on");
+    const r = el.getBoundingClientRect(), w = tip.offsetWidth, h = tip.offsetHeight;
+    let x = r.left + r.width/2 - w/2; x = Math.max(12, Math.min(x, innerWidth - w - 12));
+    let y = r.top - h - 8; if (y < 70) y = r.bottom + 8;
+    tip.style.left = x + "px"; tip.style.top = y + "px";
+  }
+  function hide(){ if (tip) tip.classList.remove("on"); cur = null; }
+  const g = e => e.target.closest && e.target.closest(".gloss");
+  document.addEventListener("pointerover", e => { if (e.pointerType !== "mouse") return; const el = g(e); if (el) show(el); });
+  document.addEventListener("pointerout", e => { if (e.pointerType === "mouse" && g(e) && !(e.relatedTarget && e.relatedTarget.closest && e.relatedTarget.closest(".gloss") === cur)) hide(); });
+  document.addEventListener("pointerdown", () => { ptr = true; setTimeout(() => ptr = false, 500); }, true);
+  document.addEventListener("focusin", e => { const el = g(e); if (el && !ptr) show(el); });
+  document.addEventListener("focusout", e => { if (g(e)) hide(); });
+  document.addEventListener("click", e => { const el = g(e); if (el){ if (cur === el && tip.classList.contains("on") && Date.now() - shownAt > 350) hide(); else show(el); } else hide(); });
+  document.addEventListener("keydown", e => { if (e.key === "Escape") hide(); });
+  addEventListener("scroll", hide, {passive:true});
+  addEventListener("resize", hide);
+})();
 </script>
 </body>
 </html>
