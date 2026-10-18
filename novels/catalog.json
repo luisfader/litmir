@@ -4158,7 +4158,8 @@
         }
       ],
       "study": true,
-      "wip": true
+      "wip": true,
+      "cover": "novels/fot-latik/cover.svg"
     }
   ]
 }
