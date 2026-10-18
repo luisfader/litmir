@@ -4141,19 +4141,19 @@
       "description": "Robert e Natalia jafoms kasteli libik in Yurop votik. Katolans e reformans binoms in vät. Kastel at binon spel pro lif nulik.",
       "chapters": [
         {
-          "file": "01.md",
+          "file": "vo/01.md",
           "title": "Mot e fog"
         },
         {
-          "file": "02.md",
+          "file": "vo/02.md",
           "title": "Doktor e man"
         },
         {
-          "file": "03.md",
+          "file": "vo/03.md",
           "title": "Kastel in muns"
         },
         {
-          "file": "04.md",
+          "file": "vo/04.md",
           "title": "Frends balid"
         }
       ],
