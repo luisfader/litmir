@@ -3551,7 +3551,8 @@
           "title": "Dossiers de personajes"
         }
       ],
-      "cover": "novels/las-coordenadas-del-amor/cover.jpg"
+      "cover": "novels/las-coordenadas-del-amor/cover.jpg",
+      "study": true
     },
     {
       "slug": "divlji-chas",
