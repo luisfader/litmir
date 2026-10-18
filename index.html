@@ -1062,7 +1062,7 @@ fetch("novels/catalog.json", {cache:"no-cache"}).then(r => r.json()).then(j => {
   function show(el){
     if (!tip){ tip = document.createElement("div"); tip.id = "glossTip"; tip.setAttribute("role","tooltip"); document.body.appendChild(tip); }
     if (cur !== el) shownAt = Date.now(); cur = el; const pr = el.dataset.tr.split("|");
-    if (pr.length > 1){ tip.innerHTML = ""; [["RU",pr[0]],["ES",pr[1]]].forEach(([k,v]) => { const d = document.createElement("div"); const b = document.createElement("b"); b.textContent = k; d.append(b, " " + v.trim()); tip.appendChild(d); }); }
+    if (pr.length > 1){ tip.innerHTML = ""; [["RU",pr[0]],["EN",pr[1]]].forEach(([k,v]) => { const d = document.createElement("div"); const b = document.createElement("b"); b.textContent = k; d.append(b, " " + v.trim()); tip.appendChild(d); }); }
     else tip.textContent = el.dataset.tr;
     tip.classList.add("on");
     const r = el.getBoundingClientRect(), w = tip.offsetWidth, h = tip.offsetHeight;
