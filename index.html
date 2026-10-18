@@ -123,6 +123,17 @@ article.chapter p.vf.bad{background:#f6e0dd;border-color:#e0a59c}
 @media (prefers-color-scheme: dark){:root:not([data-theme]) article.chapter p.vf.ok{background:#23382b;border-color:#3f6b4d}:root:not([data-theme]) article.chapter p.vf.bad{background:#3d2420;border-color:#7a3f36}}
 article.chapter p.vf.ok::after{content:"✓";color:#2f6b45;font:700 16px var(--sans)}
 article.chapter p.vf.bad::after{content:"✗";color:#b3261e;font:700 16px var(--sans)}
+article.chapter p.mc{display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;text-align:left;margin:0 0 .55em;padding:6px 10px;border-radius:8px;border:1px solid transparent}
+article.chapter p.mc select{font:15px/1.2 var(--sans);padding:7px 30px 7px 10px;border-radius:8px;border:1px solid var(--line);background:var(--paper);color:var(--ink);cursor:pointer;max-width:100%}
+article.chapter p.mc select:focus{outline:2px solid var(--accent);outline-offset:1px}
+article.chapter p.mc::after{content:"";width:16px;flex:none;text-align:center}
+article.chapter p.mc.ok{background:#e3efe6;border-color:#9cc8a9}
+article.chapter p.mc.bad{background:#f6e0dd;border-color:#e0a59c}
+article.chapter p.mc.ok::after{content:"✓";color:#2f6b45;font:700 16px var(--sans)}
+article.chapter p.mc.bad::after{content:"✗";color:#b3261e;font:700 16px var(--sans)}
+:root[data-theme="dark"] article.chapter p.mc.ok{background:#23382b;border-color:#3f6b4d}
+:root[data-theme="dark"] article.chapter p.mc.bad{background:#3d2420;border-color:#7a3f36}
+@media (prefers-color-scheme: dark){:root:not([data-theme]) article.chapter p.mc.ok{background:#23382b;border-color:#3f6b4d}:root:not([data-theme]) article.chapter p.mc.bad{background:#3d2420;border-color:#7a3f36}}
 article.chapter .vfcheck{display:flex;align-items:center;gap:14px;margin:.6em 0 1.4em;font-family:var(--sans);font-size:14px}
 article.chapter .vfcheck .vfgo{font:600 14px/1 var(--sans);padding:10px 16px;border-radius:8px;border:0;background:var(--accent);color:#fff;cursor:pointer}
 article.chapter .vfcheck .vfres{font-weight:600}
@@ -248,6 +259,9 @@ function renderText(md){
       return '<div class="tbl"><table>' + rows.map((r,i) => "<tr>" + r.map(c => i ? "<td>"+c+"</td>" : "<th>"+c+"</th>").join("") + "</tr>").join("") + "</table></div>"; }
     if (/^- /.test(b) && b.split("\n").every(r => /^- /.test(r))) return "<ul>" + b.split("\n").map(r => "<li>" + inline(r.slice(2)) + "</li>").join("") + "</ul>";
     if (/^>/.test(b)) return "<blockquote><p>" + inline(b.replace(/^>\s?/gm,"")).replace(/\n/g,"<br>") + "</p></blockquote>";
+    const mc = b.match(/^([\s\S]*?)\s*\[\[([^|\]]+)\|([^\]]+)\]\]\s*$/);
+    if (mc) { const ops = [mc[2], mc[3]]; const a = ops.findIndex(o => o.trim().startsWith("*"));
+      return `<p class="mc" data-a="${a}"><span class="vfq">${inline(mc[1])}</span><select aria-label="Respuesta"><option value="" selected disabled>— elige —</option>${ops.map((o,i) => `<option value="${i}">${esc(o.trim().replace(/^\*/,""))}</option>`).join("")}</select></p>`; }
     const vf = b.match(/^([\s\S]*?)\s*\(\s*V\s*\/\s*F\s*\)\s*\{([VF])\}\s*$/);
     if (vf) return `<p class="vf" data-a="${vf[2]}"><span class="vfq">${inline(vf[1])}</span><span class="vfb"><button type="button" data-v="V" aria-pressed="false">V</button><button type="button" data-v="F" aria-pressed="false">F</button></span></p>`;
     return "<p>" + inline(b).replace(/\n/g,"<br>") + "</p>";
@@ -258,9 +272,9 @@ function renderText(md){
 const QUIZ_T = {es:["Comprobar","correctas","Volver a intentar"], it:["Verifica","corrette","Riprova"], en:["Check","correct","Try again"], ru:["Проверить","правильно","Ещё раз"], pt:["Verificar","corretas","Tentar de novo"], fr:["Vérifier","correctes","Réessayer"], de:["Prüfen","richtig","Nochmal"]};
 function setupQuizzes(root, lang){
   const T = QUIZ_T[lang] || QUIZ_T.es;
-  const items = [...root.querySelectorAll("p.vf")];
+  const items = [...root.querySelectorAll("p.vf, p.mc")];
   const groups = [];
-  items.forEach(p => { const prev = p.previousElementSibling; if (prev && prev.classList.contains("vf") && groups.length) groups[groups.length-1].push(p); else groups.push([p]); });
+  items.forEach(p => { const k = p.classList.contains("mc") ? "mc" : "vf", prev = p.previousElementSibling; if (prev && prev.classList.contains(k) && groups.length) groups[groups.length-1].push(p); else groups.push([p]); });
   groups.forEach(g => {
     const bar = document.createElement("div"); bar.className = "vfcheck";
     bar.innerHTML = `<button type="button" class="vfgo">${T[0]}</button><span class="vfres" aria-live="polite"></span>`;
@@ -273,8 +287,9 @@ function setupQuizzes(root, lang){
       p.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", x === btn ? "true" : "false"));
       p.dataset.sel = btn.dataset.v;
     }));
+    g.forEach(p => { const sel = p.querySelector("select"); if (sel) sel.onchange = () => { if (checked) reset(); p.dataset.sel = sel.value; }; });
     go.onclick = () => {
-      if (checked) { g.forEach(p => { delete p.dataset.sel; p.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed","false")); }); reset(); return; }
+      if (checked) { g.forEach(p => { delete p.dataset.sel; p.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed","false")); const sel = p.querySelector("select"); if (sel) sel.selectedIndex = 0; }); reset(); return; }
       let ok = 0;
       g.forEach(p => { const good = p.dataset.sel === p.dataset.a; if (good) ok++; p.classList.toggle("ok", good); p.classList.toggle("bad", !good); });
       res.textContent = `${ok} / ${g.length} ${T[1]}`; go.textContent = T[2]; checked = true;
