@@ -3082,11 +3082,16 @@
    "title": "La ciudad secreta",
    "author": "Luis Fader",
    "genre": "Aventura · Fantasía",
-   "description": "Martín, profesor de español, escritor, músico y dibujante, conoce en el parque a Marina, una mujer rubia de ojos azules que lee un libro sobre ciudades antiguas. Pronto ella le confiesa la verdad: viene de una ciudad oculta bajo la tierra.\nCuando unos invasores codiciosos descubren la entrada, Martín y los habitantes de la Ciudad Secreta deberán decidir cómo proteger su hogar.\nUna novela corta en español sencillo, con ejercicios de gramática, léxico y comprensión al final de cada capítulo.",
+   "description": "Martín, profesor de español, conoce en el parque a Marina, una mujer rubia de ojos azules que lee un libro sobre ciudades antiguas. Pronto ella le cuenta la verdad: viene de una ciudad secreta, escondida debajo de las montañas.\nCuando unos hombres que solo quieren oro descubren la entrada, Martín y los habitantes de la Ciudad Secreta tienen que decidir cómo proteger su hogar.\nUna novela corta en español fácil para alumnos de nivel A1–A2. Cada capítulo tiene vocabulario con traducción al ruso, ejercicios de comprensión, gramática y vocabulario, y preguntas para hablar. Al final: resumen de gramática, glosario y soluciones.",
    "translations": {
     "ru": "tajnyj-gorod"
    },
    "chapters": [
+    {
+     "file": "00.md",
+     "title": "Personajes y cómo usar el libro",
+     "label": "Antes de leer"
+    },
     {
      "file": "01.md",
      "title": "Se conocen"
@@ -3097,11 +3102,11 @@
     },
     {
      "file": "03.md",
-     "title": "La visita a Ciudad Secreta"
+     "title": "La visita a la Ciudad Secreta"
     },
     {
      "file": "04.md",
-     "title": "La Amenaza Infiltrada"
+     "title": "La amenaza"
     },
     {
      "file": "05.md",
@@ -3109,16 +3114,30 @@
     },
     {
      "file": "06.md",
-     "title": "La Decisión de la Ciudad"
+     "title": "La decisión de la ciudad"
     },
     {
      "file": "07.md",
-     "title": "La Trampa de la Ciudad Secreta"
+     "title": "La trampa"
     },
     {
      "file": "08.md",
-     "title": "La Decisión de Todos",
-     "label": "Capítulo final"
+     "title": "La decisión de todos"
+    },
+    {
+     "file": "09.md",
+     "title": "Resumen de gramática",
+     "label": "Apéndice"
+    },
+    {
+     "file": "10.md",
+     "title": "Glosario español–ruso",
+     "label": "Apéndice"
+    },
+    {
+     "file": "11.md",
+     "title": "Soluciones",
+     "label": "Apéndice"
     }
    ],
    "cover": "novels/la-ciudad-secreta/cover.jpg",
