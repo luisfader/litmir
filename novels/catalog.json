@@ -2347,6 +2347,12 @@
      "file": "16.md",
      "title": "Nejdůležitější věta",
      "label": "Epilog"
+    },
+    {
+     "file": "test.json",
+     "title": "Závěrečný test",
+     "label": "Test",
+     "type": "quiz"
     }
    ],
    "study": true

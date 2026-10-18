@@ -175,6 +175,143 @@ article.chapter h3{font-family:var(--sans);font-size:.72em;letter-spacing:.12em;
 .gate p{color:var(--muted);font-size:18px;margin:0 0 28px}
 .toc li.extra a{font-style:italic;color:var(--muted)}
 .langs{flex-wrap:wrap;justify-content:flex-end}
+/* ───────── Lesson / final test ───────── */
+.ls{--ok:#3f8f1e;--ok-bg:#dff5cf;--ok-ink:#2f6d14;--bad:#d63a2f;--bad-bg:#ffe1dd;--bad-ink:#a8261d;--gold:#e0a82e;--sel:#3b6fb6;--sel-bg:#e3eefb;--on-ok:#fff;--on-bad:#fff;
+  font-family:var(--sans);max-width:680px;margin:0 auto;padding:0 20px;position:relative}
+:root[data-theme="dark"] .ls{--on-ok:#11240a;--on-bad:#2a0c09;--ok:#7cc95a;--ok-bg:#1f3318;--ok-ink:#9ee07a;--bad:#ff7a6e;--bad-bg:#3a1d1a;--bad-ink:#ff9d93;--sel:#7fb0f0;--sel-bg:#1c2a3d}
+@media (prefers-color-scheme: dark){:root:not([data-theme]) .ls{--on-ok:#11240a;--on-bad:#2a0c09;--ok:#7cc95a;--ok-bg:#1f3318;--ok-ink:#9ee07a;--bad:#ff7a6e;--bad-bg:#3a1d1a;--bad-ink:#ff9d93;--sel:#7fb0f0;--sel-bg:#1c2a3d}}
+.ls h1{font-family:var(--display);font-weight:600;font-size:clamp(36px,7vw,52px);line-height:1.05;margin:6px 0 10px}
+.ls-intro,.ls-end{text-align:center;padding:48px 20px 80px}
+.ls-kicker{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-weight:700}
+.ls-sub{color:var(--muted);font-size:17px;margin:0 auto 22px;max-width:460px;font-family:var(--serif)}
+.ls-chips{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-bottom:22px}
+.ls-chips span{border:2px solid var(--line);border-radius:999px;padding:6px 12px;font-size:13px;font-weight:600;color:var(--ink)}
+.ls-best{font-size:14px;color:var(--muted);margin-bottom:20px}
+.ls-link{display:block;width:max-content;margin:18px auto 0;color:var(--muted);font-size:14px;font-weight:600;text-decoration:none}
+.ls-link:hover{color:var(--accent)}
+.ls-mascot{width:120px;height:140px;margin:0 auto 6px}
+.ls-mascot .tulip{width:100%;height:100%;filter:drop-shadow(0 8px 10px rgba(120,30,20,.18))}
+.bounce .tulip{animation:lsBob 2.4s ease-in-out infinite;transform-origin:50% 100%}
+.jump .tulip{animation:lsJump .9s cubic-bezier(.3,1.6,.5,1) 3;transform-origin:50% 100%}
+@keyframes lsBob{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(4deg) translateY(-3px)}}
+@keyframes lsJump{0%{transform:translateY(0) scale(1)}40%{transform:translateY(-22px) scale(1.05,.95)}100%{transform:translateY(0)}}
+
+/* 3D chunky buttons */
+.ls-btn{font:700 15px/1 var(--sans);letter-spacing:.06em;text-transform:uppercase;border-radius:16px;padding:16px 26px;cursor:pointer;border:2px solid transparent;border-bottom-width:5px;min-width:180px;transition:transform .06s,filter .15s}
+.ls-btn:active:not(:disabled){transform:translateY(3px);border-bottom-width:2px;margin-top:3px}
+.ls-btn.go{background:var(--accent);color:#fff;border-color:color-mix(in srgb,var(--accent) 72%,#000)}
+.ls-btn.go:hover:not(:disabled){filter:brightness(1.08)}
+.ls-btn.ghost{background:transparent;color:var(--muted);border-color:var(--line)}
+.ls-btn:disabled{background:var(--line);border-color:var(--line);color:var(--muted);cursor:default}
+
+/* Play screen */
+.ls-play{min-height:calc(100vh - 60px);display:flex;flex-direction:column;padding-bottom:150px}
+.ls-top{display:flex;align-items:center;gap:14px;padding:22px 0 10px}
+.ls-x{font-size:22px;color:var(--muted);text-decoration:none;line-height:1;padding:4px}
+.ls-x:hover{color:var(--ink)}
+.ls-bar{flex:1;height:16px;background:var(--line);border-radius:999px;overflow:hidden}
+.ls-fill{height:100%;width:0;background:var(--ok);border-radius:999px;transition:width .45s cubic-bezier(.3,1.3,.5,1);position:relative}
+.ls-fill::after{content:"";position:absolute;left:10px;right:10px;top:4px;height:4px;border-radius:4px;background:rgba(255,255,255,.35)}
+.ls-hearts{font-weight:800;color:var(--bad);font-size:16px;white-space:nowrap}
+.ls-hearts.hit{animation:lsShake .45s}
+@keyframes lsShake{20%,60%{transform:translateX(-4px)}40%,80%{transform:translateX(4px)}}
+.ls-snd{border:0;background:none;font-size:18px;cursor:pointer;padding:4px;opacity:.75}
+.ls-stage{padding-top:18px}
+.ls-stage.in{animation:lsIn .35s ease}
+@keyframes lsIn{from{opacity:0;transform:translateX(24px)}to{opacity:1;transform:none}}
+.ls-q{font-size:clamp(22px,4.5vw,28px);font-weight:800;margin:0 0 22px;color:var(--ink)}
+.ls-word{display:flex;align-items:center;justify-content:center;gap:12px;font-family:var(--display);font-size:clamp(38px,8vw,54px);font-weight:600;margin:6px 0 26px;color:var(--ink)}
+.ls-word.es{font-family:var(--serif);font-size:clamp(28px,6vw,40px);font-style:italic}
+.ls-say{width:46px;height:46px;border-radius:14px;border:0;background:var(--sel);color:#fff;font-size:20px;cursor:pointer;box-shadow:0 4px 0 color-mix(in srgb,var(--sel) 65%,#000);flex:none}
+.ls-say.sm{width:30px;height:30px;font-size:14px;border-radius:9px;margin-right:8px;box-shadow:0 3px 0 color-mix(in srgb,var(--sel) 65%,#000);vertical-align:2px}
+.ls-say:active{transform:translateY(3px);box-shadow:none}
+
+.ls-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.ls-list{display:grid;gap:10px}
+.ls-opt{display:flex;align-items:center;gap:12px;text-align:left;font:600 17px/1.3 var(--sans);color:var(--ink);background:var(--paper);border:2px solid var(--line);border-bottom-width:5px;border-radius:16px;padding:16px;cursor:pointer;transition:background .15s,border-color .15s,transform .06s}
+.ls-opt:hover:not(:disabled){background:var(--accent-soft)}
+.ls-opt:active:not(:disabled){transform:translateY(2px)}
+.ls-opt kbd{font:700 12px var(--sans);color:var(--muted);border:2px solid var(--line);border-radius:8px;min-width:26px;height:26px;display:inline-grid;place-items:center;flex:none}
+.ls-opt.sel{border-color:var(--sel);background:var(--sel-bg);color:var(--sel)}
+.ls-opt.sel kbd{border-color:var(--sel);color:var(--sel)}
+.ls-opt.good{border-color:var(--ok);background:var(--ok-bg);color:var(--ok-ink)}
+.ls-opt.bad{border-color:var(--bad);background:var(--bad-bg);color:var(--bad-ink)}
+.ls-opt.good kbd{border-color:var(--ok);color:var(--ok-ink)}
+.ls-opt.bad kbd{border-color:var(--bad);color:var(--bad-ink)}
+.ls-opt:disabled{cursor:default}
+
+.ls-match{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.ls-match>div{display:grid;gap:10px}
+.ls-opt.m{justify-content:center;text-align:center;padding:15px 10px}
+.ls-opt.m.good{opacity:.55}
+.ls-opt.m.nope{border-color:var(--bad);background:var(--bad-bg);color:var(--bad-ink);animation:lsShake .4s}
+
+.ls-bubble-row{display:flex;align-items:flex-end;gap:10px;margin-bottom:22px}
+.ls-mini{width:74px;height:86px;flex:none}
+.ls-mini .tulip{width:100%;height:100%}
+.ls-bubble{position:relative;border:2px solid var(--line);border-radius:18px;padding:14px 16px;background:var(--paper);flex:1}
+.ls-bubble::before{content:"";position:absolute;left:-10px;bottom:18px;width:16px;height:16px;background:var(--paper);border-left:2px solid var(--line);border-bottom:2px solid var(--line);transform:rotate(45deg)}
+.ls-cz{font-family:var(--serif);font-size:21px;font-weight:700;color:var(--ink)}
+.ls-es{font-family:var(--serif);color:var(--muted);font-size:15px;margin-top:4px}
+.ls-es.big{font-size:21px;color:var(--ink);margin:0}
+
+.ls-sentence{font-family:var(--serif);font-size:22px;line-height:2.1;margin:6px 0 26px;color:var(--ink)}
+.ls-blank{display:inline-block;min-width:110px;border-bottom:3px solid var(--line);text-align:center;cursor:pointer;line-height:1.4;padding:0 6px}
+.ls-blank.on{border-color:var(--sel);color:var(--sel);font-weight:700}
+.ls-answer{min-height:64px;border-top:2px solid var(--line);border-bottom:2px solid var(--line);padding:10px 0;display:flex;flex-wrap:wrap;gap:8px;align-content:flex-start;margin-bottom:22px;background:repeating-linear-gradient(transparent 0 58px,var(--line) 58px 60px)}
+.ls-bank{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.ls-chip{font:600 18px/1 var(--sans);color:var(--ink);background:var(--paper);border:2px solid var(--line);border-bottom-width:4px;border-radius:14px;padding:12px 16px;cursor:pointer}
+.ls-chip:active:not(:disabled){transform:translateY(2px)}
+.ls-chip.used{color:transparent;background:var(--line);border-color:var(--line);pointer-events:none}
+.ls-chip.in{animation:lsPop .18s}
+@keyframes lsPop{from{transform:scale(.85)}to{transform:none}}
+
+.ls-input{width:100%;font:600 22px var(--sans);color:var(--ink);background:var(--paper);border:2px solid var(--line);border-radius:16px;padding:16px 18px;outline:none}
+.ls-input:focus{border-color:var(--sel)}
+.ls-keys{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px;justify-content:center}
+.ls-key{font:600 16px var(--sans);min-width:38px;height:38px;border-radius:10px;border:2px solid var(--line);border-bottom-width:3px;background:var(--paper);color:var(--ink);cursor:pointer}
+
+/* Footer / feedback sheet */
+.ls-foot{position:fixed;left:0;right:0;bottom:0;border-top:2px solid var(--line);background:var(--bg);z-index:20;transition:background .2s}
+.ls-foot-in{max-width:680px;margin:0 auto;padding:18px 20px calc(18px + env(safe-area-inset-bottom));display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.ls-msg{flex:1 1 240px;min-height:20px}
+.ls-foot .ls-btn.go{margin-left:auto}
+.ls-foot.ok{background:var(--ok-bg);border-color:transparent}
+.ls-foot.ok .ls-msg{color:var(--ok-ink)}
+.ls-foot.ok .ls-btn.go{color:var(--on-ok);background:var(--ok);border-color:color-mix(in srgb,var(--ok) 70%,#000)}
+.ls-foot.bad{background:var(--bad-bg);border-color:transparent}
+.ls-foot.bad .ls-msg{color:var(--bad-ink)}
+.ls-foot.bad .ls-btn.go{color:var(--on-bad);background:var(--bad);border-color:color-mix(in srgb,var(--bad) 70%,#000)}
+.ls-verdict{font-size:21px;font-weight:800;margin-bottom:4px}
+.ls-msg .sol{font-size:17px;font-weight:600}
+.ls-msg .tr{font-family:var(--serif);font-size:15px;opacity:.9;margin-top:3px}
+.ls-streak{display:inline-block;font-size:14px;background:var(--gold);color:#fff;border-radius:999px;padding:2px 9px;vertical-align:3px;margin-left:6px}
+
+/* End screen */
+.ls-end{position:relative;overflow:hidden}
+.ls-end canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.ls-stats{display:flex;gap:12px;justify-content:center;margin:8px 0 28px;flex-wrap:wrap}
+.ls-stat{border:2px solid;border-radius:16px;overflow:hidden;min-width:120px;text-align:center}
+.ls-stat .h{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#fff;padding:6px 10px}
+.ls-stat .v{font-size:22px;font-weight:800;padding:12px 10px;background:var(--paper);color:var(--ink)}
+.ls-stat.xp{border-color:var(--gold)} .ls-stat.xp .h{background:var(--gold)}
+.ls-stat.acc{border-color:var(--ok)} .ls-stat.acc .h{background:var(--ok)}
+.ls-stat.tm{border-color:var(--sel)} .ls-stat.tm .h{background:var(--sel)}
+.ls-end.lost h1{color:var(--bad)}
+
+@media (max-width:560px){
+  .ls-grid{grid-template-columns:1fr}
+  .ls-opt{font-size:16px;padding:14px}
+  .ls-msg{flex:1 1 100%}
+  .ls-msg:empty{display:none}
+  .ls-foot .ls-btn{flex:1 1 auto;min-width:0;padding:15px 14px}
+  .ls-foot .ls-btn.ghost{flex:0 0 auto}
+  .ls-foot .ls-btn.go{margin-left:0}
+  .ls-mini{width:58px;height:68px}
+  .ls-sentence{font-size:20px}
+}
+@media (prefers-reduced-motion: reduce){.ls *{animation:none!important;transition:none!important}}
+
 @media (max-width:720px){
   .novel{grid-template-columns:1fr;gap:28px;padding-top:28px}
   .novel .cover{max-width:200px}
@@ -412,7 +549,7 @@ function novelPage(n){
         ${last ? `<a class="btn" href="#/${n.slug}/${last}">${esc(t("cont"))} · ${esc(chapterTitle(n, chs[last-1] || {}, last))}</a>` : ""}
         <a class="btn ${last ? "ghost" : ""}" href="#/${n.slug}/${firstStory}">${esc(t("start"))}</a></div>
       <div class="toc"><h2>${esc(t("contents"))}</h2><ol>
-        ${chs.map((c,i) => `<li class="${done.includes(i+1)?"done":""} ${c.label?"extra":""}"><a href="#/${n.slug}/${i+1}"><span class="n">${c.label ? "·" : chapterNo(n, i+1)}</span><span>${esc(chapterTitle(n, c, chapterNo(n, i+1)))}</span></a></li>`).join("")}
+        ${chs.map((c,i) => `<li class="${done.includes(i+1)?"done":""} ${c.label?"extra":""}"><a href="#/${n.slug}/${i+1}"><span class="n">${c.type === "quiz" ? "★" : c.label ? "·" : chapterNo(n, i+1)}</span><span>${esc(chapterTitle(n, c, chapterNo(n, i+1)))}</span></a></li>`).join("")}
       </ol></div>
     </div>
   </section>`;
@@ -423,6 +560,7 @@ async function reader(n, idx){
   const chs = n.chapters;
   const i = Math.min(Math.max(idx,1), chs.length), c = chs[i-1];
   const L = UI[n.lang];
+  if (c.type === "quiz") return lesson(n, i, c);
   app.innerHTML = `<div class="loading">…</div>`;
   let md = "";
   try { const r = await fetch(`novels/${n.slug}/${c.file}`); if (!r.ok) throw 0; md = await r.text(); }
@@ -471,6 +609,363 @@ async function reader(n, idx){
   };
 }
 
+/* ───────── Lesson / final test (exercise-by-exercise, hearts, XP) ───────── */
+const LESSON_T = {
+  start:"Empezar", check:"Comprobar", next:"Continuar", skip:"No lo sé", retry:"Intentar de nuevo", again:"Repetir el test",
+  back:"Volver a la novela", great:["¡Excelente!","¡Muy bien!","¡Correcto!","¡Perfecto!","¡Así se hace!"],
+  wrong:"Respuesta correcta:", almost:"¡Casi! Fíjate en los acentos:", done:"¡Test completado!", lost:"Te quedaste sin corazones",
+  lostP:"No pasa nada: cada error es una palabra nueva que ya conoces un poco mejor.", xp:"XP total", acc:"Precisión", time:"Tiempo",
+  ex:n=>n+" ejercicios", min:"≈ 5 minutos", hearts:"corazones", best:"Tu mejor resultado", tap:"Toca las palabras en orden",
+  type:"Escribe aquí…", perfect:"¡Sin un solo error! Eres un verdadero strážce podzemí.", good:"¡Muy buen trabajo! Praga está a salvo.",
+  ok:"¡Bien hecho! Repite el test para mejorar tu precisión.", sound:"Sonido", listen:"Escuchar", meaning:"Significa:"
+};
+
+const TULIP = (mood="happy") => `<svg class="tulip ${mood}" viewBox="0 0 120 140" aria-hidden="true">
+  <path d="M60 128 C60 104 60 92 60 78" stroke="#4f8a3a" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <path d="M60 112 C44 108 34 96 32 84 C46 86 56 96 60 108Z" fill="#6aa84f"/>
+  <path d="M61 104 C76 100 86 90 89 78 C75 80 65 90 61 100Z" fill="#5c9a44"/>
+  <path d="M28 40 C26 66 40 82 60 82 C80 82 94 66 92 40 C84 48 76 50 72 40 C68 30 64 22 60 18 C56 22 52 30 48 40 C44 50 36 48 28 40Z" fill="#c8312f"/>
+  <path d="M48 40 C52 30 56 22 60 18 C64 22 68 30 72 40 C66 46 54 46 48 40Z" fill="#e0483f"/>
+  <path d="M34 56 C40 60 44 60 48 56" stroke="#a3221f" stroke-width="2" fill="none" opacity=".5"/>
+  <g class="face">
+    <ellipse cx="50" cy="58" rx="4.2" ry="${mood==="sad"?3.4:5}" fill="#2a1a12"/>
+    <ellipse cx="70" cy="58" rx="4.2" ry="${mood==="sad"?3.4:5}" fill="#2a1a12"/>
+    <circle cx="51.4" cy="56.2" r="1.4" fill="#fff"/><circle cx="71.4" cy="56.2" r="1.4" fill="#fff"/>
+    <ellipse cx="42" cy="66" rx="4" ry="2.4" fill="#ff8a7a" opacity=".7"/><ellipse cx="78" cy="66" rx="4" ry="2.4" fill="#ff8a7a" opacity=".7"/>
+    ${mood==="sad" ? `<path d="M53 72 Q60 66 67 72" stroke="#2a1a12" stroke-width="2.6" fill="none" stroke-linecap="round"/>`
+                   : `<path d="M52 67 Q60 76 68 67" stroke="#2a1a12" stroke-width="2.6" fill="#7a1b18" stroke-linecap="round"/>`}
+  </g>
+</svg>`;
+
+const sfx = {
+  ctx:null,
+  on(){ return store.get("sfx", true); },
+  tone(f, t0, d, type="sine", g=.08){
+    if (!this.on()) return;
+    try {
+      this.ctx = this.ctx || new (window.AudioContext || window.webkitAudioContext)();
+      const c = this.ctx, o = c.createOscillator(), v = c.createGain(), s = c.currentTime + t0;
+      o.type = type; o.frequency.setValueAtTime(f, s);
+      v.gain.setValueAtTime(0, s); v.gain.linearRampToValueAtTime(g, s + .015); v.gain.exponentialRampToValueAtTime(.0001, s + d);
+      o.connect(v).connect(c.destination); o.start(s); o.stop(s + d + .05);
+    } catch(e) {}
+  },
+  ok(){ this.tone(660,0,.14,"triangle"); this.tone(990,.09,.22,"triangle"); },
+  bad(){ this.tone(220,0,.18,"sawtooth",.05); this.tone(185,.12,.24,"sawtooth",.05); },
+  tap(){ this.tone(520,0,.06,"sine",.04); },
+  win(){ [523,659,784,1047].forEach((f,i) => this.tone(f, i*.11, .3, "triangle", .07)); }
+};
+
+const voice = {
+  list:[],
+  load(){ try { this.list = speechSynthesis.getVoices(); } catch(e) {} },
+  has(lang){ return this.list.some(v => v.lang && v.lang.toLowerCase().startsWith(lang.slice(0,2).toLowerCase())); },
+  say(text, lang){
+    try {
+      speechSynthesis.cancel();
+      const u = new SpeechSynthesisUtterance(text); u.lang = lang; u.rate = .9;
+      const v = this.list.find(v => v.lang && v.lang.toLowerCase().startsWith(lang.slice(0,2).toLowerCase())); if (v) u.voice = v;
+      speechSynthesis.speak(u);
+    } catch(e) {}
+  }
+};
+if ("speechSynthesis" in window) { voice.load(); speechSynthesis.onvoiceschanged = () => voice.load(); }
+
+const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+const norm = s => String(s).toLowerCase().replace(/[.,!?;:„“"«»¿¡…]/g, "").replace(/\s+/g, " ").trim();
+const plain = s => norm(s).normalize("NFD").replace(/[̀-ͯ]/g, "");
+
+async function lesson(n, i, c){
+  let data;
+  try { const r = await fetch(`novels/${n.slug}/${c.file}`); if (!r.ok) throw 0; data = await r.json(); }
+  catch(e) { app.innerHTML = `<div class="empty">${esc(t("notFound"))}</div>`; return; }
+  const T = LESSON_T, SPK = data.speak || "cs-CZ";
+  const total = data.exercises.length, maxHearts = data.hearts || 5;
+  const key = "quiz:" + n.slug;
+  document.title = (data.title || c.title) + " · " + n.title;
+  store.set("last:" + n.slug, i);
+  window.scrollTo(0, 0);
+
+  let S;
+  const canSpeak = () => "speechSynthesis" in window && voice.has(SPK);
+  const spk = (text, cls="") => canSpeak() ? `<button class="ls-say ${cls}" data-say="${esc(text)}" aria-label="${T.listen}" title="${T.listen}">🔊</button>` : "";
+
+  function intro(){
+    const best = store.get(key, null);
+    app.innerHTML = `<section class="ls ls-intro">
+      <div class="ls-mascot bounce">${TULIP()}</div>
+      <div class="ls-kicker">${esc(c.label || "Test")}</div>
+      <h1>${esc(data.title || c.title)}</h1>
+      <p class="ls-sub">${esc(data.subtitle || "")}</p>
+      <div class="ls-chips"><span>📚 ${T.ex(total)}</span><span>❤️ ${maxHearts} ${T.hearts}</span><span>⏱ ${T.min}</span></div>
+      ${best ? `<div class="ls-best">🏆 ${T.best}: <b>${best.xp} XP</b> · ${best.acc}%</div>` : ""}
+      <button class="ls-btn go" id="lsStart">${T.start}</button>
+      <a class="ls-link" href="#/${n.slug}">← ${esc(n.title)}</a>
+    </section>`;
+    document.getElementById("lsStart").onclick = begin;
+  }
+
+  function begin(){
+    S = { queue: data.exercises.map((e, k) => ({...e, k})), hearts: maxHearts, solved: new Set(), firstTry: new Set(), missed: new Set(), xp: 0, t0: Date.now(), streak: 0 };
+    frame(); next();
+  }
+
+  function frame(){
+    app.innerHTML = `<section class="ls ls-play">
+      <div class="ls-top">
+        <a class="ls-x" href="#/${n.slug}" aria-label="${esc(t("back"))}">✕</a>
+        <div class="ls-bar"><div class="ls-fill" id="lsFill"></div></div>
+        <div class="ls-hearts" id="lsHearts">❤️ <b>${S.hearts}</b></div>
+        <button class="ls-snd" id="lsSnd" aria-label="${T.sound}" title="${T.sound}">${sfx.on() ? "🔔" : "🔕"}</button>
+      </div>
+      <div class="ls-stage" id="lsStage"></div>
+      <div class="ls-foot" id="lsFoot"><div class="ls-foot-in">
+        <div class="ls-msg" id="lsMsg"></div>
+        <button class="ls-btn ghost" id="lsSkip">${T.skip}</button>
+        <button class="ls-btn go" id="lsCheck" disabled>${T.check}</button>
+      </div></div>
+    </section>`;
+    document.getElementById("lsSnd").onclick = e => { store.set("sfx", !sfx.on()); e.currentTarget.textContent = sfx.on() ? "🔔" : "🔕"; };
+  }
+
+  function progress(){
+    document.getElementById("lsFill").style.width = (S.solved.size / total * 100) + "%";
+    const h = document.getElementById("lsHearts"); h.innerHTML = `❤️ <b>${S.hearts}</b>`;
+  }
+
+  let cur, answerFn, ready;
+  function next(){
+    progress();
+    if (S.hearts <= 0) return gameover();
+    if (!S.queue.length) return finish();
+    cur = S.queue.shift();
+    const stage = document.getElementById("lsStage"), foot = document.getElementById("lsFoot");
+    foot.className = "ls-foot"; document.getElementById("lsMsg").innerHTML = "";
+    const check = document.getElementById("lsCheck"), skip = document.getElementById("lsSkip");
+    check.textContent = T.check; check.disabled = true; skip.style.display = cur.type === "match" ? "none" : "";
+    ready = v => { check.disabled = !v; };
+    stage.classList.remove("in"); void stage.offsetWidth; stage.classList.add("in");
+    stage.innerHTML = render(cur, stage);
+    bind(cur, stage);
+    stage.querySelectorAll("[data-say]").forEach(b => b.onclick = ev => { ev.stopPropagation(); voice.say(b.dataset.say, SPK); });
+    check.onclick = () => grade(answerFn());
+    skip.onclick = () => grade({ ok:false });
+  }
+
+  function render(e){
+    const head = `<h2 class="ls-q">${esc(e.prompt)}</h2>`;
+    if (e.type === "choice" || e.type === "reverse") {
+      e._opts = shuffle(e.options.map((o, k) => ({o, k})));
+      const word = e.type === "choice" ? `<div class="ls-word">${spk(e.word)}<span lang="cs">${esc(e.word)}</span></div>` : `<div class="ls-word es">«${esc(e.word)}»</div>`;
+      return head + word + `<div class="ls-grid">${e._opts.map((x, j) => `<button class="ls-opt" data-k="${x.k}"><kbd>${j+1}</kbd><span ${e.type==="reverse"?'lang="cs"':""}>${esc(x.o)}</span></button>`).join("")}</div>`;
+    }
+    if (e.type === "story") {
+      e._opts = shuffle(e.options.map((o, k) => ({o, k})));
+      return head + `<div class="ls-bubble-row"><div class="ls-mini">${TULIP()}</div><div class="ls-bubble"><div lang="cs" class="ls-cz">${spk(e.question,"sm")}${esc(e.question)}</div><div class="ls-es">${esc(e.es)}</div></div></div>
+        <div class="ls-list">${e._opts.map((x, j) => `<button class="ls-opt row" data-k="${x.k}"><kbd>${j+1}</kbd><span lang="cs">${esc(x.o)}</span></button>`).join("")}</div>`;
+    }
+    if (e.type === "fill") {
+      e._opts = shuffle(e.options.map((o, k) => ({o, k})));
+      return head + `<div class="ls-sentence" lang="cs">${esc(e.before)} <span class="ls-blank" id="lsBlank">&nbsp;</span> ${esc(e.after)}</div>
+        <div class="ls-bank">${e._opts.map((x, j) => `<button class="ls-chip" data-k="${x.k}">${esc(x.o)}</button>`).join("")}</div>`;
+    }
+    if (e.type === "build") {
+      e._bank = shuffle([...e.answer, ...(e.extra || [])].map((w, k) => ({w, k})));
+      return head + `<div class="ls-bubble-row"><div class="ls-mini">${TULIP()}</div><div class="ls-bubble"><div class="ls-es big">${esc(e.es)}</div></div></div>
+        <div class="ls-answer" id="lsAns" aria-label="${T.tap}"></div>
+        <div class="ls-bank" id="lsBank">${e._bank.map(x => `<button class="ls-chip" data-k="${x.k}" lang="cs">${esc(x.w)}</button>`).join("")}</div>`;
+    }
+    if (e.type === "write") {
+      const letters = "á č ď é ě í ň ó ř š ť ú ů ý ž".split(" ");
+      return head + `<div class="ls-bubble-row"><div class="ls-mini">${TULIP()}</div><div class="ls-bubble"><div class="ls-es big">«${esc(e.es)}»</div>${e.hint ? `<div class="ls-es">${esc(e.hint)}</div>` : ""}</div></div>
+        <input class="ls-input" id="lsIn" lang="cs" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="${T.type}">
+        <div class="ls-keys">${letters.map(l => `<button class="ls-key" data-l="${l}">${l}</button>`).join("")}</div>`;
+    }
+    if (e.type === "match") {
+      const L = shuffle(e.pairs.map((p, k) => ({w:p[0], k}))), R = shuffle(e.pairs.map((p, k) => ({w:p[1], k})));
+      return head + `<div class="ls-match"><div>${L.map(x => `<button class="ls-opt m" data-side="l" data-k="${x.k}" lang="cs">${esc(x.w)}</button>`).join("")}</div>
+        <div>${R.map(x => `<button class="ls-opt m" data-side="r" data-k="${x.k}">${esc(x.w)}</button>`).join("")}</div></div>`;
+    }
+    return "";
+  }
+
+  function bind(e, stage){
+    if (["choice","reverse","story"].includes(e.type)) {
+      let sel = null;
+      const opts = [...stage.querySelectorAll(".ls-opt")];
+      opts.forEach(b => b.onclick = () => {
+        opts.forEach(x => x.classList.toggle("sel", x === b)); sel = +b.dataset.k; sfx.tap(); ready(true);
+        if (e.type === "reverse" && canSpeak()) voice.say(b.textContent.replace(/^\d/, ""), SPK);
+      });
+      answerFn = () => ({ ok: sel === e.answer, sel: opts.find(x => +x.dataset.k === sel) });
+      keyPick = k => opts[k] && opts[k].click();
+      if (e.type === "choice" && canSpeak()) setTimeout(() => voice.say(e.word, SPK), 250);
+    }
+    if (e.type === "fill") {
+      let sel = null; const blank = stage.querySelector("#lsBlank"); const chips = [...stage.querySelectorAll(".ls-chip")];
+      chips.forEach(b => b.onclick = () => { chips.forEach(x => x.classList.toggle("used", x === b)); sel = +b.dataset.k; blank.textContent = b.textContent; blank.classList.add("on"); sfx.tap(); ready(true); });
+      blank.onclick = () => { sel = null; blank.innerHTML = "&nbsp;"; blank.classList.remove("on"); chips.forEach(x => x.classList.remove("used")); ready(false); };
+      answerFn = () => ({ ok: sel === e.answer });
+      keyPick = k => chips[k] && chips[k].click();
+    }
+    if (e.type === "build") {
+      const ans = stage.querySelector("#lsAns"), bank = stage.querySelector("#lsBank"); let picked = [];
+      const redraw = () => {
+        ans.innerHTML = picked.map((k, j) => `<button class="ls-chip in" data-j="${j}" lang="cs">${esc(e._bank.find(x => x.k === k).w)}</button>`).join("");
+        bank.querySelectorAll(".ls-chip").forEach(b => b.classList.toggle("used", picked.includes(+b.dataset.k)));
+        ans.querySelectorAll(".ls-chip").forEach(b => b.onclick = () => { picked.splice(+b.dataset.j, 1); sfx.tap(); redraw(); });
+        ready(picked.length > 0);
+      };
+      bank.querySelectorAll(".ls-chip").forEach(b => b.onclick = () => { const k = +b.dataset.k; if (picked.includes(k)) return; picked.push(k); sfx.tap(); redraw(); });
+      answerFn = () => {
+        const said = picked.map(k => e._bank.find(x => x.k === k).w).join(" ");
+        return { ok: norm(said) === norm(e.answer.join(" ")) };
+      };
+      keyPick = null;
+    }
+    if (e.type === "write") {
+      const inp = stage.querySelector("#lsIn");
+      inp.oninput = () => ready(inp.value.trim().length > 0);
+      stage.querySelectorAll(".ls-key").forEach(b => b.onclick = () => {
+        const s = inp.selectionStart ?? inp.value.length, en = inp.selectionEnd ?? s;
+        inp.value = inp.value.slice(0, s) + b.dataset.l + inp.value.slice(en); inp.focus(); inp.setSelectionRange(s + 1, s + 1); ready(true);
+      });
+      setTimeout(() => inp.focus(), 60);
+      answerFn = () => {
+        const v = inp.value;
+        if (e.answers.some(a => norm(a) === norm(v))) return { ok:true };
+        if (e.answers.some(a => plain(a) === plain(v))) return { ok:true, almost:true };
+        return { ok:false };
+      };
+      keyPick = null;
+    }
+    if (e.type === "match") {
+      let left = null, right = null, done = 0, slips = 0;
+      const btns = [...stage.querySelectorAll(".ls-opt.m")];
+      const tryPair = () => {
+        if (left == null || right == null) return;
+        const a = btns.find(b => b.dataset.side === "l" && +b.dataset.k === left), b = btns.find(x => x.dataset.side === "r" && +x.dataset.k === right);
+        if (left === right) {
+          [a, b].forEach(x => { x.classList.remove("sel"); x.classList.add("good"); x.disabled = true; }); sfx.ok(); done++;
+          if (canSpeak()) voice.say(a.textContent, SPK);
+          if (done === e.pairs.length) setTimeout(() => grade({ ok:true, slips }), 350);
+        } else {
+          [a, b].forEach(x => { x.classList.remove("sel"); x.classList.add("nope"); setTimeout(() => x.classList.remove("nope"), 450); }); sfx.bad(); slips++;
+        }
+        left = right = null;
+      };
+      btns.forEach(b => b.onclick = () => {
+        const side = b.dataset.side, k = +b.dataset.k;
+        btns.filter(x => x.dataset.side === side).forEach(x => x.classList.toggle("sel", x === b));
+        if (side === "l") left = k; else right = k; sfx.tap(); tryPair();
+      });
+      answerFn = () => ({ ok:true }); keyPick = null;
+    }
+  }
+
+  let keyPick = null, graded = false;
+  function grade(res){
+    if (graded) return; graded = true;
+    const foot = document.getElementById("lsFoot"), msg = document.getElementById("lsMsg"), check = document.getElementById("lsCheck");
+    document.getElementById("lsSkip").style.display = "none";
+    const stage = document.getElementById("lsStage");
+    stage.querySelectorAll("button, input").forEach(x => { if (!x.classList.contains("ls-say")) x.disabled = true; });
+    const e = cur;
+    if (res.ok) {
+      S.solved.add(e.k);
+      const first = !S.missed.has(e.k) && !(res.slips > 0);
+      if (first) { S.firstTry.add(e.k); S.xp += 10; S.streak++; } else { S.xp += 5; S.streak = 0; }
+      sfx.ok(); foot.className = "ls-foot ok";
+      const praise = T.great[Math.floor(Math.random() * T.great.length)];
+      let extra = "";
+      if (res.almost) extra = `<div>${T.almost} <b lang="cs">${esc(e.answers[0])}</b></div>`;
+      else if (e.type === "fill" || e.type === "story") extra = e.es && e.type === "fill" ? `<div class="tr">${esc(e.es)}</div>` : "";
+      msg.innerHTML = `<div class="ls-verdict">✔ ${praise}${S.streak >= 3 ? ` <span class="ls-streak">🔥 ${S.streak}</span>` : ""}</div>${extra}`;
+      if (res.sel) { res.sel.classList.remove("sel"); res.sel.classList.add("good"); }
+    } else {
+      S.missed.add(e.k); S.hearts--; S.streak = 0; S.queue.push(e);
+      sfx.bad(); foot.className = "ls-foot bad";
+      const h = document.getElementById("lsHearts"); h.classList.remove("hit"); void h.offsetWidth; h.classList.add("hit");
+      msg.innerHTML = `<div class="ls-verdict">✘ ${T.wrong}</div><div class="sol" lang="cs">${esc(solution(e))}</div>${e.type === "fill" && e.es ? `<div class="tr">${esc(e.es)}</div>` : ""}`;
+      if (res.sel) { res.sel.classList.remove("sel"); res.sel.classList.add("bad"); }
+      stage.querySelectorAll(".ls-opt[data-k]").forEach(b => { if (+b.dataset.k === e.answer && !b.classList.contains("m")) b.classList.add("good"); });
+    }
+    progress();
+    check.disabled = false; check.textContent = T.next;
+    check.onclick = () => { graded = false; next(); };
+    check.focus({ preventScroll:true });
+  }
+
+  function solution(e){
+    if (e.type === "build") return e.answer.join(" ") + ".";
+    if (e.type === "write") return e.answers[0];
+    if (e.type === "fill") return `${e.before} ${e.options[e.answer]} ${e.after}`;
+    return e.options[e.answer];
+  }
+
+  function finish(){
+    const secs = Math.round((Date.now() - S.t0) / 1000), acc = Math.round(S.firstTry.size / total * 100);
+    const perfect = S.missed.size === 0; if (perfect) S.xp += 20;
+    const best = store.get(key, null);
+    if (!best || S.xp > best.xp || (S.xp === best.xp && acc > best.acc)) store.set(key, { xp:S.xp, acc });
+    const d = store.get("done:" + n.slug, []); if (!d.includes(i)) { d.push(i); store.set("done:" + n.slug, d); }
+    sfx.win();
+    const line = perfect ? T.perfect : acc >= 70 ? T.good : T.ok;
+    app.innerHTML = `<section class="ls ls-end">
+      <canvas id="lsConfetti" aria-hidden="true"></canvas>
+      <div class="ls-mascot jump">${TULIP()}</div>
+      <h1>${T.done}</h1><p class="ls-sub">${esc(line)}</p>
+      <div class="ls-stats">
+        <div class="ls-stat xp"><div class="h">${T.xp}</div><div class="v">⚡ ${S.xp}</div></div>
+        <div class="ls-stat acc"><div class="h">${T.acc}</div><div class="v">🎯 ${acc}%</div></div>
+        <div class="ls-stat tm"><div class="h">${T.time}</div><div class="v">⏱ ${Math.floor(secs/60)}:${String(secs%60).padStart(2,"0")}</div></div>
+      </div>
+      <button class="ls-btn go" id="lsAgain">${T.again}</button>
+      <a class="ls-link" href="#/${n.slug}">${T.back}</a>
+    </section>`;
+    document.getElementById("lsAgain").onclick = begin;
+    confetti(document.getElementById("lsConfetti"));
+  }
+
+  function gameover(){
+    app.innerHTML = `<section class="ls ls-end lost">
+      <div class="ls-mascot">${TULIP("sad")}</div>
+      <h1>${T.lost}</h1><p class="ls-sub">${T.lostP}</p>
+      <div class="ls-stats"><div class="ls-stat acc"><div class="h">✔</div><div class="v">${S.solved.size} / ${total}</div></div></div>
+      <button class="ls-btn go" id="lsAgain">${T.retry}</button>
+      <a class="ls-link" href="#/${n.slug}">${T.back}</a>
+    </section>`;
+    document.getElementById("lsAgain").onclick = begin;
+  }
+
+  document.onkeydown = ev => {
+    if (!document.querySelector(".ls-play")) return;
+    if (ev.key === "Enter") { const b = document.getElementById("lsCheck"); if (b && !b.disabled) { ev.preventDefault(); b.click(); } return; }
+    if (!graded && keyPick && /^[1-9]$/.test(ev.key) && document.activeElement.tagName !== "INPUT") keyPick(+ev.key - 1);
+  };
+  intro();
+}
+
+function confetti(cv){
+  if (!cv || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const ctx = cv.getContext("2d"), dpr = devicePixelRatio || 1;
+  const size = () => { cv.width = cv.offsetWidth * dpr; cv.height = cv.offsetHeight * dpr; };
+  size();
+  const cols = ["#c8312f","#e0b04a","#4f8a3a","#3b6fb6","#8c2f2f","#f28b82"];
+  const P = Array.from({length:140}, () => ({ x:Math.random()*cv.width, y:-Math.random()*cv.height*.6, r:(4+Math.random()*6)*dpr,
+    vx:(Math.random()-.5)*2*dpr, vy:(2+Math.random()*3)*dpr, a:Math.random()*6, va:(Math.random()-.5)*.25, c:cols[Math.floor(Math.random()*cols.length)], s:Math.random()<.5 }));
+  let f = 0;
+  (function tick(){
+    if (!document.body.contains(cv)) return;
+    ctx.clearRect(0,0,cv.width,cv.height);
+    P.forEach(p => { p.x += p.vx; p.y += p.vy; p.a += p.va; p.vy += .03*dpr;
+      ctx.save(); ctx.translate(p.x,p.y); ctx.rotate(p.a); ctx.fillStyle = p.c;
+      if (p.s) ctx.fillRect(-p.r/2,-p.r/4,p.r,p.r/2); else { ctx.beginPath(); ctx.arc(0,0,p.r/2.4,0,7); ctx.fill(); }
+      ctx.restore(); });
+    if (++f < 260) requestAnimationFrame(tick); else ctx.clearRect(0,0,cv.width,cv.height);
+  })();
+}
+
 /* Soundtrack: optional, never autoplays; keeps playing across chapters of the same novel */
 const music = { el:new Audio(), novel:null, i:0 };
 music.el.preload = "none";
@@ -496,7 +991,7 @@ const vol = document.getElementById("mVol"); vol.value = music.el.volume;
 vol.oninput = () => { music.el.volume = +vol.value; store.set("vol", +vol.value); };
 
 function route(){
-  window.onscroll = null;
+  window.onscroll = null; document.onkeydown = null;
   if (!catalog) return;
   const parts = location.hash.replace(/^#\/?/, "").split("/").filter(Boolean);
   const n = parts.length ? catalog.novels.find(x => x.slug === decodeURIComponent(parts[0])) : null;
