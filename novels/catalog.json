@@ -1474,7 +1474,8 @@
      "label": "Appendice"
     }
    ],
-   "cover": "novels/la-citta-triste/cover.jpg"
+   "cover": "novels/la-citta-triste/cover.jpg",
+   "study": true
   },
   {
    "slug": "il-treno-fantasma",
@@ -1579,7 +1580,8 @@
      "label": "Appendice"
     }
    ],
-   "cover": "novels/il-treno-fantasma/cover.jpg"
+   "cover": "novels/il-treno-fantasma/cover.jpg",
+   "study": true
   },
   {
    "slug": "la-nevicata-rosa",
@@ -1905,7 +1907,8 @@
      "title": "Soluzioni",
      "label": "Appendice"
     }
-   ]
+   ],
+   "study": true
   },
   {
    "slug": "ladro-di-cuori-2",
@@ -1954,7 +1957,8 @@
      "title": "Il Violino dell'Addio"
     }
    ],
-   "cover": "novels/ladro-di-cuori-2/cover-v2.jpg"
+   "cover": "novels/ladro-di-cuori-2/cover-v2.jpg",
+   "study": true
   },
   {
    "slug": "la-macchina-dei-sogni",
@@ -2026,7 +2030,8 @@
      "title": "Risposte agli esercizi",
      "label": "Appendice"
     }
-   ]
+   ],
+   "study": true
   },
   {
    "slug": "presentimento",
@@ -2284,7 +2289,8 @@
      "label": "Apêndice"
     }
    ],
-   "cover": "novels/do-outro-lado-do-mundo/cover.jpg"
+   "cover": "novels/do-outro-lado-do-mundo/cover.jpg",
+   "study": true
   },
   {
    "slug": "podzemni-tajemstvi",
@@ -2359,7 +2365,8 @@
      "title": "Nejdůležitější věta",
      "label": "Epilog"
     }
-   ]
+   ],
+   "study": true
   },
   {
    "slug": "a-man-from-the-future",
@@ -2429,7 +2436,8 @@
      "title": "Порядок путешествия Ольги",
      "label": "Приложение"
     }
-   ]
+   ],
+   "study": true
   },
   {
    "slug": "the-date",
@@ -2483,7 +2491,8 @@
    "translations": {
     "ru": "opasnoe-svidanie"
    },
-   "cover": "novels/the-date/cover.jpg"
+   "cover": "novels/the-date/cover.jpg",
+   "study": true
   },
   {
    "slug": "la-voix",
@@ -3107,7 +3116,8 @@
      "label": "Capítulo final"
     }
    ],
-   "cover": "novels/la-ciudad-secreta/cover.jpg"
+   "cover": "novels/la-ciudad-secreta/cover.jpg",
+   "study": true
   },
   {
    "slug": "la-corazonada",
@@ -3658,7 +3668,8 @@
      "title": "Крај хаоса и почетак љубави"
     }
    ],
-   "cover": "novels/divlji-chas/cover-v2.jpg"
+   "cover": "novels/divlji-chas/cover-v2.jpg",
+   "study": true
   },
   {
    "slug": "divlji-chas-7",
