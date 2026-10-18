@@ -3549,6 +3549,11 @@
         {
           "file": "11.md",
           "title": "Dossiers de personajes"
+        },
+        {
+          "file": "12.md",
+          "title": "Examen final de comprensión",
+          "label": "Evaluación final"
         }
       ],
       "cover": "novels/las-coordenadas-del-amor/cover.jpg",
