@@ -2354,7 +2354,8 @@
    ],
    "translations": {
     "ru": "opasnoe-svidanie"
-   }
+   },
+   "cover": "novels/the-date/cover.jpg"
   },
   {
    "slug": "la-voix",
