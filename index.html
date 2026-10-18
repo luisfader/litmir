@@ -109,6 +109,7 @@ article.chapter .gloss{cursor:help;border-bottom:1.5px dotted var(--accent);-web
 article.chapter .gloss:focus-visible{background:var(--accent-soft);border-radius:3px}
 #glossTip{position:fixed;z-index:50;max-width:min(280px,calc(100vw - 24px));padding:6px 11px;border-radius:8px;background:var(--ink);color:var(--paper);font-family:var(--sans);font-size:14px;line-height:1.35;box-shadow:var(--shadow);pointer-events:none;opacity:0;transform:translateY(4px);transition:opacity .12s,transform .12s}
 #glossTip.on{opacity:1;transform:none}
+#glossTip b{font-size:10px;letter-spacing:.06em;opacity:.6;margin-right:4px}
 article.chapter p.vf{display:flex;align-items:center;justify-content:space-between;gap:12px;text-align:left;margin:0 0 .55em;padding:6px 10px;border-radius:8px;border:1px solid transparent;transition:background .15s,border-color .15s}
 article.chapter p.vf .vfq{flex:1}
 article.chapter p.vf .vfb{display:flex;gap:6px;flex:none}
@@ -517,7 +518,10 @@ fetch("novels/catalog.json", {cache:"no-cache"}).then(r => r.json()).then(j => {
   let tip = null, cur = null, shownAt = 0, ptr = false;
   function show(el){
     if (!tip){ tip = document.createElement("div"); tip.id = "glossTip"; tip.setAttribute("role","tooltip"); document.body.appendChild(tip); }
-    if (cur !== el) shownAt = Date.now(); cur = el; tip.textContent = el.dataset.tr; tip.classList.add("on");
+    if (cur !== el) shownAt = Date.now(); cur = el; const pr = el.dataset.tr.split("|");
+    if (pr.length > 1){ tip.innerHTML = ""; [["RU",pr[0]],["ES",pr[1]]].forEach(([k,v]) => { const d = document.createElement("div"); const b = document.createElement("b"); b.textContent = k; d.append(b, " " + v.trim()); tip.appendChild(d); }); }
+    else tip.textContent = el.dataset.tr;
+    tip.classList.add("on");
     const r = el.getBoundingClientRect(), w = tip.offsetWidth, h = tip.offsetHeight;
     let x = r.left + r.width/2 - w/2; x = Math.max(12, Math.min(x, innerWidth - w - 12));
     let y = r.top - h - 8; if (y < 70) y = r.bottom + 8;
