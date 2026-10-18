@@ -128,6 +128,8 @@ article.chapter blockquote{margin:1.2em 0;padding-left:1em;border-left:2px solid
 .loading{text-align:center;color:var(--muted);padding:80px 0;font-family:var(--sans)}
 
 article.chapter figure{margin:2em -20px;text-align:center}
+article.chapter figure.mid{margin:1.8em auto;max-width:520px}
+article.chapter figure.mid img{max-height:none;width:100%}
 article.chapter figure img{max-width:100%;max-height:72vh;width:auto;height:auto;border-radius:6px;box-shadow:var(--shadow)}
 article.chapter h3{font-family:var(--sans);font-size:.72em;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:2em 0 .8em;font-weight:600}
 .badge18{position:absolute;top:10px;right:10px;background:#b3261e;color:#fff;font-family:var(--sans);font-weight:700;font-size:12px;padding:3px 7px;border-radius:6px;letter-spacing:.02em;z-index:2}
@@ -222,7 +224,7 @@ function renderText(md){
   return md.replace(/\r/g,"").split(/\n\s*\n/).map(b => b.trim()).filter(Boolean).map(b => {
     if (/^(\*\s*){3,}$|^(-\s*){3,}$|^⁂$/.test(b)) return "<hr>";
     let m = b.match(/^!\[([^\]]*)\]\(([^)\s]+)\)$/);
-    if (m) return `<figure><img src="${esc(m[2])}" alt="${esc(m[1])}" loading="lazy"></figure>`;
+    if (m) return m[1] === "m" ? `<figure class="mid"><img src="${esc(m[2])}" alt="" loading="lazy"></figure>` : `<figure><img src="${esc(m[2])}" alt="${esc(m[1])}" loading="lazy"></figure>`;
     if (/^##\s/.test(b)) return "<h2>" + inline(b.replace(/^#+\s*/,"")) + "</h2>";
     if (/^#{3,6}\s/.test(b)) return "<h3>" + inline(b.replace(/^#+\s*/,"")) + "</h3>";
     if (/^\|/.test(b)) { const rows = b.split("\n").filter(r => !/^\|[\s|:-]+\|?$/.test(r)).map(r => r.replace(/^\||\|$/g,"").split("|").map(c => inline(c.trim())));
