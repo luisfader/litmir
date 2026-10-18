@@ -3676,6 +3676,15 @@
     {
      "file": "30.md",
      "title": "Крај хаоса и почетак љубави"
+<<<<<<< Updated upstream
+=======
+    },
+    {
+     "file": "test.json",
+     "title": "Завршни тест",
+     "label": "Тест",
+     "type": "quiz"
+>>>>>>> Stashed changes
     }
    ],
    "cover": "novels/divlji-chas/cover-v2.jpg",
@@ -4112,6 +4121,7 @@
     }
    ],
    "adult": true
+<<<<<<< Updated upstream
   },
   {
    "slug": "divlji-chas-6",
@@ -4126,6 +4136,8 @@
     }
    ],
    "adult": true
+=======
+>>>>>>> Stashed changes
   }
  ]
 }

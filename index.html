@@ -219,6 +219,13 @@ article.chapter h3{font-family:var(--sans);font-size:.72em;letter-spacing:.12em;
 .ls-stage{padding-top:18px}
 .ls-stage.in{animation:lsIn .35s ease}
 @keyframes lsIn{from{opacity:0;transform:translateX(24px)}to{opacity:1;transform:none}}
+.ls-img{margin:0 0 20px;text-align:center}
+.ls-img img{max-width:100%;max-height:260px;border-radius:18px;border:2px solid var(--line);box-shadow:var(--shadow)}
+.ls-target{color:var(--accent);white-space:nowrap}
+.ls-pics{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px}
+.ls-opt.pic{flex-direction:column;align-items:stretch;gap:10px;padding:10px;text-align:center}
+.ls-opt.pic img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:10px;background:var(--line)}
+.ls-opt.pic span{display:flex;align-items:center;justify-content:center;gap:8px;font-size:17px}
 .ls-q{font-size:clamp(22px,4.5vw,28px);font-weight:800;margin:0 0 22px;color:var(--ink)}
 .ls-word{display:flex;align-items:center;justify-content:center;gap:12px;font-family:var(--display);font-size:clamp(38px,8vw,54px);font-weight:600;margin:6px 0 26px;color:var(--ink)}
 .ls-word.es{font-family:var(--serif);font-size:clamp(28px,6vw,40px);font-style:italic}
@@ -616,7 +623,7 @@ const LESSON_T = {
   wrong:"Respuesta correcta:", almost:"¡Casi! Fíjate en los acentos:", done:"¡Test completado!", lost:"Te quedaste sin corazones",
   lostP:"No pasa nada: cada error es una palabra nueva que ya conoces un poco mejor.", xp:"XP total", acc:"Precisión", time:"Tiempo",
   ex:n=>n+" ejercicios", min:"≈ 5 minutos", hearts:"corazones", best:"Tu mejor resultado", tap:"Toca las palabras en orden",
-  type:"Escribe aquí…", perfect:"¡Sin un solo error! Eres un verdadero strážce podzemí.", good:"¡Muy buen trabajo! Praga está a salvo.",
+  type:"Escribe aquí…", perfect:"¡Sin un solo error! Eres increíble.", good:"¡Muy buen trabajo!",
   ok:"¡Bien hecho! Repite el test para mejorar tu precisión.", sound:"Sonido", listen:"Escuchar", meaning:"Significa:"
 };
 
@@ -634,6 +641,28 @@ const TULIP = (mood="happy") => `<svg class="tulip ${mood}" viewBox="0 0 120 140
     <ellipse cx="42" cy="66" rx="4" ry="2.4" fill="#ff8a7a" opacity=".7"/><ellipse cx="78" cy="66" rx="4" ry="2.4" fill="#ff8a7a" opacity=".7"/>
     ${mood==="sad" ? `<path d="M53 72 Q60 66 67 72" stroke="#2a1a12" stroke-width="2.6" fill="none" stroke-linecap="round"/>`
                    : `<path d="M52 67 Q60 76 68 67" stroke="#2a1a12" stroke-width="2.6" fill="#7a1b18" stroke-linecap="round"/>`}
+  </g>
+</svg>`;
+
+const DRAGON = (mood="happy") => `<svg class="tulip ${mood}" viewBox="0 0 120 140" aria-hidden="true">
+  <path d="M84 112 C104 114 112 100 106 90 C102 98 94 100 88 98" fill="#3f8f5a"/>
+  <path d="M30 70 C14 58 10 44 14 34 C22 44 30 46 38 50Z" fill="#7fc79a"/><path d="M90 70 C106 58 110 44 106 34 C98 44 90 46 82 50Z" fill="#7fc79a"/>
+  <path d="M30 70 C18 62 15 52 16 44 C22 52 28 54 36 56Z" fill="#5fae7f"/><path d="M90 70 C102 62 105 52 104 44 C98 52 92 54 84 56Z" fill="#5fae7f"/>
+  <ellipse cx="60" cy="96" rx="30" ry="32" fill="#4e9f6b"/>
+  <ellipse cx="60" cy="104" rx="19" ry="21" fill="#f3e3b0"/>
+  <path d="M46 92 h28 M45 102 h30 M47 112 h26" stroke="#e2cc8a" stroke-width="2" stroke-linecap="round"/>
+  <ellipse cx="44" cy="128" rx="9" ry="5" fill="#3f8f5a"/><ellipse cx="76" cy="128" rx="9" ry="5" fill="#3f8f5a"/>
+  <path d="M40 30 L34 12 L48 24Z" fill="#e0a82e"/><path d="M80 30 L86 12 L72 24Z" fill="#e0a82e"/>
+  <path d="M60 18 L56 8 L64 8Z" fill="#c8312f"/><path d="M60 24 L55 15 L65 15Z" fill="#c8312f"/>
+  <ellipse cx="60" cy="50" rx="30" ry="27" fill="#5fb07c"/>
+  <ellipse cx="60" cy="62" rx="16" ry="10" fill="#7fc79a"/>
+  <circle cx="54" cy="62" r="1.8" fill="#2f6b45"/><circle cx="66" cy="62" r="1.8" fill="#2f6b45"/>
+  <g class="face">
+    <ellipse cx="47" cy="46" rx="5" ry="${mood==="sad"?3.6:6}" fill="#1f2a22"/><ellipse cx="73" cy="46" rx="5" ry="${mood==="sad"?3.6:6}" fill="#1f2a22"/>
+    <circle cx="48.6" cy="43.6" r="1.8" fill="#fff"/><circle cx="74.6" cy="43.6" r="1.8" fill="#fff"/>
+    <ellipse cx="38" cy="56" rx="4.5" ry="2.6" fill="#ff9d8a" opacity=".65"/><ellipse cx="82" cy="56" rx="4.5" ry="2.6" fill="#ff9d8a" opacity=".65"/>
+    ${mood==="sad" ? `<path d="M53 72 Q60 67 67 72" stroke="#1f2a22" stroke-width="2.4" fill="none" stroke-linecap="round"/>`
+                   : `<path d="M52 68 Q60 76 68 68" stroke="#1f2a22" stroke-width="2.4" fill="#a3322b" stroke-linecap="round"/>`}
   </g>
 </svg>`;
 
@@ -671,6 +700,12 @@ const voice = {
 };
 if ("speechSynthesis" in window) { voice.load(); speechSynthesis.onvoiceschanged = () => voice.load(); }
 
+function latToCyr(s){
+  const d = [["dž","џ"],["Dž","Џ"],["DŽ","Џ"],["lj","љ"],["Lj","Љ"],["LJ","Љ"],["nj","њ"],["Nj","Њ"],["NJ","Њ"],["dj","ђ"],["Dj","Ђ"]];
+  d.forEach(([a,b]) => { s = s.split(a).join(b); });
+  const m = {a:"а",b:"б",c:"ц",č:"ч",ć:"ћ",d:"д",đ:"ђ",e:"е",f:"ф",g:"г",h:"х",i:"и",j:"ј",k:"к",l:"л",m:"м",n:"н",o:"о",p:"п",r:"р",s:"с",š:"ш",t:"т",u:"у",v:"в",z:"з",ž:"ж"};
+  return s.replace(/[a-zčćđšž]/gi, ch => { const lo = ch.toLowerCase(), c = m[lo]; return c ? (ch === lo ? c : c.toUpperCase()) : ch; });
+}
 const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
 const norm = s => String(s).toLowerCase().replace(/[.,!?;:„“"«»¿¡…]/g, "").replace(/\s+/g, " ").trim();
 const plain = s => norm(s).normalize("NFD").replace(/[̀-ͯ]/g, "");
@@ -680,6 +715,8 @@ async function lesson(n, i, c){
   try { const r = await fetch(`novels/${n.slug}/${c.file}`); if (!r.ok) throw 0; data = await r.json(); }
   catch(e) { app.innerHTML = `<div class="empty">${esc(t("notFound"))}</div>`; return; }
   const T = LESSON_T, SPK = data.speak || "cs-CZ";
+  const M = (mood) => (data.mascot === "dragon" ? DRAGON : TULIP)(mood);
+  const tr = v => data.translit === "sr" ? latToCyr(v) : v;
   const total = data.exercises.length, maxHearts = data.hearts || 5;
   const key = "quiz:" + n.slug;
   document.title = (data.title || c.title) + " · " + n.title;
@@ -693,7 +730,7 @@ async function lesson(n, i, c){
   function intro(){
     const best = store.get(key, null);
     app.innerHTML = `<section class="ls ls-intro">
-      <div class="ls-mascot bounce">${TULIP()}</div>
+      <div class="ls-mascot bounce">${M()}</div>
       <div class="ls-kicker">${esc(c.label || "Test")}</div>
       <h1>${esc(data.title || c.title)}</h1>
       <p class="ls-sub">${esc(data.subtitle || "")}</p>
@@ -753,7 +790,12 @@ async function lesson(n, i, c){
   }
 
   function render(e){
-    const head = `<h2 class="ls-q">${esc(e.prompt)}</h2>`;
+    const head = `<h2 class="ls-q">${esc(e.prompt)}</h2>` + (e.img ? `<figure class="ls-img"><img src="novels/${n.slug}/${esc(e.img)}" alt=""></figure>` : "");
+    if (e.type === "picture") {
+      e._opts = shuffle(e.options.map((o, k) => ({...o, k})));
+      return `<h2 class="ls-q">${esc(e.prompt)} <span class="ls-target">«${esc(e.word)}»</span></h2>
+        <div class="ls-pics">${e._opts.map((x, j) => `<button class="ls-opt pic" data-k="${x.k}"><img src="novels/${n.slug}/${esc(x.img)}" alt="" loading="eager"><span lang="sr"><kbd>${j+1}</kbd>${esc(x.word)}</span></button>`).join("")}</div>`;
+    }
     if (e.type === "choice" || e.type === "reverse") {
       e._opts = shuffle(e.options.map((o, k) => ({o, k})));
       const word = e.type === "choice" ? `<div class="ls-word">${spk(e.word)}<span lang="cs">${esc(e.word)}</span></div>` : `<div class="ls-word es">«${esc(e.word)}»</div>`;
@@ -761,7 +803,7 @@ async function lesson(n, i, c){
     }
     if (e.type === "story") {
       e._opts = shuffle(e.options.map((o, k) => ({o, k})));
-      return head + `<div class="ls-bubble-row"><div class="ls-mini">${TULIP()}</div><div class="ls-bubble"><div lang="cs" class="ls-cz">${spk(e.question,"sm")}${esc(e.question)}</div><div class="ls-es">${esc(e.es)}</div></div></div>
+      return head + `<div class="ls-bubble-row"><div class="ls-mini">${M()}</div><div class="ls-bubble"><div lang="cs" class="ls-cz">${spk(e.question,"sm")}${esc(e.question)}</div><div class="ls-es">${esc(e.es)}</div></div></div>
         <div class="ls-list">${e._opts.map((x, j) => `<button class="ls-opt row" data-k="${x.k}"><kbd>${j+1}</kbd><span lang="cs">${esc(x.o)}</span></button>`).join("")}</div>`;
     }
     if (e.type === "fill") {
@@ -771,13 +813,13 @@ async function lesson(n, i, c){
     }
     if (e.type === "build") {
       e._bank = shuffle([...e.answer, ...(e.extra || [])].map((w, k) => ({w, k})));
-      return head + `<div class="ls-bubble-row"><div class="ls-mini">${TULIP()}</div><div class="ls-bubble"><div class="ls-es big">${esc(e.es)}</div></div></div>
+      return head + `<div class="ls-bubble-row"><div class="ls-mini">${M()}</div><div class="ls-bubble"><div class="ls-es big">${esc(e.es)}</div></div></div>
         <div class="ls-answer" id="lsAns" aria-label="${T.tap}"></div>
         <div class="ls-bank" id="lsBank">${e._bank.map(x => `<button class="ls-chip" data-k="${x.k}" lang="cs">${esc(x.w)}</button>`).join("")}</div>`;
     }
     if (e.type === "write") {
-      const letters = "á č ď é ě í ň ó ř š ť ú ů ý ž".split(" ");
-      return head + `<div class="ls-bubble-row"><div class="ls-mini">${TULIP()}</div><div class="ls-bubble"><div class="ls-es big">«${esc(e.es)}»</div>${e.hint ? `<div class="ls-es">${esc(e.hint)}</div>` : ""}</div></div>
+      const letters = data.keyboard || "á č ď é ě í ň ó ř š ť ú ů ý ž".split(" ");
+      return head + `<div class="ls-bubble-row"><div class="ls-mini">${M()}</div><div class="ls-bubble"><div class="ls-es big">«${esc(e.es)}»</div>${e.hint ? `<div class="ls-es">${esc(e.hint)}</div>` : ""}</div></div>
         <input class="ls-input" id="lsIn" lang="cs" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="${T.type}">
         <div class="ls-keys">${letters.map(l => `<button class="ls-key" data-l="${l}">${l}</button>`).join("")}</div>`;
     }
@@ -790,7 +832,7 @@ async function lesson(n, i, c){
   }
 
   function bind(e, stage){
-    if (["choice","reverse","story"].includes(e.type)) {
+    if (["choice","reverse","story","picture"].includes(e.type)) {
       let sel = null;
       const opts = [...stage.querySelectorAll(".ls-opt")];
       opts.forEach(b => b.onclick = () => {
@@ -832,7 +874,7 @@ async function lesson(n, i, c){
       });
       setTimeout(() => inp.focus(), 60);
       answerFn = () => {
-        const v = inp.value;
+        const v = tr(inp.value);
         if (e.answers.some(a => norm(a) === norm(v))) return { ok:true };
         if (e.answers.some(a => plain(a) === plain(v))) return { ok:true, almost:true };
         return { ok:false };
@@ -899,6 +941,7 @@ async function lesson(n, i, c){
   function solution(e){
     if (e.type === "build") return e.answer.join(" ") + ".";
     if (e.type === "write") return e.answers[0];
+    if (e.type === "picture") return e.options[e.answer].word;
     if (e.type === "fill") return `${e.before} ${e.options[e.answer]} ${e.after}`;
     return e.options[e.answer];
   }
@@ -910,10 +953,10 @@ async function lesson(n, i, c){
     if (!best || S.xp > best.xp || (S.xp === best.xp && acc > best.acc)) store.set(key, { xp:S.xp, acc });
     const d = store.get("done:" + n.slug, []); if (!d.includes(i)) { d.push(i); store.set("done:" + n.slug, d); }
     sfx.win();
-    const line = perfect ? T.perfect : acc >= 70 ? T.good : T.ok;
+    const line = perfect ? (data.perfect || T.perfect) : acc >= 70 ? (data.good || T.good) : T.ok;
     app.innerHTML = `<section class="ls ls-end">
       <canvas id="lsConfetti" aria-hidden="true"></canvas>
-      <div class="ls-mascot jump">${TULIP()}</div>
+      <div class="ls-mascot jump">${M()}</div>
       <h1>${T.done}</h1><p class="ls-sub">${esc(line)}</p>
       <div class="ls-stats">
         <div class="ls-stat xp"><div class="h">${T.xp}</div><div class="v">⚡ ${S.xp}</div></div>
@@ -929,7 +972,7 @@ async function lesson(n, i, c){
 
   function gameover(){
     app.innerHTML = `<section class="ls ls-end lost">
-      <div class="ls-mascot">${TULIP("sad")}</div>
+      <div class="ls-mascot">${M("sad")}</div>
       <h1>${T.lost}</h1><p class="ls-sub">${T.lostP}</p>
       <div class="ls-stats"><div class="ls-stat acc"><div class="h">✔</div><div class="v">${S.solved.size} / ${total}</div></div></div>
       <button class="ls-btn go" id="lsAgain">${T.retry}</button>

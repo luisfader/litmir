@@ -1,73 +1,340 @@
 {
-  "title": "Závěrečný test",
-  "subtitle": "Repasa todo lo que aprendiste en «Podzemní tajemství»",
-  "speak": "cs-CZ",
-  "hearts": 5,
-  "exercises": [
-    {"type": "choice", "chapter": 1, "prompt": "¿Qué significa?", "word": "hudebník",
-     "options": ["músico", "fotógrafo", "guía", "guerrero"], "answer": 0},
-
-    {"type": "match", "chapter": 1, "prompt": "Une las parejas",
-     "pairs": [["káva", "café"], ["přátelé", "amigos"], ["nápad", "idea"], ["podzemí", "subterráneo"], ["prší", "llueve"]]},
-
-    {"type": "story", "chapter": 1, "prompt": "Comprensión", "question": "Odkud je Luis?", "es": "¿De dónde es Luis?",
-     "options": ["Z Argentiny", "Z Prahy", "Ze Španělska", "Z Itálie"], "answer": 0},
-
-    {"type": "build", "chapter": 1, "prompt": "Escribe en checo", "es": "Me gustas.",
-     "answer": ["Ty", "se", "mi", "líbíš"], "extra": ["mě", "je", "tě"]},
-
-    {"type": "fill", "chapter": 2, "prompt": "Completa la frase de Lucie",
-     "before": "„Jano, promiň. S tak krátkou", "after": "dolů nemůžeš.“",
-     "options": ["sukní", "kytarou", "kávou"], "answer": 0, "es": "«Jana, perdona. Con una falda tan corta no puedes bajar.»"},
-
-    {"type": "reverse", "chapter": 3, "prompt": "¿Cómo se dice en checo?", "word": "bordado",
-     "options": ["výšivka", "krajka", "látka", "skříň"], "answer": 0},
-
-    {"type": "story", "chapter": 3, "prompt": "Comprensión", "question": "Jakou barvu má mámina sukně?", "es": "¿De qué color es la falda de la madre?",
-     "options": ["Bordó – tmavě červenou jako víno", "Modrou jako chrpy", "Bílou jako krajka", "Zlatou jako hvězdy"], "answer": 0},
-
-    {"type": "match", "chapter": 3, "prompt": "Une los motivos del bordado",
-     "pairs": [["tulipány", "tulipanes"], ["hvězdy", "estrellas"], ["ptáčci", "pajaritos"], ["křídla", "alas"], ["klasy", "espigas"]]},
-
-    {"type": "write", "chapter": 5, "prompt": "Escribe en checo", "es": "castillo",
-     "answers": ["hrad"], "hint": "Ludmila vive en un … sobre Praga."},
-
-    {"type": "build", "chapter": 4, "prompt": "Escribe en checo", "es": "De repente la tierra tiembla.",
-     "answer": ["Najednou", "se", "zem", "třese"], "extra": ["hrad", "padá", "konečně"]},
-
-    {"type": "choice", "chapter": 5, "prompt": "¿Qué significa?", "word": "housle",
-     "options": ["violín", "guitarra", "escoba", "vela"], "answer": 0},
-
-    {"type": "story", "chapter": 6, "prompt": "Comprensión", "question": "Kdo probudil princeznu Ludmilu?", "es": "¿Quién despertó a la princesa Ludmila?",
-     "options": ["Luisova hudba", "Markův fotoaparát", "Lucie a její babička", "Lindsey a Vanessa"], "answer": 0},
-
-    {"type": "fill", "chapter": 6, "prompt": "Completa: ¿qué descubre Mark en las fotos?",
-     "before": "„Podívej. Tady dole. To nejsou jen čáry. To jsou", "after": "!“",
-     "options": ["noty", "hvězdy", "tulipány"], "answer": 0, "es": "«Mira. Aquí abajo. No son solo líneas. ¡Son notas!»"},
-
-    {"type": "reverse", "chapter": 8, "prompt": "¿Cómo se dice en checo?", "word": "por fin",
-     "options": ["konečně", "najednou", "vždycky", "kdysi"], "answer": 0},
-
-    {"type": "match", "chapter": 11, "prompt": "Une las parejas",
-     "pairs": [["strážce", "guardián"], ["jeskyně", "cueva"], ["cizinec", "extranjero"], ["proroctví", "profecía"], ["pravda", "verdad"]]},
-
-    {"type": "story", "chapter": 11, "prompt": "Comprensión", "question": "Kdo je Luboš?", "es": "¿Quién es Luboš?",
-     "options": ["Strážce podzemí – kdysi princ", "Fotograf z kavárny", "Janin bratr", "Hudebník z Argentiny"], "answer": 0},
-
-    {"type": "story", "chapter": 11, "prompt": "Comprensión", "question": "Kde je konec Luisovy písně?", "es": "¿Dónde está el final de la canción de Luis?",
-     "options": ["V koženém sešitu od Luboše", "Na Janině sukni", "Ve staré knihovně", "Na internetu"], "answer": 0},
-
-    {"type": "fill", "chapter": 14, "prompt": "Completa: el último truco de la princesa",
-     "before": "Z nebe začne pršet", "after": "Kozel!",
-     "options": ["pivo", "víno", "káva"], "answer": 0, "es": "¡Del cielo empieza a llover cerveza Kozel!"},
-
-    {"type": "story", "chapter": 14, "prompt": "Comprensión", "question": "Kam spadnou Luis a Jana?", "es": "¿Dónde caen Luis y Jana?",
-     "options": ["Na hromadu sena u Vltavy", "Na Karlův most", "Na střechu hradu", "Do kavárny"], "answer": 0},
-
-    {"type": "build", "chapter": 15, "prompt": "Escribe en checo", "es": "Una semana después.",
-     "answer": ["O", "týden", "později"], "extra": ["den", "první", "večer"]},
-
-    {"type": "write", "chapter": 15, "prompt": "La frase más importante en checo", "es": "te quiero",
-     "answers": ["miluju tě", "miluji tě"], "hint": "Jana se la enseña a Luis en la cafetería."}
-  ]
+ "title": "Závěrečný test",
+ "subtitle": "Repasa todo lo que aprendiste en «Podzemní tajemství»",
+ "speak": "cs-CZ",
+ "perfect": "¡Sin un solo error! Eres un verdadero strážce podzemí.",
+ "good": "¡Muy buen trabajo! Praga está a salvo.",
+ "hearts": 5,
+ "exercises": [
+  {
+   "type": "choice",
+   "chapter": 1,
+   "prompt": "¿Qué significa?",
+   "word": "hudebník",
+   "options": [
+    "músico",
+    "fotógrafo",
+    "guía",
+    "guerrero"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "match",
+   "chapter": 1,
+   "prompt": "Une las parejas",
+   "pairs": [
+    [
+     "káva",
+     "café"
+    ],
+    [
+     "přátelé",
+     "amigos"
+    ],
+    [
+     "nápad",
+     "idea"
+    ],
+    [
+     "podzemí",
+     "subterráneo"
+    ],
+    [
+     "prší",
+     "llueve"
+    ]
+   ]
+  },
+  {
+   "type": "story",
+   "chapter": 1,
+   "prompt": "Comprensión",
+   "question": "Odkud je Luis?",
+   "es": "¿De dónde es Luis?",
+   "options": [
+    "Z Argentiny",
+    "Z Prahy",
+    "Ze Španělska",
+    "Z Itálie"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "chapter": 1,
+   "prompt": "Escribe en checo",
+   "es": "Me gustas.",
+   "answer": [
+    "Ty",
+    "se",
+    "mi",
+    "líbíš"
+   ],
+   "extra": [
+    "mě",
+    "je",
+    "tě"
+   ]
+  },
+  {
+   "type": "fill",
+   "chapter": 2,
+   "prompt": "Completa la frase de Lucie",
+   "before": "„Jano, promiň. S tak krátkou",
+   "after": "dolů nemůžeš.“",
+   "options": [
+    "sukní",
+    "kytarou",
+    "kávou"
+   ],
+   "answer": 0,
+   "es": "«Jana, perdona. Con una falda tan corta no puedes bajar.»"
+  },
+  {
+   "type": "reverse",
+   "chapter": 3,
+   "prompt": "¿Cómo se dice en checo?",
+   "word": "bordado",
+   "options": [
+    "výšivka",
+    "krajka",
+    "látka",
+    "skříň"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "chapter": 3,
+   "prompt": "Comprensión",
+   "question": "Jakou barvu má mámina sukně?",
+   "es": "¿De qué color es la falda de la madre?",
+   "options": [
+    "Bordó – tmavě červenou jako víno",
+    "Modrou jako chrpy",
+    "Bílou jako krajka",
+    "Zlatou jako hvězdy"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "match",
+   "chapter": 3,
+   "prompt": "Une los motivos del bordado",
+   "pairs": [
+    [
+     "tulipány",
+     "tulipanes"
+    ],
+    [
+     "hvězdy",
+     "estrellas"
+    ],
+    [
+     "ptáčci",
+     "pajaritos"
+    ],
+    [
+     "křídla",
+     "alas"
+    ],
+    [
+     "klasy",
+     "espigas"
+    ]
+   ]
+  },
+  {
+   "type": "write",
+   "chapter": 5,
+   "prompt": "Escribe en checo",
+   "es": "castillo",
+   "answers": [
+    "hrad"
+   ],
+   "hint": "Ludmila vive en un … sobre Praga."
+  },
+  {
+   "type": "build",
+   "chapter": 4,
+   "prompt": "Escribe en checo",
+   "es": "De repente la tierra tiembla.",
+   "answer": [
+    "Najednou",
+    "se",
+    "zem",
+    "třese"
+   ],
+   "extra": [
+    "hrad",
+    "padá",
+    "konečně"
+   ]
+  },
+  {
+   "type": "choice",
+   "chapter": 5,
+   "prompt": "¿Qué significa?",
+   "word": "housle",
+   "options": [
+    "violín",
+    "guitarra",
+    "escoba",
+    "vela"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "chapter": 6,
+   "prompt": "Comprensión",
+   "question": "Kdo probudil princeznu Ludmilu?",
+   "es": "¿Quién despertó a la princesa Ludmila?",
+   "options": [
+    "Luisova hudba",
+    "Markův fotoaparát",
+    "Lucie a její babička",
+    "Lindsey a Vanessa"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "chapter": 6,
+   "prompt": "Completa: ¿qué descubre Mark en las fotos?",
+   "before": "„Podívej. Tady dole. To nejsou jen čáry. To jsou",
+   "after": "!“",
+   "options": [
+    "noty",
+    "hvězdy",
+    "tulipány"
+   ],
+   "answer": 0,
+   "es": "«Mira. Aquí abajo. No son solo líneas. ¡Son notas!»"
+  },
+  {
+   "type": "reverse",
+   "chapter": 8,
+   "prompt": "¿Cómo se dice en checo?",
+   "word": "por fin",
+   "options": [
+    "konečně",
+    "najednou",
+    "vždycky",
+    "kdysi"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "match",
+   "chapter": 11,
+   "prompt": "Une las parejas",
+   "pairs": [
+    [
+     "strážce",
+     "guardián"
+    ],
+    [
+     "jeskyně",
+     "cueva"
+    ],
+    [
+     "cizinec",
+     "extranjero"
+    ],
+    [
+     "proroctví",
+     "profecía"
+    ],
+    [
+     "pravda",
+     "verdad"
+    ]
+   ]
+  },
+  {
+   "type": "story",
+   "chapter": 11,
+   "prompt": "Comprensión",
+   "question": "Kdo je Luboš?",
+   "es": "¿Quién es Luboš?",
+   "options": [
+    "Strážce podzemí – kdysi princ",
+    "Fotograf z kavárny",
+    "Janin bratr",
+    "Hudebník z Argentiny"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "chapter": 11,
+   "prompt": "Comprensión",
+   "question": "Kde je konec Luisovy písně?",
+   "es": "¿Dónde está el final de la canción de Luis?",
+   "options": [
+    "V koženém sešitu od Luboše",
+    "Na Janině sukni",
+    "Ve staré knihovně",
+    "Na internetu"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "chapter": 14,
+   "prompt": "Completa: el último truco de la princesa",
+   "before": "Z nebe začne pršet",
+   "after": "Kozel!",
+   "options": [
+    "pivo",
+    "víno",
+    "káva"
+   ],
+   "answer": 0,
+   "es": "¡Del cielo empieza a llover cerveza Kozel!"
+  },
+  {
+   "type": "story",
+   "chapter": 14,
+   "prompt": "Comprensión",
+   "question": "Kam spadnou Luis a Jana?",
+   "es": "¿Dónde caen Luis y Jana?",
+   "options": [
+    "Na hromadu sena u Vltavy",
+    "Na Karlův most",
+    "Na střechu hradu",
+    "Do kavárny"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "chapter": 15,
+   "prompt": "Escribe en checo",
+   "es": "Una semana después.",
+   "answer": [
+    "O",
+    "týden",
+    "později"
+   ],
+   "extra": [
+    "den",
+    "první",
+    "večer"
+   ]
+  },
+  {
+   "type": "write",
+   "chapter": 15,
+   "prompt": "La frase más importante en checo",
+   "es": "te quiero",
+   "answers": [
+    "miluju tě",
+    "miluji tě"
+   ],
+   "hint": "Jana se la enseña a Luis en la cafetería."
+  }
+ ]
 }

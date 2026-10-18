@@ -1,0 +1,328 @@
+{
+ "title": "Завршни тест",
+ "subtitle": "Repasa todo lo que aprendiste en «Дивљи час»",
+ "speak": "sr-RS",
+ "translit": "sr",
+ "mascot": "dragon",
+ "keyboard": [
+  "ђ",
+  "ж",
+  "ћ",
+  "ч",
+  "џ",
+  "ш",
+  "љ",
+  "њ",
+  "ј"
+ ],
+ "perfect": "¡Sin un solo error! Eres digno del Змај Огњени Вук.",
+ "good": "¡Muy buen trabajo! Belgrado está a salvo.",
+ "hearts": 5,
+ "exercises": [
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "тврђава",
+   "options": [
+    "fortaleza",
+    "iglesia",
+    "puente",
+    "biblioteca"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "match",
+   "prompt": "Une las parejas",
+   "pairs": [
+    [
+     "град",
+     "ciudad"
+    ],
+    [
+     "улица",
+     "calle"
+    ],
+    [
+     "река",
+     "río"
+    ],
+    [
+     "парк",
+     "parque"
+    ],
+    [
+     "тротинет",
+     "patinete"
+    ]
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Comprensión",
+   "question": "Ко удари Луиса у Кнез Михаиловој улици?",
+   "es": "¿Quién choca con Luis en la calle Knez Mihailova?",
+   "options": [
+    "Наташа на тротинету",
+    "Софија на мотоциклу",
+    "Библиотекар",
+    "Артан на коњу"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Escribe en serbio",
+   "es": "Belgrado tiene dos almas.",
+   "answer": [
+    "Београд",
+    "има",
+    "две",
+    "душе"
+   ],
+   "extra": [
+    "три",
+    "тајну",
+    "је"
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa la leyenda que cuenta Nataša",
+   "before": "„Ноћу дивља душа",
+   "after": "град.“",
+   "options": [
+    "буди",
+    "спава",
+    "гледа"
+   ],
+   "answer": 0,
+   "es": "«De noche, el alma salvaje despierta la ciudad.»"
+  },
+  {
+   "type": "reverse",
+   "prompt": "¿Cómo se dice en serbio?",
+   "word": "llave",
+   "options": [
+    "кључ",
+    "мач",
+    "кула",
+    "мапа"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Comprensión",
+   "question": "Ко је био Луисов прапрадеда Фернандо?",
+   "es": "¿Quién era Fernando, el tatarabuelo de Luis?",
+   "options": [
+    "Уметник",
+    "Војник",
+    "Библиотекар",
+    "Краљ"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "match",
+   "prompt": "Une las parejas",
+   "pairs": [
+    [
+     "порука",
+     "mensaje"
+    ],
+    [
+     "библиотека",
+     "biblioteca"
+    ],
+    [
+     "рукопис",
+     "manuscrito"
+    ],
+    [
+     "страница",
+     "página"
+    ],
+    [
+     "мапа",
+     "mapa"
+    ]
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Comprensión",
+   "question": "Шта је Час дивљака?",
+   "es": "¿Qué es la Hora Salvaje?",
+   "options": [
+    "Магични тренутак када град губи контролу",
+    "Ноћни фестивал у Скадарлији",
+    "Стари ресторан на Дунаву",
+    "Име куле испод Калемегдана"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "write",
+   "prompt": "Escribe en serbio",
+   "es": "dragón",
+   "answers": [
+    "змај"
+   ],
+   "hint": "El héroe de las canciones populares: … Огњени Вук."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa: Nataša habla de Kalemegdan",
+   "before": "„Ова тврђава је вековима",
+   "after": "град.“",
+   "options": [
+    "бранила",
+    "гледала",
+    "чекала"
+   ],
+   "answer": 0,
+   "es": "«Esta fortaleza defendió la ciudad durante siglos.»"
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "амајлија",
+   "options": [
+    "amuleto",
+    "espejo",
+    "lápiz",
+    "helado"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Comprensión",
+   "question": "Где се састају Артан, Софија и Џон?",
+   "es": "¿Dónde se reúnen Artan, Sofija y John?",
+   "options": [
+    "У кули Небојша",
+    "У Народној библиотеци",
+    "У Скадарлији",
+    "У Храму Светог Саве"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Escribe en serbio",
+   "es": "Me gustas.",
+   "answer": [
+    "Свиђаш",
+    "ми",
+    "се"
+   ],
+   "extra": [
+    "те",
+    "је",
+    "мој"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Comprensión",
+   "question": "Ко су Марина и Катарина?",
+   "es": "¿Quiénes son Marina y Katarina?",
+   "options": [
+    "Руске агенткиње",
+    "Наташине сестре",
+    "Софијине пријатељице из школе",
+    "Сликарке из Скадарлије"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "match",
+   "prompt": "Une las parejas",
+   "pairs": [
+    [
+     "ветар",
+     "viento"
+    ],
+    [
+     "слобода",
+     "libertad"
+    ],
+    [
+     "краљ",
+     "rey"
+    ],
+    [
+     "сенка",
+     "sombra"
+    ],
+    [
+     "торба",
+     "bolsa"
+    ]
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Comprensión",
+   "question": "Како Наташа и Луис иду на Авалу?",
+   "es": "¿Cómo van Nataša y Luis al monte Avala?",
+   "options": [
+    "Мотоциклом",
+    "Трамвајем",
+    "Пешке",
+    "Тротинетом"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "¿Cómo se dice en serbio?",
+   "word": "¡por fin!",
+   "options": [
+    "Најзад!",
+    "Одједном!",
+    "Ноћу!",
+    "Ускоро!"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Comprensión",
+   "question": "Шта Наташа пита Луиса у стану?",
+   "es": "¿Qué le pregunta Nataša a Luis en el piso?",
+   "options": [
+    "„Да ли би ме узео за жену?“",
+    "„Одакле си ти?“",
+    "„Где је пети камен?“",
+    "„Да ли волиш сладолед?“"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa: al final de la batalla",
+   "before": "„Луисе,",
+   "after": "си Београд“, шапуће му Наташа.",
+   "options": [
+    "спасао",
+    "нацртао",
+    "изгубио"
+   ],
+   "answer": 0,
+   "es": "«Luis, has salvado Belgrado», le susurra Nataša."
+  },
+  {
+   "type": "write",
+   "prompt": "La frase más importante en serbio",
+   "es": "te quiero",
+   "answers": [
+    "волим те"
+   ],
+   "hint": "Puedes escribir en cirílico o en latino."
+  }
+ ]
+}
