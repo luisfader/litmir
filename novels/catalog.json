@@ -2347,6 +2347,12 @@
      "file": "16.md",
      "title": "Nejdůležitější věta",
      "label": "Epilog"
+    },
+    {
+     "file": "test.json",
+     "title": "Závěrečný test",
+     "label": "Test",
+     "type": "quiz"
     }
    ],
    "study": true
@@ -3676,6 +3682,12 @@
     {
      "file": "30.md",
      "title": "Крај хаоса и почетак љубави"
+    },
+    {
+     "file": "test.json",
+     "title": "Завршни тест",
+     "label": "Тест",
+     "type": "quiz"
     }
    ],
    "cover": "novels/divlji-chas/cover-v2.jpg",
