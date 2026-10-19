@@ -1032,12 +1032,13 @@
       "genre": "Постапокалипсис · Приключения · Любовный роман",
       "description": "После глобальной катастрофы мир превратился в руины. Роберт едет на старом мотоцикле по разрушенным улицам и верит, что где-то ещё остались люди, готовые построить новый мир.\nТак рождается «Наша Утопия» — крепость, где выжившие пытаются жить без страха и жадности. Но дикари у ворот, интриги внутри стен и запутанные чувства — между Робертом, виолончелисткой Натальей и архитектором Луисом — ставят мечту под угрозу.",
       "translations": {
+        "eo": "la-antausento",
         "it": "presentimento",
         "es": "la-corazonada",
-        "eo": "la-antausento",
         "isv": "predcutje",
         "tr": "col-gulu",
-        "de": "vorahnung"
+        "de": "vorahnung",
+        "sr": "predosecaj"
       },
       "chapters": [
         {
@@ -2025,12 +2026,13 @@
       "cover": "novels/presentimento/cover.jpg",
       "description": "Dopo la catastrofe globale, il mondo è un deserto di rovine e silenzio. Robert attraversa le strade distrutte sulla sua vecchia moto, convinto che da qualche parte esistano ancora persone pronte a costruire un mondo nuovo.\nCosì nasce «La Nostra Utopia», una fortezza dove i sopravvissuti cercano di vivere senza paura né avidità. Ma i selvaggi alle porte, i tradimenti dentro le mura e i sentimenti intrecciati mettono il sogno in pericolo.",
       "translations": {
+        "eo": "la-antausento",
         "ru": "predchuvstvie",
         "es": "la-corazonada",
-        "eo": "la-antausento",
         "isv": "predcutje",
         "tr": "col-gulu",
-        "de": "vorahnung"
+        "de": "vorahnung",
+        "sr": "predosecaj"
       },
       "chapters": [
         {
@@ -2635,12 +2637,13 @@
         }
       ],
       "translations": {
+        "eo": "la-antausento",
         "ru": "predchuvstvie",
         "it": "presentimento",
         "es": "la-corazonada",
-        "eo": "la-antausento",
         "isv": "predcutje",
-        "de": "vorahnung"
+        "de": "vorahnung",
+        "sr": "predosecaj"
       }
     },
     {
@@ -3136,12 +3139,13 @@
       "genre": "Postapocalíptico · Aventura · Romance",
       "description": "Tras dos años de invierno nuclear, la radiación desaparece y Robert sale por fin de su búnker. Recorre en su vieja motocicleta un mundo en ruinas, convencido de que en algún lugar todavía quedan personas dispuestas a empezar de nuevo.\nAsí nace la Utopía Turquesa, una fortaleza donde los sobrevivientes intentan vivir sin miedo ni codicia. Pero los salvajes, la Prepotencia Central y los sentimientos cruzados entre sus habitantes ponen el sueño en peligro.",
       "translations": {
+        "eo": "la-antausento",
         "ru": "predchuvstvie",
         "it": "presentimento",
-        "eo": "la-antausento",
         "isv": "predcutje",
         "tr": "col-gulu",
-        "de": "vorahnung"
+        "de": "vorahnung",
+        "sr": "predosecaj"
       },
       "chapters": [
         {
@@ -3854,7 +3858,8 @@
         "es": "la-corazonada",
         "isv": "predcutje",
         "tr": "col-gulu",
-        "de": "vorahnung"
+        "de": "vorahnung",
+        "sr": "predosecaj"
       }
     },
     {
@@ -3938,12 +3943,13 @@
       "cover": "novels/predcutje/cover.jpg",
       "description": "Jaderna zima se skončila. Robert jede na starom motociklu po mrtvom gradu i věruje, že někde ješče živut ljudi, gotovi postaviti novy svět.\nTako se rodi utopija — tvrdynja, kde prěživši hočut žiti bez straha i pohlěpy. Ale divjaki prěd vratami, zavěry v stěnah i zapletene čuvstva stavjat mečtu v opasnost.",
       "translations": {
+        "eo": "la-antausento",
         "ru": "predchuvstvie",
         "it": "presentimento",
         "es": "la-corazonada",
-        "eo": "la-antausento",
         "tr": "col-gulu",
-        "de": "vorahnung"
+        "de": "vorahnung",
+        "sr": "predosecaj"
       },
       "chapters": [
         {
@@ -4068,12 +4074,13 @@
       "genre": "Postapokalypse · Abenteuer · Liebesroman",
       "description": "Robert lernt die Ärztin Natalia kennen, und sie verlieben sich. Dann beginnt der Krieg, und sie werden getrennt. Zwei Jahre sucht Robert seine Frau – ohne Erfolg.\nAus der Verzweiflung entsteht ein Traum: eine türkisfarbene Festung, „Unsere Utopie“. Doch draußen in der Wüste warten die Wilden, und Robert muss wählen zwischen Vergangenheit und Gegenwart.",
       "translations": {
+        "eo": "la-antausento",
         "ru": "predchuvstvie",
         "it": "presentimento",
         "es": "la-corazonada",
-        "eo": "la-antausento",
         "isv": "predcutje",
-        "tr": "col-gulu"
+        "tr": "col-gulu",
+        "sr": "predosecaj"
       },
       "chapters": [
         {
@@ -4447,7 +4454,16 @@
           "label": "Епилог"
         }
       ],
-      "cover": "novels/predosecaj/cover.jpg"
+      "cover": "novels/predosecaj/cover.jpg",
+      "translations": {
+        "eo": "la-antausento",
+        "ru": "predchuvstvie",
+        "it": "presentimento",
+        "es": "la-corazonada",
+        "isv": "predcutje",
+        "tr": "col-gulu",
+        "de": "vorahnung"
+      }
     }
   ]
 }
