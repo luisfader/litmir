@@ -2482,47 +2482,50 @@
       "chapters": [
         {
           "file": "01.md",
-          "title": "Antonio nei Musei Vaticani"
+          "title": "Antonio, un ragazzo di Roma"
         },
         {
           "file": "02.md",
-          "title": "Un caffè vicino a San Pietro"
+          "title": "Antonio nei Musei Vaticani"
         },
         {
           "file": "03.md",
-          "title": "Il furto"
+          "title": "Un caffè vicino a San Pietro"
         },
         {
           "file": "04.md",
-          "title": "Il tradimento"
+          "title": "Il furto"
         },
         {
           "file": "05.md",
-          "title": "A casa di Matteo"
+          "title": "Il tradimento"
         },
         {
           "file": "06.md",
-          "title": "La ricerca"
+          "title": "A casa di Matteo"
         },
         {
           "file": "07.md",
-          "title": "Il travestimento"
+          "title": "La ricerca"
         },
         {
           "file": "08.md",
-          "title": "L'asta clandestina"
+          "title": "Il travestimento"
         },
         {
           "file": "09.md",
-          "title": "La verità"
+          "title": "L'asta clandestina"
         },
         {
           "file": "10.md",
+          "title": "La verità"
+        },
+        {
+          "file": "11.md",
           "title": "Soluzioni",
           "label": "Appendice"
         }
-      ],
-      "author": "Roberto Fader"
+      ]
     },
     {
       "slug": "do-outro-lado-do-mundo",
