@@ -439,6 +439,7 @@ function setupQuizzes(root, lang){
   const items = [...root.querySelectorAll("p.vf, p.mc")];
   const PICK = {es:"— elige —", it:"— scegli —", en:"— choose —", ru:"— выбери —", pt:"— escolha —", fr:"— choisis —", de:"— wähle —"};
   root.querySelectorAll("p.mc select").forEach(sel => { if (sel.options[0]) sel.options[0].textContent = PICK[lang] || PICK.es; });
+  if (lang === "en") root.querySelectorAll('p.vf button[data-v="V"]').forEach(b => b.textContent = "T");
   const isModule = !!root.querySelector("article.chapter") && /^modulo-[1-4][.]md$/.test(window.__activeChapterFile || "");
   if (isModule && items.length) {
     const chapter = root.querySelector("article.chapter");

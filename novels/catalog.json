@@ -2798,7 +2798,7 @@
       "title": "The Immigrant",
       "author": "Robert Fader",
       "genre": "Drama · Adventure",
-      "description": "Charles gets off a ship in Sinea with a small bag, no money and no papers. Corrupt policemen, a hotel that only opens its doors for a bribe, and a hard job on the road: the big city is not kind to an immigrant.\nThen, digging a hole, he finds a turquoise diamond — the one stolen from the city museum. The Mayor says the thief is an immigrant. Charles must choose: sell it and run, or give it back and trust someone.\nA short, easy novel for English learners about honesty, courage and hope.",
+      "description": "Charles gets off a ship in Sinea with a small bag, no money and no papers. Corrupt policemen, a hotel that only opens its doors for a bribe, and a hard job on the road: the big city is not kind to an immigrant.\nThen, digging a hole, he finds a turquoise diamond — the one stolen from the city museum. The Mayor says the thief is an immigrant. Charles must choose: sell it and run, or give it back and trust someone.\nA short, easy novel for beginner students of English (A1–A2), with a word list (English–Russian) and interactive exercises after every chapter.",
       "year": 2025,
       "chapters": [
         {
@@ -2833,7 +2833,8 @@
           "file": "08.md",
           "title": "The New Mayor"
         }
-      ]
+      ],
+      "study": true
     },
     {
       "slug": "la-voix",
