@@ -3858,6 +3858,77 @@
       }
     },
     {
+      "slug": "la-savo-de-zmaj",
+      "lang": "eo",
+      "title": "La Sovaĝa Horo 17: La Savo de Zmaj",
+      "author": "Robert Fader",
+      "genre": "Fantazio · Urba fantazio · Aventuro",
+      "description": "Trankvila vespero sur la remparoj de Kalemegdan finiĝas per unu telefonvoko: Zmaj, la drako de la familio, estas kaptito en Prago.\nLuis kaj Nataŝa Fader havas malpli ol du tagojn. Sur la nokta trajno ilin atendas transfuĝinto kun sekreto, en Prago librovendistino kun mapo de sep steloj, kaj sub la urbo kristalo, kiu neniam estis konstruita por doni energion.\nĜi estis konstruita por teni ion fermita.",
+      "year": 2026,
+      "chapters": [
+        {
+          "file": "01.md",
+          "title": "La lasta trankvila vespero"
+        },
+        {
+          "file": "02.md",
+          "title": "La mesaĝo de la malamiko"
+        },
+        {
+          "file": "03.md",
+          "title": "La nokta trajno"
+        },
+        {
+          "file": "04.md",
+          "title": "La viro kun du sekretoj"
+        },
+        {
+          "file": "05.md",
+          "title": "La ĉasistoj en la mallumo"
+        },
+        {
+          "file": "06.md",
+          "title": "La aŭto de la alkemiisto"
+        },
+        {
+          "file": "07.md",
+          "title": "La filino de Viktor"
+        },
+        {
+          "file": "08.md",
+          "title": "La urbo de cent turoj"
+        },
+        {
+          "file": "09.md",
+          "title": "La tunelo de la forgesitoj"
+        },
+        {
+          "file": "10.md",
+          "title": "La koro de la drako"
+        },
+        {
+          "file": "11.md",
+          "title": "La perfido de Falk"
+        },
+        {
+          "file": "12.md",
+          "title": "La estaĵo malantaŭ la pordego"
+        },
+        {
+          "file": "13.md",
+          "title": "La sep steloj"
+        },
+        {
+          "file": "14.md",
+          "title": "La flugo super Prago"
+        },
+        {
+          "file": "15.md",
+          "title": "La promeso ĉe Danubo"
+        }
+      ]
+    },
+    {
       "slug": "predcutje",
       "lang": "isv",
       "title": "Prědčutje",
