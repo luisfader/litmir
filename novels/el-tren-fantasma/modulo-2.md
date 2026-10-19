@@ -4,6 +4,10 @@
 
 **Pista:** sus afirmaciones no siempre coinciden con lo que ocurre. El lector debe distinguir entre una regla real del tren y una amenaza inventada por sus guardianes.
 
+## Evaluación autocorregible · 15 preguntas · 100 puntos
+
+Respondé las 15 preguntas y pulsá «Calificar módulo». Podés repetir el examen para mejorar tu mejor nota.
+
 ## Test · Comprensión lectora
 
 1. Marcos sube al tren con un boleto válido. ( V / F ){F}
@@ -27,6 +31,18 @@
 9. ¿Adónde dice Laura que fue Alicia? [[*A la discoteca|A la estación]]
 
 10. ¿Qué debe vencer Marcos? [[*Su miedo al agua|Su miedo a volar]]
+
+## Gramática · Hay, estar y pasado
+
+11. En el restaurante [[*hay|están]] platos extraños.
+
+12. La biblioteca [[*está|hay]] en otro vagón.
+
+13. Ayer Marcos [[*encontró|encuentra]] una nota.
+
+14. Cuando era niño, Marcos [[*tenía|tuvo]] miedo al agua.
+
+15. Laura [[*estaba|eran]] en la piscina cuando llegó Marcos.
 
 ## Producción escrita
 
