@@ -437,6 +437,55 @@ const QUIZ_T = {es:["Comprobar","correctas","Volver a intentar"], it:["Verifica"
 function setupQuizzes(root, lang){
   const T = QUIZ_T[lang] || QUIZ_T.es;
   const items = [...root.querySelectorAll("p.vf, p.mc")];
+  const isModule = root.querySelector("article.chapter") && /modulo-[1-4]\\.md$/.test((location.hash || "").split("?")[0] === "" ? "" : (window.__activeChapterFile || ""));
+  if (isModule && items.length) {
+    const chapter = root.querySelector("article.chapter");
+    const key = "module-best:el-tren-fantasma:" + window.__activeChapterFile;
+    const box = document.createElement("section");
+    box.className = "module-score";
+    box.style.cssText = "max-width:720px;margin:2em auto;padding:20px;border:1px solid var(--line);border-radius:14px;background:var(--accent-soft);text-align:center";
+    box.innerHTML = '<h2 style="margin:.1em 0 .6em">Evaluación del módulo</h2><p class="module-best"></p><button type="button" class="btn module-grade">Calificar módulo</button><button type="button" class="btn ghost module-retry" style="margin-left:10px" hidden>Repetir examen</button><p class="module-result" role="status" aria-live="polite"></p>';
+    chapter.appendChild(box);
+    const bestEl = box.querySelector(".module-best"), result = box.querySelector(".module-result");
+    const grade = box.querySelector(".module-grade"), retry = box.querySelector(".module-retry");
+    const best = () => { const v = store.get(key, null); bestEl.textContent = v === null ? "Todavía no hay una calificación guardada." : "Mejor nota: " + v + " / 100"; };
+    best();
+    items.forEach(p => {
+      p.querySelectorAll("button[data-v]").forEach(b => b.onclick = () => {
+        p.dataset.sel = b.dataset.v;
+        p.querySelectorAll("button[data-v]").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
+        p.classList.remove("ok", "bad");
+      });
+      const select = p.querySelector("select");
+      if (select) select.onchange = () => { p.dataset.sel = select.value; p.classList.remove("ok", "bad"); };
+    });
+    grade.onclick = () => {
+      const answered = items.filter(p => p.dataset.sel !== undefined && p.dataset.sel !== "").length;
+      if (answered < items.length) { result.textContent = "Respondé todas las preguntas antes de calificar (" + answered + " de " + items.length + ")."; return; }
+      const correct = items.reduce((count,p) => {
+        const ok = p.dataset.sel === p.dataset.a;
+        p.classList.toggle("ok", ok); p.classList.toggle("bad", !ok);
+        return count + Number(ok);
+      }, 0);
+      const score = Math.round(100 * correct / items.length);
+      const previous = store.get(key, null);
+      if (previous === null || score > previous) store.set(key, score);
+      best();
+      result.textContent = "Resultado: " + score + " / 100 · " + correct + " de " + items.length + " respuestas correctas.";
+      grade.hidden = true; retry.hidden = false;
+      items.forEach(p => { p.querySelectorAll("button,select").forEach(el => el.disabled = true); });
+    };
+    retry.onclick = () => {
+      items.forEach(p => {
+        delete p.dataset.sel; p.classList.remove("ok", "bad");
+        p.querySelectorAll("button[data-v]").forEach(b => { b.disabled = false; b.setAttribute("aria-pressed", "false"); });
+        const sel = p.querySelector("select"); if (sel) { sel.disabled = false; sel.selectedIndex = 0; }
+      });
+      result.textContent = ""; grade.hidden = false; retry.hidden = true;
+      box.scrollIntoView({behavior:"smooth",block:"nearest"});
+    };
+    return;
+  }
   const groups = [];
   items.forEach(p => { const k = p.classList.contains("mc") ? "mc" : "vf", prev = p.previousElementSibling; if (prev && prev.classList.contains(k) && groups.length) groups[groups.length-1].push(p); else groups.push([p]); });
   groups.forEach(g => {
@@ -642,6 +691,7 @@ async function reader(n, idx){
   </nav>
   <section class="comments" id="comments"></section>`;
   window.scrollTo(0,0);
+  window.__activeChapterFile = c.file;
   setupQuizzes(app, n.lang);
   mountComments(n, c);
   store.set("last:"+n.slug, i);
