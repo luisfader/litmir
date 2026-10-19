@@ -738,7 +738,8 @@
           "title": "Контрольный тест по роману",
           "label": "Тест"
         }
-      ]
+      ],
+      "cover": "novels/rezonans-lyubvi-3-protiv-mraka/cover.jpg"
     },
     {
       "slug": "vlyublennye-lebedi",
