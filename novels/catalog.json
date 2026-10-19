@@ -547,7 +547,10 @@
           "title": "Интервью с автором Роберт Фадер о романе «Похититель сердец»",
           "label": "Интервью"
         }
-      ]
+      ],
+      "translations": {
+        "it": "ladro-di-cuori"
+      }
     },
     {
       "slug": "rezonans-lyubvi",
@@ -1039,7 +1042,8 @@
         "tr": "col-gulu",
         "de": "vorahnung",
         "sr": "predosecaj",
-        "fr": "reve-turquoise"
+        "fr": "reve-turquoise",
+        "vo": "fot-latik"
       },
       "chapters": [
         {
@@ -1639,7 +1643,10 @@
       ],
       "cover": "novels/il-treno-fantasma/cover.jpg",
       "study": true,
-      "author": "Roberto Fader"
+      "author": "Roberto Fader",
+      "translations": {
+        "es": "el-tren-fantasma"
+      }
     },
     {
       "slug": "la-nevicata-rosa",
@@ -2128,7 +2135,10 @@
           "label": "Appendice"
         }
       ],
-      "study": true
+      "study": true,
+      "translations": {
+        "ru": "pokhititel-serdec"
+      }
     },
     {
       "slug": "ladro-di-cuori-2",
@@ -2270,7 +2280,8 @@
         "tr": "col-gulu",
         "de": "vorahnung",
         "sr": "predosecaj",
-        "fr": "reve-turquoise"
+        "fr": "reve-turquoise",
+        "vo": "fot-latik"
       },
       "chapters": [
         {
@@ -2935,7 +2946,8 @@
         "isv": "predcutje",
         "de": "vorahnung",
         "sr": "predosecaj",
-        "fr": "reve-turquoise"
+        "fr": "reve-turquoise",
+        "vo": "fot-latik"
       }
     },
     {
@@ -3357,7 +3369,10 @@
           "label": "Apéndice"
         }
       ],
-      "cover": "novels/el-tren-fantasma/cover.jpg"
+      "cover": "novels/el-tren-fantasma/cover.jpg",
+      "translations": {
+        "it": "il-treno-fantasma"
+      }
     },
     {
       "slug": "la-ciudad-secreta",
@@ -3438,7 +3453,8 @@
         "tr": "col-gulu",
         "de": "vorahnung",
         "sr": "predosecaj",
-        "fr": "reve-turquoise"
+        "fr": "reve-turquoise",
+        "vo": "fot-latik"
       },
       "chapters": [
         {
@@ -4153,7 +4169,8 @@
         "tr": "col-gulu",
         "de": "vorahnung",
         "sr": "predosecaj",
-        "fr": "reve-turquoise"
+        "fr": "reve-turquoise",
+        "vo": "fot-latik"
       }
     },
     {
@@ -4244,7 +4261,8 @@
         "tr": "col-gulu",
         "de": "vorahnung",
         "sr": "predosecaj",
-        "fr": "reve-turquoise"
+        "fr": "reve-turquoise",
+        "vo": "fot-latik"
       },
       "chapters": [
         {
@@ -4376,7 +4394,8 @@
         "isv": "predcutje",
         "tr": "col-gulu",
         "sr": "predosecaj",
-        "fr": "reve-turquoise"
+        "fr": "reve-turquoise",
+        "vo": "fot-latik"
       },
       "chapters": [
         {
@@ -4534,7 +4553,18 @@
       ],
       "study": true,
       "wip": true,
-      "cover": "novels/fot-latik/cover.jpg"
+      "cover": "novels/fot-latik/cover.jpg",
+      "translations": {
+        "eo": "la-antausento",
+        "ru": "predchuvstvie",
+        "it": "presentimento",
+        "es": "la-corazonada",
+        "isv": "predcutje",
+        "tr": "col-gulu",
+        "de": "vorahnung",
+        "sr": "predosecaj",
+        "fr": "reve-turquoise"
+      }
     },
     {
       "slug": "predosecaj",
@@ -4759,7 +4789,8 @@
         "isv": "predcutje",
         "tr": "col-gulu",
         "de": "vorahnung",
-        "fr": "reve-turquoise"
+        "fr": "reve-turquoise",
+        "vo": "fot-latik"
       }
     },
     {
@@ -4772,14 +4803,15 @@
       "cover": "novels/reve-turquoise/cover.jpg",
       "description": "Le monde s’est éteint un mardi. Trois ans plus tard, Camille, ancienne experte en sécurité informatique, rêve d’une forteresse aux murs turquoise où l’on pourrait enfin vivre à l’abri. Elle rencontre Robert, un architecte blessé, et l’amour renaît au milieu des ruines.\nMais les sauvages brûlent tout sur leur passage. Au fond d’une vallée perdue, le Rêve turquoise prend forme — un refuge fidèle à l’humanisme de Camille. Jusqu’au jour où Jenny frappe à la porte.",
       "translations": {
+        "eo": "la-antausento",
         "ru": "predchuvstvie",
         "it": "presentimento",
-        "tr": "col-gulu",
         "es": "la-corazonada",
-        "eo": "la-antausento",
         "isv": "predcutje",
+        "tr": "col-gulu",
         "de": "vorahnung",
-        "sr": "predosecaj"
+        "sr": "predosecaj",
+        "vo": "fot-latik"
       },
       "chapters": [
         {
@@ -4800,6 +4832,90 @@
         }
       ],
       "wip": true
+    }
+  ],
+  "series": [
+    {
+      "id": "ora-selvaggia",
+      "name": {
+        "ru": "Дикий час",
+        "sr": "Дивљи час",
+        "it": "L’ora selvaggia",
+        "es": "La hora salvaje",
+        "eo": "La Sovaĝa Horo",
+        "en": "The Wild Hour",
+        "*": "Дикий час"
+      },
+      "novels": [
+        "dikij-chas",
+        "dikij-chas-2",
+        "epicheskij-match",
+        "dikij-chas-karnaval-razdora",
+        "divlji-chas-malbec",
+        "divlji-chas-7",
+        "divlji-chas-52",
+        "la-savo-de-zmaj",
+        "ora-selvaggia-venezia"
+      ]
+    },
+    {
+      "id": "roberto-natalia",
+      "name": {
+        "it": "Roberto e Natalia a Venezia",
+        "ru": "Роберто и Наталья в Венеции",
+        "*": "Venezia"
+      },
+      "novels": [
+        "maschera-di-venezia",
+        "ora-selvaggia-venezia"
+      ]
+    },
+    {
+      "id": "luis-natalia",
+      "name": {
+        "ru": "Луис и Наталья",
+        "es": "Luis y Natalia",
+        "pt": "Luiz e Natalia",
+        "*": "Luis & Natalia"
+      },
+      "novels": [
+        "do-outro-lado-do-mundo",
+        "tajna-semi-fader",
+        "anomalnyj-chas",
+        "rezonans-lyubvi"
+      ]
+    },
+    {
+      "id": "sinea",
+      "name": {
+        "es": "Historias de Sinea",
+        "it": "Storie di Sinea",
+        "ru": "Истории Синеи",
+        "fr": "Histoires de Sinea",
+        "en": "Sinea Stories",
+        "*": "Sinea"
+      },
+      "novels": [
+        "el-tren-fantasma",
+        "la-citta-triste",
+        "lluvia-de-meteoritos",
+        "la-chica-del-retrato",
+        "el-impostor",
+        "la-voix",
+        "opasnoe-svidanie"
+      ]
+    },
+    {
+      "id": "ladro",
+      "name": {
+        "it": "Ladro di cuori",
+        "ru": "Похититель сердец",
+        "*": "Ladro di cuori"
+      },
+      "novels": [
+        "ladro-di-cuori",
+        "ladro-di-cuori-2"
+      ]
     }
   ]
 }

@@ -89,6 +89,16 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-family:var(--san
 .toc .done .n::after{content:" ✓";color:var(--accent)}
 .notice{font-family:var(--sans);font-size:14px;background:var(--accent-soft);border-radius:8px;padding:12px 14px;margin-bottom:24px}
 .notice a{color:var(--accent);font-weight:600;cursor:pointer}
+.saga{margin:0 0 26px;min-width:0}
+.novel > div{min-width:0}
+.saga h2{font-family:var(--sans);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 10px}
+.saga .row{display:flex;gap:12px;overflow-x:auto;padding-bottom:6px;scrollbar-width:thin}
+.saga a{flex:0 0 92px;text-decoration:none;color:inherit;font-family:var(--sans);font-size:12px;line-height:1.3}
+.saga a .cover{border-radius:3px 7px 7px 3px;margin-bottom:6px}
+.saga a .cover.gen{padding:8px 7px}.saga a .cover.gen .ct{font-size:12px}.saga a .cover.gen .ca{font-size:7px}
+.saga a .badge18{display:none}
+.saga a.cur{opacity:.55;pointer-events:none}
+.saga a small{display:block;color:var(--muted);font-size:10px;margin-top:2px}
 
 /* Reader */
 .reader-bar{position:sticky;top:60px;z-index:9;background:var(--bg);border-bottom:1px solid var(--line)}
@@ -540,6 +550,25 @@ function adultGate(n){
   document.getElementById("ok18").onclick = () => { store.set("adult", true); route(); };
 }
 
+const SAGA_W = {ru:"Цикл", es:"Saga", it:"Saga", en:"Series", de:"Reihe", fr:"Saga", tr:"Seri", pt:"Saga", cs:"Série", sr:"Серијал", eo:"Serio", isv:"Serija", vo:"Saga"};
+function sagaHTML(n){
+  const all = catalog.series || [], bySlug = Object.fromEntries(catalog.novels.map(x => [x.slug, x]));
+  const mine = new Set([n.slug, ...Object.values(n.translations || {})]);
+  return all.filter(s => s.novels.some(m => mine.has(m) || Object.values((bySlug[m]||{}).translations || {}).some(x => mine.has(x)))).map(s => {
+    const seen = new Set();
+    const items = s.novels.map(m => {
+      let x = bySlug[m]; if (!x) return null;
+      if (x.lang !== n.lang && x.translations && x.translations[n.lang] && bySlug[x.translations[n.lang]]) x = bySlug[x.translations[n.lang]];
+      if (seen.has(x.slug)) return null; seen.add(x.slug);
+      const cur = mine.has(x.slug) || mine.has(m);
+      return `<a href="#/${esc(x.slug)}" class="${cur ? "cur" : ""}">${coverHTML(x)}${esc(x.title)}${x.lang !== n.lang ? `<small>${esc(LANG_NAMES[x.lang] || x.lang)}</small>` : ""}</a>`;
+    }).filter(Boolean);
+    if (items.length < 2) return "";
+    const name = s.name[n.lang] || s.name["*"];
+    return `<div class="saga"><h2>${esc(SAGA_W[n.lang] || "Saga")} · ${esc(name)}</h2><div class="row">${items.join("")}</div></div>`;
+  }).join("");
+}
+
 function novelPage(n){
   if (lang !== n.lang) setLang(n.lang);
   document.title = n.title + " — " + author(n);
@@ -558,6 +587,7 @@ function novelPage(n){
       ${n.study ? `<div class="notice">📖 ${esc(t("studyNote"))}</div>` : ""}
       ${n.wip ? `<div class="notice">✎ ${esc(t("wipNote"))}</div>` : ""}
       ${tr.length ? `<div class="notice">${esc(t("also"))} ${tr.join(", ")}</div>` : ""}
+      ${sagaHTML(n)}
       <div class="actions">
         ${last ? `<a class="btn" href="#/${n.slug}/${last}">${esc(t("cont"))} · ${esc(chapterTitle(n, chs[last-1] || {}, last))}</a>` : ""}
         <a class="btn ${last ? "ghost" : ""}" href="#/${n.slug}/${firstStory}">${esc(t("start"))}</a></div>
