@@ -3954,11 +3954,11 @@
         },
         {
           "file": "10.md",
-          "title": "Pinceladas en la Niebla"
+          "title": "Pinceladas en la niebla"
         },
         {
           "file": "11.md",
-          "title": "La Audiencia"
+          "title": "La audiencia"
         },
         {
           "file": "12.md",
@@ -3966,31 +3966,43 @@
         },
         {
           "file": "13.md",
-          "title": "El Café de Lucy"
+          "title": "El café de Lucy"
         },
         {
           "file": "14.md",
-          "title": "La reconstrucción"
+          "title": "Lo que Karl no dijo"
         },
         {
           "file": "15.md",
-          "title": "El intercambio"
+          "title": "La reconstrucción"
         },
         {
           "file": "16.md",
-          "title": "La emboscada"
+          "title": "Primos"
         },
         {
           "file": "17.md",
-          "title": "La magia de la necesidad"
+          "title": "El intercambio"
         },
         {
           "file": "18.md",
-          "title": "El castillo de los Thorne"
+          "title": "La emboscada"
         },
         {
           "file": "19.md",
-          "title": "Vuelta a casa",
+          "title": "La magia de la necesidad"
+        },
+        {
+          "file": "20.md",
+          "title": "El castillo de los Thorne"
+        },
+        {
+          "file": "21.md",
+          "title": "La decisión"
+        },
+        {
+          "file": "22.md",
+          "title": "Las cenizas del stárets",
           "label": "Epílogo"
         }
       ]
