@@ -92,7 +92,7 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-family:var(--san
 .toc .done .n::after{content:" ✓";color:var(--accent)}
 .notice{font-family:var(--sans);font-size:14px;background:var(--accent-soft);border-radius:8px;padding:12px 14px;margin-bottom:24px}
 .notice a{color:var(--accent);font-weight:600;cursor:pointer}
-.saga{margin:0 0 26px;min-width:0}
+.saga{margin:28px 0 0;min-width:0}
 .novel > div{min-width:0}
 .saga h2{font-family:var(--sans);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 10px}
 .saga .row{display:flex;gap:12px;overflow-x:auto;padding-bottom:6px;scrollbar-width:thin}
@@ -666,7 +666,6 @@ function novelPage(n){
       ${n.study ? `<div class="notice">📖 ${esc(t("studyNote"))}</div>` : ""}
       ${n.wip ? `<div class="notice">✎ ${esc(t("wipNote"))}</div>` : ""}
       ${tr.length ? `<div class="notice">${esc(t("also"))} ${tr.join(", ")}</div>` : ""}
-      ${sagaHTML(n)}
       ${moduleProgress(n)}
       <div class="actions">
         ${last ? `<a class="btn" href="#/${n.slug}/${last}">${esc(t("cont"))} · ${esc(chapterTitle(n, chs[last-1] || {}, last))}</a>` : ""}
@@ -674,6 +673,7 @@ function novelPage(n){
       <div class="toc"><h2>${esc(t("contents"))}</h2><ol>
         ${chs.map((c,i) => `<li class="${done.includes(i+1)?"done":""} ${c.label?"extra":""}"><a href="#/${n.slug}/${i+1}"><span class="n">${c.type === "quiz" ? "★" : c.label ? "·" : chapterNo(n, i+1)}</span><span>${esc(chapterTitle(n, c, chapterNo(n, i+1)))}</span></a></li>`).join("")}
       </ol></div>
+      ${sagaHTML(n)}
     </div>
   </section>`;
 }
