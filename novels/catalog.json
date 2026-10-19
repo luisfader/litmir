@@ -1038,7 +1038,8 @@
         "isv": "predcutje",
         "tr": "col-gulu",
         "de": "vorahnung",
-        "sr": "predosecaj"
+        "sr": "predosecaj",
+        "fr": "reve-turquoise"
       },
       "chapters": [
         {
@@ -2103,7 +2104,8 @@
         "isv": "predcutje",
         "tr": "col-gulu",
         "de": "vorahnung",
-        "sr": "predosecaj"
+        "sr": "predosecaj",
+        "fr": "reve-turquoise"
       },
       "chapters": [
         {
@@ -2714,7 +2716,8 @@
         "es": "la-corazonada",
         "isv": "predcutje",
         "de": "vorahnung",
-        "sr": "predosecaj"
+        "sr": "predosecaj",
+        "fr": "reve-turquoise"
       }
     },
     {
@@ -3216,7 +3219,8 @@
         "isv": "predcutje",
         "tr": "col-gulu",
         "de": "vorahnung",
-        "sr": "predosecaj"
+        "sr": "predosecaj",
+        "fr": "reve-turquoise"
       },
       "chapters": [
         {
@@ -3930,7 +3934,8 @@
         "isv": "predcutje",
         "tr": "col-gulu",
         "de": "vorahnung",
-        "sr": "predosecaj"
+        "sr": "predosecaj",
+        "fr": "reve-turquoise"
       }
     },
     {
@@ -4020,7 +4025,8 @@
         "es": "la-corazonada",
         "tr": "col-gulu",
         "de": "vorahnung",
-        "sr": "predosecaj"
+        "sr": "predosecaj",
+        "fr": "reve-turquoise"
       },
       "chapters": [
         {
@@ -4151,7 +4157,8 @@
         "es": "la-corazonada",
         "isv": "predcutje",
         "tr": "col-gulu",
-        "sr": "predosecaj"
+        "sr": "predosecaj",
+        "fr": "reve-turquoise"
       },
       "chapters": [
         {
@@ -4533,8 +4540,47 @@
         "es": "la-corazonada",
         "isv": "predcutje",
         "tr": "col-gulu",
-        "de": "vorahnung"
+        "de": "vorahnung",
+        "fr": "reve-turquoise"
       }
+    },
+    {
+      "slug": "reve-turquoise",
+      "lang": "fr",
+      "title": "Rêve turquoise",
+      "author": "Robert Fader",
+      "genre": "Post-apocalyptique · Aventure · Roman d’amour",
+      "year": 2026,
+      "description": "Le monde s’est éteint un mardi. Trois ans plus tard, Camille, ancienne experte en sécurité informatique, rêve d’une forteresse aux murs turquoise où l’on pourrait enfin vivre à l’abri. Elle rencontre Robert, un architecte blessé, et l’amour renaît au milieu des ruines.\nMais les sauvages brûlent tout sur leur passage. Au fond d’une vallée perdue, le Rêve turquoise prend forme — un refuge fidèle à l’humanisme de Camille. Jusqu’au jour où Jenny frappe à la porte.",
+      "translations": {
+        "ru": "predchuvstvie",
+        "it": "presentimento",
+        "tr": "col-gulu",
+        "es": "la-corazonada",
+        "eo": "la-antausento",
+        "isv": "predcutje",
+        "de": "vorahnung",
+        "sr": "predosecaj"
+      },
+      "chapters": [
+        {
+          "file": "01.md",
+          "title": "Le plan sur le mur"
+        },
+        {
+          "file": "02.md",
+          "title": "Les feux sur la colline"
+        },
+        {
+          "file": "03.md",
+          "title": "La vallée du soleil bleu"
+        },
+        {
+          "file": "04.md",
+          "title": "Jenny"
+        }
+      ],
+      "wip": true
     }
   ]
 }
