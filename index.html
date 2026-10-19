@@ -50,6 +50,9 @@ header.top .wrap{display:flex;align-items:center;justify-content:space-between;g
 main{flex:1}
 footer{border-top:1px solid var(--line);color:var(--muted);font-family:var(--sans);font-size:13px;padding:24px 0;text-align:center}
 
+/* Characters navigation */
+.character-entry{display:inline-block;margin-top:20px;border:1px solid var(--line);border-radius:30px;padding:11px 23px;text-decoration:none;font-family:var(--sans);font-size:14px;color:var(--accent);background:var(--paper);transition:transform .2s,box-shadow .2s}
+.character-entry:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
 /* Home */
 .hero{padding:72px 0 40px;text-align:center}
 .hero .eyebrow{font-family:var(--sans);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-weight:600}
@@ -523,12 +526,14 @@ function chapterNo(n, i){ let k = 0; for (let j = 0; j < i; j++) if (!n.chapters
 function home(){
   document.title = t("hero") + " — " + t("author");
   const list = catalog.novels.filter(n => !n.hidden && n.lang === lang);
+  const characterLabels = {ru:"Персонажи",es:"Personajes",it:"Personaggi",en:"Characters",de:"Figuren",fr:"Personnages",tr:"Karakterler",pt:"Personagens",cs:"Postavy",sr:"Ликови",eo:"Roluloj",isv:"Postavy",vo:"Pösods"};
   app.innerHTML = `
   <section class="hero wrap">
     <div class="eyebrow">${esc(t("tag"))}</div>
     <h1>${esc(t("hero"))}</h1>
     <p>${esc(t("sub"))}</p>
     <div class="ornament">✦ ✦ ✦</div>
+    <a class="character-entry" href="characters.html" id="charactersEntry">✧ <span id="charactersLabel">Personajes</span> →</a>
   </section>
   <section class="wrap">
     ${list.length ? `<div class="grid">${list.map(n => {
@@ -538,6 +543,8 @@ function home(){
         <div class="meta">${n.genre ? esc(n.genre) + " · " : ""}${esc(t("chapters")(nch))}${n.study ? ` <span class="pill study">${esc(t("study"))}</span>` : ""}${n.wip ? ` <span class="pill wip">${esc(t("wip"))}</span>` : ""}${n.adult ? ' <span class="pill adult">18+</span>' : ""}${!n.adult && n.rating ? ` <span class="pill">${esc(n.rating)}</span>` : ""}</div></a>`;
     }).join("")}</div>` : `<div class="empty">${esc(t("empty"))}</div>`}
   </section>`;
+  const charactersEntry = document.getElementById("charactersEntry");
+  if (charactersEntry) { charactersEntry.href = "characters.html?lang=" + encodeURIComponent(lang); document.getElementById("charactersLabel").textContent = characterLabels[lang] || "Characters"; }
 }
 
 function adultOk(n){ return !n.adult || store.get("adult", false); }
