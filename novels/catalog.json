@@ -3490,6 +3490,11 @@
           "file": "20.md",
           "title": "Dossiers del tren fantasma",
           "label": "Apéndice"
+        },
+        {
+          "file": "test-final.md",
+          "title": "Evaluación final · 25 preguntas",
+          "label": "Examen final"
         }
       ],
       "cover": "novels/el-tren-fantasma/cover.jpg",
