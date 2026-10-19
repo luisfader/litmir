@@ -4859,35 +4859,6 @@
       ]
     },
     {
-      "id": "luis",
-      "name": {
-        "es": "Las aventuras de Luis",
-        "ru": "Приключения Луиса",
-        "it": "Le avventure di Luis",
-        "pt": "As aventuras de Luiz",
-        "cs": "Luisova dobrodružství",
-        "sr": "Луисове авантуре",
-        "eo": "La aventuroj de Luis",
-        "en": "Luis’s Adventures",
-        "*": "Luis"
-      },
-      "novels": [
-        "do-outro-lado-do-mundo",
-        "podzemni-tajemstvi",
-        "tajna-semi-fader",
-        "anomalnyj-chas",
-        "dikij-chas",
-        "dikij-chas-2",
-        "epicheskij-match",
-        "dikij-chas-karnaval-razdora",
-        "divlji-chas-malbec",
-        "divlji-chas-7",
-        "divlji-chas-52",
-        "la-savo-de-zmaj",
-        "ora-selvaggia-venezia"
-      ]
-    },
-    {
       "id": "roberto-natalia",
       "name": {
         "it": "Roberto e Natalia a Venezia",
@@ -4897,6 +4868,21 @@
       "novels": [
         "maschera-di-venezia",
         "ora-selvaggia-venezia"
+      ]
+    },
+    {
+      "id": "luis-natalia",
+      "name": {
+        "ru": "Луис и Наталья",
+        "es": "Luis y Natalia",
+        "pt": "Luiz e Natalia",
+        "*": "Luis & Natalia"
+      },
+      "novels": [
+        "do-outro-lado-do-mundo",
+        "tajna-semi-fader",
+        "anomalnyj-chas",
+        "rezonans-lyubvi"
       ]
     },
     {
