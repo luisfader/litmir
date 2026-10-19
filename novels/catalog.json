@@ -2791,6 +2791,49 @@
       "study": true
     },
     {
+      "slug": "the-immigrant",
+      "lang": "en",
+      "title": "The Immigrant",
+      "author": "Robert Fader",
+      "genre": "Drama · Adventure",
+      "description": "Charles gets off a ship in Sinea with a small bag, no money and no papers. Corrupt policemen, a hotel that only opens its doors for a bribe, and a hard job on the road: the big city is not kind to an immigrant.\nThen, digging a hole, he finds a turquoise diamond — the one stolen from the city museum. The Mayor says the thief is an immigrant. Charles must choose: sell it and run, or give it back and trust someone.\nA short, easy novel for English learners about honesty, courage and hope.",
+      "year": 2025,
+      "chapters": [
+        {
+          "file": "01.md",
+          "title": "The Immigrant"
+        },
+        {
+          "file": "02.md",
+          "title": "An Expensive City"
+        },
+        {
+          "file": "03.md",
+          "title": "A Problem"
+        },
+        {
+          "file": "04.md",
+          "title": "A Difficult Decision"
+        },
+        {
+          "file": "05.md",
+          "title": "A Good Friend"
+        },
+        {
+          "file": "06.md",
+          "title": "A Bad Surprise"
+        },
+        {
+          "file": "07.md",
+          "title": "The Truth"
+        },
+        {
+          "file": "08.md",
+          "title": "The New Mayor"
+        }
+      ]
+    },
+    {
       "slug": "la-voix",
       "lang": "fr",
       "title": "La voix",
@@ -4926,7 +4969,8 @@
         "la-chica-del-retrato",
         "el-impostor",
         "la-voix",
-        "opasnoe-svidanie"
+        "opasnoe-svidanie",
+        "the-immigrant"
       ]
     },
     {
