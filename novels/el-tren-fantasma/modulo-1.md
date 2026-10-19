@@ -6,6 +6,10 @@
 
 **Dato reservado:** Marcos descubre en una ventanilla una marca que reconoce de los libros de Alicia. Todavía no sabe qué significa.
 
+## Evaluación autocorregible · 15 preguntas · 100 puntos
+
+Respondé las 15 preguntas y pulsá «Calificar módulo». Cada respuesta correcta vale lo mismo. Podés repetir el examen para mejorar tu mejor nota.
+
 ## Test · Comprensión lectora
 
 1. Marcos trabaja como detective. ( V / F ){V}
@@ -29,6 +33,18 @@
 9. ¿Qué día se anuncia su aparición? [[*El domingo|El miércoles]]
 
 10. ¿Qué ve Marcos en una ventanilla? [[*Una marca conocida|Un billete de avión]]
+
+## Gramática · Presente y preguntas
+
+11. Marcos [[*es|está]] detective de Sinea.
+
+12. Alicia [[*está|es]] desaparecida.
+
+13. Marcos [[*tiene|tengo]] una pista.
+
+14. ¿Dónde [[*está|son]] la estación?
+
+15. El jefe de la estación [[*sabe|sé]] algo sobre el tren.
 
 ## Producción escrita
 
