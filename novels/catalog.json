@@ -2457,6 +2457,58 @@
       ]
     },
     {
+      "slug": "antonio-e-il-segreto-di-roma",
+      "lang": "it",
+      "title": "Antonio e il segreto di Roma",
+      "genre": "Giallo · Avventura",
+      "year": 2026,
+      "description": "Antonio entra per la prima volta nei Musei Vaticani e incontra Larissa, una ragazza russa bella e colta. Per conquistarla le promette di raccontarle «tutti i segreti di Roma». Ma il giorno dopo dal museo sparisce il Calice d'Oro dei Papi, e la polizia cerca proprio lui.\nRomanzo per studenti di livello A1–A2: ogni capitolo ha un lessico italiano-spagnolo, esercizi di vero o falso e attività in stile Duolingo; alla fine trovi le soluzioni.",
+      "study": true,
+      "chapters": [
+        {
+          "file": "01.md",
+          "title": "Antonio nei Musei Vaticani"
+        },
+        {
+          "file": "02.md",
+          "title": "Un caffè vicino a San Pietro"
+        },
+        {
+          "file": "03.md",
+          "title": "Il furto"
+        },
+        {
+          "file": "04.md",
+          "title": "Il tradimento"
+        },
+        {
+          "file": "05.md",
+          "title": "A casa di Matteo"
+        },
+        {
+          "file": "06.md",
+          "title": "La ricerca"
+        },
+        {
+          "file": "07.md",
+          "title": "Il travestimento"
+        },
+        {
+          "file": "08.md",
+          "title": "L'asta clandestina"
+        },
+        {
+          "file": "09.md",
+          "title": "La verità"
+        },
+        {
+          "file": "10.md",
+          "title": "Soluzioni",
+          "label": "Appendice"
+        }
+      ]
+    },
+    {
       "slug": "do-outro-lado-do-mundo",
       "lang": "pt",
       "title": "Do outro lado do mundo",
