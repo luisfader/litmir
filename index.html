@@ -437,6 +437,8 @@ const QUIZ_T = {es:["Comprobar","correctas","Volver a intentar"], it:["Verifica"
 function setupQuizzes(root, lang){
   const T = QUIZ_T[lang] || QUIZ_T.es;
   const items = [...root.querySelectorAll("p.vf, p.mc")];
+  const PICK = {es:"— elige —", it:"— scegli —", en:"— choose —", ru:"— выбери —", pt:"— escolha —", fr:"— choisis —", de:"— wähle —"};
+  root.querySelectorAll("p.mc select").forEach(sel => { if (sel.options[0]) sel.options[0].textContent = PICK[lang] || PICK.es; });
   const isModule = !!root.querySelector("article.chapter") && /^modulo-[1-4][.]md$/.test(window.__activeChapterFile || "");
   if (isModule && items.length) {
     const chapter = root.querySelector("article.chapter");
