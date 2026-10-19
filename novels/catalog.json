@@ -2834,7 +2834,8 @@
           "title": "The New Mayor"
         }
       ],
-      "study": true
+      "study": true,
+      "cover": "novels/the-immigrant/cover.jpg"
     },
     {
       "slug": "la-voix",
