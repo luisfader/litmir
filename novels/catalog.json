@@ -2122,7 +2122,7 @@
       "title": "Голос",
       "author": "Роберт Фадер",
       "genre": "Городское фэнтези · Мистика",
-      "cover": "novels/golos/cover.jpg",
+      "cover": "novels/golos/cover-v2.jpg",
       "description": "Город Синея за одну ночь оказывается отрезанным от мира. Без сирен, без предупреждений, без защиты. Из глубин старых легенд выходят тени — лешие и искажённые духи, питающиеся страхом и жизнью людей.\nСаша — тридцатипятилетняя женщина, уставшая от обычной жизни, — слышит голос, который зовёт её к морю. Оксана, её подруга, не верящая в мистику, оказывается втянута в бегство, от которого невозможно отказаться. Дима, студент, запертый в осаждённом городе, получает странное сообщение.\nДельфины. Древний разлом под городом. «Событие». И выбор, от которого зависит не только судьба Синеи, но и граница между светом и тьмой.\n«Голос» — это мрачный городской фэнтези-роман о силе выбора и надежде, пришедшей из глубин воды. История о людях, которые не должны были стать героями — но стали ими.",
       "year": 2026,
       "translations": {
@@ -3905,6 +3905,97 @@
       "rating": "16+"
     },
     {
+      "slug": "operacion-londres",
+      "lang": "es",
+      "title": "El misterio de los Fader: Operación Londres",
+      "author": "Roberto Fader",
+      "year": 2026,
+      "genre": "Aventura · Misterio · Humor",
+      "cover": "novels/operacion-londres/cover.jpg",
+      "description": "Luis ya no puede morir, y Natalia sabe que el tiempo corre solo para ella. La única esperanza de revertir la maldición de los Fader es un antiguo frasco perdido desde los días de Rasputín.\nLa pista lleva de Moscú a Londres: cuadros robados, un monje inquebrantable, un pacto firmado hace más de un siglo y la misteriosa familia Thorne. Entre la niebla londinense, emboscadas y pinceladas que esconden secretos, Luis y Natalia tendrán que recuperar lo que les pertenece antes de que sea demasiado tarde.\nEdición ilustrada. Continuación de «El misterio de los Fader».",
+      "chapters": [
+        {
+          "file": "01.md",
+          "title": "Introducción I",
+          "label": "Introducción"
+        },
+        {
+          "file": "02.md",
+          "title": "Introducción II",
+          "label": "Introducción"
+        },
+        {
+          "file": "03.md",
+          "title": "Marcos Alemanes"
+        },
+        {
+          "file": "04.md",
+          "title": "El Monje Inquebrantable"
+        },
+        {
+          "file": "05.md",
+          "title": "La Mañana Triste"
+        },
+        {
+          "file": "06.md",
+          "title": "El Rastro en Londres"
+        },
+        {
+          "file": "07.md",
+          "title": "El Pacto de la Sumisión"
+        },
+        {
+          "file": "08.md",
+          "title": "Olvidos e ideas"
+        },
+        {
+          "file": "09.md",
+          "title": "La última pincelada"
+        },
+        {
+          "file": "10.md",
+          "title": "Pinceladas en la Niebla"
+        },
+        {
+          "file": "11.md",
+          "title": "La Audiencia"
+        },
+        {
+          "file": "12.md",
+          "title": "Confrontación"
+        },
+        {
+          "file": "13.md",
+          "title": "El Café de Lucy"
+        },
+        {
+          "file": "14.md",
+          "title": "La reconstrucción"
+        },
+        {
+          "file": "15.md",
+          "title": "El intercambio"
+        },
+        {
+          "file": "16.md",
+          "title": "La emboscada"
+        },
+        {
+          "file": "17.md",
+          "title": "La magia de la necesidad"
+        },
+        {
+          "file": "18.md",
+          "title": "El castillo de los Thorne"
+        },
+        {
+          "file": "19.md",
+          "title": "Vuelta a casa",
+          "label": "Epílogo"
+        }
+      ]
+    },
+    {
       "slug": "el-tren-fantasma",
       "lang": "es",
       "title": "El tren fantasma",
@@ -5605,6 +5696,18 @@
       "novels": [
         "volny-lyubvi",
         "volny-lyubvi-krepost"
+      ]
+    },
+    {
+      "id": "fader",
+      "name": {
+        "es": "El misterio de los Fader",
+        "ru": "Тайна семьи Фадер",
+        "*": "Fader"
+      },
+      "novels": [
+        "el-misterio-de-los-fader",
+        "operacion-londres"
       ]
     }
   ]
