@@ -2748,8 +2748,10 @@
       "title": "Antonio e il segreto di Roma",
       "genre": "Giallo · Avventura",
       "year": 2026,
-      "description": "Antonio entra per la prima volta nei Musei Vaticani e incontra Larissa, una ragazza russa bella e colta. Per conquistarla le promette di raccontarle «tutti i segreti di Roma». Ma il giorno dopo dal museo sparisce il Calice d'Oro dei Papi, e la polizia cerca proprio lui.\nRomanzo per studenti di livello A1–A2: ogni capitolo ha un lessico italiano-spagnolo, esercizi di vero o falso e attività in stile Duolingo; alla fine trovi le soluzioni.",
+      "description": "Antonio entra per la prima volta nei Musei Vaticani e incontra Larissa, una ragazza russa bella e colta. Per conquistarla le promette di raccontarle «tutti i segreti di Roma». Ma il giorno dopo dal museo sparisce il Calice d'Oro dei Papi, e la polizia cerca proprio lui.\nRomanzo per studenti di livello A1–A2: ogni capitolo ha un lessico italiano-russo, esercizi di vero o falso e attività in stile Duolingo; alla fine trovi le soluzioni.",
       "study": true,
+      "author": "Roberto Fader",
+      "cover": "novels/antonio-e-il-segreto-di-roma/cover.jpg",
       "chapters": [
         {
           "file": "01.md",
@@ -2793,12 +2795,14 @@
         },
         {
           "file": "11.md",
+          "title": "Sofia"
+        },
+        {
+          "file": "12.md",
           "title": "Soluzioni",
           "label": "Appendice"
         }
-      ],
-      "author": "Roberto Fader",
-      "cover": "novels/antonio-e-il-segreto-di-roma/cover.jpg"
+      ]
     },
     {
       "slug": "do-outro-lado-do-mundo",
