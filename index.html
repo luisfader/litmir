@@ -440,14 +440,15 @@ function setupQuizzes(root, lang){
   const PICK = {es:"— elige —", it:"— scegli —", en:"— choose —", ru:"— выбери —", pt:"— escolha —", fr:"— choisis —", de:"— wähle —"};
   root.querySelectorAll("p.mc select").forEach(sel => { if (sel.options[0]) sel.options[0].textContent = PICK[lang] || PICK.es; });
   if (lang === "en") root.querySelectorAll('p.vf button[data-v="V"]').forEach(b => b.textContent = "T");
-  const isModule = !!root.querySelector("article.chapter") && /^modulo-[1-4][.]md$/.test(window.__activeChapterFile || "");
+  const isModule = !!root.querySelector("article.chapter") && /^(?:modulo-[1-4]|test-final)[.]md$/.test(window.__activeChapterFile || "");
   if (isModule && items.length) {
     const chapter = root.querySelector("article.chapter");
     const key = "module-best:el-tren-fantasma:" + window.__activeChapterFile;
+    const finalExam = window.__activeChapterFile === "test-final.md";
     const box = document.createElement("section");
     box.className = "module-score";
     box.style.cssText = "max-width:720px;margin:2em auto;padding:20px;border:1px solid var(--line);border-radius:14px;background:var(--accent-soft);text-align:center";
-    box.innerHTML = '<h2 style="margin:.1em 0 .6em">Evaluación del módulo</h2><p class="module-best"></p><button type="button" class="btn module-grade">Calificar módulo</button><button type="button" class="btn ghost module-retry" style="margin-left:10px" hidden>Repetir examen</button><p class="module-result" role="status" aria-live="polite"></p><p><a href="#/el-tren-fantasma/progreso">Ver mi progreso completo →</a></p>';
+    box.innerHTML = '<h2 style="margin:.1em 0 .6em">' + (finalExam ? 'Evaluación final de la novela' : 'Evaluación del módulo') + '</h2><p class="module-best"></p><button type="button" class="btn module-grade">Calificar módulo</button><button type="button" class="btn ghost module-retry" style="margin-left:10px" hidden>Repetir examen</button><p class="module-result" role="status" aria-live="polite"></p><p><a href="#/el-tren-fantasma/progreso">Ver mi progreso completo →</a></p>';
     chapter.appendChild(box);
     const bestEl = box.querySelector(".module-best"), result = box.querySelector(".module-result");
     const grade = box.querySelector(".module-grade"), retry = box.querySelector(".module-retry");
@@ -474,7 +475,7 @@ function setupQuizzes(root, lang){
       const previous = store.get(key, null);
       if (previous === null || score > previous) store.set(key, score);
       best();
-      result.textContent = "Resultado: " + score + " / 100 · " + correct + " de " + items.length + " respuestas correctas.";
+      result.textContent = "Resultado: " + score + " / 100 · " + correct + " de " + items.length + " respuestas correctas." + (finalExam ? (score >= 70 ? " ¡Aprobado!" : " Necesitás 70 puntos para aprobar.") : "");
       grade.hidden = true; retry.hidden = false;
       items.forEach(p => { p.querySelectorAll("button,select").forEach(el => el.disabled = true); });
     };
