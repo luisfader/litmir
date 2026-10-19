@@ -3312,6 +3312,11 @@
           "title": "Marcos en el tren fantasma"
         },
         {
+          "file": "modulo-1.md",
+          "title": "Módulo 1 · Dossier y test (capítulos 1–5)",
+          "label": "Material de estudio"
+        },
+        {
           "file": "07.md",
           "title": "La decisión de Marcos"
         },
@@ -3330,6 +3335,11 @@
         {
           "file": "11.md",
           "title": "El Secreto de la Discoteca"
+        },
+        {
+          "file": "modulo-2.md",
+          "title": "Módulo 2 · Dossier y test (capítulos 6–10)",
+          "label": "Material de estudio"
         },
         {
           "file": "12.md",
@@ -3352,6 +3362,11 @@
           "title": "El camino a la locomotora"
         },
         {
+          "file": "modulo-3.md",
+          "title": "Módulo 3 · Dossier y test (capítulos 11–15)",
+          "label": "Material de estudio"
+        },
+        {
           "file": "17.md",
           "title": "Confesiones en el vagón confesionario"
         },
@@ -3364,6 +3379,11 @@
           "title": "Regreso a Sinea"
         },
         {
+          "file": "modulo-4.md",
+          "title": "Módulo 4 · Dossier y test final (capítulos 16–18)",
+          "label": "Material de estudio"
+        },
+        {
           "file": "20.md",
           "title": "Dossiers del tren fantasma",
           "label": "Apéndice"
@@ -3372,7 +3392,8 @@
       "cover": "novels/el-tren-fantasma/cover.jpg",
       "translations": {
         "it": "il-treno-fantasma"
-      }
+      },
+      "study": true
     },
     {
       "slug": "la-ciudad-secreta",
