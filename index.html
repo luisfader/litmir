@@ -444,7 +444,7 @@ function setupQuizzes(root, lang){
     const box = document.createElement("section");
     box.className = "module-score";
     box.style.cssText = "max-width:720px;margin:2em auto;padding:20px;border:1px solid var(--line);border-radius:14px;background:var(--accent-soft);text-align:center";
-    box.innerHTML = '<h2 style="margin:.1em 0 .6em">Evaluación del módulo</h2><p class="module-best"></p><button type="button" class="btn module-grade">Calificar módulo</button><button type="button" class="btn ghost module-retry" style="margin-left:10px" hidden>Repetir examen</button><p class="module-result" role="status" aria-live="polite"></p>';
+    box.innerHTML = '<h2 style="margin:.1em 0 .6em">Evaluación del módulo</h2><p class="module-best"></p><button type="button" class="btn module-grade">Calificar módulo</button><button type="button" class="btn ghost module-retry" style="margin-left:10px" hidden>Repetir examen</button><p class="module-result" role="status" aria-live="polite"></p><p><a href="#/el-tren-fantasma/progreso">Ver mi progreso completo →</a></p>';
     chapter.appendChild(box);
     const bestEl = box.querySelector(".module-best"), result = box.querySelector(".module-result");
     const grade = box.querySelector(".module-grade"), retry = box.querySelector(".module-retry");
@@ -625,6 +625,29 @@ function sagaHTML(n){
   }).join("");
 }
 
+
+function moduleProgress(n){
+  if(n.slug!=="el-tren-fantasma") return "";
+  const titles=["La desaparición","Los vagones del misterio","El juicio y la prisión","La salida del tren"];
+  const modules=titles.map((title,i)=>{
+    const file="modulo-"+(i+1)+".md";
+    const index=n.chapters.findIndex(c=>c.file===file)+1;
+    const raw=store.get("module-best:"+n.slug+":"+file,null);
+    const score=typeof raw==="number"&&Number.isFinite(raw)?Math.min(100,Math.max(0,raw)):null;
+    return {title,index,score};
+  });
+  const completed=modules.filter(m=>m.score!==null);
+  const average=completed.length?Math.round(completed.reduce((v,m)=>v+m.score,0)/completed.length):null;
+  const rows=modules.map((m,i)=>'<div style="display:flex;justify-content:space-between;align-items:center;gap:14px;padding:14px 0;border-top:1px solid var(--line)"><div><strong>Módulo '+(i+1)+': '+esc(m.title)+'</strong><div style="opacity:.8;font-size:.9em">'+(m.score===null?'Pendiente':('Mejor nota: '+m.score+' / 100'))+'</div></div><a class="btn ghost" href="#/'+esc(n.slug)+'/'+m.index+'">'+(m.score===null?'Empezar':'Repetir')+'</a></div>').join("");
+  return '<section class="study-progress" aria-label="Progreso de aprendizaje" style="margin:25px 0;padding:22px;border:1px solid var(--line);border-radius:16px;background:var(--accent-soft)"><h2>🎓 Mi progreso de español</h2><p><strong>'+completed.length+' de 4 módulos completados</strong> · Promedio actual: <strong>'+(average===null?'Pendiente':average+' / 100')+'</strong></p><div role="progressbar" aria-label="Módulos completados" aria-valuemin="0" aria-valuemax="4" aria-valuenow="'+completed.length+'" style="height:12px;background:var(--line);border-radius:12px;overflow:hidden;margin:15px 0 20px"><div style="height:100%;width:'+(completed.length*25)+'%;background:var(--accent)"></div></div>'+rows+'<p><strong>Nota general: '+(completed.length===4?average+' / 100':'Pendiente de completar los cuatro módulos')+'</strong></p><small>Las notas se guardan en este navegador y no se sincronizan entre dispositivos. La escritura requiere corrección del profesor.</small></section>';
+}
+function progressPage(n){
+  if(n.slug!=="el-tren-fantasma") return novelPage(n);
+  if(lang!==n.lang) setLang(n.lang);
+  document.title="Mi progreso · "+n.title;
+  app.innerHTML='<section class="wrap" style="max-width:850px;margin:40px auto"><a href="#/'+esc(n.slug)+'">← Volver a la novela</a><h1>Mi progreso · '+esc(n.title)+'</h1>'+moduleProgress(n)+'</section>';
+}
+
 function novelPage(n){
   if (lang !== n.lang) setLang(n.lang);
   document.title = n.title + " — " + author(n);
@@ -644,6 +667,7 @@ function novelPage(n){
       ${n.wip ? `<div class="notice">✎ ${esc(t("wipNote"))}</div>` : ""}
       ${tr.length ? `<div class="notice">${esc(t("also"))} ${tr.join(", ")}</div>` : ""}
       ${sagaHTML(n)}
+      ${moduleProgress(n)}
       <div class="actions">
         ${last ? `<a class="btn" href="#/${n.slug}/${last}">${esc(t("cont"))} · ${esc(chapterTitle(n, chs[last-1] || {}, last))}</a>` : ""}
         <a class="btn ${last ? "ghost" : ""}" href="#/${n.slug}/${firstStory}">${esc(t("start"))}</a></div>
@@ -1135,6 +1159,7 @@ function route(){
   if (!parts.length) return home();
   if (!n) { app.innerHTML = `<div class="empty">${esc(t("notFound"))}</div>`; return; }
   if (!adultOk(n)) return adultGate(n);
+  if (parts[1] === "progreso") return progressPage(n);
   if (parts[1]) return reader(n, parseInt(parts[1],10) || 1);
   novelPage(n);
 }
