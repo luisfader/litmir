@@ -5640,6 +5640,30 @@
         "es": "la-corazonada"
       },
       "wip": true
+    },
+    {
+      "slug": "predtucha",
+      "lang": "cs",
+      "title": "Předtucha",
+      "author": "Luis Fader",
+      "genre": "Postapokalyptický román · Romantika · Dobrodružství",
+      "year": 2026,
+      "description": "Po jaderné katastrofě se Luis a Jana snaží obnovit naději v českých zemích podle humanistických myšlenek Roberta, zakladatele Naší utopie. Když se vrátí Lucie, která Luise stále miluje, osobní vášně se propletou s bojem o české hrady. Divoši mezitím zaútočí na Naši utopii a Luis připravuje odvážný plán na její osvobození.",
+      "chapters": [
+        {
+          "file": "01.md",
+          "title": "Poslední světlo Prahy"
+        },
+        {
+          "file": "02.md",
+          "title": "Dívka z podzemí"
+        },
+        {
+          "file": "03.md",
+          "title": "Bitva o Karlštejn"
+        }
+      ],
+      "wip": true
     }
   ],
   "series": [
