@@ -437,7 +437,7 @@ const QUIZ_T = {es:["Comprobar","correctas","Volver a intentar"], it:["Verifica"
 function setupQuizzes(root, lang){
   const T = QUIZ_T[lang] || QUIZ_T.es;
   const items = [...root.querySelectorAll("p.vf, p.mc")];
-  const isModule = root.querySelector("article.chapter") && /modulo-[1-4]\\.md$/.test((location.hash || "").split("?")[0] === "" ? "" : (window.__activeChapterFile || ""));
+  const isModule = !!root.querySelector("article.chapter") && /^modulo-[1-4][.]md$/.test(window.__activeChapterFile || "");
   if (isModule && items.length) {
     const chapter = root.querySelector("article.chapter");
     const key = "module-best:el-tren-fantasma:" + window.__activeChapterFile;
