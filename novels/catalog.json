@@ -2798,6 +2798,12 @@
           "title": "Sofia"
         },
         {
+          "file": "test.json",
+          "title": "Test finale",
+          "label": "Test",
+          "type": "quiz"
+        },
+        {
           "file": "12.md",
           "title": "Soluzioni",
           "label": "Appendice"

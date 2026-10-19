@@ -835,7 +835,8 @@ async function lesson(n, i, c){
   let data;
   try { const r = await fetch(`novels/${n.slug}/${c.file}`); if (!r.ok) throw 0; data = await r.json(); }
   catch(e) { app.innerHTML = `<div class="empty">${esc(t("notFound"))}</div>`; return; }
-  const T = LESSON_T, SPK = data.speak || "cs-CZ";
+  const T = Object.assign({}, LESSON_T, data.ui || {}), SPK = data.speak || "cs-CZ";
+  if (typeof T.ex === "string") { const f = T.ex; T.ex = k => f.replace("{n}", k); }
   const M = (mood) => (data.mascot === "dragon" ? DRAGON : TULIP)(mood);
   const tr = v => data.translit === "sr" ? latToCyr(v) : v;
   const total = data.exercises.length, maxHearts = data.hearts || 5;
