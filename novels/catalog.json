@@ -5610,6 +5610,36 @@
         }
       ],
       "wip": true
+    },
+    {
+      "slug": "le-presentimento",
+      "lang": "ia",
+      "title": "Le Presentimento",
+      "author": "Robert Fader",
+      "genre": "Postapocalyptico · Romance · Scientia fiction",
+      "year": 2026,
+      "description": "Post le apocalypsis nuclear, Robert cerca superviventes pro construer Nostre Utopia, un fortressa turquoise fundate super ideales humanista. Ille incontra Katerina, un femina russe con qui ille se inamora. Ma le arrivata de Natalia, un violoncellista, e le menacia del salvages ponera a proba lor amor e le futuro del communitate.",
+      "chapters": [
+        {
+          "file": "01.md",
+          "title": "Le mundo post le fin"
+        },
+        {
+          "file": "02.md",
+          "title": "Le femina in le nive"
+        },
+        {
+          "file": "03.md",
+          "title": "Le promissa de un nove mundo"
+        }
+      ],
+      "translations": {
+        "eo": "la-antausento",
+        "ru": "predchuvstvie",
+        "it": "presentimento",
+        "es": "la-corazonada"
+      },
+      "wip": true
     }
   ],
   "series": [
