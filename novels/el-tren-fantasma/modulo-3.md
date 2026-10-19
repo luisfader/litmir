@@ -4,6 +4,10 @@
 
 **Pista reservada:** la autoridad del juez parece absoluta, pero sus decisiones son arbitrarias. La tableta que aparece durante el juicio puede resultar decisiva para cambiar el recorrido del tren.
 
+## Evaluación autocorregible · 15 preguntas · 100 puntos
+
+Respondé las 15 preguntas y pulsá «Calificar módulo». Podés repetir el examen para mejorar tu mejor nota.
+
 ## Test · Comprensión lectora
 
 1. Marcos encuentra a Alicia en la discoteca. ( V / F ){V}
@@ -27,6 +31,18 @@
 9. ¿Qué personaje conoce la tecnología del tren? [[*Leonardo Circuito|El camarero]]
 
 10. ¿Qué busca Marcos durante el juicio? [[*Rescatar a Alicia|Comprar un boleto]]
+
+## Gramática · Pasados y obligación
+
+11. Ayer los zombis [[*se llevaron|se llevan]] a Alicia.
+
+12. Mientras Marcos buscaba pistas, Alicia [[*bailaba|bailó]] en la discoteca.
+
+13. El juez dice que todos [[*deben|debe]] obedecer.
+
+14. Alessio [[*tiene que|tienen que]] defender a Alicia.
+
+15. Si queremos salir, [[*debemos|debo]] encontrar la locomotora.
 
 ## Producción escrita
 
