@@ -1899,6 +1899,167 @@
       "cover": "novels/maschera-di-venezia/cover.jpg"
     },
     {
+      "slug": "ora-selvaggia-venezia",
+      "lang": "it",
+      "title": "Ora selvaggia: Stregoneria veneziana",
+      "author": "Robert Fader",
+      "genre": "Fantasy urbano · Fantasy",
+      "cover": "novels/ora-selvaggia-venezia/cover.jpg",
+      "description": "Venezia, città di maschere e di antichi segreti, nasconde nelle sue profondità una macchina terribile, creata da forze oscure. A poco a poco si impadronisce della mente degli uomini, togliendo loro l’anima, la volontà e l’umanità, e li trasforma in gusci vuoti, senza il fuoco della vita.\nQuando arriva una disperata richiesta d’aiuto, i protagonisti partono per Venezia per impedire la catastrofe. Ma insieme alla minaccia globale li aspetta una dura prova personale: una donna che risveglia nella protagonista una gelosia bruciante, quasi primordiale.\nArmato di un cubo di Rubik magico e di un taccuino con cui evoca antiche creature mitologiche, il protagonista entra in battaglia contro la macchina più pericolosa della storia. La sua compagna è pronta a tutto per dimostrare il suo potere su di lui.\nSe la macchina non verrà distrutta, la civiltà perderà per sempre la sua anima e sprofonderà nel buio.",
+      "year": 2026,
+      "adult": true,
+      "chapters": [
+        {
+          "file": "01.md",
+          "title": "Il palazzo sotterraneo"
+        },
+        {
+          "file": "02.md",
+          "title": "La moglie più pericolosa del mondo"
+        },
+        {
+          "file": "03.md",
+          "title": "Nuvole e ombre"
+        },
+        {
+          "file": "04.md",
+          "title": "Fuoco slavo"
+        },
+        {
+          "file": "05.md",
+          "title": "Una Fiat e una gondola"
+        },
+        {
+          "file": "06.md",
+          "title": "La gondola senza gondoliere"
+        },
+        {
+          "file": "07.md",
+          "title": "Il palazzo sott’acqua"
+        },
+        {
+          "file": "08.md",
+          "title": "Cena e allusioni"
+        },
+        {
+          "file": "09.md",
+          "title": "Cortesia e fuoco"
+        },
+        {
+          "file": "10.md",
+          "title": "Pasta alla carbonara e non solo"
+        },
+        {
+          "file": "11.md",
+          "title": "Rivelazioni sott’acqua"
+        },
+        {
+          "file": "12.md",
+          "title": "La maschera che guida"
+        },
+        {
+          "file": "13.md",
+          "title": "Un arsenale nell’Arsenale"
+        },
+        {
+          "file": "14.md",
+          "title": "Follia maschile"
+        },
+        {
+          "file": "15.md",
+          "title": "Tra bellezza e sospetto"
+        },
+        {
+          "file": "16.md",
+          "title": "Una folla senza volontà"
+        },
+        {
+          "file": "17.md",
+          "title": "Acqua, paura e gelosia"
+        },
+        {
+          "file": "18.md",
+          "title": "La geometria del caos"
+        },
+        {
+          "file": "19.md",
+          "title": "Edizione straordinaria di «Non dimenticare di accettare la realtà»",
+          "label": "Intermezzo"
+        },
+        {
+          "file": "20.md",
+          "title": "La geometria della soluzione"
+        },
+        {
+          "file": "21.md",
+          "title": "Il piano di distruzione"
+        },
+        {
+          "file": "22.md",
+          "title": "Luce di luna sott’acqua"
+        },
+        {
+          "file": "23.md",
+          "title": "Colazione prima della battaglia"
+        },
+        {
+          "file": "24.md",
+          "title": "L’ora della frattura"
+        },
+        {
+          "file": "25.md",
+          "title": "Il palazzo sotterraneo"
+        },
+        {
+          "file": "26.md",
+          "title": "La città sotto controllo"
+        },
+        {
+          "file": "27.md",
+          "title": "Riflessioni sul cubo di Rubik",
+          "label": "Intermezzo"
+        },
+        {
+          "file": "28.md",
+          "title": "Voci nell’ombra"
+        },
+        {
+          "file": "29.md",
+          "title": "Le donne escono dall’ombra"
+        },
+        {
+          "file": "30.md",
+          "title": "La rivolta della forza"
+        },
+        {
+          "file": "31.md",
+          "title": "La logica del cuore"
+        },
+        {
+          "file": "32.md",
+          "title": "Una forza più grande dell’incantesimo"
+        },
+        {
+          "file": "33.md",
+          "title": "L’anticupola"
+        },
+        {
+          "file": "34.md",
+          "title": "La città che si ricordò dell’amore"
+        },
+        {
+          "file": "35.md",
+          "title": "Notte sul Danubio",
+          "label": "Epilogo"
+        },
+        {
+          "file": "36.md",
+          "title": "Un messaggio importante dell’autore",
+          "label": "Nota"
+        }
+      ]
+    },
+    {
       "slug": "ladro-di-cuori",
       "lang": "it",
       "title": "Ladro di cuori",
