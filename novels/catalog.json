@@ -3860,7 +3860,7 @@
     {
       "slug": "la-savo-de-zmaj",
       "lang": "eo",
-      "title": "La Sovaĝa Horo 17: La Savo de Zmaj",
+      "title": "La Sovaĝa Horo: La Savo de Zmaj",
       "author": "Robert Fader",
       "genre": "Fantazio · Urba fantazio · Aventuro",
       "description": "Trankvila vespero sur la remparoj de Kalemegdan finiĝas per unu telefonvoko: Zmaj, la drako de la familio, estas kaptito en Prago.\nLuis kaj Nataŝa Fader havas malpli ol du tagojn. Sur la nokta trajno ilin atendas transfuĝinto kun sekreto, en Prago librovendistino kun mapo de sep steloj, kaj sub la urbo kristalo, kiu neniam estis konstruita por doni energion.\nĜi estis konstruita por teni ion fermita.",
@@ -3926,7 +3926,8 @@
           "file": "15.md",
           "title": "La promeso ĉe Danubo"
         }
-      ]
+      ],
+      "cover": "novels/la-savo-de-zmaj/cover.jpg"
     },
     {
       "slug": "predcutje",
