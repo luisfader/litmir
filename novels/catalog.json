@@ -4232,6 +4232,27 @@
       "study": true
     },
     {
+      "slug": "la-gran-conspiracion",
+      "lang": "es",
+      "title": "La gran conspiración",
+      "author": "Luis Fader",
+      "genre": "Romance · Erótica",
+      "description": "Natalia, una cardióloga moscovita a la que ya casi nada sorprende, recibe en el mismo día dos mensajes inesperados de dos argentinos: Luis, un artista que quiere dibujar su retrato, y Roberto, un seductor que conoce en una aplicación de citas.\nDos hombres, dos citas en una misma semana y un Moscú nevado visto desde las alturas. Entre la curiosidad y el deseo, Natalia empieza a sospechar que tanta coincidencia podría no ser casual.",
+      "year": 2025,
+      "adult": true,
+      "wip": true,
+      "chapters": [
+        {
+          "file": "01.md",
+          "title": "Dos mensajes inesperados"
+        },
+        {
+          "file": "02.md",
+          "title": "El retrato"
+        }
+      ]
+    },
+    {
       "slug": "divlji-chas",
       "lang": "sr",
       "title": "Дивљи час",
