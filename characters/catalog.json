@@ -1,0 +1,282 @@
+{
+  "characters": [
+    {
+      "id": "luis",
+      "name": "Luis / Луис",
+      "langs": [
+        "ru",
+        "sr",
+        "it",
+        "es",
+        "eo",
+        "cs"
+      ],
+      "role": "Protagonista y viajero; participa en las aventuras de la saga La hora salvaje.",
+      "novels": [
+        "dikij-chas",
+        "dikij-chas-2",
+        "divlji-chas",
+        "ora-selvaggia-venezia",
+        "predosecaj"
+      ]
+    },
+    {
+      "id": "natasha",
+      "name": "Natasha / Наташа",
+      "langs": [
+        "ru",
+        "sr",
+        "it",
+        "eo"
+      ],
+      "role": "Heroína serbia, apasionada y valiente. Aparece en distintas historias de la saga.",
+      "novels": [
+        "dikij-chas",
+        "dikij-chas-2",
+        "divlji-chas",
+        "predosecaj"
+      ]
+    },
+    {
+      "id": "robert",
+      "name": "Robert / Роберт",
+      "langs": [
+        "ru",
+        "sr",
+        "it"
+      ],
+      "role": "Superviviente y fundador de Utopía en Предосећај.",
+      "novels": [
+        "predosecaj"
+      ]
+    },
+    {
+      "id": "sofia",
+      "name": "Sofía / Софија",
+      "langs": [
+        "sr",
+        "ru"
+      ],
+      "role": "Ingeniera de Utopía cuya búsqueda de libertad la enfrenta con la comunidad.",
+      "novels": [
+        "predosecaj"
+      ]
+    },
+    {
+      "id": "natalia-cellist",
+      "name": "Natalia / Наталија (violonchelista)",
+      "langs": [
+        "sr"
+      ],
+      "role": "Música y violonchelista; su arte acompaña la resistencia de Utopía.",
+      "novels": [
+        "predosecaj"
+      ]
+    },
+    {
+      "id": "sasha",
+      "name": "Sasha / Саша",
+      "langs": [
+        "sr"
+      ],
+      "role": "Superviviente de Utopía, marcada por las pérdidas de la guerra.",
+      "novels": [
+        "predosecaj"
+      ]
+    },
+    {
+      "id": "zmaj",
+      "name": "Zmaj / Змај",
+      "langs": [
+        "ru",
+        "sr",
+        "eo"
+      ],
+      "role": "Dragón aliado de los protagonistas en las historias de La hora salvaje.",
+      "novels": [
+        "dikij-chas",
+        "divlji-chas",
+        "la-savo-de-zmaj"
+      ]
+    },
+    {
+      "id": "laura",
+      "name": "Laura / Лаура",
+      "langs": [
+        "ru"
+      ],
+      "role": "Protagonista de una aventura vinculada al misterio de la Atlántida.",
+      "novels": [
+        "zvezdnyj-roman"
+      ]
+    },
+    {
+      "id": "luciano",
+      "name": "Luciano / Лучано",
+      "langs": [
+        "ru"
+      ],
+      "role": "Habitante de la Atlántida que acompaña a Laura.",
+      "novels": [
+        "zvezdnyj-roman"
+      ]
+    },
+    {
+      "id": "alessio",
+      "name": "Alessio / Алессио",
+      "langs": [
+        "ru",
+        "it"
+      ],
+      "role": "Ladrón de arte que se ve envuelto en intrigas y sentimientos inesperados.",
+      "novels": [
+        "pokhititel-serdec",
+        "ladro-di-cuori",
+        "ladro-di-cuori-2"
+      ]
+    },
+    {
+      "id": "marcos",
+      "name": "Marcos",
+      "langs": [
+        "es"
+      ],
+      "role": "Detective que investiga la desaparición de Alicia en un tren misterioso.",
+      "novels": [
+        "el-tren-fantasma"
+      ]
+    },
+    {
+      "id": "alicia",
+      "name": "Alicia",
+      "langs": [
+        "es"
+      ],
+      "role": "Mujer desaparecida cuya búsqueda impulsa el misterio del tren.",
+      "novels": [
+        "el-tren-fantasma"
+      ]
+    },
+    {
+      "id": "martin",
+      "name": "Martín",
+      "langs": [
+        "es"
+      ],
+      "role": "Joven curioso que descubre los secretos de una ciudad extraordinaria.",
+      "novels": [
+        "la-ciudad-secreta"
+      ]
+    },
+    {
+      "id": "marina",
+      "name": "Marina",
+      "langs": [
+        "es"
+      ],
+      "role": "Mujer misteriosa vinculada a los secretos de la ciudad.",
+      "novels": [
+        "la-ciudad-secreta"
+      ]
+    },
+    {
+      "id": "tatiana",
+      "name": "Tatiana",
+      "langs": [
+        "es"
+      ],
+      "role": "Figura central del misterio de La chica del retrato.",
+      "novels": [
+        "la-chica-del-retrato"
+      ]
+    },
+    {
+      "id": "nadezhda",
+      "name": "Nadezhda",
+      "langs": [
+        "es"
+      ],
+      "role": "Personaje de Las coordenadas del amor.",
+      "novels": [
+        "las-coordenadas-del-amor"
+      ]
+    },
+    {
+      "id": "natalia-venice",
+      "name": "Natalia",
+      "langs": [
+        "it"
+      ],
+      "role": "Veneciana enigmática que participa en las aventuras de la saga.",
+      "novels": [
+        "ora-selvaggia-venezia"
+      ]
+    },
+    {
+      "id": "carlotta",
+      "name": "Carlotta",
+      "langs": [
+        "it"
+      ],
+      "role": "Restauradora de arte en una historia de misterio y realismo mágico en Toscana.",
+      "novels": [
+        "la-nevicata-rosa"
+      ]
+    },
+    {
+      "id": "jana",
+      "name": "Jana",
+      "langs": [
+        "cs"
+      ],
+      "role": "Personaje de la aventura subterránea ambientada en tierras checas.",
+      "novels": [
+        "podzemni-tajemstvi"
+      ]
+    },
+    {
+      "id": "lucie",
+      "name": "Lucie",
+      "langs": [
+        "cs"
+      ],
+      "role": "Protagonista de los misterios subterráneos checos.",
+      "novels": [
+        "podzemni-tajemstvi"
+      ]
+    },
+    {
+      "id": "sasha-voice",
+      "name": "Sasha",
+      "langs": [
+        "fr"
+      ],
+      "role": "Mujer que investiga acontecimientos inexplicables en la ciudad de Sinea.",
+      "novels": [
+        "la-voix"
+      ]
+    },
+    {
+      "id": "oxana-voice",
+      "name": "Oxana",
+      "langs": [
+        "fr"
+      ],
+      "role": "Amiga y compañera de Sasha en La voix.",
+      "novels": [
+        "la-voix"
+      ]
+    },
+    {
+      "id": "dima-voice",
+      "name": "Dima",
+      "langs": [
+        "fr"
+      ],
+      "role": "Joven que participa en la resistencia de La voix.",
+      "novels": [
+        "la-voix"
+      ]
+    }
+  ]
+}
