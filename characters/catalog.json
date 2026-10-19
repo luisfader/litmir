@@ -18,7 +18,33 @@
         "divlji-chas",
         "ora-selvaggia-venezia",
         "predosecaj"
-      ]
+      ],
+      "localizations": {
+        "ru": {
+          "name": "Луис",
+          "description": "Путешественник и главный герой приключений «Дикого часа». Вместе с друзьями противостоит опасностям и защищает близких."
+        },
+        "sr": {
+          "name": "Луис",
+          "description": "Путник и један од главних јунака саге „Дивљи час“. Са пријатељима се суочава са опасностима и бори се за оне које воли."
+        },
+        "it": {
+          "name": "Luis",
+          "description": "Viaggiatore e protagonista delle avventure dell’Ora selvaggia. Affronta pericoli e misteri insieme ai suoi amici."
+        },
+        "es": {
+          "name": "Luis",
+          "description": "Viajero y protagonista de las aventuras de La hora salvaje. Enfrenta peligros y misterios junto a sus amigos."
+        },
+        "eo": {
+          "name": "Luis",
+          "description": "Vojaĝanto kaj ĉefrolulo de la aventuroj de La Sovaĝa Horo. Li alfrontas danĝerojn kaj misterojn kun siaj amikoj."
+        },
+        "cs": {
+          "name": "Luis",
+          "description": "Cestovatel a jedna z hlavních postav dobrodružství Divoké hodiny. Se svými přáteli čelí nebezpečí a záhadám."
+        }
+      }
     },
     {
       "id": "natasha",
@@ -35,7 +61,25 @@
         "dikij-chas-2",
         "divlji-chas",
         "predosecaj"
-      ]
+      ],
+      "localizations": {
+        "ru": {
+          "name": "Наташа",
+          "description": "Смелая, страстная и решительная сербка. Её преданность близким сочетается с импульсивным характером."
+        },
+        "sr": {
+          "name": "Наташа",
+          "description": "Храбра, страствена и одлучна Српкиња. Њена оданост ближњима праћена је импулсивним темпераментом."
+        },
+        "it": {
+          "name": "Natascia",
+          "description": "Serba coraggiosa e passionale, dal carattere impulsivo e profondamente leale alle persone che ama."
+        },
+        "eo": {
+          "name": "Nataŝa",
+          "description": "Kuraĝa kaj pasia serbino. Ŝia sindonemo al la amataj homoj kuniĝas kun impulsema karaktero."
+        }
+      }
     },
     {
       "id": "robert",
@@ -48,7 +92,13 @@
       "role": "Superviviente y fundador de Utopía en Предосећај.",
       "novels": [
         "predosecaj"
-      ]
+      ],
+      "localizations": {
+        "sr": {
+          "name": "Роберт",
+          "description": "Преживели и један од оснивача Утопије у роману „Предосећај“. Верује да човечанство заслужује нови почетак."
+        }
+      }
     },
     {
       "id": "sofia",
@@ -60,7 +110,13 @@
       "role": "Ingeniera de Utopía cuya búsqueda de libertad la enfrenta con la comunidad.",
       "novels": [
         "predosecaj"
-      ]
+      ],
+      "localizations": {
+        "sr": {
+          "name": "Софија",
+          "description": "Инжењерка која је помогла у изградњи Утопије. Њена жеља за слободом доводи је у сукоб са заједницом."
+        }
+      }
     },
     {
       "id": "natalia-cellist",
@@ -71,7 +127,13 @@
       "role": "Música y violonchelista; su arte acompaña la resistencia de Utopía.",
       "novels": [
         "predosecaj"
-      ]
+      ],
+      "localizations": {
+        "sr": {
+          "name": "Наталија — виолончелисткиња",
+          "description": "Музичарка чија уметност доноси наду становницима Утопије у тешким временима."
+        }
+      }
     },
     {
       "id": "sasha",
@@ -82,7 +144,13 @@
       "role": "Superviviente de Utopía, marcada por las pérdidas de la guerra.",
       "novels": [
         "predosecaj"
-      ]
+      ],
+      "localizations": {
+        "sr": {
+          "name": "Саша",
+          "description": "Становница Утопије коју рат и губици приморавају на тешке одлуке."
+        }
+      }
     },
     {
       "id": "zmaj",
@@ -97,7 +165,21 @@
         "dikij-chas",
         "divlji-chas",
         "la-savo-de-zmaj"
-      ]
+      ],
+      "localizations": {
+        "ru": {
+          "name": "Змай",
+          "description": "Дракон и союзник героев «Дикого часа». Его сила помогает друзьям в решающие моменты."
+        },
+        "sr": {
+          "name": "Змај",
+          "description": "Змај и савезник јунака „Дивљег часа“. Његова снага помаже пријатељима у пресудним тренуцима."
+        },
+        "eo": {
+          "name": "Zmaj",
+          "description": "Drako kaj aliancano de la herooj de La Sovaĝa Horo. Lia forto helpas ilin en decidaj momentoj."
+        }
+      }
     },
     {
       "id": "laura",
@@ -108,7 +190,13 @@
       "role": "Protagonista de una aventura vinculada al misterio de la Atlántida.",
       "novels": [
         "zvezdnyj-roman"
-      ]
+      ],
+      "localizations": {
+        "ru": {
+          "name": "Лаура",
+          "description": "Героиня приключения, связанного с тайнами затонувшей Атлантиды."
+        }
+      }
     },
     {
       "id": "luciano",
@@ -119,7 +207,13 @@
       "role": "Habitante de la Atlántida que acompaña a Laura.",
       "novels": [
         "zvezdnyj-roman"
-      ]
+      ],
+      "localizations": {
+        "ru": {
+          "name": "Лучано",
+          "description": "Житель Атлантиды, который сопровождает Лауру в её необыкновенном путешествии."
+        }
+      }
     },
     {
       "id": "alessio",
@@ -133,7 +227,17 @@
         "pokhititel-serdec",
         "ladro-di-cuori",
         "ladro-di-cuori-2"
-      ]
+      ],
+      "localizations": {
+        "ru": {
+          "name": "Алессио",
+          "description": "Похититель произведений искусства, чьи тщательно продуманные планы осложняются неожиданными чувствами."
+        },
+        "it": {
+          "name": "Alessio",
+          "description": "Ladro d’arte i cui piani meticolosi si complicano quando entrano in gioco sentimenti inattesi."
+        }
+      }
     },
     {
       "id": "marcos",
@@ -144,7 +248,13 @@
       "role": "Detective que investiga la desaparición de Alicia en un tren misterioso.",
       "novels": [
         "el-tren-fantasma"
-      ]
+      ],
+      "localizations": {
+        "es": {
+          "name": "Marcos",
+          "description": "Detective que investiga la desaparición de Alicia en un tren misterioso."
+        }
+      }
     },
     {
       "id": "alicia",
@@ -155,7 +265,13 @@
       "role": "Mujer desaparecida cuya búsqueda impulsa el misterio del tren.",
       "novels": [
         "el-tren-fantasma"
-      ]
+      ],
+      "localizations": {
+        "es": {
+          "name": "Alicia",
+          "description": "Mujer desaparecida cuya búsqueda pone en marcha el misterio del tren."
+        }
+      }
     },
     {
       "id": "martin",
@@ -166,7 +282,13 @@
       "role": "Joven curioso que descubre los secretos de una ciudad extraordinaria.",
       "novels": [
         "la-ciudad-secreta"
-      ]
+      ],
+      "localizations": {
+        "es": {
+          "name": "Martín",
+          "description": "Joven curioso que descubre los secretos de una ciudad extraordinaria."
+        }
+      }
     },
     {
       "id": "marina",
@@ -177,7 +299,13 @@
       "role": "Mujer misteriosa vinculada a los secretos de la ciudad.",
       "novels": [
         "la-ciudad-secreta"
-      ]
+      ],
+      "localizations": {
+        "es": {
+          "name": "Marina",
+          "description": "Mujer enigmática vinculada con los secretos de la ciudad."
+        }
+      }
     },
     {
       "id": "tatiana",
@@ -188,7 +316,13 @@
       "role": "Figura central del misterio de La chica del retrato.",
       "novels": [
         "la-chica-del-retrato"
-      ]
+      ],
+      "localizations": {
+        "es": {
+          "name": "Tatiana",
+          "description": "Figura central del misterio de La chica del retrato."
+        }
+      }
     },
     {
       "id": "nadezhda",
@@ -199,7 +333,13 @@
       "role": "Personaje de Las coordenadas del amor.",
       "novels": [
         "las-coordenadas-del-amor"
-      ]
+      ],
+      "localizations": {
+        "es": {
+          "name": "Nadezhda",
+          "description": "Personaje de Las coordenadas del amor."
+        }
+      }
     },
     {
       "id": "natalia-venice",
@@ -210,7 +350,13 @@
       "role": "Veneciana enigmática que participa en las aventuras de la saga.",
       "novels": [
         "ora-selvaggia-venezia"
-      ]
+      ],
+      "localizations": {
+        "it": {
+          "name": "Natalia",
+          "description": "Veneziana enigmatica che prende parte alle avventure dell’Ora selvaggia."
+        }
+      }
     },
     {
       "id": "carlotta",
@@ -221,7 +367,13 @@
       "role": "Restauradora de arte en una historia de misterio y realismo mágico en Toscana.",
       "novels": [
         "la-nevicata-rosa"
-      ]
+      ],
+      "localizations": {
+        "it": {
+          "name": "Carlotta",
+          "description": "Restauratrice d’arte coinvolta in una storia di mistero e realismo magico in Toscana."
+        }
+      }
     },
     {
       "id": "jana",
@@ -232,7 +384,13 @@
       "role": "Personaje de la aventura subterránea ambientada en tierras checas.",
       "novels": [
         "podzemni-tajemstvi"
-      ]
+      ],
+      "localizations": {
+        "cs": {
+          "name": "Jana",
+          "description": "Jedna z postav podzemního dobrodružství odehrávajícího se v českém prostředí."
+        }
+      }
     },
     {
       "id": "lucie",
@@ -243,7 +401,13 @@
       "role": "Protagonista de los misterios subterráneos checos.",
       "novels": [
         "podzemni-tajemstvi"
-      ]
+      ],
+      "localizations": {
+        "cs": {
+          "name": "Lucie",
+          "description": "Jedna z hlavních postav českého příběhu Podzemní tajemství."
+        }
+      }
     },
     {
       "id": "sasha-voice",
@@ -254,7 +418,13 @@
       "role": "Mujer que investiga acontecimientos inexplicables en la ciudad de Sinea.",
       "novels": [
         "la-voix"
-      ]
+      ],
+      "localizations": {
+        "fr": {
+          "name": "Sasha",
+          "description": "Une femme qui enquête sur des phénomènes inexplicables dans la ville de Sinea."
+        }
+      }
     },
     {
       "id": "oxana-voice",
@@ -265,7 +435,13 @@
       "role": "Amiga y compañera de Sasha en La voix.",
       "novels": [
         "la-voix"
-      ]
+      ],
+      "localizations": {
+        "fr": {
+          "name": "Oxana",
+          "description": "Amie et collègue de Sasha dans le roman La voix."
+        }
+      }
     },
     {
       "id": "dima-voice",
@@ -276,7 +452,13 @@
       "role": "Joven que participa en la resistencia de La voix.",
       "novels": [
         "la-voix"
-      ]
+      ],
+      "localizations": {
+        "fr": {
+          "name": "Dima",
+          "description": "Un jeune homme qui prend part à la résistance dans La voix."
+        }
+      }
     }
   ]
 }
