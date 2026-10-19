@@ -4,6 +4,10 @@
 
 **Dato clave:** controlar un aparato no equivale a controlar a las personas. La investigación de Alicia y la valentía de Marcos resultan tan importantes como la tecnología para resolver el misterio.
 
+## Evaluación autocorregible · 15 preguntas · 100 puntos
+
+Respondé las 15 preguntas y pulsá «Calificar módulo». Podés repetir el examen para mejorar tu mejor nota.
+
 ## Test · Comprensión lectora
 
 1. Marcos y Alicia intentan llegar a la locomotora. ( V / F ){V}
@@ -27,6 +31,18 @@
 9. ¿Qué lleva Leonardo Circuito? [[*Un cohete experimental|Un paraguas mágico]]
 
 10. ¿Qué tema une los episodios? [[*Superar los miedos|Ganar una carrera]]
+
+## Gramática · Condicional, subjuntivo y pasado
+
+11. Si tuviera la tableta, Marcos [[*cambiaría|cambia]] el destino.
+
+12. Alicia quiere que Marcos [[*confíe|confía]] en ella.
+
+13. Cuando llegaron a la locomotora, ya [[*habían superado|superan]] muchos peligros.
+
+14. Es importante que todos [[*puedan|pueden]] salir del tren.
+
+15. Si el tren desapareciera, los pasajeros [[*serían|son]] libres.
 
 ## Producción escrita
 
