@@ -1,6 +1,6 @@
-# Dall'indifferenza all'amore per l'italiano: intervista a Luis Fader
+# Dall'indifferenza all'amore per l'italiano: intervista a Roberto Fader
 
-*Lo scrittore, insegnante e compositore Luis Fader racconta il suo rapporto con la lingua italiana: un percorso fatto di difficoltà, incontri e creatività.*
+*Lo scrittore, insegnante e compositore Roberto Fader racconta il suo rapporto con la lingua italiana: un percorso fatto di difficoltà, incontri e creatività.*
 
 **1. Sei argentino e la tua lingua madre è lo spagnolo. Come è nato il tuo interesse per l'italiano?**
 
