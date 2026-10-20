@@ -873,6 +873,12 @@
         {
           "file": "19.md",
           "title": "В двух мирах"
+        },
+        {
+          "file": "test.json",
+          "title": "Итоговый тест",
+          "label": "Тест",
+          "type": "quiz"
         }
       ],
       "adult": true
