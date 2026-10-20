@@ -66,6 +66,7 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-family:var(--san
 .post-card .more{font-family:var(--sans);font-size:14px;color:var(--accent)}
 @media (max-width:520px){.post-card.has-img{grid-template-columns:1fr}.post-card.has-img img{grid-row:auto;width:100%;height:auto;aspect-ratio:16/9}}
 article.chapter.post p{text-align:left}
+article.chapter.post a{color:var(--accent)}
 /* Home */
 .hero{padding:72px 0 40px;text-align:center}
 .hero .eyebrow{font-family:var(--sans);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-weight:600}
@@ -442,7 +443,7 @@ const app = document.getElementById("app");
 const t = k => (UI[lang] || UI.en || UI.ru)[k];
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 
-function inline(s){ return esc(s).replace(/\*\*([^*]+)\*\*\{([^}]+)\}/g,'<strong class="gloss" tabindex="0" data-tr="$2">$1</strong>').replace(/_{2,}/g,"\u0001").replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>").replace(/(^|[^*])\*(?!\s)(.+?)\*/g,"$1<em>$2</em>").replace(/(^|\W)_(?!\s)(.+?)_(?=\W|$)/g,"$1<em>$2</em>").replace(/\u0001/g,'<span class="blank"></span>'); }
+function inline(s){ return esc(s).replace(/\[([^\]]+)\]\(((?:#|https?:\/\/|[\w.\/-])[^)\s]*)\)/g,'<a href="$2">$1</a>').replace(/\*\*([^*]+)\*\*\{([^}]+)\}/g,'<strong class="gloss" tabindex="0" data-tr="$2">$1</strong>').replace(/_{2,}/g,"\u0001").replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>").replace(/(^|[^*])\*(?!\s)(.+?)\*/g,"$1<em>$2</em>").replace(/(^|\W)_(?!\s)(.+?)_(?=\W|$)/g,"$1<em>$2</em>").replace(/\u0001/g,'<span class="blank"></span>'); }
 function renderText(md){
   return md.replace(/\r/g,"").split(/\n\s*\n/).map(b => b.trim()).filter(Boolean).map(b => {
     if (/^(\*\s*){3,}$|^(-\s*){3,}$|^⁂$/.test(b)) return "<hr>";
