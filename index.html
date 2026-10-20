@@ -381,8 +381,8 @@ article.chapter h3{font-family:var(--sans);font-size:.72em;letter-spacing:.12em;
 <footer><div class="wrap" id="foot"></div></footer>
 
 <script>
-const LANGS = ["ru","es","it","en","de","fr","tr","pt","cs","sr","eo","isv","vo"];
-const LANG_NAMES = {ru:"Русский", es:"Español", it:"Italiano", en:"English", de:"Deutsch", fr:"Français", tr:"Türkçe", pt:"Português", cs:"Čeština", sr:"Српски", eo:"Esperanto", isv:"Medžuslovjansky", vo:"Volapük"};
+const LANGS = ["ru","es","it","en","de","fr","tr","pt","cs","sr","eo","isv","vo","ia"];
+const LANG_NAMES = {ru:"Русский", es:"Español", it:"Italiano", en:"English", de:"Deutsch", fr:"Français", tr:"Türkçe", pt:"Português", cs:"Čeština", sr:"Српски", eo:"Esperanto", isv:"Medžuslovjansky", vo:"Volapük", ia:"Interlingua"};
 const UI = {
   ru:{study:"Для учёбы", studyNote:"Книга для изучения языка: в ней есть учебные материалы.", wip:"Пишется", wipNote:"Роман ещё в процессе написания — новые главы появятся позже.", tag:"Романы", hero:"Литературный мир", sub:"Романы Роберта Фадера на русском языке. Читайте онлайн бесплатно.", author:"Роберт Фадер", start:"Начать читать", cont:"Продолжить", contents:"Содержание", chapter:"Глава", prev:"Назад", next:"Далее", back:"Все романы", empty:"Романов на русском языке пока нет. Скоро появятся!", foot:"© Роберт Фадер. Все права защищены.", chapters:n=>n+" "+plural(n,["глава","главы","глав"]), notFound:"Страница не найдена.", also:"Этот роман есть и на других языках:", adultT:"Только для взрослых", adultP:"Этот роман содержит откровенные сцены и предназначен для читателей старше 18 лет.", adultYes:"Мне есть 18 лет", adultNo:"Вернуться"},
   es:{study:"Para estudiar", studyNote:"Libro para aprender el idioma: incluye material de estudio.", wip:"En proceso", wipNote:"Esta novela está en proceso de escritura: pronto habrá nuevos capítulos.", tag:"Novelas", hero:"Mundo literario", sub:"Las novelas de Robert Fader en español. Léelas en línea gratis.", author:"Robert Fader", start:"Empezar a leer", cont:"Continuar", contents:"Índice", chapter:"Capítulo", prev:"Anterior", next:"Siguiente", back:"Todas las novelas", empty:"Todavía no hay novelas en español. ¡Pronto llegarán!", foot:"© Robert Fader. Todos los derechos reservados.", chapters:n=>n+(n===1?" capítulo":" capítulos"), notFound:"Página no encontrada.", also:"Esta novela también está en otros idiomas:", adultT:"Solo para adultos", adultP:"Esta novela contiene escenas explícitas y es solo para mayores de 18 años.", adultYes:"Tengo 18 años o más", adultNo:"Volver"},
@@ -396,6 +396,7 @@ const UI = {
   sr:{study:"За учење", studyNote:"Књига за учење језика: садржи материјал за вежбање.", wip:"У писању", wipNote:"Овај роман се још пише — нова поглавља стижу ускоро.", tag:"Романи", hero:"Књижевни свет", sub:"Романи Роберта Фадера на српском. Читајте онлајн бесплатно.", author:"Роберт Фадер", start:"Почни да читаш", cont:"Настави", contents:"Садржај", chapter:"Поглавље", prev:"Претходно", next:"Следеће", back:"Сви романи", empty:"Још нема романа на српском. Ускоро!", foot:"© Роберт Фадер. Сва права задржана.", chapters:n=>n+" "+(n%10===1&&n%100!==11?"поглавље":"поглавља"), notFound:"Страница није пронађена.", also:"Овај роман постоји и на другим језицима:", adultT:"Само за одрасле", adultP:"Овај роман садржи експлицитне сцене и намењен је читаоцима старијим од 18 година.", adultYes:"Имам 18 или више година", adultNo:"Назад"},
   eo:{study:"Por lerni", studyNote:"Libro por lernantoj de la lingvo: ĝi enhavas lernomaterialon.", wip:"Verkata", wipNote:"Ĉi tiu romano ankoraŭ estas verkata — novaj ĉapitroj baldaŭ aperos.", tag:"Romanoj", hero:"Literatura mondo", sub:"La romanoj de Robert Fader en Esperanto. Legu ilin rete senpage.", author:"Robert Fader", start:"Komenci legi", cont:"Daŭrigi", contents:"Enhavo", chapter:"Ĉapitro", prev:"Antaŭa", next:"Sekva", back:"Ĉiuj romanoj", empty:"Ankoraŭ ne estas romanoj en Esperanto. Baldaŭ!", foot:"© Robert Fader. Ĉiuj rajtoj rezervitaj.", chapters:n=>n+(n===1?" ĉapitro":" ĉapitroj"), notFound:"Paĝo ne trovita.", also:"Ĉi tiu romano ekzistas ankaŭ en aliaj lingvoj:", adultT:"Nur por plenkreskuloj", adultP:"Ĉi tiu romano enhavas eksplicitajn scenojn kaj estas nur por legantoj de 18 jaroj aŭ pli.", adultYes:"Mi havas 18 jarojn aŭ pli", adultNo:"Reen"},
   vo:{study:"Ad studön", studyNote:"Buk ad lärnön puki: ninädon studamateriali.", wip:"In penam", wipNote:"Romän at binon nog in penam. Kapitels nulik okömoms.", tag:"Romäns", hero:"Vol literatik", sub:"Romäns fa Robert Fader in Volapük. Reidols onis pö net nen päm.", author:"Robert Fader", start:"Primön reidami", cont:"Fövön reidami", contents:"Ninäd", chapter:"Kapitel", prev:"Büik", next:"Sököl", back:"Romäns valik", empty:"No dabinons nog romäns in Volapük. Okömoms suno!", foot:"© Robert Fader. Reits valik binons pälälöl.", chapters:n=>n+" kapitel"+(n===1?"":"s"), notFound:"Pad no petuvon.", also:"Romän at dabinon i in puks votik:", adultT:"Te pro gretans", adultP:"Romän at ninädon jenotis pro gretans te, de yels 18.", adultYes:"Labob yelis 18 u plu", adultNo:"Geikön"},
+  ia:{study:"Pro studiar", studyNote:"Libro pro apprender le lingua: illo include material de studio.", wip:"In progresso", wipNote:"Iste romance es ancora in scriptura — nove capitulos arrivara tosto.", tag:"Romances", hero:"Mundo litterari", sub:"Le romances de Robert Fader in interlingua. Lege los in linea gratuitemente.", author:"Robert Fader", start:"Comenciar a leger", cont:"Continuar", contents:"Indice", chapter:"Capitulo", prev:"Precedente", next:"Sequente", back:"Tote le romances", empty:"Ancora nulle romances in interlingua. Tosto!", foot:"© Robert Fader. Tote le derectos reservate.", chapters:n=>n+(n===1?" capitulo":" capitulos"), notFound:"Pagina non trovate.", also:"Iste romance es anque disponibile in:", adultT:"Solmente pro adultos", adultP:"Iste romance contine scenas explicite e es solmente pro lectores de 18 annos o plus.", adultYes:"Io ha 18 annos o plus", adultNo:"Retornar"},
   isv:{study:"Za učenje", studyNote:"Kniga za učenje jezyka: imaje materialy za učenje.", wip:"V pisanju", wipNote:"Toj roman se ješče piše — nove glavy prijdut skoro.", tag:"Romany", hero:"Literaturny svět", sub:"Romany Roberta Fadera na medžuslovjanskom jezyku. Čitajte onlajn bezplatno.", author:"Robert Fader", start:"Načati čitanje", cont:"Prodolžiti", contents:"Sodržanje", chapter:"Glava", prev:"Prědhodna", next:"Slědujuča", back:"Vse romany", empty:"Ješče nema romanov na medžuslovjanskom. Skoro!", foot:"© Robert Fader. Vse prava zaščiščene.", chapters:n=>n+" "+(n===1?"glava":n>=2&&n<=4?"glavy":"glav"), notFound:"Stranica ne jest najdena.", also:"Toj roman jest takože na drugyh jezykah:", adultT:"Jedino za odraslyh", adultP:"Toj roman imaje eksplicitne sceny i jest jedino za čitateljev od 18 lět.", adultYes:"Imam 18 lět ili boljše", adultNo:"Nazad"}
 };
 function plural(n,f){const a=n%10,b=n%100;return a===1&&b!==11?f[0]:a>=2&&a<=4&&(b<10||b>=20)?f[1]:f[2]}
@@ -516,8 +517,8 @@ function setupQuizzes(root, lang){
 
 /* Comments (Giscus, stored in GitHub Discussions of the repository) */
 const GISCUS = { repo:"luisfader/litmir", repoId:"R_kgDOVM8Utg", category:"General", categoryId:"DIC_kwDOVM8Uts4DIsSO" };
-const COMMENTS_T = {ru:"Комментарии", es:"Comentarios", it:"Commenti", en:"Comments", de:"Kommentare", fr:"Commentaires", tr:"Yorumlar", pt:"Comentários", cs:"Komentáře", sr:"Коментари", eo:"Komentoj", isv:"Komentarji"};
-const GISCUS_LANG = {ru:"ru", es:"es", it:"it", en:"en", de:"de", fr:"fr", tr:"tr", pt:"pt", cs:"cs", sr:"ru", eo:"eo", isv:"en"};
+const COMMENTS_T = {ru:"Комментарии", es:"Comentarios", it:"Commenti", en:"Comments", de:"Kommentare", fr:"Commentaires", tr:"Yorumlar", pt:"Comentários", cs:"Komentáře", sr:"Коментари", eo:"Komentoj", isv:"Komentarji", ia:"Commentos"};
+const GISCUS_LANG = {ru:"ru", es:"es", it:"it", en:"en", de:"de", fr:"fr", tr:"tr", pt:"pt", cs:"cs", sr:"ru", eo:"eo", isv:"en", ia:"en"};
 function giscusTheme(){
   const th = store.get("theme", null);
   if (th === "dark") return "dark_dimmed";
@@ -579,7 +580,7 @@ function chapterNo(n, i){ let k = 0; for (let j = 0; j < i; j++) if (!n.chapters
 function home(){
   document.title = t("hero") + " — " + t("author");
   const list = catalog.novels.filter(n => !n.hidden && n.lang === lang);
-  const characterLabels = {ru:"Персонажи",es:"Personajes",it:"Personaggi",en:"Characters",de:"Figuren",fr:"Personnages",tr:"Karakterler",pt:"Personagens",cs:"Postavy",sr:"Ликови",eo:"Roluloj",isv:"Postavy",vo:"Pösods"};
+  const characterLabels = {ru:"Персонажи",es:"Personajes",it:"Personaggi",en:"Characters",de:"Figuren",fr:"Personnages",tr:"Karakterler",pt:"Personagens",cs:"Postavy",sr:"Ликови",eo:"Roluloj",isv:"Postavy",vo:"Pösods",ia:"Personages"};
   app.innerHTML = `
   <section class="hero wrap">
     <div class="eyebrow">${esc(t("tag"))}</div>
@@ -610,7 +611,7 @@ function adultGate(n){
   document.getElementById("ok18").onclick = () => { store.set("adult", true); route(); };
 }
 
-const SAGA_W = {ru:"Цикл", es:"Saga", it:"Saga", en:"Series", de:"Reihe", fr:"Saga", tr:"Seri", pt:"Saga", cs:"Série", sr:"Серијал", eo:"Serio", isv:"Serija", vo:"Saga"};
+const SAGA_W = {ru:"Цикл", es:"Saga", it:"Saga", en:"Series", de:"Reihe", fr:"Saga", tr:"Seri", pt:"Saga", cs:"Série", sr:"Серијал", eo:"Serio", isv:"Serija", vo:"Saga", ia:"Serie"};
 function sagaHTML(n){
   const all = catalog.series || [], bySlug = Object.fromEntries(catalog.novels.map(x => [x.slug, x]));
   const mine = new Set([n.slug, ...Object.values(n.translations || {})]);

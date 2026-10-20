@@ -1,6 +1,6 @@
 # Литературный мир — Robert Fader
 
-Sitio web para leer las novelas de Robert Fader. Cada idioma (RU, ES, IT, EN, FR, TR, PT, CS, SR, EO, ISV) muestra solo las novelas escritas en ese idioma.
+Sitio web para leer las novelas de Robert Fader. Cada idioma (RU, ES, IT, EN, DE, FR, TR, PT, CS, SR, EO, ISV, VO, IA) muestra solo las novelas escritas en ese idioma.
 
 ## Estructura
 

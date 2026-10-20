@@ -18,7 +18,7 @@
 <div class="tools"><select id="lang" aria-label="Idioma"></select><input id="search" type="search" placeholder="Buscar personajes o novelas…" aria-label="Buscar personajes"></div>
 <div class="stats" id="stats"></div><div class="grid" id="grid"></div></main><footer><div class="wrap">© Robert Fader · <span id="footerText">Personajes del universo literario</span></div></footer>
 <script>
-const NAMES={ru:"Русский",es:"Español",it:"Italiano",en:"English",de:"Deutsch",fr:"Français",tr:"Türkçe",pt:"Português",cs:"Čeština",sr:"Српски",eo:"Esperanto",isv:"Medžuslovjansky",vo:"Volapük"};
+const NAMES={ru:"Русский",es:"Español",it:"Italiano",en:"English",de:"Deutsch",fr:"Français",tr:"Türkçe",pt:"Português",cs:"Čeština",sr:"Српски",eo:"Esperanto",isv:"Medžuslovjansky",vo:"Volapük",ia:"Interlingua"};
 const I={
 es:["Personajes","Universo literario","Descubrí a los protagonistas y personajes de las novelas. Elegí un idioma para explorar sus historias.","Buscar personajes o novelas…","Volver a las novelas","personajes","Todavía no hay fichas para este idioma. Se añadirán a medida que crezca el catálogo."],
 ru:["Персонажи","Литературная вселенная","Знакомьтесь с героями романов. Выберите язык, чтобы открыть их истории.","Поиск персонажей и романов…","К романам","персонажей","Для этого языка пока нет анкет персонажей."],
@@ -32,7 +32,8 @@ cs:["Postavy","Literární svět","Poznejte postavy románů.","Hledat postavy n
 sr:["Ликови","Књижевни свет","Упознајте јунаке романа и изаберите језик.","Претражи ликове или романе…","Назад на романе","ликова","За овај језик још нема профила ликова."],
 eo:["Roluloj","Literatura universo","Ekkonu la rolulojn de la romanoj.","Serĉi rolulojn aŭ romanojn…","Reen al romanoj","roluloj","Ankoraŭ ne estas rolulaj profiloj por ĉi tiu lingvo."],
 isv:["Postavy","Literaturny svět","Poznajte postavy romanov.","Iskati postavy ili romany…","Nazad k romanam","postav","Jesče net profilov."],
-vo:["Pösods","Literatüra vol","Datu pösodis romanis.","Sukön pösodis…","Geikön lü romanis","pösods","Pösodaprofils no nog dabinons."]
+vo:["Pösods","Literatüra vol","Datu pösodis romanis.","Sukön pösodis…","Geikön lü romanis","pösods","Pösodaprofils no nog dabinons."],
+ia:["Personages","Universo litterari","Cognosce le personages del romances.","Cercar personages o romances…","Retornar al romances","personages","Ancora nulle profilos de personages pro iste lingua."]
 };
 const E=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const params=new URLSearchParams(location.search);let language=params.get("lang")||localStorage.getItem("litmir-lang")||"es";if(!NAMES[language])language="es";
