@@ -1,0 +1,650 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aquella vez · Unidad 1</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500;700&family=Alegreya+Sans:wght@400;500;700;800&family=Marck+Script&display=swap">
+<style>
+/* Layout: one exercise per screen in a narrow column; a sticky progress bar on top, a check/feedback band fixed to the bottom. */
+:root {
+  --paper: #faf8f5;
+  --ink: #1f1a1c;
+  --muted: #6e6468;
+  --line: #e4ddd9;
+  --wine: #8a1c2b;
+  --wine-soft: #f4e4e6;
+  --ok: #2b8a4a;
+  --ok-soft: #e2f3e6;
+  --bad: #c2362b;
+  --bad-soft: #fbe6e3;
+  --tile: #ffffff;
+  --on-accent: #ffffff;
+  --font-display: "Alegreya", Georgia, "Times New Roman", serif;
+  --font-body: "Alegreya Sans", "Segoe UI", Roboto, Arial, sans-serif;
+  --font-script: "Marck Script", "Segoe Script", cursive;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #17141a; --ink: #f1ecee; --muted: #a89ea3; --line: #352e35;
+    --wine: #e27583; --wine-soft: #3a2329; --ok: #5cc27e; --ok-soft: #173220;
+    --bad: #f07a6e; --bad-soft: #3b1d1a; --tile: #221e25; --on-accent: #17141a;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #17141a; --ink: #f1ecee; --muted: #a89ea3; --line: #352e35;
+  --wine: #e27583; --wine-soft: #3a2329; --ok: #5cc27e; --ok-soft: #173220;
+  --bad: #f07a6e; --bad-soft: #3b1d1a; --tile: #221e25; --on-accent: #17141a;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { min-height: 100%; }
+body {
+  margin: 0; background: var(--paper); color: var(--ink);
+  font: 18px/1.45 var(--font-body);
+}
+button { font: inherit; color: inherit; cursor: pointer; }
+button:focus-visible, textarea:focus-visible { outline: 3px solid var(--wine); outline-offset: 2px; }
+.wrap {
+  max-width: 660px; margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--paper); }
+
+/* top bar */
+.top { position: sticky; top: env(safe-area-inset-top, 0px); background: var(--paper); z-index: 5; }
+.top .wrap { display: flex; align-items: center; gap: 14px; padding-block: 16px 10px; }
+.quit { border: 0; background: none; padding: 4px; color: var(--muted); display: grid; place-items: center; border-radius: 8px; }
+.bar { flex: 1; height: 16px; border-radius: 99px; background: var(--line); overflow: hidden; }
+.bar i { display: block; height: 100%; width: 0; background: var(--wine); border-radius: 99px; transition: width .35s ease; }
+.count { font-variant-numeric: tabular-nums; color: var(--muted); font-size: 15px; min-width: 3.2em; text-align: right; }
+
+main .wrap { padding-block: 18px 200px; }
+.kind { font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--wine); font-weight: 800; margin: 0 0 6px; }
+h2.prompt { font: 700 clamp(22px, 5vw, 28px)/1.2 var(--font-display); margin: 0 0 20px; text-wrap: balance; }
+.source { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 22px; }
+.bubble { border: 2px solid var(--line); border-radius: 16px; padding: 12px 16px; font-size: 20px; min-width: 0; }
+.bubble small { display: block; color: var(--muted); font-size: 14px; margin-top: 2px; }
+.lang { font-size: 12px; font-weight: 800; letter-spacing: .08em; color: var(--muted); text-transform: uppercase; margin-bottom: 4px; }
+
+/* audio */
+.audio { display: flex; gap: 12px; align-items: center; margin-bottom: 24px; }
+.play { width: 92px; height: 92px; border-radius: 22px; border: 0; background: var(--wine); color: var(--on-accent); box-shadow: 0 5px 0 color-mix(in srgb, var(--wine) 60%, #000); display: grid; place-items: center; }
+.play.small { width: 56px; height: 56px; border-radius: 16px; background: var(--wine-soft); color: var(--wine); box-shadow: 0 4px 0 var(--line); font-weight: 800; font-size: 15px; }
+.play:active { transform: translateY(3px); box-shadow: none; }
+.mini { width: 44px; height: 44px; border-radius: 12px; flex: none; border: 2px solid var(--line); border-bottom-width: 4px; background: var(--tile); color: var(--wine); display: grid; place-items: center; }
+
+/* tiles */
+.tile { border: 2px solid var(--line); border-bottom-width: 4px; background: var(--tile); border-radius: 14px; padding: 10px 14px; text-align: left; transition: transform .05s; }
+.tile:active { transform: translateY(2px); }
+.options { display: grid; gap: 12px; }
+.option { display: flex; gap: 12px; align-items: center; padding: 14px 16px; font-size: 19px; }
+.option .key { flex: none; width: 28px; height: 28px; border-radius: 8px; border: 2px solid var(--line); display: grid; place-items: center; font-size: 14px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.option.sel { border-color: var(--wine); background: var(--wine-soft); }
+.option.sel .key { border-color: var(--wine); color: var(--wine); }
+.option.right { border-color: var(--ok); background: var(--ok-soft); }
+.option.wrongpick { border-color: var(--bad); background: var(--bad-soft); }
+
+.answerline { min-height: 112px; border-top: 2px solid var(--line); border-bottom: 2px solid var(--line); padding: 10px 0; display: flex; flex-wrap: wrap; gap: 8px; align-content: flex-start; margin-bottom: 22px;
+  background-image: repeating-linear-gradient(to bottom, transparent 0 53px, var(--line) 53px 55px); }
+.bank { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+.bank .tile.used { visibility: hidden; }
+.word { padding: 8px 12px; font-size: 19px; }
+
+textarea { width: 100%; min-height: 120px; resize: vertical; border: 2px solid var(--line); border-radius: 14px; background: var(--tile); color: var(--ink); padding: 12px 14px; font: 20px/1.4 var(--font-body); }
+.chars { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.chars button { min-width: 40px; padding: 6px 8px; font-size: 18px; }
+
+.match { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.match .col { display: grid; gap: 12px; align-content: start; }
+.match .tile { padding: 14px 12px; font-size: 18px; text-align: center; min-width: 0; overflow-wrap: anywhere; }
+.match .tile.sel { border-color: var(--wine); background: var(--wine-soft); }
+.match .tile.done { opacity: .35; pointer-events: none; }
+.match .tile.flash { border-color: var(--bad); background: var(--bad-soft); }
+
+/* footer */
+.foot { position: fixed; left: 0; right: 0; bottom: 0; border-top: 2px solid var(--line); background: var(--paper); padding-bottom: env(safe-area-inset-bottom, 0px); z-index: 6; }
+.foot .wrap { padding-block: 16px 18px; display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: center; justify-content: space-between; }
+.foot.ok { background: var(--ok-soft); border-color: transparent; }
+.foot.bad { background: var(--bad-soft); border-color: transparent; }
+.msg { flex: 1 1 300px; min-width: 0; }
+.msg b { display: block; font: 700 22px/1.2 var(--font-display); }
+.foot.ok .msg b { color: var(--ok); }
+.foot.bad .msg b { color: var(--bad); }
+.msg p { margin: 4px 0 0; font-size: 16px; }
+.msg .hint { color: var(--muted); }
+.cta { flex: 0 0 auto; min-width: 180px; padding: 14px 24px; border-radius: 14px; border: 0; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; font-size: 15px;
+  background: var(--wine); color: var(--on-accent); box-shadow: 0 4px 0 color-mix(in srgb, var(--wine) 60%, #000); }
+.foot.ok .cta { background: var(--ok); box-shadow: 0 4px 0 color-mix(in srgb, var(--ok) 60%, #000); }
+.foot.bad .cta { background: var(--bad); box-shadow: 0 4px 0 color-mix(in srgb, var(--bad) 60%, #000); }
+.cta:disabled { background: var(--line); color: var(--muted); box-shadow: none; cursor: default; }
+.cta:active:not(:disabled) { transform: translateY(3px); box-shadow: none; }
+@media (max-width: 520px) { .cta { flex: 1 1 100%; } }
+
+/* start / end */
+.cover { padding-block: 40px 60px; display: grid; gap: 22px; }
+.cube { display: grid; grid-template-columns: repeat(3, 22px); gap: 3px; padding: 5px; background: #1b1b1b; border-radius: 8px; width: max-content; transform: rotate(-8deg); }
+.cube i { width: 22px; height: 22px; border-radius: 4px; }
+.cover h1 { font: 700 clamp(38px, 9vw, 56px)/1 var(--font-display); margin: 0; letter-spacing: -.01em; }
+.cover h1 span { display: block; font-size: .5em; color: var(--wine); margin-top: 8px; }
+.epigraph { font: 26px/1.3 var(--font-script); color: var(--muted); margin: 0; }
+.cover p { margin: 0; max-width: 60ch; }
+.sections { list-style: none; padding: 0; margin: 0; display: grid; gap: 0; border-top: 2px solid var(--line); }
+.sections li { display: flex; gap: 14px; padding: 10px 0; border-bottom: 2px solid var(--line); align-items: baseline; }
+.sections b { font: 700 20px var(--font-display); color: var(--wine); width: 1.2em; flex: none; }
+.sections span { color: var(--muted); font-size: 16px; }
+.score { font: 700 72px/1 var(--font-display); color: var(--wine); font-variant-numeric: tabular-nums; }
+.review { display: grid; gap: 12px; }
+.review div { border: 2px solid var(--line); border-radius: 14px; padding: 12px 14px; }
+.review small { display: block; color: var(--muted); font-size: 14px; }
+.foot.hide { display: none; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+
+<header class="top" id="top" hidden>
+  <div class="wrap">
+    <button class="quit" id="quit" aria-label="Выйти из теста">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 4l14 14M18 4L4 18"/></svg>
+    </button>
+    <div class="bar" role="progressbar" aria-label="Прогресс" aria-valuemin="0" aria-valuemax="100"><i id="barfill"></i></div>
+    <div class="count" id="count"></div>
+  </div>
+</header>
+
+<main><div class="wrap" id="stage"></div></main>
+
+<footer class="foot hide" id="foot">
+  <div class="wrap">
+    <div class="msg" id="msg" aria-live="polite"></div>
+    <button class="cta" id="cta" disabled>Проверить</button>
+  </div>
+</footer>
+
+<script>
+/* ===== AUDIO =====
+   Каждая запись: v = голос (H — мужчина, M — женщина), t = текст.
+   Файл: audio/<id>.mp3. Пока файла нет, используется синтез речи браузера. */
+const AUDIO = {
+  h01: { v: 'H', t: 'Egipto fue hermoso, pero mis vacaciones fueron un desastre.' },
+  h02: { v: 'H', t: 'Rara vez habla de sus secretos.' },
+  h03: { v: 'H', t: 'Sofía, ¿cómo es la vida en el norte?' },
+  h04: { v: 'H', t: 'Podemos tomar un café.' },
+  h05: { v: 'H', t: '¿Qué te gusta hacer en tu tiempo libre?' },
+  h06: { v: 'H', t: 'A mí me gusta tocar el piano y aprender idiomas.' },
+  m01: { v: 'M', t: 'No me gustan los lugares con demasiado ruido.' },
+  m02: { v: 'M', t: 'A los dos nos gusta caminar.' },
+  m03: { v: 'M', t: 'Ayer vi algo en las cartas. Vi a Luis, tu novio.' },
+  m04: { v: 'M', t: '¿Dónde estuviste ayer?' },
+  m05: { v: 'M', t: 'Por la noche escribo en mi diario.' },
+  m06: { v: 'M', t: 'Normalmente me despierto temprano y miro las montañas.' },
+  m07: { v: 'M', t: 'La vida en el norte es tranquila, fría y muy bonita.' }
+};
+
+/* ===== EJERCICIOS =====
+   accept: patrones de respuestas válidas. (a|b) = una de las opciones, [a] = opcional, [a|b] = opcional con opciones.
+   Se ignoran mayúsculas, puntuación y ё/е. Los acentos que faltan se aceptan con aviso.
+   hints: si la respuesta (sin acentos) coincide con re, se muestra msg. */
+const ITEMS = [
+  // A. Me gusta
+  { type: 'match', sec: 'A', prompt: 'Найдите пары',
+    pairs: [['caminar', 'гулять'], ['la maleta', 'чемодан'], ['el aeropuerto', 'аэропорт'], ['el camello', 'верблюд'], ['la nieve', 'снег'], ['el diario', 'дневник']] },
+  { type: 'choice', sec: 'A', prompt: 'Как сказать по-испански?', source: 'Мне нравится читать.', srcLang: 'ru',
+    options: ['Me gusta leer.', 'Me gustan leer.', 'Yo gusto leer.', 'Me gusto leer.'], answer: 0,
+    explain: 'С инфинитивом всегда gusta (ед. ч.): me gusta leer.' },
+  { type: 'choice', sec: 'A', prompt: 'Выберите правильный вариант', source: 'A Natalia le ____ las novelas románticas.', srcLang: 'es',
+    options: ['encanta', 'encantan', 'encantas', 'encanto'], answer: 1,
+    explain: 'Las novelas — множественное число, поэтому encantan.' },
+  { type: 'bank', sec: 'A', prompt: 'Переведите на испанский', source: 'Наталье нравится гулять по городу.',
+    tiles: ['A', 'Natalia', 'le', 'gusta', 'caminar', 'por', 'la', 'ciudad', 'gustan', 'me', 'en'],
+    accept: ['[a natalia ]le gusta (caminar|pasear|andar) por la ciudad'],
+    show: 'A Natalia le gusta caminar por la ciudad.',
+    hints: [{ re: '^natalia le', msg: 'Перед именем нужен предлог: A Natalia le gusta…' }, { re: 'me gusta', msg: '«Наталье» — третье лицо: le gusta, а не me gusta.' }] },
+  { type: 'listen', sec: 'A', audio: ['m01'], prompt: 'Напишите, что вы слышите' },
+  { type: 'type', sec: 'A', dir: 'es-ru', prompt: 'Переведите на русский', source: 'A los dos nos gusta caminar.', audio: ['m02'],
+    accept: [
+      '(нам (обоим|обеим|двоим) нравится|мы (оба|обе) любим) (гулять|ходить пешком|гулять пешком|прогуливаться|ходить)',
+      '(гулять|ходить пешком|гулять пешком|прогуливаться) (нравится нам (обоим|обеим|двоим)|любим мы (оба|обе))',
+      '(нам (обоим|обеим|двоим) нравятся|мы (оба|обе) любим) [пешие ]прогулки'
+    ],
+    show: 'Нам обоим нравится гулять.' },
+  { type: 'type', sec: 'A', dir: 'ru-es', prompt: 'Переведите на испанский', source: 'Мне тоже не нравятся шумные места.',
+    accept: [
+      '[a mí ]tampoco me gustan los (lugares|sitios) (ruidosos|con (mucho|demasiado) ruido)',
+      '[a mí ]no me gustan los (lugares|sitios) (ruidosos|con (mucho|demasiado) ruido) tampoco'
+    ],
+    show: 'A mí tampoco me gustan los lugares ruidosos.',
+    hints: [{ re: 'tambien no|tambien me no', msg: '«También no» — ошибка. В отрицании «тоже» = tampoco.' }, { re: 'me gusta los', msg: 'Los lugares — множественное число: me gustan.' }] },
+  { type: 'type', sec: 'A', dir: 'ru-es', prompt: 'Переведите на испанский', source: 'Мне очень нравятся тихие кафе.',
+    accept: [
+      '[a mí ]me (encantan|gustan mucho) los (cafés|bares) tranquilos',
+      '[a mí ]los (cafés|bares) tranquilos me (encantan|gustan mucho)'
+    ],
+    show: 'Me encantan los cafés tranquilos.',
+    hints: [{ re: 'me (encanta|gusta) los', msg: 'Los cafés — множественное число: me encantan / me gustan.' }, { re: 'muy', msg: '«Очень нравится» = me gusta mucho или me encanta (не «muy»).' }] },
+
+  // B. ¿Dónde estuviste ayer?
+  { type: 'listenChoice', sec: 'B', audio: ['m03'], prompt: 'Послушайте Алисию и ответьте', question: '¿Qué vio Alicia en las cartas?',
+    options: ['A Luis, el novio de Natalia.', 'Un tren fantasma.', 'Una matrioshka.', 'Un camello.'], answer: 0 },
+  { type: 'choice', sec: 'B', prompt: 'Estar или ir?', source: 'El año pasado Luis ____ de vacaciones a Egipto.', srcLang: 'es',
+    options: ['fue', 'estuvo', 'fui', 'fueron'], answer: 0,
+    explain: 'Ir a + место: Luis fue a Egipto — Луис ездил в Египет.' },
+  { type: 'choice', sec: 'B', prompt: 'Estar или ir?', source: 'El primer día, Luis ____ tres horas en el aeropuerto.', srcLang: 'es',
+    options: ['estuvo', 'fue', 'estuve', 'estuvimos'], answer: 0,
+    explain: 'Estar en + место: estuvo tres horas en el aeropuerto — он провёл (был) три часа в аэропорту.' },
+  { type: 'type', sec: 'B', dir: 'ru-es', prompt: 'Переведите на испанский', source: 'Вчера я был в аэропорту.',
+    accept: ['ayer [yo ]estuve en el aeropuerto', '[yo ]estuve en el aeropuerto ayer', '[yo ]estuve ayer en el aeropuerto'],
+    show: 'Ayer estuve en el aeropuerto.',
+    hints: [{ re: 'fui', msg: '«Fui al aeropuerto» = я ездил в аэропорт. «Был в аэропорту» = estuve en el aeropuerto.' }, { re: 'estaba|estoy', msg: 'Законченное действие (вчера) → pretérito indefinido: estuve.' }] },
+  { type: 'type', sec: 'B', dir: 'es-ru', prompt: 'Переведите на русский', source: '¿Dónde estuviste ayer?', audio: ['m04'],
+    accept: ['где (ты был|ты была|был ты|была ты) вчера', 'где ты вчера (был|была)', 'вчера где ты (был|была)'],
+    show: 'Где ты был вчера?',
+    hints: [{ re: '(^| )вы( |$)', msg: 'Estuviste — форма tú (ты). «Вы» было бы estuvo (usted) или estuvisteis / estuvieron.' }] },
+  { type: 'bank', sec: 'B', prompt: 'Переведите на испанский', source: 'В прошлом году Луис ездил в Египет.',
+    tiles: ['El', 'año', 'pasado', 'Luis', 'fue', 'a', 'Egipto', 'estuvo', 'en', 'fui'],
+    accept: ['el año pasado luis fue a egipto', 'luis fue a egipto el año pasado', 'el año pasado fue luis a egipto'],
+    show: 'El año pasado Luis fue a Egipto.',
+    hints: [{ re: 'estuvo', msg: '«Ездил в» = ir a: fue a Egipto.' }, { re: 'fui', msg: 'Fui — это «я». Луис → fue.' }] },
+  { type: 'choice', sec: 'B', prompt: '¿Sabías que…? У ir и ser одинаковые формы в pretérito indefinido. Какой глагол здесь?', source: 'Fui muy feliz.', srcLang: 'es',
+    options: ['ser — быть', 'ir — идти, ехать'], answer: 0,
+    explain: '«Fui muy feliz» — я был очень счастлив (ser). «Fui a Egipto» — я ездил в Египет (ir).' },
+  { type: 'listen', sec: 'B', audio: ['h01'], prompt: 'Соберите фразу, которую говорит Луис',
+    tiles: ['Egipto', 'fue', 'hermoso,', 'pero', 'mis', 'vacaciones', 'fueron', 'un', 'desastre.', 'estuvieron', 'hermosas', 'sus'] },
+  { type: 'choice', sec: 'B', prompt: 'Заполните пропуск', source: 'Cuando fue a buscar su equipaje, Luis no encontró su ____.', srcLang: 'es',
+    options: ['maleta', 'camello', 'pirámide', 'mapa'], answer: 0,
+    explain: 'Equipaje — багаж; la maleta — чемодан.' },
+
+  // C. Un día de mi vida
+  { type: 'match', sec: 'C', prompt: 'Найдите пары',
+    pairs: [['me despierto', 'я просыпаюсь'], ['me levanto', 'я встаю'], ['me lavo la cara', 'я умываюсь'], ['me visto', 'я одеваюсь'], ['desayuno', 'я завтракаю'], ['me acuesto', 'я ложусь спать']] },
+  { type: 'choice', sec: 'C', prompt: 'Выберите правильный вариант', source: 'Todos los días Sofía ____ temprano.', srcLang: 'es',
+    options: ['se despierta', 'despierta', 'me despierto', 'se despiertan'], answer: 0,
+    explain: 'Despertarse — возвратный глагол: ella se despierta.' },
+  { type: 'type', sec: 'C', dir: 'ru-es', prompt: 'Переведите на испанский', source: 'Каждый день я просыпаюсь рано.',
+    accept: ['(todos los días|cada día) [yo ]me despierto (temprano|pronto)', '[yo ]me despierto (temprano|pronto) (todos los días|cada día)'],
+    show: 'Todos los días me despierto temprano.',
+    hints: [{ re: '^((todos los dias|cada dia) )?(yo )?despierto', msg: 'Не забудьте возвратное местоимение: me despierto.' }, { re: 'se despierta', msg: '«Я» → me despierto.' }] },
+  { type: 'type', sec: 'C', dir: 'es-ru', prompt: 'Переведите на русский', source: 'Por la noche escribo en mi diario.', audio: ['m05'],
+    accept: [
+      '(вечером|по вечерам|ночью) [я ]пишу (в [свой |мой ]дневник|в [своем |моем ]дневнике)',
+      '[я ]пишу (в [свой |мой ]дневник|в [своем |моем ]дневнике) (вечером|по вечерам|ночью)',
+      'я (вечером|по вечерам|ночью) пишу (в [свой |мой ]дневник|в [своем |моем ]дневнике)'
+    ],
+    show: 'Вечером я пишу в свой дневник.' },
+  { type: 'listen', sec: 'C', audio: ['m06'], prompt: 'Напишите, что говорит София' },
+
+  // D. Adverbios de frecuencia
+  { type: 'choice', sec: 'D', prompt: 'Выберите перевод слова «редко»',
+    options: ['rara vez', 'a menudo', 'a veces', 'siempre'], answer: 0,
+    explain: 'Rara vez ≈ 10 %, a veces ≈ 40 %, a menudo ≈ 70 %, siempre = 100 %.' },
+  { type: 'choice', sec: 'D', prompt: 'Какая фраза правильная?',
+    options: ['La mujer de rosa nunca olvida sus sueños.', 'La mujer de rosa nunca no olvida sus sueños.', 'La mujer de rosa no nunca olvida sus sueños.'], answer: 0,
+    explain: 'Если nunca стоит перед глаголом, «no» не нужно.' },
+  { type: 'bank', sec: 'D', prompt: 'Составьте предложение', source: 'София всегда просыпается рано.',
+    tiles: ['Sofía', 'siempre', 'se', 'despierta', 'temprano', 'nunca', 'me'],
+    accept: ['sofía siempre se despierta temprano', 'siempre sofía se despierta temprano', 'sofía se despierta siempre temprano', 'sofía se despierta temprano siempre', 'siempre se despierta temprano sofía'],
+    show: 'Sofía siempre se despierta temprano.' },
+  { type: 'type', sec: 'D', dir: 'ru-es', prompt: 'Переведите на испанский', source: 'Я иногда слушаю романтическую музыку.',
+    accept: ['a veces [yo ]escucho música romántica', '[yo ]a veces escucho música romántica', '[yo ]escucho música romántica a veces', '[yo ]escucho a veces música romántica'],
+    show: 'A veces escucho música romántica.',
+    hints: [{ re: 'oigo', msg: '«Слушать музыку» = escuchar música; oír — «слышать».' }, { re: 'musica romantico|romantica musica', msg: 'Прилагательное обычно после существительного и согласуется с ним: música romántica.' }] },
+  { type: 'type', sec: 'D', dir: 'es-ru', prompt: 'Переведите на русский', source: 'Rara vez habla de sus secretos.', note: 'о женщине в розовом', audio: ['h02'],
+    accept: [
+      '[она ](редко|изредка) (говорит|рассказывает) о своих (секретах|тайнах)',
+      '[она ](редко|изредка) (говорит|рассказывает) про свои (секреты|тайны)',
+      'о своих (секретах|тайнах) [она ](редко|изредка) (говорит|рассказывает)'
+    ],
+    show: 'Она редко говорит о своих секретах.',
+    hints: [{ re: 'никогда', msg: 'Rara vez — «редко», а не «никогда» (nunca).' }] },
+  { type: 'type', sec: 'D', dir: 'ru-es', prompt: 'Переведите на испанский', source: 'Женщина в розовом никогда не забывает свои сны.',
+    accept: [
+      'la mujer (de rosa|de color rosa|vestida de rosa) nunca olvida sus sueños',
+      'la mujer (de rosa|de color rosa|vestida de rosa) no olvida nunca sus sueños',
+      'la mujer (de rosa|de color rosa|vestida de rosa) no olvida sus sueños nunca'
+    ],
+    show: 'La mujer de rosa nunca olvida sus sueños.',
+    hints: [{ re: 'nunca no', msg: 'Если nunca стоит перед глаголом, «no» не ставится.' }] },
+
+  // E. Cultura
+  { type: 'choice', sec: 'E', prompt: 'Культура: выберите ответ', source: '¿Por qué Brasil no forma parte de Hispanoamérica?', srcLang: 'es',
+    options: ['Porque allí predomina el portugués.', 'Porque no está en América.', 'Porque allí se habla francés.', 'Porque es un país muy pequeño.'], answer: 0 },
+  { type: 'choice', sec: 'E', prompt: 'Какая страна НЕ входит в Hispanoamérica?',
+    options: ['Brasil', 'Uruguay', 'Cuba', 'Perú'], answer: 0,
+    explain: 'Бразилия — часть América Latina, но не Hispanoamérica: там говорят по-португальски.' },
+  { type: 'listenChoice', sec: 'E', audio: ['h03', 'm07'], prompt: 'Послушайте Луиса и Софию', question: '¿Cómo es la vida en el norte según Sofía?',
+    options: ['Tranquila, fría y muy bonita.', 'Ruidosa, caliente y aburrida.', 'Alegre, cálida y muy rápida.', 'Triste, fría y peligrosa.'], answer: 0 },
+  { type: 'type', sec: 'A', dir: 'es-ru', prompt: 'Переведите на русский', source: 'Podemos tomar un café.', audio: ['h04'],
+    accept: ['[мы ]можем (выпить|попить) [чашку |чашечку ]кофе', 'можно (выпить|попить) [чашку |чашечку ]кофе', '[мы ]можем сходить (на кофе|выпить кофе|попить кофе)'],
+    show: 'Мы можем выпить кофе.' },
+  { type: 'type', sec: 'A', dir: 'es-ru', prompt: 'Переведите на русский', source: '¿Qué te gusta hacer en tu tiempo libre?', audio: ['h05'],
+    accept: [
+      '(что ты любишь делать|что тебе нравится делать|чем ты любишь заниматься|чем тебе нравится заниматься) в [свое ]свободное время',
+      'в [свое ]свободное время (что ты любишь делать|что тебе нравится делать|чем ты любишь заниматься|чем тебе нравится заниматься)'
+    ],
+    show: 'Что ты любишь делать в свободное время?',
+    hints: [{ re: '(^| )(вы|вам|вас)( |$)', msg: 'Te gusta, tu tiempo — это «ты».' }] },
+  { type: 'listen', sec: 'A', audio: ['h06'], prompt: 'Напишите, что говорит Луис' }
+];
+
+const SECTIONS = {
+  A: ['Me gusta', 'gustar, encantar, tampoco'],
+  B: ['¿Dónde estuviste ayer?', 'pretérito indefinido: estar / ir'],
+  C: ['Un día de mi vida', 'возвратные глаголы, распорядок дня'],
+  D: ['Gramática', 'наречия частоты'],
+  E: ['Cultura', 'Hispanoamérica и América Latina']
+};
+const ES_CHARS = ['á', 'é', 'í', 'ó', 'ú', 'ñ', 'ü', '¿', '¡'];
+
+/* ===== respuestas ===== */
+function splitTop(s) {
+  const out = []; let d = 0, cur = '';
+  for (const c of s) {
+    if (c === '(' || c === '[') d++;
+    if (c === ')' || c === ']') d--;
+    if (c === '|' && d === 0) { out.push(cur); cur = ''; } else cur += c;
+  }
+  out.push(cur);
+  return out;
+}
+function expand(p) {
+  let d = 0, start = -1;
+  for (let i = 0; i < p.length; i++) {
+    const c = p[i];
+    if (c === '(' || c === '[') { if (d === 0) start = i; d++; }
+    else if (c === ')' || c === ']') {
+      d--;
+      if (d === 0) {
+        const alts = splitTop(p.slice(start + 1, i));
+        if (p[start] === '[') alts.push('');
+        const pre = p.slice(0, start), rest = expand(p.slice(i + 1)), out = [];
+        for (const a of alts) for (const e of expand(a)) for (const r of rest) out.push(pre + e + r);
+        return out;
+      }
+    }
+  }
+  return [p];
+}
+const norm = s => s.toLowerCase().normalize('NFC').replace(/ё/g, 'е')
+  .replace(/[¿?¡!.,;:«»"“”„—–\-'’…()]/g, ' ').replace(/\s+/g, ' ').trim();
+const loose = s => s.normalize('NFD').replace(/([a-z])[̀-ͯ]+/g, '$1').normalize('NFC');
+function accepted(item) {
+  if (!item._acc) {
+    const pats = item.accept || item.audio.map(id => AUDIO[id].t);
+    item._acc = [...new Set(pats.flatMap(expand).map(norm))];
+  }
+  return item._acc;
+}
+function grade(item, answer) {
+  const a = norm(answer), acc = accepted(item);
+  if (!a) return { ok: false };
+  if (acc.includes(a)) return { ok: true };
+  const la = loose(a);
+  const near = acc.find(x => loose(x) === la);
+  if (near) return { ok: true, note: 'accent', match: near };
+  return { ok: false };
+}
+const showOf = item => item.show || (item.audio ? item.audio.map(id => AUDIO[id].t).join(' ') : '');
+const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
+
+/* ===== audio ===== */
+const missing = {};
+let voices = [];
+function loadVoices() { try { voices = speechSynthesis.getVoices().filter(v => /^es/i.test(v.lang)); } catch (e) {} }
+if ('speechSynthesis' in window) { loadVoices(); speechSynthesis.onvoiceschanged = loadVoices; }
+function pickVoice(v) {
+  const male = /male|hombre|jorge|pablo|diego|enrique|carlos|juan|alvaro|álvaro|raul|raúl|tomas|tomás|andres|andrés/i;
+  const female = /female|mujer|monica|mónica|paulina|helena|laura|lucia|lucía|elvira|sabina|marisol|conchita|penelope|lupe|isabela|elena/i;
+  const re = v === 'H' ? male : female;
+  return voices.find(x => re.test(x.name) && !(v === 'H' ? female : male).test(x.name)) || voices.find(x => /es-(ES|AR|MX)/i.test(x.lang)) || voices[0] || null;
+}
+function speak(id, slow, done) {
+  if (!('speechSynthesis' in window)) { done(); return; }
+  const a = AUDIO[id], u = new SpeechSynthesisUtterance(a.t);
+  u.lang = 'es-ES'; u.rate = slow ? 0.6 : 0.95; u.pitch = a.v === 'H' ? 0.8 : 1.15;
+  const voice = pickVoice(a.v); if (voice) u.voice = voice;
+  u.onend = done; u.onerror = done;
+  speechSynthesis.speak(u);
+}
+let player = null;
+function playSeq(ids, slow) {
+  try { speechSynthesis.cancel(); } catch (e) {}
+  if (player) { player.pause(); player = null; }
+  const run = i => {
+    if (i >= ids.length) return;
+    const id = ids[i], next = () => setTimeout(() => run(i + 1), 350);
+    if (missing[id]) { speak(id, slow, next); return; }
+    const el = new Audio('audio/' + id + '.mp3');
+    player = el;
+    el.playbackRate = slow ? 0.7 : 1;
+    el.onended = next;
+    el.onerror = () => { missing[id] = true; speak(id, slow, next); };
+    el.play().catch(() => { if (!missing[id]) { missing[id] = true; speak(id, slow, next); } });
+  };
+  run(0);
+}
+
+/* ===== estado ===== */
+const $ = id => document.getElementById(id);
+const stage = $('stage'), foot = $('foot'), cta = $('cta'), msg = $('msg');
+let queue, pos, firstTry, retried, current, mode;
+
+const esc = s => s.replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+const speakerSvg = s => `<svg width="${s}" height="${s}" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 9v6h4l5 4V5L7 9H3z"/><path d="M16 8.5a5 5 0 0 1 0 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>`;
+
+function cover() {
+  $('top').hidden = true; foot.classList.add('hide');
+  const cube = ['#c41e3a', '#ffd500', '#0051ba', '#009e60', '#ff5800', '#ffffff', '#ffd500', '#c41e3a', '#009e60']
+    .map(c => `<i style="background:${c}"></i>`).join('');
+  stage.innerHTML = `<section class="cover">
+    <div class="cube" aria-hidden="true">${cube}</div>
+    <h1>Aquella vez<span>Unidad 1 · Тест</span></h1>
+    <p class="epigraph">Hasta en mis sueños de ayer, el destino me llevaba hacia ti.</p>
+    <p>${ITEMS.length} заданий по первому уроку: переводы с русского на испанский и с испанского на русский, аудирование, грамматика и культура. Ошибки вернутся в конце теста ещё раз.</p>
+    <ul class="sections">${Object.entries(SECTIONS).map(([k, [t, d]]) => `<li><b>${k}</b><div>${esc(t)}<br><span>${esc(d)}</span></div></li>`).join('')}</ul>
+    <div><button class="cta" id="start">Начать</button></div>
+  </section>`;
+  $('start').onclick = start;
+}
+
+function start() {
+  queue = ITEMS.map((_, i) => i); pos = 0; firstTry = {}; retried = new Set();
+  $('top').hidden = false; foot.classList.remove('hide');
+  render();
+}
+
+function progress() {
+  const pct = Math.round(Math.min(pos, queue.length) / queue.length * 100);
+  $('barfill').style.width = pct + '%';
+  document.querySelector('.bar').setAttribute('aria-valuenow', pct);
+  $('count').textContent = Math.min(pos + 1, queue.length) + '/' + queue.length;
+}
+
+function setFoot(state, html, label) {
+  foot.className = 'foot' + (state === 'ok' || state === 'bad' ? ' ' + state : '');
+  msg.innerHTML = html || '';
+  cta.textContent = label;
+}
+
+function render() {
+  if (pos >= queue.length) { finish(); return; }
+  progress();
+  const idx = queue[pos], it = ITEMS[idx];
+  current = { idx, it, answer: null, tiles: [] };
+  mode = 'answer';
+  setFoot('', '', 'Проверить');
+  cta.disabled = true;
+  const isRetry = retried.has(idx) && pos >= ITEMS.length;
+  let h = `<p class="kind">${isRetry ? 'Повторим ошибку · ' : ''}${esc(SECTIONS[it.sec][0])}</p><h2 class="prompt">${esc(it.prompt)}</h2>`;
+
+  if (it.type === 'listen' || it.type === 'listenChoice') {
+    h += `<div class="audio"><button class="play" id="play" aria-label="Прослушать">${speakerSvg(44)}</button><button class="play small" id="slow" aria-label="Прослушать медленно">0,7×</button></div>`;
+    if (it.question) h += `<div class="source"><div class="bubble">${esc(it.question)}</div></div>`;
+  } else if (it.source) {
+    const lang = it.dir === 'es-ru' || it.srcLang === 'es' ? 'Испанский' : 'Русский';
+    h += `<div class="source">${it.audio ? `<button class="mini" id="play" aria-label="Прослушать">${speakerSvg(22)}</button>` : ''}
+      <div class="bubble"><div class="lang">${lang}</div>${esc(it.source)}${it.note ? `<small>(${esc(it.note)})</small>` : ''}</div></div>`;
+  }
+
+  if (it.type === 'choice' || it.type === 'listenChoice') {
+    current.order = shuffle(it.options.map((_, i) => i));
+    h += `<div class="options" role="radiogroup">${current.order.map((oi, k) =>
+      `<button class="tile option" role="radio" aria-checked="false" data-oi="${oi}"><span class="key">${k + 1}</span><span>${esc(it.options[oi])}</span></button>`).join('')}</div>`;
+  } else if (it.type === 'bank' || (it.type === 'listen' && it.tiles)) {
+    current.bank = shuffle(it.tiles.map((t, i) => ({ t, i })));
+    h += `<div class="answerline" id="line" aria-label="Ваш ответ"></div><div class="bank" id="bank">${current.bank.map(b =>
+      `<button class="tile word" data-i="${b.i}">${esc(b.t)}</button>`).join('')}</div>`;
+  } else if (it.type === 'type' || it.type === 'listen') {
+    const toEs = it.dir !== 'es-ru';
+    h += `<textarea id="ans" lang="${toEs ? 'es' : 'ru'}" placeholder="${toEs ? 'Напишите по-испански' : 'Напишите по-русски'}" autocomplete="off" autocapitalize="sentences" spellcheck="false"></textarea>`;
+    if (toEs) h += `<div class="chars">${ES_CHARS.map(c => `<button class="tile" data-c="${c}">${c}</button>`).join('')}</div>`;
+  } else if (it.type === 'match') {
+    const left = shuffle(it.pairs.map((p, i) => ({ t: p[0], i }))), right = shuffle(it.pairs.map((p, i) => ({ t: p[1], i })));
+    h += `<div class="match"><div class="col" lang="es">${left.map(x => `<button class="tile" data-side="l" data-i="${x.i}">${esc(x.t)}</button>`).join('')}</div>
+      <div class="col">${right.map(x => `<button class="tile" data-side="r" data-i="${x.i}">${esc(x.t)}</button>`).join('')}</div></div>`;
+    current.matched = 0; current.mistakes = 0; current.sel = {};
+  }
+  stage.innerHTML = h;
+  window.scrollTo(0, 0);
+  wire(it);
+}
+
+function wire(it) {
+  if ($('play')) $('play').onclick = () => playSeq(it.audio, false);
+  if ($('slow')) $('slow').onclick = () => playSeq(it.audio, true);
+  if (it.type === 'listen' || it.type === 'listenChoice') setTimeout(() => playSeq(it.audio, false), 300);
+
+  stage.querySelectorAll('.option').forEach(b => b.onclick = () => {
+    if (mode !== 'answer') return;
+    stage.querySelectorAll('.option').forEach(o => { o.classList.remove('sel'); o.setAttribute('aria-checked', 'false'); });
+    b.classList.add('sel'); b.setAttribute('aria-checked', 'true');
+    current.answer = +b.dataset.oi; cta.disabled = false;
+  });
+
+  if ($('bank')) {
+    const line = $('line');
+    $('bank').querySelectorAll('.word').forEach(b => b.onclick = () => {
+      if (mode !== 'answer') return;
+      b.classList.add('used');
+      const chip = document.createElement('button');
+      chip.className = 'tile word'; chip.textContent = b.textContent;
+      chip.onclick = () => { if (mode !== 'answer') return; chip.remove(); b.classList.remove('used'); sync(); };
+      line.appendChild(chip); sync();
+    });
+    const sync = () => { current.answer = [...line.children].map(c => c.textContent).join(' '); cta.disabled = !current.answer; };
+  }
+
+  const ta = $('ans');
+  if (ta) {
+    ta.oninput = () => { current.answer = ta.value; cta.disabled = !ta.value.trim(); };
+    ta.onkeydown = e => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); if (!cta.disabled) cta.click(); } };
+    stage.querySelectorAll('[data-c]').forEach(b => b.onclick = () => {
+      const s = ta.selectionStart, e = ta.selectionEnd;
+      ta.value = ta.value.slice(0, s) + b.dataset.c + ta.value.slice(e);
+      ta.focus(); ta.selectionStart = ta.selectionEnd = s + 1; ta.oninput();
+    });
+    setTimeout(() => ta.focus({ preventScroll: true }), 50);
+  }
+
+  stage.querySelectorAll('.match .tile').forEach(b => b.onclick = () => {
+    if (mode !== 'answer') return;
+    const side = b.dataset.side, sel = current.sel;
+    if (sel[side]) sel[side].classList.remove('sel');
+    sel[side] = b; b.classList.add('sel');
+    if (sel.l && sel.r) {
+      const l = sel.l, r = sel.r; current.sel = {};
+      l.classList.remove('sel'); r.classList.remove('sel');
+      if (l.dataset.i === r.dataset.i) {
+        l.classList.add('done'); r.classList.add('done');
+        if (++current.matched === it.pairs.length) settle(current.mistakes === 0, current.mistakes ? '<p>Ошибок при сопоставлении: ' + current.mistakes + '.</p>' : '');
+      } else {
+        current.mistakes++;
+        [l, r].forEach(x => { x.classList.add('flash'); setTimeout(() => x.classList.remove('flash'), 600); });
+      }
+    }
+  });
+}
+
+function check() {
+  const it = current.it;
+  if (it.type === 'choice' || it.type === 'listenChoice') {
+    const ok = current.answer === it.answer;
+    stage.querySelectorAll('.option').forEach(o => {
+      if (+o.dataset.oi === it.answer) o.classList.add('right');
+      else if (o.classList.contains('sel')) o.classList.add('wrongpick');
+    });
+    let extra = ok ? '' : `<p>Правильный ответ: <span lang="es">${esc(it.options[it.answer])}</span></p>`;
+    if (it.explain) extra += `<p class="hint">${esc(it.explain)}</p>`;
+    settle(ok, extra);
+    return;
+  }
+  const res = grade(it, current.answer || '');
+  const show = showOf(it);
+  let extra = '';
+  if (res.ok) {
+    if (res.note === 'accent') extra = `<p>Обратите внимание на знаки: <b style="display:inline;font:inherit">${esc(cap(res.match))}</b></p>`;
+    else if (norm(show) !== norm(current.answer)) extra = `<p>Ещё один вариант: ${esc(show)}</p>`;
+  } else {
+    extra = `<p>Правильный ответ: ${esc(show)}</p>`;
+    const la = loose(norm(current.answer || ''));
+    (it.hints || []).forEach(hn => { if (new RegExp(hn.re).test(la)) extra += `<p class="hint">${esc(hn.msg)}</p>`; });
+  }
+  settle(res.ok, extra);
+}
+
+function settle(ok, extra) {
+  const idx = current.idx;
+  mode = 'feedback';
+  if ($('ans')) $('ans').readOnly = true;
+  if (!(idx in firstTry)) firstTry[idx] = ok;
+  if (!ok && !retried.has(idx)) { retried.add(idx); queue.push(idx); }
+  const praise = ['Отлично!', '¡Muy bien!', 'Верно!', '¡Perfecto!', 'Правильно!'];
+  setFoot(ok ? 'ok' : 'bad', `<b>${ok ? praise[Math.floor(Math.random() * praise.length)] : 'Неправильно'}</b>${extra}`, 'Продолжить');
+  cta.disabled = false;
+  cta.focus({ preventScroll: true });
+}
+
+function finish() {
+  $('barfill').style.width = '100%';
+  $('top').hidden = true; foot.classList.add('hide');
+  const right = ITEMS.filter((_, i) => firstTry[i]).length;
+  const pct = Math.round(right / ITEMS.length * 100);
+  const missed = ITEMS.map((it, i) => ({ it, i })).filter(x => !firstTry[x.i]);
+  const answerOf = it => it.type === 'match' ? it.pairs.map(p => p.join(' — ')).join('; ')
+    : (it.type === 'choice' || it.type === 'listenChoice') ? it.options[it.answer] : showOf(it);
+  const verdict = pct >= 90 ? '¡Excelente! Unidad 1 пройдена.' : pct >= 70 ? '¡Muy bien! Повторите задания ниже.' : 'Стоит ещё раз перечитать урок и пройти тест снова.';
+  stage.innerHTML = `<section class="cover">
+    <p class="kind">Aquella vez · Unidad 1</p>
+    <div class="score">${pct}%</div>
+    <p>С первой попытки: ${right} из ${ITEMS.length}. ${esc(verdict)}</p>
+    ${missed.length ? `<h2 class="prompt" style="margin:8px 0 0">Ошибки</h2><div class="review">${missed.map(({ it }) =>
+      `<div><small>${esc(SECTIONS[it.sec][0])} · ${esc(it.source || it.question || it.prompt)}</small>${esc(answerOf(it))}</div>`).join('')}</div>` : ''}
+    <div><button class="cta" id="again">Пройти ещё раз</button></div>
+  </section>`;
+  $('again').onclick = start;
+  window.scrollTo(0, 0);
+}
+
+cta.onclick = () => {
+  if (cta.disabled) return;
+  if (mode === 'answer') check();
+  else { pos++; render(); }
+};
+$('quit').onclick = cover;
+document.addEventListener('keydown', e => {
+  if (!current || $('top').hidden) return;
+  if (e.target.tagName === 'TEXTAREA') return;
+  if (e.key === 'Enter' && !cta.disabled) { e.preventDefault(); cta.click(); }
+  const n = +e.key;
+  if (mode === 'answer' && n >= 1 && n <= 9) { const b = stage.querySelectorAll('.option')[n - 1]; if (b) b.click(); }
+});
+cover();
+</script>
+</body>
+</html>
