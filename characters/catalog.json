@@ -89,12 +89,14 @@
       "langs": [
         "ru",
         "sr",
-        "it"
+        "it",
+        "ia"
       ],
       "role": "Superviviente y fundador de Utopía en Предосећај.",
       "novels": [
         "predosecaj",
-        "presentimento"
+        "presentimento",
+        "le-presentimento"
       ],
       "localizations": {
         "sr": {
@@ -104,6 +106,10 @@
         "it": {
           "name": "Robert",
           "description": "Sopravvissuto alla catastrofe che attraversa le rovine sulla sua vecchia moto e fonda «La Nostra Utopia», una fortezza dove vivere senza paura né avidità. Guida idealista e riflessivo, ancora legato alla moglie perduta."
+        },
+        "ia": {
+          "name": "Robert",
+          "description": "Supervivente del guerra nuclear, ille ha passate duo annos in un refugio subterranee. Desde su juventute ille ha estranie presentimentos que le monstra le futuro. Con su vetere motocycletta e su quaderno, ille parti a cercar superviventes pro construer Nostre Utopia, un fortressa turquoise ubi nulle persona besoniarea un rege."
         }
       }
     },
@@ -130,12 +136,14 @@
       "name": "Natalia / Наталија (violonchelista)",
       "langs": [
         "sr",
-        "it"
+        "it",
+        "ia"
       ],
       "role": "Música y violonchelista; su arte acompaña la resistencia de Utopía.",
       "novels": [
         "predosecaj",
-        "presentimento"
+        "presentimento",
+        "le-presentimento"
       ],
       "localizations": {
         "sr": {
@@ -145,6 +153,27 @@
         "it": {
           "name": "Natalia",
           "description": "Abitante di Utopia dagli intensi occhi azzurri: dipinge la fortezza e suona il violino. Divisa tra Robert e Luis, sceglie liberamente chi amare."
+        },
+        "ia": {
+          "name": "Natalia",
+          "description": "Violoncellista con longe capillos castanee obscur e oculos gris-azur. Robert la vide primo in un sonio, interpretante un melodia extraordinari in le placia de Nostre Utopia. Su arrivata cambiara le destino del fortressa e ponera a proba le amor inter Robert e Katerina."
+        }
+      }
+    },
+    {
+      "id": "katerina",
+      "name": "Katerina / Катерина",
+      "langs": [
+        "ia"
+      ],
+      "role": "Superviviente rusa, ex profesora de historia; la primera compañera de Robert en Le Presentimento.",
+      "novels": [
+        "le-presentimento"
+      ],
+      "localizations": {
+        "ia": {
+          "name": "Katerina",
+          "description": "Femina russe de circa trenta-cinque annos, con grande oculos verde-gris. Ante le guerra illa esseva professora de historia; illa ha perdite su parentes e su fratre durante le bombardamentos. Robert la trova in le nive, cercante medicamentos. Illa es le prime a scriber su nomine sub «Nostre Utopia» e sonia de un citate con jardines, musica e amor."
         }
       }
     },
