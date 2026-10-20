@@ -22,6 +22,20 @@ Formato del texto: párrafos separados por una línea en blanco, `*cursiva*`, `*
 
 
 
+## Blog
+
+Cada idioma tiene su propio blog (`#/blog`), al que se llega desde el botón «Blog» de la portada. Cada idioma muestra solo sus entradas.
+
+1. Escribir la entrada en `blog/<idioma>/<nombre-corto>.md` (mismo formato que los capítulos).
+2. Añadirla a `blog/catalog.json`:
+
+```json
+{"slug": "nombre-corto", "lang": "es", "title": "Título", "date": "2026-10-20",
+ "excerpt": "Resumen para la lista", "image": "novels/la-corazonada/cover.jpg"}
+```
+
+`excerpt` e `image` son opcionales. Las entradas se ordenan por fecha, la más reciente primero, y cada una tiene sus propios comentarios.
+
 ## Novelas para adultos
 
 Añadir `"adult": true` a la novela en `catalog.json`: aparece la marca 18+ y se pide confirmación de edad antes de leer.

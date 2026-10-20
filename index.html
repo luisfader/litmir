@@ -53,6 +53,19 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-family:var(--san
 /* Characters navigation */
 .character-entry{display:inline-block;margin-top:20px;border:1px solid var(--line);border-radius:30px;padding:11px 23px;text-decoration:none;font-family:var(--sans);font-size:14px;color:var(--accent);background:var(--paper);transition:transform .2s,box-shadow .2s}
 .character-entry:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+.hero .character-entry + .character-entry{margin-left:10px}
+/* Blog */
+.blog-list{max-width:720px;margin:0 auto;padding:8px 0 72px;display:flex;flex-direction:column;gap:22px}
+.post-card{display:grid;grid-template-columns:1fr;gap:6px;text-decoration:none;color:inherit;border:1px solid var(--line);border-radius:12px;padding:22px 24px;background:var(--paper);transition:transform .2s,box-shadow .2s}
+.post-card.has-img{grid-template-columns:140px 1fr;gap:6px 20px}
+.post-card.has-img img{grid-row:1/5;width:140px;height:140px;object-fit:cover;border-radius:8px}
+.post-card:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+.post-card h3{font-family:var(--display);font-weight:500;font-size:26px;line-height:1.15;margin:0}
+.post-card .date{font-family:var(--sans);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:600}
+.post-card p{margin:0;color:var(--muted)}
+.post-card .more{font-family:var(--sans);font-size:14px;color:var(--accent)}
+@media (max-width:520px){.post-card.has-img{grid-template-columns:1fr}.post-card.has-img img{grid-row:auto;width:100%;height:auto;aspect-ratio:16/9}}
+article.chapter.post p{text-align:left}
 /* Home */
 .hero{padding:72px 0 40px;text-align:center}
 .hero .eyebrow{font-family:var(--sans);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-weight:600}
@@ -399,6 +412,23 @@ const UI = {
   ia:{study:"Pro studiar", studyNote:"Libro pro apprender le lingua: illo include material de studio.", wip:"In progresso", wipNote:"Iste romance es ancora in scriptura — nove capitulos arrivara tosto.", tag:"Romances", hero:"Mundo litterari", sub:"Le romances de Robert Fader in interlingua. Lege los in linea gratuitemente.", author:"Robert Fader", start:"Comenciar a leger", cont:"Continuar", contents:"Indice", chapter:"Capitulo", prev:"Precedente", next:"Sequente", back:"Tote le romances", empty:"Ancora nulle romances in interlingua. Tosto!", foot:"© Robert Fader. Tote le derectos reservate.", chapters:n=>n+(n===1?" capitulo":" capitulos"), notFound:"Pagina non trovate.", also:"Iste romance es anque disponibile in:", adultT:"Solmente pro adultos", adultP:"Iste romance contine scenas explicite e es solmente pro lectores de 18 annos o plus.", adultYes:"Io ha 18 annos o plus", adultNo:"Retornar"},
   isv:{study:"Za učenje", studyNote:"Kniga za učenje jezyka: imaje materialy za učenje.", wip:"V pisanju", wipNote:"Toj roman se ješče piše — nove glavy prijdut skoro.", tag:"Romany", hero:"Literaturny svět", sub:"Romany Roberta Fadera na medžuslovjanskom jezyku. Čitajte onlajn bezplatno.", author:"Robert Fader", start:"Načati čitanje", cont:"Prodolžiti", contents:"Sodržanje", chapter:"Glava", prev:"Prědhodna", next:"Slědujuča", back:"Vse romany", empty:"Ješče nema romanov na medžuslovjanskom. Skoro!", foot:"© Robert Fader. Vse prava zaščiščene.", chapters:n=>n+" "+(n===1?"glava":n>=2&&n<=4?"glavy":"glav"), notFound:"Stranica ne jest najdena.", also:"Toj roman jest takože na drugyh jezykah:", adultT:"Jedino za odraslyh", adultP:"Toj roman imaje eksplicitne sceny i jest jedino za čitateljev od 18 lět.", adultYes:"Imam 18 lět ili boljše", adultNo:"Nazad"}
 };
+const BLOG_T = {
+  ru:{title:"Блог", sub:"Новости, заметки и мысли автора.", empty:"Записей пока нет. Скоро появятся!", more:"Читать →", back:"← Блог"},
+  es:{title:"Blog", sub:"Noticias, notas y reflexiones del autor.", empty:"Todavía no hay entradas. ¡Pronto llegarán!", more:"Leer →", back:"← Blog"},
+  it:{title:"Blog", sub:"Notizie, appunti e riflessioni dell’autore.", empty:"Non ci sono ancora articoli. Arriveranno presto!", more:"Leggi →", back:"← Blog"},
+  en:{title:"Blog", sub:"News, notes and thoughts from the author.", empty:"No posts yet. Coming soon!", more:"Read →", back:"← Blog"},
+  de:{title:"Blog", sub:"Neuigkeiten, Notizen und Gedanken des Autors.", empty:"Noch keine Beiträge. Bald!", more:"Lesen →", back:"← Blog"},
+  fr:{title:"Blog", sub:"Actualités, notes et réflexions de l’auteur.", empty:"Pas encore d’articles. Bientôt !", more:"Lire →", back:"← Blog"},
+  tr:{title:"Blog", sub:"Yazardan haberler, notlar ve düşünceler.", empty:"Henüz yazı yok. Yakında!", more:"Oku →", back:"← Blog"},
+  pt:{title:"Blog", sub:"Notícias, notas e reflexões do autor.", empty:"Ainda não há publicações. Em breve!", more:"Ler →", back:"← Blog"},
+  cs:{title:"Blog", sub:"Novinky, poznámky a úvahy autora.", empty:"Zatím tu nejsou žádné příspěvky. Brzy přibudou!", more:"Číst →", back:"← Blog"},
+  sr:{title:"Блог", sub:"Вести, белешке и размишљања аутора.", empty:"Још нема објава. Ускоро!", more:"Прочитај →", back:"← Блог"},
+  eo:{title:"Blogo", sub:"Novaĵoj, notoj kaj pensoj de la aŭtoro.", empty:"Ankoraŭ ne estas afiŝoj. Baldaŭ!", more:"Legi →", back:"← Blogo"},
+  isv:{title:"Blog", sub:"Novosti, zapiski i mysli avtora.", empty:"Ješče nema zapisov. Skoro!", more:"Čitati →", back:"← Blog"},
+  vo:{title:"Blog", sub:"Nuns, noets e tikods lautana.", empty:"No dabinons nog yegeds. Okömoms suno!", more:"Reidön →", back:"← Blog"},
+  ia:{title:"Blog", sub:"Novas, notas e reflexiones del autor.", empty:"Ancora nulle articulos. Tosto!", more:"Leger →", back:"← Blog"}
+};
+const bt = k => (BLOG_T[lang] || BLOG_T.en)[k];
 function plural(n,f){const a=n%10,b=n%100;return a===1&&b!==11?f[0]:a>=2&&a<=4&&(b<10||b>=20)?f[1]:f[2]}
 
 const store = {
@@ -560,7 +590,8 @@ function renderChrome(){
 document.getElementById("langs").addEventListener("click", e => {
   const l = e.target.dataset && e.target.dataset.l; if (!l) return;
   setLang(l);
-  if (location.hash && location.hash !== "#/") location.hash = "#/"; else route();
+  const home = location.hash.startsWith("#/blog") ? "#/blog" : "#/";
+  if (location.hash && location.hash !== home) location.hash = home; else route();
 });
 
 const PALETTE = ["#7a2e2e","#2f4a5c","#4b5b35","#5a3b5f","#8a5a24","#2e4f4a","#3d3a6b","#6b3a2a"];
@@ -588,6 +619,7 @@ function home(){
     <p>${esc(t("sub"))}</p>
     <div class="ornament">✦ ✦ ✦</div>
     <a class="character-entry" href="characters.html" id="charactersEntry">✧ <span id="charactersLabel">Personajes</span> →</a>
+    <a class="character-entry" href="#/blog">✎ ${esc(bt("title"))} →</a>
   </section>
   <section class="wrap">
     ${list.length ? `<div class="grid">${list.map(n => {
@@ -599,6 +631,59 @@ function home(){
   </section>`;
   const charactersEntry = document.getElementById("charactersEntry");
   if (charactersEntry) { charactersEntry.href = "characters.html?lang=" + encodeURIComponent(lang); document.getElementById("charactersLabel").textContent = characterLabels[lang] || "Characters"; }
+}
+
+let blog = null;
+async function loadBlog(){
+  if (!blog) { try { const r = await fetch("blog/catalog.json", {cache:"no-cache"}); blog = r.ok ? await r.json() : {posts:[]}; } catch(e) { blog = {posts:[]}; } }
+  return blog.posts || [];
+}
+function postDate(d){
+  try { return new Date(d + "T12:00:00").toLocaleDateString(lang, {year:"numeric", month:"long", day:"numeric"}); } catch(e) { return d || ""; }
+}
+async function blogIndex(){
+  document.title = bt("title") + " — " + t("author");
+  app.innerHTML = `<div class="loading">…</div>`;
+  const list = (await loadBlog()).filter(p => p.lang === lang && !p.hidden).sort((a, b) => (b.date || "").localeCompare(a.date || ""));
+  app.innerHTML = `
+  <section class="hero wrap">
+    <div class="eyebrow">${esc(t("hero"))}</div>
+    <h1>${esc(bt("title"))}</h1>
+    <p>${esc(bt("sub"))}</p>
+    <div class="ornament">✦ ✦ ✦</div>
+  </section>
+  <section class="wrap">
+    ${list.length ? `<div class="blog-list">${list.map(p => `
+      <a class="post-card${p.image ? " has-img" : ""}" href="#/blog/${esc(p.slug)}">
+        ${p.image ? `<img src="${esc(p.image)}" alt="" loading="lazy">` : ""}
+        <span class="date">${esc(postDate(p.date))}</span>
+        <h3>${esc(p.title)}</h3>
+        ${p.excerpt ? `<p>${esc(p.excerpt)}</p>` : ""}
+        <span class="more">${esc(bt("more"))}</span>
+      </a>`).join("")}</div>` : `<div class="empty">${esc(bt("empty"))}</div>`}
+  </section>`;
+}
+async function blogPost(slug){
+  app.innerHTML = `<div class="loading">…</div>`;
+  const p = (await loadBlog()).find(x => x.slug === slug);
+  if (!p) { app.innerHTML = `<div class="empty">${esc(t("notFound"))}</div>`; return; }
+  if (lang !== p.lang && LANGS.includes(p.lang)) setLang(p.lang);
+  let md = "";
+  try { const r = await fetch(`blog/${p.lang}/${p.slug}.md`); if (!r.ok) throw 0; md = await r.text(); }
+  catch(e) { md = "*—*"; }
+  md = md.replace(/^#\s+.*\n+/, "");
+  document.title = p.title + " — " + bt("title");
+  app.innerHTML = `
+  <div class="reader-bar"><div class="wrap"><a class="crumb" href="#/blog">${esc(bt("back"))}</a></div></div>
+  <article class="chapter post" lang="${esc(p.lang)}">
+    <div class="kicker">${esc(postDate(p.date))}</div>
+    <h1>${esc(p.title)}</h1>
+    ${p.image ? `<figure><img src="${esc(p.image)}" alt="" loading="lazy"></figure>` : ""}
+    ${renderText(md)}
+  </article>
+  <section class="comments" id="comments"></section>`;
+  window.scrollTo(0, 0);
+  mountComments({lang:p.lang, slug:"blog/" + p.lang}, {file:p.slug + ".md"});
 }
 
 function adultOk(n){ return !n.adult || store.get("adult", false); }
@@ -1160,6 +1245,7 @@ function route(){
   window.onscroll = null; document.onkeydown = null;
   if (!catalog) return;
   const parts = location.hash.replace(/^#\/?/, "").split("/").filter(Boolean);
+  if (parts[0] === "blog") { setSoundtrack(null); return parts[1] ? blogPost(decodeURIComponent(parts[1])) : blogIndex(); }
   const n = parts.length ? catalog.novels.find(x => x.slug === decodeURIComponent(parts[0])) : null;
   setSoundtrack(n && adultOk(n) ? n : null);
   if (!parts.length) return home();
