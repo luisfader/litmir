@@ -436,7 +436,7 @@ const store = {
   get(k,d){try{const v=localStorage.getItem("lm:"+k);return v===null?d:JSON.parse(v)}catch(e){return d}},
   set(k,v){try{localStorage.setItem("lm:"+k,JSON.stringify(v))}catch(e){}}
 };
-let lang = store.get("lang", null);
+let lang = new URLSearchParams(location.search).get("lang") || store.get("lang", null);
 if (!LANGS.includes(lang)) lang = LANGS.find(l => (navigator.language||"").toLowerCase().startsWith(l)) || "ru";
 let catalog = null;
 const app = document.getElementById("app");
