@@ -1,6 +1,30 @@
 {
   "posts": [
     {
+      "slug": "a-man-from-the-future",
+      "lang": "en",
+      "title": "A Man from the Future: travelling a thousand years to learn how to love",
+      "date": "2026-10-20",
+      "excerpt": "Moscow, 3024: a world without women, a lonely man and a red time machine. Why Luis Fader's easy reader is a funny, tender story about learning to listen — and a perfect first novel in English.",
+      "image": "novels/a-man-from-the-future/cover.jpg"
+    },
+    {
+      "slug": "la-voix",
+      "lang": "fr",
+      "title": "« La voix » : écouter, dans un monde qui fait trop de bruit",
+      "date": "2026-10-20",
+      "excerpt": "Des dauphins disparus, une employée de bureau qui entend une voix venue de la mer, une ville abandonnée par ses dirigeants. Ce que le roman de Robert Fader nous dit sur l'écoute, l'amitié et le prix de la lumière.",
+      "image": "novels/la-voix/cover.jpg"
+    },
+    {
+      "slug": "col-gulu-birgule",
+      "lang": "tr",
+      "title": "Bir gül, bir çöl gülü: «Çöl Gülü» Birgül'e bir saygı duruşudur",
+      "date": "2026-10-20",
+      "excerpt": "Rosa'nın adı, çöl gülü ve kendiliğinden açan aşk: «Çöl Gülü», ruhumun hâlâ âşık olduğu Birgül'e yazılmış bir mektuptur.",
+      "image": "novels/col-gulu/cover.jpg"
+    },
+    {
       "slug": "presentimento-psicologia-e-filosofia",
       "lang": "it",
       "title": "Costruire un mondo nuovo con un cuore vecchio: la psicologia e la filosofia di «Presentimento»",
