@@ -962,7 +962,8 @@ const LESSON_T = {
   lostP:"No pasa nada: cada error es una palabra nueva que ya conoces un poco mejor.", xp:"XP total", acc:"Precisión", time:"Tiempo",
   ex:n=>n+" ejercicios", min:"≈ 5 minutos", hearts:"corazones", best:"Tu mejor resultado", tap:"Toca las palabras en orden",
   type:"Escribe aquí…", perfect:"¡Sin un solo error! Eres increíble.", good:"¡Muy buen trabajo!",
-  ok:"¡Bien hecho! Repite el test para mejorar tu precisión.", sound:"Sonido", listen:"Escuchar", meaning:"Significa:"
+  ok:"¡Bien hecho! Repite el test para mejorar tu precisión.", sound:"Sonido", listen:"Escuchar", meaning:"Significa:",
+  yes:"Verdadero", no:"Falso", score:"Puntaje", level:"Tu nivel de comprensión"
 };
 
 const TULIP = (mood="happy") => `<svg class="tulip ${mood}" viewBox="0 0 120 140" aria-hidden="true">
@@ -1073,8 +1074,8 @@ async function lesson(n, i, c){
       <div class="ls-kicker">${esc(c.label || "Test")}</div>
       <h1>${esc(data.title || c.title)}</h1>
       <p class="ls-sub">${esc(data.subtitle || "")}</p>
-      <div class="ls-chips"><span>📚 ${T.ex(total)}</span><span>❤️ ${maxHearts} ${T.hearts}</span><span>⏱ ${T.min}</span></div>
-      ${best ? `<div class="ls-best">🏆 ${T.best}: <b>${best.xp} XP</b> · ${best.acc}%</div>` : ""}
+      <div class="ls-chips"><span>📚 ${T.ex(total)}</span>${data.exam ? `<span>🎯 ${T.score}</span>` : `<span>❤️ ${maxHearts} ${T.hearts}</span>`}<span>⏱ ${T.min}</span></div>
+      ${best ? `<div class="ls-best">🏆 ${T.best}: <b>${data.exam ? best.score + " / " + total : best.xp + " XP"}</b> · ${best.acc}%</div>` : ""}
       <button class="ls-btn go" id="lsStart">${T.start}</button>
       <a class="ls-link" href="#/${n.slug}">← ${esc(n.title)}</a>
     </section>`;
@@ -1091,7 +1092,7 @@ async function lesson(n, i, c){
       <div class="ls-top">
         <a class="ls-x" href="#/${n.slug}" aria-label="${esc(t("back"))}">✕</a>
         <div class="ls-bar"><div class="ls-fill" id="lsFill"></div></div>
-        <div class="ls-hearts" id="lsHearts">❤️ <b>${S.hearts}</b></div>
+        ${data.exam ? "" : `<div class="ls-hearts" id="lsHearts">❤️ <b>${S.hearts}</b></div>`}
         <button class="ls-snd" id="lsSnd" aria-label="${T.sound}" title="${T.sound}">${sfx.on() ? "🔔" : "🔕"}</button>
       </div>
       <div class="ls-stage" id="lsStage"></div>
@@ -1106,7 +1107,7 @@ async function lesson(n, i, c){
 
   function progress(){
     document.getElementById("lsFill").style.width = (S.solved.size / total * 100) + "%";
-    const h = document.getElementById("lsHearts"); h.innerHTML = `❤️ <b>${S.hearts}</b>`;
+    const h = document.getElementById("lsHearts"); if (h) h.innerHTML = `❤️ <b>${S.hearts}</b>`;
   }
 
   let cur, answerFn, ready;
@@ -1142,8 +1143,12 @@ async function lesson(n, i, c){
     }
     if (e.type === "story") {
       e._opts = shuffle(e.options.map((o, k) => ({o, k})));
-      return head + `<div class="ls-bubble-row"><div class="ls-mini">${M()}</div><div class="ls-bubble"><div lang="cs" class="ls-cz">${spk(e.question,"sm")}${esc(e.question)}</div><div class="ls-es">${esc(e.es)}</div></div></div>
+      return head + `<div class="ls-bubble-row"><div class="ls-mini">${M()}</div><div class="ls-bubble"><div lang="cs" class="ls-cz">${spk(e.question,"sm")}${esc(e.question)}</div>${e.es ? `<div class="ls-es">${esc(e.es)}</div>` : ""}</div></div>
         <div class="ls-list">${e._opts.map((x, j) => `<button class="ls-opt row" data-k="${x.k}"><kbd>${j+1}</kbd><span lang="cs">${esc(x.o)}</span></button>`).join("")}</div>`;
+    }
+    if (e.type === "tf") {
+      return head + `<div class="ls-bubble-row"><div class="ls-mini">${M()}</div><div class="ls-bubble"><div class="ls-cz">${esc(e.statement)}</div></div></div>
+        <div class="ls-grid">${[[1, T.yes], [0, T.no]].map(([k, w], j) => `<button class="ls-opt" data-k="${k}"><kbd>${j+1}</kbd><span>${w}</span></button>`).join("")}</div>`;
     }
     if (e.type === "fill") {
       e._opts = shuffle(e.options.map((o, k) => ({o, k})));
@@ -1171,14 +1176,14 @@ async function lesson(n, i, c){
   }
 
   function bind(e, stage){
-    if (["choice","reverse","story","picture"].includes(e.type)) {
+    if (["choice","reverse","story","picture","tf"].includes(e.type)) {
       let sel = null;
       const opts = [...stage.querySelectorAll(".ls-opt")];
       opts.forEach(b => b.onclick = () => {
         opts.forEach(x => x.classList.toggle("sel", x === b)); sel = +b.dataset.k; sfx.tap(); ready(true);
         if (e.type === "reverse" && canSpeak()) voice.say(b.textContent.replace(/^\d/, ""), SPK);
       });
-      answerFn = () => ({ ok: sel === e.answer, sel: opts.find(x => +x.dataset.k === sel) });
+      answerFn = () => ({ ok: sel === want(e), sel: opts.find(x => +x.dataset.k === sel) });
       keyPick = k => opts[k] && opts[k].click();
       if (e.type === "choice" && canSpeak()) setTimeout(() => voice.say(e.word, SPK), 250);
     }
@@ -1244,6 +1249,7 @@ async function lesson(n, i, c){
     }
   }
 
+  const want = e => e.type === "tf" ? +e.answer : e.answer;
   let keyPick = null, graded = false;
   function grade(res){
     if (graded) return; graded = true;
@@ -1261,15 +1267,17 @@ async function lesson(n, i, c){
       let extra = "";
       if (res.almost) extra = `<div>${T.almost} <b lang="cs">${esc(e.answers[0])}</b></div>`;
       else if (e.type === "fill" || e.type === "story") extra = e.es && e.type === "fill" ? `<div class="tr">${esc(e.es)}</div>` : "";
+      if (e.why) extra += `<div class="tr">${esc(e.why)}</div>`;
       msg.innerHTML = `<div class="ls-verdict">✔ ${praise}${S.streak >= 3 ? ` <span class="ls-streak">🔥 ${S.streak}</span>` : ""}</div>${extra}`;
       if (res.sel) { res.sel.classList.remove("sel"); res.sel.classList.add("good"); }
     } else {
-      S.missed.add(e.k); S.hearts--; S.streak = 0; S.queue.push(e);
+      S.missed.add(e.k); S.streak = 0;
+      if (data.exam) S.solved.add(e.k); else { S.hearts--; S.queue.push(e); }
       sfx.bad(); foot.className = "ls-foot bad";
-      const h = document.getElementById("lsHearts"); h.classList.remove("hit"); void h.offsetWidth; h.classList.add("hit");
-      msg.innerHTML = `<div class="ls-verdict">✘ ${T.wrong}</div><div class="sol" lang="cs">${esc(solution(e))}</div>${e.type === "fill" && e.es ? `<div class="tr">${esc(e.es)}</div>` : ""}`;
+      const h = document.getElementById("lsHearts"); if (h) { h.classList.remove("hit"); void h.offsetWidth; h.classList.add("hit"); }
+      msg.innerHTML = `<div class="ls-verdict">✘ ${T.wrong}</div><div class="sol" lang="cs">${esc(solution(e))}</div>${e.type === "fill" && e.es ? `<div class="tr">${esc(e.es)}</div>` : ""}${e.why ? `<div class="tr">${esc(e.why)}</div>` : ""}`;
       if (res.sel) { res.sel.classList.remove("sel"); res.sel.classList.add("bad"); }
-      stage.querySelectorAll(".ls-opt[data-k]").forEach(b => { if (+b.dataset.k === e.answer && !b.classList.contains("m")) b.classList.add("good"); });
+      stage.querySelectorAll(".ls-opt[data-k]").forEach(b => { if (+b.dataset.k === want(e) && !b.classList.contains("m")) b.classList.add("good"); });
     }
     progress();
     check.disabled = false; check.textContent = T.next;
@@ -1281,6 +1289,7 @@ async function lesson(n, i, c){
     if (e.type === "build") return e.answer.join(" ") + ".";
     if (e.type === "write") return e.answers[0];
     if (e.type === "picture") return e.options[e.answer].word;
+    if (e.type === "tf") return e.answer ? T.yes : T.no;
     if (e.type === "fill") return `${e.before} ${e.options[e.answer]} ${e.after}`;
     return e.options[e.answer];
   }
@@ -1288,17 +1297,19 @@ async function lesson(n, i, c){
   function finish(){
     const secs = Math.round((Date.now() - S.t0) / 1000), acc = Math.round(S.firstTry.size / total * 100);
     const perfect = S.missed.size === 0; if (perfect) S.xp += 20;
-    const best = store.get(key, null);
-    if (!best || S.xp > best.xp || (S.xp === best.xp && acc > best.acc)) store.set(key, { xp:S.xp, acc });
+    const best = store.get(key, null), score = S.firstTry.size;
+    if (!best || S.xp > best.xp || (S.xp === best.xp && acc > best.acc)) store.set(key, { xp:S.xp, acc, score });
     const d = store.get("done:" + n.slug, []); if (!d.includes(i)) { d.push(i); store.set("done:" + n.slug, d); }
     sfx.win();
-    const line = perfect ? (data.perfect || T.perfect) : acc >= 70 ? (data.good || T.good) : T.ok;
+    const lvl = data.exam && (data.levels || []).find(l => acc >= l.min);
+    const line = lvl ? lvl.text : perfect ? (data.perfect || T.perfect) : acc >= 70 ? (data.good || T.good) : T.ok;
     app.innerHTML = `<section class="ls ls-end">
       <canvas id="lsConfetti" aria-hidden="true"></canvas>
       <div class="ls-mascot jump">${M()}</div>
-      <h1>${T.done}</h1><p class="ls-sub">${esc(line)}</p>
+      <h1>${T.done}</h1>${lvl ? `<div class="ls-kicker">${T.level}</div><h2 class="ls-q">${esc(lvl.title)}</h2>` : ""}<p class="ls-sub">${esc(line)}</p>
       <div class="ls-stats">
-        <div class="ls-stat xp"><div class="h">${T.xp}</div><div class="v">⚡ ${S.xp}</div></div>
+        ${data.exam ? `<div class="ls-stat xp"><div class="h">${T.score}</div><div class="v">✔ ${score} / ${total}</div></div>`
+                    : `<div class="ls-stat xp"><div class="h">${T.xp}</div><div class="v">⚡ ${S.xp}</div></div>`}
         <div class="ls-stat acc"><div class="h">${T.acc}</div><div class="v">🎯 ${acc}%</div></div>
         <div class="ls-stat tm"><div class="h">${T.time}</div><div class="v">⏱ ${Math.floor(secs/60)}:${String(secs%60).padStart(2,"0")}</div></div>
       </div>
