@@ -1,6 +1,14 @@
 {
   "posts": [
     {
+      "slug": "presentimento-psicologia-e-filosofia",
+      "lang": "it",
+      "title": "Costruire un mondo nuovo con un cuore vecchio: la psicologia e la filosofia di «Presentimento»",
+      "date": "2026-10-20",
+      "excerpt": "Un'utopia nel deserto, un leader che soffre per le sue vittorie, cuori che non seguono i piani. Che cosa ci racconta «Presentimento» sulla natura umana, sulla violenza e sull'amore come scelta libera.",
+      "image": "novels/presentimento/cover.jpg"
+    },
+    {
       "slug": "entrevista-misterio-de-los-fader",
       "lang": "es",
       "title": "«El amor y la magia son inseparables»: entrevista con Luis Fader",
