@@ -645,7 +645,7 @@ function postDate(d){
 async function blogIndex(){
   document.title = bt("title") + " — " + t("author");
   app.innerHTML = `<div class="loading">…</div>`;
-  const list = (await loadBlog()).filter(p => p.lang === lang && !p.hidden).sort((a, b) => (b.date || "").localeCompare(a.date || ""));
+  const list = (await loadBlog()).filter(p => !p.hidden).sort((a, b) => (b.date || "").localeCompare(a.date || "") || (a.lang === lang ? -1 : b.lang === lang ? 1 : 0));
   app.innerHTML = `
   <section class="hero wrap">
     <div class="eyebrow">${esc(t("hero"))}</div>
