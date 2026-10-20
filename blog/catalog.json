@@ -1,6 +1,14 @@
 {
   "posts": [
     {
+      "slug": "entretien-avec-camille",
+      "lang": "fr",
+      "title": "« Un mur gris, c'est une prison. Un mur turquoise, c'est un rêve qu'on protège » : entretien avec Camille",
+      "date": "2026-10-20",
+      "excerpt": "L'héroïne de « Rêve turquoise » raconte pourquoi, après la fin du monde, elle a décidé de construire une forteresse — et un monde nouveau — au fond d'une vallée perdue.",
+      "image": "novels/reve-turquoise/cover.jpg"
+    },
+    {
       "slug": "jana-o-podzemnim-tajemstvi",
       "lang": "cs",
       "title": "„Jsem krásná v dlouhé i krátké sukni“: Jana o Podzemním tajemství",
