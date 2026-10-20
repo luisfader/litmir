@@ -1,6 +1,13 @@
 {
   "posts": [
     {
+      "slug": "intervju-sa-natasom",
+      "lang": "sr",
+      "title": "„Мој град није на продају“: интервју са Наташом",
+      "date": "2026-10-20",
+      "excerpt": "Јунакиња романа „Дивљи час“ говори о љубави према Луису, о љубомори без резервног излаза и о угњетачима који мисле да се Београд може купити."
+    },
+    {
       "slug": "entretien-avec-camille",
       "lang": "fr",
       "title": "« Un mur gris, c'est une prison. Un mur turquoise, c'est un rêve qu'on protège » : entretien avec Camille",
