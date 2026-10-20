@@ -151,6 +151,14 @@ article.chapter p.mc.bad::after{content:"✗";color:#b3261e;font:700 16px var(--
 article.chapter .vfcheck{display:flex;align-items:center;gap:14px;margin:.6em 0 1.4em;font-family:var(--sans);font-size:14px}
 article.chapter .vfcheck .vfgo{font:600 14px/1 var(--sans);padding:10px 16px;border-radius:8px;border:0;background:var(--accent);color:#fff;cursor:pointer}
 article.chapter .vfcheck .vfres{font-weight:600}
+.module-score [hidden]{display:none}
+article.chapter .psy{margin:0 0 1.2em;padding:12px 14px;border:1px solid var(--line);border-radius:12px;text-align:left}
+article.chapter .psy .psyq{margin:0 0 .5em;font-weight:600}
+article.chapter .psy .psyo{display:block;width:100%;text-align:left;margin:6px 0 0;padding:9px 12px;border-radius:8px;border:1px solid var(--line);background:var(--paper);color:var(--ink);font:15px/1.35 var(--sans);cursor:pointer}
+article.chapter .psy .psyo:hover{border-color:var(--accent)}
+article.chapter .psy .psyo[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+article.chapter .psyres{margin:0 0 1.2em;padding:16px 18px;border-radius:14px;background:var(--accent-soft);text-align:left}
+article.chapter .psyres p{margin:0}
 article.chapter .blank{display:inline-block;min-width:4.5em;border-bottom:1px solid var(--muted);vertical-align:-.15em}
 .tbl{overflow-x:auto;margin:1em 0}
 article.chapter ul{font-size:.9em;columns:2 16em;column-gap:2em;padding-left:1.2em;margin:0 0 1.2em}
@@ -424,8 +432,13 @@ function renderText(md){
       return '<div class="tbl"><table>' + rows.map((r,i) => "<tr>" + r.map(c => i ? "<td>"+c+"</td>" : "<th>"+c+"</th>").join("") + "</tr>").join("") + "</table></div>"; }
     if (/^- /.test(b) && b.split("\n").every(r => /^- /.test(r))) return "<ul>" + b.split("\n").map(r => "<li>" + inline(r.slice(2)) + "</li>").join("") + "</ul>";
     if (/^>/.test(b)) return "<blockquote><p>" + inline(b.replace(/^>\s?/gm,"")).replace(/\n/g,"<br>") + "</p></blockquote>";
-    const mc = b.match(/^([\s\S]*?)\s*\[\[([^|\]]+)\|([^\]]+)\]\]\s*$/);
-    if (mc) { const ops = [mc[2], mc[3]]; const a = ops.findIndex(o => o.trim().startsWith("*"));
+    const pl = b.split("\n");
+    if (pl.length > 2 && pl.slice(1).every(r => /^\{[a-z]+\}\s/.test(r)))
+      return `<div class="psy"><p class="psyq">${inline(pl[0])}</p>${pl.slice(1).map(r => { const k = r.match(/^\{([a-z]+)\}\s+(.*)$/); return `<button type="button" class="psyo" data-k="${k[1]}" aria-pressed="false">${inline(k[2])}</button>`; }).join("")}</div>`;
+    const pr = b.match(/^\{=([a-z]+)\}\s+([\s\S]*)$/);
+    if (pr) return `<div class="psyres" data-k="${pr[1]}" hidden><p>${inline(pr[2]).replace(/\n/g,"<br>")}</p></div>`;
+    const mc = b.match(/^([\s\S]*?)\s*\[\[([^\]|]+(?:\|[^\]|]+)+)\]\]\s*$/);
+    if (mc) { const ops = mc[2].split("|"); const a = ops.findIndex(o => o.trim().startsWith("*"));
       return `<p class="mc" data-a="${a}"><span class="vfq">${inline(mc[1])}</span><select aria-label="Respuesta"><option value="" selected disabled>— elige —</option>${ops.map((o,i) => `<option value="${i}">${esc(o.trim().replace(/^\*/,""))}</option>`).join("")}</select></p>`; }
     const vf = b.match(/^([\s\S]*?)\s*\(\s*V\s*\/\s*F\s*\)\s*\{([VF])\}\s*$/);
     if (vf) return `<p class="vf" data-a="${vf[2]}"><span class="vfq">${inline(vf[1])}</span><span class="vfb"><button type="button" data-v="V" aria-pressed="false">V</button><button type="button" data-v="F" aria-pressed="false">F</button></span></p>`;
@@ -435,25 +448,64 @@ function renderText(md){
 
 /* Interactive true/false exercises: lines "a) … ( V / F ){F}" */
 const QUIZ_T = {es:["Comprobar","correctas","Volver a intentar"], it:["Verifica","corrette","Riprova"], en:["Check","correct","Try again"], ru:["Проверить","правильно","Ещё раз"], pt:["Verificar","corretas","Tentar de novo"], fr:["Vérifier","correctes","Réessayer"], de:["Prüfen","richtig","Nochmal"]};
+const EXAM_T = {
+  es:{final:"Evaluación final de la novela", grade:"Calificar examen", retry:"Repetir examen", none:"Todavía no hay una calificación guardada.", best:"Mejor nota: ", missing:(a,n)=>"Respondé todas las preguntas antes de calificar ("+a+" de "+n+").", result:(s,c,n)=>"Resultado: "+s+" / 100 · "+c+" de "+n+" respuestas correctas.", pass:" ¡Aprobado!", fail:" Necesitás 70 puntos para aprobar."},
+  ru:{final:"Итоговый тест по роману", grade:"Узнать результат", retry:"Пройти ещё раз", none:"Результата пока нет.", best:"Лучший результат: ", missing:(a,n)=>"Ответьте на все вопросы ("+a+" из "+n+").", result:(s,c,n)=>"Результат: "+s+" / 100 · правильных ответов: "+c+" из "+n+".", pass:" Тест пройден!", fail:" Чтобы пройти тест, нужно 70 баллов."}
+};
+/* Personality test: a question followed by lines "{key} answer"; results "{=key} text" */
+const PSY_T = {ru:["Узнать результат","Ответьте на все вопросы","Пройти ещё раз","Ваш результат"], es:["Ver resultado","Respondé todas las preguntas","Repetir","Tu resultado"]};
+function setupPsych(root, lang){
+  const qs = [...root.querySelectorAll(".psy")], res = [...root.querySelectorAll(".psyres")];
+  if (!qs.length || !res.length) return;
+  const T = PSY_T[lang] || PSY_T.es;
+  qs.forEach(q => q.querySelectorAll(".psyo").forEach(b => b.onclick = () => {
+    q.dataset.sel = b.dataset.k;
+    q.querySelectorAll(".psyo").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
+  }));
+  const bar = document.createElement("div"); bar.className = "vfcheck psybar";
+  bar.innerHTML = `<button type="button" class="vfgo">${T[0]}</button><span class="vfres" aria-live="polite"></span>`;
+  res[0].before(bar);
+  const msg = bar.querySelector(".vfres"), go = bar.querySelector(".vfgo");
+  go.onclick = () => {
+    if (go.dataset.done) {
+      qs.forEach(q => { delete q.dataset.sel; q.querySelectorAll(".psyo").forEach(x => x.setAttribute("aria-pressed","false")); });
+      res.forEach(r => r.hidden = true); msg.textContent = ""; go.textContent = T[0]; delete go.dataset.done;
+      qs[0].scrollIntoView({behavior:"smooth", block:"center"}); return;
+    }
+    const answered = qs.filter(q => q.dataset.sel);
+    if (answered.length < qs.length) { msg.textContent = `${T[1]} (${answered.length} / ${qs.length})`; return; }
+    const count = {}; qs.forEach(q => count[q.dataset.sel] = (count[q.dataset.sel] || 0) + 1);
+    const keys = res.map(r => r.dataset.k);
+    const win = keys.reduce((a, k) => (count[k] || 0) > (count[a] || 0) ? k : a, keys[0]);
+    res.forEach(r => r.hidden = r.dataset.k !== win);
+    msg.textContent = `${T[3]}: ${Math.round(100 * (count[win] || 0) / qs.length)}%`;
+    go.textContent = T[2]; go.dataset.done = "1";
+    res.find(r => !r.hidden).scrollIntoView({behavior:"smooth", block:"center"});
+  };
+}
 function setupQuizzes(root, lang){
   const T = QUIZ_T[lang] || QUIZ_T.es;
   const items = [...root.querySelectorAll("p.vf, p.mc")];
   const PICK = {es:"— elige —", it:"— scegli —", en:"— choose —", ru:"— выбери —", pt:"— escolha —", fr:"— choisis —", de:"— wähle —"};
   root.querySelectorAll("p.mc select").forEach(sel => { if (sel.options[0]) sel.options[0].textContent = PICK[lang] || PICK.es; });
   if (lang === "en") root.querySelectorAll('p.vf button[data-v="V"]').forEach(b => b.textContent = "T");
-  const isModule = !!root.querySelector("article.chapter") && /^(?:modulo-[1-4]|test-final)[.]md$/.test(window.__activeChapterFile || "");
+  if (lang === "ru") root.querySelectorAll("p.vf button[data-v]").forEach(b => { b.textContent = b.dataset.v === "V" ? "Да" : "Нет"; b.style.width = "auto"; b.style.padding = "0 10px"; });
+  setupPsych(root, lang);
+  const exam = window.__activeExam;
+  const isModule = !!root.querySelector("article.chapter") && (!!exam || /^(?:modulo-[1-4]|test-final)[.]md$/.test(window.__activeChapterFile || ""));
   if (isModule && items.length) {
     const chapter = root.querySelector("article.chapter");
-    const key = "module-best:el-tren-fantasma:" + window.__activeChapterFile;
-    const finalExam = window.__activeChapterFile === "test-final.md";
+    const key = "module-best:" + (exam ? exam.slug : "el-tren-fantasma") + ":" + window.__activeChapterFile;
+    const finalExam = !!exam || window.__activeChapterFile === "test-final.md";
+    const X = EXAM_T[exam && EXAM_T[lang] ? lang : "es"];
     const box = document.createElement("section");
     box.className = "module-score";
     box.style.cssText = "max-width:720px;margin:2em auto;padding:20px;border:1px solid var(--line);border-radius:14px;background:var(--accent-soft);text-align:center";
-    box.innerHTML = '<h2 style="margin:.1em 0 .6em">' + (finalExam ? 'Evaluación final de la novela' : 'Evaluación del módulo') + '</h2><p class="module-best"></p><button type="button" class="btn module-grade">Calificar módulo</button><button type="button" class="btn ghost module-retry" style="margin-left:10px" hidden>Repetir examen</button><p class="module-result" role="status" aria-live="polite"></p><p><a href="#/el-tren-fantasma/progreso">Ver mi progreso completo →</a></p>';
+    box.innerHTML = '<h2 style="margin:.1em 0 .6em">' + (finalExam ? X.final : 'Evaluación del módulo') + '</h2><p class="module-best"></p><button type="button" class="btn module-grade">' + (exam ? X.grade : 'Calificar módulo') + '</button><button type="button" class="btn ghost module-retry" style="margin-left:10px" hidden>' + X.retry + '</button><p class="module-result" role="status" aria-live="polite"></p>' + (exam ? '' : '<p><a href="#/el-tren-fantasma/progreso">Ver mi progreso completo →</a></p>');
     chapter.appendChild(box);
     const bestEl = box.querySelector(".module-best"), result = box.querySelector(".module-result");
     const grade = box.querySelector(".module-grade"), retry = box.querySelector(".module-retry");
-    const best = () => { const v = store.get(key, null); bestEl.textContent = v === null ? "Todavía no hay una calificación guardada." : "Mejor nota: " + v + " / 100"; };
+    const best = () => { const v = store.get(key, null); bestEl.textContent = v === null ? X.none : X.best + v + " / 100"; };
     best();
     items.forEach(p => {
       p.querySelectorAll("button[data-v]").forEach(b => b.onclick = () => {
@@ -466,7 +518,7 @@ function setupQuizzes(root, lang){
     });
     grade.onclick = () => {
       const answered = items.filter(p => p.dataset.sel !== undefined && p.dataset.sel !== "").length;
-      if (answered < items.length) { result.textContent = "Respondé todas las preguntas antes de calificar (" + answered + " de " + items.length + ")."; return; }
+      if (answered < items.length) { result.textContent = X.missing(answered, items.length); return; }
       const correct = items.reduce((count,p) => {
         const ok = p.dataset.sel === p.dataset.a;
         p.classList.toggle("ok", ok); p.classList.toggle("bad", !ok);
@@ -476,7 +528,7 @@ function setupQuizzes(root, lang){
       const previous = store.get(key, null);
       if (previous === null || score > previous) store.set(key, score);
       best();
-      result.textContent = "Resultado: " + score + " / 100 · " + correct + " de " + items.length + " respuestas correctas." + (finalExam ? (score >= 70 ? " ¡Aprobado!" : " Necesitás 70 puntos para aprobar.") : "");
+      result.textContent = X.result(score, correct, items.length) + (finalExam ? (score >= 70 ? X.pass : X.fail) : "");
       grade.hidden = true; retry.hidden = false;
       items.forEach(p => { p.querySelectorAll("button,select").forEach(el => el.disabled = true); });
     };
@@ -708,7 +760,7 @@ async function reader(n, idx){
       <button class="sw" data-th="sepia" style="background:#efe2c8" aria-label="sepia"></button>
       <button class="sw" data-th="dark" style="background:#1d1914" aria-label="dark"></button>
     </div></div><div class="progress" id="prog"></div></div>
-  <article class="chapter" lang="${n.lang}">
+  <article class="chapter" lang="${c.lang || n.lang}">
     <div class="kicker">${esc(label)}</div>
     <h1>${esc(title)}</h1>
     ${renderText(md)}
@@ -721,7 +773,8 @@ async function reader(n, idx){
   <section class="comments" id="comments"></section>`;
   window.scrollTo(0,0);
   window.__activeChapterFile = c.file;
-  setupQuizzes(app, n.lang);
+  window.__activeExam = c.exam ? {slug:n.slug} : null;
+  setupQuizzes(app, c.lang || n.lang);
   mountComments(n, c);
   store.set("last:"+n.slug, i);
   const doneKey = "done:"+n.slug;

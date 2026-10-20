@@ -4637,7 +4637,21 @@
         {
           "file": "12.md",
           "title": "Examen final de comprensión",
-          "label": "Evaluación final"
+          "label": "Evaluación final",
+          "exam": true
+        },
+        {
+          "file": "13.md",
+          "title": "Психологический тест: кто вы в «Координатах любви»?",
+          "label": "Тест · Психология",
+          "lang": "ru"
+        },
+        {
+          "file": "14.md",
+          "title": "Тест на понимание романа",
+          "label": "Тест · Понимание",
+          "lang": "ru",
+          "exam": true
         }
       ],
       "cover": "novels/las-coordenadas-del-amor/cover.jpg",
