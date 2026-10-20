@@ -1,6 +1,14 @@
 {
   "posts": [
     {
+      "slug": "intervjuo-robert-fader-esperanto-kaj-utopio",
+      "lang": "eo",
+      "title": "«Esperanto estas por mi lingvo de espero»: intervjuo kun Robert Fader",
+      "date": "2026-10-20",
+      "excerpt": "Robert Fader rakontas kial li verkis La antaŭsenton en Esperanto, pri Volapuko en la romano, la konstruado de Utopio kaj la solidareco de esperantistoj, kiu iam savis lian vivon.",
+      "image": "novels/la-antausento/cover.jpg"
+    },
+    {
       "slug": "robert-fader-col-gulu-soylesi",
       "lang": "tr",
       "title": "“Aşk, çölün ortasında bile bir gülü yeniden yeşertebilir”: Robert Fader ile Çöl Gülü üzerine söyleşi",
