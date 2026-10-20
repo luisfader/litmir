@@ -1,6 +1,14 @@
 {
   "posts": [
     {
+      "slug": "interview-mit-oxana",
+      "lang": "de",
+      "title": "„Ich habe nicht gefragt, weil ich die Antwort kannte“: ein Interview mit Oxana",
+      "date": "2026-10-20",
+      "excerpt": "Die Ingenieurin aus „Vorahnung“ spricht über Roberts Vergangenheit, die Nacht ohne Strom, die Frau mit den roten Haaren – und warum sie am Ende seine Hand nicht genommen hat.",
+      "image": "novels/vorahnung/cover.jpg"
+    },
+    {
       "slug": "entrevista-la-corazonada-optimismo",
       "lang": "es",
       "title": "«La Corazonada es optimismo»: entrevista con Luis Fader",
