@@ -1,6 +1,14 @@
 {
   "posts": [
     {
+      "slug": "jana-o-podzemnim-tajemstvi",
+      "lang": "cs",
+      "title": "„Jsem krásná v dlouhé i krátké sukni“: Jana o Podzemním tajemství",
+      "date": "2026-10-20",
+      "excerpt": "Jana vzpomíná na první kávu s Luisem, na mámu a bordó sukni, na hlas princezny Ludmily i na nejdůležitější větu v češtině. Upřímně o lásce, strachu a odpuštění.",
+      "image": "novels/podzemni-tajemstvi/cover.jpg"
+    },
+    {
       "slug": "interview-mit-oxana",
       "lang": "de",
       "title": "„Ich habe nicht gefragt, weil ich die Antwort kannte“: ein Interview mit Oxana",
