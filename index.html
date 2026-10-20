@@ -215,10 +215,10 @@ function setupPredchuvstvieReflection(root) {
   const result = document.createElement("section");
   result.className = "reflection-result";
   result.innerHTML = '<h2>Ваши ответы</h2><p class="reflection-status" role="status" aria-live="polite">Выберите варианты. Ваши ответы сохраняются только в этом браузере.</p><button type="button" class="btn reflection-check">Проверить факты сюжета</button> <button type="button" class="btn ghost reflection-reset">Начать заново</button>';
-  const qNodes = [...article.querySelectorAll("p")].filter(p => /^\\s*(?:\\*\\*)?(?:[1-9]|[12][0-9]|30)\\.\\s/.test(p.textContent));
+  const qNodes = [...article.querySelectorAll("p")].filter(p => /^\s*(?:\*\*)?(?:[1-9]|[12][0-9]|30)\.\s/.test(p.textContent));
   let found = 0;
   qNodes.forEach(p => {
-    const match = p.textContent.match(/^\\s*(\\d+)\\.\\s/);
+    const match = p.textContent.match(/^\s*(\d+)\.\s/);
     if (!match) return;
     const num = Number(match[1]);
     if (num < 1 || num > 30) return;
@@ -227,7 +227,7 @@ function setupPredchuvstvieReflection(root) {
     const group = document.createElement("fieldset");
     group.className = "reflection-card";
     const title = document.createElement("legend");
-    title.textContent = p.textContent.replace(/^\\s*\\d+\\.\\s*/, "");
+    title.textContent = p.textContent.replace(/^\s*\d+\.\s*/, "");
     group.appendChild(title);
     if (num <= 16 && next.tagName === "UL") {
       [...next.querySelectorAll(":scope > li")].forEach((li, i) => {
@@ -464,7 +464,6 @@ function setupPredchuvstvieReflection(root) {
 .music .mt b{color:var(--ink);font-weight:600}
 .music input{width:70px;accent-color:var(--accent)}
 @media (max-width:520px){.music input{display:none}.music .mt{max-width:140px}}
-<style>
 .reflection-card{border:1px solid var(--line);border-radius:14px;padding:1.05em 1.3em;margin:1.2em 0;background:var(--paper);min-width:0}
 .reflection-card legend{font-weight:700;padding:0 .3em;line-height:1.6;max-width:95%}
 .reflection-option{display:flex;align-items:flex-start;gap:.65em;cursor:pointer;margin:.55em 0;padding:.7em .85em;border:1px solid var(--line);border-radius:9px;line-height:1.5}
@@ -474,7 +473,7 @@ function setupPredchuvstvieReflection(root) {
 .reflection-result{border:1px solid var(--line);border-radius:15px;background:var(--accent-soft);padding:1.2em;margin:2em 0}
 .reflection-result .btn{margin:.3em}
 .reflection-intro{font-style:italic}
-</style></style>
+</style>
 </head>
 <body>
 <header class="top">
@@ -905,7 +904,8 @@ async function reader(n, idx){
   <section class="comments" id="comments"></section>`;
   window.scrollTo(0,0);
   window.__activeChapterFile = c.file;
-  if (n.slug === "predchuvstvie" && c.file === "28.md") setupPredchuvstvieReflection(app);\n  setupQuizzes(app, n.lang);
+  if (n.slug === "predchuvstvie" && c.file === "28.md") setupPredchuvstvieReflection(app);
+  setupQuizzes(app, n.lang);
   mountComments(n, c);
   store.set("last:"+n.slug, i);
   const doneKey = "done:"+n.slug;
