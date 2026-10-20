@@ -1,6 +1,13 @@
 {
   "posts": [
     {
+      "slug": "intervyu-robert-fader-rossiya-i-russkiy-yazyk",
+      "lang": "ru",
+      "title": "Россия, музыка и новая культурная идентичность: интервью с Робертом Фадером",
+      "date": "2026-10-20",
+      "excerpt": "Роберт Фадер рассказывает о музыке Чайковского, первом знакомстве с кириллицей, впечатлениях от Москвы и о том, как Россия повлияла на его жизнь и творчество."
+    },
+    {
       "slug": "intervista-luis-fader-italiano",
       "lang": "it",
       "title": "Dall'indifferenza all'amore per l'italiano: intervista a Roberto Fader",
