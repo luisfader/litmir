@@ -202,7 +202,95 @@ article.chapter h3{font-family:var(--sans);font-size:.72em;letter-spacing:.12em;
 .gate p{color:var(--muted);font-size:18px;margin:0 0 28px}
 .toc li.extra a{font-style:italic;color:var(--muted)}
 .langs{flex-wrap:wrap;justify-content:flex-end}
-/* ───────── Lesson / final test ───────── */
+
+/* Reader reflection panel for Предчувствие: literary discussion, never language drills. */
+function setupPredchuvstvieReflection(root) {
+  const article = root.querySelector("article.chapter");
+  if (!article) return;
+  const key = "predchuvstvie:reflection:v1";
+  let saved = {};
+  try { saved = JSON.parse(localStorage.getItem(key) || "{}"); } catch (_) {}
+  const save = () => { try { localStorage.setItem(key, JSON.stringify(saved)); } catch (_) {} };
+  const answers = {17:true,18:false,19:true,20:true,21:false,22:true,23:false,24:true,25:false,26:true,27:true,28:true,29:false,30:false};
+  const result = document.createElement("section");
+  result.className = "reflection-result";
+  result.innerHTML = '<h2>Ваши ответы</h2><p class="reflection-status" role="status" aria-live="polite">Выберите варианты. Ваши ответы сохраняются только в этом браузере.</p><button type="button" class="btn reflection-check">Проверить факты сюжета</button> <button type="button" class="btn ghost reflection-reset">Начать заново</button>';
+  const qNodes = [...article.querySelectorAll("p")].filter(p => /^\\s*(?:\\*\\*)?(?:[1-9]|[12][0-9]|30)\\.\\s/.test(p.textContent));
+  let found = 0;
+  qNodes.forEach(p => {
+    const match = p.textContent.match(/^\\s*(\\d+)\\.\\s/);
+    if (!match) return;
+    const num = Number(match[1]);
+    if (num < 1 || num > 30) return;
+    const next = p.nextElementSibling;
+    if (!next) return;
+    const group = document.createElement("fieldset");
+    group.className = "reflection-card";
+    const title = document.createElement("legend");
+    title.textContent = p.textContent.replace(/^\\s*\\d+\\.\\s*/, "");
+    group.appendChild(title);
+    if (num <= 16 && next.tagName === "UL") {
+      [...next.querySelectorAll(":scope > li")].forEach((li, i) => {
+        const label = document.createElement("label");
+        label.className = "reflection-option";
+        const input = document.createElement("input");
+        input.type = "radio"; input.name = "reflection-" + num; input.value = String(i);
+        input.checked = saved[num] === String(i);
+        input.onchange = () => { saved[num] = input.value; save(); };
+        label.append(input, document.createTextNode(" " + li.textContent));
+        group.appendChild(label);
+      });
+      next.replaceWith(group); p.remove(); found++;
+    } else if (num >= 17 && num <= 30 && next.tagName === "P" && /Правда/.test(next.textContent) && /Ложь/.test(next.textContent)) {
+      [["true","Правда"],["false","Ложь"]].forEach(([val,word]) => {
+        const label = document.createElement("label");
+        label.className = "reflection-option";
+        const input = document.createElement("input");
+        input.type = "radio"; input.name = "reflection-" + num; input.value = val;
+        input.checked = saved[num] === val;
+        input.onchange = () => { saved[num] = val; save(); group.classList.remove("reflection-correct","reflection-incorrect"); };
+        label.append(input,document.createTextNode(" " + word)); group.appendChild(label);
+      });
+      next.replaceWith(group);p.remove();found++;
+    }
+    group.dataset.question = num;
+  });
+  if (!found) return;
+  const h = document.createElement("p");
+  h.className = "reflection-intro";
+  h.textContent = "Выберите один вариант в каждом вопросе. В первых двух разделах нет правильных или неправильных решений: важна ваша интерпретация.";
+  article.insertBefore(h,article.querySelector("h2") || article.firstChild);
+  const details = [...article.querySelectorAll("details")];
+  if (details.length) details[0].open = false;
+  const ending = document.createElement("section");
+  ending.className="reflection-ending";
+  ending.appendChild(result);
+  article.appendChild(ending);
+  result.querySelector(".reflection-check").onclick = () => {
+    let correct=0, done=0;
+    for(const [n,expected] of Object.entries(answers)){
+      const card=article.querySelector('[data-question="'+n+'"]');
+      if (!card) continue;
+      const val=saved[n];
+      card.classList.remove("reflection-correct","reflection-incorrect");
+      if(val==="true"||val==="false"){
+        done++;
+        const ok=(val==="true")===expected;
+        if(ok)correct++;
+        card.classList.add(ok?"reflection-correct":"reflection-incorrect");
+      }
+    }
+    result.querySelector(".reflection-status").textContent="Проверено: "+done+" из 14. Верных ответов: "+correct+". Ошибки выделены, а пояснения находятся в раскрывающемся ключе выше.";
+    result.scrollIntoView({behavior:"smooth",block:"center"});
+  };
+  result.querySelector(".reflection-reset").onclick = () => {
+    saved={};save();
+    article.querySelectorAll(".reflection-card input").forEach(x=>x.checked=false);
+    article.querySelectorAll(".reflection-card").forEach(x=>x.classList.remove("reflection-correct","reflection-incorrect"));
+    result.querySelector(".reflection-status").textContent="Ответы очищены. Вы можете пройти вопросы ещё раз.";
+  };
+}
+\n/* ───────── Lesson / final test ───────── */
 .ls{--ok:#3f8f1e;--ok-bg:#dff5cf;--ok-ink:#2f6d14;--bad:#d63a2f;--bad-bg:#ffe1dd;--bad-ink:#a8261d;--gold:#e0a82e;--sel:#3b6fb6;--sel-bg:#e3eefb;--on-ok:#fff;--on-bad:#fff;
   font-family:var(--sans);max-width:680px;margin:0 auto;padding:0 20px;position:relative}
 :root[data-theme="dark"] .ls{--on-ok:#11240a;--on-bad:#2a0c09;--ok:#7cc95a;--ok-bg:#1f3318;--ok-ink:#9ee07a;--bad:#ff7a6e;--bad-bg:#3a1d1a;--bad-ink:#ff9d93;--sel:#7fb0f0;--sel-bg:#1c2a3d}
@@ -376,7 +464,17 @@ article.chapter h3{font-family:var(--sans);font-size:.72em;letter-spacing:.12em;
 .music .mt b{color:var(--ink);font-weight:600}
 .music input{width:70px;accent-color:var(--accent)}
 @media (max-width:520px){.music input{display:none}.music .mt{max-width:140px}}
-</style>
+<style>
+.reflection-card{border:1px solid var(--line);border-radius:14px;padding:1.05em 1.3em;margin:1.2em 0;background:var(--paper);min-width:0}
+.reflection-card legend{font-weight:700;padding:0 .3em;line-height:1.6;max-width:95%}
+.reflection-option{display:flex;align-items:flex-start;gap:.65em;cursor:pointer;margin:.55em 0;padding:.7em .85em;border:1px solid var(--line);border-radius:9px;line-height:1.5}
+.reflection-option:hover,.reflection-option:has(input:checked){background:var(--accent-soft);border-color:var(--accent)}
+.reflection-option input{accent-color:var(--accent);margin-top:.4em;flex-shrink:0}
+.reflection-correct{border-color:#448a6a}.reflection-incorrect{border-color:#ba5656}
+.reflection-result{border:1px solid var(--line);border-radius:15px;background:var(--accent-soft);padding:1.2em;margin:2em 0}
+.reflection-result .btn{margin:.3em}
+.reflection-intro{font-style:italic}
+</style></style>
 </head>
 <body>
 <header class="top">
@@ -807,7 +905,7 @@ async function reader(n, idx){
   <section class="comments" id="comments"></section>`;
   window.scrollTo(0,0);
   window.__activeChapterFile = c.file;
-  setupQuizzes(app, n.lang);
+  if (n.slug === "predchuvstvie" && c.file === "28.md") setupPredchuvstvieReflection(app);\n  setupQuizzes(app, n.lang);
   mountComments(n, c);
   store.set("last:"+n.slug, i);
   const doneKey = "done:"+n.slug;
