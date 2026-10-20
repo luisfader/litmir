@@ -13,7 +13,7 @@
 .stats{font:13px system-ui,sans-serif;color:var(--muted);margin-bottom:16px}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(245px,1fr));gap:18px;padding-bottom:70px}
 .card{background:var(--paper);border:1px solid var(--line);border-radius:13px;padding:23px;box-shadow:0 6px 18px rgba(50,35,25,.035);display:flex;flex-direction:column;gap:12px}.monogram{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;font:28px Georgia,serif;color:var(--accent);background:color-mix(in srgb,var(--accent) 12%,var(--paper))}.card h2{font-size:24px;font-weight:normal;line-height:1.2;margin:0}.card p{font-size:15px;color:var(--muted);margin:0;flex:1}.novels{display:flex;flex-wrap:wrap;gap:7px}.novels a{font:12px system-ui,sans-serif;text-decoration:none;border:1px solid var(--line);border-radius:20px;padding:6px 9px;color:var(--accent)}.novels a:hover{background:var(--bg)}
 .empty{padding:55px 0;color:var(--muted)}footer{border-top:1px solid var(--line);padding:24px 0;font:13px system-ui,sans-serif;color:var(--muted)}
-</style></head><body><header><div class="wrap"><a class="brand" href="./index.html">✦ Mundo literario</a><a class="back" id="back" href="./index.html">← Volver a las novelas</a></div></header>
+</style></head><body><header><div class="wrap"><a class="brand" id="brand" href="./index.html">✦ Mundo literario</a><a class="back" id="back" href="./index.html">← Volver a las novelas</a></div></header>
 <main class="wrap"><section class="hero"><div class="eyebrow" id="eyebrow">Universo literario</div><h1 id="heading">Personajes</h1><p class="lead" id="lead">Descubrí a los protagonistas y personajes de las novelas. Elegí un idioma para explorar sus historias.</p></section>
 <div class="tools"><select id="lang" aria-label="Idioma"></select><input id="search" type="search" placeholder="Buscar personajes o novelas…" aria-label="Buscar personajes"></div>
 <div class="stats" id="stats"></div><div class="grid" id="grid"></div></main><footer><div class="wrap">© Robert Fader · <span id="footerText">Personajes del universo literario</span></div></footer>
@@ -35,18 +35,34 @@ isv:["Postavy","Literaturny svět","Poznajte postavy romanov.","Iskati postavy i
 vo:["Pösods","Literatüra vol","Datu pösodis romanis.","Sukön pösodis…","Geikön lü romanis","pösods","Pösodaprofils no nog dabinons."],
 ia:["Personages","Universo litterari","Cognosce le personages del romances.","Cercar personages o romances…","Retornar al romances","personages","Ancora nulle profilos de personages pro iste lingua."]
 };
+const X={
+ru:["Литературный мир","Персонажи литературной вселенной","Романы","Не удалось загрузить каталог."],
+es:["Mundo literario","Personajes del universo literario","Novelas","No se pudo cargar el catálogo."],
+it:["Mondo letterario","Personaggi dell’universo letterario","Romanzi","Impossibile caricare il catalogo."],
+en:["Literary World","Characters of the literary universe","Novels","The catalog could not be loaded."],
+de:["Literarische Welt","Figuren des literarischen Universums","Romane","Der Katalog konnte nicht geladen werden."],
+fr:["Monde littéraire","Personnages de l’univers littéraire","Romans","Impossible de charger le catalogue."],
+tr:["Edebiyat Dünyası","Edebiyat evreninin karakterleri","Romanlar","Katalog yüklenemedi."],
+pt:["Mundo literário","Personagens do universo literário","Romances","Não foi possível carregar o catálogo."],
+cs:["Literární svět","Postavy literárního světa","Romány","Katalog se nepodařilo načíst."],
+sr:["Књижевни свет","Ликови књижевног света","Романи","Каталог није могуће учитати."],
+eo:["Literatura mondo","Roluloj de la literatura universo","Romanoj","Ne eblis ŝargi la katalogon."],
+isv:["Literaturny svět","Postavy literaturnogo světa","Romany","Ne bylo možno zagruziti katalog."],
+vo:["Vol literatik","Pösods vola literatik","Romäns","Katalog no pälodon."],
+ia:["Mundo litterari","Personages del universo litterari","Romances","Le catalogo non poteva esser cargate."]
+};
 const E=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const params=new URLSearchParams(location.search);let language=params.get("lang")||localStorage.getItem("litmir-lang")||"es";if(!NAMES[language])language="es";
 const sel=document.getElementById("lang");sel.innerHTML=Object.entries(NAMES).map(([k,v])=>'<option value="'+k+'">'+E(v)+'</option>').join("");sel.value=language;
 let books=[],people=[];const search=document.getElementById("search");const grid=document.getElementById("grid");
 function draw(){
-const ui=I[language]||I.es;document.documentElement.lang=language;document.title=ui[0]+" · Robert Fader";
+const ui=I[language]||I.es,x=X[language]||X.es;document.getElementById("brand").textContent="✦ "+x[0];document.getElementById("footerText").textContent=x[1];document.documentElement.lang=language;document.title=ui[0]+" · Robert Fader";
 document.getElementById("heading").textContent=ui[0];document.getElementById("eyebrow").textContent=ui[1];document.getElementById("lead").textContent=ui[2];search.placeholder=ui[3];document.getElementById("back").textContent="← "+ui[4];document.getElementById("back").href="./index.html#/";
 const available=new Map(books.filter(b=>b.lang===language&&!b.hidden).map(b=>[b.slug,b]));
 const q=search.value.toLocaleLowerCase();const found=people.map(p=>({p,profile:p.localizations?.[language],linked:p.novels.map(s=>available.get(s)).filter(Boolean)})).filter(x=>x.linked.length&&x.profile&&(x.profile.name+" "+x.profile.description+" "+x.linked.map(n=>n.title).join(" ")).toLocaleLowerCase().includes(q));
-document.getElementById("stats").textContent=found.length+" "+ui[5]+" · "+available.size+" "+(language==="es"?"novelas":"📚");
+document.getElementById("stats").textContent=found.length+" "+ui[5]+" · "+x[2]+": "+available.size;
 grid.innerHTML=found.length?found.map(({p,profile,linked})=>'<article class="card"><div class="monogram" aria-hidden="true">'+E(profile.name.charAt(0))+'</div><h2>'+E(profile.name)+'</h2><p>'+E(profile.description)+'</p><div class="novels">'+linked.map(n=>'<a href="./index.html#/'+encodeURIComponent(n.slug)+'">'+E(n.title)+'</a>').join("")+'</div></article>').join(""):'<div class="empty">'+E(ui[6])+'</div>';
 }
 sel.addEventListener("change",()=>{language=sel.value;localStorage.setItem("litmir-lang",language);params.set("lang",language);history.replaceState(null,"","?"+params.toString());draw()});search.addEventListener("input",draw);
-Promise.all([fetch("./novels/catalog.json",{cache:"no-cache"}).then(r=>r.json()),fetch("./characters/catalog.json",{cache:"no-cache"}).then(r=>r.json())]).then(([a,b])=>{books=a.novels;people=b.characters;draw()}).catch(()=>{grid.innerHTML='<p class="empty">No se pudo cargar el catálogo.</p>'});
+Promise.all([fetch("./novels/catalog.json",{cache:"no-cache"}).then(r=>r.json()),fetch("./characters/catalog.json",{cache:"no-cache"}).then(r=>r.json())]).then(([a,b])=>{books=a.novels;people=b.characters;draw()}).catch(()=>{grid.innerHTML='<p class="empty">'+E((X[language]||X.es)[3])+'</p>'});
 </script></body></html>
