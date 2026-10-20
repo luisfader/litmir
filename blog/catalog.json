@@ -1,6 +1,13 @@
 {
   "posts": [
     {
+      "slug": "interview-luis-fader-love-and-magic",
+      "lang": "en",
+      "title": "Writing, Love and the Dream of a Better World: An Interview with Luis Fader",
+      "date": "2026-10-20",
+      "excerpt": "Luis Fader talks about childhood stories, teaching languages, romance and his hope for a better world."
+    },
+    {
       "slug": "a-man-from-the-future",
       "lang": "en",
       "title": "A Man from the Future: travelling a thousand years to learn how to love",
