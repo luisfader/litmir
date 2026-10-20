@@ -1353,6 +1353,295 @@
           "description": "Amica di Matteo che fa il trucco agli attori in un teatro: trasforma Antonio in un anziano collezionista."
         }
       }
+    },
+    {
+      "id": "alex-future",
+      "name": "Alex",
+      "langs": [
+        "en"
+      ],
+      "role": "Joven del Moscú de 3024 que viaja en el tiempo a 2024 en busca del amor.",
+      "novels": [
+        "a-man-from-the-future"
+      ],
+      "localizations": {
+        "en": {
+          "name": "Alex",
+          "description": "A 29-year-old computer repairman from Moscow in 3024, a lonely world where all the women disappeared twenty years ago. He finds an old red time machine, travels to Moscow in 2024 and falls in love with Olga."
+        }
+      }
+    },
+    {
+      "id": "olga-future",
+      "name": "Olga",
+      "langs": [
+        "en"
+      ],
+      "role": "Joven que trabaja en el café de su tía y se enamora de Alex.",
+      "novels": [
+        "a-man-from-the-future"
+      ],
+      "localizations": {
+        "en": {
+          "name": "Olga",
+          "description": "A young woman who works in her aunt Nina’s café and draws when it is quiet. She helps Alex in 2024, secretly travels to his future and meets herself on the way back. In the end she chooses to build a life with Alex in her own time."
+        }
+      }
+    },
+    {
+      "id": "nina-future",
+      "name": "Nina",
+      "langs": [
+        "en"
+      ],
+      "role": "Tía de Olga, dueña del café.",
+      "novels": [
+        "a-man-from-the-future"
+      ],
+      "localizations": {
+        "en": {
+          "name": "Nina",
+          "description": "Olga’s aunt, who owns the café where Alex first meets Olga. She asks Alex to repair her computer and pays him for the work."
+        }
+      }
+    },
+    {
+      "id": "svetlana-future",
+      "name": "Svetlana",
+      "langs": [
+        "en"
+      ],
+      "role": "Mujer a la que Alex aborda torpemente en 2024.",
+      "novels": [
+        "a-man-from-the-future"
+      ],
+      "localizations": {
+        "en": {
+          "name": "Svetlana",
+          "description": "A young woman Alex approaches outside a bookshop on his first day in 2024. He asks her to leave her whole life behind for him, and she tells him to stop following her."
+        }
+      }
+    },
+    {
+      "id": "pavel-future",
+      "name": "Pavel",
+      "langs": [
+        "en"
+      ],
+      "role": "Colega de Alex en 3024.",
+      "novels": [
+        "a-man-from-the-future"
+      ],
+      "localizations": {
+        "en": {
+          "name": "Pavel",
+          "description": "Alex’s colleague in 3024. He is the first man to see Olga when she arrives from the past, and he promises to tell everyone at work that Alex is alive."
+        }
+      }
+    },
+    {
+      "id": "frank-stevenson",
+      "name": "Frank Stevenson",
+      "langs": [
+        "en"
+      ],
+      "role": "Detective privado que busca al asesino de su hermano en citas online.",
+      "novels": [
+        "the-date"
+      ],
+      "localizations": {
+        "en": {
+          "name": "Frank Stevenson",
+          "description": "A private detective who believes a woman killed his brother Tom two years ago. He creates a fake dating profile as “Mark” and goes on one strange date after another to find the killer."
+        }
+      }
+    },
+    {
+      "id": "tom-stevenson",
+      "name": "Tom Stevenson",
+      "langs": [
+        "en"
+      ],
+      "role": "Hermano de Frank, desaparecido tras una cita.",
+      "novels": [
+        "the-date"
+      ],
+      "localizations": {
+        "en": {
+          "name": "Tom Stevenson",
+          "description": "Frank’s brother, who went on an online date and never came back. The truth is stranger than murder: Tom wanted to be an actor and staged the whole story with his actress friends."
+        }
+      }
+    },
+    {
+      "id": "clara-date",
+      "name": "Clara (The Date)",
+      "langs": [
+        "en"
+      ],
+      "role": "Primera cita de Frank, que pregunta demasiado.",
+      "novels": [
+        "the-date"
+      ],
+      "localizations": {
+        "en": {
+          "name": "Clara",
+          "description": "Frank’s first date: beautiful, with long black hair and red lips. She likes expensive wine and asks too many questions about money and dogs."
+        }
+      }
+    },
+    {
+      "id": "veronica-date",
+      "name": "Veronica",
+      "langs": [
+        "en"
+      ],
+      "role": "Cita excéntrica a la que le gustan los insectos muertos.",
+      "novels": [
+        "the-date"
+      ],
+      "localizations": {
+        "en": {
+          "name": "Veronica",
+          "description": "A strange woman with a strange profile who loves dead bugs and crazy games. When “Mark” tries to leave, she screams “Nobody rejects me!” and chases him."
+        }
+      }
+    },
+    {
+      "id": "nadia-date",
+      "name": "Nadia",
+      "langs": [
+        "en"
+      ],
+      "role": "Cita misteriosa que besa a Frank y huye.",
+      "novels": [
+        "the-date"
+      ],
+      "localizations": {
+        "en": {
+          "name": "Nadia",
+          "description": "A woman with short blonde hair who writes to “Mark” first. Her story sounds like Tom’s, she thinks a man should be quiet and handsome, and she kisses Frank and runs away."
+        }
+      }
+    },
+    {
+      "id": "susan-date",
+      "name": "Susan",
+      "langs": [
+        "en"
+      ],
+      "role": "Cita que no para de hablar de sus exnovios.",
+      "novels": [
+        "the-date"
+      ],
+      "localizations": {
+        "en": {
+          "name": "Susan",
+          "description": "A talker with a very normal profile who loves sunsets, pizza and her cat, Mr. Snuffles, and never stops talking about her ex-boyfriends. At the end she comes to apologise and helps Frank and Tom make peace."
+        }
+      }
+    },
+    {
+      "id": "rosa-date",
+      "name": "Rosa",
+      "langs": [
+        "en"
+      ],
+      "role": "Abogada con un contrato de reglas para citas.",
+      "novels": [
+        "the-date"
+      ],
+      "localizations": {
+        "en": {
+          "name": "Rosa",
+          "description": "A smart lawyer who writes everything in a small notebook. She brings a contract that says “Mark” broke the rules of dating."
+        }
+      }
+    },
+    {
+      "id": "vanessa-date",
+      "name": "Vanessa (The Date)",
+      "langs": [
+        "en"
+      ],
+      "role": "Violinista que ata a Frank a una silla.",
+      "novels": [
+        "the-date"
+      ],
+      "localizations": {
+        "en": {
+          "name": "Vanessa",
+          "description": "A violin player with long white hair and a smile that is too big. She lives in a big old house, plays scary music and ties “Mark” to a chair — “for the drama”."
+        }
+      }
+    },
+    {
+      "id": "charles-immigrant",
+      "name": "Charles",
+      "langs": [
+        "en"
+      ],
+      "role": "Inmigrante que llega a Sinea sin dinero ni papeles y acaba siendo alcalde.",
+      "novels": [
+        "the-immigrant"
+      ],
+      "localizations": {
+        "en": {
+          "name": "Charles",
+          "description": "An immigrant who arrives in Sinea by ship with a small bag, no money and no papers. He finds the stolen turquoise diamond, gives it back, and becomes the honest new Mayor of Sinea."
+        }
+      }
+    },
+    {
+      "id": "anna-immigrant",
+      "name": "Anna",
+      "langs": [
+        "en"
+      ],
+      "role": "Maestra que ayuda a Charles.",
+      "novels": [
+        "the-immigrant"
+      ],
+      "localizations": {
+        "en": {
+          "name": "Anna",
+          "description": "A kind teacher who listens to Charles and helps him return the diamond. When her father has Charles arrested, she helps him escape and convinces him to run for Mayor."
+        }
+      }
+    },
+    {
+      "id": "martin-mayor",
+      "name": "Martin",
+      "langs": [
+        "en"
+      ],
+      "role": "Alcalde corrupto de Sinea, padre de Anna.",
+      "novels": [
+        "the-immigrant"
+      ],
+      "localizations": {
+        "en": {
+          "name": "Martin",
+          "description": "The Mayor of Sinea and Anna’s father. In Charles’s country he ran an illegal diamond business with slaves; in Sinea he blames immigrants for everything and loses the election to Charles."
+        }
+      }
+    },
+    {
+      "id": "leo-hacker",
+      "name": "Leo",
+      "langs": [
+        "en"
+      ],
+      "role": "Hacker amigo de Anna.",
+      "novels": [
+        "the-immigrant"
+      ],
+      "localizations": {
+        "en": {
+          "name": "Leo",
+          "description": "Anna’s friend, a hacker with a room full of computers. Click, click, click: he fixes Charles’s papers so he can be a candidate for Mayor."
+        }
+      }
     }
   ]
 }
