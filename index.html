@@ -596,9 +596,10 @@ function renderText(md){
     if (psy) return `<div class="psy"><p class="psyq">${inline(psy[1])}</p><div class="psyb"><button type="button" data-k="${psy[2]}" aria-pressed="false">${inline(psy[3].trim())}</button><button type="button" data-k="${psy[4]}" aria-pressed="false">${inline(psy[5].trim())}</button></div></div>`;
     const psyr = b.match(/^\{=([A-Z])\}\s*([\s\S]+)$/);
     if (psyr) return `<div class="psyr" data-k="${psyr[1]}" hidden><p>${inline(psyr[2]).replace(/\n/g,"<br>")}</p></div>`;
-    const mc = b.match(/^([\s\S]*?)\s*\[\[([^|\]]+)\|([^\]]+)\]\]\s*$/);
-    if (mc) { const ops = [mc[2], mc[3]]; const a = ops.findIndex(o => o.trim().startsWith("*"));
-      return `<p class="mc" data-a="${a}"><span class="vfq">${inline(mc[1])}</span><select aria-label="Respuesta"><option value="" selected disabled>— elige —</option>${ops.map((o,i) => `<option value="${i}">${esc(o.trim().replace(/^\*/,""))}</option>`).join("")}</select></p>`; }
+    const mc = b.match(/^([\s\S]*?)\s*\[\[([^\]]*\|[^\]]*)\]\]([\s\S]*)$/);
+    if (mc) { const ops = mc[2].split("|"); const a = ops.findIndex(o => o.trim().startsWith("*"));
+      const q = mc[3].trim() ? inline(mc[1]) + " ＿＿＿ " + inline(mc[3].trim()) : inline(mc[1]);
+      return `<p class="mc" data-a="${a}"><span class="vfq">${q}</span><select aria-label="Respuesta"><option value="" selected disabled>— elige —</option>${ops.map((o,i) => `<option value="${i}">${esc(o.trim().replace(/^\*/,""))}</option>`).join("")}</select></p>`; }
     const vf = b.match(/^([\s\S]*?)\s*\(\s*V\s*\/\s*F\s*\)\s*\{([VF])\}\s*$/);
     if (vf) return `<p class="vf" data-a="${vf[2]}"><span class="vfq">${inline(vf[1])}</span><span class="vfb"><button type="button" data-v="V" aria-pressed="false">V</button><button type="button" data-v="F" aria-pressed="false">F</button></span></p>`;
     return "<p>" + inline(b).replace(/\n/g,"<br>") + "</p>";
