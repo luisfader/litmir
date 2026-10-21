@@ -1,0 +1,353 @@
+{
+  "title": "Test de comprensión",
+  "subtitle": "¿Cuánto entendiste de «La Corazonada»? Respondé cada pregunta una sola vez: al final verás tu puntaje.",
+  "speak": "es-AR",
+  "hero": "cover.jpg",
+  "exam": true,
+  "ui": {
+    "min": "≈ 10 minutos",
+    "great": [
+      "¡Correcto!",
+      "¡Muy bien!",
+      "¡Exacto!",
+      "¡Así es!",
+      "¡Excelente!"
+    ],
+    "again": "Repetir el test",
+    "back": "Volver a la novela"
+  },
+  "levels": [
+    {
+      "min": 90,
+      "title": "Guardián de la Utopía",
+      "text": "Comprensión excelente: no se te escapó ningún detalle de la fortaleza turquesa."
+    },
+    {
+      "min": 70,
+      "title": "Habitante de la fortaleza",
+      "text": "Muy buena comprensión: entendiste la historia y a sus personajes."
+    },
+    {
+      "min": 50,
+      "title": "Caminante del desierto",
+      "text": "Comprensión aceptable: captaste lo esencial, pero se te escaparon algunos detalles."
+    },
+    {
+      "min": 0,
+      "title": "Recién salido del búnker",
+      "text": "Comprensión baja: te conviene releer algunos capítulos y volver a intentarlo."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "story",
+      "prompt": "Elegí la respuesta correcta",
+      "question": "¿Cuánto tiempo pasó Robert encerrado en su búnker?",
+      "options": [
+        "Dos años",
+        "Seis meses"
+      ],
+      "answer": 0,
+      "why": "Fueron setecientos treinta días de invierno nuclear (cap. 1)."
+    },
+    {
+      "type": "tf",
+      "prompt": "¿Verdadero o falso?",
+      "statement": "Antes de enfrentarse a los motoqueros, Robert había peleado muchas veces.",
+      "answer": false,
+      "why": "Nunca en su vida había peleado: se había entrenado solo en el búnker (cap. 1)."
+    },
+    {
+      "type": "story",
+      "prompt": "Elegí la respuesta correcta",
+      "question": "¿Cómo vence Robert al líder de los motoqueros?",
+      "options": [
+        "Le tira arena a los ojos y lo inmoviliza con una llave",
+        "Le dispara con una pistola"
+      ],
+      "answer": 0,
+      "why": "Usa un puñado de arena y tierra y una llave aprendida en el búnker (cap. 1)."
+    },
+    {
+      "type": "tf",
+      "prompt": "¿Verdadero o falso?",
+      "statement": "La esposa de Robert, Natalia, era médica y se fue porque la llamaron a filas.",
+      "answer": true,
+      "why": "Robert le suplicó que escaparan, pero ella sintió que su deber era curar a los combatientes (cap. 3)."
+    },
+    {
+      "type": "story",
+      "prompt": "Elegí la respuesta correcta",
+      "question": "¿Qué estudiaba Vika antes de la catástrofe?",
+      "options": [
+        "Economía",
+        "Medicina"
+      ],
+      "answer": 0,
+      "why": "Por eso Robert le pide que enseñe economía a los demás (cap. 3)."
+    },
+    {
+      "type": "tf",
+      "prompt": "¿Verdadero o falso?",
+      "statement": "A los tres motoqueros los dejaron lejos, con agua para un solo día.",
+      "answer": true,
+      "why": "Los abandonan en una hondonada pedregosa, a tres días de camino a pie (caps. 2 y 4)."
+    },
+    {
+      "type": "story",
+      "prompt": "Elegí la respuesta correcta",
+      "question": "¿Cuál es la profesión de Luis?",
+      "options": [
+        "Arquitecto",
+        "Médico"
+      ],
+      "answer": 0,
+      "why": "Luis construyó un supermercado justo antes de la Súper Explosión (cap. 4)."
+    },
+    {
+      "type": "story",
+      "prompt": "Elegí la respuesta correcta",
+      "question": "¿De dónde venían Sasha, Natalia y Oxana cuando llegaron con bandera blanca?",
+      "options": [
+        "Habían escapado de unos salvajes que las tenían prisioneras",
+        "Venían de la ciudad subterránea de Necrología"
+      ],
+      "answer": 0,
+      "why": "Robaron las motos a sus captores y huyeron la noche anterior (cap. 6)."
+    },
+    {
+      "type": "tf",
+      "prompt": "¿Verdadero o falso?",
+      "statement": "Kennet viene de la Potencia Central y lo encuentran herido en la fábrica de ladrillos.",
+      "answer": true,
+      "why": "Llevaba tres días tirado junto al camión cuando lo rescataron (cap. 9)."
+    },
+    {
+      "type": "story",
+      "prompt": "Elegí la respuesta correcta",
+      "question": "¿Cómo consigue Luis calmar a los salvajes de la fábrica?",
+      "options": [
+        "Les habla en el dialecto de su tierra natal",
+        "Les regala las motos del grupo"
+      ],
+      "answer": 0,
+      "why": "Los salvajes eran de su misma tierra y el acento compartido los desarmó (cap. 9)."
+    },
+    {
+      "type": "story",
+      "prompt": "Elegí la respuesta correcta",
+      "question": "¿De qué color son los ladrillos con los que se construye la fortaleza?",
+      "options": [
+        "Turquesa",
+        "Rojo"
+      ],
+      "answer": 0,
+      "why": "Por eso la llaman la fortaleza turquesa (caps. 9 y 10)."
+    },
+    {
+      "type": "tf",
+      "prompt": "¿Verdadero o falso?",
+      "statement": "Natalia, la del grupo de Robert, es pintora, y Oxana toca el violín.",
+      "answer": false,
+      "why": "Es al revés: Natalia toca el violín y Oxana pinta paisajes (cap. 10)."
+    },
+    {
+      "type": "story",
+      "prompt": "Elegí la respuesta correcta",
+      "question": "¿Cómo se llama el café que abre Sasha?",
+      "options": [
+        "Rojo Fuego",
+        "Sueño Turquesa"
+      ],
+      "answer": 0,
+      "why": "«Sueño Turquesa» es el centro cultural de Natalia y Oxana (cap. 10)."
+    },
+    {
+      "type": "tf",
+      "prompt": "¿Verdadero o falso?",
+      "statement": "Oxana y Kennet se besan por primera vez en lo alto de la torre norte.",
+      "answer": true,
+      "why": "Suben a la torre al atardecer, después de pasear junto al lago (cap. 11)."
+    },
+    {
+      "type": "story",
+      "prompt": "Elegí la respuesta correcta",
+      "question": "¿Cómo neutraliza Kennet a los guardias de la mina?",
+      "options": [
+        "Con dardos sedantes",
+        "Con una granada"
+      ],
+      "answer": 0,
+      "why": "Luis le pide que no los mate y Kennet usa dardos adormecedores (cap. 13)."
+    },
+    {
+      "type": "tf",
+      "prompt": "¿Verdadero o falso?",
+      "statement": "El Consejo vota a favor de atacar a los salvajes, como propone Luis.",
+      "answer": false,
+      "why": "Gana la propuesta de Robert de mandar parlamentarios; Luis vota en contra (cap. 15)."
+    },
+    {
+      "type": "tf",
+      "prompt": "¿Verdadero o falso?",
+      "statement": "Robert acepta que Natalia lo acompañe a negociar con los salvajes.",
+      "answer": false,
+      "why": "Se niega: ninguna mujer irá «a la boca del lobo» (cap. 15)."
+    },
+    {
+      "type": "tf",
+      "prompt": "¿Verdadero o falso?",
+      "statement": "Natalia le confiesa su amor a Robert la noche antes de la misión de paz.",
+      "answer": true,
+      "why": "Se besan bajo la luna llena y Luis lo ve todo desde las sombras (cap. 16)."
+    },
+    {
+      "type": "story",
+      "prompt": "Elegí la respuesta correcta",
+      "question": "¿Qué responde el jefe salvaje a la propuesta de paz de Robert?",
+      "options": [
+        "Que evacúen la fortaleza o la destruirán",
+        "Que acepta compartir recursos con ellos"
+      ],
+      "answer": 0,
+      "why": "Les da una sola oportunidad: irse y dejarla «limpita y ordenadita» (cap. 17)."
+    },
+    {
+      "type": "tf",
+      "prompt": "¿Verdadero o falso?",
+      "statement": "Los drones capturados por Dima tenían inscripciones en inglés.",
+      "answer": true,
+      "why": "Eran drones militares de la Potencia Central en manos de los salvajes (cap. 19)."
+    },
+    {
+      "type": "story",
+      "prompt": "Elegí la respuesta correcta",
+      "question": "En la primera batalla, ¿quién combate con furia escondido bajo un casco?",
+      "options": [
+        "Luis",
+        "Kennet"
+      ],
+      "answer": 0,
+      "why": "Alexey le grita que se calme; Luis pelea movido por el rencor (cap. 20)."
+    },
+    {
+      "type": "story",
+      "prompt": "Elegí la respuesta correcta",
+      "question": "¿Qué es Necrología?",
+      "options": [
+        "Una ciudad subterránea construida por los ricos",
+        "Un clan de salvajes del desierto"
+      ],
+      "answer": 0,
+      "why": "Allí sobrevivieron los ricos, con tecnología, comida y defensas automáticas (cap. 22)."
+    },
+    {
+      "type": "tf",
+      "prompt": "¿Verdadero o falso?",
+      "statement": "Los jóvenes salvajes capturados nunca lograron integrarse a la comunidad.",
+      "answer": false,
+      "why": "Con la guía de Vika aprendieron a cultivar, a construir y a sonreír de nuevo (cap. 23)."
+    },
+    {
+      "type": "story",
+      "prompt": "Elegí la respuesta correcta",
+      "question": "¿Qué le regala Robert a Luis cuando decide irse?",
+      "options": [
+        "Su moto de combate",
+        "Su espada"
+      ],
+      "answer": 0,
+      "why": "Es un último gesto de confianza y camaradería (cap. 24)."
+    },
+    {
+      "type": "story",
+      "prompt": "Elegí la respuesta correcta",
+      "question": "¿A quién encuentra Luis cerca de Necrología?",
+      "options": [
+        "A Natalia, la esposa de Robert",
+        "A Vika"
+      ],
+      "answer": 0,
+      "why": "Natalia, la médica, había estado un año y medio prisionera curando heridos (cap. 26)."
+    },
+    {
+      "type": "tf",
+      "prompt": "¿Verdadero o falso?",
+      "statement": "La flota de la Potencia Central llega porque la región es rica en minerales.",
+      "answer": true,
+      "why": "Buscan tierras raras para su tecnología (cap. 28)."
+    },
+    {
+      "type": "story",
+      "prompt": "Elegí la respuesta correcta",
+      "question": "¿Qué saca Dima de su armario blindado?",
+      "options": [
+        "Un violín, una guitarra eléctrica y un cajón flamenco",
+        "Una batería, un piano y una flauta"
+      ],
+      "answer": 0,
+      "why": "Los modifica para convertir la música en armas (caps. 28, 32 y 33)."
+    },
+    {
+      "type": "tf",
+      "prompt": "¿Verdadero o falso?",
+      "statement": "Después del mensaje de Kennet, el Capitán Thorne decide retirar la flota.",
+      "answer": false,
+      "why": "Thorne se burla y ordena preparar el desembarco (cap. 29)."
+    },
+    {
+      "type": "story",
+      "prompt": "Elegí la respuesta correcta",
+      "question": "¿Quién muere cuando el misil cae en la plaza?",
+      "options": [
+        "Vika",
+        "Oxana"
+      ],
+      "answer": 0,
+      "why": "Natalia la acompaña en sus últimos momentos (cap. 31)."
+    },
+    {
+      "type": "story",
+      "prompt": "Elegí la respuesta correcta",
+      "question": "¿Qué detiene a los cinco bombarderos nucleares?",
+      "options": [
+        "Los misiles de Necrología, que Luis y la médica habían tomado",
+        "Una tormenta de arena en el desierto"
+      ],
+      "answer": 0,
+      "why": "Luis y Natalia, la médica, dirigieron una revuelta y se hicieron con las defensas de la ciudad (cap. 34)."
+    },
+    {
+      "type": "tf",
+      "prompt": "¿Verdadero o falso?",
+      "statement": "Al final, Natalia, la médica, vuelve a vivir con Robert en la fortaleza.",
+      "answer": false,
+      "why": "Se va con Luis en el camión blindado (cap. 34)."
+    },
+    {
+      "type": "tf",
+      "prompt": "¿Verdadero o falso?",
+      "statement": "Robert le pide matrimonio a Natalia, la violinista, y ella acepta.",
+      "answer": true,
+      "why": "Se lo pide en la torre central, frente al lago (cap. 35)."
+    },
+    {
+      "type": "story",
+      "prompt": "Elegí la respuesta correcta",
+      "question": "¿Qué nombre recibe la capital de la República Turquesa?",
+      "options": [
+        "Viktoria",
+        "Natalia"
+      ],
+      "answer": 0,
+      "why": "Se llama así en homenaje a Vika, cuyo nombre completo era Viktoria (cap. 35)."
+    },
+    {
+      "type": "tf",
+      "prompt": "¿Verdadero o falso?",
+      "statement": "En el epílogo, Luis es feliz y ya no piensa en la violinista.",
+      "answer": false,
+      "why": "Su victoria le sabe a ceniza: no puede olvidar a Natalia, la violinista (cap. 36)."
+    }
+  ]
+}
