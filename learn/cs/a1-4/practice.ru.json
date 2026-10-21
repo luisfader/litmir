@@ -1,0 +1,273 @@
+{
+ "title": "Kde je Karlův most?",
+ "subtitle": "Kde je…? Предложный падеж после v / na, предлоги места, город.",
+ "speak": "cs-CZ",
+ "hero": "novels/podzemni-tajemstvi/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 7 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "náměstí",
+     "площадь"
+    ],
+    [
+     "most",
+     "мост"
+    ],
+    [
+     "řeka",
+     "река"
+    ],
+    [
+     "kostel",
+     "церковь"
+    ],
+    [
+     "nádraží",
+     "вокзал"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Luis je v",
+   "after": "",
+   "options": [
+    "Praze",
+    "Praha",
+    "Prahy"
+   ],
+   "answer": 0,
+   "es": "Луис в Праге."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Jana sedí v",
+   "after": "",
+   "options": [
+    "kavárně",
+    "kavárna",
+    "kavárnu"
+   ],
+   "answer": 0,
+   "es": "Яна сидит в кафе."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Lucie a Mark jsou",
+   "after": "náměstí.",
+   "options": [
+    "na",
+    "v",
+    "pod"
+   ],
+   "answer": 0,
+   "es": "Люцие и Марк на площади."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Mark má baterku v",
+   "after": "",
+   "options": [
+    "batohu",
+    "batoh",
+    "batohy"
+   ],
+   "answer": 0,
+   "es": "У Марка фонарик в рюкзаке."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "",
+   "after": "je nádraží?",
+   "options": [
+    "Kde",
+    "Kdo",
+    "Co"
+   ],
+   "answer": 0,
+   "es": "Где вокзал?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Pod",
+   "after": "je druhá Praha.",
+   "options": [
+    "Prahou",
+    "Praha",
+    "Praze"
+   ],
+   "answer": 0,
+   "es": "Под Прагой есть вторая Прага."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "vedle",
+   "options": [
+    "рядом с",
+    "под",
+    "далеко"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Není to daleko.",
+   "options": [
+    "Это недалеко.",
+    "Это очень далеко.",
+    "Это не здесь."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать на изучаемом языке?",
+   "word": "на вокзале",
+   "options": [
+    "na nádraží",
+    "v nádraží",
+    "do nádraží"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите",
+   "es": "Где Яна и Марк?",
+   "answer": [
+    "Kde",
+    "jsou",
+    "Jana",
+    "a",
+    "Mark?"
+   ],
+   "extra": [
+    "je",
+    "kdo"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "Kde jsou Luis, Jana, Lucie a Mark?",
+   "es": "Где Луис, Яна, Люцие и Марк?",
+   "options": [
+    "V podzemí Prahy.",
+    "Na nádraží.",
+    "V kavárně v Argentině."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "tramvaj",
+   "options": [
+    "трамвай",
+    "поезд",
+    "метро"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Pod Prahou je druhá Praha.",
+   "answer": true,
+   "why": "Так говорит экскурсовод Люцие."
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "здесь",
+   "answers": [
+    "tady"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Где кафе?",
+   "answers": [
+    "Kde je kavárna?",
+    "Kde je kavárna"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "«Kde» a «kdo» znamenají totéž.",
+   "answer": false,
+   "why": "Kde — где, kdo — кто."
+  }
+ ],
+ "keyboard": [
+  "á",
+  "č",
+  "ď",
+  "é",
+  "ě",
+  "í",
+  "ň",
+  "ó",
+  "ř",
+  "š",
+  "ť",
+  "ú",
+  "ů",
+  "ý",
+  "ž"
+ ]
+}

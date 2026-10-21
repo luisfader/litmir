@@ -1,0 +1,292 @@
+{
+ "title": "Луис је туриста",
+ "subtitle": "Professions, three verb types, negation, «да ли», languages, numbers and age.",
+ "speak": "sr-RS",
+ "hero": "novels/divlji-chas/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "радити",
+     "to work"
+    ],
+    [
+     "живети",
+     "to live"
+    ],
+    [
+     "говорити",
+     "to speak"
+    ],
+    [
+     "учити",
+     "to learn"
+    ],
+    [
+     "разумети",
+     "to understand"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Шта радиш?",
+   "options": [
+    "What do you do?",
+    "Where do you live?",
+    "How old are you?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Луис",
+   "after": "Београд.",
+   "options": [
+    "слика",
+    "сликам",
+    "сликају"
+   ],
+   "answer": 0,
+   "es": "Luis paints Belgrade."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Ја",
+   "after": "српски.",
+   "options": [
+    "говорим",
+    "говори",
+    "говориш"
+   ],
+   "answer": 0,
+   "es": "I speak Serbian."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Наташа",
+   "after": "у Београду.",
+   "options": [
+    "живи",
+    "живим",
+    "живе"
+   ],
+   "answer": 0,
+   "es": "Natasha lives in Belgrade."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Ја",
+   "after": "писмо.",
+   "options": [
+    "пишем",
+    "писам",
+    "пише"
+   ],
+   "answer": 0,
+   "es": "I’m writing a letter.",
+   "why": "Писати → пишем."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Они",
+   "after": "српски.",
+   "options": [
+    "говоре",
+    "говорију",
+    "говоримо"
+   ],
+   "answer": 0,
+   "es": "They speak Serbian."
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "I don’t speak well.",
+   "options": [
+    "Не говорим добро.",
+    "Неговорим добро.",
+    "Говорим не добро."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "",
+   "after": "ли руски?",
+   "options": [
+    "Говориш",
+    "Говорити",
+    "Говорим ли"
+   ],
+   "answer": 0,
+   "es": "Do you speak Russian?"
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Радим у једној фирми.",
+   "options": [
+    "I work in a company.",
+    "I’m happy about the company.",
+    "I live in a company."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "I’m 35.",
+   "answer": [
+    "Имам",
+    "35",
+    "година"
+   ],
+   "extra": [
+    "сам",
+    "године"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Колико година има Наташа у роману?",
+   "es": "How old is Natasha in the novel?",
+   "options": [
+    "Тридесет девет.",
+    "Двадесет.",
+    "Шездесет."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Имам три",
+   "after": "",
+   "options": [
+    "године",
+    "година",
+    "годину"
+   ],
+   "answer": 0,
+   "es": "I’m three.",
+   "why": "2–4 → године."
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Луис је туриста у Београду.",
+   "answer": true,
+   "why": "«Луис је туриста. Он долази у Београд.»"
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "I’m learning Serbian. (Latin letters are fine)",
+   "answers": [
+    "Учим српски",
+    "Ја учим српски"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "How old are you?",
+   "answers": [
+    "Колико имаш година?",
+    "Колико имаш година"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "«Радити» значи «радоваться».",
+   "answer": false,
+   "why": "Радити means to work."
+  }
+ ],
+ "keyboard": [
+  "а",
+  "б",
+  "в",
+  "г",
+  "д",
+  "ђ",
+  "е",
+  "ж",
+  "з",
+  "и",
+  "ј",
+  "к",
+  "л",
+  "љ",
+  "м",
+  "н",
+  "њ",
+  "о",
+  "п",
+  "р",
+  "с",
+  "т",
+  "ћ",
+  "у",
+  "ф",
+  "х",
+  "ц",
+  "ч",
+  "џ",
+  "ш"
+ ],
+ "translit": "sr"
+}

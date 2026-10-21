@@ -1,0 +1,291 @@
+{
+ "title": "Наташина породица",
+ "subtitle": "Family, the verb имати, има / нема, gender, possessives, adjectives.",
+ "speak": "sr-RS",
+ "hero": "novels/divlji-chas/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "мама",
+     "mum"
+    ],
+    [
+     "тата",
+     "dad"
+    ],
+    [
+     "брат",
+     "brother"
+    ],
+    [
+     "бака",
+     "grandmother"
+    ],
+    [
+     "родитељи",
+     "parents"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Наташа",
+   "after": "брата.",
+   "options": [
+    "има",
+    "имам",
+    "имају"
+   ],
+   "answer": 0,
+   "es": "Natasha has a brother."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Ја",
+   "after": "сестру.",
+   "options": [
+    "имам",
+    "има",
+    "имаш"
+   ],
+   "answer": 0,
+   "es": "I have a sister."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Ми",
+   "after": "велику породицу.",
+   "options": [
+    "имамо",
+    "имају",
+    "имате"
+   ],
+   "answer": 0,
+   "es": "We have a big family."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "",
+   "after": "мама је учитељица.",
+   "options": [
+    "Моја",
+    "Мој",
+    "Моје"
+   ],
+   "answer": 0,
+   "es": "My mum is a teacher."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Ово је",
+   "after": "брат. (Наташин брат)",
+   "options": [
+    "њен",
+    "њена",
+    "његов"
+   ],
+   "answer": 0,
+   "es": "This is her brother.",
+   "why": "Њен agrees with «брат»."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Београд је",
+   "after": "град.",
+   "options": [
+    "велики",
+    "велика",
+    "велико"
+   ],
+   "answer": 0,
+   "es": "Belgrade is a big city."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Овде",
+   "after": "кафића.",
+   "options": [
+    "нема",
+    "немам",
+    "није"
+   ],
+   "answer": 0,
+   "es": "There’s no café here."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "ујак",
+   "options": [
+    "uncle (mum’s brother)",
+    "uncle (dad’s brother)",
+    "cousin"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "my grandmother",
+   "options": [
+    "моја бака",
+    "мој бака",
+    "моје бака"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "This is my dad.",
+   "answer": [
+    "Ово",
+    "је",
+    "мој",
+    "тата"
+   ],
+   "extra": [
+    "моја",
+    "су"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Шта ради Наташина мама?",
+   "es": "What does Natasha’s mum do?",
+   "options": [
+    "Она је учитељица.",
+    "Она је студент.",
+    "Она је туриста."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "ћерка",
+   "options": [
+    "daughter",
+    "sister",
+    "grandmother"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Наташин брат је студент.",
+   "answer": true,
+   "why": "«Имам млађег брата, Милоша. Он је студент.»"
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "my brother",
+   "answers": [
+    "мој брат"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "I don’t have a sister.",
+   "answers": [
+    "Немам сестру",
+    "Ја немам сестру"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Реч «тата» је женског рода.",
+   "answer": false,
+   "why": "Тата is masculine, even though it ends in -а."
+  }
+ ],
+ "keyboard": [
+  "а",
+  "б",
+  "в",
+  "г",
+  "д",
+  "ђ",
+  "е",
+  "ж",
+  "з",
+  "и",
+  "ј",
+  "к",
+  "л",
+  "љ",
+  "м",
+  "н",
+  "њ",
+  "о",
+  "п",
+  "р",
+  "с",
+  "т",
+  "ћ",
+  "у",
+  "ф",
+  "х",
+  "ц",
+  "ч",
+  "џ",
+  "ш"
+ ],
+ "translit": "sr"
+}

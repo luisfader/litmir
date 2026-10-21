@@ -1,0 +1,278 @@
+{
+ "title": "Luis je hudebník",
+ "subtitle": "Professions, three verb types, the attached «ne-», languages, numbers and age.",
+ "speak": "cs-CZ",
+ "hero": "novels/podzemni-tajemstvi/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "pracovat",
+     "to work"
+    ],
+    [
+     "mluvit",
+     "to speak"
+    ],
+    [
+     "bydlet",
+     "to live"
+    ],
+    [
+     "znát",
+     "to know"
+    ],
+    [
+     "hrát",
+     "to play"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Co děláš?",
+   "options": [
+    "What do you do?",
+    "Where do you live?",
+    "How old are you?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Luis",
+   "after": "na kytaru.",
+   "options": [
+    "hraje",
+    "hraju",
+    "hrají"
+   ],
+   "answer": 0,
+   "es": "Luis plays the guitar."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Já",
+   "after": "česky.",
+   "options": [
+    "mluvím",
+    "mluví",
+    "mluvíš"
+   ],
+   "answer": 0,
+   "es": "I speak Czech."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Lucie",
+   "after": "v podzemí.",
+   "options": [
+    "pracuje",
+    "pracuju",
+    "pracujou"
+   ],
+   "answer": 0,
+   "es": "Lucie works underground."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "My",
+   "after": "v Praze.",
+   "options": [
+    "bydlíme",
+    "bydlí",
+    "bydlíte"
+   ],
+   "answer": 0,
+   "es": "We live in Prague."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Luis",
+   "after": "česky.",
+   "options": [
+    "neumí",
+    "ne umí",
+    "umí ne"
+   ],
+   "answer": 0,
+   "es": "Luis can’t speak Czech.",
+   "why": "Ne- is written together with the verb."
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "I don’t speak Russian.",
+   "options": [
+    "Nemluvím rusky.",
+    "Ne mluvím rusky.",
+    "Mluvím ne rusky."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "průvodkyně",
+   "options": [
+    "guide (female)",
+    "photographer",
+    "shop assistant"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Mark je",
+   "after": "",
+   "options": [
+    "fotograf",
+    "fotografka",
+    "fotografa"
+   ],
+   "answer": 0,
+   "es": "Mark is a photographer."
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "I’m twenty-five.",
+   "answer": [
+    "Je",
+    "mi",
+    "dvacet",
+    "pět",
+    "let"
+   ],
+   "extra": [
+    "jsem",
+    "roky"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Co dělá Mark?",
+   "es": "What does Mark do?",
+   "options": [
+    "Je fotograf.",
+    "Je hudebník.",
+    "Je průvodkyně."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Je mi tři",
+   "after": "",
+   "options": [
+    "roky",
+    "let",
+    "rok"
+   ],
+   "answer": 0,
+   "es": "I’m three.",
+   "why": "2–4 → roky."
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Luis je z Argentiny a je hudebník.",
+   "answer": true,
+   "why": "That’s how the second chapter of the novel begins."
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "I speak Czech.",
+   "answers": [
+    "Mluvím česky",
+    "Já mluvím česky"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "How old are you?",
+   "answers": [
+    "Kolik je ti let?",
+    "Kolik je ti let"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Lucie je fotografka.",
+   "answer": false,
+   "why": "Lucie is a guide; Mark is the photographer."
+  }
+ ],
+ "keyboard": [
+  "á",
+  "č",
+  "ď",
+  "é",
+  "ě",
+  "í",
+  "ň",
+  "ó",
+  "ř",
+  "š",
+  "ť",
+  "ú",
+  "ů",
+  "ý",
+  "ž"
+ ]
+}

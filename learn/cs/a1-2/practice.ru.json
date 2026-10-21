@@ -1,0 +1,278 @@
+{
+ "title": "Luis je hudebník",
+ "subtitle": "Профессии, три типа глаголов, слитное «ne-», языки, числа и возраст.",
+ "speak": "cs-CZ",
+ "hero": "novels/podzemni-tajemstvi/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 7 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "pracovat",
+     "работать"
+    ],
+    [
+     "mluvit",
+     "говорить"
+    ],
+    [
+     "bydlet",
+     "жить"
+    ],
+    [
+     "znát",
+     "знать"
+    ],
+    [
+     "hrát",
+     "играть"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Co děláš?",
+   "options": [
+    "Чем ты занимаешься?",
+    "Где ты живёшь?",
+    "Сколько тебе лет?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Luis",
+   "after": "na kytaru.",
+   "options": [
+    "hraje",
+    "hraju",
+    "hrají"
+   ],
+   "answer": 0,
+   "es": "Луис играет на гитаре."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Já",
+   "after": "česky.",
+   "options": [
+    "mluvím",
+    "mluví",
+    "mluvíš"
+   ],
+   "answer": 0,
+   "es": "Я говорю по-чешски."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Lucie",
+   "after": "v podzemí.",
+   "options": [
+    "pracuje",
+    "pracuju",
+    "pracujou"
+   ],
+   "answer": 0,
+   "es": "Люцие работает в подземелье."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "My",
+   "after": "v Praze.",
+   "options": [
+    "bydlíme",
+    "bydlí",
+    "bydlíte"
+   ],
+   "answer": 0,
+   "es": "Мы живём в Праге."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Luis",
+   "after": "česky.",
+   "options": [
+    "neumí",
+    "ne umí",
+    "umí ne"
+   ],
+   "answer": 0,
+   "es": "Луис не умеет говорить по-чешски.",
+   "why": "Ne- пишется слитно."
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать на изучаемом языке?",
+   "word": "Я не говорю по-русски.",
+   "options": [
+    "Nemluvím rusky.",
+    "Ne mluvím rusky.",
+    "Mluvím ne rusky."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "průvodkyně",
+   "options": [
+    "экскурсовод (женщина)",
+    "фотограф",
+    "продавщица"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Mark je",
+   "after": "",
+   "options": [
+    "fotograf",
+    "fotografka",
+    "fotografa"
+   ],
+   "answer": 0,
+   "es": "Марк — фотограф."
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите",
+   "es": "Мне двадцать пять лет.",
+   "answer": [
+    "Je",
+    "mi",
+    "dvacet",
+    "pět",
+    "let"
+   ],
+   "extra": [
+    "jsem",
+    "roky"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "Co dělá Mark?",
+   "es": "Чем занимается Марк?",
+   "options": [
+    "Je fotograf.",
+    "Je hudebník.",
+    "Je průvodkyně."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Je mi tři",
+   "after": "",
+   "options": [
+    "roky",
+    "let",
+    "rok"
+   ],
+   "answer": 0,
+   "es": "Мне три года.",
+   "why": "2–4 → roky."
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Luis je z Argentiny a je hudebník.",
+   "answer": true,
+   "why": "Так начинается вторая глава романа."
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Я говорю по-чешски.",
+   "answers": [
+    "Mluvím česky",
+    "Já mluvím česky"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Сколько тебе лет?",
+   "answers": [
+    "Kolik je ti let?",
+    "Kolik je ti let"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Lucie je fotografka.",
+   "answer": false,
+   "why": "Люцие — экскурсовод, фотограф — Марк."
+  }
+ ],
+ "keyboard": [
+  "á",
+  "č",
+  "ď",
+  "é",
+  "ě",
+  "í",
+  "ň",
+  "ó",
+  "ř",
+  "š",
+  "ť",
+  "ú",
+  "ů",
+  "ý",
+  "ž"
+ ]
+}

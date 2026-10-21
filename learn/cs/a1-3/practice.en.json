@@ -1,0 +1,277 @@
+{
+ "title": "Janina rodina",
+ "subtitle": "Family, the verb mít, gender (ten / ta / to), possessives, adjectives.",
+ "speak": "cs-CZ",
+ "hero": "novels/podzemni-tajemstvi/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "máma",
+     "mum"
+    ],
+    [
+     "táta",
+     "dad"
+    ],
+    [
+     "bratr",
+     "brother"
+    ],
+    [
+     "babička",
+     "grandmother"
+    ],
+    [
+     "rodiče",
+     "parents"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Jana",
+   "after": "bratra.",
+   "options": [
+    "má",
+    "mám",
+    "mají"
+   ],
+   "answer": 0,
+   "es": "Jana has a brother."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Já",
+   "after": "sestru.",
+   "options": [
+    "mám",
+    "má",
+    "máš"
+   ],
+   "answer": 0,
+   "es": "I have a sister."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "My",
+   "after": "malou dílnu.",
+   "options": [
+    "máme",
+    "mají",
+    "máte"
+   ],
+   "answer": 0,
+   "es": "We have a small workshop."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "",
+   "after": "táta je vysoký.",
+   "options": [
+    "Můj",
+    "Moje",
+    "Má"
+   ],
+   "answer": 0,
+   "es": "My dad is tall."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "",
+   "after": "máma je švadlena.",
+   "options": [
+    "Moje",
+    "Můj",
+    "Mého"
+   ],
+   "answer": 0,
+   "es": "My mum is a seamstress."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Lucie je",
+   "after": "",
+   "options": [
+    "vysoká",
+    "vysoký",
+    "vysoké"
+   ],
+   "answer": 0,
+   "es": "Lucie is tall."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "",
+   "after": "město je staré.",
+   "options": [
+    "To",
+    "Ten",
+    "Ta"
+   ],
+   "answer": 0,
+   "es": "This town is old.",
+   "why": "Město is neuter → to."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Já",
+   "after": "psa.",
+   "options": [
+    "nemám",
+    "ne mám",
+    "mám ne"
+   ],
+   "answer": 0,
+   "es": "I don’t have a dog."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Táta má rád hudbu.",
+   "options": [
+    "Dad loves music.",
+    "Dad has music.",
+    "Dad plays music."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "her mum",
+   "options": [
+    "její máma",
+    "jeho máma",
+    "moje máma"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "This is my grandmother.",
+   "answer": [
+    "To",
+    "je",
+    "moje",
+    "babička"
+   ],
+   "extra": [
+    "můj",
+    "jsou"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Kdo ušil Janinu sukni?",
+   "es": "Who sewed Jana’s skirt?",
+   "options": [
+    "Její máma.",
+    "Její táta.",
+    "Lucie."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Janin táta má rád hudbu.",
+   "answer": true,
+   "why": "«Je vysoký a má rád hudbu — jako ty!»"
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "my brother",
+   "answers": [
+    "můj bratr"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "I have a sister.",
+   "answers": [
+    "Mám sestru",
+    "Já mám sestru"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "V češtině je přídavné jméno obvykle za podstatným jménem.",
+   "answer": false,
+   "why": "The adjective goes before the noun: malá dílna."
+  }
+ ],
+ "keyboard": [
+  "á",
+  "č",
+  "ď",
+  "é",
+  "ě",
+  "í",
+  "ň",
+  "ó",
+  "ř",
+  "š",
+  "ť",
+  "ú",
+  "ů",
+  "ý",
+  "ž"
+ ]
+}

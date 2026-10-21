@@ -1,0 +1,290 @@
+{
+ "title": "Где је Калемегдан?",
+ "subtitle": "Где је…? The locative after у / на, prepositions of place, the city.",
+ "speak": "sr-RS",
+ "hero": "novels/divlji-chas/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "улица",
+     "street"
+    ],
+    [
+     "река",
+     "river"
+    ],
+    [
+     "мост",
+     "bridge"
+    ],
+    [
+     "тврђава",
+     "fortress"
+    ],
+    [
+     "трг",
+     "square"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Луис је у",
+   "after": "",
+   "options": [
+    "Београду",
+    "Београд",
+    "Београда"
+   ],
+   "answer": 0,
+   "es": "Luis is in Belgrade."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Тврђава је на",
+   "after": "",
+   "options": [
+    "Калемегдану",
+    "Калемегдан",
+    "Калемегдана"
+   ],
+   "answer": 0,
+   "es": "The fortress is at Kalemegdan."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Наташа је у",
+   "after": "",
+   "options": [
+    "кафићу",
+    "кафић",
+    "кафића"
+   ],
+   "answer": 0,
+   "es": "Natasha is in the café."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Они су у",
+   "after": "",
+   "options": [
+    "улици",
+    "улица",
+    "улицу"
+   ],
+   "answer": 0,
+   "es": "They’re in the street.",
+   "why": "Feminine → -и."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Кафић је поред",
+   "after": "",
+   "options": [
+    "књижаре",
+    "књижара",
+    "књижари"
+   ],
+   "answer": 0,
+   "es": "The café is next to the bookshop."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "",
+   "after": "је Калемегдан?",
+   "options": [
+    "Где",
+    "Ко",
+    "Шта"
+   ],
+   "answer": 0,
+   "es": "Where is Kalemegdan?"
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "преко пута",
+   "options": [
+    "opposite",
+    "across the bridge",
+    "on the way"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Није далеко.",
+   "options": [
+    "It’s not far.",
+    "It’s very far.",
+    "It’s not here."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "on the bridge",
+   "options": [
+    "на мосту",
+    "у мост",
+    "на мост"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "Where are Natasha and Luis?",
+   "answer": [
+    "Где",
+    "су",
+    "Наташа",
+    "и",
+    "Луис?"
+   ],
+   "extra": [
+    "је",
+    "ко"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Које реке теку кроз Београд?",
+   "es": "Which rivers flow through Belgrade?",
+   "options": [
+    "Сава и Дунав.",
+    "Влтава и Дунав.",
+    "Москва и Нева."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "тврђава",
+   "options": [
+    "fortress",
+    "church",
+    "square"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Калемегдан је парк и стара тврђава.",
+   "answer": true,
+   "why": "«Калемегдан је велики парк и стара тврђава.»"
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "here",
+   "answers": [
+    "овде"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "Where is the café?",
+   "answers": [
+    "Где је кафић?",
+    "Где је кафић"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Калемегдан је река.",
+   "answer": false,
+   "why": "The rivers are the Sava and the Danube; Kalemegdan is a park and fortress."
+  }
+ ],
+ "keyboard": [
+  "а",
+  "б",
+  "в",
+  "г",
+  "д",
+  "ђ",
+  "е",
+  "ж",
+  "з",
+  "и",
+  "ј",
+  "к",
+  "л",
+  "љ",
+  "м",
+  "н",
+  "њ",
+  "о",
+  "п",
+  "р",
+  "с",
+  "т",
+  "ћ",
+  "у",
+  "ф",
+  "х",
+  "ц",
+  "ч",
+  "џ",
+  "ш"
+ ],
+ "translit": "sr"
+}

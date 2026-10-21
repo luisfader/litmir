@@ -432,6 +432,42 @@
      },
      "cover": "novels/podzemni-tajemstvi/cover.jpg",
      "novel": "podzemni-tajemstvi"
+    },
+    {
+     "id": "a1-2",
+     "level": "A1",
+     "n": 2,
+     "title": "Luis je hudebník",
+     "sub": {
+      "ru": "Профессии, три типа глаголов, слитное NE-, языки, числа и возраст",
+      "en": "Professions, three verb types, the attached NE-, languages, numbers and age"
+     },
+     "cover": "novels/podzemni-tajemstvi/cover.jpg",
+     "novel": "podzemni-tajemstvi"
+    },
+    {
+     "id": "a1-3",
+     "level": "A1",
+     "n": 3,
+     "title": "Janina rodina",
+     "sub": {
+      "ru": "Семья, глагол MÍT, род (ten / ta / to), притяжательные, прилагательные",
+      "en": "Family, the verb MÍT, gender (ten / ta / to), possessives, adjectives"
+     },
+     "cover": "novels/podzemni-tajemstvi/cover.jpg",
+     "novel": "podzemni-tajemstvi"
+    },
+    {
+     "id": "a1-4",
+     "level": "A1",
+     "n": 4,
+     "title": "Kde je Karlův most?",
+     "sub": {
+      "ru": "KDE JE…? Предложный падеж после V / NA, предлоги места, город",
+      "en": "KDE JE…? The locative after V / NA, prepositions of place, the city"
+     },
+     "cover": "novels/podzemni-tajemstvi/cover.jpg",
+     "novel": "podzemni-tajemstvi"
     }
    ]
   },
@@ -456,6 +492,42 @@
      "sub": {
       "ru": "Две азбуки, приветствия, знакомство, местоимения, глагол БИТИ, национальности",
       "en": "Two alphabets, greetings, introductions, pronouns, the verb БИТИ, nationalities"
+     },
+     "cover": "novels/divlji-chas/cover.jpg",
+     "novel": "divlji-chas"
+    },
+    {
+     "id": "a1-2",
+     "level": "A1",
+     "n": 2,
+     "title": "Луис је туриста",
+     "sub": {
+      "ru": "Профессии, три типа глаголов, отрицание, ДА ЛИ, языки, числа и возраст",
+      "en": "Professions, three verb types, negation, ДА ЛИ, languages, numbers and age"
+     },
+     "cover": "novels/divlji-chas/cover.jpg",
+     "novel": "divlji-chas"
+    },
+    {
+     "id": "a1-3",
+     "level": "A1",
+     "n": 3,
+     "title": "Наташина породица",
+     "sub": {
+      "ru": "Семья, глагол ИМАТИ, има / нема, род, притяжательные, прилагательные",
+      "en": "Family, the verb ИМАТИ, има / нема, gender, possessives, adjectives"
+     },
+     "cover": "novels/divlji-chas/cover.jpg",
+     "novel": "divlji-chas"
+    },
+    {
+     "id": "a1-4",
+     "level": "A1",
+     "n": 4,
+     "title": "Где је Калемегдан?",
+     "sub": {
+      "ru": "ГДЕ ЈЕ…? Локатив после У / НА, предлоги места, город",
+      "en": "ГДЕ ЈЕ…? The locative after У / НА, prepositions of place, the city"
      },
      "cover": "novels/divlji-chas/cover.jpg",
      "novel": "divlji-chas"

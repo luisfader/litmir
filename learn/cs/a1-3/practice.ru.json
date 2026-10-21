@@ -1,0 +1,277 @@
+{
+ "title": "Janina rodina",
+ "subtitle": "Семья, глагол mít, род (ten / ta / to), притяжательные, прилагательные.",
+ "speak": "cs-CZ",
+ "hero": "novels/podzemni-tajemstvi/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 7 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "máma",
+     "мама"
+    ],
+    [
+     "táta",
+     "папа"
+    ],
+    [
+     "bratr",
+     "брат"
+    ],
+    [
+     "babička",
+     "бабушка"
+    ],
+    [
+     "rodiče",
+     "родители"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Jana",
+   "after": "bratra.",
+   "options": [
+    "má",
+    "mám",
+    "mají"
+   ],
+   "answer": 0,
+   "es": "У Яны есть брат."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Já",
+   "after": "sestru.",
+   "options": [
+    "mám",
+    "má",
+    "máš"
+   ],
+   "answer": 0,
+   "es": "У меня есть сестра."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "My",
+   "after": "malou dílnu.",
+   "options": [
+    "máme",
+    "mají",
+    "máte"
+   ],
+   "answer": 0,
+   "es": "У нас маленькая мастерская."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "",
+   "after": "táta je vysoký.",
+   "options": [
+    "Můj",
+    "Moje",
+    "Má"
+   ],
+   "answer": 0,
+   "es": "Мой папа высокий."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "",
+   "after": "máma je švadlena.",
+   "options": [
+    "Moje",
+    "Můj",
+    "Mého"
+   ],
+   "answer": 0,
+   "es": "Моя мама — портниха."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Lucie je",
+   "after": "",
+   "options": [
+    "vysoká",
+    "vysoký",
+    "vysoké"
+   ],
+   "answer": 0,
+   "es": "Люцие высокая."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "",
+   "after": "město je staré.",
+   "options": [
+    "To",
+    "Ten",
+    "Ta"
+   ],
+   "answer": 0,
+   "es": "Этот город старый.",
+   "why": "Město — средний род → to."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Já",
+   "after": "psa.",
+   "options": [
+    "nemám",
+    "ne mám",
+    "mám ne"
+   ],
+   "answer": 0,
+   "es": "У меня нет собаки."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Táta má rád hudbu.",
+   "options": [
+    "Папа любит музыку.",
+    "У папы есть музыка.",
+    "Папа играет музыку."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать на изучаемом языке?",
+   "word": "её мама",
+   "options": [
+    "její máma",
+    "jeho máma",
+    "moje máma"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите",
+   "es": "Это моя бабушка.",
+   "answer": [
+    "To",
+    "je",
+    "moje",
+    "babička"
+   ],
+   "extra": [
+    "můj",
+    "jsou"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "Kdo ušil Janinu sukni?",
+   "es": "Кто сшил юбку Яны?",
+   "options": [
+    "Její máma.",
+    "Její táta.",
+    "Lucie."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Janin táta má rád hudbu.",
+   "answer": true,
+   "why": "«Je vysoký a má rád hudbu — jako ty!»"
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "мой брат",
+   "answers": [
+    "můj bratr"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "У меня есть сестра.",
+   "answers": [
+    "Mám sestru",
+    "Já mám sestru"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "V češtině je přídavné jméno obvykle za podstatným jménem.",
+   "answer": false,
+   "why": "Прилагательное стоит перед существительным: malá dílna."
+  }
+ ],
+ "keyboard": [
+  "á",
+  "č",
+  "ď",
+  "é",
+  "ě",
+  "í",
+  "ň",
+  "ó",
+  "ř",
+  "š",
+  "ť",
+  "ú",
+  "ů",
+  "ý",
+  "ž"
+ ]
+}
