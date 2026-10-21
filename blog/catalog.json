@@ -1,6 +1,14 @@
 {
   "posts": [
     {
+      "slug": "resenha-mundo-turquesa",
+      "lang": "pt",
+      "title": "«Mundo Turquesa»: uma utopia que aprende a trocar muros por pontes",
+      "date": "2026-10-21",
+      "excerpt": "Muralhas turquesa, uma cisterna antes de qualquer torre e vilões que chamam liberdade ao medo. A nossa resenha do romance pós-apocalíptico de Robert Fader.",
+      "image": "novels/mundo-turquesa/cover.jpg"
+    },
+    {
       "slug": "rosa-ile-soylesi",
       "lang": "tr",
       "title": "“Çöl kimseye ait değildir, ben de”: Rosa ile söyleşi",
