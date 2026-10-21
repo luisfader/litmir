@@ -964,7 +964,7 @@ async function reader(n, idx){
       <button class="sw" data-th="sepia" style="background:#efe2c8" aria-label="sepia"></button>
       <button class="sw" data-th="dark" style="background:#1d1914" aria-label="dark"></button>
     </div></div><div class="progress" id="prog"></div></div>
-  <article class="chapter" lang="${n.lang}">
+  <article class="chapter" lang="${n.lang}"${n.glossLangs ? ` data-gl="${esc(n.glossLangs.join(","))}"` : ""}>
     <div class="kicker">${esc(label)}</div>
     <h1>${esc(title)}</h1>
     ${renderText(md)}
@@ -1451,7 +1451,8 @@ fetch("novels/catalog.json", {cache:"no-cache"}).then(r => r.json()).then(j => {
   function show(el){
     if (!tip){ tip = document.createElement("div"); tip.id = "glossTip"; tip.setAttribute("role","tooltip"); document.body.appendChild(tip); }
     if (cur !== el) shownAt = Date.now(); cur = el; const pr = el.dataset.tr.split("|");
-    if (pr.length > 1){ tip.innerHTML = ""; [["RU",pr[0]],["EN",pr[1]],["SR",pr[2]]].filter(([,v]) => v && v.trim()).forEach(([k,v]) => { const d = document.createElement("div"); const b = document.createElement("b"); b.textContent = k; d.append(b, " " + v.trim()); tip.appendChild(d); }); }
+    if (pr.length > 1){ tip.innerHTML = ""; const art = el.closest("[data-gl]"), gl = art ? art.dataset.gl.split(",") : ["RU","EN","SR"];
+      pr.map((v,i) => { const m = v.match(/^\s*([A-Z]{2,3}):\s*([\s\S]*)$/); return m ? [m[1], m[2]] : [gl[i] || "", v]; }).filter(([,v]) => v && v.trim()).forEach(([k,v]) => { const d = document.createElement("div"); const b = document.createElement("b"); b.textContent = k; d.append(b, " " + v.trim()); tip.appendChild(d); }); }
     else tip.textContent = el.dataset.tr;
     tip.classList.add("on");
     const r = el.getBoundingClientRect(), w = tip.offsetWidth, h = tip.offsetHeight;
