@@ -87,6 +87,13 @@ article.chapter.post a{color:var(--accent)}
 .card .meta{font-family:var(--sans);font-size:12px;color:var(--muted);display:flex;gap:6px;flex-wrap:wrap;align-items:center}
 .pill{border:1px solid var(--line);border-radius:999px;padding:1px 7px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;font-size:10.5px}
 .pill.off{opacity:.4}
+.stars{display:inline-flex;gap:1px;font-family:var(--sans);font-size:14px;line-height:1;letter-spacing:0;vertical-align:middle}
+.stars i{font-style:normal;position:relative;color:color-mix(in srgb,var(--muted) 45%,transparent)}
+.stars i.f{color:#d4a017}
+.stars i.h::before{content:"★";position:absolute;left:0;top:0;width:50%;overflow:hidden;color:#d4a017}
+.stars small{margin-left:5px;font-size:11px;color:var(--muted);font-weight:600}
+.card .stars{margin-top:4px}
+.by .stars{margin-left:2px}
 .empty{text-align:center;color:var(--muted);padding:40px 0 80px;font-size:18px}
 
 /* Novel page */
@@ -784,6 +791,13 @@ document.getElementById("langs").addEventListener("click", e => {
 
 const PALETTE = ["#7a2e2e","#2f4a5c","#4b5b35","#5a3b5f","#8a5a24","#2e4f4a","#3d3a6b","#6b3a2a"];
 function author(n){ return n.author || (UI[n.lang] ? UI[n.lang].author : t("author")); }
+const STARS_T={es:"Valoración del editor",ru:"Оценка редакции",it:"Valutazione della redazione",en:"Editor's rating",de:"Bewertung der Redaktion",fr:"Note de la rédaction",tr:"Editörün puanı",pt:"Avaliação do editor",cs:"Hodnocení redakce",sr:"Оцена уредништва",eo:"Takso de la redakcio",isv:"Ocěnka redakcije",ia:"Evalutation del redaction"};
+function starsHTML(n, withNum){
+  if (!n.stars) return "";
+  const s = Math.round(n.stars*2)/2, lab = (STARS_T[n.lang] || STARS_T.en) + ": " + String(s).replace(".", n.lang==="en"?".":",") + "/5";
+  let h = ""; for (let k=1;k<=5;k++) h += `<i class="${s>=k?"f":s>=k-0.5?"h":""}">★</i>`;
+  return `<span class="stars" title="${esc(lab)}" aria-label="${esc(lab)}">${h}${withNum?`<small>${esc(String(s).replace(".", n.lang==="en"?".":","))}</small>`:""}</span>`;
+}
 function coverHTML(n){
   const badge = (n.adult ? `<span class="badge18">18+</span>` : "");
   if (n.cover) return `<div class="cover"><img src="${esc(n.cover)}" alt="${esc(n.title)}" loading="lazy">${badge}</div>`;
@@ -798,7 +812,7 @@ function chapterNo(n, i){ let k = 0; for (let j = 0; j < i; j++) if (!n.chapters
 
 function home(){
   document.title = t("hero") + " — " + t("author");
-  const list = catalog.novels.filter(n => !n.hidden && n.lang === lang);
+  const list = catalog.novels.filter(n => !n.hidden && n.lang === lang).map((n,i)=>[n,i]).sort((a,b)=>(b[0].stars||0)-(a[0].stars||0)||a[1]-b[1]).map(x=>x[0]);
   const characterLabels = {ru:"Персонажи",es:"Personajes",it:"Personaggi",en:"Characters",de:"Figuren",fr:"Personnages",tr:"Karakterler",pt:"Personagens",cs:"Postavy",sr:"Ликови",eo:"Roluloj",isv:"Postavy",vo:"Pösods",ia:"Personages",ld:"Personajenes"};
   app.innerHTML = `
   <section class="hero wrap">
@@ -815,7 +829,7 @@ function home(){
       const nch = n.chapters.filter(c => !c.label).length;
       return `<a class="card" href="#/${esc(n.slug)}">${coverHTML(n)}
         <h3>${esc(n.title)}</h3>
-        <div class="meta">${n.genre ? esc(n.genre) + " · " : ""}${esc(t("chapters")(nch))}${n.study ? ` <span class="pill study">${esc(t("study"))}</span>` : ""}${n.wip ? ` <span class="pill wip">${esc(t("wip"))}</span>` : ""}${n.adult ? ' <span class="pill adult">18+</span>' : ""}${!n.adult && n.rating ? ` <span class="pill">${esc(n.rating)}</span>` : ""}</div></a>`;
+        <div class="meta">${n.genre ? esc(n.genre) + " · " : ""}${esc(t("chapters")(nch))}${n.study ? ` <span class="pill study">${esc(t("study"))}</span>` : ""}${n.wip ? ` <span class="pill wip">${esc(t("wip"))}</span>` : ""}${n.adult ? ' <span class="pill adult">18+</span>' : ""}${!n.adult && n.rating ? ` <span class="pill">${esc(n.rating)}</span>` : ""}</div>${starsHTML(n)}</a>`;
     }).join("")}</div>` : `<div class="empty">${esc(t("empty"))}</div>`}
   </section>`;
   const charactersEntry = document.getElementById("charactersEntry");
@@ -944,6 +958,7 @@ function novelPage(n){
     <div>
       <h1>${esc(n.title)}</h1>
       <div class="by">${esc(author(n))}${n.genre ? " · " + esc(n.genre) : ""}${n.year ? " · " + esc(n.year) : ""}${n.study ? ` <span class="pill study">${esc(t("study"))}</span>` : ""}${n.wip ? ` <span class="pill wip">${esc(t("wip"))}</span>` : ""}${n.adult ? ' <span class="pill adult">18+</span>' : ""}${!n.adult && n.rating ? ` <span class="pill">${esc(n.rating)}</span>` : ""}</div>
+      ${n.stars ? `<div class="by">${starsHTML(n, true)} <small>${esc(STARS_T[n.lang] || STARS_T.en)}</small></div>` : ""}
       ${n.description ? `<div class="desc">${esc(n.description)}</div>` : ""}
       ${n.study ? `<div class="notice">📖 ${esc(t("studyNote"))}</div>` : ""}
       ${n.wip ? `<div class="notice">✎ ${esc(t("wipNote"))}</div>` : ""}
