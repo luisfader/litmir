@@ -1,6 +1,104 @@
 {
   "posts": [
     {
+      "slug": "cinco-preguntas-al-escritor-2026",
+      "lang": "es",
+      "title": "Escribir para decirle al mundo que existo: cinco preguntas a Luis Fader",
+      "date": "2026-10-21",
+      "excerpt": "Cinco respuestas sobre la vocación de escribir, la inspiración espontánea, el optimismo y el sueño de ver sus libros en una librería."
+    },
+    {
+      "slug": "cinco-preguntas-al-escritor-2026",
+      "lang": "en",
+      "title": "Writing to Tell the World I Exist: Five Questions for Luis Fader",
+      "date": "2026-10-21",
+      "excerpt": "Five answers on writing as a need, unexpected inspiration, hope and the dream of finding his books in a bookshop."
+    },
+    {
+      "slug": "cinco-preguntas-al-escritor-2026",
+      "lang": "it",
+      "title": "Scrivere per dire al mondo che esisto: cinque domande a Roberto Fader",
+      "date": "2026-10-21",
+      "excerpt": "Cinque risposte sulla vocazione di scrivere, l'ispirazione inattesa, l'ottimismo e il sogno di vedere i propri libri in libreria."
+    },
+    {
+      "slug": "cinco-preguntas-al-escritor-2026",
+      "lang": "ru",
+      "title": "Писать, чтобы сказать миру: я существую. Пять вопросов Роберту Фадеру",
+      "date": "2026-10-21",
+      "excerpt": "Пять ответов о потребности писать, неожиданных идеях, надежде и мечте увидеть свои книги на полках магазина."
+    },
+    {
+      "slug": "cinco-preguntas-al-escritor-2026",
+      "lang": "fr",
+      "title": "Écrire pour dire au monde que j'existe : cinq questions à Robert Fader",
+      "date": "2026-10-21",
+      "excerpt": "Cinq réponses sur le besoin d'écrire, l'inspiration inattendue, l'espoir et le rêve de voir ses livres en librairie."
+    },
+    {
+      "slug": "cinco-preguntas-al-escritor-2026",
+      "lang": "de",
+      "title": "Schreiben, um der Welt zu sagen: Ich bin da – fünf Fragen an Robert Fader",
+      "date": "2026-10-21",
+      "excerpt": "Fünf Antworten über die Lust am Schreiben, spontane Ideen, Hoffnung und den Traum von eigenen Büchern im Buchhandel."
+    },
+    {
+      "slug": "cinco-preguntas-al-escritor-2026",
+      "lang": "pt",
+      "title": "Escrever para dizer ao mundo que existo: cinco perguntas a Robert Fader",
+      "date": "2026-10-21",
+      "excerpt": "Cinco respostas sobre a necessidade de escrever, a inspiração espontânea, o otimismo e o sonho de ver os livros numa livraria."
+    },
+    {
+      "slug": "cinco-preguntas-al-escritor-2026",
+      "lang": "cs",
+      "title": "Píšu, abych světu řekl, že existuji: pět otázek pro Roberta Fadera",
+      "date": "2026-10-21",
+      "excerpt": "Pět odpovědí o potřebě psát, nečekané inspiraci, optimismu a snu vidět své knihy v knihkupectví."
+    },
+    {
+      "slug": "cinco-preguntas-al-escritor-2026",
+      "lang": "sr",
+      "title": "Пишем да кажем свету да постојим: пет питања за Роберта Фадера",
+      "date": "2026-10-21",
+      "excerpt": "Пет одговора о потреби за писањем, спонтаној инспирацији, оптимизму и сну о књигама у књижари."
+    },
+    {
+      "slug": "cinco-preguntas-al-escritor-2026",
+      "lang": "tr",
+      "title": "Dünyaya var olduğumu söylemek için yazıyorum: Robert Fader'e beş soru",
+      "date": "2026-10-21",
+      "excerpt": "Yazma ihtiyacı, beklenmedik ilham, umut ve kitaplarını kitabevinde görme hayali üzerine beş yanıt."
+    },
+    {
+      "slug": "cinco-preguntas-al-escritor-2026",
+      "lang": "eo",
+      "title": "Verki por diri al la mondo, ke mi ekzistas: kvin demandoj al Robert Fader",
+      "date": "2026-10-21",
+      "excerpt": "Kvin respondoj pri la bezono verki, spontanea inspiro, espero kaj la revo vidi siajn librojn en librovendejo."
+    },
+    {
+      "slug": "cinco-preguntas-al-escritor-2026",
+      "lang": "ia",
+      "title": "Scriber pro dicer al mundo que io existe: cinque questiones a Robert Fader",
+      "date": "2026-10-21",
+      "excerpt": "Cinque responsas super le necessitate de scriber, inspiration spontane, sperantia e le sonio de vider su libros in librerias."
+    },
+    {
+      "slug": "cinco-preguntas-al-escritor-2026",
+      "lang": "isv",
+      "title": "Pisati, da by skazati světu, že ja jesm: pet pytanj Robertu Faderu",
+      "date": "2026-10-21",
+      "excerpt": "Pet odgovorov o potrebě pisanja, inspiraciji, optimizmu i snu o knigah v knigarni."
+    },
+    {
+      "slug": "cinco-preguntas-al-escritor-2026",
+      "lang": "vo",
+      "title": "Penön ad sagön at vol, das eg binob: lul pöls pro Robert Fader",
+      "date": "2026-10-21",
+      "excerpt": "Lul respondis dö penam, ideas, spel e drem dö buks in bukiselöp."
+    },
+    {
       "slug": "intervju-s-natalijeju",
       "lang": "isv",
       "title": "„Utopija jest kako slonova kost“: intervju s Natalijeju",
