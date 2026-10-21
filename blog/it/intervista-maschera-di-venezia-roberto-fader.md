@@ -16,15 +16,21 @@ Anche la notte è fondamentale: praticamente non ci sono scene diurne, tutto si 
 
 Roberto è un archeologo che ama i misteri. Ha una teoria particolare: secondo lui Venezia non sarebbe stata costruita sull’acqua, ma sarebbe stata sommersa dalle acque nel corso del tempo. Arriva in città per cercare di dimostrarlo, ma i suoi piani cambiano bruscamente quando incontra Natalia, una ragazza bellissima e misteriosa. Da una parte sembra appartenere a Venezia; dall’altra, c’è qualcosa di strano e inspiegabile nella sua presenza.
 
+![Roberto segue Natalia, mascherata, fino a una porta antica in una calle veneziana illuminata dalla luna](blog/it/img/maschera-1.webp)
+
 **Natasha: È soprattutto una storia d’amore o una storia di mistero?**
 
 **Roberto Fader:** È una combinazione, ma preferirei usare un’altra parola: *romanticismo*, più che amore. Una volta una mia alunna, dopo aver letto il romanzo, mi ha detto: «Sai che cosa ho capito grazie al tuo romanzo? Che nel mondo di oggi non c’è quasi più romanticismo». Secondo lei tutto sembra spento, come se il romanticismo non esistesse più nella vita moderna.
 
 Ecco, credo che *Maschera di Venezia* sia proprio una combinazione di romanticismo e mistero. Perché, in fondo, **l’amore, di per sé, è un mistero**.
 
+![Di notte, in gondola sul Canal Grande, mentre da un’altra gondola Natalia osserva in silenzio](blog/it/img/maschera-2.webp)
+
 **Natasha: Di Natalia ti piace di più il carattere, la bellezza o il mistero che la circonda?**
 
 **Roberto Fader:** È difficile scegliere, a dire la verità. Mi piace tutto: il suo carattere, il mistero che la circonda e naturalmente la sua bellezza, che mi affascina.
+
+![Roberto e Natalia ballano al Carnevale sotto la luna di Venezia](blog/it/img/maschera-3.webp)
 
 Ti confesso un segreto. Un giorno, mentre scrivevo un altro romanzo in cui compare Natalia, appartenente a un’altra saga, mi sono reso conto che mi stavo innamorando del mio stesso personaggio. Mi sono detto: «Questo è pericoloso!». Poi ho cercato informazioni dal punto di vista psicologico e ho letto che può succedere a uno scrittore. Spero sia normale! *(Ride.)*
 
