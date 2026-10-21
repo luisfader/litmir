@@ -116,6 +116,7 @@ article.chapter.post a{color:var(--accent)}
 .saga a .badge18{display:none}
 .saga a.cur{opacity:.55;pointer-events:none}
 .saga a small{display:block;color:var(--muted);font-size:10px;margin-top:2px}
+.saga-description{font-family:var(--sans);font-size:13px;line-height:1.55;color:var(--muted);margin:0 0 14px;max-width:680px}
 
 /* Reader */
 .reader-bar{position:sticky;top:60px;z-index:9;background:var(--bg);border-bottom:1px solid var(--line)}
@@ -872,20 +873,23 @@ function sagaHTML(n){
   const all = catalog.series || [], bySlug = Object.fromEntries(catalog.novels.map(x => [x.slug, x]));
   const mine = new Set([n.slug, ...Object.values(n.translations || {})]);
   return all.filter(s => s.novels.some(m => mine.has(m) || Object.values((bySlug[m]||{}).translations || {}).some(x => mine.has(x)))).map(s => {
+    const parallelUniverses = s.id === "predchuvstvie";
     const seen = new Set();
     const items = s.novels.map(m => {
       let x = bySlug[m]; if (!x) return null;
-      if (x.lang !== n.lang && x.translations && x.translations[n.lang] && bySlug[x.translations[n.lang]]) x = bySlug[x.translations[n.lang]];
+      // Other sagas show the reader's language where a translation exists.
+      // Turquoise Fortress novels are independent alternate universes, not duplicates.
+      if (!parallelUniverses && x.lang !== n.lang && x.translations && x.translations[n.lang] && bySlug[x.translations[n.lang]]) x = bySlug[x.translations[n.lang]];
       if (seen.has(x.slug)) return null; seen.add(x.slug);
-      const cur = mine.has(x.slug) || mine.has(m);
-      return `<a href="#/${esc(x.slug)}" class="${cur ? "cur" : ""}">${coverHTML(x)}${esc(x.title)}${x.lang !== n.lang ? `<small>${esc(LANG_NAMES[x.lang] || x.lang)}</small>` : ""}</a>`;
+      const cur = parallelUniverses ? x.slug === n.slug : mine.has(x.slug) || mine.has(m);
+      return `<a href="#/${esc(x.slug)}" class="${cur ? "cur" : ""}">${coverHTML(x)}${esc(x.title)}${parallelUniverses || x.lang !== n.lang ? `<small>${esc(LANG_NAMES[x.lang] || x.lang)}</small>` : ""}</a>`;
     }).filter(Boolean);
     if (items.length < 2) return "";
     const name = s.name[n.lang] || s.name["*"];
-    return `<div class="saga"><h2>${esc(SAGA_W[n.lang] || "Saga")} · ${esc(name)}</h2><div class="row">${items.join("")}</div></div>`;
+    const description = parallelUniverses ? (s.description?.[n.lang] || s.description?.["*"] || "") : "";
+    return `<div class="saga"><h2>${esc(SAGA_W[n.lang] || "Saga")} · ${esc(name)}</h2>${description ? `<p class="saga-description">${esc(description)}</p>` : ""}<div class="row">${items.join("")}</div></div>`;
   }).join("");
 }
-
 
 function moduleProgress(n){
   if(n.slug!=="el-tren-fantasma") return "";
