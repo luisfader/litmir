@@ -1,0 +1,273 @@
+{
+ "title": "Onde fica o metrô?",
+ "subtitle": "Estar, ser vs estar, ficar, prepositions with articles (no, na, do, da), the city.",
+ "speak": "pt-BR",
+ "hero": "novels/do-outro-lado-do-mundo/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "perto de",
+     "near"
+    ],
+    [
+     "longe de",
+     "far from"
+    ],
+    [
+     "ao lado de",
+     "next to"
+    ],
+    [
+     "atrás de",
+     "behind"
+    ],
+    [
+     "em frente a",
+     "opposite"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Luiz",
+   "after": "em Moscou.",
+   "options": [
+    "está",
+    "é",
+    "fica"
+   ],
+   "answer": 0,
+   "es": "Luiz is in Moscow."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "O museu",
+   "after": "perto da praça.",
+   "options": [
+    "fica",
+    "está",
+    "é"
+   ],
+   "answer": 0,
+   "es": "The museum is near the square.",
+   "why": "For buildings — ficar."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "A amiga de Natalia está",
+   "after": "café.",
+   "options": [
+    "no",
+    "na",
+    "em o"
+   ],
+   "answer": 0,
+   "es": "Natalia’s friend is in the café."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Moscou fica",
+   "after": "Rússia.",
+   "options": [
+    "na",
+    "no",
+    "em a"
+   ],
+   "answer": 0,
+   "es": "Moscow is in Russia."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Eu",
+   "after": "com frio.",
+   "options": [
+    "estou",
+    "está",
+    "sou"
+   ],
+   "answer": 0,
+   "es": "I’m cold."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Natalia",
+   "after": "russa.",
+   "options": [
+    "é",
+    "está",
+    "fica"
+   ],
+   "answer": 0,
+   "es": "Natalia is Russian.",
+   "why": "Nationality — ser."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "O metrô fica perto",
+   "after": "praça.",
+   "options": [
+    "da",
+    "do",
+    "de a"
+   ],
+   "answer": 0,
+   "es": "The metro is near the square."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Está frio.",
+   "options": [
+    "It’s cold.",
+    "It’s hot.",
+    "It’s far."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "Where is the metro?",
+   "options": [
+    "Onde fica o metrô?",
+    "Onde é o metrô?",
+    "Onde tem o metrô?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "We’re in Russia.",
+   "answer": [
+    "Nós",
+    "estamos",
+    "na",
+    "Rússia"
+   ],
+   "extra": [
+    "somos",
+    "no"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Onde está a amiga de Natalia?",
+   "es": "Where is Natalia’s friend?",
+   "options": [
+    "No café, em frente ao museu.",
+    "No metrô.",
+    "No Brasil."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "o ponto de ônibus",
+   "options": [
+    "bus stop",
+    "station",
+    "square"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Para Natalia, o metrô de Moscou parece um palácio.",
+   "answer": true,
+   "why": "«É lindo! Parece um palácio!»"
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "I’m in Moscow.",
+   "answers": [
+    "Estou em Moscou",
+    "Eu estou em Moscou"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "here",
+   "answers": [
+    "aqui"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "«No» = «em + a».",
+   "answer": false,
+   "why": "No = em + o; na = em + a."
+  }
+ ],
+ "keyboard": [
+  "á",
+  "â",
+  "ã",
+  "à",
+  "ç",
+  "é",
+  "ê",
+  "í",
+  "ó",
+  "ô",
+  "õ",
+  "ú"
+ ]
+}

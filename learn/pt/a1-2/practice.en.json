@@ -1,0 +1,272 @@
+{
+ "title": "Eu jogo futebol",
+ "subtitle": "Professions, regular -ar/-er/-ir verbs, negation, questions, numbers.",
+ "speak": "pt-BR",
+ "hero": "novels/do-outro-lado-do-mundo/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "trabalhar",
+     "to work"
+    ],
+    [
+     "estudar",
+     "to study"
+    ],
+    [
+     "morar",
+     "to live"
+    ],
+    [
+     "escrever",
+     "to write"
+    ],
+    [
+     "jogar",
+     "to play"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "O que você faz?",
+   "options": [
+    "What do you do?",
+    "Where do you live?",
+    "How old are you?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Luiz",
+   "after": "futebol com amigos.",
+   "options": [
+    "joga",
+    "jogo",
+    "jogam"
+   ],
+   "answer": 0,
+   "es": "Luiz plays football with friends."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Eu",
+   "after": "no Brasil.",
+   "options": [
+    "moro",
+    "mora",
+    "moramos"
+   ],
+   "answer": 0,
+   "es": "I live in Brazil."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Nós",
+   "after": "português.",
+   "options": [
+    "falamos",
+    "falam",
+    "falo"
+   ],
+   "answer": 0,
+   "es": "We speak Portuguese."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Você",
+   "after": "russo?",
+   "options": [
+    "fala",
+    "falo",
+    "falam"
+   ],
+   "answer": 0,
+   "es": "Do you speak Russian?",
+   "why": "With você — the third-person form."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Natalia e Luiz",
+   "after": "pela internet.",
+   "options": [
+    "conversam",
+    "conversa",
+    "conversamos"
+   ],
+   "answer": 0,
+   "es": "Natalia and Luiz chat online."
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "I don’t speak Russian.",
+   "options": [
+    "Eu não falo russo.",
+    "Eu falo não russo.",
+    "Eu não falar russo."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "I’m a doctor (a woman).",
+   "options": [
+    "Sou médica.",
+    "Sou uma médica.",
+    "Estou médica."
+   ],
+   "answer": 0,
+   "why": "No article before a profession."
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "I’m 20 years old.",
+   "answer": [
+    "Eu",
+    "tenho",
+    "20",
+    "anos"
+   ],
+   "extra": [
+    "sou",
+    "tem"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Quantos anos tem Luiz?",
+   "es": "How old is Luiz?",
+   "options": [
+    "Ele tem 20 anos.",
+    "Ele tem 30 anos.",
+    "Eu tenho 20 anos."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "vinte e cinco",
+   "options": [
+    "twenty-five",
+    "fifteen",
+    "fifty"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Ela tem",
+   "after": "irmãs.",
+   "options": [
+    "duas",
+    "dois",
+    "dos"
+   ],
+   "answer": 0,
+   "es": "She has two sisters."
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Luiz tem muito dinheiro para a passagem.",
+   "answer": false,
+   "why": "On the contrary: Luiz has no money for the ticket."
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "I study.",
+   "answers": [
+    "Eu estudo",
+    "Estudo"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "How old are you?",
+   "answers": [
+    "Quantos anos você tem?",
+    "Quantos anos você tem"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Natalia aprende português todos os dias.",
+   "answer": true,
+   "why": "«Eu aprendo português todos os dias»."
+  }
+ ],
+ "keyboard": [
+  "á",
+  "â",
+  "ã",
+  "à",
+  "ç",
+  "é",
+  "ê",
+  "í",
+  "ó",
+  "ô",
+  "õ",
+  "ú"
+ ]
+}

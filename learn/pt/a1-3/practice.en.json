@@ -1,0 +1,274 @@
+{
+ "title": "A família de Luiz",
+ "subtitle": "Family, the verb ter, tem and há, possessives, dele / dela, adjectives.",
+ "speak": "pt-BR",
+ "hero": "novels/do-outro-lado-do-mundo/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "o pai",
+     "father"
+    ],
+    [
+     "a mãe",
+     "mother"
+    ],
+    [
+     "a irmã",
+     "sister"
+    ],
+    [
+     "o avô",
+     "grandfather"
+    ],
+    [
+     "a avó",
+     "grandmother"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Luiz",
+   "after": "uma irmã.",
+   "options": [
+    "tem",
+    "tenho",
+    "têm"
+   ],
+   "answer": 0,
+   "es": "Luiz has a sister."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Eu",
+   "after": "20 anos.",
+   "options": [
+    "tenho",
+    "tem",
+    "temos"
+   ],
+   "answer": 0,
+   "es": "I’m 20."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Nós",
+   "after": "um cachorro.",
+   "options": [
+    "temos",
+    "têm",
+    "tenho"
+   ],
+   "answer": 0,
+   "es": "We have a dog."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "",
+   "after": "mãe é professora.",
+   "options": [
+    "Minha",
+    "Meu",
+    "Minhas"
+   ],
+   "answer": 0,
+   "es": "My mum is a teacher."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "",
+   "after": "pais moram no Brasil.",
+   "options": [
+    "Meus",
+    "Minhas",
+    "Meu"
+   ],
+   "answer": 0,
+   "es": "My parents live in Brazil."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "os pais",
+   "options": [
+    "parents",
+    "fathers",
+    "brothers"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "A irmã",
+   "after": "se chama Bia. (a irmã de Luiz)",
+   "options": [
+    "dele",
+    "dela",
+    "deles"
+   ],
+   "answer": 0,
+   "es": "His sister’s name is Bia.",
+   "why": "His → dele, her → dela."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Meu pai é alto e",
+   "after": "",
+   "options": [
+    "simpático",
+    "simpática",
+    "simpáticos"
+   ],
+   "answer": 0,
+   "es": "My dad is tall and nice."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Na minha casa",
+   "after": "um gato.",
+   "options": [
+    "tem",
+    "têm",
+    "é"
+   ],
+   "answer": 0,
+   "es": "There’s a cat in my house."
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "grandmother",
+   "options": [
+    "a avó",
+    "o avô",
+    "a avô"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "Do you have brothers or sisters?",
+   "answer": [
+    "Você",
+    "tem",
+    "irmãos?"
+   ],
+   "extra": [
+    "tenho",
+    "é"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Como se chama o cachorro de Luiz?",
+   "es": "What’s the name of Luiz’s dog?",
+   "options": [
+    "Pelé.",
+    "Bia.",
+    "Paulo."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "A mãe de Luiz é professora.",
+   "answer": true,
+   "why": "«Esta é minha mãe, Ana. Ela é professora»."
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "my father",
+   "answers": [
+    "meu pai",
+    "o meu pai"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "I have a sister.",
+   "answers": [
+    "Tenho uma irmã",
+    "Eu tenho uma irmã"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "«Tem» e «têm» têm pronúncias diferentes.",
+   "answer": false,
+   "why": "They sound the same — the difference is only in writing."
+  }
+ ],
+ "keyboard": [
+  "á",
+  "â",
+  "ã",
+  "à",
+  "ç",
+  "é",
+  "ê",
+  "í",
+  "ó",
+  "ô",
+  "õ",
+  "ú"
+ ]
+}

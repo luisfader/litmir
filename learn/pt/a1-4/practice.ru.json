@@ -1,0 +1,273 @@
+{
+ "title": "Onde fica o metrô?",
+ "subtitle": "Estar, ser или estar, ficar, предлоги с артиклем (no, na, do, da), город.",
+ "speak": "pt-BR",
+ "hero": "novels/do-outro-lado-do-mundo/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 7 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "perto de",
+     "близко к"
+    ],
+    [
+     "longe de",
+     "далеко от"
+    ],
+    [
+     "ao lado de",
+     "рядом с"
+    ],
+    [
+     "atrás de",
+     "за"
+    ],
+    [
+     "em frente a",
+     "напротив"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Luiz",
+   "after": "em Moscou.",
+   "options": [
+    "está",
+    "é",
+    "fica"
+   ],
+   "answer": 0,
+   "es": "Луис в Москве."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "O museu",
+   "after": "perto da praça.",
+   "options": [
+    "fica",
+    "está",
+    "é"
+   ],
+   "answer": 0,
+   "es": "Музей рядом с площадью.",
+   "why": "О зданиях — ficar."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "A amiga de Natalia está",
+   "after": "café.",
+   "options": [
+    "no",
+    "na",
+    "em o"
+   ],
+   "answer": 0,
+   "es": "Подруга Натальи в кафе."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Moscou fica",
+   "after": "Rússia.",
+   "options": [
+    "na",
+    "no",
+    "em a"
+   ],
+   "answer": 0,
+   "es": "Москва в России."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Eu",
+   "after": "com frio.",
+   "options": [
+    "estou",
+    "está",
+    "sou"
+   ],
+   "answer": 0,
+   "es": "Мне холодно."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Natalia",
+   "after": "russa.",
+   "options": [
+    "é",
+    "está",
+    "fica"
+   ],
+   "answer": 0,
+   "es": "Наталья — русская.",
+   "why": "Национальность — ser."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "O metrô fica perto",
+   "after": "praça.",
+   "options": [
+    "da",
+    "do",
+    "de a"
+   ],
+   "answer": 0,
+   "es": "Метро рядом с площадью."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Está frio.",
+   "options": [
+    "Холодно.",
+    "Жарко.",
+    "Это далеко."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать на изучаемом языке?",
+   "word": "Где находится метро?",
+   "options": [
+    "Onde fica o metrô?",
+    "Onde é o metrô?",
+    "Onde tem o metrô?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите",
+   "es": "Мы в России.",
+   "answer": [
+    "Nós",
+    "estamos",
+    "na",
+    "Rússia"
+   ],
+   "extra": [
+    "somos",
+    "no"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "Onde está a amiga de Natalia?",
+   "es": "Где подруга Натальи?",
+   "options": [
+    "No café, em frente ao museu.",
+    "No metrô.",
+    "No Brasil."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "o ponto de ônibus",
+   "options": [
+    "остановка автобуса",
+    "вокзал",
+    "площадь"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Para Natalia, o metrô de Moscou parece um palácio.",
+   "answer": true,
+   "why": "«É lindo! Parece um palácio!»"
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Я в Москве.",
+   "answers": [
+    "Estou em Moscou",
+    "Eu estou em Moscou"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "здесь",
+   "answers": [
+    "aqui"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "«No» = «em + a».",
+   "answer": false,
+   "why": "No = em + o; na = em + a."
+  }
+ ],
+ "keyboard": [
+  "á",
+  "â",
+  "ã",
+  "à",
+  "ç",
+  "é",
+  "ê",
+  "í",
+  "ó",
+  "ô",
+  "õ",
+  "ú"
+ ]
+}
