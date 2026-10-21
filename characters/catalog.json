@@ -54,8 +54,7 @@
         "eo",
         "isv",
         "de",
-        "cs",
-        "pl"
+        "cs"
       ],
       "role": "Arquitecto de Nuestra Utopía, el universo de Presentimento.",
       "novels": [
@@ -68,8 +67,7 @@
         "la-antausento",
         "predcutje",
         "vorahnung",
-        "predtucha",
-        "przeczucie"
+        "predtucha"
       ],
       "localizations": {
         "ru": {
@@ -107,10 +105,6 @@
         "cs": {
           "name": "Luis",
           "description": "Po jaderné katastrofě se snaží s Janou obnovit naději v českých zemích podle myšlenek Roberta, zakladatele Naší utopie."
-        },
-        "pl": {
-          "name": "Luis",
-          "description": "Hiszpański architekt, który przez dwa lata mieszkał w podziemiach Wawelu i „rozmawiał z kamieniami”. Ratuje wieżę Naszej Utopii przed Robertem."
         }
       }
     },
@@ -455,7 +449,7 @@
         },
         "pl": {
           "name": "Sasza",
-          "description": "Była sierżant z blizną przez całą twarz. Straciła męża i syna. Przychodzi, bo usłyszała muzykę w radiu, i obejmuje dowództwo obrony."
+          "description": "Była sierżant z białą blizną przez całą twarz. Straciła męża i syna. Przychodzi, bo usłyszała w radiu wiolonczelę Natalii, i od pierwszego dnia dowodzi obroną Naszej Utopii."
         }
       }
     },
@@ -1410,15 +1404,13 @@
       "name": "Kennet",
       "langs": [
         "it",
-        "ru",
-        "pl"
+        "ru"
       ],
       "role": "Fugitivo de la Central que se une a Utopía.",
       "novels": [
         "presentimento",
         "predchuvstvie",
-        "predchuvstvie-2",
-        "przeczucie"
+        "predchuvstvie-2"
       ],
       "localizations": {
         "it": {
@@ -1428,10 +1420,6 @@
         "ru": {
           "name": "Кеннет",
           "description": "Высокий и крепкий молодой человек из Великобритании, сильный, но добрый. Защищает Утопию с башни и влюбляется в певицу Оксану."
-        },
-        "pl": {
-          "name": "Kennet",
-          "description": "Rudy uciekinier z podziemnej Centrali. Ma najlepszy wzrok w Naszej Utopii i swoje miejsce na wieży. Zakochany w Oksanie."
         }
       }
     },
@@ -1440,15 +1428,13 @@
       "name": "Oxana (Utopía)",
       "langs": [
         "it",
-        "ru",
-        "pl"
+        "ru"
       ],
       "role": "Habitante de Utopía entre Kennet y Robert.",
       "novels": [
         "presentimento",
         "predchuvstvie",
-        "predchuvstvie-2",
-        "przeczucie"
+        "predchuvstvie-2"
       ],
       "localizations": {
         "it": {
@@ -1458,10 +1444,6 @@
         "ru": {
           "name": "Оксана",
           "description": "Элегантная светловолосая певица с голубыми глазами, которая выступала для состоятельных людей. Приходит в Утопию с миром и музыкой и сближается с Кеннетом."
-        },
-        "pl": {
-          "name": "Oksana",
-          "description": "Kobieta o ciepłych, brązowych oczach. Leczy ziołami, gotuje z niczego i śmieje się tak, że wszystkim robi się lżej."
         }
       }
     },
@@ -1491,7 +1473,7 @@
         },
         "pl": {
           "name": "Dima",
-          "description": "Programista o najszybszych palcach na świecie. Z kawałków starych komputerów buduje radio, przez które Nasza Utopia zaprasza nowych ludzi."
+          "description": "Ekspert od techniki. W ziemiance pełnej kabli, akumulatorów i starych komputerów potrafi złapać każdą częstotliwość. W Naszej Utopii stawia panele słoneczne, puszcza drony i podsłuchuje radio Dzikich."
         }
       }
     },
@@ -2869,8 +2851,8 @@
           "description": "Жила с Димой в землянке. Осторожная и недоверчивая, она видела слишком много утопий, построенных на обмане."
         },
         "pl": {
-          "name": "Masza",
-          "description": "Dziewczyna Dimy. Widziała już trzy utopie, które skończyły się źle, więc przyjeżdża do Czorsztyna „na tydzień, na próbę”."
+          "name": "Maria",
+          "description": "Drobna, ciemnowłosa i nieufna. Widziała już trzy utopie, które skończyły się źle. Mieszka z Dimą w ziemiance pod Zakopanem i przyjeżdża do Czorsztyna „na tydzień, na próbę”."
         }
       }
     },
