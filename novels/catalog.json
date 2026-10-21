@@ -6577,6 +6577,36 @@
           "title": "La virino kun la nigra vualo"
         }
       ]
+    },
+    {
+      "slug": "premonision-ldp",
+      "lang": "ld",
+      "title": "Premonision",
+      "genre": "Postapokalipsa · Drama · Amor",
+      "description": "Dwa yar pos la komensa de la gwer, Natalia, un violonchelista, protekti suy tri frates in un subterrane refugio. Antes la katastrofa, un strange premonision salva-te ela de un misil kel destrukti-te la konservatorio. Nau, serchante fuda, ela trova un kitaba nominen «Nuy Utopia». Sey kitaba ve shanji la destino de suy familia. Un original historia in Lingwa de Planeta, in la paralel mundos de la Turkes Fortres.",
+      "chapters": [
+        {
+          "file": "01.md",
+          "title": "La konsert kel bu eventi"
+        },
+        {
+          "file": "02.md",
+          "title": "Dwa yar de silensio"
+        },
+        {
+          "file": "03.md",
+          "title": "Nuy Utopia"
+        },
+        {
+          "file": "04.md",
+          "title": "La promesa"
+        },
+        {
+          "file": "05.md",
+          "title": "La prima nota"
+        }
+      ],
+      "wip": true
     }
   ],
   "series": [
@@ -6707,7 +6737,8 @@
         "ia": "Le Presentimento",
         "pt": "Mundo Turquesa",
         "cs": "Předtucha",
-        "*": "Utopia"
+        "*": "Utopia",
+        "ld": "Premonision"
       },
       "novels": [
         "predchuvstvie",
@@ -6723,12 +6754,14 @@
         "fot-latik",
         "le-presentimento",
         "mundo-turquesa",
-        "predtucha"
+        "predtucha",
+        "premonision-ldp"
       ],
       "description": {
         "es": "Universos paralelos de la Fortaleza Turquesa: distintas historias, personajes y destinos unidos por la reconstrucción de la esperanza y la utopía después de la catástrofe. No son traducciones literales ni una cronología única.",
         "ru": "Параллельные вселенные Бирюзовой крепости: разные сюжеты, герои и судьбы, связанные надеждой и попыткой построить утопию после катастрофы. Это не дословные переводы и не единая хронология.",
-        "*": "Parallel universes of the Turquoise Fortress: distinct stories and characters connected by hope and the rebuilding of utopia after catastrophe. Not literal translations or one single timeline."
+        "*": "Parallel universes of the Turquoise Fortress: distinct stories and characters connected by hope and the rebuilding of utopia after catastrophe. Not literal translations or one single timeline.",
+        "ld": "Paralel mundos de la Turkes Fortres: diferente historias e jen, konekten per esperansa e la rekonstruccion de un nova sosieta."
       }
     }
   ]
