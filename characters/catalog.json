@@ -54,7 +54,8 @@
         "eo",
         "isv",
         "de",
-        "cs"
+        "cs",
+        "pl"
       ],
       "role": "Arquitecto de Nuestra Utopía, el universo de Presentimento.",
       "novels": [
@@ -67,7 +68,8 @@
         "la-antausento",
         "predcutje",
         "vorahnung",
-        "predtucha"
+        "predtucha",
+        "przeczucie"
       ],
       "localizations": {
         "ru": {
@@ -105,6 +107,10 @@
         "cs": {
           "name": "Luis",
           "description": "Po jaderné katastrofě se snaží s Janou obnovit naději v českých zemích podle myšlenek Roberta, zakladatele Naší utopie."
+        },
+        "pl": {
+          "name": "Luis",
+          "description": "Hiszpański architekt, który przez dwa lata mieszkał w podziemiach Wawelu i „rozmawiał z kamieniami”. Ratuje wieżę Naszej Utopii przed Robertem."
         }
       }
     },
@@ -287,7 +293,8 @@
         "ia",
         "ru",
         "es",
-        "tr"
+        "tr",
+        "pl"
       ],
       "role": "Superviviente y fundador de Utopía en Предосећај.",
       "novels": [
@@ -297,7 +304,8 @@
         "predchuvstvie",
         "predchuvstvie-2",
         "la-corazonada",
-        "col-gulu"
+        "col-gulu",
+        "przeczucie"
       ],
       "localizations": {
         "sr": {
@@ -327,6 +335,10 @@
         "tr": {
           "name": "Robert",
           "description": "Büyük Felaket'ten sonra eski motosikletiyle çölde hayatta kalanları arar. Rosa ile birlikte turkuaz duvarlı bir kale, efendisiz bir ütopya kurmaya çalışır."
+        },
+        "pl": {
+          "name": "Robert",
+          "description": "Przeżył dwa lata nuklearnej zimy w bunkrze pod Krakowem. Marzyciel na starym motocyklu Junak, który chce zbudować świat bez strachu i chciwości. Założyciel Naszej Utopii."
         }
       }
     },
@@ -355,7 +367,8 @@
         "sr",
         "it",
         "ia",
-        "ru"
+        "ru",
+        "pl"
       ],
       "role": "Música y violonchelista; su arte acompaña la resistencia de Utopía.",
       "novels": [
@@ -363,7 +376,8 @@
         "presentimento",
         "le-presentimento",
         "predchuvstvie",
-        "predchuvstvie-2"
+        "predchuvstvie-2",
+        "przeczucie"
       ],
       "localizations": {
         "sr": {
@@ -381,6 +395,10 @@
         "ru": {
           "name": "Наталья — виолончелистка",
           "description": "Талантливая виолончелистка, чья музыка трогает сердца жителей Утопии. Оказывается между Робертом и Луисом и сама выбирает, кого любить."
+        },
+        "pl": {
+          "name": "Natalia",
+          "description": "Wiolonczelistka z Filharmonii Krakowskiej. Grała Bacha w ruinach Kościoła Mariackiego, kiedy poznała Roberta. Razem z nim zbudowała Naszą Utopię — i ma przeczucia, które się spełniają."
         }
       }
     },
@@ -407,14 +425,16 @@
       "langs": [
         "sr",
         "it",
-        "ru"
+        "ru",
+        "pl"
       ],
       "role": "Superviviente de Utopía, marcada por las pérdidas de la guerra.",
       "novels": [
         "predosecaj",
         "presentimento",
         "predchuvstvie",
-        "predchuvstvie-2"
+        "predchuvstvie-2",
+        "przeczucie"
       ],
       "localizations": {
         "sr": {
@@ -432,6 +452,10 @@
             "characters/img/sasha-2.jpg",
             "characters/img/sasha-1.jpg"
           ]
+        },
+        "pl": {
+          "name": "Sasza",
+          "description": "Była sierżant z blizną przez całą twarz. Straciła męża i syna. Przychodzi, bo usłyszała muzykę w radiu, i obejmuje dowództwo obrony."
         }
       }
     },
@@ -1386,13 +1410,15 @@
       "name": "Kennet",
       "langs": [
         "it",
-        "ru"
+        "ru",
+        "pl"
       ],
       "role": "Fugitivo de la Central que se une a Utopía.",
       "novels": [
         "presentimento",
         "predchuvstvie",
-        "predchuvstvie-2"
+        "predchuvstvie-2",
+        "przeczucie"
       ],
       "localizations": {
         "it": {
@@ -1402,6 +1428,10 @@
         "ru": {
           "name": "Кеннет",
           "description": "Высокий и крепкий молодой человек из Великобритании, сильный, но добрый. Защищает Утопию с башни и влюбляется в певицу Оксану."
+        },
+        "pl": {
+          "name": "Kennet",
+          "description": "Rudy uciekinier z podziemnej Centrali. Ma najlepszy wzrok w Naszej Utopii i swoje miejsce na wieży. Zakochany w Oksanie."
         }
       }
     },
@@ -1410,13 +1440,15 @@
       "name": "Oxana (Utopía)",
       "langs": [
         "it",
-        "ru"
+        "ru",
+        "pl"
       ],
       "role": "Habitante de Utopía entre Kennet y Robert.",
       "novels": [
         "presentimento",
         "predchuvstvie",
-        "predchuvstvie-2"
+        "predchuvstvie-2",
+        "przeczucie"
       ],
       "localizations": {
         "it": {
@@ -1426,6 +1458,10 @@
         "ru": {
           "name": "Оксана",
           "description": "Элегантная светловолосая певица с голубыми глазами, которая выступала для состоятельных людей. Приходит в Утопию с миром и музыкой и сближается с Кеннетом."
+        },
+        "pl": {
+          "name": "Oksana",
+          "description": "Kobieta o ciepłych, brązowych oczach. Leczy ziołami, gotuje z niczego i śmieje się tak, że wszystkim robi się lżej."
         }
       }
     },
@@ -1434,13 +1470,15 @@
       "name": "Dima (Utopía)",
       "langs": [
         "it",
-        "ru"
+        "ru",
+        "pl"
       ],
       "role": "Programador de Utopía.",
       "novels": [
         "presentimento",
         "predchuvstvie",
-        "predchuvstvie-2"
+        "predchuvstvie-2",
+        "przeczucie"
       ],
       "localizations": {
         "it": {
@@ -1450,6 +1488,10 @@
         "ru": {
           "name": "Дима",
           "description": "Невысокий хрупкий программист в очках. Жил в землянке с Машей и одним из первых поверил в мечту Роберта о новом мире."
+        },
+        "pl": {
+          "name": "Dima",
+          "description": "Programista o najszybszych palcach na świecie. Z kawałków starych komputerów buduje radio, przez które Nasza Utopia zaprasza nowych ludzi."
         }
       }
     },
@@ -2813,16 +2855,22 @@
       "id": "masha-utopia",
       "name": "Masha",
       "langs": [
-        "ru"
+        "ru",
+        "pl"
       ],
       "role": "Compañera de Dima.",
       "novels": [
-        "predchuvstvie"
+        "predchuvstvie",
+        "przeczucie"
       ],
       "localizations": {
         "ru": {
           "name": "Маша",
           "description": "Жила с Димой в землянке. Осторожная и недоверчивая, она видела слишком много утопий, построенных на обмане."
+        },
+        "pl": {
+          "name": "Masza",
+          "description": "Dziewczyna Dimy. Widziała już trzy utopie, które skończyły się źle, więc przyjeżdża do Czorsztyna „na tydzień, na próbę”."
         }
       }
     },
@@ -2830,16 +2878,22 @@
       "id": "samuel",
       "name": "Samuel",
       "langs": [
-        "ru"
+        "ru",
+        "pl"
       ],
       "role": "Líder de los salvajes.",
       "novels": [
-        "predchuvstvie"
+        "predchuvstvie",
+        "przeczucie"
       ],
       "localizations": {
         "ru": {
           "name": "Самуэль",
           "description": "Главарь враждебных дикарей, который сражается с Робертом один на один."
+        },
+        "pl": {
+          "name": "Samuel",
+          "description": "Przywódca Dzikich. Na jego ciężarówce jest namalowany biały wilk. Chce zabrać Naszą Utopię — i wiolonczelistkę."
         }
       }
     },
