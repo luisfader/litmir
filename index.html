@@ -536,6 +536,7 @@ function setupPredchuvstvieReflection(root) {
 const LANGS = ["ru","es","it","en","de","fr","tr","pt","cs","sr","eo","isv","vo","ia","ld"];
 const LANG_NAMES = {ru:"Русский", es:"Español", it:"Italiano", en:"English", de:"Deutsch", fr:"Français", tr:"Türkçe", pt:"Português", cs:"Čeština", sr:"Српски", eo:"Esperanto", isv:"Medžuslovjansky", vo:"Volapük", ia:"Interlingua", ld:"Lingwa de Planeta"};
 const UI = {
+  ld:{study:"Por lern sikin", studyNote:"Kitaba por lernisa de lingwa, kun material por studie.", wip:"En skriba", wipNote:"Se roman es ankor en skriba. Nove kapitels ve lai.", tag:"Romanes", hero:"Literatur-ney Mundo", sub:"Romanes de Robert Fader in Lingwa de Planeta. Lei li online sin paya.", author:"Robert Fader", start:"Begin lekti", cont:"Kontinui lekti", contents:"Konten", chapter:"Kapitel", prev:"Anterior", next:"Sekwen", back:"Oli romanes", empty:"Nul romanes in Lingwa de Planeta ankor.", foot:"© Robert Fader. Oli raitas es reservi.", chapters:n=>n+(n===1?" kapitel":" kapitels"), notFound:"Paja bu es findi.", also:"Se roman es anke availabel in otre lingwas:", adultT:"Solo por adulte jen", adultP:"Se roman konteni eksplicite escenas e es solo por jen ot 18 yar.", adultYes:"Me es 18 yar o pyu", adultNo:"Go bak"},
   ru:{study:"Для учёбы", studyNote:"Книга для изучения языка: в ней есть учебные материалы.", wip:"Пишется", wipNote:"Роман ещё в процессе написания — новые главы появятся позже.", tag:"Романы", hero:"Литературный мир", sub:"Романы Роберта Фадера на русском языке. Читайте онлайн бесплатно.", author:"Роберт Фадер", start:"Начать читать", cont:"Продолжить", contents:"Содержание", chapter:"Глава", prev:"Назад", next:"Далее", back:"Все романы", empty:"Романов на русском языке пока нет. Скоро появятся!", foot:"© Роберт Фадер. Все права защищены.", chapters:n=>n+" "+plural(n,["глава","главы","глав"]), notFound:"Страница не найдена.", also:"Этот роман есть и на других языках:", adultT:"Только для взрослых", adultP:"Этот роман содержит откровенные сцены и предназначен для читателей старше 18 лет.", adultYes:"Мне есть 18 лет", adultNo:"Вернуться"},
   es:{study:"Para estudiar", studyNote:"Libro para aprender el idioma: incluye material de estudio.", wip:"En proceso", wipNote:"Esta novela está en proceso de escritura: pronto habrá nuevos capítulos.", tag:"Novelas", hero:"Mundo literario", sub:"Las novelas de Robert Fader en español. Léelas en línea gratis.", author:"Robert Fader", start:"Empezar a leer", cont:"Continuar", contents:"Índice", chapter:"Capítulo", prev:"Anterior", next:"Siguiente", back:"Todas las novelas", empty:"Todavía no hay novelas en español. ¡Pronto llegarán!", foot:"© Robert Fader. Todos los derechos reservados.", chapters:n=>n+(n===1?" capítulo":" capítulos"), notFound:"Página no encontrada.", also:"Esta novela también está en otros idiomas:", adultT:"Solo para adultos", adultP:"Esta novela contiene escenas explícitas y es solo para mayores de 18 años.", adultYes:"Tengo 18 años o más", adultNo:"Volver"},
   it:{study:"Per studiare", studyNote:"Libro per imparare la lingua: include materiale di studio.", wip:"In corso", wipNote:"Questo romanzo è in fase di scrittura: presto arriveranno nuovi capitoli.", tag:"Romanzi", hero:"Mondo letterario", sub:"I romanzi di Roberto Fader in italiano. Leggili online gratuitamente.", author:"Roberto Fader", start:"Inizia a leggere", cont:"Continua", contents:"Indice", chapter:"Capitolo", prev:"Precedente", next:"Successivo", back:"Tutti i romanzi", empty:"Non ci sono ancora romanzi in italiano. Arriveranno presto!", foot:"© Roberto Fader. Tutti i diritti riservati.", chapters:n=>n+(n===1?" capitolo":" capitoli"), notFound:"Pagina non trovata.", also:"Questo romanzo è disponibile anche in altre lingue:", adultT:"Solo per adulti", adultP:"Questo romanzo contiene scene esplicite ed è riservato ai maggiori di 18 anni.", adultYes:"Ho almeno 18 anni", adultNo:"Torna indietro"},
@@ -552,6 +553,7 @@ const UI = {
   isv:{study:"Za učenje", studyNote:"Kniga za učenje jezyka: imaje materialy za učenje.", wip:"V pisanju", wipNote:"Toj roman se ješče piše — nove glavy prijdut skoro.", tag:"Romany", hero:"Literaturny svět", sub:"Romany Roberta Fadera na medžuslovjanskom jezyku. Čitajte onlajn bezplatno.", author:"Robert Fader", start:"Načati čitanje", cont:"Prodolžiti", contents:"Sodržanje", chapter:"Glava", prev:"Prědhodna", next:"Slědujuča", back:"Vse romany", empty:"Ješče nema romanov na medžuslovjanskom. Skoro!", foot:"© Robert Fader. Vse prava zaščiščene.", chapters:n=>n+" "+(n===1?"glava":n>=2&&n<=4?"glavy":"glav"), notFound:"Stranica ne jest najdena.", also:"Toj roman jest takože na drugyh jezykah:", adultT:"Jedino za odraslyh", adultP:"Toj roman imaje eksplicitne sceny i jest jedino za čitateljev od 18 lět.", adultYes:"Imam 18 lět ili boljše", adultNo:"Nazad"}
 };
 const BLOG_T = {
+  ld:{title:"Blog", sub:"Novas, notas e dumas de la autor.", empty:"Nul postas ankor.", more:"Lekti →", back:"← Blog"},
   ru:{title:"Блог", sub:"Новости, заметки и мысли автора.", empty:"Записей пока нет. Скоро появятся!", more:"Читать →", back:"← Блог"},
   es:{title:"Blog", sub:"Noticias, notas y reflexiones del autor.", empty:"Todavía no hay entradas. ¡Pronto llegarán!", more:"Leer →", back:"← Blog"},
   it:{title:"Blog", sub:"Notizie, appunti e riflessioni dell’autore.", empty:"Non ci sono ancora articoli. Arriveranno presto!", more:"Leggi →", back:"← Blog"},
@@ -608,7 +610,7 @@ function renderText(md){
 }
 
 /* Interactive true/false exercises: lines "a) … ( V / F ){F}" */
-const QUIZ_T = {es:["Comprobar","correctas","Volver a intentar"], it:["Verifica","corrette","Riprova"], en:["Check","correct","Try again"], ru:["Проверить","правильно","Ещё раз"], pt:["Verificar","corretas","Tentar de novo"], fr:["Vérifier","correctes","Réessayer"], de:["Prüfen","richtig","Nochmal"]};
+const QUIZ_T = {ld:["Kontroli","korrekt","Proba snova"], es:["Comprobar","correctas","Volver a intentar"], it:["Verifica","corrette","Riprova"], en:["Check","correct","Try again"], ru:["Проверить","правильно","Ещё раз"], pt:["Verificar","corretas","Tentar de novo"], fr:["Vérifier","correctes","Réessayer"], de:["Prüfen","richtig","Nochmal"]};
 function setupQuizzes(root, lang){
   const T = QUIZ_T[lang] || QUIZ_T.es;
   const items = [...root.querySelectorAll("p.vf, p.mc")];
@@ -691,7 +693,7 @@ function setupQuizzes(root, lang){
 }
 
 /* Personality test: "Вопрос [[@A вариант|@B вариант]]", results "{=A} текст" shown for the most chosen letter */
-const PSY_T = {es:["Ver mi resultado","Responde todas las preguntas"], ru:["Узнать результат","Ответьте на все вопросы"], it:["Vedi il risultato","Rispondi a tutte le domande"], en:["See my result","Answer every question"]};
+const PSY_T = {ld:["Vidi may resulta","Respondi a oli kwestas"], es:["Ver mi resultado","Responde todas las preguntas"], ru:["Узнать результат","Ответьте на все вопросы"], it:["Vedi il risultato","Rispondi a tutte le domande"], en:["See my result","Answer every question"]};
 function setupPsy(root, lang){
   const qs = [...root.querySelectorAll("div.psy")];
   if (!qs.length) return;
@@ -719,7 +721,7 @@ function setupPsy(root, lang){
 
 /* Comments (Giscus, stored in GitHub Discussions of the repository) */
 const GISCUS = { repo:"luisfader/litmir", repoId:"R_kgDOVM8Utg", category:"General", categoryId:"DIC_kwDOVM8Uts4DIsSO" };
-const COMMENTS_T = {ru:"Комментарии", es:"Comentarios", it:"Commenti", en:"Comments", de:"Kommentare", fr:"Commentaires", tr:"Yorumlar", pt:"Comentários", cs:"Komentáře", sr:"Коментари", eo:"Komentoj", isv:"Komentarji", ia:"Commentos"};
+const COMMENTS_T = {ld:"Komentas", ru:"Комментарии", es:"Comentarios", it:"Commenti", en:"Comments", de:"Kommentare", fr:"Commentaires", tr:"Yorumlar", pt:"Comentários", cs:"Komentáře", sr:"Коментари", eo:"Komentoj", isv:"Komentarji", ia:"Commentos"};
 const GISCUS_LANG = {ru:"ru", es:"es", it:"it", en:"en", de:"de", fr:"fr", tr:"tr", pt:"pt", cs:"cs", sr:"ru", eo:"eo", isv:"en", ia:"en"};
 function giscusTheme(){
   const th = store.get("theme", null);
