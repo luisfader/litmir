@@ -6712,8 +6712,24 @@
       "novels": [
         "predchuvstvie",
         "predchuvstvie-2",
+        "la-corazonada",
+        "presentimento",
+        "reve-turquoise",
+        "la-antausento",
+        "predcutje",
+        "col-gulu",
+        "vorahnung",
+        "predosecaj",
+        "fot-latik",
+        "le-presentimento",
+        "mundo-turquesa",
         "predtucha"
-      ]
+      ],
+      "description": {
+        "es": "Universos paralelos de la Fortaleza Turquesa: distintas historias, personajes y destinos unidos por la reconstrucción de la esperanza y la utopía después de la catástrofe. No son traducciones literales ni una cronología única.",
+        "ru": "Параллельные вселенные Бирюзовой крепости: разные сюжеты, герои и судьбы, связанные надеждой и попыткой построить утопию после катастрофы. Это не дословные переводы и не единая хронология.",
+        "*": "Parallel universes of the Turquoise Fortress: distinct stories and characters connected by hope and the rebuilding of utopia after catastrophe. Not literal translations or one single timeline."
+      }
     }
   ]
 }
