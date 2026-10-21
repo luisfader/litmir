@@ -533,8 +533,8 @@ function setupPredchuvstvieReflection(root) {
   };
 }
 
-const LANGS = ["ru","es","it","en","de","fr","tr","pt","cs","sr","eo","isv","vo","ia"];
-const LANG_NAMES = {ru:"Русский", es:"Español", it:"Italiano", en:"English", de:"Deutsch", fr:"Français", tr:"Türkçe", pt:"Português", cs:"Čeština", sr:"Српски", eo:"Esperanto", isv:"Medžuslovjansky", vo:"Volapük", ia:"Interlingua"};
+const LANGS = ["ru","es","it","en","de","fr","tr","pt","cs","sr","eo","isv","vo","ia","ld"];
+const LANG_NAMES = {ru:"Русский", es:"Español", it:"Italiano", en:"English", de:"Deutsch", fr:"Français", tr:"Türkçe", pt:"Português", cs:"Čeština", sr:"Српски", eo:"Esperanto", isv:"Medžuslovjansky", vo:"Volapük", ia:"Interlingua", ld:"Lingwa de Planeta"};
 const UI = {
   ru:{study:"Для учёбы", studyNote:"Книга для изучения языка: в ней есть учебные материалы.", wip:"Пишется", wipNote:"Роман ещё в процессе написания — новые главы появятся позже.", tag:"Романы", hero:"Литературный мир", sub:"Романы Роберта Фадера на русском языке. Читайте онлайн бесплатно.", author:"Роберт Фадер", start:"Начать читать", cont:"Продолжить", contents:"Содержание", chapter:"Глава", prev:"Назад", next:"Далее", back:"Все романы", empty:"Романов на русском языке пока нет. Скоро появятся!", foot:"© Роберт Фадер. Все права защищены.", chapters:n=>n+" "+plural(n,["глава","главы","глав"]), notFound:"Страница не найдена.", also:"Этот роман есть и на других языках:", adultT:"Только для взрослых", adultP:"Этот роман содержит откровенные сцены и предназначен для читателей старше 18 лет.", adultYes:"Мне есть 18 лет", adultNo:"Вернуться"},
   es:{study:"Para estudiar", studyNote:"Libro para aprender el idioma: incluye material de estudio.", wip:"En proceso", wipNote:"Esta novela está en proceso de escritura: pronto habrá nuevos capítulos.", tag:"Novelas", hero:"Mundo literario", sub:"Las novelas de Robert Fader en español. Léelas en línea gratis.", author:"Robert Fader", start:"Empezar a leer", cont:"Continuar", contents:"Índice", chapter:"Capítulo", prev:"Anterior", next:"Siguiente", back:"Todas las novelas", empty:"Todavía no hay novelas en español. ¡Pronto llegarán!", foot:"© Robert Fader. Todos los derechos reservados.", chapters:n=>n+(n===1?" capítulo":" capítulos"), notFound:"Página no encontrada.", also:"Esta novela también está en otros idiomas:", adultT:"Solo para adultos", adultP:"Esta novela contiene escenas explícitas y es solo para mayores de 18 años.", adultYes:"Tengo 18 años o más", adultNo:"Volver"},
@@ -868,7 +868,7 @@ function adultGate(n){
   document.getElementById("ok18").onclick = () => { store.set("adult", true); route(); };
 }
 
-const SAGA_W = {ru:"Цикл", es:"Saga", it:"Saga", en:"Series", de:"Reihe", fr:"Saga", tr:"Seri", pt:"Saga", cs:"Série", sr:"Серијал", eo:"Serio", isv:"Serija", vo:"Saga", ia:"Serie"};
+const SAGA_W = {ru:"Цикл", es:"Saga", it:"Saga", en:"Series", de:"Reihe", fr:"Saga", tr:"Seri", pt:"Saga", cs:"Série", sr:"Серијал", eo:"Serio", isv:"Serija", vo:"Saga", ia:"Serie", ld:"Seria"};
 function sagaHTML(n){
   const all = catalog.series || [], bySlug = Object.fromEntries(catalog.novels.map(x => [x.slug, x]));
   const mine = new Set([n.slug, ...Object.values(n.translations || {})]);
