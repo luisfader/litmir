@@ -1,0 +1,310 @@
+{
+ "title": "Soy detective y vivo en Sinea",
+ "subtitle": "Professions, regular verbs, negation and questions.",
+ "speak": "es-ES",
+ "hero": "novels/el-tren-fantasma/cover.jpg",
+ "hearts": 5,
+ "keyboard": [
+  "á",
+  "é",
+  "í",
+  "ó",
+  "ú",
+  "ñ",
+  "ü",
+  "¿",
+  "¡"
+ ],
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "trabajar",
+     "to work"
+    ],
+    [
+     "vivir",
+     "to live"
+    ],
+    [
+     "leer",
+     "to read"
+    ],
+    [
+     "escribir",
+     "to write"
+    ],
+    [
+     "buscar",
+     "to look for"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "¿A qué te dedicas?",
+   "options": [
+    "What do you do for a living?",
+    "Where do you live?",
+    "How old are you?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Marcos",
+   "after": "en Sinea.",
+   "options": [
+    "vive",
+    "vivo",
+    "viven"
+   ],
+   "answer": 0,
+   "es": "Marcos lives in Sinea."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Yo",
+   "after": "español todos los días.",
+   "options": [
+    "estudio",
+    "estudia",
+    "estudian"
+   ],
+   "answer": 0,
+   "es": "I study Spanish every day."
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it in Spanish?",
+   "word": "I'm a detective.",
+   "options": [
+    "Soy detective.",
+    "Soy un detective.",
+    "Es detective."
+   ],
+   "answer": 0,
+   "why": "No article before a profession after ser."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Natalia es",
+   "after": ".",
+   "options": [
+    "cardióloga",
+    "cardiólogo",
+    "cardiólogos"
+   ],
+   "answer": 0,
+   "es": "Natalia is a cardiologist."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Nosotros",
+   "after": "novelas.",
+   "options": [
+    "leemos",
+    "leen",
+    "lee"
+   ],
+   "answer": 0,
+   "es": "We read novels."
+  },
+  {
+   "type": "build",
+   "prompt": "Translate into Spanish",
+   "es": "I work in a hospital.",
+   "answer": [
+    "Trabajo",
+    "en",
+    "un",
+    "hospital"
+   ],
+   "extra": [
+    "trabaja",
+    "es"
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Natalia y Luis",
+   "after": "español.",
+   "options": [
+    "hablan",
+    "habla",
+    "hablamos"
+   ],
+   "answer": 0,
+   "es": "Natalia and Luis speak Spanish."
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "¿Qué busca Marcos?",
+   "es": "Who is Marcos looking for?",
+   "options": [
+    "Busca a su novia, Alicia.",
+    "Busca un hospital.",
+    "Vive en Sinea."
+   ],
+   "answer": 0,
+   "why": "Alicia disappeared a week ago (El tren fantasma, ch. 1)."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "No hablo ruso.",
+   "options": [
+    "I don't speak Russian.",
+    "I speak Russian.",
+    "You don't speak Russian."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Marcos busca",
+   "after": "Alicia.",
+   "options": [
+    "a",
+    "en",
+    "de"
+   ],
+   "answer": 0,
+   "es": "Marcos is looking for Alicia.",
+   "why": "Before a person as the object, Spanish adds «a»."
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it in Spanish?",
+   "word": "journalist (female)",
+   "options": [
+    "la periodista",
+    "la periodisto",
+    "el periodisto"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Marcos tiene 35 años.",
+   "answer": true,
+   "why": "«Me llamo Marcos. Tengo 35 años.» — that's how the novel begins."
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "— ¿Dónde vives, Natalia?",
+   "es": "Where do you live, Natalia?",
+   "options": [
+    "Vivo en Moscú.",
+    "Soy cardióloga.",
+    "Me llamo Natalia."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate into Spanish",
+   "es": "Marcos doesn't live in Moscow.",
+   "answer": [
+    "Marcos",
+    "no",
+    "vive",
+    "en",
+    "Moscú"
+   ],
+   "extra": [
+    "vivo",
+    "es"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it in Spanish",
+   "es": "I live in Moscow.",
+   "answers": [
+    "Vivo en Moscú",
+    "Yo vivo en Moscú"
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "¿Dónde vivís?",
+   "options": [
+    "Where do you live? (Argentinian Spanish)",
+    "What are you writing?",
+    "Where do you all work?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "write",
+   "prompt": "Write it in Spanish",
+   "es": "I'm 35 years old.",
+   "hint": "Use the phrase tengo … años",
+   "answers": [
+    "Tengo 35 años",
+    "Tengo treinta y cinco años"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Natalia trabaja en un hospital.",
+   "answer": true,
+   "why": "Natalia is a cardiologist; she works in a hospital in Moscow."
+  }
+ ]
+}

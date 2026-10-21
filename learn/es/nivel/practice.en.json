@@ -1,0 +1,336 @@
+{
+ "title": "Spanish placement test",
+ "subtitle": "20 questions, from very easy to hard. Answer each once; if you don't know, press «I don't know».",
+ "speak": "es-ES",
+ "hero": "novels/el-tren-fantasma/cover.jpg",
+ "exam": true,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Take it again",
+  "back": "Back to the units",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Test complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 8 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "levels": [
+  {
+   "min": 85,
+   "title": "B2 and above",
+   "text": "Excellent Spanish! You don't need the A1 units — read our novels in the original."
+  },
+  {
+   "min": 65,
+   "title": "B1",
+   "text": "A confident intermediate level. Read the novels in Spanish and review grammar as you go."
+  },
+  {
+   "min": 40,
+   "title": "A2",
+   "text": "A good foundation. Go through the A1 units quickly as a review, then start reading «El tren fantasma»."
+  },
+  {
+   "min": 15,
+   "title": "A1",
+   "text": "You know the basics. Start with unit 1 and work through the units in order."
+  },
+  {
+   "min": 0,
+   "title": "Beginner",
+   "text": "A perfect moment to start! Unit 1 «¡Hola! Me llamo Natalia» is waiting for you."
+  }
+ ],
+ "exercises": [
+  {
+   "type": "fill",
+   "prompt": "Choose the right option",
+   "before": "Hola, me",
+   "after": "Natalia.",
+   "options": [
+    "llamo",
+    "llama",
+    "soy"
+   ],
+   "answer": 0,
+   "es": "Hi, my name is Natalia."
+  },
+  {
+   "type": "fill",
+   "prompt": "Choose the right option",
+   "before": "Luis",
+   "after": "de Argentina.",
+   "options": [
+    "es",
+    "está",
+    "son"
+   ],
+   "answer": 0,
+   "es": "Luis is from Argentina."
+  },
+  {
+   "type": "fill",
+   "prompt": "Choose the right option",
+   "before": "Nosotros",
+   "after": "en Mendoza.",
+   "options": [
+    "vivimos",
+    "viven",
+    "vivo"
+   ],
+   "answer": 0,
+   "es": "We live in Mendoza."
+  },
+  {
+   "type": "fill",
+   "prompt": "Choose the right option",
+   "before": "¿",
+   "after": "años tienes?",
+   "options": [
+    "Cuántos",
+    "Qué",
+    "Cómo"
+   ],
+   "answer": 0,
+   "es": "How old are you?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Choose the right option",
+   "before": "Natalia",
+   "after": "cansada hoy.",
+   "options": [
+    "está",
+    "es",
+    "hay"
+   ],
+   "answer": 0,
+   "es": "Natalia is tired today."
+  },
+  {
+   "type": "fill",
+   "prompt": "Choose the right option",
+   "before": "En la estación",
+   "after": "un tren muy viejo.",
+   "options": [
+    "hay",
+    "está",
+    "es"
+   ],
+   "answer": 0,
+   "es": "There's a very old train at the station."
+  },
+  {
+   "type": "fill",
+   "prompt": "Choose the right option",
+   "before": "A Marcos le",
+   "after": "los trenes.",
+   "options": [
+    "gustan",
+    "gusta",
+    "gusto"
+   ],
+   "answer": 0,
+   "es": "Marcos likes trains."
+  },
+  {
+   "type": "fill",
+   "prompt": "Choose the right option",
+   "before": "Mañana",
+   "after": "a visitar a Sergio.",
+   "options": [
+    "voy",
+    "fui",
+    "iba"
+   ],
+   "answer": 0,
+   "es": "Tomorrow I'm going to visit Sergio."
+  },
+  {
+   "type": "fill",
+   "prompt": "Choose the right option",
+   "before": "Ayer Marcos",
+   "after": "a Alicia en la estación.",
+   "options": [
+    "buscó",
+    "busca",
+    "buscará"
+   ],
+   "answer": 0,
+   "es": "Yesterday Marcos looked for Alicia at the station."
+  },
+  {
+   "type": "fill",
+   "prompt": "Choose the right option",
+   "before": "Este libro es",
+   "after": "interesante que la película.",
+   "options": [
+    "más",
+    "muy",
+    "tan"
+   ],
+   "answer": 0,
+   "es": "This book is more interesting than the film."
+  },
+  {
+   "type": "fill",
+   "prompt": "Choose the right option",
+   "before": "Cuando era niño, Marcos",
+   "after": "miedo del tren fantasma.",
+   "options": [
+    "tenía",
+    "tuvo",
+    "tiene"
+   ],
+   "answer": 0,
+   "es": "As a child, Marcos was afraid of the ghost train."
+  },
+  {
+   "type": "fill",
+   "prompt": "Choose the right option",
+   "before": "Cuando llegó a Moscú, Luis nunca",
+   "after": "estado en Rusia.",
+   "options": [
+    "había",
+    "ha",
+    "hubo"
+   ],
+   "answer": 0,
+   "es": "When Luis arrived in Moscow, he had never been to Russia."
+  },
+  {
+   "type": "fill",
+   "prompt": "Choose the right option",
+   "before": "¿Ya",
+   "after": "visto la película?",
+   "options": [
+    "has",
+    "hay",
+    "eres"
+   ],
+   "answer": 0,
+   "es": "Have you seen the film yet?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Choose the right option",
+   "before": "Espero que Alicia",
+   "after": "bien.",
+   "options": [
+    "esté",
+    "está",
+    "estar"
+   ],
+   "answer": 0,
+   "es": "I hope Alicia is OK."
+  },
+  {
+   "type": "fill",
+   "prompt": "Choose the right option",
+   "before": "Si tengo tiempo, te",
+   "after": "mañana.",
+   "options": [
+    "llamaré",
+    "llamaría",
+    "llamara"
+   ],
+   "answer": 0,
+   "es": "If I have time, I'll call you tomorrow."
+  },
+  {
+   "type": "fill",
+   "prompt": "Choose the right option",
+   "before": "Es importante que nosotros",
+   "after": "la verdad.",
+   "options": [
+    "sepamos",
+    "sabemos",
+    "saber"
+   ],
+   "answer": 0,
+   "es": "It's important that we know the truth."
+  },
+  {
+   "type": "fill",
+   "prompt": "Choose the right option",
+   "before": "Si tuviera dinero,",
+   "after": "a Mendoza.",
+   "options": [
+    "viajaría",
+    "viajaré",
+    "viajo"
+   ],
+   "answer": 0,
+   "es": "If I had money, I would travel to Mendoza."
+  },
+  {
+   "type": "fill",
+   "prompt": "Choose the right option",
+   "before": "Me alegré de que Alicia",
+   "after": "bien.",
+   "options": [
+    "estuviera",
+    "está",
+    "estará"
+   ],
+   "answer": 0,
+   "es": "I was glad that Alicia was OK."
+  },
+  {
+   "type": "fill",
+   "prompt": "Choose the right option",
+   "before": "Si hubiera sabido la verdad, no",
+   "after": "subido al tren.",
+   "options": [
+    "habría",
+    "había",
+    "hubo"
+   ],
+   "answer": 0,
+   "es": "If I had known the truth, I wouldn't have got on the train."
+  },
+  {
+   "type": "fill",
+   "prompt": "Choose the right option",
+   "before": "¡Ojalá",
+   "after": "llegado antes!",
+   "options": [
+    "hubieras",
+    "habías",
+    "has"
+   ],
+   "answer": 0,
+   "es": "If only you had arrived earlier!"
+  }
+ ]
+}

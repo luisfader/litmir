@@ -24,8 +24,32 @@
      },
      "cover": "novels/el-misterio-de-los-fader/cover.jpg",
      "novel": "el-misterio-de-los-fader"
+    },
+    {
+     "id": "a1-2",
+     "level": "A1",
+     "n": 2,
+     "title": "Soy detective y vivo en Sinea",
+     "sub": {
+      "ru": "Профессии, правильные глаголы -ar/-er/-ir, отрицание, вопросы, числа",
+      "en": "Professions, regular -ar/-er/-ir verbs, negation, questions, numbers"
+     },
+     "cover": "novels/el-tren-fantasma/cover.jpg",
+     "novel": "el-tren-fantasma"
     }
-   ]
+   ],
+   "placement": {
+    "id": "nivel",
+    "title": {
+     "ru": "Тест на уровень",
+     "en": "Placement test"
+    },
+    "sub": {
+     "ru": "20 вопросов, около 8 минут: узнайте, с какого урока начать.",
+     "en": "20 questions, about 8 minutes: find out where to start."
+    },
+    "cover": "novels/el-tren-fantasma/cover.jpg"
+   }
   }
  ]
 }

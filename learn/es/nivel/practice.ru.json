@@ -1,0 +1,336 @@
+{
+ "title": "Тест на уровень испанского",
+ "subtitle": "20 вопросов — от самых простых до сложных. Отвечайте один раз; если не знаете, нажмите «Не знаю».",
+ "speak": "es-ES",
+ "hero": "novels/el-tren-fantasma/cover.jpg",
+ "exam": true,
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "К урокам",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Тест пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 8 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "levels": [
+  {
+   "min": 85,
+   "title": "B2 и выше",
+   "text": "Отличное владение испанским! Уроки A1 вам уже не нужны — читайте наши романы в оригинале."
+  },
+  {
+   "min": 65,
+   "title": "B1",
+   "text": "Уверенный средний уровень. Читайте романы на испанском и повторяйте грамматику по ходу чтения."
+  },
+  {
+   "min": 40,
+   "title": "A2",
+   "text": "Хорошая база. Пройдите уроки A1 быстро, для повторения, и переходите к чтению «El tren fantasma»."
+  },
+  {
+   "min": 15,
+   "title": "A1",
+   "text": "Вы знаете основы. Начните с урока 1 — и двигайтесь по порядку."
+  },
+  {
+   "min": 0,
+   "title": "Начинающий",
+   "text": "Отличный момент, чтобы начать! Урок 1 «¡Hola! Me llamo Natalia» ждёт вас."
+  }
+ ],
+ "exercises": [
+  {
+   "type": "fill",
+   "prompt": "Выберите правильный вариант",
+   "before": "Hola, me",
+   "after": "Natalia.",
+   "options": [
+    "llamo",
+    "llama",
+    "soy"
+   ],
+   "answer": 0,
+   "es": "Привет, меня зовут Наталья."
+  },
+  {
+   "type": "fill",
+   "prompt": "Выберите правильный вариант",
+   "before": "Luis",
+   "after": "de Argentina.",
+   "options": [
+    "es",
+    "está",
+    "son"
+   ],
+   "answer": 0,
+   "es": "Луис из Аргентины."
+  },
+  {
+   "type": "fill",
+   "prompt": "Выберите правильный вариант",
+   "before": "Nosotros",
+   "after": "en Mendoza.",
+   "options": [
+    "vivimos",
+    "viven",
+    "vivo"
+   ],
+   "answer": 0,
+   "es": "Мы живём в Мендосе."
+  },
+  {
+   "type": "fill",
+   "prompt": "Выберите правильный вариант",
+   "before": "¿",
+   "after": "años tienes?",
+   "options": [
+    "Cuántos",
+    "Qué",
+    "Cómo"
+   ],
+   "answer": 0,
+   "es": "Сколько тебе лет?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Выберите правильный вариант",
+   "before": "Natalia",
+   "after": "cansada hoy.",
+   "options": [
+    "está",
+    "es",
+    "hay"
+   ],
+   "answer": 0,
+   "es": "Наталья сегодня устала."
+  },
+  {
+   "type": "fill",
+   "prompt": "Выберите правильный вариант",
+   "before": "En la estación",
+   "after": "un tren muy viejo.",
+   "options": [
+    "hay",
+    "está",
+    "es"
+   ],
+   "answer": 0,
+   "es": "На вокзале есть очень старый поезд."
+  },
+  {
+   "type": "fill",
+   "prompt": "Выберите правильный вариант",
+   "before": "A Marcos le",
+   "after": "los trenes.",
+   "options": [
+    "gustan",
+    "gusta",
+    "gusto"
+   ],
+   "answer": 0,
+   "es": "Марко нравятся поезда."
+  },
+  {
+   "type": "fill",
+   "prompt": "Выберите правильный вариант",
+   "before": "Mañana",
+   "after": "a visitar a Sergio.",
+   "options": [
+    "voy",
+    "fui",
+    "iba"
+   ],
+   "answer": 0,
+   "es": "Завтра я поеду навестить Серхио."
+  },
+  {
+   "type": "fill",
+   "prompt": "Выберите правильный вариант",
+   "before": "Ayer Marcos",
+   "after": "a Alicia en la estación.",
+   "options": [
+    "buscó",
+    "busca",
+    "buscará"
+   ],
+   "answer": 0,
+   "es": "Вчера Марко искал Алисию на вокзале."
+  },
+  {
+   "type": "fill",
+   "prompt": "Выберите правильный вариант",
+   "before": "Este libro es",
+   "after": "interesante que la película.",
+   "options": [
+    "más",
+    "muy",
+    "tan"
+   ],
+   "answer": 0,
+   "es": "Эта книга интереснее, чем фильм."
+  },
+  {
+   "type": "fill",
+   "prompt": "Выберите правильный вариант",
+   "before": "Cuando era niño, Marcos",
+   "after": "miedo del tren fantasma.",
+   "options": [
+    "tenía",
+    "tuvo",
+    "tiene"
+   ],
+   "answer": 0,
+   "es": "В детстве Марко боялся поезда-призрака."
+  },
+  {
+   "type": "fill",
+   "prompt": "Выберите правильный вариант",
+   "before": "Cuando llegó a Moscú, Luis nunca",
+   "after": "estado en Rusia.",
+   "options": [
+    "había",
+    "ha",
+    "hubo"
+   ],
+   "answer": 0,
+   "es": "Когда Луис приехал в Москву, он ещё ни разу не был в России."
+  },
+  {
+   "type": "fill",
+   "prompt": "Выберите правильный вариант",
+   "before": "¿Ya",
+   "after": "visto la película?",
+   "options": [
+    "has",
+    "hay",
+    "eres"
+   ],
+   "answer": 0,
+   "es": "Ты уже посмотрел фильм?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Выберите правильный вариант",
+   "before": "Espero que Alicia",
+   "after": "bien.",
+   "options": [
+    "esté",
+    "está",
+    "estar"
+   ],
+   "answer": 0,
+   "es": "Надеюсь, что с Алисией всё в порядке."
+  },
+  {
+   "type": "fill",
+   "prompt": "Выберите правильный вариант",
+   "before": "Si tengo tiempo, te",
+   "after": "mañana.",
+   "options": [
+    "llamaré",
+    "llamaría",
+    "llamara"
+   ],
+   "answer": 0,
+   "es": "Если у меня будет время, я тебе завтра позвоню."
+  },
+  {
+   "type": "fill",
+   "prompt": "Выберите правильный вариант",
+   "before": "Es importante que nosotros",
+   "after": "la verdad.",
+   "options": [
+    "sepamos",
+    "sabemos",
+    "saber"
+   ],
+   "answer": 0,
+   "es": "Важно, чтобы мы знали правду."
+  },
+  {
+   "type": "fill",
+   "prompt": "Выберите правильный вариант",
+   "before": "Si tuviera dinero,",
+   "after": "a Mendoza.",
+   "options": [
+    "viajaría",
+    "viajaré",
+    "viajo"
+   ],
+   "answer": 0,
+   "es": "Если бы у меня были деньги, я бы поехал в Мендосу."
+  },
+  {
+   "type": "fill",
+   "prompt": "Выберите правильный вариант",
+   "before": "Me alegré de que Alicia",
+   "after": "bien.",
+   "options": [
+    "estuviera",
+    "está",
+    "estará"
+   ],
+   "answer": 0,
+   "es": "Я обрадовался, что с Алисией всё в порядке."
+  },
+  {
+   "type": "fill",
+   "prompt": "Выберите правильный вариант",
+   "before": "Si hubiera sabido la verdad, no",
+   "after": "subido al tren.",
+   "options": [
+    "habría",
+    "había",
+    "hubo"
+   ],
+   "answer": 0,
+   "es": "Если бы я знал правду, я бы не сел в поезд."
+  },
+  {
+   "type": "fill",
+   "prompt": "Выберите правильный вариант",
+   "before": "¡Ojalá",
+   "after": "llegado antes!",
+   "options": [
+    "hubieras",
+    "habías",
+    "has"
+   ],
+   "answer": 0,
+   "es": "Вот бы ты пришёл раньше!"
+  }
+ ]
+}

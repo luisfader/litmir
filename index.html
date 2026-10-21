@@ -408,6 +408,7 @@ article.chapter h3{font-family:var(--sans);font-size:.72em;letter-spacing:.12em;
 .lr-cta .ls-btn{display:inline-block;text-decoration:none}
 .lr-unit .pill{margin-left:6px}
 .lr-soon{padding:8px 0 0}
+.lr-test{border-color:var(--accent)}
 </style>
 </head>
 <body>
@@ -1449,8 +1450,8 @@ vol.oninput = () => { music.el.volume = +vol.value; store.set("vol", +vol.value)
 
 /* Language courses: #/learn (course for the site language), #/learn/<unit>, #/learn/<unit>/practice */
 const LEARN_T = {
-  ru:{help:"Объяснения на языке:", units:"Уроки", unit:"Урок", theory:"Теория", practice:"Практика", go:"Начать урок →", ex:n => `Упражнения · ${n}`, done:"Пройдено", soon:"Новые уроки скоро появятся.", back:"← Все уроки", toPractice:"Перейти к практике →", practiceNote:"Закрепите урок в интерактивных упражнениях: с озвучкой, подсказками и баллами.", novel:"Герои урока из романа"},
-  en:{help:"Explanations in:", units:"Units", unit:"Unit", theory:"Theory", practice:"Practice", go:"Start the unit →", ex:n => `Exercises · ${n}`, done:"Completed", soon:"New units are coming soon.", back:"← All units", toPractice:"Go to practice →", practiceNote:"Reinforce the unit with interactive exercises: audio, hints and points.", novel:"Characters from the novel"}
+  ru:{help:"Объяснения на языке:", units:"Уроки", unit:"Урок", theory:"Теория", practice:"Практика", go:"Начать урок →", ex:n => `Упражнения · ${n}`, done:"Пройдено", start:"Пройти тест →", soon:"Новые уроки скоро появятся.", back:"← Все уроки", toPractice:"Перейти к практике →", practiceNote:"Закрепите урок в интерактивных упражнениях: с озвучкой, подсказками и баллами.", novel:"Герои урока из романа"},
+  en:{help:"Explanations in:", units:"Units", unit:"Unit", theory:"Theory", practice:"Practice", go:"Start the unit →", ex:n => `Exercises · ${n}`, done:"Completed", start:"Take the test →", soon:"New units are coming soon.", back:"← All units", toPractice:"Go to practice →", practiceNote:"Reinforce the unit with interactive exercises: audio, hints and points.", novel:"Characters from the novel"}
 };
 let learnCat = null;
 async function loadLearn(){
@@ -1487,6 +1488,14 @@ async function learnHome(){
     ${helpSwitch(c, h)}
   </section>
   <section class="wrap"><div class="blog-list">
+    ${c.placement ? (() => { const p = c.placement, best = store.get("quiz:learn/" + c.lang + "/" + p.id, null);
+      return `<a class="post-card has-img lr-unit lr-test" href="#/learn/${esc(p.id)}/practice">
+        <img src="${esc(p.cover)}" alt="" loading="lazy">
+        <span class="date">🎯 A1 – B2${best ? ` <span class="pill study">✔ ${best.acc}%</span>` : ""}</span>
+        <h3>${esc(p.title[h] || "")}</h3>
+        <p>${esc(p.sub[h] || "")}</p>
+        <span class="more">${esc(lt(h, "start"))}</span>
+      </a>`; })() : ""}
     ${c.units.map(u => {
       const best = store.get("quiz:learn/" + c.lang + "/" + u.id, null);
       return `<a class="post-card has-img lr-unit" href="#/learn/${esc(u.id)}">
@@ -1504,6 +1513,9 @@ async function learnUnit(id, practice){
   app.innerHTML = `<div class="loading">…</div>`;
   await loadLearn();
   const c = course(), u = c && c.units.find(x => x.id === id);
+  if (c && c.placement && c.placement.id === id) { const p = c.placement, h = learnHelp(c);
+    return lesson({slug: "learn/" + c.lang, title: c.title[lang]}, 1, {file: `practice.${h}.json`, title: p.title[h], label: p.title[h]},
+      {base: `learn/${c.lang}/${p.id}/`, back: "#/learn", backTitle: c.title[lang], key: `learn/${c.lang}/${p.id}`}); }
   if (!u) { app.innerHTML = `<div class="empty">${esc(t("notFound"))}</div>`; return; }
   const h = learnHelp(c), base = `learn/${c.lang}/${u.id}/`;
   const backT = `${lt(h, "unit")} ${u.n}: ${u.title}`;
