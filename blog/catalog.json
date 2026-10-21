@@ -1,6 +1,14 @@
 {
   "posts": [
     {
+      "slug": "rosa-ile-soylesi",
+      "lang": "tr",
+      "title": "“Çöl kimseye ait değildir, ben de”: Rosa ile söyleşi",
+      "date": "2026-10-21",
+      "excerpt": "«Çöl Gülü»nün kahramanı Rosa; madenlerden kaçışını, turkuaz kaleyi, Robert'i, defterindeki isimleri ve sadık köpeği Kum'u anlatıyor.",
+      "image": "blog/tr/img/rosa-portre.webp"
+    },
+    {
       "slug": "intervju-sa-natasom",
       "lang": "sr",
       "title": "„Мој град није на продају“: интервју са Наташом",
