@@ -1,0 +1,272 @@
+{
+ "title": "Mi familia",
+ "subtitle": "Family, the verb tener, possessives, adjectives and hay.",
+ "speak": "es-ES",
+ "hero": "novels/el-misterio-de-los-fader/cover.jpg",
+ "hearts": 5,
+ "keyboard": [
+  "á",
+  "é",
+  "í",
+  "ó",
+  "ú",
+  "ñ",
+  "ü",
+  "¿",
+  "¡"
+ ],
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "el padre",
+     "father"
+    ],
+    [
+     "la madre",
+     "mother"
+    ],
+    [
+     "el hermano",
+     "brother"
+    ],
+    [
+     "la abuela",
+     "grandmother"
+    ],
+    [
+     "el hijo",
+     "son"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Luis no",
+   "after": "hermanos.",
+   "options": [
+    "tiene",
+    "tengo",
+    "tienen"
+   ],
+   "answer": 0,
+   "es": "Luis has no brothers or sisters."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Yo",
+   "after": "dos primas en Mendoza.",
+   "options": [
+    "tengo",
+    "tiene",
+    "tenemos"
+   ],
+   "answer": 0,
+   "es": "I have two cousins in Mendoza."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "los padres",
+   "options": [
+    "parents",
+    "fathers",
+    "grandparents"
+   ],
+   "answer": 0,
+   "why": "Los padres = mother and father."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Sergio es",
+   "after": "padre de Luis.",
+   "options": [
+    "el",
+    "la",
+    "los"
+   ],
+   "answer": 0,
+   "es": "Sergio is Luis's father."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Luis, ¿dónde viven",
+   "after": "padres?",
+   "options": [
+    "tus",
+    "tu",
+    "tú"
+   ],
+   "answer": 0,
+   "es": "Luis, where do your parents live?"
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it in Spanish?",
+   "word": "our family",
+   "options": [
+    "nuestra familia",
+    "nuestro familia",
+    "nuestras familia"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Natalia es alta",
+   "after": "inteligente.",
+   "options": [
+    "e",
+    "y",
+    "o"
+   ],
+   "answer": 0,
+   "es": "Natalia is tall and clever.",
+   "why": "Before i-, y becomes e."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "En la foto",
+   "after": "tres personas.",
+   "options": [
+    "hay",
+    "es",
+    "tiene"
+   ],
+   "answer": 0,
+   "es": "There are three people in the photo."
+  },
+  {
+   "type": "build",
+   "prompt": "Translate into Spanish",
+   "es": "I have a big family.",
+   "answer": [
+    "Tengo",
+    "una",
+    "familia",
+    "grande"
+   ],
+   "extra": [
+    "tiene",
+    "grando"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "¿Quién es Sergio?",
+   "es": "Who is Sergio?",
+   "options": [
+    "Es el padre de Luis.",
+    "Es el hermano de Luis.",
+    "Es la madre de Luis."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Mis hermanas son muy",
+   "after": "",
+   "options": [
+    "simpáticas",
+    "simpático",
+    "simpáticos"
+   ],
+   "answer": 0,
+   "es": "My sisters are very nice."
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Luis tiene muchos hermanos.",
+   "answer": false,
+   "why": "Luis is an only child (hijo único)."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "¿Cuántos años tiene tu abuela?",
+   "options": [
+    "How old is your grandmother?",
+    "Where does your grandmother live?",
+    "What's your grandmother's name?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "write",
+   "prompt": "Write it in Spanish",
+   "es": "I'm 30 years old.",
+   "answers": [
+    "Tengo 30 años",
+    "Tengo treinta años",
+    "Yo tengo treinta años",
+    "Yo tengo 30 años"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it in Spanish",
+   "es": "my brother",
+   "answers": [
+    "mi hermano"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "«Su padre» puede significar «his father» or «her father».",
+   "answer": true,
+   "why": "Su = his, her, their, your (formal)."
+  }
+ ]
+}

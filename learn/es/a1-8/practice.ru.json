@@ -1,0 +1,255 @@
+{
+ "title": "Vamos a Londres",
+ "subtitle": "Глагол ir, al / a la, транспорт, город, как пройти.",
+ "speak": "es-ES",
+ "hero": "novels/operacion-londres/cover.jpg",
+ "hearts": 5,
+ "keyboard": [
+  "á",
+  "é",
+  "í",
+  "ó",
+  "ú",
+  "ñ",
+  "ü",
+  "¿",
+  "¡"
+ ],
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 7 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "la calle",
+     "улица"
+    ],
+    [
+     "la estación",
+     "вокзал"
+    ],
+    [
+     "el aeropuerto",
+     "аэропорт"
+    ],
+    [
+     "el puente",
+     "мост"
+    ],
+    [
+     "la farmacia",
+     "аптека"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Natalia y Luis",
+   "after": "a Londres.",
+   "options": [
+    "van",
+    "vamos",
+    "va"
+   ],
+   "answer": 0,
+   "es": "Наталья и Луис едут в Лондон."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Yo",
+   "after": "al museo.",
+   "options": [
+    "voy",
+    "vo",
+    "va"
+   ],
+   "answer": 0,
+   "es": "Я иду в музей."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Vamos",
+   "after": "estación.",
+   "options": [
+    "a la",
+    "al",
+    "en la"
+   ],
+   "answer": 0,
+   "es": "Мы идём на вокзал."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Vamos",
+   "after": "metro.",
+   "options": [
+    "en",
+    "a",
+    "con"
+   ],
+   "answer": 0,
+   "es": "Мы едем на метро."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Vamos",
+   "after": "pie.",
+   "options": [
+    "a",
+    "en",
+    "de"
+   ],
+   "answer": 0,
+   "es": "Мы идём пешком."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Gire a la derecha.",
+   "options": [
+    "Поверните направо.",
+    "Поверните налево.",
+    "Идите прямо."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать по-испански?",
+   "word": "Куда ты идёшь?",
+   "options": [
+    "¿Adónde vas?",
+    "¿Dónde vas?",
+    "¿Adónde estás?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Es mi",
+   "after": "día en Londres.",
+   "options": [
+    "primer",
+    "primero",
+    "primera"
+   ],
+   "answer": 0,
+   "es": "Это мой первый день в Лондоне."
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите на испанский",
+   "es": "Как мне добраться до музея?",
+   "answer": [
+    "¿Cómo",
+    "llego",
+    "al",
+    "museo?"
+   ],
+   "extra": [
+    "a",
+    "el"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "¿Por qué van en metro?",
+   "es": "Почему они едут на метро?",
+   "options": [
+    "Porque el museo está lejos.",
+    "Porque el museo está cerca.",
+    "Porque no hay metro."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Siga todo recto.",
+   "options": [
+    "Идите прямо.",
+    "Перейдите площадь.",
+    "Садитесь на автобус."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Natalia y Luis viajan de Moscú a Londres.",
+   "answer": true,
+   "why": "След флакона ведёт из Москвы в Лондон."
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите по-испански",
+   "es": "Я иду в аэропорт.",
+   "answers": [
+    "Voy al aeropuerto",
+    "Yo voy al aeropuerto"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите по-испански",
+   "es": "на поезде",
+   "answers": [
+    "en tren"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "«¿Dónde vas?» y «¿Adónde vas?» significan lo mismo en el español estándar.",
+   "answer": false,
+   "why": "¿Dónde? — где, ¿adónde? — куда."
+  }
+ ]
+}

@@ -1,0 +1,258 @@
+{
+ "title": "Me gusta",
+ "subtitle": "Gustar и encantar, también / tampoco, еда и ресторан.",
+ "speak": "es-ES",
+ "hero": "novels/el-misterio-de-los-fader/cover.jpg",
+ "hearts": 5,
+ "keyboard": [
+  "á",
+  "é",
+  "í",
+  "ó",
+  "ú",
+  "ñ",
+  "ü",
+  "¿",
+  "¡"
+ ],
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 7 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "el pan",
+     "хлеб"
+    ],
+    [
+     "la carne",
+     "мясо"
+    ],
+    [
+     "el pescado",
+     "рыба"
+    ],
+    [
+     "el agua",
+     "вода"
+    ],
+    [
+     "el queso",
+     "сыр"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "A Natalia le",
+   "after": "el vino de Mendoza.",
+   "options": [
+    "gusta",
+    "gustan",
+    "gusto"
+   ],
+   "answer": 0,
+   "es": "Наталье нравится мендосское вино."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Me",
+   "after": "las empanadas.",
+   "options": [
+    "encantan",
+    "encanta",
+    "encanto"
+   ],
+   "answer": 0,
+   "es": "Я обожаю эмпанадас.",
+   "why": "Много предметов → gustan / encantan."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "A Luis",
+   "after": "encanta el mate.",
+   "options": [
+    "le",
+    "les",
+    "me"
+   ],
+   "answer": 0,
+   "es": "Луис обожает мате."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "A mí tampoco.",
+   "options": [
+    "Мне тоже нет.",
+    "Мне тоже.",
+    "А мне да."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "— Me gusta el chocolate. — A mí",
+   "after": "",
+   "options": [
+    "también",
+    "tampoco",
+    "nunca"
+   ],
+   "answer": 0,
+   "es": "— Я люблю шоколад. — Я тоже."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Me gusta",
+   "after": "té con limón.",
+   "options": [
+    "el",
+    "—",
+    "un"
+   ],
+   "answer": 0,
+   "es": "Я люблю чай с лимоном.",
+   "why": "После gustar существительное с артиклем."
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать по-испански?",
+   "word": "Тебе нравится читать?",
+   "options": [
+    "¿Te gusta leer?",
+    "¿Te gustan leer?",
+    "¿Tú gustas leer?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "¿Por qué no le gusta el mate a Natalia?",
+   "es": "Почему Наталье не нравится мате?",
+   "options": [
+    "Porque es muy amargo.",
+    "Porque es muy dulce.",
+    "Porque es muy caro."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите на испанский",
+   "es": "Нам нравится вино.",
+   "answer": [
+    "Nos",
+    "gusta",
+    "el",
+    "vino"
+   ],
+   "extra": [
+    "gustan",
+    "les"
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "La cuenta, por favor.",
+   "options": [
+    "Счёт, пожалуйста.",
+    "Меню, пожалуйста.",
+    "Воды, пожалуйста."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "A mis padres les",
+   "after": "los viajes.",
+   "options": [
+    "gustan",
+    "gusta",
+    "gustamos"
+   ],
+   "answer": 0,
+   "es": "Мои родители любят путешествия."
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "A Luis le encanta el mate.",
+   "answer": true,
+   "why": "Так говорит Серхио: «a Luis le encanta»."
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите по-испански",
+   "es": "Мне нравится мясо.",
+   "answers": [
+    "Me gusta la carne",
+    "A mí me gusta la carne"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите по-испански",
+   "es": "Как вкусно!",
+   "answers": [
+    "¡Qué rico!",
+    "Qué rico"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "«Me encanta mucho» es correcto.",
+   "answer": false,
+   "why": "С encantar не используют mucho."
+  }
+ ]
+}

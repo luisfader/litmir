@@ -1,0 +1,273 @@
+{
+ "title": "Quiero encontrar a Alicia",
+ "subtitle": "Глаголы e→ie, o→ue, e→i, неправильное «yo», querer/poder + инфинитив.",
+ "speak": "es-ES",
+ "hero": "novels/el-tren-fantasma/cover.jpg",
+ "hearts": 5,
+ "keyboard": [
+  "á",
+  "é",
+  "í",
+  "ó",
+  "ú",
+  "ñ",
+  "ü",
+  "¿",
+  "¡"
+ ],
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 7 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "querer",
+     "хотеть"
+    ],
+    [
+     "poder",
+     "мочь"
+    ],
+    [
+     "dormir",
+     "спать"
+    ],
+    [
+     "volver",
+     "возвращаться"
+    ],
+    [
+     "pedir",
+     "просить"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Marcos",
+   "after": "encontrar a Alicia.",
+   "options": [
+    "quiere",
+    "quere",
+    "queremos"
+   ],
+   "answer": 0,
+   "es": "Марко хочет найти Алисию."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Yo no",
+   "after": "dormir en el tren.",
+   "options": [
+    "puedo",
+    "podo",
+    "puede"
+   ],
+   "answer": 0,
+   "es": "Я не могу спать в поезде."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Nosotros",
+   "after": "a las ocho.",
+   "options": [
+    "volvemos",
+    "vuelvemos",
+    "vuelven"
+   ],
+   "answer": 0,
+   "es": "Мы возвращаемся в восемь.",
+   "why": "В nosotros корень не меняется."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "¿Qué haces? —",
+   "after": "mi trabajo.",
+   "options": [
+    "Hago",
+    "Haco",
+    "Hace"
+   ],
+   "answer": 0,
+   "es": "Что ты делаешь? — Делаю свою работу."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Los zombis",
+   "after": "un café.",
+   "options": [
+    "piden",
+    "peden",
+    "pedimos"
+   ],
+   "answer": 0,
+   "es": "Зомби заказывают кофе."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Yo",
+   "after": "a Alicia.",
+   "options": [
+    "conozco",
+    "conoco",
+    "sé"
+   ],
+   "answer": 0,
+   "es": "Я знаком с Алисией.",
+   "why": "Знать человека → conocer."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "No sé dónde está el tren.",
+   "options": [
+    "Я не знаю, где поезд.",
+    "Я не вижу поезд.",
+    "Я не ищу поезд."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать по-испански?",
+   "word": "Я выхожу из поезда.",
+   "options": [
+    "Salgo del tren.",
+    "Salo del tren.",
+    "Sale del tren."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите на испанский",
+   "es": "Можешь повторить, пожалуйста?",
+   "answer": [
+    "¿Puedes",
+    "repetir",
+    "por",
+    "favor?"
+   ],
+   "extra": [
+    "podes",
+    "repites"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "¿Qué hace el zombi?",
+   "es": "Что делает зомби?",
+   "options": [
+    "Empieza a cantar.",
+    "Empieza a dormir.",
+    "Vuelve a la estación."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "El zombi",
+   "after": ": «¿Qué hace usted aquí?»",
+   "options": [
+    "dice",
+    "dece",
+    "digo"
+   ],
+   "answer": 0,
+   "es": "Зомби говорит: «Что вы здесь делаете?»"
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "¿A qué hora",
+   "after": "la película?",
+   "options": [
+    "empieza",
+    "empeza",
+    "empiezo"
+   ],
+   "answer": 0,
+   "es": "Во сколько начинается фильм?"
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "«Podemos» es correcto.",
+   "answer": true,
+   "why": "В nosotros: podemos, без изменения корня."
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите по-испански",
+   "es": "Я хочу спать.",
+   "answers": [
+    "Quiero dormir",
+    "Yo quiero dormir"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите по-испански",
+   "es": "Я прихожу",
+   "answers": [
+    "vengo",
+    "yo vengo"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "«Sé» es una forma del verbo «ser».",
+   "answer": false,
+   "why": "Sé — от saber (знать). От ser — soy."
+  }
+ ]
+}

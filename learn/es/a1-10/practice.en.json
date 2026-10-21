@@ -1,0 +1,256 @@
+{
+ "title": "Mañana voy a…",
+ "subtitle": "Ir a + infinitive, weather, months, seasons and dates. The final A1 unit.",
+ "speak": "es-ES",
+ "hero": "novels/la-gran-conspiracion/cover.jpg",
+ "hearts": 5,
+ "keyboard": [
+  "á",
+  "é",
+  "í",
+  "ó",
+  "ú",
+  "ñ",
+  "ü",
+  "¿",
+  "¡"
+ ],
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "enero",
+     "January"
+    ],
+    [
+     "abril",
+     "April"
+    ],
+    [
+     "julio",
+     "July"
+    ],
+    [
+     "octubre",
+     "October"
+    ],
+    [
+     "diciembre",
+     "December"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Mañana",
+   "after": "a cenar con Luis.",
+   "options": [
+    "voy",
+    "va",
+    "vamos"
+   ],
+   "answer": 0,
+   "es": "Tomorrow I'm going to have dinner with Luis."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "¿Qué vas",
+   "after": "hacer el fin de semana?",
+   "options": [
+    "a",
+    "de",
+    "—"
+   ],
+   "answer": 0,
+   "es": "What are you going to do at the weekend?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "En Moscú hace",
+   "after": "frío.",
+   "options": [
+    "mucho",
+    "muy",
+    "mucha"
+   ],
+   "answer": 0,
+   "es": "It's very cold in Moscow."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "En invierno",
+   "after": "en Moscú.",
+   "options": [
+    "nieva",
+    "hace",
+    "está"
+   ],
+   "answer": 0,
+   "es": "It snows in Moscow in winter."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Mi cumpleaños es el 5",
+   "after": "mayo.",
+   "options": [
+    "de",
+    "en",
+    "a"
+   ],
+   "answer": 0,
+   "es": "My birthday is on 5 May."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Hace calor.",
+   "options": [
+    "It's hot.",
+    "It's cold.",
+    "It's raining."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "el otoño",
+   "options": [
+    "autumn",
+    "spring",
+    "summer"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it in Spanish?",
+   "word": "What's the weather like?",
+   "options": [
+    "¿Qué tiempo hace?",
+    "¿Qué tiempo es?",
+    "¿Cómo tiempo hace?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate into Spanish",
+   "es": "We're going to travel to Mendoza.",
+   "answer": [
+    "Vamos",
+    "a",
+    "viajar",
+    "a",
+    "Mendoza"
+   ],
+   "extra": [
+    "van",
+    "en"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "¿Qué va a hacer Natalia el martes?",
+   "es": "What is Natalia going to do on Tuesday?",
+   "options": [
+    "Va a cenar con Luis.",
+    "Va a ver a Roberto.",
+    "Va a viajar a Mendoza."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "¿Con quién va a ir Natalia al restaurante el viernes?",
+   "es": "Who is Natalia going to the restaurant with on Friday?",
+   "options": [
+    "Con Roberto.",
+    "Con Luis.",
+    "Con Sergio."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "En julio es invierno en Argentina.",
+   "answer": true,
+   "why": "Seasons are reversed in the southern hemisphere."
+  },
+  {
+   "type": "write",
+   "prompt": "Write it in Spanish",
+   "es": "Tomorrow I'm going to work.",
+   "answers": [
+    "Mañana voy a trabajar",
+    "Voy a trabajar mañana"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it in Spanish",
+   "es": "It's snowing.",
+   "answers": [
+    "Nieva",
+    "Está nevando"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "«Hace calor» significa que hace frío.",
+   "answer": false,
+   "why": "Hace calor — it's hot."
+  }
+ ]
+}

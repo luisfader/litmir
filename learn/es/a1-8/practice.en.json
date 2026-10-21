@@ -1,0 +1,255 @@
+{
+ "title": "Vamos a Londres",
+ "subtitle": "The verb ir, al / a la, transport, the city, asking the way.",
+ "speak": "es-ES",
+ "hero": "novels/operacion-londres/cover.jpg",
+ "hearts": 5,
+ "keyboard": [
+  "á",
+  "é",
+  "í",
+  "ó",
+  "ú",
+  "ñ",
+  "ü",
+  "¿",
+  "¡"
+ ],
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "la calle",
+     "street"
+    ],
+    [
+     "la estación",
+     "station"
+    ],
+    [
+     "el aeropuerto",
+     "airport"
+    ],
+    [
+     "el puente",
+     "bridge"
+    ],
+    [
+     "la farmacia",
+     "pharmacy"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Natalia y Luis",
+   "after": "a Londres.",
+   "options": [
+    "van",
+    "vamos",
+    "va"
+   ],
+   "answer": 0,
+   "es": "Natalia and Luis are going to London."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Yo",
+   "after": "al museo.",
+   "options": [
+    "voy",
+    "vo",
+    "va"
+   ],
+   "answer": 0,
+   "es": "I'm going to the museum."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Vamos",
+   "after": "estación.",
+   "options": [
+    "a la",
+    "al",
+    "en la"
+   ],
+   "answer": 0,
+   "es": "We're going to the station."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Vamos",
+   "after": "metro.",
+   "options": [
+    "en",
+    "a",
+    "con"
+   ],
+   "answer": 0,
+   "es": "We're going by underground."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Vamos",
+   "after": "pie.",
+   "options": [
+    "a",
+    "en",
+    "de"
+   ],
+   "answer": 0,
+   "es": "We're going on foot."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Gire a la derecha.",
+   "options": [
+    "Turn right.",
+    "Turn left.",
+    "Go straight on."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it in Spanish?",
+   "word": "Where are you going?",
+   "options": [
+    "¿Adónde vas?",
+    "¿Dónde vas?",
+    "¿Adónde estás?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Es mi",
+   "after": "día en Londres.",
+   "options": [
+    "primer",
+    "primero",
+    "primera"
+   ],
+   "answer": 0,
+   "es": "It's my first day in London."
+  },
+  {
+   "type": "build",
+   "prompt": "Translate into Spanish",
+   "es": "How do I get to the museum?",
+   "answer": [
+    "¿Cómo",
+    "llego",
+    "al",
+    "museo?"
+   ],
+   "extra": [
+    "a",
+    "el"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "¿Por qué van en metro?",
+   "es": "Why do they take the underground?",
+   "options": [
+    "Porque el museo está lejos.",
+    "Porque el museo está cerca.",
+    "Porque no hay metro."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Siga todo recto.",
+   "options": [
+    "Go straight on.",
+    "Cross the square.",
+    "Take the bus."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Natalia y Luis viajan de Moscú a Londres.",
+   "answer": true,
+   "why": "The trail of the flask leads from Moscow to London."
+  },
+  {
+   "type": "write",
+   "prompt": "Write it in Spanish",
+   "es": "I'm going to the airport.",
+   "answers": [
+    "Voy al aeropuerto",
+    "Yo voy al aeropuerto"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it in Spanish",
+   "es": "by train",
+   "answers": [
+    "en tren"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "«¿Dónde vas?» y «¿Adónde vas?» significan lo mismo en el español estándar.",
+   "answer": false,
+   "why": "¿Dónde? — where (location), ¿adónde? — where to."
+  }
+ ]
+}

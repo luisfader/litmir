@@ -36,6 +36,102 @@
      },
      "cover": "novels/el-tren-fantasma/cover.jpg",
      "novel": "el-tren-fantasma"
+    },
+    {
+     "id": "a1-3",
+     "level": "A1",
+     "n": 3,
+     "title": "Mi familia",
+     "sub": {
+      "ru": "Семья, глагол TENER, притяжательные, прилагательные, HAY",
+      "en": "Family, the verb TENER, possessives, adjectives, HAY"
+     },
+     "cover": "novels/el-misterio-de-los-fader/cover.jpg",
+     "novel": "el-misterio-de-los-fader"
+    },
+    {
+     "id": "a1-4",
+     "level": "A1",
+     "n": 4,
+     "title": "¿Dónde está?",
+     "sub": {
+      "ru": "Глагол ESTAR, ser или estar, hay или está, предлоги места",
+      "en": "The verb ESTAR, ser vs estar, hay vs está, prepositions of place"
+     },
+     "cover": "novels/la-corazonada/cover.jpg",
+     "novel": "la-corazonada"
+    },
+    {
+     "id": "a1-5",
+     "level": "A1",
+     "n": 5,
+     "title": "Mi día",
+     "sub": {
+      "ru": "Который час, возвратные глаголы, дни недели, как часто",
+      "en": "Telling the time, reflexive verbs, days of the week, frequency"
+     },
+     "cover": "novels/el-tren-fantasma/cover.jpg",
+     "novel": "el-tren-fantasma"
+    },
+    {
+     "id": "a1-6",
+     "level": "A1",
+     "n": 6,
+     "title": "Me gusta",
+     "sub": {
+      "ru": "GUSTAR и ENCANTAR, también / tampoco, еда, в ресторане",
+      "en": "GUSTAR and ENCANTAR, también / tampoco, food, at the restaurant"
+     },
+     "cover": "novels/el-misterio-de-los-fader/cover.jpg",
+     "novel": "el-misterio-de-los-fader"
+    },
+    {
+     "id": "a1-7",
+     "level": "A1",
+     "n": 7,
+     "title": "Quiero encontrar a Alicia",
+     "sub": {
+      "ru": "Неправильные глаголы: e→ie, o→ue, e→i, hago, conozco, sé",
+      "en": "Irregular verbs: e→ie, o→ue, e→i, hago, conozco, sé"
+     },
+     "cover": "novels/el-tren-fantasma/cover.jpg",
+     "novel": "el-tren-fantasma"
+    },
+    {
+     "id": "a1-8",
+     "level": "A1",
+     "n": 8,
+     "title": "Vamos a Londres",
+     "sub": {
+      "ru": "Глагол IR, al / a la, транспорт, город, как пройти",
+      "en": "The verb IR, al / a la, transport, the city, asking the way"
+     },
+     "cover": "novels/operacion-londres/cover.jpg",
+     "novel": "operacion-londres"
+    },
+    {
+     "id": "a1-9",
+     "level": "A1",
+     "n": 9,
+     "title": "¿Cuánto cuesta?",
+     "sub": {
+      "ru": "Покупки, числа от 100, цвета, одежда, este / ese / aquel",
+      "en": "Shopping, numbers from 100, colours, clothes, este / ese / aquel"
+     },
+     "cover": "novels/la-gran-conspiracion/cover.jpg",
+     "novel": "la-gran-conspiracion"
+    },
+    {
+     "id": "a1-10",
+     "level": "A1",
+     "n": 10,
+     "title": "Mañana voy a…",
+     "sub": {
+      "ru": "IR A + инфинитив, погода, месяцы, даты. Итог уровня A1",
+      "en": "IR A + infinitive, weather, months, dates. A1 review"
+     },
+     "cover": "novels/la-gran-conspiracion/cover.jpg",
+     "novel": "la-gran-conspiracion"
     }
    ],
    "placement": {

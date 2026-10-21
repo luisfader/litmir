@@ -1,0 +1,258 @@
+{
+ "title": "Me gusta",
+ "subtitle": "Gustar and encantar, también / tampoco, food and the restaurant.",
+ "speak": "es-ES",
+ "hero": "novels/el-misterio-de-los-fader/cover.jpg",
+ "hearts": 5,
+ "keyboard": [
+  "á",
+  "é",
+  "í",
+  "ó",
+  "ú",
+  "ñ",
+  "ü",
+  "¿",
+  "¡"
+ ],
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "el pan",
+     "bread"
+    ],
+    [
+     "la carne",
+     "meat"
+    ],
+    [
+     "el pescado",
+     "fish"
+    ],
+    [
+     "el agua",
+     "water"
+    ],
+    [
+     "el queso",
+     "cheese"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "A Natalia le",
+   "after": "el vino de Mendoza.",
+   "options": [
+    "gusta",
+    "gustan",
+    "gusto"
+   ],
+   "answer": 0,
+   "es": "Natalia likes Mendoza wine."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Me",
+   "after": "las empanadas.",
+   "options": [
+    "encantan",
+    "encanta",
+    "encanto"
+   ],
+   "answer": 0,
+   "es": "I love empanadas.",
+   "why": "Several things → gustan / encantan."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "A Luis",
+   "after": "encanta el mate.",
+   "options": [
+    "le",
+    "les",
+    "me"
+   ],
+   "answer": 0,
+   "es": "Luis loves mate."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "A mí tampoco.",
+   "options": [
+    "Me neither.",
+    "Me too.",
+    "I do."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "— Me gusta el chocolate. — A mí",
+   "after": "",
+   "options": [
+    "también",
+    "tampoco",
+    "nunca"
+   ],
+   "answer": 0,
+   "es": "— I like chocolate. — Me too."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Me gusta",
+   "after": "té con limón.",
+   "options": [
+    "el",
+    "—",
+    "un"
+   ],
+   "answer": 0,
+   "es": "I like tea with lemon.",
+   "why": "After gustar, the noun takes the article."
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it in Spanish?",
+   "word": "Do you like reading?",
+   "options": [
+    "¿Te gusta leer?",
+    "¿Te gustan leer?",
+    "¿Tú gustas leer?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "¿Por qué no le gusta el mate a Natalia?",
+   "es": "Why doesn't Natalia like mate?",
+   "options": [
+    "Porque es muy amargo.",
+    "Porque es muy dulce.",
+    "Porque es muy caro."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate into Spanish",
+   "es": "We like wine.",
+   "answer": [
+    "Nos",
+    "gusta",
+    "el",
+    "vino"
+   ],
+   "extra": [
+    "gustan",
+    "les"
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "La cuenta, por favor.",
+   "options": [
+    "The bill, please.",
+    "The menu, please.",
+    "Some water, please."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "A mis padres les",
+   "after": "los viajes.",
+   "options": [
+    "gustan",
+    "gusta",
+    "gustamos"
+   ],
+   "answer": 0,
+   "es": "My parents like travelling."
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "A Luis le encanta el mate.",
+   "answer": true,
+   "why": "Sergio says so: «a Luis le encanta»."
+  },
+  {
+   "type": "write",
+   "prompt": "Write it in Spanish",
+   "es": "I like meat.",
+   "answers": [
+    "Me gusta la carne",
+    "A mí me gusta la carne"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it in Spanish",
+   "es": "How delicious!",
+   "answers": [
+    "¡Qué rico!",
+    "Qué rico"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "«Me encanta mucho» es correcto.",
+   "answer": false,
+   "why": "Don't use mucho with encantar."
+  }
+ ]
+}

@@ -1,0 +1,275 @@
+{
+ "title": "¿Dónde está?",
+ "subtitle": "Глагол estar, ser или estar, hay или está, предлоги места.",
+ "speak": "es-ES",
+ "hero": "novels/la-corazonada/cover.jpg",
+ "hearts": 5,
+ "keyboard": [
+  "á",
+  "é",
+  "í",
+  "ó",
+  "ú",
+  "ñ",
+  "ü",
+  "¿",
+  "¡"
+ ],
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 7 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "debajo de",
+     "под"
+    ],
+    [
+     "al lado de",
+     "рядом с"
+    ],
+    [
+     "detrás de",
+     "за"
+    ],
+    [
+     "cerca de",
+     "близко к"
+    ],
+    [
+     "lejos de",
+     "далеко от"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Robert",
+   "after": "en el garaje.",
+   "options": [
+    "está",
+    "es",
+    "hay"
+   ],
+   "answer": 0,
+   "es": "Роберт в гараже."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "En la fortaleza",
+   "after": "una torre.",
+   "options": [
+    "hay",
+    "está",
+    "es"
+   ],
+   "answer": 0,
+   "es": "В крепости есть башня.",
+   "why": "Новая информация с un/una → hay."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Yo",
+   "after": "muy cansado.",
+   "options": [
+    "estoy",
+    "soy",
+    "está"
+   ],
+   "answer": 0,
+   "es": "Я очень устал."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Luis",
+   "after": "arquitecto.",
+   "options": [
+    "es",
+    "está",
+    "hay"
+   ],
+   "answer": 0,
+   "es": "Луис — архитектор.",
+   "why": "Профессия → ser."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "La motocicleta está al lado",
+   "after": "garaje.",
+   "options": [
+    "del",
+    "de el",
+    "de la"
+   ],
+   "answer": 0,
+   "es": "Мотоцикл рядом с гаражом."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Natalia está triste.",
+   "options": [
+    "Наталье сейчас грустно.",
+    "Наталья грустный человек.",
+    "Наталья в башне."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать по-испански?",
+   "word": "Где ты?",
+   "options": [
+    "¿Dónde estás?",
+    "¿Dónde eres?",
+    "¿Dónde hay?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Nosotros",
+   "after": "en la plaza.",
+   "options": [
+    "estamos",
+    "somos",
+    "están"
+   ],
+   "answer": 0,
+   "es": "Мы на площади."
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите на испанский",
+   "es": "Бункер под башней.",
+   "answer": [
+    "El",
+    "búnker",
+    "está",
+    "debajo",
+    "de",
+    "la",
+    "torre"
+   ],
+   "extra": [
+    "es",
+    "hay"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "¿Dónde está el búnker?",
+   "es": "Где бункер?",
+   "options": [
+    "Está debajo de la torre.",
+    "Es debajo de la torre.",
+    "Hay debajo de la torre."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "En la fortaleza hay un hospital.",
+   "answer": false,
+   "why": "Больницы пока нет — есть медпункт (enfermería)."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Los amigos de Robert",
+   "after": "contentos.",
+   "options": [
+    "están",
+    "son",
+    "hay"
+   ],
+   "answer": 0,
+   "es": "Друзья Роберта довольны."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "a la izquierda",
+   "options": [
+    "налево, слева",
+    "направо, справа",
+    "прямо"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите по-испански",
+   "es": "Я устал.",
+   "answers": [
+    "Estoy cansado",
+    "Estoy cansada",
+    "Yo estoy cansado",
+    "Yo estoy cansada"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите по-испански",
+   "es": "рядом с домом",
+   "answers": [
+    "al lado de la casa"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "«Luis es nervioso» describe su carácter.",
+   "answer": true,
+   "why": "Ser — характер; estar — состояние сейчас."
+  }
+ ]
+}

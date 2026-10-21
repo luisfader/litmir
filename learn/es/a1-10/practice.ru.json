@@ -1,0 +1,256 @@
+{
+ "title": "Mañana voy a…",
+ "subtitle": "Ir a + инфинитив, погода, месяцы, времена года и даты. Итоговый урок A1.",
+ "speak": "es-ES",
+ "hero": "novels/la-gran-conspiracion/cover.jpg",
+ "hearts": 5,
+ "keyboard": [
+  "á",
+  "é",
+  "í",
+  "ó",
+  "ú",
+  "ñ",
+  "ü",
+  "¿",
+  "¡"
+ ],
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 7 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "enero",
+     "январь"
+    ],
+    [
+     "abril",
+     "апрель"
+    ],
+    [
+     "julio",
+     "июль"
+    ],
+    [
+     "octubre",
+     "октябрь"
+    ],
+    [
+     "diciembre",
+     "декабрь"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Mañana",
+   "after": "a cenar con Luis.",
+   "options": [
+    "voy",
+    "va",
+    "vamos"
+   ],
+   "answer": 0,
+   "es": "Завтра я ужинаю с Луисом."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "¿Qué vas",
+   "after": "hacer el fin de semana?",
+   "options": [
+    "a",
+    "de",
+    "—"
+   ],
+   "answer": 0,
+   "es": "Что ты будешь делать на выходных?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "En Moscú hace",
+   "after": "frío.",
+   "options": [
+    "mucho",
+    "muy",
+    "mucha"
+   ],
+   "answer": 0,
+   "es": "В Москве очень холодно."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "En invierno",
+   "after": "en Moscú.",
+   "options": [
+    "nieva",
+    "hace",
+    "está"
+   ],
+   "answer": 0,
+   "es": "Зимой в Москве идёт снег."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Mi cumpleaños es el 5",
+   "after": "mayo.",
+   "options": [
+    "de",
+    "en",
+    "a"
+   ],
+   "answer": 0,
+   "es": "Мой день рождения — 5 мая."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Hace calor.",
+   "options": [
+    "Жарко.",
+    "Холодно.",
+    "Идёт дождь."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "el otoño",
+   "options": [
+    "осень",
+    "весна",
+    "лето"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать по-испански?",
+   "word": "Какая погода?",
+   "options": [
+    "¿Qué tiempo hace?",
+    "¿Qué tiempo es?",
+    "¿Cómo tiempo hace?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите на испанский",
+   "es": "Мы поедем в Мендосу.",
+   "answer": [
+    "Vamos",
+    "a",
+    "viajar",
+    "a",
+    "Mendoza"
+   ],
+   "extra": [
+    "van",
+    "en"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "¿Qué va a hacer Natalia el martes?",
+   "es": "Что Наталья будет делать во вторник?",
+   "options": [
+    "Va a cenar con Luis.",
+    "Va a ver a Roberto.",
+    "Va a viajar a Mendoza."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "¿Con quién va a ir Natalia al restaurante el viernes?",
+   "es": "С кем Наталья пойдёт в ресторан в пятницу?",
+   "options": [
+    "Con Roberto.",
+    "Con Luis.",
+    "Con Sergio."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "En julio es invierno en Argentina.",
+   "answer": true,
+   "why": "В Южном полушарии времена года наоборот."
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите по-испански",
+   "es": "Завтра я буду работать.",
+   "answers": [
+    "Mañana voy a trabajar",
+    "Voy a trabajar mañana"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите по-испански",
+   "es": "Идёт снег.",
+   "answers": [
+    "Nieva",
+    "Está nevando"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "«Hace calor» significa que hace frío.",
+   "answer": false,
+   "why": "Hace calor — жарко."
+  }
+ ]
+}

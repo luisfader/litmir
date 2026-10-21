@@ -1,0 +1,273 @@
+{
+ "title": "Quiero encontrar a Alicia",
+ "subtitle": "Stem-changing verbs e→ie, o→ue, e→i, irregular «yo» forms, querer/poder + infinitive.",
+ "speak": "es-ES",
+ "hero": "novels/el-tren-fantasma/cover.jpg",
+ "hearts": 5,
+ "keyboard": [
+  "á",
+  "é",
+  "í",
+  "ó",
+  "ú",
+  "ñ",
+  "ü",
+  "¿",
+  "¡"
+ ],
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "querer",
+     "to want"
+    ],
+    [
+     "poder",
+     "can"
+    ],
+    [
+     "dormir",
+     "to sleep"
+    ],
+    [
+     "volver",
+     "to return"
+    ],
+    [
+     "pedir",
+     "to ask for"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Marcos",
+   "after": "encontrar a Alicia.",
+   "options": [
+    "quiere",
+    "quere",
+    "queremos"
+   ],
+   "answer": 0,
+   "es": "Marcos wants to find Alicia."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Yo no",
+   "after": "dormir en el tren.",
+   "options": [
+    "puedo",
+    "podo",
+    "puede"
+   ],
+   "answer": 0,
+   "es": "I can't sleep on the train."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Nosotros",
+   "after": "a las ocho.",
+   "options": [
+    "volvemos",
+    "vuelvemos",
+    "vuelven"
+   ],
+   "answer": 0,
+   "es": "We come back at eight.",
+   "why": "No stem change in the nosotros form."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "¿Qué haces? —",
+   "after": "mi trabajo.",
+   "options": [
+    "Hago",
+    "Haco",
+    "Hace"
+   ],
+   "answer": 0,
+   "es": "What are you doing? — I'm doing my job."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Los zombis",
+   "after": "un café.",
+   "options": [
+    "piden",
+    "peden",
+    "pedimos"
+   ],
+   "answer": 0,
+   "es": "The zombies order a coffee."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Yo",
+   "after": "a Alicia.",
+   "options": [
+    "conozco",
+    "conoco",
+    "sé"
+   ],
+   "answer": 0,
+   "es": "I know Alicia.",
+   "why": "To know a person → conocer."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "No sé dónde está el tren.",
+   "options": [
+    "I don't know where the train is.",
+    "I can't see the train.",
+    "I'm not looking for the train."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it in Spanish?",
+   "word": "I'm getting off the train.",
+   "options": [
+    "Salgo del tren.",
+    "Salo del tren.",
+    "Sale del tren."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate into Spanish",
+   "es": "Can you repeat, please?",
+   "answer": [
+    "¿Puedes",
+    "repetir",
+    "por",
+    "favor?"
+   ],
+   "extra": [
+    "podes",
+    "repites"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "¿Qué hace el zombi?",
+   "es": "What does the zombie do?",
+   "options": [
+    "Empieza a cantar.",
+    "Empieza a dormir.",
+    "Vuelve a la estación."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "El zombi",
+   "after": ": «¿Qué hace usted aquí?»",
+   "options": [
+    "dice",
+    "dece",
+    "digo"
+   ],
+   "answer": 0,
+   "es": "The zombie says: «What are you doing here?»"
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "¿A qué hora",
+   "after": "la película?",
+   "options": [
+    "empieza",
+    "empeza",
+    "empiezo"
+   ],
+   "answer": 0,
+   "es": "What time does the film start?"
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "«Podemos» es correcto.",
+   "answer": true,
+   "why": "Nosotros: podemos, no stem change."
+  },
+  {
+   "type": "write",
+   "prompt": "Write it in Spanish",
+   "es": "I want to sleep.",
+   "answers": [
+    "Quiero dormir",
+    "Yo quiero dormir"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it in Spanish",
+   "es": "I come",
+   "answers": [
+    "vengo",
+    "yo vengo"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "«Sé» es una forma del verbo «ser».",
+   "answer": false,
+   "why": "Sé comes from saber (to know). From ser — soy."
+  }
+ ]
+}

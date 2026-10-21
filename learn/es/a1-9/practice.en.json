@@ -1,0 +1,256 @@
+{
+ "title": "¿Cuánto cuesta?",
+ "subtitle": "Prices, numbers from 100, colours, clothes, este / ese / aquel.",
+ "speak": "es-ES",
+ "hero": "novels/la-gran-conspiracion/cover.jpg",
+ "hearts": 5,
+ "keyboard": [
+  "á",
+  "é",
+  "í",
+  "ó",
+  "ú",
+  "ñ",
+  "ü",
+  "¿",
+  "¡"
+ ],
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "rojo",
+     "red"
+    ],
+    [
+     "negro",
+     "black"
+    ],
+    [
+     "azul",
+     "blue"
+    ],
+    [
+     "verde",
+     "green"
+    ],
+    [
+     "blanco",
+     "white"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "¿Cuánto",
+   "after": "estos zapatos?",
+   "options": [
+    "cuestan",
+    "cuesta",
+    "costan"
+   ],
+   "answer": 0,
+   "es": "How much are these shoes?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "",
+   "after": "vestido es muy elegante.",
+   "options": [
+    "Este",
+    "Esta",
+    "Estos"
+   ],
+   "answer": 0,
+   "es": "This dress is very elegant."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Natalia compra una falda",
+   "after": "",
+   "options": [
+    "negra",
+    "negro",
+    "negros"
+   ],
+   "answer": 0,
+   "es": "Natalia buys a black skirt."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Quiero",
+   "after": "chaqueta azul.",
+   "options": [
+    "aquella",
+    "aquel",
+    "aquellos"
+   ],
+   "answer": 0,
+   "es": "I want that blue jacket over there."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "quinientos",
+   "options": [
+    "five hundred",
+    "fifty",
+    "fifteen"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Es barato.",
+   "options": [
+    "It's cheap.",
+    "It's expensive.",
+    "It's beautiful."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it in Spanish?",
+   "word": "How much is it?",
+   "options": [
+    "¿Cuánto cuesta?",
+    "¿Cuánto cuestan?",
+    "¿Qué cuesta?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Doscientas",
+   "after": "",
+   "options": [
+    "personas",
+    "rublos",
+    "libros"
+   ],
+   "answer": 0,
+   "es": "two hundred people",
+   "why": "Doscientas — feminine."
+  },
+  {
+   "type": "build",
+   "prompt": "Translate into Spanish",
+   "es": "I'd like to see that coat.",
+   "answer": [
+    "Quisiera",
+    "ver",
+    "ese",
+    "abrigo"
+   ],
+   "extra": [
+    "esa",
+    "quiero"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "¿Cuánto cuesta el vestido negro?",
+   "es": "How much is the black dress?",
+   "options": [
+    "Seis mil quinientos rublos.",
+    "Doce mil rublos.",
+    "Quinientos rublos."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Me queda grande.",
+   "options": [
+    "It's too big for me.",
+    "It's too small for me.",
+    "I like it."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Natalia compra el vestido rojo.",
+   "answer": false,
+   "why": "The red one is too expensive; she takes the black one on sale."
+  },
+  {
+   "type": "write",
+   "prompt": "Write it in Spanish",
+   "es": "I'll take it.",
+   "answers": [
+    "Me lo llevo",
+    "Me lo llevo."
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it in Spanish",
+   "es": "white shoes",
+   "answers": [
+    "zapatos blancos",
+    "los zapatos blancos",
+    "unos zapatos blancos"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "«Cien» se usa para el número 100 exacto.",
+   "answer": true,
+   "why": "100 — cien, 120 — ciento veinte."
+  }
+ ]
+}

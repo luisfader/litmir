@@ -1,0 +1,275 @@
+{
+ "title": "¿Dónde está?",
+ "subtitle": "The verb estar, ser vs estar, hay vs está, prepositions of place.",
+ "speak": "es-ES",
+ "hero": "novels/la-corazonada/cover.jpg",
+ "hearts": 5,
+ "keyboard": [
+  "á",
+  "é",
+  "í",
+  "ó",
+  "ú",
+  "ñ",
+  "ü",
+  "¿",
+  "¡"
+ ],
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "debajo de",
+     "under"
+    ],
+    [
+     "al lado de",
+     "next to"
+    ],
+    [
+     "detrás de",
+     "behind"
+    ],
+    [
+     "cerca de",
+     "near"
+    ],
+    [
+     "lejos de",
+     "far from"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Robert",
+   "after": "en el garaje.",
+   "options": [
+    "está",
+    "es",
+    "hay"
+   ],
+   "answer": 0,
+   "es": "Robert is in the garage."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "En la fortaleza",
+   "after": "una torre.",
+   "options": [
+    "hay",
+    "está",
+    "es"
+   ],
+   "answer": 0,
+   "es": "There is a tower in the fortress.",
+   "why": "New information with un/una → hay."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Yo",
+   "after": "muy cansado.",
+   "options": [
+    "estoy",
+    "soy",
+    "está"
+   ],
+   "answer": 0,
+   "es": "I'm very tired."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Luis",
+   "after": "arquitecto.",
+   "options": [
+    "es",
+    "está",
+    "hay"
+   ],
+   "answer": 0,
+   "es": "Luis is an architect.",
+   "why": "A profession → ser."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "La motocicleta está al lado",
+   "after": "garaje.",
+   "options": [
+    "del",
+    "de el",
+    "de la"
+   ],
+   "answer": 0,
+   "es": "The motorbike is next to the garage."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Natalia está triste.",
+   "options": [
+    "Natalia is sad (right now).",
+    "Natalia is a sad person.",
+    "Natalia is in the tower."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it in Spanish?",
+   "word": "Where are you?",
+   "options": [
+    "¿Dónde estás?",
+    "¿Dónde eres?",
+    "¿Dónde hay?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Nosotros",
+   "after": "en la plaza.",
+   "options": [
+    "estamos",
+    "somos",
+    "están"
+   ],
+   "answer": 0,
+   "es": "We are in the square."
+  },
+  {
+   "type": "build",
+   "prompt": "Translate into Spanish",
+   "es": "The bunker is under the tower.",
+   "answer": [
+    "El",
+    "búnker",
+    "está",
+    "debajo",
+    "de",
+    "la",
+    "torre"
+   ],
+   "extra": [
+    "es",
+    "hay"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "¿Dónde está el búnker?",
+   "es": "Where is the bunker?",
+   "options": [
+    "Está debajo de la torre.",
+    "Es debajo de la torre.",
+    "Hay debajo de la torre."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "En la fortaleza hay un hospital.",
+   "answer": false,
+   "why": "There's no hospital yet — only a first-aid room (enfermería)."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Los amigos de Robert",
+   "after": "contentos.",
+   "options": [
+    "están",
+    "son",
+    "hay"
+   ],
+   "answer": 0,
+   "es": "Robert's friends are happy."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "a la izquierda",
+   "options": [
+    "to the left",
+    "to the right",
+    "straight on"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "write",
+   "prompt": "Write it in Spanish",
+   "es": "I'm tired.",
+   "answers": [
+    "Estoy cansado",
+    "Estoy cansada",
+    "Yo estoy cansado",
+    "Yo estoy cansada"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it in Spanish",
+   "es": "next to the house",
+   "answers": [
+    "al lado de la casa"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "«Luis es nervioso» describe su carácter.",
+   "answer": true,
+   "why": "Ser — personality; estar — the state right now."
+  }
+ ]
+}

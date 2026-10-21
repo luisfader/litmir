@@ -1,0 +1,257 @@
+{
+ "title": "Mi día",
+ "subtitle": "Время, возвратные глаголы, дни недели, как часто.",
+ "speak": "es-ES",
+ "hero": "novels/el-tren-fantasma/cover.jpg",
+ "hearts": 5,
+ "keyboard": [
+  "á",
+  "é",
+  "í",
+  "ó",
+  "ú",
+  "ñ",
+  "ü",
+  "¿",
+  "¡"
+ ],
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 7 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "lunes",
+     "понедельник"
+    ],
+    [
+     "miércoles",
+     "среда"
+    ],
+    [
+     "viernes",
+     "пятница"
+    ],
+    [
+     "sábado",
+     "суббота"
+    ],
+    [
+     "domingo",
+     "воскресенье"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Son las siete y media.",
+   "options": [
+    "Половина восьмого (7:30).",
+    "Без четверти семь (6:45).",
+    "Семь пятнадцать (7:15)."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "¿Qué hora es? —",
+   "after": "la una.",
+   "options": [
+    "Es",
+    "Son",
+    "Está"
+   ],
+   "answer": 0,
+   "es": "Который час? — Час."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Marcos",
+   "after": "a las siete.",
+   "options": [
+    "se levanta",
+    "me levanto",
+    "se levantan"
+   ],
+   "answer": 0,
+   "es": "Марко встаёт в семь."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Yo",
+   "after": "por la mañana.",
+   "options": [
+    "me ducho",
+    "se ducha",
+    "te duchas"
+   ],
+   "answer": 0,
+   "es": "Я принимаю душ утром."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Nosotros",
+   "after": "a las once.",
+   "options": [
+    "nos acostamos",
+    "se acuestan",
+    "me acuesto"
+   ],
+   "answer": 0,
+   "es": "Мы ложимся спать в одиннадцать."
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать по-испански?",
+   "word": "Без четверти девять (8:45).",
+   "options": [
+    "Son las nueve menos cuarto.",
+    "Son las ocho y cuarto.",
+    "Son las nueve y cuarto."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "El tren llega",
+   "after": "medianoche.",
+   "options": [
+    "a",
+    "en",
+    "de"
+   ],
+   "answer": 0,
+   "es": "Поезд приходит в полночь."
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите на испанский",
+   "es": "По воскресеньям я не работаю.",
+   "answer": [
+    "Los",
+    "domingos",
+    "no",
+    "trabajo"
+   ],
+   "extra": [
+    "el",
+    "trabaja"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "¿A qué hora se acuesta Marcos normalmente?",
+   "es": "Во сколько Марко обычно ложится спать?",
+   "options": [
+    "A las once.",
+    "A las siete.",
+    "A las ocho y media."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "a veces",
+   "options": [
+    "иногда",
+    "всегда",
+    "никогда"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Nunca",
+   "after": "café por la noche.",
+   "options": [
+    "bebo",
+    "no bebo",
+    "bebes"
+   ],
+   "answer": 0,
+   "es": "Я никогда не пью кофе вечером.",
+   "why": "С nunca в начале фразы no не нужно."
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Hoy Marcos se acuesta a las once.",
+   "answer": false,
+   "why": "Сегодня пятница: в полночь приходит поезд-призрак, и Марко не ложится."
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите по-испански",
+   "es": "Я завтракаю в восемь.",
+   "answers": [
+    "Desayuno a las ocho",
+    "Yo desayuno a las ocho"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите по-испански",
+   "es": "Который час?",
+   "answers": [
+    "¿Qué hora es?",
+    "Qué hora es"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "En español los días de la semana se escriben con minúscula.",
+   "answer": true,
+   "why": "Lunes, martes… — с маленькой буквы."
+  }
+ ]
+}

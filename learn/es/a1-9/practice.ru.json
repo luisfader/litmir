@@ -1,0 +1,256 @@
+{
+ "title": "¿Cuánto cuesta?",
+ "subtitle": "Цены, числа от 100, цвета, одежда, este / ese / aquel.",
+ "speak": "es-ES",
+ "hero": "novels/la-gran-conspiracion/cover.jpg",
+ "hearts": 5,
+ "keyboard": [
+  "á",
+  "é",
+  "í",
+  "ó",
+  "ú",
+  "ñ",
+  "ü",
+  "¿",
+  "¡"
+ ],
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 7 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "rojo",
+     "красный"
+    ],
+    [
+     "negro",
+     "чёрный"
+    ],
+    [
+     "azul",
+     "синий"
+    ],
+    [
+     "verde",
+     "зелёный"
+    ],
+    [
+     "blanco",
+     "белый"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "¿Cuánto",
+   "after": "estos zapatos?",
+   "options": [
+    "cuestan",
+    "cuesta",
+    "costan"
+   ],
+   "answer": 0,
+   "es": "Сколько стоят эти туфли?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "",
+   "after": "vestido es muy elegante.",
+   "options": [
+    "Este",
+    "Esta",
+    "Estos"
+   ],
+   "answer": 0,
+   "es": "Это платье очень элегантное."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Natalia compra una falda",
+   "after": "",
+   "options": [
+    "negra",
+    "negro",
+    "negros"
+   ],
+   "answer": 0,
+   "es": "Наталья покупает чёрную юбку."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Quiero",
+   "after": "chaqueta azul.",
+   "options": [
+    "aquella",
+    "aquel",
+    "aquellos"
+   ],
+   "answer": 0,
+   "es": "Я хочу вон ту синюю куртку."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "quinientos",
+   "options": [
+    "пятьсот",
+    "пятьдесят",
+    "пятнадцать"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Es barato.",
+   "options": [
+    "Это дёшево.",
+    "Это дорого.",
+    "Это красиво."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать по-испански?",
+   "word": "Сколько это стоит?",
+   "options": [
+    "¿Cuánto cuesta?",
+    "¿Cuánto cuestan?",
+    "¿Qué cuesta?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Doscientas",
+   "after": "",
+   "options": [
+    "personas",
+    "rublos",
+    "libros"
+   ],
+   "answer": 0,
+   "es": "двести человек",
+   "why": "Doscientas — женский род."
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите на испанский",
+   "es": "Я бы хотела посмотреть то пальто.",
+   "answer": [
+    "Quisiera",
+    "ver",
+    "ese",
+    "abrigo"
+   ],
+   "extra": [
+    "esa",
+    "quiero"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "¿Cuánto cuesta el vestido negro?",
+   "es": "Сколько стоит чёрное платье?",
+   "options": [
+    "Seis mil quinientos rublos.",
+    "Doce mil rublos.",
+    "Quinientos rublos."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Me queda grande.",
+   "options": [
+    "Мне велико.",
+    "Мне мало.",
+    "Мне нравится."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Natalia compra el vestido rojo.",
+   "answer": false,
+   "why": "Красное — дорогое; она берёт чёрное со скидкой."
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите по-испански",
+   "es": "Беру.",
+   "answers": [
+    "Me lo llevo",
+    "Me lo llevo."
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите по-испански",
+   "es": "белые туфли",
+   "answers": [
+    "zapatos blancos",
+    "los zapatos blancos",
+    "unos zapatos blancos"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "«Cien» se usa para el número 100 exacto.",
+   "answer": true,
+   "why": "100 — cien, 120 — ciento veinte."
+  }
+ ]
+}

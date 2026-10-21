@@ -1,0 +1,257 @@
+{
+ "title": "Mi día",
+ "subtitle": "Telling the time, reflexive verbs, days of the week, frequency.",
+ "speak": "es-ES",
+ "hero": "novels/el-tren-fantasma/cover.jpg",
+ "hearts": 5,
+ "keyboard": [
+  "á",
+  "é",
+  "í",
+  "ó",
+  "ú",
+  "ñ",
+  "ü",
+  "¿",
+  "¡"
+ ],
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "lunes",
+     "Monday"
+    ],
+    [
+     "miércoles",
+     "Wednesday"
+    ],
+    [
+     "viernes",
+     "Friday"
+    ],
+    [
+     "sábado",
+     "Saturday"
+    ],
+    [
+     "domingo",
+     "Sunday"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Son las siete y media.",
+   "options": [
+    "It's half past seven (7:30).",
+    "It's a quarter to seven (6:45).",
+    "It's a quarter past seven (7:15)."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "¿Qué hora es? —",
+   "after": "la una.",
+   "options": [
+    "Es",
+    "Son",
+    "Está"
+   ],
+   "answer": 0,
+   "es": "What time is it? — It's one o'clock."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Marcos",
+   "after": "a las siete.",
+   "options": [
+    "se levanta",
+    "me levanto",
+    "se levantan"
+   ],
+   "answer": 0,
+   "es": "Marcos gets up at seven."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Yo",
+   "after": "por la mañana.",
+   "options": [
+    "me ducho",
+    "se ducha",
+    "te duchas"
+   ],
+   "answer": 0,
+   "es": "I have a shower in the morning."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Nosotros",
+   "after": "a las once.",
+   "options": [
+    "nos acostamos",
+    "se acuestan",
+    "me acuesto"
+   ],
+   "answer": 0,
+   "es": "We go to bed at eleven."
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it in Spanish?",
+   "word": "It's a quarter to nine (8:45).",
+   "options": [
+    "Son las nueve menos cuarto.",
+    "Son las ocho y cuarto.",
+    "Son las nueve y cuarto."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "El tren llega",
+   "after": "medianoche.",
+   "options": [
+    "a",
+    "en",
+    "de"
+   ],
+   "answer": 0,
+   "es": "The train arrives at midnight."
+  },
+  {
+   "type": "build",
+   "prompt": "Translate into Spanish",
+   "es": "I don't work on Sundays.",
+   "answer": [
+    "Los",
+    "domingos",
+    "no",
+    "trabajo"
+   ],
+   "extra": [
+    "el",
+    "trabaja"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "¿A qué hora se acuesta Marcos normalmente?",
+   "es": "What time does Marcos usually go to bed?",
+   "options": [
+    "A las once.",
+    "A las siete.",
+    "A las ocho y media."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "a veces",
+   "options": [
+    "sometimes",
+    "always",
+    "never"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Nunca",
+   "after": "café por la noche.",
+   "options": [
+    "bebo",
+    "no bebo",
+    "bebes"
+   ],
+   "answer": 0,
+   "es": "I never drink coffee at night.",
+   "why": "With nunca at the start, no isn't needed."
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Hoy Marcos se acuesta a las once.",
+   "answer": false,
+   "why": "It's Friday: the ghost train comes at midnight, so Marcos doesn't go to bed."
+  },
+  {
+   "type": "write",
+   "prompt": "Write it in Spanish",
+   "es": "I have breakfast at eight.",
+   "answers": [
+    "Desayuno a las ocho",
+    "Yo desayuno a las ocho"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it in Spanish",
+   "es": "What time is it?",
+   "answers": [
+    "¿Qué hora es?",
+    "Qué hora es"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "En español los días de la semana se escriben con minúscula.",
+   "answer": true,
+   "why": "Lunes, martes… — lower case."
+  }
+ ]
+}
