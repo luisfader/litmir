@@ -1,0 +1,274 @@
+{
+ "title": "La giornata di Irina",
+ "subtitle": "Telling the time, reflexive verbs, fare and andare, days of the week, frequency.",
+ "speak": "it-IT",
+ "hero": "novels/la-macchina-dei-sogni/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "lunedì",
+     "Monday"
+    ],
+    [
+     "mercoledì",
+     "Wednesday"
+    ],
+    [
+     "venerdì",
+     "Friday"
+    ],
+    [
+     "sabato",
+     "Saturday"
+    ],
+    [
+     "domenica",
+     "Sunday"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Sono le sette e mezza.",
+   "options": [
+    "It’s half past seven (7:30).",
+    "It’s a quarter to seven (6:45).",
+    "It’s a quarter past seven (7:15)."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Che ore sono? —",
+   "after": "l’una.",
+   "options": [
+    "È",
+    "Sono",
+    "Ha"
+   ],
+   "answer": 0,
+   "es": "What time is it? — It’s one o’clock."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Irina",
+   "after": "alle sette.",
+   "options": [
+    "si sveglia",
+    "mi sveglio",
+    "si svegliano"
+   ],
+   "answer": 0,
+   "es": "Irina wakes up at seven."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Io",
+   "after": "presto.",
+   "options": [
+    "mi alzo",
+    "si alza",
+    "ti alzi"
+   ],
+   "answer": 0,
+   "es": "I get up early."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Noi",
+   "after": "alle undici.",
+   "options": [
+    "ci addormentiamo",
+    "si addormentano",
+    "mi addormento"
+   ],
+   "answer": 0,
+   "es": "We fall asleep at eleven."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Io",
+   "after": "colazione.",
+   "options": [
+    "faccio",
+    "fa",
+    "facciamo"
+   ],
+   "answer": 0,
+   "es": "I have breakfast."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Irina",
+   "after": "nel suo studio.",
+   "options": [
+    "va",
+    "vado",
+    "vanno"
+   ],
+   "answer": 0,
+   "es": "Irina goes to her office."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Il paziente arriva",
+   "after": "sei di sera.",
+   "options": [
+    "alle",
+    "a le",
+    "nelle"
+   ],
+   "answer": 0,
+   "es": "The patient arrives at six in the evening."
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "It’s a quarter to nine (8:45).",
+   "options": [
+    "Sono le nove meno un quarto.",
+    "Sono le otto e un quarto.",
+    "Sono le nove e un quarto."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "I don’t work on Sundays.",
+   "answer": [
+    "La",
+    "domenica",
+    "non",
+    "lavoro"
+   ],
+   "extra": [
+    "il",
+    "lavora"
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Non dimentico",
+   "after": "",
+   "options": [
+    "mai",
+    "sempre",
+    "non"
+   ],
+   "answer": 0,
+   "es": "I never forget."
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Che lavoro fa Irina?",
+   "es": "What does Irina do?",
+   "options": [
+    "È una psicologa.",
+    "È una dottoressa.",
+    "È una cameriera."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "di solito",
+   "options": [
+    "usually",
+    "never",
+    "today"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Irina è nata a San Pietroburgo.",
+   "answer": true,
+   "why": "She lives in Bologna but was born in St Petersburg."
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "I wake up at seven.",
+   "answers": [
+    "Mi sveglio alle sette",
+    "Io mi sveglio alle sette"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "What time is it?",
+   "answers": [
+    "Che ore sono?",
+    "Che ore sono",
+    "Che ora è?",
+    "Che ora è"
+   ]
+  }
+ ],
+ "keyboard": [
+  "à",
+  "è",
+  "é",
+  "ì",
+  "ò",
+  "ù"
+ ]
+}

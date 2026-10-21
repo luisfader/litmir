@@ -1,0 +1,274 @@
+{
+ "title": "La giornata di Irina",
+ "subtitle": "Время, возвратные глаголы, fare и andare, дни недели, как часто.",
+ "speak": "it-IT",
+ "hero": "novels/la-macchina-dei-sogni/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 7 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "lunedì",
+     "понедельник"
+    ],
+    [
+     "mercoledì",
+     "среда"
+    ],
+    [
+     "venerdì",
+     "пятница"
+    ],
+    [
+     "sabato",
+     "суббота"
+    ],
+    [
+     "domenica",
+     "воскресенье"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Sono le sette e mezza.",
+   "options": [
+    "Половина восьмого (7:30).",
+    "Без четверти семь (6:45).",
+    "Семь пятнадцать (7:15)."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Che ore sono? —",
+   "after": "l’una.",
+   "options": [
+    "È",
+    "Sono",
+    "Ha"
+   ],
+   "answer": 0,
+   "es": "Который час? — Час."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Irina",
+   "after": "alle sette.",
+   "options": [
+    "si sveglia",
+    "mi sveglio",
+    "si svegliano"
+   ],
+   "answer": 0,
+   "es": "Ирина просыпается в семь."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Io",
+   "after": "presto.",
+   "options": [
+    "mi alzo",
+    "si alza",
+    "ti alzi"
+   ],
+   "answer": 0,
+   "es": "Я рано встаю."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Noi",
+   "after": "alle undici.",
+   "options": [
+    "ci addormentiamo",
+    "si addormentano",
+    "mi addormento"
+   ],
+   "answer": 0,
+   "es": "Мы засыпаем в одиннадцать."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Io",
+   "after": "colazione.",
+   "options": [
+    "faccio",
+    "fa",
+    "facciamo"
+   ],
+   "answer": 0,
+   "es": "Я завтракаю."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Irina",
+   "after": "nel suo studio.",
+   "options": [
+    "va",
+    "vado",
+    "vanno"
+   ],
+   "answer": 0,
+   "es": "Ирина идёт в свой кабинет."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Il paziente arriva",
+   "after": "sei di sera.",
+   "options": [
+    "alle",
+    "a le",
+    "nelle"
+   ],
+   "answer": 0,
+   "es": "Пациент приходит в шесть вечера."
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать на изучаемом языке?",
+   "word": "Без четверти девять (8:45).",
+   "options": [
+    "Sono le nove meno un quarto.",
+    "Sono le otto e un quarto.",
+    "Sono le nove e un quarto."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите",
+   "es": "По воскресеньям я не работаю.",
+   "answer": [
+    "La",
+    "domenica",
+    "non",
+    "lavoro"
+   ],
+   "extra": [
+    "il",
+    "lavora"
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Non dimentico",
+   "after": "",
+   "options": [
+    "mai",
+    "sempre",
+    "non"
+   ],
+   "answer": 0,
+   "es": "Я никогда не забываю."
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "Che lavoro fa Irina?",
+   "es": "Кем работает Ирина?",
+   "options": [
+    "È una psicologa.",
+    "È una dottoressa.",
+    "È una cameriera."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "di solito",
+   "options": [
+    "обычно",
+    "никогда",
+    "сегодня"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Irina è nata a San Pietroburgo.",
+   "answer": true,
+   "why": "Она живёт в Болонье, но родилась в Санкт-Петербурге."
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Я просыпаюсь в семь.",
+   "answers": [
+    "Mi sveglio alle sette",
+    "Io mi sveglio alle sette"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Который час?",
+   "answers": [
+    "Che ore sono?",
+    "Che ore sono",
+    "Che ora è?",
+    "Che ora è"
+   ]
+  }
+ ],
+ "keyboard": [
+  "à",
+  "è",
+  "é",
+  "ì",
+  "ò",
+  "ù"
+ ]
+}

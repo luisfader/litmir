@@ -1,0 +1,268 @@
+{
+ "title": "Ti piace la pizza?",
+ "subtitle": "Piacere, anche a me / neanche a me, food and drink, at the pizzeria.",
+ "speak": "it-IT",
+ "hero": "novels/antonio-e-il-segreto-di-roma/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "il pane",
+     "bread"
+    ],
+    [
+     "il formaggio",
+     "cheese"
+    ],
+    [
+     "il pesce",
+     "fish"
+    ],
+    [
+     "l’acqua",
+     "water"
+    ],
+    [
+     "il gelato",
+     "ice cream"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "A Larissa",
+   "after": "i musei.",
+   "options": [
+    "piacciono",
+    "piace",
+    "piaccio"
+   ],
+   "answer": 0,
+   "es": "Larissa likes museums."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Mi",
+   "after": "la pizza.",
+   "options": [
+    "piace",
+    "piacciono",
+    "piaccio"
+   ],
+   "answer": 0,
+   "es": "I like pizza."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Ad Antonio",
+   "after": "il calcio.",
+   "options": [
+    "piace",
+    "piacciono",
+    "piaci"
+   ],
+   "answer": 0,
+   "es": "Antonio likes football."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "",
+   "after": "piace cucinare?",
+   "options": [
+    "Ti",
+    "Tu",
+    "Te"
+   ],
+   "answer": 0,
+   "es": "Do you like cooking?"
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Neanche a me.",
+   "options": [
+    "Me neither.",
+    "Me too.",
+    "I do."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "— Mi piace il gelato. —",
+   "after": "a me!",
+   "options": [
+    "Anche",
+    "Neanche",
+    "Mai"
+   ],
+   "answer": 0,
+   "es": "— I like ice cream. — Me too!"
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Mi piace",
+   "after": "vino rosso.",
+   "options": [
+    "il",
+    "—",
+    "un"
+   ],
+   "answer": 0,
+   "es": "I like red wine.",
+   "why": "With piacere — the article."
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "I’d like some water, please.",
+   "options": [
+    "Vorrei dell’acqua, per favore.",
+    "Voglio di acqua, per favore.",
+    "Mi piace acqua, per favore."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "We like Antonio’s pizzas.",
+   "answer": [
+    "Ci",
+    "piacciono",
+    "le",
+    "pizze",
+    "di",
+    "Antonio"
+   ],
+   "extra": [
+    "piace",
+    "mi"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Che cosa prende Larissa?",
+   "es": "What does Larissa order?",
+   "options": [
+    "Una margherita e un bicchiere di vino rosso.",
+    "Un cappuccino e un cornetto.",
+    "Il pesce e l’acqua."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Il conto, per favore.",
+   "options": [
+    "The bill, please.",
+    "The menu, please.",
+    "A table, please."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "il dolce",
+   "options": [
+    "dessert",
+    "sweet coffee",
+    "bread"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Ad Antonio piacciono molto i musei.",
+   "answer": false,
+   "why": "«I musei sono per i turisti», says Antonio."
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "I like pizza.",
+   "answers": [
+    "Mi piace la pizza"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "How delicious!",
+   "answers": [
+    "Che buono!",
+    "Che buono",
+    "Che buona!",
+    "Che buona"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "In Italia «un caffè» è un espresso.",
+   "answer": true,
+   "why": "In Italy caffè means an espresso."
+  }
+ ],
+ "keyboard": [
+  "à",
+  "è",
+  "é",
+  "ì",
+  "ò",
+  "ù"
+ ]
+}

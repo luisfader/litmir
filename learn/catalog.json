@@ -207,6 +207,30 @@
      },
      "cover": "novels/ladro-di-cuori/cover.jpg",
      "novel": "ladro-di-cuori"
+    },
+    {
+     "id": "a1-5",
+     "level": "A1",
+     "n": 5,
+     "title": "La giornata di Irina",
+     "sub": {
+      "ru": "Который час, возвратные глаголы, FARE и ANDARE, дни недели, как часто",
+      "en": "Telling the time, reflexive verbs, FARE and ANDARE, days of the week, frequency"
+     },
+     "cover": "novels/la-macchina-dei-sogni/cover.jpg",
+     "novel": "la-macchina-dei-sogni"
+    },
+    {
+     "id": "a1-6",
+     "level": "A1",
+     "n": 6,
+     "title": "Ti piace la pizza?",
+     "sub": {
+      "ru": "PIACERE, anche a me / neanche a me, еда и напитки, в пиццерии",
+      "en": "PIACERE, anche a me / neanche a me, food and drink, at the pizzeria"
+     },
+     "cover": "novels/antonio-e-il-segreto-di-roma/cover.jpg",
+     "novel": "antonio-e-il-segreto-di-roma"
     }
    ]
   },

@@ -1,0 +1,268 @@
+{
+ "title": "Ti piace la pizza?",
+ "subtitle": "Piacere, anche a me / neanche a me, еда и напитки, в пиццерии.",
+ "speak": "it-IT",
+ "hero": "novels/antonio-e-il-segreto-di-roma/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 7 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "il pane",
+     "хлеб"
+    ],
+    [
+     "il formaggio",
+     "сыр"
+    ],
+    [
+     "il pesce",
+     "рыба"
+    ],
+    [
+     "l’acqua",
+     "вода"
+    ],
+    [
+     "il gelato",
+     "мороженое"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "A Larissa",
+   "after": "i musei.",
+   "options": [
+    "piacciono",
+    "piace",
+    "piaccio"
+   ],
+   "answer": 0,
+   "es": "Ларисе нравятся музеи."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Mi",
+   "after": "la pizza.",
+   "options": [
+    "piace",
+    "piacciono",
+    "piaccio"
+   ],
+   "answer": 0,
+   "es": "Мне нравится пицца."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Ad Antonio",
+   "after": "il calcio.",
+   "options": [
+    "piace",
+    "piacciono",
+    "piaci"
+   ],
+   "answer": 0,
+   "es": "Антонио нравится футбол."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "",
+   "after": "piace cucinare?",
+   "options": [
+    "Ti",
+    "Tu",
+    "Te"
+   ],
+   "answer": 0,
+   "es": "Тебе нравится готовить?"
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Neanche a me.",
+   "options": [
+    "Мне тоже нет.",
+    "Мне тоже.",
+    "А мне да."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "— Mi piace il gelato. —",
+   "after": "a me!",
+   "options": [
+    "Anche",
+    "Neanche",
+    "Mai"
+   ],
+   "answer": 0,
+   "es": "— Я люблю мороженое. — Я тоже!"
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Mi piace",
+   "after": "vino rosso.",
+   "options": [
+    "il",
+    "—",
+    "un"
+   ],
+   "answer": 0,
+   "es": "Я люблю красное вино.",
+   "why": "С piacere — артикль."
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать на изучаемом языке?",
+   "word": "Я бы хотел(а) воды, пожалуйста.",
+   "options": [
+    "Vorrei dell’acqua, per favore.",
+    "Voglio di acqua, per favore.",
+    "Mi piace acqua, per favore."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите",
+   "es": "Нам нравятся пиццы Антонио.",
+   "answer": [
+    "Ci",
+    "piacciono",
+    "le",
+    "pizze",
+    "di",
+    "Antonio"
+   ],
+   "extra": [
+    "piace",
+    "mi"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "Che cosa prende Larissa?",
+   "es": "Что заказывает Лариса?",
+   "options": [
+    "Una margherita e un bicchiere di vino rosso.",
+    "Un cappuccino e un cornetto.",
+    "Il pesce e l’acqua."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Il conto, per favore.",
+   "options": [
+    "Счёт, пожалуйста.",
+    "Меню, пожалуйста.",
+    "Столик, пожалуйста."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "il dolce",
+   "options": [
+    "десерт",
+    "сладкий кофе",
+    "хлеб"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Ad Antonio piacciono molto i musei.",
+   "answer": false,
+   "why": "«I musei sono per i turisti», — говорит Антонио."
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Мне нравится пицца.",
+   "answers": [
+    "Mi piace la pizza"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Как вкусно!",
+   "answers": [
+    "Che buono!",
+    "Che buono",
+    "Che buona!",
+    "Che buona"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "In Italia «un caffè» è un espresso.",
+   "answer": true,
+   "why": "В Италии caffè — это эспрессо."
+  }
+ ],
+ "keyboard": [
+  "à",
+  "è",
+  "é",
+  "ì",
+  "ò",
+  "ù"
+ ]
+}
