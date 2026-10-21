@@ -1,6 +1,14 @@
 {
   "posts": [
     {
+      "slug": "intervista-maschera-di-venezia-roberto-fader",
+      "lang": "it",
+      "title": "«L’amore, di per sé, è un mistero»: Roberto Fader racconta «Maschera di Venezia»",
+      "date": "2026-10-21",
+      "excerpt": "Roberto Fader racconta a Natasha Venezia, il Carnevale notturno, Natalia e il romanticismo che anima il suo romanzo.",
+      "image": "novels/maschera-di-venezia/cover.jpg"
+    },
+    {
       "slug": "resenha-mundo-turquesa",
       "lang": "pt",
       "title": "«Mundo Turquesa»: uma utopia que aprende a trocar muros por pontes",
