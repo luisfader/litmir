@@ -1,4 +1,4 @@
-# Penön ad sagön at vol, das eg binob: säks pöls? No, lul pöls pro Robert Fader
+# Penön ad sagön at vol, das eg binob: lul pöls pro Robert Fader
 
 *Entrevista a Robert Fader · 21/10/2026*
 
