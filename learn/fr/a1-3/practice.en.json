@@ -1,0 +1,277 @@
+{
+ "title": "La famille d’Oxana",
+ "subtitle": "Family, the verb avoir, il y a, possessives mon / ma / mes, adjectives.",
+ "speak": "fr-FR",
+ "hero": "novels/la-voix/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "le père",
+     "father"
+    ],
+    [
+     "la mère",
+     "mother"
+    ],
+    [
+     "le frère",
+     "brother"
+    ],
+    [
+     "la sœur",
+     "sister"
+    ],
+    [
+     "les enfants",
+     "children"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Oxana",
+   "after": "un frère.",
+   "options": [
+    "a",
+    "as",
+    "ont"
+   ],
+   "answer": 0,
+   "es": "Oxana has a brother."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "J’",
+   "after": "une petite sœur.",
+   "options": [
+    "ai",
+    "a",
+    "avons"
+   ],
+   "answer": 0,
+   "es": "I have a little sister."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Ils",
+   "after": "deux enfants.",
+   "options": [
+    "ont",
+    "sont",
+    "avez"
+   ],
+   "answer": 0,
+   "es": "They have two children."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "C’est",
+   "after": "mère.",
+   "options": [
+    "ma",
+    "mon",
+    "mes"
+   ],
+   "answer": 0,
+   "es": "This is my mum."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "",
+   "after": "parents habitent à Sinea.",
+   "options": [
+    "Mes",
+    "Mon",
+    "Ma"
+   ],
+   "answer": 0,
+   "es": "My parents live in Sinea."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Oxana et",
+   "after": "frère Ivan.",
+   "options": [
+    "son",
+    "sa",
+    "ses"
+   ],
+   "answer": 0,
+   "es": "Oxana and her brother Ivan.",
+   "why": "Frère is masculine → son."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Il y a beaucoup",
+   "after": "livres.",
+   "options": [
+    "de",
+    "des",
+    "du"
+   ],
+   "answer": 0,
+   "es": "Lots of books."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Je n’ai pas",
+   "after": "frère.",
+   "options": [
+    "de",
+    "un",
+    "le"
+   ],
+   "answer": 0,
+   "es": "I don’t have a brother."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Il y a un chat.",
+   "options": [
+    "There’s a cat.",
+    "It’s a cat.",
+    "He has a cat."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "my (female) friend",
+   "options": [
+    "mon amie",
+    "ma amie",
+    "mes amie"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "My dad is a doctor.",
+   "answer": [
+    "Mon",
+    "père",
+    "est",
+    "médecin"
+   ],
+   "extra": [
+    "ma",
+    "un"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Quel âge a Ivan ?",
+   "es": "How old is Ivan?",
+   "options": [
+    "Il a vingt ans.",
+    "Il est vingt ans.",
+    "Il a trente ans."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Une femme",
+   "after": "",
+   "options": [
+    "brune",
+    "brun",
+    "bruns"
+   ],
+   "answer": 0,
+   "es": "a dark-haired woman"
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Le père d’Oxana est médecin.",
+   "answer": true,
+   "why": "«Voici mon père, il est médecin»."
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "I have a brother.",
+   "answers": [
+    "J’ai un frère",
+    "J'ai un frère"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "my mum",
+   "answers": [
+    "ma mère"
+   ]
+  }
+ ],
+ "keyboard": [
+  "é",
+  "è",
+  "ê",
+  "à",
+  "ç",
+  "ù",
+  "î",
+  "ô",
+  "’"
+ ]
+}

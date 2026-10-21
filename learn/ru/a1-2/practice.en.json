@@ -1,0 +1,294 @@
+{
+ "title": "Меня зовут Марк. Я детектив",
+ "subtitle": "Professions, the two conjugations, negation, languages, numbers and age.",
+ "speak": "ru-RU",
+ "hero": "novels/prizrachnyj-poezd/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "работать",
+     "to work"
+    ],
+    [
+     "жить",
+     "to live"
+    ],
+    [
+     "говорить",
+     "to speak"
+    ],
+    [
+     "понимать",
+     "to understand"
+    ],
+    [
+     "искать",
+     "to look for"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Кем вы работаете?",
+   "options": [
+    "What do you do?",
+    "Where do you live?",
+    "How old are you?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Марк",
+   "after": "Алисию.",
+   "options": [
+    "ищет",
+    "ищу",
+    "ищут"
+   ],
+   "answer": 0,
+   "es": "Mark is looking for Alicia."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Я",
+   "after": "по-русски.",
+   "options": [
+    "говорю",
+    "говорит",
+    "говоришь"
+   ],
+   "answer": 0,
+   "es": "I speak Russian."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Мы",
+   "after": "в Москве.",
+   "options": [
+    "работаем",
+    "работают",
+    "работаю"
+   ],
+   "answer": 0,
+   "es": "We work in Moscow."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Они",
+   "after": "в Синее.",
+   "options": [
+    "живут",
+    "живёт",
+    "живу"
+   ],
+   "answer": 0,
+   "es": "They live in Sinea."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Ты",
+   "after": "по-английски?",
+   "options": [
+    "понимаешь",
+    "понимаю",
+    "понимает"
+   ],
+   "answer": 0,
+   "es": "Do you understand English?"
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "I don’t understand.",
+   "options": [
+    "Я не понимаю.",
+    "Я понимаю не.",
+    "Не я понимаю."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "художница",
+   "options": [
+    "artist (female)",
+    "teacher (female)",
+    "student (female)"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "I’m 35 years old.",
+   "answer": [
+    "Мне",
+    "тридцать",
+    "пять",
+    "лет"
+   ],
+   "extra": [
+    "Я",
+    "года"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Кто Марк?",
+   "es": "Who is Mark?",
+   "options": [
+    "Он детектив.",
+    "Он врач.",
+    "Он студент."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Мне двадцать два",
+   "after": "",
+   "options": [
+    "года",
+    "лет",
+    "год"
+   ],
+   "answer": 0,
+   "es": "I’m twenty-two.",
+   "why": "2–4 → года."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Ей двадцать",
+   "after": "",
+   "options": [
+    "лет",
+    "года",
+    "год"
+   ],
+   "answer": 0,
+   "es": "She’s twenty."
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Алисия пропала неделю назад.",
+   "answer": true,
+   "why": "«Алисия пропала неделю назад» — from the novel."
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "I speak Russian.",
+   "answers": [
+    "Я говорю по-русски",
+    "Говорю по-русски"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "I live in Moscow.",
+   "answers": [
+    "Я живу в Москве",
+    "Живу в Москве"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "«Сколько тебе лет?» — это вопрос о работе.",
+   "answer": false,
+   "why": "It asks about age."
+  }
+ ],
+ "keyboard": [
+  "а",
+  "б",
+  "в",
+  "г",
+  "д",
+  "е",
+  "ё",
+  "ж",
+  "з",
+  "и",
+  "й",
+  "к",
+  "л",
+  "м",
+  "н",
+  "о",
+  "п",
+  "р",
+  "с",
+  "т",
+  "у",
+  "ф",
+  "х",
+  "ц",
+  "ч",
+  "ш",
+  "щ",
+  "ъ",
+  "ы",
+  "ь",
+  "э",
+  "ю",
+  "я"
+ ]
+}

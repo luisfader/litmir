@@ -1,0 +1,293 @@
+{
+ "title": "Мой день",
+ "subtitle": "Telling the time, reflexive verbs in -ся, days of the week, how often.",
+ "speak": "ru-RU",
+ "hero": "novels/golos/cover-v2.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "понедельник",
+     "Monday"
+    ],
+    [
+     "среда",
+     "Wednesday"
+    ],
+    [
+     "пятница",
+     "Friday"
+    ],
+    [
+     "суббота",
+     "Saturday"
+    ],
+    [
+     "воскресенье",
+     "Sunday"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Который час?",
+   "options": [
+    "What time is it?",
+    "How old are you?",
+    "Where is the clock?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Саша",
+   "after": "в семь часов.",
+   "options": [
+    "просыпается",
+    "просыпаюсь",
+    "просыпаются"
+   ],
+   "answer": 0,
+   "es": "Sasha wakes up at seven."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Я",
+   "after": "и одеваюсь.",
+   "options": [
+    "умываюсь",
+    "умывается",
+    "умываешься"
+   ],
+   "answer": 0,
+   "es": "I wash and get dressed."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Сейчас пять",
+   "after": "",
+   "options": [
+    "часов",
+    "часа",
+    "час"
+   ],
+   "answer": 0,
+   "es": "It’s five o’clock now."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Сейчас три",
+   "after": "",
+   "options": [
+    "часа",
+    "часов",
+    "час"
+   ],
+   "answer": 0,
+   "es": "It’s three o’clock now."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Я работаю в",
+   "after": "",
+   "options": [
+    "среду",
+    "среда",
+    "среде"
+   ],
+   "answer": 0,
+   "es": "I work on Wednesday."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Я никогда",
+   "after": "в выходные.",
+   "options": [
+    "не работаю",
+    "работаю",
+    "нет работаю"
+   ],
+   "answer": 0,
+   "es": "I never work at weekends.",
+   "why": "Double negative: никогда не."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Мы",
+   "after": "в восемь.",
+   "options": [
+    "встаём",
+    "встают",
+    "встаёт"
+   ],
+   "answer": 0,
+   "es": "We get up at eight."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "вечером",
+   "options": [
+    "in the evening",
+    "in the morning",
+    "at night"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "always",
+   "options": [
+    "всегда",
+    "иногда",
+    "никогда"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "I drink coffee in the morning.",
+   "answer": [
+    "Утром",
+    "я",
+    "пью",
+    "кофе"
+   ],
+   "extra": [
+    "вечером",
+    "пьёт"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Где работает Саша?",
+   "es": "Where does Sasha work?",
+   "options": [
+    "В большом офисе в центре.",
+    "На катке.",
+    "В Мендосе."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Саша живёт одна.",
+   "answer": true,
+   "why": "«Саша жила одна в небольшой квартире»."
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "at seven o’clock",
+   "answers": [
+    "в семь часов",
+    "в семь"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "on Saturday",
+   "answers": [
+    "в субботу"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "«Я никогда работаю» — правильно.",
+   "answer": false,
+   "why": "You need не: «Я никогда не работаю»."
+  }
+ ],
+ "keyboard": [
+  "а",
+  "б",
+  "в",
+  "г",
+  "д",
+  "е",
+  "ё",
+  "ж",
+  "з",
+  "и",
+  "й",
+  "к",
+  "л",
+  "м",
+  "н",
+  "о",
+  "п",
+  "р",
+  "с",
+  "т",
+  "у",
+  "ф",
+  "х",
+  "ц",
+  "ч",
+  "ш",
+  "щ",
+  "ъ",
+  "ы",
+  "ь",
+  "э",
+  "ю",
+  "я"
+ ]
+}

@@ -1,0 +1,271 @@
+{
+ "title": "Sasha travaille dans un bureau",
+ "subtitle": "Professions, -er verbs, ne … pas, questions, numbers and age.",
+ "speak": "fr-FR",
+ "hero": "novels/la-voix/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "travailler",
+     "to work"
+    ],
+    [
+     "habiter",
+     "to live"
+    ],
+    [
+     "parler",
+     "to speak"
+    ],
+    [
+     "aimer",
+     "to like, to love"
+    ],
+    [
+     "écouter",
+     "to listen"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Qu’est-ce que tu fais dans la vie ?",
+   "options": [
+    "What do you do?",
+    "Where do you live?",
+    "How old are you?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Sasha",
+   "after": "dans un bureau.",
+   "options": [
+    "travaille",
+    "travailles",
+    "travaillent"
+   ],
+   "answer": 0,
+   "es": "Sasha works in an office."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Je",
+   "after": "français.",
+   "options": [
+    "parle",
+    "parlons",
+    "parlez"
+   ],
+   "answer": 0,
+   "es": "I speak French."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Nous",
+   "after": "à Sinea.",
+   "options": [
+    "habitons",
+    "habitez",
+    "habitent"
+   ],
+   "answer": 0,
+   "es": "We live in Sinea."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Vous",
+   "after": "anglais ?",
+   "options": [
+    "parlez",
+    "parlons",
+    "parles"
+   ],
+   "answer": 0,
+   "es": "Do you speak English?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Oxana ne travaille",
+   "after": "le samedi.",
+   "options": [
+    "pas",
+    "non",
+    "ne"
+   ],
+   "answer": 0,
+   "es": "Oxana doesn’t work on Saturdays."
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "I don’t work.",
+   "options": [
+    "Je ne travaille pas.",
+    "Je travaille ne pas.",
+    "Je pas travaille."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "I’m an office worker (a woman).",
+   "options": [
+    "Je suis employée.",
+    "Je suis une employée.",
+    "J’ai employée."
+   ],
+   "answer": 0,
+   "why": "No article before a profession after être."
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "Do you speak English?",
+   "answer": [
+    "Est-ce",
+    "que",
+    "tu",
+    "parles",
+    "anglais?"
+   ],
+   "extra": [
+    "qu’est-ce",
+    "parle"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Où travaille Sasha ?",
+   "es": "Where does Sasha work?",
+   "options": [
+    "Dans un bureau.",
+    "Dans un parc.",
+    "Dans une école."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "soixante-dix",
+   "options": [
+    "seventy",
+    "sixty",
+    "eighty"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "J’",
+   "after": "trente ans.",
+   "options": [
+    "ai",
+    "suis",
+    "as"
+   ],
+   "answer": 0,
+   "es": "I’m thirty.",
+   "why": "Age — with avoir."
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Sasha vit seule et elle est fatiguée.",
+   "answer": true,
+   "why": "«Sasha vit seule… elle est fatiguée» — the start of the novel."
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "I speak French.",
+   "answers": [
+    "Je parle français"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "How old are you?",
+   "answers": [
+    "Tu as quel âge ?",
+    "Tu as quel âge",
+    "Quel âge as-tu ?",
+    "Quel âge as-tu"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Les terminaisons «-es» et «-ent» de «parler» se prononcent.",
+   "answer": false,
+   "why": "They’re silent: parle, parles, parlent sound the same."
+  }
+ ],
+ "keyboard": [
+  "é",
+  "è",
+  "ê",
+  "à",
+  "ç",
+  "ù",
+  "î",
+  "ô",
+  "’"
+ ]
+}

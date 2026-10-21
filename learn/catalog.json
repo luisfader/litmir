@@ -261,6 +261,30 @@
      },
      "cover": "novels/la-voix/cover.jpg",
      "novel": "la-voix"
+    },
+    {
+     "id": "a1-2",
+     "level": "A1",
+     "n": 2,
+     "title": "Sasha travaille dans un bureau",
+     "sub": {
+      "ru": "Профессии, глаголы на -ER, NE … PAS, вопросы, числа и возраст",
+      "en": "Professions, -ER verbs, NE … PAS, questions, numbers and age"
+     },
+     "cover": "novels/la-voix/cover.jpg",
+     "novel": "la-voix"
+    },
+    {
+     "id": "a1-3",
+     "level": "A1",
+     "n": 3,
+     "title": "La famille d’Oxana",
+     "sub": {
+      "ru": "Семья, глагол AVOIR, IL Y A, mon / ma / mes, прилагательные",
+      "en": "Family, the verb AVOIR, IL Y A, mon / ma / mes, adjectives"
+     },
+     "cover": "novels/la-voix/cover.jpg",
+     "novel": "la-voix"
     }
    ]
   },
@@ -288,6 +312,54 @@
      },
      "cover": "novels/tajna-semi-fader/cover.jpg",
      "novel": "tajna-semi-fader"
+    },
+    {
+     "id": "a1-2",
+     "level": "A1",
+     "n": 2,
+     "title": "Меня зовут Марк. Я детектив",
+     "sub": {
+      "en": "Professions, the two conjugations, negation, languages, numbers and age",
+      "es": "Profesiones, las dos conjugaciones, negación, idiomas, números y edad"
+     },
+     "cover": "novels/prizrachnyj-poezd/cover.jpg",
+     "novel": "prizrachnyj-poezd"
+    },
+    {
+     "id": "a1-3",
+     "level": "A1",
+     "n": 3,
+     "title": "Семья Фадер",
+     "sub": {
+      "en": "Family, У МЕНЯ ЕСТЬ, gender, possessives, adjectives",
+      "es": "La familia, У МЕНЯ ЕСТЬ, género, posesivos, adjetivos"
+     },
+     "cover": "novels/tajna-semi-fader/cover.jpg",
+     "novel": "tajna-semi-fader"
+    },
+    {
+     "id": "a1-4",
+     "level": "A1",
+     "n": 4,
+     "title": "Где каток?",
+     "sub": {
+      "en": "ГДЕ…? The prepositional case after В / НА, prepositions of place, ЕСТЬ, the city",
+      "es": "¿ГДЕ…? El caso preposicional tras В / НА, preposiciones de lugar, ЕСТЬ, la ciudad"
+     },
+     "cover": "novels/tajna-semi-fader/cover.jpg",
+     "novel": "tajna-semi-fader"
+    },
+    {
+     "id": "a1-5",
+     "level": "A1",
+     "n": 5,
+     "title": "Мой день",
+     "sub": {
+      "en": "Telling the time, reflexive verbs in -СЯ, days of the week, how often",
+      "es": "La hora, verbos reflexivos en -СЯ, días de la semana, frecuencia"
+     },
+     "cover": "novels/golos/cover-v2.jpg",
+     "novel": "golos"
     }
    ]
   },
