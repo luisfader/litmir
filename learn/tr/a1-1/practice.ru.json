@@ -1,0 +1,242 @@
+{
+ "title": "Merhaba! Benim adım Rosa",
+ "subtitle": "Приветствия, знакомство, местоимения и «быть» как окончание.",
+ "speak": "tr-TR",
+ "hero": "novels/col-gulu/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 7 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "merhaba",
+     "здравствуйте"
+    ],
+    [
+     "teşekkürler",
+     "спасибо"
+    ],
+    [
+     "evet",
+     "да"
+    ],
+    [
+     "hayır",
+     "нет"
+    ],
+    [
+     "İyi geceler",
+     "спокойной ночи"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Günaydın",
+   "options": [
+    "Доброе утро",
+    "Добрый вечер",
+    "Увидимся"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать на изучаемом языке?",
+   "word": "Меня зовут Роза.",
+   "options": [
+    "Benim adım Rosa.",
+    "Senin adın Rosa.",
+    "Ben adım Rosa."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Nasılsın?",
+   "options": [
+    "Как дела?",
+    "Как тебя зовут?",
+    "Откуда ты?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Ben",
+   "after": ".",
+   "options": [
+    "iyiyim",
+    "iyisin",
+    "iyiyiz"
+   ],
+   "answer": 0,
+   "es": "Я в порядке."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Sen",
+   "after": ".",
+   "options": [
+    "öğrencisin",
+    "öğrenciyim",
+    "öğrenciler"
+   ],
+   "answer": 0,
+   "es": "Ты студент."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Biz",
+   "after": ".",
+   "options": [
+    "öğrenciyiz",
+    "öğrencisiniz",
+    "öğrenciyim"
+   ],
+   "answer": 0,
+   "es": "Мы студенты."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Ben",
+   "after": ". (Rus)",
+   "options": [
+    "Rusum",
+    "Rusım",
+    "Rusim"
+   ],
+   "answer": 0,
+   "es": "Я русский."
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите",
+   "es": "Мне тоже очень приятно.",
+   "answer": [
+    "Ben",
+    "de",
+    "memnun",
+    "oldum"
+   ],
+   "extra": [
+    "sen",
+    "adım"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "Rosa’nın adı ne?",
+   "es": "Как зовут Розу?",
+   "options": [
+    "Onun adı Rosa.",
+    "Benim adım Robert.",
+    "Rosa iyiyim."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать на изучаемом языке?",
+   "word": "они",
+   "options": [
+    "onlar",
+    "biz",
+    "siz"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Robert ve Rosa bir kampta.",
+   "answer": true,
+   "why": "Роберт приходит в себя в лагере повстанцев."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Hoşça kal!",
+   "options": [
+    "До свидания! (говорит уходящий)",
+    "Добро пожаловать!",
+    "Спасибо!"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "спасибо",
+   "answers": [
+    "teşekkürler",
+    "teşekkür ederim"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "привет (неформально)",
+   "answers": [
+    "selam"
+   ]
+  }
+ ],
+ "keyboard": [
+  "ç",
+  "ğ",
+  "ı",
+  "İ",
+  "ö",
+  "ş",
+  "ü"
+ ]
+}

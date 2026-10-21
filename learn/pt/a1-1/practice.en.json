@@ -1,0 +1,252 @@
+{
+ "title": "Oi! Meu nome é Luiz",
+ "subtitle": "Greetings, introductions, pronouns and the verb SER (Brazilian Portuguese).",
+ "speak": "pt-BR",
+ "hero": "novels/do-outro-lado-do-mundo/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "oi",
+     "hi"
+    ],
+    [
+     "tchau",
+     "bye"
+    ],
+    [
+     "sim",
+     "yes"
+    ],
+    [
+     "não",
+     "no"
+    ],
+    [
+     "de nada",
+     "you’re welcome"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Bom dia",
+   "options": [
+    "Good morning",
+    "Good night",
+    "See you tomorrow"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "My name is Luiz.",
+   "options": [
+    "Meu nome é Luiz.",
+    "Seu nome é Luiz.",
+    "Eu é Luiz."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Eu",
+   "after": "Natalia.",
+   "options": [
+    "sou",
+    "é",
+    "são"
+   ],
+   "answer": 0,
+   "es": "I’m Natalia."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Luiz",
+   "after": "brasileiro.",
+   "options": [
+    "é",
+    "sou",
+    "somos"
+   ],
+   "answer": 0,
+   "es": "Luiz is Brazilian."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Nós",
+   "after": "amigos.",
+   "options": [
+    "somos",
+    "são",
+    "sou"
+   ],
+   "answer": 0,
+   "es": "We are friends."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Natalia é",
+   "after": ".",
+   "options": [
+    "russa",
+    "russo",
+    "russos"
+   ],
+   "answer": 0,
+   "es": "Natalia is Russian."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "De onde você é?",
+   "options": [
+    "Where are you from?",
+    "What’s your name?",
+    "How are you?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "I’m from Brazil.",
+   "answer": [
+    "Eu",
+    "sou",
+    "do",
+    "Brasil"
+   ],
+   "extra": [
+    "da",
+    "é"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "De onde é Natalia?",
+   "es": "Where is Natalia from?",
+   "options": [
+    "Ela é da Rússia.",
+    "Ela é do Brasil.",
+    "Eu sou da Rússia."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Obrigada!",
+   "options": [
+    "Thank you! (said by a woman)",
+    "Thank you! (said by a man)",
+    "You’re welcome!"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Luiz e Natalia têm 20 anos.",
+   "answer": true,
+   "why": "«Luiz tem 20 anos… Ela também tem 20 anos» — that’s how the novel begins."
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "What’s your name?",
+   "answer": [
+    "Qual",
+    "é",
+    "o",
+    "seu",
+    "nome?"
+   ],
+   "extra": [
+    "meu",
+    "sou"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "Thank you (said by a man)",
+   "answers": [
+    "obrigado"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "I’m Russian (a woman).",
+   "answers": [
+    "Sou russa",
+    "Eu sou russa"
+   ]
+  }
+ ],
+ "keyboard": [
+  "á",
+  "â",
+  "ã",
+  "à",
+  "ç",
+  "é",
+  "ê",
+  "í",
+  "ó",
+  "ô",
+  "õ",
+  "ú"
+ ]
+}

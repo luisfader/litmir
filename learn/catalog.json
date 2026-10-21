@@ -146,6 +146,384 @@
     },
     "cover": "novels/el-tren-fantasma/cover.jpg"
    }
+  },
+  {
+   "lang": "it",
+   "speak": "it-IT",
+   "help": [
+    "ru",
+    "en"
+   ],
+   "title": {
+    "it": "Impara l’italiano!",
+    "ru": "Итальянский язык",
+    "en": "Italian"
+   },
+   "units": [
+    {
+     "id": "a1-1",
+     "level": "A1",
+     "n": 1,
+     "title": "Ciao! Mi chiamo Alessio",
+     "sub": {
+      "ru": "Приветствия, знакомство, местоимения, глагол ESSERE, национальности",
+      "en": "Greetings, introductions, pronouns, the verb ESSERE, nationalities"
+     },
+     "cover": "novels/ladro-di-cuori/cover.jpg",
+     "novel": "ladro-di-cuori"
+    }
+   ]
+  },
+  {
+   "lang": "de",
+   "speak": "de-DE",
+   "help": [
+    "ru",
+    "en"
+   ],
+   "title": {
+    "de": "Lerne Deutsch!",
+    "ru": "Немецкий язык",
+    "en": "German"
+   },
+   "units": [
+    {
+     "id": "a1-1",
+     "level": "A1",
+     "n": 1,
+     "title": "Hallo! Ich heiße Robert",
+     "sub": {
+      "ru": "Приветствия, знакомство, du и Sie, местоимения, глагол SEIN, страны",
+      "en": "Greetings, introductions, du and Sie, pronouns, the verb SEIN, countries"
+     },
+     "cover": "novels/vorahnung/cover.jpg",
+     "novel": "vorahnung"
+    }
+   ]
+  },
+  {
+   "lang": "fr",
+   "speak": "fr-FR",
+   "help": [
+    "ru",
+    "en"
+   ],
+   "title": {
+    "fr": "Apprends le français !",
+    "ru": "Французский язык",
+    "en": "French"
+   },
+   "units": [
+    {
+     "id": "a1-1",
+     "level": "A1",
+     "n": 1,
+     "title": "Bonjour ! Je m’appelle Sasha",
+     "sub": {
+      "ru": "Приветствия, знакомство, tu и vous, местоимения, глагол ÊTRE, национальности",
+      "en": "Greetings, introductions, tu and vous, pronouns, the verb ÊTRE, nationalities"
+     },
+     "cover": "novels/la-voix/cover.jpg",
+     "novel": "la-voix"
+    }
+   ]
+  },
+  {
+   "lang": "ru",
+   "speak": "ru-RU",
+   "help": [
+    "en",
+    "es"
+   ],
+   "title": {
+    "ru": "Учите русский!",
+    "en": "Russian",
+    "es": "Ruso"
+   },
+   "units": [
+    {
+     "id": "a1-1",
+     "level": "A1",
+     "n": 1,
+     "title": "Привет! Меня зовут Наталья",
+     "sub": {
+      "en": "Cyrillic, greetings, introductions, pronouns, “I am” without a verb, nationalities",
+      "es": "El cirílico, saludos, presentarse, pronombres, «soy» sin verbo, nacionalidades"
+     },
+     "cover": "novels/tajna-semi-fader/cover.jpg",
+     "novel": "tajna-semi-fader"
+    }
+   ]
+  },
+  {
+   "lang": "en",
+   "speak": "en-GB",
+   "help": [
+    "ru",
+    "es"
+   ],
+   "title": {
+    "en": "Learn English!",
+    "ru": "Английский язык",
+    "es": "Inglés"
+   },
+   "units": [
+    {
+     "id": "a1-1",
+     "level": "A1",
+     "n": 1,
+     "title": "Hello! My name is Alex",
+     "sub": {
+      "ru": "Приветствия, знакомство, местоимения, глагол TO BE, страны и национальности",
+      "es": "Saludos, presentarse, pronombres, el verbo TO BE, países y nacionalidades"
+     },
+     "cover": "novels/a-man-from-the-future/cover.jpg",
+     "novel": "a-man-from-the-future"
+    }
+   ]
+  },
+  {
+   "lang": "pt",
+   "speak": "pt-BR",
+   "help": [
+    "ru",
+    "en"
+   ],
+   "title": {
+    "pt": "Aprenda português!",
+    "ru": "Португальский язык",
+    "en": "Portuguese"
+   },
+   "units": [
+    {
+     "id": "a1-1",
+     "level": "A1",
+     "n": 1,
+     "title": "Oi! Meu nome é Luiz",
+     "sub": {
+      "ru": "Приветствия, знакомство, você, глагол SER, национальности (Бразилия)",
+      "en": "Greetings, introductions, você, the verb SER, nationalities (Brazil)"
+     },
+     "cover": "novels/do-outro-lado-do-mundo/cover.jpg",
+     "novel": "do-outro-lado-do-mundo"
+    }
+   ]
+  },
+  {
+   "lang": "tr",
+   "speak": "tr-TR",
+   "help": [
+    "ru",
+    "en"
+   ],
+   "title": {
+    "tr": "Türkçe öğren!",
+    "ru": "Турецкий язык",
+    "en": "Turkish"
+   },
+   "units": [
+    {
+     "id": "a1-1",
+     "level": "A1",
+     "n": 1,
+     "title": "Merhaba! Benim adım Rosa",
+     "sub": {
+      "ru": "Приветствия, знакомство, местоимения, «быть» как окончание, гармония гласных",
+      "en": "Greetings, introductions, pronouns, \"to be\" as a suffix, vowel harmony"
+     },
+     "cover": "novels/col-gulu/cover.jpg",
+     "novel": "col-gulu"
+    }
+   ]
+  },
+  {
+   "lang": "cs",
+   "speak": "cs-CZ",
+   "help": [
+    "ru",
+    "en"
+   ],
+   "title": {
+    "cs": "Uč se česky!",
+    "ru": "Чешский язык",
+    "en": "Czech"
+   },
+   "units": [
+    {
+     "id": "a1-1",
+     "level": "A1",
+     "n": 1,
+     "title": "Ahoj! Já jsem Jana",
+     "sub": {
+      "ru": "Приветствия, знакомство, ty и vy, глагол BÝT, национальности",
+      "en": "Greetings, introductions, ty and vy, the verb BÝT, nationalities"
+     },
+     "cover": "novels/podzemni-tajemstvi/cover.jpg",
+     "novel": "podzemni-tajemstvi"
+    }
+   ]
+  },
+  {
+   "lang": "sr",
+   "speak": "sr-RS",
+   "help": [
+    "ru",
+    "en"
+   ],
+   "title": {
+    "sr": "Учи српски!",
+    "ru": "Сербский язык",
+    "en": "Serbian"
+   },
+   "units": [
+    {
+     "id": "a1-1",
+     "level": "A1",
+     "n": 1,
+     "title": "Здраво! Ја сам Наташа",
+     "sub": {
+      "ru": "Две азбуки, приветствия, знакомство, местоимения, глагол БИТИ, национальности",
+      "en": "Two alphabets, greetings, introductions, pronouns, the verb БИТИ, nationalities"
+     },
+     "cover": "novels/divlji-chas/cover.jpg",
+     "novel": "divlji-chas"
+    }
+   ]
+  },
+  {
+   "lang": "eo",
+   "speak": "eo",
+   "help": [
+    "ru",
+    "en"
+   ],
+   "title": {
+    "eo": "Lernu Esperanton!",
+    "ru": "Эсперанто",
+    "en": "Esperanto"
+   },
+   "units": [
+    {
+     "id": "a1-1",
+     "level": "A1",
+     "n": 1,
+     "title": "Saluton! Mi estas Nataŝa",
+     "sub": {
+      "ru": "Приветствия, знакомство, местоимения, глагол ESTI, вопросы с ĉu, суффикс -in-",
+      "en": "Greetings, introductions, pronouns, the verb ESTI, ĉu-questions, the suffix -in-"
+     },
+     "cover": "novels/la-savo-de-zmaj/cover.jpg",
+     "novel": "la-savo-de-zmaj"
+    }
+   ]
+  },
+  {
+   "lang": "ia",
+   "speak": "it-IT",
+   "help": [
+    "ru",
+    "en"
+   ],
+   "title": {
+    "ia": "Apprende interlingua!",
+    "ru": "Интерлингва",
+    "en": "Interlingua"
+   },
+   "units": [
+    {
+     "id": "a1-1",
+     "level": "A1",
+     "n": 1,
+     "title": "Salute! Io me appella Katerina",
+     "sub": {
+      "ru": "Приветствия, знакомство, местоимения, глагол ESSER, вопросы с esque",
+      "en": "Greetings, introductions, pronouns, the verb ESSER, questions with esque"
+     },
+     "cover": "novels/le-presentimento/cover.jpg",
+     "novel": "le-presentimento"
+    }
+   ]
+  },
+  {
+   "lang": "isv",
+   "speak": "cs-CZ",
+   "help": [
+    "ru",
+    "en"
+   ],
+   "title": {
+    "isv": "Učite medžuslovjansky!",
+    "ru": "Межславянский язык",
+    "en": "Interslavic"
+   },
+   "units": [
+    {
+     "id": "a1-1",
+     "level": "A1",
+     "n": 1,
+     "title": "Zdravo! Moje ime jest Kennet",
+     "sub": {
+      "ru": "Приветствия, знакомство, местоимения, глагол BYTI, страны",
+      "en": "Greetings, introductions, pronouns, the verb BYTI, countries"
+     },
+     "cover": "novels/predcutje/cover.jpg",
+     "novel": "predcutje"
+    }
+   ]
+  },
+  {
+   "lang": "vo",
+   "speak": "de-DE",
+   "help": [
+    "ru",
+    "en"
+   ],
+   "title": {
+    "vo": "Lärnol Volapüki!",
+    "ru": "Волапюк",
+    "en": "Volapük"
+   },
+   "units": [
+    {
+     "id": "a1-1",
+     "level": "A1",
+     "n": 1,
+     "title": "Nem obik binon Natalia",
+     "sub": {
+      "ru": "Приветствия, знакомство, местоимения, глагол BINÖN, порядок слов",
+      "en": "Greetings, introductions, pronouns, the verb BINÖN, word order"
+     },
+     "cover": "novels/fot-latik/cover.jpg",
+     "novel": "fot-latik"
+    }
+   ]
+  },
+  {
+   "lang": "ld",
+   "speak": "es-ES",
+   "help": [
+    "ru",
+    "en"
+   ],
+   "title": {
+    "ld": "Lerni Lingwa de Planeta!",
+    "ru": "Лингва де Планета",
+    "en": "Lingwa de Planeta"
+   },
+   "units": [
+    {
+     "id": "a1-1",
+     "level": "A1",
+     "n": 1,
+     "title": "Me es Natalia",
+     "sub": {
+      "ru": "Знакомство, местоимения, глагол ES, отрицание bu, прошедшее -te",
+      "en": "Introductions, pronouns, the verb ES, the negation bu, the past -te"
+     },
+     "cover": "novels/premonision-ldp/cover.jpg",
+     "novel": "premonision-ldp"
+    }
+   ]
   }
  ]
 }

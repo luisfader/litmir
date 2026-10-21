@@ -1451,6 +1451,7 @@ vol.oninput = () => { music.el.volume = +vol.value; store.set("vol", +vol.value)
 /* Language courses: #/learn (course for the site language), #/learn/<unit>, #/learn/<unit>/practice */
 const LEARN_T = {
   ru:{help:"Объяснения на языке:", units:"Уроки", unit:"Урок", theory:"Теория", practice:"Практика", go:"Начать урок →", ex:n => `Упражнения · ${n}`, done:"Пройдено", start:"Пройти тест →", soon:"Новые уроки скоро появятся.", back:"← Все уроки", toPractice:"Перейти к практике →", practiceNote:"Закрепите урок в интерактивных упражнениях: с озвучкой, подсказками и баллами.", novel:"Герои урока из романа"},
+  es:{help:"Explicaciones en:", units:"Unidades", unit:"Unidad", theory:"Teoría", practice:"Práctica", go:"Empezar la unidad →", ex:n => `Ejercicios · ${n}`, done:"Completada", start:"Hacer la prueba →", soon:"Pronto habrá nuevas unidades.", back:"← Todas las unidades", toPractice:"Ir a la práctica →", practiceNote:"Afianzá la unidad con ejercicios interactivos: con audio, pistas y puntos.", novel:"Personajes de la novela"},
   en:{help:"Explanations in:", units:"Units", unit:"Unit", theory:"Theory", practice:"Practice", go:"Start the unit →", ex:n => `Exercises · ${n}`, done:"Completed", start:"Take the test →", soon:"New units are coming soon.", back:"← All units", toPractice:"Go to practice →", practiceNote:"Reinforce the unit with interactive exercises: audio, hints and points.", novel:"Characters from the novel"}
 };
 let learnCat = null;

@@ -1,0 +1,243 @@
+{
+ "title": "Ciao! Mi chiamo Alessio",
+ "subtitle": "Greetings, introductions, pronouns and the verb ESSERE.",
+ "speak": "it-IT",
+ "hero": "novels/ladro-di-cuori/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "ciao",
+     "hi"
+    ],
+    [
+     "grazie",
+     "thank you"
+    ],
+    [
+     "arrivederci",
+     "goodbye"
+    ],
+    [
+     "buonanotte",
+     "good night"
+    ],
+    [
+     "prego",
+     "you’re welcome"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Buongiorno",
+   "options": [
+    "Good morning",
+    "Good night",
+    "See you soon"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "My name is Alessio.",
+   "options": [
+    "Mi chiamo Alessio.",
+    "Ti chiami Alessio.",
+    "Sono di Alessio."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Io",
+   "after": "Laura.",
+   "options": [
+    "sono",
+    "sei",
+    "è"
+   ],
+   "answer": 0,
+   "es": "I’m Laura."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Alessio",
+   "after": "di Firenze.",
+   "options": [
+    "è",
+    "e",
+    "sono"
+   ],
+   "answer": 0,
+   "es": "Alessio is from Florence."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Noi",
+   "after": "amici.",
+   "options": [
+    "siamo",
+    "sono",
+    "siete"
+   ],
+   "answer": 0,
+   "es": "We are friends."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Laura è",
+   "after": ".",
+   "options": [
+    "italiana",
+    "italiano",
+    "italiani"
+   ],
+   "answer": 0,
+   "es": "Laura is Italian."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Di dove sei?",
+   "options": [
+    "Where are you from?",
+    "What’s your name?",
+    "How are you?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "What’s your name?",
+   "answer": [
+    "Come",
+    "ti",
+    "chiami?"
+   ],
+   "extra": [
+    "mi",
+    "sei"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Di dove è Laura?",
+   "es": "Where is Laura from?",
+   "options": [
+    "È di Firenze.",
+    "È di Mosca.",
+    "Sono di Firenze."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "you (formal)",
+   "options": [
+    "Lei",
+    "voi",
+    "tu"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Alessio è russo.",
+   "answer": false,
+   "why": "Alessio is Italian, from Florence."
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "I’m from Moscow.",
+   "answer": [
+    "Sono",
+    "di",
+    "Mosca"
+   ],
+   "extra": [
+    "è",
+    "della"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "Thank you",
+   "answers": [
+    "grazie"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "I’m Italian (a man).",
+   "answers": [
+    "Sono italiano",
+    "Io sono italiano"
+   ]
+  }
+ ],
+ "keyboard": [
+  "à",
+  "è",
+  "é",
+  "ì",
+  "ò",
+  "ù"
+ ]
+}

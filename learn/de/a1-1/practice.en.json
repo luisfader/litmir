@@ -1,0 +1,244 @@
+{
+ "title": "Hallo! Ich heiße Robert",
+ "subtitle": "Greetings, introductions, du and Sie, the verb SEIN.",
+ "speak": "de-DE",
+ "hero": "novels/vorahnung/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "hallo",
+     "hi"
+    ],
+    [
+     "danke",
+     "thank you"
+    ],
+    [
+     "tschüss",
+     "bye"
+    ],
+    [
+     "Gute Nacht",
+     "good night"
+    ],
+    [
+     "bitte",
+     "please"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Guten Morgen",
+   "options": [
+    "Good morning",
+    "Good evening",
+    "Goodbye"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "My name is Robert.",
+   "options": [
+    "Ich heiße Robert.",
+    "Du heißt Robert.",
+    "Ich bin aus Robert."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Ich",
+   "after": "Natalia.",
+   "options": [
+    "bin",
+    "bist",
+    "ist"
+   ],
+   "answer": 0,
+   "es": "I’m Natalia."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Natalia",
+   "after": "Ärztin.",
+   "options": [
+    "ist",
+    "sind",
+    "bin"
+   ],
+   "answer": 0,
+   "es": "Natalia is a doctor."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Wir",
+   "after": "Freunde.",
+   "options": [
+    "sind",
+    "seid",
+    "ist"
+   ],
+   "answer": 0,
+   "es": "We are friends."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Woher",
+   "after": "du?",
+   "options": [
+    "kommst",
+    "kommen",
+    "komme"
+   ],
+   "answer": 0,
+   "es": "Where are you from?"
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Wie geht es Ihnen?",
+   "options": [
+    "How are you? (formal)",
+    "What’s your name?",
+    "Where are you from?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "I’m from Russia.",
+   "answer": [
+    "Ich",
+    "komme",
+    "aus",
+    "Russland"
+   ],
+   "extra": [
+    "bin",
+    "in"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Was ist Natalia von Beruf?",
+   "es": "What is Natalia’s job?",
+   "options": [
+    "Sie ist Ärztin.",
+    "Sie ist Lehrerin.",
+    "Ich bin Ärztin."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "you (formal)",
+   "options": [
+    "Sie",
+    "sie",
+    "ihr"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Robert und Natalia sagen am Ende «du».",
+   "answer": true,
+   "why": "Robert asks «Sagen wir du?» — «Gern!»"
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "What’s your name?",
+   "answer": [
+    "Wie",
+    "heißt",
+    "du?"
+   ],
+   "extra": [
+    "heißen",
+    "bist"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "Thank you",
+   "answers": [
+    "danke"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "I’m a doctor (a woman).",
+   "answers": [
+    "Ich bin Ärztin"
+   ]
+  }
+ ],
+ "keyboard": [
+  "ä",
+  "ö",
+  "ü",
+  "ß",
+  "Ä",
+  "Ö",
+  "Ü"
+ ]
+}

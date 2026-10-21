@@ -1,0 +1,236 @@
+{
+ "title": "Salute! Io me appella Katerina",
+ "subtitle": "Greetings, introductions, pronouns and ESSER — one form for every person.",
+ "speak": "it-IT",
+ "hero": "novels/le-presentimento/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "salute",
+     "hello"
+    ],
+    [
+     "gratias",
+     "thank you"
+    ],
+    [
+     "si",
+     "yes"
+    ],
+    [
+     "non",
+     "no"
+    ],
+    [
+     "bon nocte",
+     "good night"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "A revider!",
+   "options": [
+    "Goodbye!",
+    "Good evening!",
+    "Thank you!"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "My name is Robert.",
+   "options": [
+    "Io me appella Robert.",
+    "Tu te appella Robert.",
+    "Io es appella Robert."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Katerina",
+   "after": "russe.",
+   "options": [
+    "es",
+    "son",
+    "esser"
+   ],
+   "answer": 0,
+   "es": "Katerina is Russian."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Nos es",
+   "after": ".",
+   "options": [
+    "amicos",
+    "amico",
+    "amica"
+   ],
+   "answer": 0,
+   "es": "We are friends."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "",
+   "after": "tu es russe?",
+   "options": [
+    "Esque",
+    "Ubi",
+    "Como"
+   ],
+   "answer": 0,
+   "es": "Are you Russian?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Io es",
+   "after": "Russia.",
+   "options": [
+    "de",
+    "in",
+    "con"
+   ],
+   "answer": 0,
+   "es": "I’m from Russia."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Multo placer!",
+   "options": [
+    "Nice to meet you!",
+    "Thank you very much!",
+    "Very good!"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "I’m not Russian.",
+   "answer": [
+    "Io",
+    "non",
+    "es",
+    "russe"
+   ],
+   "extra": [
+    "esque",
+    "tu"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "De ubi es Katerina?",
+   "es": "Where is Katerina from?",
+   "options": [
+    "Illa es de Russia.",
+    "Ille es de Russia.",
+    "Illa es in le fortressa."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "they",
+   "options": [
+    "illes",
+    "nos",
+    "vos"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Katerina es russe.",
+   "answer": true,
+   "why": "Katerina is Russian: «Io es russe»."
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "What’s your name?",
+   "answer": [
+    "Como",
+    "te",
+    "appella",
+    "tu?"
+   ],
+   "extra": [
+    "me",
+    "es"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "thank you",
+   "answers": [
+    "gratias"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "hello",
+   "answers": [
+    "salute"
+   ]
+  }
+ ]
+}

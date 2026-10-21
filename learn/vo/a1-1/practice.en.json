@@ -1,0 +1,238 @@
+{
+ "title": "Nem obik binon Natalia",
+ "subtitle": "Greetings, introductions and the verb BINÖN: the person is in the ending.",
+ "speak": "de-DE",
+ "hero": "novels/fot-latik/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "glidis",
+     "hello"
+    ],
+    [
+     "danö",
+     "thank you"
+    ],
+    [
+     "si",
+     "yes"
+    ],
+    [
+     "no",
+     "no"
+    ],
+    [
+     "adyö",
+     "goodbye"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Neit gudik!",
+   "options": [
+    "Good night!",
+    "Good day!",
+    "Welcome!"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "My name is Natalia.",
+   "options": [
+    "Nem obik binon Natalia.",
+    "Nem olik binon Natalia.",
+    "Obik nem binob Natalia."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "",
+   "after": "doktor.",
+   "options": [
+    "Binob",
+    "Binol",
+    "Binoms"
+   ],
+   "answer": 0,
+   "es": "I’m a doctor."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Natalia",
+   "after": "jönik.",
+   "options": [
+    "binof",
+    "binom",
+    "binob"
+   ],
+   "answer": 0,
+   "es": "Natalia is beautiful."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "",
+   "after": "malädik?",
+   "options": [
+    "Binol",
+    "Binob",
+    "Binobs"
+   ],
+   "answer": 0,
+   "es": "Are you ill?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Nem",
+   "after": "binon Robert.",
+   "options": [
+    "obik",
+    "ob",
+    "obs"
+   ],
+   "answer": 0,
+   "es": "My name is Robert."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Kiom binol?",
+   "options": [
+    "Who are you?",
+    "Where do you live?",
+    "Are you ill?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "You’re not very ill.",
+   "answer": [
+    "No",
+    "binol",
+    "malädik",
+    "vemo"
+   ],
+   "extra": [
+    "binob",
+    "si"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Kiom binof Natalia?",
+   "es": "Who is Natalia?",
+   "options": [
+    "Binof doktor.",
+    "Binom doktor.",
+    "Binob doktor."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "we",
+   "options": [
+    "obs",
+    "ols",
+    "oms"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Robert binom doktor.",
+   "answer": false,
+   "why": "Natalia is the doctor. Robert is «man ko mot», a man with a motorbike."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Komol ko ob!",
+   "options": [
+    "Come with me!",
+    "Drink!",
+    "Stop!"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "thank you",
+   "answers": [
+    "danö"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "I’m Robert.",
+   "answers": [
+    "Binob Robert",
+    "Ob binob Robert"
+   ]
+  }
+ ],
+ "keyboard": [
+  "ä",
+  "ö",
+  "ü"
+ ]
+}

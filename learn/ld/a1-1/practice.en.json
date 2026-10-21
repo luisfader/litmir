@@ -1,0 +1,232 @@
+{
+ "title": "Me es Natalia",
+ "subtitle": "Introductions, pronouns and the verb ES — no conjugation at all.",
+ "speak": "es-ES",
+ "hero": "novels/premonision-ldp/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "ya",
+     "yes"
+    ],
+    [
+     "non",
+     "no"
+    ],
+    [
+     "hao",
+     "good"
+    ],
+    [
+     "dia",
+     "day"
+    ],
+    [
+     "nocha",
+     "night"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Hao nocha!",
+   "options": [
+    "Good night!",
+    "Good day!",
+    "Hello!"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "I’m Natalia.",
+   "options": [
+    "Me es Natalia.",
+    "Yu es Natalia.",
+    "Me esa Natalia."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Ela",
+   "after": "violonchelista.",
+   "options": [
+    "es",
+    "is",
+    "son"
+   ],
+   "answer": 0,
+   "es": "She is a cellist."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Me",
+   "after": "es la pyu hao.",
+   "options": [
+    "bu",
+    "ya",
+    "ve"
+   ],
+   "answer": 0,
+   "es": "I’m not the best."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Me",
+   "after": "reveni.",
+   "options": [
+    "ve",
+    "bu",
+    "es"
+   ],
+   "answer": 0,
+   "es": "I will come back."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "",
+   "after": "nam es Natalia.",
+   "options": [
+    "May",
+    "Me",
+    "Nu"
+   ],
+   "answer": 0,
+   "es": "My name is Natalia."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Kwo es nam de yu?",
+   "options": [
+    "What’s your name?",
+    "Where do you live?",
+    "Are you OK?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "I’m very happy.",
+   "answer": [
+    "Me",
+    "es",
+    "muy",
+    "felise"
+   ],
+   "extra": [
+    "bu",
+    "yu"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Kwo es Natalia?",
+   "es": "What is Natalia?",
+   "options": [
+    "Ela es violonchelista.",
+    "Lu es violonchelista.",
+    "Ela es frata."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "we",
+   "options": [
+    "nu",
+    "li",
+    "yu"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Natalia have tri frates.",
+   "answer": true,
+   "why": "Maksim, Artem and Denis are her younger brothers."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Ela shwo-te",
+   "options": [
+    "She said",
+    "She will say",
+    "She doesn’t speak"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "yes",
+   "answers": [
+    "ya"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "I’m from Russia.",
+   "answers": [
+    "Me es de Rusia"
+   ]
+  }
+ ]
+}

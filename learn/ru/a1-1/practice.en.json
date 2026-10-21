@@ -1,0 +1,266 @@
+{
+ "title": "Привет! Меня зовут Наталья",
+ "subtitle": "The Cyrillic alphabet, greetings, introductions and \"to be\" without a verb.",
+ "speak": "ru-RU",
+ "hero": "novels/tajna-semi-fader/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "привет",
+     "hi"
+    ],
+    [
+     "спасибо",
+     "thank you"
+    ],
+    [
+     "пока",
+     "bye"
+    ],
+    [
+     "да",
+     "yes"
+    ],
+    [
+     "нет",
+     "no"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Доброе утро",
+   "options": [
+    "Good morning",
+    "Good night",
+    "Goodbye"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "My name is Luis.",
+   "options": [
+    "Меня зовут Луис.",
+    "Тебя зовут Луис.",
+    "Я зовут Луис."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Как тебя зовут?",
+   "options": [
+    "What’s your name?",
+    "Where are you from?",
+    "How are you?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Я",
+   "after": "Москвы.",
+   "options": [
+    "из",
+    "в",
+    "и"
+   ],
+   "answer": 0,
+   "es": "I’m from Moscow."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Наталья —",
+   "after": ".",
+   "options": [
+    "русская",
+    "русский",
+    "аргентинец"
+   ],
+   "answer": 0,
+   "es": "Natalia is Russian."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Луис —",
+   "after": ".",
+   "options": [
+    "аргентинец",
+    "аргентинка",
+    "русская"
+   ],
+   "answer": 0,
+   "es": "Luis is Argentinian."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Очень приятно!",
+   "options": [
+    "Nice to meet you!",
+    "Thank you very much!",
+    "Very good!"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "I’m from Mendoza.",
+   "answer": [
+    "Я",
+    "из",
+    "Мендосы"
+   ],
+   "extra": [
+    "в",
+    "ты"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Откуда Наталья?",
+   "es": "Where is Natalia from?",
+   "options": [
+    "Из Москвы.",
+    "Из Мендосы.",
+    "Из Аргентины."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "you (formal)",
+   "options": [
+    "вы",
+    "ты",
+    "мы"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Луис — русский.",
+   "answer": false,
+   "why": "Luis is Argentinian: Луис — аргентинец."
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "We are friends.",
+   "answer": [
+    "Мы",
+    "друзья"
+   ],
+   "extra": [
+    "вы",
+    "есть"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "yes",
+   "answers": [
+    "да"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "thank you",
+   "answers": [
+    "спасибо"
+   ]
+  }
+ ],
+ "keyboard": [
+  "а",
+  "б",
+  "в",
+  "г",
+  "д",
+  "е",
+  "ё",
+  "ж",
+  "з",
+  "и",
+  "й",
+  "к",
+  "л",
+  "м",
+  "н",
+  "о",
+  "п",
+  "р",
+  "с",
+  "т",
+  "у",
+  "ф",
+  "х",
+  "ц",
+  "ч",
+  "ш",
+  "щ",
+  "ъ",
+  "ы",
+  "ь",
+  "э",
+  "ю",
+  "я"
+ ]
+}

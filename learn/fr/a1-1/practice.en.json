@@ -1,0 +1,245 @@
+{
+ "title": "Bonjour ! Je m’appelle Sasha",
+ "subtitle": "Greetings, introductions, tu and vous, the verb ÊTRE.",
+ "speak": "fr-FR",
+ "hero": "novels/la-voix/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "bonjour",
+     "hello"
+    ],
+    [
+     "merci",
+     "thank you"
+    ],
+    [
+     "au revoir",
+     "goodbye"
+    ],
+    [
+     "bonne nuit",
+     "good night"
+    ],
+    [
+     "de rien",
+     "you’re welcome"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Bonsoir",
+   "options": [
+    "Good evening",
+    "Good morning",
+    "Good night"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "My name is Sasha.",
+   "options": [
+    "Je m’appelle Sasha.",
+    "Tu t’appelles Sasha.",
+    "Je suis de Sasha."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Je",
+   "after": "Dima.",
+   "options": [
+    "suis",
+    "es",
+    "est"
+   ],
+   "answer": 0,
+   "es": "I’m Dima."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Sasha",
+   "after": "de Sinea.",
+   "options": [
+    "est",
+    "sont",
+    "suis"
+   ],
+   "answer": 0,
+   "es": "Sasha is from Sinea."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Nous",
+   "after": "amis.",
+   "options": [
+    "sommes",
+    "êtes",
+    "sont"
+   ],
+   "answer": 0,
+   "es": "We are friends."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Vous",
+   "after": "de Paris ?",
+   "options": [
+    "êtes",
+    "es",
+    "sommes"
+   ],
+   "answer": 0,
+   "es": "Are you from Paris?"
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Enchantée",
+   "options": [
+    "Nice to meet you (said by a woman)",
+    "Nice to meet you (said by a man)",
+    "See you soon"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "What’s your name?",
+   "answer": [
+    "Comment",
+    "tu",
+    "t’appelles"
+   ],
+   "extra": [
+    "vous",
+    "je"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Sasha est d’où ?",
+   "es": "Where is Sasha from?",
+   "options": [
+    "Elle est de Sinea.",
+    "Elle est de Paris.",
+    "Je suis de Sinea."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "you (formal)",
+   "options": [
+    "vous",
+    "tu",
+    "nous"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Dima est de Sinea.",
+   "answer": true,
+   "why": "«Moi aussi, je suis de Sinea», says Dima."
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "I live in Sinea.",
+   "answer": [
+    "J’habite",
+    "à",
+    "Sinea"
+   ],
+   "extra": [
+    "suis",
+    "de"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "Thank you",
+   "answers": [
+    "merci"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "I’m Russian.",
+   "answers": [
+    "Je suis russe"
+   ]
+  }
+ ],
+ "keyboard": [
+  "é",
+  "è",
+  "ê",
+  "à",
+  "ç",
+  "ù",
+  "î",
+  "ô",
+  "’"
+ ]
+}

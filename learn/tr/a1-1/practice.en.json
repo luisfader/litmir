@@ -1,0 +1,242 @@
+{
+ "title": "Merhaba! Benim adım Rosa",
+ "subtitle": "Greetings, introductions, pronouns and \"to be\" as an ending.",
+ "speak": "tr-TR",
+ "hero": "novels/col-gulu/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "merhaba",
+     "hello"
+    ],
+    [
+     "teşekkürler",
+     "thank you"
+    ],
+    [
+     "evet",
+     "yes"
+    ],
+    [
+     "hayır",
+     "no"
+    ],
+    [
+     "İyi geceler",
+     "good night"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Günaydın",
+   "options": [
+    "Good morning",
+    "Good evening",
+    "See you"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "My name is Rosa.",
+   "options": [
+    "Benim adım Rosa.",
+    "Senin adın Rosa.",
+    "Ben adım Rosa."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Nasılsın?",
+   "options": [
+    "How are you?",
+    "What’s your name?",
+    "Where are you from?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Ben",
+   "after": ".",
+   "options": [
+    "iyiyim",
+    "iyisin",
+    "iyiyiz"
+   ],
+   "answer": 0,
+   "es": "I’m fine."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Sen",
+   "after": ".",
+   "options": [
+    "öğrencisin",
+    "öğrenciyim",
+    "öğrenciler"
+   ],
+   "answer": 0,
+   "es": "You are a student."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Biz",
+   "after": ".",
+   "options": [
+    "öğrenciyiz",
+    "öğrencisiniz",
+    "öğrenciyim"
+   ],
+   "answer": 0,
+   "es": "We are students."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Ben",
+   "after": ". (Rus)",
+   "options": [
+    "Rusum",
+    "Rusım",
+    "Rusim"
+   ],
+   "answer": 0,
+   "es": "I’m Russian."
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "Nice to meet you too.",
+   "answer": [
+    "Ben",
+    "de",
+    "memnun",
+    "oldum"
+   ],
+   "extra": [
+    "sen",
+    "adım"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Rosa’nın adı ne?",
+   "es": "What is Rosa’s name?",
+   "options": [
+    "Onun adı Rosa.",
+    "Benim adım Robert.",
+    "Rosa iyiyim."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "they",
+   "options": [
+    "onlar",
+    "biz",
+    "siz"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Robert ve Rosa bir kampta.",
+   "answer": true,
+   "why": "Robert wakes up in the rebel camp."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Hoşça kal!",
+   "options": [
+    "Goodbye! (said by the one leaving)",
+    "Welcome!",
+    "Thank you!"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "thank you",
+   "answers": [
+    "teşekkürler",
+    "teşekkür ederim"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "hi (informal)",
+   "answers": [
+    "selam"
+   ]
+  }
+ ],
+ "keyboard": [
+  "ç",
+  "ğ",
+  "ı",
+  "İ",
+  "ö",
+  "ş",
+  "ü"
+ ]
+}

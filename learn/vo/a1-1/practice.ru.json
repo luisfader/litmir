@@ -1,0 +1,238 @@
+{
+ "title": "Nem obik binon Natalia",
+ "subtitle": "Приветствия, знакомство и глагол BINÖN: лицо — в окончании.",
+ "speak": "de-DE",
+ "hero": "novels/fot-latik/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 7 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "glidis",
+     "привет"
+    ],
+    [
+     "danö",
+     "спасибо"
+    ],
+    [
+     "si",
+     "да"
+    ],
+    [
+     "no",
+     "нет"
+    ],
+    [
+     "adyö",
+     "до свидания"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Neit gudik!",
+   "options": [
+    "Спокойной ночи!",
+    "Добрый день!",
+    "Добро пожаловать!"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать на изучаемом языке?",
+   "word": "Меня зовут Наталья.",
+   "options": [
+    "Nem obik binon Natalia.",
+    "Nem olik binon Natalia.",
+    "Obik nem binob Natalia."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "",
+   "after": "doktor.",
+   "options": [
+    "Binob",
+    "Binol",
+    "Binoms"
+   ],
+   "answer": 0,
+   "es": "Я врач."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Natalia",
+   "after": "jönik.",
+   "options": [
+    "binof",
+    "binom",
+    "binob"
+   ],
+   "answer": 0,
+   "es": "Наталья красивая."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "",
+   "after": "malädik?",
+   "options": [
+    "Binol",
+    "Binob",
+    "Binobs"
+   ],
+   "answer": 0,
+   "es": "Ты болен?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Nem",
+   "after": "binon Robert.",
+   "options": [
+    "obik",
+    "ob",
+    "obs"
+   ],
+   "answer": 0,
+   "es": "Меня зовут Роберт."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Kiom binol?",
+   "options": [
+    "Кто ты?",
+    "Где ты живёшь?",
+    "Ты болен?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите",
+   "es": "Ты не очень болен.",
+   "answer": [
+    "No",
+    "binol",
+    "malädik",
+    "vemo"
+   ],
+   "extra": [
+    "binob",
+    "si"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "Kiom binof Natalia?",
+   "es": "Кто такая Наталья?",
+   "options": [
+    "Binof doktor.",
+    "Binom doktor.",
+    "Binob doktor."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать на изучаемом языке?",
+   "word": "мы",
+   "options": [
+    "obs",
+    "ols",
+    "oms"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Robert binom doktor.",
+   "answer": false,
+   "why": "Врач — Наталья. Роберт — «man ko mot», человек с мотоциклом."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Komol ko ob!",
+   "options": [
+    "Пойдём со мной!",
+    "Пей!",
+    "Стой!"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "спасибо",
+   "answers": [
+    "danö"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Я Роберт.",
+   "answers": [
+    "Binob Robert",
+    "Ob binob Robert"
+   ]
+  }
+ ],
+ "keyboard": [
+  "ä",
+  "ö",
+  "ü"
+ ]
+}

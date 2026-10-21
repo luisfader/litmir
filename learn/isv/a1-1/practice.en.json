@@ -1,0 +1,244 @@
+{
+ "title": "Zdravo! Moje ime jest Kennet",
+ "subtitle": "Greetings, introductions, pronouns and the verb BYTI.",
+ "speak": "cs-CZ",
+ "hero": "novels/predcutje/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "zdravo",
+     "hi"
+    ],
+    [
+     "hvala",
+     "thank you"
+    ],
+    [
+     "da",
+     "yes"
+    ],
+    [
+     "ne",
+     "no"
+    ],
+    [
+     "dobru noć",
+     "good night"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Dobro jutro",
+   "options": [
+    "Good morning",
+    "Good night",
+    "Goodbye"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "My name is Kennet.",
+   "options": [
+    "Moje ime jest Kennet.",
+    "Tvoje ime jest Kennet.",
+    "Ja jesi Kennet."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Ja",
+   "after": "Robert.",
+   "options": [
+    "jesm",
+    "jesi",
+    "sut"
+   ],
+   "answer": 0,
+   "es": "I’m Robert."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Odkud",
+   "after": "ty?",
+   "options": [
+    "jesi",
+    "jesm",
+    "jesmo"
+   ],
+   "answer": 0,
+   "es": "Where are you from?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "My",
+   "after": "prijatelji.",
+   "options": [
+    "jesmo",
+    "jeste",
+    "sut"
+   ],
+   "answer": 0,
+   "es": "We are friends."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Oni",
+   "after": "v utopiji.",
+   "options": [
+    "sut",
+    "jest",
+    "jesm"
+   ],
+   "answer": 0,
+   "es": "They are in the utopia."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Kako jesi?",
+   "options": [
+    "How are you?",
+    "What’s your name?",
+    "Where are you from?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "I’m from Russia.",
+   "answer": [
+    "Jesm",
+    "iz",
+    "Rusije"
+   ],
+   "extra": [
+    "jesi",
+    "v"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Kako se zove prijatelj Roberta?",
+   "es": "What is the name of Robert’s friend?",
+   "options": [
+    "Kennet.",
+    "Robert.",
+    "Moskva."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "they",
+   "options": [
+    "oni",
+    "my",
+    "vy"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Robert byl dva lěta v bunkeru.",
+   "answer": true,
+   "why": "«Dva lěta pod zemjeju» — two years underground."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Dobrodošli!",
+   "options": [
+    "Welcome!",
+    "Thank you!",
+    "Goodbye!"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "thank you",
+   "answers": [
+    "hvala"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "I’m Robert.",
+   "answers": [
+    "Ja jesm Robert",
+    "Jesm Robert"
+   ]
+  }
+ ],
+ "keyboard": [
+  "č",
+  "š",
+  "ž",
+  "ě",
+  "ć",
+  "đ",
+  "ń",
+  "ľ",
+  "ų",
+  "å"
+ ]
+}

@@ -1,0 +1,266 @@
+{
+ "title": "Здраво! Ја сам Наташа",
+ "subtitle": "The Cyrillic alphabet, greetings, introductions and the verb БИТИ.",
+ "speak": "sr-RS",
+ "hero": "novels/divlji-chas/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "здраво",
+     "hi"
+    ],
+    [
+     "хвала",
+     "thank you"
+    ],
+    [
+     "да",
+     "yes"
+    ],
+    [
+     "не",
+     "no"
+    ],
+    [
+     "лаку ноћ",
+     "good night"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Добро јутро",
+   "options": [
+    "Good morning",
+    "Good night",
+    "Goodbye"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "My name is Natasha.",
+   "options": [
+    "Зовем се Наташа.",
+    "Зовеш се Наташа.",
+    "Сам се Наташа."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Ја",
+   "after": "Луис.",
+   "options": [
+    "сам",
+    "си",
+    "је"
+   ],
+   "answer": 0,
+   "es": "I’m Luis."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Наташа",
+   "after": "из Београда.",
+   "options": [
+    "је",
+    "су",
+    "сам"
+   ],
+   "answer": 0,
+   "es": "Natasha is from Belgrade."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Ми",
+   "after": "пријатељи.",
+   "options": [
+    "смо",
+    "сте",
+    "су"
+   ],
+   "answer": 0,
+   "es": "We are friends."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Ја сам",
+   "after": "Аргентине.",
+   "options": [
+    "из",
+    "у",
+    "на"
+   ],
+   "answer": 0,
+   "es": "I’m from Argentina."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Драго ми је.",
+   "options": [
+    "Nice to meet you.",
+    "I’m sorry.",
+    "I’m fine."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "I’m from Belgrade.",
+   "answer": [
+    "Ја",
+    "сам",
+    "из",
+    "Београда"
+   ],
+   "extra": [
+    "је",
+    "Београд"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Одакле је Луис?",
+   "es": "Where is Luis from?",
+   "options": [
+    "Из Аргентине.",
+    "Из Београда.",
+    "Из Србије."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "I’m not a tourist.",
+   "options": [
+    "Нисам туриста.",
+    "Не сам туриста.",
+    "Сам не туриста."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Наташа је туриста.",
+   "answer": false,
+   "why": "Luis is the tourist. Natasha is from Belgrade."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Опростите!",
+   "options": [
+    "Sorry!",
+    "Thank you!",
+    "See you!"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "thank you (you can type Latin: hvala)",
+   "answers": [
+    "хвала"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "How are you? (Latin letters are fine)",
+   "answers": [
+    "Како си?",
+    "Како си"
+   ]
+  }
+ ],
+ "keyboard": [
+  "а",
+  "б",
+  "в",
+  "г",
+  "д",
+  "ђ",
+  "е",
+  "ж",
+  "з",
+  "и",
+  "ј",
+  "к",
+  "л",
+  "љ",
+  "м",
+  "н",
+  "њ",
+  "о",
+  "п",
+  "р",
+  "с",
+  "т",
+  "ћ",
+  "у",
+  "ф",
+  "х",
+  "ц",
+  "ч",
+  "џ",
+  "ш"
+ ],
+ "translit": "sr"
+}

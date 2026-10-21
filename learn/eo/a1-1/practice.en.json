@@ -1,0 +1,245 @@
+{
+ "title": "Saluton! Mi estas Nataŝa",
+ "subtitle": "Greetings, introductions, pronouns and ESTI — the easiest verb in the world.",
+ "speak": "eo",
+ "hero": "novels/la-savo-de-zmaj/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "saluton",
+     "hello"
+    ],
+    [
+     "dankon",
+     "thank you"
+    ],
+    [
+     "jes",
+     "yes"
+    ],
+    [
+     "ne",
+     "no"
+    ],
+    [
+     "bonan nokton",
+     "good night"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Bonan matenon",
+   "options": [
+    "Good morning",
+    "Good night",
+    "Goodbye"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "My name is Nataŝa.",
+   "options": [
+    "Mi nomiĝas Nataŝa.",
+    "Vi nomiĝas Nataŝa.",
+    "Mi nomas Nataŝa."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Luis",
+   "after": "argentinano.",
+   "options": [
+    "estas",
+    "esti",
+    "estos"
+   ],
+   "answer": 0,
+   "es": "Luis is Argentinian."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Nataŝa estas",
+   "after": ".",
+   "options": [
+    "serbino",
+    "serbo",
+    "serbinoj"
+   ],
+   "answer": 0,
+   "es": "Nataŝa is Serbian."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "",
+   "after": "vi estas ruso?",
+   "options": [
+    "Ĉu",
+    "Kiel",
+    "Ne"
+   ],
+   "answer": 0,
+   "es": "Are you Russian?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Ni estas",
+   "after": ".",
+   "options": [
+    "amikoj",
+    "amiko",
+    "amikino"
+   ],
+   "answer": 0,
+   "es": "We are friends."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Kiel vi fartas?",
+   "options": [
+    "How are you?",
+    "What’s your name?",
+    "Where are you from?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "I’m not Serbian.",
+   "answer": [
+    "Mi",
+    "ne",
+    "estas",
+    "serbo"
+   ],
+   "extra": [
+    "ĉu",
+    "serbino"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "De kie estas Luis kaj Nataŝa?",
+   "es": "Where are Luis and Nataŝa from?",
+   "options": [
+    "Ili estas el Beogrado.",
+    "Ili estas el Prago.",
+    "Ni estas el Beogrado."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "female friend",
+   "options": [
+    "amikino",
+    "amiko",
+    "amikoj"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Luis estas serbo.",
+   "answer": false,
+   "why": "Luis is Argentinian; Nataŝa is the Serbian one."
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "We live in Prague.",
+   "answer": [
+    "Ni",
+    "loĝas",
+    "en",
+    "Prago"
+   ],
+   "extra": [
+    "estas",
+    "el"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "thank you",
+   "answers": [
+    "dankon"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "goodbye",
+   "answers": [
+    "ĝis revido",
+    "ĝis"
+   ]
+  }
+ ],
+ "keyboard": [
+  "ĉ",
+  "ĝ",
+  "ĥ",
+  "ĵ",
+  "ŝ",
+  "ŭ"
+ ]
+}
