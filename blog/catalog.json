@@ -1,6 +1,38 @@
 {
   "posts": [
     {
+      "slug": "intervju-s-natalijeju",
+      "lang": "isv",
+      "title": "„Utopija jest kako slonova kost“: intervju s Natalijeju",
+      "date": "2026-10-21",
+      "excerpt": "Medicinska sestra iz romana „Prědčutje“ govori o Robertovyh viděnjah, o lažnoj svobodě divjakov i o tom, čego najbolje boji se v Tvrdynji Světla.",
+      "image": "novels/predcutje/cover.jpg"
+    },
+    {
+      "slug": "intervjuo-kun-natalia",
+      "lang": "eo",
+      "title": "«Mi ludis por la malpleno, nun mi ludas por homoj»: intervjuo kun Natalia",
+      "date": "2026-10-21",
+      "excerpt": "La violonĉelistino de «La Antaŭsento» rakontas, kial ŝi kredis je Nia Utopio, kion ŝi sentis en Nova Misio kaj kial ŝi silente ĉirkaŭprenis Robert antaŭ la Konsilio.",
+      "image": "novels/la-antausento/cover.jpg"
+    },
+    {
+      "slug": "sakeds-lul-pro-natalia",
+      "lang": "vo",
+      "title": "«No binob doktor pro drem olik!» — Säkeds lul pro Natalia",
+      "date": "2026-10-21",
+      "excerpt": "Natalia, doktor in «FÖT LÄTIK», sagof dö Robert, dö kastel in muns, dö vät e dö spel.",
+      "image": "novels/fot-latik/cover.jpg"
+    },
+    {
+      "slug": "interview-con-natalia",
+      "lang": "ia",
+      "title": "«Tu me ha attendite»: interview con Natalia, le violoncellista del sonios",
+      "date": "2026-10-21",
+      "excerpt": "Illa non ha ancora arrivate a Nostre Utopia. Natalia parla del sonios de Robert, de Katerina e del question: pote on salvar le mundo e le personas que on ama?",
+      "image": "novels/le-presentimento/cover.jpg"
+    },
+    {
       "slug": "intervista-maschera-di-venezia-roberto-fader",
       "lang": "it",
       "title": "«L’amore, di per sé, è un mistero»: Roberto Fader racconta «Maschera di Venezia»",
