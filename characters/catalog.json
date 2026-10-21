@@ -1089,16 +1089,28 @@
       "id": "marco-dandolo",
       "name": "Marco Dandolo",
       "langs": [
-        "it"
+        "it",
+        "ru"
       ],
       "role": "Heredero de una familia ilustre veneciana que busca el poder.",
       "novels": [
-        "maschera-di-venezia"
+        "maschera-di-venezia",
+        "venecianskaya-maska"
       ],
       "localizations": {
         "it": {
           "name": "Marco Dandolo",
-          "description": "Erede ambizioso della famiglia Dandolo, nipote dell’ultimo Doge. Si allea con la Loggia per riportare Venezia alla sua gloria e governarla."
+          "description": "Erede ambizioso della famiglia Dandolo, nipote dell’ultimo Doge. Si allea con la Loggia per riportare Venezia alla sua gloria e governarla.",
+          "images": [
+            "characters/img/marco-dandolo-1.jpg"
+          ]
+        },
+        "ru": {
+          "name": "Марко Дандоло",
+          "description": "Наследник древнего венецианского рода Дандоло, внук последнего дожа до катастрофы. Появляется в тайном зале Ордена с золотым медальоном и требует Маску по праву крови. Честолюбивый, хладнокровный и опасно обаятельный.",
+          "images": [
+            "characters/img/marco-dandolo-1.jpg"
+          ]
         }
       }
     },
