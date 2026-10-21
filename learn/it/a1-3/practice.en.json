@@ -1,0 +1,270 @@
+{
+ "title": "La famiglia di Antonio",
+ "subtitle": "Family, the verb avere, plurals, possessives, adjectives, c’è / ci sono.",
+ "speak": "it-IT",
+ "hero": "novels/antonio-e-il-segreto-di-roma/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "il padre",
+     "father"
+    ],
+    [
+     "la madre",
+     "mother"
+    ],
+    [
+     "il fratello",
+     "brother"
+    ],
+    [
+     "la nonna",
+     "grandmother"
+    ],
+    [
+     "i genitori",
+     "parents"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Antonio",
+   "after": "ventotto anni.",
+   "options": [
+    "ha",
+    "ho",
+    "hanno"
+   ],
+   "answer": 0,
+   "es": "Antonio is 28."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Io",
+   "after": "una sorella.",
+   "options": [
+    "ho",
+    "ha",
+    "hai"
+   ],
+   "answer": 0,
+   "es": "I have a sister."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Noi",
+   "after": "una casa a Roma.",
+   "options": [
+    "abbiamo",
+    "avete",
+    "hanno"
+   ],
+   "answer": 0,
+   "es": "We have a house in Rome."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "",
+   "after": "nonna si chiama Rosa.",
+   "options": [
+    "Mia",
+    "La mia",
+    "Mio"
+   ],
+   "answer": 0,
+   "es": "My grandmother’s name is Rosa.",
+   "why": "No article with a singular family member."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "",
+   "after": "genitori abitano a Roma.",
+   "options": [
+    "I miei",
+    "Miei",
+    "Le mie"
+   ],
+   "answer": 0,
+   "es": "My parents live in Rome.",
+   "why": "In the plural the article comes back."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "i parenti",
+   "options": [
+    "relatives",
+    "parents",
+    "friends"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "La nonna è molto",
+   "after": "",
+   "options": [
+    "attiva",
+    "attivo",
+    "attive"
+   ],
+   "answer": 0,
+   "es": "Grandma is very active."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Le sorelle di Antonio sono",
+   "after": "",
+   "options": [
+    "simpatiche",
+    "simpatici",
+    "simpatica"
+   ],
+   "answer": 0,
+   "es": "Antonio’s sisters are nice."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "A Roma",
+   "after": "tanti musei.",
+   "options": [
+    "ci sono",
+    "c’è",
+    "ha"
+   ],
+   "answer": 0,
+   "es": "There are lots of museums in Rome."
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "my brothers",
+   "options": [
+    "i miei fratelli",
+    "miei fratelli",
+    "le mie fratelli"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "I have a big family.",
+   "answer": [
+    "Ho",
+    "una",
+    "famiglia",
+    "grande"
+   ],
+   "extra": [
+    "ha",
+    "grando"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Quanti anni ha la nonna Rosa?",
+   "es": "How old is grandma Rosa?",
+   "options": [
+    "Ha ottantadue anni.",
+    "Ha ventotto anni.",
+    "Ho ottantadue anni."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Antonio pranza dalla nonna ogni domenica.",
+   "answer": true,
+   "why": "Every Sunday he has lunch at grandma Rosa’s."
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "my father",
+   "answers": [
+    "mio padre"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "Do you have a brother?",
+   "answers": [
+    "Hai un fratello?",
+    "Hai un fratello",
+    "Tu hai un fratello?"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "La nonna di Antonio non legge libri.",
+   "answer": false,
+   "why": "On the contrary: she reads lots of books and knows Rome’s history."
+  }
+ ],
+ "keyboard": [
+  "à",
+  "è",
+  "é",
+  "ì",
+  "ò",
+  "ù"
+ ]
+}

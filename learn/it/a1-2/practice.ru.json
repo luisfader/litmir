@@ -1,0 +1,267 @@
+{
+ "title": "Sono un detective e vivo a Sinea",
+ "subtitle": "Профессии, правильные глаголы -are/-ere/-ire, отрицание, вопросы, числа.",
+ "speak": "it-IT",
+ "hero": "novels/il-treno-fantasma/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 7 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "lavorare",
+     "работать"
+    ],
+    [
+     "vivere",
+     "жить"
+    ],
+    [
+     "leggere",
+     "читать"
+    ],
+    [
+     "scrivere",
+     "писать"
+    ],
+    [
+     "cercare",
+     "искать"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Che lavoro fai?",
+   "options": [
+    "Кем ты работаешь?",
+    "Где ты живёшь?",
+    "Сколько тебе лет?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Marco",
+   "after": "a Sinea.",
+   "options": [
+    "vive",
+    "vivo",
+    "vivono"
+   ],
+   "answer": 0,
+   "es": "Марко живёт в Синее."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Io",
+   "after": "italiano.",
+   "options": [
+    "parlo",
+    "parli",
+    "parla"
+   ],
+   "answer": 0,
+   "es": "Я говорю по-итальянски."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Noi",
+   "after": "a Roma.",
+   "options": [
+    "lavoriamo",
+    "lavorate",
+    "lavorano"
+   ],
+   "answer": 0,
+   "es": "Мы работаем в Риме."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Laura",
+   "after": "lo spagnolo.",
+   "options": [
+    "capisce",
+    "capie",
+    "capiscono"
+   ],
+   "answer": 0,
+   "es": "Лаура понимает испанский.",
+   "why": "Capire добавляет -isc-: capisco, capisci, capisce."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Tu",
+   "after": "la tua ragazza.",
+   "options": [
+    "cerchi",
+    "cerci",
+    "cerca"
+   ],
+   "answer": 0,
+   "es": "Ты ищешь свою девушку.",
+   "why": "Cercare → tu cerchi: h сохраняет звук «к»."
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать на изучаемом языке?",
+   "word": "Я не говорю по-английски.",
+   "options": [
+    "Non parlo inglese.",
+    "Parlo non inglese.",
+    "No parlo inglese."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Faccio",
+   "after": "detective.",
+   "options": [
+    "il",
+    "un",
+    "—"
+   ],
+   "answer": 0,
+   "es": "Я работаю детективом.",
+   "why": "После fare — определённый артикль."
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите",
+   "es": "Мне 35 лет.",
+   "answer": [
+    "Ho",
+    "35",
+    "anni"
+   ],
+   "extra": [
+    "sono",
+    "ha"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "Che cosa cerca Marco?",
+   "es": "Кого ищет Марко?",
+   "options": [
+    "Cerca la sua ragazza, Alice.",
+    "Cerca un lavoro.",
+    "Vive a Sinea."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "ventotto",
+   "options": [
+    "двадцать восемь",
+    "восемнадцать",
+    "восемьдесят"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать на изучаемом языке?",
+   "word": "студентка",
+   "options": [
+    "la studentessa",
+    "la studenta",
+    "lo studente"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Laura vive in una villa vicino a Firenze.",
+   "answer": true,
+   "why": "Лаура — коллекционерка, живёт на вилле у Флоренции."
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Я живу во Флоренции.",
+   "answers": [
+    "Vivo a Firenze",
+    "Io vivo a Firenze",
+    "Abito a Firenze"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Сколько тебе лет?",
+   "answers": [
+    "Quanti anni hai?",
+    "Quanti anni hai"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Marco ha venticinque anni.",
+   "answer": false,
+   "why": "«Ho 35 anni» — Марко 35 лет."
+  }
+ ],
+ "keyboard": [
+  "à",
+  "è",
+  "é",
+  "ì",
+  "ò",
+  "ù"
+ ]
+}

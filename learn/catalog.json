@@ -171,6 +171,42 @@
      },
      "cover": "novels/ladro-di-cuori/cover.jpg",
      "novel": "ladro-di-cuori"
+    },
+    {
+     "id": "a1-2",
+     "level": "A1",
+     "n": 2,
+     "title": "Sono un detective e vivo a Sinea",
+     "sub": {
+      "ru": "Профессии, правильные глаголы -are/-ere/-ire, отрицание, вопросы, числа",
+      "en": "Professions, regular -are/-ere/-ire verbs, negation, questions, numbers"
+     },
+     "cover": "novels/il-treno-fantasma/cover.jpg",
+     "novel": "il-treno-fantasma"
+    },
+    {
+     "id": "a1-3",
+     "level": "A1",
+     "n": 3,
+     "title": "La famiglia di Antonio",
+     "sub": {
+      "ru": "Семья, глагол AVERE, множественное число, притяжательные, прилагательные, c’è / ci sono",
+      "en": "Family, the verb AVERE, plurals, possessives, adjectives, c’è / ci sono"
+     },
+     "cover": "novels/antonio-e-il-segreto-di-roma/cover.jpg",
+     "novel": "antonio-e-il-segreto-di-roma"
+    },
+    {
+     "id": "a1-4",
+     "level": "A1",
+     "n": 4,
+     "title": "Dov’è il quadro?",
+     "sub": {
+      "ru": "Где? c’è или è, предлоги с артиклем, предлоги места, глагол STARE, дом",
+      "en": "Where? c’è vs è, prepositions with articles, prepositions of place, the verb STARE, the house"
+     },
+     "cover": "novels/ladro-di-cuori/cover.jpg",
+     "novel": "ladro-di-cuori"
     }
    ]
   },

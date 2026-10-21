@@ -1,0 +1,270 @@
+{
+ "title": "Dov’è il quadro?",
+ "subtitle": "Where? c’è vs è, prepositions with articles, prepositions of place, the verb stare, the house.",
+ "speak": "it-IT",
+ "hero": "novels/ladro-di-cuori/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "sopra",
+     "above"
+    ],
+    [
+     "sotto",
+     "under"
+    ],
+    [
+     "dietro",
+     "behind"
+    ],
+    [
+     "davanti a",
+     "in front of"
+    ],
+    [
+     "vicino a",
+     "near"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Il quadro è",
+   "after": "studio.",
+   "options": [
+    "nello",
+    "nel",
+    "nella"
+   ],
+   "answer": 0,
+   "es": "The painting is in the study.",
+   "why": "in + lo = nello"
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "La villa è",
+   "after": "colline.",
+   "options": [
+    "sulle",
+    "sui",
+    "sul"
+   ],
+   "answer": 0,
+   "es": "The villa is on the hills."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Nella villa",
+   "after": "dodici stanze.",
+   "options": [
+    "ci sono",
+    "c’è",
+    "sono"
+   ],
+   "answer": 0,
+   "es": "There are twelve rooms in the villa."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Laura",
+   "after": "a teatro.",
+   "options": [
+    "è",
+    "c’è",
+    "ci sono"
+   ],
+   "answer": 0,
+   "es": "Laura is at the theatre."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Il cane è davanti",
+   "after": "porta.",
+   "options": [
+    "alla",
+    "al",
+    "a"
+   ],
+   "answer": 0,
+   "es": "The dog is in front of the door."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Come",
+   "after": ", Alessio?",
+   "options": [
+    "stai",
+    "sta",
+    "stanno"
+   ],
+   "answer": 0,
+   "es": "How are you, Alessio?"
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Sto bene.",
+   "options": [
+    "I’m fine.",
+    "I’m standing.",
+    "I’m at home."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "Where is the villa?",
+   "options": [
+    "Dov’è la villa?",
+    "Dove sono la villa?",
+    "C’è la villa?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Abito",
+   "after": "Firenze.",
+   "options": [
+    "a",
+    "in",
+    "nella"
+   ],
+   "answer": 0,
+   "es": "I live in Florence.",
+   "why": "With cities — a."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "la camera da letto",
+   "options": [
+    "bedroom",
+    "kitchen",
+    "bathroom"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "The painting is above the fireplace.",
+   "answer": [
+    "Il",
+    "quadro",
+    "è",
+    "sopra",
+    "il",
+    "camino"
+   ],
+   "extra": [
+    "sotto",
+    "c’è"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Dove sta il cane?",
+   "es": "Where does the dog usually stay?",
+   "options": [
+    "In giardino, davanti alla porta.",
+    "Nello studio, sopra il camino.",
+    "A teatro."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Stasera Laura è a casa.",
+   "answer": false,
+   "why": "Tonight Laura is at the theatre — or so Alessio thinks."
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "I’m at home.",
+   "answers": [
+    "Sono a casa",
+    "Sto a casa",
+    "Io sono a casa"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "in the garden",
+   "answers": [
+    "in giardino"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "«Il primo piano» è sopra il pianterreno.",
+   "answer": true,
+   "why": "The Italian first floor is above the ground floor (pianterreno)."
+  }
+ ],
+ "keyboard": [
+  "à",
+  "è",
+  "é",
+  "ì",
+  "ò",
+  "ù"
+ ]
+}

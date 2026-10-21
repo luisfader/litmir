@@ -1,0 +1,267 @@
+{
+ "title": "Sono un detective e vivo a Sinea",
+ "subtitle": "Professions, regular -are/-ere/-ire verbs, negation, questions, numbers.",
+ "speak": "it-IT",
+ "hero": "novels/il-treno-fantasma/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "lavorare",
+     "to work"
+    ],
+    [
+     "vivere",
+     "to live"
+    ],
+    [
+     "leggere",
+     "to read"
+    ],
+    [
+     "scrivere",
+     "to write"
+    ],
+    [
+     "cercare",
+     "to look for"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Che lavoro fai?",
+   "options": [
+    "What do you do for a living?",
+    "Where do you live?",
+    "How old are you?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Marco",
+   "after": "a Sinea.",
+   "options": [
+    "vive",
+    "vivo",
+    "vivono"
+   ],
+   "answer": 0,
+   "es": "Marco lives in Sinea."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Io",
+   "after": "italiano.",
+   "options": [
+    "parlo",
+    "parli",
+    "parla"
+   ],
+   "answer": 0,
+   "es": "I speak Italian."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Noi",
+   "after": "a Roma.",
+   "options": [
+    "lavoriamo",
+    "lavorate",
+    "lavorano"
+   ],
+   "answer": 0,
+   "es": "We work in Rome."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Laura",
+   "after": "lo spagnolo.",
+   "options": [
+    "capisce",
+    "capie",
+    "capiscono"
+   ],
+   "answer": 0,
+   "es": "Laura understands Spanish.",
+   "why": "Capire adds -isc-: capisco, capisci, capisce."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Tu",
+   "after": "la tua ragazza.",
+   "options": [
+    "cerchi",
+    "cerci",
+    "cerca"
+   ],
+   "answer": 0,
+   "es": "You’re looking for your girlfriend.",
+   "why": "Cercare → tu cerchi: the h keeps the hard «k» sound."
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "I don’t speak English.",
+   "options": [
+    "Non parlo inglese.",
+    "Parlo non inglese.",
+    "No parlo inglese."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Faccio",
+   "after": "detective.",
+   "options": [
+    "il",
+    "un",
+    "—"
+   ],
+   "answer": 0,
+   "es": "I work as a detective.",
+   "why": "After fare — the definite article."
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "I’m 35 years old.",
+   "answer": [
+    "Ho",
+    "35",
+    "anni"
+   ],
+   "extra": [
+    "sono",
+    "ha"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Che cosa cerca Marco?",
+   "es": "Who is Marco looking for?",
+   "options": [
+    "Cerca la sua ragazza, Alice.",
+    "Cerca un lavoro.",
+    "Vive a Sinea."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "ventotto",
+   "options": [
+    "twenty-eight",
+    "eighteen",
+    "eighty"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "student (female)",
+   "options": [
+    "la studentessa",
+    "la studenta",
+    "lo studente"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Laura vive in una villa vicino a Firenze.",
+   "answer": true,
+   "why": "Laura is a collector and lives in a villa near Florence."
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "I live in Florence.",
+   "answers": [
+    "Vivo a Firenze",
+    "Io vivo a Firenze",
+    "Abito a Firenze"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "How old are you?",
+   "answers": [
+    "Quanti anni hai?",
+    "Quanti anni hai"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Marco ha venticinque anni.",
+   "answer": false,
+   "why": "«Ho 35 anni» — Marco is 35."
+  }
+ ],
+ "keyboard": [
+  "à",
+  "è",
+  "é",
+  "ì",
+  "ò",
+  "ù"
+ ]
+}

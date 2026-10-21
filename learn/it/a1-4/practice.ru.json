@@ -1,0 +1,270 @@
+{
+ "title": "Dov’è il quadro?",
+ "subtitle": "Где? c’è или è, предлоги с артиклем, предлоги места, глагол stare, дом.",
+ "speak": "it-IT",
+ "hero": "novels/ladro-di-cuori/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 7 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "sopra",
+     "над"
+    ],
+    [
+     "sotto",
+     "под"
+    ],
+    [
+     "dietro",
+     "за"
+    ],
+    [
+     "davanti a",
+     "перед"
+    ],
+    [
+     "vicino a",
+     "рядом с"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Il quadro è",
+   "after": "studio.",
+   "options": [
+    "nello",
+    "nel",
+    "nella"
+   ],
+   "answer": 0,
+   "es": "Картина в кабинете.",
+   "why": "in + lo = nello"
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "La villa è",
+   "after": "colline.",
+   "options": [
+    "sulle",
+    "sui",
+    "sul"
+   ],
+   "answer": 0,
+   "es": "Вилла на холмах."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Nella villa",
+   "after": "dodici stanze.",
+   "options": [
+    "ci sono",
+    "c’è",
+    "sono"
+   ],
+   "answer": 0,
+   "es": "На вилле двенадцать комнат."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Laura",
+   "after": "a teatro.",
+   "options": [
+    "è",
+    "c’è",
+    "ci sono"
+   ],
+   "answer": 0,
+   "es": "Лаура в театре."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Il cane è davanti",
+   "after": "porta.",
+   "options": [
+    "alla",
+    "al",
+    "a"
+   ],
+   "answer": 0,
+   "es": "Собака перед дверью."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Come",
+   "after": ", Alessio?",
+   "options": [
+    "stai",
+    "sta",
+    "stanno"
+   ],
+   "answer": 0,
+   "es": "Как ты, Алессио?"
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Sto bene.",
+   "options": [
+    "У меня всё хорошо.",
+    "Я стою.",
+    "Я дома."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать на изучаемом языке?",
+   "word": "Где вилла?",
+   "options": [
+    "Dov’è la villa?",
+    "Dove sono la villa?",
+    "C’è la villa?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Abito",
+   "after": "Firenze.",
+   "options": [
+    "a",
+    "in",
+    "nella"
+   ],
+   "answer": 0,
+   "es": "Я живу во Флоренции.",
+   "why": "С городами — a."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "la camera da letto",
+   "options": [
+    "спальня",
+    "кухня",
+    "ванная"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите",
+   "es": "Картина над камином.",
+   "answer": [
+    "Il",
+    "quadro",
+    "è",
+    "sopra",
+    "il",
+    "camino"
+   ],
+   "extra": [
+    "sotto",
+    "c’è"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "Dove sta il cane?",
+   "es": "Где обычно собака?",
+   "options": [
+    "In giardino, davanti alla porta.",
+    "Nello studio, sopra il camino.",
+    "A teatro."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Stasera Laura è a casa.",
+   "answer": false,
+   "why": "Сегодня вечером Лаура в театре — так думает Алессио."
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Я дома.",
+   "answers": [
+    "Sono a casa",
+    "Sto a casa",
+    "Io sono a casa"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "в саду",
+   "answers": [
+    "in giardino"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "«Il primo piano» è sopra il pianterreno.",
+   "answer": true,
+   "why": "Первый итальянский этаж — над нулевым (pianterreno)."
+  }
+ ],
+ "keyboard": [
+  "à",
+  "è",
+  "é",
+  "ì",
+  "ò",
+  "ù"
+ ]
+}
