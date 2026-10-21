@@ -836,7 +836,7 @@ async function blogIndex(){
 }
 async function blogPost(slug){
   app.innerHTML = `<div class="loading">…</div>`;
-  const p = (await loadBlog()).find(x => x.slug === slug);
+  const p = (await loadBlog()).find(x => x.slug === slug && x.lang === lang) || (await loadBlog()).find(x => x.slug === slug);
   if (!p) { app.innerHTML = `<div class="empty">${esc(t("notFound"))}</div>`; return; }
   if (lang !== p.lang && LANGS.includes(p.lang)) setLang(p.lang);
   let md = "";
