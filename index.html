@@ -785,7 +785,7 @@ function chapterNo(n, i){ let k = 0; for (let j = 0; j < i; j++) if (!n.chapters
 function home(){
   document.title = t("hero") + " — " + t("author");
   const list = catalog.novels.filter(n => !n.hidden && n.lang === lang);
-  const characterLabels = {ru:"Персонажи",es:"Personajes",it:"Personaggi",en:"Characters",de:"Figuren",fr:"Personnages",tr:"Karakterler",pt:"Personagens",cs:"Postavy",sr:"Ликови",eo:"Roluloj",isv:"Postavy",vo:"Pösods",ia:"Personages"};
+  const characterLabels = {ru:"Персонажи",es:"Personajes",it:"Personaggi",en:"Characters",de:"Figuren",fr:"Personnages",tr:"Karakterler",pt:"Personagens",cs:"Postavy",sr:"Ликови",eo:"Roluloj",isv:"Postavy",vo:"Pösods",ia:"Personages",ld:"Personajenes"};
   app.innerHTML = `
   <section class="hero wrap">
     <div class="eyebrow">${esc(t("tag"))}</div>
