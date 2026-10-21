@@ -1,0 +1,293 @@
+{
+ "title": "¡Hola! Me llamo Natalia",
+ "subtitle": "Greetings, introductions, pronouns and the verb SER. Finish without mistakes to earn a bonus!",
+ "speak": "es-ES",
+ "hero": "novels/el-misterio-de-los-fader/cover.jpg",
+ "hearts": 5,
+ "keyboard": [
+  "á",
+  "é",
+  "í",
+  "ó",
+  "ú",
+  "ñ",
+  "ü",
+  "¿",
+  "¡"
+ ],
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "hola",
+     "hi"
+    ],
+    [
+     "adiós",
+     "goodbye"
+    ],
+    [
+     "gracias",
+     "thank you"
+    ],
+    [
+     "hasta mañana",
+     "see you tomorrow"
+    ],
+    [
+     "buenas noches",
+     "good night"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Buenos días",
+   "options": [
+    "Good morning",
+    "Good night",
+    "See you tomorrow"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it in Spanish?",
+   "word": "My name is Luis",
+   "options": [
+    "Me llamo Luis",
+    "Soy de Luis",
+    "Te llamas Luis"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Yo",
+   "after": "Natalia.",
+   "options": [
+    "soy",
+    "eres",
+    "es"
+   ],
+   "answer": 0,
+   "es": "I'm Natalia."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Luis",
+   "after": "de Mendoza.",
+   "options": [
+    "es",
+    "son",
+    "somos"
+   ],
+   "answer": 0,
+   "es": "Luis is from Mendoza."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Encantada",
+   "options": [
+    "Pleased to meet you (said by a woman)",
+    "Pleased to meet you (said by a man)",
+    "See you later"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Natalia es",
+   "after": ".",
+   "options": [
+    "rusa",
+    "ruso",
+    "rusos"
+   ],
+   "answer": 0,
+   "es": "Natalia is Russian.",
+   "why": "Natalia is a woman, so: rusa."
+  },
+  {
+   "type": "build",
+   "prompt": "Translate into Spanish",
+   "es": "What's your name?",
+   "answer": [
+    "¿Cómo",
+    "te",
+    "llamas?"
+   ],
+   "extra": [
+    "me",
+    "eres"
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Natalia y Tatiana",
+   "after": "rusas.",
+   "options": [
+    "son",
+    "es",
+    "sois"
+   ],
+   "answer": 0,
+   "es": "Natalia and Tatiana are Russian."
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "¿De dónde es Luis?",
+   "es": "Where is Luis from?",
+   "options": [
+    "Es de Mendoza.",
+    "Es de Moscú.",
+    "Soy de Mendoza."
+   ],
+   "answer": 0,
+   "why": "Luis is an Argentinian from Mendoza."
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it in Spanish?",
+   "word": "you (formal, one person)",
+   "options": [
+    "usted",
+    "vosotros",
+    "tú"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Nosotros",
+   "after": "amigos.",
+   "options": [
+    "somos",
+    "son",
+    "sois"
+   ],
+   "answer": 0,
+   "es": "We are friends."
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Luis es ruso.",
+   "answer": false,
+   "why": "Luis is Argentinian: Luis es argentino."
+  },
+  {
+   "type": "build",
+   "prompt": "Translate into Spanish",
+   "es": "I'm from Moscow.",
+   "answer": [
+    "Soy",
+    "de",
+    "Moscú"
+   ],
+   "extra": [
+    "es",
+    "en"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "— ¿Cómo estás, Natalia?",
+   "es": "How are you, Natalia?",
+   "options": [
+    "Muy bien, gracias.",
+    "Me llamo Natalia.",
+    "Soy de Moscú."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "write",
+   "prompt": "Write it in Spanish",
+   "es": "Thank you",
+   "answers": [
+    "gracias"
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "¿De dónde sos?",
+   "options": [
+    "Where are you from? (Argentinian Spanish)",
+    "What's your name?",
+    "How are you?"
+   ],
+   "answer": 0,
+   "why": "Sos is the Argentinian form of eres."
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Natalia es de Moscú.",
+   "answer": true,
+   "why": "Natalia is from Moscow."
+  },
+  {
+   "type": "write",
+   "prompt": "Write it in Spanish",
+   "es": "I'm Argentinian (a man).",
+   "hint": "Use the verb ser",
+   "answers": [
+    "Soy argentino",
+    "Yo soy argentino"
+   ]
+  }
+ ]
+}

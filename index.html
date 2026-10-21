@@ -395,6 +395,19 @@ article.chapter h3{font-family:var(--sans);font-size:.72em;letter-spacing:.12em;
 .reflection-result{border:1px solid var(--line);border-radius:15px;background:var(--accent-soft);padding:1.2em;margin:2em 0}
 .reflection-result .btn{margin:.3em}
 .reflection-intro{font-style:italic}
+/* Language courses */
+.lr-help{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:6px;margin:22px auto 0;font-family:var(--sans);font-size:14px;color:var(--muted)}
+.lr-help button{border:1px solid var(--line);background:var(--paper);border-radius:20px;padding:6px 14px;cursor:pointer;font-weight:500}
+.lr-help button[aria-pressed="true"]{border-color:var(--accent);color:var(--accent);background:var(--accent-soft)}
+.lr-theory .lr-help{justify-content:flex-start;margin:0 0 18px}
+.lr-novel{font-family:var(--sans);font-size:14px;color:var(--muted)}
+.lr-novel a{color:var(--accent)}
+.lr-theory blockquote p{font-size:1.05em;line-height:1.9}
+.lr-cta{margin:2.5em 0 1em;padding:24px;border:1px solid var(--line);border-radius:14px;background:var(--accent-soft);text-align:center}
+.lr-cta p{margin:0 0 14px;text-align:center}
+.lr-cta .ls-btn{display:inline-block;text-decoration:none}
+.lr-unit .pill{margin-left:6px}
+.lr-soon{padding:8px 0 0}
 </style>
 </head>
 <body>
@@ -764,7 +777,7 @@ function renderChrome(){
 document.getElementById("langs").addEventListener("click", e => {
   const l = e.target.dataset && e.target.dataset.l; if (!l) return;
   setLang(l);
-  const home = location.hash.startsWith("#/blog") ? "#/blog" : "#/";
+  const home = location.hash.startsWith("#/blog") ? "#/blog" : location.hash.startsWith("#/learn") && learnCat && learnCat.courses.some(c => c.lang === l) ? "#/learn" : "#/";
   if (location.hash && location.hash !== home) location.hash = home; else route();
 });
 
@@ -794,6 +807,7 @@ function home(){
     <div class="ornament">✦ ✦ ✦</div>
     <a class="character-entry" href="characters.html" id="charactersEntry">✧ <span id="charactersLabel">Personajes</span> →</a>
     <a class="character-entry" href="#/blog">✎ ${esc(bt("title"))} →</a>
+    ${course() ? `<a class="character-entry" href="#/learn">🎓 ${esc(course().title[lang])} →</a>` : ""}
   </section>
   <section class="wrap">
     ${list.length ? `<div class="grid">${list.map(n => {
@@ -1097,18 +1111,20 @@ const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { c
 const norm = s => String(s).toLowerCase().replace(/[.,!?;:„“"«»¿¡…]/g, "").replace(/\s+/g, " ").trim();
 const plain = s => norm(s).normalize("NFD").replace(/[̀-ͯ]/g, "");
 
-async function lesson(n, i, c){
+async function lesson(n, i, c, o = {}){
+  const BASE = o.base || `novels/${n.slug}/`, BACK = o.back || `#/${n.slug}`, BACKT = o.backTitle || n.title, KEY = o.key || n.slug;
+  const src = p => /^(novels|learn)\//.test(p) ? p : BASE + p;
   let data;
-  try { const r = await fetch(`novels/${n.slug}/${c.file}`); if (!r.ok) throw 0; data = await r.json(); }
+  try { const r = await fetch(BASE + c.file); if (!r.ok) throw 0; data = await r.json(); }
   catch(e) { app.innerHTML = `<div class="empty">${esc(t("notFound"))}</div>`; return; }
-  const T = Object.assign({}, LESSON_T, data.ui || {}), SPK = data.speak || "cs-CZ";
+  const T = Object.assign({}, LESSON_T, data.ui || {}), SPK = data.speak || "cs-CZ", LL = SPK.slice(0, 2);
   if (typeof T.ex === "string") { const f = T.ex; T.ex = k => f.replace("{n}", k); }
   const M = (mood) => (data.mascot === "dragon" ? DRAGON : TULIP)(mood);
   const tr = v => data.translit === "sr" ? latToCyr(v) : v;
   const total = data.exercises.length, maxHearts = data.hearts || 5;
-  const key = "quiz:" + n.slug;
+  const key = "quiz:" + KEY;
   document.title = (data.title || c.title) + " · " + n.title;
-  store.set("last:" + n.slug, i);
+  if (!o.key) store.set("last:" + n.slug, i);
   window.scrollTo(0, 0);
 
   let S;
@@ -1118,14 +1134,14 @@ async function lesson(n, i, c){
   function intro(){
     const best = store.get(key, null);
     app.innerHTML = `<section class="ls ls-intro">
-      ${data.hero ? `<div class="ls-hero"><img src="novels/${n.slug}/${esc(data.hero)}" alt=""><div class="ls-mascot bounce">${M()}</div></div>` : `<div class="ls-mascot bounce">${M()}</div>`}
+      ${data.hero ? `<div class="ls-hero"><img src="${esc(src(data.hero))}" alt=""><div class="ls-mascot bounce">${M()}</div></div>` : `<div class="ls-mascot bounce">${M()}</div>`}
       <div class="ls-kicker">${esc(c.label || "Test")}</div>
       <h1>${esc(data.title || c.title)}</h1>
       <p class="ls-sub">${esc(data.subtitle || "")}</p>
       <div class="ls-chips"><span>📚 ${T.ex(total)}</span>${data.exam ? `<span>🎯 ${T.score}</span>` : `<span>❤️ ${maxHearts} ${T.hearts}</span>`}<span>⏱ ${T.min}</span></div>
       ${best ? `<div class="ls-best">🏆 ${T.best}: <b>${data.exam ? best.score + " / " + total : best.xp + " XP"}</b> · ${best.acc}%</div>` : ""}
       <button class="ls-btn go" id="lsStart">${T.start}</button>
-      <a class="ls-link" href="#/${n.slug}">← ${esc(n.title)}</a>
+      <a class="ls-link" href="${BACK}">← ${esc(BACKT)}</a>
     </section>`;
     document.getElementById("lsStart").onclick = begin;
   }
@@ -1138,7 +1154,7 @@ async function lesson(n, i, c){
   function frame(){
     app.innerHTML = `<section class="ls ls-play">
       <div class="ls-top">
-        <a class="ls-x" href="#/${n.slug}" aria-label="${esc(t("back"))}">✕</a>
+        <a class="ls-x" href="${BACK}" aria-label="${esc(t("back"))}">✕</a>
         <div class="ls-bar"><div class="ls-fill" id="lsFill"></div></div>
         ${data.exam ? "" : `<div class="ls-hearts" id="lsHearts">❤️ <b>${S.hearts}</b></div>`}
         <button class="ls-snd" id="lsSnd" aria-label="${T.sound}" title="${T.sound}">${sfx.on() ? "🔔" : "🔕"}</button>
@@ -1178,21 +1194,21 @@ async function lesson(n, i, c){
   }
 
   function render(e){
-    const head = `<h2 class="ls-q">${esc(e.prompt)}</h2>` + (e.img ? `<figure class="ls-img"><img src="novels/${n.slug}/${esc(e.img)}" alt=""></figure>` : "");
+    const head = `<h2 class="ls-q">${esc(e.prompt)}</h2>` + (e.img ? `<figure class="ls-img"><img src="${esc(src(e.img))}" alt=""></figure>` : "");
     if (e.type === "picture") {
       e._opts = shuffle(e.options.map((o, k) => ({...o, k})));
       return `<h2 class="ls-q">${esc(e.prompt)} <span class="ls-target">«${esc(e.word)}»</span></h2>
-        <div class="ls-pics">${e._opts.map((x, j) => `<button class="ls-opt pic" data-k="${x.k}"><img src="novels/${n.slug}/${esc(x.img)}" alt="" loading="eager"><span lang="sr"><kbd>${j+1}</kbd>${esc(x.word)}</span></button>`).join("")}</div>`;
+        <div class="ls-pics">${e._opts.map((x, j) => `<button class="ls-opt pic" data-k="${x.k}"><img src="${esc(src(x.img))}" alt="" loading="eager"><span lang="sr"><kbd>${j+1}</kbd>${esc(x.word)}</span></button>`).join("")}</div>`;
     }
     if (e.type === "choice" || e.type === "reverse") {
       e._opts = shuffle(e.options.map((o, k) => ({o, k})));
-      const word = e.type === "choice" ? `<div class="ls-word">${spk(e.word)}<span lang="cs">${esc(e.word)}</span></div>` : `<div class="ls-word es">«${esc(e.word)}»</div>`;
-      return head + word + `<div class="ls-grid">${e._opts.map((x, j) => `<button class="ls-opt" data-k="${x.k}"><kbd>${j+1}</kbd><span ${e.type==="reverse"?'lang="cs"':""}>${esc(x.o)}</span></button>`).join("")}</div>`;
+      const word = e.type === "choice" ? `<div class="ls-word">${spk(e.word)}<span lang="${LL}">${esc(e.word)}</span></div>` : `<div class="ls-word es">«${esc(e.word)}»</div>`;
+      return head + word + `<div class="ls-grid">${e._opts.map((x, j) => `<button class="ls-opt" data-k="${x.k}"><kbd>${j+1}</kbd><span ${e.type==="reverse"?`lang="${LL}"`:""}>${esc(x.o)}</span></button>`).join("")}</div>`;
     }
     if (e.type === "story") {
       e._opts = shuffle(e.options.map((o, k) => ({o, k})));
-      return head + `<div class="ls-bubble-row"><div class="ls-mini">${M()}</div><div class="ls-bubble"><div lang="cs" class="ls-cz">${spk(e.question,"sm")}${esc(e.question)}</div>${e.es ? `<div class="ls-es">${esc(e.es)}</div>` : ""}</div></div>
-        <div class="ls-list">${e._opts.map((x, j) => `<button class="ls-opt row" data-k="${x.k}"><kbd>${j+1}</kbd><span lang="cs">${esc(x.o)}</span></button>`).join("")}</div>`;
+      return head + `<div class="ls-bubble-row"><div class="ls-mini">${M()}</div><div class="ls-bubble"><div lang="${LL}" class="ls-cz">${spk(e.question,"sm")}${esc(e.question)}</div>${e.es ? `<div class="ls-es">${esc(e.es)}</div>` : ""}</div></div>
+        <div class="ls-list">${e._opts.map((x, j) => `<button class="ls-opt row" data-k="${x.k}"><kbd>${j+1}</kbd><span lang="${LL}">${esc(x.o)}</span></button>`).join("")}</div>`;
     }
     if (e.type === "tf") {
       return head + `<div class="ls-bubble-row"><div class="ls-mini">${M()}</div><div class="ls-bubble"><div class="ls-cz">${esc(e.statement)}</div></div></div>
@@ -1200,24 +1216,24 @@ async function lesson(n, i, c){
     }
     if (e.type === "fill") {
       e._opts = shuffle(e.options.map((o, k) => ({o, k})));
-      return head + `<div class="ls-sentence" lang="cs">${esc(e.before)} <span class="ls-blank" id="lsBlank">&nbsp;</span> ${esc(e.after)}</div>
+      return head + `<div class="ls-sentence" lang="${LL}">${esc(e.before)} <span class="ls-blank" id="lsBlank">&nbsp;</span> ${esc(e.after)}</div>
         <div class="ls-bank">${e._opts.map((x, j) => `<button class="ls-chip" data-k="${x.k}">${esc(x.o)}</button>`).join("")}</div>`;
     }
     if (e.type === "build") {
       e._bank = shuffle([...e.answer, ...(e.extra || [])].map((w, k) => ({w, k})));
       return head + `<div class="ls-bubble-row"><div class="ls-mini">${M()}</div><div class="ls-bubble"><div class="ls-es big">${esc(e.es)}</div></div></div>
         <div class="ls-answer" id="lsAns" aria-label="${T.tap}"></div>
-        <div class="ls-bank" id="lsBank">${e._bank.map(x => `<button class="ls-chip" data-k="${x.k}" lang="cs">${esc(x.w)}</button>`).join("")}</div>`;
+        <div class="ls-bank" id="lsBank">${e._bank.map(x => `<button class="ls-chip" data-k="${x.k}" lang="${LL}">${esc(x.w)}</button>`).join("")}</div>`;
     }
     if (e.type === "write") {
       const letters = data.keyboard || "á č ď é ě í ň ó ř š ť ú ů ý ž".split(" ");
       return head + `<div class="ls-bubble-row"><div class="ls-mini">${M()}</div><div class="ls-bubble"><div class="ls-es big">«${esc(e.es)}»</div>${e.hint ? `<div class="ls-es">${esc(e.hint)}</div>` : ""}</div></div>
-        <input class="ls-input" id="lsIn" lang="cs" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="${T.type}">
+        <input class="ls-input" id="lsIn" lang="${LL}" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="${T.type}">
         <div class="ls-keys">${letters.map(l => `<button class="ls-key" data-l="${l}">${l}</button>`).join("")}</div>`;
     }
     if (e.type === "match") {
       const L = shuffle(e.pairs.map((p, k) => ({w:p[0], k}))), R = shuffle(e.pairs.map((p, k) => ({w:p[1], k})));
-      return head + `<div class="ls-match"><div>${L.map(x => `<button class="ls-opt m" data-side="l" data-k="${x.k}" lang="cs">${esc(x.w)}</button>`).join("")}</div>
+      return head + `<div class="ls-match"><div>${L.map(x => `<button class="ls-opt m" data-side="l" data-k="${x.k}" lang="${LL}">${esc(x.w)}</button>`).join("")}</div>
         <div>${R.map(x => `<button class="ls-opt m" data-side="r" data-k="${x.k}">${esc(x.w)}</button>`).join("")}</div></div>`;
     }
     return "";
@@ -1245,7 +1261,7 @@ async function lesson(n, i, c){
     if (e.type === "build") {
       const ans = stage.querySelector("#lsAns"), bank = stage.querySelector("#lsBank"); let picked = [];
       const redraw = () => {
-        ans.innerHTML = picked.map((k, j) => `<button class="ls-chip in" data-j="${j}" lang="cs">${esc(e._bank.find(x => x.k === k).w)}</button>`).join("");
+        ans.innerHTML = picked.map((k, j) => `<button class="ls-chip in" data-j="${j}" lang="${LL}">${esc(e._bank.find(x => x.k === k).w)}</button>`).join("");
         bank.querySelectorAll(".ls-chip").forEach(b => b.classList.toggle("used", picked.includes(+b.dataset.k)));
         ans.querySelectorAll(".ls-chip").forEach(b => b.onclick = () => { picked.splice(+b.dataset.j, 1); sfx.tap(); redraw(); });
         ready(picked.length > 0);
@@ -1313,7 +1329,7 @@ async function lesson(n, i, c){
       sfx.ok(); foot.className = "ls-foot ok";
       const praise = T.great[Math.floor(Math.random() * T.great.length)];
       let extra = "";
-      if (res.almost) extra = `<div>${T.almost} <b lang="cs">${esc(e.answers[0])}</b></div>`;
+      if (res.almost) extra = `<div>${T.almost} <b lang="${LL}">${esc(e.answers[0])}</b></div>`;
       else if (e.type === "fill" || e.type === "story") extra = e.es && e.type === "fill" ? `<div class="tr">${esc(e.es)}</div>` : "";
       if (e.why) extra += `<div class="tr">${esc(e.why)}</div>`;
       msg.innerHTML = `<div class="ls-verdict">✔ ${praise}${S.streak >= 3 ? ` <span class="ls-streak">🔥 ${S.streak}</span>` : ""}</div>${extra}`;
@@ -1323,7 +1339,7 @@ async function lesson(n, i, c){
       if (data.exam) S.solved.add(e.k); else { S.hearts--; S.queue.push(e); }
       sfx.bad(); foot.className = "ls-foot bad";
       const h = document.getElementById("lsHearts"); if (h) { h.classList.remove("hit"); void h.offsetWidth; h.classList.add("hit"); }
-      msg.innerHTML = `<div class="ls-verdict">✘ ${T.wrong}</div><div class="sol" lang="cs">${esc(solution(e))}</div>${e.type === "fill" && e.es ? `<div class="tr">${esc(e.es)}</div>` : ""}${e.why ? `<div class="tr">${esc(e.why)}</div>` : ""}`;
+      msg.innerHTML = `<div class="ls-verdict">✘ ${T.wrong}</div><div class="sol" lang="${LL}">${esc(solution(e))}</div>${e.type === "fill" && e.es ? `<div class="tr">${esc(e.es)}</div>` : ""}${e.why ? `<div class="tr">${esc(e.why)}</div>` : ""}`;
       if (res.sel) { res.sel.classList.remove("sel"); res.sel.classList.add("bad"); }
       stage.querySelectorAll(".ls-opt[data-k]").forEach(b => { if (+b.dataset.k === want(e) && !b.classList.contains("m")) b.classList.add("good"); });
     }
@@ -1347,7 +1363,7 @@ async function lesson(n, i, c){
     const perfect = S.missed.size === 0; if (perfect) S.xp += 20;
     const best = store.get(key, null), score = S.firstTry.size;
     if (!best || S.xp > best.xp || (S.xp === best.xp && acc > best.acc)) store.set(key, { xp:S.xp, acc, score });
-    const d = store.get("done:" + n.slug, []); if (!d.includes(i)) { d.push(i); store.set("done:" + n.slug, d); }
+    const d = store.get("done:" + KEY, []); if (!d.includes(i)) { d.push(i); store.set("done:" + KEY, d); }
     sfx.win();
     const lvl = data.exam && (data.levels || []).find(l => acc >= l.min);
     const line = lvl ? lvl.text : perfect ? (data.perfect || T.perfect) : acc >= 70 ? (data.good || T.good) : T.ok;
@@ -1362,7 +1378,7 @@ async function lesson(n, i, c){
         <div class="ls-stat tm"><div class="h">${T.time}</div><div class="v">⏱ ${Math.floor(secs/60)}:${String(secs%60).padStart(2,"0")}</div></div>
       </div>
       <button class="ls-btn go" id="lsAgain">${T.again}</button>
-      <a class="ls-link" href="#/${n.slug}">${T.back}</a>
+      <a class="ls-link" href="${BACK}">${T.back}</a>
     </section>`;
     document.getElementById("lsAgain").onclick = begin;
     confetti(document.getElementById("lsConfetti"));
@@ -1374,7 +1390,7 @@ async function lesson(n, i, c){
       <h1>${T.lost}</h1><p class="ls-sub">${T.lostP}</p>
       <div class="ls-stats"><div class="ls-stat acc"><div class="h">✔</div><div class="v">${S.solved.size} / ${total}</div></div></div>
       <button class="ls-btn go" id="lsAgain">${T.retry}</button>
-      <a class="ls-link" href="#/${n.slug}">${T.back}</a>
+      <a class="ls-link" href="${BACK}">${T.back}</a>
     </section>`;
     document.getElementById("lsAgain").onclick = begin;
   }
@@ -1431,11 +1447,93 @@ music.el.onplay = music.el.onpause = mSync;
 const vol = document.getElementById("mVol"); vol.value = music.el.volume;
 vol.oninput = () => { music.el.volume = +vol.value; store.set("vol", +vol.value); };
 
+/* Language courses: #/learn (course for the site language), #/learn/<unit>, #/learn/<unit>/practice */
+const LEARN_T = {
+  ru:{help:"Объяснения на языке:", units:"Уроки", unit:"Урок", theory:"Теория", practice:"Практика", go:"Начать урок →", ex:n => `Упражнения · ${n}`, done:"Пройдено", soon:"Новые уроки скоро появятся.", back:"← Все уроки", toPractice:"Перейти к практике →", practiceNote:"Закрепите урок в интерактивных упражнениях: с озвучкой, подсказками и баллами.", novel:"Герои урока из романа"},
+  en:{help:"Explanations in:", units:"Units", unit:"Unit", theory:"Theory", practice:"Practice", go:"Start the unit →", ex:n => `Exercises · ${n}`, done:"Completed", soon:"New units are coming soon.", back:"← All units", toPractice:"Go to practice →", practiceNote:"Reinforce the unit with interactive exercises: audio, hints and points.", novel:"Characters from the novel"}
+};
+let learnCat = null;
+async function loadLearn(){
+  if (!learnCat) { try { const r = await fetch("learn/catalog.json", {cache:"no-cache"}); learnCat = r.ok ? await r.json() : {courses:[]}; } catch(e) { learnCat = {courses:[]}; } }
+  return learnCat;
+}
+const course = () => learnCat && learnCat.courses.find(c => c.lang === lang);
+function learnHelp(c){
+  const saved = store.get("learnHelp", null);
+  if (saved && c.help.includes(saved)) return saved;
+  const nav = (navigator.language || "").slice(0, 2);
+  return c.help.includes(nav) ? nav : c.help.includes(lang) ? lang : c.help[0];
+}
+const lt = (h, k) => (LEARN_T[h] || LEARN_T.en)[k];
+function helpSwitch(c, h){
+  return `<div class="lr-help"><span>${esc(lt(h, "help"))}</span>${c.help.map(x => `<button type="button" data-h="${x}" aria-pressed="${x === h}">${esc(LANG_NAMES[x] || x)}</button>`).join("")}</div>`;
+}
+function bindHelp(rerender){
+  app.querySelectorAll(".lr-help button").forEach(b => b.onclick = () => { store.set("learnHelp", b.dataset.h); rerender(); });
+}
+async function learnHome(){
+  app.innerHTML = `<div class="loading">…</div>`;
+  await loadLearn();
+  const c = course();
+  if (!c) { app.innerHTML = `<div class="empty">${esc(t("notFound"))}</div>`; return; }
+  const h = learnHelp(c);
+  document.title = c.title[lang] + " — " + t("hero");
+  app.innerHTML = `
+  <section class="hero wrap">
+    <div class="eyebrow">${esc(t("hero"))}</div>
+    <h1>${esc(c.title[lang])}</h1>
+    <p>${esc(c.title[h] || "")}</p>
+    <div class="ornament">✦ ✦ ✦</div>
+    ${helpSwitch(c, h)}
+  </section>
+  <section class="wrap"><div class="blog-list">
+    ${c.units.map(u => {
+      const best = store.get("quiz:learn/" + c.lang + "/" + u.id, null);
+      return `<a class="post-card has-img lr-unit" href="#/learn/${esc(u.id)}">
+        <img src="${esc(u.cover)}" alt="" loading="lazy">
+        <span class="date">${esc(u.level)} · ${esc(lt(h, "unit"))} ${u.n}${best ? ` <span class="pill study">✔ ${esc(lt(h, "done"))} · ${best.acc}%</span>` : ""}</span>
+        <h3>${esc(u.title)}</h3>
+        <p>${esc(u.sub[h] || "")}</p>
+        <span class="more">${esc(lt(h, "go"))}</span>
+      </a>`; }).join("")}
+    <div class="empty lr-soon">${esc(lt(h, "soon"))}</div>
+  </div></section>`;
+  bindHelp(learnHome);
+}
+async function learnUnit(id, practice){
+  app.innerHTML = `<div class="loading">…</div>`;
+  await loadLearn();
+  const c = course(), u = c && c.units.find(x => x.id === id);
+  if (!u) { app.innerHTML = `<div class="empty">${esc(t("notFound"))}</div>`; return; }
+  const h = learnHelp(c), base = `learn/${c.lang}/${u.id}/`;
+  const backT = `${lt(h, "unit")} ${u.n}: ${u.title}`;
+  if (practice) return lesson({slug: "learn/" + c.lang, title: c.title[lang]}, 1, {file: `practice.${h}.json`, title: u.title, label: `${u.level} · ${lt(h, "practice")}`},
+    {base, back: `#/learn/${u.id}`, backTitle: backT, key: `learn/${c.lang}/${u.id}`});
+  let md = "";
+  try { const r = await fetch(base + `theory.${h}.md`); if (!r.ok) throw 0; md = await r.text(); } catch(e) { md = "*—*"; }
+  const nv = u.novel && catalog.novels.find(x => x.slug === u.novel);
+  document.title = u.title + " — " + c.title[lang];
+  app.innerHTML = `
+  <div class="reader-bar"><div class="wrap"><a class="crumb" href="#/learn">${esc(lt(h, "back"))}</a></div></div>
+  <article class="chapter post lr-theory" lang="${esc(h)}">
+    <div class="kicker">${esc(u.level)} · ${esc(lt(h, "unit"))} ${u.n} · ${esc(lt(h, "theory"))}</div>
+    <h1 lang="${esc(c.lang)}">${esc(u.title)}</h1>
+    ${helpSwitch(c, h)}
+    ${nv ? `<p class="lr-novel">${esc(lt(h, "novel"))}: <a href="#/${esc(nv.slug)}">«${esc(nv.title)}»</a></p>` : ""}
+    ${renderText(md)}
+    <div class="lr-cta"><p>${esc(lt(h, "practiceNote"))}</p><a class="ls-btn go" href="#/learn/${esc(u.id)}/practice">${esc(lt(h, "toPractice"))}</a></div>
+  </article>`;
+  window.scrollTo(0, 0);
+  setupQuizzes(app, h);
+  bindHelp(() => learnUnit(id));
+}
+
 function route(){
   window.onscroll = null; document.onkeydown = null;
   if (!catalog) return;
   const parts = location.hash.replace(/^#\/?/, "").split("/").filter(Boolean);
   if (parts[0] === "blog") { setSoundtrack(null); return parts[1] ? blogPost(decodeURIComponent(parts[1])) : blogIndex(); }
+  if (parts[0] === "learn") { setSoundtrack(null); return parts[1] ? learnUnit(decodeURIComponent(parts[1]), parts[2] === "practice") : learnHome(); }
   const n = parts.length ? catalog.novels.find(x => x.slug === decodeURIComponent(parts[0])) : null;
   setSoundtrack(n && adultOk(n) ? n : null);
   if (!parts.length) return home();
@@ -1448,7 +1546,7 @@ function route(){
 window.addEventListener("hashchange", route);
 
 applyTheme(); renderChrome();
-fetch("novels/catalog.json", {cache:"no-cache"}).then(r => r.json()).then(j => { catalog = j; route(); })
+Promise.all([fetch("novels/catalog.json", {cache:"no-cache"}).then(r => r.json()), loadLearn()]).then(([j]) => { catalog = j; route(); })
   .catch(() => { catalog = {novels:[]}; route(); });
 
 /* Glosses: **palabra**{перевод} shows the translation on hover, focus or tap */

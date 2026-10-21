@@ -1,0 +1,31 @@
+{
+ "courses": [
+  {
+   "lang": "es",
+   "speak": "es-ES",
+   "help": [
+    "ru",
+    "en"
+   ],
+   "title": {
+    "es": "¡Aprende español!",
+    "ru": "Испанский язык",
+    "en": "Spanish"
+   },
+   "units": [
+    {
+     "id": "a1-1",
+     "level": "A1",
+     "n": 1,
+     "title": "¡Hola! Me llamo Natalia",
+     "sub": {
+      "ru": "Приветствия, знакомство, местоимения, глагол SER, национальности",
+      "en": "Greetings, introductions, pronouns, the verb SER, nationalities"
+     },
+     "cover": "novels/el-misterio-de-los-fader/cover.jpg",
+     "novel": "el-misterio-de-los-fader"
+    }
+   ]
+  }
+ ]
+}
