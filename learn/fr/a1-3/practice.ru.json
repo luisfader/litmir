@@ -1,0 +1,277 @@
+{
+ "title": "La famille d’Oxana",
+ "subtitle": "Семья, глагол avoir, il y a, притяжательные mon / ma / mes, прилагательные.",
+ "speak": "fr-FR",
+ "hero": "novels/la-voix/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 7 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "le père",
+     "отец"
+    ],
+    [
+     "la mère",
+     "мать"
+    ],
+    [
+     "le frère",
+     "брат"
+    ],
+    [
+     "la sœur",
+     "сестра"
+    ],
+    [
+     "les enfants",
+     "дети"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Oxana",
+   "after": "un frère.",
+   "options": [
+    "a",
+    "as",
+    "ont"
+   ],
+   "answer": 0,
+   "es": "У Оксаны есть брат."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "J’",
+   "after": "une petite sœur.",
+   "options": [
+    "ai",
+    "a",
+    "avons"
+   ],
+   "answer": 0,
+   "es": "У меня есть младшая сестра."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Ils",
+   "after": "deux enfants.",
+   "options": [
+    "ont",
+    "sont",
+    "avez"
+   ],
+   "answer": 0,
+   "es": "У них двое детей."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "C’est",
+   "after": "mère.",
+   "options": [
+    "ma",
+    "mon",
+    "mes"
+   ],
+   "answer": 0,
+   "es": "Это моя мама."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "",
+   "after": "parents habitent à Sinea.",
+   "options": [
+    "Mes",
+    "Mon",
+    "Ma"
+   ],
+   "answer": 0,
+   "es": "Мои родители живут в Синее."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Oxana et",
+   "after": "frère Ivan.",
+   "options": [
+    "son",
+    "sa",
+    "ses"
+   ],
+   "answer": 0,
+   "es": "Оксана и её брат Иван.",
+   "why": "Frère — мужской род → son."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Il y a beaucoup",
+   "after": "livres.",
+   "options": [
+    "de",
+    "des",
+    "du"
+   ],
+   "answer": 0,
+   "es": "Много книг."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Je n’ai pas",
+   "after": "frère.",
+   "options": [
+    "de",
+    "un",
+    "le"
+   ],
+   "answer": 0,
+   "es": "У меня нет брата."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Il y a un chat.",
+   "options": [
+    "Есть кот.",
+    "Это кот.",
+    "У него кот."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать на изучаемом языке?",
+   "word": "моя подруга",
+   "options": [
+    "mon amie",
+    "ma amie",
+    "mes amie"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите",
+   "es": "Мой папа — врач.",
+   "answer": [
+    "Mon",
+    "père",
+    "est",
+    "médecin"
+   ],
+   "extra": [
+    "ma",
+    "un"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "Quel âge a Ivan ?",
+   "es": "Сколько лет Ивану?",
+   "options": [
+    "Il a vingt ans.",
+    "Il est vingt ans.",
+    "Il a trente ans."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Une femme",
+   "after": "",
+   "options": [
+    "brune",
+    "brun",
+    "bruns"
+   ],
+   "answer": 0,
+   "es": "темноволосая женщина"
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Le père d’Oxana est médecin.",
+   "answer": true,
+   "why": "«Voici mon père, il est médecin»."
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "У меня есть брат.",
+   "answers": [
+    "J’ai un frère",
+    "J'ai un frère"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "моя мама",
+   "answers": [
+    "ma mère"
+   ]
+  }
+ ],
+ "keyboard": [
+  "é",
+  "è",
+  "ê",
+  "à",
+  "ç",
+  "ù",
+  "î",
+  "ô",
+  "’"
+ ]
+}

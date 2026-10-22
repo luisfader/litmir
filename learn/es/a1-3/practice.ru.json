@@ -1,0 +1,272 @@
+{
+ "title": "Mi familia",
+ "subtitle": "Семья, глагол tener, притяжательные, прилагательные и hay.",
+ "speak": "es-ES",
+ "hero": "novels/el-misterio-de-los-fader/cover.jpg",
+ "hearts": 5,
+ "keyboard": [
+  "á",
+  "é",
+  "í",
+  "ó",
+  "ú",
+  "ñ",
+  "ü",
+  "¿",
+  "¡"
+ ],
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 7 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "el padre",
+     "отец"
+    ],
+    [
+     "la madre",
+     "мать"
+    ],
+    [
+     "el hermano",
+     "брат"
+    ],
+    [
+     "la abuela",
+     "бабушка"
+    ],
+    [
+     "el hijo",
+     "сын"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Luis no",
+   "after": "hermanos.",
+   "options": [
+    "tiene",
+    "tengo",
+    "tienen"
+   ],
+   "answer": 0,
+   "es": "У Луиса нет братьев и сестёр."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Yo",
+   "after": "dos primas en Mendoza.",
+   "options": [
+    "tengo",
+    "tiene",
+    "tenemos"
+   ],
+   "answer": 0,
+   "es": "У меня две двоюродные сестры в Мендосе."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "los padres",
+   "options": [
+    "родители",
+    "отцы",
+    "дедушки"
+   ],
+   "answer": 0,
+   "why": "Los padres = мать и отец."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Sergio es",
+   "after": "padre de Luis.",
+   "options": [
+    "el",
+    "la",
+    "los"
+   ],
+   "answer": 0,
+   "es": "Серхио — отец Луиса."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Luis, ¿dónde viven",
+   "after": "padres?",
+   "options": [
+    "tus",
+    "tu",
+    "tú"
+   ],
+   "answer": 0,
+   "es": "Луис, где живут твои родители?"
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать по-испански?",
+   "word": "наша семья",
+   "options": [
+    "nuestra familia",
+    "nuestro familia",
+    "nuestras familia"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Natalia es alta",
+   "after": "inteligente.",
+   "options": [
+    "e",
+    "y",
+    "o"
+   ],
+   "answer": 0,
+   "es": "Наталья высокая и умная.",
+   "why": "Перед i- союз y становится e."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "En la foto",
+   "after": "tres personas.",
+   "options": [
+    "hay",
+    "es",
+    "tiene"
+   ],
+   "answer": 0,
+   "es": "На фото три человека."
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите на испанский",
+   "es": "У меня большая семья.",
+   "answer": [
+    "Tengo",
+    "una",
+    "familia",
+    "grande"
+   ],
+   "extra": [
+    "tiene",
+    "grando"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "¿Quién es Sergio?",
+   "es": "Кто такой Серхио?",
+   "options": [
+    "Es el padre de Luis.",
+    "Es el hermano de Luis.",
+    "Es la madre de Luis."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Mis hermanas son muy",
+   "after": "",
+   "options": [
+    "simpáticas",
+    "simpático",
+    "simpáticos"
+   ],
+   "answer": 0,
+   "es": "Мои сёстры очень симпатичные."
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Luis tiene muchos hermanos.",
+   "answer": false,
+   "why": "Луис — единственный сын (hijo único)."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "¿Cuántos años tiene tu abuela?",
+   "options": [
+    "Сколько лет твоей бабушке?",
+    "Где живёт твоя бабушка?",
+    "Как зовут твою бабушку?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите по-испански",
+   "es": "Мне 30 лет.",
+   "answers": [
+    "Tengo 30 años",
+    "Tengo treinta años",
+    "Yo tengo treinta años",
+    "Yo tengo 30 años"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите по-испански",
+   "es": "мой брат",
+   "answers": [
+    "mi hermano"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "«Su padre» puede significar «его отец» o «её отец».",
+   "answer": true,
+   "why": "Su = его, её, их, Ваш."
+  }
+ ]
+}
