@@ -95,7 +95,8 @@ article.chapter.post a{color:var(--accent)}
 .stars i.h::before{content:"★";position:absolute;left:0;top:0;width:50%;overflow:hidden;color:#d4a017}
 .stars small{margin-left:5px;font-size:11px;color:var(--muted);font-weight:600}
 .card .stars{margin-top:4px}
-/* Personal reading progress */
+/* Personal reading progress and local favourites */
+.library-heading{font-family:var(--display);font-size:30px;font-weight:600;margin:30px 0 12px}
 .rbar{height:6px;background:var(--line);border-radius:6px;overflow:hidden}
 .rbar>i{display:block;height:100%;background:var(--accent);border-radius:6px}
 .rbar.sm{height:4px}
@@ -832,8 +833,7 @@ const chapterTitle = (n, c, i) => c.title || (UI[n.lang].chapter + " " + i);
 // Numbered chapters only count entries without a label (prefaces/appendices have one)
 function chapterNo(n, i){ let k = 0; for (let j = 0; j < i; j++) if (!n.chapters[j].label) k++; return k; }
 
-/* Personal reading progress: numbered chapters the reader finished (done:<slug>), saved in the
-   browser and, when signed in, in the account. */
+/* Reading progress and favourites are saved only in this browser, without accounts. */
 const READ_T = {
   es:["Tu progreso","Mis lecturas","Todavía no empezaste ninguna novela.","Terminada"],
   ru:["Ваш прогресс","Мои книги","Вы ещё не начали читать ни одного романа.","Прочитано"],
@@ -863,13 +863,38 @@ function progressHTML(n){
   return `<div class="rprog"><div class="rprog-t"><b>${esc(rt(0, n.lang))}</b><span>${s.read} / ${esc(L.chapters(s.total))} · ${s.pct}%</span></div>
     <div class="rbar" role="progressbar" aria-label="${esc(rt(0, n.lang))}" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${s.pct}"><i style="width:${s.pct}%"></i></div></div>`;
 }
+const FAV_T = {
+  es:["Favoritos","Añadir a favoritos","Quitar de favoritos","Todavía no tenés novelas favoritas."],
+  ru:["Избранное","Добавить в избранное","Убрать из избранного","Вы ещё не добавили романы в избранное."],
+  en:["Favourites","Add to favourites","Remove from favourites","No favourite novels yet."],
+  it:["Preferiti","Aggiungi ai preferiti","Rimuovi dai preferiti","Non hai ancora romanzi preferiti."],
+  de:["Favoriten","Zu Favoriten hinzufügen","Aus Favoriten entfernen","Noch keine Lieblingsromane."],
+  fr:["Favoris","Ajouter aux favoris","Retirer des favoris","Aucun roman favori."],
+  tr:["Favoriler","Favorilere ekle","Favorilerden çıkar","Henüz favori roman yok."],
+  pt:["Favoritos","Adicionar aos favoritos","Remover dos favoritos","Nenhum romance favorito ainda."],
+  cs:["Oblíbené","Přidat do oblíbených","Odebrat z oblíbených","Zatím žádné oblíbené romány."],
+  pl:["Ulubione","Dodaj do ulubionych","Usuń z ulubionych","Brak ulubionych powieści."],
+  sr:["Омиљено","Додај у омиљено","Уклони из омиљеног","Још нема омиљених романа."],
+  eo:["Ŝatataj","Aldoni al ŝatataj","Forigi el ŝatataj","Ankoraŭ neniuj ŝatataj romanoj."]
+};
+const ft = (i, l=lang) => (FAV_T[l] || FAV_T.en)[i];
+const favorites = () => { const a=store.get("favorites",[]); return Array.isArray(a) ? a.filter(v=>typeof v==="string") : []; };
+const isFavorite = slug => favorites().includes(slug);
+function toggleFavorite(slug){
+  const a=favorites(); store.set("favorites",isFavorite(slug)?a.filter(x=>x!==slug):[...a,slug]);
+  route();
+}
 const anyReading = () => catalog.novels.some(n => readStats(n).started);
 function myReading(){
   document.title = rt(1) + " — " + t("hero");
+  const favList = catalog.novels.filter(n => isFavorite(n.slug));
   const list = catalog.novels.filter(n => readStats(n).started)
     .sort((a, b) => (store.get("seen:" + b.slug, 0) - store.get("seen:" + a.slug, 0)) || (readStats(b).pct - readStats(a).pct));
   app.innerHTML = `<section class="hero wrap"><div class="eyebrow">${esc(t("hero"))}</div><h1>${esc(rt(1))}</h1><div class="ornament">✦ ✦ ✦</div></section>
-  <section class="wrap mr-list" data-auth-dep>${list.length ? list.map(n => {
+  <section class="wrap mr-list"><h2 class="library-heading">★ ${esc(ft(0))}</h2>
+  ${favList.length ? favList.map(n => `<a class="mr-row" href="#/${esc(n.slug)}">${coverHTML(n)}<div><h3>${esc(n.title)}</h3><small>${esc(LANG_NAMES[n.lang] || n.lang)}</small></div></a>`).join("") : `<div class="empty">${esc(ft(3))}</div>`}
+  <h2 class="library-heading">${esc(rt(1))}</h2>
+  ${list.length ? list.map(n => {
     const s = readStats(n), L = UI[n.lang] || UI.en, go = s.last || Math.max(1, n.chapters.findIndex(c => !c.label) + 1);
     const where = s.pct === 100 ? "✔ " + rt(3, n.lang) : (s.last ? L.cont + " · " + chapterTitle(n, n.chapters[s.last - 1] || {}, chapterNo(n, s.last)) : L.start);
     return `<a class="mr-row" href="#/${esc(n.slug)}${s.pct === 100 ? "" : "/" + go}">${coverHTML(n)}<div>
@@ -891,7 +916,7 @@ function home(){
     <a class="character-entry" href="characters.html" id="charactersEntry">✧ <span id="charactersLabel">Personajes</span> →</a>
     <a class="character-entry" href="#/blog">✎ ${esc(bt("title"))} →</a>
     ${course() ? `<a class="character-entry" href="#/learn">🎓 ${esc(course().title[lang])} →</a>` : ""}
-    ${anyReading() ? `<a class="character-entry" href="#/mis-lecturas">📚 ${esc(rt(1))} →</a>` : ""}
+    <a class="character-entry" href="#/mis-lecturas">★ ${esc(ft(0))} · ${esc(rt(1))} →</a>
   </section>
   <section class="wrap" data-auth-dep>
     ${list.length ? `<div class="grid">${list.map(n => {
@@ -1080,13 +1105,15 @@ function novelPage(n){
       ${progressHTML(n)}
       <div class="actions">
         ${last ? `<a class="btn" href="#/${n.slug}/${last}">${esc(t("cont"))} · ${esc(chapterTitle(n, chs[last-1] || {}, last))}</a>` : ""}
-        <a class="btn ${last ? "ghost" : ""}" href="#/${n.slug}/${firstStory}">${esc(t("start"))}</a></div>
+        <a class="btn ${last ? "ghost" : ""}" href="#/${n.slug}/${firstStory}">${esc(t("start"))}</a>
+        <button type="button" class="btn ghost" id="favorite-toggle" aria-pressed="${isFavorite(n.slug)}">${isFavorite(n.slug) ? "★" : "☆"} ${esc(ft(isFavorite(n.slug)?2:1,n.lang))}</button></div>
       <div class="toc" data-auth-dep><h2>${esc(t("contents"))}</h2><ol>
         ${chs.map((c,i) => `<li class="${done.includes(i+1)?"done":""} ${c.label?"extra":""}"><a href="#/${n.slug}/${i+1}"><span class="n">${c.type === "quiz" ? "★" : c.label ? "·" : chapterNo(n, i+1)}</span><span>${esc(chapterTitle(n, c, chapterNo(n, i+1)))}${!signedIn() && chapterLocked(n, i+1) ? ' <span class="lock" aria-hidden="true">🔒</span>' : ""}</span></a></li>`).join("")}
       </ol></div>
       ${sagaHTML(n)}
     </div>
   </section>`;
+  document.getElementById("favorite-toggle").onclick = () => toggleFavorite(n.slug);
 }
 
 async function reader(n, idx){
