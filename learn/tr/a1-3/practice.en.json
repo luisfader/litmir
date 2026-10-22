@@ -1,0 +1,311 @@
+{
+ "title": "Rosa nerede?",
+ "subtitle": "Where? -da / -de, where to? -a / -e, the present continuous -iyor.",
+ "speak": "tr-TR",
+ "hero": "novels/col-gulu/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 8 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "gelmek",
+     "to come"
+    ],
+    [
+     "gitmek",
+     "to go"
+    ],
+    [
+     "aramak",
+     "to look for"
+    ],
+    [
+     "beklemek",
+     "to wait"
+    ],
+    [
+     "uyumak",
+     "to sleep"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Rosa nerede?",
+   "options": [
+    "Where is Rosa?",
+    "Who is Rosa?",
+    "Where is Rosa going?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Rosa",
+   "after": ".",
+   "options": [
+    "kuyuda",
+    "kuyuta",
+    "kuyude"
+   ],
+   "answer": 0,
+   "es": "Rosa is at the well."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Robert",
+   "after": ".",
+   "options": [
+    "kampta",
+    "kampda",
+    "kampte"
+   ],
+   "answer": 0,
+   "es": "Robert is in the camp.",
+   "why": "After p → -ta."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Ben",
+   "after": ".",
+   "options": [
+    "evdeyim",
+    "evdayım",
+    "evteyim"
+   ],
+   "answer": 0,
+   "es": "I’m at home."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Çocuklar",
+   "after": "gidiyorlar.",
+   "options": [
+    "okula",
+    "okulda",
+    "okule"
+   ],
+   "answer": 0,
+   "es": "The children are going to school.",
+   "why": "Where to → -a / -e."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Ben ekmek",
+   "after": ".",
+   "options": [
+    "yapıyorum",
+    "yapiyorum",
+    "yapıyorsun"
+   ],
+   "answer": 0,
+   "es": "I’m making bread."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Sen nereye",
+   "after": "?",
+   "options": [
+    "gidiyorsun",
+    "gitiyorsun",
+    "gidiyorum"
+   ],
+   "answer": 0,
+   "es": "Where are you going?",
+   "why": "gitmek → gidiyor (t → d)"
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Rosa seni",
+   "after": ".",
+   "options": [
+    "bekliyor",
+    "bekleyor",
+    "beklüyor"
+   ],
+   "answer": 0,
+   "es": "Rosa is waiting for you.",
+   "why": "bekle → bekliyor (e → i)"
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Robert Rosa’yı",
+   "after": ".",
+   "options": [
+    "arıyor",
+    "arayor",
+    "ariyor"
+   ],
+   "answer": 0,
+   "es": "Robert is looking for Rosa."
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "I’m not coming.",
+   "options": [
+    "Gelmiyorum.",
+    "Gelmeyorum.",
+    "Değil geliyorum."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Geliyor",
+   "after": "?",
+   "options": [
+    "musun",
+    "mısın",
+    "misin"
+   ],
+   "answer": 0,
+   "es": "Are you coming?",
+   "why": "After -yor it is always mu."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Çocuklar ders çalışıyorlar.",
+   "options": [
+    "The children are studying.",
+    "The children are sleeping.",
+    "The children are playing."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "I’m going to the well.",
+   "answer": [
+    "Kuyuya",
+    "gidiyorum"
+   ],
+   "extra": [
+    "kuyuda",
+    "geliyorum"
+   ]
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "Where are you? I’m here.",
+   "answer": [
+    "Neredesin",
+    "Buradayım"
+   ],
+   "extra": [
+    "Nereye",
+    "Orada"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Ayşe Teyze ne yapıyor?",
+   "es": "What is Auntie Ayşe doing?",
+   "options": [
+    "Ekmek yapıyor.",
+    "Su alıyor.",
+    "Ders çalışıyor."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Rosa okulda.",
+   "answer": false,
+   "why": "Rosa is at the well: «Rosa kuyuda»."
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Rosa Robert’i bekliyor.",
+   "answer": true,
+   "why": "«Rosa seni bekliyor»."
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "Where?",
+   "answers": [
+    "Nerede?",
+    "Nerede"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "I’m reading. (okumak)",
+   "answers": [
+    "Okuyorum",
+    "Okuyorum.",
+    "Ben okuyorum",
+    "Ben okuyorum."
+   ]
+  }
+ ],
+ "keyboard": [
+  "ç",
+  "ğ",
+  "ı",
+  "İ",
+  "ö",
+  "ş",
+  "ü"
+ ]
+}

@@ -1,0 +1,307 @@
+{
+ "title": "Bu ne? Kampta hayat",
+ "subtitle": "Bu / şu / o, множественное число, вопрос с mı, değil, var / yok, числа.",
+ "speak": "tr-TR",
+ "hero": "novels/col-gulu/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 8 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "çadır",
+     "палатка"
+    ],
+    [
+     "kuyu",
+     "колодец"
+    ],
+    [
+     "su",
+     "вода"
+    ],
+    [
+     "köpek",
+     "собака"
+    ],
+    [
+     "asker",
+     "солдат"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Bu ne?",
+   "options": [
+    "Что это?",
+    "Кто это?",
+    "Где это?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Bu bir",
+   "after": ".",
+   "options": [
+    "çadır",
+    "çadırlar",
+    "çadırı"
+   ],
+   "answer": 0,
+   "es": "Это палатка."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Kampta iki",
+   "after": "var.",
+   "options": [
+    "çadır",
+    "çadırlar",
+    "çadırler"
+   ],
+   "answer": 0,
+   "es": "В лагере две палатки.",
+   "why": "После числа — единственное число."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "",
+   "after": "kampta.",
+   "options": [
+    "Öğrenciler",
+    "Öğrencilar",
+    "Öğrenci"
+   ],
+   "answer": 0,
+   "es": "Студенты в лагере.",
+   "why": "Последняя гласная i → -ler."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Rosa öğretmen",
+   "after": "?",
+   "options": [
+    "mi",
+    "mı",
+    "mu"
+   ],
+   "answer": 0,
+   "es": "Роза учительница?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Sen doktor",
+   "after": "?",
+   "options": [
+    "musun",
+    "mısın",
+    "misin"
+   ],
+   "answer": 0,
+   "es": "Ты врач?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Onlar asker",
+   "after": ".",
+   "options": [
+    "değiller",
+    "değilim",
+    "yok"
+   ],
+   "answer": 0,
+   "es": "Они не солдаты."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Ben Türk",
+   "after": ".",
+   "options": [
+    "değilim",
+    "değil",
+    "yokum"
+   ],
+   "answer": 0,
+   "es": "Я не турок."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Kampta elektrik",
+   "after": ".",
+   "options": [
+    "yok",
+    "değil",
+    "mı"
+   ],
+   "answer": 0,
+   "es": "В лагере нет электричества."
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать на изучаемом языке?",
+   "word": "Вода есть?",
+   "options": [
+    "Su var mı?",
+    "Su mı var?",
+    "Su değil mi?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "üç",
+     "3"
+    ],
+    [
+     "yedi",
+     "7"
+    ],
+    [
+     "on",
+     "10"
+    ],
+    [
+     "kırk",
+     "40"
+    ],
+    [
+     "yüz",
+     "100"
+    ]
+   ]
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать на изучаемом языке?",
+   "word": "сорок два",
+   "options": [
+    "kırk iki",
+    "iki kırk",
+    "kırk ikiler"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите",
+   "es": "Кто они? Они повстанцы.",
+   "answer": [
+    "Onlar",
+    "kim",
+    "Onlar",
+    "asiler"
+   ],
+   "extra": [
+    "ne",
+    "bu"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "Kampta kaç kişi var?",
+   "es": "Сколько человек в лагере?",
+   "options": [
+    "Kırk iki kişi var.",
+    "On iki kişi var.",
+    "Yüz kişi var."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Rosa’nın arkadaşları asker.",
+   "answer": false,
+   "why": "«Asker değiller»: это учителя, врачи, студенты."
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Kampta bir köpek var.",
+   "answer": true,
+   "why": "«Bir de köpek!»"
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Кто это?",
+   "answers": [
+    "Bu kim?",
+    "Bu kim"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "дома (ev = дом)",
+   "answers": [
+    "evler"
+   ]
+  }
+ ],
+ "keyboard": [
+  "ç",
+  "ğ",
+  "ı",
+  "İ",
+  "ö",
+  "ş",
+  "ü"
+ ]
+}

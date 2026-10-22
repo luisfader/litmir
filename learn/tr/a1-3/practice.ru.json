@@ -1,0 +1,311 @@
+{
+ "title": "Rosa nerede?",
+ "subtitle": "Где? -da / -de, куда? -a / -e, настоящее время -iyor.",
+ "speak": "tr-TR",
+ "hero": "novels/col-gulu/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 8 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "gelmek",
+     "приходить"
+    ],
+    [
+     "gitmek",
+     "идти"
+    ],
+    [
+     "aramak",
+     "искать"
+    ],
+    [
+     "beklemek",
+     "ждать"
+    ],
+    [
+     "uyumak",
+     "спать"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Rosa nerede?",
+   "options": [
+    "Где Роза?",
+    "Кто такая Роза?",
+    "Куда идёт Роза?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Rosa",
+   "after": ".",
+   "options": [
+    "kuyuda",
+    "kuyuta",
+    "kuyude"
+   ],
+   "answer": 0,
+   "es": "Роза у колодца."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Robert",
+   "after": ".",
+   "options": [
+    "kampta",
+    "kampda",
+    "kampte"
+   ],
+   "answer": 0,
+   "es": "Роберт в лагере.",
+   "why": "После p → -ta."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Ben",
+   "after": ".",
+   "options": [
+    "evdeyim",
+    "evdayım",
+    "evteyim"
+   ],
+   "answer": 0,
+   "es": "Я дома."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Çocuklar",
+   "after": "gidiyorlar.",
+   "options": [
+    "okula",
+    "okulda",
+    "okule"
+   ],
+   "answer": 0,
+   "es": "Дети идут в школу.",
+   "why": "Куда → -a / -e."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Ben ekmek",
+   "after": ".",
+   "options": [
+    "yapıyorum",
+    "yapiyorum",
+    "yapıyorsun"
+   ],
+   "answer": 0,
+   "es": "Я пеку хлеб."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Sen nereye",
+   "after": "?",
+   "options": [
+    "gidiyorsun",
+    "gitiyorsun",
+    "gidiyorum"
+   ],
+   "answer": 0,
+   "es": "Куда ты идёшь?",
+   "why": "gitmek → gidiyor (t → d)"
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Rosa seni",
+   "after": ".",
+   "options": [
+    "bekliyor",
+    "bekleyor",
+    "beklüyor"
+   ],
+   "answer": 0,
+   "es": "Роза тебя ждёт.",
+   "why": "bekle → bekliyor (e → i)"
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Robert Rosa’yı",
+   "after": ".",
+   "options": [
+    "arıyor",
+    "arayor",
+    "ariyor"
+   ],
+   "answer": 0,
+   "es": "Роберт ищет Розу."
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать на изучаемом языке?",
+   "word": "Я не иду.",
+   "options": [
+    "Gelmiyorum.",
+    "Gelmeyorum.",
+    "Değil geliyorum."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Geliyor",
+   "after": "?",
+   "options": [
+    "musun",
+    "mısın",
+    "misin"
+   ],
+   "answer": 0,
+   "es": "Ты идёшь?",
+   "why": "После -yor всегда mu."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Çocuklar ders çalışıyorlar.",
+   "options": [
+    "Дети делают уроки.",
+    "Дети спят.",
+    "Дети играют."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите",
+   "es": "Я иду к колодцу.",
+   "answer": [
+    "Kuyuya",
+    "gidiyorum"
+   ],
+   "extra": [
+    "kuyuda",
+    "geliyorum"
+   ]
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите",
+   "es": "Ты где? Я здесь.",
+   "answer": [
+    "Neredesin",
+    "Buradayım"
+   ],
+   "extra": [
+    "Nereye",
+    "Orada"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "Ayşe Teyze ne yapıyor?",
+   "es": "Что делает тётушка Айше?",
+   "options": [
+    "Ekmek yapıyor.",
+    "Su alıyor.",
+    "Ders çalışıyor."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Rosa okulda.",
+   "answer": false,
+   "why": "Роза у колодца: «Rosa kuyuda»."
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Rosa Robert’i bekliyor.",
+   "answer": true,
+   "why": "«Rosa seni bekliyor»."
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Где?",
+   "answers": [
+    "Nerede?",
+    "Nerede"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Я читаю. (okumak)",
+   "answers": [
+    "Okuyorum",
+    "Okuyorum.",
+    "Ben okuyorum",
+    "Ben okuyorum."
+   ]
+  }
+ ],
+ "keyboard": [
+  "ç",
+  "ğ",
+  "ı",
+  "İ",
+  "ö",
+  "ş",
+  "ü"
+ ]
+}

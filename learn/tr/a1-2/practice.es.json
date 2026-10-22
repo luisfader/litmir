@@ -1,0 +1,307 @@
+{
+ "title": "Bu ne? Kampta hayat",
+ "subtitle": "Bu / şu / o, el plural, preguntas con mı, değil, var / yok, los números.",
+ "speak": "tr-TR",
+ "hero": "novels/col-gulu/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Empezar",
+  "check": "Comprobar",
+  "next": "Continuar",
+  "skip": "No lo sé",
+  "retry": "Intentar de nuevo",
+  "again": "Repetir la unidad",
+  "back": "Volver a la unidad",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Respuesta correcta:",
+  "almost": "¡Casi! Fijate en los acentos:",
+  "done": "¡Unidad completada!",
+  "lost": "Te quedaste sin corazones",
+  "lostP": "No pasa nada: cada error es una palabra nueva que ya conocés un poco mejor.",
+  "xp": "XP total",
+  "acc": "Precisión",
+  "time": "Tiempo",
+  "ex": "{n} ejercicios",
+  "min": "≈ 8 minutos",
+  "hearts": "corazones",
+  "best": "Tu mejor resultado",
+  "tap": "Tocá las palabras en orden",
+  "type": "Escribí acá…",
+  "perfect": "¡Ni un solo error!",
+  "good": "¡Muy buen trabajo!",
+  "ok": "¡Bien hecho! Repetí la unidad para mejorar tu precisión.",
+  "sound": "Sonido",
+  "listen": "Escuchar",
+  "meaning": "Significa:",
+  "yes": "Verdadero",
+  "no": "Falso",
+  "score": "Puntaje",
+  "level": "Tu nivel"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Uní los pares",
+   "pairs": [
+    [
+     "çadır",
+     "carpa"
+    ],
+    [
+     "kuyu",
+     "pozo"
+    ],
+    [
+     "su",
+     "agua"
+    ],
+    [
+     "köpek",
+     "perro"
+    ],
+    [
+     "asker",
+     "soldado"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "Bu ne?",
+   "options": [
+    "¿Qué es esto?",
+    "¿Quién es?",
+    "¿Dónde está?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "Bu bir",
+   "after": ".",
+   "options": [
+    "çadır",
+    "çadırlar",
+    "çadırı"
+   ],
+   "answer": 0,
+   "es": "Esto es una carpa."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "Kampta iki",
+   "after": "var.",
+   "options": [
+    "çadır",
+    "çadırlar",
+    "çadırler"
+   ],
+   "answer": 0,
+   "es": "En el campamento hay dos carpas.",
+   "why": "Después de un número, singular."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "",
+   "after": "kampta.",
+   "options": [
+    "Öğrenciler",
+    "Öğrencilar",
+    "Öğrenci"
+   ],
+   "answer": 0,
+   "es": "Los estudiantes están en el campamento.",
+   "why": "Última vocal i → -ler."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "Rosa öğretmen",
+   "after": "?",
+   "options": [
+    "mi",
+    "mı",
+    "mu"
+   ],
+   "answer": 0,
+   "es": "¿Rosa es maestra?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "Sen doktor",
+   "after": "?",
+   "options": [
+    "musun",
+    "mısın",
+    "misin"
+   ],
+   "answer": 0,
+   "es": "¿Sos médico?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "Onlar asker",
+   "after": ".",
+   "options": [
+    "değiller",
+    "değilim",
+    "yok"
+   ],
+   "answer": 0,
+   "es": "No son soldados."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "Ben Türk",
+   "after": ".",
+   "options": [
+    "değilim",
+    "değil",
+    "yokum"
+   ],
+   "answer": 0,
+   "es": "No soy turco."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "Kampta elektrik",
+   "after": ".",
+   "options": [
+    "yok",
+    "değil",
+    "mı"
+   ],
+   "answer": 0,
+   "es": "En el campamento no hay electricidad."
+  },
+  {
+   "type": "reverse",
+   "prompt": "¿Cómo se dice?",
+   "word": "¿Hay agua?",
+   "options": [
+    "Su var mı?",
+    "Su mı var?",
+    "Su değil mi?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "match",
+   "prompt": "Uní los pares",
+   "pairs": [
+    [
+     "üç",
+     "3"
+    ],
+    [
+     "yedi",
+     "7"
+    ],
+    [
+     "on",
+     "10"
+    ],
+    [
+     "kırk",
+     "40"
+    ],
+    [
+     "yüz",
+     "100"
+    ]
+   ]
+  },
+  {
+   "type": "reverse",
+   "prompt": "¿Cómo se dice?",
+   "word": "cuarenta y dos",
+   "options": [
+    "kırk iki",
+    "iki kırk",
+    "kırk ikiler"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Traducí",
+   "es": "¿Quiénes son? Son rebeldes.",
+   "answer": [
+    "Onlar",
+    "kim",
+    "Onlar",
+    "asiler"
+   ],
+   "extra": [
+    "ne",
+    "bu"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Elegí la respuesta correcta",
+   "question": "Kampta kaç kişi var?",
+   "es": "¿Cuántas personas hay en el campamento?",
+   "options": [
+    "Kırk iki kişi var.",
+    "On iki kişi var.",
+    "Yüz kişi var."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "¿Verdadero o falso?",
+   "statement": "Rosa’nın arkadaşları asker.",
+   "answer": false,
+   "why": "«Asker değiller»: son maestros, médicos, estudiantes."
+  },
+  {
+   "type": "tf",
+   "prompt": "¿Verdadero o falso?",
+   "statement": "Kampta bir köpek var.",
+   "answer": true,
+   "why": "«Bir de köpek!»"
+  },
+  {
+   "type": "write",
+   "prompt": "Escribilo",
+   "es": "¿Quién es?",
+   "answers": [
+    "Bu kim?",
+    "Bu kim"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Escribilo",
+   "es": "casas (ev = casa)",
+   "answers": [
+    "evler"
+   ]
+  }
+ ],
+ "keyboard": [
+  "ç",
+  "ğ",
+  "ı",
+  "İ",
+  "ö",
+  "ş",
+  "ü"
+ ]
+}
