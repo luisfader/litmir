@@ -52,10 +52,8 @@ Añadir `"adult": true` a la novela en `catalog.json`: aparece la marca 18+ y se
 
 Si una novela existe en otro idioma, añadir `"translations": {"es": "slug-de-la-version-espanola"}`.
 
-## Registro con Google
+## Sin registro
 
-Todo el sitio es libre: todos los capítulos y todas las unidades se leen sin registrarse, y nada está cifrado.
-
-El botón «Entrar» (Google, Firebase `litmir2026`) es opcional: sirve para guardar el progreso de lectura (capítulos leídos, último capítulo, notas de tests y cursos) en la cuenta y verlo en todos los dispositivos. Tema, tamaño de letra, volumen e idioma quedan en cada dispositivo.
+Todo el sitio es libre: todos los capítulos y todas las unidades se leen sin registrarse, no hay inicio de sesión y nada está cifrado. El progreso de lectura (capítulos leídos, último capítulo, notas de tests y cursos, «Mis lecturas») se guarda en el navegador de cada lector.
 
 `tools/cifrar.mjs` quedó de cuando los capítulos 5+ estaban cifrados; ya no se usa.
