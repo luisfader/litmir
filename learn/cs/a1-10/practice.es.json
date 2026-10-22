@@ -1,0 +1,279 @@
+{
+ "title": "Zítra bude pršet",
+ "subtitle": "El futuro, el tiempo, los meses y las fechas. Repaso del A1.",
+ "speak": "cs-CZ",
+ "hero": "novels/podzemni-tajemstvi/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Empezar",
+  "check": "Comprobar",
+  "next": "Continuar",
+  "skip": "No lo sé",
+  "retry": "Intentar de nuevo",
+  "again": "Repetir",
+  "back": "Volver a la unidad",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Respuesta correcta:",
+  "almost": "¡Casi! Fíjate en los acentos:",
+  "done": "¡Unidad completada!",
+  "lost": "Te quedaste sin corazones",
+  "lostP": "No pasa nada: cada error es una palabra que ahora conoces un poco mejor.",
+  "xp": "XP total",
+  "acc": "Precisión",
+  "time": "Tiempo",
+  "ex": "{n} ejercicios",
+  "min": "≈ 7 minutos",
+  "hearts": "corazones",
+  "best": "Tu mejor resultado",
+  "tap": "Toca las palabras en orden",
+  "type": "Escribe aquí…",
+  "perfect": "¡Sin un solo error! ¡Increíble!",
+  "good": "¡Muy buen trabajo!",
+  "ok": "¡Bien hecho! Repite la unidad para mejorar tu precisión.",
+  "sound": "Sonido",
+  "listen": "Escuchar",
+  "meaning": "Significa:",
+  "yes": "Verdadero",
+  "no": "Falso",
+  "score": "Puntuación",
+  "level": "Tu nivel"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Une las parejas",
+   "pairs": [
+    [
+     "leden",
+     "enero"
+    ],
+    [
+     "květen",
+     "mayo"
+    ],
+    [
+     "září",
+     "septiembre"
+    ],
+    [
+     "listopad",
+     "noviembre"
+    ],
+    [
+     "prosinec",
+     "diciembre"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Zítra",
+   "after": "hrát na kytaru.",
+   "options": [
+    "budu",
+    "jsem",
+    "budou"
+   ],
+   "answer": 0,
+   "es": "Mañana voy a tocar la guitarra."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Lucie a Mark",
+   "after": "čekat.",
+   "options": [
+    "budou",
+    "bude",
+    "budu"
+   ],
+   "answer": 0,
+   "es": "Lucie y Mark van a esperar."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Zítra",
+   "after": "do kina.",
+   "options": [
+    "půjdu",
+    "budu jít",
+    "jdu"
+   ],
+   "answer": 0,
+   "es": "Mañana iré al cine.",
+   "why": "Jít → půjdu, nunca budu jít."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "V létě",
+   "after": "k moři.",
+   "options": [
+    "pojedeme",
+    "budeme jet",
+    "jedeme"
+   ],
+   "answer": 0,
+   "es": "En verano iremos al mar."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "V prosinci bude",
+   "after": "",
+   "options": [
+    "sněžit",
+    "sněží",
+    "sníh"
+   ],
+   "answer": 0,
+   "es": "En diciembre nevará."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Luis je v Praze",
+   "after": "",
+   "options": [
+    "v září",
+    "v zářím",
+    "na září"
+   ],
+   "answer": 0,
+   "es": "Luis está en Praga en septiembre."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "V zimě je",
+   "after": "",
+   "options": [
+    "zima",
+    "zimní",
+    "zimu"
+   ],
+   "answer": 0,
+   "es": "En invierno hace frío."
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "Prší.",
+   "options": [
+    "Llueve.",
+    "Nieva.",
+    "Hace sol."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "listopad",
+   "options": [
+    "noviembre",
+    "octubre",
+    "caída de las hojas"
+   ],
+   "answer": 0,
+   "why": "Las hojas caen (padají) en noviembre."
+  },
+  {
+   "type": "reverse",
+   "prompt": "¿Cómo se dice?",
+   "word": "Mañana va a llover.",
+   "options": [
+    "Zítra bude pršet.",
+    "Zítra prší pršet.",
+    "Zítra budu pršet."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Traduce",
+   "es": "¿Qué vas a hacer mañana?",
+   "answer": [
+    "Co",
+    "budeš",
+    "dělat",
+    "zítra?"
+   ],
+   "extra": [
+    "budu",
+    "jsi"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Elige la respuesta correcta",
+   "question": "Jaká je nejdůležitější věta v češtině?",
+   "es": "¿Cuál es la frase más importante en checo?",
+   "options": [
+    "Miluju tě.",
+    "Dám si kávu.",
+    "Kolik to stojí?"
+   ],
+   "answer": 0,
+   "why": "Eso dice Jana en el último capítulo."
+  },
+  {
+   "type": "tf",
+   "prompt": "¿Verdadero o falso?",
+   "statement": "Na konci románu sedí Luis a Jana ve stejné kavárně jako první den.",
+   "answer": true,
+   "why": "La misma mesa junto a la ventana, la misma cafetería."
+  },
+  {
+   "type": "tf",
+   "prompt": "¿Verdadero o falso?",
+   "statement": "«Zima» znamená jen «winter».",
+   "answer": false,
+   "why": "Zima significa invierno y también frío."
+  },
+  {
+   "type": "write",
+   "prompt": "Escríbelo",
+   "es": "Te quiero.",
+   "answers": [
+    "Miluju tě",
+    "Miluju tě.",
+    "Miluji tě",
+    "Miluji tě."
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Escríbelo",
+   "es": "mañana",
+   "answers": [
+    "zítra"
+   ]
+  }
+ ],
+ "keyboard": [
+  "á",
+  "č",
+  "ď",
+  "é",
+  "ě",
+  "í",
+  "ň",
+  "ó",
+  "ř",
+  "š",
+  "ť",
+  "ú",
+  "ů",
+  "ý",
+  "ž"
+ ]
+}

@@ -755,12 +755,14 @@
    "speak": "cs-CZ",
    "help": [
     "ru",
-    "en"
+    "en",
+    "es"
    ],
    "title": {
     "cs": "Uč se česky!",
     "ru": "Чешский язык",
-    "en": "Czech"
+    "en": "Czech",
+    "es": "Checo"
    },
    "units": [
     {
@@ -770,7 +772,8 @@
      "title": "Ahoj! Já jsem Jana",
      "sub": {
       "ru": "Приветствия, знакомство, ty и vy, глагол BÝT, национальности",
-      "en": "Greetings, introductions, ty and vy, the verb BÝT, nationalities"
+      "en": "Greetings, introductions, ty and vy, the verb BÝT, nationalities",
+      "es": "Saludos, presentaciones, ty y vy, el verbo BÝT, nacionalidades"
      },
      "cover": "novels/podzemni-tajemstvi/cover.jpg",
      "novel": "podzemni-tajemstvi"
@@ -782,7 +785,8 @@
      "title": "Luis je hudebník",
      "sub": {
       "ru": "Профессии, три типа глаголов, слитное NE-, языки, числа и возраст",
-      "en": "Professions, three verb types, the attached NE-, languages, numbers and age"
+      "en": "Professions, three verb types, the attached NE-, languages, numbers and age",
+      "es": "Profesiones, tres tipos de verbos, el NE- pegado, idiomas, números y edad"
      },
      "cover": "novels/podzemni-tajemstvi/cover.jpg",
      "novel": "podzemni-tajemstvi"
@@ -794,7 +798,8 @@
      "title": "Janina rodina",
      "sub": {
       "ru": "Семья, глагол MÍT, род (ten / ta / to), притяжательные, прилагательные",
-      "en": "Family, the verb MÍT, gender (ten / ta / to), possessives, adjectives"
+      "en": "Family, the verb MÍT, gender (ten / ta / to), possessives, adjectives",
+      "es": "La familia, el verbo MÍT, el género (ten / ta / to), posesivos, adjetivos"
      },
      "cover": "novels/podzemni-tajemstvi/cover.jpg",
      "novel": "podzemni-tajemstvi"
@@ -806,7 +811,8 @@
      "title": "Kde je Karlův most?",
      "sub": {
       "ru": "KDE JE…? Предложный падеж после V / NA, предлоги места, город",
-      "en": "KDE JE…? The locative after V / NA, prepositions of place, the city"
+      "en": "KDE JE…? The locative after V / NA, prepositions of place, the city",
+      "es": "KDE JE…? El locativo después de V / NA, preposiciones de lugar, la ciudad"
      },
      "cover": "novels/podzemni-tajemstvi/cover.jpg",
      "novel": "podzemni-tajemstvi"
@@ -818,7 +824,8 @@
      "title": "Luisův den",
      "sub": {
       "ru": "Который час, возвратные глаголы SE / SI, дни недели, как часто",
-      "en": "Telling the time, reflexive verbs SE / SI, days of the week, frequency"
+      "en": "Telling the time, reflexive verbs SE / SI, days of the week, frequency",
+      "es": "La hora, los verbos reflexivos SE / SI, los días de la semana, la frecuencia"
      },
      "cover": "novels/podzemni-tajemstvi/cover.jpg",
      "novel": "podzemni-tajemstvi"
@@ -830,7 +837,8 @@
      "title": "Dáme si kávu?",
      "sub": {
       "ru": "Еда и напитки, винительный падеж, MÍT RÁD / CHUTNAT, в кафе",
-      "en": "Food and drink, the accusative, MÍT RÁD / CHUTNAT, at the café"
+      "en": "Food and drink, the accusative, MÍT RÁD / CHUTNAT, at the café",
+      "es": "Comida y bebida, el acusativo, MÍT RÁD / CHUTNAT, en la cafetería"
      },
      "cover": "novels/podzemni-tajemstvi/cover.jpg",
      "novel": "podzemni-tajemstvi"
@@ -842,7 +850,8 @@
      "title": "Musíme najít Janu!",
      "sub": {
       "ru": "CHTÍT, MOCT, MUSET, UMĚT, VĚDĚT или ZNÁT",
-      "en": "CHTÍT, MOCT, MUSET, UMĚT, VĚDĚT or ZNÁT"
+      "en": "CHTÍT, MOCT, MUSET, UMĚT, VĚDĚT or ZNÁT",
+      "es": "CHTÍT, MOCT, MUSET, UMĚT, VĚDĚT o ZNÁT"
      },
      "cover": "novels/podzemni-tajemstvi/cover.jpg",
      "novel": "podzemni-tajemstvi"
@@ -854,7 +863,8 @@
      "title": "Jedeme na Karlštejn",
      "sub": {
       "ru": "JÍT или JET, транспорт, KDE или KAM, как пройти",
-      "en": "JÍT or JET, transport, KDE or KAM, asking the way"
+      "en": "JÍT or JET, transport, KDE or KAM, asking the way",
+      "es": "JÍT o JET, los transportes, KDE o KAM, preguntar el camino"
      },
      "cover": "novels/predtucha/cover.jpg",
      "novel": "predtucha"
@@ -866,7 +876,8 @@
      "title": "Kolik stojí ta sukně?",
      "sub": {
       "ru": "Покупки, числа от 100, цвета, одежда, TENHLE / TAHLE",
-      "en": "Shopping, numbers from 100, colours, clothes, TENHLE / TAHLE"
+      "en": "Shopping, numbers from 100, colours, clothes, TENHLE / TAHLE",
+      "es": "De compras: números desde 100, colores, ropa, TENHLE / TAHLE"
      },
      "cover": "novels/podzemni-tajemstvi/cover.jpg",
      "novel": "podzemni-tajemstvi"
@@ -878,7 +889,8 @@
      "title": "Zítra bude pršet",
      "sub": {
       "ru": "Будущее время, погода, месяцы и даты. Итог уровня A1",
-      "en": "The future, weather, months and dates. A1 review"
+      "en": "The future, weather, months and dates. A1 review",
+      "es": "El futuro, el tiempo, los meses y las fechas. Repaso del A1"
      },
      "cover": "novels/podzemni-tajemstvi/cover.jpg",
      "novel": "podzemni-tajemstvi"

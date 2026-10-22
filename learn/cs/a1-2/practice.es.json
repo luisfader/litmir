@@ -1,0 +1,278 @@
+{
+ "title": "Luis je hudebník",
+ "subtitle": "Profesiones, tres tipos de verbos, el «ne-» que va pegado, idiomas, números y edad.",
+ "speak": "cs-CZ",
+ "hero": "novels/podzemni-tajemstvi/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Empezar",
+  "check": "Comprobar",
+  "next": "Continuar",
+  "skip": "No lo sé",
+  "retry": "Intentar de nuevo",
+  "again": "Repetir",
+  "back": "Volver a la unidad",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Respuesta correcta:",
+  "almost": "¡Casi! Fíjate en los acentos:",
+  "done": "¡Unidad completada!",
+  "lost": "Te quedaste sin corazones",
+  "lostP": "No pasa nada: cada error es una palabra que ahora conoces un poco mejor.",
+  "xp": "XP total",
+  "acc": "Precisión",
+  "time": "Tiempo",
+  "ex": "{n} ejercicios",
+  "min": "≈ 7 minutos",
+  "hearts": "corazones",
+  "best": "Tu mejor resultado",
+  "tap": "Toca las palabras en orden",
+  "type": "Escribe aquí…",
+  "perfect": "¡Sin un solo error! ¡Increíble!",
+  "good": "¡Muy buen trabajo!",
+  "ok": "¡Bien hecho! Repite la unidad para mejorar tu precisión.",
+  "sound": "Sonido",
+  "listen": "Escuchar",
+  "meaning": "Significa:",
+  "yes": "Verdadero",
+  "no": "Falso",
+  "score": "Puntuación",
+  "level": "Tu nivel"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Une las parejas",
+   "pairs": [
+    [
+     "pracovat",
+     "trabajar"
+    ],
+    [
+     "mluvit",
+     "hablar"
+    ],
+    [
+     "bydlet",
+     "vivir"
+    ],
+    [
+     "znát",
+     "saber, conocer"
+    ],
+    [
+     "hrát",
+     "jugar, tocar"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "Co děláš?",
+   "options": [
+    "¿A qué te dedicas?",
+    "¿Dónde vives?",
+    "¿Cuántos años tienes?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Luis",
+   "after": "na kytaru.",
+   "options": [
+    "hraje",
+    "hraju",
+    "hrají"
+   ],
+   "answer": 0,
+   "es": "Luis toca la guitarra."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Já",
+   "after": "česky.",
+   "options": [
+    "mluvím",
+    "mluví",
+    "mluvíš"
+   ],
+   "answer": 0,
+   "es": "Hablo checo."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Lucie",
+   "after": "v podzemí.",
+   "options": [
+    "pracuje",
+    "pracuju",
+    "pracujou"
+   ],
+   "answer": 0,
+   "es": "Lucie trabaja bajo tierra."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "My",
+   "after": "v Praze.",
+   "options": [
+    "bydlíme",
+    "bydlí",
+    "bydlíte"
+   ],
+   "answer": 0,
+   "es": "Vivimos en Praga."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Luis",
+   "after": "česky.",
+   "options": [
+    "neumí",
+    "ne umí",
+    "umí ne"
+   ],
+   "answer": 0,
+   "es": "Luis no sabe hablar checo.",
+   "why": "Ne- se escribe junto al verbo."
+  },
+  {
+   "type": "reverse",
+   "prompt": "¿Cómo se dice?",
+   "word": "No hablo ruso.",
+   "options": [
+    "Nemluvím rusky.",
+    "Ne mluvím rusky.",
+    "Mluvím ne rusky."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "průvodkyně",
+   "options": [
+    "guía (mujer)",
+    "fotógrafo",
+    "dependiente"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Mark je",
+   "after": "",
+   "options": [
+    "fotograf",
+    "fotografka",
+    "fotografa"
+   ],
+   "answer": 0,
+   "es": "Mark es fotógrafo."
+  },
+  {
+   "type": "build",
+   "prompt": "Traduce",
+   "es": "Tengo veinticinco años.",
+   "answer": [
+    "Je",
+    "mi",
+    "dvacet",
+    "pět",
+    "let"
+   ],
+   "extra": [
+    "jsem",
+    "roky"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Elige la respuesta correcta",
+   "question": "Co dělá Mark?",
+   "es": "¿A qué se dedica Mark?",
+   "options": [
+    "Je fotograf.",
+    "Je hudebník.",
+    "Je průvodkyně."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Je mi tři",
+   "after": "",
+   "options": [
+    "roky",
+    "let",
+    "rok"
+   ],
+   "answer": 0,
+   "es": "Tengo tres años.",
+   "why": "2–4 → roky."
+  },
+  {
+   "type": "tf",
+   "prompt": "¿Verdadero o falso?",
+   "statement": "Luis je z Argentiny a je hudebník.",
+   "answer": true,
+   "why": "Así empieza el segundo capítulo de la novela."
+  },
+  {
+   "type": "write",
+   "prompt": "Escríbelo",
+   "es": "Hablo checo.",
+   "answers": [
+    "Mluvím česky",
+    "Já mluvím česky"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Escríbelo",
+   "es": "¿Cuántos años tienes?",
+   "answers": [
+    "Kolik je ti let?",
+    "Kolik je ti let"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "¿Verdadero o falso?",
+   "statement": "Lucie je fotografka.",
+   "answer": false,
+   "why": "Lucie es guía; Mark es el fotógrafo."
+  }
+ ],
+ "keyboard": [
+  "á",
+  "č",
+  "ď",
+  "é",
+  "ě",
+  "í",
+  "ň",
+  "ó",
+  "ř",
+  "š",
+  "ť",
+  "ú",
+  "ů",
+  "ý",
+  "ž"
+ ]
+}

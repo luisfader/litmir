@@ -1,0 +1,281 @@
+{
+ "title": "Jedeme na Karlštejn",
+ "subtitle": "Jít o jet, los transportes, kde o kam, do / na / k, preguntar el camino.",
+ "speak": "cs-CZ",
+ "hero": "novels/predtucha/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Empezar",
+  "check": "Comprobar",
+  "next": "Continuar",
+  "skip": "No lo sé",
+  "retry": "Intentar de nuevo",
+  "again": "Repetir",
+  "back": "Volver a la unidad",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Respuesta correcta:",
+  "almost": "¡Casi! Fíjate en los acentos:",
+  "done": "¡Unidad completada!",
+  "lost": "Te quedaste sin corazones",
+  "lostP": "No pasa nada: cada error es una palabra que ahora conoces un poco mejor.",
+  "xp": "XP total",
+  "acc": "Precisión",
+  "time": "Tiempo",
+  "ex": "{n} ejercicios",
+  "min": "≈ 7 minutos",
+  "hearts": "corazones",
+  "best": "Tu mejor resultado",
+  "tap": "Toca las palabras en orden",
+  "type": "Escribe aquí…",
+  "perfect": "¡Sin un solo error! ¡Increíble!",
+  "good": "¡Muy buen trabajo!",
+  "ok": "¡Bien hecho! Repite la unidad para mejorar tu precisión.",
+  "sound": "Sonido",
+  "listen": "Escuchar",
+  "meaning": "Significa:",
+  "yes": "Verdadero",
+  "no": "Falso",
+  "score": "Puntuación",
+  "level": "Tu nivel"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Une las parejas",
+   "pairs": [
+    [
+     "vlakem",
+     "en tren"
+    ],
+    [
+     "autem",
+     "en coche"
+    ],
+    [
+     "tramvají",
+     "en tranvía"
+    ],
+    [
+     "pěšky",
+     "a pie"
+    ],
+    [
+     "na kole",
+     "en bici"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Lidé",
+   "after": "lesem pěšky.",
+   "options": [
+    "jdou",
+    "jedou",
+    "jde"
+   ],
+   "answer": 0,
+   "es": "La gente va a pie por el bosque."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Luis",
+   "after": "na motocyklu.",
+   "options": [
+    "jede",
+    "jde",
+    "jedu"
+   ],
+   "answer": 0,
+   "es": "Luis va en moto.",
+   "why": "Un vehículo → jet."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Jedu do Prahy",
+   "after": "",
+   "options": [
+    "vlakem",
+    "vlak",
+    "vlaku"
+   ],
+   "answer": 0,
+   "es": "Voy a Praga en tren."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Jdu",
+   "after": "kavárny.",
+   "options": [
+    "do",
+    "v",
+    "na"
+   ],
+   "answer": 0,
+   "es": "Voy a la cafetería.",
+   "why": "¿Adónde? → do + genitivo."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Jedeme",
+   "after": "Karlštejn.",
+   "options": [
+    "na",
+    "do",
+    "v"
+   ],
+   "answer": 0,
+   "es": "Vamos a Karlštejn."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "",
+   "after": "jdeš? — Na koncert.",
+   "options": [
+    "Kam",
+    "Kde",
+    "Kdo"
+   ],
+   "answer": 0,
+   "es": "¿Adónde vas? — A un concierto."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Jedeme do",
+   "after": "",
+   "options": [
+    "Prahy",
+    "Praha",
+    "Praze"
+   ],
+   "answer": 0,
+   "es": "Vamos a Praga."
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "doleva",
+   "options": [
+    "a la izquierda",
+    "a la derecha",
+    "recto"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "Je to daleko?",
+   "options": [
+    "¿Está lejos?",
+    "¿Es caro?",
+    "¿Está aquí?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "¿Cómo se dice?",
+   "word": "¿Cómo llego a la estación?",
+   "options": [
+    "Jak se dostanu na nádraží?",
+    "Kde se dostanu na nádraží?",
+    "Kam je nádraží?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Traduce",
+   "es": "Vamos al bosque.",
+   "answer": [
+    "Jdeme",
+    "do",
+    "lesa"
+   ],
+   "extra": [
+    "jedeme",
+    "v"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Elige la respuesta correcta",
+   "question": "Kam jdou lidé z Naší utopie?",
+   "es": "¿Adónde va la gente de Naše utopie?",
+   "options": [
+    "Na Karlštejn.",
+    "Do Argentiny.",
+    "Do kavárny."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Elige la respuesta correcta",
+   "question": "Kdo jede napřed připravit hrad?",
+   "es": "¿Quién se adelanta para preparar el castillo?",
+   "options": [
+    "Luis.",
+    "Robert.",
+    "Lucie."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "¿Verdadero o falso?",
+   "statement": "Karlštejn je starý královský hrad na skále.",
+   "answer": true,
+   "why": "Así se cuenta en el capítulo 2 de «Předtucha»."
+  },
+  {
+   "type": "write",
+   "prompt": "Escríbelo",
+   "es": "a pie",
+   "answers": [
+    "pěšky"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Escríbelo",
+   "es": "Voy en coche.",
+   "answers": [
+    "Jedu autem",
+    "Jedu autem.",
+    "Já jedu autem"
+   ]
+  }
+ ],
+ "keyboard": [
+  "á",
+  "č",
+  "ď",
+  "é",
+  "ě",
+  "í",
+  "ň",
+  "ó",
+  "ř",
+  "š",
+  "ť",
+  "ú",
+  "ů",
+  "ý",
+  "ž"
+ ]
+}

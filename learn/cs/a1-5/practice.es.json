@@ -1,0 +1,284 @@
+{
+ "title": "Luisův den",
+ "subtitle": "La hora, los verbos reflexivos con se / si, los días de la semana y la frecuencia.",
+ "speak": "cs-CZ",
+ "hero": "novels/podzemni-tajemstvi/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Empezar",
+  "check": "Comprobar",
+  "next": "Continuar",
+  "skip": "No lo sé",
+  "retry": "Intentar de nuevo",
+  "again": "Repetir",
+  "back": "Volver a la unidad",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Respuesta correcta:",
+  "almost": "¡Casi! Fíjate en los acentos:",
+  "done": "¡Unidad completada!",
+  "lost": "Te quedaste sin corazones",
+  "lostP": "No pasa nada: cada error es una palabra que ahora conoces un poco mejor.",
+  "xp": "XP total",
+  "acc": "Precisión",
+  "time": "Tiempo",
+  "ex": "{n} ejercicios",
+  "min": "≈ 7 minutos",
+  "hearts": "corazones",
+  "best": "Tu mejor resultado",
+  "tap": "Toca las palabras en orden",
+  "type": "Escribe aquí…",
+  "perfect": "¡Sin un solo error! ¡Increíble!",
+  "good": "¡Muy buen trabajo!",
+  "ok": "¡Bien hecho! Repite la unidad para mejorar tu precisión.",
+  "sound": "Sonido",
+  "listen": "Escuchar",
+  "meaning": "Significa:",
+  "yes": "Verdadero",
+  "no": "Falso",
+  "score": "Puntuación",
+  "level": "Tu nivel"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Une las parejas",
+   "pairs": [
+    [
+     "pondělí",
+     "lunes"
+    ],
+    [
+     "středa",
+     "miércoles"
+    ],
+    [
+     "pátek",
+     "viernes"
+    ],
+    [
+     "sobota",
+     "sábado"
+    ],
+    [
+     "neděle",
+     "domingo"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "Je půl osmé.",
+   "options": [
+    "Son las siete y media (7:30).",
+    "Son las ocho y media (8:30).",
+    "Son las ocho (8:00)."
+   ],
+   "answer": 0,
+   "why": "Půl osmé mira hacia delante: la mitad de la octava hora = 7:30."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Jsou tři",
+   "after": "",
+   "options": [
+    "hodiny",
+    "hodin",
+    "hodina"
+   ],
+   "answer": 0,
+   "es": "Son las tres.",
+   "why": "2–4 → hodiny."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Je pět",
+   "after": "",
+   "options": [
+    "hodin",
+    "hodiny",
+    "hodina"
+   ],
+   "answer": 0,
+   "es": "Son las cinco.",
+   "why": "5+ → hodin."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Ráno",
+   "after": "oblékám.",
+   "options": [
+    "se",
+    "si",
+    "sebe"
+   ],
+   "answer": 0,
+   "es": "Por la mañana me visto."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Dám",
+   "after": "kávu.",
+   "options": [
+    "si",
+    "se",
+    "sebe"
+   ],
+   "answer": 0,
+   "es": "Tomaré un café."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Jana",
+   "after": "dívá na Luise.",
+   "options": [
+    "se",
+    "si",
+    "je"
+   ],
+   "answer": 0,
+   "es": "Jana mira a Luis.",
+   "why": "Se va en segunda posición."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Koncert je",
+   "after": "",
+   "options": [
+    "ve středu",
+    "v středa",
+    "ve středě"
+   ],
+   "answer": 0,
+   "es": "El concierto es el miércoles."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Nikdy",
+   "after": "pozdě.",
+   "options": [
+    "nechodím",
+    "chodím",
+    "ne chodím"
+   ],
+   "answer": 0,
+   "es": "Nunca llego tarde.",
+   "why": "Nikdy necesita el verbo en negativo."
+  },
+  {
+   "type": "reverse",
+   "prompt": "¿Cómo se dice?",
+   "word": "Son las ocho menos cuarto (7:45).",
+   "options": [
+    "Tři čtvrtě na osm.",
+    "Čtvrt na osm.",
+    "Půl osmé."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Traduce",
+   "es": "Me levanto a las siete.",
+   "answer": [
+    "Vstávám",
+    "v",
+    "sedm"
+   ],
+   "extra": [
+    "se",
+    "hodiny"
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "neděle",
+   "options": [
+    "domingo",
+    "semana",
+    "lunes"
+   ],
+   "answer": 0,
+   "why": "Semana es týden."
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "často",
+   "options": [
+    "a menudo",
+    "nunca",
+    "hoy"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Elige la respuesta correcta",
+   "question": "Jaký měsíc je na začátku románu?",
+   "es": "¿En qué mes empieza la novela?",
+   "options": [
+    "Září.",
+    "Prosinec.",
+    "Květen."
+   ],
+   "answer": 0,
+   "why": "«Je září. Luis je v Praze.»"
+  },
+  {
+   "type": "tf",
+   "prompt": "¿Verdadero o falso?",
+   "statement": "Mark má vždycky s sebou fotoaparát.",
+   "answer": true,
+   "why": "Eso dice la lista de personajes."
+  },
+  {
+   "type": "write",
+   "prompt": "Escríbelo",
+   "es": "¿Qué hora es?",
+   "answers": [
+    "Kolik je hodin?",
+    "Kolik je hodin"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Escríbelo",
+   "es": "el sábado",
+   "answers": [
+    "v sobotu"
+   ]
+  }
+ ],
+ "keyboard": [
+  "á",
+  "č",
+  "ď",
+  "é",
+  "ě",
+  "í",
+  "ň",
+  "ó",
+  "ř",
+  "š",
+  "ť",
+  "ú",
+  "ů",
+  "ý",
+  "ž"
+ ]
+}

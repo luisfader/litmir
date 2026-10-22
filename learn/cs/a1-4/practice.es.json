@@ -1,0 +1,273 @@
+{
+ "title": "Kde je Karlův most?",
+ "subtitle": "¿Kde je…? El locativo después de v / na, preposiciones de lugar, la ciudad.",
+ "speak": "cs-CZ",
+ "hero": "novels/podzemni-tajemstvi/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Empezar",
+  "check": "Comprobar",
+  "next": "Continuar",
+  "skip": "No lo sé",
+  "retry": "Intentar de nuevo",
+  "again": "Repetir",
+  "back": "Volver a la unidad",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Respuesta correcta:",
+  "almost": "¡Casi! Fíjate en los acentos:",
+  "done": "¡Unidad completada!",
+  "lost": "Te quedaste sin corazones",
+  "lostP": "No pasa nada: cada error es una palabra que ahora conoces un poco mejor.",
+  "xp": "XP total",
+  "acc": "Precisión",
+  "time": "Tiempo",
+  "ex": "{n} ejercicios",
+  "min": "≈ 7 minutos",
+  "hearts": "corazones",
+  "best": "Tu mejor resultado",
+  "tap": "Toca las palabras en orden",
+  "type": "Escribe aquí…",
+  "perfect": "¡Sin un solo error! ¡Increíble!",
+  "good": "¡Muy buen trabajo!",
+  "ok": "¡Bien hecho! Repite la unidad para mejorar tu precisión.",
+  "sound": "Sonido",
+  "listen": "Escuchar",
+  "meaning": "Significa:",
+  "yes": "Verdadero",
+  "no": "Falso",
+  "score": "Puntuación",
+  "level": "Tu nivel"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Une las parejas",
+   "pairs": [
+    [
+     "náměstí",
+     "plaza"
+    ],
+    [
+     "most",
+     "puente"
+    ],
+    [
+     "řeka",
+     "río"
+    ],
+    [
+     "kostel",
+     "iglesia"
+    ],
+    [
+     "nádraží",
+     "estación"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Luis je v",
+   "after": "",
+   "options": [
+    "Praze",
+    "Praha",
+    "Prahy"
+   ],
+   "answer": 0,
+   "es": "Luis está en Praga."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Jana sedí v",
+   "after": "",
+   "options": [
+    "kavárně",
+    "kavárna",
+    "kavárnu"
+   ],
+   "answer": 0,
+   "es": "Jana está sentada en la cafetería."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Lucie a Mark jsou",
+   "after": "náměstí.",
+   "options": [
+    "na",
+    "v",
+    "pod"
+   ],
+   "answer": 0,
+   "es": "Lucie y Mark están en la plaza."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Mark má baterku v",
+   "after": "",
+   "options": [
+    "batohu",
+    "batoh",
+    "batohy"
+   ],
+   "answer": 0,
+   "es": "Mark tiene una linterna en la mochila."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "",
+   "after": "je nádraží?",
+   "options": [
+    "Kde",
+    "Kdo",
+    "Co"
+   ],
+   "answer": 0,
+   "es": "¿Dónde está la estación?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Pod",
+   "after": "je druhá Praha.",
+   "options": [
+    "Prahou",
+    "Praha",
+    "Praze"
+   ],
+   "answer": 0,
+   "es": "Bajo Praga hay una segunda Praga."
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "vedle",
+   "options": [
+    "al lado de",
+    "debajo de",
+    "lejos"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "Není to daleko.",
+   "options": [
+    "No está lejos.",
+    "Está muy lejos.",
+    "No está aquí."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "¿Cómo se dice?",
+   "word": "en la estación",
+   "options": [
+    "na nádraží",
+    "v nádraží",
+    "do nádraží"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Traduce",
+   "es": "¿Dónde están Jana y Mark?",
+   "answer": [
+    "Kde",
+    "jsou",
+    "Jana",
+    "a",
+    "Mark?"
+   ],
+   "extra": [
+    "je",
+    "kdo"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Elige la respuesta correcta",
+   "question": "Kde jsou Luis, Jana, Lucie a Mark?",
+   "es": "¿Dónde están Luis, Jana, Lucie y Mark?",
+   "options": [
+    "V podzemí Prahy.",
+    "Na nádraží.",
+    "V kavárně v Argentině."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "tramvaj",
+   "options": [
+    "tranvía",
+    "tren",
+    "metro"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "¿Verdadero o falso?",
+   "statement": "Pod Prahou je druhá Praha.",
+   "answer": true,
+   "why": "Eso dice Lucie, la guía."
+  },
+  {
+   "type": "write",
+   "prompt": "Escríbelo",
+   "es": "aquí",
+   "answers": [
+    "tady"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Escríbelo",
+   "es": "¿Dónde está la cafetería?",
+   "answers": [
+    "Kde je kavárna?",
+    "Kde je kavárna"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "¿Verdadero o falso?",
+   "statement": "«Kde» a «kdo» znamenají totéž.",
+   "answer": false,
+   "why": "Kde — dónde, kdo — quién."
+  }
+ ],
+ "keyboard": [
+  "á",
+  "č",
+  "ď",
+  "é",
+  "ě",
+  "í",
+  "ň",
+  "ó",
+  "ř",
+  "š",
+  "ť",
+  "ú",
+  "ů",
+  "ý",
+  "ž"
+ ]
+}

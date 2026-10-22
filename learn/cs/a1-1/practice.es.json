@@ -1,0 +1,250 @@
+{
+ "title": "Ahoj! Já jsem Jana",
+ "subtitle": "Saludos, presentaciones, pronombres y el verbo BÝT.",
+ "speak": "cs-CZ",
+ "hero": "novels/podzemni-tajemstvi/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Empezar",
+  "check": "Comprobar",
+  "next": "Continuar",
+  "skip": "No lo sé",
+  "retry": "Intentar de nuevo",
+  "again": "Repetir",
+  "back": "Volver a la unidad",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Respuesta correcta:",
+  "almost": "¡Casi! Fíjate en los acentos:",
+  "done": "¡Unidad completada!",
+  "lost": "Te quedaste sin corazones",
+  "lostP": "No pasa nada: cada error es una palabra que ahora conoces un poco mejor.",
+  "xp": "XP total",
+  "acc": "Precisión",
+  "time": "Tiempo",
+  "ex": "{n} ejercicios",
+  "min": "≈ 7 minutos",
+  "hearts": "corazones",
+  "best": "Tu mejor resultado",
+  "tap": "Toca las palabras en orden",
+  "type": "Escribe aquí…",
+  "perfect": "¡Sin un solo error! ¡Increíble!",
+  "good": "¡Muy buen trabajo!",
+  "ok": "¡Bien hecho! Repite la unidad para mejorar tu precisión.",
+  "sound": "Sonido",
+  "listen": "Escuchar",
+  "meaning": "Significa:",
+  "yes": "Verdadero",
+  "no": "Falso",
+  "score": "Puntuación",
+  "level": "Tu nivel"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Une las parejas",
+   "pairs": [
+    [
+     "ahoj",
+     "hola"
+    ],
+    [
+     "děkuju",
+     "gracias"
+    ],
+    [
+     "ano",
+     "sí"
+    ],
+    [
+     "ne",
+     "no"
+    ],
+    [
+     "dobrou noc",
+     "buenas noches"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "Dobrý den",
+   "options": [
+    "Buenos días (formal)",
+    "Buenas noches",
+    "Adiós"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "¿Cómo se dice?",
+   "word": "Me llamo Luis.",
+   "options": [
+    "Jmenuji se Luis.",
+    "Jmenuješ se Luis.",
+    "Jsem se Luis."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Já",
+   "after": "Jana.",
+   "options": [
+    "jsem",
+    "jsi",
+    "je"
+   ],
+   "answer": 0,
+   "es": "Soy Jana."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Luis",
+   "after": "hudebník.",
+   "options": [
+    "je",
+    "jsou",
+    "jsem"
+   ],
+   "answer": 0,
+   "es": "Luis es músico."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "My",
+   "after": "přátelé.",
+   "options": [
+    "jsme",
+    "jste",
+    "jsou"
+   ],
+   "answer": 0,
+   "es": "Somos amigos."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Jsem",
+   "after": "Prahy.",
+   "options": [
+    "z",
+    "v",
+    "na"
+   ],
+   "answer": 0,
+   "es": "Soy de Praga."
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "Odkud jsi?",
+   "options": [
+    "¿De dónde eres?",
+    "¿Cómo te llamas?",
+    "¿Qué tal estás?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Traduce",
+   "es": "Soy de Argentina.",
+   "answer": [
+    "Jsem",
+    "z",
+    "Argentiny"
+   ],
+   "extra": [
+    "je",
+    "Argentina"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Elige la respuesta correcta",
+   "question": "Odkud je Jana?",
+   "es": "¿De dónde es Jana?",
+   "options": [
+    "Je z Prahy.",
+    "Je z Argentiny.",
+    "Jsem z Prahy."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "¿Cómo se dice?",
+   "word": "No soy checo.",
+   "options": [
+    "Nejsem Čech.",
+    "Ne jsem Čech.",
+    "Jsem ne Čech."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "¿Verdadero o falso?",
+   "statement": "Luis je hudebník z Argentiny.",
+   "answer": true,
+   "why": "Sí: Luis es un músico de Argentina."
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "Těší mě.",
+   "options": [
+    "Encantado.",
+    "Gracias.",
+    "¿Qué tal estás?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "write",
+   "prompt": "Escríbelo",
+   "es": "gracias",
+   "answers": [
+    "děkuju",
+    "děkuji"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Escríbelo",
+   "es": "Soy de Praga.",
+   "answers": [
+    "Jsem z Prahy",
+    "Já jsem z Prahy"
+   ]
+  }
+ ],
+ "keyboard": [
+  "á",
+  "č",
+  "ď",
+  "é",
+  "ě",
+  "í",
+  "ň",
+  "ó",
+  "ř",
+  "š",
+  "ť",
+  "ú",
+  "ů",
+  "ý",
+  "ž"
+ ]
+}
