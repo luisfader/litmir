@@ -231,6 +231,54 @@
      },
      "cover": "novels/antonio-e-il-segreto-di-roma/cover.jpg",
      "novel": "antonio-e-il-segreto-di-roma"
+    },
+    {
+     "id": "a1-7",
+     "level": "A1",
+     "n": 7,
+     "title": "Voglio trovare Alice",
+     "sub": {
+      "ru": "Volere, potere, dovere, sapere или conoscere, venire и uscire",
+      "en": "Volere, potere, dovere, sapere or conoscere, venire and uscire"
+     },
+     "cover": "novels/il-treno-fantasma/cover.jpg",
+     "novel": "il-treno-fantasma"
+    },
+    {
+     "id": "a1-8",
+     "level": "A1",
+     "n": 8,
+     "title": "Andiamo a Venezia!",
+     "sub": {
+      "ru": "A, in, da, транспорт, как спросить дорогу, город",
+      "en": "A, in, da, transport, asking the way, the city"
+     },
+     "cover": "novels/maschera-di-venezia/cover.jpg",
+     "novel": "maschera-di-venezia"
+    },
+    {
+     "id": "a1-9",
+     "level": "A1",
+     "n": 9,
+     "title": "Quanto costa?",
+     "sub": {
+      "ru": "Покупки, числа от 100, цвета, одежда, questo / quello",
+      "en": "Shopping, numbers from 100, colours, clothes, questo / quello"
+     },
+     "cover": "novels/la-nevicata-rosa/cover.jpg",
+     "novel": "la-nevicata-rosa"
+    },
+    {
+     "id": "a1-10",
+     "level": "A1",
+     "n": 10,
+     "title": "Domani nevicherà",
+     "sub": {
+      "ru": "Будущее время, погода, месяцы и даты. Повторение A1",
+      "en": "The future tense, weather, months and dates. A1 review"
+     },
+     "cover": "novels/la-nevicata-rosa/cover.jpg",
+     "novel": "la-nevicata-rosa"
     }
    ]
   },
@@ -407,12 +455,14 @@
    "speak": "tr-TR",
    "help": [
     "ru",
-    "en"
+    "en",
+    "es"
    ],
    "title": {
     "tr": "Türkçe öğren!",
     "ru": "Турецкий язык",
-    "en": "Turkish"
+    "en": "Turkish",
+    "es": "Turco"
    },
    "units": [
     {
@@ -422,7 +472,34 @@
      "title": "Merhaba! Benim adım Rosa",
      "sub": {
       "ru": "Приветствия, знакомство, местоимения, «быть» как окончание, гармония гласных",
-      "en": "Greetings, introductions, pronouns, \"to be\" as a suffix, vowel harmony"
+      "en": "Greetings, introductions, pronouns, \"to be\" as a suffix, vowel harmony",
+      "es": "Saludos, presentarse, pronombres, \"ser\" como terminación, armonía vocálica"
+     },
+     "cover": "novels/col-gulu/cover.jpg",
+     "novel": "col-gulu"
+    },
+    {
+     "id": "a1-2",
+     "level": "A1",
+     "n": 2,
+     "title": "Bu ne? Kampta hayat",
+     "sub": {
+      "ru": "Bu / şu / o, множественное число, вопрос с mı, değil, var / yok, числа",
+      "en": "Bu / şu / o, plurals, questions with mı, değil, var / yok, numbers",
+      "es": "Bu / şu / o, el plural, preguntas con mı, değil, var / yok, los números"
+     },
+     "cover": "novels/col-gulu/cover.jpg",
+     "novel": "col-gulu"
+    },
+    {
+     "id": "a1-3",
+     "level": "A1",
+     "n": 3,
+     "title": "Rosa nerede?",
+     "sub": {
+      "ru": "Где? -da / -de, куда? -a / -e, настоящее время -iyor",
+      "en": "Where? -da / -de, where to? -a / -e, the present continuous -iyor",
+      "es": "¿Dónde? -da / -de, ¿adónde? -a / -e, el presente continuo -iyor"
      },
      "cover": "novels/col-gulu/cover.jpg",
      "novel": "col-gulu"

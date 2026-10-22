@@ -1,0 +1,307 @@
+{
+ "title": "Bu ne? Kampta hayat",
+ "subtitle": "Bu / şu / o, plurals, questions with mı, değil, var / yok, numbers.",
+ "speak": "tr-TR",
+ "hero": "novels/col-gulu/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 8 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "çadır",
+     "tent"
+    ],
+    [
+     "kuyu",
+     "well"
+    ],
+    [
+     "su",
+     "water"
+    ],
+    [
+     "köpek",
+     "dog"
+    ],
+    [
+     "asker",
+     "soldier"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Bu ne?",
+   "options": [
+    "What is this?",
+    "Who is this?",
+    "Where is it?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Bu bir",
+   "after": ".",
+   "options": [
+    "çadır",
+    "çadırlar",
+    "çadırı"
+   ],
+   "answer": 0,
+   "es": "This is a tent."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Kampta iki",
+   "after": "var.",
+   "options": [
+    "çadır",
+    "çadırlar",
+    "çadırler"
+   ],
+   "answer": 0,
+   "es": "There are two tents in the camp.",
+   "why": "After a number — singular."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "",
+   "after": "kampta.",
+   "options": [
+    "Öğrenciler",
+    "Öğrencilar",
+    "Öğrenci"
+   ],
+   "answer": 0,
+   "es": "The students are in the camp.",
+   "why": "Last vowel i → -ler."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Rosa öğretmen",
+   "after": "?",
+   "options": [
+    "mi",
+    "mı",
+    "mu"
+   ],
+   "answer": 0,
+   "es": "Is Rosa a teacher?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Sen doktor",
+   "after": "?",
+   "options": [
+    "musun",
+    "mısın",
+    "misin"
+   ],
+   "answer": 0,
+   "es": "Are you a doctor?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Onlar asker",
+   "after": ".",
+   "options": [
+    "değiller",
+    "değilim",
+    "yok"
+   ],
+   "answer": 0,
+   "es": "They aren’t soldiers."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Ben Türk",
+   "after": ".",
+   "options": [
+    "değilim",
+    "değil",
+    "yokum"
+   ],
+   "answer": 0,
+   "es": "I’m not Turkish."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Kampta elektrik",
+   "after": ".",
+   "options": [
+    "yok",
+    "değil",
+    "mı"
+   ],
+   "answer": 0,
+   "es": "There is no electricity in the camp."
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "Is there water?",
+   "options": [
+    "Su var mı?",
+    "Su mı var?",
+    "Su değil mi?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "üç",
+     "3"
+    ],
+    [
+     "yedi",
+     "7"
+    ],
+    [
+     "on",
+     "10"
+    ],
+    [
+     "kırk",
+     "40"
+    ],
+    [
+     "yüz",
+     "100"
+    ]
+   ]
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "forty-two",
+   "options": [
+    "kırk iki",
+    "iki kırk",
+    "kırk ikiler"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "Who are they? They are rebels.",
+   "answer": [
+    "Onlar",
+    "kim",
+    "Onlar",
+    "asiler"
+   ],
+   "extra": [
+    "ne",
+    "bu"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Kampta kaç kişi var?",
+   "es": "How many people are there in the camp?",
+   "options": [
+    "Kırk iki kişi var.",
+    "On iki kişi var.",
+    "Yüz kişi var."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Rosa’nın arkadaşları asker.",
+   "answer": false,
+   "why": "«Asker değiller»: they are teachers, doctors, students."
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Kampta bir köpek var.",
+   "answer": true,
+   "why": "«Bir de köpek!»"
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "Who is this?",
+   "answers": [
+    "Bu kim?",
+    "Bu kim"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "houses (ev = house)",
+   "answers": [
+    "evler"
+   ]
+  }
+ ],
+ "keyboard": [
+  "ç",
+  "ğ",
+  "ı",
+  "İ",
+  "ö",
+  "ş",
+  "ü"
+ ]
+}
