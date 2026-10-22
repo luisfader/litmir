@@ -60,4 +60,5 @@ Los lectores pueden entrar con su cuenta de Google (botón «Entrar» arriba a l
 - **Con registro:** todo lo demás. Para cambiar el límite, editar `FREE_CHAPTERS` y `FREE_UNITS` en `index.html`.
 - El progreso (capítulos leídos, último capítulo, notas de tests y cursos) se guarda en la cuenta y se sincroniza entre dispositivos. Tema, tamaño de letra, volumen e idioma quedan en cada dispositivo.
 - Si Firebase no carga, nada queda bloqueado.
-- Ojo: el bloqueo está en la página. Los textos siguen en este repositorio público, así que alguien que los busque en GitHub puede leerlos.
+- Los capítulos 5+ y las unidades 4+ están **cifrados** en este repositorio (empiezan con `LITMIR-ENC1:`). La llave está en Firestore (`config/key`, campo `k`), que solo pueden leer los usuarios con sesión; la web descifra en el navegador.
+- **Al agregar capítulos o unidades nuevas:** agregarlos en texto normal, actualizar el `catalog.json` y ejecutar `LITMIR_KEY='<llave>' node tools/cifrar.mjs`. Cifra lo que corresponda y no toca lo ya cifrado (`--descifrar` hace lo contrario). La llave no está en el repositorio.

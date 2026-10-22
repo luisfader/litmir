@@ -920,9 +920,19 @@ function adultGate(n){
 /* Free without an account: the first FREE_CHAPTERS numbered chapters of each novel
    (prefaces and other labelled pages before chapter 5 too) and the first FREE_UNITS course units.
    window.lmAuth is set by the Firebase module: undefined = still checking, {user} = known,
-   {failed:true} = Firebase could not load (then nothing is locked, so readers are never stuck). */
+   {failed:true} = Firebase could not load (free pages keep working; locked ones show the gate). */
 const FREE_CHAPTERS = 4, FREE_UNITS = 3;
-const signedIn = () => !!(window.lmAuth && (window.lmAuth.user || window.lmAuth.failed));
+/* Chapters/units for registered readers are stored encrypted in the repository ("LITMIR-ENC1:" + base64).
+   The Firebase module decrypts them with the key that Firestore only gives to signed-in readers. */
+const ENC_MARK = "LITMIR-ENC1:";
+async function getText(url){
+  const r = await fetch(url); if (!r.ok) throw new Error(r.status);
+  const s = await r.text();
+  if (!s.startsWith(ENC_MARK)) return s;
+  if (!window.lmDecrypt) throw new Error("no key");
+  return window.lmDecrypt(s.slice(ENC_MARK.length).trim());
+}
+const signedIn = () => !!(window.lmAuth && window.lmAuth.user);
 const chapterLocked = (n, i) => chapterNo(n, i) > FREE_CHAPTERS;
 const unitLocked = u => u.n > FREE_UNITS;
 const LOGIN_T = {
@@ -1036,7 +1046,7 @@ async function reader(n, idx){
   if (c.type === "quiz") return lesson(n, i, c);
   app.innerHTML = `<div class="loading">…</div>`;
   let md = "";
-  try { const r = await fetch(`novels/${n.slug}/${c.file}`); if (!r.ok) throw 0; md = await r.text(); }
+  try { md = await getText(`novels/${n.slug}/${c.file}`); }
   catch(e) { md = "*—*"; }
   const num = chapterNo(n, i);
   const title = chapterTitle(n, c, num);
@@ -1184,7 +1194,7 @@ async function lesson(n, i, c, o = {}){
   const BASE = o.base || `novels/${n.slug}/`, BACK = o.back || `#/${n.slug}`, BACKT = o.backTitle || n.title, KEY = o.key || n.slug;
   const src = p => /^(novels|learn)\//.test(p) ? p : BASE + p;
   let data;
-  try { const r = await fetch(BASE + c.file); if (!r.ok) throw 0; data = await r.json(); }
+  try { data = JSON.parse(await getText(BASE + c.file)); }
   catch(e) { app.innerHTML = `<div class="empty">${esc(t("notFound"))}</div>`; return; }
   const T = Object.assign({}, LESSON_T, data.ui || {}), SPK = data.speak || "cs-CZ", LL = SPK.slice(0, 2);
   if (typeof T.ex === "string") { const f = T.ex; T.ex = k => f.replace("{n}", k); }
@@ -1592,7 +1602,7 @@ async function learnUnit(id, practice){
   if (practice) return lesson({slug: "learn/" + c.lang, title: c.title[lang]}, 1, {file: `practice.${h}.json`, title: u.title, label: `${u.level} · ${lt(h, "practice")}`},
     {base, back: `#/learn/${u.id}`, backTitle: backT, key: `learn/${c.lang}/${u.id}`});
   let md = "";
-  try { const r = await fetch(base + `theory.${h}.md`); if (!r.ok) throw 0; md = await r.text(); } catch(e) { md = "*—*"; }
+  try { md = await getText(base + `theory.${h}.md`); } catch(e) { md = "*—*"; }
   const nv = u.novel && catalog.novels.find(x => x.slug === u.novel);
   document.title = u.title + " — " + c.title[lang];
   app.innerHTML = `
@@ -1745,10 +1755,21 @@ async function upload(){
   catch (e) { console.error("LITMIR sync:", e); }
 }
 function authChanged(state){
-  window.lmAuth = state;
+  window.lmAuth = state; keyP = null;
   if (document.querySelector("[data-auth-dep]") && typeof window.route === "function") window.route();
 }
 window.lmSignIn = () => fb ? signIn() : null;
+let keyP = null;
+const b64 = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
+window.lmDecrypt = async data => {
+  if (!fb || !user) throw new Error("not signed in");
+  keyP = keyP || fb.getDoc(fb.doc(fb.db, "config", "key"))
+    .then(d => crypto.subtle.importKey("raw", b64(String(d.data().k).trim()), "AES-GCM", false, ["decrypt"]));
+  try {
+    const k = await keyP, b = b64(data);
+    return new TextDecoder().decode(await crypto.subtle.decrypt({ name:"AES-GCM", iv:b.slice(0, 12) }, k, b.slice(12)));
+  } catch (e) { keyP = null; console.error("LITMIR: no se pudo descifrar", e); throw e; }
+};
 window.lmSync = () => { if (!user || !ready) return; clearTimeout(timer); timer = setTimeout(upload, 1500); };
 addEventListener("pagehide", () => { if (timer) { clearTimeout(timer); upload(); } });
 
@@ -1775,7 +1796,7 @@ try {
   fb = { ...au, ...fs, auth: au.getAuth(app), db: fs.getFirestore(app) };
   fb.onAuthStateChanged(fb.auth, u => { user = u; draw(); authChanged({ user: u }); if (u) pull(); else ready = false; });
 } catch (e) { console.error("LITMIR: Firebase no disponible", e); authChanged({ user: null, failed: true }); }
-/* If Google cannot be reached at all, don't leave readers waiting on a locked page. */
+/* If Google cannot be reached at all, don't leave readers waiting on "…". */
 setTimeout(() => { if (window.lmAuth === undefined) authChanged({ user: null, failed: true }); }, 10000);
 </script>
 </body>
