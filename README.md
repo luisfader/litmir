@@ -43,3 +43,19 @@ Añadir `"adult": true` a la novela en `catalog.json`: aparece la marca 18+ y se
 ## Traducciones
 
 Si una novela existe en otro idioma, añadir `"translations": {"es": "slug-de-la-version-espanola"}`.
+
+## Pinterest
+
+`tools/pinterest.py` publica pines a partir del catálogo (sin dependencias, solo Python 3).
+Necesita `PINTEREST_ACCESS_TOKEN` (de una app en developers.pinterest.com, con `boards:read` y `pins:write`)
+y, opcionalmente, `PINTEREST_BOARD_ID`.
+
+```
+python3 tools/pinterest.py boards                       # ver tus tableros y su id
+python3 tools/pinterest.py novel la-corazonada          # pin con la portada y la sinopsis
+python3 tools/pinterest.py novels --lang es             # un pin por cada novela en español
+python3 tools/pinterest.py blog <slug>                  # pin de una entrada (necesita "image")
+python3 tools/pinterest.py pin --title ... --image ... --link ...
+```
+
+Añade `--dry-run` (antes del comando) para ver el pin sin publicarlo.
