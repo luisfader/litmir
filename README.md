@@ -1,6 +1,8 @@
 # Литературный мир — Robert Fader
 
-Sitio web para leer las novelas de Robert Fader. Cada idioma (RU, ES, IT, EN, DE, FR, TR, PT, CS, SR, EO, ISV, VO, IA) muestra solo las novelas escritas en ese idioma.
+Sitio web para leer las novelas de Robert Fader. Cada idioma (ES, IT, EN, DE, FR, TR, PT, CS, PL, SR, EO, ISV, VO, IA, LD) muestra solo las novelas escritas en ese idioma. El español es el idioma por defecto.
+
+**Las novelas en ruso están en otro sitio:** https://luisfader.github.io/litmir2/ (repositorio `luisfader/litmir2`), todo libre y sin registro. El botón «RU ↗» de la barra de idiomas lleva allí; los enlaces viejos a novelas rusas (`#/<novela-rusa>`) y `?lang=ru` redirigen solos (lista `RU_SLUGS` en `index.html`). En `translations`, un idioma que no está en este sitio (`"ru"`) enlaza al sitio ruso.
 
 ## Estructura
 

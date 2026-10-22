@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="ru">
+<html lang="es">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Литературный мир — Роберт Фадер</title>
-<meta name="description" content="Литературный мир — романы Роберта Фадера.">
+<title>Mundo literario — Robert Fader</title>
+<meta name="description" content="Mundo literario — las novelas de Robert Fader en muchos idiomas.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -43,6 +43,8 @@ header.top .wrap{display:flex;align-items:center;justify-content:space-between;g
 .brand{font-family:var(--display);font-size:24px;font-weight:600;text-decoration:none;letter-spacing:.01em;white-space:nowrap}
 .brand small{font-family:var(--sans);font-size:12px;color:var(--muted);font-weight:500;margin-left:8px;letter-spacing:.04em;text-transform:uppercase}
 .langs{display:flex;gap:2px;font-family:var(--sans);font-size:13px}
+.langs .other-site{padding:6px 7px;border-radius:6px;color:var(--muted);font-weight:600;letter-spacing:.04em;text-decoration:none;white-space:nowrap}
+.langs .other-site:hover{color:var(--accent)}
 /* Account (Google sign-in, progress sync) */
 .acct{position:relative;flex:none;font-family:var(--sans);font-size:13px}
 .acct:empty{display:none}
@@ -451,7 +453,7 @@ article.chapter h3{font-family:var(--sans);font-size:.72em;letter-spacing:.12em;
 <body>
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="#/" id="brand">Литературный мир<small>Robert Fader</small></a>
+    <a class="brand" href="#/" id="brand">Mundo literario<small>Robert Fader</small></a>
     <nav class="langs" id="langs" aria-label="Language"></nav>
     <div class="acct" id="acct"></div>
   </div>
@@ -585,7 +587,10 @@ function setupPredchuvstvieReflection(root) {
   };
 }
 
-const LANGS = ["ru","es","it","en","de","fr","tr","pt","cs","pl","sr","eo","isv","vo","ia","ld"];
+const LANGS = ["es","it","en","de","fr","tr","pt","cs","pl","sr","eo","isv","vo","ia","ld"];
+/* The novels are split in two sites: Russian (litmir2) and every other language (litmir). */
+const OTHER = { href: "https://luisfader.github.io/litmir2/", label: "RU ↗", title: "Русский — Литературный мир (romanos en ruso)" };
+const novelHref = (l, s) => LANGS.includes(l) ? "#/" + s : OTHER.href + "#/" + s;
 const LANG_NAMES = {ru:"Русский", es:"Español", it:"Italiano", en:"English", de:"Deutsch", fr:"Français", tr:"Türkçe", pt:"Português", cs:"Čeština", pl:"Polski", sr:"Српски", eo:"Esperanto", isv:"Medžuslovjansky", vo:"Volapük", ia:"Interlingua", ld:"Lingwa de Planeta"};
 const UI = {
   ld:{study:"Por lern sikin", studyNote:"Kitaba por lernisa de lingwa, kun material por studie.", wip:"En skriba", wipNote:"Se roman es ankor en skriba. Nove kapitels ve lai.", tag:"Romanes", hero:"Literatur-ney Mundo", sub:"Romanes de Robert Fader in Lingwa de Planeta. Lei li online sin paya.", author:"Robert Fader", start:"Begin lekti", cont:"Kontinui lekti", contents:"Konten", chapter:"Kapitel", prev:"Anterior", next:"Sekwen", back:"Oli romanes", empty:"Nul romanes in Lingwa de Planeta ankor.", foot:"© Robert Fader. Oli raitas es reservi.", chapters:n=>n+(n===1?" kapitel":" kapitels"), notFound:"Paja bu es findi.", also:"Se roman es anke availabel in otre lingwas:", adultT:"Solo por adulte jen", adultP:"Se roman konteni eksplicite escenas e es solo por jen ot 18 yar.", adultYes:"Me es 18 yar o pyu", adultNo:"Go bak"},
@@ -630,8 +635,12 @@ const store = {
   get(k,d){try{const v=localStorage.getItem("lm:"+k);return v===null?d:JSON.parse(v)}catch(e){return d}},
   set(k,v){try{localStorage.setItem("lm:"+k,JSON.stringify(v))}catch(e){} if (window.lmSync) window.lmSync(); }
 };
+const RU_SLUGS = ["dikij-chas", "dikij-chas-2", "dikij-chas-karnaval-razdora", "pokhititel-serdec", "rezonans-lyubvi", "rezonans-lyubvi-3-protiv-mraka", "vlyublennye-lebedi", "zvezdnyj-roman", "epicheskij-match", "anomalnyj-chas", "predchuvstvie", "predchuvstvie-2", "opasnoe-svidanie", "severnaya-lyubov", "tajna-semi-fader", "grustnyj-gorod", "prizrachnyj-poezd", "volny-lyubvi", "volny-lyubvi-krepost", "golos", "sny-i-zver", "venecianskaya-maska"];
+const ruSlug = h => RU_SLUGS.includes(decodeURIComponent(h.replace(/^#\/?/, "").split("/")[0] || ""));
+if (ruSlug(location.hash)) location.replace(OTHER.href + location.hash);
+else if (new URLSearchParams(location.search).get("lang") === "ru") location.replace(OTHER.href);
 let lang = new URLSearchParams(location.search).get("lang") || store.get("lang", null);
-if (!LANGS.includes(lang)) lang = LANGS.find(l => (navigator.language||"").toLowerCase().startsWith(l)) || "ru";
+if (!LANGS.includes(lang)) lang = LANGS.find(l => (navigator.language||"").toLowerCase().startsWith(l)) || "es";
 let catalog = null;
 const app = document.getElementById("app");
 const t = k => (UI[lang] || UI.en || UI.ru)[k];
@@ -812,8 +821,9 @@ function renderChrome(){
   document.documentElement.lang = lang;
   document.getElementById("brand").innerHTML = esc(t("hero")) + "<small>" + esc(t("author")) + "</small>";
   document.getElementById("foot").textContent = t("foot");
-  document.getElementById("langs").innerHTML = LANGS.map(l =>
-    `<button data-l="${l}" aria-pressed="${l===lang}" title="${LANG_NAMES[l]}">${l.toUpperCase()}</button>`).join("");
+  const other = `<a class="other-site" href="${OTHER.href}" title="${esc(OTHER.title)}">${esc(OTHER.label)}</a>`;
+  document.getElementById("langs").innerHTML = other + (LANGS.length > 1 ? LANGS.map(l =>
+    `<button data-l="${l}" aria-pressed="${l===lang}" title="${LANG_NAMES[l]}">${l.toUpperCase()}</button>`).join("") : "");
 }
 document.getElementById("langs").addEventListener("click", e => {
   const l = e.target.dataset && e.target.dataset.l; if (!l) return;
@@ -1076,7 +1086,7 @@ function novelPage(n){
   const done = store.get("done:"+n.slug, []);
   const last = store.get("last:"+n.slug, null);
   const firstStory = Math.max(1, chs.findIndex(c => !c.label) + 1);
-  const tr = Object.entries(n.translations || {}).map(([l, s]) => `<a href="#/${esc(s)}">${LANG_NAMES[l]}</a>`);
+  const tr = Object.entries(n.translations || {}).map(([l, s]) => `<a href="${esc(novelHref(l, s))}">${LANG_NAMES[l]}</a>`);
   app.innerHTML = `
   <section class="wrap novel">
     <div>${coverHTML(n)}</div>
@@ -1697,6 +1707,7 @@ function route(){
   const n = parts.length ? catalog.novels.find(x => x.slug === decodeURIComponent(parts[0])) : null;
   setSoundtrack(n && adultOk(n) ? n : null);
   if (!parts.length) return home();
+  if (!n && ruSlug(location.hash)) { location.href = OTHER.href + location.hash; return; }
   if (!n) { app.innerHTML = `<div class="empty">${esc(t("notFound"))}</div>`; return; }
   if (!adultOk(n)) return adultGate(n);
   if (parts[1] === "progreso") return progressPage(n);
