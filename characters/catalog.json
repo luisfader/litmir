@@ -420,7 +420,8 @@
         "sr",
         "it",
         "ru",
-        "pl"
+        "pl",
+        "tr"
       ],
       "role": "Superviviente de Utopía, marcada por las pérdidas de la guerra.",
       "novels": [
@@ -428,7 +429,8 @@
         "presentimento",
         "predchuvstvie",
         "predchuvstvie-2",
-        "przeczucie"
+        "przeczucie",
+        "col-gulu"
       ],
       "localizations": {
         "sr": {
@@ -450,6 +452,10 @@
         "pl": {
           "name": "Sasza",
           "description": "Była sierżant z białą blizną przez całą twarz. Straciła męża i syna. Przychodzi, bo usłyszała w radiu wiolonczelę Natalii, i od pierwszego dnia dowodzi obroną Naszej Utopii."
+        },
+        "tr": {
+          "name": "Saşa",
+          "description": "Kalenin hesap defterlerini tutan, suyu ve ilaçları titizlikle paylaştıran sakin kadın. Savaşta bile soğukkanlılığını kaybetmez ve sonunda Kennet ile evlenir."
         }
       }
     },
@@ -1404,13 +1410,15 @@
       "name": "Kennet",
       "langs": [
         "it",
-        "ru"
+        "ru",
+        "tr"
       ],
       "role": "Fugitivo de la Central que se une a Utopía.",
       "novels": [
         "presentimento",
         "predchuvstvie",
-        "predchuvstvie-2"
+        "predchuvstvie-2",
+        "col-gulu"
       ],
       "localizations": {
         "it": {
@@ -1420,6 +1428,10 @@
         "ru": {
           "name": "Кеннет",
           "description": "Высокий и крепкий молодой человек из Великобритании, сильный, но добрый. Защищает Утопию с башни и влюбляется в певицу Оксану."
+        },
+        "tr": {
+          "name": "Kennet",
+          "description": "Kumun içinde yarı gömülü, susuzluktan ölmek üzereyken Robert'in bulduğu iri, dolap gibi geniş omuzlu adam. Kalenin en güçlü savunucusu olur ve baharın ilk günü Saşa ile evlenir."
         }
       }
     },
@@ -1428,13 +1440,15 @@
       "name": "Oxana (Utopía)",
       "langs": [
         "it",
-        "ru"
+        "ru",
+        "tr"
       ],
       "role": "Habitante de Utopía entre Kennet y Robert.",
       "novels": [
         "presentimento",
         "predchuvstvie",
-        "predchuvstvie-2"
+        "predchuvstvie-2",
+        "col-gulu"
       ],
       "localizations": {
         "it": {
@@ -1444,6 +1458,10 @@
         "ru": {
           "name": "Оксана",
           "description": "Элегантная светловолосая певица с голубыми глазами, которая выступала для состоятельных людей. Приходит в Утопию с миром и музыкой и сближается с Кеннетом."
+        },
+        "tr": {
+          "name": "Oksana",
+          "description": "Kaleye şarkılarıyla gelen şarkıcı. Akşamları kuzey kulesinde Kennet'ten takımyıldızları dinler; sonunda «Sen Benim Kalemsin» şarkısını ithaf edebileceği birini, Tomás'ı bulur."
         }
       }
     },
@@ -2786,16 +2804,22 @@
       "id": "martin-utopia",
       "name": "Martín (Utopía)",
       "langs": [
-        "ru"
+        "ru",
+        "tr"
       ],
       "role": "Miembro de Utopía que acaba expulsado.",
       "novels": [
-        "predchuvstvie"
+        "predchuvstvie",
+        "col-gulu"
       ],
       "localizations": {
         "ru": {
           "name": "Мартин",
           "description": "Случайно примкнувший к Нашей Утопии боец с ракетницей. Вопреки воле Роберта бьёт по дикарям, плетёт интриги с Жени и в итоге изгнан."
+        },
+        "tr": {
+          "name": "Martin",
+          "description": "Dövüş sanatlarında usta, çabuk karar veren ama çabuk da öfkelenen eski asker. Vahşileri hor görür, gizlice Nekroloji ile anlaşır ve kalenin kapılarını düşmana açmaya çalışır."
         }
       }
     },
@@ -2803,16 +2827,22 @@
       "id": "zhenya",
       "name": "Zhenia",
       "langs": [
-        "ru"
+        "ru",
+        "tr"
       ],
       "role": "Intrigante que divide Utopía.",
       "novels": [
-        "predchuvstvie"
+        "predchuvstvie",
+        "col-gulu"
       ],
       "localizations": {
         "ru": {
           "name": "Жени",
           "description": "Её слова завораживают людей. Вносит разлад в Утопию и уводит за собой четверть жителей."
+        },
+        "tr": {
+          "name": "Jeni",
+          "description": "Kısa siyah saçlı, keskin hatlı, her konuşmayı kendi lehine çevirmeyi bilen kadın. Robert'e karşı entrika çevirir; ihanetinden sonra bir haftalık su ve yiyecekle kaleden çıkarılır."
         }
       }
     },
@@ -2861,12 +2891,14 @@
       "name": "Samuel",
       "langs": [
         "ru",
-        "pl"
+        "pl",
+        "tr"
       ],
       "role": "Líder de los salvajes.",
       "novels": [
         "predchuvstvie",
-        "przeczucie"
+        "przeczucie",
+        "col-gulu"
       ],
       "localizations": {
         "ru": {
@@ -2876,6 +2908,10 @@
         "pl": {
           "name": "Samuel",
           "description": "Przywódca Dzikich. Na jego ciężarówce jest namalowany biały wilk. Chce zabrać Naszą Utopię — i wiolonczelistkę."
+        },
+        "tr": {
+          "name": "Samuel",
+          "description": "Runik işaretli, kas yığını gibi iri vahşilerin lideri. Kanyonda Robert'e saldırır, ama Rosa'nın kurşunuyla yaralanıp kaçar."
         }
       }
     },
@@ -3575,6 +3611,74 @@
         "ru": {
           "name": "Зверь",
           "description": "Гигантская тёмная масса с глазами, похожими на разбитые прожекторы, сотканная из миллионов украденных подсознаний."
+        }
+      }
+    },
+    {
+      "id": "rosa",
+      "name": "Rosa",
+      "langs": [
+        "tr"
+      ],
+      "role": "Líder de los rebeldes del cañón y amor de Robert en Çöl Gülü.",
+      "novels": [
+        "col-gulu"
+      ],
+      "localizations": {
+        "tr": {
+          "name": "Rosa",
+          "description": "Kanyondaki asilerin lideri; rüzgârda uçuşan örgüsüyle atının üzerinde Robert'i vahşilerden kurtarır. Nekroloji'nin yeraltı cennetinden kaçan işçilerin yanında savaşır, Robert ile birlikte turkuaz kaleyi kurar. Aşkın inşa edilmediğine, çöl gülü gibi kendiliğinden açtığına inanır."
+        }
+      }
+    },
+    {
+      "id": "anselmo",
+      "name": "Anselmo",
+      "langs": [
+        "tr"
+      ],
+      "role": "Veterinario anciano de la comunidad.",
+      "novels": [
+        "col-gulu"
+      ],
+      "localizations": {
+        "tr": {
+          "name": "Anselmo",
+          "description": "Kanyondaki toplumun yaşlı veterineri. Seraları yönetir, uyku ilacıyla kaleyi kurtarma planına katılır ve Kennet ile Saşa'nın nikâhını kıyar: «Ben bir veterinerim, ama insanlar da hayvandır.»"
+        }
+      }
+    },
+    {
+      "id": "tomas",
+      "name": "Tomás",
+      "langs": [
+        "tr"
+      ],
+      "role": "Rebelde valiente que acaba con Oksana.",
+      "novels": [
+        "col-gulu"
+      ],
+      "localizations": {
+        "tr": {
+          "name": "Tomás",
+          "description": "Rosa'nın asilerinden cesur bir adam. Kanlar içinde, elinde bir tırpanla üç vahşiye karşı tek başına direnir; kaleyi kurtarmak için insanları kapı kapı dolaşıp meydana çağırır. Sonunda Oksana'nın kalbini kazanır."
+        }
+      }
+    },
+    {
+      "id": "juan-salvaje",
+      "name": "Juan",
+      "langs": [
+        "tr"
+      ],
+      "role": "Jefe de los salvajes tras Samuel, aliado de Necrología.",
+      "novels": [
+        "col-gulu"
+      ],
+      "localizations": {
+        "tr": {
+          "name": "Juan",
+          "description": "Kemik kolyeli vahşi şef. Samuel'den sonra vahşileri sarı yılan bayrağı altında toplar, Nekroloji ile ittifak kurar ve dev bir orduyla kaleye saldırır; yenilince bir avuç adamıyla gecenin içinde kaybolur."
         }
       }
     }
