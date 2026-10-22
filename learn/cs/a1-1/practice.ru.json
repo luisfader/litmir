@@ -2,7 +2,7 @@
  "title": "Ahoj! Já jsem Jana",
  "subtitle": "Приветствия, знакомство, местоимения и глагол BÝT.",
  "speak": "cs-CZ",
- "hero": "novels/podzemni-tajemstvi/cover.jpg",
+ "hero": "learn/cs/a1-1/image.jpg",
  "hearts": 5,
  "ui": {
   "start": "Начать",

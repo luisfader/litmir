@@ -456,6 +456,7 @@ article.chapter h3{font-family:var(--sans);font-size:.72em;letter-spacing:.12em;
 .lr-cta p{margin:0 0 14px;text-align:center}
 .lr-cta .ls-btn{display:inline-block;text-decoration:none}
 .lr-unit .pill{margin-left:6px}
+.lr-unit img{object-position:50% 28%}
 .lr-soon{padding:8px 0 0}
 .lr-test{border-color:var(--accent)}
 </style>
@@ -1711,7 +1712,7 @@ async function learnHome(){
     ${c.units.map(u => {
       const best = store.get("quiz:learn/" + c.lang + "/" + u.id, null);
       return `<a class="post-card has-img lr-unit" href="#/learn/${esc(u.id)}">
-        <img src="${esc(((u.novel && catalog.novels.find(x => x.slug === u.novel)) || {}).cover || u.cover)}" alt="" loading="lazy">
+        <img src="${esc(u.image || ((u.novel && catalog.novels.find(x => x.slug === u.novel)) || {}).cover || u.cover)}" alt="" loading="lazy">
         <span class="date">${!signedIn() && unitLocked(u, c) ? '<span class="lock" aria-hidden="true">🔒</span> ' : ""}${esc(u.level)} · ${esc(lt(h, "unit"))} ${u.n}${best ? ` <span class="pill study">✔ ${esc(lt(h, "done"))} · ${best.acc}%</span>` : ""}</span>
         <h3>${esc(u.title)}</h3>
         <p>${esc(u.sub[h] || "")}</p>

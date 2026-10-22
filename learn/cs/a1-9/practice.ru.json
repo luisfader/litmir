@@ -2,7 +2,7 @@
  "title": "Kolik stojí ta sukně?",
  "subtitle": "Покупки, числа от 100, кроны, цвета, одежда, tenhle / tahle / tohle.",
  "speak": "cs-CZ",
- "hero": "novels/podzemni-tajemstvi/cover.jpg",
+ "hero": "learn/cs/a1-9/image.jpg",
  "hearts": 5,
  "ui": {
   "start": "Начать",

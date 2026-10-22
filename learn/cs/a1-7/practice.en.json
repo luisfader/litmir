@@ -2,7 +2,7 @@
  "title": "Musíme najít Janu!",
  "subtitle": "Chtít, moct, muset, umět, vědět or znát.",
  "speak": "cs-CZ",
- "hero": "novels/podzemni-tajemstvi/cover.jpg",
+ "hero": "learn/cs/a1-7/image.jpg",
  "hearts": 5,
  "ui": {
   "start": "Start",

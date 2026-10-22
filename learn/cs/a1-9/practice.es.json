@@ -2,7 +2,7 @@
  "title": "Kolik stojí ta sukně?",
  "subtitle": "De compras: los números desde 100, las coronas, los colores, la ropa, tenhle / tahle / tohle.",
  "speak": "cs-CZ",
- "hero": "novels/podzemni-tajemstvi/cover.jpg",
+ "hero": "learn/cs/a1-9/image.jpg",
  "hearts": 5,
  "ui": {
   "start": "Empezar",

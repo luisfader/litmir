@@ -2,7 +2,7 @@
  "title": "Jedeme na Karlštejn",
  "subtitle": "Jít or jet, transport, kde or kam, do / na / k, asking the way.",
  "speak": "cs-CZ",
- "hero": "novels/predtucha/cover.jpg",
+ "hero": "learn/cs/a1-8/image.jpg",
  "hearts": 5,
  "ui": {
   "start": "Start",

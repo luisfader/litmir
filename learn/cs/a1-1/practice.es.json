@@ -2,7 +2,7 @@
  "title": "Ahoj! Já jsem Jana",
  "subtitle": "Saludos, presentaciones, pronombres y el verbo BÝT.",
  "speak": "cs-CZ",
- "hero": "novels/podzemni-tajemstvi/cover.jpg",
+ "hero": "learn/cs/a1-1/image.jpg",
  "hearts": 5,
  "ui": {
   "start": "Empezar",

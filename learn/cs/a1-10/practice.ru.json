@@ -2,7 +2,7 @@
  "title": "Zítra bude pršet",
  "subtitle": "Будущее время, погода, месяцы и даты. Итог уровня A1.",
  "speak": "cs-CZ",
- "hero": "novels/podzemni-tajemstvi/cover.jpg",
+ "hero": "learn/cs/a1-10/image.jpg",
  "hearts": 5,
  "ui": {
   "start": "Начать",

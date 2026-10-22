@@ -2,7 +2,7 @@
  "title": "Jedeme na Karlštejn",
  "subtitle": "Jít или jet, транспорт, kde или kam, do / na / k, как пройти.",
  "speak": "cs-CZ",
- "hero": "novels/predtucha/cover.jpg",
+ "hero": "learn/cs/a1-8/image.jpg",
  "hearts": 5,
  "ui": {
   "start": "Начать",

@@ -776,7 +776,8 @@
       "es": "Saludos, presentaciones, ty y vy, el verbo BÝT, nacionalidades"
      },
      "cover": "novels/podzemni-tajemstvi/cover.jpg",
-     "novel": "podzemni-tajemstvi"
+     "novel": "podzemni-tajemstvi",
+     "image": "learn/cs/a1-1/image.jpg"
     },
     {
      "id": "a1-2",
@@ -789,7 +790,8 @@
       "es": "Profesiones, tres tipos de verbos, el NE- pegado, idiomas, números y edad"
      },
      "cover": "novels/podzemni-tajemstvi/cover.jpg",
-     "novel": "podzemni-tajemstvi"
+     "novel": "podzemni-tajemstvi",
+     "image": "learn/cs/a1-2/image.jpg"
     },
     {
      "id": "a1-3",
@@ -802,7 +804,8 @@
       "es": "La familia, el verbo MÍT, el género (ten / ta / to), posesivos, adjetivos"
      },
      "cover": "novels/podzemni-tajemstvi/cover.jpg",
-     "novel": "podzemni-tajemstvi"
+     "novel": "podzemni-tajemstvi",
+     "image": "learn/cs/a1-3/image.jpg"
     },
     {
      "id": "a1-4",
@@ -815,7 +818,8 @@
       "es": "KDE JE…? El locativo después de V / NA, preposiciones de lugar, la ciudad"
      },
      "cover": "novels/podzemni-tajemstvi/cover.jpg",
-     "novel": "podzemni-tajemstvi"
+     "novel": "podzemni-tajemstvi",
+     "image": "learn/cs/a1-4/image.jpg"
     },
     {
      "id": "a1-5",
@@ -828,7 +832,8 @@
       "es": "La hora, los verbos reflexivos SE / SI, los días de la semana, la frecuencia"
      },
      "cover": "novels/podzemni-tajemstvi/cover.jpg",
-     "novel": "podzemni-tajemstvi"
+     "novel": "podzemni-tajemstvi",
+     "image": "learn/cs/a1-5/image.jpg"
     },
     {
      "id": "a1-6",
@@ -841,7 +846,8 @@
       "es": "Comida y bebida, el acusativo, MÍT RÁD / CHUTNAT, en la cafetería"
      },
      "cover": "novels/podzemni-tajemstvi/cover.jpg",
-     "novel": "podzemni-tajemstvi"
+     "novel": "podzemni-tajemstvi",
+     "image": "learn/cs/a1-6/image.jpg"
     },
     {
      "id": "a1-7",
@@ -854,7 +860,8 @@
       "es": "CHTÍT, MOCT, MUSET, UMĚT, VĚDĚT o ZNÁT"
      },
      "cover": "novels/podzemni-tajemstvi/cover.jpg",
-     "novel": "podzemni-tajemstvi"
+     "novel": "podzemni-tajemstvi",
+     "image": "learn/cs/a1-7/image.jpg"
     },
     {
      "id": "a1-8",
@@ -867,7 +874,8 @@
       "es": "JÍT o JET, los transportes, KDE o KAM, preguntar el camino"
      },
      "cover": "novels/predtucha/cover.jpg",
-     "novel": "predtucha"
+     "novel": "predtucha",
+     "image": "learn/cs/a1-8/image.jpg"
     },
     {
      "id": "a1-9",
@@ -880,7 +888,8 @@
       "es": "De compras: números desde 100, colores, ropa, TENHLE / TAHLE"
      },
      "cover": "novels/podzemni-tajemstvi/cover.jpg",
-     "novel": "podzemni-tajemstvi"
+     "novel": "podzemni-tajemstvi",
+     "image": "learn/cs/a1-9/image.jpg"
     },
     {
      "id": "a1-10",
@@ -893,7 +902,8 @@
       "es": "El futuro, el tiempo, los meses y las fechas. Repaso del A1"
      },
      "cover": "novels/podzemni-tajemstvi/cover.jpg",
-     "novel": "podzemni-tajemstvi"
+     "novel": "podzemni-tajemstvi",
+     "image": "learn/cs/a1-10/image.jpg"
     }
    ]
   },
