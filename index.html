@@ -43,6 +43,19 @@ header.top .wrap{display:flex;align-items:center;justify-content:space-between;g
 .brand{font-family:var(--display);font-size:24px;font-weight:600;text-decoration:none;letter-spacing:.01em;white-space:nowrap}
 .brand small{font-family:var(--sans);font-size:12px;color:var(--muted);font-weight:500;margin-left:8px;letter-spacing:.04em;text-transform:uppercase}
 .langs{display:flex;gap:2px;font-family:var(--sans);font-size:13px}
+/* Account (Google sign-in, progress sync) */
+.acct{position:relative;flex:none;font-family:var(--sans);font-size:13px}
+.acct:empty{display:none}
+.acct-btn{display:flex;align-items:center;gap:6px;border:1px solid var(--line);background:none;color:inherit;padding:5px 10px;border-radius:999px;cursor:pointer;font:inherit;font-weight:600;white-space:nowrap}
+.acct-btn:hover{border-color:var(--accent)}
+.acct-btn img,.acct-av{width:24px;height:24px;border-radius:50%;display:block}
+.acct-av{background:var(--accent);color:#fff;display:grid;place-items:center;font-weight:700}
+.acct-btn.me{padding:2px;border-radius:50%}
+.acct-menu{position:absolute;right:0;top:calc(100% + 8px);background:var(--bg);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);padding:12px;min-width:220px;z-index:20}
+.acct-menu p{margin:0 0 4px;font-weight:600}
+.acct-menu small{display:block;color:var(--muted);margin-bottom:10px;line-height:1.4}
+.acct-menu button{width:100%;border:1px solid var(--line);background:none;color:inherit;padding:7px;border-radius:8px;cursor:pointer;font:inherit}
+@media (max-width:720px){.acct-btn .acct-l{display:none}.acct-btn{padding:4px}}
 .langs button{border:0;background:none;padding:6px 7px;border-radius:6px;cursor:pointer;color:var(--muted);font-weight:600;letter-spacing:.04em}
 .langs button[aria-pressed="true"]{color:var(--accent);background:var(--accent-soft)}
 .langs button:hover{color:var(--ink)}
@@ -423,6 +436,7 @@ article.chapter h3{font-family:var(--sans);font-size:.72em;letter-spacing:.12em;
   <div class="wrap">
     <a class="brand" href="#/" id="brand">Литературный мир<small>Robert Fader</small></a>
     <nav class="langs" id="langs" aria-label="Language"></nav>
+    <div class="acct" id="acct"></div>
   </div>
 </header>
 <main id="app"><div class="loading">…</div></main>
@@ -442,7 +456,7 @@ function setupPredchuvstvieReflection(root) {
   const key = "predchuvstvie:reflection:v1";
   let saved = {};
   try { saved = JSON.parse(localStorage.getItem(key) || "{}"); } catch (_) {}
-  const save = () => { try { localStorage.setItem(key, JSON.stringify(saved)); } catch (_) {} };
+  const save = () => { try { localStorage.setItem(key, JSON.stringify(saved)); } catch (_) {} if (window.lmSync) window.lmSync(); };
   const answers = {17:true,18:false,19:true,20:true,21:false,22:true,23:false,24:true,25:false,26:true,27:true,28:true,29:false,30:false};
   const result = document.createElement("section");
   result.className = "reflection-result";
@@ -597,7 +611,7 @@ function plural(n,f){const a=n%10,b=n%100;return a===1&&b!==11?f[0]:a>=2&&a<=4&&
 
 const store = {
   get(k,d){try{const v=localStorage.getItem("lm:"+k);return v===null?d:JSON.parse(v)}catch(e){return d}},
-  set(k,v){try{localStorage.setItem("lm:"+k,JSON.stringify(v))}catch(e){}}
+  set(k,v){try{localStorage.setItem("lm:"+k,JSON.stringify(v))}catch(e){} if (window.lmSync) window.lmSync(); }
 };
 let lang = new URLSearchParams(location.search).get("lang") || store.get("lang", null);
 if (!LANGS.includes(lang)) lang = LANGS.find(l => (navigator.language||"").toLowerCase().startsWith(l)) || "ru";
@@ -937,7 +951,7 @@ function moduleProgress(n){
   const completed=modules.filter(m=>m.score!==null);
   const average=completed.length?Math.round(completed.reduce((v,m)=>v+m.score,0)/completed.length):null;
   const rows=modules.map((m,i)=>'<div style="display:flex;justify-content:space-between;align-items:center;gap:14px;padding:14px 0;border-top:1px solid var(--line)"><div><strong>Módulo '+(i+1)+': '+esc(m.title)+'</strong><div style="opacity:.8;font-size:.9em">'+(m.score===null?'Pendiente':('Mejor nota: '+m.score+' / 100'))+'</div></div><a class="btn ghost" href="#/'+esc(n.slug)+'/'+m.index+'">'+(m.score===null?'Empezar':'Repetir')+'</a></div>').join("");
-  return '<section class="study-progress" aria-label="Progreso de aprendizaje" style="margin:25px 0;padding:22px;border:1px solid var(--line);border-radius:16px;background:var(--accent-soft)"><h2>🎓 Mi progreso de español</h2><p><strong>'+completed.length+' de 4 módulos completados</strong> · Promedio actual: <strong>'+(average===null?'Pendiente':average+' / 100')+'</strong></p><div role="progressbar" aria-label="Módulos completados" aria-valuemin="0" aria-valuemax="4" aria-valuenow="'+completed.length+'" style="height:12px;background:var(--line);border-radius:12px;overflow:hidden;margin:15px 0 20px"><div style="height:100%;width:'+(completed.length*25)+'%;background:var(--accent)"></div></div>'+rows+'<p><strong>Nota general: '+(completed.length===4?average+' / 100':'Pendiente de completar los cuatro módulos')+'</strong></p><small>Las notas se guardan en este navegador y no se sincronizan entre dispositivos. La escritura requiere corrección del profesor.</small></section>';
+  return '<section class="study-progress" aria-label="Progreso de aprendizaje" style="margin:25px 0;padding:22px;border:1px solid var(--line);border-radius:16px;background:var(--accent-soft)"><h2>🎓 Mi progreso de español</h2><p><strong>'+completed.length+' de 4 módulos completados</strong> · Promedio actual: <strong>'+(average===null?'Pendiente':average+' / 100')+'</strong></p><div role="progressbar" aria-label="Módulos completados" aria-valuemin="0" aria-valuemax="4" aria-valuenow="'+completed.length+'" style="height:12px;background:var(--line);border-radius:12px;overflow:hidden;margin:15px 0 20px"><div style="height:100%;width:'+(completed.length*25)+'%;background:var(--accent)"></div></div>'+rows+'<p><strong>Nota general: '+(completed.length===4?average+' / 100':'Pendiente de completar los cuatro módulos')+'</strong></p><small>Las notas se guardan en este navegador. Si entras con Google, también se guardan en tu cuenta y las ves en todos tus dispositivos. La escritura requiere corrección del profesor.</small></section>';
 }
 function progressPage(n){
   if(n.slug!=="el-tren-fantasma") return novelPage(n);
@@ -1606,6 +1620,114 @@ Promise.all([fetch("novels/catalog.json", {cache:"no-cache"}).then(r => r.json()
   addEventListener("scroll", hide, {passive:true});
   addEventListener("resize", hide);
 })();
+</script>
+<script type="module">
+/* Google sign-in (Firebase Auth) + reading progress synced to Firestore: users/{uid}.progress
+   Progress = the localStorage keys the site already uses ("lm:*" and "predchuvstvie:*").
+   Device preferences (theme, font size, volume, language) stay per device. */
+const V = "10.12.2", G = "https://www.gstatic.com/firebasejs/" + V + "/";
+const firebaseConfig = {
+  apiKey: "AIzaSyA_cOX71on5MemOMKirB6Nnleu8iAQfzDQ",
+  authDomain: "litmir2026.firebaseapp.com",
+  projectId: "litmir2026",
+  storageBucket: "litmir2026.firebasestorage.app",
+  messagingSenderId: "72748100640",
+  appId: "1:72748100640:web:c050adc598a9f0a18a2045"
+};
+const ACCT_T = {
+  es:["Entrar","Cerrar sesión","Tu progreso de lectura se guarda en tu cuenta y lo ves en todos tus dispositivos."],
+  ru:["Войти","Выйти","Ваш прогресс чтения сохраняется в аккаунте и доступен на всех устройствах."],
+  en:["Sign in","Sign out","Your reading progress is saved to your account and available on all your devices."],
+  it:["Accedi","Esci","I tuoi progressi di lettura sono salvati nel tuo account, su tutti i dispositivi."],
+  de:["Anmelden","Abmelden","Dein Lesefortschritt wird in deinem Konto gespeichert – auf allen Geräten."],
+  fr:["Connexion","Déconnexion","Votre progression de lecture est enregistrée dans votre compte, sur tous vos appareils."],
+  tr:["Giriş","Çıkış","Okuma ilerlemeniz hesabınıza kaydedilir ve tüm cihazlarınızda görünür."],
+  pt:["Entrar","Sair","Seu progresso de leitura fica salvo na sua conta, em todos os seus dispositivos."],
+  cs:["Přihlásit","Odhlásit","Váš postup ve čtení se ukládá do účtu a uvidíte ho na všech zařízeních."],
+  sr:["Пријава","Одјава","Ваш напредак у читању чува се на налогу и видите га на свим уређајима."],
+  eo:["Ensaluti","Elsaluti","Via lega progreso konserviĝas en via konto, en ĉiuj viaj aparatoj."],
+  ia:["Entrar","Exir","Tu progresso de lectura es salvate in tu conto, in tote tu apparatos."]
+};
+const tr = i => (ACCT_T[document.documentElement.lang] || ACCT_T.en)[i];
+const DEVICE_ONLY = new Set(["lm:theme","lm:size","lm:vol","lm:lang"]);
+const isProgress = k => (k.startsWith("lm:") || k.startsWith("predchuvstvie:")) && !DEVICE_ONLY.has(k);
+const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+
+function snapshot(){
+  const o = {};
+  try { for (let i = 0; i < localStorage.length; i++) { const k = localStorage.key(i); if (isProgress(k)) o[k] = localStorage.getItem(k); } } catch (_) {}
+  return o;
+}
+/* Combine two saved values so nothing is lost: lists are joined, the higher score wins. */
+function mergeVal(a, b){
+  let x, y; try { x = JSON.parse(a); y = JSON.parse(b); } catch (_) { return a; }
+  if (Array.isArray(x) && Array.isArray(y)) return JSON.stringify([...new Set([...x, ...y])]);
+  if (typeof x === "number" && typeof y === "number") return JSON.stringify(Math.max(x, y));
+  if (x && y && typeof x === "object" && typeof y === "object") {
+    if ("xp" in x && "xp" in y) return (y.xp > x.xp || (y.xp === x.xp && (y.acc || 0) > (x.acc || 0))) ? b : a;
+    return JSON.stringify(Object.assign({}, y, x));
+  }
+  return a;
+}
+
+const box = document.getElementById("acct");
+let user = null, fb = null, timer = null, ready = false;
+
+function draw(){
+  if (!box) return;
+  if (!user) {
+    box.innerHTML = `<button class="acct-btn" id="acctIn" title="${esc(tr(2))}"><svg width="16" height="16" viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.6 20.1H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.6-.4-3.9z"/><path fill="#FF3D00" d="m6.3 14.7 6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-7.9l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.1H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.6-.4-3.9z"/></svg><span class="acct-l">${esc(tr(0))}</span></button>`;
+    box.querySelector("#acctIn").onclick = signIn;
+  } else {
+    const name = user.displayName || user.email || "";
+    const av = user.photoURL ? `<img src="${esc(user.photoURL)}" alt="" referrerpolicy="no-referrer">` : `<span class="acct-av">${esc((name[0] || "?").toUpperCase())}</span>`;
+    box.innerHTML = `<button class="acct-btn me" id="acctMe" aria-expanded="false" title="${esc(name)}">${av}</button>
+      <div class="acct-menu" id="acctMenu" hidden><p>${esc(name)}</p><small>${esc(tr(2))}</small><button id="acctOut">${esc(tr(1))}</button></div>`;
+    const menu = box.querySelector("#acctMenu"), me = box.querySelector("#acctMe");
+    me.onclick = e => { e.stopPropagation(); menu.hidden = !menu.hidden; me.setAttribute("aria-expanded", String(!menu.hidden)); };
+    box.querySelector("#acctOut").onclick = () => fb.signOut(fb.auth);
+  }
+}
+document.addEventListener("click", e => { const m = document.getElementById("acctMenu"); if (m && box && !box.contains(e.target)) m.hidden = true; });
+/* Redraw the labels when the reader switches language. */
+new MutationObserver(draw).observe(document.documentElement, { attributes:true, attributeFilter:["lang"] });
+
+async function signIn(){
+  try { await fb.signInWithPopup(fb.auth, new fb.GoogleAuthProvider()); }
+  catch (e) { if (e && e.code !== "auth/popup-closed-by-user" && e.code !== "auth/cancelled-popup-request") { console.error(e); alert(e.message || e); } }
+}
+
+async function upload(){
+  if (!user || !ready) return;
+  try { await fb.setDoc(fb.doc(fb.db, "users", user.uid), { progress: JSON.stringify(snapshot()), updated: fb.serverTimestamp() }, { merge:true }); }
+  catch (e) { console.error("LITMIR sync:", e); }
+}
+window.lmSync = () => { if (!user || !ready) return; clearTimeout(timer); timer = setTimeout(upload, 1500); };
+addEventListener("pagehide", () => { if (timer) { clearTimeout(timer); upload(); } });
+
+async function pull(){
+  ready = false;
+  try {
+    const d = await fb.getDoc(fb.doc(fb.db, "users", user.uid));
+    const remote = d.exists() && d.data().progress ? JSON.parse(d.data().progress) : {};
+    const local = snapshot();
+    let changed = false;
+    for (const k in remote) {
+      const v = k in local ? mergeVal(local[k], remote[k]) : remote[k];
+      if (v !== local[k]) { try { localStorage.setItem(k, v); changed = true; } catch (_) {} }
+    }
+    ready = true;
+    if (changed && typeof window.route === "function") window.route();
+    upload();
+  } catch (e) { console.error("LITMIR sync:", e); ready = true; }
+}
+
+try {
+  const [a, au, fs] = await Promise.all([import(G + "firebase-app.js"), import(G + "firebase-auth.js"), import(G + "firebase-firestore.js")]);
+  const app = a.initializeApp(firebaseConfig);
+  fb = { ...au, ...fs, auth: au.getAuth(app), db: fs.getFirestore(app) };
+  fb.onAuthStateChanged(fb.auth, u => { user = u; draw(); if (u) pull(); else ready = false; });
+} catch (e) { console.error("LITMIR: Firebase no disponible", e); }
 </script>
 </body>
 </html>
