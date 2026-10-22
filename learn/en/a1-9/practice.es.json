@@ -1,0 +1,270 @@
+{
+ "title": "How much is it?",
+ "subtitle": "Compras, números desde 100, colores, ropa, this / that / these / those, Present Continuous.",
+ "speak": "en-GB",
+ "hero": "novels/a-man-from-the-future/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Empezar",
+  "check": "Comprobar",
+  "next": "Continuar",
+  "skip": "No lo sé",
+  "retry": "Intentar de nuevo",
+  "again": "Repetir la unidad",
+  "back": "Volver a la unidad",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Respuesta correcta:",
+  "almost": "¡Casi! Fijate en los acentos:",
+  "done": "¡Unidad completada!",
+  "lost": "Te quedaste sin corazones",
+  "lostP": "No pasa nada: cada error es una palabra nueva que ya conocés un poco mejor.",
+  "xp": "XP total",
+  "acc": "Precisión",
+  "time": "Tiempo",
+  "ex": "{n} ejercicios",
+  "min": "≈ 7 minutos",
+  "hearts": "corazones",
+  "best": "Tu mejor resultado",
+  "tap": "Tocá las palabras en orden",
+  "type": "Escribí acá…",
+  "perfect": "¡Ni un solo error!",
+  "good": "¡Muy buen trabajo!",
+  "ok": "¡Bien hecho! Repetí la unidad para mejorar tu precisión.",
+  "sound": "Sonido",
+  "listen": "Escuchar",
+  "meaning": "Significa:",
+  "yes": "Verdadero",
+  "no": "Falso",
+  "score": "Puntaje",
+  "level": "Tu nivel"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Uní los pares",
+   "pairs": [
+    [
+     "red",
+     "rojo"
+    ],
+    [
+     "blue",
+     "azul"
+    ],
+    [
+     "yellow",
+     "amarillo"
+    ],
+    [
+     "green",
+     "verde"
+    ],
+    [
+     "white",
+     "blanco"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "Three",
+   "after": "rubles.",
+   "options": [
+    "hundred",
+    "hundreds",
+    "hundred of"
+   ],
+   "answer": 0,
+   "es": "Trescientos rublos."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "",
+   "after": "is this shirt?",
+   "options": [
+    "How much",
+    "How many",
+    "How old"
+   ],
+   "answer": 0,
+   "es": "¿Cuánto cuesta esta camisa?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "",
+   "after": "shoes are very nice.",
+   "options": [
+    "These",
+    "This",
+    "That"
+   ],
+   "answer": 0,
+   "es": "Estos zapatos son muy lindos."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "Olga has a",
+   "after": "",
+   "options": [
+    "blue dress",
+    "dress blue",
+    "blues dress"
+   ],
+   "answer": 0,
+   "es": "Olga tiene un vestido azul."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "I’m",
+   "after": "for a shirt.",
+   "options": [
+    "looking",
+    "look",
+    "looks"
+   ],
+   "answer": 0,
+   "es": "Estoy buscando una camisa."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "She",
+   "after": "a blue dress.",
+   "options": [
+    "is wearing",
+    "wears now",
+    "wearing"
+   ],
+   "answer": 0,
+   "es": "Ella lleva un vestido azul."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "These jeans",
+   "after": "nice.",
+   "options": [
+    "are",
+    "is",
+    "be"
+   ],
+   "answer": 0,
+   "es": "Este jean es lindo.",
+   "why": "Jeans es plural."
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "Can I try it on?",
+   "options": [
+    "¿Me lo puedo probar?",
+    "¿Lo puedo comprar?",
+    "¿Lo puedo devolver?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "cheap",
+   "options": [
+    "barato",
+    "caro",
+    "lindo"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "¿Cómo se dice?",
+   "word": "dos mil quinientos",
+   "options": [
+    "two thousand five hundred",
+    "two thousands and five hundreds",
+    "twenty-five hundreds"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Traducí",
+   "es": "¿Cuánto cuesta?",
+   "answer": [
+    "How",
+    "much",
+    "is",
+    "it?"
+   ],
+   "extra": [
+    "many",
+    "are"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Elegí la respuesta correcta",
+   "question": "What colour is the time machine?",
+   "es": "¿De qué color es la máquina del tiempo?",
+   "options": [
+    "Red.",
+    "Blue.",
+    "Turquoise."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Elegí la respuesta correcta",
+   "question": "What is Olga wearing at dinner?",
+   "es": "¿Qué lleva puesto Olga en la cena?",
+   "options": [
+    "A blue dress.",
+    "A black suit.",
+    "A yellow sweater."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "¿Verdadero o falso?",
+   "statement": "Susan wears a bright yellow sweater.",
+   "answer": true,
+   "why": "Así va vestida a la cita en el café."
+  },
+  {
+   "type": "write",
+   "prompt": "Escribilo",
+   "es": "Me lo llevo.",
+   "answers": [
+    "I’ll take it.",
+    "I’ll take it",
+    "I'll take it.",
+    "I'll take it",
+    "I will take it.",
+    "I will take it"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Escribilo",
+   "es": "¿Cuánto cuesta?",
+   "answers": [
+    "How much is it?",
+    "How much is it",
+    "How much does it cost?",
+    "How much does it cost"
+   ]
+  }
+ ]
+}

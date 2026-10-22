@@ -90,8 +90,8 @@ Las nacionalidades en inglés se escriben **con mayúscula** y no cambian de gé
 | w | como «u» breve: «uat» | what, we |
 | h | una «j» muy suave | hello, how |
 | ee, ea | «i» larga | meet, please |
-| i (в слове I, Hi, nice) | «ai» | I, nice |
-| a (в name) | «ei» | name, later |
+| i (en I, Hi, nice) | «ai» | I, nice |
+| a (en name) | «ei» | name, later |
 
 ## 7. Para saber más
 

@@ -989,7 +989,8 @@ function adultGate(n){
 }
 
 /* Free without an account: the first FREE_CHAPTERS numbered chapters of each novel
-   (prefaces and other labelled pages before chapter 5 too) and the first FREE_UNITS course units.
+   (prefaces and other labelled pages before chapter 5 too) and the first FREE_UNITS course units
+   (courses marked "free" in learn/catalog.json are open in full).
    window.lmAuth is set by the Firebase module: undefined = still checking, {user} = known,
    {failed:true} = Firebase could not load (free pages keep working; locked ones show the gate). */
 const FREE_CHAPTERS = 4, FREE_UNITS = 3;
@@ -1005,7 +1006,7 @@ async function getText(url){
 }
 const signedIn = () => !!(window.lmAuth && window.lmAuth.user);
 const chapterLocked = (n, i) => chapterNo(n, i) > FREE_CHAPTERS;
-const unitLocked = u => u.n > FREE_UNITS;
+const unitLocked = (u, c) => !(c && c.free) && u.n > FREE_UNITS;
 const LOGIN_T = {
   es:["Entra para seguir leyendo","Lo que sigue es para lectores registrados. Registrarse con Google es gratis y tu progreso se guarda en todos tus dispositivos.","Entrar con Google","Volver"],
   ru:["Войдите, чтобы читать дальше","Продолжение доступно зарегистрированным читателям. Вход через Google бесплатный, а ваш прогресс сохраняется на всех устройствах.","Войти через Google","Вернуться"],
@@ -1655,7 +1656,7 @@ async function learnHome(){
       const best = store.get("quiz:learn/" + c.lang + "/" + u.id, null);
       return `<a class="post-card has-img lr-unit" href="#/learn/${esc(u.id)}">
         <img src="${esc(((u.novel && catalog.novels.find(x => x.slug === u.novel)) || {}).cover || u.cover)}" alt="" loading="lazy">
-        <span class="date">${!signedIn() && unitLocked(u) ? '<span class="lock" aria-hidden="true">🔒</span> ' : ""}${esc(u.level)} · ${esc(lt(h, "unit"))} ${u.n}${best ? ` <span class="pill study">✔ ${esc(lt(h, "done"))} · ${best.acc}%</span>` : ""}</span>
+        <span class="date">${!signedIn() && unitLocked(u, c) ? '<span class="lock" aria-hidden="true">🔒</span> ' : ""}${esc(u.level)} · ${esc(lt(h, "unit"))} ${u.n}${best ? ` <span class="pill study">✔ ${esc(lt(h, "done"))} · ${best.acc}%</span>` : ""}</span>
         <h3>${esc(u.title)}</h3>
         <p>${esc(u.sub[h] || "")}</p>
         <span class="more">${esc(lt(h, "go"))}</span>
@@ -1672,7 +1673,7 @@ async function learnUnit(id, practice){
     return lesson({slug: "learn/" + c.lang, title: c.title[lang]}, 1, {file: `practice.${h}.json`, title: p.title[h], label: p.title[h]},
       {base: `learn/${c.lang}/${p.id}/`, back: "#/learn", backTitle: c.title[lang], key: `learn/${c.lang}/${p.id}`}); }
   if (!u) { app.innerHTML = `<div class="empty">${esc(t("notFound"))}</div>`; return; }
-  if (unitLocked(u) && !signedIn()) return loginGate("#/learn");
+  if (unitLocked(u, c) && !signedIn()) return loginGate("#/learn");
   const h = learnHelp(c), base = `learn/${c.lang}/${u.id}/`;
   const backT = `${lt(h, "unit")} ${u.n}: ${u.title}`;
   if (practice) return lesson({slug: "learn/" + c.lang, title: c.title[lang]}, 1, {file: `practice.${h}.json`, title: u.title, label: `${u.level} · ${lt(h, "practice")}`},

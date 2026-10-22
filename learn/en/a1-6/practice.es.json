@@ -1,0 +1,266 @@
+{
+ "title": "Coffee, please",
+ "subtitle": "Comida y bebida, some / any, contables e incontables, like / love / hate, en el café.",
+ "speak": "en-GB",
+ "hero": "novels/a-man-from-the-future/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Empezar",
+  "check": "Comprobar",
+  "next": "Continuar",
+  "skip": "No lo sé",
+  "retry": "Intentar de nuevo",
+  "again": "Repetir la unidad",
+  "back": "Volver a la unidad",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Respuesta correcta:",
+  "almost": "¡Casi! Fijate en los acentos:",
+  "done": "¡Unidad completada!",
+  "lost": "Te quedaste sin corazones",
+  "lostP": "No pasa nada: cada error es una palabra nueva que ya conocés un poco mejor.",
+  "xp": "XP total",
+  "acc": "Precisión",
+  "time": "Tiempo",
+  "ex": "{n} ejercicios",
+  "min": "≈ 7 minutos",
+  "hearts": "corazones",
+  "best": "Tu mejor resultado",
+  "tap": "Tocá las palabras en orden",
+  "type": "Escribí acá…",
+  "perfect": "¡Ni un solo error!",
+  "good": "¡Muy buen trabajo!",
+  "ok": "¡Bien hecho! Repetí la unidad para mejorar tu precisión.",
+  "sound": "Sonido",
+  "listen": "Escuchar",
+  "meaning": "Significa:",
+  "yes": "Verdadero",
+  "no": "Falso",
+  "score": "Puntaje",
+  "level": "Tu nivel"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Uní los pares",
+   "pairs": [
+    [
+     "bread",
+     "pan"
+    ],
+    [
+     "cheese",
+     "queso"
+    ],
+    [
+     "fish",
+     "pescado"
+    ],
+    [
+     "water",
+     "agua"
+    ],
+    [
+     "milk",
+     "leche"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "",
+   "after": "you like some tea?",
+   "options": [
+    "Would",
+    "Do",
+    "Are"
+   ],
+   "answer": 0,
+   "es": "¿Querés un té?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "I’d like",
+   "after": "coffee, please.",
+   "options": [
+    "a",
+    "an",
+    "any"
+   ],
+   "answer": 0,
+   "es": "Un café, por favor."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "Alex doesn’t have",
+   "after": "money.",
+   "options": [
+    "any",
+    "some",
+    "a"
+   ],
+   "answer": 0,
+   "es": "Alex no tiene plata."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "I’d like",
+   "after": "egg.",
+   "options": [
+    "an",
+    "a",
+    "some"
+   ],
+   "answer": 0,
+   "es": "Quisiera un huevo."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "I",
+   "after": "coffee.",
+   "options": [
+    "like",
+    "likes",
+    "am like"
+   ],
+   "answer": 0,
+   "es": "Me gusta el café."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "Olga loves",
+   "after": "",
+   "options": [
+    "reading",
+    "read",
+    "reads"
+   ],
+   "answer": 0,
+   "es": "A Olga le encanta leer."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "How",
+   "after": "money do you have?",
+   "options": [
+    "much",
+    "many",
+    "old"
+   ],
+   "answer": 0,
+   "es": "¿Cuánta plata tenés?"
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "This breakfast is on me.",
+   "options": [
+    "Este desayuno corre por mi cuenta.",
+    "Este desayuno está en la mesa.",
+    "Me como este desayuno."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "the bill",
+   "options": [
+    "la cuenta",
+    "el menú",
+    "la propina"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "¿Cómo se dice?",
+   "word": "Quisiera un café, por favor.",
+   "options": [
+    "I’d like a coffee, please.",
+    "I like a coffee, please.",
+    "I’d like an coffee, please."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Traducí",
+   "es": "¿Tenés efectivo?",
+   "answer": [
+    "Do",
+    "you",
+    "have",
+    "any",
+    "cash?"
+   ],
+   "extra": [
+    "some",
+    "are"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Elegí la respuesta correcta",
+   "question": "What does Alex order?",
+   "es": "¿Qué pide Alex?",
+   "options": [
+    "Coffee and a pastry.",
+    "Tea and a cake.",
+    "Soup and bread."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Elegí la respuesta correcta",
+   "question": "Why can’t Alex pay?",
+   "es": "¿Por qué Alex no puede pagar?",
+   "options": [
+    "His chip doesn’t work and he has no cash.",
+    "He doesn’t like the coffee.",
+    "The café is closed."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "¿Verdadero o falso?",
+   "statement": "In 3024 most meals come from food machines.",
+   "answer": true,
+   "why": "Por eso la factura de Olga lo deja sin palabras."
+  },
+  {
+   "type": "write",
+   "prompt": "Escribilo",
+   "es": "Odio el pescado.",
+   "answers": [
+    "I hate fish.",
+    "I hate fish"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Escribilo",
+   "es": "La cuenta, por favor.",
+   "answers": [
+    "The bill, please.",
+    "The bill, please",
+    "Can I have the bill, please?",
+    "Can I have the bill, please"
+   ]
+  }
+ ]
+}

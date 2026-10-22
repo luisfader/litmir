@@ -1,0 +1,268 @@
+{
+ "title": "A future together",
+ "subtitle": "Будущее с going to, погода, месяцы, даты. Итог уровня A1.",
+ "speak": "en-GB",
+ "hero": "novels/a-man-from-the-future/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 7 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "January",
+     "январь"
+    ],
+    [
+     "March",
+     "март"
+    ],
+    [
+     "June",
+     "июнь"
+    ],
+    [
+     "September",
+     "сентябрь"
+    ],
+    [
+     "December",
+     "декабрь"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "I’m",
+   "after": "stay in 2024.",
+   "options": [
+    "going to",
+    "go to",
+    "going"
+   ],
+   "answer": 0,
+   "es": "Я останусь в 2024 году."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Olga",
+   "after": "open a reading club.",
+   "options": [
+    "is going to",
+    "are going to",
+    "going to"
+   ],
+   "answer": 0,
+   "es": "Ольга собирается открыть читательский клуб."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Look at the sky. It’s going",
+   "after": "",
+   "options": [
+    "to rain",
+    "rain",
+    "raining"
+   ],
+   "answer": 0,
+   "es": "Посмотри на небо. Сейчас пойдёт дождь."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "",
+   "after": "cold today.",
+   "options": [
+    "It’s",
+    "Is",
+    "There is"
+   ],
+   "answer": 0,
+   "es": "Сегодня холодно."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Their first date is",
+   "after": "June the twenty-seventh.",
+   "options": [
+    "on",
+    "in",
+    "at"
+   ],
+   "answer": 0,
+   "es": "Их первое свидание — двадцать седьмого июня."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "My birthday is",
+   "after": "May.",
+   "options": [
+    "in",
+    "on",
+    "at"
+   ],
+   "answer": 0,
+   "es": "Мой день рождения в мае."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "",
+   "after": "you going to repair it?",
+   "options": [
+    "Are",
+    "Do",
+    "Will"
+   ],
+   "answer": 0,
+   "es": "Ты собираешься его чинить?"
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "It’s windy.",
+   "options": [
+    "Ветрено.",
+    "Солнечно.",
+    "Идёт снег."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "third",
+   "options": [
+    "третий",
+    "тридцать",
+    "три"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать на изучаемом языке?",
+   "word": "Завтра будет дождь.",
+   "options": [
+    "It’s going to rain tomorrow.",
+    "It going to rain tomorrow.",
+    "Is going to rain tomorrow."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите",
+   "es": "Что ты собираешься делать?",
+   "answer": [
+    "What",
+    "are",
+    "you",
+    "going",
+    "to",
+    "do?"
+   ],
+   "extra": [
+    "do",
+    "will"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "Does Olga want to live in 3024?",
+   "es": "Хочет ли Ольга жить в 3024 году?",
+   "options": [
+    "No. Her home is here.",
+    "Yes, with Alex.",
+    "Yes, with Pavel."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "What does Alex give Olga a year later?",
+   "es": "Что Алекс дарит Ольге через год?",
+   "options": [
+    "A ring.",
+    "A machine.",
+    "A map."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Olga says: «No time travel on our honeymoon.»",
+   "answer": true,
+   "why": "Так она отвечает на его предложение."
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Я собираюсь остаться.",
+   "answers": [
+    "I’m going to stay.",
+    "I’m going to stay",
+    "I'm going to stay.",
+    "I'm going to stay",
+    "I am going to stay.",
+    "I am going to stay"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "лето",
+   "answers": [
+    "summer"
+   ]
+  }
+ ]
+}

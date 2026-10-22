@@ -1,0 +1,268 @@
+{
+ "title": "A future together",
+ "subtitle": "El futuro con going to, el tiempo, meses, fechas. Repaso del A1.",
+ "speak": "en-GB",
+ "hero": "novels/a-man-from-the-future/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Empezar",
+  "check": "Comprobar",
+  "next": "Continuar",
+  "skip": "No lo sé",
+  "retry": "Intentar de nuevo",
+  "again": "Repetir la unidad",
+  "back": "Volver a la unidad",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Respuesta correcta:",
+  "almost": "¡Casi! Fijate en los acentos:",
+  "done": "¡Unidad completada!",
+  "lost": "Te quedaste sin corazones",
+  "lostP": "No pasa nada: cada error es una palabra nueva que ya conocés un poco mejor.",
+  "xp": "XP total",
+  "acc": "Precisión",
+  "time": "Tiempo",
+  "ex": "{n} ejercicios",
+  "min": "≈ 7 minutos",
+  "hearts": "corazones",
+  "best": "Tu mejor resultado",
+  "tap": "Tocá las palabras en orden",
+  "type": "Escribí acá…",
+  "perfect": "¡Ni un solo error!",
+  "good": "¡Muy buen trabajo!",
+  "ok": "¡Bien hecho! Repetí la unidad para mejorar tu precisión.",
+  "sound": "Sonido",
+  "listen": "Escuchar",
+  "meaning": "Significa:",
+  "yes": "Verdadero",
+  "no": "Falso",
+  "score": "Puntaje",
+  "level": "Tu nivel"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Uní los pares",
+   "pairs": [
+    [
+     "January",
+     "enero"
+    ],
+    [
+     "March",
+     "marzo"
+    ],
+    [
+     "June",
+     "junio"
+    ],
+    [
+     "September",
+     "septiembre"
+    ],
+    [
+     "December",
+     "diciembre"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "I’m",
+   "after": "stay in 2024.",
+   "options": [
+    "going to",
+    "go to",
+    "going"
+   ],
+   "answer": 0,
+   "es": "Me voy a quedar en 2024."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "Olga",
+   "after": "open a reading club.",
+   "options": [
+    "is going to",
+    "are going to",
+    "going to"
+   ],
+   "answer": 0,
+   "es": "Olga va a abrir un club de lectura."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "Look at the sky. It’s going",
+   "after": "",
+   "options": [
+    "to rain",
+    "rain",
+    "raining"
+   ],
+   "answer": 0,
+   "es": "Mirá el cielo. Va a llover."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "",
+   "after": "cold today.",
+   "options": [
+    "It’s",
+    "Is",
+    "There is"
+   ],
+   "answer": 0,
+   "es": "Hoy hace frío."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "Their first date is",
+   "after": "June the twenty-seventh.",
+   "options": [
+    "on",
+    "in",
+    "at"
+   ],
+   "answer": 0,
+   "es": "Su primera cita es el veintisiete de junio."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "My birthday is",
+   "after": "May.",
+   "options": [
+    "in",
+    "on",
+    "at"
+   ],
+   "answer": 0,
+   "es": "Mi cumpleaños es en mayo."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "",
+   "after": "you going to repair it?",
+   "options": [
+    "Are",
+    "Do",
+    "Will"
+   ],
+   "answer": 0,
+   "es": "¿Lo vas a arreglar?"
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "It’s windy.",
+   "options": [
+    "Hay viento.",
+    "Hay sol.",
+    "Está nevando."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "third",
+   "options": [
+    "tercero",
+    "treinta",
+    "tres"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "¿Cómo se dice?",
+   "word": "Mañana va a llover.",
+   "options": [
+    "It’s going to rain tomorrow.",
+    "It going to rain tomorrow.",
+    "Is going to rain tomorrow."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Traducí",
+   "es": "¿Qué vas a hacer?",
+   "answer": [
+    "What",
+    "are",
+    "you",
+    "going",
+    "to",
+    "do?"
+   ],
+   "extra": [
+    "do",
+    "will"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Elegí la respuesta correcta",
+   "question": "Does Olga want to live in 3024?",
+   "es": "¿Olga quiere vivir en 3024?",
+   "options": [
+    "No. Her home is here.",
+    "Yes, with Alex.",
+    "Yes, with Pavel."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Elegí la respuesta correcta",
+   "question": "What does Alex give Olga a year later?",
+   "es": "¿Qué le regala Alex a Olga un año después?",
+   "options": [
+    "A ring.",
+    "A machine.",
+    "A map."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "¿Verdadero o falso?",
+   "statement": "Olga says: «No time travel on our honeymoon.»",
+   "answer": true,
+   "why": "Así responde a la propuesta de casamiento."
+  },
+  {
+   "type": "write",
+   "prompt": "Escribilo",
+   "es": "Me voy a quedar.",
+   "answers": [
+    "I’m going to stay.",
+    "I’m going to stay",
+    "I'm going to stay.",
+    "I'm going to stay",
+    "I am going to stay.",
+    "I am going to stay"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Escribilo",
+   "es": "verano",
+   "answers": [
+    "summer"
+   ]
+  }
+ ]
+}

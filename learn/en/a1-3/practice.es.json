@@ -1,0 +1,264 @@
+{
+ "title": "Tom is my brother",
+ "subtitle": "La familia, have / has, posesivos, ’s, describir a una persona.",
+ "speak": "en-GB",
+ "hero": "novels/the-date/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Empezar",
+  "check": "Comprobar",
+  "next": "Continuar",
+  "skip": "No lo sé",
+  "retry": "Intentar de nuevo",
+  "again": "Repetir la unidad",
+  "back": "Volver a la unidad",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Respuesta correcta:",
+  "almost": "¡Casi! Fijate en los acentos:",
+  "done": "¡Unidad completada!",
+  "lost": "Te quedaste sin corazones",
+  "lostP": "No pasa nada: cada error es una palabra nueva que ya conocés un poco mejor.",
+  "xp": "XP total",
+  "acc": "Precisión",
+  "time": "Tiempo",
+  "ex": "{n} ejercicios",
+  "min": "≈ 7 minutos",
+  "hearts": "corazones",
+  "best": "Tu mejor resultado",
+  "tap": "Tocá las palabras en orden",
+  "type": "Escribí acá…",
+  "perfect": "¡Ni un solo error!",
+  "good": "¡Muy buen trabajo!",
+  "ok": "¡Bien hecho! Repetí la unidad para mejorar tu precisión.",
+  "sound": "Sonido",
+  "listen": "Escuchar",
+  "meaning": "Significa:",
+  "yes": "Verdadero",
+  "no": "Falso",
+  "score": "Puntaje",
+  "level": "Tu nivel"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Uní los pares",
+   "pairs": [
+    [
+     "brother",
+     "hermano"
+    ],
+    [
+     "sister",
+     "hermana"
+    ],
+    [
+     "mother",
+     "madre"
+    ],
+    [
+     "parents",
+     "padres"
+    ],
+    [
+     "daughter",
+     "hija"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "Frank",
+   "after": "a brother.",
+   "options": [
+    "has",
+    "have",
+    "is"
+   ],
+   "answer": 0,
+   "es": "Frank tiene un hermano."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "I",
+   "after": "a cat.",
+   "options": [
+    "have",
+    "has",
+    "am"
+   ],
+   "answer": 0,
+   "es": "Tengo un gato."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "",
+   "after": "you have a sister?",
+   "options": [
+    "Do",
+    "Does",
+    "Are"
+   ],
+   "answer": 0,
+   "es": "¿Tenés una hermana?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "Susan",
+   "after": "have brothers or sisters.",
+   "options": [
+    "doesn’t",
+    "don’t",
+    "isn’t"
+   ],
+   "answer": 0,
+   "es": "Susan no tiene hermanos."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "Tom loves",
+   "after": "mum.",
+   "options": [
+    "his",
+    "her",
+    "its"
+   ],
+   "answer": 0,
+   "es": "Tom quiere a su mamá."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "Susan loves",
+   "after": "cat.",
+   "options": [
+    "her",
+    "his",
+    "their"
+   ],
+   "answer": 0,
+   "es": "Susan quiere a su gato."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "This is",
+   "after": "smile.",
+   "options": [
+    "Tom’s",
+    "Tom",
+    "Toms"
+   ],
+   "answer": 0,
+   "es": "Esta es la sonrisa de Tom."
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "parents",
+   "options": [
+    "padres",
+    "parientes",
+    "hijos"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "¿Cómo se dice?",
+   "word": "pelo largo y negro",
+   "options": [
+    "long black hair",
+    "black long hair",
+    "hair long black"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Traducí",
+   "es": "Esta es mi familia.",
+   "answer": [
+    "This",
+    "is",
+    "my",
+    "family"
+   ],
+   "extra": [
+    "me",
+    "are"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Elegí la respuesta correcta",
+   "question": "What colour is Clara’s hair?",
+   "es": "¿De qué color es el pelo de Clara?",
+   "options": [
+    "It’s black.",
+    "It’s blonde.",
+    "It’s white."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Elegí la respuesta correcta",
+   "question": "Who has short blonde hair?",
+   "es": "¿Quién tiene el pelo corto y rubio?",
+   "options": [
+    "Nadia.",
+    "Clara.",
+    "Vanessa."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "¿Verdadero o falso?",
+   "statement": "Susan has a cat, Mr. Snuffles.",
+   "answer": true,
+   "why": "¡Eligió al gato y no a Derek!"
+  },
+  {
+   "type": "write",
+   "prompt": "Escribilo",
+   "es": "mi hermano",
+   "answers": [
+    "my brother"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Escribilo",
+   "es": "Ella tiene un gato.",
+   "answers": [
+    "She has a cat.",
+    "She has a cat",
+    "She’s got a cat.",
+    "She’s got a cat",
+    "She's got a cat.",
+    "She's got a cat",
+    "She has got a cat.",
+    "She has got a cat"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "¿Verdadero o falso?",
+   "statement": "Frank’s mum visits Tom’s grave every Sunday.",
+   "answer": true,
+   "why": "Así lo dice Frank en el capítulo nueve."
+  }
+ ]
+}

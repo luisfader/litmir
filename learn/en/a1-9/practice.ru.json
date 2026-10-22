@@ -1,0 +1,270 @@
+{
+ "title": "How much is it?",
+ "subtitle": "Покупки, числа от 100, цвета, одежда, this / that / these / those, Present Continuous.",
+ "speak": "en-GB",
+ "hero": "novels/a-man-from-the-future/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 7 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "red",
+     "красный"
+    ],
+    [
+     "blue",
+     "синий"
+    ],
+    [
+     "yellow",
+     "жёлтый"
+    ],
+    [
+     "green",
+     "зелёный"
+    ],
+    [
+     "white",
+     "белый"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Three",
+   "after": "rubles.",
+   "options": [
+    "hundred",
+    "hundreds",
+    "hundred of"
+   ],
+   "answer": 0,
+   "es": "Триста рублей."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "",
+   "after": "is this shirt?",
+   "options": [
+    "How much",
+    "How many",
+    "How old"
+   ],
+   "answer": 0,
+   "es": "Сколько стоит эта рубашка?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "",
+   "after": "shoes are very nice.",
+   "options": [
+    "These",
+    "This",
+    "That"
+   ],
+   "answer": 0,
+   "es": "Эти туфли очень красивые."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Olga has a",
+   "after": "",
+   "options": [
+    "blue dress",
+    "dress blue",
+    "blues dress"
+   ],
+   "answer": 0,
+   "es": "У Ольги синее платье."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "I’m",
+   "after": "for a shirt.",
+   "options": [
+    "looking",
+    "look",
+    "looks"
+   ],
+   "answer": 0,
+   "es": "Я ищу рубашку."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "She",
+   "after": "a blue dress.",
+   "options": [
+    "is wearing",
+    "wears now",
+    "wearing"
+   ],
+   "answer": 0,
+   "es": "На ней синее платье."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "These jeans",
+   "after": "nice.",
+   "options": [
+    "are",
+    "is",
+    "be"
+   ],
+   "answer": 0,
+   "es": "Эти джинсы красивые.",
+   "why": "Jeans — множественное число."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Can I try it on?",
+   "options": [
+    "Можно примерить?",
+    "Можно купить?",
+    "Можно вернуть?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "cheap",
+   "options": [
+    "дешёвый",
+    "дорогой",
+    "красивый"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать на изучаемом языке?",
+   "word": "две тысячи пятьсот",
+   "options": [
+    "two thousand five hundred",
+    "two thousands and five hundreds",
+    "twenty-five hundreds"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите",
+   "es": "Сколько это стоит?",
+   "answer": [
+    "How",
+    "much",
+    "is",
+    "it?"
+   ],
+   "extra": [
+    "many",
+    "are"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "What colour is the time machine?",
+   "es": "Какого цвета машина времени?",
+   "options": [
+    "Red.",
+    "Blue.",
+    "Turquoise."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "What is Olga wearing at dinner?",
+   "es": "Что надето на Ольге за ужином?",
+   "options": [
+    "A blue dress.",
+    "A black suit.",
+    "A yellow sweater."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Susan wears a bright yellow sweater.",
+   "answer": true,
+   "why": "Так она одета на свидании в кафе."
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Я это беру.",
+   "answers": [
+    "I’ll take it.",
+    "I’ll take it",
+    "I'll take it.",
+    "I'll take it",
+    "I will take it.",
+    "I will take it"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Сколько это стоит?",
+   "answers": [
+    "How much is it?",
+    "How much is it",
+    "How much does it cost?",
+    "How much does it cost"
+   ]
+  }
+ ]
+}

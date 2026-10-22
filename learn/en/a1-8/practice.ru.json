@@ -1,0 +1,264 @@
+{
+ "title": "Take the bus!",
+ "subtitle": "Транспорт, go / come, повелительное наклонение, как пройти.",
+ "speak": "en-GB",
+ "hero": "novels/the-immigrant/cover-v2.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 7 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "bus",
+     "автобус"
+    ],
+    [
+     "train",
+     "поезд"
+    ],
+    [
+     "ship",
+     "корабль"
+    ],
+    [
+     "car",
+     "машина"
+    ],
+    [
+     "bike",
+     "велосипед"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Charles goes to work",
+   "after": "",
+   "options": [
+    "by bus",
+    "by the bus",
+    "in bus"
+   ],
+   "answer": 0,
+   "es": "Чарльз ездит на работу на автобусе."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "I go",
+   "after": "by taxi.",
+   "options": [
+    "home",
+    "to home",
+    "at home"
+   ],
+   "answer": 0,
+   "es": "Я еду домой на такси."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "",
+   "after": "left at the square.",
+   "options": [
+    "Turn",
+    "Turns",
+    "To turn"
+   ],
+   "answer": 0,
+   "es": "На площади поверните налево."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "",
+   "after": "follow me!",
+   "options": [
+    "Don’t",
+    "Not",
+    "No"
+   ],
+   "answer": 0,
+   "es": "Не ходи за мной!"
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "How do I get",
+   "after": "the museum?",
+   "options": [
+    "to",
+    "at",
+    "in"
+   ],
+   "answer": 0,
+   "es": "Как добраться до музея?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "We go",
+   "after": "foot.",
+   "options": [
+    "on",
+    "by",
+    "in"
+   ],
+   "answer": 0,
+   "es": "Мы идём пешком."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Charles",
+   "after": "to work by bus.",
+   "options": [
+    "goes",
+    "go",
+    "going"
+   ],
+   "answer": 0,
+   "es": "Чарльз ездит на работу на автобусе."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "opposite",
+   "options": [
+    "напротив",
+    "рядом",
+    "далеко"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Go straight on.",
+   "options": [
+    "Идите прямо.",
+    "Поверните направо.",
+    "Остановитесь."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать на изучаемом языке?",
+   "word": "Это далеко?",
+   "options": [
+    "Is it far?",
+    "Is it near?",
+    "It is far?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите",
+   "es": "Давай поедем на поезде.",
+   "answer": [
+    "Let’s",
+    "go",
+    "by",
+    "train"
+   ],
+   "extra": [
+    "the",
+    "on"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "How does Charles arrive in Sinea?",
+   "es": "Как Чарльз прибывает в Синею?",
+   "options": [
+    "By ship.",
+    "By plane.",
+    "By bus."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "What is Charles’s first job as Mayor?",
+   "es": "Какое первое дело Чарльза на посту мэра?",
+   "options": [
+    "The free buses.",
+    "A new museum.",
+    "A new hotel."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "A policeman shouts «Stop!» at Charles on his first night.",
+   "answer": true,
+   "why": "«Stop! Who are you?»"
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Поверните налево.",
+   "answers": [
+    "Turn left.",
+    "Turn left",
+    "Turn left, please.",
+    "Turn left, please"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "на автобусе",
+   "answers": [
+    "by bus"
+   ]
+  }
+ ]
+}

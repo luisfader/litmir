@@ -1,0 +1,265 @@
+{
+ "title": "I’m a detective",
+ "subtitle": "Профессии, a / an, Present Simple, don’t и вопросы с do, числа до 100, возраст.",
+ "speak": "en-GB",
+ "hero": "novels/the-date/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 7 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "doctor",
+     "врач"
+    ],
+    [
+     "nurse",
+     "медсестра"
+    ],
+    [
+     "teacher",
+     "учитель"
+    ],
+    [
+     "lawyer",
+     "юрист"
+    ],
+    [
+     "waiter",
+     "официант"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Frank is",
+   "after": "private detective.",
+   "options": [
+    "a",
+    "an",
+    "—"
+   ],
+   "answer": 0,
+   "es": "Фрэнк — частный детектив.",
+   "why": "Перед профессией нужен артикль."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Tom wants to be",
+   "after": "actor.",
+   "options": [
+    "an",
+    "a",
+    "—"
+   ],
+   "answer": 0,
+   "es": "Том хочет быть актёром.",
+   "why": "An — перед гласным звуком."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "I",
+   "after": "in London.",
+   "options": [
+    "live",
+    "lives",
+    "living"
+   ],
+   "answer": 0,
+   "es": "Я живу в Лондоне."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "I",
+   "after": "like dogs.",
+   "options": [
+    "don’t",
+    "doesn’t",
+    "not"
+   ],
+   "answer": 0,
+   "es": "Я не люблю собак."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "",
+   "after": "you like your job?",
+   "options": [
+    "Do",
+    "Are",
+    "Is"
+   ],
+   "answer": 0,
+   "es": "Тебе нравится твоя работа?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "What",
+   "after": "you do?",
+   "options": [
+    "do",
+    "are",
+    "does"
+   ],
+   "answer": 0,
+   "es": "Чем ты занимаешься?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "I",
+   "after": "thirty-two.",
+   "options": [
+    "am",
+    "have",
+    "has"
+   ],
+   "answer": 0,
+   "es": "Мне тридцать два.",
+   "why": "Возраст — с to be."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "thirteen",
+   "options": [
+    "13",
+    "30",
+    "40"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "fifty",
+   "options": [
+    "50",
+    "15",
+    "5"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать на изучаемом языке?",
+   "word": "Сколько тебе лет?",
+   "options": [
+    "How old are you?",
+    "How old do you have?",
+    "How many years you have?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите",
+   "es": "Где ты живёшь?",
+   "answer": [
+    "Where",
+    "do",
+    "you",
+    "live?"
+   ],
+   "extra": [
+    "are",
+    "does"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "What is Frank’s job?",
+   "es": "Кем работает Фрэнк?",
+   "options": [
+    "He’s a private detective.",
+    "He’s a teacher.",
+    "He’s an actor."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "On the dating site, Frank’s name is «Mark».",
+   "answer": true,
+   "why": "Он создаёт анкету под именем «Mark»."
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "двадцать девять",
+   "answers": [
+    "twenty-nine",
+    "twenty nine"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Я не люблю кофе.",
+   "answers": [
+    "I don’t like coffee.",
+    "I don’t like coffee",
+    "I don't like coffee.",
+    "I don't like coffee",
+    "I do not like coffee.",
+    "I do not like coffee"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "«Do you like dogs?» — «Yes, I like.»",
+   "answer": false,
+   "why": "Правильно: Yes, I do."
+  }
+ ]
+}

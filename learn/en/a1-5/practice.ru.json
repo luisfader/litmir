@@ -1,0 +1,264 @@
+{
+ "title": "Alex’s day",
+ "subtitle": "Present Simple с he / she, время, распорядок дня, дни недели, частотность.",
+ "speak": "en-GB",
+ "hero": "novels/a-man-from-the-future/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 7 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "Monday",
+     "понедельник"
+    ],
+    [
+     "Wednesday",
+     "среда"
+    ],
+    [
+     "Friday",
+     "пятница"
+    ],
+    [
+     "Saturday",
+     "суббота"
+    ],
+    [
+     "Sunday",
+     "воскресенье"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Alex",
+   "after": "computers.",
+   "options": [
+    "repairs",
+    "repair",
+    "repairing"
+   ],
+   "answer": 0,
+   "es": "Алекс чинит компьютеры."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Olga",
+   "after": "to the café.",
+   "options": [
+    "goes",
+    "gos",
+    "go"
+   ],
+   "answer": 0,
+   "es": "Ольга идёт в кафе."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "He",
+   "after": "in Moscow.",
+   "options": [
+    "lives",
+    "live",
+    "living"
+   ],
+   "answer": 0,
+   "es": "Он живёт в Москве."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Olga",
+   "after": "like getting up early.",
+   "options": [
+    "doesn’t",
+    "don’t",
+    "isn’t"
+   ],
+   "answer": 0,
+   "es": "Ольга не любит рано вставать."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "",
+   "after": "Nina pay him?",
+   "options": [
+    "Does",
+    "Do",
+    "Is"
+   ],
+   "answer": 0,
+   "es": "Нина ему платит?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Olga",
+   "after": "her keys.",
+   "options": [
+    "always forgets",
+    "forgets always",
+    "always forget"
+   ],
+   "answer": 0,
+   "es": "Ольга всегда забывает ключи."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "I get up",
+   "after": "seven.",
+   "options": [
+    "at",
+    "on",
+    "in"
+   ],
+   "answer": 0,
+   "es": "Я встаю в семь."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "half past eight",
+   "options": [
+    "8:30",
+    "7:30",
+    "8:15"
+   ],
+   "answer": 0,
+   "why": "По-русски — «половина девятого»."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "a quarter to nine",
+   "options": [
+    "8:45",
+    "9:15",
+    "9:45"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать на изучаемом языке?",
+   "word": "Который час?",
+   "options": [
+    "What time is it?",
+    "What hour is it?",
+    "How time is it?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите",
+   "es": "Он никогда не опаздывает.",
+   "answer": [
+    "He",
+    "is",
+    "never",
+    "late"
+   ],
+   "extra": [
+    "don’t",
+    "not"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "What does Alex do in 3024?",
+   "es": "Чем Алекс занимается в 3024 году?",
+   "options": [
+    "He repairs computers.",
+    "He works in a café.",
+    "He is a police officer."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Olga loves getting up early.",
+   "answer": false,
+   "why": "Она не любит рано вставать."
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Alex is twenty-nine.",
+   "answer": true,
+   "why": "«He is twenty-nine.»"
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Она работает в кафе.",
+   "answers": [
+    "She works in a café.",
+    "She works in a café",
+    "She works in a cafe.",
+    "She works in a cafe",
+    "She works at a café.",
+    "She works at a café",
+    "She works at a cafe.",
+    "She works at a cafe"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "в понедельник",
+   "answers": [
+    "on Monday"
+   ]
+  }
+ ]
+}

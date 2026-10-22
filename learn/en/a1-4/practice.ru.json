@@ -1,0 +1,265 @@
+{
+ "title": "Where is the diamond?",
+ "subtitle": "Город, there is / there are, множественное число, предлоги места.",
+ "speak": "en-GB",
+ "hero": "novels/the-immigrant/cover-v2.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 7 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "port",
+     "порт"
+    ],
+    [
+     "square",
+     "площадь"
+    ],
+    [
+     "museum",
+     "музей"
+    ],
+    [
+     "street",
+     "улица"
+    ],
+    [
+     "police station",
+     "полицейский участок"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "",
+   "after": "a hotel on this street.",
+   "options": [
+    "There is",
+    "There are",
+    "It is"
+   ],
+   "answer": 0,
+   "es": "На этой улице есть гостиница."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "There",
+   "after": "two shops in the square.",
+   "options": [
+    "are",
+    "is",
+    "be"
+   ],
+   "answer": 0,
+   "es": "На площади два магазина."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "",
+   "after": "a bank near here?",
+   "options": [
+    "Is there",
+    "There is",
+    "Are there"
+   ],
+   "answer": 0,
+   "es": "Здесь поблизости есть банк?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "There aren’t",
+   "after": "buses.",
+   "options": [
+    "any",
+    "some",
+    "a"
+   ],
+   "answer": 0,
+   "es": "Автобусов нет."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "The diamond is",
+   "after": "a glass box.",
+   "options": [
+    "in",
+    "on",
+    "at"
+   ],
+   "answer": 0,
+   "es": "Алмаз в стеклянной витрине."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "The hotel is",
+   "after": "the port.",
+   "options": [
+    "next to",
+    "next",
+    "near of"
+   ],
+   "answer": 0,
+   "es": "Гостиница рядом с портом."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Three",
+   "after": "are in the café.",
+   "options": [
+    "women",
+    "woman",
+    "womans"
+   ],
+   "answer": 0,
+   "es": "В кафе три женщины."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "behind",
+   "options": [
+    "за, позади",
+    "перед",
+    "под"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "people",
+   "options": [
+    "люди",
+    "человек (один)",
+    "город"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать на изучаемом языке?",
+   "word": "Где музей?",
+   "options": [
+    "Where is the museum?",
+    "Where the museum?",
+    "Where are the museum?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите",
+   "es": "В городе много людей.",
+   "answer": [
+    "There",
+    "are",
+    "many",
+    "people",
+    "in",
+    "the",
+    "city"
+   ],
+   "extra": [
+    "is",
+    "persons"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "Where does Charles find the diamond?",
+   "es": "Где Чарльз находит алмаз?",
+   "options": [
+    "In a hole in the road.",
+    "In the museum.",
+    "In his hotel room."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "What is the name of Charles’s hotel?",
+   "es": "Как называется гостиница Чарльза?",
+   "options": [
+    "Dark Sun.",
+    "Sinea.",
+    "Turquoise."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "The diamond is turquoise.",
+   "answer": true,
+   "why": "«It is a beautiful turquoise color.»"
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Есть гостиница?",
+   "answers": [
+    "Is there a hotel?",
+    "Is there a hotel"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "дети",
+   "answers": [
+    "children"
+   ]
+  }
+ ]
+}

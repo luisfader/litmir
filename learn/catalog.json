@@ -384,8 +384,117 @@
      },
      "cover": "novels/a-man-from-the-future/cover.jpg",
      "novel": "a-man-from-the-future"
+    },
+    {
+     "id": "a1-2",
+     "level": "A1",
+     "n": 2,
+     "title": "I’m a detective",
+     "sub": {
+      "ru": "Профессии, A / AN, Present Simple, DON’T и вопросы с DO, числа до 100",
+      "es": "Profesiones, A / AN, Present Simple, DON’T y preguntas con DO, números hasta 100"
+     },
+     "cover": "novels/the-date/cover.jpg",
+     "novel": "the-date"
+    },
+    {
+     "id": "a1-3",
+     "level": "A1",
+     "n": 3,
+     "title": "Tom is my brother",
+     "sub": {
+      "ru": "Семья, HAVE / HAS, притяжательные, ’S, внешность",
+      "es": "La familia, HAVE / HAS, posesivos, ’S, describir a una persona"
+     },
+     "cover": "novels/the-date/cover.jpg",
+     "novel": "the-date"
+    },
+    {
+     "id": "a1-4",
+     "level": "A1",
+     "n": 4,
+     "title": "Where is the diamond?",
+     "sub": {
+      "ru": "Город, THERE IS / THERE ARE, множественное число, предлоги места",
+      "es": "La ciudad, THERE IS / THERE ARE, el plural, preposiciones de lugar"
+     },
+     "cover": "novels/the-immigrant/cover-v2.jpg",
+     "novel": "the-immigrant"
+    },
+    {
+     "id": "a1-5",
+     "level": "A1",
+     "n": 5,
+     "title": "Alex’s day",
+     "sub": {
+      "ru": "Present Simple с HE / SHE, который час, распорядок дня, дни недели",
+      "es": "Present Simple con HE / SHE, la hora, la rutina, días de la semana"
+     },
+     "cover": "novels/a-man-from-the-future/cover.jpg",
+     "novel": "a-man-from-the-future"
+    },
+    {
+     "id": "a1-6",
+     "level": "A1",
+     "n": 6,
+     "title": "Coffee, please",
+     "sub": {
+      "ru": "Еда и напитки, SOME / ANY, LIKE / LOVE / HATE, в кафе",
+      "es": "Comida y bebida, SOME / ANY, LIKE / LOVE / HATE, en el café"
+     },
+     "cover": "novels/a-man-from-the-future/cover.jpg",
+     "novel": "a-man-from-the-future"
+    },
+    {
+     "id": "a1-7",
+     "level": "A1",
+     "n": 7,
+     "title": "You can’t escape!",
+     "sub": {
+      "ru": "CAN, HAVE TO, MUST, WANT TO, WOULD LIKE TO",
+      "es": "CAN, HAVE TO, MUST, WANT TO, WOULD LIKE TO"
+     },
+     "cover": "novels/the-date/cover.jpg",
+     "novel": "the-date"
+    },
+    {
+     "id": "a1-8",
+     "level": "A1",
+     "n": 8,
+     "title": "Take the bus!",
+     "sub": {
+      "ru": "Транспорт, GO / COME, повелительное наклонение, как пройти",
+      "es": "Transporte, GO / COME, el imperativo, cómo llegar"
+     },
+     "cover": "novels/the-immigrant/cover-v2.jpg",
+     "novel": "the-immigrant"
+    },
+    {
+     "id": "a1-9",
+     "level": "A1",
+     "n": 9,
+     "title": "How much is it?",
+     "sub": {
+      "ru": "Покупки, числа от 100, цвета, одежда, THIS / THESE, Present Continuous",
+      "es": "Compras, números desde 100, colores, ropa, THIS / THESE, Present Continuous"
+     },
+     "cover": "novels/a-man-from-the-future/cover.jpg",
+     "novel": "a-man-from-the-future"
+    },
+    {
+     "id": "a1-10",
+     "level": "A1",
+     "n": 10,
+     "title": "A future together",
+     "sub": {
+      "ru": "GOING TO, погода, месяцы и даты. Итог уровня A1",
+      "es": "GOING TO, el tiempo, meses y fechas. Repaso del A1"
+     },
+     "cover": "novels/a-man-from-the-future/cover.jpg",
+     "novel": "a-man-from-the-future"
     }
-   ]
+   ],
+   "free": true
   },
   {
    "lang": "pt",

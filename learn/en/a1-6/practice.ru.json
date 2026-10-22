@@ -1,0 +1,266 @@
+{
+ "title": "Coffee, please",
+ "subtitle": "Еда и напитки, some / any, исчисляемые и неисчисляемые, like / love / hate, в кафе.",
+ "speak": "en-GB",
+ "hero": "novels/a-man-from-the-future/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 7 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "bread",
+     "хлеб"
+    ],
+    [
+     "cheese",
+     "сыр"
+    ],
+    [
+     "fish",
+     "рыба"
+    ],
+    [
+     "water",
+     "вода"
+    ],
+    [
+     "milk",
+     "молоко"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "",
+   "after": "you like some tea?",
+   "options": [
+    "Would",
+    "Do",
+    "Are"
+   ],
+   "answer": 0,
+   "es": "Хотите чаю?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "I’d like",
+   "after": "coffee, please.",
+   "options": [
+    "a",
+    "an",
+    "any"
+   ],
+   "answer": 0,
+   "es": "Кофе, пожалуйста."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Alex doesn’t have",
+   "after": "money.",
+   "options": [
+    "any",
+    "some",
+    "a"
+   ],
+   "answer": 0,
+   "es": "У Алекса нет денег."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "I’d like",
+   "after": "egg.",
+   "options": [
+    "an",
+    "a",
+    "some"
+   ],
+   "answer": 0,
+   "es": "Я бы хотел яйцо."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "I",
+   "after": "coffee.",
+   "options": [
+    "like",
+    "likes",
+    "am like"
+   ],
+   "answer": 0,
+   "es": "Я люблю кофе."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Olga loves",
+   "after": "",
+   "options": [
+    "reading",
+    "read",
+    "reads"
+   ],
+   "answer": 0,
+   "es": "Ольга обожает читать."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "How",
+   "after": "money do you have?",
+   "options": [
+    "much",
+    "many",
+    "old"
+   ],
+   "answer": 0,
+   "es": "Сколько у тебя денег?"
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "This breakfast is on me.",
+   "options": [
+    "Этот завтрак за мой счёт.",
+    "Этот завтрак на столе.",
+    "Я ем этот завтрак."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "the bill",
+   "options": [
+    "счёт",
+    "меню",
+    "чаевые"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать на изучаемом языке?",
+   "word": "Я бы хотел кофе, пожалуйста.",
+   "options": [
+    "I’d like a coffee, please.",
+    "I like a coffee, please.",
+    "I’d like an coffee, please."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите",
+   "es": "У вас есть наличные?",
+   "answer": [
+    "Do",
+    "you",
+    "have",
+    "any",
+    "cash?"
+   ],
+   "extra": [
+    "some",
+    "are"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "What does Alex order?",
+   "es": "Что заказывает Алекс?",
+   "options": [
+    "Coffee and a pastry.",
+    "Tea and a cake.",
+    "Soup and bread."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "Why can’t Alex pay?",
+   "es": "Почему Алекс не может заплатить?",
+   "options": [
+    "His chip doesn’t work and he has no cash.",
+    "He doesn’t like the coffee.",
+    "The café is closed."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "In 3024 most meals come from food machines.",
+   "answer": true,
+   "why": "Поэтому выпечка Ольги так его поражает."
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Я ненавижу рыбу.",
+   "answers": [
+    "I hate fish.",
+    "I hate fish"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Счёт, пожалуйста.",
+   "answers": [
+    "The bill, please.",
+    "The bill, please",
+    "Can I have the bill, please?",
+    "Can I have the bill, please"
+   ]
+  }
+ ]
+}

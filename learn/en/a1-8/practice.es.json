@@ -1,0 +1,264 @@
+{
+ "title": "Take the bus!",
+ "subtitle": "Medios de transporte, go / come, el imperativo, pedir indicaciones.",
+ "speak": "en-GB",
+ "hero": "novels/the-immigrant/cover-v2.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Empezar",
+  "check": "Comprobar",
+  "next": "Continuar",
+  "skip": "No lo sé",
+  "retry": "Intentar de nuevo",
+  "again": "Repetir la unidad",
+  "back": "Volver a la unidad",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Respuesta correcta:",
+  "almost": "¡Casi! Fijate en los acentos:",
+  "done": "¡Unidad completada!",
+  "lost": "Te quedaste sin corazones",
+  "lostP": "No pasa nada: cada error es una palabra nueva que ya conocés un poco mejor.",
+  "xp": "XP total",
+  "acc": "Precisión",
+  "time": "Tiempo",
+  "ex": "{n} ejercicios",
+  "min": "≈ 7 minutos",
+  "hearts": "corazones",
+  "best": "Tu mejor resultado",
+  "tap": "Tocá las palabras en orden",
+  "type": "Escribí acá…",
+  "perfect": "¡Ni un solo error!",
+  "good": "¡Muy buen trabajo!",
+  "ok": "¡Bien hecho! Repetí la unidad para mejorar tu precisión.",
+  "sound": "Sonido",
+  "listen": "Escuchar",
+  "meaning": "Significa:",
+  "yes": "Verdadero",
+  "no": "Falso",
+  "score": "Puntaje",
+  "level": "Tu nivel"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Uní los pares",
+   "pairs": [
+    [
+     "bus",
+     "colectivo"
+    ],
+    [
+     "train",
+     "tren"
+    ],
+    [
+     "ship",
+     "barco"
+    ],
+    [
+     "car",
+     "auto"
+    ],
+    [
+     "bike",
+     "bicicleta"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "Charles goes to work",
+   "after": "",
+   "options": [
+    "by bus",
+    "by the bus",
+    "in bus"
+   ],
+   "answer": 0,
+   "es": "Charles va al trabajo en colectivo."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "I go",
+   "after": "by taxi.",
+   "options": [
+    "home",
+    "to home",
+    "at home"
+   ],
+   "answer": 0,
+   "es": "Voy a casa en taxi."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "",
+   "after": "left at the square.",
+   "options": [
+    "Turn",
+    "Turns",
+    "To turn"
+   ],
+   "answer": 0,
+   "es": "Doblá a la izquierda en la plaza."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "",
+   "after": "follow me!",
+   "options": [
+    "Don’t",
+    "Not",
+    "No"
+   ],
+   "answer": 0,
+   "es": "¡No me sigas!"
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "How do I get",
+   "after": "the museum?",
+   "options": [
+    "to",
+    "at",
+    "in"
+   ],
+   "answer": 0,
+   "es": "¿Cómo llego al museo?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "We go",
+   "after": "foot.",
+   "options": [
+    "on",
+    "by",
+    "in"
+   ],
+   "answer": 0,
+   "es": "Vamos a pie."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "Charles",
+   "after": "to work by bus.",
+   "options": [
+    "goes",
+    "go",
+    "going"
+   ],
+   "answer": 0,
+   "es": "Charles va al trabajo en colectivo."
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "opposite",
+   "options": [
+    "enfrente de",
+    "al lado de",
+    "lejos"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "Go straight on.",
+   "options": [
+    "Seguí derecho.",
+    "Doblá a la derecha.",
+    "Pará."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "¿Cómo se dice?",
+   "word": "¿Es lejos?",
+   "options": [
+    "Is it far?",
+    "Is it near?",
+    "It is far?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Traducí",
+   "es": "Vamos en tren.",
+   "answer": [
+    "Let’s",
+    "go",
+    "by",
+    "train"
+   ],
+   "extra": [
+    "the",
+    "on"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Elegí la respuesta correcta",
+   "question": "How does Charles arrive in Sinea?",
+   "es": "¿Cómo llega Charles a Sinea?",
+   "options": [
+    "By ship.",
+    "By plane.",
+    "By bus."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Elegí la respuesta correcta",
+   "question": "What is Charles’s first job as Mayor?",
+   "es": "¿Cuál es la primera tarea de Charles como intendente?",
+   "options": [
+    "The free buses.",
+    "A new museum.",
+    "A new hotel."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "¿Verdadero o falso?",
+   "statement": "A policeman shouts «Stop!» at Charles on his first night.",
+   "answer": true,
+   "why": "«Stop! Who are you?»"
+  },
+  {
+   "type": "write",
+   "prompt": "Escribilo",
+   "es": "Doblá a la izquierda.",
+   "answers": [
+    "Turn left.",
+    "Turn left",
+    "Turn left, please.",
+    "Turn left, please"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Escribilo",
+   "es": "en colectivo",
+   "answers": [
+    "by bus"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,264 @@
+{
+ "title": "Tom is my brother",
+ "subtitle": "Семья, have / has, притяжательные, ’s, внешность.",
+ "speak": "en-GB",
+ "hero": "novels/the-date/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 7 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "brother",
+     "брат"
+    ],
+    [
+     "sister",
+     "сестра"
+    ],
+    [
+     "mother",
+     "мать"
+    ],
+    [
+     "parents",
+     "родители"
+    ],
+    [
+     "daughter",
+     "дочь"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Frank",
+   "after": "a brother.",
+   "options": [
+    "has",
+    "have",
+    "is"
+   ],
+   "answer": 0,
+   "es": "У Фрэнка есть брат."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "I",
+   "after": "a cat.",
+   "options": [
+    "have",
+    "has",
+    "am"
+   ],
+   "answer": 0,
+   "es": "У меня есть кот."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "",
+   "after": "you have a sister?",
+   "options": [
+    "Do",
+    "Does",
+    "Are"
+   ],
+   "answer": 0,
+   "es": "У тебя есть сестра?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Susan",
+   "after": "have brothers or sisters.",
+   "options": [
+    "doesn’t",
+    "don’t",
+    "isn’t"
+   ],
+   "answer": 0,
+   "es": "У Сьюзан нет братьев и сестёр."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Tom loves",
+   "after": "mum.",
+   "options": [
+    "his",
+    "her",
+    "its"
+   ],
+   "answer": 0,
+   "es": "Том любит свою маму."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Susan loves",
+   "after": "cat.",
+   "options": [
+    "her",
+    "his",
+    "their"
+   ],
+   "answer": 0,
+   "es": "Сьюзан любит своего кота."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "This is",
+   "after": "smile.",
+   "options": [
+    "Tom’s",
+    "Tom",
+    "Toms"
+   ],
+   "answer": 0,
+   "es": "Это улыбка Тома."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "parents",
+   "options": [
+    "родители",
+    "родственники",
+    "дети"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать на изучаемом языке?",
+   "word": "длинные чёрные волосы",
+   "options": [
+    "long black hair",
+    "black long hair",
+    "hair long black"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите",
+   "es": "Это моя семья.",
+   "answer": [
+    "This",
+    "is",
+    "my",
+    "family"
+   ],
+   "extra": [
+    "me",
+    "are"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "What colour is Clara’s hair?",
+   "es": "Какого цвета волосы у Клары?",
+   "options": [
+    "It’s black.",
+    "It’s blonde.",
+    "It’s white."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "Who has short blonde hair?",
+   "es": "У кого короткие светлые волосы?",
+   "options": [
+    "Nadia.",
+    "Clara.",
+    "Vanessa."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Susan has a cat, Mr. Snuffles.",
+   "answer": true,
+   "why": "Она выбрала кота, а не Дерека!"
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "мой брат",
+   "answers": [
+    "my brother"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "У неё есть кот.",
+   "answers": [
+    "She has a cat.",
+    "She has a cat",
+    "She’s got a cat.",
+    "She’s got a cat",
+    "She's got a cat.",
+    "She's got a cat",
+    "She has got a cat.",
+    "She has got a cat"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Frank’s mum visits Tom’s grave every Sunday.",
+   "answer": true,
+   "why": "Так говорит Фрэнк в девятой главе."
+  }
+ ]
+}

@@ -1,0 +1,269 @@
+{
+ "title": "You can’t escape!",
+ "subtitle": "Can / can’t, have to, must, don’t have to, want to, would like to.",
+ "speak": "en-GB",
+ "hero": "novels/the-date/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 7 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "help",
+     "помогать"
+    ],
+    [
+     "move",
+     "двигаться"
+    ],
+    [
+     "wait",
+     "ждать"
+    ],
+    [
+     "escape",
+     "сбежать"
+    ],
+    [
+     "pay",
+     "платить"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Vanessa",
+   "after": "the violin.",
+   "options": [
+    "can play",
+    "cans play",
+    "can to play"
+   ],
+   "answer": 0,
+   "es": "Ванесса умеет играть на скрипке."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Mark",
+   "after": "move.",
+   "options": [
+    "can’t",
+    "doesn’t can",
+    "not can"
+   ],
+   "answer": 0,
+   "es": "Марк не может пошевелиться."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "I",
+   "after": "go home.",
+   "options": [
+    "have to",
+    "has to",
+    "must to"
+   ],
+   "answer": 0,
+   "es": "Мне надо домой."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Charles",
+   "after": "find a job.",
+   "options": [
+    "has to",
+    "have to",
+    "must to"
+   ],
+   "answer": 0,
+   "es": "Чарльзу надо найти работу."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "",
+   "after": "you help me?",
+   "options": [
+    "Can",
+    "Do",
+    "Are"
+   ],
+   "answer": 0,
+   "es": "Ты можешь мне помочь?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "I want",
+   "after": "the violin for you.",
+   "options": [
+    "to play",
+    "play",
+    "playing"
+   ],
+   "answer": 0,
+   "es": "Я хочу сыграть тебе на скрипке."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Would you like",
+   "after": "dinner with me?",
+   "options": [
+    "to have",
+    "have",
+    "having"
+   ],
+   "answer": 0,
+   "es": "Хочешь поужинать со мной?"
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "You don’t have to pay.",
+   "options": [
+    "Тебе не надо платить.",
+    "Тебе нельзя платить.",
+    "Ты не можешь заплатить."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "You mustn’t follow her.",
+   "options": [
+    "Нельзя её преследовать.",
+    "Не обязательно идти за ней.",
+    "Ты должен идти за ней."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать на изучаемом языке?",
+   "word": "Я не умею плавать.",
+   "options": [
+    "I can’t swim.",
+    "I don’t can swim.",
+    "I not can swim."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите",
+   "es": "Можно мне войти?",
+   "answer": [
+    "Can",
+    "I",
+    "come",
+    "in?"
+   ],
+   "extra": [
+    "to",
+    "do"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "What does Veronica shout?",
+   "es": "Что кричит Вероника?",
+   "options": [
+    "«You can’t escape!»",
+    "«You must pay!»",
+    "«I object!»"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "What can Alex do?",
+   "es": "Что умеет Алекс?",
+   "options": [
+    "He can fix a screen.",
+    "He can fold a paper map.",
+    "He can play the violin."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Tom wants to be an actor.",
+   "answer": true,
+   "why": "Ради этого он и устроил «игру»."
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Я должен идти.",
+   "answers": [
+    "I have to go.",
+    "I have to go",
+    "I must go.",
+    "I must go",
+    "I have to go now.",
+    "I have to go now"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Ты можешь мне помочь?",
+   "answers": [
+    "Can you help me?",
+    "Can you help me",
+    "Can you help me, please?",
+    "Can you help me, please"
+   ]
+  }
+ ]
+}

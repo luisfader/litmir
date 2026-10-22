@@ -1,0 +1,269 @@
+{
+ "title": "You can’t escape!",
+ "subtitle": "Can / can’t, have to, must, don’t have to, want to, would like to.",
+ "speak": "en-GB",
+ "hero": "novels/the-date/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Empezar",
+  "check": "Comprobar",
+  "next": "Continuar",
+  "skip": "No lo sé",
+  "retry": "Intentar de nuevo",
+  "again": "Repetir la unidad",
+  "back": "Volver a la unidad",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Respuesta correcta:",
+  "almost": "¡Casi! Fijate en los acentos:",
+  "done": "¡Unidad completada!",
+  "lost": "Te quedaste sin corazones",
+  "lostP": "No pasa nada: cada error es una palabra nueva que ya conocés un poco mejor.",
+  "xp": "XP total",
+  "acc": "Precisión",
+  "time": "Tiempo",
+  "ex": "{n} ejercicios",
+  "min": "≈ 7 minutos",
+  "hearts": "corazones",
+  "best": "Tu mejor resultado",
+  "tap": "Tocá las palabras en orden",
+  "type": "Escribí acá…",
+  "perfect": "¡Ni un solo error!",
+  "good": "¡Muy buen trabajo!",
+  "ok": "¡Bien hecho! Repetí la unidad para mejorar tu precisión.",
+  "sound": "Sonido",
+  "listen": "Escuchar",
+  "meaning": "Significa:",
+  "yes": "Verdadero",
+  "no": "Falso",
+  "score": "Puntaje",
+  "level": "Tu nivel"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Uní los pares",
+   "pairs": [
+    [
+     "help",
+     "ayudar"
+    ],
+    [
+     "move",
+     "moverse"
+    ],
+    [
+     "wait",
+     "esperar"
+    ],
+    [
+     "escape",
+     "escaparse"
+    ],
+    [
+     "pay",
+     "pagar"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "Vanessa",
+   "after": "the violin.",
+   "options": [
+    "can play",
+    "cans play",
+    "can to play"
+   ],
+   "answer": 0,
+   "es": "Vanessa sabe tocar el violín."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "Mark",
+   "after": "move.",
+   "options": [
+    "can’t",
+    "doesn’t can",
+    "not can"
+   ],
+   "answer": 0,
+   "es": "Mark no se puede mover."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "I",
+   "after": "go home.",
+   "options": [
+    "have to",
+    "has to",
+    "must to"
+   ],
+   "answer": 0,
+   "es": "Tengo que irme a casa."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "Charles",
+   "after": "find a job.",
+   "options": [
+    "has to",
+    "have to",
+    "must to"
+   ],
+   "answer": 0,
+   "es": "Charles tiene que conseguir trabajo."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "",
+   "after": "you help me?",
+   "options": [
+    "Can",
+    "Do",
+    "Are"
+   ],
+   "answer": 0,
+   "es": "¿Me podés ayudar?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "I want",
+   "after": "the violin for you.",
+   "options": [
+    "to play",
+    "play",
+    "playing"
+   ],
+   "answer": 0,
+   "es": "Quiero tocarte el violín."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "Would you like",
+   "after": "dinner with me?",
+   "options": [
+    "to have",
+    "have",
+    "having"
+   ],
+   "answer": 0,
+   "es": "¿Querés cenar conmigo?"
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "You don’t have to pay.",
+   "options": [
+    "No hace falta que pagues.",
+    "Tenés prohibido pagar.",
+    "No podés pagar."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "You mustn’t follow her.",
+   "options": [
+    "No la tenés que seguir (está prohibido).",
+    "No hace falta que la sigas.",
+    "Tenés que seguirla."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "¿Cómo se dice?",
+   "word": "No sé nadar.",
+   "options": [
+    "I can’t swim.",
+    "I don’t can swim.",
+    "I not can swim."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Traducí",
+   "es": "¿Puedo pasar?",
+   "answer": [
+    "Can",
+    "I",
+    "come",
+    "in?"
+   ],
+   "extra": [
+    "to",
+    "do"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Elegí la respuesta correcta",
+   "question": "What does Veronica shout?",
+   "es": "¿Qué grita Veronica?",
+   "options": [
+    "«You can’t escape!»",
+    "«You must pay!»",
+    "«I object!»"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Elegí la respuesta correcta",
+   "question": "What can Alex do?",
+   "es": "¿Qué sabe hacer Alex?",
+   "options": [
+    "He can fix a screen.",
+    "He can fold a paper map.",
+    "He can play the violin."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "¿Verdadero o falso?",
+   "statement": "Tom wants to be an actor.",
+   "answer": true,
+   "why": "Por eso armó todo el «juego»."
+  },
+  {
+   "type": "write",
+   "prompt": "Escribilo",
+   "es": "Tengo que irme.",
+   "answers": [
+    "I have to go.",
+    "I have to go",
+    "I must go.",
+    "I must go",
+    "I have to go now.",
+    "I have to go now"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Escribilo",
+   "es": "¿Me podés ayudar?",
+   "answers": [
+    "Can you help me?",
+    "Can you help me",
+    "Can you help me, please?",
+    "Can you help me, please"
+   ]
+  }
+ ]
+}
