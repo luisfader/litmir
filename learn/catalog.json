@@ -720,7 +720,8 @@
       "es": "Saludos, presentarse, pronombres, \"ser\" como terminación, armonía vocálica"
      },
      "cover": "novels/col-gulu/cover.jpg",
-     "novel": "col-gulu"
+     "novel": "col-gulu",
+     "image": "learn/tr/a1-1/image.jpg"
     },
     {
      "id": "a1-2",
@@ -733,7 +734,8 @@
       "es": "Bu / şu / o, el plural, preguntas con mı, değil, var / yok, los números"
      },
      "cover": "novels/col-gulu/cover.jpg",
-     "novel": "col-gulu"
+     "novel": "col-gulu",
+     "image": "learn/tr/a1-2/image.jpg"
     },
     {
      "id": "a1-3",
@@ -746,7 +748,8 @@
       "es": "¿Dónde? -da / -de, ¿adónde? -a / -e, el presente continuo -iyor"
      },
      "cover": "novels/col-gulu/cover.jpg",
-     "novel": "col-gulu"
+     "novel": "col-gulu",
+     "image": "learn/tr/a1-3/image.jpg"
     }
    ]
   },
