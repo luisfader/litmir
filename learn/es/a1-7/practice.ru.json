@@ -1,1 +1,273 @@
-LITMIR-ENC1:h9VyzQpVyobiP2w11+NcQTG6kIT3HNGfRcY1rLym4K5ARVSkk5uBK5JoBn9G3KTeNU0lq18l/5cP70dgI6bio11S4gYiHBtjriKs7rIlwfLOk+8l6rMWEp2869GMLN+JoBZDbFOmOMX5McRDhToSxf8jKuM+ePfc8QTk4zCA6djDnhBGoEk5gLZjl3lUqoq7FJsyS1730QFWLBKHzwsnVSo/e5hdtTpbgjAVrRXG7NRjrs00iq3db65iaEjrsccAKYfKkWTDUpXkqchWv21Gxh0WbN7USdR/DRcL3leYlX0Z95cayhZdAqD4Qzs5yvW6ceZ2p7Gqmvw3Gw4WY6GlcMptbFO5SRE+zyt0eXF4uMYlUL84a/npPWWHBOQvm9TyD6eU9npepcaefnb7Rs9csT45lBX9xcCuzihC0EhpSBmE06W1Ew23emHfhps0kUfLMcblctLr3pe7D2oJp7/Z/j1SRj0Er+GNJrY7qlzTOVewFInVXpRbxtuYcSBIY3O+mYahJ/bhBvETNj7ZXrh7V4TdOJe+awpJf7pU0g2sgzhL31QBO6Mu8OuXoTPd2WcC169q3eaIrvchjjHocWBZtmYRt98qPU1w2t3KzHhSh4yIa6TbfL6H+LXIDQ16nLXw2eb/ctpLw6plzuyj/ohy+2vzoJ7n/TOw2XvqqwObnsf/CKhEX/nq25D7g94wGda9UVlFTRrMF49yYa+WXyhGR3rsUwtwXs1Auh+SZwfooZG4fud42cxz+YudfgyAQ7AoUapQgiPSCv/fQ8qWJsf1wf6kzxEIpKeDdqBjV10bgRoodMn0XWzXwkcKaHS9TKgiYtOV+HARhCAl41XxvlX07ddeUIZQ4Pfsm5y3jf9fWY2ddlimiQy4CjhkuwTWhA0V8XF2nYfCeP1AzEeRvwgbnensUTZyMh8JiY0BjMjHk6VOVIcc8MrKCp4IgarsUsxzQFbNo3sMsTYBC4RGnZ77lFBQmVpR8/Dwdl5l+5IjVG8CbvQHUkKM5wy1TiHhoS9KNogo3NXkDFftij1Wpy5csEYi6Wzlv/Ri4nwFkX6FjArZNbQKyK/UjZIePjf70mz2sWhi5qPI0aXng0DMIDlxU+tB9Ygo15owuDiMuPSv3DFkLTb+GvNepAbIgMANaao8Zbs8Jf9vn6A/jEgwGLECwZjJ8lxnzEX54KjT9E/RquBmuXixj+0f36SKUfn19pCYvP0sO9tHgNec+8BZUWiHhg1gdmSelJ/ZvtvxeBBeO81Jj9IKo9KRoQ7W6ravs2TKVC4lApr8ouolg2fXnwv64izmvF3BwYUmlDU/Bufg0CtNIn8+td8BS26zpJtdzPxS25XbNuJCwoTL4nBChiyAr+EWMoySnepMPmSclHLl/XVFm89oZ+XPQpd7l2oUQ3kZzLlvkMbm2rDxvXgeZI3QYRfkZPn5vbM7ZW5ZWnJyQGFbjrF0xdmsIfpxov7JcwgZg0lzVtFqpW7oNJOxI2e3QOCXQ5jFpt/TTTc+MvMZwmWQ7eR2xMyPzFi2d+AhUPdDMgmlkFkNsblkbD8DXVqi3kkEX04BVnsq0C0SC1AKgGiJeVdkPNzroT+ZEcv3ZW8//byfmUP44RI6t3sz53gl0MhsEBTQmbWfbbrAJFBFWIeKde0JuVSTmFWfbls6RLyRlzcdP0a2FqiVcyYaavg7GQY4kJ4+ej8w8BAAmOsvzJbfoVUCrOZJK1YxHjAON3USjrxzOdfbfOk4ivmGM4Z2Dtrc38DEJRM/oYE7MgzjfQiYRJZWYRR5HY5ScsmPUIh/Khr/ezd1eqdHGY++fDIcDuC6WSOs2xI2HUoPvEuIQYw4+8Wx/i5YNf/u6WrCwSRAkCD/7wPzSAvosqTnumnJoL0foYgl1U7SFP4gXExa2HdFwab1Aq8VMKggwIAJ6ZaziijlKdg9uN3N6Y1PovJV5L6Zt/Rm9zRYWlcvPozBTizP46fBrc/6PQPuc+ePdS2mIE/qSxKe6x4QwqL3+WiOHj7hwC6KXyiPE3Cg+3TRsdvWFGta8GxutZbNVDvt7oCzmdmOph6s59L0wH1YniwTgLkH21cP9myK36x9tUv3fyvdrm+7nnwOR74lvtohJskX6qQv9fcVyQSQrI6pNx7jefnriswcUTxT9fstwDZ2jaGW/F20PU1A4tE4aO4b8lLqoRhMKe1L8fiE67RqS/FqpB4namX38Zd9xT3Cg3yUHEjCDo11pHQAqkViipx/A0ndDGCt1DrSvZf4UhCO+vHVZnz9l8YxoWlt1P1SEYgrV0EEZpZIl8TEsFW9O6tYGxhzF2gJoWNZnoh4KIenpZU/eSc44PORDyIAPKhcz3zia13B5NIpJsJCDUHuIneRtxXNKQvP3c/+AO0++4/dyPiiiK6+lJHbdgE8gm11M7TWvd6KxVZix0WMSIPiDmJQhASxeRYMBM97wtrSR97WN70gN50cE3WHMGMKO+OuyJqPmD5ALpQmn8B44FI4v1mknzdy+bKDQGvxjJc9uKBcDHbKN7i9AC3GhOfx7XVywQzKnlK9OeRz9L6k5PMn11NYkPJJRE/O+kL7aAOajXeipeQlAdBeOK1yh+KfjRpNj3/bBKsfBHlCGwdNtG80Vvvb4euPWSDx4gP/W83TXLqCr9ByX41yqoCQnH+blAuWuHPNWS6q7VyOFssui2q8sGL6nFV6ikyH/krMtsKkDDcNqleJ0BKK1gxjqNLpwpJ9G8jGOygVCogdsDhCxEO8BbVnSvP7mYl8mLcPh0qSYFRRtDQFozFk4nKmywwbC1qUGYBAFCTxA4znZCgQFm19VNt4IMIGz5NIB3nb/hqeJ5B851LcoAYkgOcenofsvz2EiyL+g3Ajb9QpAw/fDo4+cO8+vV1OLTk0w+Cnv5iECYGiw9xumwEi3ypKVAhtsth2dkr0UGmQ7mgT7yqeB27ZXetkJk0kgpYBikQJyVQePSmCRQXxXBdwNUr+Sv47545roCkYeweariK/IJ2xTUf3LfRCG0c6EfoRqbfPviADSjy3MXZp8VMHtOd2vsR8IIiR61JDPKnJgoaaEslXGILBmTl2p8MGLE4aTj05McDw7iiv2GAcaTV/steHYSMRwPfaw0wsuwg69HL5iVpF5YYF5fUKWNhYfy2DvSaoN60wwMZCT/sR+UvFcoT+1gJl3yzs+z9eAyzc8mA4/sZ1mkJlRro0AUHq0sSBO04VgnagukAN3pZ32dZNOk8026qrHiSJPbLM75r5EDPEqlSUw0mmoiuDclN7sKyTb0B08Hd4BAUmbiSMWeo7IUql+aaEwdYhh5GnpG4WgLNSNt4DebZ2/kz0vpQ4l32tENNK/7BtwUyQqJqpdaQEN0l4oIg4nkegWNG368z8qgrljXfAcppRe5njSjNav5LRt7oJZYcwySoIBCnLMEqSjw8W4NP4TwutPn3C410k4t112TZm82T2Wd4qscbN0CputyAQi00erm0BvKplMeLDG9/0OnvMvXpdJHhlcXGtzP+ZoA7Uu8Z4eQO0rqrkAapFCZmZIarKKbFjCmZ+oVXeZYtykwxX92msr9FLCztZ9uai2pSQZLKCUJNQGwdx4/HWHm7/PM+5xUpIDZmnmZ4W+OtU3rE+oJlVVKWHLGNlM8VxxowIY+GcrHy3WqVD9squwllqx0ERzqGoeeX8gj3D9wXA3/kWTcKjCJrM8HAFodZlldwckarl28Uqzdtlo/T00YekyzyZTBbSxpnmVZpSFW9EmkxdN5/4Ava+/fXzHqtVYs7AZ23nssRJKJBGuAwxeJZXgNRo9Z2SD963FNNDeccjIioQZzFlSLA6kMiUSHezjy/EpdT8OReRfJZl0Eh+VgEOjtIrNcfg/OeQTxuIkiUZ4CxN6l81k7wMhQWwN8g+lAyixGMGR5nNCySpZhz29xU02gZ/14TsmNiT7oEHZap3kXmNl7+8bZ7cQJ0FDaewpDgOlyD0J3kDdP15Ll9Yy9mZhaYBKs8yFspFNbLOhIbv2IeyegM32uCsIqF7GbdDLxU1WFhjpDvQN4RlvIe6OTvvJZC1V3SQ6Qfxb7br8aybP0VEkCsbC3yG/xMw7+D5NkmSUGAcVcgrZOEKuawO6/q3IwuA1P+Us5QgoiIV+nvbk+4blNAyz/g+IsXZJEyEAIPr7OSfhenEuCw56xJXa+mbiskY3cf5O2Eof8NvsSa/AnYu8wMzF5sDgl5y9qWgek79HaVREKT6R0XTIylAAQRxycsLZtjEJD4gqrZKx4sV8N9Nzfr5mv27RJMuLI37g6P47UhC+ygXnaPcYZwaNlDG6BthvvwmgvEa9rqdDTxRC19J8zE+g/cOIXR0UmfpLuF2d2fPHhWet055k8GAfPUHlEVRzWswUijh6VKGoBX3Ve8X6yAJKKHu96Ni3RoTrmH81GMUaQR1S6gK7Kfgv9V2/O6YdVGnujqCcE+1e//9CajajzwgGGDSMLY/nughLgY2F8KF8uNyjwJoo4zjObSUh0tjOQ1fGyx9cHLV3mlTLjP4+77sckmMgMTi0DjmsOg/A2o6dKdCbdrsEgi8HBYJKUEvtMjH1ngG0LzCdmPGY4P97MSGefxCGDRwAYFaAK3xEoIQ3BIsH5zwa+lYF+jiYsacLDADmWiHKIZiUoEt2l1oBaNLbWfefiMUi6nzXKcSE3douaLi2Dc94CVWL+k78S8Pwz8yGDvhd8/yKTnII/GxQEwrmbFKduM+1QDXFNxBmjjbs4yRD1eN/0dRUV8+KT/wYKfP6YnIe/8ww33QYwxWCocsIrZXw+EHgbljVraKT8ppAf4XcUxNtBiSenCfHpFq6qeq07y9Ouy9zuKlo6Wv+njzda/U+IrU+DAUFrPRT2MOt592RKZQANr+pObZ3lO9r8sZyAUVncI6xpWx6+bWLgad/Z7PiIWMjxg56s3UURiejoFQZidcUjn+8+qFjLR4UKixcepQulRvdnwfbsbk6z04wO3d7rfCcKDLp1sahApZARYzTC04YI9K2KX5aaQnEJ+UrMq/n0DVrLGEhhgqcFNJo2Vh1IiZgLbG6r6G/Y/wHulSg2v79qrGlApQhQLT3ahGB70TS8AC2bgP9LLAFJSv/TfhTEfICUmx9L2DZ/ZjBdOac6fNUW2yOrSnrmu8ZC/mvdrpdZ9kt+Z8BNj/CzFl3UohMJEUc+Rbu1ra5UdMDcX4Bl6Pzi7yd12GmQf07GcG5NjbzQiDIMhulRjeOCsBWQbCyyea9Iin27Axn5ahQkm752vUfkJ3uCItrkxy0mi7gN8ab+ibjiuJyhJ2a751CidwW42DSUr6F5xj7R3Py1w+9nUpzc/hqLOEP5yvrqLPvRpSe38yEk+Js8x4TZlEtBV6RrkjbKVg9V1Q3XNqp7BBBsDsTWN88eSas/UnvA+yUPPNh4nKSO7YjZ4wwtlb6e6V1HWzyLyoch1sgRKuVXA/DBkcbLfJjY0uhaSrrEqHJVbrz549JAafA4sQSqowTrmkSpnsiC8akQvr1OiWiNPZTCX7QnlwKnDWtOoSKK1aFKz17DaGpvnBr66JKIPEnFlLSwm2xxIzbQ1W8Px1GVDqHwz08qy3KSNveDDYAhBo2dY/AGO/FhXHQTzKE+kGyJT0IbKlJJZrt4MuoKaxhkP9wQb/UoRDzH8yHZX3u89DlMBvkywzZOfZmOhFh4MuMIvNuDuaYWsdRnv3hT4frK/OQaHNp9JwTxH2U29B67aMbNkpbkEs1W6Nq+Bpcg69VsNL79l7j3XiQKP4ZY+7X/dDb+yWjMDQrQFFFR5/Z9y54p7JZjcjB2zTESDk3cwXjQ9HBDqBWdXUUDzSP+mFC2AJVgeHLWWntBlbXZYyfGcvcKZt40rdwEy46PLYht8waikWzi8yT5oTEDQd88dGSpQ7k66oGfR3nIHl3kLcLqD7V4ziN/UOIxEIucXGzrzggsFemoZbfny8ieg/OEti2WIutUQE0WJchI/S7kWWj95Qvalohc8bd8EOUX3mHZvbP+2jEwHXch2UnakYvnAJSLNwE65Nvlqu/1H890y2TT3Mfqnub3DXi33dznCUTyChLlP+bZYILyS4f2T48ohVRX4pTVr/G2Brgzwu2JwIzd5Wn7UtL36Vr3QdWSI6M4WWLmfvxbq5WeCni7nuzv5QIrd4nWk+lBRxcpF/R1dUkJJH9vcaFX/4CxvdTzi9q3DRwewedotdCut2dAsWQJaIW8UNvd/ndCPIlLTi1cnLBUujN6/8Gw/JO90X3NKTAyO+uKkrofa7+vYVTZmuq3dRV1KxeqLLTYBMJ0SyrEQeI8CUiXW281QRtX0iMAsCr3gNvBPigJ4/um5PDbdhECmvj0kj5+fPpvduxkE6NoNwi+8QMXs4wbeIdpc0vqOe8h7Tq8Z/8DHnMYO9w72d6M+EP2OQ76xfxeWjIsgygs6zIFhccVSD31U4vmkV6j9Wyl68062MpaFiHKQpPr/vIcyeH+aAvgMlO8gYQ+AW8ir90ySqc1C6B8CW+waaTXw+ERVBv7teCf0cCxTQ0FdsxZutJA4zpxSYGwYeMS0CXIw3Rshy0soKOpaTPlFnfWeHgVGNV35jhRJC41NFnPhtt+VdAF7bhKA0IzNRbviahAarH//+WZlZt+Tgij1blIq/wJ/etgi53fQZxv3r1zS9PDYNLIglDV9H2LL0Zb0u/1FfEKvroPlODT8mI2E9ZKLQsqaCxO6j+bd2FCLn6FaBvEE33DZaVvOWDCp6SzHf9XePdsjwgxExhnmNHvLoNOvdnNc8CLwrGCnlcZGcbULAPl282IgLjxZSjqBJnJscQHsGs4zfxqdhU2aiNQP+AEBVCLlELLrb+/dgyNF8iGYeL1TAdM1afhEqWZeU8MxhfGFINTRN+Z/e/LVQa+4J2dciLLGP2wUP9IXeJ2zO4ZuxQA85/nHAc+BJ9f8w/BkPpehn8w65ySQlBhEKJtuBuiL4KdakAIUhKa5UZmIl2ZjGE9uRNvZUmxrXKe55Floyus6/oqNk5/Y3UAMHk7ZlDmYZrkkacTPIoWa02PBSTaYHg2f8xEWPaJTID4s4NATPpZ/X2Na5v+VJO0E91nvRqzE7nwCTJ8I7GAvFs9oD26Mzs0Ia63crxpgNCTs843X9/stAMHVRd0/+Ov7dNDgfQEkbeXttQauSE69ICilKs3QKH9o+gjoYLc7TiHBXLNqpE+4OvG7YzDww76VdtcjihPeqkftn3sAwex9LBEL47uUuEh/IOXoKSTzgql1PiILT+s7dB744ebguXMfoIKSCYR7xaLzQjdRBLD+HS1kJPTAe4sJL7/Hz7xZaMBr3qx9xLGdeN7/s7cADzntBbTqfqk+KhLMpFxDmAL5eWlQUXH3IRh7Z4a6LMiJiootSGBTXmPu75LbysncG9sbipTOdkHcKXgnEk1smBhsfhUhoap2PQkiRON+MhGidHpYIdQVDSrZ6FF0T1LVzIMft+BWOeUiQpgcKn2evNKMIFuDBZX1KLkRvuKKlaAgpZ3FLSqu09ICD1RJgH26GAcw3gL7bjb3FD5RU1+cSCsVQjV48YJVADQv7rVc7tizS9bojdQ+DyN51e0RzMSoPpFDlr+mSHhJxS9fbJjTpnUFnCZDJxuKSAPTKocl+6e9yf8rPxv4osSIwBwUdxrgsmWEND5bvFkb8T3InzZaLL1Cmmo8Dkd/F/fAVmaq0HzN/OwSREgDMq2iFgcBmcRdsu9hL2N7rkCx0SJ+uWq54XVb6UDW5whAc0r2S+28bJ8Tje9g7a+9QwaxKtAqAlVDnp19HlHrLdwdk3CWYxBonu+KunJLp02UJUx0z3cPMeAZHRYKJrcPbAfTlrHx4FkcJ+vPFoRcW6JYDBupzsQZSwU4Y0nE2zcyjs2tUVKMj9c1yLJHvVtd8IEpA5MMdGat9A8fnfow98l4LYx38q/OXpqbULYARzJUVP7v1HZf+oAOJO6p6asWb63MkJnC1El4GX1ulDTB6JGCEWZtiZJ6tjGrc5RuDLiTCBPldrDD0tUswxn/eg1NU9+Hfqm1lKWg0qbx7RaHKS7h4Wr7OTOZBBGEExKAYwNBt9YjODgi5Apnk9qClMdcRf4Oe2R8/mOOYa9MnJ5F4dUTYkwrZMBR07dNv6lMEFXnYhIXOVDpmg6Z9eBjkjfDXdLU4i+iPJViFaIOOH3AddRpPwc7iX4pdDrpmmr3vKydSbkIbXDfkIvD6IWyWAq7Ht+jW7d715jUSvq4Wk+jtNHa87FdZoCFo1zUCa0VCJvV9ZQ5L/nyHRzgrJWI9oHAeNBDDQ1+nVg5a688a+M4fwAEtNSCr05TTpLArmht9cNp/9xQ7i/5pXxQrpJIRXnXllzconpPffQFdJpLff7Brh7eHSI9wncngcCLniyIn57bDD9/4gqMDtG2o+b/yYaeFGveH4XTDl2jao0h6w6i2n76by0y2ItW9jaq5vGAnfu/NUoLy98bVprYGSn8MUhowCkijC3sf2cEgP0EdvUHRPErHa+mr/3+IiMKwQu3ebVvtO+qXvMiJwGiZXIM5XABfGArzZTqGVhvClfhVlYvB90fMEitRBpKqbe+ha7ysjkSzgIq5yYkezwZ+yY/OX5m9+qE/Wc1MD1McUg4g38XSwaS8ioEjrp2cXl4b8HBBc1+GPxXHbs+9QFl+GQTXi2bYkfxRdN+0OeLzv9D7OWnW1bQ5JhGD6ZbE18nafuOYadPm20olGy6BpeknfGIZU17XR/zu0Q7gD6pv/7aY5Ca/J6eVtTJK
+{
+ "title": "Quiero encontrar a Alicia",
+ "subtitle": "Глаголы e→ie, o→ue, e→i, неправильное «yo», querer/poder + инфинитив.",
+ "speak": "es-ES",
+ "hero": "novels/el-tren-fantasma/cover.jpg",
+ "hearts": 5,
+ "keyboard": [
+  "á",
+  "é",
+  "í",
+  "ó",
+  "ú",
+  "ñ",
+  "ü",
+  "¿",
+  "¡"
+ ],
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 7 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "querer",
+     "хотеть"
+    ],
+    [
+     "poder",
+     "мочь"
+    ],
+    [
+     "dormir",
+     "спать"
+    ],
+    [
+     "volver",
+     "возвращаться"
+    ],
+    [
+     "pedir",
+     "просить"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Marcos",
+   "after": "encontrar a Alicia.",
+   "options": [
+    "quiere",
+    "quere",
+    "queremos"
+   ],
+   "answer": 0,
+   "es": "Марко хочет найти Алисию."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Yo no",
+   "after": "dormir en el tren.",
+   "options": [
+    "puedo",
+    "podo",
+    "puede"
+   ],
+   "answer": 0,
+   "es": "Я не могу спать в поезде."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Nosotros",
+   "after": "a las ocho.",
+   "options": [
+    "volvemos",
+    "vuelvemos",
+    "vuelven"
+   ],
+   "answer": 0,
+   "es": "Мы возвращаемся в восемь.",
+   "why": "В nosotros корень не меняется."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "¿Qué haces? —",
+   "after": "mi trabajo.",
+   "options": [
+    "Hago",
+    "Haco",
+    "Hace"
+   ],
+   "answer": 0,
+   "es": "Что ты делаешь? — Делаю свою работу."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Los zombis",
+   "after": "un café.",
+   "options": [
+    "piden",
+    "peden",
+    "pedimos"
+   ],
+   "answer": 0,
+   "es": "Зомби заказывают кофе."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Yo",
+   "after": "a Alicia.",
+   "options": [
+    "conozco",
+    "conoco",
+    "sé"
+   ],
+   "answer": 0,
+   "es": "Я знаком с Алисией.",
+   "why": "Знать человека → conocer."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "No sé dónde está el tren.",
+   "options": [
+    "Я не знаю, где поезд.",
+    "Я не вижу поезд.",
+    "Я не ищу поезд."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать по-испански?",
+   "word": "Я выхожу из поезда.",
+   "options": [
+    "Salgo del tren.",
+    "Salo del tren.",
+    "Sale del tren."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите на испанский",
+   "es": "Можешь повторить, пожалуйста?",
+   "answer": [
+    "¿Puedes",
+    "repetir",
+    "por",
+    "favor?"
+   ],
+   "extra": [
+    "podes",
+    "repites"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "¿Qué hace el zombi?",
+   "es": "Что делает зомби?",
+   "options": [
+    "Empieza a cantar.",
+    "Empieza a dormir.",
+    "Vuelve a la estación."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "El zombi",
+   "after": ": «¿Qué hace usted aquí?»",
+   "options": [
+    "dice",
+    "dece",
+    "digo"
+   ],
+   "answer": 0,
+   "es": "Зомби говорит: «Что вы здесь делаете?»"
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "¿A qué hora",
+   "after": "la película?",
+   "options": [
+    "empieza",
+    "empeza",
+    "empiezo"
+   ],
+   "answer": 0,
+   "es": "Во сколько начинается фильм?"
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "«Podemos» es correcto.",
+   "answer": true,
+   "why": "В nosotros: podemos, без изменения корня."
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите по-испански",
+   "es": "Я хочу спать.",
+   "answers": [
+    "Quiero dormir",
+    "Yo quiero dormir"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите по-испански",
+   "es": "Я прихожу",
+   "answers": [
+    "vengo",
+    "yo vengo"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "«Sé» es una forma del verbo «ser».",
+   "answer": false,
+   "why": "Sé — от saber (знать). От ser — soy."
+  }
+ ]
+}

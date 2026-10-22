@@ -1,1 +1,117 @@
-LITMIR-ENC1:gIaDC2aMgX/RakvAtucGkMbhCftzNAAiuc3cNPvcwAuno9xD8sDst6NhlNCpKbP+zwxpta0GJKs22C7srD7zWtjHE/bp2m/mCBEbud4KLIE8fr1sODFtYB5+FqlNbbbXqSnsdWfIG7K0GZOUJr5HCYvjHb7h67h7J6EgIa44Pf60+bw6NJqgLNtCygDup3GJHDEKGMK7Vpq7k4OW6g5FPWZ0l9BzDufya9m8TqUEtbJNxc5maWWbSaFLyq9dXEH9mvgIpzlwt8iQhtwGh3UrAiodzyoZ+2sutJVkzY8ItkVnKeRIlEbXVzOrfHOh+uj7vMe0yynqGvzyTcUxtGIDubB0M8WNJv+oKmy/tJRQu09VB82oquWP9BuCGkDesOq3aeiQ9BJHn/8BxHWQdleF6ZHis1kFEMJWQ6fVOjnapBbNrE1BBRaevRQmKLK4Mi+jDMkTEijsM23e/XOSbOdIlgJfPFyrEEDnFjHe7LOamWYP2BYoYd3CAs/EMcDexuUYiFImzsekQ4HSywVMnsYJxpqO69RhYi0YzVwlT2QlUrfHfwMTZjKW5nyOKb1Jae1R1TkxOkfleRM8n2X2N89+bJu3zL5DjBTschHiX69jeLrIX4swlB6Rd+PwCj6njP1Htxiun3bs4WGF18s6rYmvW3WNamZYnhwNgl11IpTXPevF39kVP9HCkjvxpkRUNCa1DxXelKZG3kDwU3x29sLXT7xbhxhOGrip3UqLzY0Q5+wNj/dDNcSwDmA6raScBM9QyKVqIWFxk3cop5z6KC9HHdxz+YVhLJfu19KORGxz1CU2cUzrWqyo08dcNFA4v3ip/7TJdKF00OoA0QMz/rS7bwHqEYpd7mX21WuOpF+1kk6aP/QrDltNtLKmM1wu3Q/nLy2PTvPJCqISj1n3bmAuGWoWG7O9N4bYH4suZJJ77nkaatWMD2Vy+JrT6YUsc9LBWEKc8a9OUkFPU79ZCRv1JRAHTbYmKoRd9LMoYBJcX0eFzZtArsguRUOsfRmB9dCODLivXxnt05IlL7kzYhy8B9grCEq1ArkAlM/PD01TGSZ8LYuO3Dnv2qVIEiCo2WKMQKuhgbYcsV8HQ88Zz33RW7EFLMF7k2BR02Vtd0WNKuIBdjmf/qYviG6esKsvXq5dmMWRyg2ycyGoDI2qY+2swhU43Q/VvtlT4xmJ1XhLubYkvt39uXVCkSYBpfcP9DOz6El9B/pCa/lqo97iKq3/XSwm3OHr6ttbKZ0SlbcX2DHp5qOHCyJu36mHELlB9M6g2icEggX4Hh1L682bs0ZXDkS4Yw0wdSCNZgyLvhP3vNYNTYAgqhqGwNGzWoihORQIx4IGIDmyjIKcpgpseTwUqhoijQzCmH/1syVp9MRyHFAmkZQczR7poJxQ+5BZrF+Tikxo5XVveNxWmUOHfUvtJRZGRzI84LZbKMHruSSS2Q/HiQ/EzKfQXb8SEO2OYvGYKJyV968PXf+CN9h2bPsRk8rPRetTgR17CyuhOAXpDLQ2E4fEwdeNw8Rdc7v9R9qtAeT6al002gtIld3AFv1jto1v0nvrpJtmoLxlVWvZkpFZ4LdaJfW9L7UtgyZs+ZlQuUijDzcdBf4xZTUAsBE1RAdR4gEBXIMAEd4VWD270Y5GV/hGNSA5mrzcKYshAsIztywBX4/RZ9S3PcpnskFDa1DLWzTKqxph+s6D93vhoA1trvcGuJIb9Qd1Oa+wKy/dauNg7JKZgOstcyrKGw3ZIrBGxx3evAzGGIPlr36hslIEMgEAOz5Ex1C0uOJyq/6bsVctgdPprpWIP3Q1PXfafgbFXO2NW1W2t0IHTa3MpHrs2jONfPPR+v5ZgvRRCw3Ts7WPEz8RZa5ENLQmMdAFd6miX96zgGLX1UxeRqyDw/S/GjzOE/nkeh3+CvrQ0o2jqtX6L//VaGyWXHfw4Hx7u/5DI2RmFnmTWgQO8igK+0JEHAFhHoRAaRYHA4V5e9Ey+WtkCV9VKLl2vgOxkk97Js14eyyIjpvIcf/ec2a5ePtiDFlxHsA9CsoGv4Wro9LGBc0Rl5M/W4J5B+o6tmzwRugcclbJR3azgHtX/2U4TYwPrvsiX1Zgiuch2U2CiJal1AbHIzAEBMLTmhVSUH3FssBzcEK3a3NWWiCcDphur1QLa5zxvHLCbpnMciFtTymH+DpvrgOHX1DZ0HjdKmX/R7XprPahR8yJ9qDJTPU+Z2NrjSHRwcLy10u24X4bhpzIvku+xuHMncOpLx9VA1AnUlxQ+xAYt6LurNvK9mUD9wB8FEVmNUkTVdt7r7O2hj+tPjB9WoFMbtgHeWKYnM91bzeOiU3QsXzAVFtCdk8OoPzrbbQkimu2DYA32UssXHF1PeRJyY9Ah/VTJOrc8R/lL+RSnZZ5Pz6vOiYWZnqw4h+lUkXqoyeYt3hkTx28VsmnI878wY88FI5NcA+YZGujMbDYaU9JOuo4/tGbe4F0yGeNvuyl6iDfsA/BUcwbZSuiKzEhzunTdERCLd5AAZpbNdd5GQvtmoUeuTmNFv+k2mhKtaZlpCnLu6K9g2CNzGFPggG4HJDp64RoyLwFHT2OVFm5qS4eI/pPXYP+gxyk3vnWB75HEtLN2OTHeZlrBOAqGuWP9V3ou1pWO6j0S9VGgfAmzbaXgsEZlvPGFGFsK6GCZIdWGbnHrR4Qqnyb6A4/HMD1OPGDqqICd0sL6WhkXwG4sVlgxs4oWzxiAYzDfH00N5ODFoySMDWgSw7lNxdYKWTPviG4+YSok6OyqW9QKcSliWNXAUOQRLoYZnuVuq9ue1r63iu9Jrdqhe/XMIr9hylaQX3KNXJzWHVf0qRjLGDhoxFHt8YvbyG3tT5QHKRlVVnAd53jJ4UtRSqdyFMf7+a4xqTU/QNev6+2OIRxzBZVmpEYScffZAQNfYvcw+brfXF9NYIgbDXO4bA71+81RAuZNbV6uYhq4xfD5PnZ0B7q3F+BZo5LNRzY0Bj49BXqEZ6mCIwWvkrfBDautzEpNU4lgdzhyGoTKGv8EXmj4q6nDbM5+5HXnOX2P4QoGOc4e81NUUy8/lgExocTKc+ncOMHPQngFKgulgi5Yb76QaZNNxKPgvxsJo/6SvYp0Bmz+cLxb6tduZggddFozX4f+k0EfVZ18MvifD8cBlrW+mcbNICWOxrhKYKwmLEu6AKupA4bGnYlMbD5LU5FCEyhgkt2PNT0VMXniGQEikCIo7ZcYAJZVRMA7IlrRkMqsyPNcc6zKeKXo+W4oXVAPlqnP0AVgqsIE6jYgNL1eZClgwim7Verlq5IfbcHr+0Y1/RVAaUicBPNeTViFZVLLo7kF4rKJHzo0K8VMsZbmZNI+F2sW2S4qYw2tA9uTBTNNrd2DZQy0yMBi93m6B/n8jeDRsJgWEwEag3JBqXxpwckYiBC6YwOAYtsZg85BhDUdXwDHfxzj+eAzAsIsS+1PSU6R3tcPft19aO2esjiF+SxCmurbkICttUNJiuzEo2AnKwtPv9b78wA+p98bYQKlYtgDMUSpLPodjXh/NVrv0W7fFmDvABfj2ve6qL5o/yrOff5/5VgkWYAAColpLZ7Lbb+UlSH22iFN25NxfWzP3dCWthrNue2neTjTdAbHNu7zMmBI0TI+m1BWfER4XtMhjHdmZJredfSnn8Zt3DqHYQQZqzE6uU7AJWM4sRZoQOvZ+Io+iIBAg8Y4Wj9j3GgsfE/yYB/jozUjL0XSxOI1eeBGogBxROHYP/SvFhezj1Tn6I/s0OkzvAcxl/9BY7R1VWTn9B0H/P02uUg1i+CCP5JyuFRtGO4t8tY4EQ9y8dH3E0DG6VO+BXgQQXO3lozh6pRivXs8W7G7hQJhGk4EjbwdSP6pqZtnbkmozOhf/pIQkNXzqxKIzeGgFLwp5iDXppLsD/5VX45m6/piHikEPFPgP2vfFMe/NNmFMrqTbyVXuNuobNlLuaJy1HUxJ3kzFyCKzN1xs+H85kgB6D5gLA7t3fk7wRuBiKLNrZL4n0PtaPzTteQEhPYYRDayM3wJCma1F7QVTempt3T5HDvxwz38V54xT7BlxcWbydHzuNhTECWGvHFUOBDQGumB2wi4j5hLDOb2PiYV31Q2Pcfwm0mr8jRcnpE4kMKV7KgZVZUdMOQgjRcT+xaOLIdhkL2OfE2tTV6qnOIuW5Mhnn7YzD/rVuQwo0XXLyIDdBRB9ewwA73Auvm4jLjqbKEI7pVZ9TI1zeLotAc7IPGX5SVzOvHSHbArFXGODmUJ12JGVp1GyfIA3vuYB5TFmgAGuM4i4XVb9NCLwMh2Xr5vxh9icaPKdKu8xXzsYBrfuz4ShtaN1mEbWWy8Ebn70055IWponJkmViIZPrrprWLJws4AQUx5T0VYXAjYUQxaniDFyJ2N5Jh+7AKg3aRYdfL7yDT74aREvYnbYWfIp9kCZmRYL2hhLnNId/XSw9zOW5XAZ1rSkMv95g42nojn1LvqTE5QVPI49PeJIMZyIFFocEzHXTjVJFFzJ384v3jPAEOBpP4TM4dpja4HVtGrZmA9ySKWLh2kgN9dt2ZmwYqtWdkla1vUA2FBaMP3PiiYNzCih0vm5nh3IlZ/X7clGmFuszncH/+KpupcHmNz8lmmiSz3A+3AFSATgRKggsq2EjwjYwj0PpIhmoNoYAGySHsTu5UsmCw7LqwIQV/215A7Fkf/LztyPEUdmlr3ZAL+aA9wE9BX7g7NRGl4S9E/VEy20GUCOPz5g11QyFRWVYI+O4AXgNLc+KUaloAkyeXZ4VDMeOnuqiavg67rpOthhV/2NwRWK0pMlbKxFiW+2llJrk0367/aVs8fMptSWckgjq0vkrEk+yoeZyJ7Rd49kxSezY1LAF9ytNPH6oyVujUzuoUqLo1WBlFHWoRYp678qL0EcbuBrwYhcaVm0LMF6V3sgVOs/z1+9oE34CRnniyg3pfRyYKLLwkB1pYNFIzo83jGQaLtCf/ayC4ACH1lXeknyS1Y2OiQkhwmTJW7hegFcIzCkV5aOnbnj7Kv7TtEeFd72IlBPmIMAgwBkJsYq26Rx4AuINlpKFfAjP+DLhpzpoa4hh5NJts2sndkw1VaaCn5fnCPGSqSxpipmGVf1uaLgTMXkt+jnRnOYspG4KgdDgtGVmLu+sVX4v9mDojQEtELjYU8Fv8Bqeg0X+n38zLd0Npbo/aArjBS2GzRPhxknhsouWLQhL8B1SgN8/Yvb8reKPSaiV5GrwjubHj5vWe0tqeNScpFfNwLAwGLKVmfuQkcUx5hp2OmCuYyUzgFyCMIrPr0xcn9gj0cOfr5mntHcmMhKKDGjDX1XpxwK2nWeSmfSTGnHUYR+zW7rkMMxHqoHlWwzeRe13j0YQSnvNDnsu7Djet0Oi9ZEebcIxS+tBMl6nmTQKKIaxhyV7w8vzD6U/RoVoebyEYf4dCpoIgfm4rT9USStk8rv2luas7kTmL7XEpQ8f6xoG21Z0aaBt7jS4h3YF8I/fXz2YBsqfxACMEQS7JXJ92v5Rmu6JSeAKjzTGuf3Wjz06tENx2bVcYn1ZPiBkeSQdGrU2NpRmyrIdWx833dJL2r0QP/M76wN9LMfs61C3erTC3a0l48HMJdTIJ9VlwnW8+DUJPGYA5MjiD8H9L6q6uyALGC/lXgCUo/s2KXN6J5AopxlWcDpl/EFcxy60rBk4lVA4FzkNVhlIcgHQpWjq2D+1i6WqtGicj5PoUjgth9Qcr8yaWLM/jjr2cyUhkjHFOPviD2d9WTa/qlDE1ULkXTG8TXGzBgg9Hi3xsREf5TCDsmyrIcP4xw6M+mZD/yAq6/Cul8c13yW9Ognb5RqbxE2hOahbFgzeazIiOtvD9wPnIoPy8WxFb53k+rIUm3u4jrQT17iYUlAJgSt2qmu0SQXgvPFert0khNEMUpToKje8aQ6dw5Ht5K/a/YMMmDx5b4YQvmdFlDW0P3CHFKqyxWSgKl99cDvfvG79CMiiIvm2LMP63PC4/+psGQCZ1FRUVwb2A4Fik5Q4HAUxpz7d5/opNd1bODbscjsGLfWN3HtVLsuawdfUj/ldbnY9EKPctmsQCmnzYJTzBse51PIUPpCUDI7uXKlvLe4PH4z1lJoxnXqLGtHhkZtk8lZYvTV6jEDaSlUqCkEYf7GLyqhdm7hbzoRxs1AQwieyI+cN4KXYSNsZPMUdIXHBZPcB37sEBslq73cS9MWTJAaUvUhlJWA3OWDR30nCrZLIAY/MXSKeHDkuwpasr572Ywq79F0Pc9IZUdJ8otmGe9+OebEYyz+f6fSVI2Ds55hfBrg9LYtzAj/tVZ+wcxtuHAcwH+aqrHk6qj36RsutvFIf7QaVGdYYYvV0DF33v+jEw00h2PeGGeaxoENB2Lqi3ok++dRyucIUfGUDJNsCM7skpeIkRNwm6/hWOaIUCn1jxpkCPL18c50f0ipZ8a6A2AKCMpuqmvaUrMKTCCH1DWvQIZIZhJCxYpi9SLcun1fjNaVjt6g9u
+## Plans for the week
+
+«La gran conspiración» again. It's snowing in Moscow, and Natalia has two dates with two Argentinians. She writes to a friend:
+
+> **Esta semana**{This week} **va a ser**{is going to be} muy interesante.
+> **El martes voy a cenar**{On Tuesday I'm going to have dinner} con Luis, **el pintor**{the painter}. **Va a dibujar**{He's going to draw} mi **retrato**{portrait}.
+> **El viernes voy a ver**{On Friday I'm going to see} a Roberto. **Vamos a ir**{We're going to go} a un restaurante **en las alturas**{up high}, con **vistas**{views} a todo Moscú.
+> Pero **hace mucho frío**{it's very cold} y **nieva**{it snows} **todos los días**{every day}… **¿Qué me voy a poner?**{What am I going to wear?}
+> **No sé**{I don't know} qué va a pasar. **¿Y tú qué vas a hacer el fin de semana?**{And what are you going to do at the weekend?}
+
+## 1. The near future: IR A + infinitive
+
+The easiest way to talk about plans is *ir a* + infinitive — just like English *going to*:
+
+| | ir | a | infinitive |
+|---|---|---|---|
+| yo | voy | a | cenar |
+| tú | vas | a | ver |
+| él / ella / usted | va | a | dibujar |
+| nosotros | vamos | a | viajar |
+| vosotros | vais | a | salir |
+| ellos / ellas / ustedes | van | a | volver |
+
+- **Voy a cenar** con Luis. — I'm going to have dinner with Luis.
+- **¿Qué vas a hacer** mañana? — What are you going to do tomorrow?
+- **No voy a trabajar** el sábado. — I'm not going to work on Saturday.
+- **Vamos a** + infinitive can also mean "let's": ***¡Vamos a bailar!*** — Let's dance!
+
+Useful time words: **mañana** — tomorrow, **pasado mañana** — the day after tomorrow, **esta noche** — tonight, **este fin de semana** — this weekend, **la semana que viene** / **el próximo mes** — next week / next month.
+
+## 2. The weather
+
+| Español | English |
+|---|---|
+| ¿Qué tiempo hace? | What's the weather like? |
+| Hace frío. / Hace calor. | It's cold. / It's hot. |
+| Hace sol. / Hace viento. | It's sunny. / It's windy. |
+| Hace buen tiempo. / Hace mal tiempo. | The weather is good / bad. |
+| Llueve. / Está lloviendo. | It rains. / It's raining. |
+| Nieva. / Está nevando. | It snows. / It's snowing. |
+| Está nublado. | It's cloudy. |
+| Estamos a diez grados bajo cero. | It's minus ten degrees. |
+
+Note: for weather Spanish uses **hacer** ("to make"): ***Hace** frío* — literally "it makes cold". And it's **mucho**, not *muy*: *Hace **mucho** frío.*
+
+## 3. Months and seasons
+
+| | | | |
+|---|---|---|---|
+| enero | febrero | marzo | abril |
+| mayo | junio | julio | agosto |
+| septiembre | octubre | noviembre | diciembre |
+
+Seasons: **la primavera** — spring, **el verano** — summer, **el otoño** — autumn, **el invierno** — winter.
+
+Remember that in Argentina it's the other way round: December is **verano**, and July is **invierno**!
+
+## 4. Dates
+
+- **¿Qué día es hoy?** / **¿A qué estamos?** — What's the date today?
+- **Hoy es** 21 **de** octubre. — Today is 21 October.
+- Mi cumpleaños es **el** 5 **de** mayo. — My birthday is on 5 May.
+- **En** invierno, **en** diciembre. — In winter, in December.
+
+The first of the month is often **el primero**: *el primero de enero*.
+
+## 5. What you can already do — level A1
+
+In ten units you have learned to:
+
+- greet people, introduce yourself and say where you're from (unit 1);
+- talk about work and life with regular verbs (unit 2);
+- describe your family and people with *tener* and possessives (unit 3);
+- say where things are with *estar* and *hay* (unit 4);
+- tell the time and describe your day (unit 5);
+- say what you like and order food (unit 6);
+- use the main irregular verbs (unit 7);
+- find your way around a city (unit 8);
+- go shopping (unit 9);
+- talk about plans and the weather (unit 10).
+
+**¡Felicidades!** You can now read the first chapters of «El tren fantasma» — a novel written for learners that gets a little harder with every chapter.
+
+## Check yourself
+
+Mañana [[*voy a|voy|voy de]] cenar con Luis.
+
+¿Qué [[*vas|va|vamos]] a hacer el fin de semana?
+
+En Moscú hace [[muy|*mucho|mucha]] frío.
+
+En invierno [[hace|*nieva|está]] en Moscú.
+
+Natalia y Roberto [[*van a|va a|vamos]] ir a un restaurante.
+
+Mi cumpleaños es el 5 [[en|*de|a]] mayo.
+
+In July it's winter in Argentina. ( V / F ){V}
+
+«Hace calor» means "it's cold". ( V / F ){F}
+
+## Unit vocabulary
+
+| Español | English |
+|---|---|
+| ir a + infinitive | to be going to |
+| mañana | tomorrow |
+| la semana que viene | next week |
+| el tiempo | weather; time |
+| hace frío / calor | it's cold / hot |
+| llueve / nieva | it rains / snows |
+| el sol / la nieve | sun / snow |
+| la primavera / el verano | spring / summer |
+| el otoño / el invierno | autumn / winter |
+| el mes | month |
+| el cumpleaños | birthday |
+| ¿qué día es hoy? | what's the date today? |

@@ -1,1 +1,97 @@
-LITMIR-ENC1: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
+## Ужин в Мендосе
+
+Луис и Наталья («El misterio de los Fader») ужинают с Серхио. Мендоса — край вина, асадо и мате.
+
+> — Natalia, ¿**te gusta**{тебе нравится} el vino de Mendoza?
+> — Sí, **me gusta mucho**{мне очень нравится}. Y **me encantan**{я обожаю} las **empanadas**{эмпанадас, пирожки}.
+> — ¿Y **el mate**{мате}?
+> — Hmm… **no me gusta**{мне не нравится}. Es muy **amargo**{горький}. **Prefiero**{я предпочитаю} el té.
+> — **A mí tampoco**{мне тоже нет} me gusta el mate sin azúcar — dice Sergio. — Pero a Luis **le encanta**{он обожает}.
+> — **¡A mí también!**{мне тоже!} — **se ríe**{смеётся} Natalia. — Me encanta Luis.
+
+## 1. Глагол GUSTAR — «нравиться»
+
+Испанское *gustar* устроено как русское «нравиться»: то, что нравится, — **подлежащее**, а человек — в «дательном» виде (*мне, тебе*…).
+
+| Кому? | | Один предмет / действие | Много предметов |
+|---|---|---|---|
+| (a mí) | мне | **me gusta** el vino | **me gustan** las empanadas |
+| (a ti) | тебе | **te gusta** | **te gustan** |
+| (a él / ella / usted) | ему / ей / Вам | **le gusta** | **le gustan** |
+| (a nosotros) | нам | **nos gusta** | **nos gustan** |
+| (a vosotros) | вам | **os gusta** | **os gustan** |
+| (a ellos / ellas / ustedes) | им / вам | **les gusta** | **les gustan** |
+
+- С одним предметом или глаголом — **gusta**: *Me gusta **el** té. Me gusta **leer**.*
+- С несколькими предметами — **gustan**: *Me gust**an** **los** libros.*
+- После *gustar* существительное идёт **с артиклем**: *me gusta **el** vino* (не *me gusta vino*).
+- Чтобы уточнить, кому: ***A Luis** le gusta el mate. **A Natalia** le gusta el té.*
+
+**Encantar** — «обожать, очень нравиться» — работает так же: *Me encanta Mendoza.* С ним не говорят *mucho*.
+
+## 2. Тоже да / тоже нет
+
+| Фраза | Согласие | Несогласие |
+|---|---|---|
+| Me gusta el vino. 😊 | **A mí también.** — Мне тоже. | **A mí no.** — А мне нет. |
+| No me gusta el mate. 😕 | **A mí tampoco.** — Мне тоже нет. | **A mí sí.** — А мне да. |
+
+## 3. Еда и напитки
+
+| Español | Русский | Español | Русский |
+|---|---|---|---|
+| el pan | хлеб | el agua | вода |
+| la carne | мясо | el café | кофе |
+| el pescado | рыба | el té | чай |
+| el pollo | курица | el vino (tinto, blanco) | вино (красное, белое) |
+| la fruta | фрукты | la cerveza | пиво |
+| la verdura | овощи | el zumo / el jugo | сок |
+| el queso | сыр | la leche | молоко |
+| el chocolate | шоколад | el azúcar | сахар |
+
+В Аргентине: **el asado** — мясо на углях, **las empanadas** — пирожки, **el dulce de leche** — варёная сгущёнка, **el mate** — травяной напиток из калебасы.
+
+## 4. В ресторане
+
+- **¿Qué quieres comer?** — Что ты хочешь съесть?
+- **Quiero** carne, por favor. — Я хочу мясо, пожалуйста.
+- **Para beber**, agua. — Пить — воду.
+- **¡Qué rico!** — Как вкусно!
+- **La cuenta, por favor.** — Счёт, пожалуйста.
+
+*Quiero* — от глагола *querer* (хотеть). Его полное спряжение — в уроке 7.
+
+## Проверьте себя
+
+A Natalia le [[*gusta|gustan|gusto]] el vino.
+
+Me [[gusta|*gustan|gusto]] las empanadas.
+
+A Luis [[*le|les|me]] encanta el mate.
+
+— No me gusta el café. — A mí [[también|*tampoco|sí no]].
+
+¿A ti te [[*gusta|gustas|gustan]] leer?
+
+Me gusta [[vino|*el vino|un vino]] de Mendoza.
+
+«Me encanta» значит «мне очень нравится». ( V / F ){V}
+
+Наталье нравится мате без сахара. ( V / F ){F}
+
+## Словарь урока
+
+| Español | Русский |
+|---|---|
+| gustar | нравиться |
+| encantar | очень нравиться |
+| preferir | предпочитать |
+| también / tampoco | тоже / тоже не |
+| la comida | еда |
+| la bebida | напиток |
+| el vino | вино |
+| el pan | хлеб |
+| la carne | мясо |
+| rico, -a | вкусный |
+| amargo, -a / dulce | горький / сладкий |
+| la cuenta | счёт |

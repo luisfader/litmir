@@ -1,1 +1,114 @@
-LITMIR-ENC1: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
+## Мы должны найти Яну!
+
+В романе «Podzemní tajemství» принцесса Людмила гипнотизирует Яну своей песней, и Яна уходит. Луис приходит в себя в подземелье, у него болит голова. Вот упрощённый вариант этой сцены.
+
+> — **Kde je Jana?**{Где Яна?}
+> — Šla za princeznou. **Nemohli jsme ji zastavit**{Мы не смогли её остановить}.
+> — **Musíme ji najít!**{Мы должны её найти!}
+> — Ale kde? **Nevím, kde je**{Я не знаю, где она}.
+> — **Vím, koho hledáš**{Я знаю, кого ты ищешь}, — говорит воин в старых доспехах.
+> — Kdo jsi?
+> — Jsem Luboš, **strážce podzemí**{страж подземелья}.
+> — **Můžeš nám pomoct?**{Ты можешь нам помочь?}
+> — **Nemůžu jít s vámi**{Я не могу пойти с вами}. **Ale můžu vám dát tohle**{Но могу дать вам вот это}.
+> — Luisi, **umíš to přečíst?**{ты умеешь это прочитать?}
+> — **Umím. To jsou noty!**{Умею. Это ноты!}
+
+## 1. CHTÍT — хотеть
+
+| | CHTÍT |
+|---|---|
+| já | **chci** |
+| ty | **chceš** |
+| on / ona | **chce** |
+| my | **chceme** |
+| vy | **chcete** |
+| oni | **chtějí** |
+
+С инфинитивом или с винительным падежом: *Chci tam hrát!* (Луис, первая глава) — *Chci kávu.* Вежливо — **chtěl / chtěla bych** («я хотел бы / хотела бы»): *Chtěla bych čaj, prosím.*
+
+## 2. MOCT — мочь
+
+| | MOCT |
+|---|---|
+| já | **můžu** (mohu) |
+| ty | **můžeš** |
+| on / ona | **může** |
+| my | **můžeme** |
+| vy | **můžete** |
+| oni | **můžou** (mohou) |
+
+*Mohu, mohou* — книжные формы, в разговоре *můžu, můžou*. **Můžu…?** — так просят разрешения: *Můžu se zeptat?* — Можно спросить?
+
+Помните Люцие у двери в подземелье: *«S tak krátkou sukní dolů **nemůžeš**.»* — В такой короткой юбке вниз нельзя.
+
+## 3. MUSET — быть должным
+
+| | MUSET |
+|---|---|
+| já | **musím** |
+| ty | **musíš** |
+| on / ona | **musí** |
+| my | **musíme** |
+| vy | **musíte** |
+| oni | **musí** |
+
+Обычный глагол на -í, как *mluvit*. Осторожно с отрицанием: **nemusím** — «мне не нужно, я не обязан», а не «мне нельзя»: *Dnes nemusím pracovat.* — Сегодня мне не надо работать. «Нельзя» — **nesmím**: *Nesmíš tam chodit.* — Тебе нельзя туда ходить.
+
+## 4. UMĚT или MOCT?
+
+Как и в русском, есть «уметь» и «мочь»:
+
+| Глагол | Значение | Пример |
+|---|---|---|
+| **umět** | уметь, владеть навыком | *Luis **umí** hrát na kytaru.* *Neumím česky.* |
+| **moct** | мочь сейчас, иметь возможность | *Dnes **nemůžu** hrát, bolí mě ruka.* |
+
+Отличие от русского: о языках говорят с **umět**: *Umím česky* — «я говорю (умею) по-чешски».
+
+## 5. VĚDĚT или ZNÁT?
+
+| Глагол | Что знаем | Пример |
+|---|---|---|
+| **vědět** | факт, ответ (часто + *kde, kdo, co, že…*) | *Nevím, kde je Jana.* |
+| **znát** | человека, место, вещь (+ вин. п.) | *Lucie zná pražské podzemí.* |
+
+По-русски в обоих случаях «знать», а чехи различают. *Vědět* неправильный: **vím, víš, ví, víme, víte, vědí** (ср. древнерусское «вѣдать», «ведать»). *Znát* правильный: *znám, znáš, zná…*
+
+**Já nevím.** — Я не знаю. **Já vím!** — Я знаю! (Так гордо говорит Марк, когда Люцие называет его гением.)
+
+## Проверьте себя
+
+Luis [[*chce|chci|chtějí]] hrát v podzemí.
+
+[[*Můžu|Umím|Musím]] se zeptat? — Можно спросить?
+
+My [[*musíme|musí|musím]] najít Janu.
+
+Luis [[*umí|může|ví]] hrát na kytaru.
+
+Nevím, [[*kde|kdo|co]] je Jana. — Не знаю, где Яна.
+
+Lucie [[*zná|ví|umí]] pražské podzemí.
+
+«Nemusím» значит «мне нельзя». ( V / F ){F}
+
+«Umím česky» значит «я говорю по-чешски». ( V / F ){V}
+
+## Словарь урока
+
+| Čeština | Русский |
+|---|---|
+| chtít (chci) | хотеть |
+| chtěl / chtěla bych | я хотел / хотела бы |
+| moct (můžu) | мочь |
+| muset (musím) | быть должным |
+| nesmět (nesmím) | нельзя (мне) |
+| umět (umím) | уметь |
+| vědět (vím) | знать (факт) |
+| znát (znám) | знать (человека, место) |
+| najít | найти |
+| hledat | искать |
+| pomoct | помочь |
+| zastavit | остановить |
+| strážce | страж |

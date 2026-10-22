@@ -1,1 +1,111 @@
-LITMIR-ENC1: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
+## Один день детектива Марко
+
+Марко из романа «El tren fantasma» рассказывает о своём обычном дне. Но этот день — необычный: ночью на вокзал приходит поезд-призрак.
+
+> **Me levanto**{Я встаю} **a las siete**{в семь часов}. **Me ducho**{Я принимаю душ}, **desayuno**{завтракаю} café con **medialunas**{круассаны} y **leo**{читаю} el periódico.
+> **A las ocho y media**{В половине девятого} empiezo a trabajar en **mi oficina**{мой офис}. **Por la tarde**{Днём, после обеда} hablo con **testigos**{свидетели}.
+> **Normalmente**{Обычно} **ceno**{я ужинаю} a las nueve y **me acuesto**{ложусь спать} **a las once**{в одиннадцать}.
+> Pero hoy es **viernes**{пятница}, y **a medianoche**{в полночь} el tren fantasma **llega**{прибывает} a la estación central. Hoy **no me acuesto**{я не ложусь спать}.
+
+## 1. Который час?
+
+- **¿Qué hora es?** — Который час?
+- **Es la una.** — Час. (только для часа — *es la*)
+- **Son las dos / las tres / las once.** — Два / три / одиннадцать часов.
+
+| Español | Русский |
+|---|---|
+| Son las siete **y cinco**. | 7:05 |
+| Son las siete **y cuarto**. | 7:15 |
+| Son las siete **y media**. | 7:30 |
+| Son las ocho **menos cuarto**. | 7:45 (без четверти восемь) |
+| Son las ocho **menos diez**. | 7:50 |
+| Es **mediodía** / **medianoche**. | полдень / полночь |
+
+**В** какое время? — **a las**: *Me levanto **a las** siete. Ceno **a las** nueve. El tren llega **a la** medianoche* (или просто *a medianoche*).
+
+Части дня: **por la mañana** — утром, **por la tarde** — днём/после обеда, **por la noche** — вечером/ночью. *A las ocho de la mañana / de la noche.*
+
+## 2. Возвратные глаголы: levantarse, ducharse…
+
+Многие глаголы ежедневных действий — возвратные (как русские на *-ся*): **levantar**se — подниматься, вставать. Частица ставится **перед** глаголом и меняется по лицам:
+
+| | levantarse |
+|---|---|
+| yo | **me** levanto |
+| tú | **te** levantas |
+| él / ella / usted | **se** levanta |
+| nosotros / nosotras | **nos** levantamos |
+| vosotros / vosotras | **os** levantáis |
+| ellos / ellas / ustedes | **se** levantan |
+
+Другие: **ducharse** — принимать душ, **lavarse** — умываться, **vestirse** — одеваться (*me visto*), **acostarse** — ложиться спать (*me acuesto*), **despertarse** — просыпаться (*me despierto*), **llamarse** — называться (*me llamo* — вы уже знаете!).
+
+В двух последних глаголах корень меняется: *acostarse → me acuesto*, *despertarse → me despierto*. Подробнее об этом — в уроке 7.
+
+## 3. Дни недели
+
+| lunes | martes | miércoles | jueves | viernes | sábado | domingo |
+|---|---|---|---|---|---|---|
+| понедельник | вторник | среда | четверг | пятница | суббота | воскресенье |
+
+Пишутся с маленькой буквы. **El lunes** — в понедельник, **los lunes** — по понедельникам. *Los domingos no trabajo.*
+
+## 4. Как часто?
+
+| Español | Русский |
+|---|---|
+| siempre | всегда |
+| normalmente | обычно |
+| a menudo | часто |
+| a veces | иногда |
+| nunca | никогда |
+| todos los días | каждый день |
+
+С **nunca** в начале фразы *no* не нужно: ***Nunca** desayuno.* Но если *nunca* после глагола — нужно: ***No** desayuno **nunca**.*
+
+## 5. Ежедневные действия
+
+| Español | Русский |
+|---|---|
+| desayunar | завтракать |
+| comer | обедать (и вообще «есть») |
+| cenar | ужинать |
+| empezar a trabajar | начинать работать |
+| terminar | заканчивать |
+| volver a casa | возвращаться домой |
+
+## Проверьте себя
+
+Marcos [[*se levanta|me levanto|se levantan]] a las siete.
+
+Yo [[*me ducho|te duchas|se ducha]] por la mañana.
+
+¿Qué hora es? — [[*Son|Es|Está]] las ocho y media.
+
+¿Qué hora es? — [[Son|*Es|Hay]] la una.
+
+El tren llega [[*a la|en la|la]] medianoche.
+
+Nosotros [[*nos acostamos|se acuestan|me acuesto]] tarde.
+
+«Son las siete menos cuarto» — это 7:15. ( V / F ){F}
+
+Дни недели по-испански пишутся с маленькой буквы. ( V / F ){V}
+
+## Словарь урока
+
+| Español | Русский |
+|---|---|
+| ¿qué hora es? | который час? |
+| y cuarto / y media | четверть / половина |
+| menos cuarto | без четверти |
+| por la mañana / tarde / noche | утром / днём / вечером |
+| levantarse | вставать |
+| ducharse | принимать душ |
+| acostarse | ложиться спать |
+| desayunar / cenar | завтракать / ужинать |
+| siempre / nunca | всегда / никогда |
+| a veces | иногда |
+| hoy | сегодня |
+| el fin de semana | выходные |

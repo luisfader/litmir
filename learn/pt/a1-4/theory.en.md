@@ -1,1 +1,104 @@
-LITMIR-ENC1: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
+## Luiz in Moscow
+
+Luiz finally flies to Russia! Natalia had written to him long ago: «Aqui na Rússia **está frio**… Quero te mostrar o metrô de Moscou – é lindo! Parece um palácio!» And now they are walking around the city together.
+
+> — Natalia, **onde fica**{where is} o metrô?
+> — **Fica ali**{It’s over there}, **perto da**{near the} praça. **O metrô de Moscou é lindo**{The Moscow metro is beautiful}: **parece um palácio**{it looks like a palace}!
+> — E **onde está**{where is} **a sua amiga**{your friend}?
+> — **Ela está no café**{She’s in the café}, **em frente ao**{opposite the} museu.
+> — **Estou com frio**{I’m cold}! **Está**{it’s} **muito frio**{very cold} aqui!
+> — Claro, **estamos na Rússia**{we’re in Russia}! Mas **estou muito feliz**{I’m very happy}: **você está aqui**{you’re here}.
+
+## 1. The verb ESTAR
+
+| | ESTAR |
+|---|---|
+| eu | **estou** |
+| você / ele / ela | **está** |
+| nós | **estamos** |
+| vocês / eles / elas | **estão** |
+
+As in Spanish, *estar* means "to be" **somewhere right now** or **in a certain state**:
+- place: *Ela **está** no café. **Estamos** na Rússia.*
+- state: ***Estou** cansado. **Estou** feliz. **Estou** com frio* (I’m cold).
+- weather: ***Está** frio. **Está** calor.*
+
+## 2. SER, ESTAR or FICAR?
+
+| SER — permanent | ESTAR — temporary | FICAR — where a building or city is |
+|---|---|---|
+| *Natalia **é** russa.* | *Natalia **está** em Moscou.* | *O metrô **fica** perto da praça.* |
+| *O metrô **é** lindo.* | *Luiz **está** com frio.* | *Moscou **fica** na Rússia.* |
+
+**Onde fica…?** is used for places that never move: streets, museums, stations, cities. **Onde está…?** is for people and things that can move.
+
+## 3. Prepositions + article
+
+| | o | a | os | as |
+|---|---|---|---|---|
+| **em** (in, on) | **no** | **na** | **nos** | **nas** |
+| **de** (from, of) | **do** | **da** | **dos** | **das** |
+| **a** (to) | **ao** | **à** | **aos** | **às** |
+
+*em + o café = **no** café, perto de + a praça = perto **da** praça, em frente a + o museu = em frente **ao** museu.* No article with cities: *em Moscou, de Moscou*. But countries often take one: ***no** Brasil, **na** Rússia*.
+
+## 4. Where? Prepositions of place
+
+| Português | English |
+|---|---|
+| perto de | near |
+| longe de | far from |
+| ao lado de | next to |
+| em frente a / de | opposite, in front of |
+| atrás de | behind |
+| entre … e … | between … and … |
+| em cima de | on top of |
+| embaixo de | under |
+| à direita / à esquerda | on the right / on the left |
+| ali / aqui | there / here |
+
+## 5. The city
+
+| Português | English | Português | English |
+|---|---|---|---|
+| a rua | street | a praça | square |
+| o metrô | metro, underground | a estação | station |
+| o museu | museum | o parque | park |
+| o hotel | hotel | o restaurante | restaurant |
+| o aeroporto | airport | a igreja | church |
+| o ponto de ônibus | bus stop | o shopping | shopping centre |
+
+## Check yourself
+
+Luiz [[é|*está|fica]] em Moscou.
+
+O museu [[*fica|está|é]] perto da praça.
+
+A amiga de Natalia está [[*no|na|em o]] café.
+
+Moscou fica [[no|*na|em a]] Rússia.
+
+Eu [[está|*estou|estamos]] com frio.
+
+Natalia [[*é|está|fica]] russa.
+
+«Onde fica…?» is used for buildings and cities. ( V / F ){V}
+
+«No» = «em + a». ( V / F ){F}
+
+## Unit vocabulary
+
+| Português | English |
+|---|---|
+| estar | to be (place, state) |
+| ficar | to be located |
+| onde? | where? |
+| perto de / longe de | near / far from |
+| ao lado de | next to |
+| em frente a | opposite |
+| a rua / a praça | street / square |
+| o metrô | metro |
+| a estação | station |
+| estar com frio | to be cold |
+| está frio / está calor | it’s cold / it’s hot |
+| aqui / ali | here / there |

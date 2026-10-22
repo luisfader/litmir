@@ -1,1 +1,353 @@
-LITMIR-ENC1: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
+{
+  "title": "Test de comprensión",
+  "subtitle": "¿Cuánto entendiste de «La Corazonada»? Respondé cada pregunta una sola vez: al final verás tu puntaje.",
+  "speak": "es-AR",
+  "hero": "cover.jpg",
+  "exam": true,
+  "ui": {
+    "min": "≈ 10 minutos",
+    "great": [
+      "¡Correcto!",
+      "¡Muy bien!",
+      "¡Exacto!",
+      "¡Así es!",
+      "¡Excelente!"
+    ],
+    "again": "Repetir el test",
+    "back": "Volver a la novela"
+  },
+  "levels": [
+    {
+      "min": 90,
+      "title": "Guardián de la Utopía",
+      "text": "Comprensión excelente: no se te escapó ningún detalle de la fortaleza turquesa."
+    },
+    {
+      "min": 70,
+      "title": "Habitante de la fortaleza",
+      "text": "Muy buena comprensión: entendiste la historia y a sus personajes."
+    },
+    {
+      "min": 50,
+      "title": "Caminante del desierto",
+      "text": "Comprensión aceptable: captaste lo esencial, pero se te escaparon algunos detalles."
+    },
+    {
+      "min": 0,
+      "title": "Recién salido del búnker",
+      "text": "Comprensión baja: te conviene releer algunos capítulos y volver a intentarlo."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "story",
+      "prompt": "Elegí la respuesta correcta",
+      "question": "¿Cuánto tiempo pasó Robert encerrado en su búnker?",
+      "options": [
+        "Dos años",
+        "Seis meses"
+      ],
+      "answer": 0,
+      "why": "Fueron setecientos treinta días de invierno nuclear (cap. 1)."
+    },
+    {
+      "type": "tf",
+      "prompt": "¿Verdadero o falso?",
+      "statement": "Antes de enfrentarse a los motoqueros, Robert había peleado muchas veces.",
+      "answer": false,
+      "why": "Nunca en su vida había peleado: se había entrenado solo en el búnker (cap. 1)."
+    },
+    {
+      "type": "story",
+      "prompt": "Elegí la respuesta correcta",
+      "question": "¿Cómo vence Robert al líder de los motoqueros?",
+      "options": [
+        "Le tira arena a los ojos y lo inmoviliza con una llave",
+        "Le dispara con una pistola"
+      ],
+      "answer": 0,
+      "why": "Usa un puñado de arena y tierra y una llave aprendida en el búnker (cap. 1)."
+    },
+    {
+      "type": "tf",
+      "prompt": "¿Verdadero o falso?",
+      "statement": "La esposa de Robert, Natalia, era médica y se fue porque la llamaron a filas.",
+      "answer": true,
+      "why": "Robert le suplicó que escaparan, pero ella sintió que su deber era curar a los combatientes (cap. 3)."
+    },
+    {
+      "type": "story",
+      "prompt": "Elegí la respuesta correcta",
+      "question": "¿Qué estudiaba Vika antes de la catástrofe?",
+      "options": [
+        "Economía",
+        "Medicina"
+      ],
+      "answer": 0,
+      "why": "Por eso Robert le pide que enseñe economía a los demás (cap. 3)."
+    },
+    {
+      "type": "tf",
+      "prompt": "¿Verdadero o falso?",
+      "statement": "A los tres motoqueros los dejaron lejos, con agua para un solo día.",
+      "answer": true,
+      "why": "Los abandonan en una hondonada pedregosa, a tres días de camino a pie (caps. 2 y 4)."
+    },
+    {
+      "type": "story",
+      "prompt": "Elegí la respuesta correcta",
+      "question": "¿Cuál es la profesión de Luis?",
+      "options": [
+        "Arquitecto",
+        "Médico"
+      ],
+      "answer": 0,
+      "why": "Luis construyó un supermercado justo antes de la Súper Explosión (cap. 4)."
+    },
+    {
+      "type": "story",
+      "prompt": "Elegí la respuesta correcta",
+      "question": "¿De dónde venían Sasha, Natalia y Oxana cuando llegaron con bandera blanca?",
+      "options": [
+        "Habían escapado de unos salvajes que las tenían prisioneras",
+        "Venían de la ciudad subterránea de Necrología"
+      ],
+      "answer": 0,
+      "why": "Robaron las motos a sus captores y huyeron la noche anterior (cap. 6)."
+    },
+    {
+      "type": "tf",
+      "prompt": "¿Verdadero o falso?",
+      "statement": "Kennet viene de la Potencia Central y lo encuentran herido en la fábrica de ladrillos.",
+      "answer": true,
+      "why": "Llevaba tres días tirado junto al camión cuando lo rescataron (cap. 9)."
+    },
+    {
+      "type": "story",
+      "prompt": "Elegí la respuesta correcta",
+      "question": "¿Cómo consigue Luis calmar a los salvajes de la fábrica?",
+      "options": [
+        "Les habla en el dialecto de su tierra natal",
+        "Les regala las motos del grupo"
+      ],
+      "answer": 0,
+      "why": "Los salvajes eran de su misma tierra y el acento compartido los desarmó (cap. 9)."
+    },
+    {
+      "type": "story",
+      "prompt": "Elegí la respuesta correcta",
+      "question": "¿De qué color son los ladrillos con los que se construye la fortaleza?",
+      "options": [
+        "Turquesa",
+        "Rojo"
+      ],
+      "answer": 0,
+      "why": "Por eso la llaman la fortaleza turquesa (caps. 9 y 10)."
+    },
+    {
+      "type": "tf",
+      "prompt": "¿Verdadero o falso?",
+      "statement": "Natalia, la del grupo de Robert, es pintora, y Oxana toca el violín.",
+      "answer": false,
+      "why": "Es al revés: Natalia toca el violín y Oxana pinta paisajes (cap. 10)."
+    },
+    {
+      "type": "story",
+      "prompt": "Elegí la respuesta correcta",
+      "question": "¿Cómo se llama el café que abre Sasha?",
+      "options": [
+        "Rojo Fuego",
+        "Sueño Turquesa"
+      ],
+      "answer": 0,
+      "why": "«Sueño Turquesa» es el centro cultural de Natalia y Oxana (cap. 10)."
+    },
+    {
+      "type": "tf",
+      "prompt": "¿Verdadero o falso?",
+      "statement": "Oxana y Kennet se besan por primera vez en lo alto de la torre norte.",
+      "answer": true,
+      "why": "Suben a la torre al atardecer, después de pasear junto al lago (cap. 11)."
+    },
+    {
+      "type": "story",
+      "prompt": "Elegí la respuesta correcta",
+      "question": "¿Cómo neutraliza Kennet a los guardias de la mina?",
+      "options": [
+        "Con dardos sedantes",
+        "Con una granada"
+      ],
+      "answer": 0,
+      "why": "Luis le pide que no los mate y Kennet usa dardos adormecedores (cap. 13)."
+    },
+    {
+      "type": "tf",
+      "prompt": "¿Verdadero o falso?",
+      "statement": "El Consejo vota a favor de atacar a los salvajes, como propone Luis.",
+      "answer": false,
+      "why": "Gana la propuesta de Robert de mandar parlamentarios; Luis vota en contra (cap. 15)."
+    },
+    {
+      "type": "tf",
+      "prompt": "¿Verdadero o falso?",
+      "statement": "Robert acepta que Natalia lo acompañe a negociar con los salvajes.",
+      "answer": false,
+      "why": "Se niega: ninguna mujer irá «a la boca del lobo» (cap. 15)."
+    },
+    {
+      "type": "tf",
+      "prompt": "¿Verdadero o falso?",
+      "statement": "Natalia le confiesa su amor a Robert la noche antes de la misión de paz.",
+      "answer": true,
+      "why": "Se besan bajo la luna llena y Luis lo ve todo desde las sombras (cap. 16)."
+    },
+    {
+      "type": "story",
+      "prompt": "Elegí la respuesta correcta",
+      "question": "¿Qué responde el jefe salvaje a la propuesta de paz de Robert?",
+      "options": [
+        "Que evacúen la fortaleza o la destruirán",
+        "Que acepta compartir recursos con ellos"
+      ],
+      "answer": 0,
+      "why": "Les da una sola oportunidad: irse y dejarla «limpita y ordenadita» (cap. 17)."
+    },
+    {
+      "type": "tf",
+      "prompt": "¿Verdadero o falso?",
+      "statement": "Los drones capturados por Dima tenían inscripciones en inglés.",
+      "answer": true,
+      "why": "Eran drones militares de la Potencia Central en manos de los salvajes (cap. 19)."
+    },
+    {
+      "type": "story",
+      "prompt": "Elegí la respuesta correcta",
+      "question": "En la primera batalla, ¿quién combate con furia escondido bajo un casco?",
+      "options": [
+        "Luis",
+        "Kennet"
+      ],
+      "answer": 0,
+      "why": "Alexey le grita que se calme; Luis pelea movido por el rencor (cap. 20)."
+    },
+    {
+      "type": "story",
+      "prompt": "Elegí la respuesta correcta",
+      "question": "¿Qué es Necrología?",
+      "options": [
+        "Una ciudad subterránea construida por los ricos",
+        "Un clan de salvajes del desierto"
+      ],
+      "answer": 0,
+      "why": "Allí sobrevivieron los ricos, con tecnología, comida y defensas automáticas (cap. 22)."
+    },
+    {
+      "type": "tf",
+      "prompt": "¿Verdadero o falso?",
+      "statement": "Los jóvenes salvajes capturados nunca lograron integrarse a la comunidad.",
+      "answer": false,
+      "why": "Con la guía de Vika aprendieron a cultivar, a construir y a sonreír de nuevo (cap. 23)."
+    },
+    {
+      "type": "story",
+      "prompt": "Elegí la respuesta correcta",
+      "question": "¿Qué le regala Robert a Luis cuando decide irse?",
+      "options": [
+        "Su moto de combate",
+        "Su espada"
+      ],
+      "answer": 0,
+      "why": "Es un último gesto de confianza y camaradería (cap. 24)."
+    },
+    {
+      "type": "story",
+      "prompt": "Elegí la respuesta correcta",
+      "question": "¿A quién encuentra Luis cerca de Necrología?",
+      "options": [
+        "A Natalia, la esposa de Robert",
+        "A Vika"
+      ],
+      "answer": 0,
+      "why": "Natalia, la médica, había estado un año y medio prisionera curando heridos (cap. 26)."
+    },
+    {
+      "type": "tf",
+      "prompt": "¿Verdadero o falso?",
+      "statement": "La flota de la Potencia Central llega porque la región es rica en minerales.",
+      "answer": true,
+      "why": "Buscan tierras raras para su tecnología (cap. 28)."
+    },
+    {
+      "type": "story",
+      "prompt": "Elegí la respuesta correcta",
+      "question": "¿Qué saca Dima de su armario blindado?",
+      "options": [
+        "Un violín, una guitarra eléctrica y un cajón flamenco",
+        "Una batería, un piano y una flauta"
+      ],
+      "answer": 0,
+      "why": "Los modifica para convertir la música en armas (caps. 28, 32 y 33)."
+    },
+    {
+      "type": "tf",
+      "prompt": "¿Verdadero o falso?",
+      "statement": "Después del mensaje de Kennet, el Capitán Thorne decide retirar la flota.",
+      "answer": false,
+      "why": "Thorne se burla y ordena preparar el desembarco (cap. 29)."
+    },
+    {
+      "type": "story",
+      "prompt": "Elegí la respuesta correcta",
+      "question": "¿Quién muere cuando el misil cae en la plaza?",
+      "options": [
+        "Vika",
+        "Oxana"
+      ],
+      "answer": 0,
+      "why": "Natalia la acompaña en sus últimos momentos (cap. 31)."
+    },
+    {
+      "type": "story",
+      "prompt": "Elegí la respuesta correcta",
+      "question": "¿Qué detiene a los cinco bombarderos nucleares?",
+      "options": [
+        "Los misiles de Necrología, que Luis y la médica habían tomado",
+        "Una tormenta de arena en el desierto"
+      ],
+      "answer": 0,
+      "why": "Luis y Natalia, la médica, dirigieron una revuelta y se hicieron con las defensas de la ciudad (cap. 34)."
+    },
+    {
+      "type": "tf",
+      "prompt": "¿Verdadero o falso?",
+      "statement": "Al final, Natalia, la médica, vuelve a vivir con Robert en la fortaleza.",
+      "answer": false,
+      "why": "Se va con Luis en el camión blindado (cap. 34)."
+    },
+    {
+      "type": "tf",
+      "prompt": "¿Verdadero o falso?",
+      "statement": "Robert le pide matrimonio a Natalia, la violinista, y ella acepta.",
+      "answer": true,
+      "why": "Se lo pide en la torre central, frente al lago (cap. 35)."
+    },
+    {
+      "type": "story",
+      "prompt": "Elegí la respuesta correcta",
+      "question": "¿Qué nombre recibe la capital de la República Turquesa?",
+      "options": [
+        "Viktoria",
+        "Natalia"
+      ],
+      "answer": 0,
+      "why": "Se llama así en homenaje a Vika, cuyo nombre completo era Viktoria (cap. 35)."
+    },
+    {
+      "type": "tf",
+      "prompt": "¿Verdadero o falso?",
+      "statement": "En el epílogo, Luis es feliz y ya no piensa en la violinista.",
+      "answer": false,
+      "why": "Su victoria le sabe a ceniza: no puede olvidar a Natalia, la violinista (cap. 36)."
+    }
+  ]
+}

@@ -1,1 +1,117 @@
-LITMIR-ENC1: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
+## Марко не сдаётся
+
+В романе «Il treno fantasma» детектив Марко ищет призрачный поезд, который увёз его девушку Алису. Сегодня вечером он идёт к Франко — старому железнодорожнику, который знает все станции Синеи.
+
+> — **Voglio trovare**{Я хочу найти} il treno fantasma. **Mi può aiutare?**{Вы можете мне помочь?}
+> — **Non posso**{Не могу}, signor Marco. **È pericoloso**{Это опасно}.
+> — **Devo trovare**{Я должен найти} Alice. **Lei è sul treno**{Она в поезде}.
+> — **Lei conosce**{Вы знаете} questa ragazza?
+> — No, **non la conosco**{я её не знаю}. Ma **so dove**{я знаю, где} si ferma il treno: alla vecchia stazione, **a mezzanotte**{в полночь}.
+> — **Allora vengo**{Тогда я приду} stasera.
+> — **Se vuole venire**{Если хотите прийти}, **deve essere**{вы должны быть} lì alle undici e mezza. **E non deve dire niente**{И никому ничего не говорите} a nessuno!
+
+## 1. VOLERE, POTERE, DOVERE — хотеть, мочь, быть должным
+
+Три очень нужных неправильных глагола. После них идёт глагол **в инфинитиве**, как в русском: *voglio **trovare*** — хочу найти, *posso **aiutare*** — могу помочь, *devo **andare*** — должен идти.
+
+| | volere (хотеть) | potere (мочь) | dovere (быть должным) |
+|---|---|---|---|
+| io | **voglio** | **posso** | **devo** |
+| tu | **vuoi** | **puoi** | **devi** |
+| lui / lei / Lei | **vuole** | **può** | **deve** |
+| noi | **vogliamo** | **possiamo** | **dobbiamo** |
+| voi | **volete** | **potete** | **dovete** |
+| loro | **vogliono** | **possono** | **devono** |
+
+- *Voglio un caffè.* — Я хочу кофе. (*volere* может стоять и с существительным)
+- *Posso entrare?* — Можно войти?
+- *Non puoi fumare qui.* — Здесь нельзя курить.
+- *Dobbiamo partire alle otto.* — Нам нужно уехать в восемь.
+
+**Vorrei** (я бы хотел) — вежливая форма от *voglio*. Вы её уже знаете по пиццерии.
+
+## 2. SAPERE или CONOSCERE?
+
+Оба глагола значат «знать», но это разные вещи:
+
+| SAPERE — знать факт, уметь | CONOSCERE — знать человека, место |
+|---|---|
+| **So** dove si ferma il treno. — Я знаю, где останавливается поезд. | **Conosco** Franco. — Я знаю Франко. |
+| Non **so** perché. — Не знаю почему. | **Conosci** Roma? — Ты знаешь Рим? |
+| **Sai** nuotare? — Ты умеешь плавать? | Non **conosco** questa ragazza. — Я не знаю эту девушку. |
+
+| | sapere | conoscere |
+|---|---|---|
+| io | **so** | conosco |
+| tu | **sai** | conosci |
+| lui / lei | **sa** | conosce |
+| noi | **sappiamo** | conosciamo |
+| voi | **sapete** | conoscete |
+| loro | **sanno** | conoscono |
+
+*Conoscere* — правильный глагол, но следите за произношением: *cono**sco*** [ско], *cono**sci*** [ши].
+
+## 3. Ещё два: VENIRE и USCIRE
+
+| | venire (приходить) | uscire (выходить) |
+|---|---|---|
+| io | **vengo** | **esco** |
+| tu | **vieni** | **esci** |
+| lui / lei | **viene** | **esce** |
+| noi | veniamo | usciamo |
+| voi | venite | uscite |
+| loro | **vengono** | **escono** |
+
+- *Vieni con me?* — Пойдёшь со мной?
+- *Di dove sei? — **Vengo da** Napoli.* — Откуда ты? — Я из Неаполя.
+- *Stasera **esco** con gli amici.* — Сегодня вечером я иду гулять с друзьями.
+
+## 4. Маленькие слова для больших планов
+
+| Italiano | Русский |
+|---|---|
+| stasera | сегодня вечером |
+| subito | сразу, немедленно |
+| insieme | вместе |
+| da solo / da sola | один / одна |
+| niente / nessuno | ничего / никто |
+| perché? — perché… | почему? — потому что… |
+
+С **niente** и **nessuno** в итальянском, как и в русском, остаётся **non**: *Non dico **niente**.* — Я ничего не говорю. *Non vedo **nessuno**.* — Я никого не вижу.
+
+## Проверьте себя
+
+Marco [[*vuole|voglio|vuoi]] trovare Alice.
+
+Io non [[*posso|può|puoi]] venire stasera.
+
+Noi [[*dobbiamo|dovete|devono]] partire alle otto.
+
+Non [[conosco|*so]] dove si ferma il treno.
+
+[[Sai|*Conosci]] questa ragazza?
+
+Stasera io [[*esco|usco|esce]] con Franco.
+
+После *volere, potere, dovere* глагол стоит в инфинитиве. ( V / F ){V}
+
+Франко хорошо знает Алису. ( V / F ){F}
+
+## Словарь урока
+
+| Italiano | Русский |
+|---|---|
+| volere | хотеть |
+| potere | мочь |
+| dovere | быть должным, нужно |
+| sapere | знать (факт), уметь |
+| conoscere | знать (человека, место), быть знакомым |
+| venire | приходить, приезжать |
+| uscire | выходить |
+| trovare | находить |
+| aiutare | помогать |
+| la stazione | станция, вокзал |
+| il treno | поезд |
+| pericoloso | опасный |
+| fermarsi | останавливаться |
+| stasera | сегодня вечером |

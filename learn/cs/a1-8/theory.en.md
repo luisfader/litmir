@@ -1,1 +1,113 @@
-LITMIR-ENC1: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
+## The road to Karlštejn
+
+This unit takes us to another Czech novel on the site, «Předtucha». Naše utopie, the fortress in the hills, is burning. Robert leads hundreds of people out through the forest, and Luis rides ahead on his motorcycle to prepare the old royal castle of Karlštejn. Here is a simplified version of their conversation.
+
+> — Roberte, **kam jdou lidé?**{where are the people going?}
+> — **Na Karlštejn**{To Karlštejn}. **Je to daleko**{It’s far}.
+> — **Jedou autem?**{Are they going by car?}
+> — Ne. **Jdou pěšky, lesem**{They are walking, through the forest}, v malých skupinách.
+> — A já?
+> — **Ty jedeš napřed**{You ride ahead} **na motocyklu**{on the motorcycle}. Připrav hrad.
+> — **Jak se dostanu na Karlštejn?**{How do I get to Karlštejn?}
+> — **Jeď rovně k řece**{Ride straight on to the river} **a potom doleva**{and then left}. **Hrad je na skále**{The castle is on a rock}.
+> — Dobře. **Jedu hned**{I’m going right now}.
+
+## 1. JÍT or JET? — to go
+
+Czech always tells you **how** you go:
+
+| | JÍT (on foot) | JET (by vehicle, riding) |
+|---|---|---|
+| já | **jdu** | **jedu** |
+| ty | **jdeš** | **jedeš** |
+| on / ona | **jde** | **jede** |
+| my | **jdeme** | **jedeme** |
+| vy | **jdete** | **jedete** |
+| oni | **jdou** | **jedou** |
+
+*Lidé **jdou** lesem. Luis **jede** na motocyklu.* A concert, school or work can be reached either way, so for those people often just say *jdu*: *Jdu na koncert. Jdu do práce.*
+
+The imperative "go!": **Pojď!** (come on!), **Jdi!** (go!), **Jeď!** (ride, drive!). Jana to Luis in the novel: *«Pojď ke mně.»* — Come to my place.
+
+## 2. How? — means of transport
+
+| Czech | English |
+|---|---|
+| **autem** | by car |
+| **vlakem** | by train |
+| **autobusem** | by bus |
+| **tramvají** | by tram |
+| **metrem** | by metro |
+| **na kole** | by bike |
+| **na motocyklu** (na motorce) | on a motorcycle |
+| **pěšky** | on foot |
+
+*Jedu do Prahy vlakem.* Notice the endings **-em** and **-í**: this is the instrumental case ("by means of"). For now, just learn these as set phrases.
+
+## 3. KDE? or KAM? — where vs where to
+
+In unit 4 you learnt **kde** (where?) with the locative: *v Praze, na náměstí.* For movement Czech asks **kam?** (where to?) and uses other prepositions:
+
+| Kam? (where to?) | Kde? (where?) | English |
+|---|---|---|
+| **do** Prah**y** | **v** Praze | (to / in) Prague |
+| **do** kavárn**y** | **v** kavárně | (to / in) the café |
+| **do** les**a** | **v** lese | (to / in) the forest |
+| **do** podzemí | **v** podzemí | (to / in) the underground |
+| **na** Karlštejn | **na** Karlštejně | (to / at) Karlštejn |
+| **na** náměstí | **na** náměstí | (to / in) the square |
+| **na** koncert | **na** koncertě | (to / at) the concert |
+| **k** řece, **k** hradu | **u** řeky, **u** hradu | (towards / by) the river, the castle |
+
+**Do** + genitive: feminine *-a* becomes **-y** (*Praha → do Prahy*), masculine and neuter usually take **-a** or **-u** (*les → do lesa, město → do města*), and words in *-í* don’t change (*do podzemí*).
+
+**Na** + accusative is used with events, squares, castles and stations — the same words that take *na* in unit 4.
+
+## 4. Asking the way
+
+| Czech | English |
+|---|---|
+| Promiňte, jak se dostanu na nádraží? | Excuse me, how do I get to the station? |
+| Kde je Karlův most? | Where is Charles Bridge? |
+| rovně | straight on |
+| doleva / doprava | (to the) left / right |
+| nalevo / napravo | on the left / on the right |
+| za rohem | round the corner |
+| blízko / daleko | near / far |
+| Je to daleko? — Ne, je to blízko. | Is it far? — No, it’s near. |
+
+## Check yourself
+
+Lidé [[*jdou|jedou|jde]] lesem pěšky.
+
+Luis [[*jede|jde|jedu]] na motocyklu.
+
+Jedu do Prahy [[*vlakem|vlak|vlaku]].
+
+Jdu [[*do|v|na]] kavárny.
+
+Jedeme [[*na|do|v]] Karlštejn.
+
+[[*Kam|Kde|Kdo]] jdeš? — Na koncert.
+
+«Jet» is used when you go by car, train or motorcycle. ( V / F ){V}
+
+«Doleva» means "to the right". ( V / F ){F}
+
+## Unit vocabulary
+
+| Čeština | English |
+|---|---|
+| jít (jdu) | to go (on foot) |
+| jet (jedu) | to go (by vehicle) |
+| kam? | where to? |
+| do / na / k | to, into / to, onto / towards |
+| autem / vlakem | by car / by train |
+| tramvají / metrem | by tram / by metro |
+| pěšky | on foot |
+| hrad / skála | castle / rock |
+| les / řeka | forest / river |
+| rovně | straight on |
+| doleva / doprava | to the left / to the right |
+| blízko / daleko | near / far |
+| Jak se dostanu…? | How do I get…? |

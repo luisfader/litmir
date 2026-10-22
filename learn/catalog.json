@@ -361,6 +361,141 @@
    ]
   },
   {
+   "lang": "ru",
+   "speak": "ru-RU",
+   "help": [
+    "en",
+    "es"
+   ],
+   "title": {
+    "ru": "Учите русский!",
+    "en": "Russian",
+    "es": "Ruso"
+   },
+   "units": [
+    {
+     "id": "a1-1",
+     "level": "A1",
+     "n": 1,
+     "title": "Привет! Меня зовут Наталья",
+     "sub": {
+      "en": "Cyrillic, greetings, introductions, pronouns, “I am” without a verb, nationalities",
+      "es": "El cirílico, saludos, presentarse, pronombres, «soy» sin verbo, nacionalidades"
+     },
+     "cover": "novels/tajna-semi-fader/cover.jpg",
+     "novel": "tajna-semi-fader"
+    },
+    {
+     "id": "a1-2",
+     "level": "A1",
+     "n": 2,
+     "title": "Меня зовут Марк. Я детектив",
+     "sub": {
+      "en": "Professions, the two conjugations, negation, languages, numbers and age",
+      "es": "Profesiones, las dos conjugaciones, negación, idiomas, números y edad"
+     },
+     "cover": "novels/prizrachnyj-poezd/cover.jpg",
+     "novel": "prizrachnyj-poezd"
+    },
+    {
+     "id": "a1-3",
+     "level": "A1",
+     "n": 3,
+     "title": "Семья Фадер",
+     "sub": {
+      "en": "Family, У МЕНЯ ЕСТЬ, gender, possessives, adjectives",
+      "es": "La familia, У МЕНЯ ЕСТЬ, género, posesivos, adjetivos"
+     },
+     "cover": "novels/tajna-semi-fader/cover.jpg",
+     "novel": "tajna-semi-fader"
+    },
+    {
+     "id": "a1-4",
+     "level": "A1",
+     "n": 4,
+     "title": "Где каток?",
+     "sub": {
+      "en": "ГДЕ…? The prepositional case after В / НА, prepositions of place, ЕСТЬ, the city",
+      "es": "¿ГДЕ…? El caso preposicional tras В / НА, preposiciones de lugar, ЕСТЬ, la ciudad"
+     },
+     "cover": "novels/tajna-semi-fader/cover.jpg",
+     "novel": "tajna-semi-fader"
+    },
+    {
+     "id": "a1-5",
+     "level": "A1",
+     "n": 5,
+     "title": "Мой день",
+     "sub": {
+      "en": "Telling the time, reflexive verbs in -СЯ, days of the week, how often",
+      "es": "La hora, verbos reflexivos en -СЯ, días de la semana, frecuencia"
+     },
+     "cover": "novels/golos/cover-v2.jpg",
+     "novel": "golos"
+    },
+    {
+     "id": "a1-6",
+     "level": "A1",
+     "n": 6,
+     "title": "Мне нравится",
+     "sub": {
+      "en": "НРАВИТЬСЯ and ЛЮБИТЬ, me too / me neither, food, at the restaurant",
+      "es": "НРАВИТЬСЯ y ЛЮБИТЬ, a mí también / tampoco, comida, en el restaurante"
+     },
+     "cover": "novels/tajna-semi-fader/cover.jpg",
+     "novel": "tajna-semi-fader"
+    },
+    {
+     "id": "a1-7",
+     "level": "A1",
+     "n": 7,
+     "title": "Я хочу найти Алисию",
+     "sub": {
+      "en": "ХОТЕТЬ, МОЧЬ, НУЖНО / МОЖНО / НЕЛЬЗЯ, consonant changes, ЗНАТЬ or УМЕТЬ",
+      "es": "ХОТЕТЬ, МОЧЬ, НУЖНО / МОЖНО / НЕЛЬЗЯ, cambios de consonante, ЗНАТЬ o УМЕТЬ"
+     },
+     "cover": "novels/prizrachnyj-poezd/cover.jpg",
+     "novel": "prizrachnyj-poezd"
+    },
+    {
+     "id": "a1-8",
+     "level": "A1",
+     "n": 8,
+     "title": "Куда идёт Роберто?",
+     "sub": {
+      "en": "ИДТИ and ЕХАТЬ, КУДА? В / НА + accusative, transport, asking the way",
+      "es": "ИДТИ y ЕХАТЬ, ¿КУДА? В / НА + acusativo, transporte, cómo llegar"
+     },
+     "cover": "novels/venecianskaya-maska/cover.jpg",
+     "novel": "venecianskaya-maska"
+    },
+    {
+     "id": "a1-9",
+     "level": "A1",
+     "n": 9,
+     "title": "Сколько стоит?",
+     "sub": {
+      "en": "Prices, numbers from 100, РУБЛЬ / ЕВРО, colours, ЭТОТ / ТОТ, in a shop",
+      "es": "Precios, números desde 100, РУБЛЬ / ЕВРО, colores, ЭТОТ / ТОТ, en el negocio"
+     },
+     "cover": "novels/pokhititel-serdec/cover.jpg",
+     "novel": "pokhititel-serdec"
+    },
+    {
+     "id": "a1-10",
+     "level": "A1",
+     "n": 10,
+     "title": "Планы на неделю",
+     "sub": {
+      "en": "The future with БУДУ, weather, months, dates. A1 review",
+      "es": "El futuro con БУДУ, el tiempo, meses, fechas. Repaso del A1"
+     },
+     "cover": "novels/rezonans-lyubvi/cover.jpg",
+     "novel": "rezonans-lyubvi"
+    }
+   ]
+  },
+  {
    "lang": "en",
    "speak": "en-GB",
    "help": [

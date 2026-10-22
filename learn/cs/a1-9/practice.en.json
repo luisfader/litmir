@@ -1,1 +1,281 @@
-LITMIR-ENC1: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
+{
+ "title": "Kolik stojí ta sukně?",
+ "subtitle": "Shopping, numbers from 100, crowns, colours, clothes, tenhle / tahle / tohle.",
+ "speak": "cs-CZ",
+ "hero": "novels/podzemni-tajemstvi/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "červený",
+     "red"
+    ],
+    [
+     "modrý",
+     "blue"
+    ],
+    [
+     "žlutý",
+     "yellow"
+    ],
+    [
+     "zelený",
+     "green"
+    ],
+    [
+     "bílý",
+     "white"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Dvě",
+   "after": "korun.",
+   "options": [
+    "stě",
+    "sta",
+    "set"
+   ],
+   "answer": 0,
+   "es": "Two hundred crowns."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Pět",
+   "after": "korun.",
+   "options": [
+    "set",
+    "sta",
+    "stě"
+   ],
+   "answer": 0,
+   "es": "Five hundred crowns."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Ty šaty",
+   "after": "krásné.",
+   "options": [
+    "jsou",
+    "je",
+    "jsi"
+   ],
+   "answer": 0,
+   "es": "This dress is lovely.",
+   "why": "Šaty is plural."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "",
+   "after": "sukně je moc hezká.",
+   "options": [
+    "Tahle",
+    "Tenhle",
+    "Tohle"
+   ],
+   "answer": 0,
+   "es": "This skirt is very pretty."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Jana má na sobě",
+   "after": "sukni.",
+   "options": [
+    "bordó",
+    "bordóu",
+    "bordová"
+   ],
+   "answer": 0,
+   "es": "Jana is wearing a burgundy skirt.",
+   "why": "Bordó never changes."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Kolik to",
+   "after": "",
+   "options": [
+    "stojí",
+    "stojím",
+    "stát"
+   ],
+   "answer": 0,
+   "es": "How much is it?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Beru",
+   "after": "sukni.",
+   "options": [
+    "tuhle",
+    "tahle",
+    "tenhle"
+   ],
+   "answer": 0,
+   "es": "I’ll take this skirt."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "To je drahé!",
+   "options": [
+    "That’s expensive!",
+    "That’s cheap!",
+    "That’s lovely!"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "krásný",
+   "options": [
+    "beautiful",
+    "red",
+    "short"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "Can I try it on?",
+   "options": [
+    "Můžu si to zkusit?",
+    "Můžu to stojí?",
+    "Můžu si to beru?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "I’m just looking.",
+   "answer": [
+    "Jen",
+    "se",
+    "dívám"
+   ],
+   "extra": [
+    "si",
+    "stojí"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Jakou barvu má Janina dlouhá sukně?",
+   "es": "What colour is Jana’s long skirt?",
+   "options": [
+    "Je bordó.",
+    "Je modrá.",
+    "Je bílá."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Jaké květy jsou na sukni modré?",
+   "es": "Which flowers on the skirt are blue?",
+   "options": [
+    "Chrpy.",
+    "Tulipány.",
+    "Růže."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Lindsey a Vanessa mají dlouhé bílé šaty.",
+   "answer": false,
+   "why": "The twins wear long black dresses."
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "How much is it?",
+   "answers": [
+    "Kolik to stojí?",
+    "Kolik to stojí"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "I’ll take it.",
+   "answers": [
+    "Beru to",
+    "Beru to."
+   ]
+  }
+ ],
+ "keyboard": [
+  "á",
+  "č",
+  "ď",
+  "é",
+  "ě",
+  "í",
+  "ň",
+  "ó",
+  "ř",
+  "š",
+  "ť",
+  "ú",
+  "ů",
+  "ý",
+  "ž"
+ ]
+}

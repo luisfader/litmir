@@ -1,1 +1,122 @@
-LITMIR-ENC1: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
+## The most important sentence
+
+At the end of «Podzemní tajemství», a week after the battle, Luis and Jana sit at the same table by the window in the same café where they first met. Let’s imagine them making plans.
+
+> — **Co budeš dělat zítra?**{What will you do tomorrow?}
+> — **Zítra budu hrát**{Tomorrow I’ll play} na Karlově mostě. A ty?
+> — **Budu pracovat**{I’ll be working}. Ale **večer přijdu**{in the evening I’ll come}.
+> — **Jaké bude počasí?**{What will the weather be like?}
+> — **Prý bude pršet**{They say it’ll rain}.
+> — Zase! **Jako v září**{Like in September}, když jsem tě poprvé viděl.
+> — **V prosinci bude sněžit**{In December it will snow}. **Praha je v zimě krásná**{Prague is beautiful in winter}.
+> — **Pojedeme někam na Vánoce?**{Shall we go somewhere for Christmas?}
+> — Uvidíme… Luisi, a víš už, **jak se řekne česky** te quiero?
+> — **Miluju tě.**{I love you.}
+> — **Výborně. To je nejdůležitější věta v češtině.**{Excellent. That’s the most important sentence in Czech.}
+
+## 1. The future: BUDU + infinitive
+
+The future of **být** is your key:
+
+| | BÝT (future) | Example |
+|---|---|---|
+| já | **budu** | Budu doma. — I’ll be at home. |
+| ty | **budeš** | Budeš tady? |
+| on / ona | **bude** | Bude pršet. |
+| my | **budeme** | Budeme hrát. |
+| vy | **budete** | Co budete pít? |
+| oni | **budou** | Budou čekat. |
+
+**Budu + infinitive** = "I will (be doing)": *Budu hrát. Budu pracovat. Budeme čekat.* You already met it in unit 6: *Co budete pít?*
+
+Two special groups:
+
+- **Going verbs** don’t use *budu*; they add **pů- / po-**: *jdu → **půjdu*** (I’ll go), *jedu → **pojedu*** (I’ll ride). Never *budu jít*.
+- Some verbs describe one completed action (*perfective* verbs). Their present form already means the future: *zavolám* — I’ll call, *koupím* — I’ll buy, *přijdu* — I’ll come, *uvidíme* — we’ll see. You’ll study this more at A2; for now learn them as words.
+
+**Zítra** — tomorrow, **pozítří** — the day after tomorrow, **příští týden** — next week, **brzy** — soon.
+
+## 2. The weather — Jaké je počasí?
+
+| Czech | English |
+|---|---|
+| Je hezky. / Je ošklivo. | The weather is nice. / bad. |
+| Svítí slunce. | The sun is shining. |
+| **Prší.** / Bude pršet. | It’s raining. / It will rain. |
+| **Sněží.** / Bude sněžit. | It’s snowing. / It will snow. |
+| Fouká vítr. | It’s windy. |
+| Je teplo / horko. | It’s warm / hot. |
+| Je zima. | It’s cold. |
+| Je mlha. | It’s foggy. |
+
+**Zima** means both "cold" and "winter": *V zimě je zima.* — In winter it’s cold. Remember the first sentence of chapter 1? *«Je září. Luis je v Praze.»* And soon: *«Prší.»*
+
+## 3. Months and seasons
+
+| Month | In… | Month | In… |
+|---|---|---|---|
+| leden | v lednu | červenec | v červenci |
+| únor | v únoru | srpen | v srpnu |
+| březen | v březnu | září | v září |
+| duben | v dubnu | říjen | v říjnu |
+| květen | v květnu | listopad | v listopadu |
+| červen | v červnu | prosinec | v prosinci |
+
+Czech months have old Slavic names, not Latin ones: *květen* is the month of flowers (*květ*), *listopad* the month when leaves (*listy*) fall (*padají*). *Červen* and *červenec* (June and July) are easy to mix up — *červenec* is the "little" one that comes after.
+
+Seasons: **jaro** (na jaře), **léto** (v létě), **podzim** (na podzim), **zima** (v zimě).
+
+**Dates**: *Kolikátého je dnes?* — What’s the date today? *Je prvního září.* — It’s the first of September. Written: **1. září** (the dot means "-st, -nd, -th").
+
+## 4. A1 review: what you can now do in Czech
+
+| Unit | You can… | Key Czech |
+|---|---|---|
+| 1 | greet and introduce yourself | Ahoj! Jsem Luis. Jsem z Argentiny. |
+| 2 | talk about work, languages, age | Jsem hudebník. Mluvím česky. Je mi 25 let. |
+| 3 | describe your family | Mám bratra. Moje máma je švadlena. |
+| 4 | say where things are | Kde je nádraží? V Praze, na náměstí. |
+| 5 | tell the time and your day | Je půl osmé. Ráno se oblékám. |
+| 6 | order food | Dám si kávu. Chutná mi to. |
+| 7 | say what you want, can and must | Chci, můžu, musím, umím, vím. |
+| 8 | travel and ask the way | Jedu vlakem do Prahy. Doleva, rovně. |
+| 9 | shop | Kolik to stojí? Beru tuhle sukni. |
+| 10 | make plans | Zítra budu hrát. Bude pršet. |
+
+Gratulujeme! — Congratulations! You’ve finished level A1.
+
+## Check yourself
+
+Zítra [[*budu|jsem|budou]] hrát na kytaru.
+
+Lucie a Mark [[*budou|bude|budu]] čekat.
+
+Zítra [[*půjdu|budu jít|jdu]] do kina.
+
+V prosinci bude [[*sněžit|sněží|sníh]].
+
+Luis přijel do Prahy [[*v září|v zářím|na září]].
+
+[[*Prší|Prši|Pršet]] — vezmi si deštník!
+
+«Zima» can mean both "winter" and "cold". ( V / F ){V}
+
+«Listopad» is the month of October. ( V / F ){F}
+
+## Unit vocabulary
+
+| Čeština | English |
+|---|---|
+| budu, budeš, bude… | I will, you will, he/she will… |
+| půjdu / pojedu | I’ll go (on foot / by vehicle) |
+| zítra / pozítří | tomorrow / the day after tomorrow |
+| příští týden | next week |
+| počasí | weather |
+| prší / sněží | it’s raining / snowing |
+| svítí slunce | the sun is shining |
+| je teplo / je zima | it’s warm / it’s cold |
+| jaro, léto, podzim, zima | spring, summer, autumn, winter |
+| leden, únor, březen, duben | January, February, March, April |
+| květen, červen, červenec, srpen | May, June, July, August |
+| září, říjen, listopad, prosinec | September, October, November, December |
+| Miluju tě. | I love you. |

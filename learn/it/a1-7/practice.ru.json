@@ -1,1 +1,286 @@
-LITMIR-ENC1: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
+{
+ "title": "Voglio trovare Alice",
+ "subtitle": "Volere, potere, dovere, sapere или conoscere, venire и uscire.",
+ "speak": "it-IT",
+ "hero": "novels/il-treno-fantasma/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 8 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "volere",
+     "хотеть"
+    ],
+    [
+     "potere",
+     "мочь"
+    ],
+    [
+     "dovere",
+     "быть должным"
+    ],
+    [
+     "uscire",
+     "выходить"
+    ],
+    [
+     "venire",
+     "приходить"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Marco",
+   "after": "trovare Alice.",
+   "options": [
+    "vuole",
+    "voglio",
+    "vogliono"
+   ],
+   "answer": 0,
+   "es": "Марко хочет найти Алису."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Mi",
+   "after": "aiutare?",
+   "options": [
+    "può",
+    "posso",
+    "puoi"
+   ],
+   "answer": 0,
+   "es": "Вы можете мне помочь?",
+   "why": "Вежливое Lei — это 3-е лицо: può."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Noi",
+   "after": "partire alle otto.",
+   "options": [
+    "dobbiamo",
+    "dovete",
+    "devono"
+   ],
+   "answer": 0,
+   "es": "Нам нужно уехать в восемь."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Tu",
+   "after": "venire con me?",
+   "options": [
+    "vuoi",
+    "vuole",
+    "volete"
+   ],
+   "answer": 0,
+   "es": "Хочешь пойти со мной?"
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Non posso.",
+   "options": [
+    "Я не могу.",
+    "Я не хочу.",
+    "Я не знаю."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Non",
+   "after": "dove si ferma il treno.",
+   "options": [
+    "so",
+    "conosco",
+    "sono"
+   ],
+   "answer": 0,
+   "es": "Я не знаю, где останавливается поезд.",
+   "why": "Факт → sapere."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "",
+   "after": "questa ragazza?",
+   "options": [
+    "Conosci",
+    "Sai",
+    "Sei"
+   ],
+   "answer": 0,
+   "es": "Ты знаешь эту девушку?",
+   "why": "Человек → conoscere."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Sai nuotare?",
+   "options": [
+    "Ты умеешь плавать?",
+    "Хочешь поплавать?",
+    "Тебе нужно плавать?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать на изучаемом языке?",
+   "word": "Я из Неаполя.",
+   "options": [
+    "Vengo da Napoli.",
+    "Vieni da Napoli.",
+    "Esco da Napoli."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Stasera io",
+   "after": "con gli amici.",
+   "options": [
+    "esco",
+    "usco",
+    "esce"
+   ],
+   "answer": 0,
+   "es": "Сегодня вечером я иду гулять с друзьями."
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите",
+   "es": "Я должен найти Алису.",
+   "answer": [
+    "Devo",
+    "trovare",
+    "Alice"
+   ],
+   "extra": [
+    "voglio",
+    "conosco"
+   ]
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите",
+   "es": "Я никому ничего не говорю.",
+   "answer": [
+    "Non",
+    "dico",
+    "niente",
+    "a",
+    "nessuno"
+   ],
+   "extra": [
+    "so",
+    "mai"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "Dove si ferma il treno fantasma?",
+   "es": "Где останавливается призрачный поезд?",
+   "options": [
+    "Alla vecchia stazione, a mezzanotte.",
+    "Davanti alla casa di Marco.",
+    "A Napoli, la mattina."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Franco conosce Alice.",
+   "answer": false,
+   "why": "«No, non la conosco», — говорит Франко."
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Marco deve essere alla stazione alle undici e mezza.",
+   "answer": true,
+   "why": "Франко: «deve essere lì alle undici e mezza»."
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Можно войти?",
+   "answers": [
+    "Posso entrare?",
+    "Posso entrare"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Я знаю Франко.",
+   "answers": [
+    "Conosco Franco",
+    "Conosco Franco.",
+    "Io conosco Franco",
+    "Io conosco Franco."
+   ]
+  }
+ ],
+ "keyboard": [
+  "à",
+  "è",
+  "é",
+  "ì",
+  "ò",
+  "ù"
+ ]
+}

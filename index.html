@@ -587,10 +587,8 @@ function setupPredchuvstvieReflection(root) {
   };
 }
 
-const LANGS = ["es","it","en","de","fr","tr","pt","cs","pl","sr","eo","isv","vo","ia","ld","la"];
-/* The novels are split in two sites: Russian (litmir2) and every other language (litmir). */
-const OTHER = { href: "https://luisfader.github.io/litmir2/", label: "RU ↗", title: "Русский — Литературный мир (romanos en ruso)" };
-const novelHref = (l, s) => LANGS.includes(l) ? "#/" + s : OTHER.href + "#/" + s;
+const LANGS = ["ru","es","it","en","de","fr","tr","pt","cs","pl","sr","eo","isv","vo","ia","ld","la"];
+const novelHref = (l, s) => "#/" + s;
 const LANG_NAMES = {ru:"Русский", es:"Español", it:"Italiano", en:"English", de:"Deutsch", fr:"Français", tr:"Türkçe", pt:"Português", cs:"Čeština", pl:"Polski", sr:"Српски", eo:"Esperanto", isv:"Medžuslovjansky", vo:"Volapük", ia:"Interlingua", ld:"Lingwa de Planeta", la:"Latina"};
 const UI = {
   la:{study:"Ad discendum",studyNote:"Liber ad linguam discendam.",wip:"In scribendo",wipNote:"Novissima capita mox venient.",tag:"Fabulae",hero:"Mundus litterarius",sub:"Fabulae Roberti Fader Latine scriptae. Lege gratis.",author:"Robert Fader",start:"Incipe legere",cont:"Perge legere",contents:"Index capitum",chapter:"Caput",prev:"Prius",next:"Proximum",back:"Omnes fabulae",empty:"Nondum fabulae Latinae adsunt.",foot:"© Robert Fader. Omnia iura reservata.",chapters:n=>n+(n===1?" caput":" capita"),notFound:"Pagina non inventa.",also:"Haec fabula etiam aliis linguis legi potest:",adultT:"Solum adultis",adultP:"Haec fabula adultis tantum destinatur.",adultYes:"Duodeviginti annos natus sum",adultNo:"Redi"},
@@ -636,10 +634,6 @@ const store = {
   get(k,d){try{const v=localStorage.getItem("lm:"+k);return v===null?d:JSON.parse(v)}catch(e){return d}},
   set(k,v){try{localStorage.setItem("lm:"+k,JSON.stringify(v))}catch(e){} if (window.lmSync) window.lmSync(); }
 };
-const RU_SLUGS = ["dikij-chas", "dikij-chas-2", "dikij-chas-karnaval-razdora", "pokhititel-serdec", "rezonans-lyubvi", "rezonans-lyubvi-3-protiv-mraka", "vlyublennye-lebedi", "zvezdnyj-roman", "epicheskij-match", "anomalnyj-chas", "predchuvstvie", "predchuvstvie-2", "opasnoe-svidanie", "severnaya-lyubov", "tajna-semi-fader", "grustnyj-gorod", "prizrachnyj-poezd", "volny-lyubvi", "volny-lyubvi-krepost", "golos", "sny-i-zver", "venecianskaya-maska"];
-const ruSlug = h => RU_SLUGS.includes(decodeURIComponent(h.replace(/^#\/?/, "").split("/")[0] || ""));
-if (ruSlug(location.hash)) location.replace(OTHER.href + location.hash);
-else if (new URLSearchParams(location.search).get("lang") === "ru") location.replace(OTHER.href);
 let lang = new URLSearchParams(location.search).get("lang") || store.get("lang", null);
 if (!LANGS.includes(lang)) lang = LANGS.find(l => (navigator.language||"").toLowerCase().startsWith(l)) || "es";
 let catalog = null;
@@ -1006,8 +1000,9 @@ async function getText(url){
   return window.lmDecrypt(s.slice(ENC_MARK.length).trim());
 }
 const signedIn = () => !!(window.lmAuth && window.lmAuth.user);
-const chapterLocked = (n, i) => chapterNo(n, i) > FREE_CHAPTERS;
-const unitLocked = (u, c) => !(c && c.free) && u.n > FREE_UNITS;
+/* Everything is open to everyone (no chapter or unit needs an account). Signing in only syncs reading progress. */
+const chapterLocked = () => false;
+const unitLocked = () => false;
 const LOGIN_T = {
   es:["Entra para seguir leyendo","Lo que sigue es para lectores registrados. Registrarse con Google es gratis y tu progreso se guarda en todos tus dispositivos.","Entrar con Google","Volver"],
   ru:["Войдите, чтобы читать дальше","Продолжение доступно зарегистрированным читателям. Вход через Google бесплатный, а ваш прогресс сохраняется на всех устройствах.","Войти через Google","Вернуться"],
@@ -1708,7 +1703,6 @@ function route(){
   const n = parts.length ? catalog.novels.find(x => x.slug === decodeURIComponent(parts[0])) : null;
   setSoundtrack(n && adultOk(n) ? n : null);
   if (!parts.length) return home();
-  if (!n && ruSlug(location.hash)) { location.href = OTHER.href + location.hash; return; }
   if (!n) { app.innerHTML = `<div class="empty">${esc(t("notFound"))}</div>`; return; }
   if (!adultOk(n)) return adultGate(n);
   if (parts[1] === "progreso") return progressPage(n);

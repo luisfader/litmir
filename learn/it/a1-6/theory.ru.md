@@ -1,1 +1,102 @@
-LITMIR-ENC1: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
+## Пицца для Ларисы
+
+В Ватиканских музеях Антонио знакомится с Ларисой — красивой и образованной девушкой из России. Он печёт лучшую пиццу в Трастевере, а вот музеи… «I musei sono per i turisti». Представим, что вечером он приглашает её в свою пиццерию.
+
+> — Larissa, **ti piace**{тебе нравится} la pizza?
+> — Sì, **mi piace molto**{мне очень нравится}! **Mi piacciono**{Мне нравятся} anche **i musei**{музеи}…
+> — Hmm… **a me non piacciono**{мне не нравятся} i musei. **Mi piacciono**{Мне нравятся} il calcio e la pizza!
+> — **Che cosa prendi?**{Что ты возьмёшь?}
+> — **Prendo**{Я возьму} una margherita e **un bicchiere di vino rosso**{бокал красного вина}. E tu?
+> — **Anch’io**{Я тоже}. E **per dolce**{на десерт}, **il tiramisù**{тирамису}: **è la specialità della casa**{это фирменное блюдо}!
+> — **Che buono!**{Как вкусно!} **Il conto, per favore**{Счёт, пожалуйста}.
+> — **Offro io**{Я угощаю}!
+
+## 1. Глагол PIACERE — «нравиться»
+
+*Piacere* устроен как русское «нравиться»: то, что нравится, — подлежащее, а человек — «кому?».
+
+| Кому? | Один предмет / действие | Много предметов |
+|---|---|---|
+| мне | **mi piace** la pizza | **mi piacciono** i musei |
+| тебе | **ti piace** | **ti piacciono** |
+| ему / ей / Вам | **gli / le / Le piace** | **gli / le / Le piacciono** |
+| нам | **ci piace** | **ci piacciono** |
+| вам | **vi piace** | **vi piacciono** |
+| им | **gli piace** | **gli piacciono** |
+
+- Один предмет или глагол — **piace**: *Mi piace **la** pizza. Mi piace **cucinare**.*
+- Много предметов — **piacciono**: *Mi piacciono **i** musei.*
+- Существительное — **с артиклем**: *mi piace **il** vino* (не *mi piace vino*).
+- Уточнить, кому: ***A Larissa** piacciono i musei. **Ad Antonio** piace il calcio.* (*a → ad* перед гласной)
+- Отрицание — **non** в начале: ***Non** mi piace il caffè.*
+
+## 2. Мне тоже / мне тоже нет
+
+| Фраза | Согласие | Несогласие |
+|---|---|---|
+| Mi piace la pizza. 😊 | **Anche a me.** — Мне тоже. | **A me no.** — А мне нет. |
+| Non mi piace il caffè. 😕 | **Neanche a me.** — Мне тоже нет. | **A me sì.** — А мне да. |
+
+## 3. Еда и напитки
+
+| Italiano | Русский | Italiano | Русский |
+|---|---|---|---|
+| il pane | хлеб | l’acqua | вода |
+| la pasta | паста | il vino (rosso, bianco) | вино (красное, белое) |
+| la pizza | пицца | la birra | пиво |
+| la carne | мясо | il caffè | кофе (эспрессо) |
+| il pesce | рыба | il cappuccino | капучино |
+| il formaggio | сыр | il succo | сок |
+| la verdura | овощи | il gelato | мороженое |
+| la frutta | фрукты | il dolce | десерт |
+
+В Италии **il caffè** — это эспрессо. Капучино пьют только утром — заказать его после обеда считается странным!
+
+## 4. В пиццерии и ресторане
+
+| Italiano | Русский |
+|---|---|
+| Un tavolo per due, per favore. | Столик на двоих, пожалуйста. |
+| Il menù, per favore. | Меню, пожалуйста. |
+| Che cosa prendi? / Cosa prende? | Что ты возьмёшь? / Что Вы возьмёте? |
+| Prendo… / Vorrei… | Я возьму… / Я бы хотел(а)… |
+| Per primo / per secondo / per dolce | На первое / на второе / на десерт |
+| Che buono! | Как вкусно! |
+| Il conto, per favore. | Счёт, пожалуйста. |
+
+**Vorrei** («я бы хотел») — вежливее, чем **voglio** («я хочу»). В итальянском обеде есть **primo** (паста, ризотто) и **secondo** (мясо или рыба).
+
+## Проверьте себя
+
+A Larissa [[*piacciono|piace|piaccio]] i musei.
+
+Mi [[*piace|piacciono|piaccio]] la pizza.
+
+Ad Antonio [[*piace|piacciono|piaci]] il calcio.
+
+— Non mi piace il caffè. — [[Anche a me|*Neanche a me|A me sì no]].
+
+[[*Vorrei|Voglio di|Vorrebbe]] un bicchiere di vino, per favore.
+
+Mi piace [[vino|*il vino|un vino]] rosso.
+
+«Il conto, per favore» значит «Счёт, пожалуйста». ( V / F ){V}
+
+Антонио очень нравятся музеи. ( V / F ){F}
+
+## Словарь урока
+
+| Italiano | Русский |
+|---|---|
+| piacere | нравиться |
+| mi piace / mi piacciono | мне нравится / нравятся |
+| anche a me / neanche a me | мне тоже / мне тоже нет |
+| prendere | взять, заказать |
+| vorrei | я бы хотел(а) |
+| il bicchiere | стакан, бокал |
+| il conto | счёт |
+| il dolce | десерт |
+| buono | вкусный, хороший |
+| la pizzeria | пиццерия |
+| il cameriere | официант |
+| offro io | я угощаю |

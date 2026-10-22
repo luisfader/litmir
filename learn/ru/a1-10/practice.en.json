@@ -1,0 +1,290 @@
+{
+ "title": "Планы на неделю",
+ "subtitle": "The future with буду, the weather, months, seasons and dates. The final A1 unit.",
+ "speak": "ru-RU",
+ "hero": "novels/rezonans-lyubvi/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "январь",
+     "January"
+    ],
+    [
+     "апрель",
+     "April"
+    ],
+    [
+     "июль",
+     "July"
+    ],
+    [
+     "октябрь",
+     "October"
+    ],
+    [
+     "декабрь",
+     "December"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Завтра я",
+   "after": "работать.",
+   "options": [
+    "буду",
+    "будет",
+    "будем"
+   ],
+   "answer": 0,
+   "es": "Tomorrow I’ll work."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Что ты",
+   "after": "делать в выходные?",
+   "options": [
+    "будешь",
+    "будет",
+    "будем"
+   ],
+   "answer": 0,
+   "es": "What will you do at the weekend?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Мы",
+   "after": "гулять по Невскому.",
+   "options": [
+    "будем",
+    "будут",
+    "будете"
+   ],
+   "answer": 0,
+   "es": "We’ll walk along Nevsky."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Луис",
+   "after": "рисовать сфинксов.",
+   "options": [
+    "будет",
+    "буду",
+    "будут"
+   ],
+   "answer": 0,
+   "es": "Luis will draw the sphinxes."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Сегодня",
+   "after": "дождь.",
+   "options": [
+    "идёт",
+    "едет",
+    "ходит"
+   ],
+   "answer": 0,
+   "es": "It’s raining today."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Мой день рождения — пятого",
+   "after": "",
+   "options": [
+    "мая",
+    "май",
+    "мае"
+   ],
+   "answer": 0,
+   "es": "My birthday is on 5 May."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "зимой",
+   "options": [
+    "in winter",
+    "in summer",
+    "in autumn"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Холодно.",
+   "options": [
+    "It’s cold.",
+    "It’s hot.",
+    "It’s windy."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "What’s the weather like today?",
+   "options": [
+    "Какая сегодня погода?",
+    "Какой сегодня погода?",
+    "Какое сегодня число?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "Tomorrow it will be cold.",
+   "answer": [
+    "Завтра",
+    "будет",
+    "холодно"
+   ],
+   "extra": [
+    "буду",
+    "холодный"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Что Луис будет делать во вторник?",
+   "es": "What will Luis do on Tuesday?",
+   "options": [
+    "Он будет рисовать сфинксов.",
+    "Он будет работать.",
+    "Он пойдёт в театр."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "в январе",
+   "options": [
+    "in January",
+    "in June",
+    "in the evening"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Петербург — город туманов и ветров.",
+   "answer": true,
+   "why": "«Город, привыкший к туманам, ветрам и тайнам»."
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "I’ll rest.",
+   "answers": [
+    "Я буду отдыхать",
+    "Буду отдыхать"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "It’s snowing.",
+   "answers": [
+    "Идёт снег",
+    "Идёт снег."
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "«Летом» значит «зимой».",
+   "answer": false,
+   "why": "Летом — in summer, зимой — in winter."
+  }
+ ],
+ "keyboard": [
+  "а",
+  "б",
+  "в",
+  "г",
+  "д",
+  "е",
+  "ё",
+  "ж",
+  "з",
+  "и",
+  "й",
+  "к",
+  "л",
+  "м",
+  "н",
+  "о",
+  "п",
+  "р",
+  "с",
+  "т",
+  "у",
+  "ф",
+  "х",
+  "ц",
+  "ч",
+  "ш",
+  "щ",
+  "ъ",
+  "ы",
+  "ь",
+  "э",
+  "ю",
+  "я"
+ ]
+}

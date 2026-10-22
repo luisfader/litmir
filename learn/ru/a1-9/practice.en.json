@@ -1,0 +1,291 @@
+{
+ "title": "Сколько стоит?",
+ "subtitle": "Prices, numbers from 100, рубль / евро, colours, этот / тот, in a shop.",
+ "speak": "ru-RU",
+ "hero": "novels/pokhititel-serdec/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "красный",
+     "red"
+    ],
+    [
+     "синий",
+     "dark blue"
+    ],
+    [
+     "голубой",
+     "light blue"
+    ],
+    [
+     "чёрный",
+     "black"
+    ],
+    [
+     "белый",
+     "white"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Сколько",
+   "after": "эта маска?",
+   "options": [
+    "стоит",
+    "стоят",
+    "стоишь"
+   ],
+   "answer": 0,
+   "es": "How much is this mask?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Сколько",
+   "after": "перчатки?",
+   "options": [
+    "стоят",
+    "стоит",
+    "стоите"
+   ],
+   "answer": 0,
+   "es": "How much are the gloves?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "",
+   "after": "маска очень старая.",
+   "options": [
+    "Эта",
+    "Этот",
+    "Это"
+   ],
+   "answer": 0,
+   "es": "This mask is very old."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "",
+   "after": "перчатки синие.",
+   "options": [
+    "Те",
+    "Тот",
+    "Та"
+   ],
+   "answer": 0,
+   "es": "Those gloves are blue."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Это пять",
+   "after": "",
+   "options": [
+    "рублей",
+    "рубля",
+    "рубль"
+   ],
+   "answer": 0,
+   "es": "That’s five roubles."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Это две",
+   "after": "рублей.",
+   "options": [
+    "тысячи",
+    "тысяч",
+    "тысяча"
+   ],
+   "answer": 0,
+   "es": "That’s two thousand roubles."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "пятьсот",
+   "options": [
+    "five hundred",
+    "fifty",
+    "five thousand"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Это дорого.",
+   "options": [
+    "It’s expensive.",
+    "It’s cheap.",
+    "It’s old."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "I’ll take it.",
+   "options": [
+    "Я возьму.",
+    "Я беру нет.",
+    "Я стоит."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "Show me this mask, please.",
+   "answer": [
+    "Покажите,",
+    "пожалуйста,",
+    "эту",
+    "маску"
+   ],
+   "extra": [
+    "эта",
+    "покажи"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Сколько стоит красная маска?",
+   "es": "How much is the red mask?",
+   "options": [
+    "Двести евро.",
+    "Пятьсот евро.",
+    "Сорок евро."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Можно картой?",
+   "options": [
+    "Can I pay by card?",
+    "Can I see the map?",
+    "Can I try it on?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Алессио покупает перчатки.",
+   "answer": true,
+   "why": "«Хорошо, я возьму перчатки»."
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "How much is it?",
+   "answers": [
+    "Сколько стоит?",
+    "Сколько стоит",
+    "Сколько это стоит?"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "a red mask",
+   "answers": [
+    "красная маска"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "«Евро» меняется: два евра.",
+   "answer": false,
+   "why": "Евро never changes: два евро, пять евро."
+  }
+ ],
+ "keyboard": [
+  "а",
+  "б",
+  "в",
+  "г",
+  "д",
+  "е",
+  "ё",
+  "ж",
+  "з",
+  "и",
+  "й",
+  "к",
+  "л",
+  "м",
+  "н",
+  "о",
+  "п",
+  "р",
+  "с",
+  "т",
+  "у",
+  "ф",
+  "х",
+  "ц",
+  "ч",
+  "ш",
+  "щ",
+  "ъ",
+  "ы",
+  "ь",
+  "э",
+  "ю",
+  "я"
+ ]
+}

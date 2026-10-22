@@ -1,0 +1,293 @@
+{
+ "title": "Я хочу найти Алисию",
+ "subtitle": "Хотеть, мочь, нужно / можно / нельзя, consonant changes, знать or уметь.",
+ "speak": "ru-RU",
+ "hero": "novels/prizrachnyj-poezd/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "хотеть",
+     "to want"
+    ],
+    [
+     "мочь",
+     "can"
+    ],
+    [
+     "видеть",
+     "to see"
+    ],
+    [
+     "писать",
+     "to write"
+    ],
+    [
+     "помочь",
+     "to help"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Марк",
+   "after": "найти Алисию.",
+   "options": [
+    "хочет",
+    "хочу",
+    "хотит"
+   ],
+   "answer": 0,
+   "es": "Mark wants to find Alicia."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Я не",
+   "after": "спать.",
+   "options": [
+    "могу",
+    "можу",
+    "может"
+   ],
+   "answer": 0,
+   "es": "I can’t sleep."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Мы",
+   "after": "помочь.",
+   "options": [
+    "хотим",
+    "хочем",
+    "хотят"
+   ],
+   "answer": 0,
+   "es": "We want to help."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Вы",
+   "after": "мне помочь?",
+   "options": [
+    "можете",
+    "могете",
+    "можем"
+   ],
+   "answer": 0,
+   "es": "Can you help me?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "",
+   "after": "нужно думать.",
+   "options": [
+    "Мне",
+    "Я",
+    "Меня"
+   ],
+   "answer": 0,
+   "es": "I need to think."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Я",
+   "after": "поезд.",
+   "options": [
+    "вижу",
+    "видю",
+    "видит"
+   ],
+   "answer": 0,
+   "es": "I see the train."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Я",
+   "after": "в блокнот.",
+   "options": [
+    "пишу",
+    "писаю",
+    "пишет"
+   ],
+   "answer": 0,
+   "es": "I write in my notebook."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Здесь нельзя курить.",
+   "options": [
+    "Smoking isn’t allowed here.",
+    "You can smoke here.",
+    "I don’t smoke here."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "May I come in?",
+   "options": [
+    "Можно войти?",
+    "Нельзя войти?",
+    "Нужно войти?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "I want to find Alicia.",
+   "answer": [
+    "Я",
+    "хочу",
+    "найти",
+    "Алисию"
+   ],
+   "extra": [
+    "хочет",
+    "могу"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Что говорит проводник?",
+   "es": "What does the conductor say?",
+   "options": [
+    "Здесь нельзя задавать вопросы.",
+    "Я хочу вам помочь.",
+    "Алисия в Москве."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Я умею плавать.",
+   "options": [
+    "I can swim (I know how).",
+    "I want to swim.",
+    "I must swim."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Марк хочет найти Алисию.",
+   "answer": true,
+   "why": "That’s why he boards the ghost train."
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "I want",
+   "answers": [
+    "я хочу",
+    "хочу"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "I can’t.",
+   "answers": [
+    "Я не могу",
+    "Не могу"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "«Хотеть»: я хочу, мы хочем.",
+   "answer": false,
+   "why": "Мы хотим — the plural is like the 2nd conjugation."
+  }
+ ],
+ "keyboard": [
+  "а",
+  "б",
+  "в",
+  "г",
+  "д",
+  "е",
+  "ё",
+  "ж",
+  "з",
+  "и",
+  "й",
+  "к",
+  "л",
+  "м",
+  "н",
+  "о",
+  "п",
+  "р",
+  "с",
+  "т",
+  "у",
+  "ф",
+  "х",
+  "ц",
+  "ч",
+  "ш",
+  "щ",
+  "ъ",
+  "ы",
+  "ь",
+  "э",
+  "ю",
+  "я"
+ ]
+}

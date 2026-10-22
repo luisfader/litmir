@@ -1,1 +1,256 @@
-LITMIR-ENC1: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
+{
+ "title": "Mañana voy a…",
+ "subtitle": "Ir a + инфинитив, погода, месяцы, времена года и даты. Итоговый урок A1.",
+ "speak": "es-ES",
+ "hero": "novels/la-gran-conspiracion/cover.jpg",
+ "hearts": 5,
+ "keyboard": [
+  "á",
+  "é",
+  "í",
+  "ó",
+  "ú",
+  "ñ",
+  "ü",
+  "¿",
+  "¡"
+ ],
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 7 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "enero",
+     "январь"
+    ],
+    [
+     "abril",
+     "апрель"
+    ],
+    [
+     "julio",
+     "июль"
+    ],
+    [
+     "octubre",
+     "октябрь"
+    ],
+    [
+     "diciembre",
+     "декабрь"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Mañana",
+   "after": "a cenar con Luis.",
+   "options": [
+    "voy",
+    "va",
+    "vamos"
+   ],
+   "answer": 0,
+   "es": "Завтра я ужинаю с Луисом."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "¿Qué vas",
+   "after": "hacer el fin de semana?",
+   "options": [
+    "a",
+    "de",
+    "—"
+   ],
+   "answer": 0,
+   "es": "Что ты будешь делать на выходных?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "En Moscú hace",
+   "after": "frío.",
+   "options": [
+    "mucho",
+    "muy",
+    "mucha"
+   ],
+   "answer": 0,
+   "es": "В Москве очень холодно."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "En invierno",
+   "after": "en Moscú.",
+   "options": [
+    "nieva",
+    "hace",
+    "está"
+   ],
+   "answer": 0,
+   "es": "Зимой в Москве идёт снег."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Mi cumpleaños es el 5",
+   "after": "mayo.",
+   "options": [
+    "de",
+    "en",
+    "a"
+   ],
+   "answer": 0,
+   "es": "Мой день рождения — 5 мая."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Hace calor.",
+   "options": [
+    "Жарко.",
+    "Холодно.",
+    "Идёт дождь."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "el otoño",
+   "options": [
+    "осень",
+    "весна",
+    "лето"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать по-испански?",
+   "word": "Какая погода?",
+   "options": [
+    "¿Qué tiempo hace?",
+    "¿Qué tiempo es?",
+    "¿Cómo tiempo hace?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите на испанский",
+   "es": "Мы поедем в Мендосу.",
+   "answer": [
+    "Vamos",
+    "a",
+    "viajar",
+    "a",
+    "Mendoza"
+   ],
+   "extra": [
+    "van",
+    "en"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "¿Qué va a hacer Natalia el martes?",
+   "es": "Что Наталья будет делать во вторник?",
+   "options": [
+    "Va a cenar con Luis.",
+    "Va a ver a Roberto.",
+    "Va a viajar a Mendoza."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "¿Con quién va a ir Natalia al restaurante el viernes?",
+   "es": "С кем Наталья пойдёт в ресторан в пятницу?",
+   "options": [
+    "Con Roberto.",
+    "Con Luis.",
+    "Con Sergio."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "En julio es invierno en Argentina.",
+   "answer": true,
+   "why": "В Южном полушарии времена года наоборот."
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите по-испански",
+   "es": "Завтра я буду работать.",
+   "answers": [
+    "Mañana voy a trabajar",
+    "Voy a trabajar mañana"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите по-испански",
+   "es": "Идёт снег.",
+   "answers": [
+    "Nieva",
+    "Está nevando"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "«Hace calor» significa que hace frío.",
+   "answer": false,
+   "why": "Hace calor — жарко."
+  }
+ ]
+}

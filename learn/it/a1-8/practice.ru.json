@@ -1,1 +1,289 @@
-LITMIR-ENC1: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
+{
+ "title": "Andiamo a Venezia!",
+ "subtitle": "A, in, da; транспорт; как спросить дорогу; город.",
+ "speak": "it-IT",
+ "hero": "novels/maschera-di-venezia/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 8 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "il ponte",
+     "мост"
+    ],
+    [
+     "la piazza",
+     "площадь"
+    ],
+    [
+     "il biglietto",
+     "билет"
+    ],
+    [
+     "la chiesa",
+     "церковь"
+    ],
+    [
+     "il negozio",
+     "магазин"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Domani andiamo",
+   "after": "Venezia.",
+   "options": [
+    "a",
+    "in",
+    "da"
+   ],
+   "answer": 0,
+   "es": "Завтра мы едем в Венецию.",
+   "why": "Город → a."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Natalia vuole andare",
+   "after": "Italia.",
+   "options": [
+    "in",
+    "a",
+    "al"
+   ],
+   "answer": 0,
+   "es": "Наталья хочет поехать в Италию.",
+   "why": "Страна → in."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Roberto va",
+   "after": "stazione.",
+   "options": [
+    "alla",
+    "a",
+    "in la"
+   ],
+   "answer": 0,
+   "es": "Роберто идёт на вокзал.",
+   "why": "a + la = alla"
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Stasera vado",
+   "after": "Natalia.",
+   "options": [
+    "da",
+    "a",
+    "in"
+   ],
+   "answer": 0,
+   "es": "Сегодня вечером я иду к Наталье.",
+   "why": "К человеку → da."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Arriviamo a San Marco",
+   "after": ".",
+   "options": [
+    "a piedi",
+    "in piedi",
+    "con i piedi"
+   ],
+   "answer": 0,
+   "es": "Мы приходим на Сан-Марко пешком."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "in vaporetto",
+   "options": [
+    "на водном трамвайчике",
+    "на самолёте",
+    "пешком"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Giri a sinistra.",
+   "options": [
+    "Поверните налево.",
+    "Поверните направо.",
+    "Идите прямо."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать на изучаемом языке?",
+   "word": "Простите, где вокзал?",
+   "options": [
+    "Scusi, dov’è la stazione?",
+    "Scusi, come è la stazione?",
+    "Scusi, quando è la stazione?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Quanto ci vuole? —",
+   "after": "dieci minuti.",
+   "options": [
+    "Ci vogliono",
+    "Ci vuole",
+    "C’è"
+   ],
+   "answer": 0,
+   "es": "Сколько нужно времени? — Десять минут.",
+   "why": "Несколько минут → ci vogliono."
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать на изучаемом языке?",
+   "word": "Это далеко?",
+   "options": [
+    "È lontano?",
+    "È vicino?",
+    "È dritto?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите",
+   "es": "Перейдите мост и поверните направо.",
+   "answer": [
+    "Attraversi",
+    "il",
+    "ponte",
+    "e",
+    "giri",
+    "a",
+    "destra"
+   ],
+   "extra": [
+    "sinistra",
+    "in"
+   ]
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите",
+   "es": "Мы возвращаемся домой на поезде.",
+   "answer": [
+    "Torniamo",
+    "a",
+    "casa",
+    "in",
+    "treno"
+   ],
+   "extra": [
+    "da",
+    "al"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "Come vogliono arrivare a San Marco Roberto e Natalia?",
+   "es": "Как Роберто и Наталья хотят добраться до Сан-Марко?",
+   "options": [
+    "A piedi.",
+    "In gondola.",
+    "In vaporetto."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Per arrivare a San Marco a piedi ci vogliono trenta minuti.",
+   "answer": true,
+   "why": "«Ci vogliono trenta minuti»."
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "A Venezia ci sono molte macchine.",
+   "answer": false,
+   "why": "В Венеции только лодки и ноги!"
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "пешком",
+   "answers": [
+    "a piedi"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Я иду в бар.",
+   "answers": [
+    "Vado al bar",
+    "Vado al bar.",
+    "Io vado al bar",
+    "Io vado al bar."
+   ]
+  }
+ ],
+ "keyboard": [
+  "à",
+  "è",
+  "é",
+  "ì",
+  "ò",
+  "ù"
+ ]
+}

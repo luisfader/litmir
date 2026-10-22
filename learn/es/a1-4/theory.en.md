@@ -1,1 +1,105 @@
-LITMIR-ENC1:S1XAxCdVMtE0eRz715xg9ItafjE46P0qOY7caxaQgOdicJkHe4Cykd63r0/gZObG58gCNor3o+Pgj97B6UNu0Qdgbt/urNVwhiIi0ZEu1A4zgN0JOW5RD1hACRovIHUbmp8gGJ4/QBtwj900ATW0Q47ZemiAGDr6R9pGtY3C+bnpVnD3dnNtR0UJ1M53c22yCcfEb5cU6oW0x0uBHn3UucWUFPyhhOkTjA8NsgtpDsCETxntEm4aldDaD8oPjBWPgRpQm3yhqBepKp46r7oCZICALr05mOpt8nl/FvH4Ttb7IKWlgbUnrBPFnQOUKMyXNVBgG7fh3VWPc4dJk68tmawoSQ0eGiLH3UrEOke9aCo1/DH+ED9vL7hBBN0oTrzjOfoUeFyu5rQ7k6Cqgy+rjOSJqh2kA4OBuyELjIH6pwwQ9h48LpY+5/AFuLXiDnsPnL2yTxoYTseFsJAmZCnyCO7bEoowp2QQyAdo3maLjeRTZwyuhl2c5fqoBj0/0UevmHrHrgAjpZg9ur64k/0LdLfh+vrwbpR5sn2EerFOGmT2C5dVrEwChOCltjUXDltelHoymycBJcVKqKBgV0HZFQ38I4AwLBjsi6Ikqo/zW/v6UE4M9hd5CEOjm07I82wN7bexqVHDkzfbMYEVF82BsRQ65PEqdh2YmCY6MhyKCS4ySUKIsQ28uu30IheCbCRRXdXtLjQfYTBtw6ORcTLMf8dp3UV5nsHp6Guj8sOGJ9yqeblHYyd4itZTJo/PmH2Yhf9peTLjrrKeOcTQrvIfa04+0CtdIqt7qiSugRLpjSJoAKqqdxrj71HJNuGRZQawivMbv8jw9fanO0l9UV/7TGTYZhEYPBmRvmyNlrKBorwI/mRHBOtFok/M5OXFlDiLaRS/W7SFWRMieu3dm0icUQ/MFlkO1XQSdS0ShQVyrQCsbA8Nc5P8sWaKPXG0vNrnT1R2J8w75aguhsDZOzyLq+VUPv24I0mEtel78dSVBH585A/ocKJBEOHD9NLkNrHHfJMoK3w2E9HfbN0WMLcoUNB0sPYn95xqbf4nKMl/GZ+FvJ7yd8IH8hzmPfGboOlwR4DC7Jd9ymvrGnoc4UgRJk8/J6sN+YW6SlLH8m+IZXbAVfERBYdXVV5p0iJeqJPjL9lUYRMwYCsOpwIbkh6diYVKUM0KLC5+0lg6Di0r70xrzdoSquofUw7dMSLoUIRD8n0ksT/NCYtyiwcU+ena6nYapJtys1xxwKCCjoiNhKhBrke+YBJyNn8PXf5NvnLR78zNGJqw7xjfy6OPkE44hnDEgrPKT9xFawoS+7Jr8+1aQhpfPPoDF7IDzdnq49B0zaDd2JvxODbuY3PeFZVaQjNdzADDnY2UA6TDe7/U8YR3HCGAXs4uB57WkKf979epgvb31wwVKTgdHxsQk5aaVktLpoRy0sXJLW1KqmJTzfat2b+o+Pxo8dVFFyDUWzNomfvF78cMz6DmnWfpZftpwcwKZS7QV4ubZhsj6k10/ZUoF47uweWjWeysI0BvukIoHQt9pc5sZVW9FN+gae5yXBdwcuc2LHsbItm44AMItvLdAMk2AaOmwpBFDL7vxgM9NAu8WNoL8XTdVoa/0aqrRftI8gOPL8MTHLLFzxhSvXKaCgrAUejBglCe5IP+U2nmGZJQUZ+ts6JI1ONkQCU1FTtG6bG+6EoElVg0je3oXcryVmp4TSmY9VMOckU/TjsngGYpnWwJjpLj7YUeRPGlmZzpqC7QaAjCi5cLcevYrqgnDn+/zGdm/uQL/l66+EMDRx12Npae8/SeZznc6iRVx5fwp3hpEOV0l0PwC24NczryIVorOk4zzUMlZO0aHbqdyxBUP8qa8MCW6DGO8oz/8aQYerD4pSXUY0OPoqokZcQI7J5iGBqB6IkY5NaO7T3frHVcBy40dPCj60N+KgWUANtrbj/vcB4SsOV45sZtAEiGy9j5ksoVqcjA2iEncIHkWDypSm7/8+3KsSK7jcHIwFUQteXE36Fdal+x2VPgsAVIoYwEoL1NAvAzu2Xzer/B0hfAstN5PlzjqRxS+e9fsMk+l0M4ciAt5ReeiIi5SciFUi4opHqqHtddwT/VFpeJJI2jX4wnqjw9qaFPOpBqfm+Si1TSNC4GVNM1q7hEQWbIqsLjqHySBOHEwq/RoxSr9SHpYw1MKXEcpr7Tj14WxA03qJWp8514TaJzMRFEWVlUOfcrMXiBk3MWBYTLDNQm6nITegYav+do74SK+AxXEYEFTzl1J+9ReTaHfTj2OInPVVSIN6a9cGWrobeG/w54fLfL4ePxk+sDeBQzfdeIo9dXkmSJSgLTwxiEjOV+uJ/6WORx5v1TJ5TShVXODzdk4Cxf4ALHYBfvDRNhnHCeOjvcZtb34CbZIOqxrKKL19pl19lyHXOu7/r9k4rCCKxIF6ns0DfpdDa37camVAyF9x8sQVKXvcDol67Q4Ilgct6jVmJLVYTxfEeGPk3KjJ5YPb0bihwG2d/5Fyn0Xrwb/K3E+DendWdpo/KUjDaLSMoEbzpJRIEx5JhExGGpbxy+NQ4t4jLCRGCGaNkVbXWnG2nbu09mu2Z8CTWCDRHXm+P5eZTUmF56UXu1xvX49MGpeWKLl7ulyz2ZeD7bhisOPokYnhlPNNlGK2kLFxwK+51zWqkNLvzmQjco/Btzp/FzrfymQX8D0aNeOdf1SHy45l46JOTQ3MjAtz6SEdnB4NzQQfWWsK5ObM+zQNgWaLI0EKB67pjyH9siC//IKFJmg/3rznbwjx5mRvTfHOY4HyrEBKuQSflPho8sjSfg8Z7ovs/ydlOk58nMVwX59TK3bEExKhGV3YrSR4cwmpvKdSgOExhuiKLDZoWd88KVohj+CBcz4+nJUIK8OmuUCkyL2EYNPQGnueaPU1jNEJKUxBAZQoaCEP9d5JAyxG4bChfOlRTpezaDa3mDdwxD/chGOqzlGE3RiGvmySuRiGBcMQ5UjYzKQvCqK679zt2M47izKMxbR5BeDjse+lTbKhUTTlQrTLJ/H0Tv+gxNqVt4fUN9t+EkXbhxoRnqngDNWxANwV+LxCZH8GxzlCbFGVYDYb+VgTsLcEiP2rraJ7HcuHT/kH/T59pE+iRlMYqSg/LVjt4xKFkH4nwqkw6bASkhFmy7ewFwIDoULgMFuUxyPY0zgmM+2d93Xa5k/zhZF4SLl2TGROYHCCUt7J9RDzK5LULAEb0qMERhJdebhC0c5HOKTns+CZZAHlxJNqXFVxtbfxFLuovhjTWrmWgiAQ4RWdHBBgbpz64qLvrA56pu1ETJBjPiiyDZnapG2FN6wyiMWH2P6Yh5o/HayfGNQwDQnTUvxhzkzQMd/e7pQ5MkkiIOLjnpCFa9hbfUHYxtxuPUnp+/NGxySKb22d4Res/NtjbfOQBX0Dn14+ZTuhjqD+TI72N7Mql2luLaczEOFISM8pt2Q+mH5Qa5KMaVsjNyjkEJ6Cou0B1z83n8jSf6mNMrrhZ/x/gP0gmfoqxkOwZdawZ0Ytt9ucneCYO5t2bA1wvnhSZBwU4QgA0ydB84rLWICtBlNy2p/tFkN5v/04vats+Ui7FLhcJwBriycechNatN9sKdXv9v9oSbLzczG27Vb80Q914/lid8zatVtZh9XSO3/3b58QAlmf4v914KrJhxRVAejLcAiMCkSu8kRTy6v73tMrpUYsO31eAdTiVIUrpAQos+0VzCUkgLqwFc4Fb2ZmSBXvQnjXA2a2DP8tLqV48ryVS6VU8Pz26OcSpoyHGdI69u+tcXP0WE6zqd8K9P0vb36flt8CULPJYNa3/aSGKNuiSwABAMW8yTLKzL+AvLWpRg/+wwpmmok688JK7qKkRBjd35qRZvCg6QqGa/nkcs6eSYhL6N4LVAPeMlVkz2fymX0mv6Dzynxx/caDdTfcyjeC5N3ArDjZ3a2EbQ4/5ep8HYvf5GrAkvS9AkWPzvfcZonITAf1Vj8JlTBabPxEIv8rT1YgwAV29VMGl6/Pn+YJeYv1kFCZHIOoNTK+oMOS+8v0HofgnFWZEhGQnSWIs+yjoQgIEsUzGCDbXbpFJ1EmG6Z5M02LEtwRuI7AahSo5wwN9qgx6PrnQg+DNjY9kSmLITm5Z7o1AdarjUoXR2cSn6cQs5wqj+X/Lcbq8QGYHk5l0+BD0pfv2/UdyaMzDd34buhRz9EPJHUi6fvVBJUsDOJVqUQiJvsQwkU2w+FEIbg8El4Uh2V9n/Kpkn2RfCdw/5ZQvp5oPqqtrSSLOnu3X6BrT4zlPcpVEzzJTDOEI6h4y6lf6cGO9A5ILnnSKpSPQI9Jbv6M5Eg9aEkkldkJoyiW8H2bX3UgHQbrWjl5UTE+iiNQeUr8l/k3id4FK5P2EziYk6fAcTCNtX52q6isjzRnpuPiNPJF1ZGQLovdevGgUnIzQlMtqpXYnL1V6bVgtAVNU8qvU/4R8rtVTS0LFeMthMYYtMIwzNZsv/VbzXG2EpySDhaojWkOqnxUrqXTHcGInWCoWg1I96QcgSxYtUxohCRk0jtyWLfkhZZNQdWseekvsuT056TLrwtS6dQxWjTTMA/gi2x3m6r5eGgtx7Dy5pwh0BjZPTqNXC1moKFI5MYaRY1cAGk7yvyxwzWxoTFsl9I3xbEr2BEDGltd3bezUI4+EYCdjTT7mbnUtA68k/M7ySdJRuKyqz11xSTn7P/qj7D5oRXCWwO8AA+1kKlJEmtTvtKm4rvCpr8fPydVa16BhJPefM32Tc5HifLLkMZEqvQBK52cl02bWVB6SEEyq1fucCq+BxxxzoUwgm77PiORpR8RbeVBGZevtK2nrecDkGE9vRSOrFFLhAVZw4c/PQW3Zfu44vJxxZq7ePNySi42bRqR5YYjOz3JtLrHNM4w4bzCtxPfqSF2uUPrCCIMGMvvHH5b1XVJj6sKTEIAJOPH/KY8OqEbueWJEUC7U1+K/jftlvV3qMILQpC4I4oNh3k6Lh8lgicI7Pr7gRwD84zCut7LcAuVUpbFxqu3DMy1WtbKWGZ0sQ8OyN4QibsZZPxB6CiDwASLCq6pBXNTMDCT5ixvkc8AY9aAdsWDdFhErpswqd/ZABuaflE+FbdlG8H+civZ/fPcyehtMMSJnCd7Kl/C+WhFkoTve83d6vUeiui6qSH5xXGd8A+7HK0Ht3gQYXPp/NR8VF
+## In the turquoise fortress
+
+The novel «La Corazonada»: after two years of nuclear winter Robert leaves his bunker and builds the Turquoise Utopia, a fortress for survivors. Luis, the architect, shows him where everything is.
+
+> — Luis, **¿dónde está**{where is} el búnker?
+> — **Está debajo de**{it's under} la torre, **al lado del**{next to the} garaje.
+> — ¿Y mi **motocicleta**{motorbike}?
+> — **Está en**{it's in} el garaje, **detrás de**{behind} la puerta azul. ¿**Estás cansado**{are you tired}?
+> — Sí, **estoy**{I am} muy cansado, pero **estoy contento**{I'm happy}. En la fortaleza **hay**{there is} agua, hay comida y hay amigos.
+> — ¿**Hay**{is there} un hospital?
+> — **Todavía no**{not yet}, pero hay una **enfermería**{first-aid room} **cerca de**{near} la entrada.
+
+## 1. The verb ESTAR — "to be (somewhere, somehow)"
+
+| | ESTAR |
+|---|---|
+| yo | **estoy** |
+| tú | **estás** |
+| él / ella / usted | **está** |
+| nosotros / nosotras | **estamos** |
+| vosotros / vosotras | **estáis** |
+| ellos / ellas / ustedes | **están** |
+
+## 2. SER or ESTAR?
+
+Spanish has two verbs for "to be". For now, remember the key idea:
+
+| SER — what something is, its nature | ESTAR — where it is and how it is now |
+|---|---|
+| name, job: *Soy Robert. Luis es arquitecto.* | place: *Estoy en el garaje.* |
+| origin: *Luis es de Argentina.* | temporary state: *Estoy cansado.* |
+| personality, looks: *Luis es alto.* | mood: *Natalia está triste.* |
+
+Compare: **Luis es nervioso** (he's a nervous person) — **Luis está nervioso** (he's nervous right now).
+
+States: *cansado* — tired, *contento* — happy, pleased, *triste* — sad, *enfermo* — ill, *nervioso* — nervous, *ocupado* — busy, *listo* — ready. They agree in gender: *Robert está cansado, Natalia está cansada*.
+
+## 3. HAY or ESTÁ?
+
+- **Hay** — to say that something **exists** (new information), usually with *un, una*, a number or no article: *En la fortaleza **hay** una torre. **Hay** dos puertas. **Hay** agua.*
+- **Está / están** — to say **where** a known thing or person is (with *el, la*, a name): *La torre **está** en el centro. Robert **está** en el garaje.*
+
+## 4. Where? Prepositions of place
+
+| Español | English |
+|---|---|
+| en | in, on, at |
+| encima de | on top of, above |
+| debajo de | under |
+| al lado de | next to |
+| delante de | in front of |
+| detrás de | behind |
+| cerca de | near |
+| lejos de | far from |
+| entre … y … | between … and … |
+| a la derecha de | to the right of |
+| a la izquierda de | to the left of |
+
+**De + el = del**: *al lado **del** garaje* (never *de el*). With *la* there is no contraction: *al lado de la torre*.
+
+## 5. Places
+
+| Español | English | Español | English |
+|---|---|---|---|
+| la casa | house | la puerta | door |
+| la torre | tower | la ventana | window |
+| el muro | (fortress) wall | la cocina | kitchen |
+| la entrada | entrance | el dormitorio | bedroom |
+| el garaje | garage | el baño | bathroom |
+| la plaza | square | el jardín | garden |
+
+## Check yourself
+
+Robert [[es|*está|hay]] en el garaje.
+
+En la fortaleza [[está|*hay|es]] una torre muy alta.
+
+Yo [[*estoy|soy|está]] muy cansado hoy.
+
+Luis [[*es|está|hay]] arquitecto.
+
+La motocicleta está al lado [[*del|de el|de la]] garaje.
+
+¿Dónde [[*están|hay|son]] los amigos de Robert?
+
+«Natalia está triste» means she is a sad person by nature. ( V / F ){F}
+
+«Del» = «de + el». ( V / F ){V}
+
+## Unit vocabulary
+
+| Español | English |
+|---|---|
+| estar | to be (place, state) |
+| ¿dónde? | where? |
+| cansado, -a | tired |
+| contento, -a | happy, pleased |
+| triste | sad |
+| la torre | tower |
+| la puerta | door |
+| la entrada | entrance |
+| cerca de / lejos de | near / far from |
+| al lado de | next to |
+| debajo de / encima de | under / on top of |
+| todavía no | not yet |

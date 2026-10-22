@@ -1,1 +1,314 @@
-LITMIR-ENC1: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
+{
+ "title": "Domani nevicherà",
+ "subtitle": "Будущее время, погода, месяцы и даты. Повторение A1.",
+ "speak": "it-IT",
+ "hero": "novels/la-nevicata-rosa/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 8 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "piove",
+     "идёт дождь"
+    ],
+    [
+     "nevica",
+     "идёт снег"
+    ],
+    [
+     "fa caldo",
+     "жарко"
+    ],
+    [
+     "fa freddo",
+     "холодно"
+    ],
+    [
+     "c’è il sole",
+     "солнечно"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Domani io",
+   "after": "con Lorenzo.",
+   "options": [
+    "parlerò",
+    "parlero",
+    "parlerà"
+   ],
+   "answer": 0,
+   "es": "Завтра я поговорю с Лоренцо."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Noi",
+   "after": "l’autobus alle dieci.",
+   "options": [
+    "prenderemo",
+    "prendremo",
+    "prenderete"
+   ],
+   "answer": 0,
+   "es": "Мы сядем на автобус в десять."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Sabato",
+   "after": "a Fiesole.",
+   "options": [
+    "andremo",
+    "anderemo",
+    "andaremo"
+   ],
+   "answer": 0,
+   "es": "В субботу мы поедем во Фьезоле.",
+   "why": "andare → andr-"
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Carlotta",
+   "after": "una festa.",
+   "options": [
+    "farà",
+    "farò",
+    "fara"
+   ],
+   "answer": 0,
+   "es": "Карлотта устроит праздник."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "",
+   "after": "alla festa, Lorenzo?",
+   "options": [
+    "Verrai",
+    "Venirai",
+    "Verrà"
+   ],
+   "answer": 0,
+   "es": "Ты придёшь на праздник, Лоренцо?",
+   "why": "venire → verr-"
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Domani",
+   "after": "il mio compleanno.",
+   "options": [
+    "sarà",
+    "essera",
+    "sarò"
+   ],
+   "answer": 0,
+   "es": "Завтра будет мой день рождения."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Che tempo farà domani?",
+   "options": [
+    "Какая погода будет завтра?",
+    "Который час будет завтра?",
+    "Что ты будешь делать завтра?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать на изучаемом языке?",
+   "word": "первого мая",
+   "options": [
+    "il primo maggio",
+    "il uno maggio",
+    "al primo maggio"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать на изучаемом языке?",
+   "word": "Сегодня третье марта.",
+   "options": [
+    "Oggi è il 3 marzo.",
+    "Oggi è il terzo marzo.",
+    "Oggi è 3 di marzo."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "gennaio",
+     "январь"
+    ],
+    [
+     "aprile",
+     "апрель"
+    ],
+    [
+     "luglio",
+     "июль"
+    ],
+    [
+     "settembre",
+     "сентябрь"
+    ],
+    [
+     "dicembre",
+     "декабрь"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Domani io ti",
+   "after": "alla stazione.",
+   "options": [
+    "cercherò",
+    "cercerò",
+    "cercarò"
+   ],
+   "answer": 0,
+   "es": "Завтра я буду искать тебя на вокзале.",
+   "why": "-care → -cherò"
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите",
+   "es": "Завтра над Флоренцией пойдёт снег.",
+   "answer": [
+    "Domani",
+    "nevicherà",
+    "su",
+    "Firenze"
+   ],
+   "extra": [
+    "nevica",
+    "piove"
+   ]
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите",
+   "es": "На следующей неделе мы поедем в Рим.",
+   "answer": [
+    "La",
+    "settimana",
+    "prossima",
+    "andremo",
+    "a",
+    "Roma"
+   ],
+   "extra": [
+    "in",
+    "andiamo"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "Quando è il compleanno di Carlotta?",
+   "es": "Когда день рождения Карлотты?",
+   "options": [
+    "Il primo febbraio.",
+    "Il 20 gennaio.",
+    "Domani."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Domani ci sarà il sole, ma stanotte nevicherà.",
+   "answer": true,
+   "why": "Лоренцо говорит, что будет солнце; а по телевизору предупреждают о снеге ночью."
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "La neve su Firenze sarà bianca.",
+   "answer": false,
+   "why": "«La neve sarà… rosa»."
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Я приду.",
+   "answers": [
+    "Verrò",
+    "Verrò.",
+    "Io verrò",
+    "Io verrò."
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Холодно.",
+   "answers": [
+    "Fa freddo",
+    "Fa freddo."
+   ]
+  }
+ ],
+ "keyboard": [
+  "à",
+  "è",
+  "é",
+  "ì",
+  "ò",
+  "ù"
+ ]
+}

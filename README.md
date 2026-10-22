@@ -1,8 +1,6 @@
 # Литературный мир — Robert Fader
 
-Sitio web para leer las novelas de Robert Fader. Cada idioma (ES, IT, EN, DE, FR, TR, PT, CS, PL, SR, EO, ISV, VO, IA, LD) muestra solo las novelas escritas en ese idioma. El español es el idioma por defecto.
-
-**Este sitio no tiene nada en ruso.** Las novelas rusas están en otro sitio, separado: https://luisfader.github.io/litmir2/ (repositorio `luisfader/litmir2`). Lo único que queda es una redirección invisible: los enlaces viejos a novelas rusas (`#/<novela-rusa>`) y `?lang=ru` llevan allí (lista `RU_SLUGS` en `index.html`). Las novelas rusas no están aquí, pero los cursos sí se explican en ruso e inglés (el de inglés, en ruso y español).
+Sitio web para leer las novelas de Robert Fader. Cada idioma (RU, ES, IT, EN, DE, FR, TR, PT, CS, PL, SR, EO, ISV, VO, IA, LD, LA) muestra solo las novelas escritas en ese idioma. El español es el idioma por defecto.
 
 ## Estructura
 
@@ -56,11 +54,8 @@ Si una novela existe en otro idioma, añadir `"translations": {"es": "slug-de-la
 
 ## Registro con Google
 
-Los lectores pueden entrar con su cuenta de Google (botón «Entrar» arriba a la derecha). Firebase, proyecto `litmir2026`.
+Todo el sitio es libre: todos los capítulos y todas las unidades se leen sin registrarse, y nada está cifrado.
 
-- **Sin registrarse:** los capítulos 1 a 4 de cada novela (y los prólogos o dosieres que haya antes del 5) y las unidades 1 a 3 del curso. El test de nivel es libre.
-- **Con registro:** todo lo demás. Para cambiar el límite, editar `FREE_CHAPTERS` y `FREE_UNITS` en `index.html`.
-- El progreso (capítulos leídos, último capítulo, notas de tests y cursos) se guarda en la cuenta y se sincroniza entre dispositivos. Tema, tamaño de letra, volumen e idioma quedan en cada dispositivo.
-- Si Firebase no carga, nada queda bloqueado.
-- Los capítulos 5+ y las unidades 4+ están **cifrados** en este repositorio (empiezan con `LITMIR-ENC1:`). La llave está en Firestore (`config/key`, campo `k`), que solo pueden leer los usuarios con sesión; la web descifra en el navegador.
-- **Al agregar capítulos o unidades nuevas:** agregarlos en texto normal, actualizar el `catalog.json` y ejecutar `LITMIR_KEY='<llave>' node tools/cifrar.mjs`. Cifra lo que corresponda y no toca lo ya cifrado (`--descifrar` hace lo contrario). La llave no está en el repositorio.
+El botón «Entrar» (Google, Firebase `litmir2026`) es opcional: sirve para guardar el progreso de lectura (capítulos leídos, último capítulo, notas de tests y cursos) en la cuenta y verlo en todos los dispositivos. Tema, tamaño de letra, volumen e idioma quedan en cada dispositivo.
+
+`tools/cifrar.mjs` quedó de cuando los capítulos 5+ estaban cifrados; ya no se usa.

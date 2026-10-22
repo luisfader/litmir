@@ -1,1 +1,116 @@
-LITMIR-ENC1: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
+## Tomorrow it will snow… pink
+
+In «La Nevicata Rosa» it is the end of January. Carlotta and Lorenzo are making plans in a café in Florence, while the TV above the bar is showing a very strange weather forecast.
+
+> — **Che tempo farà domani?**{What will the weather be like tomorrow?}
+> — **Fa freddo**{It’s cold}, ma **domani ci sarà il sole**{tomorrow it will be sunny}. **Andremo**{We’ll go} a Fiesole?
+> — Sì! **Prenderemo**{We’ll take} l’autobus **alle dieci**{at ten} e **pranzeremo**{we’ll have lunch} lassù.
+> — E **il primo febbraio**{on the first of February} **sarà il tuo compleanno**{it will be your birthday}. **Che cosa farai?**{What will you do?}
+> — **Farò una festa**{I’ll throw a party}, naturalmente. **Verrai?**{Will you come?}
+> — **Certo che verrò**{Of course I’ll come}.
+> Dalla televisione: «**Attenzione**{Warning}: **stanotte**{tonight} **su Firenze nevicherà**{it will snow over Florence}. **La neve sarà… rosa**{The snow will be… pink}.»
+
+## 1. The future tense — FUTURO SEMPLICE
+
+To talk about the future, take the infinitive, drop the final **-e** and add the endings. In **-are** verbs the **a** becomes **e**: *parlare → parl**e**rò*.
+
+| | parlare | prendere | partire |
+|---|---|---|---|
+| io | parler**ò** | prender**ò** | partir**ò** |
+| tu | parler**ai** | prender**ai** | partir**ai** |
+| lui / lei | parler**à** | prender**à** | partir**à** |
+| noi | parler**emo** | prender**emo** | partir**emo** |
+| voi | parler**ete** | prender**ete** | partir**ete** |
+| loro | parler**anno** | prender**anno** | partir**anno** |
+
+The stress falls on the ending: *parlerò, parlerà* — don’t forget the accents!
+
+## 2. Irregular futures
+
+The endings stay the same; only the stem changes.
+
+| Infinitive | Stem | io | Infinitive | Stem | io |
+|---|---|---|---|---|---|
+| essere | **sar-** | sarò | fare | **far-** | farò |
+| avere | **avr-** | avrò | stare | **star-** | starò |
+| andare | **andr-** | andrò | venire | **verr-** | verrò |
+| potere | **potr-** | potrò | volere | **vorr-** | vorrò |
+| dovere | **dovr-** | dovrò | vedere | **vedr-** | vedrò |
+
+Spelling: verbs in **-care / -gare** add **h**: *cercare → cerc**h**erò, pagare → pag**h**erò*. Verbs in **-ciare / -giare** lose the **i**: *mangiare → mang**e**rò, cominciare → cominc**e**rò*.
+
+**Good to know:** for plans in the near future Italians very often just use the present: ***Domani vado** a Fiesole.* — Tomorrow I’m going to Fiesole.
+
+## 3. What’s the weather like?
+
+| Italiano | English |
+|---|---|
+| Che tempo fa? | What’s the weather like? |
+| Fa caldo / fa freddo. | It’s hot / cold. |
+| Fa bel tempo / brutto tempo. | The weather is nice / bad. |
+| C’è il sole. / C’è vento. | It’s sunny. / It’s windy. |
+| Piove. → Pioverà. | It’s raining. → It will rain. |
+| Nevica. → Nevicherà. | It’s snowing. → It will snow. |
+| È nuvoloso. | It’s cloudy. |
+| Ci sono dieci gradi. | It’s ten degrees. |
+
+## 4. Months and dates
+
+| | | | |
+|---|---|---|---|
+| gennaio | febbraio | marzo | aprile |
+| maggio | giugno | luglio | agosto |
+| settembre | ottobre | novembre | dicembre |
+
+Months are written with a small letter. For dates Italian uses **il + number**: ***il** 20 febbraio, **il** 14 luglio*. Only the first day is an ordinal: ***il primo** maggio*. "In" a month: ***a** gennaio* or ***in** gennaio*.
+
+- *Che giorno è oggi? — Oggi è **il** 3 marzo.*
+- *Quando è il tuo compleanno? — È **il primo** febbraio.*
+- *In che anno sei nato? — **Nel** 1995.*
+
+## 5. A1 review — you can already…
+
+- introduce yourself and talk about your family (*Mi chiamo…, ho un fratello*);
+- say where things are (*c’è, ci sono, sopra, sotto, accanto a*);
+- describe your day (*mi sveglio alle sette*);
+- order at the pizzeria (*vorrei, mi piace, il conto per favore*);
+- say what you want, can and must do (*voglio, posso, devo*);
+- find your way and buy things (*come si arriva…? quanto costa?*);
+- and now — make plans for tomorrow!
+
+## Check yourself
+
+Domani io [[*parlerò|parlero|parlerà]] con Lorenzo.
+
+Noi [[*andremo|anderemo|andiamo]] a Fiesole sabato.
+
+Carlotta [[*farà|farò|fare]] una festa.
+
+Lorenzo [[*verrà|venirà|verra]] alla festa.
+
+Il suo compleanno è [[il uno|*il primo|uno]] febbraio.
+
+Domani [[*pioverà|piove|piovuto]] a Firenze.
+
+"Agosto" is a summer month. ( V / F ){V}
+
+Tomorrow the snow over Florence will be white. ( V / F ){F}
+
+## Unit vocabulary
+
+| Italiano | English |
+|---|---|
+| domani | tomorrow |
+| dopodomani | the day after tomorrow |
+| la settimana prossima | next week |
+| il tempo | weather; time |
+| il sole | sun |
+| la pioggia / piovere | rain / to rain |
+| la neve / nevicare | snow / to snow |
+| caldo / freddo | hot / cold |
+| il mese | month |
+| la data | date |
+| il compleanno | birthday |
+| la festa | party |
+| il programma | plan |
+| naturalmente | of course |

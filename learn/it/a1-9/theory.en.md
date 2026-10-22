@@ -1,1 +1,109 @@
-LITMIR-ENC1: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
+## A scarf for a first date
+
+In «La Nevicata Rosa» Carlotta is about to meet Lorenzo for the first time, after months of digital letters. She is nervous — and her old scarf is far too grey. On her way to the café she stops at a small shop in Florence.
+
+> — **Buongiorno**{Good morning}! **Posso aiutarla?**{Can I help you?}
+> — Sì, **cerco**{I’m looking for} **una sciarpa**{a scarf}. **Quanto costa**{How much is} **questa sciarpa rossa**{this red scarf}?
+> — **Costa**{It costs} quarantacinque euro. È **di lana**{woollen}, **fatta a mano**{handmade}.
+> — Bella… E **quella**{that one} **rosa**{pink}, **lassù**{up there}?
+> — **Quella costa di più**{That one costs more}: centoventi euro. È **di seta**{silk}.
+> — **Centoventi?**{A hundred and twenty?} **È troppo cara**{It’s too expensive}! **Prendo**{I’ll take} questa rossa.
+> — **Ottima scelta**{Excellent choice}. **Paga**{Are you paying} **in contanti o con la carta?**{cash or by card?}
+> — **Con la carta**{By card}, grazie.
+
+## 1. How much is it?
+
+- **Quanto costa** la sciarpa? — How much is the scarf? (one thing)
+- **Quanto costano** le scarpe? — How much are the shoes? (several things)
+- **Costa** 45 euro. / **Costano** 80 euro.
+- **È caro / è cara.** — It’s expensive. **È economico / economica.** — It’s cheap.
+- **Posso provare?** — Can I try it on? **Che taglia porta?** — What size are you?
+
+## 2. Numbers from 100
+
+| | | | |
+|---|---|---|---|
+| 100 | **cento** | 600 | seicento |
+| 101 | centouno | 700 | settecento |
+| 120 | centoventi | 800 | ottocento |
+| 200 | **duecento** | 900 | novecento |
+| 300 | trecento | 1000 | **mille** |
+| 400 | quattrocento | 2000 | **duemila** |
+| 500 | cinquecento | 1 000 000 | **un milione** |
+
+Numbers are written as **one word**: *345 = trecentoquarantacinque*. Note **mille** but **duemila, tremila**. A comma is used for cents: *12,50 € = dodici euro e cinquanta*.
+
+## 3. Colours
+
+| Italiano | English | Italiano | English |
+|---|---|---|---|
+| rosso | red | nero | black |
+| bianco | white | grigio | grey |
+| giallo | yellow | azzurro | light blue |
+| verde | green | marrone | brown |
+| **rosa** | pink | **blu** | dark blue |
+| **viola** | purple | arancione | orange |
+
+Colours are adjectives and agree with the noun: *una sciarpa ross**a***, *due cappotti ner**i***, *le scarpe bianch**e***.
+
+- Colours in **-o** have four forms: *rosso, rossa, rossi, rosse*.
+- Colours in **-e** have two: *verde / verdi*, *marrone / marroni*.
+- **rosa, blu, viola** never change: *una gonna **rosa**, due gonne **rosa***.
+
+## 4. Clothes
+
+| Italiano | English | Italiano | English |
+|---|---|---|---|
+| la sciarpa | scarf | il cappotto | coat |
+| la gonna | skirt | i pantaloni | trousers |
+| il vestito | dress, suit | la camicia | shirt |
+| la maglietta | T-shirt | il maglione | jumper |
+| le scarpe | shoes | il cappello | hat |
+
+## 5. QUESTO and QUELLO — this and that
+
+**Questo** is for things near you, **quello** for things far away. *Questo* works like an ordinary adjective:
+
+| | singular | plural |
+|---|---|---|
+| masc. | **questo** cappotto | **questi** cappotti |
+| fem. | **questa** sciarpa | **queste** sciarpe |
+
+**Quello** before a noun changes like the article (*il → quel, lo → quello, l’ → quell’, i → quei, gli → quegli*): *quel cappotto, quella sciarpa, quei pantaloni, quelle scarpe, quell’abito*. Alone it is simple: *Prendo **quello**. Mi piace **quella**.*
+
+## Check yourself
+
+Quanto [[*costa|costano|costi]] questa sciarpa?
+
+Quanto [[costa|*costano]] queste scarpe?
+
+Ho una gonna [[*rossa|rosso|rosse]].
+
+Lei porta due sciarpe [[rose|rosi|*rosa]].
+
+[[*Questi|Questo|Queste]] pantaloni sono cari.
+
+Mi piace [[quello|*quel|quella]] cappotto.
+
+«Duemila» means 2000. ( V / F ){V}
+
+Carlotta buys the pink silk scarf. ( V / F ){F}
+
+## Unit vocabulary
+
+| Italiano | English |
+|---|---|
+| costare | to cost |
+| quanto costa? | how much is it? |
+| caro / economico | expensive / cheap |
+| cercare | to look for |
+| provare | to try (on) |
+| la taglia | size (clothes) |
+| il negozio | shop |
+| i soldi | money |
+| la carta / in contanti | card / cash |
+| la sciarpa | scarf |
+| il cappotto | coat |
+| la lana / la seta | wool / silk |
+| il colore | colour |
+| cento / mille | a hundred / a thousand |
