@@ -36,6 +36,12 @@ Za drzwiami rozległy się trzy stanowcze uderzenia.
 
 Dłoń odłożyła tablet ekranem do dołu. Druga poprawiła koc na piersi pacjenta.
 
-— Nie zostawimy go — powiedział kobiecy głos.
+— Nikt nie wejdzie, kiedy zajmuję się pacjentami — odpowiedziała spokojnie kobieta. — To moja przestrzeń. Nie pozwolę jej naruszać.
 
-I dopiero wtedy zamek w drzwiach szczęknął.
+Za drzwiami przez chwilę panowała cisza. Potem odezwał się męski głos:
+
+— Proszę pani, zdaje się, że nie jest pani w sytuacji, w której może stawiać nam warunki.
+
+Dłonie zatrzymały się na moment. Prawa poprawiła opatrunek, lewa delikatnie ułożyła rękę chorego na kocu. Dopiero wtedy padła odpowiedź:
+
+— Jestem lekarką. I gdziekolwiek się znajduję, to ja ustalam warunki pracy z moimi pacjentami. Jeśli ich nie uszanujecie, nie będę leczyć nikogo.
