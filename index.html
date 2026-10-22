@@ -158,6 +158,29 @@ article.chapter hr{border:0;text-align:center;margin:2em 0}
 article.chapter h2{font-family:var(--display);font-weight:500;text-align:center;font-size:1.4em;margin:1.6em 0 .8em}
 article.chapter h2 ~ p{text-align:left;font-size:.92em}
 article.chapter .gloss{cursor:help;border-bottom:1.5px dotted var(--accent);-webkit-tap-highlight-color:transparent;outline:none}
+.gl-pick{display:flex;justify-content:center;align-items:center;gap:6px;flex-wrap:wrap;margin:-24px 0 34px;font-family:var(--sans);font-size:12.5px;color:var(--muted)}
+.gl-pick button{border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:999px;padding:3px 11px;font:600 12px var(--sans);letter-spacing:.05em;cursor:pointer}
+.gl-pick button.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.gl-side{max-width:680px;margin:0 auto 28px;padding:0 20px;font-family:var(--sans)}
+.gl-side details{border:1px solid var(--line);border-radius:12px;background:var(--paper);padding:4px 14px}
+.gl-side summary{cursor:pointer;padding:10px 0;font-weight:600;font-size:14px;color:var(--ink)}
+.gl-side .gl-title{display:none;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700;margin:4px 0 8px}
+.gl-side ol{list-style:none;margin:0 0 10px;padding:0;columns:2;column-gap:22px}
+.gl-side li{break-inside:avoid}
+.gl-side li button{display:block;width:100%;text-align:left;border:0;background:none;padding:5px 6px;border-radius:7px;cursor:pointer;font:inherit;color:var(--ink);line-height:1.3}
+.gl-side li button b{display:block;font-weight:600;font-size:14px}
+.gl-side li button span{display:block;font-size:13px;color:var(--muted)}
+.gl-side li button:hover,.gl-side li button.on{background:var(--accent-soft)}
+article.chapter .gloss.hl{background:var(--accent-soft);border-radius:3px;box-shadow:0 0 0 2px var(--accent-soft)}
+@media (min-width:1200px){
+  .gl-wrap{display:grid;grid-template-columns:minmax(0,1fr) 680px minmax(0,1fr);column-gap:28px;align-items:start}
+  .gl-wrap article.chapter{grid-column:2;margin:0;max-width:none}
+  .gl-side{grid-column:3;grid-row:1;margin:0;padding:150px 20px 0 0;max-width:300px;position:sticky;top:110px}
+  .gl-side details{border:0;background:none;padding:0;max-height:calc(100vh - 140px);overflow:auto}
+  .gl-side summary{display:none}
+  .gl-side .gl-title{display:block}
+  .gl-side ol{columns:1}
+}
 article.chapter .gloss:focus-visible{background:var(--accent-soft);border-radius:3px}
 #glossTip{position:fixed;z-index:50;max-width:min(280px,calc(100vw - 24px));padding:6px 11px;border-radius:8px;background:var(--ink);color:var(--paper);font-family:var(--sans);font-size:14px;line-height:1.35;box-shadow:var(--shadow);pointer-events:none;opacity:0;transform:translateY(4px);transition:opacity .12s,transform .12s}
 #glossTip.on{opacity:1;transform:none}
@@ -821,6 +844,32 @@ function starsHTML(n, withNum){
   let h = ""; for (let k=1;k<=5;k++) h += `<i class="${s>=k?"f":s>=k-0.5?"h":""}">★</i>`;
   return `<span class="stars" title="${esc(lab)}" aria-label="${esc(lab)}">${h}${withNum?`<small>${esc(String(s).replace(".", n.lang==="en"?".":","))}</small>`:""}</span>`;
 }
+const GLP_T={es:{pick:"Traducción:",list:"Palabras del capítulo"},it:{pick:"Traduzione:",list:"Parole del capitolo"},en:{pick:"Translation:",list:"Words in this chapter"},ru:{pick:"Перевод:",list:"Слова главы"}};
+function glossLangOf(n){ const gl = n.glossLangs || []; const v = store.get("glossLang", gl[0]); return gl.includes(v) ? v : gl[0]; }
+function setupGlossPick(n, root){
+  if (!n.glossPick || !n.glossLangs) return;
+  const T = GLP_T[n.lang] || GLP_T.en, art = root.querySelector("article.chapter"), side = root.querySelector("#glSide");
+  if (!art || !side) return;
+  const gl = n.glossLangs, words = [], seen = new Map();
+  art.querySelectorAll(".gloss").forEach(el => { const k = el.textContent.trim().toLowerCase(); if (!seen.has(k)){ seen.set(k, words.length); words.push({w:el.textContent.trim(), tr:el.dataset.tr.split("|"), els:[]}); } words[seen.get(k)].els.push(el); el.dataset.gi = seen.get(k); });
+  if (!words.length){ side.remove(); const pk = art.querySelector(".gl-pick"); if (pk) pk.remove(); return; }
+  const pick = art.querySelector(".gl-pick");
+  const draw = () => {
+    const L = glossLangOf(n), li = gl.indexOf(L);
+    art.dataset.pick = L;
+    pick.innerHTML = `<span>${esc(T.pick)}</span>` + gl.map(g => `<button type="button" data-l="${g}" class="${g===L?"on":""}">${g}</button>`).join("");
+    const wide = matchMedia("(min-width:1200px)").matches;
+    side.innerHTML = `<details${wide ? " open" : ""}><summary>${esc(T.list)} (${words.length})</summary><div class="gl-title">${esc(T.list)}</div><ol>${words.map((o,i) => `<li><button type="button" data-gi="${i}"><b>${esc(o.w)}</b><span>${esc((o.tr[li]||"").trim())}</span></button></li>`).join("")}</ol></details>`;
+  };
+  draw();
+  pick.addEventListener("click", e => { const b = e.target.closest("button[data-l]"); if (b){ store.set("glossLang", b.dataset.l); draw(); } });
+  const mark = (i, on) => { if (i == null || !words[i]) return; words[i].els.forEach(el => el.classList.toggle("hl", on)); const b = side.querySelector(`button[data-gi="${i}"]`); if (b) b.classList.toggle("on", on); };
+  side.addEventListener("pointerover", e => { const b = e.target.closest("button[data-gi]"); if (b) mark(+b.dataset.gi, true); });
+  side.addEventListener("pointerout", e => { const b = e.target.closest("button[data-gi]"); if (b) mark(+b.dataset.gi, false); });
+  side.addEventListener("click", e => { const b = e.target.closest("button[data-gi]"); if (!b) return; const el = words[+b.dataset.gi].els[0]; el.scrollIntoView({behavior:"smooth", block:"center"}); mark(+b.dataset.gi, true); setTimeout(() => mark(+b.dataset.gi, false), 1600); });
+  art.addEventListener("pointerover", e => { const g = e.target.closest(".gloss[data-gi]"); if (g) mark(+g.dataset.gi, true); });
+  art.addEventListener("pointerout", e => { const g = e.target.closest(".gloss[data-gi]"); if (g) mark(+g.dataset.gi, false); });
+}
 function coverHTML(n){
   const badge = (n.adult ? `<span class="badge18">18+</span>` : "");
   if (n.cover) return `<div class="cover"><img src="${esc(n.cover)}" alt="${esc(n.title)}" loading="lazy">${badge}</div>`;
@@ -1141,11 +1190,12 @@ async function reader(n, idx){
       <button class="sw" data-th="sepia" style="background:#efe2c8" aria-label="sepia"></button>
       <button class="sw" data-th="dark" style="background:#1d1914" aria-label="dark"></button>
     </div></div><div class="progress" id="prog"></div></div>
-  <article class="chapter" lang="${n.lang}"${n.glossLangs ? ` data-gl="${esc(n.glossLangs.join(","))}"` : ""}>
+  ${n.glossPick ? `<div class="gl-wrap">` : ""}<article class="chapter" lang="${n.lang}"${n.glossLangs ? ` data-gl="${esc(n.glossLangs.join(","))}"` : ""}>
     <div class="kicker">${esc(label)}</div>
     <h1>${esc(title)}</h1>
+    ${n.glossPick ? `<div class="gl-pick"></div>` : ""}
     ${renderText(md)}
-  </article>
+  </article>${n.glossPick ? `<aside class="gl-side" id="glSide"></aside></div>` : ""}
   ${n.wip && i === chs.length ? `<div class="wipnote"><div>✎ ${esc(L.wipNote)}</div></div>` : ""}
   <nav class="pager">
     ${i>1 ? `<a href="#/${n.slug}/${i-1}">← ${esc(t("prev"))}<b>${esc(titleOf(i-1))}</b></a>` : `<span style="flex:1"></span>`}
@@ -1157,6 +1207,7 @@ async function reader(n, idx){
   if (n.slug === "predchuvstvie" && c.file === "28.md") setupPredchuvstvieReflection(app);
   setupQuizzes(app, n.lang);
   setupPsy(app, n.lang);
+  setupGlossPick(n, app);
   mountComments(n, c);
   store.set("last:"+n.slug, i);
   store.set("seen:"+n.slug, Date.now());
@@ -1734,7 +1785,9 @@ Promise.all([fetch("novels/catalog.json", {cache:"no-cache"}).then(r => r.json()
   function show(el){
     if (!tip){ tip = document.createElement("div"); tip.id = "glossTip"; tip.setAttribute("role","tooltip"); document.body.appendChild(tip); }
     if (cur !== el) shownAt = Date.now(); cur = el; const pr = el.dataset.tr.split("|");
-    if (pr.length > 1){ tip.innerHTML = ""; const art = el.closest("[data-gl]"), gl = art ? art.dataset.gl.split(",") : ["RU","EN","SR"];
+    const pk = el.closest("[data-pick]");
+    if (pk && pr.length > 1){ const gl = pk.dataset.gl.split(","), i = Math.max(0, gl.indexOf(pk.dataset.pick)); tip.textContent = (pr[i] || pr[0]).trim(); }
+    else if (pr.length > 1){ tip.innerHTML = ""; const art = el.closest("[data-gl]"), gl = art ? art.dataset.gl.split(",") : ["RU","EN","SR"];
       pr.map((v,i) => { const m = v.match(/^\s*([A-Z]{2,3}):\s*([\s\S]*)$/); return m ? [m[1], m[2]] : [gl[i] || "", v]; }).filter(([,v]) => v && v.trim()).forEach(([k,v]) => { const d = document.createElement("div"); const b = document.createElement("b"); b.textContent = k; d.append(b, " " + v.trim()); tip.appendChild(d); }); }
     else tip.textContent = el.dataset.tr;
     tip.classList.add("on");
