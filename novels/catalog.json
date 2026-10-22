@@ -7123,7 +7123,38 @@
           "file": "04.md",
           "title": "Diez personas"
         }
-      ]
+      ],
+      "translations": {
+        "sw": "ngome-ya-watu-huru"
+      }
+    },
+    {
+      "slug": "ngome-ya-watu-huru",
+      "lang": "sw",
+      "title": "Ngome ya Watu Huru",
+      "genre": "Hadithi za baada ya maangamizi · Uhuru · Safari",
+      "description": "Baada ya kuishi peke yake katika makazi ya chini ya ardhi kwa miaka miwili, Deng anatoka na kugundua kuwa makundi ya wawindaji yanawateka Waafrika na kuwafanya watumwa. Anasafiri Afrika ya Kati akitafuta washirika wa kujenga makazi salama. Wawindaji wanapompiga risasi kwenye gurudumu la pikipiki yake, Nyal, mwanamke mwenye upanga, anamwokoa. Pamoja wanaanza kujenga Ngome ya Feruzi, mahali ambapo hakuna mtu atakayemilikiwa na mwingine.",
+      "chapters": [
+        {
+          "file": "01.md",
+          "title": "Mlango wa Ulimwengu"
+        },
+        {
+          "file": "02.md",
+          "title": "Mahali kwa Kila Mtu"
+        },
+        {
+          "file": "03.md",
+          "title": "Mwanamke Mwenye Upanga"
+        },
+        {
+          "file": "04.md",
+          "title": "Watu Kumi"
+        }
+      ],
+      "translations": {
+        "es": "la-fortaleza-de-los-libres"
+      }
     }
   ],
   "series": [
@@ -7257,7 +7288,8 @@
         "*": "Utopia",
         "ld": "Premonision",
         "en": "The Foreboding",
-        "ru": "Предчувствие"
+        "ru": "Предчувствие",
+        "sw": "Ngome ya Feruzi"
       },
       "novels": [
         "predchuvstvie",
@@ -7276,13 +7308,15 @@
         "predtucha",
         "premonision-ldp",
         "the-foreboding",
-        "la-fortaleza-de-los-libres"
+        "la-fortaleza-de-los-libres",
+        "ngome-ya-watu-huru"
       ],
       "description": {
         "es": "Universos paralelos de la Fortaleza Turquesa: distintas historias, personajes y destinos unidos por la reconstrucción de la esperanza y la utopía después de la catástrofe. No son traducciones literales ni una cronología única.",
         "*": "Parallel universes of the Turquoise Fortress: distinct stories and characters connected by hope and the rebuilding of utopia after catastrophe. Not literal translations or one single timeline.",
         "ld": "Paralel mundos de la Turkes Fortres: diferente historias e jen, konekten per esperansa e la rekonstruccion de un nova sosieta.",
-        "ru": "Параллельные вселенные Бирюзовой крепости: разные сюжеты, герои и судьбы, связанные надеждой и попыткой построить утопию после катастрофы. Это не дословные переводы и не единая хронология."
+        "ru": "Параллельные вселенные Бирюзовой крепости: разные сюжеты, герои и судьбы, связанные надеждой и попыткой построить утопию после катастрофы. Это не дословные переводы и не единая хронология.",
+        "sw": "Ulimwengu sambamba wa Ngome ya Feruzi: simulizi tofauti za matumaini, uhuru na kujenga upya jamii baada ya maangamizi."
       }
     },
     {
