@@ -1,2093 +1,2093 @@
 {
- "characters": [
-  {
-   "id": "luis",
-   "name": "Luis / Луис (La hora salvaje)",
-   "langs": [
-    "sr",
-    "it",
-    "eo"
-   ],
-   "role": "Protagonista de la saga La hora salvaje: argentino, viajero y artista, compañero de Natasha y del dragón Zmaj.",
-   "novels": [
-    "dikij-chas",
-    "dikij-chas-2",
-    "dikij-chas-karnaval-razdora",
-    "epicheskij-match",
-    "anomalnyj-chas",
-    "divlji-chas",
-    "divlji-chas-7",
-    "divlji-chas-52",
-    "divlji-chas-malbec",
-    "ora-selvaggia-venezia",
-    "la-savo-de-zmaj"
-   ],
-   "localizations": {
-    "sr": {
-     "name": "Луис",
-     "description": "Путник и један од главних јунака саге „Дивљи час“. Са пријатељима се суочава са опасностима и бори се за оне које воли."
+  "characters": [
+    {
+      "id": "luis",
+      "name": "Luis / Луис (La hora salvaje)",
+      "langs": [
+        "sr",
+        "it",
+        "eo"
+      ],
+      "role": "Protagonista de la saga La hora salvaje: argentino, viajero y artista, compañero de Natasha y del dragón Zmaj.",
+      "novels": [
+        "dikij-chas",
+        "dikij-chas-2",
+        "dikij-chas-karnaval-razdora",
+        "epicheskij-match",
+        "anomalnyj-chas",
+        "divlji-chas",
+        "divlji-chas-7",
+        "divlji-chas-52",
+        "divlji-chas-malbec",
+        "ora-selvaggia-venezia",
+        "la-savo-de-zmaj"
+      ],
+      "localizations": {
+        "sr": {
+          "name": "Луис",
+          "description": "Путник и један од главних јунака саге „Дивљи час“. Са пријатељима се суочава са опасностима и бори се за оне које воли."
+        },
+        "it": {
+          "name": "Luis",
+          "description": "Argentino, viaggiatore e protagonista dell’Ora selvaggia, compagno di Nataša. A Venezia affronta la macchina che ruba l’anima con un cubo di Rubik magico e un taccuino che evoca creature mitologiche."
+        },
+        "eo": {
+          "name": "Luis",
+          "description": "Argentinano, vojaĝanto kaj ĉefrolulo de La Sovaĝa Horo, edzo de Nataŝa. Kiam la drako Zmaj estas kaptita en Prago, li havas malpli ol du tagojn por savi lin."
+        }
+      }
     },
-    "it": {
-     "name": "Luis",
-     "description": "Argentino, viaggiatore e protagonista dell’Ora selvaggia, compagno di Nataša. A Venezia affronta la macchina che ruba l’anima con un cubo di Rubik magico e un taccuino che evoca creature mitologiche."
+    {
+      "id": "luis-utopia",
+      "name": "Luis (Presentimento)",
+      "langs": [
+        "it",
+        "sr",
+        "es",
+        "tr",
+        "eo",
+        "isv",
+        "de",
+        "cs"
+      ],
+      "role": "Arquitecto de Nuestra Utopía, el universo de Presentimento.",
+      "novels": [
+        "predchuvstvie",
+        "predchuvstvie-2",
+        "presentimento",
+        "predosecaj",
+        "la-corazonada",
+        "col-gulu",
+        "la-antausento",
+        "predcutje",
+        "vorahnung",
+        "predtucha"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Luis",
+          "description": "Architetto argentino e uno dei fondatori di Utopia: disegna le mura della fortezza. Ambizioso e tormentato, entra in rivalità con Robert."
+        },
+        "sr": {
+          "name": "Луис",
+          "description": "Аргентински архитекта који помаже Роберту да подигне Утопију. Амбициозан и немиран, често се сукобљава са оснивачем."
+        },
+        "es": {
+          "name": "Luis",
+          "description": "Arquitecto argentino elegante que dibuja los muros de la Utopía Turquesa. Ambicioso, sensible y celoso, compite con Robert."
+        },
+        "tr": {
+          "name": "Luis",
+          "description": "Kalenin planlarını çizen zarif Arjantinli mimar. Hırslı, kırılgan ve kıskanç; Robert ile rekabet eder."
+        },
+        "eo": {
+          "name": "Luis",
+          "description": "Argentina arkitekto, kiu desegnas la murojn de la Utopio. Ambicia kaj turmentita, li rivalas kun Robert."
+        },
+        "isv": {
+          "name": "Luis",
+          "description": "Argentinsky arhitekt, ktory risuje stěny tvrdynje. Ambiciozny i nemirny, on sopernikuje s Robertom."
+        },
+        "de": {
+          "name": "Luis",
+          "description": "Argentinischer Architekt, der die Mauern der Festung „Unsere Utopie“ entwirft. Ehrgeizig und eifersüchtig."
+        },
+        "cs": {
+          "name": "Luis",
+          "description": "Po jaderné katastrofě se snaží s Janou obnovit naději v českých zemích podle myšlenek Roberta, zakladatele Naší utopie."
+        }
+      }
     },
-    "eo": {
-     "name": "Luis",
-     "description": "Argentinano, vojaĝanto kaj ĉefrolulo de La Sovaĝa Horo, edzo de Nataŝa. Kiam la drako Zmaj estas kaptita en Prago, li havas malpli ol du tagojn por savi lin."
-    }
-   }
-  },
-  {
-   "id": "luis-utopia",
-   "name": "Luis (Presentimento)",
-   "langs": [
-    "it",
-    "sr",
-    "es",
-    "tr",
-    "eo",
-    "isv",
-    "de",
-    "cs"
-   ],
-   "role": "Arquitecto de Nuestra Utopía, el universo de Presentimento.",
-   "novels": [
-    "predchuvstvie",
-    "predchuvstvie-2",
-    "presentimento",
-    "predosecaj",
-    "la-corazonada",
-    "col-gulu",
-    "la-antausento",
-    "predcutje",
-    "vorahnung",
-    "predtucha"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Luis",
-     "description": "Architetto argentino e uno dei fondatori di Utopia: disegna le mura della fortezza. Ambizioso e tormentato, entra in rivalità con Robert."
+    {
+      "id": "luis-fader",
+      "name": "Luis (El misterio de los Fader)",
+      "langs": [
+        "es"
+      ],
+      "role": "Luis de la familia Fader, de Mendoza.",
+      "novels": [
+        "tajna-semi-fader",
+        "el-misterio-de-los-fader",
+        "operacion-londres"
+      ],
+      "localizations": {
+        "es": {
+          "name": "Luis",
+          "description": "Mendocino que gana la lotería y lleva a Natalia de Moscú a Mendoza. Allí descubre la maldición de los Fader, que lo vuelve inmortal; en «Operación Londres» busca el frasco de Rasputín para volver a ser mortal."
+        }
+      }
     },
-    "sr": {
-     "name": "Луис",
-     "description": "Аргентински архитекта који помаже Роберту да подигне Утопију. Амбициозан и немиран, често се сукобљава са оснивачем."
+    {
+      "id": "luis-conspiracion",
+      "name": "Luis (La gran conspiración)",
+      "langs": [
+        "es"
+      ],
+      "role": "Artista argentino que quiere dibujar a Natalia.",
+      "novels": [
+        "la-gran-conspiracion"
+      ],
+      "localizations": {
+        "es": {
+          "name": "Luis",
+          "description": "Artista argentino que le escribe a Natalia, cardióloga moscovita, porque quiere dibujar su retrato. Su rival es Roberto, un seductor de aplicación de citas."
+        }
+      }
     },
-    "es": {
-     "name": "Luis",
-     "description": "Arquitecto argentino elegante que dibuja los muros de la Utopía Turquesa. Ambicioso, sensible y celoso, compite con Robert."
+    {
+      "id": "luis-praha",
+      "name": "Luis (Podzemní tajemství)",
+      "langs": [
+        "cs"
+      ],
+      "role": "Músico argentino en Praga.",
+      "novels": [
+        "podzemni-tajemstvi"
+      ],
+      "localizations": {
+        "cs": {
+          "name": "Luis",
+          "description": "Hudebník z Argentiny. V pražské kavárně potká Janu a jeho hudba v podzemí probudí smutnou princeznu Ludmilu."
+        }
+      }
     },
-    "tr": {
-     "name": "Luis",
-     "description": "Kalenin planlarını çizen zarif Arjantinli mimar. Hırslı, kırılgan ve kıskanç; Robert ile rekabet eder."
+    {
+      "id": "luiz-pt",
+      "name": "Luiz",
+      "langs": [
+        "pt"
+      ],
+      "role": "Joven de 20 años que promete conocer a Natalia.",
+      "novels": [
+        "do-outro-lado-do-mundo"
+      ],
+      "localizations": {
+        "pt": {
+          "name": "Luiz",
+          "description": "Tem 20 anos e prometeu conhecer Natalia, que mora do outro lado do mundo. Sem dinheiro para a passagem, aceita qualquer desafio para cumprir a promessa."
+        }
+      }
     },
-    "eo": {
-     "name": "Luis",
-     "description": "Argentina arkitekto, kiu desegnas la murojn de la Utopio. Ambicia kaj turmentita, li rivalas kun Robert."
+    {
+      "id": "natasha",
+      "name": "Natasha / Наташа (La hora salvaje)",
+      "langs": [
+        "sr",
+        "it",
+        "eo"
+      ],
+      "role": "Heroína serbia, apasionada y valiente. Aparece en distintas historias de la saga.",
+      "novels": [
+        "dikij-chas",
+        "dikij-chas-2",
+        "dikij-chas-karnaval-razdora",
+        "epicheskij-match",
+        "divlji-chas",
+        "divlji-chas-7",
+        "divlji-chas-52",
+        "divlji-chas-malbec",
+        "ora-selvaggia-venezia",
+        "la-savo-de-zmaj"
+      ],
+      "localizations": {
+        "sr": {
+          "name": "Наташа",
+          "description": "Храбра, страствена и одлучна Српкиња. Њена оданост ближњима праћена је импулсивним темпераментом."
+        },
+        "it": {
+          "name": "Nataša",
+          "description": "Compagna di Luis, serba coraggiosa e passionale, impulsiva e profondamente leale. A Venezia vola in groppa al drago Zmaj e scopre una gelosia bruciante verso la misteriosa Natalia."
+        },
+        "eo": {
+          "name": "Nataŝa",
+          "description": "Kuraĝa kaj pasia serbino. Ŝia sindonemo al la amataj homoj kuniĝas kun impulsema karaktero."
+        }
+      }
     },
-    "isv": {
-     "name": "Luis",
-     "description": "Argentinsky arhitekt, ktory risuje stěny tvrdynje. Ambiciozny i nemirny, on sopernikuje s Robertom."
+    {
+      "id": "natasha-predosecaj",
+      "name": "Natasha (Предосећај)",
+      "langs": [
+        "sr"
+      ],
+      "role": "Antigua guía turística, habitante de Utopía en la versión serbia.",
+      "novels": [
+        "predosecaj"
+      ],
+      "localizations": {
+        "sr": {
+          "name": "Наташа",
+          "description": "Некадашња туристичка водичка која је познавала сваки кутак града пре него што су га бомбе претвориле у прашину. Једна од првих становница Утопије."
+        }
+      }
     },
-    "de": {
-     "name": "Luis",
-     "description": "Argentinischer Architekt, der die Mauern der Festung „Unsere Utopie“ entwirft. Ehrgeizig und eifersüchtig."
+    {
+      "id": "robert",
+      "name": "Robert / Роберт",
+      "langs": [
+        "sr",
+        "it",
+        "ia",
+        "es",
+        "tr",
+        "pl"
+      ],
+      "role": "Superviviente y fundador de Utopía en Предосећај.",
+      "novels": [
+        "predosecaj",
+        "presentimento",
+        "le-presentimento",
+        "predchuvstvie",
+        "predchuvstvie-2",
+        "la-corazonada",
+        "col-gulu",
+        "przeczucie"
+      ],
+      "localizations": {
+        "sr": {
+          "name": "Роберт",
+          "description": "Преживели и један од оснивача Утопије у роману „Предосећај“. Верује да човечанство заслужује нови почетак."
+        },
+        "it": {
+          "name": "Robert",
+          "description": "Sopravvissuto alla catastrofe che attraversa le rovine sulla sua vecchia moto e fonda «La Nostra Utopia», una fortezza dove vivere senza paura né avidità. Guida idealista e riflessivo, ancora legato alla moglie perduta."
+        },
+        "ia": {
+          "name": "Robert",
+          "description": "Supervivente del guerra nuclear, ille ha passate duo annos in un refugio subterranee. Desde su juventute ille ha estranie presentimentos que le monstra le futuro. Con su vetere motocycletta e su quaderno, ille parti a cercar superviventes pro construer Nostre Utopia, un fortressa turquoise ubi nulle persona besoniarea un rege."
+        },
+        "es": {
+          "name": "Robert",
+          "description": "Tras dos años de invierno nuclear sale de su búnker y recorre en su vieja motocicleta un mundo en ruinas. Funda la Utopía Turquesa, una fortaleza donde vivir sin amos ni miedo."
+        },
+        "tr": {
+          "name": "Robert",
+          "description": "Büyük Felaket'ten sonra eski motosikletiyle çölde hayatta kalanları arar. Rosa ile birlikte turkuaz duvarlı bir kale, efendisiz bir ütopya kurmaya çalışır."
+        },
+        "pl": {
+          "name": "Robert",
+          "description": "Przeżył dwa lata nuklearnej zimy w bunkrze pod Krakowem. Marzyciel w czerwonej kurtce z kapturem, z lornetką ojca i starym motocyklem Junak. Chce zbudować świat bez strachu i chciwości. Założyciel Naszej Utopii."
+        }
+      }
     },
-    "cs": {
-     "name": "Luis",
-     "description": "Po jaderné katastrofě se snaží s Janou obnovit naději v českých zemích podle myšlenek Roberta, zakladatele Naší utopie."
-    }
-   }
-  },
-  {
-   "id": "luis-fader",
-   "name": "Luis (El misterio de los Fader)",
-   "langs": [
-    "es"
-   ],
-   "role": "Luis de la familia Fader, de Mendoza.",
-   "novels": [
-    "tajna-semi-fader",
-    "el-misterio-de-los-fader",
-    "operacion-londres"
-   ],
-   "localizations": {
-    "es": {
-     "name": "Luis",
-     "description": "Mendocino que gana la lotería y lleva a Natalia de Moscú a Mendoza. Allí descubre la maldición de los Fader, que lo vuelve inmortal; en «Operación Londres» busca el frasco de Rasputín para volver a ser mortal."
-    }
-   }
-  },
-  {
-   "id": "luis-conspiracion",
-   "name": "Luis (La gran conspiración)",
-   "langs": [
-    "es"
-   ],
-   "role": "Artista argentino que quiere dibujar a Natalia.",
-   "novels": [
-    "la-gran-conspiracion"
-   ],
-   "localizations": {
-    "es": {
-     "name": "Luis",
-     "description": "Artista argentino que le escribe a Natalia, cardióloga moscovita, porque quiere dibujar su retrato. Su rival es Roberto, un seductor de aplicación de citas."
-    }
-   }
-  },
-  {
-   "id": "luis-praha",
-   "name": "Luis (Podzemní tajemství)",
-   "langs": [
-    "cs"
-   ],
-   "role": "Músico argentino en Praga.",
-   "novels": [
-    "podzemni-tajemstvi"
-   ],
-   "localizations": {
-    "cs": {
-     "name": "Luis",
-     "description": "Hudebník z Argentiny. V pražské kavárně potká Janu a jeho hudba v podzemí probudí smutnou princeznu Ludmilu."
-    }
-   }
-  },
-  {
-   "id": "luiz-pt",
-   "name": "Luiz",
-   "langs": [
-    "pt"
-   ],
-   "role": "Joven de 20 años que promete conocer a Natalia.",
-   "novels": [
-    "do-outro-lado-do-mundo"
-   ],
-   "localizations": {
-    "pt": {
-     "name": "Luiz",
-     "description": "Tem 20 anos e prometeu conhecer Natalia, que mora do outro lado do mundo. Sem dinheiro para a passagem, aceita qualquer desafio para cumprir a promessa."
-    }
-   }
-  },
-  {
-   "id": "natasha",
-   "name": "Natasha / Наташа (La hora salvaje)",
-   "langs": [
-    "sr",
-    "it",
-    "eo"
-   ],
-   "role": "Heroína serbia, apasionada y valiente. Aparece en distintas historias de la saga.",
-   "novels": [
-    "dikij-chas",
-    "dikij-chas-2",
-    "dikij-chas-karnaval-razdora",
-    "epicheskij-match",
-    "divlji-chas",
-    "divlji-chas-7",
-    "divlji-chas-52",
-    "divlji-chas-malbec",
-    "ora-selvaggia-venezia",
-    "la-savo-de-zmaj"
-   ],
-   "localizations": {
-    "sr": {
-     "name": "Наташа",
-     "description": "Храбра, страствена и одлучна Српкиња. Њена оданост ближњима праћена је импулсивним темпераментом."
+    {
+      "id": "sofia",
+      "name": "Sofía / Софија",
+      "langs": [
+        "sr"
+      ],
+      "role": "Ingeniera de Utopía cuya búsqueda de libertad la enfrenta con la comunidad.",
+      "novels": [
+        "predosecaj"
+      ],
+      "localizations": {
+        "sr": {
+          "name": "Софија",
+          "description": "Инжењерка која је помогла у изградњи Утопије. Њена жеља за слободом доводи је у сукоб са заједницом."
+        }
+      }
     },
-    "it": {
-     "name": "Nataša",
-     "description": "Compagna di Luis, serba coraggiosa e passionale, impulsiva e profondamente leale. A Venezia vola in groppa al drago Zmaj e scopre una gelosia bruciante verso la misteriosa Natalia."
+    {
+      "id": "natalia-cellist",
+      "name": "Natalia / Наталија (violonchelista)",
+      "langs": [
+        "sr",
+        "it",
+        "ia",
+        "pl"
+      ],
+      "role": "Música y violonchelista; su arte acompaña la resistencia de Utopía.",
+      "novels": [
+        "predosecaj",
+        "presentimento",
+        "le-presentimento",
+        "predchuvstvie",
+        "predchuvstvie-2",
+        "przeczucie"
+      ],
+      "localizations": {
+        "sr": {
+          "name": "Наталија — виолончелисткиња",
+          "description": "Музичарка чија уметност доноси наду становницима Утопије у тешким временима."
+        },
+        "it": {
+          "name": "Natalia",
+          "description": "Abitante di Utopia dagli intensi occhi azzurri: dipinge la fortezza e suona il violino. Divisa tra Robert e Luis, sceglie liberamente chi amare."
+        },
+        "ia": {
+          "name": "Natalia",
+          "description": "Violoncellista con longe capillos castanee obscur e oculos gris-azur. Robert la vide primo in un sonio, interpretante un melodia extraordinari in le placia de Nostre Utopia. Su arrivata cambiara le destino del fortressa e ponera a proba le amor inter Robert e Katerina."
+        },
+        "pl": {
+          "name": "Natalia",
+          "description": "Wiolonczelistka z Filharmonii Krakowskiej o długich kasztanowych włosach. Grała Bacha w ruinach Kościoła Mariackiego, kiedy poznała Roberta. Nosi ciemną, haftowaną sukienkę i turkusowe kolczyki. Razem z Robertem zbudowała Naszą Utopię — i ma przeczucia, które się spełniają."
+        }
+      }
     },
-    "eo": {
-     "name": "Nataŝa",
-     "description": "Kuraĝa kaj pasia serbino. Ŝia sindonemo al la amataj homoj kuniĝas kun impulsema karaktero."
-    }
-   }
-  },
-  {
-   "id": "natasha-predosecaj",
-   "name": "Natasha (Предосећај)",
-   "langs": [
-    "sr"
-   ],
-   "role": "Antigua guía turística, habitante de Utopía en la versión serbia.",
-   "novels": [
-    "predosecaj"
-   ],
-   "localizations": {
-    "sr": {
-     "name": "Наташа",
-     "description": "Некадашња туристичка водичка која је познавала сваки кутак града пре него што су га бомбе претвориле у прашину. Једна од првих становница Утопије."
-    }
-   }
-  },
-  {
-   "id": "robert",
-   "name": "Robert / Роберт",
-   "langs": [
-    "sr",
-    "it",
-    "ia",
-    "es",
-    "tr",
-    "pl"
-   ],
-   "role": "Superviviente y fundador de Utopía en Предосећај.",
-   "novels": [
-    "predosecaj",
-    "presentimento",
-    "le-presentimento",
-    "predchuvstvie",
-    "predchuvstvie-2",
-    "la-corazonada",
-    "col-gulu",
-    "przeczucie"
-   ],
-   "localizations": {
-    "sr": {
-     "name": "Роберт",
-     "description": "Преживели и један од оснивача Утопије у роману „Предосећај“. Верује да човечанство заслужује нови почетак."
+    {
+      "id": "katerina",
+      "name": "Katerina / Катерина",
+      "langs": [
+        "ia"
+      ],
+      "role": "Superviviente rusa, ex profesora de historia; la primera compañera de Robert en Le Presentimento.",
+      "novels": [
+        "le-presentimento"
+      ],
+      "localizations": {
+        "ia": {
+          "name": "Katerina",
+          "description": "Femina russe de circa trenta-cinque annos, con grande oculos verde-gris. Ante le guerra illa esseva professora de historia; illa ha perdite su parentes e su fratre durante le bombardamentos. Robert la trova in le nive, cercante medicamentos. Illa es le prime a scriber su nomine sub «Nostre Utopia» e sonia de un citate con jardines, musica e amor."
+        }
+      }
     },
-    "it": {
-     "name": "Robert",
-     "description": "Sopravvissuto alla catastrofe che attraversa le rovine sulla sua vecchia moto e fonda «La Nostra Utopia», una fortezza dove vivere senza paura né avidità. Guida idealista e riflessivo, ancora legato alla moglie perduta."
+    {
+      "id": "sasha",
+      "name": "Sasha / Саша",
+      "langs": [
+        "sr",
+        "it",
+        "pl",
+        "tr"
+      ],
+      "role": "Superviviente de Utopía, marcada por las pérdidas de la guerra.",
+      "novels": [
+        "predosecaj",
+        "presentimento",
+        "predchuvstvie",
+        "predchuvstvie-2",
+        "przeczucie",
+        "col-gulu"
+      ],
+      "localizations": {
+        "sr": {
+          "name": "Саша",
+          "description": "Становница Утопије коју рат и губици приморавају на тешке одлуке."
+        },
+        "it": {
+          "name": "Sasha",
+          "description": "Guerriera dai capelli rossi, tra i primi compagni di Robert. Coordina le risorse di Utopia e combatte in prima linea, ma il suo cuore fragile viene ferito dall’amore per Luis."
+        },
+        "pl": {
+          "name": "Sasza",
+          "description": "Była sierżant z białą blizną przez całą twarz. Straciła męża i syna. Przychodzi, bo usłyszała w radiu wiolonczelę Natalii, i od pierwszego dnia dowodzi obroną Naszej Utopii."
+        },
+        "tr": {
+          "name": "Saşa",
+          "description": "Kalenin hesap defterlerini tutan, suyu ve ilaçları titizlikle paylaştıran sakin kadın. Savaşta bile soğukkanlılığını kaybetmez ve sonunda Kennet ile evlenir."
+        }
+      }
     },
-    "ia": {
-     "name": "Robert",
-     "description": "Supervivente del guerra nuclear, ille ha passate duo annos in un refugio subterranee. Desde su juventute ille ha estranie presentimentos que le monstra le futuro. Con su vetere motocycletta e su quaderno, ille parti a cercar superviventes pro construer Nostre Utopia, un fortressa turquoise ubi nulle persona besoniarea un rege."
+    {
+      "id": "zmaj",
+      "name": "Zmaj / Змај",
+      "langs": [
+        "sr",
+        "eo",
+        "it"
+      ],
+      "role": "Dragón aliado de los protagonistas en las historias de La hora salvaje.",
+      "novels": [
+        "dikij-chas",
+        "divlji-chas",
+        "la-savo-de-zmaj",
+        "ora-selvaggia-venezia",
+        "dikij-chas-2",
+        "dikij-chas-karnaval-razdora",
+        "epicheskij-match"
+      ],
+      "localizations": {
+        "sr": {
+          "name": "Змај",
+          "description": "Змај и савезник јунака „Дивљег часа“. Његова снага помаже пријатељима у пресудним тренуцима."
+        },
+        "eo": {
+          "name": "Zmaj",
+          "description": "Drako kaj aliancano de la herooj de La Sovaĝa Horo. Lia forto helpas ilin en decidaj momentoj."
+        },
+        "it": {
+          "name": "Zmaj",
+          "description": "Drago alleato di Luis e Nataša. Con i suoi occhi di fuoco azzurro e le sue ali porta gli eroi sopra i canali di Venezia nella battaglia contro McGregor."
+        }
+      }
     },
-    "es": {
-     "name": "Robert",
-     "description": "Tras dos años de invierno nuclear sale de su búnker y recorre en su vieja motocicleta un mundo en ruinas. Funda la Utopía Turquesa, una fortaleza donde vivir sin amos ni miedo."
+    {
+      "id": "alessio",
+      "name": "Alessio / Алессио",
+      "langs": [
+        "it"
+      ],
+      "role": "Ladrón de arte que se ve envuelto en intrigas y sentimientos inesperados.",
+      "novels": [
+        "pokhititel-serdec",
+        "ladro-di-cuori",
+        "ladro-di-cuori-2",
+        "la-nevicata-rosa",
+        "maschera-di-venezia",
+        "epicheskij-match"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Alessio",
+          "description": "Fiorentino innamorato dell’arte e ladro gentiluomo. Entra nella villa di Laura per rubare un quadro e ne esce con un amore; insieme a lei aiuta Lorenzo e Carlotta contro i Cromatisti e accompagna Roberto nel Carnevale di Venezia. In Ladro di cuori 2 vive a Malaga sotto il nome di Marcos Sierra."
+        }
+      }
     },
-    "tr": {
-     "name": "Robert",
-     "description": "Büyük Felaket'ten sonra eski motosikletiyle çölde hayatta kalanları arar. Rosa ile birlikte turkuaz duvarlı bir kale, efendisiz bir ütopya kurmaya çalışır."
+    {
+      "id": "marcos",
+      "name": "Marcos",
+      "langs": [
+        "es",
+        "it"
+      ],
+      "role": "Detective que investiga la desaparición de Alicia en un tren misterioso.",
+      "novels": [
+        "el-tren-fantasma",
+        "il-treno-fantasma",
+        "prizrachnyj-poezd",
+        "anomalnyj-chas"
+      ],
+      "localizations": {
+        "es": {
+          "name": "Marcos",
+          "description": "Detective que investiga la desaparición de Alicia en un tren misterioso."
+        },
+        "it": {
+          "name": "Marco",
+          "description": "Detective triste e geloso di 35 anni che vive a Sinea. Insegue il treno fantasma che porta via le persone, e con loro la sua ragazza Alice."
+        }
+      }
     },
-    "pl": {
-     "name": "Robert",
-     "description": "Przeżył dwa lata nuklearnej zimy w bunkrze pod Krakowem. Marzyciel na starym motocyklu Junak, który chce zbudować świat bez strachu i chciwości. Założyciel Naszej Utopii."
-    }
-   }
-  },
-  {
-   "id": "sofia",
-   "name": "Sofía / Софија",
-   "langs": [
-    "sr"
-   ],
-   "role": "Ingeniera de Utopía cuya búsqueda de libertad la enfrenta con la comunidad.",
-   "novels": [
-    "predosecaj"
-   ],
-   "localizations": {
-    "sr": {
-     "name": "Софија",
-     "description": "Инжењерка која је помогла у изградњи Утопије. Њена жеља за слободом доводи је у сукоб са заједницом."
-    }
-   }
-  },
-  {
-   "id": "natalia-cellist",
-   "name": "Natalia / Наталија (violonchelista)",
-   "langs": [
-    "sr",
-    "it",
-    "ia",
-    "pl"
-   ],
-   "role": "Música y violonchelista; su arte acompaña la resistencia de Utopía.",
-   "novels": [
-    "predosecaj",
-    "presentimento",
-    "le-presentimento",
-    "predchuvstvie",
-    "predchuvstvie-2",
-    "przeczucie"
-   ],
-   "localizations": {
-    "sr": {
-     "name": "Наталија — виолончелисткиња",
-     "description": "Музичарка чија уметност доноси наду становницима Утопије у тешким временима."
+    {
+      "id": "alicia",
+      "name": "Alicia",
+      "langs": [
+        "es",
+        "it"
+      ],
+      "role": "Mujer desaparecida cuya búsqueda impulsa el misterio del tren.",
+      "novels": [
+        "el-tren-fantasma",
+        "il-treno-fantasma",
+        "prizrachnyj-poezd",
+        "anomalnyj-chas",
+        "epicheskij-match"
+      ],
+      "localizations": {
+        "es": {
+          "name": "Alicia",
+          "description": "Mujer desaparecida cuya búsqueda pone en marcha el misterio del tren."
+        },
+        "it": {
+          "name": "Alice",
+          "description": "Astrologa di 30 anni, stanca della gelosia di Marco. Sale sul treno fantasma in cerca di una vita nuova e vive un viaggio pieno di vagoni assurdi e prove d’amore."
+        }
+      }
     },
-    "it": {
-     "name": "Natalia",
-     "description": "Abitante di Utopia dagli intensi occhi azzurri: dipinge la fortezza e suona il violino. Divisa tra Robert e Luis, sceglie liberamente chi amare."
+    {
+      "id": "martin",
+      "name": "Martín",
+      "langs": [
+        "es"
+      ],
+      "role": "Joven curioso que descubre los secretos de una ciudad extraordinaria.",
+      "novels": [
+        "la-ciudad-secreta"
+      ],
+      "localizations": {
+        "es": {
+          "name": "Martín",
+          "description": "Joven curioso que descubre los secretos de una ciudad extraordinaria."
+        }
+      }
     },
-    "ia": {
-     "name": "Natalia",
-     "description": "Violoncellista con longe capillos castanee obscur e oculos gris-azur. Robert la vide primo in un sonio, interpretante un melodia extraordinari in le placia de Nostre Utopia. Su arrivata cambiara le destino del fortressa e ponera a proba le amor inter Robert e Katerina."
+    {
+      "id": "marina",
+      "name": "Marina",
+      "langs": [
+        "es"
+      ],
+      "role": "Mujer misteriosa vinculada a los secretos de la ciudad.",
+      "novels": [
+        "la-ciudad-secreta"
+      ],
+      "localizations": {
+        "es": {
+          "name": "Marina",
+          "description": "Mujer enigmática vinculada con los secretos de la ciudad."
+        }
+      }
     },
-    "pl": {
-     "name": "Natalia",
-     "description": "Wiolonczelistka z Filharmonii Krakowskiej. Grała Bacha w ruinach Kościoła Mariackiego, kiedy poznała Roberta. Razem z nim zbudowała Naszą Utopię — i ma przeczucia, które się spełniają."
-    }
-   }
-  },
-  {
-   "id": "katerina",
-   "name": "Katerina / Катерина",
-   "langs": [
-    "ia"
-   ],
-   "role": "Superviviente rusa, ex profesora de historia; la primera compañera de Robert en Le Presentimento.",
-   "novels": [
-    "le-presentimento"
-   ],
-   "localizations": {
-    "ia": {
-     "name": "Katerina",
-     "description": "Femina russe de circa trenta-cinque annos, con grande oculos verde-gris. Ante le guerra illa esseva professora de historia; illa ha perdite su parentes e su fratre durante le bombardamentos. Robert la trova in le nive, cercante medicamentos. Illa es le prime a scriber su nomine sub «Nostre Utopia» e sonia de un citate con jardines, musica e amor."
-    }
-   }
-  },
-  {
-   "id": "sasha",
-   "name": "Sasha / Саша",
-   "langs": [
-    "sr",
-    "it",
-    "pl",
-    "tr"
-   ],
-   "role": "Superviviente de Utopía, marcada por las pérdidas de la guerra.",
-   "novels": [
-    "predosecaj",
-    "presentimento",
-    "predchuvstvie",
-    "predchuvstvie-2",
-    "przeczucie",
-    "col-gulu"
-   ],
-   "localizations": {
-    "sr": {
-     "name": "Саша",
-     "description": "Становница Утопије коју рат и губици приморавају на тешке одлуке."
+    {
+      "id": "tatiana",
+      "name": "Tatiana",
+      "langs": [
+        "es"
+      ],
+      "role": "Figura central del misterio de La chica del retrato.",
+      "novels": [
+        "la-chica-del-retrato"
+      ],
+      "localizations": {
+        "es": {
+          "name": "Tatiana",
+          "description": "Figura central del misterio de La chica del retrato."
+        }
+      }
     },
-    "it": {
-     "name": "Sasha",
-     "description": "Guerriera dai capelli rossi, tra i primi compagni di Robert. Coordina le risorse di Utopia e combatte in prima linea, ma il suo cuore fragile viene ferito dall’amore per Luis."
+    {
+      "id": "nadezhda",
+      "name": "Nadezhda",
+      "langs": [
+        "es"
+      ],
+      "role": "Personaje de Las coordenadas del amor.",
+      "novels": [
+        "las-coordenadas-del-amor"
+      ],
+      "localizations": {
+        "es": {
+          "name": "Nadezhda",
+          "description": "Personaje de Las coordenadas del amor."
+        }
+      }
     },
-    "pl": {
-     "name": "Sasza",
-     "description": "Była sierżant z białą blizną przez całą twarz. Straciła męża i syna. Przychodzi, bo usłyszała w radiu wiolonczelę Natalii, i od pierwszego dnia dowodzi obroną Naszej Utopii."
+    {
+      "id": "natalia-venice",
+      "name": "Natalia",
+      "langs": [
+        "it"
+      ],
+      "role": "Veneciana enigmática que participa en las aventuras de la saga.",
+      "novels": [
+        "ora-selvaggia-venezia",
+        "maschera-di-venezia"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Natalia",
+          "description": "Veneziana enigmatica dal vestito rosso, figlia di un antico Duca. Trascina Roberto nella lotta contro la Loggia, lo riporta in vita e accoglie nel suo palazzo gli eroi dell’Ora selvaggia, risvegliando la gelosia di Nataša."
+        }
+      }
     },
-    "tr": {
-     "name": "Saşa",
-     "description": "Kalenin hesap defterlerini tutan, suyu ve ilaçları titizlikle paylaştıran sakin kadın. Savaşta bile soğukkanlılığını kaybetmez ve sonunda Kennet ile evlenir."
-    }
-   }
-  },
-  {
-   "id": "zmaj",
-   "name": "Zmaj / Змај",
-   "langs": [
-    "sr",
-    "eo",
-    "it"
-   ],
-   "role": "Dragón aliado de los protagonistas en las historias de La hora salvaje.",
-   "novels": [
-    "dikij-chas",
-    "divlji-chas",
-    "la-savo-de-zmaj",
-    "ora-selvaggia-venezia",
-    "dikij-chas-2",
-    "dikij-chas-karnaval-razdora",
-    "epicheskij-match"
-   ],
-   "localizations": {
-    "sr": {
-     "name": "Змај",
-     "description": "Змај и савезник јунака „Дивљег часа“. Његова снага помаже пријатељима у пресудним тренуцима."
+    {
+      "id": "carlotta",
+      "name": "Carlotta",
+      "langs": [
+        "it"
+      ],
+      "role": "Restauradora de arte en una historia de misterio y realismo mágico en Toscana.",
+      "novels": [
+        "la-nevicata-rosa"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Carlotta",
+          "description": "Carlotta Maiani, restauratrice senior agli Uffizi. Dopo un omicidio davanti alla Calunnia di Botticelli fugge con Lorenzo, sfida la setta dei Cromatisti e finisce per diventare regina del Regno Atelier."
+        }
+      }
     },
-    "eo": {
-     "name": "Zmaj",
-     "description": "Drako kaj aliancano de la herooj de La Sovaĝa Horo. Lia forto helpas ilin en decidaj momentoj."
+    {
+      "id": "jana",
+      "name": "Jana",
+      "langs": [
+        "cs"
+      ],
+      "role": "Personaje de la aventura subterránea ambientada en tierras checas.",
+      "novels": [
+        "podzemni-tajemstvi"
+      ],
+      "localizations": {
+        "cs": {
+          "name": "Jana",
+          "description": "Jedna z postav podzemního dobrodružství odehrávajícího se v českém prostředí."
+        }
+      }
     },
-    "it": {
-     "name": "Zmaj",
-     "description": "Drago alleato di Luis e Nataša. Con i suoi occhi di fuoco azzurro e le sue ali porta gli eroi sopra i canali di Venezia nella battaglia contro McGregor."
-    }
-   }
-  },
-  {
-   "id": "alessio",
-   "name": "Alessio / Алессио",
-   "langs": [
-    "it"
-   ],
-   "role": "Ladrón de arte que se ve envuelto en intrigas y sentimientos inesperados.",
-   "novels": [
-    "pokhititel-serdec",
-    "ladro-di-cuori",
-    "ladro-di-cuori-2",
-    "la-nevicata-rosa",
-    "maschera-di-venezia",
-    "epicheskij-match"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Alessio",
-     "description": "Fiorentino innamorato dell’arte e ladro gentiluomo. Entra nella villa di Laura per rubare un quadro e ne esce con un amore; insieme a lei aiuta Lorenzo e Carlotta contro i Cromatisti e accompagna Roberto nel Carnevale di Venezia. In Ladro di cuori 2 vive a Malaga sotto il nome di Marcos Sierra."
-    }
-   }
-  },
-  {
-   "id": "marcos",
-   "name": "Marcos",
-   "langs": [
-    "es",
-    "it"
-   ],
-   "role": "Detective que investiga la desaparición de Alicia en un tren misterioso.",
-   "novels": [
-    "el-tren-fantasma",
-    "il-treno-fantasma",
-    "prizrachnyj-poezd",
-    "anomalnyj-chas"
-   ],
-   "localizations": {
-    "es": {
-     "name": "Marcos",
-     "description": "Detective que investiga la desaparición de Alicia en un tren misterioso."
+    {
+      "id": "lucie",
+      "name": "Lucie",
+      "langs": [
+        "cs"
+      ],
+      "role": "Protagonista de los misterios subterráneos checos.",
+      "novels": [
+        "podzemni-tajemstvi"
+      ],
+      "localizations": {
+        "cs": {
+          "name": "Lucie",
+          "description": "Jedna z hlavních postav českého příběhu Podzemní tajemství."
+        }
+      }
     },
-    "it": {
-     "name": "Marco",
-     "description": "Detective triste e geloso di 35 anni che vive a Sinea. Insegue il treno fantasma che porta via le persone, e con loro la sua ragazza Alice."
-    }
-   }
-  },
-  {
-   "id": "alicia",
-   "name": "Alicia",
-   "langs": [
-    "es",
-    "it"
-   ],
-   "role": "Mujer desaparecida cuya búsqueda impulsa el misterio del tren.",
-   "novels": [
-    "el-tren-fantasma",
-    "il-treno-fantasma",
-    "prizrachnyj-poezd",
-    "anomalnyj-chas",
-    "epicheskij-match"
-   ],
-   "localizations": {
-    "es": {
-     "name": "Alicia",
-     "description": "Mujer desaparecida cuya búsqueda pone en marcha el misterio del tren."
+    {
+      "id": "sasha-voice",
+      "name": "Sasha",
+      "langs": [
+        "fr"
+      ],
+      "role": "Mujer que investiga acontecimientos inexplicables en la ciudad de Sinea.",
+      "novels": [
+        "la-voix",
+        "golos"
+      ],
+      "localizations": {
+        "fr": {
+          "name": "Sasha",
+          "description": "Une femme qui enquête sur des phénomènes inexplicables dans la ville de Sinea."
+        }
+      }
     },
-    "it": {
-     "name": "Alice",
-     "description": "Astrologa di 30 anni, stanca della gelosia di Marco. Sale sul treno fantasma in cerca di una vita nuova e vive un viaggio pieno di vagoni assurdi e prove d’amore."
-    }
-   }
-  },
-  {
-   "id": "martin",
-   "name": "Martín",
-   "langs": [
-    "es"
-   ],
-   "role": "Joven curioso que descubre los secretos de una ciudad extraordinaria.",
-   "novels": [
-    "la-ciudad-secreta"
-   ],
-   "localizations": {
-    "es": {
-     "name": "Martín",
-     "description": "Joven curioso que descubre los secretos de una ciudad extraordinaria."
-    }
-   }
-  },
-  {
-   "id": "marina",
-   "name": "Marina",
-   "langs": [
-    "es"
-   ],
-   "role": "Mujer misteriosa vinculada a los secretos de la ciudad.",
-   "novels": [
-    "la-ciudad-secreta"
-   ],
-   "localizations": {
-    "es": {
-     "name": "Marina",
-     "description": "Mujer enigmática vinculada con los secretos de la ciudad."
-    }
-   }
-  },
-  {
-   "id": "tatiana",
-   "name": "Tatiana",
-   "langs": [
-    "es"
-   ],
-   "role": "Figura central del misterio de La chica del retrato.",
-   "novels": [
-    "la-chica-del-retrato"
-   ],
-   "localizations": {
-    "es": {
-     "name": "Tatiana",
-     "description": "Figura central del misterio de La chica del retrato."
-    }
-   }
-  },
-  {
-   "id": "nadezhda",
-   "name": "Nadezhda",
-   "langs": [
-    "es"
-   ],
-   "role": "Personaje de Las coordenadas del amor.",
-   "novels": [
-    "las-coordenadas-del-amor"
-   ],
-   "localizations": {
-    "es": {
-     "name": "Nadezhda",
-     "description": "Personaje de Las coordenadas del amor."
-    }
-   }
-  },
-  {
-   "id": "natalia-venice",
-   "name": "Natalia",
-   "langs": [
-    "it"
-   ],
-   "role": "Veneciana enigmática que participa en las aventuras de la saga.",
-   "novels": [
-    "ora-selvaggia-venezia",
-    "maschera-di-venezia"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Natalia",
-     "description": "Veneziana enigmatica dal vestito rosso, figlia di un antico Duca. Trascina Roberto nella lotta contro la Loggia, lo riporta in vita e accoglie nel suo palazzo gli eroi dell’Ora selvaggia, risvegliando la gelosia di Nataša."
-    }
-   }
-  },
-  {
-   "id": "carlotta",
-   "name": "Carlotta",
-   "langs": [
-    "it"
-   ],
-   "role": "Restauradora de arte en una historia de misterio y realismo mágico en Toscana.",
-   "novels": [
-    "la-nevicata-rosa"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Carlotta",
-     "description": "Carlotta Maiani, restauratrice senior agli Uffizi. Dopo un omicidio davanti alla Calunnia di Botticelli fugge con Lorenzo, sfida la setta dei Cromatisti e finisce per diventare regina del Regno Atelier."
-    }
-   }
-  },
-  {
-   "id": "jana",
-   "name": "Jana",
-   "langs": [
-    "cs"
-   ],
-   "role": "Personaje de la aventura subterránea ambientada en tierras checas.",
-   "novels": [
-    "podzemni-tajemstvi"
-   ],
-   "localizations": {
-    "cs": {
-     "name": "Jana",
-     "description": "Jedna z postav podzemního dobrodružství odehrávajícího se v českém prostředí."
-    }
-   }
-  },
-  {
-   "id": "lucie",
-   "name": "Lucie",
-   "langs": [
-    "cs"
-   ],
-   "role": "Protagonista de los misterios subterráneos checos.",
-   "novels": [
-    "podzemni-tajemstvi"
-   ],
-   "localizations": {
-    "cs": {
-     "name": "Lucie",
-     "description": "Jedna z hlavních postav českého příběhu Podzemní tajemství."
-    }
-   }
-  },
-  {
-   "id": "sasha-voice",
-   "name": "Sasha",
-   "langs": [
-    "fr"
-   ],
-   "role": "Mujer que investiga acontecimientos inexplicables en la ciudad de Sinea.",
-   "novels": [
-    "la-voix",
-    "golos"
-   ],
-   "localizations": {
-    "fr": {
-     "name": "Sasha",
-     "description": "Une femme qui enquête sur des phénomènes inexplicables dans la ville de Sinea."
-    }
-   }
-  },
-  {
-   "id": "oxana-voice",
-   "name": "Oxana",
-   "langs": [
-    "fr"
-   ],
-   "role": "Amiga y compañera de Sasha en La voix.",
-   "novels": [
-    "la-voix",
-    "golos"
-   ],
-   "localizations": {
-    "fr": {
-     "name": "Oxana",
-     "description": "Amie et collègue de Sasha dans le roman La voix."
-    }
-   }
-  },
-  {
-   "id": "dima-voice",
-   "name": "Dima",
-   "langs": [
-    "fr"
-   ],
-   "role": "Joven que participa en la resistencia de La voix.",
-   "novels": [
-    "la-voix",
-    "golos"
-   ],
-   "localizations": {
-    "fr": {
-     "name": "Dima",
-     "description": "Un jeune homme qui prend part à la résistance dans La voix."
-    }
-   }
-  },
-  {
-   "id": "franco",
-   "name": "Franco",
-   "langs": [
-    "it"
-   ],
-   "role": "Joven empleado del Ministerio de los Sentimientos que devuelve la sonrisa a Sinea.",
-   "novels": [
-    "la-citta-triste",
-    "grustnyj-gorod",
-    "epicheskij-match"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Franco",
-     "description": "Ragazzo di 24 anni, impiegato al Ministero dei Sentimenti. Buono e un po’ timido, ma coraggioso: quando il presidente vieta i sorrisi, decide di restituire la felicità a Sinea e alla fine ne diventa presidente."
-    }
-   }
-  },
-  {
-   "id": "chiara",
-   "name": "Chiara",
-   "langs": [
-    "it"
-   ],
-   "role": "Rebelde alegre que se une a Franco y llega a vicepresidenta de Sinea.",
-   "novels": [
-    "la-citta-triste",
-    "grustnyj-gorod"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Chiara",
-     "description": "Ribelle allegra e determinata, la prima persona che sorride nella metro di Sinea. Insieme a Franco riporta la luce in città e ne diventa vicepresidente."
-    }
-   }
-  },
-  {
-   "id": "marco-inventore",
-   "name": "Marco (inventor)",
-   "langs": [
-    "it"
-   ],
-   "role": "Inventor y excompañero de Franco, despedido por sonreír demasiado.",
-   "novels": [
-    "la-citta-triste"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Marco",
-     "description": "Vecchio inventore ed ex collega di Franco, licenziato perché sorrideva troppo. Nel suo nascondiglio costruisce macchine strampalate per far ridere la gente."
-    }
-   }
-  },
-  {
-   "id": "luca-comico",
-   "name": "Luca (cómico)",
-   "langs": [
-    "it"
-   ],
-   "role": "Cómico de las reuniones secretas y del Teatro de las Risas.",
-   "novels": [
-    "la-citta-triste"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Luca",
-     "description": "Comico che fa ridere le riunioni segrete di Sinea e poi il nuovo Teatro delle Risate, dove aiuta Franco a fare la sua proposta a Chiara."
-    }
-   }
-  },
-  {
-   "id": "presidente-sinea",
-   "name": "El Presidente",
-   "langs": [
-    "it"
-   ],
-   "role": "Presidente severo que prohíbe las sonrisas en Sinea.",
-   "novels": [
-    "la-citta-triste"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Il Presidente",
-     "description": "Presidente serio e severo che vieta i sorrisi a Sinea. Alla fine capisce di aver sbagliato e diventa un felice venditore di gelati."
-    }
-   }
-  },
-  {
-   "id": "matteo-treno",
-   "name": "Matteo (tren fantasma)",
-   "langs": [
-    "it"
-   ],
-   "role": "Pasajero misterioso del tren fantasma que acompaña a Alice.",
-   "novels": [
-    "il-treno-fantasma"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Matteo",
-     "description": "Passeggero triste e affamato che accompagna Alice tra i vagoni e si finge il suo nuovo ragazzo. Alla fine rivela la vera missione del treno fantasma: risolvere le crisi d’amore."
-    }
-   }
-  },
-  {
-   "id": "vittorio-treno",
-   "name": "Vittorio",
-   "langs": [
-    "it"
-   ],
-   "role": "Hombre gordo y apuesto que toma los mandos del tren fantasma.",
-   "novels": [
-    "il-treno-fantasma"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Vittorio",
-     "description": "L’uomo grasso ma molto bello che accoglie Alice sul treno. Fratello di Matteo, prende il controllo dei comandi del treno fantasma."
-    }
-   }
-  },
-  {
-   "id": "direttore-confessionale",
-   "name": "El Director del confesionario",
-   "langs": [
-    "it"
-   ],
-   "role": "Hombre de negro que exige confesar los pecados en el tren.",
-   "novels": [
-    "il-treno-fantasma"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Il Direttore",
-     "description": "Uomo vestito di nero, direttore del vagone confessionale: nessuno passa senza confessare i propri peccati."
-    }
-   }
-  },
-  {
-   "id": "lorenzo",
-   "name": "Lorenzo",
-   "langs": [
-    "it"
-   ],
-   "role": "Artista argentino que vive con Carlotta la aventura de la nieve rosa en Florencia.",
-   "novels": [
-    "la-nevicata-rosa"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Lorenzo",
-     "description": "Lorenzo Fader, artista e professore argentino. Incontra Carlotta a Firenze dopo mesi di lettere digitali, fugge con lei accusato ingiustamente e diventa il guerriero e re del Regno Atelier."
-    }
-   }
-  },
-  {
-   "id": "laura-bellini",
-   "name": "Laura",
-   "langs": [
-    "it"
-   ],
-   "role": "Coleccionista de arte, compañera de Alessio.",
-   "novels": [
-    "ladro-di-cuori",
-    "ladro-di-cuori-2",
-    "la-nevicata-rosa",
-    "maschera-di-venezia",
-    "pokhititel-serdec"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Laura",
-     "description": "Ricca collezionista che vive in una villa sulle colline di Firenze. Sorprende Alessio mentre ruba un suo quadro e diventa la sua complice e il suo amore: elegante, leale e coraggiosa, conosce l’arte quanto lui."
-    }
-   }
-  },
-  {
-   "id": "menichetti",
-   "name": "Alberto Menichetti",
-   "langs": [
-    "it"
-   ],
-   "role": "Director de los Uffizi vinculado a la secta de los Cromatistas.",
-   "novels": [
-    "la-nevicata-rosa"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Alberto Menichetti",
-     "description": "Direttore degli Uffizi, freddo e calcolatore, legato alla setta dei Cromatisti. Trasforma Carlotta e Lorenzo in ricercati con prove digitali false."
-    }
-   }
-  },
-  {
-   "id": "porpora",
-   "name": "El Púrpura",
-   "langs": [
-    "it"
-   ],
-   "role": "Líder de la secta de los Cromatistas.",
-   "novels": [
-    "la-nevicata-rosa"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Il Porpora",
-     "description": "Capo della setta dei Cromatisti, che vuole rubare i colori del mondo grazie al Pennello di Eos, un cristallo a forma di prisma."
-    }
-   }
-  },
-  {
-   "id": "fabrizio",
-   "name": "Fabrizio",
-   "langs": [
-    "it"
-   ],
-   "role": "Asistente personal de Menichetti.",
-   "novels": [
-    "la-nevicata-rosa"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Fabrizio",
-     "description": "Assistente personale di Menichetti: mingherlino, silenzioso, sempre con un’espressione di lieve indigestione."
-    }
-   }
-  },
-  {
-   "id": "aurora",
-   "name": "Aurora",
-   "langs": [
-    "it"
-   ],
-   "role": "Hija de Carlotta y Lorenzo.",
-   "novels": [
-    "la-nevicata-rosa"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Aurora",
-     "description": "Figlia di Carlotta e Lorenzo, nata nel nuovo campo di energia del Regno Atelier: un ponte vivente tra il mondo reale e quello delle idee creative."
-    }
-   }
-  },
-  {
-   "id": "roberto-venezia",
-   "name": "Roberto (Venecia)",
-   "langs": [
-    "it"
-   ],
-   "role": "Argentino que descubre en Venecia los poderes de una máscara antigua.",
-   "novels": [
-    "maschera-di-venezia",
-    "ora-selvaggia-venezia",
-    "epicheskij-match"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Roberto",
-     "description": "Argentino con l’anima del viaggiatore. Al Carnevale di Venezia si innamora di Natalia, scopre il potere della Maschera di Venezia e guida la rivolta contro la Loggia. Vive a Venezia e chiama Luis in aiuto contro la macchina che ruba le anime."
-    }
-   }
-  },
-  {
-   "id": "marco-dandolo",
-   "name": "Marco Dandolo",
-   "langs": [
-    "it"
-   ],
-   "role": "Heredero de una familia ilustre veneciana que busca el poder.",
-   "novels": [
-    "maschera-di-venezia",
-    "venecianskaya-maska"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Marco Dandolo",
-     "description": "Erede ambizioso della famiglia Dandolo, nipote dell’ultimo Doge. Si allea con la Loggia per riportare Venezia alla sua gloria e governarla.",
-     "images": [
-      "characters/img/marco-dandolo-1.jpg"
-     ]
-    }
-   }
-  },
-  {
-   "id": "zancan",
-   "name": "Comisario Zancan",
-   "langs": [
-    "it"
-   ],
-   "role": "Comisario corrupto de Venecia.",
-   "novels": [
-    "maschera-di-venezia"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Il commissario Zancan",
-     "description": "Commissario corrotto della questura di Venezia, padre rinnegato di Marco Dandolo. Vuole la maschera a ogni costo."
-    }
-   }
-  },
-  {
-   "id": "ludovico",
-   "name": "Ludovico",
-   "langs": [
-    "it"
-   ],
-   "role": "Jefe de la Logia veneciana.",
-   "novels": [
-    "maschera-di-venezia"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Ludovico",
-     "description": "Capo della Loggia, gruppo di potenti che vogliono tenere Venezia sotto il loro controllo e uccidono chiunque li minacci."
-    }
-   }
-  },
-  {
-   "id": "duca-venezia",
-   "name": "El Duque",
-   "langs": [
-    "it"
-   ],
-   "role": "Padre de Natalia, Duque de un linaje secreto.",
-   "novels": [
-    "maschera-di-venezia"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Il Duca",
-     "description": "Padre di Natalia e vero Duca di un antico lignaggio segreto veneziano."
-    }
-   }
-  },
-  {
-   "id": "mcgregor",
-   "name": "McGregor",
-   "langs": [
-    "it"
-   ],
-   "role": "Villano que controla la máquina que roba las almas en Venecia.",
-   "novels": [
-    "ora-selvaggia-venezia"
-   ],
-   "localizations": {
-    "it": {
-     "name": "McGregor",
-     "description": "Gelido stratega che usa la macchina nascosta sotto Venezia per togliere alle persone volontà e anima e trasformarle in strumenti obbedienti."
-    }
-   }
-  },
-  {
-   "id": "antonio-ferrer",
-   "name": "Antonio Ferrer",
-   "langs": [
-    "it"
-   ],
-   "role": "Coordinador del sector europeo que envía ayuda a Venecia.",
-   "novels": [
-    "ora-selvaggia-venezia"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Antonio Ferrer",
-     "description": "Coordinatore del settore europeo: individua l’anomalia sopra Venezia e mette Roberto in contatto con Luis."
-    }
-   }
-  },
-  {
-   "id": "luca-pittore",
-   "name": "Luca (pintor)",
-   "langs": [
-    "it"
-   ],
-   "role": "Pintor amigo de Alessio que hace copias de cuadros.",
-   "novels": [
-    "ladro-di-cuori",
-    "pokhititel-serdec"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Luca",
-     "description": "Pittore e amico di Alessio: dipinge copie perfette e custodisce il quadro rubato. È lui a proporre di restituirlo."
-    }
-   }
-  },
-  {
-   "id": "sofia-ricci",
-   "name": "Sofia Ricci",
-   "langs": [
-    "it"
-   ],
-   "role": "Coleccionista, propietaria de «El Verano» atribuido a Botticelli.",
-   "novels": [
-    "ladro-di-cuori",
-    "pokhititel-serdec"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Sofia Ricci",
-     "description": "Amica di Laura e proprietaria dell’Estate, un quadro attribuito a Botticelli. Quando il dipinto sparisce denuncia il furto."
-    }
-   }
-  },
-  {
-   "id": "maria-violinista",
-   "name": "María (violinista)",
-   "langs": [
-    "it"
-   ],
-   "role": "Violinista argentina que pone a prueba el amor de Alessio y Laura.",
-   "novels": [
-    "ladro-di-cuori-2"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Maria",
-     "description": "Giovane violinista argentina, bellissima e talentuosa. La sua musica commuove Laura e affascina Alessio, creando tensione tra loro."
-    }
-   }
-  },
-  {
-   "id": "enrico-vitale",
-   "name": "Enrico Vitale",
-   "langs": [
-    "it"
-   ],
-   "role": "Intermediario que propone el robo del violín de oro.",
-   "novels": [
-    "ladro-di-cuori-2"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Enrico Vitale",
-     "description": "Intermediario elegante e calcolatore della galleria «Arte del Sole». Scopre Alessio e Laura a Malaga e propone loro il colpo del violino d’oro."
-    }
-   }
-  },
-  {
-   "id": "don-salvatore",
-   "name": "Don Salvatore",
-   "langs": [
-    "it"
-   ],
-   "role": "Jefe mafioso y coleccionista, dueño del violín de oro.",
-   "novels": [
-    "ladro-di-cuori-2"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Don Salvatore",
-     "description": "Salvatore Ricci, boss mafioso e collezionista d’arte, proprietario del violino d’oro. Potente, autoritario e spietato."
-    }
-   }
-  },
-  {
-   "id": "roberto-autista",
-   "name": "Roberto (chófer)",
-   "langs": [
-    "it"
-   ],
-   "role": "Asistente fiel de Enrico.",
-   "novels": [
-    "ladro-di-cuori-2"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Roberto",
-     "description": "Fedele assistente di Enrico, magro e con gli occhiali da sole anche di notte. Guida la fuga per le strade di Malaga."
-    }
-   }
-  },
-  {
-   "id": "irina",
-   "name": "Irina",
-   "langs": [
-    "it"
-   ],
-   "role": "Psicóloga que entra en los sueños.",
-   "novels": [
-    "la-macchina-dei-sogni"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Irina",
-     "description": "Psicologa che sogna lo stesso incubo di una paziente. Con la macchina di Pietro entra nei sogni e lotta per chiudere la porta tra il mondo dei sogni e quello reale."
-    }
-   }
-  },
-  {
-   "id": "pietro",
-   "name": "Pietro",
-   "langs": [
-    "it"
-   ],
-   "role": "Investigador que construyó la máquina de los sueños.",
-   "novels": [
-    "la-macchina-dei-sogni"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Pietro",
-     "description": "Ricercatore che studia i sogni e ha costruito una macchina per entrarci restando coscienti."
-    }
-   }
-  },
-  {
-   "id": "marina-sogni",
-   "name": "Marina (sueños)",
-   "langs": [
-    "it"
-   ],
-   "role": "Amiga de Irina atrapada en el tablero de ajedrez de los sueños.",
-   "novels": [
-    "la-macchina-dei-sogni"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Marina",
-     "description": "Amica di Irina: nel sogno è una pedina bloccata su una scacchiera vivente. Nella realtà la sostiene e la avverte dei pericoli."
-    }
-   }
-  },
-  {
-   "id": "clara",
-   "name": "Clara",
-   "langs": [
-    "it"
-   ],
-   "role": "Paciente de Irina que sueña con los cuatro jinetes.",
-   "novels": [
-    "la-macchina-dei-sogni"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Clara",
-     "description": "Paziente di Irina, vedova, che sogna il marito come un tiranno e i quattro cavalieri dell’apocalisse."
-    }
-   }
-  },
-  {
-   "id": "kennet",
-   "name": "Kennet",
-   "langs": [
-    "it",
-    "tr"
-   ],
-   "role": "Fugitivo de la Central que se une a Utopía.",
-   "novels": [
-    "presentimento",
-    "predchuvstvie",
-    "predchuvstvie-2",
-    "col-gulu"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Kennet",
-     "description": "Fuggito dalla Centrale, viene salvato da Robert e diventa uno dei primi compagni di Utopia: la sua vista è la migliore della fortezza. È innamorato di Oxana."
+    {
+      "id": "oxana-voice",
+      "name": "Oxana",
+      "langs": [
+        "fr"
+      ],
+      "role": "Amiga y compañera de Sasha en La voix.",
+      "novels": [
+        "la-voix",
+        "golos"
+      ],
+      "localizations": {
+        "fr": {
+          "name": "Oxana",
+          "description": "Amie et collègue de Sasha dans le roman La voix."
+        }
+      }
     },
-    "tr": {
-     "name": "Kennet",
-     "description": "Kumun içinde yarı gömülü, susuzluktan ölmek üzereyken Robert'in bulduğu iri, dolap gibi geniş omuzlu adam. Kalenin en güçlü savunucusu olur ve baharın ilk günü Saşa ile evlenir."
-    }
-   }
-  },
-  {
-   "id": "oxana-utopia",
-   "name": "Oxana (Utopía)",
-   "langs": [
-    "it",
-    "tr"
-   ],
-   "role": "Habitante de Utopía entre Kennet y Robert.",
-   "novels": [
-    "presentimento",
-    "predchuvstvie",
-    "predchuvstvie-2",
-    "col-gulu"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Oxana",
-     "description": "Donna dalla bellezza sorprendente e dagli occhi color marrone caldo. Gentile e comprensiva, è contesa tra Kennet e Robert."
+    {
+      "id": "dima-voice",
+      "name": "Dima",
+      "langs": [
+        "fr"
+      ],
+      "role": "Joven que participa en la resistencia de La voix.",
+      "novels": [
+        "la-voix",
+        "golos"
+      ],
+      "localizations": {
+        "fr": {
+          "name": "Dima",
+          "description": "Un jeune homme qui prend part à la résistance dans La voix."
+        }
+      }
     },
-    "tr": {
-     "name": "Oksana",
-     "description": "Kaleye şarkılarıyla gelen şarkıcı. Akşamları kuzey kulesinde Kennet'ten takımyıldızları dinler; sonunda «Sen Benim Kalemsin» şarkısını ithaf edebileceği birini, Tomás'ı bulur."
-    }
-   }
-  },
-  {
-   "id": "dima-utopia",
-   "name": "Dima (Utopía)",
-   "langs": [
-    "it",
-    "pl"
-   ],
-   "role": "Programador de Utopía.",
-   "novels": [
-    "presentimento",
-    "predchuvstvie",
-    "predchuvstvie-2",
-    "przeczucie"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Dima",
-     "description": "Amico di Luis e programmatore: riattiva Internet, pilota i droni e mimetizza la fortezza."
+    {
+      "id": "franco",
+      "name": "Franco",
+      "langs": [
+        "it"
+      ],
+      "role": "Joven empleado del Ministerio de los Sentimientos que devuelve la sonrisa a Sinea.",
+      "novels": [
+        "la-citta-triste",
+        "grustnyj-gorod",
+        "epicheskij-match"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Franco",
+          "description": "Ragazzo di 24 anni, impiegato al Ministero dei Sentimenti. Buono e un po’ timido, ma coraggioso: quando il presidente vieta i sorrisi, decide di restituire la felicità a Sinea e alla fine ne diventa presidente."
+        }
+      }
     },
-    "pl": {
-     "name": "Dima",
-     "description": "Ekspert od techniki. W ziemiance pełnej kabli, akumulatorów i starych komputerów potrafi złapać każdą częstotliwość. W Naszej Utopii stawia panele słoneczne, puszcza drony i podsłuchuje radio Dzikich."
-    }
-   }
-  },
-  {
-   "id": "natalia-cardiologa",
-   "name": "Natalia (esposa de Robert)",
-   "langs": [
-    "it"
-   ],
-   "role": "Cardióloga, esposa de Robert, que reaparece al final.",
-   "novels": [
-    "presentimento"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Natalia (moglie di Robert)",
-     "description": "Cardiologa e moglie di Robert, partita per curare i soldati durante la guerra. Riappare alla fine alla guida dei ribelli, ma sceglie una missione più grande."
-    }
-   }
-  },
-  {
-   "id": "alessio-necropoli",
-   "name": "Alessio (Necrópolis)",
-   "langs": [
-    "it"
-   ],
-   "role": "Prisionero escapado de Necrópolis.",
-   "novels": [
-    "presentimento"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Alessio",
-     "description": "Ex prigioniero di Necropoli, la città sotterranea, costretto a costruire una piattaforma missilistica. Rivela a Utopia i piani del nemico."
-    }
-   }
-  },
-  {
-   "id": "fabio",
-   "name": "Fabio",
-   "langs": [
-    "it"
-   ],
-   "role": "Portero de los Leones.",
-   "novels": [
-    "la-squadra-invincibile"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Fabio",
-     "description": "Portiere orgoglioso dei Leoni. Dopo la sconfitta 5-1 contro le Aquile vuole scoprire il loro segreto e finisce in un gioco molto più grande."
-    }
-   }
-  },
-  {
-   "id": "stella",
-   "name": "Stella",
-   "langs": [
-    "it"
-   ],
-   "role": "Hermana de Fabio infiltrada en las Águilas.",
-   "novels": [
-    "la-squadra-invincibile"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Stella",
-     "description": "Sorella di Fabio, che si infiltra tra le ragazze delle Aquile e si ritrova divisa tra le due squadre."
-    }
-   }
-  },
-  {
-   "id": "maria-aquile",
-   "name": "María (Águilas)",
-   "langs": [
-    "it"
-   ],
-   "role": "Delantera y capitana de las Águilas.",
-   "novels": [
-    "la-squadra-invincibile"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Maria",
-     "description": "Attaccante e capitana delle Aquile: per lei il segreto non è la forza, ma la squadra. Rivale di Fabio, poi sua alleata."
-    }
-   }
-  },
-  {
-   "id": "carla",
-   "name": "Carla",
-   "langs": [
-    "it"
-   ],
-   "role": "Exnovia de Fabio.",
-   "novels": [
-    "la-squadra-invincibile"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Carla",
-     "description": "Ex ragazza di Fabio, che la allena insieme ad altre ragazze per battere le Aquile."
-    }
-   }
-  },
-  {
-   "id": "francesca",
-   "name": "Francesca",
-   "langs": [
-    "it"
-   ],
-   "role": "Novia de Fabio que cambia de equipo.",
-   "novels": [
-    "la-squadra-invincibile"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Francesca",
-     "description": "Ragazza di Fabio che passa alla squadra avversaria e si allea con Maria per vendicarsi."
-    }
-   }
-  },
-  {
-   "id": "vanessa",
-   "name": "Vanessa",
-   "langs": [
-    "it"
-   ],
-   "role": "Estratega y mentirosa al servicio del «Consejo».",
-   "novels": [
-    "la-squadra-invincibile"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Vanessa",
-     "description": "Bugiarda professionista e stratega legata al «Consiglio», l’organizzazione che trucca le partite. Vuole Fabio come futuro marito."
-    }
-   }
-  },
-  {
-   "id": "enrico-polizia",
-   "name": "Enrico (policía del fútbol)",
-   "langs": [
-    "it"
-   ],
-   "role": "Agente de la Policía del Fútbol.",
-   "novels": [
-    "la-squadra-invincibile"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Enrico",
-     "description": "Agente della Polizia Calcistica ed ex contabile: chiede aiuto alle squadre per smascherare Vanessa e il Consiglio."
-    }
-   }
-  },
-  {
-   "id": "antonio-roma",
-   "name": "Antonio",
-   "langs": [
-    "it"
-   ],
-   "role": "Pizzero de Trastevere acusado del robo del Cáliz de Oro.",
-   "novels": [
-    "antonio-e-il-segreto-di-roma"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Antonio",
-     "description": "Pizzaiolo di 28 anni di Trastevere. Per conquistare Larissa le promette tutti i segreti di Roma, ma quando sparisce il Calice d’Oro dei Papi la polizia cerca proprio lui."
-    }
-   }
-  },
-  {
-   "id": "larissa",
-   "name": "Larissa",
-   "langs": [
-    "it"
-   ],
-   "role": "Joven rusa y culta que esconde una identidad secreta.",
-   "novels": [
-    "antonio-e-il-segreto-di-roma"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Larissa",
-     "description": "Ragazza russa bella e colta che Antonio incontra ai Musei Vaticani. In realtà è Elena Ferri, ladra detta «il Camaleonte», che cambia sempre nome, capelli e nazionalità."
-    }
-   }
-  },
-  {
-   "id": "matteo-roma",
-   "name": "Matteo (Roma)",
-   "langs": [
-    "it"
-   ],
-   "role": "Amigo informático de Antonio.",
-   "novels": [
-    "antonio-e-il-segreto-di-roma"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Matteo",
-     "description": "Vecchio amico di Antonio, genio dei computer con un appartamento pieno di cavi e un gatto nero di nome Bit. Lo aiuta a dimostrare la sua innocenza."
-    }
-   }
-  },
-  {
-   "id": "paolo-roma",
-   "name": "Paolo",
-   "langs": [
-    "it"
-   ],
-   "role": "Primo de Antonio, vigilante de los Museos Vaticanos.",
-   "novels": [
-    "antonio-e-il-segreto-di-roma"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Paolo",
-     "description": "Cugino di Antonio e guardia dei Musei Vaticani: un uomo grande e simpatico in divisa blu."
-    }
-   }
-  },
-  {
-   "id": "sofia-roma",
-   "name": "Sofía (Roma)",
-   "langs": [
-    "it"
-   ],
-   "role": "Estudiante de historia del arte y guía del museo.",
-   "novels": [
-    "antonio-e-il-segreto-di-roma"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Sofia",
-     "description": "Studentessa di storia dell’arte di 25 anni che il sabato fa la guida ai Musei Vaticani. Figlia del commissario Rinaldi, è il nuovo amore di Antonio."
-    }
-   }
-  },
-  {
-   "id": "rinaldi",
-   "name": "Comisario Rinaldi",
-   "langs": [
-    "it"
-   ],
-   "role": "Comisario de la policía de Roma.",
-   "novels": [
-    "antonio-e-il-segreto-di-roma"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Il commissario Rinaldi",
-     "description": "Commissario della polizia di Roma, con baffi e impermeabile grigio. Arresta il Camaleonte ed è il padre di Sofia."
-    }
-   }
-  },
-  {
-   "id": "giulia-trucco",
-   "name": "Giulia (maquilladora)",
-   "langs": [
-    "it"
-   ],
-   "role": "Maquilladora de teatro que disfraza a Antonio.",
-   "novels": [
-    "antonio-e-il-segreto-di-roma"
-   ],
-   "localizations": {
-    "it": {
-     "name": "Giulia",
-     "description": "Amica di Matteo che fa il trucco agli attori in un teatro: trasforma Antonio in un anziano collezionista."
-    }
-   }
-  },
-  {
-   "id": "alex-future",
-   "name": "Alex",
-   "langs": [
-    "en"
-   ],
-   "role": "Joven del Moscú de 3024 que viaja en el tiempo a 2024 en busca del amor.",
-   "novels": [
-    "a-man-from-the-future"
-   ],
-   "localizations": {
-    "en": {
-     "name": "Alex",
-     "description": "A 29-year-old computer repairman from Moscow in 3024, a lonely world where all the women disappeared twenty years ago. He finds an old red time machine, travels to Moscow in 2024 and falls in love with Olga."
-    }
-   }
-  },
-  {
-   "id": "olga-future",
-   "name": "Olga",
-   "langs": [
-    "en"
-   ],
-   "role": "Joven que trabaja en el café de su tía y se enamora de Alex.",
-   "novels": [
-    "a-man-from-the-future"
-   ],
-   "localizations": {
-    "en": {
-     "name": "Olga",
-     "description": "A young woman who works in her aunt Nina’s café and draws when it is quiet. She helps Alex in 2024, secretly travels to his future and meets herself on the way back. In the end she chooses to build a life with Alex in her own time."
-    }
-   }
-  },
-  {
-   "id": "nina-future",
-   "name": "Nina",
-   "langs": [
-    "en"
-   ],
-   "role": "Tía de Olga, dueña del café.",
-   "novels": [
-    "a-man-from-the-future"
-   ],
-   "localizations": {
-    "en": {
-     "name": "Nina",
-     "description": "Olga’s aunt, who owns the café where Alex first meets Olga. She asks Alex to repair her computer and pays him for the work."
-    }
-   }
-  },
-  {
-   "id": "svetlana-future",
-   "name": "Svetlana",
-   "langs": [
-    "en"
-   ],
-   "role": "Mujer a la que Alex aborda torpemente en 2024.",
-   "novels": [
-    "a-man-from-the-future"
-   ],
-   "localizations": {
-    "en": {
-     "name": "Svetlana",
-     "description": "A young woman Alex approaches outside a bookshop on his first day in 2024. He asks her to leave her whole life behind for him, and she tells him to stop following her."
-    }
-   }
-  },
-  {
-   "id": "pavel-future",
-   "name": "Pavel",
-   "langs": [
-    "en"
-   ],
-   "role": "Colega de Alex en 3024.",
-   "novels": [
-    "a-man-from-the-future"
-   ],
-   "localizations": {
-    "en": {
-     "name": "Pavel",
-     "description": "Alex’s colleague in 3024. He is the first man to see Olga when she arrives from the past, and he promises to tell everyone at work that Alex is alive."
-    }
-   }
-  },
-  {
-   "id": "frank-stevenson",
-   "name": "Frank Stevenson",
-   "langs": [
-    "en"
-   ],
-   "role": "Detective privado que busca al asesino de su hermano en citas online.",
-   "novels": [
-    "the-date"
-   ],
-   "localizations": {
-    "en": {
-     "name": "Frank Stevenson",
-     "description": "A private detective who believes a woman killed his brother Tom two years ago. He creates a fake dating profile as “Mark” and goes on one strange date after another to find the killer."
-    }
-   }
-  },
-  {
-   "id": "tom-stevenson",
-   "name": "Tom Stevenson",
-   "langs": [
-    "en"
-   ],
-   "role": "Hermano de Frank, desaparecido tras una cita.",
-   "novels": [
-    "the-date"
-   ],
-   "localizations": {
-    "en": {
-     "name": "Tom Stevenson",
-     "description": "Frank’s brother, who went on an online date and never came back. The truth is stranger than murder: Tom wanted to be an actor and staged the whole story with his actress friends."
-    }
-   }
-  },
-  {
-   "id": "clara-date",
-   "name": "Clara (The Date)",
-   "langs": [
-    "en"
-   ],
-   "role": "Primera cita de Frank, que pregunta demasiado.",
-   "novels": [
-    "the-date"
-   ],
-   "localizations": {
-    "en": {
-     "name": "Clara",
-     "description": "Frank’s first date: beautiful, with long black hair and red lips. She likes expensive wine and asks too many questions about money and dogs."
-    }
-   }
-  },
-  {
-   "id": "veronica-date",
-   "name": "Veronica",
-   "langs": [
-    "en"
-   ],
-   "role": "Cita excéntrica a la que le gustan los insectos muertos.",
-   "novels": [
-    "the-date"
-   ],
-   "localizations": {
-    "en": {
-     "name": "Veronica",
-     "description": "A strange woman with a strange profile who loves dead bugs and crazy games. When “Mark” tries to leave, she screams “Nobody rejects me!” and chases him."
-    }
-   }
-  },
-  {
-   "id": "nadia-date",
-   "name": "Nadia",
-   "langs": [
-    "en"
-   ],
-   "role": "Cita misteriosa que besa a Frank y huye.",
-   "novels": [
-    "the-date"
-   ],
-   "localizations": {
-    "en": {
-     "name": "Nadia",
-     "description": "A woman with short blonde hair who writes to “Mark” first. Her story sounds like Tom’s, she thinks a man should be quiet and handsome, and she kisses Frank and runs away."
-    }
-   }
-  },
-  {
-   "id": "susan-date",
-   "name": "Susan",
-   "langs": [
-    "en"
-   ],
-   "role": "Cita que no para de hablar de sus exnovios.",
-   "novels": [
-    "the-date"
-   ],
-   "localizations": {
-    "en": {
-     "name": "Susan",
-     "description": "A talker with a very normal profile who loves sunsets, pizza and her cat, Mr. Snuffles, and never stops talking about her ex-boyfriends. At the end she comes to apologise and helps Frank and Tom make peace."
-    }
-   }
-  },
-  {
-   "id": "rosa-date",
-   "name": "Rosa",
-   "langs": [
-    "en"
-   ],
-   "role": "Abogada con un contrato de reglas para citas.",
-   "novels": [
-    "the-date"
-   ],
-   "localizations": {
-    "en": {
-     "name": "Rosa",
-     "description": "A smart lawyer who writes everything in a small notebook. She brings a contract that says “Mark” broke the rules of dating."
-    }
-   }
-  },
-  {
-   "id": "vanessa-date",
-   "name": "Vanessa (The Date)",
-   "langs": [
-    "en"
-   ],
-   "role": "Violinista que ata a Frank a una silla.",
-   "novels": [
-    "the-date"
-   ],
-   "localizations": {
-    "en": {
-     "name": "Vanessa",
-     "description": "A violin player with long white hair and a smile that is too big. She lives in a big old house, plays scary music and ties “Mark” to a chair — “for the drama”."
-    }
-   }
-  },
-  {
-   "id": "charles-immigrant",
-   "name": "Charles",
-   "langs": [
-    "en"
-   ],
-   "role": "Inmigrante que llega a Sinea sin dinero ni papeles y acaba siendo alcalde.",
-   "novels": [
-    "the-immigrant"
-   ],
-   "localizations": {
-    "en": {
-     "name": "Charles",
-     "description": "An immigrant who arrives in Sinea by ship with a small bag, no money and no papers. He finds the stolen turquoise diamond, gives it back, and becomes the honest new Mayor of Sinea."
-    }
-   }
-  },
-  {
-   "id": "anna-immigrant",
-   "name": "Anna",
-   "langs": [
-    "en"
-   ],
-   "role": "Maestra que ayuda a Charles.",
-   "novels": [
-    "the-immigrant"
-   ],
-   "localizations": {
-    "en": {
-     "name": "Anna",
-     "description": "A kind teacher who listens to Charles and helps him return the diamond. When her father has Charles arrested, she helps him escape and convinces him to run for Mayor."
-    }
-   }
-  },
-  {
-   "id": "martin-mayor",
-   "name": "Martin",
-   "langs": [
-    "en"
-   ],
-   "role": "Alcalde corrupto de Sinea, padre de Anna.",
-   "novels": [
-    "the-immigrant"
-   ],
-   "localizations": {
-    "en": {
-     "name": "Martin",
-     "description": "The Mayor of Sinea and Anna’s father. In Charles’s country he ran an illegal diamond business with slaves; in Sinea he blames immigrants for everything and loses the election to Charles."
-    }
-   }
-  },
-  {
-   "id": "leo-hacker",
-   "name": "Leo",
-   "langs": [
-    "en"
-   ],
-   "role": "Hacker amigo de Anna.",
-   "novels": [
-    "the-immigrant"
-   ],
-   "localizations": {
-    "en": {
-     "name": "Leo",
-     "description": "Anna’s friend, a hacker with a room full of computers. Click, click, click: he fixes Charles’s papers so he can be a candidate for Mayor."
-    }
-   }
-  },
-  {
-   "id": "sergio-fader",
-   "name": "Sergio (El misterio de los Fader)",
-   "langs": [
-    "es"
-   ],
-   "role": "Padre de Luis, en Mendoza.",
-   "novels": [
-    "tajna-semi-fader",
-    "el-misterio-de-los-fader",
-    "operacion-londres"
-   ],
-   "localizations": {
-    "es": {
-     "name": "Sergio",
-     "description": "Padre de Luis, vive en Mendoza. Recibe a su hijo y a Natalia entre los viñedos y guarda parte del secreto de la familia Fader."
-    }
-   }
-  },
-  {
-   "id": "sergio-dikij",
-   "name": "Sergio (La hora salvaje)",
-   "langs": [
-    "sr"
-   ],
-   "role": "Padre de Luis de La hora salvaje, en Mendoza.",
-   "novels": [
-    "dikij-chas-2",
-    "divlji-chas-malbec"
-   ],
-   "localizations": {
-    "sr": {
-     "name": "Серхио",
-     "description": "Луисов отац из Мендозе. Дочекује сина и Наташу када се у виноградима пробуде духови планина."
-    }
-   }
-  },
-  {
-   "id": "natalia-fader",
-   "name": "Natalia (El misterio de los Fader)",
-   "langs": [
-    "es"
-   ],
-   "role": "Pareja de Luis en El misterio de los Fader.",
-   "novels": [
-    "tajna-semi-fader",
-    "el-misterio-de-los-fader",
-    "operacion-londres"
-   ],
-   "localizations": {
-    "es": {
-     "name": "Natalia",
-     "description": "Moscovita que acompaña a Luis de Moscú a Mendoza y lo ayuda a resolver el misterio de los Fader. En «Operación Londres» sabe que el tiempo corre solo para ella y decide el destino del elixir."
-    }
-   }
-  },
-  {
-   "id": "natalia-conspiracion",
-   "name": "Natalia (La gran conspiración)",
-   "langs": [
-    "es"
-   ],
-   "role": "Cardióloga moscovita.",
-   "novels": [
-    "la-gran-conspiracion"
-   ],
-   "localizations": {
-    "es": {
-     "name": "Natalia",
-     "description": "Cardióloga moscovita pelirroja a la que ya casi nada sorprende, hasta que el mismo día recibe mensajes de dos argentinos: Luis, un artista, y Roberto, un seductor."
-    }
-   }
-  },
-  {
-   "id": "natalia-pt",
-   "name": "Natalia (Do outro lado do mundo)",
-   "langs": [
-    "pt"
-   ],
-   "role": "Joven rusa que conversa con Luiz por internet.",
-   "novels": [
-    "do-outro-lado-do-mundo"
-   ],
-   "localizations": {
-    "pt": {
-     "name": "Natalia",
-     "description": "Mora do outro lado do mundo, na Rússia, e conversa com Luiz pela internet. Por ela, Luiz atravessa meio planeta."
-    }
-   }
-  },
-  {
-   "id": "martin-utopia",
-   "name": "Martín (Utopía)",
-   "langs": [
-    "tr"
-   ],
-   "role": "Miembro de Utopía que acaba expulsado.",
-   "novels": [
-    "predchuvstvie",
-    "col-gulu"
-   ],
-   "localizations": {
-    "tr": {
-     "name": "Martin",
-     "description": "Dövüş sanatlarında usta, çabuk karar veren ama çabuk da öfkelenen eski asker. Vahşileri hor görür, gizlice Nekroloji ile anlaşır ve kalenin kapılarını düşmana açmaya çalışır."
-    }
-   }
-  },
-  {
-   "id": "zhenya",
-   "name": "Zhenia",
-   "langs": [
-    "tr"
-   ],
-   "role": "Intrigante que divide Utopía.",
-   "novels": [
-    "predchuvstvie",
-    "col-gulu"
-   ],
-   "localizations": {
-    "tr": {
-     "name": "Jeni",
-     "description": "Kısa siyah saçlı, keskin hatlı, her konuşmayı kendi lehine çevirmeyi bilen kadın. Robert'e karşı entrika çevirir; ihanetinden sonra bir haftalık su ve yiyecekle kaleden çıkarılır."
-    }
-   }
-  },
-  {
-   "id": "masha-utopia",
-   "name": "Masha",
-   "langs": [
-    "pl"
-   ],
-   "role": "Compañera de Dima.",
-   "novels": [
-    "predchuvstvie",
-    "przeczucie"
-   ],
-   "localizations": {
-    "pl": {
-     "name": "Maria",
-     "description": "Drobna, ciemnowłosa i nieufna. Widziała już trzy utopie, które skończyły się źle. Mieszka z Dimą w ziemiance pod Zakopanem i przyjeżdża do Czorsztyna „na tydzień, na próbę”."
-    }
-   }
-  },
-  {
-   "id": "samuel",
-   "name": "Samuel",
-   "langs": [
-    "pl",
-    "tr"
-   ],
-   "role": "Líder de los salvajes.",
-   "novels": [
-    "predchuvstvie",
-    "przeczucie",
-    "col-gulu"
-   ],
-   "localizations": {
-    "pl": {
-     "name": "Samuel",
-     "description": "Przywódca Dzikich. Na jego ciężarówce jest namalowany biały wilk. Chce zabrać Naszą Utopię — i wiolonczelistkę."
+    {
+      "id": "chiara",
+      "name": "Chiara",
+      "langs": [
+        "it"
+      ],
+      "role": "Rebelde alegre que se une a Franco y llega a vicepresidenta de Sinea.",
+      "novels": [
+        "la-citta-triste",
+        "grustnyj-gorod"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Chiara",
+          "description": "Ribelle allegra e determinata, la prima persona che sorride nella metro di Sinea. Insieme a Franco riporta la luce in città e ne diventa vicepresidente."
+        }
+      }
     },
-    "tr": {
-     "name": "Samuel",
-     "description": "Runik işaretli, kas yığını gibi iri vahşilerin lideri. Kanyonda Robert'e saldırır, ama Rosa'nın kurşunuyla yaralanıp kaçar."
+    {
+      "id": "marco-inventore",
+      "name": "Marco (inventor)",
+      "langs": [
+        "it"
+      ],
+      "role": "Inventor y excompañero de Franco, despedido por sonreír demasiado.",
+      "novels": [
+        "la-citta-triste"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Marco",
+          "description": "Vecchio inventore ed ex collega di Franco, licenziato perché sorrideva troppo. Nel suo nascondiglio costruisce macchine strampalate per far ridere la gente."
+        }
+      }
+    },
+    {
+      "id": "luca-comico",
+      "name": "Luca (cómico)",
+      "langs": [
+        "it"
+      ],
+      "role": "Cómico de las reuniones secretas y del Teatro de las Risas.",
+      "novels": [
+        "la-citta-triste"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Luca",
+          "description": "Comico che fa ridere le riunioni segrete di Sinea e poi il nuovo Teatro delle Risate, dove aiuta Franco a fare la sua proposta a Chiara."
+        }
+      }
+    },
+    {
+      "id": "presidente-sinea",
+      "name": "El Presidente",
+      "langs": [
+        "it"
+      ],
+      "role": "Presidente severo que prohíbe las sonrisas en Sinea.",
+      "novels": [
+        "la-citta-triste"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Il Presidente",
+          "description": "Presidente serio e severo che vieta i sorrisi a Sinea. Alla fine capisce di aver sbagliato e diventa un felice venditore di gelati."
+        }
+      }
+    },
+    {
+      "id": "matteo-treno",
+      "name": "Matteo (tren fantasma)",
+      "langs": [
+        "it"
+      ],
+      "role": "Pasajero misterioso del tren fantasma que acompaña a Alice.",
+      "novels": [
+        "il-treno-fantasma"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Matteo",
+          "description": "Passeggero triste e affamato che accompagna Alice tra i vagoni e si finge il suo nuovo ragazzo. Alla fine rivela la vera missione del treno fantasma: risolvere le crisi d’amore."
+        }
+      }
+    },
+    {
+      "id": "vittorio-treno",
+      "name": "Vittorio",
+      "langs": [
+        "it"
+      ],
+      "role": "Hombre gordo y apuesto que toma los mandos del tren fantasma.",
+      "novels": [
+        "il-treno-fantasma"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Vittorio",
+          "description": "L’uomo grasso ma molto bello che accoglie Alice sul treno. Fratello di Matteo, prende il controllo dei comandi del treno fantasma."
+        }
+      }
+    },
+    {
+      "id": "direttore-confessionale",
+      "name": "El Director del confesionario",
+      "langs": [
+        "it"
+      ],
+      "role": "Hombre de negro que exige confesar los pecados en el tren.",
+      "novels": [
+        "il-treno-fantasma"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Il Direttore",
+          "description": "Uomo vestito di nero, direttore del vagone confessionale: nessuno passa senza confessare i propri peccati."
+        }
+      }
+    },
+    {
+      "id": "lorenzo",
+      "name": "Lorenzo",
+      "langs": [
+        "it"
+      ],
+      "role": "Artista argentino que vive con Carlotta la aventura de la nieve rosa en Florencia.",
+      "novels": [
+        "la-nevicata-rosa"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Lorenzo",
+          "description": "Lorenzo Fader, artista e professore argentino. Incontra Carlotta a Firenze dopo mesi di lettere digitali, fugge con lei accusato ingiustamente e diventa il guerriero e re del Regno Atelier."
+        }
+      }
+    },
+    {
+      "id": "laura-bellini",
+      "name": "Laura",
+      "langs": [
+        "it"
+      ],
+      "role": "Coleccionista de arte, compañera de Alessio.",
+      "novels": [
+        "ladro-di-cuori",
+        "ladro-di-cuori-2",
+        "la-nevicata-rosa",
+        "maschera-di-venezia",
+        "pokhititel-serdec"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Laura",
+          "description": "Ricca collezionista che vive in una villa sulle colline di Firenze. Sorprende Alessio mentre ruba un suo quadro e diventa la sua complice e il suo amore: elegante, leale e coraggiosa, conosce l’arte quanto lui."
+        }
+      }
+    },
+    {
+      "id": "menichetti",
+      "name": "Alberto Menichetti",
+      "langs": [
+        "it"
+      ],
+      "role": "Director de los Uffizi vinculado a la secta de los Cromatistas.",
+      "novels": [
+        "la-nevicata-rosa"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Alberto Menichetti",
+          "description": "Direttore degli Uffizi, freddo e calcolatore, legato alla setta dei Cromatisti. Trasforma Carlotta e Lorenzo in ricercati con prove digitali false."
+        }
+      }
+    },
+    {
+      "id": "porpora",
+      "name": "El Púrpura",
+      "langs": [
+        "it"
+      ],
+      "role": "Líder de la secta de los Cromatistas.",
+      "novels": [
+        "la-nevicata-rosa"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Il Porpora",
+          "description": "Capo della setta dei Cromatisti, che vuole rubare i colori del mondo grazie al Pennello di Eos, un cristallo a forma di prisma."
+        }
+      }
+    },
+    {
+      "id": "fabrizio",
+      "name": "Fabrizio",
+      "langs": [
+        "it"
+      ],
+      "role": "Asistente personal de Menichetti.",
+      "novels": [
+        "la-nevicata-rosa"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Fabrizio",
+          "description": "Assistente personale di Menichetti: mingherlino, silenzioso, sempre con un’espressione di lieve indigestione."
+        }
+      }
+    },
+    {
+      "id": "aurora",
+      "name": "Aurora",
+      "langs": [
+        "it"
+      ],
+      "role": "Hija de Carlotta y Lorenzo.",
+      "novels": [
+        "la-nevicata-rosa"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Aurora",
+          "description": "Figlia di Carlotta e Lorenzo, nata nel nuovo campo di energia del Regno Atelier: un ponte vivente tra il mondo reale e quello delle idee creative."
+        }
+      }
+    },
+    {
+      "id": "roberto-venezia",
+      "name": "Roberto (Venecia)",
+      "langs": [
+        "it"
+      ],
+      "role": "Argentino que descubre en Venecia los poderes de una máscara antigua.",
+      "novels": [
+        "maschera-di-venezia",
+        "ora-selvaggia-venezia",
+        "epicheskij-match"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Roberto",
+          "description": "Argentino con l’anima del viaggiatore. Al Carnevale di Venezia si innamora di Natalia, scopre il potere della Maschera di Venezia e guida la rivolta contro la Loggia. Vive a Venezia e chiama Luis in aiuto contro la macchina che ruba le anime."
+        }
+      }
+    },
+    {
+      "id": "marco-dandolo",
+      "name": "Marco Dandolo",
+      "langs": [
+        "it"
+      ],
+      "role": "Heredero de una familia ilustre veneciana que busca el poder.",
+      "novels": [
+        "maschera-di-venezia",
+        "venecianskaya-maska"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Marco Dandolo",
+          "description": "Erede ambizioso della famiglia Dandolo, nipote dell’ultimo Doge. Si allea con la Loggia per riportare Venezia alla sua gloria e governarla.",
+          "images": [
+            "characters/img/marco-dandolo-1.jpg"
+          ]
+        }
+      }
+    },
+    {
+      "id": "zancan",
+      "name": "Comisario Zancan",
+      "langs": [
+        "it"
+      ],
+      "role": "Comisario corrupto de Venecia.",
+      "novels": [
+        "maschera-di-venezia"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Il commissario Zancan",
+          "description": "Commissario corrotto della questura di Venezia, padre rinnegato di Marco Dandolo. Vuole la maschera a ogni costo."
+        }
+      }
+    },
+    {
+      "id": "ludovico",
+      "name": "Ludovico",
+      "langs": [
+        "it"
+      ],
+      "role": "Jefe de la Logia veneciana.",
+      "novels": [
+        "maschera-di-venezia"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Ludovico",
+          "description": "Capo della Loggia, gruppo di potenti che vogliono tenere Venezia sotto il loro controllo e uccidono chiunque li minacci."
+        }
+      }
+    },
+    {
+      "id": "duca-venezia",
+      "name": "El Duque",
+      "langs": [
+        "it"
+      ],
+      "role": "Padre de Natalia, Duque de un linaje secreto.",
+      "novels": [
+        "maschera-di-venezia"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Il Duca",
+          "description": "Padre di Natalia e vero Duca di un antico lignaggio segreto veneziano."
+        }
+      }
+    },
+    {
+      "id": "mcgregor",
+      "name": "McGregor",
+      "langs": [
+        "it"
+      ],
+      "role": "Villano que controla la máquina que roba las almas en Venecia.",
+      "novels": [
+        "ora-selvaggia-venezia"
+      ],
+      "localizations": {
+        "it": {
+          "name": "McGregor",
+          "description": "Gelido stratega che usa la macchina nascosta sotto Venezia per togliere alle persone volontà e anima e trasformarle in strumenti obbedienti."
+        }
+      }
+    },
+    {
+      "id": "antonio-ferrer",
+      "name": "Antonio Ferrer",
+      "langs": [
+        "it"
+      ],
+      "role": "Coordinador del sector europeo que envía ayuda a Venecia.",
+      "novels": [
+        "ora-selvaggia-venezia"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Antonio Ferrer",
+          "description": "Coordinatore del settore europeo: individua l’anomalia sopra Venezia e mette Roberto in contatto con Luis."
+        }
+      }
+    },
+    {
+      "id": "luca-pittore",
+      "name": "Luca (pintor)",
+      "langs": [
+        "it"
+      ],
+      "role": "Pintor amigo de Alessio que hace copias de cuadros.",
+      "novels": [
+        "ladro-di-cuori",
+        "pokhititel-serdec"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Luca",
+          "description": "Pittore e amico di Alessio: dipinge copie perfette e custodisce il quadro rubato. È lui a proporre di restituirlo."
+        }
+      }
+    },
+    {
+      "id": "sofia-ricci",
+      "name": "Sofia Ricci",
+      "langs": [
+        "it"
+      ],
+      "role": "Coleccionista, propietaria de «El Verano» atribuido a Botticelli.",
+      "novels": [
+        "ladro-di-cuori",
+        "pokhititel-serdec"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Sofia Ricci",
+          "description": "Amica di Laura e proprietaria dell’Estate, un quadro attribuito a Botticelli. Quando il dipinto sparisce denuncia il furto."
+        }
+      }
+    },
+    {
+      "id": "maria-violinista",
+      "name": "María (violinista)",
+      "langs": [
+        "it"
+      ],
+      "role": "Violinista argentina que pone a prueba el amor de Alessio y Laura.",
+      "novels": [
+        "ladro-di-cuori-2"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Maria",
+          "description": "Giovane violinista argentina, bellissima e talentuosa. La sua musica commuove Laura e affascina Alessio, creando tensione tra loro."
+        }
+      }
+    },
+    {
+      "id": "enrico-vitale",
+      "name": "Enrico Vitale",
+      "langs": [
+        "it"
+      ],
+      "role": "Intermediario que propone el robo del violín de oro.",
+      "novels": [
+        "ladro-di-cuori-2"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Enrico Vitale",
+          "description": "Intermediario elegante e calcolatore della galleria «Arte del Sole». Scopre Alessio e Laura a Malaga e propone loro il colpo del violino d’oro."
+        }
+      }
+    },
+    {
+      "id": "don-salvatore",
+      "name": "Don Salvatore",
+      "langs": [
+        "it"
+      ],
+      "role": "Jefe mafioso y coleccionista, dueño del violín de oro.",
+      "novels": [
+        "ladro-di-cuori-2"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Don Salvatore",
+          "description": "Salvatore Ricci, boss mafioso e collezionista d’arte, proprietario del violino d’oro. Potente, autoritario e spietato."
+        }
+      }
+    },
+    {
+      "id": "roberto-autista",
+      "name": "Roberto (chófer)",
+      "langs": [
+        "it"
+      ],
+      "role": "Asistente fiel de Enrico.",
+      "novels": [
+        "ladro-di-cuori-2"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Roberto",
+          "description": "Fedele assistente di Enrico, magro e con gli occhiali da sole anche di notte. Guida la fuga per le strade di Malaga."
+        }
+      }
+    },
+    {
+      "id": "irina",
+      "name": "Irina",
+      "langs": [
+        "it"
+      ],
+      "role": "Psicóloga que entra en los sueños.",
+      "novels": [
+        "la-macchina-dei-sogni"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Irina",
+          "description": "Psicologa che sogna lo stesso incubo di una paziente. Con la macchina di Pietro entra nei sogni e lotta per chiudere la porta tra il mondo dei sogni e quello reale."
+        }
+      }
+    },
+    {
+      "id": "pietro",
+      "name": "Pietro",
+      "langs": [
+        "it"
+      ],
+      "role": "Investigador que construyó la máquina de los sueños.",
+      "novels": [
+        "la-macchina-dei-sogni"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Pietro",
+          "description": "Ricercatore che studia i sogni e ha costruito una macchina per entrarci restando coscienti."
+        }
+      }
+    },
+    {
+      "id": "marina-sogni",
+      "name": "Marina (sueños)",
+      "langs": [
+        "it"
+      ],
+      "role": "Amiga de Irina atrapada en el tablero de ajedrez de los sueños.",
+      "novels": [
+        "la-macchina-dei-sogni"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Marina",
+          "description": "Amica di Irina: nel sogno è una pedina bloccata su una scacchiera vivente. Nella realtà la sostiene e la avverte dei pericoli."
+        }
+      }
+    },
+    {
+      "id": "clara",
+      "name": "Clara",
+      "langs": [
+        "it"
+      ],
+      "role": "Paciente de Irina que sueña con los cuatro jinetes.",
+      "novels": [
+        "la-macchina-dei-sogni"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Clara",
+          "description": "Paziente di Irina, vedova, che sogna il marito come un tiranno e i quattro cavalieri dell’apocalisse."
+        }
+      }
+    },
+    {
+      "id": "kennet",
+      "name": "Kennet",
+      "langs": [
+        "it",
+        "tr"
+      ],
+      "role": "Fugitivo de la Central que se une a Utopía.",
+      "novels": [
+        "presentimento",
+        "predchuvstvie",
+        "predchuvstvie-2",
+        "col-gulu"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Kennet",
+          "description": "Fuggito dalla Centrale, viene salvato da Robert e diventa uno dei primi compagni di Utopia: la sua vista è la migliore della fortezza. È innamorato di Oxana."
+        },
+        "tr": {
+          "name": "Kennet",
+          "description": "Kumun içinde yarı gömülü, susuzluktan ölmek üzereyken Robert'in bulduğu iri, dolap gibi geniş omuzlu adam. Kalenin en güçlü savunucusu olur ve baharın ilk günü Saşa ile evlenir."
+        }
+      }
+    },
+    {
+      "id": "oxana-utopia",
+      "name": "Oxana (Utopía)",
+      "langs": [
+        "it",
+        "tr"
+      ],
+      "role": "Habitante de Utopía entre Kennet y Robert.",
+      "novels": [
+        "presentimento",
+        "predchuvstvie",
+        "predchuvstvie-2",
+        "col-gulu"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Oxana",
+          "description": "Donna dalla bellezza sorprendente e dagli occhi color marrone caldo. Gentile e comprensiva, è contesa tra Kennet e Robert."
+        },
+        "tr": {
+          "name": "Oksana",
+          "description": "Kaleye şarkılarıyla gelen şarkıcı. Akşamları kuzey kulesinde Kennet'ten takımyıldızları dinler; sonunda «Sen Benim Kalemsin» şarkısını ithaf edebileceği birini, Tomás'ı bulur."
+        }
+      }
+    },
+    {
+      "id": "dima-utopia",
+      "name": "Dima (Utopía)",
+      "langs": [
+        "it",
+        "pl"
+      ],
+      "role": "Programador de Utopía.",
+      "novels": [
+        "presentimento",
+        "predchuvstvie",
+        "predchuvstvie-2",
+        "przeczucie"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Dima",
+          "description": "Amico di Luis e programmatore: riattiva Internet, pilota i droni e mimetizza la fortezza."
+        },
+        "pl": {
+          "name": "Dima",
+          "description": "Ekspert od techniki. W ziemiance pełnej kabli, akumulatorów i starych komputerów potrafi złapać każdą częstotliwość. W Naszej Utopii stawia panele słoneczne, puszcza drony i podsłuchuje radio Dzikich."
+        }
+      }
+    },
+    {
+      "id": "natalia-cardiologa",
+      "name": "Natalia (esposa de Robert)",
+      "langs": [
+        "it"
+      ],
+      "role": "Cardióloga, esposa de Robert, que reaparece al final.",
+      "novels": [
+        "presentimento"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Natalia (moglie di Robert)",
+          "description": "Cardiologa e moglie di Robert, partita per curare i soldati durante la guerra. Riappare alla fine alla guida dei ribelli, ma sceglie una missione più grande."
+        }
+      }
+    },
+    {
+      "id": "alessio-necropoli",
+      "name": "Alessio (Necrópolis)",
+      "langs": [
+        "it"
+      ],
+      "role": "Prisionero escapado de Necrópolis.",
+      "novels": [
+        "presentimento"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Alessio",
+          "description": "Ex prigioniero di Necropoli, la città sotterranea, costretto a costruire una piattaforma missilistica. Rivela a Utopia i piani del nemico."
+        }
+      }
+    },
+    {
+      "id": "fabio",
+      "name": "Fabio",
+      "langs": [
+        "it"
+      ],
+      "role": "Portero de los Leones.",
+      "novels": [
+        "la-squadra-invincibile"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Fabio",
+          "description": "Portiere orgoglioso dei Leoni. Dopo la sconfitta 5-1 contro le Aquile vuole scoprire il loro segreto e finisce in un gioco molto più grande."
+        }
+      }
+    },
+    {
+      "id": "stella",
+      "name": "Stella",
+      "langs": [
+        "it"
+      ],
+      "role": "Hermana de Fabio infiltrada en las Águilas.",
+      "novels": [
+        "la-squadra-invincibile"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Stella",
+          "description": "Sorella di Fabio, che si infiltra tra le ragazze delle Aquile e si ritrova divisa tra le due squadre."
+        }
+      }
+    },
+    {
+      "id": "maria-aquile",
+      "name": "María (Águilas)",
+      "langs": [
+        "it"
+      ],
+      "role": "Delantera y capitana de las Águilas.",
+      "novels": [
+        "la-squadra-invincibile"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Maria",
+          "description": "Attaccante e capitana delle Aquile: per lei il segreto non è la forza, ma la squadra. Rivale di Fabio, poi sua alleata."
+        }
+      }
+    },
+    {
+      "id": "carla",
+      "name": "Carla",
+      "langs": [
+        "it"
+      ],
+      "role": "Exnovia de Fabio.",
+      "novels": [
+        "la-squadra-invincibile"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Carla",
+          "description": "Ex ragazza di Fabio, che la allena insieme ad altre ragazze per battere le Aquile."
+        }
+      }
+    },
+    {
+      "id": "francesca",
+      "name": "Francesca",
+      "langs": [
+        "it"
+      ],
+      "role": "Novia de Fabio que cambia de equipo.",
+      "novels": [
+        "la-squadra-invincibile"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Francesca",
+          "description": "Ragazza di Fabio che passa alla squadra avversaria e si allea con Maria per vendicarsi."
+        }
+      }
+    },
+    {
+      "id": "vanessa",
+      "name": "Vanessa",
+      "langs": [
+        "it"
+      ],
+      "role": "Estratega y mentirosa al servicio del «Consejo».",
+      "novels": [
+        "la-squadra-invincibile"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Vanessa",
+          "description": "Bugiarda professionista e stratega legata al «Consiglio», l’organizzazione che trucca le partite. Vuole Fabio come futuro marito."
+        }
+      }
+    },
+    {
+      "id": "enrico-polizia",
+      "name": "Enrico (policía del fútbol)",
+      "langs": [
+        "it"
+      ],
+      "role": "Agente de la Policía del Fútbol.",
+      "novels": [
+        "la-squadra-invincibile"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Enrico",
+          "description": "Agente della Polizia Calcistica ed ex contabile: chiede aiuto alle squadre per smascherare Vanessa e il Consiglio."
+        }
+      }
+    },
+    {
+      "id": "antonio-roma",
+      "name": "Antonio",
+      "langs": [
+        "it"
+      ],
+      "role": "Pizzero de Trastevere acusado del robo del Cáliz de Oro.",
+      "novels": [
+        "antonio-e-il-segreto-di-roma"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Antonio",
+          "description": "Pizzaiolo di 28 anni di Trastevere. Per conquistare Larissa le promette tutti i segreti di Roma, ma quando sparisce il Calice d’Oro dei Papi la polizia cerca proprio lui."
+        }
+      }
+    },
+    {
+      "id": "larissa",
+      "name": "Larissa",
+      "langs": [
+        "it"
+      ],
+      "role": "Joven rusa y culta que esconde una identidad secreta.",
+      "novels": [
+        "antonio-e-il-segreto-di-roma"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Larissa",
+          "description": "Ragazza russa bella e colta che Antonio incontra ai Musei Vaticani. In realtà è Elena Ferri, ladra detta «il Camaleonte», che cambia sempre nome, capelli e nazionalità."
+        }
+      }
+    },
+    {
+      "id": "matteo-roma",
+      "name": "Matteo (Roma)",
+      "langs": [
+        "it"
+      ],
+      "role": "Amigo informático de Antonio.",
+      "novels": [
+        "antonio-e-il-segreto-di-roma"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Matteo",
+          "description": "Vecchio amico di Antonio, genio dei computer con un appartamento pieno di cavi e un gatto nero di nome Bit. Lo aiuta a dimostrare la sua innocenza."
+        }
+      }
+    },
+    {
+      "id": "paolo-roma",
+      "name": "Paolo",
+      "langs": [
+        "it"
+      ],
+      "role": "Primo de Antonio, vigilante de los Museos Vaticanos.",
+      "novels": [
+        "antonio-e-il-segreto-di-roma"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Paolo",
+          "description": "Cugino di Antonio e guardia dei Musei Vaticani: un uomo grande e simpatico in divisa blu."
+        }
+      }
+    },
+    {
+      "id": "sofia-roma",
+      "name": "Sofía (Roma)",
+      "langs": [
+        "it"
+      ],
+      "role": "Estudiante de historia del arte y guía del museo.",
+      "novels": [
+        "antonio-e-il-segreto-di-roma"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Sofia",
+          "description": "Studentessa di storia dell’arte di 25 anni che il sabato fa la guida ai Musei Vaticani. Figlia del commissario Rinaldi, è il nuovo amore di Antonio."
+        }
+      }
+    },
+    {
+      "id": "rinaldi",
+      "name": "Comisario Rinaldi",
+      "langs": [
+        "it"
+      ],
+      "role": "Comisario de la policía de Roma.",
+      "novels": [
+        "antonio-e-il-segreto-di-roma"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Il commissario Rinaldi",
+          "description": "Commissario della polizia di Roma, con baffi e impermeabile grigio. Arresta il Camaleonte ed è il padre di Sofia."
+        }
+      }
+    },
+    {
+      "id": "giulia-trucco",
+      "name": "Giulia (maquilladora)",
+      "langs": [
+        "it"
+      ],
+      "role": "Maquilladora de teatro que disfraza a Antonio.",
+      "novels": [
+        "antonio-e-il-segreto-di-roma"
+      ],
+      "localizations": {
+        "it": {
+          "name": "Giulia",
+          "description": "Amica di Matteo che fa il trucco agli attori in un teatro: trasforma Antonio in un anziano collezionista."
+        }
+      }
+    },
+    {
+      "id": "alex-future",
+      "name": "Alex",
+      "langs": [
+        "en"
+      ],
+      "role": "Joven del Moscú de 3024 que viaja en el tiempo a 2024 en busca del amor.",
+      "novels": [
+        "a-man-from-the-future"
+      ],
+      "localizations": {
+        "en": {
+          "name": "Alex",
+          "description": "A 29-year-old computer repairman from Moscow in 3024, a lonely world where all the women disappeared twenty years ago. He finds an old red time machine, travels to Moscow in 2024 and falls in love with Olga."
+        }
+      }
+    },
+    {
+      "id": "olga-future",
+      "name": "Olga",
+      "langs": [
+        "en"
+      ],
+      "role": "Joven que trabaja en el café de su tía y se enamora de Alex.",
+      "novels": [
+        "a-man-from-the-future"
+      ],
+      "localizations": {
+        "en": {
+          "name": "Olga",
+          "description": "A young woman who works in her aunt Nina’s café and draws when it is quiet. She helps Alex in 2024, secretly travels to his future and meets herself on the way back. In the end she chooses to build a life with Alex in her own time."
+        }
+      }
+    },
+    {
+      "id": "nina-future",
+      "name": "Nina",
+      "langs": [
+        "en"
+      ],
+      "role": "Tía de Olga, dueña del café.",
+      "novels": [
+        "a-man-from-the-future"
+      ],
+      "localizations": {
+        "en": {
+          "name": "Nina",
+          "description": "Olga’s aunt, who owns the café where Alex first meets Olga. She asks Alex to repair her computer and pays him for the work."
+        }
+      }
+    },
+    {
+      "id": "svetlana-future",
+      "name": "Svetlana",
+      "langs": [
+        "en"
+      ],
+      "role": "Mujer a la que Alex aborda torpemente en 2024.",
+      "novels": [
+        "a-man-from-the-future"
+      ],
+      "localizations": {
+        "en": {
+          "name": "Svetlana",
+          "description": "A young woman Alex approaches outside a bookshop on his first day in 2024. He asks her to leave her whole life behind for him, and she tells him to stop following her."
+        }
+      }
+    },
+    {
+      "id": "pavel-future",
+      "name": "Pavel",
+      "langs": [
+        "en"
+      ],
+      "role": "Colega de Alex en 3024.",
+      "novels": [
+        "a-man-from-the-future"
+      ],
+      "localizations": {
+        "en": {
+          "name": "Pavel",
+          "description": "Alex’s colleague in 3024. He is the first man to see Olga when she arrives from the past, and he promises to tell everyone at work that Alex is alive."
+        }
+      }
+    },
+    {
+      "id": "frank-stevenson",
+      "name": "Frank Stevenson",
+      "langs": [
+        "en"
+      ],
+      "role": "Detective privado que busca al asesino de su hermano en citas online.",
+      "novels": [
+        "the-date"
+      ],
+      "localizations": {
+        "en": {
+          "name": "Frank Stevenson",
+          "description": "A private detective who believes a woman killed his brother Tom two years ago. He creates a fake dating profile as “Mark” and goes on one strange date after another to find the killer."
+        }
+      }
+    },
+    {
+      "id": "tom-stevenson",
+      "name": "Tom Stevenson",
+      "langs": [
+        "en"
+      ],
+      "role": "Hermano de Frank, desaparecido tras una cita.",
+      "novels": [
+        "the-date"
+      ],
+      "localizations": {
+        "en": {
+          "name": "Tom Stevenson",
+          "description": "Frank’s brother, who went on an online date and never came back. The truth is stranger than murder: Tom wanted to be an actor and staged the whole story with his actress friends."
+        }
+      }
+    },
+    {
+      "id": "clara-date",
+      "name": "Clara (The Date)",
+      "langs": [
+        "en"
+      ],
+      "role": "Primera cita de Frank, que pregunta demasiado.",
+      "novels": [
+        "the-date"
+      ],
+      "localizations": {
+        "en": {
+          "name": "Clara",
+          "description": "Frank’s first date: beautiful, with long black hair and red lips. She likes expensive wine and asks too many questions about money and dogs."
+        }
+      }
+    },
+    {
+      "id": "veronica-date",
+      "name": "Veronica",
+      "langs": [
+        "en"
+      ],
+      "role": "Cita excéntrica a la que le gustan los insectos muertos.",
+      "novels": [
+        "the-date"
+      ],
+      "localizations": {
+        "en": {
+          "name": "Veronica",
+          "description": "A strange woman with a strange profile who loves dead bugs and crazy games. When “Mark” tries to leave, she screams “Nobody rejects me!” and chases him."
+        }
+      }
+    },
+    {
+      "id": "nadia-date",
+      "name": "Nadia",
+      "langs": [
+        "en"
+      ],
+      "role": "Cita misteriosa que besa a Frank y huye.",
+      "novels": [
+        "the-date"
+      ],
+      "localizations": {
+        "en": {
+          "name": "Nadia",
+          "description": "A woman with short blonde hair who writes to “Mark” first. Her story sounds like Tom’s, she thinks a man should be quiet and handsome, and she kisses Frank and runs away."
+        }
+      }
+    },
+    {
+      "id": "susan-date",
+      "name": "Susan",
+      "langs": [
+        "en"
+      ],
+      "role": "Cita que no para de hablar de sus exnovios.",
+      "novels": [
+        "the-date"
+      ],
+      "localizations": {
+        "en": {
+          "name": "Susan",
+          "description": "A talker with a very normal profile who loves sunsets, pizza and her cat, Mr. Snuffles, and never stops talking about her ex-boyfriends. At the end she comes to apologise and helps Frank and Tom make peace."
+        }
+      }
+    },
+    {
+      "id": "rosa-date",
+      "name": "Rosa",
+      "langs": [
+        "en"
+      ],
+      "role": "Abogada con un contrato de reglas para citas.",
+      "novels": [
+        "the-date"
+      ],
+      "localizations": {
+        "en": {
+          "name": "Rosa",
+          "description": "A smart lawyer who writes everything in a small notebook. She brings a contract that says “Mark” broke the rules of dating."
+        }
+      }
+    },
+    {
+      "id": "vanessa-date",
+      "name": "Vanessa (The Date)",
+      "langs": [
+        "en"
+      ],
+      "role": "Violinista que ata a Frank a una silla.",
+      "novels": [
+        "the-date"
+      ],
+      "localizations": {
+        "en": {
+          "name": "Vanessa",
+          "description": "A violin player with long white hair and a smile that is too big. She lives in a big old house, plays scary music and ties “Mark” to a chair — “for the drama”."
+        }
+      }
+    },
+    {
+      "id": "charles-immigrant",
+      "name": "Charles",
+      "langs": [
+        "en"
+      ],
+      "role": "Inmigrante que llega a Sinea sin dinero ni papeles y acaba siendo alcalde.",
+      "novels": [
+        "the-immigrant"
+      ],
+      "localizations": {
+        "en": {
+          "name": "Charles",
+          "description": "An immigrant who arrives in Sinea by ship with a small bag, no money and no papers. He finds the stolen turquoise diamond, gives it back, and becomes the honest new Mayor of Sinea."
+        }
+      }
+    },
+    {
+      "id": "anna-immigrant",
+      "name": "Anna",
+      "langs": [
+        "en"
+      ],
+      "role": "Maestra que ayuda a Charles.",
+      "novels": [
+        "the-immigrant"
+      ],
+      "localizations": {
+        "en": {
+          "name": "Anna",
+          "description": "A kind teacher who listens to Charles and helps him return the diamond. When her father has Charles arrested, she helps him escape and convinces him to run for Mayor."
+        }
+      }
+    },
+    {
+      "id": "martin-mayor",
+      "name": "Martin",
+      "langs": [
+        "en"
+      ],
+      "role": "Alcalde corrupto de Sinea, padre de Anna.",
+      "novels": [
+        "the-immigrant"
+      ],
+      "localizations": {
+        "en": {
+          "name": "Martin",
+          "description": "The Mayor of Sinea and Anna’s father. In Charles’s country he ran an illegal diamond business with slaves; in Sinea he blames immigrants for everything and loses the election to Charles."
+        }
+      }
+    },
+    {
+      "id": "leo-hacker",
+      "name": "Leo",
+      "langs": [
+        "en"
+      ],
+      "role": "Hacker amigo de Anna.",
+      "novels": [
+        "the-immigrant"
+      ],
+      "localizations": {
+        "en": {
+          "name": "Leo",
+          "description": "Anna’s friend, a hacker with a room full of computers. Click, click, click: he fixes Charles’s papers so he can be a candidate for Mayor."
+        }
+      }
+    },
+    {
+      "id": "sergio-fader",
+      "name": "Sergio (El misterio de los Fader)",
+      "langs": [
+        "es"
+      ],
+      "role": "Padre de Luis, en Mendoza.",
+      "novels": [
+        "tajna-semi-fader",
+        "el-misterio-de-los-fader",
+        "operacion-londres"
+      ],
+      "localizations": {
+        "es": {
+          "name": "Sergio",
+          "description": "Padre de Luis, vive en Mendoza. Recibe a su hijo y a Natalia entre los viñedos y guarda parte del secreto de la familia Fader."
+        }
+      }
+    },
+    {
+      "id": "sergio-dikij",
+      "name": "Sergio (La hora salvaje)",
+      "langs": [
+        "sr"
+      ],
+      "role": "Padre de Luis de La hora salvaje, en Mendoza.",
+      "novels": [
+        "dikij-chas-2",
+        "divlji-chas-malbec"
+      ],
+      "localizations": {
+        "sr": {
+          "name": "Серхио",
+          "description": "Луисов отац из Мендозе. Дочекује сина и Наташу када се у виноградима пробуде духови планина."
+        }
+      }
+    },
+    {
+      "id": "natalia-fader",
+      "name": "Natalia (El misterio de los Fader)",
+      "langs": [
+        "es"
+      ],
+      "role": "Pareja de Luis en El misterio de los Fader.",
+      "novels": [
+        "tajna-semi-fader",
+        "el-misterio-de-los-fader",
+        "operacion-londres"
+      ],
+      "localizations": {
+        "es": {
+          "name": "Natalia",
+          "description": "Moscovita que acompaña a Luis de Moscú a Mendoza y lo ayuda a resolver el misterio de los Fader. En «Operación Londres» sabe que el tiempo corre solo para ella y decide el destino del elixir."
+        }
+      }
+    },
+    {
+      "id": "natalia-conspiracion",
+      "name": "Natalia (La gran conspiración)",
+      "langs": [
+        "es"
+      ],
+      "role": "Cardióloga moscovita.",
+      "novels": [
+        "la-gran-conspiracion"
+      ],
+      "localizations": {
+        "es": {
+          "name": "Natalia",
+          "description": "Cardióloga moscovita pelirroja a la que ya casi nada sorprende, hasta que el mismo día recibe mensajes de dos argentinos: Luis, un artista, y Roberto, un seductor."
+        }
+      }
+    },
+    {
+      "id": "natalia-pt",
+      "name": "Natalia (Do outro lado do mundo)",
+      "langs": [
+        "pt"
+      ],
+      "role": "Joven rusa que conversa con Luiz por internet.",
+      "novels": [
+        "do-outro-lado-do-mundo"
+      ],
+      "localizations": {
+        "pt": {
+          "name": "Natalia",
+          "description": "Mora do outro lado do mundo, na Rússia, e conversa com Luiz pela internet. Por ela, Luiz atravessa meio planeta."
+        }
+      }
+    },
+    {
+      "id": "martin-utopia",
+      "name": "Martín (Utopía)",
+      "langs": [
+        "tr"
+      ],
+      "role": "Miembro de Utopía que acaba expulsado.",
+      "novels": [
+        "predchuvstvie",
+        "col-gulu"
+      ],
+      "localizations": {
+        "tr": {
+          "name": "Martin",
+          "description": "Dövüş sanatlarında usta, çabuk karar veren ama çabuk da öfkelenen eski asker. Vahşileri hor görür, gizlice Nekroloji ile anlaşır ve kalenin kapılarını düşmana açmaya çalışır."
+        }
+      }
+    },
+    {
+      "id": "zhenya",
+      "name": "Zhenia",
+      "langs": [
+        "tr"
+      ],
+      "role": "Intrigante que divide Utopía.",
+      "novels": [
+        "predchuvstvie",
+        "col-gulu"
+      ],
+      "localizations": {
+        "tr": {
+          "name": "Jeni",
+          "description": "Kısa siyah saçlı, keskin hatlı, her konuşmayı kendi lehine çevirmeyi bilen kadın. Robert'e karşı entrika çevirir; ihanetinden sonra bir haftalık su ve yiyecekle kaleden çıkarılır."
+        }
+      }
+    },
+    {
+      "id": "masha-utopia",
+      "name": "Masha",
+      "langs": [
+        "pl"
+      ],
+      "role": "Compañera de Dima.",
+      "novels": [
+        "predchuvstvie",
+        "przeczucie"
+      ],
+      "localizations": {
+        "pl": {
+          "name": "Maria",
+          "description": "Drobna, ciemnowłosa i nieufna. Widziała już trzy utopie, które skończyły się źle. Mieszka z Dimą w ziemiance pod Zakopanem i przyjeżdża do Czorsztyna „na tydzień, na próbę”."
+        }
+      }
+    },
+    {
+      "id": "samuel",
+      "name": "Samuel",
+      "langs": [
+        "pl",
+        "tr"
+      ],
+      "role": "Líder de los salvajes.",
+      "novels": [
+        "predchuvstvie",
+        "przeczucie",
+        "col-gulu"
+      ],
+      "localizations": {
+        "pl": {
+          "name": "Samuel",
+          "description": "Przywódca Dzikich. Na jego ciężarówce jest namalowany biały wilk. Chce zabrać Naszą Utopię — i wiolonczelistkę."
+        },
+        "tr": {
+          "name": "Samuel",
+          "description": "Runik işaretli, kas yığını gibi iri vahşilerin lideri. Kanyonda Robert'e saldırır, ama Rosa'nın kurşunuyla yaralanıp kaçar."
+        }
+      }
+    },
+    {
+      "id": "rosa",
+      "name": "Rosa",
+      "langs": [
+        "tr"
+      ],
+      "role": "Líder de los rebeldes del cañón y amor de Robert en Çöl Gülü.",
+      "novels": [
+        "col-gulu"
+      ],
+      "localizations": {
+        "tr": {
+          "name": "Rosa",
+          "description": "Kanyondaki asilerin lideri; rüzgârda uçuşan örgüsüyle atının üzerinde Robert'i vahşilerden kurtarır. Nekroloji'nin yeraltı cennetinden kaçan işçilerin yanında savaşır, Robert ile birlikte turkuaz kaleyi kurar. Aşkın inşa edilmediğine, çöl gülü gibi kendiliğinden açtığına inanır."
+        }
+      }
+    },
+    {
+      "id": "anselmo",
+      "name": "Anselmo",
+      "langs": [
+        "tr"
+      ],
+      "role": "Veterinario anciano de la comunidad.",
+      "novels": [
+        "col-gulu"
+      ],
+      "localizations": {
+        "tr": {
+          "name": "Anselmo",
+          "description": "Kanyondaki toplumun yaşlı veterineri. Seraları yönetir, uyku ilacıyla kaleyi kurtarma planına katılır ve Kennet ile Saşa'nın nikâhını kıyar: «Ben bir veterinerim, ama insanlar da hayvandır.»"
+        }
+      }
+    },
+    {
+      "id": "tomas",
+      "name": "Tomás",
+      "langs": [
+        "tr"
+      ],
+      "role": "Rebelde valiente que acaba con Oksana.",
+      "novels": [
+        "col-gulu"
+      ],
+      "localizations": {
+        "tr": {
+          "name": "Tomás",
+          "description": "Rosa'nın asilerinden cesur bir adam. Kanlar içinde, elinde bir tırpanla üç vahşiye karşı tek başına direnir; kaleyi kurtarmak için insanları kapı kapı dolaşıp meydana çağırır. Sonunda Oksana'nın kalbini kazanır."
+        }
+      }
+    },
+    {
+      "id": "juan-salvaje",
+      "name": "Juan",
+      "langs": [
+        "tr"
+      ],
+      "role": "Jefe de los salvajes tras Samuel, aliado de Necrología.",
+      "novels": [
+        "col-gulu"
+      ],
+      "localizations": {
+        "tr": {
+          "name": "Juan",
+          "description": "Kemik kolyeli vahşi şef. Samuel'den sonra vahşileri sarı yılan bayrağı altında toplar, Nekroloji ile ittifak kurar ve dev bir orduyla kaleye saldırır; yenilince bir avuç adamıyla gecenin içinde kaybolur."
+        }
+      }
     }
-   }
-  },
-  {
-   "id": "rosa",
-   "name": "Rosa",
-   "langs": [
-    "tr"
-   ],
-   "role": "Líder de los rebeldes del cañón y amor de Robert en Çöl Gülü.",
-   "novels": [
-    "col-gulu"
-   ],
-   "localizations": {
-    "tr": {
-     "name": "Rosa",
-     "description": "Kanyondaki asilerin lideri; rüzgârda uçuşan örgüsüyle atının üzerinde Robert'i vahşilerden kurtarır. Nekroloji'nin yeraltı cennetinden kaçan işçilerin yanında savaşır, Robert ile birlikte turkuaz kaleyi kurar. Aşkın inşa edilmediğine, çöl gülü gibi kendiliğinden açtığına inanır."
-    }
-   }
-  },
-  {
-   "id": "anselmo",
-   "name": "Anselmo",
-   "langs": [
-    "tr"
-   ],
-   "role": "Veterinario anciano de la comunidad.",
-   "novels": [
-    "col-gulu"
-   ],
-   "localizations": {
-    "tr": {
-     "name": "Anselmo",
-     "description": "Kanyondaki toplumun yaşlı veterineri. Seraları yönetir, uyku ilacıyla kaleyi kurtarma planına katılır ve Kennet ile Saşa'nın nikâhını kıyar: «Ben bir veterinerim, ama insanlar da hayvandır.»"
-    }
-   }
-  },
-  {
-   "id": "tomas",
-   "name": "Tomás",
-   "langs": [
-    "tr"
-   ],
-   "role": "Rebelde valiente que acaba con Oksana.",
-   "novels": [
-    "col-gulu"
-   ],
-   "localizations": {
-    "tr": {
-     "name": "Tomás",
-     "description": "Rosa'nın asilerinden cesur bir adam. Kanlar içinde, elinde bir tırpanla üç vahşiye karşı tek başına direnir; kaleyi kurtarmak için insanları kapı kapı dolaşıp meydana çağırır. Sonunda Oksana'nın kalbini kazanır."
-    }
-   }
-  },
-  {
-   "id": "juan-salvaje",
-   "name": "Juan",
-   "langs": [
-    "tr"
-   ],
-   "role": "Jefe de los salvajes tras Samuel, aliado de Necrología.",
-   "novels": [
-    "col-gulu"
-   ],
-   "localizations": {
-    "tr": {
-     "name": "Juan",
-     "description": "Kemik kolyeli vahşi şef. Samuel'den sonra vahşileri sarı yılan bayrağı altında toplar, Nekroloji ile ittifak kurar ve dev bir orduyla kaleye saldırır; yenilince bir avuç adamıyla gecenin içinde kaybolur."
-    }
-   }
-  }
- ]
+  ]
 }
