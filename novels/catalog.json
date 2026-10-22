@@ -4107,6 +4107,58 @@
         }
       ],
       "cover": "novels/przeczucie/cover.jpg"
+    },
+    {
+      "slug": "lux-pacis",
+      "lang": "la",
+      "title": "Lux Pacis",
+      "author": "Robert Fader",
+      "genre": "Fabula investigatoria · Amor · Mysterium",
+      "year": 2026,
+      "wip": false,
+      "description": "Marcus, investigator honestus, furtum reliquiae pretiosae in Vaticano investigat. Alicia, femina quam amat, semper cum eo est. Sed veritas terribilis apparet: Alicia ipsa rem abstulit. Marcus inter officium et amorem eligere debet. Ambo fugiunt et divites fiunt, sed mendacium pacem eis aufert.",
+      "chapters": [
+        {
+          "file": "01.md",
+          "title": "Furtum in Vaticano"
+        },
+        {
+          "file": "02.md",
+          "title": "Clavis et Umbra"
+        },
+        {
+          "file": "03.md",
+          "title": "Testis Nocturnus"
+        },
+        {
+          "file": "04.md",
+          "title": "Vir Falso Accusatus"
+        },
+        {
+          "file": "05.md",
+          "title": "Signum in Libro"
+        },
+        {
+          "file": "06.md",
+          "title": "Arca Clausa"
+        },
+        {
+          "file": "07.md",
+          "title": "Veritas Proxima"
+        },
+        {
+          "file": "08.md",
+          "title": "Confessio Alicia"
+        },
+        {
+          "file": "09.md",
+          "title": "Fuga"
+        },
+        {
+          "file": "10.md",
+          "title": "Lux et Mendacium"
+        }
+      ]
     }
   ],
   "series": [
