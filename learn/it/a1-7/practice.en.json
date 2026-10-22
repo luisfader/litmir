@@ -1,1 +1,286 @@
-LITMIR-ENC1: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
+{
+ "title": "Voglio trovare Alice",
+ "subtitle": "Volere, potere, dovere, sapere or conoscere, venire and uscire.",
+ "speak": "it-IT",
+ "hero": "novels/il-treno-fantasma/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 8 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "volere",
+     "to want"
+    ],
+    [
+     "potere",
+     "can, to be able"
+    ],
+    [
+     "dovere",
+     "must, to have to"
+    ],
+    [
+     "uscire",
+     "to go out"
+    ],
+    [
+     "venire",
+     "to come"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Marco",
+   "after": "trovare Alice.",
+   "options": [
+    "vuole",
+    "voglio",
+    "vogliono"
+   ],
+   "answer": 0,
+   "es": "Marco wants to find Alice."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Mi",
+   "after": "aiutare?",
+   "options": [
+    "può",
+    "posso",
+    "puoi"
+   ],
+   "answer": 0,
+   "es": "Can you (formal) help me?",
+   "why": "Lei (formal you) takes the 3rd person: può."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Noi",
+   "after": "partire alle otto.",
+   "options": [
+    "dobbiamo",
+    "dovete",
+    "devono"
+   ],
+   "answer": 0,
+   "es": "We have to leave at eight."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Tu",
+   "after": "venire con me?",
+   "options": [
+    "vuoi",
+    "vuole",
+    "volete"
+   ],
+   "answer": 0,
+   "es": "Do you want to come with me?"
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Non posso.",
+   "options": [
+    "I can’t.",
+    "I don’t want to.",
+    "I don’t know."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Non",
+   "after": "dove si ferma il treno.",
+   "options": [
+    "so",
+    "conosco",
+    "sono"
+   ],
+   "answer": 0,
+   "es": "I don’t know where the train stops.",
+   "why": "A fact → sapere."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "",
+   "after": "questa ragazza?",
+   "options": [
+    "Conosci",
+    "Sai",
+    "Sei"
+   ],
+   "answer": 0,
+   "es": "Do you know this girl?",
+   "why": "A person → conoscere."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Sai nuotare?",
+   "options": [
+    "Can you swim?",
+    "Do you want to swim?",
+    "Do you have to swim?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "I come from Naples.",
+   "options": [
+    "Vengo da Napoli.",
+    "Vieni da Napoli.",
+    "Esco da Napoli."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Stasera io",
+   "after": "con gli amici.",
+   "options": [
+    "esco",
+    "usco",
+    "esce"
+   ],
+   "answer": 0,
+   "es": "Tonight I’m going out with friends."
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "I have to find Alice.",
+   "answer": [
+    "Devo",
+    "trovare",
+    "Alice"
+   ],
+   "extra": [
+    "voglio",
+    "conosco"
+   ]
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "I don’t say anything to anybody.",
+   "answer": [
+    "Non",
+    "dico",
+    "niente",
+    "a",
+    "nessuno"
+   ],
+   "extra": [
+    "so",
+    "mai"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Dove si ferma il treno fantasma?",
+   "es": "Where does the ghost train stop?",
+   "options": [
+    "Alla vecchia stazione, a mezzanotte.",
+    "Davanti alla casa di Marco.",
+    "A Napoli, la mattina."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Franco conosce Alice.",
+   "answer": false,
+   "why": "«No, non la conosco», says Franco."
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Marco deve essere alla stazione alle undici e mezza.",
+   "answer": true,
+   "why": "Franco: «deve essere lì alle undici e mezza»."
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "May I come in?",
+   "answers": [
+    "Posso entrare?",
+    "Posso entrare"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "I know Franco.",
+   "answers": [
+    "Conosco Franco",
+    "Conosco Franco.",
+    "Io conosco Franco",
+    "Io conosco Franco."
+   ]
+  }
+ ],
+ "keyboard": [
+  "à",
+  "è",
+  "é",
+  "ì",
+  "ò",
+  "ù"
+ ]
+}

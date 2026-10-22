@@ -1,1 +1,285 @@
-LITMIR-ENC1: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
+{
+ "title": "Musíme najít Janu!",
+ "subtitle": "Chtít, moct, muset, umět, vědět or znát.",
+ "speak": "cs-CZ",
+ "hero": "novels/podzemni-tajemstvi/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "chtít",
+     "to want"
+    ],
+    [
+     "moct",
+     "can, to be able"
+    ],
+    [
+     "muset",
+     "must"
+    ],
+    [
+     "umět",
+     "to know how"
+    ],
+    [
+     "vědět",
+     "to know (a fact)"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Luis",
+   "after": "hrát v podzemí.",
+   "options": [
+    "chce",
+    "chci",
+    "chtějí"
+   ],
+   "answer": 0,
+   "es": "Luis wants to play in the underground."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Já",
+   "after": "kávu.",
+   "options": [
+    "chci",
+    "chce",
+    "chceš"
+   ],
+   "answer": 0,
+   "es": "I want a coffee."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "",
+   "after": "se zeptat?",
+   "options": [
+    "Můžu",
+    "Umím",
+    "Vím"
+   ],
+   "answer": 0,
+   "es": "May I ask?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "My",
+   "after": "najít Janu!",
+   "options": [
+    "musíme",
+    "musí",
+    "musím"
+   ],
+   "answer": 0,
+   "es": "We must find Jana!"
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Luis",
+   "after": "hrát na kytaru.",
+   "options": [
+    "umí",
+    "ví",
+    "zná"
+   ],
+   "answer": 0,
+   "es": "Luis can play the guitar.",
+   "why": "A skill → umět."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Nevím,",
+   "after": "je Jana.",
+   "options": [
+    "kde",
+    "kdo",
+    "kam"
+   ],
+   "answer": 0,
+   "es": "I don’t know where Jana is."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Lucie",
+   "after": "pražské podzemí.",
+   "options": [
+    "zná",
+    "ví",
+    "umí"
+   ],
+   "answer": 0,
+   "es": "Lucie knows the Prague underground.",
+   "why": "A place → znát."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Dnes",
+   "after": "pracovat — je neděle.",
+   "options": [
+    "nemusím",
+    "nesmím",
+    "nemůžu"
+   ],
+   "answer": 0,
+   "es": "I don’t have to work today — it’s Sunday."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Nemůžu jít s vámi.",
+   "options": [
+    "I can’t go with you.",
+    "I don’t want to go with you.",
+    "I can’t walk."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "I don’t know.",
+   "options": [
+    "Já nevím.",
+    "Já neznám.",
+    "Já neumím."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "Can you help us?",
+   "answer": [
+    "Můžeš",
+    "nám",
+    "pomoct?"
+   ],
+   "extra": [
+    "umíš",
+    "musí"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Kdo říká: «Vím, koho hledáš»?",
+   "es": "Who says: «I know who you’re looking for»?",
+   "options": [
+    "Luboš, strážce podzemí.",
+    "Princezna Ludmila.",
+    "Mark."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Co je v sešitu od Luboše?",
+   "es": "What is in Luboš’s notebook?",
+   "options": [
+    "Konec Luisovy melodie.",
+    "Mapa Prahy.",
+    "Recept na polévku."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Lucie říká Janě: «S tak krátkou sukní dolů nemůžeš.»",
+   "answer": true,
+   "why": "Lucie says it at the door to the underground."
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "I want to play.",
+   "answers": [
+    "Chci hrát",
+    "Chci hrát.",
+    "Já chci hrát"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "I can speak Czech.",
+   "answers": [
+    "Umím česky",
+    "Umím česky.",
+    "Já umím česky"
+   ]
+  }
+ ],
+ "keyboard": [
+  "á",
+  "č",
+  "ď",
+  "é",
+  "ě",
+  "í",
+  "ň",
+  "ó",
+  "ř",
+  "š",
+  "ť",
+  "ú",
+  "ů",
+  "ý",
+  "ž"
+ ]
+}

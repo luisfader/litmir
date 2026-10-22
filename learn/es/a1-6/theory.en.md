@@ -1,1 +1,97 @@
-LITMIR-ENC1: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
+## Dinner in Mendoza
+
+Luis and Natalia («El misterio de los Fader») have dinner with Sergio. Mendoza is the land of wine, asado and mate.
+
+> — Natalia, ¿**te gusta**{do you like} el vino de Mendoza?
+> — Sí, **me gusta mucho**{I like it a lot}. Y **me encantan**{I love} las **empanadas**{empanadas, pastries}.
+> — ¿Y **el mate**{mate}?
+> — Hmm… **no me gusta**{I don't like it}. Es muy **amargo**{bitter}. **Prefiero**{I prefer} el té.
+> — **A mí tampoco**{me neither} me gusta el mate sin azúcar — dice Sergio. — Pero a Luis **le encanta**{he loves it}.
+> — **¡A mí también!**{me too!} — **se ríe**{laughs} Natalia. — Me encanta Luis.
+
+## 1. The verb GUSTAR — "to like"
+
+*Gustar* literally means "to be pleasing". The thing you like is the **subject**, and the person is an indirect object: *me gusta el vino* = "wine is pleasing to me".
+
+| To whom? | | One thing / an action | Several things |
+|---|---|---|---|
+| (a mí) | I like | **me gusta** el vino | **me gustan** las empanadas |
+| (a ti) | you like | **te gusta** | **te gustan** |
+| (a él / ella / usted) | he / she likes, you like | **le gusta** | **le gustan** |
+| (a nosotros) | we like | **nos gusta** | **nos gustan** |
+| (a vosotros) | you all like | **os gusta** | **os gustan** |
+| (a ellos / ellas / ustedes) | they / you all like | **les gusta** | **les gustan** |
+
+- With one thing or a verb — **gusta**: *Me gusta **el** té. Me gusta **leer**.*
+- With several things — **gustan**: *Me gust**an** **los** libros.*
+- After *gustar* the noun takes **the article**: *me gusta **el** vino* (not *me gusta vino*).
+- To say who: ***A Luis** le gusta el mate. **A Natalia** le gusta el té.*
+
+**Encantar** — "to love, to like a lot" — works the same way: *Me encanta Mendoza.* Don't add *mucho* to it.
+
+## 2. Me too / me neither
+
+| Statement | Agree | Disagree |
+|---|---|---|
+| Me gusta el vino. 😊 | **A mí también.** — Me too. | **A mí no.** — I don't. |
+| No me gusta el mate. 😕 | **A mí tampoco.** — Me neither. | **A mí sí.** — I do. |
+
+## 3. Food and drink
+
+| Español | English | Español | English |
+|---|---|---|---|
+| el pan | bread | el agua | water |
+| la carne | meat | el café | coffee |
+| el pescado | fish | el té | tea |
+| el pollo | chicken | el vino (tinto, blanco) | (red, white) wine |
+| la fruta | fruit | la cerveza | beer |
+| la verdura | vegetables | el zumo / el jugo | juice |
+| el queso | cheese | la leche | milk |
+| el chocolate | chocolate | el azúcar | sugar |
+
+In Argentina: **el asado** — barbecued meat, **las empanadas** — savoury pastries, **el dulce de leche** — caramel spread, **el mate** — a herbal drink sipped from a gourd.
+
+## 4. At the restaurant
+
+- **¿Qué quieres comer?** — What do you want to eat?
+- **Quiero** carne, por favor. — I'd like meat, please.
+- **Para beber**, agua. — To drink, water.
+- **¡Qué rico!** — How delicious!
+- **La cuenta, por favor.** — The bill, please.
+
+*Quiero* comes from *querer* (to want). Its full conjugation is in unit 7.
+
+## Check yourself
+
+A Natalia le [[*gusta|gustan|gusto]] el vino.
+
+Me [[gusta|*gustan|gusto]] las empanadas.
+
+A Luis [[*le|les|me]] encanta el mate.
+
+— No me gusta el café. — A mí [[también|*tampoco|sí no]].
+
+¿A ti te [[*gusta|gustas|gustan]] leer?
+
+Me gusta [[vino|*el vino|un vino]] de Mendoza.
+
+«Me encanta» means "I like it a lot". ( V / F ){V}
+
+Natalia likes mate without sugar. ( V / F ){F}
+
+## Unit vocabulary
+
+| Español | English |
+|---|---|
+| gustar | to like |
+| encantar | to love |
+| preferir | to prefer |
+| también / tampoco | too / neither |
+| la comida | food, meal |
+| la bebida | drink |
+| el vino | wine |
+| el pan | bread |
+| la carne | meat |
+| rico, -a | tasty |
+| amargo, -a / dulce | bitter / sweet |
+| la cuenta | the bill |

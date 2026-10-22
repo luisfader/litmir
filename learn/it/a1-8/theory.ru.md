@@ -1,1 +1,108 @@
-LITMIR-ENC1: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
+## Карнавал в Венеции
+
+В романе «Maschera di Venezia» Роберто и Наталья приезжают в Венецию февральской ночью, в самый разгар карнавала. Они выходят из поезда на вокзале Санта-Лючия — но где же их гостиница?
+
+> — **Scusi**{Простите}, **come si arriva**{как добраться} a Piazza San Marco?
+> — **In vaporetto**{На водном трамвайчике} o **a piedi**{пешком}?
+> — **A piedi**{Пешком}. **Vogliamo vedere**{Мы хотим посмотреть} la città!
+> — Allora **vada dritto**{идите прямо}, **attraversi il ponte**{перейдите мост} e poi **giri a destra**{поверните направо}. **Segua le frecce gialle**{Идите по жёлтым стрелкам}: «Per San Marco».
+> — **È lontano?**{Это далеко?}
+> — **Ci vogliono**{Нужно} trenta minuti. Ma **attenzione**{осторожно}: stasera **ci sono**{будут, есть} **migliaia di maschere**{тысячи масок} **per le strade**{на улицах}!
+> — **Grazie mille!**{Огромное спасибо!}
+
+## 1. Куда идём: A, IN, DA
+
+С глаголом *andare* (идти, ехать) в итальянском используются разные предлоги:
+
+| Куда? | Предлог | Примеры |
+|---|---|---|
+| в город | **a** | *Vado **a** Venezia, **a** Roma.* |
+| в страну, регион | **in** | *Vado **in** Italia, **in** Toscana.* |
+| во многие места в городе | **in** | *in banca, in farmacia, in centro, in piazza, in ufficio* |
+| места с артиклем | **a + артикль** | *al bar, alla stazione, all’hotel, al cinema* |
+| к человеку (домой, к врачу) | **da** | *Vado **da** Natalia, **dal** medico.* |
+| домой | **a** | *Torno **a** casa.* |
+
+Запомните слияния: **a + il = al**, **a + la = alla**, **a + l’ = all’**, **da + il = dal**.
+
+## 2. На чём едем?
+
+| Italiano | Русский |
+|---|---|
+| in treno | на поезде |
+| in aereo | на самолёте |
+| in macchina | на машине |
+| in autobus | на автобусе |
+| in vaporetto | на водном трамвайчике (в Венеции!) |
+| in gondola | на гондоле |
+| in bicicletta | на велосипеде |
+| **a** piedi | пешком |
+
+Внимание: везде **in**, но **a piedi**.
+
+*Quanto **ci vuole**?* — Сколько времени нужно? → ***Ci vuole** un’ora.* — Нужен час. ***Ci vogliono** dieci minuti.* — Нужно десять минут. (*ci vuole* — для одного, *ci vogliono* — для нескольких)
+
+## 3. Как спросить дорогу
+
+| Italiano | Русский |
+|---|---|
+| Scusi, dov’è…? | Простите, где…? |
+| Come si arriva a…? | Как добраться до…? |
+| È lontano / vicino? | Это далеко / близко? |
+| vada dritto | идите прямо |
+| giri a destra / a sinistra | поверните направо / налево |
+| attraversi il ponte / la piazza | перейдите мост / площадь |
+| la prima / la seconda strada | первая / вторая улица |
+| di fronte a… | напротив… |
+
+Это вежливые формы (к тому, к кому вы обращаетесь на **Lei**). Другу вы скажете: *vai dritto, gira a destra, attraversa*.
+
+## 4. В городе
+
+| Italiano | Русский | Italiano | Русский |
+|---|---|---|---|
+| la piazza | площадь | la chiesa | церковь |
+| la strada / la via | улица | il museo | музей |
+| il ponte | мост | il negozio | магазин |
+| il canale | канал | la banca | банк |
+| la stazione | вокзал, станция | la farmacia | аптека |
+| l’albergo / l’hotel | гостиница | il mercato | рынок |
+
+В Венеции улицу часто называют **calle**, а маленькую площадь — **campo**. Машин там нет совсем — только лодки и ноги!
+
+## Проверьте себя
+
+Domani andiamo [[*a|in|da]] Venezia.
+
+Natalia vuole andare [[a|*in|al]] Italia.
+
+Roberto va [[*alla|a|in la]] stazione.
+
+Stasera vado [[in|a|*da]] Natalia.
+
+Andiamo [[in piedi|*a piedi|con piedi]] a San Marco.
+
+Ci [[vuole|*vogliono]] trenta minuti.
+
+«Giri a destra» значит «поверните налево». ( V / F ){F}
+
+В Венеции нет машин. ( V / F ){V}
+
+## Словарь урока
+
+| Italiano | Русский |
+|---|---|
+| andare | идти, ехать |
+| arrivare | приезжать, приходить |
+| tornare | возвращаться |
+| il viaggio | путешествие, поездка |
+| il biglietto | билет |
+| il treno / l’aereo | поезд / самолёт |
+| il vaporetto | водный трамвайчик |
+| a piedi | пешком |
+| lontano / vicino | далеко / близко |
+| dritto | прямо |
+| a destra / a sinistra | направо / налево |
+| il ponte | мост |
+| la piazza | площадь |
+| la maschera | маска |

@@ -1,1 +1,100 @@
-LITMIR-ENC1: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
+## Where the rivers meet
+
+From the first chapter of «Дивљи час»:
+
+> Кроз Београд **теку две реке**{two rivers flow}: **Сава и Дунав**{the Sava and the Danube}. **Тамо где се реке спајају**{Where the rivers meet} **налази се**{lies} Калемегдан. Калемегдан је **велики парк и стара тврђава**{a big park and an old fortress}.
+
+Natasha shows Luis around the city:
+
+> — **Где смо сада**{Where are we now}?
+> — **У Кнез Михаиловој улици**{On Knez Mihailova street}. То је **главна улица**{the main street} у Београду.
+> — А **где је Калемегдан**{where is Kalemegdan}?
+> — **На крају улице**{At the end of the street}. **Није далеко**{It’s not far}: пет минута **пешке**{on foot}.
+> — **Има ли овде кафић**{Is there a café here}?
+> — Наравно! **Поред књижаре**{Next to the bookshop}, **преко пута музеја**{opposite the museum}.
+
+## 1. Where? — ГДЕ ЈЕ…?
+
+- **Где је** Калемегдан? — Where is Kalemegdan?
+- **Где су** Наташа и Луис? — Where are Natasha and Luis?
+- **Где се налази** тврђава? — Where is the fortress located?
+- **Овде / тамо.** — Here / there. **Близу / далеко.** — Near / far.
+
+## 2. У or НА + the locative case
+
+To say where something is, Serbian uses the **locative case** after **у** (in) and **на** (on, at):
+
+| | Basic form | Where? | |
+|---|---|---|---|
+| **у** (in) | Београд | **у** Београд**у** | in Belgrade |
+| | парк | **у** парк**у** | in the park |
+| | улица | **у** улиц**и** | in the street |
+| | кафић | **у** кафић**у** | in the café |
+| **на** (on, at) | Калемегдан | **на** Калемегдан**у** | at Kalemegdan |
+| | трг | **на** трг**у** | in the square |
+| | река | **на** рец**и** | on the river |
+| | мост | **на** мост**у** | on the bridge |
+
+The endings are simple: masculine and neuter → **-у**, feminine → **-и**.
+
+## 3. Prepositions of place
+
+| Српски | English | Example |
+|---|---|---|
+| поред | next to | поред књижаре |
+| испред | in front of | испред музеја |
+| иза | behind | иза цркве |
+| изнад | above | изнад реке |
+| испод | under | испод моста |
+| између | between | између Саве и Дунава |
+| преко пута | opposite | преко пута музеја |
+| близу / далеко од | near / far from | близу центра |
+| лево / десно | on the left / on the right | Музеј је лево. |
+
+After these prepositions the noun takes the **genitive** case: *поред **моста**, испред **музеја***.
+
+## 4. The city
+
+| Српски | English | Српски | English |
+|---|---|---|---|
+| улица | street | трг | square |
+| река | river | мост | bridge |
+| тврђава | fortress | парк | park |
+| кафић | café | продавница | shop |
+| црква | church | музеј | museum |
+| станица | station, stop | аутобус | bus |
+
+## Check yourself
+
+Луис је [[*у Београду|у Београд|на Београду]].
+
+Тврђава је [[у Калемегдану|*на Калемегдану|на Калемегдан]].
+
+Наташа је [[*у кафићу|у кафић|на кафићу]].
+
+Кафић је поред [[књижара|*књижаре|књижари]].
+
+[[*Где|Ко|Шта]] је Калемегдан?
+
+Калемегдан је између Саве и [[Дунав|*Дунава|Дунаву]].
+
+In Serbian you say «у улици» (in the street). ( V / F ){V}
+
+Kalemegdan is a river. ( V / F ){F}
+
+## Unit vocabulary
+
+| Српски | English |
+|---|---|
+| где? | where? |
+| овде / тамо | here / there |
+| близу / далеко | near / far |
+| налазити се | to be located |
+| у / на | in / on, at |
+| поред | next to |
+| испред / иза | in front of / behind |
+| између | between |
+| преко пута | opposite |
+| улица / трг | street / square |
+| река / мост | river / bridge |
+| тврђава | fortress |

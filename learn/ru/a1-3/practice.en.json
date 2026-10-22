@@ -1,0 +1,292 @@
+{
+ "title": "Семья Фадер",
+ "subtitle": "Family, «у меня есть», gender, possessives, adjectives.",
+ "speak": "ru-RU",
+ "hero": "novels/tajna-semi-fader/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "отец",
+     "father"
+    ],
+    [
+     "мама",
+     "mum"
+    ],
+    [
+     "брат",
+     "brother"
+    ],
+    [
+     "сестра",
+     "sister"
+    ],
+    [
+     "родители",
+     "parents"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "",
+   "after": "есть сестра.",
+   "options": [
+    "У меня",
+    "Я",
+    "Мне"
+   ],
+   "answer": 0,
+   "es": "I have a sister."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "У",
+   "after": "есть финка.",
+   "options": [
+    "него",
+    "он",
+    "его"
+   ],
+   "answer": 0,
+   "es": "He has a finca."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "",
+   "after": "отец живёт в Мендосе.",
+   "options": [
+    "Мой",
+    "Моя",
+    "Моё"
+   ],
+   "answer": 0,
+   "es": "My father lives in Mendoza."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "",
+   "after": "мама очень добрая.",
+   "options": [
+    "Моя",
+    "Мой",
+    "Мои"
+   ],
+   "answer": 0,
+   "es": "My mum is very kind."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "",
+   "after": "родители живут в Мендосе.",
+   "options": [
+    "Мои",
+    "Мой",
+    "Моя"
+   ],
+   "answer": 0,
+   "es": "My parents live in Mendoza."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "У Серхио",
+   "after": "дом.",
+   "options": [
+    "большой",
+    "большая",
+    "большое"
+   ],
+   "answer": 0,
+   "es": "Sergio has a big house.",
+   "why": "Дом — masculine."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "",
+   "after": "зовут Ольга.",
+   "options": [
+    "Её",
+    "Его",
+    "Их"
+   ],
+   "answer": 0,
+   "es": "Her name is Olga."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "У меня нет брата.",
+   "options": [
+    "I don’t have a brother.",
+    "I have a brother.",
+    "My brother isn’t here."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "my parents",
+   "options": [
+    "мои родители",
+    "мой родители",
+    "моя родители"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "Do you have a brother?",
+   "answer": [
+    "У",
+    "тебя",
+    "есть",
+    "брат?"
+   ],
+   "extra": [
+    "ты",
+    "меня"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Где живёт Серхио?",
+   "es": "Where does Sergio live?",
+   "options": [
+    "В Мендосе.",
+    "В Москве.",
+    "В Синее."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "дочь",
+   "options": [
+    "daughter",
+    "son",
+    "grandmother"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Луис — единственный сын.",
+   "answer": true,
+   "why": "«Я единственный сын»."
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "I have a sister.",
+   "answers": [
+    "У меня есть сестра"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "my mum",
+   "answers": [
+    "моя мама"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Слово «папа» женского рода.",
+   "answer": false,
+   "why": "Папа is masculine, even though it ends in -а."
+  }
+ ],
+ "keyboard": [
+  "а",
+  "б",
+  "в",
+  "г",
+  "д",
+  "е",
+  "ё",
+  "ж",
+  "з",
+  "и",
+  "й",
+  "к",
+  "л",
+  "м",
+  "н",
+  "о",
+  "п",
+  "р",
+  "с",
+  "т",
+  "у",
+  "ф",
+  "х",
+  "ц",
+  "ч",
+  "ш",
+  "щ",
+  "ъ",
+  "ы",
+  "ь",
+  "э",
+  "ю",
+  "я"
+ ]
+}

@@ -1,0 +1,291 @@
+{
+ "title": "Где каток?",
+ "subtitle": "Где…? The prepositional case after в / на, prepositions of place, есть, the city.",
+ "speak": "ru-RU",
+ "hero": "novels/tajna-semi-fader/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "улица",
+     "street"
+    ],
+    [
+     "площадь",
+     "square"
+    ],
+    [
+     "каток",
+     "skating rink"
+    ],
+    [
+     "вокзал",
+     "station"
+    ],
+    [
+     "магазин",
+     "shop"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Луис и Наталья в",
+   "after": "",
+   "options": [
+    "Москве",
+    "Москва",
+    "Москву"
+   ],
+   "answer": 0,
+   "es": "Luis and Natalia are in Moscow."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Каток в",
+   "after": "",
+   "options": [
+    "парке",
+    "парк",
+    "парка"
+   ],
+   "answer": 0,
+   "es": "The rink is in the park."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Подруга Натальи",
+   "after": "работе.",
+   "options": [
+    "на",
+    "в",
+    "у"
+   ],
+   "answer": 0,
+   "es": "Natalia’s friend is at work."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Мы на",
+   "after": "",
+   "options": [
+    "улице",
+    "улица",
+    "улицу"
+   ],
+   "answer": 0,
+   "es": "We’re in the street."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "",
+   "after": "метро?",
+   "options": [
+    "Где",
+    "Кто",
+    "Что"
+   ],
+   "answer": 0,
+   "es": "Where is the metro?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Здесь",
+   "after": "кафе?",
+   "options": [
+    "есть",
+    "нет есть",
+    "есть ли нет"
+   ],
+   "answer": 0,
+   "es": "Is there a café here?"
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "напротив",
+   "options": [
+    "opposite",
+    "behind",
+    "under"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Это далеко?",
+   "options": [
+    "Is it far?",
+    "Is it here?",
+    "Is it big?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "in the café",
+   "options": [
+    "в кафе",
+    "в кафу",
+    "на кафе"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "We’re in the centre.",
+   "answer": [
+    "Мы",
+    "в",
+    "центре"
+   ],
+   "extra": [
+    "на",
+    "центр"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Где каток?",
+   "es": "Where is the skating rink?",
+   "options": [
+    "В парке.",
+    "На вокзале.",
+    "В Мендосе."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "на углу",
+   "options": [
+    "on the corner",
+    "on the bridge",
+    "at home"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "В Москве холодный зимний день.",
+   "answer": true,
+   "why": "«В Москве стоял холодный зимний день»."
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "here",
+   "answers": [
+    "здесь",
+    "тут"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "Where is the metro?",
+   "answers": [
+    "Где метро?",
+    "Где метро",
+    "Где находится метро?"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "«Кафе» меняет окончание: «в кафу».",
+   "answer": false,
+   "why": "Кафе and метро never change: в кафе, в метро."
+  }
+ ],
+ "keyboard": [
+  "а",
+  "б",
+  "в",
+  "г",
+  "д",
+  "е",
+  "ё",
+  "ж",
+  "з",
+  "и",
+  "й",
+  "к",
+  "л",
+  "м",
+  "н",
+  "о",
+  "п",
+  "р",
+  "с",
+  "т",
+  "у",
+  "ф",
+  "х",
+  "ц",
+  "ч",
+  "ш",
+  "щ",
+  "ъ",
+  "ы",
+  "ь",
+  "э",
+  "ю",
+  "я"
+ ]
+}

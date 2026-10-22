@@ -1,1 +1,122 @@
-LITMIR-ENC1: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
+## Самая важная фраза
+
+В конце романа «Podzemní tajemství», через неделю после битвы, Луис и Яна сидят за тем же столиком у окна в том же кафе, где познакомились. Представим, как они строят планы.
+
+> — **Co budeš dělat zítra?**{Что ты будешь делать завтра?}
+> — **Zítra budu hrát**{Завтра я буду играть} na Karlově mostě. A ty?
+> — **Budu pracovat**{Я буду работать}. Ale **večer přijdu**{вечером приду}.
+> — **Jaké bude počasí?**{Какая будет погода?}
+> — **Prý bude pršet**{Говорят, будет дождь}.
+> — Zase! **Jako v září**{Как в сентябре}, když jsem tě poprvé viděl.
+> — **V prosinci bude sněžit**{В декабре пойдёт снег}. **Praha je v zimě krásná**{Прага зимой красивая}.
+> — **Pojedeme někam na Vánoce?**{Поедем куда-нибудь на Рождество?}
+> — Uvidíme… Luisi, a víš už, **jak se řekne česky** te quiero?
+> — **Miluju tě.**{Я тебя люблю.}
+> — **Výborně. To je nejdůležitější věta v češtině.**{Отлично. Это самая важная фраза в чешском.}
+
+## 1. Будущее время: BUDU + инфинитив
+
+Совсем как в русском «буду + инфинитив»:
+
+| | BÝT (будущее) | Пример |
+|---|---|---|
+| já | **budu** | Budu doma. — Я буду дома. |
+| ty | **budeš** | Budeš tady? |
+| on / ona | **bude** | Bude pršet. |
+| my | **budeme** | Budeme hrát. |
+| vy | **budete** | Co budete pít? |
+| oni | **budou** | Budou čekat. |
+
+**Budu + инфинитив** = «буду делать»: *Budu hrát. Budu pracovat. Budeme čekat.* Вы уже встречали это в шестой единице: *Co budete pít?*
+
+Две особые группы — и обе знакомы по русскому:
+
+- **Глаголы движения** не употребляются с *budu*, а получают приставку **pů- / po-**: *jdu → **půjdu*** («пойду»), *jedu → **pojedu*** («поеду»). Никогда не *budu jít*.
+- **Совершенный вид**: как в русском, форма настоящего времени у таких глаголов означает будущее: *zavolám* — позвоню, *koupím* — куплю, *přijdu* — приду, *uvidíme* — увидим. Русскоговорящим это совсем просто.
+
+**Zítra** — завтра, **pozítří** — послезавтра, **příští týden** — на следующей неделе, **brzy** — скоро.
+
+## 2. Погода — Jaké je počasí?
+
+| Čeština | Русский |
+|---|---|
+| Je hezky. / Je ošklivo. | Хорошая / плохая погода. |
+| Svítí slunce. | Светит солнце. |
+| **Prší.** / Bude pršet. | Идёт дождь. / Будет дождь. |
+| **Sněží.** / Bude sněžit. | Идёт снег. / Будет снег. |
+| Fouká vítr. | Дует ветер. |
+| Je teplo / horko. | Тепло / жарко. |
+| Je zima. | Холодно. |
+| Je mlha. | Туман. |
+
+**Zima** — и «зима», и «холод»: *V zimě je zima.* — Зимой холодно. Помните начало первой главы? *«Je září. Luis je v Praze.»* А чуть дальше: *«Prší.»*
+
+## 3. Месяцы и времена года
+
+| Месяц | В… | Месяц | В… |
+|---|---|---|---|
+| leden | v lednu | červenec | v červenci |
+| únor | v únoru | srpen | v srpnu |
+| březen | v březnu | září | v září |
+| duben | v dubnu | říjen | v říjnu |
+| květen | v květnu | listopad | v listopadu |
+| červen | v červnu | prosinec | v prosinci |
+
+У чешских месяцев старые славянские названия, как в украинском: *leden* — «ледяной» (январь), *květen* — месяц цветов (*květ*), *listopad* — месяц, когда падают листья (это **ноябрь**, а не октябрь!). *Červen* (июнь) и *červenec* (июль) легко перепутать — *červenec* «маленький» и идёт после.
+
+Времена года: **jaro** (na jaře), **léto** (v létě), **podzim** (na podzim), **zima** (v zimě).
+
+**Даты**: *Kolikátého je dnes?* — Какое сегодня число? *Je prvního září.* — Первое сентября (как в русском — родительный падеж!). Пишется **1. září** — точка после числа означает порядковое числительное.
+
+## 4. Итог уровня A1: что вы уже умеете по-чешски
+
+| Единица | Вы умеете… | Ключевые фразы |
+|---|---|---|
+| 1 | здороваться и представляться | Ahoj! Jsem Luis. Jsem z Argentiny. |
+| 2 | говорить о работе, языках, возрасте | Jsem hudebník. Mluvím česky. Je mi 25 let. |
+| 3 | рассказывать о семье | Mám bratra. Moje máma je švadlena. |
+| 4 | говорить, где что находится | Kde je nádraží? V Praze, na náměstí. |
+| 5 | называть время, описывать день | Je půl osmé. Ráno se oblékám. |
+| 6 | заказывать еду | Dám si kávu. Chutná mi to. |
+| 7 | говорить, что хотите, можете, должны | Chci, můžu, musím, umím, vím. |
+| 8 | путешествовать и спрашивать дорогу | Jedu vlakem do Prahy. Doleva, rovně. |
+| 9 | делать покупки | Kolik to stojí? Beru tuhle sukni. |
+| 10 | строить планы | Zítra budu hrát. Bude pršet. |
+
+Gratulujeme! — Поздравляем! Уровень A1 пройден.
+
+## Проверьте себя
+
+Zítra [[*budu|jsem|budou]] hrát na kytaru.
+
+Lucie a Mark [[*budou|bude|budu]] čekat.
+
+Zítra [[*půjdu|budu jít|jdu]] do kina.
+
+V prosinci bude [[*sněžit|sněží|sníh]].
+
+Luis přijel do Prahy [[*v září|v zářím|na září]].
+
+[[*Prší|Prši|Pršet]] — vezmi si deštník!
+
+«Zima» значит и «зима», и «холод». ( V / F ){V}
+
+«Listopad» — это октябрь. ( V / F ){F}
+
+## Словарь урока
+
+| Čeština | Русский |
+|---|---|
+| budu, budeš, bude… | буду, будешь, будет… |
+| půjdu / pojedu | пойду / поеду |
+| zítra / pozítří | завтра / послезавтра |
+| příští týden | на следующей неделе |
+| počasí | погода |
+| prší / sněží | идёт дождь / снег |
+| svítí slunce | светит солнце |
+| je teplo / je zima | тепло / холодно |
+| jaro, léto, podzim, zima | весна, лето, осень, зима |
+| leden, únor, březen, duben | январь, февраль, март, апрель |
+| květen, červen, červenec, srpen | май, июнь, июль, август |
+| září, říjen, listopad, prosinec | сентябрь, октябрь, ноябрь, декабрь |
+| Miluju tě. | Я тебя люблю. |

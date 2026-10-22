@@ -1,1 +1,256 @@
-LITMIR-ENC1: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
+{
+ "title": "¿Cuánto cuesta?",
+ "subtitle": "Цены, числа от 100, цвета, одежда, este / ese / aquel.",
+ "speak": "es-ES",
+ "hero": "novels/la-gran-conspiracion/cover.jpg",
+ "hearts": 5,
+ "keyboard": [
+  "á",
+  "é",
+  "í",
+  "ó",
+  "ú",
+  "ñ",
+  "ü",
+  "¿",
+  "¡"
+ ],
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 7 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "rojo",
+     "красный"
+    ],
+    [
+     "negro",
+     "чёрный"
+    ],
+    [
+     "azul",
+     "синий"
+    ],
+    [
+     "verde",
+     "зелёный"
+    ],
+    [
+     "blanco",
+     "белый"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "¿Cuánto",
+   "after": "estos zapatos?",
+   "options": [
+    "cuestan",
+    "cuesta",
+    "costan"
+   ],
+   "answer": 0,
+   "es": "Сколько стоят эти туфли?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "",
+   "after": "vestido es muy elegante.",
+   "options": [
+    "Este",
+    "Esta",
+    "Estos"
+   ],
+   "answer": 0,
+   "es": "Это платье очень элегантное."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Natalia compra una falda",
+   "after": "",
+   "options": [
+    "negra",
+    "negro",
+    "negros"
+   ],
+   "answer": 0,
+   "es": "Наталья покупает чёрную юбку."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Quiero",
+   "after": "chaqueta azul.",
+   "options": [
+    "aquella",
+    "aquel",
+    "aquellos"
+   ],
+   "answer": 0,
+   "es": "Я хочу вон ту синюю куртку."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "quinientos",
+   "options": [
+    "пятьсот",
+    "пятьдесят",
+    "пятнадцать"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Es barato.",
+   "options": [
+    "Это дёшево.",
+    "Это дорого.",
+    "Это красиво."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать по-испански?",
+   "word": "Сколько это стоит?",
+   "options": [
+    "¿Cuánto cuesta?",
+    "¿Cuánto cuestan?",
+    "¿Qué cuesta?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Doscientas",
+   "after": "",
+   "options": [
+    "personas",
+    "rublos",
+    "libros"
+   ],
+   "answer": 0,
+   "es": "двести человек",
+   "why": "Doscientas — женский род."
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите на испанский",
+   "es": "Я бы хотела посмотреть то пальто.",
+   "answer": [
+    "Quisiera",
+    "ver",
+    "ese",
+    "abrigo"
+   ],
+   "extra": [
+    "esa",
+    "quiero"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "¿Cuánto cuesta el vestido negro?",
+   "es": "Сколько стоит чёрное платье?",
+   "options": [
+    "Seis mil quinientos rublos.",
+    "Doce mil rublos.",
+    "Quinientos rublos."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Me queda grande.",
+   "options": [
+    "Мне велико.",
+    "Мне мало.",
+    "Мне нравится."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Natalia compra el vestido rojo.",
+   "answer": false,
+   "why": "Красное — дорогое; она берёт чёрное со скидкой."
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите по-испански",
+   "es": "Беру.",
+   "answers": [
+    "Me lo llevo",
+    "Me lo llevo."
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите по-испански",
+   "es": "белые туфли",
+   "answers": [
+    "zapatos blancos",
+    "los zapatos blancos",
+    "unos zapatos blancos"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "«Cien» se usa para el número 100 exacto.",
+   "answer": true,
+   "why": "100 — cien, 120 — ciento veinte."
+  }
+ ]
+}

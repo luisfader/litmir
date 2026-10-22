@@ -1,1 +1,273 @@
-LITMIR-ENC1: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
+{
+ "title": "Kde je Karlův most?",
+ "subtitle": "Kde je…? Предложный падеж после v / na, предлоги места, город.",
+ "speak": "cs-CZ",
+ "hero": "novels/podzemni-tajemstvi/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 7 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "náměstí",
+     "площадь"
+    ],
+    [
+     "most",
+     "мост"
+    ],
+    [
+     "řeka",
+     "река"
+    ],
+    [
+     "kostel",
+     "церковь"
+    ],
+    [
+     "nádraží",
+     "вокзал"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Luis je v",
+   "after": "",
+   "options": [
+    "Praze",
+    "Praha",
+    "Prahy"
+   ],
+   "answer": 0,
+   "es": "Луис в Праге."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Jana sedí v",
+   "after": "",
+   "options": [
+    "kavárně",
+    "kavárna",
+    "kavárnu"
+   ],
+   "answer": 0,
+   "es": "Яна сидит в кафе."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Lucie a Mark jsou",
+   "after": "náměstí.",
+   "options": [
+    "na",
+    "v",
+    "pod"
+   ],
+   "answer": 0,
+   "es": "Люцие и Марк на площади."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Mark má baterku v",
+   "after": "",
+   "options": [
+    "batohu",
+    "batoh",
+    "batohy"
+   ],
+   "answer": 0,
+   "es": "У Марка фонарик в рюкзаке."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "",
+   "after": "je nádraží?",
+   "options": [
+    "Kde",
+    "Kdo",
+    "Co"
+   ],
+   "answer": 0,
+   "es": "Где вокзал?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Pod",
+   "after": "je druhá Praha.",
+   "options": [
+    "Prahou",
+    "Praha",
+    "Praze"
+   ],
+   "answer": 0,
+   "es": "Под Прагой есть вторая Прага."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "vedle",
+   "options": [
+    "рядом с",
+    "под",
+    "далеко"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Není to daleko.",
+   "options": [
+    "Это недалеко.",
+    "Это очень далеко.",
+    "Это не здесь."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать на изучаемом языке?",
+   "word": "на вокзале",
+   "options": [
+    "na nádraží",
+    "v nádraží",
+    "do nádraží"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите",
+   "es": "Где Яна и Марк?",
+   "answer": [
+    "Kde",
+    "jsou",
+    "Jana",
+    "a",
+    "Mark?"
+   ],
+   "extra": [
+    "je",
+    "kdo"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "Kde jsou Luis, Jana, Lucie a Mark?",
+   "es": "Где Луис, Яна, Люцие и Марк?",
+   "options": [
+    "V podzemí Prahy.",
+    "Na nádraží.",
+    "V kavárně v Argentině."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "tramvaj",
+   "options": [
+    "трамвай",
+    "поезд",
+    "метро"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Pod Prahou je druhá Praha.",
+   "answer": true,
+   "why": "Так говорит экскурсовод Люцие."
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "здесь",
+   "answers": [
+    "tady"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Где кафе?",
+   "answers": [
+    "Kde je kavárna?",
+    "Kde je kavárna"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "«Kde» a «kdo» znamenají totéž.",
+   "answer": false,
+   "why": "Kde — где, kdo — кто."
+  }
+ ],
+ "keyboard": [
+  "á",
+  "č",
+  "ď",
+  "é",
+  "ě",
+  "í",
+  "ň",
+  "ó",
+  "ř",
+  "š",
+  "ť",
+  "ú",
+  "ů",
+  "ý",
+  "ž"
+ ]
+}

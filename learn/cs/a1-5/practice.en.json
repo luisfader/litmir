@@ -1,1 +1,284 @@
-LITMIR-ENC1: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
+{
+ "title": "Luisův den",
+ "subtitle": "Telling the time, reflexive verbs with se / si, days of the week, frequency.",
+ "speak": "cs-CZ",
+ "hero": "novels/podzemni-tajemstvi/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "pondělí",
+     "Monday"
+    ],
+    [
+     "středa",
+     "Wednesday"
+    ],
+    [
+     "pátek",
+     "Friday"
+    ],
+    [
+     "sobota",
+     "Saturday"
+    ],
+    [
+     "neděle",
+     "Sunday"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Je půl osmé.",
+   "options": [
+    "It’s half past seven (7:30).",
+    "It’s half past eight (8:30).",
+    "It’s eight o’clock (8:00)."
+   ],
+   "answer": 0,
+   "why": "Půl osmé looks forward: half of the eighth hour = 7:30."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Jsou tři",
+   "after": "",
+   "options": [
+    "hodiny",
+    "hodin",
+    "hodina"
+   ],
+   "answer": 0,
+   "es": "It’s three o’clock.",
+   "why": "2–4 → hodiny."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Je pět",
+   "after": "",
+   "options": [
+    "hodin",
+    "hodiny",
+    "hodina"
+   ],
+   "answer": 0,
+   "es": "It’s five o’clock.",
+   "why": "5+ → hodin."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Ráno",
+   "after": "oblékám.",
+   "options": [
+    "se",
+    "si",
+    "sebe"
+   ],
+   "answer": 0,
+   "es": "In the morning I get dressed."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Dám",
+   "after": "kávu.",
+   "options": [
+    "si",
+    "se",
+    "sebe"
+   ],
+   "answer": 0,
+   "es": "I’ll have a coffee."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Jana",
+   "after": "dívá na Luise.",
+   "options": [
+    "se",
+    "si",
+    "je"
+   ],
+   "answer": 0,
+   "es": "Jana looks at Luis.",
+   "why": "Se goes in second position."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Koncert je",
+   "after": "",
+   "options": [
+    "ve středu",
+    "v středa",
+    "ve středě"
+   ],
+   "answer": 0,
+   "es": "The concert is on Wednesday."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Nikdy",
+   "after": "pozdě.",
+   "options": [
+    "nechodím",
+    "chodím",
+    "ne chodím"
+   ],
+   "answer": 0,
+   "es": "I never come late.",
+   "why": "Nikdy needs a negative verb."
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "It’s a quarter to eight (7:45).",
+   "options": [
+    "Tři čtvrtě na osm.",
+    "Čtvrt na osm.",
+    "Půl osmé."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "I get up at seven.",
+   "answer": [
+    "Vstávám",
+    "v",
+    "sedm"
+   ],
+   "extra": [
+    "se",
+    "hodiny"
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "neděle",
+   "options": [
+    "Sunday",
+    "week",
+    "Monday"
+   ],
+   "answer": 0,
+   "why": "Week is týden."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "často",
+   "options": [
+    "often",
+    "never",
+    "today"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Jaký měsíc je na začátku románu?",
+   "es": "Which month is it at the start of the novel?",
+   "options": [
+    "Září.",
+    "Prosinec.",
+    "Květen."
+   ],
+   "answer": 0,
+   "why": "«Je září. Luis je v Praze.»"
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Mark má vždycky s sebou fotoaparát.",
+   "answer": true,
+   "why": "That’s what the list of characters says."
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "What time is it?",
+   "answers": [
+    "Kolik je hodin?",
+    "Kolik je hodin"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "on Saturday",
+   "answers": [
+    "v sobotu"
+   ]
+  }
+ ],
+ "keyboard": [
+  "á",
+  "č",
+  "ď",
+  "é",
+  "ě",
+  "í",
+  "ň",
+  "ó",
+  "ř",
+  "š",
+  "ť",
+  "ú",
+  "ů",
+  "ý",
+  "ž"
+ ]
+}

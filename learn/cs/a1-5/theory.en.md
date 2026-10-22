@@ -1,1 +1,121 @@
-LITMIR-ENC1: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
+## Luis’s day in Prague
+
+In «Podzemní tajemství» Luis comes to Prague in September. He doesn’t know the streets or the people, and he can’t speak Czech yet. Let’s imagine Jana asking him what his days in Prague look like.
+
+> — Luisi, **jak vypadá tvůj den**{what does your day look like} v Praze?
+> — **Vstávám v sedm**{I get up at seven}. **Umyju se**{I have a wash}, **obléknu se**{I get dressed} a **dám si kávu**{I have a coffee}. Už vím, jak se řekne café česky!
+> — A **dopoledne**{in the morning (before noon)}?
+> — **Dopoledne hraju na kytaru**{In the morning I play the guitar}. **Odpoledne se procházím**{In the afternoon I go for a walk} po Starém Městě.
+> — **Kolik je teď hodin?**{What time is it now?}
+> — **Je půl páté**{It’s half past four}.
+> — **V kolik je koncert?**{What time is the concert?}
+> — **V osm večer**{At eight in the evening}. A ty **nikdy nechodíš pozdě**{never come late}, že ne?
+> — Já? **Nikdy!**{Never!}
+
+## 1. What time is it? — Kolik je hodin?
+
+The word **hodina** (hour) changes after numbers, just like *rok / roky / let* in unit 2:
+
+| | Czech | English |
+|---|---|---|
+| 1 | **je jedna** (hodina) | it’s one o’clock |
+| 2–4 | **jsou dvě / tři / čtyři** (hodiny) | it’s two / three / four |
+| 5+ | **je pět / šest / sedm…** (hodin) | it’s five / six / seven… |
+| 12 | **je poledne / půlnoc** | it’s noon / midnight |
+
+Quarters and halves look **forward to the next hour**:
+
+| Time | Czech | Word for word |
+|---|---|---|
+| 7:15 | **čtvrt na osm** | a quarter towards eight |
+| 7:30 | **půl osmé** | half of the eighth |
+| 7:45 | **tři čtvrtě na osm** | three quarters towards eight |
+
+So *půl osmé* is **7:30**, not 8:30! Careful — this is the classic trap for English speakers. In timetables and on the radio you’ll also hear the simple digital way: *sedm třicet* (7:30).
+
+**At what time?** — **V kolik?** Answer with **v / ve**: *v jednu, ve dvě, ve tři, ve čtyři, v pět, v sedm, v půl osmé.*
+
+Parts of the day: **ráno** (early morning), **dopoledne** (late morning), **v poledne** (at noon), **odpoledne** (afternoon), **večer** (evening), **v noci** (at night).
+
+## 2. Reflexive verbs: SE and SI
+
+Many everyday verbs have a little companion **se** (oneself) or **si** (for oneself). You already know one: *Jmenuju **se** Luis.*
+
+| Verb | Meaning | Example |
+|---|---|---|
+| probouzet **se** | to wake up | Probouzím **se** v sedm. |
+| mýt **se** | to wash | Myju **se**. |
+| oblékat **se** | to get dressed | Oblékám **se**. |
+| procházet **se** | to go for a walk | Procházím **se** po Praze. |
+| čistit **si** zuby | to brush one’s teeth | Čistím **si** zuby. |
+| dát **si** | to have (food, drink) | Dám **si** kávu. |
+
+The rule that surprises everyone: **se / si go in the second position** of the sentence, whatever comes first.
+
+- *Ráno **se** oblékám.* — In the morning I get dressed.
+- *Jana **se** dívá na Luise.* — Jana looks at Luis.
+- *Já **si** dám čaj.* — I’ll have tea.
+
+Some verbs are simply not reflexive: **vstávat** (to get up), **snídat** (to have breakfast), **obědvat** (to have lunch), **večeřet** (to have dinner), **pracovat**, **chodit spát** (to go to bed).
+
+## 3. Days of the week
+
+| Day | On… | Day | On… |
+|---|---|---|---|
+| pondělí | **v** pondělí | pátek | **v** pátek |
+| úterý | **v** úterý | sobota | **v** sobot**u** |
+| středa | **ve** střed**u** | neděle | **v** neděl**i** |
+| čtvrtek | **ve** čtvrtek | víkend | **o** víkendu |
+
+Days are written with a small letter. *Ve* appears before *st-* and *čt-* because *v středu* is hard to say. *Středa* is literally "the middle" — the middle of the week.
+
+## 4. How often?
+
+| Czech | English |
+|---|---|
+| vždycky | always |
+| obvykle | usually |
+| často | often |
+| někdy | sometimes |
+| málokdy | rarely |
+| nikdy | never |
+
+**Double negative!** With *nikdy* the verb must also be negative: *Nikdy **ne**chodím pozdě.* — I never come late (literally "I never don’t come"). Saying *Nikdy chodím pozdě* is a mistake.
+
+*Mark má **vždycky** s sebou fotoaparát.* — Mark always has his camera with him.
+
+## Check yourself
+
+Je [[*půl osmé|půl sedmé|sedm půl]] — it’s 7:30.
+
+Jsou [[*tři|pět|jedna]] hodiny.
+
+Ráno [[*se|si|sebe]] oblékám.
+
+Dám [[*si|se|sebe]] kávu.
+
+Koncert je [[*ve středu|v středa|ve středa]].
+
+Nikdy [[*nechodím|chodím|ne chodím]] pozdě.
+
+«Půl osmé» means 8:30. ( V / F ){F}
+
+In Czech the days of the week are written with a small letter. ( V / F ){V}
+
+## Unit vocabulary
+
+| Čeština | English |
+|---|---|
+| Kolik je hodin? | What time is it? |
+| V kolik? | At what time? |
+| hodina | hour, o’clock |
+| čtvrt / půl / tři čtvrtě | quarter / half / three quarters |
+| ráno / večer | morning / evening |
+| dopoledne / odpoledne | late morning / afternoon |
+| vstávat | to get up |
+| probouzet se | to wake up |
+| oblékat se | to get dressed |
+| dát si kávu | to have a coffee |
+| pondělí, úterý, středa | Monday, Tuesday, Wednesday |
+| čtvrtek, pátek, sobota, neděle | Thursday, Friday, Saturday, Sunday |
+| vždycky / často / někdy / nikdy | always / often / sometimes / never |

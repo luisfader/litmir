@@ -1,0 +1,293 @@
+{
+ "title": "Я хочу найти Алисию",
+ "subtitle": "Хотеть, мочь, нужно / можно / нельзя, cambios de consonante, знать o уметь.",
+ "speak": "ru-RU",
+ "hero": "novels/prizrachnyj-poezd/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Empezar",
+  "check": "Comprobar",
+  "next": "Continuar",
+  "skip": "No lo sé",
+  "retry": "Intentar de nuevo",
+  "again": "Repetir la unidad",
+  "back": "Volver a la unidad",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Respuesta correcta:",
+  "almost": "¡Casi! Fijate en los acentos:",
+  "done": "¡Unidad completada!",
+  "lost": "Te quedaste sin corazones",
+  "lostP": "No pasa nada: cada error es una palabra nueva que ya conocés un poco mejor.",
+  "xp": "XP total",
+  "acc": "Precisión",
+  "time": "Tiempo",
+  "ex": "{n} ejercicios",
+  "min": "≈ 7 minutos",
+  "hearts": "corazones",
+  "best": "Tu mejor resultado",
+  "tap": "Tocá las palabras en orden",
+  "type": "Escribí acá…",
+  "perfect": "¡Ni un solo error!",
+  "good": "¡Muy buen trabajo!",
+  "ok": "¡Bien hecho! Repetí la unidad para mejorar tu precisión.",
+  "sound": "Sonido",
+  "listen": "Escuchar",
+  "meaning": "Significa:",
+  "yes": "Verdadero",
+  "no": "Falso",
+  "score": "Puntaje",
+  "level": "Tu nivel"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Uní los pares",
+   "pairs": [
+    [
+     "хотеть",
+     "querer"
+    ],
+    [
+     "мочь",
+     "poder"
+    ],
+    [
+     "видеть",
+     "ver"
+    ],
+    [
+     "писать",
+     "escribir"
+    ],
+    [
+     "помочь",
+     "ayudar"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "Марк",
+   "after": "найти Алисию.",
+   "options": [
+    "хочет",
+    "хочу",
+    "хотит"
+   ],
+   "answer": 0,
+   "es": "Mark quiere encontrar a Alicia."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "Я не",
+   "after": "спать.",
+   "options": [
+    "могу",
+    "можу",
+    "может"
+   ],
+   "answer": 0,
+   "es": "No puedo dormir."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "Мы",
+   "after": "помочь.",
+   "options": [
+    "хотим",
+    "хочем",
+    "хотят"
+   ],
+   "answer": 0,
+   "es": "Queremos ayudar."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "Вы",
+   "after": "мне помочь?",
+   "options": [
+    "можете",
+    "могете",
+    "можем"
+   ],
+   "answer": 0,
+   "es": "¿Me puede ayudar?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "",
+   "after": "нужно думать.",
+   "options": [
+    "Мне",
+    "Я",
+    "Меня"
+   ],
+   "answer": 0,
+   "es": "Tengo que pensar."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "Я",
+   "after": "поезд.",
+   "options": [
+    "вижу",
+    "видю",
+    "видит"
+   ],
+   "answer": 0,
+   "es": "Veo el tren."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "Я",
+   "after": "в блокнот.",
+   "options": [
+    "пишу",
+    "писаю",
+    "пишет"
+   ],
+   "answer": 0,
+   "es": "Escribo en la libreta."
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "Здесь нельзя курить.",
+   "options": [
+    "Acá no se puede fumar.",
+    "Acá se puede fumar.",
+    "Acá no fumo."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "¿Cómo se dice?",
+   "word": "¿Se puede pasar?",
+   "options": [
+    "Можно войти?",
+    "Нельзя войти?",
+    "Нужно войти?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Traducí",
+   "es": "Quiero encontrar a Alicia.",
+   "answer": [
+    "Я",
+    "хочу",
+    "найти",
+    "Алисию"
+   ],
+   "extra": [
+    "хочет",
+    "могу"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Elegí la respuesta correcta",
+   "question": "Что говорит проводник?",
+   "es": "¿Qué dice el guarda?",
+   "options": [
+    "Здесь нельзя задавать вопросы.",
+    "Я хочу вам помочь.",
+    "Алисия в Москве."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "Я умею плавать.",
+   "options": [
+    "Sé nadar.",
+    "Quiero nadar.",
+    "Tengo que nadar."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "¿Verdadero o falso?",
+   "statement": "Марк хочет найти Алисию.",
+   "answer": true,
+   "why": "Por eso sube al tren fantasma."
+  },
+  {
+   "type": "write",
+   "prompt": "Escribilo",
+   "es": "quiero",
+   "answers": [
+    "я хочу",
+    "хочу"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Escribilo",
+   "es": "No puedo.",
+   "answers": [
+    "Я не могу",
+    "Не могу"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "¿Verdadero o falso?",
+   "statement": "«Хотеть»: я хочу, мы хочем.",
+   "answer": false,
+   "why": "Мы хотим: el plural va como la 2.ª conjugación."
+  }
+ ],
+ "keyboard": [
+  "а",
+  "б",
+  "в",
+  "г",
+  "д",
+  "е",
+  "ё",
+  "ж",
+  "з",
+  "и",
+  "й",
+  "к",
+  "л",
+  "м",
+  "н",
+  "о",
+  "п",
+  "р",
+  "с",
+  "т",
+  "у",
+  "ф",
+  "х",
+  "ц",
+  "ч",
+  "ш",
+  "щ",
+  "ъ",
+  "ы",
+  "ь",
+  "э",
+  "ю",
+  "я"
+ ]
+}

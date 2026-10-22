@@ -1,1 +1,49 @@
-LITMIR-ENC1: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
+## Dossier del módulo: Casimiro Condena
+
+**Nombre:** Casimiro Condena. **Cargo:** juez del vagón del juicio final. **Personalidad:** autoritario, vanidoso y teatral. **Accesorio:** un martillo con el que exige silencio. **Aliado:** Leonardo Circuito, el fiscal que utiliza dispositivos tecnológicos.
+
+**Pista reservada:** la autoridad del juez parece absoluta, pero sus decisiones son arbitrarias. La tableta que aparece durante el juicio puede resultar decisiva para cambiar el recorrido del tren.
+
+## Evaluación autocorregible · 15 preguntas · 100 puntos
+
+Respondé las 15 preguntas y pulsá «Calificar módulo». Podés repetir el examen para mejorar tu mejor nota.
+
+## Test · Comprensión lectora
+
+1. Marcos encuentra a Alicia en la discoteca. ( V / F ){V}
+
+2. Los boyscouts zombis se llevan a Alicia. ( V / F ){V}
+
+3. Casimiro Condena trabaja como cocinero. ( V / F ){F}
+
+4. Alessio interviene durante el juicio. ( V / F ){V}
+
+5. La tableta carece de importancia para la historia. ( V / F ){F}
+
+## Elegí la respuesta correcta
+
+6. ¿Quién preside el juicio? [[*Casimiro Condena|Marcos]]
+
+7. ¿Quién aparece como fiscal? [[*Leonardo Circuito|El jefe de estación]]
+
+8. ¿Qué cantan los zombis? [[*Una canción sobre viajar en tren|Un himno deportivo]]
+
+9. ¿Qué personaje conoce la tecnología del tren? [[*Leonardo Circuito|El camarero]]
+
+10. ¿Qué busca Marcos durante el juicio? [[*Rescatar a Alicia|Comprar un boleto]]
+
+## Gramática · Pasados y obligación
+
+11. Ayer los zombis [[*se llevaron|se llevan]] a Alicia.
+
+12. Mientras Marcos buscaba pistas, Alicia [[*bailaba|bailó]] en la discoteca.
+
+13. El juez dice que todos [[*deben|debe]] obedecer.
+
+14. Alessio [[*tiene que|tienen que]] defender a Alicia.
+
+15. Si queremos salir, [[*debemos|debo]] encontrar la locomotora.
+
+## Producción escrita
+
+Imaginá un juicio absurdo en el tren. Escribí seis líneas de diálogo entre el juez y un pasajero. Usá **deber**, **poder** y **tener que**.

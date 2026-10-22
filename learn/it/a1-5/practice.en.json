@@ -1,1 +1,274 @@
-LITMIR-ENC1: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
+{
+ "title": "La giornata di Irina",
+ "subtitle": "Telling the time, reflexive verbs, fare and andare, days of the week, frequency.",
+ "speak": "it-IT",
+ "hero": "novels/la-macchina-dei-sogni/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "lunedì",
+     "Monday"
+    ],
+    [
+     "mercoledì",
+     "Wednesday"
+    ],
+    [
+     "venerdì",
+     "Friday"
+    ],
+    [
+     "sabato",
+     "Saturday"
+    ],
+    [
+     "domenica",
+     "Sunday"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Sono le sette e mezza.",
+   "options": [
+    "It’s half past seven (7:30).",
+    "It’s a quarter to seven (6:45).",
+    "It’s a quarter past seven (7:15)."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Che ore sono? —",
+   "after": "l’una.",
+   "options": [
+    "È",
+    "Sono",
+    "Ha"
+   ],
+   "answer": 0,
+   "es": "What time is it? — It’s one o’clock."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Irina",
+   "after": "alle sette.",
+   "options": [
+    "si sveglia",
+    "mi sveglio",
+    "si svegliano"
+   ],
+   "answer": 0,
+   "es": "Irina wakes up at seven."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Io",
+   "after": "presto.",
+   "options": [
+    "mi alzo",
+    "si alza",
+    "ti alzi"
+   ],
+   "answer": 0,
+   "es": "I get up early."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Noi",
+   "after": "alle undici.",
+   "options": [
+    "ci addormentiamo",
+    "si addormentano",
+    "mi addormento"
+   ],
+   "answer": 0,
+   "es": "We fall asleep at eleven."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Io",
+   "after": "colazione.",
+   "options": [
+    "faccio",
+    "fa",
+    "facciamo"
+   ],
+   "answer": 0,
+   "es": "I have breakfast."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Irina",
+   "after": "nel suo studio.",
+   "options": [
+    "va",
+    "vado",
+    "vanno"
+   ],
+   "answer": 0,
+   "es": "Irina goes to her office."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Il paziente arriva",
+   "after": "sei di sera.",
+   "options": [
+    "alle",
+    "a le",
+    "nelle"
+   ],
+   "answer": 0,
+   "es": "The patient arrives at six in the evening."
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "It’s a quarter to nine (8:45).",
+   "options": [
+    "Sono le nove meno un quarto.",
+    "Sono le otto e un quarto.",
+    "Sono le nove e un quarto."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "I don’t work on Sundays.",
+   "answer": [
+    "La",
+    "domenica",
+    "non",
+    "lavoro"
+   ],
+   "extra": [
+    "il",
+    "lavora"
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Non dimentico",
+   "after": "",
+   "options": [
+    "mai",
+    "sempre",
+    "non"
+   ],
+   "answer": 0,
+   "es": "I never forget."
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Che lavoro fa Irina?",
+   "es": "What does Irina do?",
+   "options": [
+    "È una psicologa.",
+    "È una dottoressa.",
+    "È una cameriera."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "di solito",
+   "options": [
+    "usually",
+    "never",
+    "today"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Irina è nata a San Pietroburgo.",
+   "answer": true,
+   "why": "She lives in Bologna but was born in St Petersburg."
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "I wake up at seven.",
+   "answers": [
+    "Mi sveglio alle sette",
+    "Io mi sveglio alle sette"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "What time is it?",
+   "answers": [
+    "Che ore sono?",
+    "Che ore sono",
+    "Che ora è?",
+    "Che ora è"
+   ]
+  }
+ ],
+ "keyboard": [
+  "à",
+  "è",
+  "é",
+  "ì",
+  "ò",
+  "ù"
+ ]
+}

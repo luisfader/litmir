@@ -1,1 +1,302 @@
-LITMIR-ENC1:Tpw7y8Nsa8Bt1aqgcifQRjbOEs0eDUojXr/QqH9gm0u4pBwkl/f4ZBtYq3I+IDsnA8uyzpUvyhB0tqXXcFEhgDB5+e/Z4BHf4BcF6ta+deV+//BbHdTKS3TMjmreZ4uiotqcSRqHz28pVgG7NiUIbha+K6/Aep1tjl/k8offcLHe23Gam30ja7MZ3RChPurd982LGXiWRQwlgoZ7ANKy1QTSLFdpe6xXeklVoruB04/hje62jr0n6nTOx/3KIPij/BvD5WGLhJIYGdQtrpDZy9NZ90NTo/A3XL1PSm75eNWiVjBxbKlf1mPbpVOwcKBTspOfS9BF76mem+X4qKw04chK9a8LFFZj8TdzVL/yKnRBYqL+3vXQPaC/5ggna01F5zoEzlIGC9WXN7ezbgtML2sXc0ygfkaq8CT9Ascr6IeDebA8GBqF35ZlXav2Y4z2H/0u0FuTIDGT6wEiFMR+FEEawYJrAHRKvoZMEv7ALu8YSbTjMAGzpSCoAEnyy8/SpNA0sKzRpbmSViUEnWww+7yhL5eHFjXkB1HvY3r/pEB/HPnWkoA/ghIKMpudRGZaxd5CoBlc04XNvb+lpLPOIwGP+Vcnq8blinTLWlw0mIysevO81x6yRT8ymqy5/JCdHTM/DK4wPphMcZbCLz9J2aL70eFs+9hjWmVMGtcwuBgC2+xH//K48wq0+0i+gBC0sO/Ywtd7NRqzVu/aQvi2fLcZbcqZzGBjxrTRn23r8uGQ+VF61DR7sH0dNAZbtA6cthiFLZA2PqLJ4csF+dMHgYMR2zw7X03jcOOkpflkpuJA5N/0eb6ILb33bcbuZpoHb3hR23UaoAIp+aztOHbDBDYOr5OD/T0dfV4MKJpMwGJQ3+T51sqcETbwYvk1q5S9S398OyfRGpA0Z48+Efsiz9SBRYI/0xH6ce+cwx2UP95FR4uJt6uO1Yxppk8YNHS9HTS1upOIdvs84MlLEXXHhC+zLEpe4Yeta64fOrAXpVKWsBy6hLBkf3aWq0Or733sNHNGG7Fr7DO6XmIJ/44C8eZ6Uv87YjEpMKcNnx3KFpojD+U12+VbeyU2hiik8ceLGWZ4h6ugzDVd5xyXVL+g4a6HjRpqLfhQv+yhOu01XsWvn624Syl1otjvRsLMnJ4g6Vo59mSMtAsYGLLucQ6qqFamio6KrZ2olFo8QanhpyxiXMRmu+p0EX8V9fVJ5GkeF3jbUI/kYxphkDsndT/vK6oGRji4o5qD873sQQulhMC30JIqY1LMDc0KlVCy+Kwq1MZQEoJS4ThvbXk+VR8AVKqwrEb5h6AfJ9z6Hr+Z0gEpviB7a8q/Dz8im9CI7CWiswVZwyaNo6dt4kAl3wxDy4lZ6MALBfvCx6+cnmIwJrYHu7bvKUWZWE1X1PHjscpP3efYph/Hb7ZzzuDv5Qy+lHA7MsHYhEkKL/nFtOFFZJsp6V9VMDugGDhULvg8OCH5qtqETX5OimkhIpEhKXhvFpegiq1Ts/bEZN4EoVtHbEzAvE+YfxWwhvw7/8WWce59VBP0Hbp6SculAwFimLF/eu7aql3MjTCOraYgwmJlg1ko+lzUQeZx2M/awqp6Kr1rnZn3/hTzQG/7BeU8n0yJkoghDBx6tqLjRkMpLpReqGLbs2AXXnQPMLEVv1603iIk7gWzcYoDsp8brK/gxYktRqDDud71CVVM4OD3MtVX08brNbwnVBth1N6YhyEvx1USk6CRoGCyCpTkPbsTT3cein2Z2/VwAbJhrGiC6/R1lX9G/9fhxfmfbpr8x2NXN1jfyazyOwlI4+WRTjTAA6gtpXrn2t+PYFsIBihoXowfvc7c7wX5TNvi45hpw+f/exLsJr28oKBGGWWhLmXAL+5RaPL49VYAv07nLjnRd2iU1BMqwvJIJN42IPCbpG7l4romCNCg7xVlQ7as9IQujtsBv6hAJD8qVOzs6vgFVFNjS+yS9ogDuFgyw9M1xZfUUJvMSVLMkAikZtTNqc/39ML8pUVR9N4iI9/RzFly8tI9wiLnaR1R5ujzJwsxIHop3r1TcVCv7gnwd/MVRQtcLPK8/AKAntIq4J+KXtJoo/1FFttfbbpuFDO7vi6xcTc7ztvvUTWUsNkEk4BT3NRRJvYMd1V/LUG4KSgsqM+lSHa8PyorutIkXQy1G0GK5oMFJzApr5f+/zRjhgy7UtXp7CZslGpTF7IM8j5z4O/2GQlBJvJ0engLYmPU/5yRb+/Ak9+xqQA9U5Fy4q/pXptTokW3DKBZm2cbMrYsSnEpAKfVyAD6JVZTKwJ6hBaOO/WX9Q8G9VD4k7UMPRfT+9dQ4tJqMW9THCgyKDggAAomFrehLE73hQxUa08JM1+c2zrJrEwruAtoSEDGBGo87PNJIWEKyyr249imYhSL3F9p24Y7h5FbFpV2IP+CqCpGUjw3zsHvANXxzl8nJh+WzQ9nUQP8N4dSLYC834jupgl9M8AEvMmsuFc3F0MOV60lu940XyeiQe0kilXjNSlRJXUI/xfjxJc4Ciw1NZ7kloUgUj6Bw2B1o3u6qsso9E3YjUKBkhlBfUyWef9UN5w0X0SftNM7G0a2iQNc9P5aDNMgUMag99EyGHdO3uuNIocQeUsClWrYUQxa57zPkFbKCwUCo/r6Gs4yM7VO8URnJ87uyxl7uYMFxrof4rE+enYtsjD3JgAj//01noRLwN1tjgwcrVIsUk0csolyzoS0cFDNZP3pDRV1341Ss4SEYr4lsJw1yBOFUQc+PSc9NUhSU/BLTo2GuaFqOljfyJttifjIx54ej1xuw7i8wu0EnoG7m8LuFQnk9Xe+h6l7K6jnksLerifuGkulrNaqb43EwPRqUlHrQt/RlCIpi/hwx/JqMxGrQs9f/Q6wuv98qdJIAug4jH8TQVflbVypb8AzYWiN6f0TY9DFT7U0Id5dtvVUEP3P1XlUu3xzHKxb/ZnlmH3CUSBJTcTMSFnfZdKwacT2R3XMD5XxqtMJplOFeSsNcytBW7h6XbuotnJjLi3KnavJsJKtv56tHPCUchj1JSZhfY8fb46LPflun1MxyFS9ESWFK/PMDI4bUqHOZKHxrsMR0qOlrMu+N3BM/Y5AMCN3olIGHDPG/716feqtLhV0PExR4VT3SxPcTcW5vol6NCexL6v7c40K4ccF5iypbfttI3NlIBaGvKqJbL5uwX4G5epKRLwuPbjHp6w22h36q/d2nPxuCbCaNDtjkrGt5lsmqaG2eDq0ldl+LN3CCqyyraqsRr6q83jOSW457piTh8jiIvjFwsZtlA2+ayk9PBt2dcR7mHW/Ugwrcz5MYtPv1qDeKWYCWkPLIuQ5P38TXmhKyF6Giv7Ja6DAtcb0tFu+nikIK3vXn2p2CeO45i30kyP6UynHATZ0zJEOC+QJzkEpwbLBxzBmNPpq6cz6xTL1IVaGOxoLnds4n5Mo23MLWnnjZvqjOXxX8bp1lu6I5QL9cyBy/zUaqqYCb7Tyo6W10+Euk8TPgl80QVv9FyrDURK1ZxDpoHbFYRkQvrs9Dqk72kpcF23Jkt89av8aYSNVKgKywyv8iK7z/Va99fkAO1GZ9bs5ELzg0AvU7SNTlVIga5AOtqeBeot43jFxMGrdPjwhUBqj0YJOFylHEPkR8hekgje64NIubXWA1BtQXiYZpTf3ycDi0kPSbw95yvXCPgkPg5MnzFdu3qYuuM3zL/fhmUAMuacA1ls3Rae1RZhSrJW3rKHSxBpZ9tOw6umvDhXIy68x+zbgdfWba+ewkObFMw4kZGjtTPD+6rP7A0b2A/vU5/bIqxSPiWk00Scn3UWLCPXRQVgQOwDMcqZ0M3woQNKUtWeTx/UMX2wwcN+LbPOz23D2bFwrBSHK6qMpB7DTFy7wm3bjxoAbnUVWmaRDzYmdSe1iEXJ7gPWhj9lOBSTxNZUK6fuojRgrE3IWF2fUC39QaGLb6GkSqYyrgdgLpj5O5OMoMicDWHBW2kFUjbAEPQLc00UAWfhOIYqh5Uta2WaDn8G1SDtz795ZJfpLgy2ClXwgjy7q0gzHa8K/2qGGrCFEdYp6MHMkjPAyBnqG3HBeUlkukOqiHVnbFcpmXFDmQPlgp2lCbbyi7YmMvUSYX6zoAbDBVCT6NJpefogB3j1FpKVqU9+aXXXtCw8PTMtahTx8CvIT9Cw39UMJ7mUGeLNAaoUIzej5sZqpEzTqjCjLAeXsBYVgmf9Z8hah+dWOHkLspI+Y3l01fuSxxSNqkBBnmcQx4li6IZjU50PTKG8/qpqG3vRdXWDX/enJ7L4HJFBkNPpo1JDuX724gVKn+GNtZ1fVkGDqUtWGaAmgHKS9Wnd0p9dsczqrs5t4X/kXggXBk9nTvO5vMH3XtaNKdAaxZcvOR/RJKawVrAVMMOw3yZayD9kUXntlu4Q5/BDlX74HvbwDkOPkyUiN2eZQo69JEy/CqdW7zRCjTKZ/nt6yh4RahFZB0GgUfPeeWzLglafVdPBQYgsd3dN/TJhPJ1tJEGZjeSD6BZvh/XMn6fA3AdYeKassPUttl6JRtm37JFSXRi/Dt0Y9HSErriaVLZHN1GVNS9aB5c7iq1fJ+wZ4G6KJRzhtbhmhDl3nbMBnXAc7ANH/ZNU8Lm9cV4jZis/LZ9HT8uqMoT53uD4O7EvKfYmb8/XirBtL7tKrnwRowv76vPM8agsDeuubhe/lXaMcPzxZcRsy8PEzwaGz/WqwT16jpU3+tEnrLGv3+zDXy8mHN9YwARPZCKFWMXLHBNFBXzYrzoFe0vNyhUTyhL7xjZ7V+XAJvSgQ5iFLHkgfrk0FGuYX5rO8Dbzg6rZkmT39cAlUv3fZ2PBPCxrIN/XnPwx48bWeqM0CNGugPdD1MstbxGuoROihU/PbEGd6tXNTxZ9+QjZJYLnFv0UMDnVv/qQsQ1T9439wRHTdB1X0GfczGutRGHGWuJ8ZUJ6Ih6jPks42c9ZPvRt8XcWqdw6jXoVZQLImP/PpFMiHCID1saTP6gYfyTeVO+PEaBT35qwTZOFNuIC+3nFjRKVMZGv9sVt3IjaIo09qczzusZcsl92d+okR1QD9xxyM0B+v6ZMuknE8L8ezmrVYiAubPSwQSVaCisnaeqlF6UkrZZbDocTr54ZqUa6bbwiJf+OW8UshrUw0RiELrZ+BOdBpeNK2annngFhkaJcmXCiAmodqPZ7vF8sL7oTMX6YxSEcsPN1qXbcvw9rV4j4OKwYGz1pOuX6qWbg+tmLYYXoIxV5QcLt03+2OY8DIVnS5RvE1ap6Mk7JWs5xfyTG1gFYbEF8OgbR3U8fK4kFVEnLfPmegcftj0r1lbRt62S1NuPURWin16SfTutgEvlItYN6zKj6Hu23xGZEmVquRfBZ2s2ajui7++gFflvoTZzmk73o0H6SDGb9WRe+1OsdLGLTGzKjUV9mEL4uTSzCfjJb0wAIr/7mA+vNw9xh2UqkcVaTSe7Arjf20G8JCl8YK6AYhapulj+EUaaH4f6NsZFTf9RNVoqzRH5msdbzakklh+9ESOQuHLzj2ER+ox58pDgPB+XqLbv6cYbejcj+Xve+N7bRkgqtl1u4M+2IsI2FY1LMSsA/xPNTbcRR7pKKXj9RZ8GekXMEhMESvDcS3H+AqpJqXnaT6GWgA/dBzmAVGBwPC/CVe77Byb4j5JDcmQEqaxoyXJy5W5AACbTG4VtsLALFOjM06lXXU+PMbuD/t3Ib62C50PhGXH2cYbWzYiO5JXD0wLLg9KxYNwv6Yx4INkpTnLulaNuo3AayX14d/zQ/C+ORSIgyrssZHSuhsHbN2e4ZosaPDTFJNna1lJJ4QP3+4OqIHsbyHeUZgKPit/UiPViFkMMxgcMA9/a5j4FUY+33zgCXgz3mIg7AhFMd8cWOQ0pgROPqVMTD3Cj+Y86eE5v+95Qbn0rYUcAvFGHQcAg9tVtOrQ6NiPs39O8Pzu5Fax0d6Q9P24+78JuLV5BpjvKMCHzuKbq+GwUFVOzIZoQgzCamLlVtoupiIQF7O/UpOavlFhDdxkXmpFZHzUHfwuxIy1QyJenny0XbOxbWdSeBGaVDzUTqSj5yseX24oQ/nODOn0JqX+pDnKy9ac1mjOiv3ja+5RtVFelwJbEhiqaQmLqQQGQZE86OAYS/3DBb6pxZ4q5meKW400Ua2Wc+ZslCjGJMD3dJDQs+vBp9WntyscIK1yQff64v02nfwLDb9HwZGTCTb7/VDvT/TKhiKQCnSTsx7djWj5FN63d2vwpxil5TH6zTjkktz2Sm9ktQyfMp+m/zmGrOt4D+RRewCwm6EdbaG+cTONb++Rla9zcA+22Fgl0ed9vXFWITDHefBXOoOZAtgGN/YLHdjIbbRhJXGn4p+DZNGg51X1zH5JQWBiiZ3YXqz3BG0shxZoiTUlKpcO9WBHuO0WBOiIbG4+CvHhj4sQfJwiBMLziRVyqej2VVypMa215SYKP0iz5wAQQAY9TQ8jeQkAHuuhjCo9LDmGqZkM/FhHNkCxeVfjozTcFkgPbg4H2ciHjiJAa3JK+zPprE/pcWv/pot+28agw31Fuei1WXIvbePI5P1Zh5IFa/iERTmMsGVF6Be4GH43ioed8TAF5WAnnYlvrsEWAKplYALxTmvM8ndtSnssdjP10bOdy5oQiA6EBPHtXM26fAfYF9XHLVvjg9u9BJm4nra9tTZD/J+4a2okTTzZiUfysAxAfrZ9qPQWUbfiARzYwjkdb3X6eL5l+NHuyEgJgnuOgWlQOo34GikT1i8uGzWkEA70ZlAcy/8x2v8/TGTKLm7A/C1XWOZdPILOrW7WrM6D8GlaSGf8H8j54/wWZraQuvsLBfqjXpjVDkUylxQzY+/f0U1cJhrmRal51P8QCUHIpfFExk9dCOvTjGiQM1Boxh52y6rIOu40TPnbEFcdOEj5v05vHKufcutq5Rv8tK0owXp0GRDcpetGCjIZ85QTXSiic44r6BWUT25G9GHr3IkEt5e52EymkTJhzPLsn1z0cg0xamEPzhJpkHoZeAkt0vbvw8yOdJNxXkowi0g2eQdYycb9szgEyP0urvITLHAb+ybsCYSy5n0G8FtD1ElPp+RQLFO9LHMRqiEKWQn+V4cCX+MKPtVliiDnWHIm1grTDns3Rk6yaQ0hgNF5Klff3FY50XRK3mZwlhYu8SlipqkPGUiwx1DpmX4VHhMq91sSokL4MJwEdV6HxPORXS1AsSBEpnw3FSqdonX/QHo1ycQsI3tv+hPH2inr2E=
+{
+ "title": "Quanto costa?",
+ "subtitle": "Shopping, numbers from 100, colours, clothes, questo / quello.",
+ "speak": "it-IT",
+ "hero": "novels/la-nevicata-rosa/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 8 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "rosso",
+     "red"
+    ],
+    [
+     "verde",
+     "green"
+    ],
+    [
+     "nero",
+     "black"
+    ],
+    [
+     "giallo",
+     "yellow"
+    ],
+    [
+     "grigio",
+     "grey"
+    ]
+   ]
+  },
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "la sciarpa",
+     "scarf"
+    ],
+    [
+     "il cappotto",
+     "coat"
+    ],
+    [
+     "la gonna",
+     "skirt"
+    ],
+    [
+     "le scarpe",
+     "shoes"
+    ],
+    [
+     "la camicia",
+     "shirt"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Quanto",
+   "after": "questa sciarpa?",
+   "options": [
+    "costa",
+    "costano",
+    "costi"
+   ],
+   "answer": 0,
+   "es": "How much is this scarf?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Quanto",
+   "after": "queste scarpe?",
+   "options": [
+    "costano",
+    "costa",
+    "costate"
+   ],
+   "answer": 0,
+   "es": "How much are these shoes?"
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "duecento",
+   "options": [
+    "200",
+    "2000",
+    "12"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "mille",
+   "options": [
+    "1000",
+    "100",
+    "1 000 000"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "120 euros",
+   "options": [
+    "centoventi euro",
+    "cento e venti euro",
+    "dodicento euro"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Carlotta compra una sciarpa",
+   "after": ".",
+   "options": [
+    "rossa",
+    "rosso",
+    "rosse"
+   ],
+   "answer": 0,
+   "es": "Carlotta buys a red scarf."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Ho due gonne",
+   "after": ".",
+   "options": [
+    "rosa",
+    "rose",
+    "rosi"
+   ],
+   "answer": 0,
+   "es": "I have two pink skirts.",
+   "why": "rosa, blu, viola never change."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "",
+   "after": "pantaloni sono troppo cari.",
+   "options": [
+    "Questi",
+    "Questo",
+    "Queste"
+   ],
+   "answer": 0,
+   "es": "These trousers are too expensive."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Mi piace",
+   "after": "cappotto, lassù.",
+   "options": [
+    "quel",
+    "quello",
+    "quella"
+   ],
+   "answer": 0,
+   "es": "I like that coat, up there.",
+   "why": "il cappotto → quel cappotto"
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "Can I try it on?",
+   "options": [
+    "Posso provare?",
+    "Posso pagare?",
+    "Posso cercare?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "È troppo caro.",
+   "options": [
+    "It’s too expensive.",
+    "It’s very cheap.",
+    "It’s too big."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "I’m paying by card.",
+   "answer": [
+    "Pago",
+    "con",
+    "la",
+    "carta"
+   ],
+   "extra": [
+    "contanti",
+    "costa"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Quanto costa la sciarpa di seta?",
+   "es": "How much is the silk scarf?",
+   "options": [
+    "Centoventi euro.",
+    "Quarantacinque euro.",
+    "Cento euro."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Carlotta compra la sciarpa rossa di lana.",
+   "answer": true,
+   "why": "«Prendo questa rossa»: the silk one is too expensive."
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Carlotta paga in contanti.",
+   "answer": false,
+   "why": "«Con la carta, grazie»."
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "How much is it?",
+   "answers": [
+    "Quanto costa?",
+    "Quanto costa"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "a black coat",
+   "answers": [
+    "un cappotto nero"
+   ]
+  }
+ ],
+ "keyboard": [
+  "à",
+  "è",
+  "é",
+  "ì",
+  "ò",
+  "ù"
+ ]
+}

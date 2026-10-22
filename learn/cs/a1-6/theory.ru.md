@@ -1,1 +1,106 @@
-LITMIR-ENC1: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
+## Кофе в дождливый день
+
+Самая первая сцена романа «Podzemní tajemství»: идёт дождь, Луис забегает в маленькое кафе и спрашивает молодую женщину: *«Promiňte, jak se řekne café česky?»* — *«Káva»,* — отвечает Яна. Представим, что было дальше, когда подошёл официант.
+
+> — **Dobrý den, co si dáte?**{Здравствуйте, что будете заказывать?}
+> — **Dám si kávu**{Я возьму кофе}… **káva**{кофе}, ano? A **jeden koláč**{одну булочку}, prosím.
+> — A vy, slečno?
+> — **Já si dám čaj**{Я возьму чай} **a polévku**{и суп}. **Mám hlad**{Я голодная}.
+> — **Máš rád českou kuchyni?**{Ты любишь чешскую кухню?}
+> — Ještě ji neznám. **Co mi doporučíš?**{Что посоветуешь?}
+> — **Svíčkovou s knedlíky!**{Свичкову с кнедликами!} **Je moc dobrá**{Она очень вкусная}.
+> — Mmm… **ten koláč je výborný**{эта булочка отличная}. **Chutná mi**{Мне вкусно}!
+> — **Zaplatím, prosím**{Посчитайте, пожалуйста}.
+> — **Ne, já tě zvu**{Нет, я угощаю}.
+
+## 1. Еда и напитки
+
+| Čeština | Русский | Čeština | Русский |
+|---|---|---|---|
+| káva | кофе | chléb (chleba) | хлеб |
+| čaj | чай | sýr | сыр |
+| voda | вода | maso | мясо |
+| pivo | пиво | polévka | суп |
+| víno | вино | knedlíky | кнедлики |
+| mléko | молоко | zelenina | овощи |
+| džus | сок | ovoce | фрукты |
+| koláč | булочка, пирожок | zmrzlina | мороженое |
+
+**Svíčková** — классическое чешское блюдо: говядина в сливочном овощном соусе с хлебными кнедликами. А пива чехи пьют на душу населения больше всех в мире.
+
+Осторожно, ложные друзья: **čerstvý** — «свежий», а не «чёрствый»; **ovoce** — «фрукты», а не «овощи».
+
+## 2. Винительный падеж — как в русском
+
+В *Dám si kávu* слово *káva* превратилось в **kávu** — точно как в русском: *вода → пью воду*. Чешский винительный падеж почти совпадает с русским:
+
+| Род | Им. падеж | Вин. падеж | Пример |
+|---|---|---|---|
+| женский на -a | káv**a** | káv**u** | Piju kávu. |
+| женский на -e | sukn**ě** | sukn**i** | Má dlouhou sukni. |
+| мужской, предметы | čaj, sýr | **čaj, sýr** (не меняется) | Dám si čaj. |
+| мужской, люди и животные | bratr, pes | bratr**a**, ps**a** | Mám bratra. |
+| средний | pivo, víno | **pivo, víno** (не меняется) | Piju víno. |
+
+Всё как в русском: «пью воду», «вижу брата», «беру сыр». Прилагательные следуют за существительным: *dobrá káva → dobr**ou** kávu* (ср. «хорош**ую**»), *česká kuchyně → česk**ou** kuchyni*.
+
+Глаголы с винительным: **mít**, **chtít**, **dát si**, **pít**, **jíst**, **mít rád**, **znát**, **hledat**, **potřebovat**.
+
+## 3. Нравится и вкусно: MÍT RÁD и CHUTNAT
+
+| Конструкция | Значение | Пример |
+|---|---|---|
+| **mít rád / ráda** + вин. п. | любить (вообще) | Mám rád polévku. Jana má ráda hudbu. |
+| **chutná mi** | мне вкусно | Ten koláč mi chutná. |
+| **líbí se mi** | мне нравится (на вид, на слух) | Ta sukně se mi líbí. Ty se mi líbíš! |
+
+*Rád* меняется по роду говорящего: мужчина говорит *mám rád*, женщина — *mám ráda*, группа — *máme rádi*.
+
+Помните слова Яны в первой главе: *«Ty se mi líbíš.»* — Ты мне нравишься.
+
+## 4. В кафе
+
+| Официант | Вы |
+|---|---|
+| Co si dáte? — Что будете? | Dám si… — Я возьму… |
+| Co budete pít? — Что будете пить? | Jedno pivo, prosím. — Одно пиво, пожалуйста. |
+| Ještě něco? — Что-нибудь ещё? | To je všechno. — Это всё. |
+| | Zaplatím, prosím. / Účet, prosím. — Счёт, пожалуйста. |
+
+**Dobrou chuť!** — Приятного аппетита! **Na zdraví!** — За здоровье! **Mám hlad / žízeň.** — Я хочу есть / пить.
+
+## Проверьте себя
+
+Dám si [[*kávu|káva|kávy]].
+
+Jana má [[*dlouhou sukni|dlouhá sukně|dlouhou sukně]].
+
+Piju [[*pivo|piva|pivu]].
+
+Mám [[*bratra|bratr|bratru]].
+
+Ten koláč mi [[*chutná|chutnám|líbí]].
+
+Jana má [[*ráda|rád|rádi]] hudbu.
+
+В винительном падеже мужские слова-предметы не меняются. ( V / F ){V}
+
+«Ovoce» значит «овощи». ( V / F ){F}
+
+## Словарь урока
+
+| Čeština | Русский |
+|---|---|
+| Co si dáte? | Что будете заказывать? |
+| Dám si… | Я возьму… |
+| káva / čaj / voda | кофе / чай / вода |
+| pivo / víno | пиво / вино |
+| chléb / sýr / maso | хлеб / сыр / мясо |
+| polévka / knedlíky | суп / кнедлики |
+| ovoce / zelenina | фрукты / овощи |
+| mít rád / ráda | любить |
+| chutná mi | мне вкусно |
+| líbí se mi | мне нравится |
+| mám hlad / žízeň | хочу есть / пить |
+| Zaplatím, prosím. | Счёт, пожалуйста. |
+| Dobrou chuť! / Na zdraví! | Приятного аппетита! / За здоровье! |

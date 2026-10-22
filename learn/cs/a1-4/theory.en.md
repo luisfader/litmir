@@ -1,1 +1,107 @@
-LITMIR-ENC1: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
+## The second Prague
+
+Lucie, the guide, tells Luis: «**Pod Prahou je druhá Praha.**{Beneath Prague there is a second Prague.} Staré sklepy, chodby a síně. Tam je krásná akustika.» She leads the friends down below.
+
+> — **Kde jsme**{Where are we}? — ptá se Luis.
+> — **Jsme pod Starým Městem**{We’re under the Old Town}. **Nahoře je náměstí**{Up above is the square}, **vedle je kostel**{next to it is a church}.
+> — A **kde je Karlův most**{where is Charles Bridge}?
+> — **Most je tam**{The bridge is over there}, **na řece**{on the river}. **Není daleko**{It’s not far}.
+> — **Je tady**{Is there} **světlo**{light} here?
+> — Ne. **Světlo je v batohu**{The light is in the backpack}. Mark **má baterku**{has a torch}.
+> — **Jsem v podzemí Prahy**{I’m in the Prague underground}… a **tady chci hrát koncert**{this is where I want to play a concert}!
+
+## 1. Where? — KDE JE…?
+
+- **Kde je** kavárna? — Where is the café?
+- **Kde jsou** Jana a Mark? — Where are Jana and Mark?
+- **Kavárna je tady / tam.** — The café is here / there.
+- **Je to daleko / blízko?** — Is it far / near?
+
+## 2. V or NA + the locative case
+
+To say where something is, Czech uses the **locative case** after **v** (in) and **na** (on, at):
+
+| | Basic form | Where? | |
+|---|---|---|---|
+| **v** (in) | Praha | **v** Praz**e** | in Prague |
+| | kavárna | **v** kavárn**ě** | in the café |
+| | podzemí | **v** podzemí | underground |
+| | batoh | **v** batoh**u** | in the backpack |
+| **na** (on, at) | náměstí | **na** náměstí | in the square |
+| | most | **na** most**ě** | on the bridge |
+| | ulice | **na** ulici | in the street |
+| | nádraží | **na** nádraží | at the station |
+
+Some places take **v** (*v kavárně, v Praze, v hotelu*), others **na** (*na náměstí, na nádraží, na poště*). Learn each place with its preposition.
+
+Endings: feminine *-a* → **-e / -ě** (*kavárna → v kavárně*), masculine and neuter often → **-u** or **-ě** (*hrad → na hradě, batoh → v batohu*), words in *-í* don’t change (*náměstí → na náměstí*).
+
+## 3. Prepositions of place
+
+| Čeština | English | Example |
+|---|---|---|
+| vedle | next to | vedle kostela |
+| před | in front of | před kavárnou |
+| za | behind | za mostem |
+| nad | above | nad řekou |
+| pod | under | pod Prahou |
+| mezi | between | mezi hradem a mostem |
+| naproti | opposite | naproti nádraží |
+| nahoře / dole | up above / down below | Náměstí je nahoře. |
+| vlevo / vpravo | on the left / on the right | Kostel je vlevo. |
+
+After *před, za, nad, pod, mezi* the noun takes another case (the instrumental). For now, learn the phrases as wholes.
+
+## 4. The city
+
+| Čeština | English | Čeština | English |
+|---|---|---|---|
+| náměstí | square | most | bridge |
+| ulice | street | řeka | river |
+| kostel | church | hrad | castle |
+| kavárna | café | nádraží | station |
+| tramvaj | tram | metro | metro |
+| obchod | shop | muzeum | museum |
+
+Prague is a city of trams: *Venku zvoní tramvaje* — outside, the trams are ringing (from the novel).
+
+## 5. Is there…? — JE TADY…?
+
+- **Je tady** kavárna? — Is there a café here?
+- **Tady je** metro. — Here’s the metro.
+- **Není tady** světlo. — There’s no light here.
+
+## Check yourself
+
+Luis je [[*v Praze|v Praha|na Praze]].
+
+Jana sedí [[v kavárna|*v kavárně|na kavárně]].
+
+Lucie a Mark jsou [[*na náměstí|v náměstí|na náměstě]].
+
+Karlův most je [[v řece|*na řece|pod řeku]].
+
+[[*Kde|Kdo|Co]] je nádraží?
+
+Pod [[Praha|*Prahou|Praze]] je druhá Praha.
+
+«Na nádraží» means "at the station". ( V / F ){V}
+
+«Kde» means "who". ( V / F ){F}
+
+## Unit vocabulary
+
+| Čeština | English |
+|---|---|
+| kde? | where? |
+| tady / tam | here / there |
+| daleko / blízko | far / near |
+| v / na | in / on, at |
+| vedle | next to |
+| před / za | in front of / behind |
+| nad / pod | above / under |
+| náměstí | square |
+| most | bridge |
+| kavárna | café |
+| nádraží | station |
+| podzemí | underground |

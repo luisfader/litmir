@@ -1,1 +1,108 @@
-LITMIR-ENC1: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
+## Carnival in Venice
+
+In «Maschera di Venezia» Roberto and Natalia arrive in Venice on a February night, in the middle of the Carnival. They get off the train at Santa Lucia station — but where is their hotel?
+
+> — **Scusi**{Excuse me}, **come si arriva**{how do you get} a Piazza San Marco?
+> — **In vaporetto**{By water bus} o **a piedi**{on foot}?
+> — **A piedi**{On foot}. **Vogliamo vedere**{We want to see} la città!
+> — Allora **vada dritto**{go straight on}, **attraversi il ponte**{cross the bridge} e poi **giri a destra**{turn right}. **Segua le frecce gialle**{Follow the yellow arrows}: «Per San Marco».
+> — **È lontano?**{Is it far?}
+> — **Ci vogliono**{It takes} trenta minuti. Ma **attenzione**{be careful}: stasera **ci sono**{there are} **migliaia di maschere**{thousands of masks} **per le strade**{in the streets}!
+> — **Grazie mille!**{Thanks a lot!}
+
+## 1. Going places: A, IN, DA
+
+With *andare* (to go) Italian uses different little words:
+
+| Where to? | Preposition | Examples |
+|---|---|---|
+| a city | **a** | *Vado **a** Venezia, **a** Roma.* |
+| a country, a region | **in** | *Vado **in** Italia, **in** Toscana.* |
+| many places in town | **in** | *in banca, in farmacia, in centro, in piazza, in ufficio* |
+| places with an article | **a + article** | *al bar, alla stazione, all’hotel, al cinema* |
+| a person’s home or shop | **da** | *Vado **da** Natalia, **dal** medico.* |
+| home | **a** | *Torno **a** casa.* |
+
+Remember: **a + il = al**, **a + la = alla**, **a + l’ = all’**, **da + il = dal**.
+
+## 2. How do you travel?
+
+| Italiano | English |
+|---|---|
+| in treno | by train |
+| in aereo | by plane |
+| in macchina | by car |
+| in autobus | by bus |
+| in vaporetto | by water bus (Venice!) |
+| in gondola | by gondola |
+| in bicicletta | by bike |
+| **a** piedi | on foot |
+
+Careful: everything is **in**, but **a piedi**.
+
+*Quanto **ci vuole**?* — How long does it take? → ***Ci vuole** un’ora. **Ci vogliono** dieci minuti.* (*ci vuole* for one, *ci vogliono* for several)
+
+## 3. Asking the way
+
+| Italiano | English |
+|---|---|
+| Scusi, dov’è…? | Excuse me, where is…? |
+| Come si arriva a…? | How do you get to…? |
+| È lontano / vicino? | Is it far / near? |
+| vada dritto | go straight on |
+| giri a destra / a sinistra | turn right / left |
+| attraversi il ponte / la piazza | cross the bridge / the square |
+| la prima / la seconda strada | the first / the second street |
+| di fronte a… | opposite… |
+
+These are polite commands (to someone you call **Lei**). With a friend you say: *vai dritto, gira a destra, attraversa*.
+
+## 4. In the city
+
+| Italiano | English | Italiano | English |
+|---|---|---|---|
+| la piazza | square | la chiesa | church |
+| la strada / la via | street | il museo | museum |
+| il ponte | bridge | il negozio | shop |
+| il canale | canal | la banca | bank |
+| la stazione | station | la farmacia | chemist’s |
+| l’albergo / l’hotel | hotel | il mercato | market |
+
+In Venice a street is often called **calle** and a small square **campo**. There are no cars at all — only boats and feet!
+
+## Check yourself
+
+Domani andiamo [[*a|in|da]] Venezia.
+
+Natalia vuole andare [[a|*in|al]] Italia.
+
+Roberto va [[*alla|a|in la]] stazione.
+
+Stasera vado [[in|a|*da]] Natalia.
+
+Andiamo [[in piedi|*a piedi|con piedi]] a San Marco.
+
+Ci [[vuole|*vogliono]] trenta minuti.
+
+«Giri a destra» means "turn left". ( V / F ){F}
+
+There are no cars in Venice. ( V / F ){V}
+
+## Unit vocabulary
+
+| Italiano | English |
+|---|---|
+| andare | to go |
+| arrivare | to arrive |
+| tornare | to come back |
+| il viaggio | trip, journey |
+| il biglietto | ticket |
+| il treno / l’aereo | train / plane |
+| il vaporetto | water bus |
+| a piedi | on foot |
+| lontano / vicino | far / near |
+| dritto | straight on |
+| a destra / a sinistra | right / left |
+| il ponte | bridge |
+| la piazza | square |
+| la maschera | mask |

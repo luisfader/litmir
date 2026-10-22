@@ -1,1 +1,116 @@
-LITMIR-ENC1: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
+## Один день Ирины
+
+Роман «La macchina dei sogni» начинается так:
+
+> **Irina ha trentaquattro anni**{Ирине тридцать четыре года} ed **è una psicologa**{она психолог}. **Vive a Bologna**{Живёт в Болонье} da dieci anni, ma **è nata a San Pietroburgo**{родилась в Санкт-Петербурге}.
+
+Вот обычный день Ирины:
+
+> **Mi sveglio**{Я просыпаюсь} **alle sette**{в семь}. **Mi alzo**{Встаю}, **mi faccio la doccia**{принимаю душ} e **faccio colazione**{завтракаю}: un cappuccino e un cornetto.
+> **Alle nove**{В девять} **vado**{иду} **nel mio studio**{в свой кабинет}, in via Santo Stefano. **La mattina**{Утром} **ascolto**{слушаю} i pazienti.
+> **A mezzogiorno**{В полдень} **pranzo**{обедаю} **con un’amica**{с подругой}. **Il pomeriggio**{Днём} **lavoro ancora**{снова работаю}.
+> **Di solito**{Обычно} **torno a casa**{возвращаюсь домой} **alle sette e mezza**{в половине восьмого} e **mi riposo**{отдыхаю}.
+> Ma **questo lunedì**{в этот понедельник}, **alle sei di sera**{в шесть вечера}, **arriva**{приходит} un paziente nuovo: il signor Gallo…
+
+## 1. Который час?
+
+- **Che ora è? / Che ore sono?** — Который час?
+- **È l’una.** — Час. **È mezzogiorno / mezzanotte.** — Полдень / полночь.
+- **Sono le due / le sette.** — Два / семь часов.
+
+| Italiano | Время |
+|---|---|
+| Sono le sette **e dieci**. | 7:10 |
+| Sono le sette **e un quarto**. | 7:15 |
+| Sono le sette **e mezza**. | 7:30 |
+| Sono le otto **meno un quarto**. | 7:45 |
+| Sono le otto **meno cinque**. | 7:55 |
+
+**В** какое время — **alle** (*a + le*): ***alle** sette, **alle** nove*. Но: ***all’**una, **a** mezzogiorno*.
+
+Части дня: **la mattina** — утром, **il pomeriggio** — днём, **la sera** — вечером, **la notte** — ночью. *Alle sei **di sera*** — в шесть вечера.
+
+## 2. Возвратные глаголы
+
+Как в русском «-ся», только частица стоит **перед** глаголом и меняется по лицам:
+
+| | svegliarsi (просыпаться) | alzarsi (вставать) |
+|---|---|---|
+| io | **mi** sveglio | **mi** alzo |
+| tu | **ti** svegli | **ti** alzi |
+| lui / lei | **si** sveglia | **si** alza |
+| noi | **ci** svegliamo | **ci** alziamo |
+| voi | **vi** svegliate | **vi** alzate |
+| loro | **si** svegliano | **si** alzano |
+
+Другие: **lavarsi** (умываться), **vestirsi** (одеваться, *mi vesto*), **riposarsi** (отдыхать), **farsi la doccia** (принимать душ), **chiamarsi** (называться — вы уже знаете *mi chiamo*!).
+
+## 3. Неправильные глаголы дня: FARE и ANDARE
+
+| | fare (делать) | andare (идти, ехать) |
+|---|---|---|
+| io | **faccio** | **vado** |
+| tu | **fai** | **vai** |
+| lui / lei | **fa** | **va** |
+| noi | **facciamo** | **andiamo** |
+| voi | **fate** | **andate** |
+| loro | **fanno** | **vanno** |
+
+С *fare* много выражений: **fare colazione** — завтракать, **fare la doccia** — принимать душ, **fare la spesa** — ходить за продуктами, **fare una passeggiata** — гулять.
+
+## 4. Дни недели
+
+| lunedì | martedì | mercoledì | giovedì | venerdì | sabato | domenica |
+|---|---|---|---|---|---|---|
+| понедельник | вторник | среда | четверг | пятница | суббота | воскресенье |
+
+Без предлога: **lunedì** — в понедельник, **il lunedì** — по понедельникам. *La domenica Antonio pranza dalla nonna.* — По воскресеньям Антонио обедает у бабушки (урок 3).
+
+## 5. Как часто?
+
+| Italiano | Русский |
+|---|---|
+| sempre | всегда |
+| di solito | обычно |
+| spesso | часто |
+| qualche volta | иногда |
+| raramente | редко |
+| non … mai | никогда |
+| ogni giorno | каждый день |
+
+Как в русском, «никогда» требует отрицания: ***Non** dimentico **mai**.* — Я никогда не забываю. А Ирина *dimentica sempre* поливать цветок в кабинете!
+
+## Проверьте себя
+
+Irina [[*si sveglia|mi sveglio|si svegliano]] alle sette.
+
+Io [[*mi alzo|ti alzi|si alza]] presto.
+
+Che ore sono? — [[*Sono|È|Ha]] le otto e mezza.
+
+Che ore sono? — [[Sono|*È|Fa]] l’una.
+
+Il paziente arriva [[a le|*alle|nelle]] sei di sera.
+
+Io [[fa|*faccio|facciamo]] colazione.
+
+«Il lunedì» значит «по понедельникам». ( V / F ){V}
+
+«Non lavoro mai» значит «Я всегда работаю». ( V / F ){F}
+
+## Словарь урока
+
+| Italiano | Русский |
+|---|---|
+| che ore sono? | который час? |
+| alle sette | в семь |
+| e mezza / e un quarto | половина / четверть |
+| la mattina / la sera | утром / вечером |
+| svegliarsi / alzarsi | просыпаться / вставать |
+| fare colazione | завтракать |
+| pranzare / cenare | обедать / ужинать |
+| andare | идти, ехать |
+| tornare a casa | возвращаться домой |
+| di solito | обычно |
+| non … mai | никогда |
+| il fine settimana | выходные |

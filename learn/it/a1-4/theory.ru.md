@@ -1,1 +1,118 @@
-LITMIR-ENC1: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
+## План Алессио
+
+Роман «Ladro di cuori»: флорентиец Алессио читает статью о богатой коллекционерке Лауре Беллини — и решает пробраться в её виллу на холмах, чтобы украсть маленькую картину. Он изучает план дома.
+
+> **Dov’è**{Где находится} la villa? **È sulle colline**{Она на холмах}, **vicino a**{рядом с} Fiesole, **non lontano da**{недалеко от} Firenze.
+> **Nella villa**{На вилле} **ci sono**{есть} dodici **stanze**{комнаты}. Il quadro **è nello studio**{в кабинете}, **al primo piano**{на втором этаже}, **sopra il camino**{над камином}.
+> **C’è**{Есть} un cane? Sì, un cane **grande**{большой}. **Di solito**{Обычно} **sta**{находится, сидит} **in giardino**{в саду}, **davanti alla porta**{перед дверью}.
+> E Laura? **Stasera**{Сегодня вечером} **è a teatro**{в театре}. **La casa è vuota**{Дом пуст}… **forse**{наверное}.
+> — **Come stai**{Как ты}, Alessio? — **Sto benissimo**{Прекрасно}. **Stanotte**{Этой ночью} **sono un ladro**{я вор}.
+
+## 1. Где? — DOV’È…? / DOVE SONO…?
+
+- **Dov’è** la villa? — Где вилла? (*dove + è = dov’è*)
+- **Dove sono** i quadri? — Где картины?
+- La villa **è** sulle colline. Laura **è** a teatro.
+
+Чтобы сказать, где находится предмет или человек, в итальянском используется **essere**.
+
+## 2. C’È или È?
+
+- **C’è / ci sono** — сообщаем, что что-то **есть** (обычно с *un, una*, числом): *Nella villa **c’è** un cane. **Ci sono** dodici stanze.*
+- **È / sono** — говорим, **где** находится известный предмет (с *il, la*, именем): *Il quadro **è** nello studio. Laura **è** a teatro.*
+
+## 3. Предлоги + артикль
+
+Предлоги **di, a, da, in, su** сливаются с определённым артиклем:
+
+| | il | lo | l’ | la | i | gli | le |
+|---|---|---|---|---|---|---|---|
+| **a** (в, к) | al | allo | all’ | alla | ai | agli | alle |
+| **di** (из, -а) | del | dello | dell’ | della | dei | degli | delle |
+| **da** (от, у) | dal | dallo | dall’ | dalla | dai | dagli | dalle |
+| **in** (в) | nel | nello | nell’ | nella | nei | negli | nelle |
+| **su** (на) | sul | sullo | sull’ | sulla | sui | sugli | sulle |
+
+*in + lo studio = **nello** studio, su + le colline = **sulle** colline, a + il primo piano = **al** primo piano.*
+
+Без артикля: **a** + город (*a Firenze*), **in** + страна, комната, сад (*in Italia, in giardino, in cucina*), **a** casa, **a** teatro.
+
+## 4. Где именно? Предлоги места
+
+| Italiano | Русский |
+|---|---|
+| sopra | над, на |
+| sotto | под |
+| accanto a / vicino a | рядом с |
+| davanti a | перед |
+| dietro | за, позади |
+| lontano da | далеко от |
+| tra / fra … e … | между … и … |
+| a destra di / a sinistra di | справа / слева от |
+| di fronte a | напротив |
+
+*Davanti **alla** porta, vicino **al** camino, lontano **da** Firenze.*
+
+## 5. Глагол STARE
+
+| | STARE |
+|---|---|
+| io | **sto** |
+| tu | **stai** |
+| lui / lei / Lei | **sta** |
+| noi | **stiamo** |
+| voi | **state** |
+| loro | **stanno** |
+
+*Stare* — «находиться, оставаться» и «чувствовать себя»:
+- **Come stai? — Sto bene / male.** — Как ты? — Хорошо / плохо.
+- **Sto a casa** stasera. — Сегодня вечером я дома (остаюсь дома).
+- Il cane **sta** in giardino. — Собака (обычно) в саду.
+
+## 6. Дом
+
+| Italiano | Русский | Italiano | Русский |
+|---|---|---|---|
+| la casa | дом | la stanza | комната |
+| la cucina | кухня | la camera da letto | спальня |
+| il bagno | ванная | il soggiorno | гостиная |
+| lo studio | кабинет | il giardino | сад |
+| la porta | дверь | la finestra | окно |
+| il piano | этаж | le scale | лестница |
+
+**Il pianterreno** — первый этаж, **il primo piano** — второй (как в Европе: этажи считают от «нулевого»).
+
+## Проверьте себя
+
+Il quadro è [[*nello|nel|nella]] studio.
+
+La villa è [[*sulle|sui|su le]] colline.
+
+Nella villa [[*ci sono|c’è|sono]] dodici stanze.
+
+Laura [[c’è|*è|ci sono]] a teatro.
+
+Come [[sta|*stai|stanno]], Alessio?
+
+Il cane è davanti [[*alla|al|a]] porta.
+
+«Il primo piano» — это второй этаж по-русски. ( V / F ){V}
+
+С городами говорят «in»: «in Firenze». ( V / F ){F}
+
+## Словарь урока
+
+| Italiano | Русский |
+|---|---|
+| dov’è? / dove sono? | где? |
+| la villa | вилла |
+| la stanza | комната |
+| il quadro | картина |
+| il giardino | сад |
+| il piano | этаж |
+| sopra / sotto | над / под |
+| vicino a / lontano da | рядом с / далеко от |
+| davanti a / dietro | перед / за |
+| stare | находиться; чувствовать себя |
+| stasera / stanotte | сегодня вечером / этой ночью |
+| il ladro | вор |

@@ -1,1 +1,109 @@
-LITMIR-ENC1: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
+## В поезде-призраке
+
+Марко («El tren fantasma») наконец садится в поезд-призрак. Здесь всё странно — даже глаголы.
+
+> **Quiero**{Я хочу} encontrar a Alicia. Pero el tren es **enorme**{огромный} y **no puedo**{я не могу} ver **nada**{ничего}.
+> **Pienso**{Я думаю}: «¿Dónde **duerme**{спит} la gente? ¿Cuándo **vuelve**{возвращается} el tren a la estación?»
+> Un **zombi**{зомби} **viene**{идёт, приходит} hacia mí y **dice**{говорит}: «Señor, ¿**qué hace**{что делает} usted aquí?»
+> «**Hago**{Я делаю} mi trabajo. **Soy**{Я} detective. **Busco**{Я ищу} a mi novia».
+> El zombi **sonríe**{улыбается} y **empieza**{начинает} a cantar. Canta muy mal.
+> «¿**Puedo**{Могу ли я} **pedir**{попросить} un favor? **No cante**{Не пойте}, por favor».
+
+## 1. Глаголы с изменением корня: e → ie
+
+У многих глаголов под ударением гласная корня «раздваивается». В формах *nosotros* и *vosotros* ударение уходит на окончание — и корень не меняется.
+
+| | querer (хотеть) | pensar (думать) | empezar (начинать) |
+|---|---|---|---|
+| yo | qu**ie**ro | p**ie**nso | emp**ie**zo |
+| tú | qu**ie**res | p**ie**nsas | emp**ie**zas |
+| él / ella / usted | qu**ie**re | p**ie**nsa | emp**ie**za |
+| nosotros | queremos | pensamos | empezamos |
+| vosotros | queréis | pensáis | empezáis |
+| ellos / ellas / ustedes | qu**ie**ren | p**ie**nsan | emp**ie**zan |
+
+Так же: *cerrar* (закрывать), *preferir* (предпочитать), *entender* (понимать), *despertarse* (просыпаться). Вы уже знаете *tener → tienes*!
+
+## 2. o → ue
+
+| | poder (мочь) | dormir (спать) | volver (возвращаться) |
+|---|---|---|---|
+| yo | p**ue**do | d**ue**rmo | v**ue**lvo |
+| tú | p**ue**des | d**ue**rmes | v**ue**lves |
+| él / ella / usted | p**ue**de | d**ue**rme | v**ue**lve |
+| nosotros | podemos | dormimos | volvemos |
+| vosotros | podéis | dormís | volvéis |
+| ellos / ellas / ustedes | p**ue**den | d**ue**rmen | v**ue**lven |
+
+Так же: *encontrar* (находить), *contar* (рассказывать, считать), *costar* (стоить), *acostarse* (ложиться спать). А у *jugar* (играть) **u → ue**: *juego, juegas*.
+
+## 3. e → i
+
+| | pedir (просить) | repetir (повторять) |
+|---|---|---|
+| yo | p**i**do | rep**i**to |
+| tú | p**i**des | rep**i**tes |
+| él / ella / usted | p**i**de | rep**i**te |
+| nosotros | pedimos | repetimos |
+| ellos | p**i**den | rep**i**ten |
+
+Так же: *vestirse* (одеваться), *servir* (подавать).
+
+## 4. Неправильная форма «yo»
+
+| Глагол | yo | остальные — правильные |
+|---|---|---|
+| hacer — делать | **hago** | haces, hace… |
+| salir — выходить | **salgo** | sales, sale… |
+| poner — класть, ставить | **pongo** | pones, pone… |
+| traer — приносить | **traigo** | traes, trae… |
+| conocer — знать, быть знакомым | **conozco** | conoces, conoce… |
+| saber — знать (факт) | **sé** | sabes, sabe… |
+| ver — видеть | **veo** | ves, ve… |
+
+А у **decir** (говорить) и **venir** (приходить) меняется и *yo*, и корень: *digo, dices, dice, decimos, dicen*; *vengo, vienes, viene, venimos, vienen*.
+
+## 5. «Хочу / могу» + инфинитив
+
+После *querer, poder, preferir, necesitar* второй глагол стоит в неопределённой форме — как в русском:
+
+- **Quiero encontrar** a Alicia. — Я хочу найти Алисию.
+- **No puedo dormir.** — Я не могу спать.
+- **¿Puedes repetir**, por favor? — Можешь повторить, пожалуйста?
+
+**Saber** или **conocer**? *Sé* — знаю факт или умею: *Sé dónde está el tren. Sé nadar.* *Conozco* — знаком с человеком или местом: *Conozco a Alicia. Conozco Sinea.*
+
+## Проверьте себя
+
+Marcos [[*quiere|quero|queremos]] encontrar a Alicia.
+
+Yo no [[podo|*puedo|puede]] dormir en el tren.
+
+Nosotros [[*empezamos|empiezamos|empiezan]] el viaje.
+
+¿Qué haces aquí? — [[Haco|*Hago|Hace]] mi trabajo.
+
+Los zombis [[*piden|peden|pedimos]] un café.
+
+Yo [[*conozco|conoco|sé]] a Alicia.
+
+В формах nosotros у глагола poder корень не меняется: podemos. ( V / F ){V}
+
+«Sé» — это форма глагола «ser». ( V / F ){F}
+
+## Словарь урока
+
+| Español | Русский |
+|---|---|
+| querer | хотеть; любить |
+| poder | мочь |
+| pensar | думать |
+| empezar | начинать |
+| dormir | спать |
+| volver | возвращаться |
+| encontrar | находить |
+| pedir | просить, заказывать |
+| hacer | делать |
+| salir | выходить |
+| saber / conocer | знать / быть знакомым |
+| venir / decir | приходить / говорить |

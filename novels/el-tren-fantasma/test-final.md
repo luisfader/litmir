@@ -1,1 +1,63 @@
-LITMIR-ENC1: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
+# Evaluación final · El tren fantasma
+
+**25 preguntas · 100 puntos.** Este examen repasa la comprensión de la novela, el vocabulario y la gramática española. Elegí una respuesta por pregunta y pulsá «Calificar módulo». Podés repetirlo; se conservará tu mejor nota. **Aprobado: 70 puntos o más.**
+
+## I. Comprensión de la novela · Verdadero o falso
+
+1. Marcos intenta encontrar a Alicia. ( V / F ){V}
+
+2. El tren fantasma es un tren completamente normal. ( V / F ){F}
+
+3. El vagón confesionario revela secretos y temores. ( V / F ){V}
+
+4. Leonardo Circuito utiliza tecnología. ( V / F ){V}
+
+5. La locomotora es uno de los objetivos de los protagonistas. ( V / F ){V}
+
+6. Alessio y Laura confiesan que son ladrones de trenes. ( V / F ){V}
+
+7. El tren regresa a la estación central de Sinea. ( V / F ){V}
+
+8. Marcos y Alicia deciden permanecer para siempre en el tren. ( V / F ){F}
+
+9. Los boyscouts zombis aparecen en la historia. ( V / F ){V}
+
+10. Al final, Alicia le pide a Marcos que no escuche sus conversaciones a escondidas. ( V / F ){V}
+
+## II. Personajes y vocabulario · Elegí la opción correcta
+
+11. ¿Quién busca a Alicia? [[*Marcos|Leonardo Circuito|Casimiro Condena]]
+
+12. ¿Qué es un andén? [[*La zona donde esperan los pasajeros|El volante de una locomotora|Una habitación de hotel]]
+
+13. ¿Qué es una locomotora? [[*La parte del tren que lo impulsa|Una maleta|Un boleto]]
+
+14. ¿Qué significa «huir»? [[*Escapar|Dormir|Comprar]]
+
+15. ¿Qué palabra es sinónimo de «temor»? [[*Miedo|Alegría|Orgullo]]
+
+16. ¿Qué objeto tecnológico aparece en la historia? [[*Una tableta|Una máquina de escribir|Un telescopio]]
+
+17. ¿Qué hace un detective? [[*Investiga misterios|Conduce autobuses|Vende billetes]]
+
+18. ¿Qué significa «reconciliarse»? [[*Recuperar una buena relación|Perder el tren|Olvidar un nombre]]
+
+19. ¿Quiénes se llevan el tren al final? [[*Alessio y Laura|Marcos y Alicia|Los vendedores de periódicos]]
+
+20. ¿Qué significa «a escondidas»? [[*Sin que los demás lo sepan|En voz alta|Con mucho entusiasmo]]
+
+## III. Gramática · Elegí la forma correcta
+
+21. Si Marcos tuviera la tableta, [[*podría|puede|pudo]] cambiar el rumbo del tren.
+
+22. Alicia quiere que Marcos [[*confíe|confía|confió]] en ella.
+
+23. Cuando llegaron a la estación, los pasajeros ya [[*habían vivido|vivirán|viven]] muchas aventuras.
+
+24. Marcos es [[*más|muy|tan]] alto que Alessio.
+
+25. Ayer los protagonistas [[*salieron|salen|saldrán]] del tren.
+
+## Después del examen
+
+Volvé a los capítulos si necesitás repasar. Una respuesta correcta demuestra comprensión, no solo memoria: leé cada opción con atención.

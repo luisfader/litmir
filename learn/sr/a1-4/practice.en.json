@@ -1,1 +1,290 @@
-LITMIR-ENC1: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
+{
+ "title": "Где је Калемегдан?",
+ "subtitle": "Где је…? The locative after у / на, prepositions of place, the city.",
+ "speak": "sr-RS",
+ "hero": "novels/divlji-chas/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "улица",
+     "street"
+    ],
+    [
+     "река",
+     "river"
+    ],
+    [
+     "мост",
+     "bridge"
+    ],
+    [
+     "тврђава",
+     "fortress"
+    ],
+    [
+     "трг",
+     "square"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Луис је у",
+   "after": "",
+   "options": [
+    "Београду",
+    "Београд",
+    "Београда"
+   ],
+   "answer": 0,
+   "es": "Luis is in Belgrade."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Тврђава је на",
+   "after": "",
+   "options": [
+    "Калемегдану",
+    "Калемегдан",
+    "Калемегдана"
+   ],
+   "answer": 0,
+   "es": "The fortress is at Kalemegdan."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Наташа је у",
+   "after": "",
+   "options": [
+    "кафићу",
+    "кафић",
+    "кафића"
+   ],
+   "answer": 0,
+   "es": "Natasha is in the café."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Они су у",
+   "after": "",
+   "options": [
+    "улици",
+    "улица",
+    "улицу"
+   ],
+   "answer": 0,
+   "es": "They’re in the street.",
+   "why": "Feminine → -и."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Кафић је поред",
+   "after": "",
+   "options": [
+    "књижаре",
+    "књижара",
+    "књижари"
+   ],
+   "answer": 0,
+   "es": "The café is next to the bookshop."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "",
+   "after": "је Калемегдан?",
+   "options": [
+    "Где",
+    "Ко",
+    "Шта"
+   ],
+   "answer": 0,
+   "es": "Where is Kalemegdan?"
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "преко пута",
+   "options": [
+    "opposite",
+    "across the bridge",
+    "on the way"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Није далеко.",
+   "options": [
+    "It’s not far.",
+    "It’s very far.",
+    "It’s not here."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "on the bridge",
+   "options": [
+    "на мосту",
+    "у мост",
+    "на мост"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "Where are Natasha and Luis?",
+   "answer": [
+    "Где",
+    "су",
+    "Наташа",
+    "и",
+    "Луис?"
+   ],
+   "extra": [
+    "је",
+    "ко"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Које реке теку кроз Београд?",
+   "es": "Which rivers flow through Belgrade?",
+   "options": [
+    "Сава и Дунав.",
+    "Влтава и Дунав.",
+    "Москва и Нева."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "тврђава",
+   "options": [
+    "fortress",
+    "church",
+    "square"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Калемегдан је парк и стара тврђава.",
+   "answer": true,
+   "why": "«Калемегдан је велики парк и стара тврђава.»"
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "here",
+   "answers": [
+    "овде"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "Where is the café?",
+   "answers": [
+    "Где је кафић?",
+    "Где је кафић"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Калемегдан је река.",
+   "answer": false,
+   "why": "The rivers are the Sava and the Danube; Kalemegdan is a park and fortress."
+  }
+ ],
+ "keyboard": [
+  "а",
+  "б",
+  "в",
+  "г",
+  "д",
+  "ђ",
+  "е",
+  "ж",
+  "з",
+  "и",
+  "ј",
+  "к",
+  "л",
+  "љ",
+  "м",
+  "н",
+  "њ",
+  "о",
+  "п",
+  "р",
+  "с",
+  "т",
+  "ћ",
+  "у",
+  "ф",
+  "х",
+  "ц",
+  "ч",
+  "џ",
+  "ш"
+ ],
+ "translit": "sr"
+}
