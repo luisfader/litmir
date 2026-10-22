@@ -3,13 +3,8 @@
   {
    "lang": "es",
    "speak": "es-ES",
-   "help": [
-    "ru",
-    "en"
-   ],
    "title": {
     "es": "¡Aprende español!",
-    "ru": "Испанский язык",
     "en": "Spanish"
    },
    "units": [
@@ -19,7 +14,6 @@
      "n": 1,
      "title": "¡Hola! Me llamo Natalia",
      "sub": {
-      "ru": "Приветствия, знакомство, местоимения, глагол SER, национальности",
       "en": "Greetings, introductions, pronouns, the verb SER, nationalities"
      },
      "cover": "novels/el-misterio-de-los-fader/cover.jpg",
@@ -31,7 +25,6 @@
      "n": 2,
      "title": "Soy detective y vivo en Sinea",
      "sub": {
-      "ru": "Профессии, правильные глаголы -ar/-er/-ir, отрицание, вопросы, числа",
       "en": "Professions, regular -ar/-er/-ir verbs, negation, questions, numbers"
      },
      "cover": "novels/el-tren-fantasma/cover.jpg",
@@ -43,7 +36,6 @@
      "n": 3,
      "title": "Mi familia",
      "sub": {
-      "ru": "Семья, глагол TENER, притяжательные, прилагательные, HAY",
       "en": "Family, the verb TENER, possessives, adjectives, HAY"
      },
      "cover": "novels/el-misterio-de-los-fader/cover.jpg",
@@ -55,7 +47,6 @@
      "n": 4,
      "title": "¿Dónde está?",
      "sub": {
-      "ru": "Глагол ESTAR, ser или estar, hay или está, предлоги места",
       "en": "The verb ESTAR, ser vs estar, hay vs está, prepositions of place"
      },
      "cover": "novels/la-corazonada/cover.jpg",
@@ -67,7 +58,6 @@
      "n": 5,
      "title": "Mi día",
      "sub": {
-      "ru": "Который час, возвратные глаголы, дни недели, как часто",
       "en": "Telling the time, reflexive verbs, days of the week, frequency"
      },
      "cover": "novels/el-tren-fantasma/cover.jpg",
@@ -79,7 +69,6 @@
      "n": 6,
      "title": "Me gusta",
      "sub": {
-      "ru": "GUSTAR и ENCANTAR, también / tampoco, еда, в ресторане",
       "en": "GUSTAR and ENCANTAR, también / tampoco, food, at the restaurant"
      },
      "cover": "novels/el-misterio-de-los-fader/cover.jpg",
@@ -91,7 +80,6 @@
      "n": 7,
      "title": "Quiero encontrar a Alicia",
      "sub": {
-      "ru": "Неправильные глаголы: e→ie, o→ue, e→i, hago, conozco, sé",
       "en": "Irregular verbs: e→ie, o→ue, e→i, hago, conozco, sé"
      },
      "cover": "novels/el-tren-fantasma/cover.jpg",
@@ -103,7 +91,6 @@
      "n": 8,
      "title": "Vamos a Londres",
      "sub": {
-      "ru": "Глагол IR, al / a la, транспорт, город, как пройти",
       "en": "The verb IR, al / a la, transport, the city, asking the way"
      },
      "cover": "novels/operacion-londres/cover.jpg",
@@ -115,7 +102,6 @@
      "n": 9,
      "title": "¿Cuánto cuesta?",
      "sub": {
-      "ru": "Покупки, числа от 100, цвета, одежда, este / ese / aquel",
       "en": "Shopping, numbers from 100, colours, clothes, este / ese / aquel"
      },
      "cover": "novels/la-gran-conspiracion/cover.jpg",
@@ -127,7 +113,6 @@
      "n": 10,
      "title": "Mañana voy a…",
      "sub": {
-      "ru": "IR A + инфинитив, погода, месяцы, даты. Итог уровня A1",
       "en": "IR A + infinitive, weather, months, dates. A1 review"
      },
      "cover": "novels/la-gran-conspiracion/cover.jpg",
@@ -137,26 +122,22 @@
    "placement": {
     "id": "nivel",
     "title": {
-     "ru": "Тест на уровень",
      "en": "Placement test"
     },
     "sub": {
-     "ru": "20 вопросов, около 8 минут: узнайте, с какого урока начать.",
      "en": "20 questions, about 8 minutes: find out where to start."
     },
     "cover": "novels/el-tren-fantasma/cover.jpg"
-   }
+   },
+   "help": [
+    "en"
+   ]
   },
   {
    "lang": "it",
    "speak": "it-IT",
-   "help": [
-    "ru",
-    "en"
-   ],
    "title": {
     "it": "Impara l’italiano!",
-    "ru": "Итальянский язык",
     "en": "Italian"
    },
    "units": [
@@ -166,7 +147,6 @@
      "n": 1,
      "title": "Ciao! Mi chiamo Alessio",
      "sub": {
-      "ru": "Приветствия, знакомство, местоимения, глагол ESSERE, национальности",
       "en": "Greetings, introductions, pronouns, the verb ESSERE, nationalities"
      },
      "cover": "novels/ladro-di-cuori/cover.jpg",
@@ -178,7 +158,6 @@
      "n": 2,
      "title": "Sono un detective e vivo a Sinea",
      "sub": {
-      "ru": "Профессии, правильные глаголы -are/-ere/-ire, отрицание, вопросы, числа",
       "en": "Professions, regular -are/-ere/-ire verbs, negation, questions, numbers"
      },
      "cover": "novels/il-treno-fantasma/cover.jpg",
@@ -190,7 +169,6 @@
      "n": 3,
      "title": "La famiglia di Antonio",
      "sub": {
-      "ru": "Семья, глагол AVERE, множественное число, притяжательные, прилагательные, c’è / ci sono",
       "en": "Family, the verb AVERE, plurals, possessives, adjectives, c’è / ci sono"
      },
      "cover": "novels/antonio-e-il-segreto-di-roma/cover.jpg",
@@ -202,7 +180,6 @@
      "n": 4,
      "title": "Dov’è il quadro?",
      "sub": {
-      "ru": "Где? c’è или è, предлоги с артиклем, предлоги места, глагол STARE, дом",
       "en": "Where? c’è vs è, prepositions with articles, prepositions of place, the verb STARE, the house"
      },
      "cover": "novels/ladro-di-cuori/cover.jpg",
@@ -214,7 +191,6 @@
      "n": 5,
      "title": "La giornata di Irina",
      "sub": {
-      "ru": "Который час, возвратные глаголы, FARE и ANDARE, дни недели, как часто",
       "en": "Telling the time, reflexive verbs, FARE and ANDARE, days of the week, frequency"
      },
      "cover": "novels/la-macchina-dei-sogni/cover.jpg",
@@ -226,24 +202,21 @@
      "n": 6,
      "title": "Ti piace la pizza?",
      "sub": {
-      "ru": "PIACERE, anche a me / neanche a me, еда и напитки, в пиццерии",
       "en": "PIACERE, anche a me / neanche a me, food and drink, at the pizzeria"
      },
      "cover": "novels/antonio-e-il-segreto-di-roma/cover.jpg",
      "novel": "antonio-e-il-segreto-di-roma"
     }
+   ],
+   "help": [
+    "en"
    ]
   },
   {
    "lang": "de",
    "speak": "de-DE",
-   "help": [
-    "ru",
-    "en"
-   ],
    "title": {
     "de": "Lerne Deutsch!",
-    "ru": "Немецкий язык",
     "en": "German"
    },
    "units": [
@@ -253,24 +226,21 @@
      "n": 1,
      "title": "Hallo! Ich heiße Robert",
      "sub": {
-      "ru": "Приветствия, знакомство, du и Sie, местоимения, глагол SEIN, страны",
       "en": "Greetings, introductions, du and Sie, pronouns, the verb SEIN, countries"
      },
      "cover": "novels/vorahnung/cover.jpg",
      "novel": "vorahnung"
     }
+   ],
+   "help": [
+    "en"
    ]
   },
   {
    "lang": "fr",
    "speak": "fr-FR",
-   "help": [
-    "ru",
-    "en"
-   ],
    "title": {
     "fr": "Apprends le français !",
-    "ru": "Французский язык",
     "en": "French"
    },
    "units": [
@@ -280,7 +250,6 @@
      "n": 1,
      "title": "Bonjour ! Je m’appelle Sasha",
      "sub": {
-      "ru": "Приветствия, знакомство, tu и vous, местоимения, глагол ÊTRE, национальности",
       "en": "Greetings, introductions, tu and vous, pronouns, the verb ÊTRE, nationalities"
      },
      "cover": "novels/la-voix/cover.jpg",
@@ -292,7 +261,6 @@
      "n": 2,
      "title": "Sasha travaille dans un bureau",
      "sub": {
-      "ru": "Профессии, глаголы на -ER, NE … PAS, вопросы, числа и возраст",
       "en": "Professions, -ER verbs, NE … PAS, questions, numbers and age"
      },
      "cover": "novels/la-voix/cover.jpg",
@@ -304,24 +272,21 @@
      "n": 3,
      "title": "La famille d’Oxana",
      "sub": {
-      "ru": "Семья, глагол AVOIR, IL Y A, mon / ma / mes, прилагательные",
       "en": "Family, the verb AVOIR, IL Y A, mon / ma / mes, adjectives"
      },
      "cover": "novels/la-voix/cover.jpg",
      "novel": "la-voix"
     }
+   ],
+   "help": [
+    "en"
    ]
   },
   {
    "lang": "en",
    "speak": "en-GB",
-   "help": [
-    "ru",
-    "es"
-   ],
    "title": {
     "en": "Learn English!",
-    "ru": "Английский язык",
     "es": "Inglés"
    },
    "units": [
@@ -331,24 +296,21 @@
      "n": 1,
      "title": "Hello! My name is Alex",
      "sub": {
-      "ru": "Приветствия, знакомство, местоимения, глагол TO BE, страны и национальности",
       "es": "Saludos, presentarse, pronombres, el verbo TO BE, países y nacionalidades"
      },
      "cover": "novels/a-man-from-the-future/cover.jpg",
      "novel": "a-man-from-the-future"
     }
+   ],
+   "help": [
+    "es"
    ]
   },
   {
    "lang": "pt",
    "speak": "pt-BR",
-   "help": [
-    "ru",
-    "en"
-   ],
    "title": {
     "pt": "Aprenda português!",
-    "ru": "Португальский язык",
     "en": "Portuguese"
    },
    "units": [
@@ -358,7 +320,6 @@
      "n": 1,
      "title": "Oi! Meu nome é Luiz",
      "sub": {
-      "ru": "Приветствия, знакомство, você, глагол SER, национальности (Бразилия)",
       "en": "Greetings, introductions, você, the verb SER, nationalities (Brazil)"
      },
      "cover": "novels/do-outro-lado-do-mundo/cover.jpg",
@@ -370,7 +331,6 @@
      "n": 2,
      "title": "Eu jogo futebol",
      "sub": {
-      "ru": "Профессии, правильные глаголы -ar/-er/-ir, отрицание, вопросы, числа",
       "en": "Professions, regular -ar/-er/-ir verbs, negation, questions, numbers"
      },
      "cover": "novels/do-outro-lado-do-mundo/cover.jpg",
@@ -382,7 +342,6 @@
      "n": 3,
      "title": "A família de Luiz",
      "sub": {
-      "ru": "Семья, глагол TER, tem и há, притяжательные, dele / dela, прилагательные",
       "en": "Family, the verb TER, tem and há, possessives, dele / dela, adjectives"
      },
      "cover": "novels/do-outro-lado-do-mundo/cover.jpg",
@@ -394,24 +353,21 @@
      "n": 4,
      "title": "Onde fica o metrô?",
      "sub": {
-      "ru": "ESTAR, ser или estar, FICAR, no / na / do / da, город",
       "en": "ESTAR, ser vs estar, FICAR, no / na / do / da, the city"
      },
      "cover": "novels/do-outro-lado-do-mundo/cover.jpg",
      "novel": "do-outro-lado-do-mundo"
     }
+   ],
+   "help": [
+    "en"
    ]
   },
   {
    "lang": "tr",
    "speak": "tr-TR",
-   "help": [
-    "ru",
-    "en"
-   ],
    "title": {
     "tr": "Türkçe öğren!",
-    "ru": "Турецкий язык",
     "en": "Turkish"
    },
    "units": [
@@ -421,24 +377,21 @@
      "n": 1,
      "title": "Merhaba! Benim adım Rosa",
      "sub": {
-      "ru": "Приветствия, знакомство, местоимения, «быть» как окончание, гармония гласных",
       "en": "Greetings, introductions, pronouns, \"to be\" as a suffix, vowel harmony"
      },
      "cover": "novels/col-gulu/cover.jpg",
      "novel": "col-gulu"
     }
+   ],
+   "help": [
+    "en"
    ]
   },
   {
    "lang": "cs",
    "speak": "cs-CZ",
-   "help": [
-    "ru",
-    "en"
-   ],
    "title": {
     "cs": "Uč se česky!",
-    "ru": "Чешский язык",
     "en": "Czech"
    },
    "units": [
@@ -448,7 +401,6 @@
      "n": 1,
      "title": "Ahoj! Já jsem Jana",
      "sub": {
-      "ru": "Приветствия, знакомство, ty и vy, глагол BÝT, национальности",
       "en": "Greetings, introductions, ty and vy, the verb BÝT, nationalities"
      },
      "cover": "novels/podzemni-tajemstvi/cover.jpg",
@@ -460,7 +412,6 @@
      "n": 2,
      "title": "Luis je hudebník",
      "sub": {
-      "ru": "Профессии, три типа глаголов, слитное NE-, языки, числа и возраст",
       "en": "Professions, three verb types, the attached NE-, languages, numbers and age"
      },
      "cover": "novels/podzemni-tajemstvi/cover.jpg",
@@ -472,7 +423,6 @@
      "n": 3,
      "title": "Janina rodina",
      "sub": {
-      "ru": "Семья, глагол MÍT, род (ten / ta / to), притяжательные, прилагательные",
       "en": "Family, the verb MÍT, gender (ten / ta / to), possessives, adjectives"
      },
      "cover": "novels/podzemni-tajemstvi/cover.jpg",
@@ -484,24 +434,21 @@
      "n": 4,
      "title": "Kde je Karlův most?",
      "sub": {
-      "ru": "KDE JE…? Предложный падеж после V / NA, предлоги места, город",
       "en": "KDE JE…? The locative after V / NA, prepositions of place, the city"
      },
      "cover": "novels/podzemni-tajemstvi/cover.jpg",
      "novel": "podzemni-tajemstvi"
     }
+   ],
+   "help": [
+    "en"
    ]
   },
   {
    "lang": "sr",
    "speak": "sr-RS",
-   "help": [
-    "ru",
-    "en"
-   ],
    "title": {
     "sr": "Учи српски!",
-    "ru": "Сербский язык",
     "en": "Serbian"
    },
    "units": [
@@ -511,7 +458,6 @@
      "n": 1,
      "title": "Здраво! Ја сам Наташа",
      "sub": {
-      "ru": "Две азбуки, приветствия, знакомство, местоимения, глагол БИТИ, национальности",
       "en": "Two alphabets, greetings, introductions, pronouns, the verb БИТИ, nationalities"
      },
      "cover": "novels/divlji-chas/cover-v2.jpg",
@@ -523,7 +469,6 @@
      "n": 2,
      "title": "Луис је туриста",
      "sub": {
-      "ru": "Профессии, три типа глаголов, отрицание, ДА ЛИ, языки, числа и возраст",
       "en": "Professions, three verb types, negation, ДА ЛИ, languages, numbers and age"
      },
      "cover": "novels/divlji-chas/cover-v2.jpg",
@@ -535,7 +480,6 @@
      "n": 3,
      "title": "Наташина породица",
      "sub": {
-      "ru": "Семья, глагол ИМАТИ, има / нема, род, притяжательные, прилагательные",
       "en": "Family, the verb ИМАТИ, има / нема, gender, possessives, adjectives"
      },
      "cover": "novels/divlji-chas/cover-v2.jpg",
@@ -547,24 +491,21 @@
      "n": 4,
      "title": "Где је Калемегдан?",
      "sub": {
-      "ru": "ГДЕ ЈЕ…? Локатив после У / НА, предлоги места, город",
       "en": "ГДЕ ЈЕ…? The locative after У / НА, prepositions of place, the city"
      },
      "cover": "novels/divlji-chas/cover-v2.jpg",
      "novel": "divlji-chas"
     }
+   ],
+   "help": [
+    "en"
    ]
   },
   {
    "lang": "eo",
    "speak": "eo",
-   "help": [
-    "ru",
-    "en"
-   ],
    "title": {
     "eo": "Lernu Esperanton!",
-    "ru": "Эсперанто",
     "en": "Esperanto"
    },
    "units": [
@@ -574,24 +515,21 @@
      "n": 1,
      "title": "Saluton! Mi estas Nataŝa",
      "sub": {
-      "ru": "Приветствия, знакомство, местоимения, глагол ESTI, вопросы с ĉu, суффикс -in-",
       "en": "Greetings, introductions, pronouns, the verb ESTI, ĉu-questions, the suffix -in-"
      },
      "cover": "novels/la-savo-de-zmaj/cover-v2.jpg",
      "novel": "la-savo-de-zmaj"
     }
+   ],
+   "help": [
+    "en"
    ]
   },
   {
    "lang": "ia",
    "speak": "it-IT",
-   "help": [
-    "ru",
-    "en"
-   ],
    "title": {
     "ia": "Apprende interlingua!",
-    "ru": "Интерлингва",
     "en": "Interlingua"
    },
    "units": [
@@ -601,24 +539,21 @@
      "n": 1,
      "title": "Salute! Io me appella Katerina",
      "sub": {
-      "ru": "Приветствия, знакомство, местоимения, глагол ESSER, вопросы с esque",
       "en": "Greetings, introductions, pronouns, the verb ESSER, questions with esque"
      },
      "cover": "novels/le-presentimento/cover.jpg",
      "novel": "le-presentimento"
     }
+   ],
+   "help": [
+    "en"
    ]
   },
   {
    "lang": "isv",
    "speak": "cs-CZ",
-   "help": [
-    "ru",
-    "en"
-   ],
    "title": {
     "isv": "Učite medžuslovjansky!",
-    "ru": "Межславянский язык",
     "en": "Interslavic"
    },
    "units": [
@@ -628,24 +563,21 @@
      "n": 1,
      "title": "Zdravo! Moje ime jest Kennet",
      "sub": {
-      "ru": "Приветствия, знакомство, местоимения, глагол BYTI, страны",
       "en": "Greetings, introductions, pronouns, the verb BYTI, countries"
      },
      "cover": "novels/predcutje/cover.jpg",
      "novel": "predcutje"
     }
+   ],
+   "help": [
+    "en"
    ]
   },
   {
    "lang": "vo",
    "speak": "de-DE",
-   "help": [
-    "ru",
-    "en"
-   ],
    "title": {
     "vo": "Lärnol Volapüki!",
-    "ru": "Волапюк",
     "en": "Volapük"
    },
    "units": [
@@ -655,24 +587,21 @@
      "n": 1,
      "title": "Nem obik binon Natalia",
      "sub": {
-      "ru": "Приветствия, знакомство, местоимения, глагол BINÖN, порядок слов",
       "en": "Greetings, introductions, pronouns, the verb BINÖN, word order"
      },
      "cover": "novels/fot-latik/cover.jpg",
      "novel": "fot-latik"
     }
+   ],
+   "help": [
+    "en"
    ]
   },
   {
    "lang": "ld",
    "speak": "es-ES",
-   "help": [
-    "ru",
-    "en"
-   ],
    "title": {
     "ld": "Lerni Lingwa de Planeta!",
-    "ru": "Лингва де Планета",
     "en": "Lingwa de Planeta"
    },
    "units": [
@@ -682,12 +611,14 @@
      "n": 1,
      "title": "Me es Natalia",
      "sub": {
-      "ru": "Знакомство, местоимения, глагол ES, отрицание bu, прошедшее -te",
       "en": "Introductions, pronouns, the verb ES, the negation bu, the past -te"
      },
      "cover": "novels/premonision-ldp/cover.jpg",
      "novel": "premonision-ldp"
     }
+   ],
+   "help": [
+    "en"
    ]
   }
  ]

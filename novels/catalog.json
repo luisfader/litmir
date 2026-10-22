@@ -60,9 +60,6 @@
    ],
    "cover": "novels/la-citta-triste/cover.jpg",
    "study": true,
-   "translations": {
-    "ru": "grustnyj-gorod"
-   },
    "author": "Roberto Fader",
    "stars": 3.5
   },
@@ -173,8 +170,7 @@
    "study": true,
    "author": "Roberto Fader",
    "translations": {
-    "es": "el-tren-fantasma",
-    "ru": "prizrachnyj-poezd"
+    "es": "el-tren-fantasma"
    },
    "stars": 4.5
   },
@@ -438,9 +434,6 @@
    ],
    "cover": "novels/maschera-di-venezia/cover.jpg",
    "author": "Roberto Fader",
-   "translations": {
-    "ru": "venecianskaya-maska"
-   },
    "stars": 4.0
   },
   {
@@ -672,9 +665,6 @@
     }
    ],
    "study": true,
-   "translations": {
-    "ru": "pokhititel-serdec"
-   },
    "stars": 4.5
   },
   {
@@ -845,7 +835,6 @@
    "translations": {
     "fr": "reve-turquoise",
     "eo": "la-antausento",
-    "ru": "predchuvstvie",
     "es": "la-corazonada",
     "isv": "predcutje",
     "tr": "col-gulu",
@@ -1381,9 +1370,6 @@
      "title": "A New Beginning"
     }
    ],
-   "translations": {
-    "ru": "opasnoe-svidanie"
-   },
    "cover": "novels/the-date/cover.jpg",
    "study": true,
    "stars": 4.0
@@ -1550,9 +1536,6 @@
     }
    ],
    "cover": "novels/la-voix/cover.jpg",
-   "translations": {
-    "ru": "golos"
-   },
    "stars": 4.5
   },
   {
@@ -1618,7 +1601,6 @@
    "translations": {
     "fr": "reve-turquoise",
     "eo": "la-antausento",
-    "ru": "predchuvstvie",
     "it": "presentimento",
     "es": "la-corazonada",
     "isv": "predcutje",
@@ -1960,9 +1942,6 @@
      "label": "Final"
     }
    ],
-   "translations": {
-    "ru": "tajna-semi-fader"
-   },
    "rating": "16+",
    "stars": 4.0
   },
@@ -2188,8 +2167,7 @@
    ],
    "cover": "novels/el-tren-fantasma/cover.jpg",
    "translations": {
-    "it": "il-treno-fantasma",
-    "ru": "prizrachnyj-poezd"
+    "it": "il-treno-fantasma"
    },
    "study": true,
    "stars": 5.0
@@ -2269,7 +2247,6 @@
    "translations": {
     "fr": "reve-turquoise",
     "eo": "la-antausento",
-    "ru": "predchuvstvie",
     "it": "presentimento",
     "isv": "predcutje",
     "tr": "col-gulu",
@@ -2737,9 +2714,6 @@
    "lang": "sr",
    "title": "Дивљи час",
    "adult": true,
-   "translations": {
-    "ru": "dikij-chas"
-   },
    "description": "Луис је туриста у Београду. На улици Кнез Михаилова удари га електрични тротинет — на њему је Наташа. Она жели да му покаже свој град, а Београд крије тајне о којима нико не говори.",
    "chapters": [
     {
@@ -3029,7 +3003,6 @@
    "cover": "novels/la-antausento/cover.jpg",
    "translations": {
     "fr": "reve-turquoise",
-    "ru": "predchuvstvie",
     "it": "presentimento",
     "es": "la-corazonada",
     "isv": "predcutje",
@@ -3128,7 +3101,6 @@
    "translations": {
     "fr": "reve-turquoise",
     "eo": "la-antausento",
-    "ru": "predchuvstvie",
     "it": "presentimento",
     "es": "la-corazonada",
     "tr": "col-gulu",
@@ -3266,7 +3238,6 @@
    "translations": {
     "fr": "reve-turquoise",
     "eo": "la-antausento",
-    "ru": "predchuvstvie",
     "it": "presentimento",
     "es": "la-corazonada",
     "isv": "predcutje",
@@ -3441,7 +3412,6 @@
    "translations": {
     "fr": "reve-turquoise",
     "eo": "la-antausento",
-    "ru": "predchuvstvie",
     "it": "presentimento",
     "es": "la-corazonada",
     "isv": "predcutje",
@@ -3673,7 +3643,6 @@
    "translations": {
     "fr": "reve-turquoise",
     "eo": "la-antausento",
-    "ru": "predchuvstvie",
     "it": "presentimento",
     "es": "la-corazonada",
     "isv": "predcutje",
@@ -3698,7 +3667,6 @@
    "description": "Le monde s’est éteint un mardi. Trois ans plus tard, Camille, ancienne experte en sécurité informatique, rêve d’une forteresse aux murs turquoise où l’on pourrait enfin vivre à l’abri. Elle rencontre Robert, un architecte blessé, et l’amour renaît au milieu des ruines.\nMais les sauvages brûlent tout sur leur passage. Au fond d’une vallée perdue, le Rêve turquoise prend forme — un refuge fidèle à l’humanisme de Camille. Jusqu’au jour où Jenny frappe à la porte.",
    "translations": {
     "eo": "la-antausento",
-    "ru": "predchuvstvie",
     "it": "presentimento",
     "es": "la-corazonada",
     "isv": "predcutje",
@@ -3763,7 +3731,6 @@
    "translations": {
     "fr": "reve-turquoise",
     "eo": "la-antausento",
-    "ru": "predchuvstvie",
     "it": "presentimento",
     "es": "la-corazonada",
     "isv": "predcutje",
@@ -3815,7 +3782,6 @@
    ],
    "cover": "novels/predtucha/cover.jpg",
    "translations": {
-    "ru": "predchuvstvie",
     "fr": "reve-turquoise",
     "eo": "la-antausento",
     "it": "presentimento",
@@ -3899,7 +3865,6 @@
    "translations": {
     "fr": "reve-turquoise",
     "eo": "la-antausento",
-    "ru": "predchuvstvie",
     "it": "presentimento",
     "es": "la-corazonada",
     "isv": "predcutje",
@@ -4034,7 +3999,6 @@
     "it": "presentimento",
     "es": "la-corazonada",
     "isv": "predcutje",
-    "ru": "predchuvstvie",
     "cs": "predtucha",
     "sr": "predosecaj",
     "de": "vorahnung",
@@ -4069,13 +4033,12 @@
   {
    "id": "ora-selvaggia",
    "name": {
-    "ru": "Дикий час",
     "sr": "Дивљи час",
     "it": "L’ora selvaggia",
     "es": "La hora salvaje",
     "eo": "La Sovaĝa Horo",
     "en": "The Wild Hour",
-    "*": "Дикий час"
+    "*": "The Wild Hour"
    },
    "novels": [
     "dikij-chas",
@@ -4093,7 +4056,6 @@
    "id": "roberto-natalia",
    "name": {
     "it": "Roberto e Natalia a Venezia",
-    "ru": "Роберто и Наталья в Венеции",
     "*": "Venezia"
    },
    "novels": [
@@ -4104,7 +4066,6 @@
   {
    "id": "luis-natalia",
    "name": {
-    "ru": "Луис и Наталья",
     "es": "Luis y Natalia",
     "pt": "Luiz e Natalia",
     "*": "Luis & Natalia"
@@ -4122,7 +4083,6 @@
    "name": {
     "es": "Historias de Sinea",
     "it": "Storie di Sinea",
-    "ru": "Истории Синеи",
     "fr": "Histoires de Sinea",
     "en": "Sinea Stories",
     "*": "Sinea"
@@ -4145,7 +4105,6 @@
    "id": "ladro",
    "name": {
     "it": "Ladro di cuori",
-    "ru": "Похититель сердец",
     "*": "Ladro di cuori"
    },
    "novels": [
@@ -4156,9 +4115,8 @@
   {
    "id": "volny-lyubvi",
    "name": {
-    "ru": "Волны любви",
     "es": "Olas de amor",
-    "*": "Волны любви"
+    "*": "Olas de amor"
    },
    "novels": [
     "volny-lyubvi",
@@ -4169,7 +4127,6 @@
    "id": "fader",
    "name": {
     "es": "El misterio de los Fader",
-    "ru": "Тайна семьи Фадер",
     "*": "Fader"
    },
    "novels": [
@@ -4180,7 +4137,6 @@
   {
    "id": "predchuvstvie",
    "name": {
-    "ru": "Предчувствие",
     "fr": "Rêve turquoise",
     "eo": "La Antaŭsento",
     "it": "Presentimento",
@@ -4217,7 +4173,6 @@
    ],
    "description": {
     "es": "Universos paralelos de la Fortaleza Turquesa: distintas historias, personajes y destinos unidos por la reconstrucción de la esperanza y la utopía después de la catástrofe. No son traducciones literales ni una cronología única.",
-    "ru": "Параллельные вселенные Бирюзовой крепости: разные сюжеты, герои и судьбы, связанные надеждой и попыткой построить утопию после катастрофы. Это не дословные переводы и не единая хронология.",
     "*": "Parallel universes of the Turquoise Fortress: distinct stories and characters connected by hope and the rebuilding of utopia after catastrophe. Not literal translations or one single timeline.",
     "ld": "Paralel mundos de la Turkes Fortres: diferente historias e jen, konekten per esperansa e la rekonstruccion de un nova sosieta."
    }
@@ -4228,7 +4183,6 @@
     "cs": "Luis a Jana",
     "eo": "Luis kaj Jana",
     "es": "Luis y Jana",
-    "ru": "Луис и Яна",
     "*": "Luis & Jana"
    },
    "novels": [
