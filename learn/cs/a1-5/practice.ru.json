@@ -1,0 +1,284 @@
+{
+ "title": "Luisův den",
+ "subtitle": "Который час, возвратные глаголы se / si, дни недели, как часто.",
+ "speak": "cs-CZ",
+ "hero": "novels/podzemni-tajemstvi/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 7 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "pondělí",
+     "понедельник"
+    ],
+    [
+     "středa",
+     "среда"
+    ],
+    [
+     "pátek",
+     "пятница"
+    ],
+    [
+     "sobota",
+     "суббота"
+    ],
+    [
+     "neděle",
+     "воскресенье"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Je půl osmé.",
+   "options": [
+    "Половина восьмого (7:30).",
+    "Половина девятого (8:30).",
+    "Восемь часов (8:00)."
+   ],
+   "answer": 0,
+   "why": "Как в русском: «половина восьмого»."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Jsou tři",
+   "after": "",
+   "options": [
+    "hodiny",
+    "hodin",
+    "hodina"
+   ],
+   "answer": 0,
+   "es": "Три часа.",
+   "why": "2–4 → hodiny."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Je pět",
+   "after": "",
+   "options": [
+    "hodin",
+    "hodiny",
+    "hodina"
+   ],
+   "answer": 0,
+   "es": "Пять часов.",
+   "why": "5+ → hodin."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Ráno",
+   "after": "oblékám.",
+   "options": [
+    "se",
+    "si",
+    "sebe"
+   ],
+   "answer": 0,
+   "es": "Утром я одеваюсь."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Dám",
+   "after": "kávu.",
+   "options": [
+    "si",
+    "se",
+    "sebe"
+   ],
+   "answer": 0,
+   "es": "Я выпью кофе."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Jana",
+   "after": "dívá na Luise.",
+   "options": [
+    "se",
+    "si",
+    "je"
+   ],
+   "answer": 0,
+   "es": "Яна смотрит на Луиса.",
+   "why": "Se — на втором месте в предложении."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Koncert je",
+   "after": "",
+   "options": [
+    "ve středu",
+    "v středa",
+    "ve středě"
+   ],
+   "answer": 0,
+   "es": "Концерт в среду."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Nikdy",
+   "after": "pozdě.",
+   "options": [
+    "nechodím",
+    "chodím",
+    "ne chodím"
+   ],
+   "answer": 0,
+   "es": "Я никогда не опаздываю.",
+   "why": "Nikdy + ne-."
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать на изучаемом языке?",
+   "word": "Без четверти восемь (7:45).",
+   "options": [
+    "Tři čtvrtě na osm.",
+    "Čtvrt na osm.",
+    "Půl osmé."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите",
+   "es": "Я встаю в семь.",
+   "answer": [
+    "Vstávám",
+    "v",
+    "sedm"
+   ],
+   "extra": [
+    "se",
+    "hodiny"
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "neděle",
+   "options": [
+    "воскресенье",
+    "неделя",
+    "понедельник"
+   ],
+   "answer": 0,
+   "why": "Неделя — týden."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "často",
+   "options": [
+    "часто",
+    "никогда",
+    "сегодня"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "Jaký měsíc je na začátku románu?",
+   "es": "Какой месяц в начале романа?",
+   "options": [
+    "Září.",
+    "Prosinec.",
+    "Květen."
+   ],
+   "answer": 0,
+   "why": "«Je září. Luis je v Praze.»"
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Mark má vždycky s sebou fotoaparát.",
+   "answer": true,
+   "why": "Так сказано в списке персонажей."
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Который час?",
+   "answers": [
+    "Kolik je hodin?",
+    "Kolik je hodin"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "в субботу",
+   "answers": [
+    "v sobotu"
+   ]
+  }
+ ],
+ "keyboard": [
+  "á",
+  "č",
+  "ď",
+  "é",
+  "ě",
+  "í",
+  "ň",
+  "ó",
+  "ř",
+  "š",
+  "ť",
+  "ú",
+  "ů",
+  "ý",
+  "ž"
+ ]
+}

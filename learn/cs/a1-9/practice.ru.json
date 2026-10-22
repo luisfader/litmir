@@ -1,0 +1,281 @@
+{
+ "title": "Kolik stojí ta sukně?",
+ "subtitle": "Покупки, числа от 100, кроны, цвета, одежда, tenhle / tahle / tohle.",
+ "speak": "cs-CZ",
+ "hero": "novels/podzemni-tajemstvi/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 7 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "červený",
+     "красный"
+    ],
+    [
+     "modrý",
+     "синий"
+    ],
+    [
+     "žlutý",
+     "жёлтый"
+    ],
+    [
+     "zelený",
+     "зелёный"
+    ],
+    [
+     "bílý",
+     "белый"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Dvě",
+   "after": "korun.",
+   "options": [
+    "stě",
+    "sta",
+    "set"
+   ],
+   "answer": 0,
+   "es": "Двести крон."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Pět",
+   "after": "korun.",
+   "options": [
+    "set",
+    "sta",
+    "stě"
+   ],
+   "answer": 0,
+   "es": "Пятьсот крон."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Ty šaty",
+   "after": "krásné.",
+   "options": [
+    "jsou",
+    "je",
+    "jsi"
+   ],
+   "answer": 0,
+   "es": "Это платье красивое.",
+   "why": "Šaty — множественное число."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "",
+   "after": "sukně je moc hezká.",
+   "options": [
+    "Tahle",
+    "Tenhle",
+    "Tohle"
+   ],
+   "answer": 0,
+   "es": "Вот эта юбка очень красивая."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Jana má na sobě",
+   "after": "sukni.",
+   "options": [
+    "bordó",
+    "bordóu",
+    "bordová"
+   ],
+   "answer": 0,
+   "es": "На Яне бордовая юбка.",
+   "why": "Bordó не меняется."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Kolik to",
+   "after": "",
+   "options": [
+    "stojí",
+    "stojím",
+    "stát"
+   ],
+   "answer": 0,
+   "es": "Сколько это стоит?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Beru",
+   "after": "sukni.",
+   "options": [
+    "tuhle",
+    "tahle",
+    "tenhle"
+   ],
+   "answer": 0,
+   "es": "Я беру вот эту юбку."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "To je drahé!",
+   "options": [
+    "Это дорого!",
+    "Это дёшево!",
+    "Это красиво!"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "krásný",
+   "options": [
+    "красивый",
+    "красный",
+    "краткий"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать на изучаемом языке?",
+   "word": "Можно примерить?",
+   "options": [
+    "Můžu si to zkusit?",
+    "Můžu to stojí?",
+    "Můžu si to beru?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите",
+   "es": "Я просто смотрю.",
+   "answer": [
+    "Jen",
+    "se",
+    "dívám"
+   ],
+   "extra": [
+    "si",
+    "stojí"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "Jakou barvu má Janina dlouhá sukně?",
+   "es": "Какого цвета длинная юбка Яны?",
+   "options": [
+    "Je bordó.",
+    "Je modrá.",
+    "Je bílá."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "Jaké květy jsou na sukni modré?",
+   "es": "Какие цветы на юбке синие?",
+   "options": [
+    "Chrpy.",
+    "Tulipány.",
+    "Růže."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Lindsey a Vanessa mají dlouhé bílé šaty.",
+   "answer": false,
+   "why": "У близняшек длинные чёрные платья."
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Сколько это стоит?",
+   "answers": [
+    "Kolik to stojí?",
+    "Kolik to stojí"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Я беру это.",
+   "answers": [
+    "Beru to",
+    "Beru to."
+   ]
+  }
+ ],
+ "keyboard": [
+  "á",
+  "č",
+  "ď",
+  "é",
+  "ě",
+  "í",
+  "ň",
+  "ó",
+  "ř",
+  "š",
+  "ť",
+  "ú",
+  "ů",
+  "ý",
+  "ž"
+ ]
+}

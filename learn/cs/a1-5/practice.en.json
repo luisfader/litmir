@@ -1,0 +1,284 @@
+{
+ "title": "Luisův den",
+ "subtitle": "Telling the time, reflexive verbs with se / si, days of the week, frequency.",
+ "speak": "cs-CZ",
+ "hero": "novels/podzemni-tajemstvi/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "pondělí",
+     "Monday"
+    ],
+    [
+     "středa",
+     "Wednesday"
+    ],
+    [
+     "pátek",
+     "Friday"
+    ],
+    [
+     "sobota",
+     "Saturday"
+    ],
+    [
+     "neděle",
+     "Sunday"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Je půl osmé.",
+   "options": [
+    "It’s half past seven (7:30).",
+    "It’s half past eight (8:30).",
+    "It’s eight o’clock (8:00)."
+   ],
+   "answer": 0,
+   "why": "Půl osmé looks forward: half of the eighth hour = 7:30."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Jsou tři",
+   "after": "",
+   "options": [
+    "hodiny",
+    "hodin",
+    "hodina"
+   ],
+   "answer": 0,
+   "es": "It’s three o’clock.",
+   "why": "2–4 → hodiny."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Je pět",
+   "after": "",
+   "options": [
+    "hodin",
+    "hodiny",
+    "hodina"
+   ],
+   "answer": 0,
+   "es": "It’s five o’clock.",
+   "why": "5+ → hodin."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Ráno",
+   "after": "oblékám.",
+   "options": [
+    "se",
+    "si",
+    "sebe"
+   ],
+   "answer": 0,
+   "es": "In the morning I get dressed."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Dám",
+   "after": "kávu.",
+   "options": [
+    "si",
+    "se",
+    "sebe"
+   ],
+   "answer": 0,
+   "es": "I’ll have a coffee."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Jana",
+   "after": "dívá na Luise.",
+   "options": [
+    "se",
+    "si",
+    "je"
+   ],
+   "answer": 0,
+   "es": "Jana looks at Luis.",
+   "why": "Se goes in second position."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Koncert je",
+   "after": "",
+   "options": [
+    "ve středu",
+    "v středa",
+    "ve středě"
+   ],
+   "answer": 0,
+   "es": "The concert is on Wednesday."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Nikdy",
+   "after": "pozdě.",
+   "options": [
+    "nechodím",
+    "chodím",
+    "ne chodím"
+   ],
+   "answer": 0,
+   "es": "I never come late.",
+   "why": "Nikdy needs a negative verb."
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "It’s a quarter to eight (7:45).",
+   "options": [
+    "Tři čtvrtě na osm.",
+    "Čtvrt na osm.",
+    "Půl osmé."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "I get up at seven.",
+   "answer": [
+    "Vstávám",
+    "v",
+    "sedm"
+   ],
+   "extra": [
+    "se",
+    "hodiny"
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "neděle",
+   "options": [
+    "Sunday",
+    "week",
+    "Monday"
+   ],
+   "answer": 0,
+   "why": "Week is týden."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "často",
+   "options": [
+    "often",
+    "never",
+    "today"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Jaký měsíc je na začátku románu?",
+   "es": "Which month is it at the start of the novel?",
+   "options": [
+    "Září.",
+    "Prosinec.",
+    "Květen."
+   ],
+   "answer": 0,
+   "why": "«Je září. Luis je v Praze.»"
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Mark má vždycky s sebou fotoaparát.",
+   "answer": true,
+   "why": "That’s what the list of characters says."
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "What time is it?",
+   "answers": [
+    "Kolik je hodin?",
+    "Kolik je hodin"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "on Saturday",
+   "answers": [
+    "v sobotu"
+   ]
+  }
+ ],
+ "keyboard": [
+  "á",
+  "č",
+  "ď",
+  "é",
+  "ě",
+  "í",
+  "ň",
+  "ó",
+  "ř",
+  "š",
+  "ť",
+  "ú",
+  "ů",
+  "ý",
+  "ž"
+ ]
+}

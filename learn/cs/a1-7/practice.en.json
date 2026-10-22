@@ -1,0 +1,285 @@
+{
+ "title": "Musíme najít Janu!",
+ "subtitle": "Chtít, moct, muset, umět, vědět or znát.",
+ "speak": "cs-CZ",
+ "hero": "novels/podzemni-tajemstvi/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "chtít",
+     "to want"
+    ],
+    [
+     "moct",
+     "can, to be able"
+    ],
+    [
+     "muset",
+     "must"
+    ],
+    [
+     "umět",
+     "to know how"
+    ],
+    [
+     "vědět",
+     "to know (a fact)"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Luis",
+   "after": "hrát v podzemí.",
+   "options": [
+    "chce",
+    "chci",
+    "chtějí"
+   ],
+   "answer": 0,
+   "es": "Luis wants to play in the underground."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Já",
+   "after": "kávu.",
+   "options": [
+    "chci",
+    "chce",
+    "chceš"
+   ],
+   "answer": 0,
+   "es": "I want a coffee."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "",
+   "after": "se zeptat?",
+   "options": [
+    "Můžu",
+    "Umím",
+    "Vím"
+   ],
+   "answer": 0,
+   "es": "May I ask?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "My",
+   "after": "najít Janu!",
+   "options": [
+    "musíme",
+    "musí",
+    "musím"
+   ],
+   "answer": 0,
+   "es": "We must find Jana!"
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Luis",
+   "after": "hrát na kytaru.",
+   "options": [
+    "umí",
+    "ví",
+    "zná"
+   ],
+   "answer": 0,
+   "es": "Luis can play the guitar.",
+   "why": "A skill → umět."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Nevím,",
+   "after": "je Jana.",
+   "options": [
+    "kde",
+    "kdo",
+    "kam"
+   ],
+   "answer": 0,
+   "es": "I don’t know where Jana is."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Lucie",
+   "after": "pražské podzemí.",
+   "options": [
+    "zná",
+    "ví",
+    "umí"
+   ],
+   "answer": 0,
+   "es": "Lucie knows the Prague underground.",
+   "why": "A place → znát."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Dnes",
+   "after": "pracovat — je neděle.",
+   "options": [
+    "nemusím",
+    "nesmím",
+    "nemůžu"
+   ],
+   "answer": 0,
+   "es": "I don’t have to work today — it’s Sunday."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Nemůžu jít s vámi.",
+   "options": [
+    "I can’t go with you.",
+    "I don’t want to go with you.",
+    "I can’t walk."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "I don’t know.",
+   "options": [
+    "Já nevím.",
+    "Já neznám.",
+    "Já neumím."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "Can you help us?",
+   "answer": [
+    "Můžeš",
+    "nám",
+    "pomoct?"
+   ],
+   "extra": [
+    "umíš",
+    "musí"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Kdo říká: «Vím, koho hledáš»?",
+   "es": "Who says: «I know who you’re looking for»?",
+   "options": [
+    "Luboš, strážce podzemí.",
+    "Princezna Ludmila.",
+    "Mark."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Co je v sešitu od Luboše?",
+   "es": "What is in Luboš’s notebook?",
+   "options": [
+    "Konec Luisovy melodie.",
+    "Mapa Prahy.",
+    "Recept na polévku."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Lucie říká Janě: «S tak krátkou sukní dolů nemůžeš.»",
+   "answer": true,
+   "why": "Lucie says it at the door to the underground."
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "I want to play.",
+   "answers": [
+    "Chci hrát",
+    "Chci hrát.",
+    "Já chci hrát"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "I can speak Czech.",
+   "answers": [
+    "Umím česky",
+    "Umím česky.",
+    "Já umím česky"
+   ]
+  }
+ ],
+ "keyboard": [
+  "á",
+  "č",
+  "ď",
+  "é",
+  "ě",
+  "í",
+  "ň",
+  "ó",
+  "ř",
+  "š",
+  "ť",
+  "ú",
+  "ů",
+  "ý",
+  "ž"
+ ]
+}

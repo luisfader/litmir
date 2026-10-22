@@ -1,0 +1,285 @@
+{
+ "title": "Dáme si kávu?",
+ "subtitle": "Еда и напитки, винительный падеж, mít rád / chutnat / líbit se, в кафе.",
+ "speak": "cs-CZ",
+ "hero": "novels/podzemni-tajemstvi/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 7 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "káva",
+     "кофе"
+    ],
+    [
+     "chléb",
+     "хлеб"
+    ],
+    [
+     "sýr",
+     "сыр"
+    ],
+    [
+     "polévka",
+     "суп"
+    ],
+    [
+     "voda",
+     "вода"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Dám si",
+   "after": "",
+   "options": [
+    "kávu",
+    "káva",
+    "kávy"
+   ],
+   "answer": 0,
+   "es": "Я возьму кофе."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Jana si dá",
+   "after": "",
+   "options": [
+    "polévku",
+    "polévka",
+    "polévky"
+   ],
+   "answer": 0,
+   "es": "Яна возьмёт суп."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Luis pije",
+   "after": "",
+   "options": [
+    "čaj",
+    "čaju",
+    "čaje"
+   ],
+   "answer": 0,
+   "es": "Луис пьёт чай.",
+   "why": "Мужской род, предмет — не меняется."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Mám",
+   "after": "",
+   "options": [
+    "bratra",
+    "bratr",
+    "bratru"
+   ],
+   "answer": 0,
+   "es": "У меня есть брат."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Jana má",
+   "after": "sukni.",
+   "options": [
+    "dlouhou",
+    "dlouhá",
+    "dlouhé"
+   ],
+   "answer": 0,
+   "es": "У Яны длинная юбка."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Ten koláč mi",
+   "after": "",
+   "options": [
+    "chutná",
+    "chutnám",
+    "chutnají"
+   ],
+   "answer": 0,
+   "es": "Эта булочка мне нравится (вкусная)."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Jana má",
+   "after": "hudbu.",
+   "options": [
+    "ráda",
+    "rád",
+    "rádi"
+   ],
+   "answer": 0,
+   "es": "Яна любит музыку.",
+   "why": "Женщина говорит ráda."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Ty se mi líbíš.",
+   "options": [
+    "Ты мне нравишься.",
+    "Ты мне надоел.",
+    "Ты мне поможешь?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "ovoce",
+   "options": [
+    "фрукты",
+    "овощи",
+    "мясо"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать на изучаемом языке?",
+   "word": "Счёт, пожалуйста.",
+   "options": [
+    "Zaplatím, prosím.",
+    "Dobrou chuť, prosím.",
+    "Na zdraví, prosím."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите",
+   "es": "Я возьму пиво и хлеб.",
+   "answer": [
+    "Dám",
+    "si",
+    "pivo",
+    "a",
+    "chléb"
+   ],
+   "extra": [
+    "se",
+    "pivu"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "Jak se řekne café česky?",
+   "es": "Как по-чешски café?",
+   "options": [
+    "Káva.",
+    "Kavárna.",
+    "Čaj."
+   ],
+   "answer": 0,
+   "why": "Так Яна отвечает Луису в первой главе."
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Luis a Jana se poznají v kavárně.",
+   "answer": true,
+   "why": "Луис забегает в кафе от дождя и встречает Яну."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Dobrou chuť!",
+   "options": [
+    "Приятного аппетита!",
+    "За здоровье!",
+    "Доброе утро!"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Я голоден / голодна.",
+   "answers": [
+    "Mám hlad",
+    "Mám hlad.",
+    "Já mám hlad"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Я возьму чай.",
+   "answers": [
+    "Dám si čaj",
+    "Dám si čaj.",
+    "Já si dám čaj"
+   ]
+  }
+ ],
+ "keyboard": [
+  "á",
+  "č",
+  "ď",
+  "é",
+  "ě",
+  "í",
+  "ň",
+  "ó",
+  "ř",
+  "š",
+  "ť",
+  "ú",
+  "ů",
+  "ý",
+  "ž"
+ ]
+}

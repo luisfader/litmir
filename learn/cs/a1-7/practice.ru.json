@@ -1,0 +1,285 @@
+{
+ "title": "Musíme najít Janu!",
+ "subtitle": "Chtít, moct, muset, umět, vědět или znát.",
+ "speak": "cs-CZ",
+ "hero": "novels/podzemni-tajemstvi/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 7 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "chtít",
+     "хотеть"
+    ],
+    [
+     "moct",
+     "мочь"
+    ],
+    [
+     "muset",
+     "быть должным"
+    ],
+    [
+     "umět",
+     "уметь"
+    ],
+    [
+     "vědět",
+     "знать (факт)"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Luis",
+   "after": "hrát v podzemí.",
+   "options": [
+    "chce",
+    "chci",
+    "chtějí"
+   ],
+   "answer": 0,
+   "es": "Луис хочет играть в подземелье."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Já",
+   "after": "kávu.",
+   "options": [
+    "chci",
+    "chce",
+    "chceš"
+   ],
+   "answer": 0,
+   "es": "Я хочу кофе."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "",
+   "after": "se zeptat?",
+   "options": [
+    "Můžu",
+    "Umím",
+    "Vím"
+   ],
+   "answer": 0,
+   "es": "Можно спросить?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "My",
+   "after": "najít Janu!",
+   "options": [
+    "musíme",
+    "musí",
+    "musím"
+   ],
+   "answer": 0,
+   "es": "Мы должны найти Яну!"
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Luis",
+   "after": "hrát na kytaru.",
+   "options": [
+    "umí",
+    "ví",
+    "zná"
+   ],
+   "answer": 0,
+   "es": "Луис умеет играть на гитаре.",
+   "why": "Навык → umět."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Nevím,",
+   "after": "je Jana.",
+   "options": [
+    "kde",
+    "kdo",
+    "kam"
+   ],
+   "answer": 0,
+   "es": "Не знаю, где Яна."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Lucie",
+   "after": "pražské podzemí.",
+   "options": [
+    "zná",
+    "ví",
+    "umí"
+   ],
+   "answer": 0,
+   "es": "Люцие знает пражское подземелье.",
+   "why": "Место → znát."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Dnes",
+   "after": "pracovat — je neděle.",
+   "options": [
+    "nemusím",
+    "nesmím",
+    "nemůžu"
+   ],
+   "answer": 0,
+   "es": "Сегодня мне не надо работать — воскресенье."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Nemůžu jít s vámi.",
+   "options": [
+    "Я не могу пойти с вами.",
+    "Я не хочу идти с вами.",
+    "Я не умею ходить."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать на изучаемом языке?",
+   "word": "Я не знаю.",
+   "options": [
+    "Já nevím.",
+    "Já neznám.",
+    "Já neumím."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите",
+   "es": "Ты можешь нам помочь?",
+   "answer": [
+    "Můžeš",
+    "nám",
+    "pomoct?"
+   ],
+   "extra": [
+    "umíš",
+    "musí"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "Kdo říká: «Vím, koho hledáš»?",
+   "es": "Кто говорит: «Я знаю, кого ты ищешь»?",
+   "options": [
+    "Luboš, strážce podzemí.",
+    "Princezna Ludmila.",
+    "Mark."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "Co je v sešitu od Luboše?",
+   "es": "Что в тетради Лубоша?",
+   "options": [
+    "Konec Luisovy melodie.",
+    "Mapa Prahy.",
+    "Recept na polévku."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Lucie říká Janě: «S tak krátkou sukní dolů nemůžeš.»",
+   "answer": true,
+   "why": "Так говорит Люцие у двери в подземелье."
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Я хочу играть.",
+   "answers": [
+    "Chci hrát",
+    "Chci hrát.",
+    "Já chci hrát"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Я умею говорить по-чешски.",
+   "answers": [
+    "Umím česky",
+    "Umím česky.",
+    "Já umím česky"
+   ]
+  }
+ ],
+ "keyboard": [
+  "á",
+  "č",
+  "ď",
+  "é",
+  "ě",
+  "í",
+  "ň",
+  "ó",
+  "ř",
+  "š",
+  "ť",
+  "ú",
+  "ů",
+  "ý",
+  "ž"
+ ]
+}

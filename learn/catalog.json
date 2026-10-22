@@ -566,6 +566,78 @@
      },
      "cover": "novels/podzemni-tajemstvi/cover.jpg",
      "novel": "podzemni-tajemstvi"
+    },
+    {
+     "id": "a1-5",
+     "level": "A1",
+     "n": 5,
+     "title": "Luisův den",
+     "sub": {
+      "ru": "Который час, возвратные глаголы SE / SI, дни недели, как часто",
+      "en": "Telling the time, reflexive verbs SE / SI, days of the week, frequency"
+     },
+     "cover": "novels/podzemni-tajemstvi/cover.jpg",
+     "novel": "podzemni-tajemstvi"
+    },
+    {
+     "id": "a1-6",
+     "level": "A1",
+     "n": 6,
+     "title": "Dáme si kávu?",
+     "sub": {
+      "ru": "Еда и напитки, винительный падеж, MÍT RÁD / CHUTNAT, в кафе",
+      "en": "Food and drink, the accusative, MÍT RÁD / CHUTNAT, at the café"
+     },
+     "cover": "novels/podzemni-tajemstvi/cover.jpg",
+     "novel": "podzemni-tajemstvi"
+    },
+    {
+     "id": "a1-7",
+     "level": "A1",
+     "n": 7,
+     "title": "Musíme najít Janu!",
+     "sub": {
+      "ru": "CHTÍT, MOCT, MUSET, UMĚT, VĚDĚT или ZNÁT",
+      "en": "CHTÍT, MOCT, MUSET, UMĚT, VĚDĚT or ZNÁT"
+     },
+     "cover": "novels/podzemni-tajemstvi/cover.jpg",
+     "novel": "podzemni-tajemstvi"
+    },
+    {
+     "id": "a1-8",
+     "level": "A1",
+     "n": 8,
+     "title": "Jedeme na Karlštejn",
+     "sub": {
+      "ru": "JÍT или JET, транспорт, KDE или KAM, как пройти",
+      "en": "JÍT or JET, transport, KDE or KAM, asking the way"
+     },
+     "cover": "novels/predtucha/cover.jpg",
+     "novel": "predtucha"
+    },
+    {
+     "id": "a1-9",
+     "level": "A1",
+     "n": 9,
+     "title": "Kolik stojí ta sukně?",
+     "sub": {
+      "ru": "Покупки, числа от 100, цвета, одежда, TENHLE / TAHLE",
+      "en": "Shopping, numbers from 100, colours, clothes, TENHLE / TAHLE"
+     },
+     "cover": "novels/podzemni-tajemstvi/cover.jpg",
+     "novel": "podzemni-tajemstvi"
+    },
+    {
+     "id": "a1-10",
+     "level": "A1",
+     "n": 10,
+     "title": "Zítra bude pršet",
+     "sub": {
+      "ru": "Будущее время, погода, месяцы и даты. Итог уровня A1",
+      "en": "The future, weather, months and dates. A1 review"
+     },
+     "cover": "novels/podzemni-tajemstvi/cover.jpg",
+     "novel": "podzemni-tajemstvi"
     }
    ]
   },

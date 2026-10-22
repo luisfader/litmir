@@ -1,0 +1,285 @@
+{
+ "title": "Dáme si kávu?",
+ "subtitle": "Food and drink, the accusative, mít rád / chutnat / líbit se, at the café.",
+ "speak": "cs-CZ",
+ "hero": "novels/podzemni-tajemstvi/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "káva",
+     "coffee"
+    ],
+    [
+     "chléb",
+     "bread"
+    ],
+    [
+     "sýr",
+     "cheese"
+    ],
+    [
+     "polévka",
+     "soup"
+    ],
+    [
+     "voda",
+     "water"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Dám si",
+   "after": "",
+   "options": [
+    "kávu",
+    "káva",
+    "kávy"
+   ],
+   "answer": 0,
+   "es": "I’ll have a coffee."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Jana si dá",
+   "after": "",
+   "options": [
+    "polévku",
+    "polévka",
+    "polévky"
+   ],
+   "answer": 0,
+   "es": "Jana will have soup."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Luis pije",
+   "after": "",
+   "options": [
+    "čaj",
+    "čaju",
+    "čaje"
+   ],
+   "answer": 0,
+   "es": "Luis drinks tea.",
+   "why": "Masculine thing — no change."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Mám",
+   "after": "",
+   "options": [
+    "bratra",
+    "bratr",
+    "bratru"
+   ],
+   "answer": 0,
+   "es": "I have a brother."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Jana má",
+   "after": "sukni.",
+   "options": [
+    "dlouhou",
+    "dlouhá",
+    "dlouhé"
+   ],
+   "answer": 0,
+   "es": "Jana has a long skirt."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Ten koláč mi",
+   "after": "",
+   "options": [
+    "chutná",
+    "chutnám",
+    "chutnají"
+   ],
+   "answer": 0,
+   "es": "I like the taste of this pastry."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Jana má",
+   "after": "hudbu.",
+   "options": [
+    "ráda",
+    "rád",
+    "rádi"
+   ],
+   "answer": 0,
+   "es": "Jana loves music.",
+   "why": "A woman says ráda."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Ty se mi líbíš.",
+   "options": [
+    "I like you.",
+    "I’m tired of you.",
+    "Will you help me?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "ovoce",
+   "options": [
+    "fruit",
+    "vegetables",
+    "meat"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "The bill, please.",
+   "options": [
+    "Zaplatím, prosím.",
+    "Dobrou chuť, prosím.",
+    "Na zdraví, prosím."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "I’ll have a beer and bread.",
+   "answer": [
+    "Dám",
+    "si",
+    "pivo",
+    "a",
+    "chléb"
+   ],
+   "extra": [
+    "se",
+    "pivu"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Jak se řekne café česky?",
+   "es": "How do you say café in Czech?",
+   "options": [
+    "Káva.",
+    "Kavárna.",
+    "Čaj."
+   ],
+   "answer": 0,
+   "why": "That’s Jana’s answer to Luis in chapter one."
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Luis a Jana se poznají v kavárně.",
+   "answer": true,
+   "why": "Luis runs into a café to escape the rain and meets Jana."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Dobrou chuť!",
+   "options": [
+    "Enjoy your meal!",
+    "Cheers!",
+    "Good morning!"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "I’m hungry.",
+   "answers": [
+    "Mám hlad",
+    "Mám hlad.",
+    "Já mám hlad"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "I’ll have tea.",
+   "answers": [
+    "Dám si čaj",
+    "Dám si čaj.",
+    "Já si dám čaj"
+   ]
+  }
+ ],
+ "keyboard": [
+  "á",
+  "č",
+  "ď",
+  "é",
+  "ě",
+  "í",
+  "ň",
+  "ó",
+  "ř",
+  "š",
+  "ť",
+  "ú",
+  "ů",
+  "ý",
+  "ž"
+ ]
+}

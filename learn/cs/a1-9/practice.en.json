@@ -1,0 +1,281 @@
+{
+ "title": "Kolik stojí ta sukně?",
+ "subtitle": "Shopping, numbers from 100, crowns, colours, clothes, tenhle / tahle / tohle.",
+ "speak": "cs-CZ",
+ "hero": "novels/podzemni-tajemstvi/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "červený",
+     "red"
+    ],
+    [
+     "modrý",
+     "blue"
+    ],
+    [
+     "žlutý",
+     "yellow"
+    ],
+    [
+     "zelený",
+     "green"
+    ],
+    [
+     "bílý",
+     "white"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Dvě",
+   "after": "korun.",
+   "options": [
+    "stě",
+    "sta",
+    "set"
+   ],
+   "answer": 0,
+   "es": "Two hundred crowns."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Pět",
+   "after": "korun.",
+   "options": [
+    "set",
+    "sta",
+    "stě"
+   ],
+   "answer": 0,
+   "es": "Five hundred crowns."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Ty šaty",
+   "after": "krásné.",
+   "options": [
+    "jsou",
+    "je",
+    "jsi"
+   ],
+   "answer": 0,
+   "es": "This dress is lovely.",
+   "why": "Šaty is plural."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "",
+   "after": "sukně je moc hezká.",
+   "options": [
+    "Tahle",
+    "Tenhle",
+    "Tohle"
+   ],
+   "answer": 0,
+   "es": "This skirt is very pretty."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Jana má na sobě",
+   "after": "sukni.",
+   "options": [
+    "bordó",
+    "bordóu",
+    "bordová"
+   ],
+   "answer": 0,
+   "es": "Jana is wearing a burgundy skirt.",
+   "why": "Bordó never changes."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Kolik to",
+   "after": "",
+   "options": [
+    "stojí",
+    "stojím",
+    "stát"
+   ],
+   "answer": 0,
+   "es": "How much is it?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Beru",
+   "after": "sukni.",
+   "options": [
+    "tuhle",
+    "tahle",
+    "tenhle"
+   ],
+   "answer": 0,
+   "es": "I’ll take this skirt."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "To je drahé!",
+   "options": [
+    "That’s expensive!",
+    "That’s cheap!",
+    "That’s lovely!"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "krásný",
+   "options": [
+    "beautiful",
+    "red",
+    "short"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "Can I try it on?",
+   "options": [
+    "Můžu si to zkusit?",
+    "Můžu to stojí?",
+    "Můžu si to beru?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "I’m just looking.",
+   "answer": [
+    "Jen",
+    "se",
+    "dívám"
+   ],
+   "extra": [
+    "si",
+    "stojí"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Jakou barvu má Janina dlouhá sukně?",
+   "es": "What colour is Jana’s long skirt?",
+   "options": [
+    "Je bordó.",
+    "Je modrá.",
+    "Je bílá."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Jaké květy jsou na sukni modré?",
+   "es": "Which flowers on the skirt are blue?",
+   "options": [
+    "Chrpy.",
+    "Tulipány.",
+    "Růže."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Lindsey a Vanessa mají dlouhé bílé šaty.",
+   "answer": false,
+   "why": "The twins wear long black dresses."
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "How much is it?",
+   "answers": [
+    "Kolik to stojí?",
+    "Kolik to stojí"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "I’ll take it.",
+   "answers": [
+    "Beru to",
+    "Beru to."
+   ]
+  }
+ ],
+ "keyboard": [
+  "á",
+  "č",
+  "ď",
+  "é",
+  "ě",
+  "í",
+  "ň",
+  "ó",
+  "ř",
+  "š",
+  "ť",
+  "ú",
+  "ů",
+  "ý",
+  "ž"
+ ]
+}

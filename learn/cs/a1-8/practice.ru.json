@@ -1,0 +1,281 @@
+{
+ "title": "Jedeme na Karlštejn",
+ "subtitle": "Jít или jet, транспорт, kde или kam, do / na / k, как пройти.",
+ "speak": "cs-CZ",
+ "hero": "novels/predtucha/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 7 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "vlakem",
+     "на поезде"
+    ],
+    [
+     "autem",
+     "на машине"
+    ],
+    [
+     "tramvají",
+     "на трамвае"
+    ],
+    [
+     "pěšky",
+     "пешком"
+    ],
+    [
+     "na kole",
+     "на велосипеде"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Lidé",
+   "after": "lesem pěšky.",
+   "options": [
+    "jdou",
+    "jedou",
+    "jde"
+   ],
+   "answer": 0,
+   "es": "Люди идут пешком через лес."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Luis",
+   "after": "na motocyklu.",
+   "options": [
+    "jede",
+    "jde",
+    "jedu"
+   ],
+   "answer": 0,
+   "es": "Луис едет на мотоцикле.",
+   "why": "Транспорт → jet."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Jedu do Prahy",
+   "after": "",
+   "options": [
+    "vlakem",
+    "vlak",
+    "vlaku"
+   ],
+   "answer": 0,
+   "es": "Я еду в Прагу на поезде."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Jdu",
+   "after": "kavárny.",
+   "options": [
+    "do",
+    "v",
+    "na"
+   ],
+   "answer": 0,
+   "es": "Я иду в кафе.",
+   "why": "Куда? → do + родительный."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Jedeme",
+   "after": "Karlštejn.",
+   "options": [
+    "na",
+    "do",
+    "v"
+   ],
+   "answer": 0,
+   "es": "Мы едем на Карлштейн."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "",
+   "after": "jdeš? — Na koncert.",
+   "options": [
+    "Kam",
+    "Kde",
+    "Kdo"
+   ],
+   "answer": 0,
+   "es": "Куда ты идёшь? — На концерт."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Jedeme do",
+   "after": "",
+   "options": [
+    "Prahy",
+    "Praha",
+    "Praze"
+   ],
+   "answer": 0,
+   "es": "Мы едем в Прагу."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "doleva",
+   "options": [
+    "налево",
+    "направо",
+    "прямо"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Je to daleko?",
+   "options": [
+    "Это далеко?",
+    "Это дорого?",
+    "Это здесь?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать на изучаемом языке?",
+   "word": "Как мне добраться до вокзала?",
+   "options": [
+    "Jak se dostanu na nádraží?",
+    "Kde se dostanu na nádraží?",
+    "Kam je nádraží?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите",
+   "es": "Мы идём в лес.",
+   "answer": [
+    "Jdeme",
+    "do",
+    "lesa"
+   ],
+   "extra": [
+    "jedeme",
+    "v"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "Kam jdou lidé z Naší utopie?",
+   "es": "Куда идут люди из «Нашей утопии»?",
+   "options": [
+    "Na Karlštejn.",
+    "Do Argentiny.",
+    "Do kavárny."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "Kdo jede napřed připravit hrad?",
+   "es": "Кто едет вперёд, чтобы подготовить замок?",
+   "options": [
+    "Luis.",
+    "Robert.",
+    "Lucie."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Karlštejn je starý královský hrad na skále.",
+   "answer": true,
+   "why": "Так он описан во второй главе «Předtucha»."
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "пешком",
+   "answers": [
+    "pěšky"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Я еду на машине.",
+   "answers": [
+    "Jedu autem",
+    "Jedu autem.",
+    "Já jedu autem"
+   ]
+  }
+ ],
+ "keyboard": [
+  "á",
+  "č",
+  "ď",
+  "é",
+  "ě",
+  "í",
+  "ň",
+  "ó",
+  "ř",
+  "š",
+  "ť",
+  "ú",
+  "ů",
+  "ý",
+  "ž"
+ ]
+}
