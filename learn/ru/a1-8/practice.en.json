@@ -1,0 +1,291 @@
+{
+ "title": "Куда идёт Роберто?",
+ "subtitle": "Идти and ехать, куда? в / на + accusative, transport, asking the way.",
+ "speak": "ru-RU",
+ "hero": "novels/venecianskaya-maska/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "площадь",
+     "square"
+    ],
+    [
+     "мост",
+     "bridge"
+    ],
+    [
+     "прямо",
+     "straight on"
+    ],
+    [
+     "направо",
+     "to the right"
+    ],
+    [
+     "налево",
+     "to the left"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Роберто",
+   "after": "на площадь.",
+   "options": [
+    "идёт",
+    "иду",
+    "идут"
+   ],
+   "answer": 0,
+   "es": "Roberto is walking to the square."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Мы",
+   "after": "в Москву на поезде.",
+   "options": [
+    "едем",
+    "едим",
+    "едут"
+   ],
+   "answer": 0,
+   "es": "We’re going to Moscow by train.",
+   "why": "Едем (to go) ≠ едим (to eat)!"
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Я иду на",
+   "after": "",
+   "options": [
+    "работу",
+    "работе",
+    "работа"
+   ],
+   "answer": 0,
+   "es": "I’m going to work."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Они едут в",
+   "after": "",
+   "options": [
+    "Венецию",
+    "Венеции",
+    "Венеция"
+   ],
+   "answer": 0,
+   "es": "They’re going to Venice."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "В Венеции ездят на",
+   "after": "",
+   "options": [
+    "гондоле",
+    "гондолу",
+    "гондола"
+   ],
+   "answer": 0,
+   "es": "In Venice people travel by gondola."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "",
+   "after": "вы идёте? — В кафе.",
+   "options": [
+    "Куда",
+    "Где",
+    "Откуда"
+   ],
+   "answer": 0,
+   "es": "Where are you going? — To a café."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "пешком",
+   "options": [
+    "on foot",
+    "by car",
+    "by train"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "How do I get to the bridge?",
+   "options": [
+    "Как пройти к мосту?",
+    "Где мост идёт?",
+    "Куда мост?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "Go straight on, then right.",
+   "answer": [
+    "Идите",
+    "прямо,",
+    "потом",
+    "направо"
+   ],
+   "extra": [
+    "налево",
+    "иду"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Почему в Венеции не ездят на машине?",
+   "es": "Why don’t people drive in Venice?",
+   "options": [
+    "В Венеции нет машин.",
+    "Машины очень дорогие.",
+    "Все ходят на работу."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Это недалеко.",
+   "options": [
+    "It’s not far.",
+    "It’s very far.",
+    "It’s here."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "на поезде",
+   "options": [
+    "by train",
+    "on the bridge",
+    "on foot"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Роберто — путешественник из Аргентины.",
+   "answer": true,
+   "why": "«Уроженец Аргентины и путешественник по духу»."
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "I’m going (on foot) to the café.",
+   "answers": [
+    "Я иду в кафе",
+    "Иду в кафе"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "by metro",
+   "answers": [
+    "на метро"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "«Где?» и «куда?» значат одно и то же.",
+   "answer": false,
+   "why": "Где — where (location), куда — where to."
+  }
+ ],
+ "keyboard": [
+  "а",
+  "б",
+  "в",
+  "г",
+  "д",
+  "е",
+  "ё",
+  "ж",
+  "з",
+  "и",
+  "й",
+  "к",
+  "л",
+  "м",
+  "н",
+  "о",
+  "п",
+  "р",
+  "с",
+  "т",
+  "у",
+  "ф",
+  "х",
+  "ц",
+  "ч",
+  "ш",
+  "щ",
+  "ъ",
+  "ы",
+  "ь",
+  "э",
+  "ю",
+  "я"
+ ]
+}

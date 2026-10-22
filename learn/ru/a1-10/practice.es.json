@@ -1,0 +1,290 @@
+{
+ "title": "Планы на неделю",
+ "subtitle": "El futuro con буду, el tiempo, meses, estaciones y fechas. La última unidad del A1.",
+ "speak": "ru-RU",
+ "hero": "novels/rezonans-lyubvi/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Empezar",
+  "check": "Comprobar",
+  "next": "Continuar",
+  "skip": "No lo sé",
+  "retry": "Intentar de nuevo",
+  "again": "Repetir la unidad",
+  "back": "Volver a la unidad",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Respuesta correcta:",
+  "almost": "¡Casi! Fijate en los acentos:",
+  "done": "¡Unidad completada!",
+  "lost": "Te quedaste sin corazones",
+  "lostP": "No pasa nada: cada error es una palabra nueva que ya conocés un poco mejor.",
+  "xp": "XP total",
+  "acc": "Precisión",
+  "time": "Tiempo",
+  "ex": "{n} ejercicios",
+  "min": "≈ 7 minutos",
+  "hearts": "corazones",
+  "best": "Tu mejor resultado",
+  "tap": "Tocá las palabras en orden",
+  "type": "Escribí acá…",
+  "perfect": "¡Ni un solo error!",
+  "good": "¡Muy buen trabajo!",
+  "ok": "¡Bien hecho! Repetí la unidad para mejorar tu precisión.",
+  "sound": "Sonido",
+  "listen": "Escuchar",
+  "meaning": "Significa:",
+  "yes": "Verdadero",
+  "no": "Falso",
+  "score": "Puntaje",
+  "level": "Tu nivel"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Uní los pares",
+   "pairs": [
+    [
+     "январь",
+     "enero"
+    ],
+    [
+     "апрель",
+     "abril"
+    ],
+    [
+     "июль",
+     "julio"
+    ],
+    [
+     "октябрь",
+     "octubre"
+    ],
+    [
+     "декабрь",
+     "diciembre"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "Завтра я",
+   "after": "работать.",
+   "options": [
+    "буду",
+    "будет",
+    "будем"
+   ],
+   "answer": 0,
+   "es": "Mañana voy a trabajar."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "Что ты",
+   "after": "делать в выходные?",
+   "options": [
+    "будешь",
+    "будет",
+    "будем"
+   ],
+   "answer": 0,
+   "es": "¿Qué vas a hacer el fin de semana?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "Мы",
+   "after": "гулять по Невскому.",
+   "options": [
+    "будем",
+    "будут",
+    "будете"
+   ],
+   "answer": 0,
+   "es": "Vamos a pasear por la Nevski."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "Луис",
+   "after": "рисовать сфинксов.",
+   "options": [
+    "будет",
+    "буду",
+    "будут"
+   ],
+   "answer": 0,
+   "es": "Luis va a dibujar las esfinges."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "Сегодня",
+   "after": "дождь.",
+   "options": [
+    "идёт",
+    "едет",
+    "ходит"
+   ],
+   "answer": 0,
+   "es": "Hoy llueve."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "Мой день рождения — пятого",
+   "after": "",
+   "options": [
+    "мая",
+    "май",
+    "мае"
+   ],
+   "answer": 0,
+   "es": "Mi cumpleaños es el 5 de mayo."
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "зимой",
+   "options": [
+    "en invierno",
+    "en verano",
+    "en otoño"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "Холодно.",
+   "options": [
+    "Hace frío.",
+    "Hace calor.",
+    "Hay viento."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "¿Cómo se dice?",
+   "word": "¿Cómo está el tiempo hoy?",
+   "options": [
+    "Какая сегодня погода?",
+    "Какой сегодня погода?",
+    "Какое сегодня число?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Traducí",
+   "es": "Mañana va a hacer frío.",
+   "answer": [
+    "Завтра",
+    "будет",
+    "холодно"
+   ],
+   "extra": [
+    "буду",
+    "холодный"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Elegí la respuesta correcta",
+   "question": "Что Луис будет делать во вторник?",
+   "es": "¿Qué va a hacer Luis el martes?",
+   "options": [
+    "Он будет рисовать сфинксов.",
+    "Он будет работать.",
+    "Он пойдёт в театр."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "в январе",
+   "options": [
+    "en enero",
+    "en junio",
+    "a la noche"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "¿Verdadero o falso?",
+   "statement": "Петербург — город туманов и ветров.",
+   "answer": true,
+   "why": "«Город, привыкший к туманам, ветрам и тайнам»."
+  },
+  {
+   "type": "write",
+   "prompt": "Escribilo",
+   "es": "Voy a descansar.",
+   "answers": [
+    "Я буду отдыхать",
+    "Буду отдыхать"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Escribilo",
+   "es": "Nieva.",
+   "answers": [
+    "Идёт снег",
+    "Идёт снег."
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "¿Verdadero o falso?",
+   "statement": "«Летом» значит «зимой».",
+   "answer": false,
+   "why": "Летом — en verano, зимой — en invierno."
+  }
+ ],
+ "keyboard": [
+  "а",
+  "б",
+  "в",
+  "г",
+  "д",
+  "е",
+  "ё",
+  "ж",
+  "з",
+  "и",
+  "й",
+  "к",
+  "л",
+  "м",
+  "н",
+  "о",
+  "п",
+  "р",
+  "с",
+  "т",
+  "у",
+  "ф",
+  "х",
+  "ц",
+  "ч",
+  "ш",
+  "щ",
+  "ъ",
+  "ы",
+  "ь",
+  "э",
+  "ю",
+  "я"
+ ]
+}

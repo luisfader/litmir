@@ -1,0 +1,290 @@
+{
+ "title": "Мне нравится",
+ "subtitle": "Нравиться y любить, a mí también / tampoco, comida, en el restaurante.",
+ "speak": "ru-RU",
+ "hero": "novels/tajna-semi-fader/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Empezar",
+  "check": "Comprobar",
+  "next": "Continuar",
+  "skip": "No lo sé",
+  "retry": "Intentar de nuevo",
+  "again": "Repetir la unidad",
+  "back": "Volver a la unidad",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Respuesta correcta:",
+  "almost": "¡Casi! Fijate en los acentos:",
+  "done": "¡Unidad completada!",
+  "lost": "Te quedaste sin corazones",
+  "lostP": "No pasa nada: cada error es una palabra nueva que ya conocés un poco mejor.",
+  "xp": "XP total",
+  "acc": "Precisión",
+  "time": "Tiempo",
+  "ex": "{n} ejercicios",
+  "min": "≈ 7 minutos",
+  "hearts": "corazones",
+  "best": "Tu mejor resultado",
+  "tap": "Tocá las palabras en orden",
+  "type": "Escribí acá…",
+  "perfect": "¡Ni un solo error!",
+  "good": "¡Muy buen trabajo!",
+  "ok": "¡Bien hecho! Repetí la unidad para mejorar tu precisión.",
+  "sound": "Sonido",
+  "listen": "Escuchar",
+  "meaning": "Significa:",
+  "yes": "Verdadero",
+  "no": "Falso",
+  "score": "Puntaje",
+  "level": "Tu nivel"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Uní los pares",
+   "pairs": [
+    [
+     "хлеб",
+     "pan"
+    ],
+    [
+     "мясо",
+     "carne"
+    ],
+    [
+     "рыба",
+     "pescado"
+    ],
+    [
+     "вода",
+     "agua"
+    ],
+    [
+     "сыр",
+     "queso"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "Наталье",
+   "after": "вино.",
+   "options": [
+    "нравится",
+    "нравятся",
+    "нравлю"
+   ],
+   "answer": 0,
+   "es": "A Natalia le gusta el vino."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "Мне",
+   "after": "эмпанадас.",
+   "options": [
+    "нравятся",
+    "нравится",
+    "нравлюсь"
+   ],
+   "answer": 0,
+   "es": "Me gustan las empanadas.",
+   "why": "Varias cosas → нравятся."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "",
+   "after": "нравится мате.",
+   "options": [
+    "Ему",
+    "Он",
+    "Его"
+   ],
+   "answer": 0,
+   "es": "A él le gusta el mate."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "Я",
+   "after": "чай.",
+   "options": [
+    "люблю",
+    "любю",
+    "любит"
+   ],
+   "answer": 0,
+   "es": "Me encanta el té."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "Мы",
+   "after": "готовить.",
+   "options": [
+    "любим",
+    "любят",
+    "люблю"
+   ],
+   "answer": 0,
+   "es": "Nos encanta cocinar."
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "Мне тоже не нравится.",
+   "options": [
+    "A mí tampoco.",
+    "A mí también.",
+    "A mí sí."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Completá con la palabra que falta",
+   "before": "Мне",
+   "after": "мате.",
+   "options": [
+    "не нравится",
+    "нравится не",
+    "нет нравится"
+   ],
+   "answer": 0,
+   "es": "No me gusta el mate."
+  },
+  {
+   "type": "reverse",
+   "prompt": "¿Cómo se dice?",
+   "word": "Me gusta Mendoza.",
+   "options": [
+    "Мне нравится Мендоса.",
+    "Я нравится Мендоса.",
+    "Мне нравятся Мендоса."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Traducí",
+   "es": "Para mí, un té, por favor.",
+   "answer": [
+    "Мне,",
+    "пожалуйста,",
+    "чай"
+   ],
+   "extra": [
+    "я",
+    "чая"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Elegí la respuesta correcta",
+   "question": "Почему Наталье не нравится мате?",
+   "es": "¿Por qué a Natalia no le gusta el mate?",
+   "options": [
+    "Он очень горький.",
+    "Он очень сладкий.",
+    "Он очень дорогой."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "Счёт, пожалуйста.",
+   "options": [
+    "La cuenta, por favor.",
+    "La carta, por favor.",
+    "Agua, por favor."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "вкусно",
+   "options": [
+    "rico",
+    "amargo",
+    "caro"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "¿Verdadero o falso?",
+   "statement": "Луис обожает мате.",
+   "answer": true,
+   "why": "«А Луис его обожает», dice Sergio."
+  },
+  {
+   "type": "write",
+   "prompt": "Escribilo",
+   "es": "Me gusta el vino.",
+   "answers": [
+    "Мне нравится вино"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Escribilo",
+   "es": "¡Muy rico!",
+   "answers": [
+    "Очень вкусно!",
+    "Очень вкусно"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "¿Verdadero o falso?",
+   "statement": "«Кофе» — слово женского рода.",
+   "answer": false,
+   "why": "Кофе es masculino: мой кофе."
+  }
+ ],
+ "keyboard": [
+  "а",
+  "б",
+  "в",
+  "г",
+  "д",
+  "е",
+  "ё",
+  "ж",
+  "з",
+  "и",
+  "й",
+  "к",
+  "л",
+  "м",
+  "н",
+  "о",
+  "п",
+  "р",
+  "с",
+  "т",
+  "у",
+  "ф",
+  "х",
+  "ц",
+  "ч",
+  "ш",
+  "щ",
+  "ъ",
+  "ы",
+  "ь",
+  "э",
+  "ю",
+  "я"
+ ]
+}
