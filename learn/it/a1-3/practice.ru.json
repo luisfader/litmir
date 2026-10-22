@@ -1,0 +1,270 @@
+{
+ "title": "La famiglia di Antonio",
+ "subtitle": "Семья, глагол avere, множественное число, притяжательные, прилагательные, c’è / ci sono.",
+ "speak": "it-IT",
+ "hero": "novels/antonio-e-il-segreto-di-roma/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 7 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "il padre",
+     "отец"
+    ],
+    [
+     "la madre",
+     "мать"
+    ],
+    [
+     "il fratello",
+     "брат"
+    ],
+    [
+     "la nonna",
+     "бабушка"
+    ],
+    [
+     "i genitori",
+     "родители"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Antonio",
+   "after": "ventotto anni.",
+   "options": [
+    "ha",
+    "ho",
+    "hanno"
+   ],
+   "answer": 0,
+   "es": "Антонио 28 лет."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Io",
+   "after": "una sorella.",
+   "options": [
+    "ho",
+    "ha",
+    "hai"
+   ],
+   "answer": 0,
+   "es": "У меня есть сестра."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Noi",
+   "after": "una casa a Roma.",
+   "options": [
+    "abbiamo",
+    "avete",
+    "hanno"
+   ],
+   "answer": 0,
+   "es": "У нас есть дом в Риме."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "",
+   "after": "nonna si chiama Rosa.",
+   "options": [
+    "Mia",
+    "La mia",
+    "Mio"
+   ],
+   "answer": 0,
+   "es": "Мою бабушку зовут Роза.",
+   "why": "С родственником в ед. ч. артикль не нужен."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "",
+   "after": "genitori abitano a Roma.",
+   "options": [
+    "I miei",
+    "Miei",
+    "Le mie"
+   ],
+   "answer": 0,
+   "es": "Мои родители живут в Риме.",
+   "why": "Во мн. ч. артикль возвращается."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "i parenti",
+   "options": [
+    "родственники",
+    "родители",
+    "друзья"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "La nonna è molto",
+   "after": "",
+   "options": [
+    "attiva",
+    "attivo",
+    "attive"
+   ],
+   "answer": 0,
+   "es": "Бабушка очень активная."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Le sorelle di Antonio sono",
+   "after": "",
+   "options": [
+    "simpatiche",
+    "simpatici",
+    "simpatica"
+   ],
+   "answer": 0,
+   "es": "Сёстры Антонио симпатичные."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "A Roma",
+   "after": "tanti musei.",
+   "options": [
+    "ci sono",
+    "c’è",
+    "ha"
+   ],
+   "answer": 0,
+   "es": "В Риме много музеев."
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать на изучаемом языке?",
+   "word": "мои братья",
+   "options": [
+    "i miei fratelli",
+    "miei fratelli",
+    "le mie fratelli"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите",
+   "es": "У меня большая семья.",
+   "answer": [
+    "Ho",
+    "una",
+    "famiglia",
+    "grande"
+   ],
+   "extra": [
+    "ha",
+    "grando"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "Quanti anni ha la nonna Rosa?",
+   "es": "Сколько лет бабушке Розе?",
+   "options": [
+    "Ha ottantadue anni.",
+    "Ha ventotto anni.",
+    "Ho ottantadue anni."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Antonio pranza dalla nonna ogni domenica.",
+   "answer": true,
+   "why": "Каждое воскресенье он обедает у бабушки Розы."
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "мой отец",
+   "answers": [
+    "mio padre"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "У тебя есть брат?",
+   "answers": [
+    "Hai un fratello?",
+    "Hai un fratello",
+    "Tu hai un fratello?"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "La nonna di Antonio non legge libri.",
+   "answer": false,
+   "why": "Наоборот: она читает много книг и знает историю Рима."
+  }
+ ],
+ "keyboard": [
+  "à",
+  "è",
+  "é",
+  "ì",
+  "ò",
+  "ù"
+ ]
+}

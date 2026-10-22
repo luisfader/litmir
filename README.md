@@ -2,7 +2,7 @@
 
 Sitio web para leer las novelas de Robert Fader. Cada idioma (ES, IT, EN, DE, FR, TR, PT, CS, PL, SR, EO, ISV, VO, IA, LD) muestra solo las novelas escritas en ese idioma. El español es el idioma por defecto.
 
-**Este sitio no tiene nada en ruso.** Las novelas rusas están en otro sitio, separado: https://luisfader.github.io/litmir2/ (repositorio `luisfader/litmir2`). Lo único que queda es una redirección invisible: los enlaces viejos a novelas rusas (`#/<novela-rusa>`) y `?lang=ru` llevan allí (lista `RU_SLUGS` en `index.html`). Los cursos se explican en inglés (el de inglés, en español).
+**Este sitio no tiene nada en ruso.** Las novelas rusas están en otro sitio, separado: https://luisfader.github.io/litmir2/ (repositorio `luisfader/litmir2`). Lo único que queda es una redirección invisible: los enlaces viejos a novelas rusas (`#/<novela-rusa>`) y `?lang=ru` llevan allí (lista `RU_SLUGS` en `index.html`). Las novelas rusas no están aquí, pero los cursos sí se explican en ruso e inglés (el de inglés, en ruso y español).
 
 ## Estructura
 
