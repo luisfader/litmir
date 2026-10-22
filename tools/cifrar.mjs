@@ -3,7 +3,7 @@
 //   --descifrar   hace lo contrario (vuelve a texto normal).
 // Qué se cifra (lo mismo que bloquea index.html):
 //   - novels: entradas con número de capítulo > FREE_CHAPTERS (prólogos y dosieres antes del 5 quedan libres)
-//   - learn: todas las unidades con n > FREE_UNITS
+//   - learn: todas las unidades con n > FREE_UNITS, salvo los cursos con "free": true (quedan libres)
 // Formato: "LITMIR-ENC1:" + base64(IV de 12 bytes + AES-256-GCM). Lo ya cifrado no se toca.
 import { readFileSync, writeFileSync, readdirSync, existsSync } from "node:fs";
 import { webcrypto as wc } from "node:crypto";
@@ -21,7 +21,7 @@ for (const n of novels) {
   n.chapters.forEach(c => { if (!c.label) no++; if (no > FREE_CHAPTERS) files.push(`novels/${n.slug}/${c.file}`); });
 }
 const courses = JSON.parse(readFileSync("learn/catalog.json", "utf8")).courses;
-for (const c of courses) for (const u of c.units) if (u.n > FREE_UNITS) {
+for (const c of courses) if (!c.free) for (const u of c.units) if (u.n > FREE_UNITS) {
   const dir = `learn/${c.lang}/${u.id}`;
   if (existsSync(dir)) for (const f of readdirSync(dir)) if (/\.(md|json)$/.test(f)) files.push(`${dir}/${f}`);
 }
