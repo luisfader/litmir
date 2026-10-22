@@ -51,3 +51,13 @@ Añadir `"adult": true` a la novela en `catalog.json`: aparece la marca 18+ y se
 ## Traducciones
 
 Si una novela existe en otro idioma, añadir `"translations": {"es": "slug-de-la-version-espanola"}`.
+
+## Registro con Google
+
+Los lectores pueden entrar con su cuenta de Google (botón «Entrar» arriba a la derecha). Firebase, proyecto `litmir2026`.
+
+- **Sin registrarse:** los capítulos 1 a 4 de cada novela (y los prólogos o dosieres que haya antes del 5) y las unidades 1 a 3 del curso. El test de nivel es libre.
+- **Con registro:** todo lo demás. Para cambiar el límite, editar `FREE_CHAPTERS` y `FREE_UNITS` en `index.html`.
+- El progreso (capítulos leídos, último capítulo, notas de tests y cursos) se guarda en la cuenta y se sincroniza entre dispositivos. Tema, tamaño de letra, volumen e idioma quedan en cada dispositivo.
+- Si Firebase no carga, nada queda bloqueado.
+- Ojo: el bloqueo está en la página. Los textos siguen en este repositorio público, así que alguien que los busque en GitHub puede leerlos.

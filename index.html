@@ -229,6 +229,8 @@ article.chapter h3{font-family:var(--sans);font-size:.72em;letter-spacing:.12em;
 .gate{text-align:center;padding:90px 20px;max-width:560px}
 .gate h1{font-family:var(--display);font-weight:500;font-size:44px;margin:0 0 10px}
 .gate p{color:var(--muted);font-size:18px;margin:0 0 28px}
+.lock-big{font-size:44px;margin-bottom:12px}
+.lock{font-size:.8em;opacity:.7}
 .toc li.extra a{font-style:italic;color:var(--muted)}
 .langs{flex-wrap:wrap;justify-content:flex-end}
 
@@ -915,6 +917,41 @@ function adultGate(n){
   document.getElementById("ok18").onclick = () => { store.set("adult", true); route(); };
 }
 
+/* Free without an account: the first FREE_CHAPTERS numbered chapters of each novel
+   (prefaces and other labelled pages before chapter 5 too) and the first FREE_UNITS course units.
+   window.lmAuth is set by the Firebase module: undefined = still checking, {user} = known,
+   {failed:true} = Firebase could not load (then nothing is locked, so readers are never stuck). */
+const FREE_CHAPTERS = 4, FREE_UNITS = 3;
+const signedIn = () => !!(window.lmAuth && (window.lmAuth.user || window.lmAuth.failed));
+const chapterLocked = (n, i) => chapterNo(n, i) > FREE_CHAPTERS;
+const unitLocked = u => u.n > FREE_UNITS;
+const LOGIN_T = {
+  es:["Entra para seguir leyendo","Lo que sigue es para lectores registrados. Registrarse con Google es gratis y tu progreso se guarda en todos tus dispositivos.","Entrar con Google","Volver"],
+  ru:["Войдите, чтобы читать дальше","Продолжение доступно зарегистрированным читателям. Вход через Google бесплатный, а ваш прогресс сохраняется на всех устройствах.","Войти через Google","Вернуться"],
+  en:["Sign in to keep reading","What comes next is for registered readers. Signing in with Google is free, and your progress is saved on all your devices.","Sign in with Google","Go back"],
+  it:["Accedi per continuare a leggere","Il seguito è riservato ai lettori registrati. Accedere con Google è gratuito e i tuoi progressi restano salvati su tutti i dispositivi.","Accedi con Google","Torna indietro"],
+  de:["Anmelden und weiterlesen","Der Rest ist für registrierte Leser. Die Anmeldung mit Google ist kostenlos, und dein Fortschritt wird auf allen Geräten gespeichert.","Mit Google anmelden","Zurück"],
+  fr:["Connectez-vous pour continuer","La suite est réservée aux lecteurs inscrits. La connexion avec Google est gratuite et votre progression est enregistrée sur tous vos appareils.","Se connecter avec Google","Retour"],
+  tr:["Okumaya devam etmek için giriş yapın","Devamı kayıtlı okurlar içindir. Google ile giriş ücretsizdir ve ilerlemeniz tüm cihazlarınızda kaydedilir.","Google ile giriş yap","Geri dön"],
+  pt:["Entre para continuar lendo","A continuação é para leitores cadastrados. Entrar com o Google é grátis, e seu progresso fica salvo em todos os seus dispositivos.","Entrar com Google","Voltar"],
+  cs:["Přihlaste se a čtěte dál","Pokračování je pro registrované čtenáře. Přihlášení přes Google je zdarma a váš postup se uloží na všech zařízeních.","Přihlásit se přes Google","Zpět"],
+  pl:["Zaloguj się, aby czytać dalej","Dalsza część jest dla zarejestrowanych czytelników. Logowanie przez Google jest bezpłatne, a postęp zapisuje się na wszystkich urządzeniach.","Zaloguj się przez Google","Wróć"],
+  sr:["Пријавите се да бисте читали даље","Наставак је за регистроване читаоце. Пријава преко Google-а је бесплатна, а ваш напредак се чува на свим уређајима.","Пријава преко Google-а","Назад"],
+  eo:["Ensalutu por plu legi","La daŭrigo estas por registritaj legantoj. Ensaluti per Google estas senpage, kaj via progreso konserviĝas en ĉiuj viaj aparatoj.","Ensaluti per Google","Reen"],
+  ia:["Entra pro continuar a leger","Le continuation es pro lectores registrate. Entrar con Google es gratuite e tu progresso es salvate in tote tu apparatos.","Entrar con Google","Retornar"]
+};
+function loginGate(back){
+  if (window.lmAuth === undefined) { app.innerHTML = `<div class="loading" data-auth-dep>…</div>`; return; }
+  const T = LOGIN_T[lang] || LOGIN_T.en;
+  document.title = T[0];
+  app.innerHTML = `<section class="wrap gate" data-auth-dep><div class="lock-big" aria-hidden="true">🔒</div>
+    <h1>${esc(T[0])}</h1><p>${esc(T[1])}</p>
+    <div class="actions" style="justify-content:center"><button class="btn" id="gateIn">${esc(T[2])}</button>
+    <a class="btn ghost" href="${esc(back)}">${esc(T[3])}</a></div></section>`;
+  document.getElementById("gateIn").onclick = () => window.lmSignIn && window.lmSignIn();
+  window.scrollTo(0, 0);
+}
+
 const SAGA_W = {ru:"Цикл", es:"Saga", it:"Saga", en:"Series", de:"Reihe", fr:"Saga", tr:"Seri", pt:"Saga", cs:"Série", pl:"Cykl", sr:"Серијал", eo:"Serio", isv:"Serija", vo:"Saga", ia:"Serie", ld:"Seria"};
 function sagaHTML(n){
   const all = catalog.series || [], bySlug = Object.fromEntries(catalog.novels.map(x => [x.slug, x]));
@@ -983,8 +1020,8 @@ function novelPage(n){
       <div class="actions">
         ${last ? `<a class="btn" href="#/${n.slug}/${last}">${esc(t("cont"))} · ${esc(chapterTitle(n, chs[last-1] || {}, last))}</a>` : ""}
         <a class="btn ${last ? "ghost" : ""}" href="#/${n.slug}/${firstStory}">${esc(t("start"))}</a></div>
-      <div class="toc"><h2>${esc(t("contents"))}</h2><ol>
-        ${chs.map((c,i) => `<li class="${done.includes(i+1)?"done":""} ${c.label?"extra":""}"><a href="#/${n.slug}/${i+1}"><span class="n">${c.type === "quiz" ? "★" : c.label ? "·" : chapterNo(n, i+1)}</span><span>${esc(chapterTitle(n, c, chapterNo(n, i+1)))}</span></a></li>`).join("")}
+      <div class="toc" data-auth-dep><h2>${esc(t("contents"))}</h2><ol>
+        ${chs.map((c,i) => `<li class="${done.includes(i+1)?"done":""} ${c.label?"extra":""}"><a href="#/${n.slug}/${i+1}"><span class="n">${c.type === "quiz" ? "★" : c.label ? "·" : chapterNo(n, i+1)}</span><span>${esc(chapterTitle(n, c, chapterNo(n, i+1)))}${!signedIn() && chapterLocked(n, i+1) ? ' <span class="lock" aria-hidden="true">🔒</span>' : ""}</span></a></li>`).join("")}
       </ol></div>
       ${sagaHTML(n)}
     </div>
@@ -1519,7 +1556,7 @@ async function learnHome(){
     <div class="ornament">✦ ✦ ✦</div>
     ${helpSwitch(c, h)}
   </section>
-  <section class="wrap"><div class="blog-list">
+  <section class="wrap" data-auth-dep><div class="blog-list">
     ${c.placement ? (() => { const p = c.placement, best = store.get("quiz:learn/" + c.lang + "/" + p.id, null);
       return `<a class="post-card has-img lr-unit lr-test" href="#/learn/${esc(p.id)}/practice">
         <img src="${esc(p.cover)}" alt="" loading="lazy">
@@ -1532,7 +1569,7 @@ async function learnHome(){
       const best = store.get("quiz:learn/" + c.lang + "/" + u.id, null);
       return `<a class="post-card has-img lr-unit" href="#/learn/${esc(u.id)}">
         <img src="${esc(((u.novel && catalog.novels.find(x => x.slug === u.novel)) || {}).cover || u.cover)}" alt="" loading="lazy">
-        <span class="date">${esc(u.level)} · ${esc(lt(h, "unit"))} ${u.n}${best ? ` <span class="pill study">✔ ${esc(lt(h, "done"))} · ${best.acc}%</span>` : ""}</span>
+        <span class="date">${!signedIn() && unitLocked(u) ? '<span class="lock" aria-hidden="true">🔒</span> ' : ""}${esc(u.level)} · ${esc(lt(h, "unit"))} ${u.n}${best ? ` <span class="pill study">✔ ${esc(lt(h, "done"))} · ${best.acc}%</span>` : ""}</span>
         <h3>${esc(u.title)}</h3>
         <p>${esc(u.sub[h] || "")}</p>
         <span class="more">${esc(lt(h, "go"))}</span>
@@ -1549,6 +1586,7 @@ async function learnUnit(id, practice){
     return lesson({slug: "learn/" + c.lang, title: c.title[lang]}, 1, {file: `practice.${h}.json`, title: p.title[h], label: p.title[h]},
       {base: `learn/${c.lang}/${p.id}/`, back: "#/learn", backTitle: c.title[lang], key: `learn/${c.lang}/${p.id}`}); }
   if (!u) { app.innerHTML = `<div class="empty">${esc(t("notFound"))}</div>`; return; }
+  if (unitLocked(u) && !signedIn()) return loginGate("#/learn");
   const h = learnHelp(c), base = `learn/${c.lang}/${u.id}/`;
   const backT = `${lt(h, "unit")} ${u.n}: ${u.title}`;
   if (practice) return lesson({slug: "learn/" + c.lang, title: c.title[lang]}, 1, {file: `practice.${h}.json`, title: u.title, label: `${u.level} · ${lt(h, "practice")}`},
@@ -1584,7 +1622,11 @@ function route(){
   if (!n) { app.innerHTML = `<div class="empty">${esc(t("notFound"))}</div>`; return; }
   if (!adultOk(n)) return adultGate(n);
   if (parts[1] === "progreso") return progressPage(n);
-  if (parts[1]) return reader(n, parseInt(parts[1],10) || 1);
+  if (parts[1]) {
+    const i = Math.min(Math.max(parseInt(parts[1],10) || 1, 1), n.chapters.length);
+    if (chapterLocked(n, i) && !signedIn()) { if (lang !== n.lang) setLang(n.lang); return loginGate("#/" + n.slug); }
+    return reader(n, i);
+  }
   novelPage(n);
 }
 window.addEventListener("hashchange", route);
@@ -1702,6 +1744,11 @@ async function upload(){
   try { await fb.setDoc(fb.doc(fb.db, "users", user.uid), { progress: JSON.stringify(snapshot()), updated: fb.serverTimestamp() }, { merge:true }); }
   catch (e) { console.error("LITMIR sync:", e); }
 }
+function authChanged(state){
+  window.lmAuth = state;
+  if (document.querySelector("[data-auth-dep]") && typeof window.route === "function") window.route();
+}
+window.lmSignIn = () => fb ? signIn() : null;
 window.lmSync = () => { if (!user || !ready) return; clearTimeout(timer); timer = setTimeout(upload, 1500); };
 addEventListener("pagehide", () => { if (timer) { clearTimeout(timer); upload(); } });
 
@@ -1726,8 +1773,10 @@ try {
   const [a, au, fs] = await Promise.all([import(G + "firebase-app.js"), import(G + "firebase-auth.js"), import(G + "firebase-firestore.js")]);
   const app = a.initializeApp(firebaseConfig);
   fb = { ...au, ...fs, auth: au.getAuth(app), db: fs.getFirestore(app) };
-  fb.onAuthStateChanged(fb.auth, u => { user = u; draw(); if (u) pull(); else ready = false; });
-} catch (e) { console.error("LITMIR: Firebase no disponible", e); }
+  fb.onAuthStateChanged(fb.auth, u => { user = u; draw(); authChanged({ user: u }); if (u) pull(); else ready = false; });
+} catch (e) { console.error("LITMIR: Firebase no disponible", e); authChanged({ user: null, failed: true }); }
+/* If Google cannot be reached at all, don't leave readers waiting on a locked page. */
+setTimeout(() => { if (window.lmAuth === undefined) authChanged({ user: null, failed: true }); }, 10000);
 </script>
 </body>
 </html>
