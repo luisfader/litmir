@@ -4098,6 +4098,11 @@
         {
           "file": "04.md",
           "title": "Ogień z nieba"
+        },
+        {
+          "file": "04-interludium.md",
+          "title": "Dłonie",
+          "label": "Interludium"
         }
       ],
       "cover": "novels/przeczucie/cover.jpg"
