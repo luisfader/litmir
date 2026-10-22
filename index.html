@@ -821,8 +821,7 @@ function renderChrome(){
   document.documentElement.lang = lang;
   document.getElementById("brand").innerHTML = esc(t("hero")) + "<small>" + esc(t("author")) + "</small>";
   document.getElementById("foot").textContent = t("foot");
-  const other = `<a class="other-site" href="${OTHER.href}" title="${esc(OTHER.title)}">${esc(OTHER.label)}</a>`;
-  document.getElementById("langs").innerHTML = other + (LANGS.length > 1 ? LANGS.map(l =>
+  document.getElementById("langs").innerHTML = (LANGS.length > 1 ? LANGS.map(l =>
     `<button data-l="${l}" aria-pressed="${l===lang}" title="${LANG_NAMES[l]}">${l.toUpperCase()}</button>`).join("") : "");
 }
 document.getElementById("langs").addEventListener("click", e => {
