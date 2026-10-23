@@ -7111,34 +7111,6 @@
       ]
     },
     {
-      "slug": "la-fortaleza-de-los-libres",
-      "lang": "es",
-      "title": "La fortaleza de los libres",
-      "genre": "Ciencia ficción posapocalíptica · Aventuras · Resistencia",
-      "description": "Tras dos años de soledad en un búnker, Deng emerge en África central y descubre que bandas de supervivientes europeos y sus colaboradores capturan personas negras para esclavizarlas. Cuando intenta unir a comunidades dispersas para construir un refugio libre, todos lo consideran un ingenuo. Un ataque contra su motocicleta lo pone al borde de la captura, hasta que Nyal, una mujer de espada y convicciones firmes, interviene. Juntos comienzan a levantar una nueva Fortaleza Turquesa en un mundo donde la libertad debe conquistarse y protegerse.",
-      "chapters": [
-        {
-          "file": "01.md",
-          "title": "La puerta del mundo"
-        },
-        {
-          "file": "02.md",
-          "title": "Un lugar para todos"
-        },
-        {
-          "file": "03.md",
-          "title": "La mujer de la espada"
-        },
-        {
-          "file": "04.md",
-          "title": "Diez personas"
-        }
-      ],
-      "translations": {
-        "sw": "ngome-ya-watu-huru"
-      }
-    },
-    {
       "slug": "ngome-ya-watu-huru",
       "lang": "sw",
       "title": "Ngome ya Watu Huru",
@@ -7161,10 +7133,7 @@
           "file": "04.md",
           "title": "Watu Kumi"
         }
-      ],
-      "translations": {
-        "es": "la-fortaleza-de-los-libres"
-      }
+      ]
     },
     {
       "slug": "zagadachniyat-vazdushen-korab",
@@ -7447,7 +7416,6 @@
         "predtucha",
         "premonision-ldp",
         "the-foreboding",
-        "la-fortaleza-de-los-libres",
         "ngome-ya-watu-huru"
       ],
       "description": {
