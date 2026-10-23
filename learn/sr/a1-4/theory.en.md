@@ -13,6 +13,8 @@ Natasha shows Luis around the city:
 > — **Има ли овде кафић**{Is there a café here}?
 > — Наравно! **Поред књижаре**{Next to the bookshop}, **преко пута музеја**{opposite the museum}.
 
+![](learn/sr/img/04-mapa.jpg)
+
 ## 1. Where? — ГДЕ ЈЕ…?
 
 - **Где је** Калемегдан? — Where is Kalemegdan?

@@ -14,6 +14,8 @@ After the scooter crash, Natasha decides to show Luis the city. On the way they 
 > — **Имам**{I’m (lit. I have)} тридесет пет година. А ти?
 > — **То је тајна**{That’s a secret}! — **смеје се**{laughs} Наташа.
 
+![](learn/sr/img/02-kalemegdan.jpg)
+
 ## 1. Professions
 
 | He | She | English |

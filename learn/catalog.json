@@ -1106,7 +1106,8 @@
       "en": "Two alphabets, greetings, introductions, pronouns, the verb БИТИ, nationalities"
      },
      "cover": "novels/divlji-chas/cover-v2.jpg",
-     "novel": "divlji-chas"
+     "novel": "divlji-chas",
+     "image": "learn/sr/img/01-cafe.jpg"
     },
     {
      "id": "a1-2",
@@ -1118,7 +1119,8 @@
       "en": "Professions, three verb types, negation, ДА ЛИ, languages, numbers and age"
      },
      "cover": "novels/divlji-chas/cover-v2.jpg",
-     "novel": "divlji-chas"
+     "novel": "divlji-chas",
+     "image": "learn/sr/img/02-kalemegdan.jpg"
     },
     {
      "id": "a1-3",
@@ -1130,7 +1132,8 @@
       "en": "Family, the verb ИМАТИ, има / нема, gender, possessives, adjectives"
      },
      "cover": "novels/divlji-chas/cover-v2.jpg",
-     "novel": "divlji-chas"
+     "novel": "divlji-chas",
+     "image": "learn/sr/img/03-album.jpg"
     },
     {
      "id": "a1-4",
@@ -1142,7 +1145,8 @@
       "en": "ГДЕ ЈЕ…? The locative after У / НА, prepositions of place, the city"
      },
      "cover": "novels/divlji-chas/cover-v2.jpg",
-     "novel": "divlji-chas"
+     "novel": "divlji-chas",
+     "image": "learn/sr/img/04-mapa.jpg"
     }
    ]
   },

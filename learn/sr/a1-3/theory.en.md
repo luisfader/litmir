@@ -1,6 +1,6 @@
 ## Natasha’s family
 
-Natasha is the brave, passionate Serbian heroine of the «Дивљи час» saga. Let’s imagine that over coffee she shows Luis some photos on her phone.
+Natasha is the brave, passionate Serbian heroine of the «Дивљи час» saga. Let’s imagine that, at her grandmother’s house, she shows Luis an old family album.
 
 > — **Ово је моја мама**{This is my mum}. **Она је учитељица**{She’s a teacher} у Новом Саду.
 > — **Лепа је**{She’s beautiful}! А **ко је овај човек**{who is this man}?
@@ -9,6 +9,8 @@ Natasha is the brave, passionate Serbian heroine of the «Дивљи час» sa
 > — **Имам млађег брата**{I have a younger brother}, Милоша. **Он је студент**{He’s a student}.
 > — **Твоја породица је дивна**{Your family is wonderful}.
 > — А ово је **моја бака**{my grandmother}. **Она прави најбоље пите**{She makes the best pies} у Србији!
+
+![](learn/sr/img/03-album.jpg)
 
 ## 1. Family
 

@@ -11,6 +11,8 @@ Hover over a word (or tap it) to see its translation.
 > — **Ја сам из Београда**{I’m from Belgrade}. **Ја сам Српкиња**{I’m Serbian (female)}. **Како си?**{How are you?}
 > — **Сада добро**{Fine now}! **Видимо се**{See you}, Наташа!
 
+![](learn/sr/img/01-cafe.jpg)
+
 ## 1. Greetings and goodbyes
 
 | Српски | English |
