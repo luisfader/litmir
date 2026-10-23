@@ -30,6 +30,7 @@ let done = 0, skipped = 0, missing = 0;
 for (const p of [...new Set(files)]) {
   if (!existsSync(p)) { missing++; continue; }
   const s = readFileSync(p, "utf8"), isEnc = s.startsWith(ENC);
+  if (s.startsWith("LITMIR-PW1:")) { skipped++; continue; } // protetti con password (tools/proteggi.mjs)
   if (undo ? !isEnc : isEnc) { skipped++; continue; }
   if (undo) {
     const b = Buffer.from(s.slice(ENC.length).trim(), "base64");

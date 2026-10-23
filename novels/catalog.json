@@ -3352,7 +3352,12 @@
           "label": "Nota"
         }
       ],
-      "stars": 4.5
+      "stars": 4.5,
+      "lock": {
+        "free": 5,
+        "salt": "UqbtRdMBSKtuNe+mCSiWdg==",
+        "iter": 250000
+      }
     },
     {
       "slug": "ladro-di-cuori",

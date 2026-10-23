@@ -256,6 +256,9 @@ article.chapter h3{font-family:var(--sans);font-size:.72em;letter-spacing:.12em;
 .gate{text-align:center;padding:90px 20px;max-width:560px}
 .gate h1{font-family:var(--display);font-weight:500;font-size:44px;margin:0 0 10px}
 .gate p{color:var(--muted);font-size:18px;margin:0 0 28px}
+.pw-form{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:0 0 14px}
+.pw-form input{font:inherit;font-size:16px;padding:10px 14px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink);min-width:220px}
+.pw-err{color:#b3261e;font-size:15px;min-height:1.4em;margin:0 0 18px}
 .lock-big{font-size:44px;margin-bottom:12px}
 .lock{font-size:.8em;opacity:.7}
 .toc li.extra a{font-style:italic;color:var(--muted)}
@@ -1055,14 +1058,70 @@ function adultGate(n){
    "LITMIR-ENC1:", but there are none any more.) */
 const FREE_CHAPTERS = 4, FREE_UNITS = 3;
 const ENC_MARK = "LITMIR-ENC1:";
-async function getText(url){
+async function getText(url, n){
   const r = await fetch(url); if (!r.ok) throw new Error(r.status);
   const s = await r.text();
+  if (s.startsWith(PW_MARK)) return pwDecrypt(s, await pwKey(n));
   if (!s.startsWith(ENC_MARK)) return s;
   if (!window.lmDecrypt) throw new Error("no key");
   return window.lmDecrypt(s.slice(ENC_MARK.length).trim());
 }
 const signedIn = () => false; /* the site has no sign-in */
+
+/* Novels with "lock": {"free": N, "salt": "...", "iter": ...} in catalog.json: the first N entries are open,
+   the rest are encrypted (tools/proteggi.mjs) with a key derived from the author's password.
+   The password itself is never stored anywhere: the browser derives the key (PBKDF2) and only keeps
+   that key in localStorage, so the reader types it once. A wrong password simply fails to decrypt. */
+const PW_MARK = "LITMIR-PW1:";
+const PW_T = {
+  it:["Capitolo protetto","Per continuare a leggere ti serve la password. Contatta l’autore e chiedigli la password.","Password","Sblocca","Password errata. Riprova.","Torna indietro"],
+  es:["Capítulo protegido","Para seguir leyendo necesitas la contraseña. Contacta al autor y pídele la contraseña.","Contraseña","Desbloquear","Contraseña incorrecta. Inténtalo de nuevo.","Volver"],
+  en:["Protected chapter","You need the password to keep reading. Contact the author and ask for the password.","Password","Unlock","Wrong password. Try again.","Go back"],
+  ru:["Защищённая глава","Чтобы читать дальше, нужен пароль. Свяжитесь с автором и попросите пароль.","Пароль","Открыть","Неверный пароль. Попробуйте ещё раз.","Вернуться"]
+};
+const b64d = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
+const b64e = u => btoa(String.fromCharCode(...new Uint8Array(u)));
+const pwLocked = (n, i) => !!(n && n.lock) && i > (n.lock.free || 0);
+const pwKeys = {};
+async function pwKey(n){
+  if (!n || !n.lock) throw new Error("no key");
+  if (pwKeys[n.slug]) return pwKeys[n.slug];
+  const raw = store.get("pw:" + n.slug, null); if (!raw) throw new Error("no key");
+  return pwKeys[n.slug] = await crypto.subtle.importKey("raw", b64d(raw), "AES-GCM", true, ["decrypt"]);
+}
+async function pwDecrypt(s, key){
+  const b = b64d(s.slice(PW_MARK.length).trim());
+  return new TextDecoder().decode(await crypto.subtle.decrypt({name:"AES-GCM", iv:b.subarray(0,12)}, key, b.subarray(12)));
+}
+async function pwDerive(n, pass){
+  const base = await crypto.subtle.importKey("raw", new TextEncoder().encode(pass), "PBKDF2", false, ["deriveKey"]);
+  return crypto.subtle.deriveKey({name:"PBKDF2", hash:"SHA-256", salt:b64d(n.lock.salt), iterations:n.lock.iter || 250000},
+    base, {name:"AES-GCM", length:256}, true, ["decrypt"]);
+}
+const pwOpen = n => !!(n && n.lock) && store.get("pw:" + n.slug, null) !== null;
+function pwGate(n, i){
+  const T = PW_T[n.lang] || PW_T.en;
+  document.title = T[0] + " · " + n.title;
+  app.innerHTML = `<section class="wrap gate"><div class="lock-big" aria-hidden="true">🔒</div>
+    <h1>${esc(T[0])}</h1><p>${esc(T[1])}</p>
+    <form class="pw-form" id="pwForm" autocomplete="off"><input type="password" id="pwIn" placeholder="${esc(T[2])}" aria-label="${esc(T[2])}" required>
+    <button class="btn" type="submit">${esc(T[3])}</button></form>
+    <div class="pw-err" id="pwErr" role="alert"></div>
+    <a class="btn ghost" href="#/${esc(n.slug)}">${esc(T[5])}</a></section>`;
+  const inp = document.getElementById("pwIn"), err = document.getElementById("pwErr");
+  inp.focus();
+  document.getElementById("pwForm").onsubmit = async e => {
+    e.preventDefault(); err.textContent = "…";
+    try {
+      const key = await pwDerive(n, inp.value);
+      const r = await fetch(`novels/${n.slug}/${n.chapters[i-1].file}`); const s = await r.text();
+      if (s.startsWith(PW_MARK)) await pwDecrypt(s, key);
+      store.set("pw:" + n.slug, b64e(await crypto.subtle.exportKey("raw", key)));
+      pwKeys[n.slug] = key; route();
+    } catch(x) { err.textContent = T[4]; inp.value = ""; inp.focus(); }
+  };
+  window.scrollTo(0, 0);
+}
 /* Everything is open to everyone (no chapter or unit needs an account). Signing in only syncs reading progress. */
 const chapterLocked = () => false;
 const unitLocked = () => false;
@@ -1164,7 +1223,7 @@ function novelPage(n){
         <a class="btn ${last ? "ghost" : ""}" href="#/${n.slug}/${firstStory}">${esc(t("start"))}</a>
         <button type="button" class="btn ghost" id="favorite-toggle" aria-pressed="${isFavorite(n.slug)}">${isFavorite(n.slug) ? "★" : "☆"} ${esc(ft(isFavorite(n.slug)?2:1,n.lang))}</button></div>
       <div class="toc" data-auth-dep><h2>${esc(t("contents"))}</h2><ol>
-        ${chs.map((c,i) => `<li class="${done.includes(i+1)?"done":""} ${c.label?"extra":""}"><a href="#/${n.slug}/${i+1}"><span class="n">${c.type === "quiz" ? "★" : c.label ? "·" : chapterNo(n, i+1)}</span><span>${esc(chapterTitle(n, c, chapterNo(n, i+1)))}${!signedIn() && chapterLocked(n, i+1) ? ' <span class="lock" aria-hidden="true">🔒</span>' : ""}</span></a></li>`).join("")}
+        ${chs.map((c,i) => `<li class="${done.includes(i+1)?"done":""} ${c.label?"extra":""}"><a href="#/${n.slug}/${i+1}"><span class="n">${c.type === "quiz" ? "★" : c.label ? "·" : chapterNo(n, i+1)}</span><span>${esc(chapterTitle(n, c, chapterNo(n, i+1)))}${(!signedIn() && chapterLocked(n, i+1)) || (pwLocked(n, i+1) && !pwOpen(n)) ? ' <span class="lock" aria-hidden="true">🔒</span>' : ""}</span></a></li>`).join("")}
       </ol></div>
       ${sagaHTML(n)}
     </div>
@@ -1180,8 +1239,8 @@ async function reader(n, idx){
   if (c.type === "quiz") return lesson(n, i, c);
   app.innerHTML = `<div class="loading">…</div>`;
   let md = "";
-  try { md = await getText(`novels/${n.slug}/${c.file}`); }
-  catch(e) { md = "*—*"; }
+  try { md = await getText(`novels/${n.slug}/${c.file}`, n); }
+  catch(e) { if (pwLocked(n, i)) { store.set("pw:" + n.slug, null); try { localStorage.removeItem("lm:pw:" + n.slug); } catch(x) {} delete pwKeys[n.slug]; return pwGate(n, i); } md = "*—*"; }
   const num = chapterNo(n, i);
   const title = chapterTitle(n, c, num);
   const label = c.label || (L.chapter + " " + num);
@@ -1776,6 +1835,7 @@ function route(){
   if (parts[1]) {
     const i = Math.min(Math.max(parseInt(parts[1],10) || 1, 1), n.chapters.length);
     if (chapterLocked(n, i) && !signedIn()) { if (lang !== n.lang) setLang(n.lang); return loginGate("#/" + n.slug); }
+    if (pwLocked(n, i) && !pwOpen(n)) { if (lang !== n.lang) setLang(n.lang); return pwGate(n, i); }
     return reader(n, i);
   }
   novelPage(n);
