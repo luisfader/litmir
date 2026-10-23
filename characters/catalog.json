@@ -208,19 +208,31 @@
    "localizations": {
     "sr": {
      "name": "Наташа",
-     "description": "Храбра, страствена и одлучна Српкиња. Њена оданост ближњима праћена је импулсивним темпераментом."
+     "description": "Храбра, страствена и одлучна Српкиња. Њена оданост ближњима праћена је импулсивним темпераментом.",
+     "images": [
+      "characters/img/natasha-1.jpg"
+     ]
     },
     "it": {
      "name": "Nataša",
-     "description": "Compagna di Luis, serba coraggiosa e passionale, impulsiva e profondamente leale. A Venezia vola in groppa al drago Zmaj e scopre una gelosia bruciante verso la misteriosa Natalia."
+     "description": "Compagna di Luis, serba coraggiosa e passionale, impulsiva e profondamente leale. A Venezia vola in groppa al drago Zmaj e scopre una gelosia bruciante verso la misteriosa Natalia.",
+     "images": [
+      "characters/img/natasha-1.jpg"
+     ]
     },
     "eo": {
      "name": "Nataŝa",
-     "description": "Kuraĝa kaj pasia serbino. Ŝia sindonemo al la amataj homoj kuniĝas kun impulsema karaktero."
+     "description": "Kuraĝa kaj pasia serbino. Ŝia sindonemo al la amataj homoj kuniĝas kun impulsema karaktero.",
+     "images": [
+      "characters/img/natasha-1.jpg"
+     ]
     },
     "ru": {
      "name": "Наташа",
-     "description": "Смелая, страстная и решительная сербка, жена Луиса. В Белграде в ней пробуждается древняя сила, которая становится только сильнее, когда она защищает любимых. Летает на драконе Змае, а в «Эпическом матче» бросает вызов чемпионату мира и становится тренером сборной Человечества."
+     "description": "Смелая, страстная и решительная сербка, жена Луиса. В Белграде в ней пробуждается древняя сила, которая становится только сильнее, когда она защищает любимых. Летает на драконе Змае, а в «Эпическом матче» бросает вызов чемпионату мира и становится тренером сборной Человечества.",
+     "images": [
+      "characters/img/natasha-1.jpg"
+     ]
     }
    }
   },
