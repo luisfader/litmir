@@ -1,0 +1,291 @@
+{
+ "title": "Co se stalo na Karlštejně?",
+ "subtitle": "The past tense (1): the L-form, byl jsem, word order, irregular forms.",
+ "speak": "cs-CZ",
+ "hero": "novels/predtucha/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "šel",
+     "went (on foot)"
+    ],
+    [
+     "jel",
+     "went (by vehicle)"
+    ],
+    [
+     "řekl",
+     "said"
+    ],
+    [
+     "mohl",
+     "could"
+    ],
+    [
+     "viděl",
+     "saw"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Luis",
+   "after": "celou noc na motocyklu.",
+   "options": [
+    "jel",
+    "šel",
+    "jet"
+   ],
+   "answer": 0,
+   "es": "Luis rode his motorbike all night.",
+   "why": "On a motorbike: jet → jel."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Jana a Lucie",
+   "after": "na Karlštejně.",
+   "options": [
+    "zůstaly",
+    "zůstali",
+    "zůstalo"
+   ],
+   "answer": 0,
+   "es": "Jana and Lucie stayed at Karlštejn.",
+   "why": "Two women → -ly."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Luisi, kde",
+   "after": "byl včera?",
+   "options": [
+    "jsi",
+    "jsem",
+    "jsme"
+   ],
+   "answer": 0,
+   "es": "Luis, where were you yesterday?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Včera",
+   "after": "doma.",
+   "options": [
+    "jsem byl",
+    "byl jsem",
+    "jsem být"
+   ],
+   "answer": 0,
+   "es": "Yesterday I was at home.",
+   "why": "«Jsem» goes in second position, right after «včera»."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "„Já",
+   "after": "na Karlštejně,“ říká Robert.",
+   "options": [
+    "jsem nebyl",
+    "nebyl jsem",
+    "nejsem byl"
+   ],
+   "answer": 0,
+   "es": "“I wasn’t at Karlštejn,” says Robert.",
+   "why": "Ne- goes on the L-form; jsem stays second, after «já»."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Jana",
+   "after": "oslepit kamery na dvě minuty.",
+   "options": [
+    "mohla",
+    "mohli",
+    "moctla"
+   ],
+   "answer": 0,
+   "es": "Jana could blind the cameras for two minutes.",
+   "why": "Moct → mohl, mohla."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Byl jsem v Praze",
+   "after": "",
+   "options": [
+    "před rokem",
+    "před roku",
+    "za rok"
+   ],
+   "answer": 0,
+   "es": "I was in Prague a year ago."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Dokázali jsme to!",
+   "options": [
+    "We did it!",
+    "We will prove it!",
+    "We couldn’t do it."
+   ],
+   "answer": 0,
+   "why": "Jana whispers this after the battle (chapter 3)."
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "We saw the drone.",
+   "options": [
+    "Viděli jsme dron.",
+    "Viděl jsme dron.",
+    "Jsme viděli dron."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "We were at Karlštejn.",
+   "answer": [
+    "Byli",
+    "jsme",
+    "na",
+    "Karlštejně."
+   ],
+   "extra": [
+    "jsou",
+    "byl"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Kolik dobrovolníků našli Luis, Jana a Lucie za tři dny?",
+   "es": "How many volunteers did Luis, Jana and Lucie find in three days?",
+   "options": [
+    "Sedmnáct.",
+    "Sedm.",
+    "Dvacet."
+   ],
+   "answer": 0,
+   "why": "«Během tří dnů se jim podařilo shromáždit sedmnáct mužů a žen.»"
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Kde byli lidé z Utopie, když přijel Luis?",
+   "es": "Where were the people of Utopia when Luis arrived?",
+   "options": [
+    "V lese.",
+    "Na Karlštejně.",
+    "V Praze."
+   ],
+   "answer": 0,
+   "why": "Robert got them out through an old tunnel into the forest (chapter 4)."
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Jana a Lucie jely s Luisem za Robertem.",
+   "answer": false,
+   "why": "No, they stayed at Karlštejn to guard the castle."
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Když Luis přijel, Naše utopie hořela.",
+   "answer": true,
+   "why": "Yes: «Hořela Naše utopie.» The main tower was gone."
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "I was at home. (a man speaking)",
+   "answers": [
+    "Byl jsem doma.",
+    "Byl jsem doma",
+    "Já jsem byl doma.",
+    "Já jsem byl doma",
+    "Doma jsem byl.",
+    "Doma jsem byl"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "Where were you? (to a man)",
+   "answers": [
+    "Kde jsi byl?",
+    "Kde jsi byl",
+    "Kdes byl?",
+    "Kdes byl",
+    "Kde jsi ty byl?"
+   ]
+  }
+ ],
+ "keyboard": [
+  "á",
+  "č",
+  "ď",
+  "é",
+  "ě",
+  "í",
+  "ň",
+  "ó",
+  "ř",
+  "š",
+  "ť",
+  "ú",
+  "ů",
+  "ý",
+  "ž"
+ ]
+}

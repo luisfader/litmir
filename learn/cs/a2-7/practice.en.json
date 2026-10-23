@@ -1,0 +1,289 @@
+{
+ "title": "Stůjte! Tady ne!",
+ "subtitle": "The imperative: ty, vy, my. Prohibitions and polite requests.",
+ "speak": "cs-CZ",
+ "hero": "novels/predtucha/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "stůj",
+     "stop, stand still"
+    ],
+    [
+     "pojďme",
+     "let’s go"
+    ],
+    [
+     "táhněte",
+     "pull (you all)"
+    ],
+    [
+     "neutíkej",
+     "don’t run away"
+    ],
+    [
+     "vezmi",
+     "take"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "„",
+   "after": "!“ zahřměl Robert. „Kam běžíte?“",
+   "options": [
+    "Stůjte",
+    "Stojíte",
+    "Stát"
+   ],
+   "answer": 0,
+   "es": "“Stop!” Robert thundered. “Where are you running?”",
+   "why": "Stát → stůj, stůjte. Robert speaks to many people, so -te."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "„",
+   "after": "! Všichni!“ zařvala Lucie u hráze.",
+   "options": [
+    "Táhněte",
+    "Táhnete",
+    "Táhnout"
+   ],
+   "answer": 0,
+   "es": "“Pull! Everyone!” Lucie roared at the dam.",
+   "why": "Táhnou → táhni, táhněte. Táhnete means “you are pulling”."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Jano,",
+   "after": "jim to. Řekni jim, ať běží.",
+   "options": [
+    "řekni",
+    "řekne",
+    "říct"
+   ],
+   "answer": 0,
+   "es": "Jana, tell them. Tell them to run."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Tomáši,",
+   "after": "to!",
+   "options": [
+    "otevři",
+    "otevře",
+    "otevřít"
+   ],
+   "answer": 0,
+   "es": "Tomáš, open it!",
+   "why": "Otevřou → otevři."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Hoďte jim lana.",
+   "after": ", koho můžete.",
+   "options": [
+    "Vytáhněte",
+    "Vytáhli",
+    "Vytáhnout"
+   ],
+   "answer": 0,
+   "es": "Throw them ropes. Pull out whoever you can."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Lucie, ne!",
+   "after": "to!",
+   "options": [
+    "Neříkej",
+    "Neříkáš",
+    "Neříct"
+   ],
+   "answer": 0,
+   "es": "Lucie, no! Don’t say it!",
+   "why": "A prohibition uses the imperfective: říkat → neříkej."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Roberte,",
+   "after": "opatrný!",
+   "options": [
+    "buď",
+    "jsi",
+    "být"
+   ],
+   "answer": 0,
+   "es": "Robert, be careful!",
+   "why": "Být → buď, buďte (irregular)."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Nezapomeň!",
+   "options": [
+    "Don’t forget!",
+    "Remember!",
+    "Don’t lose it!"
+   ],
+   "answer": 0,
+   "why": "A warning uses the perfective: zapomenout → nezapomeň."
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "Let’s go home!",
+   "options": [
+    "Pojďme domů!",
+    "Pojď domů!",
+    "Jděte domů!"
+   ],
+   "answer": 0,
+   "why": "-me = “let’s…”: pojďme."
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "Tell them to run.",
+   "answer": [
+    "Řekni",
+    "jim,",
+    "ať",
+    "běží."
+   ],
+   "extra": [
+    "říkáš",
+    "běžte"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Co zahřměl Robert, když stál v díře ve zdi?",
+   "es": "What did Robert thunder when he stood in the hole in the wall?",
+   "options": [
+    "„Stůjte!“",
+    "„Utíkejte!“",
+    "„Pojďme pryč!“"
+   ],
+   "answer": 0,
+   "why": "People were running away; Robert shouted “Stůjte!” and they came back (chapter 28)."
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Co řekla Jana otrokům z ohrady přes drony?",
+   "es": "What did Jana tell the slaves in the enclosure through the drones?",
+   "options": [
+    "„Teď. Sever. Běžte.“",
+    "„Stůjte a čekejte.“",
+    "„Pojďte k bráně.“"
+   ],
+   "answer": 0,
+   "why": "Just three words: now, north, run (chapter 28)."
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Lucie u hráze zařvala: „Táhněte! Všichni!“",
+   "answer": true,
+   "why": "True: the gate moved and Lucie called everyone to pull (chapter 29)."
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Když se divoši topili, Robert řekl: „Nechte je. Jsou to divoši.“",
+   "answer": false,
+   "why": "False: Robert said “Hoďte jim lana” — throw them ropes, they are people who are drowning."
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "Stop! (to several people)",
+   "answers": [
+    "Stůjte!",
+    "Stůjte",
+    "stůjte!",
+    "stůjte"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "Don’t be afraid! (to a friend)",
+   "answers": [
+    "Neboj se!",
+    "Neboj se",
+    "neboj se!",
+    "neboj se"
+   ]
+  }
+ ],
+ "keyboard": [
+  "á",
+  "č",
+  "ď",
+  "é",
+  "ě",
+  "í",
+  "ň",
+  "ó",
+  "ř",
+  "š",
+  "ť",
+  "ú",
+  "ů",
+  "ý",
+  "ž"
+ ]
+}

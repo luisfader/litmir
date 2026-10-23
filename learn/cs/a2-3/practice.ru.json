@@ -1,0 +1,289 @@
+{
+ "title": "Luis má plán",
+ "subtitle": "Вид глагола: делать и сделать, процесс и результат, будущее время.",
+ "speak": "cs-CZ",
+ "hero": "novels/predtucha/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 7 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "přečíst",
+     "прочитать"
+    ],
+    [
+     "koupit",
+     "купить"
+    ],
+    [
+     "otevřít",
+     "открыть"
+    ],
+    [
+     "vzít",
+     "взять"
+    ],
+    [
+     "říct",
+     "сказать"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Luis",
+   "after": "dopis za pět minut.",
+   "options": [
+    "napsal",
+    "psal jsem",
+    "napíše"
+   ],
+   "answer": 0,
+   "es": "Луис написал письмо за пять минут.",
+   "why": "«За пять минут» — результат: совершенный вид."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Jana mi pořád",
+   "after": "tužku.",
+   "options": [
+    "brala",
+    "vzala",
+    "vezme"
+   ],
+   "answer": 0,
+   "es": "Яна всё время отбирала у меня карандаш.",
+   "why": "«Pořád» — повторение: несовершенный вид."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Zítra budu celý den",
+   "after": "dopisy.",
+   "options": [
+    "psát",
+    "napsat",
+    "píšu"
+   ],
+   "answer": 0,
+   "es": "Завтра я буду весь день писать письма.",
+   "why": "После «budu» — только несовершенный вид."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Počkej, hned to",
+   "after": "!",
+   "options": [
+    "udělám",
+    "budu udělat",
+    "dělal"
+   ],
+   "answer": 0,
+   "es": "Подожди, сейчас сделаю!",
+   "why": "«Udělám» — настоящее время совершенного вида = будущее."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Zítra Vojta",
+   "after": "Kazimírovi zprávu.",
+   "options": [
+    "napíše",
+    "bude napsat",
+    "napsal"
+   ],
+   "answer": 0,
+   "es": "Завтра Войта напишет Казимиру сообщение."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Lucie konečně",
+   "after": "závoru a voda se dala do pohybu.",
+   "options": [
+    "otevřela",
+    "otevírá",
+    "otevřít"
+   ],
+   "answer": 0,
+   "es": "Люцие наконец открыла затвор, и вода хлынула.",
+   "why": "«Konečně» + результат в прошлом: совершенный вид."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "napíšu",
+   "options": [
+    "я напишу",
+    "я пишу",
+    "я написал"
+   ],
+   "answer": 0,
+   "why": "Настоящее время совершенного вида означает будущее."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Luis tam chodil každé ráno.",
+   "options": [
+    "Луис ходил туда каждое утро.",
+    "Луис пошёл туда однажды утром.",
+    "Луис пойдёт туда утром."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать на изучаемом языке?",
+   "word": "Я закрою дверь.",
+   "options": [
+    "Zavřu dveře.",
+    "Budu zavřít dveře.",
+    "Zavíral jsem dveře."
+   ],
+   "answer": 0,
+   "why": "Не «budu zavřít»: с «budu» совершенный вид не употребляется."
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите",
+   "es": "Вечером я прочитаю твоё письмо.",
+   "answer": [
+    "Večer",
+    "přečtu",
+    "tvůj",
+    "dopis."
+   ],
+   "extra": [
+    "budu",
+    "přečetl"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "Co udělá Vojta podle Luisova plánu?",
+   "es": "Что сделает Войта по плану Луиса?",
+   "options": [
+    "Pošle Kazimírovi zprávu.",
+    "Půjde tunelem první.",
+    "Otevře stavidlo."
+   ],
+   "answer": 0,
+   "why": "Войта пошлёт Казимиру ложное сообщение. Туннелем первым пойдёт Луис."
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "Kdo nakonec otevřel závoru u hráze?",
+   "es": "Кто в конце концов открыл затвор на плотине?",
+   "options": [
+    "Lucie s halapartnou.",
+    "Luis s tabletem.",
+    "Robert s Hanou."
+   ],
+   "answer": 0,
+   "why": "Люцие использовала алебарду как рычаг (глава 29)."
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Luis vymyslel plán s hrází za jednu noc.",
+   "answer": false,
+   "why": "Нет: «Celou zimu. V noci.» — он работал над ним всю зиму."
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Luis chodil k hrázi každé ráno a měřil hladinu.",
+   "answer": true,
+   "why": "Да, каждое утро — повторение, поэтому «chodil, měřil»."
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Я это сделаю.",
+   "answers": [
+    "Udělám to",
+    "Udělám to.",
+    "Udělám to!",
+    "Já to udělám",
+    "Já to udělám.",
+    "Já to udělám!"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Она открыла дверь.",
+   "answers": [
+    "Otevřela dveře",
+    "Otevřela dveře.",
+    "Ona otevřela dveře",
+    "Ona otevřela dveře."
+   ]
+  }
+ ],
+ "keyboard": [
+  "á",
+  "č",
+  "ď",
+  "é",
+  "ě",
+  "í",
+  "ň",
+  "ó",
+  "ř",
+  "š",
+  "ť",
+  "ú",
+  "ů",
+  "ý",
+  "ž"
+ ]
+}

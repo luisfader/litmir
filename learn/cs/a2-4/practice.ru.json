@@ -1,0 +1,288 @@
+{
+ "title": "S Lucií a s Janou",
+ "subtitle": "Творительный падеж: с кем? чем? кем? где? Местоимения со мной, с тобой.",
+ "speak": "cs-CZ",
+ "hero": "novels/predtucha/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 7 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "se mnou",
+     "со мной"
+    ],
+    [
+     "s tebou",
+     "с тобой"
+    ],
+    [
+     "s ní",
+     "с ней"
+    ],
+    [
+     "s námi",
+     "с нами"
+    ],
+    [
+     "s nimi",
+     "с ними"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Lucie stojí v bráně s",
+   "after": ".",
+   "options": [
+    "halapartnou",
+    "halapartna",
+    "halapartně"
+   ],
+   "answer": 0,
+   "es": "Люцие стоит в воротах с алебардой.",
+   "why": "Halapartna → s halapartnou (жен. род на -a → -ou)."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Do Brna pojedeme",
+   "after": ".",
+   "options": [
+    "vlakem",
+    "vlaku",
+    "vlaky"
+   ],
+   "answer": 0,
+   "es": "В Брно мы поедем поездом.",
+   "why": "Транспорт — творительный без предлога: vlakem."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Luis se stal",
+   "after": ".",
+   "options": [
+    "velitelem",
+    "veliteli",
+    "velitelé"
+   ],
+   "answer": 0,
+   "es": "Луис стал командиром.",
+   "why": "Stát se + творительный падеж."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Pod severní",
+   "after": "vede starý tunel.",
+   "options": [
+    "zdí",
+    "zeď",
+    "zdech"
+   ],
+   "answer": 0,
+   "es": "Под северной стеной проходит старый туннель.",
+   "why": "Где? Pod + творительный: zeď → pod zdí."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Ráno šla Jana do sklepa za",
+   "after": ".",
+   "options": [
+    "dětmi",
+    "děti",
+    "dětem"
+   ],
+   "answer": 0,
+   "es": "Утром Яна пошла в подвал к детям.",
+   "why": "Děti → s dětmi, za dětmi (исключение)."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Tomáš přišel do brány s kovářským",
+   "after": ".",
+   "options": [
+    "kladivem",
+    "kladivo",
+    "kladiva"
+   ],
+   "answer": 0,
+   "es": "Томаш пришёл к воротам с кузнечным молотом."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Robert je přikryl kabátem.",
+   "options": [
+    "Роберт укрыл их пальто.",
+    "Роберт пришёл к ним в пальто.",
+    "Роберт забрал их пальто."
+   ],
+   "answer": 0,
+   "why": "Kabátem — творительный падеж орудия: чем?"
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "za hrází",
+   "options": [
+    "за плотиной",
+    "над плотиной",
+    "под плотиной"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать на изучаемом языке?",
+   "word": "Я пойду с тобой.",
+   "options": [
+    "Půjdu s tebou.",
+    "Půjdu s ty.",
+    "Půjdu s tebe."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите",
+   "es": "Луис и Люцие стояли спиной к спине.",
+   "answer": [
+    "Luis",
+    "a",
+    "Lucie",
+    "stáli",
+    "zády",
+    "k",
+    "sobě."
+   ],
+   "extra": [
+    "záda",
+    "se"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "Kdo stál v proražené bráně s halapartnou?",
+   "es": "Кто стоял в проломленных воротах с алебардой?",
+   "options": [
+    "Lucie.",
+    "Jana.",
+    "Natálie."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "Kde stál Robert, když zpíval?",
+   "es": "Где стоял Роберт, когда пел?",
+   "options": [
+    "Na hradbě nad bránou.",
+    "Pod hrází u potoka.",
+    "Ve sklepě pod školou."
+   ],
+   "answer": 0,
+   "why": "Он стоял на стене над воротами, один, без оружия."
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Ráno Robert přikryl Luise a Lucii kabátem.",
+   "answer": true,
+   "why": "Да: он снял пальто и укрыл им обоих."
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Tomáš bojoval v bráně s mečem.",
+   "answer": false,
+   "why": "Нет: Томаш был с кузнечным молотом, а с мечом — Петр."
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Пойдём с нами!",
+   "answers": [
+    "Pojď s námi!",
+    "Pojď s námi",
+    "Pojď s námi.",
+    "Pojďte s námi!",
+    "Pojďte s námi",
+    "Pojďte s námi."
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Яна работает с планшетом.",
+   "answers": [
+    "Jana pracuje s tabletem.",
+    "Jana pracuje s tabletem"
+   ]
+  }
+ ],
+ "keyboard": [
+  "á",
+  "č",
+  "ď",
+  "é",
+  "ě",
+  "í",
+  "ň",
+  "ó",
+  "ř",
+  "š",
+  "ť",
+  "ú",
+  "ů",
+  "ý",
+  "ž"
+ ]
+}

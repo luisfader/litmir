@@ -1,0 +1,289 @@
+{
+ "title": "Komu pomůžeme?",
+ "subtitle": "Дательный падеж: pomoct, děkovat, věřit, k, díky, kvůli, je mi zima.",
+ "speak": "cs-CZ",
+ "hero": "novels/predtucha/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 7 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "pomoct",
+     "помочь"
+    ],
+    [
+     "věřit",
+     "верить"
+    ],
+    [
+     "odpustit",
+     "простить"
+    ],
+    [
+     "poděkovat",
+     "поблагодарить"
+    ],
+    [
+     "patřit",
+     "принадлежать"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Jana jde přímo k",
+   "after": ".",
+   "options": [
+    "Vojtovi",
+    "Vojta",
+    "Vojtou"
+   ],
+   "answer": 0,
+   "es": "Яна идёт прямо к Войте.",
+   "why": "K + дательный: мужские имена на -ovi."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Luis má plán a já",
+   "after": "věřím.",
+   "options": [
+    "mu",
+    "ho",
+    "on"
+   ],
+   "answer": 0,
+   "es": "У Луиса есть план, и я ему верю.",
+   "why": "Věřit + дательный: věřit mu."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Pomůžeme",
+   "after": "ji dostat zpátky.",
+   "options": [
+    "ti",
+    "tě",
+    "tebe"
+   ],
+   "answer": 0,
+   "es": "Мы поможем тебе вернуть её.",
+   "why": "Pomoct + дательный: pomůžeme ti."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "",
+   "after": "je osm let.",
+   "options": [
+    "Aničce",
+    "Anička",
+    "Aničku"
+   ],
+   "answer": 0,
+   "es": "Аничке восемь лет.",
+   "why": "Возраст — с дательным, как в русском: Aničce je osm."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Řekni",
+   "after": ", že tady nikoho nevydáváme.",
+   "options": [
+    "Vlčímu knížeti",
+    "Vlčí kníže",
+    "Vlčího knížete"
+   ],
+   "answer": 0,
+   "es": "Скажи Волчьему князю, что мы здесь никого не выдаём.",
+   "why": "Říct komu? — дательный: Vlčímu knížeti."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Je mi",
+   "after": ".",
+   "options": [
+    "zima",
+    "zimu",
+    "zimou"
+   ],
+   "answer": 0,
+   "es": "Мне холодно."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Chybíš mi.",
+   "options": [
+    "Я по тебе скучаю.",
+    "Ты мне мешаешь.",
+    "Ты мне нужен."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "kvůli tomu klukovi",
+   "options": [
+    "из-за этого парня",
+    "благодаря этому парню",
+    "к этому парню"
+   ],
+   "answer": 0,
+   "why": "Так говорит Томаш на суде: «Kvůli tomu klukovi skoro umřel Robert»."
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать на изучаемом языке?",
+   "word": "Я иду к Роберту.",
+   "options": [
+    "Jdu k Robertovi.",
+    "Jdu do Roberta.",
+    "Jdu u Roberta."
+   ],
+   "answer": 0,
+   "why": "С людьми — k + дательный, не do."
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите",
+   "es": "Мы дадим им еду, оружие и карты.",
+   "answer": [
+    "Dáme",
+    "jim",
+    "jídlo,",
+    "zbraně",
+    "a",
+    "mapy."
+   ],
+   "extra": [
+    "je",
+    "nám"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "Komu Vojta posílal zprávy?",
+   "es": "Кому Войта посылал сообщения?",
+   "options": [
+    "Kazimírovi.",
+    "Robertovi.",
+    "Janě."
+   ],
+   "answer": 0,
+   "why": "Войта писал Казимиру, потому что у них была его сестра."
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "Kdo pomohl Vojtovi na soudu?",
+   "es": "Кто помог Войте на суде?",
+   "options": [
+    "Jana.",
+    "Tomáš.",
+    "Kazimír."
+   ],
+   "answer": 0,
+   "why": "Яна встала рядом с Войтой и защитила его."
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Robert byl na Vojtově soudu a odpustil mu.",
+   "answer": false,
+   "why": "Неверно: Роберт лежал раненый в часовне. Войту защитила Яна."
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "„Vítej doma,“ řekl Robert Aničce.",
+   "answer": true,
+   "why": "Верно: так Роберт встречает Аничку у ворот (глава 20)."
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Мне холодно.",
+   "answers": [
+    "Je mi zima.",
+    "Je mi zima",
+    "Mně je zima.",
+    "Mně je zima"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Мы тебе поможем.",
+   "answers": [
+    "Pomůžeme ti.",
+    "Pomůžeme ti",
+    "My ti pomůžeme.",
+    "My ti pomůžeme"
+   ]
+  }
+ ],
+ "keyboard": [
+  "á",
+  "č",
+  "ď",
+  "é",
+  "ě",
+  "í",
+  "ň",
+  "ó",
+  "ř",
+  "š",
+  "ť",
+  "ú",
+  "ů",
+  "ý",
+  "ž"
+ ]
+}

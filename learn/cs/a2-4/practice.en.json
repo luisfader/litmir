@@ -1,0 +1,288 @@
+{
+ "title": "S Lucií a s Janou",
+ "subtitle": "The instrumental case: with whom, by what means, as what, and where. Se mnou, s tebou.",
+ "speak": "cs-CZ",
+ "hero": "novels/predtucha/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "se mnou",
+     "with me"
+    ],
+    [
+     "s tebou",
+     "with you"
+    ],
+    [
+     "s ní",
+     "with her"
+    ],
+    [
+     "s námi",
+     "with us"
+    ],
+    [
+     "s nimi",
+     "with them"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Lucie stojí v bráně s",
+   "after": ".",
+   "options": [
+    "halapartnou",
+    "halapartna",
+    "halapartně"
+   ],
+   "answer": 0,
+   "es": "Lucie is standing in the gate with a halberd.",
+   "why": "Halapartna → s halapartnou (feminine -a → -ou)."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Do Brna pojedeme",
+   "after": ".",
+   "options": [
+    "vlakem",
+    "vlaku",
+    "vlaky"
+   ],
+   "answer": 0,
+   "es": "We’ll go to Brno by train.",
+   "why": "Transport: bare instrumental, no preposition: vlakem."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Luis se stal",
+   "after": ".",
+   "options": [
+    "velitelem",
+    "veliteli",
+    "velitelé"
+   ],
+   "answer": 0,
+   "es": "Luis became the commander.",
+   "why": "Stát se + instrumental."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Pod severní",
+   "after": "vede starý tunel.",
+   "options": [
+    "zdí",
+    "zeď",
+    "zdech"
+   ],
+   "answer": 0,
+   "es": "An old tunnel runs under the north wall.",
+   "why": "Where? Pod + instrumental: zeď → pod zdí."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Ráno šla Jana do sklepa za",
+   "after": ".",
+   "options": [
+    "dětmi",
+    "děti",
+    "dětem"
+   ],
+   "answer": 0,
+   "es": "In the morning Jana went down to the cellar to the children.",
+   "why": "Děti → s dětmi, za dětmi (an exception)."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Tomáš přišel do brány s kovářským",
+   "after": ".",
+   "options": [
+    "kladivem",
+    "kladivo",
+    "kladiva"
+   ],
+   "answer": 0,
+   "es": "Tomáš came to the gate with a blacksmith’s hammer."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Robert je přikryl kabátem.",
+   "options": [
+    "Robert covered them with his coat.",
+    "Robert came to them in his coat.",
+    "Robert took their coats."
+   ],
+   "answer": 0,
+   "why": "Kabátem is the instrumental of the tool: with what?"
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "za hrází",
+   "options": [
+    "behind the dam",
+    "above the dam",
+    "under the dam"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "I’ll go with you.",
+   "options": [
+    "Půjdu s tebou.",
+    "Půjdu s ty.",
+    "Půjdu s tebe."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "Luis and Lucie stood back to back.",
+   "answer": [
+    "Luis",
+    "a",
+    "Lucie",
+    "stáli",
+    "zády",
+    "k",
+    "sobě."
+   ],
+   "extra": [
+    "záda",
+    "se"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Kdo stál v proražené bráně s halapartnou?",
+   "es": "Who stood in the broken gate with a halberd?",
+   "options": [
+    "Lucie.",
+    "Jana.",
+    "Natálie."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Kde stál Robert, když zpíval?",
+   "es": "Where was Robert standing when he sang?",
+   "options": [
+    "Na hradbě nad bránou.",
+    "Pod hrází u potoka.",
+    "Ve sklepě pod školou."
+   ],
+   "answer": 0,
+   "why": "He stood on the wall above the gate, alone and unarmed."
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Ráno Robert přikryl Luise a Lucii kabátem.",
+   "answer": true,
+   "why": "Yes: he took off his coat and covered them both with it."
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Tomáš bojoval v bráně s mečem.",
+   "answer": false,
+   "why": "No: Tomáš had a blacksmith’s hammer; Petr had the sword."
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "Come with us!",
+   "answers": [
+    "Pojď s námi!",
+    "Pojď s námi",
+    "Pojď s námi.",
+    "Pojďte s námi!",
+    "Pojďte s námi",
+    "Pojďte s námi."
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "Jana works with a tablet.",
+   "answers": [
+    "Jana pracuje s tabletem.",
+    "Jana pracuje s tabletem"
+   ]
+  }
+ ],
+ "keyboard": [
+  "á",
+  "č",
+  "ď",
+  "é",
+  "ě",
+  "í",
+  "ň",
+  "ó",
+  "ř",
+  "š",
+  "ť",
+  "ú",
+  "ů",
+  "ý",
+  "ž"
+ ]
+}

@@ -1,0 +1,290 @@
+{
+ "title": "Tři srdce",
+ "subtitle": "Feelings and relationships: verbs of emotion, «je mi smutno», se/si. A2 review.",
+ "speak": "cs-CZ",
+ "hero": "novels/predtucha/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "milovat",
+     "to love"
+    ],
+    [
+     "žárlit",
+     "to be jealous"
+    ],
+    [
+     "odpustit",
+     "to forgive"
+    ],
+    [
+     "stydět se",
+     "to be ashamed"
+    ],
+    [
+     "těšit se",
+     "to look forward"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Dlouho jsem na ni",
+   "after": ".",
+   "options": [
+    "žárlila",
+    "žárlit",
+    "žárlím"
+   ],
+   "answer": 0,
+   "es": "For a long time I was jealous of her.",
+   "why": "Jana about Lucie, chapter 39. Past tense, feminine: žárlila."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Nezlobíš se na",
+   "after": "?",
+   "options": [
+    "mě",
+    "mi",
+    "mnou"
+   ],
+   "answer": 0,
+   "es": "Aren’t you angry with me?",
+   "why": "Zlobit se na + accusative: na mě."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Znám tě tři hodiny a mám tě",
+   "after": ".",
+   "options": [
+    "ráda",
+    "rádi",
+    "radost"
+   ],
+   "answer": 0,
+   "es": "I’ve known you for three hours and I like you.",
+   "why": "Lucie is speaking (one woman): mám ráda."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Bojím se",
+   "after": ".",
+   "options": [
+    "tmy",
+    "tmu",
+    "tmou"
+   ],
+   "answer": 0,
+   "es": "I’m afraid of the dark.",
+   "why": "Bát se + genitive: tma → tmy."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Těším se na",
+   "after": ".",
+   "options": [
+    "jaro",
+    "jara",
+    "jarem"
+   ],
+   "answer": 0,
+   "es": "I’m looking forward to spring.",
+   "why": "Těšit se na + accusative: jaro."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Stýská se mi po",
+   "after": ".",
+   "options": [
+    "babičce",
+    "babička",
+    "babičku"
+   ],
+   "answer": 0,
+   "es": "I miss my grandmother.",
+   "why": "Po + locative: babičce."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Chci,",
+   "after": "byli tři.",
+   "options": [
+    "abychom",
+    "že jsme",
+    "když jsme"
+   ],
+   "answer": 0,
+   "es": "I want the three of us to be together.",
+   "why": "Chtít, aby… needs the conditional form: abychom."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Je mi to líto.",
+   "options": [
+    "I’m sorry.",
+    "I don’t care.",
+    "I like it."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "Love isn’t a cake.",
+   "options": [
+    "Láska není koláč.",
+    "Láska není koláče.",
+    "Lásku není koláč."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "I’ve loved you since Holešovice.",
+   "answer": [
+    "Miluju",
+    "tě",
+    "od",
+    "Holešovic."
+   ],
+   "extra": [
+    "mě",
+    "mám"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Kde našla Natálie Lucii?",
+   "es": "Where did Natálie find Lucie?",
+   "options": [
+    "u lípy na nádvoří",
+    "na hradbách",
+    "v mlýně"
+   ],
+   "answer": 0,
+   "why": "Chapter 38. Luis found her on the ramparts later."
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Co chce Jana?",
+   "es": "What does Jana want?",
+   "options": [
+    "Aby byli tři.",
+    "Aby Lucie odešla.",
+    "Aby Luis vybral."
+   ],
+   "answer": 0,
+   "why": "Chapter 39: «Chci, abychom byli tři.»"
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Natálie se zlobí na Lucii, protože milovala Roberta.",
+   "answer": false,
+   "why": "No: «Jak bych se mohla zlobit na odpověď na svoji modlitbu?» (How could I be angry at the answer to my prayer?) Natálie thanks Lucie."
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Jana dlouho žárlila na Lucii.",
+   "answer": true,
+   "why": "Chapter 39: «Dlouho jsem na ni žárlila. Strašně.»"
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "I feel sad.",
+   "answers": [
+    "Je mi smutno",
+    "Je mi smutno.",
+    "Jsem smutný",
+    "Jsem smutný.",
+    "Jsem smutná",
+    "Jsem smutná."
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "Don’t be afraid!",
+   "answers": [
+    "Neboj se",
+    "Neboj se!",
+    "Neboj se."
+   ]
+  }
+ ],
+ "keyboard": [
+  "á",
+  "č",
+  "ď",
+  "é",
+  "ě",
+  "í",
+  "ň",
+  "ó",
+  "ř",
+  "š",
+  "ť",
+  "ú",
+  "ů",
+  "ý",
+  "ž"
+ ]
+}

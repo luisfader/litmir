@@ -1,0 +1,283 @@
+{
+ "title": "Bez vody a bez světla",
+ "subtitle": "El genitivo: bez, do, z, od, u, cantidades y números.",
+ "speak": "cs-CZ",
+ "hero": "novels/predtucha/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Empezar",
+  "check": "Comprobar",
+  "next": "Continuar",
+  "skip": "No lo sé",
+  "retry": "Intentar de nuevo",
+  "again": "Repetir",
+  "back": "Volver a la unidad",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Respuesta correcta:",
+  "almost": "¡Casi! Fíjate en los acentos:",
+  "done": "¡Unidad completada!",
+  "lost": "Te quedaste sin corazones",
+  "lostP": "No pasa nada: cada error es una palabra que ahora conoces un poco mejor.",
+  "xp": "XP total",
+  "acc": "Precisión",
+  "time": "Tiempo",
+  "ex": "{n} ejercicios",
+  "min": "≈ 7 minutos",
+  "hearts": "corazones",
+  "best": "Tu mejor resultado",
+  "tap": "Toca las palabras en orden",
+  "type": "Escribe aquí…",
+  "perfect": "¡Sin un solo error! ¡Increíble!",
+  "good": "¡Muy buen trabajo!",
+  "ok": "¡Bien hecho! Repite la unidad para mejorar tu precisión.",
+  "sound": "Sonido",
+  "listen": "Escuchar",
+  "meaning": "Significa:",
+  "yes": "Verdadero",
+  "no": "Falso",
+  "score": "Puntuación",
+  "level": "Tu nivel"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Une las parejas",
+   "pairs": [
+    [
+     "bez",
+     "sin"
+    ],
+    [
+     "do",
+     "a, hasta"
+    ],
+    [
+     "podle",
+     "según"
+    ],
+    [
+     "místo",
+     "en lugar de"
+    ],
+    [
+     "během",
+     "durante"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Bez",
+   "after": "a bez světla dlouho nevydržíme.",
+   "options": [
+    "vody",
+    "voda",
+    "vodou"
+   ],
+   "answer": 0,
+   "es": "Sin agua y sin luz no aguantaremos mucho.",
+   "why": "Bez lleva genitivo: voda → vody."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Ve Vlčí smečce je hodně",
+   "after": ".",
+   "options": [
+    "lidí",
+    "lidé",
+    "lidem"
+   ],
+   "answer": 0,
+   "es": "En la Manada del Lobo hay mucha gente.",
+   "why": "Después de hodně va el genitivo plural: lidé → lidí."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Luis měří vodu: „Ještě dva",
+   "after": ".“",
+   "options": [
+    "metry",
+    "metrů",
+    "metru"
+   ],
+   "answer": 0,
+   "es": "Luis mide el agua: «Dos metros más».",
+   "why": "Con 2, 3, 4 va el nominativo plural; el genitivo, solo a partir de 5."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Tomáš pracuje u",
+   "after": ".",
+   "options": [
+    "stavidla",
+    "stavidlo",
+    "stavidlem"
+   ],
+   "answer": 0,
+   "es": "Tomáš trabaja junto a la compuerta."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Děti nosí zrcadla ze všech",
+   "after": ".",
+   "options": [
+    "domů",
+    "domy",
+    "domech"
+   ],
+   "answer": 0,
+   "es": "Los niños traen espejos de todas las casas.",
+   "why": "Genitivo plural masculino: -ů (dům → domů)."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Robert se ptá, jestli babička",
+   "after": "ještě kašle.",
+   "options": [
+    "paní Novotné",
+    "paní Novotná",
+    "paní Novotnou"
+   ],
+   "answer": 0,
+   "es": "Robert pregunta si la abuela de la señora Novotná todavía tose.",
+   "why": "¿La abuela de quién? Genitivo: paní Novotná → paní Novotné."
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "podle Petra",
+   "options": [
+    "según Petr",
+    "sin Petr",
+    "en casa de Petr"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "pět set divochů",
+   "options": [
+    "quinientos salvajes",
+    "cincuenta salvajes",
+    "cinco salvajes"
+   ],
+   "answer": 0,
+   "why": "Set es el genitivo plural de sto: pět set = 500."
+  },
+  {
+   "type": "reverse",
+   "prompt": "¿Cómo se dice?",
+   "word": "cinco mil personas",
+   "options": [
+    "pět tisíc lidí",
+    "pět tisíce lidé",
+    "pět tisícům lidem"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Traduce",
+   "es": "Sin agua no aguantaremos mucho.",
+   "answer": [
+    "Bez",
+    "vody",
+    "dlouho",
+    "nevydržíme."
+   ],
+   "extra": [
+    "voda",
+    "do"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Elige la respuesta correcta",
+   "question": "Kolik lidí žije v Naší utopii před bitvou?",
+   "es": "¿Cuánta gente vive en Naše utopie antes de la batalla?",
+   "options": [
+    "Čtyři sta dvacet.",
+    "Pět tisíc.",
+    "Sto."
+   ],
+   "answer": 0,
+   "why": "Robert en el consejo: «Nás je čtyři sta dvacet, včetně dětí a starých»."
+  },
+  {
+   "type": "story",
+   "prompt": "Elige la respuesta correcta",
+   "question": "Odkud nosí děti zrcadla?",
+   "es": "¿De dónde traen los niños los espejos?",
+   "options": [
+    "Z koupelen, ze skříní a ze starých aut.",
+    "Z obchodu v Praze.",
+    "Od Vlčího knížete."
+   ],
+   "answer": 0,
+   "why": "Capítulo 24: espejos «z koupelen, ze skříní, ze starých aut»."
+  },
+  {
+   "type": "tf",
+   "prompt": "¿Verdadero o falso?",
+   "statement": "Většina lidí hlasovala pro boj.",
+   "answer": true,
+   "why": "Verdadero: 381 por luchar, 32 por marcharse y 7 papeletas en blanco."
+  },
+  {
+   "type": "tf",
+   "prompt": "¿Verdadero o falso?",
+   "statement": "Tomáš pracuje u stavidla bez pomoci.",
+   "answer": false,
+   "why": "Falso: Tomáš dirige a veinte hombres."
+  },
+  {
+   "type": "write",
+   "prompt": "Escríbelo",
+   "es": "sin agua",
+   "answers": [
+    "bez vody"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Escríbelo",
+   "es": "¿Cuántos son?",
+   "answers": [
+    "Kolik jich je?",
+    "Kolik jich je",
+    "Kolik je jich?",
+    "Kolik je jich"
+   ]
+  }
+ ],
+ "keyboard": [
+  "á",
+  "č",
+  "ď",
+  "é",
+  "ě",
+  "í",
+  "ň",
+  "ó",
+  "ř",
+  "š",
+  "ť",
+  "ú",
+  "ů",
+  "ý",
+  "ž"
+ ]
+}

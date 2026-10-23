@@ -1,0 +1,283 @@
+{
+ "title": "Bez vody a bez světla",
+ "subtitle": "Родительный падеж: bez, do, z, od, u, количество и числа.",
+ "speak": "cs-CZ",
+ "hero": "novels/predtucha/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 7 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "bez",
+     "без"
+    ],
+    [
+     "do",
+     "в, до (куда, до какого момента)"
+    ],
+    [
+     "podle",
+     "по словам, согласно"
+    ],
+    [
+     "místo",
+     "вместо"
+    ],
+    [
+     "během",
+     "в течение, во время"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Bez",
+   "after": "a bez světla dlouho nevydržíme.",
+   "options": [
+    "vody",
+    "voda",
+    "vodou"
+   ],
+   "answer": 0,
+   "es": "Без воды и без света мы долго не продержимся.",
+   "why": "После bez — родительный падеж: voda → vody."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Ve Vlčí smečce je hodně",
+   "after": ".",
+   "options": [
+    "lidí",
+    "lidé",
+    "lidem"
+   ],
+   "answer": 0,
+   "es": "В Волчьей стае много людей.",
+   "why": "После hodně — родительный мн. ч.: lidé → lidí."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Luis měří vodu: „Ještě dva",
+   "after": ".“",
+   "options": [
+    "metry",
+    "metrů",
+    "metru"
+   ],
+   "answer": 0,
+   "es": "Луис измеряет воду: «Ещё два метра».",
+   "why": "После 2, 3, 4 — именительный падеж мн. ч., а не родительный, как в русском."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Tomáš pracuje u",
+   "after": ".",
+   "options": [
+    "stavidla",
+    "stavidlo",
+    "stavidlem"
+   ],
+   "answer": 0,
+   "es": "Томаш работает у шлюза."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Děti nosí zrcadla ze všech",
+   "after": ".",
+   "options": [
+    "domů",
+    "domy",
+    "domech"
+   ],
+   "answer": 0,
+   "es": "Дети носят зеркала из всех домов.",
+   "why": "Мужской род мн. ч.: -ů (dům → domů)."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Robert se ptá, jestli babička",
+   "after": "ještě kašle.",
+   "options": [
+    "paní Novotné",
+    "paní Novotná",
+    "paní Novotnou"
+   ],
+   "answer": 0,
+   "es": "Роберт спрашивает, кашляет ли ещё бабушка пани Новотной.",
+   "why": "Чья бабушка? — родительный: paní Novotná → paní Novotné."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "podle Petra",
+   "options": [
+    "по словам Петра",
+    "без Петра",
+    "у Петра"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "pět set divochů",
+   "options": [
+    "пятьсот дикарей",
+    "пятьдесят дикарей",
+    "пять дикарей"
+   ],
+   "answer": 0,
+   "why": "Set — это родительный мн. ч. от sto: pět set = пятьсот."
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать на изучаемом языке?",
+   "word": "пять тысяч человек",
+   "options": [
+    "pět tisíc lidí",
+    "pět tisíce lidé",
+    "pět tisícům lidem"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите",
+   "es": "Без воды мы долго не продержимся.",
+   "answer": [
+    "Bez",
+    "vody",
+    "dlouho",
+    "nevydržíme."
+   ],
+   "extra": [
+    "voda",
+    "do"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "Kolik lidí žije v Naší utopii před bitvou?",
+   "es": "Сколько людей живёт в Нашей утопии перед битвой?",
+   "options": [
+    "Čtyři sta dvacet.",
+    "Pět tisíc.",
+    "Sto."
+   ],
+   "answer": 0,
+   "why": "Роберт на совете: «Nás je čtyři sta dvacet, včetně dětí a starých»."
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "Odkud nosí děti zrcadla?",
+   "es": "Откуда дети приносят зеркала?",
+   "options": [
+    "Z koupelen, ze skříní a ze starých aut.",
+    "Z obchodu v Praze.",
+    "Od Vlčího knížete."
+   ],
+   "answer": 0,
+   "why": "Глава 24: зеркала «z koupelen, ze skříní, ze starých aut»."
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Většina lidí hlasovala pro boj.",
+   "answer": true,
+   "why": "Верно: 381 за бой, 32 за уход и 7 пустых бюллетеней."
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Tomáš pracuje u stavidla bez pomoci.",
+   "answer": false,
+   "why": "Неверно: Томаш командует двадцатью мужчинами."
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "без воды",
+   "answers": [
+    "bez vody"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Сколько их?",
+   "answers": [
+    "Kolik jich je?",
+    "Kolik jich je",
+    "Kolik je jich?",
+    "Kolik je jich"
+   ]
+  }
+ ],
+ "keyboard": [
+  "á",
+  "č",
+  "ď",
+  "é",
+  "ě",
+  "í",
+  "ň",
+  "ó",
+  "ř",
+  "š",
+  "ť",
+  "ú",
+  "ů",
+  "ý",
+  "ž"
+ ]
+}

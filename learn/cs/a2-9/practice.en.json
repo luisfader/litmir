@@ -1,0 +1,292 @@
+{
+ "title": "Nejsilnější žena v Utopii",
+ "subtitle": "Comparatives and superlatives, «než», «čím… tím…». Relative clauses with který and co.",
+ "speak": "cs-CZ",
+ "hero": "novels/predtucha/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "lepší",
+     "better"
+    ],
+    [
+     "horší",
+     "worse"
+    ],
+    [
+     "větší",
+     "bigger"
+    ],
+    [
+     "menší",
+     "smaller"
+    ],
+    [
+     "delší",
+     "longer"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Lucie je",
+   "after": "než Luis.",
+   "options": [
+    "silnější",
+    "silná",
+    "silnou"
+   ],
+   "answer": 0,
+   "es": "Lucie is stronger than Luis."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Drahomír byl o dvě hlavy",
+   "after": "než Lucie.",
+   "options": [
+    "vyšší",
+    "vysoký",
+    "výš"
+   ],
+   "answer": 0,
+   "es": "Drahomír was two heads taller than Lucie.",
+   "why": "vysoký → vyšší (an adjective after «byl»)."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Natálie je ta",
+   "after": "žena, jakou Lucie zná.",
+   "options": [
+    "nejlepší",
+    "nejdobřejší",
+    "nejvíc dobrá"
+   ],
+   "answer": 0,
+   "es": "Natálie is the best woman Lucie knows.",
+   "why": "dobrý → lepší → nejlepší (irregular)."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Jana mluví česky",
+   "after": "než Luis.",
+   "options": [
+    "lépe",
+    "lepší",
+    "dobrá"
+   ],
+   "answer": 0,
+   "es": "Jana speaks Czech better than Luis.",
+   "why": "Speaks how? — an adverb: dobře → lépe / líp."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Mám přítele,",
+   "after": "pořád miluju.",
+   "options": [
+    "kterého",
+    "který",
+    "kterou"
+   ],
+   "answer": 0,
+   "es": "I have a friend whom I still love.",
+   "why": "Masculine (přítel) + accusative (I love whom?) → kterého."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Mám lidi,",
+   "after": "se mnou zpívají na louce.",
+   "options": [
+    "kteří",
+    "který",
+    "kterou"
+   ],
+   "answer": 0,
+   "es": "I have people who sing with me in the meadow.",
+   "why": "Lidé — animate plural, nominative → kteří."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Uviděl v jeho tváři něco,",
+   "after": "by nikdy nečekal.",
+   "options": [
+    "co",
+    "který",
+    "kterou"
+   ],
+   "answer": 0,
+   "es": "He saw something in his face that he would never have expected.",
+   "why": "After «něco» use co."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Čím dřív, tím líp.",
+   "options": [
+    "The sooner, the better.",
+    "Better late than never.",
+    "Things used to be better."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "Bigger doesn’t mean stronger.",
+   "options": [
+    "Větší neznamená silnější.",
+    "Velký neznamená silný.",
+    "Menší neznamená silnější."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "This is the woman I wanted to hate.",
+   "answer": [
+    "To",
+    "je",
+    "žena,",
+    "kterou",
+    "jsem",
+    "chtěla",
+    "nenávidět."
+   ],
+   "extra": [
+    "která",
+    "kterého"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Co vytrhla Lucie z kamene u vchodu do tunelu?",
+   "es": "What did Lucie tear out of the stone at the tunnel entrance?",
+   "options": [
+    "rezavou železnou mříž",
+    "dubové dveře",
+    "Tomášův kámen"
+   ],
+   "answer": 0,
+   "why": "Chapter 17: «Pod ním byla rezavá železná mříž.» Luis took the oak door off with a knife."
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Kdo byl o dvě hlavy vyšší než Lucie a dvakrát širší?",
+   "es": "Who was two heads taller than Lucie and twice as wide?",
+   "options": [
+    "Drahomír",
+    "Tomáš",
+    "Robert"
+   ],
+   "answer": 0,
+   "why": "Chapter 29: Drahomír, the Wolf Prince. And still Lucie threw him over her shoulder."
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Babička Ludmila byla malá, ale silná jako kůň.",
+   "answer": true,
+   "why": "Third interlude: «Byla malá, vrásčitá a silná jako kůň.»"
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Babička říkala, že Slované přežili, protože byli silnější.",
+   "answer": false,
+   "why": "No: «Ne proto, že byli silnější. Proto, že se nedali vykořenit.» (Not because they were stronger, but because they could not be uprooted.)"
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "faster (adverb): Run faster! → Běž …!",
+   "answers": [
+    "rychleji",
+    "Běž rychleji",
+    "Běž rychleji!"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "the man I love",
+   "answers": [
+    "muž, kterého miluju",
+    "muž, kterého miluji",
+    "muž kterého miluju",
+    "muž kterého miluji",
+    "Muž, kterého miluju.",
+    "Muž, kterého miluji."
+   ]
+  }
+ ],
+ "keyboard": [
+  "á",
+  "č",
+  "ď",
+  "é",
+  "ě",
+  "í",
+  "ň",
+  "ó",
+  "ř",
+  "š",
+  "ť",
+  "ú",
+  "ů",
+  "ý",
+  "ž"
+ ]
+}

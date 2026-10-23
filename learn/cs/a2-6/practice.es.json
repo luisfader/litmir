@@ -1,0 +1,289 @@
+{
+ "title": "Komu pomůžeme?",
+ "subtitle": "El dativo: pomoct, děkovat, věřit, k, díky, kvůli, je mi zima.",
+ "speak": "cs-CZ",
+ "hero": "novels/predtucha/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Empezar",
+  "check": "Comprobar",
+  "next": "Continuar",
+  "skip": "No lo sé",
+  "retry": "Intentar de nuevo",
+  "again": "Repetir",
+  "back": "Volver a la unidad",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Respuesta correcta:",
+  "almost": "¡Casi! Fíjate en los acentos:",
+  "done": "¡Unidad completada!",
+  "lost": "Te quedaste sin corazones",
+  "lostP": "No pasa nada: cada error es una palabra que ahora conoces un poco mejor.",
+  "xp": "XP total",
+  "acc": "Precisión",
+  "time": "Tiempo",
+  "ex": "{n} ejercicios",
+  "min": "≈ 7 minutos",
+  "hearts": "corazones",
+  "best": "Tu mejor resultado",
+  "tap": "Toca las palabras en orden",
+  "type": "Escribe aquí…",
+  "perfect": "¡Sin un solo error! ¡Increíble!",
+  "good": "¡Muy buen trabajo!",
+  "ok": "¡Bien hecho! Repite la unidad para mejorar tu precisión.",
+  "sound": "Sonido",
+  "listen": "Escuchar",
+  "meaning": "Significa:",
+  "yes": "Verdadero",
+  "no": "Falso",
+  "score": "Puntuación",
+  "level": "Tu nivel"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Une las parejas",
+   "pairs": [
+    [
+     "pomoct",
+     "ayudar"
+    ],
+    [
+     "věřit",
+     "creer, confiar"
+    ],
+    [
+     "odpustit",
+     "perdonar"
+    ],
+    [
+     "poděkovat",
+     "dar las gracias"
+    ],
+    [
+     "patřit",
+     "pertenecer"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Jana jde přímo k",
+   "after": ".",
+   "options": [
+    "Vojtovi",
+    "Vojta",
+    "Vojtou"
+   ],
+   "answer": 0,
+   "es": "Jana va directamente hacia Vojta.",
+   "why": "K + dativo: los nombres de hombre toman -ovi."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Luis má plán a já",
+   "after": "věřím.",
+   "options": [
+    "mu",
+    "ho",
+    "on"
+   ],
+   "answer": 0,
+   "es": "Luis tiene un plan y yo le creo.",
+   "why": "Věřit lleva dativo: věřit mu."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Pomůžeme",
+   "after": "ji dostat zpátky.",
+   "options": [
+    "ti",
+    "tě",
+    "tebe"
+   ],
+   "answer": 0,
+   "es": "Te ayudaremos a recuperarla.",
+   "why": "Pomoct lleva dativo: pomůžeme ti."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "",
+   "after": "je osm let.",
+   "options": [
+    "Aničce",
+    "Anička",
+    "Aničku"
+   ],
+   "answer": 0,
+   "es": "Anička tiene ocho años.",
+   "why": "La edad va con dativo: «a Anička le son ocho»."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Řekni",
+   "after": ", že tady nikoho nevydáváme.",
+   "options": [
+    "Vlčímu knížeti",
+    "Vlčí kníže",
+    "Vlčího knížete"
+   ],
+   "answer": 0,
+   "es": "Dile al Príncipe Lobo que aquí no entregamos a nadie.",
+   "why": "¿Decir a quién? Dativo: Vlčímu knížeti."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Je mi",
+   "after": ".",
+   "options": [
+    "zima",
+    "zimu",
+    "zimou"
+   ],
+   "answer": 0,
+   "es": "Tengo frío."
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "Chybíš mi.",
+   "options": [
+    "Te echo de menos.",
+    "Me molestas.",
+    "Te necesito."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "kvůli tomu klukovi",
+   "options": [
+    "por culpa de ese chico",
+    "gracias a ese chico",
+    "hacia ese chico"
+   ],
+   "answer": 0,
+   "why": "Tomáš en el juicio: «Kvůli tomu klukovi skoro umřel Robert»."
+  },
+  {
+   "type": "reverse",
+   "prompt": "¿Cómo se dice?",
+   "word": "Voy a casa de Robert.",
+   "options": [
+    "Jdu k Robertovi.",
+    "Jdu do Roberta.",
+    "Jdu u Roberta."
+   ],
+   "answer": 0,
+   "why": "Con personas: k + dativo, nunca do."
+  },
+  {
+   "type": "build",
+   "prompt": "Traduce",
+   "es": "Les daremos comida, armas y mapas.",
+   "answer": [
+    "Dáme",
+    "jim",
+    "jídlo,",
+    "zbraně",
+    "a",
+    "mapy."
+   ],
+   "extra": [
+    "je",
+    "nám"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Elige la respuesta correcta",
+   "question": "Komu Vojta posílal zprávy?",
+   "es": "¿A quién le mandaba mensajes Vojta?",
+   "options": [
+    "Kazimírovi.",
+    "Robertovi.",
+    "Janě."
+   ],
+   "answer": 0,
+   "why": "Vojta le escribía a Kazimír porque tenían a su hermana."
+  },
+  {
+   "type": "story",
+   "prompt": "Elige la respuesta correcta",
+   "question": "Kdo pomohl Vojtovi na soudu?",
+   "es": "¿Quién ayudó a Vojta en el juicio?",
+   "options": [
+    "Jana.",
+    "Tomáš.",
+    "Kazimír."
+   ],
+   "answer": 0,
+   "why": "Jana se puso al lado de Vojta y lo defendió."
+  },
+  {
+   "type": "tf",
+   "prompt": "¿Verdadero o falso?",
+   "statement": "Robert byl na Vojtově soudu a odpustil mu.",
+   "answer": false,
+   "why": "Falso: Robert estaba herido en la capilla. Jana defendió a Vojta."
+  },
+  {
+   "type": "tf",
+   "prompt": "¿Verdadero o falso?",
+   "statement": "„Vítej doma,“ řekl Robert Aničce.",
+   "answer": true,
+   "why": "Verdadero: así recibe Robert a Anička en la puerta (capítulo 20)."
+  },
+  {
+   "type": "write",
+   "prompt": "Escríbelo",
+   "es": "Tengo frío.",
+   "answers": [
+    "Je mi zima.",
+    "Je mi zima",
+    "Mně je zima.",
+    "Mně je zima"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Escríbelo",
+   "es": "Te ayudaremos.",
+   "answers": [
+    "Pomůžeme ti.",
+    "Pomůžeme ti",
+    "My ti pomůžeme.",
+    "My ti pomůžeme"
+   ]
+  }
+ ],
+ "keyboard": [
+  "á",
+  "č",
+  "ď",
+  "é",
+  "ě",
+  "í",
+  "ň",
+  "ó",
+  "ř",
+  "š",
+  "ť",
+  "ú",
+  "ů",
+  "ý",
+  "ž"
+ ]
+}

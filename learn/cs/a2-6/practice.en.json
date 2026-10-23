@@ -1,0 +1,289 @@
+{
+ "title": "Komu pomůžeme?",
+ "subtitle": "The dative: pomoct, děkovat, věřit, k, díky, kvůli, je mi zima.",
+ "speak": "cs-CZ",
+ "hero": "novels/predtucha/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "pomoct",
+     "to help"
+    ],
+    [
+     "věřit",
+     "to believe, trust"
+    ],
+    [
+     "odpustit",
+     "to forgive"
+    ],
+    [
+     "poděkovat",
+     "to thank"
+    ],
+    [
+     "patřit",
+     "to belong"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Jana jde přímo k",
+   "after": ".",
+   "options": [
+    "Vojtovi",
+    "Vojta",
+    "Vojtou"
+   ],
+   "answer": 0,
+   "es": "Jana goes straight to Vojta.",
+   "why": "K + dative: men’s names take -ovi."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Luis má plán a já",
+   "after": "věřím.",
+   "options": [
+    "mu",
+    "ho",
+    "on"
+   ],
+   "answer": 0,
+   "es": "Luis has a plan and I trust him.",
+   "why": "Věřit takes the dative: věřit mu."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Pomůžeme",
+   "after": "ji dostat zpátky.",
+   "options": [
+    "ti",
+    "tě",
+    "tebe"
+   ],
+   "answer": 0,
+   "es": "We’ll help you get her back.",
+   "why": "Pomoct takes the dative: pomůžeme ti."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "",
+   "after": "je osm let.",
+   "options": [
+    "Aničce",
+    "Anička",
+    "Aničku"
+   ],
+   "answer": 0,
+   "es": "Anička is eight.",
+   "why": "Age uses the dative: \"to Anička it is eight\"."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Řekni",
+   "after": ", že tady nikoho nevydáváme.",
+   "options": [
+    "Vlčímu knížeti",
+    "Vlčí kníže",
+    "Vlčího knížete"
+   ],
+   "answer": 0,
+   "es": "Tell the Wolf Prince that we hand nobody over here.",
+   "why": "Tell whom? Dative: Vlčímu knížeti."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Je mi",
+   "after": ".",
+   "options": [
+    "zima",
+    "zimu",
+    "zimou"
+   ],
+   "answer": 0,
+   "es": "I’m cold."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Chybíš mi.",
+   "options": [
+    "I miss you.",
+    "You bother me.",
+    "I need you."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "kvůli tomu klukovi",
+   "options": [
+    "because of that boy",
+    "thanks to that boy",
+    "towards that boy"
+   ],
+   "answer": 0,
+   "why": "Tomáš at the trial: \"Kvůli tomu klukovi skoro umřel Robert.\""
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "I’m going to Robert’s.",
+   "options": [
+    "Jdu k Robertovi.",
+    "Jdu do Roberta.",
+    "Jdu u Roberta."
+   ],
+   "answer": 0,
+   "why": "With people use k + dative, not do."
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "We’ll give them food, weapons and maps.",
+   "answer": [
+    "Dáme",
+    "jim",
+    "jídlo,",
+    "zbraně",
+    "a",
+    "mapy."
+   ],
+   "extra": [
+    "je",
+    "nám"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Komu Vojta posílal zprávy?",
+   "es": "Who did Vojta send messages to?",
+   "options": [
+    "Kazimírovi.",
+    "Robertovi.",
+    "Janě."
+   ],
+   "answer": 0,
+   "why": "Vojta wrote to Kazimír because they were holding his sister."
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Kdo pomohl Vojtovi na soudu?",
+   "es": "Who helped Vojta at the trial?",
+   "options": [
+    "Jana.",
+    "Tomáš.",
+    "Kazimír."
+   ],
+   "answer": 0,
+   "why": "Jana stood next to Vojta and defended him."
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Robert byl na Vojtově soudu a odpustil mu.",
+   "answer": false,
+   "why": "False: Robert lay wounded in the chapel. Jana defended Vojta."
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "„Vítej doma,“ řekl Robert Aničce.",
+   "answer": true,
+   "why": "True: that’s how Robert greets Anička at the gate (chapter 20)."
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "I’m cold.",
+   "answers": [
+    "Je mi zima.",
+    "Je mi zima",
+    "Mně je zima.",
+    "Mně je zima"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "We’ll help you.",
+   "answers": [
+    "Pomůžeme ti.",
+    "Pomůžeme ti",
+    "My ti pomůžeme.",
+    "My ti pomůžeme"
+   ]
+  }
+ ],
+ "keyboard": [
+  "á",
+  "č",
+  "ď",
+  "é",
+  "ě",
+  "í",
+  "ň",
+  "ó",
+  "ř",
+  "š",
+  "ť",
+  "ú",
+  "ů",
+  "ý",
+  "ž"
+ ]
+}

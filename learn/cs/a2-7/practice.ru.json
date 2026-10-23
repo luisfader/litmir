@@ -1,0 +1,289 @@
+{
+ "title": "Stůjte! Tady ne!",
+ "subtitle": "Повелительное наклонение: ty, vy, my. Запреты и вежливые просьбы.",
+ "speak": "cs-CZ",
+ "hero": "novels/predtucha/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 7 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "stůj",
+     "стой"
+    ],
+    [
+     "pojďme",
+     "пойдём(те)"
+    ],
+    [
+     "táhněte",
+     "тяните"
+    ],
+    [
+     "neutíkej",
+     "не убегай"
+    ],
+    [
+     "vezmi",
+     "возьми"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "„",
+   "after": "!“ zahřměl Robert. „Kam běžíte?“",
+   "options": [
+    "Stůjte",
+    "Stojíte",
+    "Stát"
+   ],
+   "answer": 0,
+   "es": "«Стойте! — прогремел Роберт. — Куда вы бежите?»",
+   "why": "Stát → stůj, stůjte. Роберт обращается ко многим — форма на -te."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "„",
+   "after": "! Všichni!“ zařvala Lucie u hráze.",
+   "options": [
+    "Táhněte",
+    "Táhnete",
+    "Táhnout"
+   ],
+   "answer": 0,
+   "es": "«Тяните! Все!» — заревела Люцие у плотины.",
+   "why": "Táhnou → táhni, táhněte. Táhnete — это «вы тянете»."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Jano,",
+   "after": "jim to. Řekni jim, ať běží.",
+   "options": [
+    "řekni",
+    "řekne",
+    "říct"
+   ],
+   "answer": 0,
+   "es": "Яна, скажи им. Скажи им, пусть бегут."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Tomáši,",
+   "after": "to!",
+   "options": [
+    "otevři",
+    "otevře",
+    "otevřít"
+   ],
+   "answer": 0,
+   "es": "Томаш, открывай!",
+   "why": "Otevřou → otevři."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Hoďte jim lana.",
+   "after": ", koho můžete.",
+   "options": [
+    "Vytáhněte",
+    "Vytáhli",
+    "Vytáhnout"
+   ],
+   "answer": 0,
+   "es": "Бросьте им верёвки. Вытащите, кого сможете."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Lucie, ne!",
+   "after": "to!",
+   "options": [
+    "Neříkej",
+    "Neříkáš",
+    "Neříct"
+   ],
+   "answer": 0,
+   "es": "Люцие, нет! Не говори этого!",
+   "why": "В запрете — несовершенный вид: říkat → neříkej."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Roberte,",
+   "after": "opatrný!",
+   "options": [
+    "buď",
+    "jsi",
+    "být"
+   ],
+   "answer": 0,
+   "es": "Роберт, будь осторожен!",
+   "why": "Být → buď, buďte (неправильная форма)."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Nezapomeň!",
+   "options": [
+    "Не забудь!",
+    "Вспомни!",
+    "Не потеряй!"
+   ],
+   "answer": 0,
+   "why": "Предостережение — совершенный вид: zapomenout → nezapomeň."
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать на изучаемом языке?",
+   "word": "Пойдёмте домой!",
+   "options": [
+    "Pojďme domů!",
+    "Pojď domů!",
+    "Jděte domů!"
+   ],
+   "answer": 0,
+   "why": "-me = «давайте…»: pojďme."
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите",
+   "es": "Скажи им, пусть бегут.",
+   "answer": [
+    "Řekni",
+    "jim,",
+    "ať",
+    "běží."
+   ],
+   "extra": [
+    "říkáš",
+    "běžte"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "Co zahřměl Robert, když stál v díře ve zdi?",
+   "es": "Что прогремел Роберт, когда стоял в проломе стены?",
+   "options": [
+    "„Stůjte!“",
+    "„Utíkejte!“",
+    "„Pojďme pryč!“"
+   ],
+   "answer": 0,
+   "why": "Люди убегали, и Роберт крикнул им: «Stůjte!» — и они вернулись (глава 28)."
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "Co řekla Jana otrokům z ohrady přes drony?",
+   "es": "Что Яна сказала рабам из загона через дроны?",
+   "options": [
+    "„Teď. Sever. Běžte.“",
+    "„Stůjte a čekejte.“",
+    "„Pojďte k bráně.“"
+   ],
+   "answer": 0,
+   "why": "Всего три слова: сейчас, север, бегите (глава 28)."
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Lucie u hráze zařvala: „Táhněte! Všichni!“",
+   "answer": true,
+   "why": "Верно: заслонка сдвинулась, и Люцие позвала всех тянуть (глава 29)."
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Když se divoši topili, Robert řekl: „Nechte je. Jsou to divoši.“",
+   "answer": false,
+   "why": "Неверно: Роберт сказал «Hoďte jim lana» — бросьте им верёвки, это люди, которые тонут."
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Стойте! (многим)",
+   "answers": [
+    "Stůjte!",
+    "Stůjte",
+    "stůjte!",
+    "stůjte"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Не бойся! (другу)",
+   "answers": [
+    "Neboj se!",
+    "Neboj se",
+    "neboj se!",
+    "neboj se"
+   ]
+  }
+ ],
+ "keyboard": [
+  "á",
+  "č",
+  "ď",
+  "é",
+  "ě",
+  "í",
+  "ň",
+  "ó",
+  "ř",
+  "š",
+  "ť",
+  "ú",
+  "ů",
+  "ý",
+  "ž"
+ ]
+}

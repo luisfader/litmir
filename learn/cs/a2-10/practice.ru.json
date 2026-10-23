@@ -1,0 +1,290 @@
+{
+ "title": "Tři srdce",
+ "subtitle": "Чувства и отношения: глаголы эмоций, «je mi smutno», se/si. Повторение A2.",
+ "speak": "cs-CZ",
+ "hero": "novels/predtucha/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 7 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "milovat",
+     "любить"
+    ],
+    [
+     "žárlit",
+     "ревновать"
+    ],
+    [
+     "odpustit",
+     "простить"
+    ],
+    [
+     "stydět se",
+     "стыдиться"
+    ],
+    [
+     "těšit se",
+     "с нетерпением ждать"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Dlouho jsem na ni",
+   "after": ".",
+   "options": [
+    "žárlila",
+    "žárlit",
+    "žárlím"
+   ],
+   "answer": 0,
+   "es": "Я долго её ревновала.",
+   "why": "Яна о Люцие, глава 39. Прошедшее время, женский род: žárlila."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Nezlobíš se na",
+   "after": "?",
+   "options": [
+    "mě",
+    "mi",
+    "mnou"
+   ],
+   "answer": 0,
+   "es": "Ты на меня не сердишься?",
+   "why": "Zlobit se na + вин. п.: na mě."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Znám tě tři hodiny a mám tě",
+   "after": ".",
+   "options": [
+    "ráda",
+    "rádi",
+    "radost"
+   ],
+   "answer": 0,
+   "es": "Я знаю тебя три часа, и ты мне нравишься.",
+   "why": "Говорит Люцие (женщина, одна): mám ráda."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Bojím se",
+   "after": ".",
+   "options": [
+    "tmy",
+    "tmu",
+    "tmou"
+   ],
+   "answer": 0,
+   "es": "Я боюсь темноты.",
+   "why": "Bát se + род. п.: tma → tmy."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Těším se na",
+   "after": ".",
+   "options": [
+    "jaro",
+    "jara",
+    "jarem"
+   ],
+   "answer": 0,
+   "es": "Я жду не дождусь весны.",
+   "why": "Těšit se na + вин. п.: jaro."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Stýská se mi po",
+   "after": ".",
+   "options": [
+    "babičce",
+    "babička",
+    "babičku"
+   ],
+   "answer": 0,
+   "es": "Я скучаю по бабушке.",
+   "why": "Po + местный падеж: babičce."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Chci,",
+   "after": "byli tři.",
+   "options": [
+    "abychom",
+    "že jsme",
+    "když jsme"
+   ],
+   "answer": 0,
+   "es": "Я хочу, чтобы нас было трое.",
+   "why": "Chtít, aby… — условная форма: abychom."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Je mi to líto.",
+   "options": [
+    "Мне жаль.",
+    "Мне всё равно.",
+    "Мне это нравится."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать на изучаемом языке?",
+   "word": "Любовь — не пирог.",
+   "options": [
+    "Láska není koláč.",
+    "Láska není koláče.",
+    "Lásku není koláč."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите",
+   "es": "Я люблю тебя с Голешовиц.",
+   "answer": [
+    "Miluju",
+    "tě",
+    "od",
+    "Holešovic."
+   ],
+   "extra": [
+    "mě",
+    "mám"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "Kde našla Natálie Lucii?",
+   "es": "Где Натали нашла Люцие?",
+   "options": [
+    "u lípy na nádvoří",
+    "na hradbách",
+    "v mlýně"
+   ],
+   "answer": 0,
+   "why": "Глава 38. На стене её позже нашёл Луис."
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "Co chce Jana?",
+   "es": "Чего хочет Яна?",
+   "options": [
+    "Aby byli tři.",
+    "Aby Lucie odešla.",
+    "Aby Luis vybral."
+   ],
+   "answer": 0,
+   "why": "Глава 39: «Chci, abychom byli tři.»"
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Natálie se zlobí na Lucii, protože milovala Roberta.",
+   "answer": false,
+   "why": "Нет: «Jak bych se mohla zlobit na odpověď na svoji modlitbu?» Натали благодарит Люцие."
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Jana dlouho žárlila na Lucii.",
+   "answer": true,
+   "why": "Глава 39: «Dlouho jsem na ni žárlila. Strašně.»"
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Мне грустно.",
+   "answers": [
+    "Je mi smutno",
+    "Je mi smutno.",
+    "Jsem smutný",
+    "Jsem smutný.",
+    "Jsem smutná",
+    "Jsem smutná."
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Не бойся!",
+   "answers": [
+    "Neboj se",
+    "Neboj se!",
+    "Neboj se."
+   ]
+  }
+ ],
+ "keyboard": [
+  "á",
+  "č",
+  "ď",
+  "é",
+  "ě",
+  "í",
+  "ň",
+  "ó",
+  "ř",
+  "š",
+  "ť",
+  "ú",
+  "ů",
+  "ý",
+  "ž"
+ ]
+}

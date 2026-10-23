@@ -1,0 +1,289 @@
+{
+ "title": "Luis má plán",
+ "subtitle": "El aspecto verbal: hacer y terminar, proceso y resultado, el futuro.",
+ "speak": "cs-CZ",
+ "hero": "novels/predtucha/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Empezar",
+  "check": "Comprobar",
+  "next": "Continuar",
+  "skip": "No lo sé",
+  "retry": "Intentar de nuevo",
+  "again": "Repetir",
+  "back": "Volver a la unidad",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Respuesta correcta:",
+  "almost": "¡Casi! Fíjate en los acentos:",
+  "done": "¡Unidad completada!",
+  "lost": "Te quedaste sin corazones",
+  "lostP": "No pasa nada: cada error es una palabra que ahora conoces un poco mejor.",
+  "xp": "XP total",
+  "acc": "Precisión",
+  "time": "Tiempo",
+  "ex": "{n} ejercicios",
+  "min": "≈ 7 minutos",
+  "hearts": "corazones",
+  "best": "Tu mejor resultado",
+  "tap": "Toca las palabras en orden",
+  "type": "Escribe aquí…",
+  "perfect": "¡Sin un solo error! ¡Increíble!",
+  "good": "¡Muy buen trabajo!",
+  "ok": "¡Bien hecho! Repite la unidad para mejorar tu precisión.",
+  "sound": "Sonido",
+  "listen": "Escuchar",
+  "meaning": "Significa:",
+  "yes": "Verdadero",
+  "no": "Falso",
+  "score": "Puntuación",
+  "level": "Tu nivel"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Une las parejas",
+   "pairs": [
+    [
+     "přečíst",
+     "leer (entero)"
+    ],
+    [
+     "koupit",
+     "comprar"
+    ],
+    [
+     "otevřít",
+     "abrir"
+    ],
+    [
+     "vzít",
+     "tomar, coger"
+    ],
+    [
+     "říct",
+     "decir"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Luis",
+   "after": "dopis za pět minut.",
+   "options": [
+    "napsal",
+    "psal jsem",
+    "napíše"
+   ],
+   "answer": 0,
+   "es": "Luis escribió una carta en cinco minutos.",
+   "why": "«En cinco minutos» indica un resultado: perfectivo."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Jana mi pořád",
+   "after": "tužku.",
+   "options": [
+    "brala",
+    "vzala",
+    "vezme"
+   ],
+   "answer": 0,
+   "es": "Jana no paraba de quitarme el lápiz.",
+   "why": "«Pořád» (todo el rato) indica repetición: imperfectivo."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Zítra budu celý den",
+   "after": "dopisy.",
+   "options": [
+    "psát",
+    "napsat",
+    "píšu"
+   ],
+   "answer": 0,
+   "es": "Mañana estaré escribiendo cartas todo el día.",
+   "why": "Después de «budu» solo va un infinitivo imperfectivo."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Počkej, hned to",
+   "after": "!",
+   "options": [
+    "udělám",
+    "budu udělat",
+    "dělal"
+   ],
+   "answer": 0,
+   "es": "¡Espera, lo hago enseguida!",
+   "why": "«Udělám» es presente perfectivo, o sea, futuro."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Zítra Vojta",
+   "after": "Kazimírovi zprávu.",
+   "options": [
+    "napíše",
+    "bude napsat",
+    "napsal"
+   ],
+   "answer": 0,
+   "es": "Mañana Vojta le escribirá un mensaje a Kazimír."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Lucie konečně",
+   "after": "závoru a voda se dala do pohybu.",
+   "options": [
+    "otevřela",
+    "otevírá",
+    "otevřít"
+   ],
+   "answer": 0,
+   "es": "Lucie por fin abrió la compuerta y el agua se puso en marcha.",
+   "why": "«Konečně» (por fin) + un resultado en pasado: perfectivo."
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "napíšu",
+   "options": [
+    "escribiré",
+    "escribo",
+    "escribí"
+   ],
+   "answer": 0,
+   "why": "El presente de un verbo perfectivo significa futuro."
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "Luis tam chodil každé ráno.",
+   "options": [
+    "Luis iba allí cada mañana.",
+    "Luis fue allí una mañana.",
+    "Luis irá allí por la mañana."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "¿Cómo se dice?",
+   "word": "Cerraré la puerta.",
+   "options": [
+    "Zavřu dveře.",
+    "Budu zavřít dveře.",
+    "Zavíral jsem dveře."
+   ],
+   "answer": 0,
+   "why": "No «budu zavřít»: «budu» nunca va con un verbo perfectivo."
+  },
+  {
+   "type": "build",
+   "prompt": "Traduce",
+   "es": "Esta noche leeré tu carta.",
+   "answer": [
+    "Večer",
+    "přečtu",
+    "tvůj",
+    "dopis."
+   ],
+   "extra": [
+    "budu",
+    "přečetl"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Elige la respuesta correcta",
+   "question": "Co udělá Vojta podle Luisova plánu?",
+   "es": "¿Qué hará Vojta según el plan de Luis?",
+   "options": [
+    "Pošle Kazimírovi zprávu.",
+    "Půjde tunelem první.",
+    "Otevře stavidlo."
+   ],
+   "answer": 0,
+   "why": "Vojta le enviará a Kazimír un mensaje falso. Luis será el primero en ir por el túnel."
+  },
+  {
+   "type": "story",
+   "prompt": "Elige la respuesta correcta",
+   "question": "Kdo nakonec otevřel závoru u hráze?",
+   "es": "¿Quién abrió por fin la compuerta de la presa?",
+   "options": [
+    "Lucie s halapartnou.",
+    "Luis s tabletem.",
+    "Robert s Hanou."
+   ],
+   "answer": 0,
+   "why": "Lucie usó la alabarda como palanca (capítulo 29)."
+  },
+  {
+   "type": "tf",
+   "prompt": "¿Verdadero o falso?",
+   "statement": "Luis vymyslel plán s hrází za jednu noc.",
+   "answer": false,
+   "why": "No: «Celou zimu. V noci.» Trabajó en él todo el invierno."
+  },
+  {
+   "type": "tf",
+   "prompt": "¿Verdadero o falso?",
+   "statement": "Luis chodil k hrázi každé ráno a měřil hladinu.",
+   "answer": true,
+   "why": "Sí. Cada mañana es una acción repetida: «chodil, měřil»."
+  },
+  {
+   "type": "write",
+   "prompt": "Escríbelo",
+   "es": "Lo haré.",
+   "answers": [
+    "Udělám to",
+    "Udělám to.",
+    "Udělám to!",
+    "Já to udělám",
+    "Já to udělám.",
+    "Já to udělám!"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Escríbelo",
+   "es": "Ella abrió la puerta.",
+   "answers": [
+    "Otevřela dveře",
+    "Otevřela dveře.",
+    "Ona otevřela dveře",
+    "Ona otevřela dveře."
+   ]
+  }
+ ],
+ "keyboard": [
+  "á",
+  "č",
+  "ď",
+  "é",
+  "ě",
+  "í",
+  "ň",
+  "ó",
+  "ř",
+  "š",
+  "ť",
+  "ú",
+  "ů",
+  "ý",
+  "ž"
+ ]
+}

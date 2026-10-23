@@ -1,0 +1,309 @@
+{
+ "title": "Kdybych tě neztratil",
+ "subtitle": "Условное наклонение: bych, bys, by… Вежливые просьбы, kdyby и aby.",
+ "speak": "cs-CZ",
+ "hero": "novels/predtucha/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 7 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "chtěl bych",
+     "я хотел бы"
+    ],
+    [
+     "kdyby",
+     "если бы"
+    ],
+    [
+     "aby",
+     "чтобы"
+    ],
+    [
+     "mohl byste",
+     "не могли бы вы"
+    ],
+    [
+     "neodpustil bych si to",
+     "я бы себе этого не простил"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Kdybych měl čas,",
+   "after": "s tebou.",
+   "options": [
+    "šel bych",
+    "šel jsem",
+    "půjdu"
+   ],
+   "answer": 0,
+   "es": "Если бы у меня было время, я бы пошёл с тобой.",
+   "why": "Kdyby… → во второй части тоже условное наклонение."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Hana",
+   "after": "mi vynadala.",
+   "options": [
+    "by",
+    "jsem",
+    "bude"
+   ],
+   "answer": 0,
+   "es": "Хана бы меня отругала.",
+   "why": "Ona → by. Так пишет Роберт в письме Наталии."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Mohla",
+   "after": "mi pomoct, paní doktorko?",
+   "options": [
+    "byste",
+    "bychom",
+    "jsme"
+   ],
+   "answer": 0,
+   "es": "Не могли бы вы мне помочь, доктор?",
+   "why": "Вежливое «вы»: mohl / mohla byste."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Chci,",
+   "after": "mi odpověděl upřímně.",
+   "options": [
+    "abys",
+    "kdybys",
+    "jsi"
+   ],
+   "answer": 0,
+   "es": "Я хочу, чтобы ты ответил мне честно.",
+   "why": "Chci, abys… — «хочу, чтобы ты…»."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "",
+   "after": "zítra všechno dopadlo dobře, měla bych u tebe místo?",
+   "options": [
+    "Kdyby",
+    "Jestli",
+    "Protože"
+   ],
+   "answer": 0,
+   "es": "Если бы завтра всё кончилось хорошо, нашлось бы для меня место рядом с тобой?",
+   "why": "Нереальное условие: kdyby + форма на -l."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Mrtví by chtěli,",
+   "after": "žili.",
+   "options": [
+    "abychom",
+    "kdybychom",
+    "jsme"
+   ],
+   "answer": 0,
+   "es": "Мёртвые хотели бы, чтобы мы жили.",
+   "why": "My → abychom. Из письма Роберта."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Martine, měl",
+   "after": "vyspat.",
+   "options": [
+    "by ses",
+    "bys se",
+    "jsi se"
+   ],
+   "answer": 0,
+   "es": "Мартин, тебе бы выспаться.",
+   "why": "Bys + se = by ses."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Natálie by tě měla ráda.",
+   "options": [
+    "Ты бы понравилась Наталии.",
+    "Наталия тебя любила.",
+    "Наталия тебя полюбит."
+   ],
+   "answer": 0,
+   "why": "Так Роберт говорит Люцие после поцелуя на стенах (глава 30)."
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать на изучаемом языке?",
+   "word": "Я бы хотела кофе. (говорит женщина)",
+   "options": [
+    "Chtěla bych kávu.",
+    "Chtěla jsem kávu.",
+    "Chtěl by kávu."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите",
+   "es": "Если бы у меня было время, я бы пошёл с тобой.",
+   "answer": [
+    "Kdybych",
+    "měl",
+    "čas,",
+    "šel",
+    "bych",
+    "s",
+    "tebou."
+   ],
+   "extra": [
+    "jsem",
+    "kdyby"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "Na co se Lucie ptá Roberta na střeše mlýna?",
+   "es": "О чём Люцие спрашивает Роберта на крыше мельницы?",
+   "options": [
+    "Jestli by u něj měla místo.",
+    "Jestli by s ní utekl do Brna.",
+    "Jestli by jí dal svůj prsten."
+   ],
+   "answer": 0,
+   "why": "«Měla bych u tebe místo? Ne jako obvaz. Jako žena.» (глава 35)"
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "Co by Robert udělal, kdyby Lucii vzala voda?",
+   "es": "Что сделал бы Роберт, если бы Люцие унесла вода?",
+   "options": [
+    "Neodpustil by si to.",
+    "Hledal by ji v lese.",
+    "Odešel by z Utopie."
+   ],
+   "answer": 0,
+   "why": "«Neodpustil bych si to.» (глава 30)"
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Robert psal Natálii dopisy, ale nikdy je neodeslal.",
+   "answer": true,
+   "why": "Верно: письма лежат в ящике под кроватью — отправить их было некуда."
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Lucie chce, aby Robert na Natálii zapomněl.",
+   "answer": false,
+   "why": "Неверно: «Nechci, abys ji zapomněl.» — Я не хочу, чтобы ты её забыл (глава 22)."
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Не могли бы вы мне помочь?",
+   "answers": [
+    "Mohl byste mi pomoct?",
+    "Mohla byste mi pomoct?",
+    "Mohl byste mi pomoct",
+    "Mohla byste mi pomoct",
+    "Mohl byste mi pomoci?",
+    "Mohla byste mi pomoci?",
+    "Mohl byste mi pomoci",
+    "Mohla byste mi pomoci",
+    "Mohli byste mi pomoct?",
+    "Mohli byste mi pomoct",
+    "Mohli byste mi pomoci?",
+    "Mohli byste mi pomoci"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Я бы хотел(а) чай.",
+   "answers": [
+    "Chtěl bych čaj",
+    "Chtěl bych čaj.",
+    "Chtěla bych čaj",
+    "Chtěla bych čaj.",
+    "Já bych chtěl čaj",
+    "Já bych chtěl čaj.",
+    "Já bych chtěla čaj",
+    "Já bych chtěla čaj.",
+    "Chtěl bych čaj, prosím",
+    "Chtěl bych čaj, prosím.",
+    "Chtěla bych čaj, prosím",
+    "Chtěla bych čaj, prosím."
+   ]
+  }
+ ],
+ "keyboard": [
+  "á",
+  "č",
+  "ď",
+  "é",
+  "ě",
+  "í",
+  "ň",
+  "ó",
+  "ř",
+  "š",
+  "ť",
+  "ú",
+  "ů",
+  "ý",
+  "ž"
+ ]
+}

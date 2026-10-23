@@ -1,0 +1,309 @@
+{
+ "title": "Kdybych tě neztratil",
+ "subtitle": "The conditional: bych, bys, by… Polite requests, kdyby and aby.",
+ "speak": "cs-CZ",
+ "hero": "novels/predtucha/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "chtěl bych",
+     "I would like"
+    ],
+    [
+     "kdyby",
+     "if (unreal)"
+    ],
+    [
+     "aby",
+     "so that"
+    ],
+    [
+     "mohl byste",
+     "could you (polite)"
+    ],
+    [
+     "neodpustil bych si to",
+     "I’d never forgive myself"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Kdybych měl čas,",
+   "after": "s tebou.",
+   "options": [
+    "šel bych",
+    "šel jsem",
+    "půjdu"
+   ],
+   "answer": 0,
+   "es": "If I had time, I would go with you.",
+   "why": "Kdyby… → the other half is conditional too."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Hana",
+   "after": "mi vynadala.",
+   "options": [
+    "by",
+    "jsem",
+    "bude"
+   ],
+   "answer": 0,
+   "es": "Hana would tell me off.",
+   "why": "Ona → by. Robert writes this in his letter to Natálie."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Mohla",
+   "after": "mi pomoct, paní doktorko?",
+   "options": [
+    "byste",
+    "bychom",
+    "jsme"
+   ],
+   "answer": 0,
+   "es": "Could you help me, doctor?",
+   "why": "Polite “vy”: mohl / mohla byste."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Chci,",
+   "after": "mi odpověděl upřímně.",
+   "options": [
+    "abys",
+    "kdybys",
+    "jsi"
+   ],
+   "answer": 0,
+   "es": "I want you to answer me honestly.",
+   "why": "Chci, abys… — “I want you to…”."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "",
+   "after": "zítra všechno dopadlo dobře, měla bych u tebe místo?",
+   "options": [
+    "Kdyby",
+    "Jestli",
+    "Protože"
+   ],
+   "answer": 0,
+   "es": "If everything turned out well tomorrow, would there be a place for me with you?",
+   "why": "An unreal condition: kdyby + the -l form."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Mrtví by chtěli,",
+   "after": "žili.",
+   "options": [
+    "abychom",
+    "kdybychom",
+    "jsme"
+   ],
+   "answer": 0,
+   "es": "The dead would want us to live.",
+   "why": "My → abychom. From Robert’s letter."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Martine, měl",
+   "after": "vyspat.",
+   "options": [
+    "by ses",
+    "bys se",
+    "jsi se"
+   ],
+   "answer": 0,
+   "es": "Martin, you should get some sleep.",
+   "why": "Bys + se = by ses."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Natálie by tě měla ráda.",
+   "options": [
+    "Natálie would have liked you.",
+    "Natálie loved you.",
+    "Natálie will love you."
+   ],
+   "answer": 0,
+   "why": "Robert says this to Lucie after their kiss on the walls (chapter 30)."
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "I’d like a coffee. (a woman speaking)",
+   "options": [
+    "Chtěla bych kávu.",
+    "Chtěla jsem kávu.",
+    "Chtěl by kávu."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "If I had time, I would go with you.",
+   "answer": [
+    "Kdybych",
+    "měl",
+    "čas,",
+    "šel",
+    "bych",
+    "s",
+    "tebou."
+   ],
+   "extra": [
+    "jsem",
+    "kdyby"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Na co se Lucie ptá Roberta na střeše mlýna?",
+   "es": "What does Lucie ask Robert on the roof of the mill?",
+   "options": [
+    "Jestli by u něj měla místo.",
+    "Jestli by s ní utekl do Brna.",
+    "Jestli by jí dal svůj prsten."
+   ],
+   "answer": 0,
+   "why": "“Měla bych u tebe místo? Ne jako obvaz. Jako žena.” (chapter 35)"
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Co by Robert udělal, kdyby Lucii vzala voda?",
+   "es": "What would Robert do if the water had taken Lucie?",
+   "options": [
+    "Neodpustil by si to.",
+    "Hledal by ji v lese.",
+    "Odešel by z Utopie."
+   ],
+   "answer": 0,
+   "why": "“Neodpustil bych si to.” (chapter 30)"
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Robert psal Natálii dopisy, ale nikdy je neodeslal.",
+   "answer": true,
+   "why": "True: the letters are in a crate under his bed — he had nowhere to send them."
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Lucie chce, aby Robert na Natálii zapomněl.",
+   "answer": false,
+   "why": "False: “Nechci, abys ji zapomněl.” — I don’t want you to forget her (chapter 22)."
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "Could you help me? (polite)",
+   "answers": [
+    "Mohl byste mi pomoct?",
+    "Mohla byste mi pomoct?",
+    "Mohl byste mi pomoct",
+    "Mohla byste mi pomoct",
+    "Mohl byste mi pomoci?",
+    "Mohla byste mi pomoci?",
+    "Mohl byste mi pomoci",
+    "Mohla byste mi pomoci",
+    "Mohli byste mi pomoct?",
+    "Mohli byste mi pomoct",
+    "Mohli byste mi pomoci?",
+    "Mohli byste mi pomoci"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "I would like a tea.",
+   "answers": [
+    "Chtěl bych čaj",
+    "Chtěl bych čaj.",
+    "Chtěla bych čaj",
+    "Chtěla bych čaj.",
+    "Já bych chtěl čaj",
+    "Já bych chtěl čaj.",
+    "Já bych chtěla čaj",
+    "Já bych chtěla čaj.",
+    "Chtěl bych čaj, prosím",
+    "Chtěl bych čaj, prosím.",
+    "Chtěla bych čaj, prosím",
+    "Chtěla bych čaj, prosím."
+   ]
+  }
+ ],
+ "keyboard": [
+  "á",
+  "č",
+  "ď",
+  "é",
+  "ě",
+  "í",
+  "ň",
+  "ó",
+  "ř",
+  "š",
+  "ť",
+  "ú",
+  "ů",
+  "ý",
+  "ž"
+ ]
+}

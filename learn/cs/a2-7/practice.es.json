@@ -1,0 +1,289 @@
+{
+ "title": "Stůjte! Tady ne!",
+ "subtitle": "El imperativo: ty, vy, my. Prohibiciones y peticiones corteses.",
+ "speak": "cs-CZ",
+ "hero": "novels/predtucha/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Empezar",
+  "check": "Comprobar",
+  "next": "Continuar",
+  "skip": "No lo sé",
+  "retry": "Intentar de nuevo",
+  "again": "Repetir",
+  "back": "Volver a la unidad",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Respuesta correcta:",
+  "almost": "¡Casi! Fíjate en los acentos:",
+  "done": "¡Unidad completada!",
+  "lost": "Te quedaste sin corazones",
+  "lostP": "No pasa nada: cada error es una palabra que ahora conoces un poco mejor.",
+  "xp": "XP total",
+  "acc": "Precisión",
+  "time": "Tiempo",
+  "ex": "{n} ejercicios",
+  "min": "≈ 7 minutos",
+  "hearts": "corazones",
+  "best": "Tu mejor resultado",
+  "tap": "Toca las palabras en orden",
+  "type": "Escribe aquí…",
+  "perfect": "¡Sin un solo error! ¡Increíble!",
+  "good": "¡Muy buen trabajo!",
+  "ok": "¡Bien hecho! Repite la unidad para mejorar tu precisión.",
+  "sound": "Sonido",
+  "listen": "Escuchar",
+  "meaning": "Significa:",
+  "yes": "Verdadero",
+  "no": "Falso",
+  "score": "Puntuación",
+  "level": "Tu nivel"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Une las parejas",
+   "pairs": [
+    [
+     "stůj",
+     "quieto, detente"
+    ],
+    [
+     "pojďme",
+     "vamos"
+    ],
+    [
+     "táhněte",
+     "tirad"
+    ],
+    [
+     "neutíkej",
+     "no huyas"
+    ],
+    [
+     "vezmi",
+     "toma"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "„",
+   "after": "!“ zahřměl Robert. „Kam běžíte?“",
+   "options": [
+    "Stůjte",
+    "Stojíte",
+    "Stát"
+   ],
+   "answer": 0,
+   "es": "«¡Quietos! —tronó Robert—. ¿Adónde corréis?»",
+   "why": "Stát → stůj, stůjte. Robert habla a muchos: forma en -te."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "„",
+   "after": "! Všichni!“ zařvala Lucie u hráze.",
+   "options": [
+    "Táhněte",
+    "Táhnete",
+    "Táhnout"
+   ],
+   "answer": 0,
+   "es": "«¡Tirad! ¡Todos!», rugió Lucie en la presa.",
+   "why": "Táhnou → táhni, táhněte. Táhnete significa «tiráis»."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Jano,",
+   "after": "jim to. Řekni jim, ať běží.",
+   "options": [
+    "řekni",
+    "řekne",
+    "říct"
+   ],
+   "answer": 0,
+   "es": "Jana, díselo. Diles que corran."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Tomáši,",
+   "after": "to!",
+   "options": [
+    "otevři",
+    "otevře",
+    "otevřít"
+   ],
+   "answer": 0,
+   "es": "¡Tomáš, ábrela!",
+   "why": "Otevřou → otevři."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Hoďte jim lana.",
+   "after": ", koho můžete.",
+   "options": [
+    "Vytáhněte",
+    "Vytáhli",
+    "Vytáhnout"
+   ],
+   "answer": 0,
+   "es": "Echadles cuerdas. Sacad a quien podáis."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Lucie, ne!",
+   "after": "to!",
+   "options": [
+    "Neříkej",
+    "Neříkáš",
+    "Neříct"
+   ],
+   "answer": 0,
+   "es": "¡Lucie, no! ¡No lo digas!",
+   "why": "En la prohibición, imperfectivo: říkat → neříkej."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Roberte,",
+   "after": "opatrný!",
+   "options": [
+    "buď",
+    "jsi",
+    "být"
+   ],
+   "answer": 0,
+   "es": "¡Robert, ten cuidado!",
+   "why": "Být → buď, buďte (irregular)."
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "Nezapomeň!",
+   "options": [
+    "¡No te olvides!",
+    "¡Recuerda!",
+    "¡No lo pierdas!"
+   ],
+   "answer": 0,
+   "why": "Una advertencia usa el perfectivo: zapomenout → nezapomeň."
+  },
+  {
+   "type": "reverse",
+   "prompt": "¿Cómo se dice?",
+   "word": "¡Vamos a casa!",
+   "options": [
+    "Pojďme domů!",
+    "Pojď domů!",
+    "Jděte domů!"
+   ],
+   "answer": 0,
+   "why": "-me = «vamos a…»: pojďme."
+  },
+  {
+   "type": "build",
+   "prompt": "Traduce",
+   "es": "Diles que corran.",
+   "answer": [
+    "Řekni",
+    "jim,",
+    "ať",
+    "běží."
+   ],
+   "extra": [
+    "říkáš",
+    "běžte"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Elige la respuesta correcta",
+   "question": "Co zahřměl Robert, když stál v díře ve zdi?",
+   "es": "¿Qué gritó Robert cuando estaba en el agujero de la muralla?",
+   "options": [
+    "„Stůjte!“",
+    "„Utíkejte!“",
+    "„Pojďme pryč!“"
+   ],
+   "answer": 0,
+   "why": "La gente huía; Robert gritó «Stůjte!» y volvieron (capítulo 28)."
+  },
+  {
+   "type": "story",
+   "prompt": "Elige la respuesta correcta",
+   "question": "Co řekla Jana otrokům z ohrady přes drony?",
+   "es": "¿Qué les dijo Jana a los esclavos del cercado a través de los drones?",
+   "options": [
+    "„Teď. Sever. Běžte.“",
+    "„Stůjte a čekejte.“",
+    "„Pojďte k bráně.“"
+   ],
+   "answer": 0,
+   "why": "Solo tres palabras: ahora, norte, corred (capítulo 28)."
+  },
+  {
+   "type": "tf",
+   "prompt": "¿Verdadero o falso?",
+   "statement": "Lucie u hráze zařvala: „Táhněte! Všichni!“",
+   "answer": true,
+   "why": "Verdadero: la compuerta se movió y Lucie llamó a todos a tirar (capítulo 29)."
+  },
+  {
+   "type": "tf",
+   "prompt": "¿Verdadero o falso?",
+   "statement": "Když se divoši topili, Robert řekl: „Nechte je. Jsou to divoši.“",
+   "answer": false,
+   "why": "Falso: Robert dijo «Hoďte jim lana»: echadles cuerdas, son personas que se ahogan."
+  },
+  {
+   "type": "write",
+   "prompt": "Escríbelo",
+   "es": "¡Quietos! (a varias personas)",
+   "answers": [
+    "Stůjte!",
+    "Stůjte",
+    "stůjte!",
+    "stůjte"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Escríbelo",
+   "es": "¡No tengas miedo! (a un amigo)",
+   "answers": [
+    "Neboj se!",
+    "Neboj se",
+    "neboj se!",
+    "neboj se"
+   ]
+  }
+ ],
+ "keyboard": [
+  "á",
+  "č",
+  "ď",
+  "é",
+  "ě",
+  "í",
+  "ň",
+  "ó",
+  "ř",
+  "š",
+  "ť",
+  "ú",
+  "ů",
+  "ý",
+  "ž"
+ ]
+}

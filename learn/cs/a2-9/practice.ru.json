@@ -1,0 +1,292 @@
+{
+ "title": "Nejsilnější žena v Utopii",
+ "subtitle": "Сравнительная и превосходная степень, «než», «čím… tím…». Придаточные с который и co.",
+ "speak": "cs-CZ",
+ "hero": "novels/predtucha/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 7 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "lepší",
+     "лучше"
+    ],
+    [
+     "horší",
+     "хуже"
+    ],
+    [
+     "větší",
+     "больше"
+    ],
+    [
+     "menší",
+     "меньше"
+    ],
+    [
+     "delší",
+     "длиннее"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Lucie je",
+   "after": "než Luis.",
+   "options": [
+    "silnější",
+    "silná",
+    "silnou"
+   ],
+   "answer": 0,
+   "es": "Люцие сильнее Луиса."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Drahomír byl o dvě hlavy",
+   "after": "než Lucie.",
+   "options": [
+    "vyšší",
+    "vysoký",
+    "výš"
+   ],
+   "answer": 0,
+   "es": "Драгомир был на две головы выше Люцие.",
+   "why": "vysoký → vyšší (прилагательное после «byl»)."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Natálie je ta",
+   "after": "žena, jakou Lucie zná.",
+   "options": [
+    "nejlepší",
+    "nejdobřejší",
+    "nejvíc dobrá"
+   ],
+   "answer": 0,
+   "es": "Натали — самая лучшая женщина, какую знает Люцие.",
+   "why": "dobrý → lepší → nejlepší (неправильная форма)."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Jana mluví česky",
+   "after": "než Luis.",
+   "options": [
+    "lépe",
+    "lepší",
+    "dobrá"
+   ],
+   "answer": 0,
+   "es": "Яна говорит по-чешски лучше, чем Луис.",
+   "why": "Mluví jak? — наречие: dobře → lépe / líp."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Mám přítele,",
+   "after": "pořád miluju.",
+   "options": [
+    "kterého",
+    "který",
+    "kterou"
+   ],
+   "answer": 0,
+   "es": "У меня есть друг, которого я до сих пор люблю.",
+   "why": "Muž (přítel) + вин. п. (miluju koho?) → kterého."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Mám lidi,",
+   "after": "se mnou zpívají na louce.",
+   "options": [
+    "kteří",
+    "který",
+    "kterou"
+   ],
+   "answer": 0,
+   "es": "У меня есть люди, которые поют со мной на лугу.",
+   "why": "Lidé — одушевлённые, мн. ч., им. п. → kteří."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Uviděl v jeho tváři něco,",
+   "after": "by nikdy nečekal.",
+   "options": [
+    "co",
+    "který",
+    "kterou"
+   ],
+   "answer": 0,
+   "es": "Он увидел в его лице что-то, чего никогда бы не ожидал.",
+   "why": "После «něco» — co."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Čím dřív, tím líp.",
+   "options": [
+    "Чем раньше, тем лучше.",
+    "Лучше поздно, чем никогда.",
+    "Раньше было лучше."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать на изучаемом языке?",
+   "word": "Больше не значит сильнее.",
+   "options": [
+    "Větší neznamená silnější.",
+    "Velký neznamená silný.",
+    "Menší neznamená silnější."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите",
+   "es": "Это женщина, которую я хотела ненавидеть.",
+   "answer": [
+    "To",
+    "je",
+    "žena,",
+    "kterou",
+    "jsem",
+    "chtěla",
+    "nenávidět."
+   ],
+   "extra": [
+    "která",
+    "kterého"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "Co vytrhla Lucie z kamene u vchodu do tunelu?",
+   "es": "Что Люцие вырвала из камня у входа в туннель?",
+   "options": [
+    "rezavou železnou mříž",
+    "dubové dveře",
+    "Tomášův kámen"
+   ],
+   "answer": 0,
+   "why": "Глава 17: «Pod ním byla rezavá železná mříž.» Дубовые двери Луис снял ножом."
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "Kdo byl o dvě hlavy vyšší než Lucie a dvakrát širší?",
+   "es": "Кто был на две головы выше Люцие и вдвое шире?",
+   "options": [
+    "Drahomír",
+    "Tomáš",
+    "Robert"
+   ],
+   "answer": 0,
+   "why": "Глава 29: Вольчий князь Драгомир. И всё-таки Люцие бросила его через плечо."
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Babička Ludmila byla malá, ale silná jako kůň.",
+   "answer": true,
+   "why": "Третья интерлюдия: «Byla malá, vrásčitá a silná jako kůň.»"
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Babička říkala, že Slované přežili, protože byli silnější.",
+   "answer": false,
+   "why": "Нет: «Ne proto, že byli silnější. Proto, že se nedali vykořenit.»"
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "быстрее (наречие): Беги быстрее! → Běž …!",
+   "answers": [
+    "rychleji",
+    "Běž rychleji",
+    "Běž rychleji!"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "мужчина, которого я люблю",
+   "answers": [
+    "muž, kterého miluju",
+    "muž, kterého miluji",
+    "muž kterého miluju",
+    "muž kterého miluji",
+    "Muž, kterého miluju.",
+    "Muž, kterého miluji."
+   ]
+  }
+ ],
+ "keyboard": [
+  "á",
+  "č",
+  "ď",
+  "é",
+  "ě",
+  "í",
+  "ň",
+  "ó",
+  "ř",
+  "š",
+  "ť",
+  "ú",
+  "ů",
+  "ý",
+  "ž"
+ ]
+}

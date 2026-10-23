@@ -1,0 +1,288 @@
+{
+ "title": "S Lucií a s Janou",
+ "subtitle": "El instrumental: con quién, con qué, como qué y dónde. Se mnou, s tebou.",
+ "speak": "cs-CZ",
+ "hero": "novels/predtucha/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Empezar",
+  "check": "Comprobar",
+  "next": "Continuar",
+  "skip": "No lo sé",
+  "retry": "Intentar de nuevo",
+  "again": "Repetir",
+  "back": "Volver a la unidad",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Respuesta correcta:",
+  "almost": "¡Casi! Fíjate en los acentos:",
+  "done": "¡Unidad completada!",
+  "lost": "Te quedaste sin corazones",
+  "lostP": "No pasa nada: cada error es una palabra que ahora conoces un poco mejor.",
+  "xp": "XP total",
+  "acc": "Precisión",
+  "time": "Tiempo",
+  "ex": "{n} ejercicios",
+  "min": "≈ 7 minutos",
+  "hearts": "corazones",
+  "best": "Tu mejor resultado",
+  "tap": "Toca las palabras en orden",
+  "type": "Escribe aquí…",
+  "perfect": "¡Sin un solo error! ¡Increíble!",
+  "good": "¡Muy buen trabajo!",
+  "ok": "¡Bien hecho! Repite la unidad para mejorar tu precisión.",
+  "sound": "Sonido",
+  "listen": "Escuchar",
+  "meaning": "Significa:",
+  "yes": "Verdadero",
+  "no": "Falso",
+  "score": "Puntuación",
+  "level": "Tu nivel"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Une las parejas",
+   "pairs": [
+    [
+     "se mnou",
+     "conmigo"
+    ],
+    [
+     "s tebou",
+     "contigo"
+    ],
+    [
+     "s ní",
+     "con ella"
+    ],
+    [
+     "s námi",
+     "con nosotros"
+    ],
+    [
+     "s nimi",
+     "con ellos"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Lucie stojí v bráně s",
+   "after": ".",
+   "options": [
+    "halapartnou",
+    "halapartna",
+    "halapartně"
+   ],
+   "answer": 0,
+   "es": "Lucie está en la puerta con una alabarda.",
+   "why": "Halapartna → s halapartnou (femenino en -a → -ou)."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Do Brna pojedeme",
+   "after": ".",
+   "options": [
+    "vlakem",
+    "vlaku",
+    "vlaky"
+   ],
+   "answer": 0,
+   "es": "Iremos a Brno en tren.",
+   "why": "Transporte: instrumental sin preposición: vlakem."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Luis se stal",
+   "after": ".",
+   "options": [
+    "velitelem",
+    "veliteli",
+    "velitelé"
+   ],
+   "answer": 0,
+   "es": "Luis se convirtió en el comandante.",
+   "why": "Stát se + instrumental."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Pod severní",
+   "after": "vede starý tunel.",
+   "options": [
+    "zdí",
+    "zeď",
+    "zdech"
+   ],
+   "answer": 0,
+   "es": "Bajo la muralla norte pasa un viejo túnel.",
+   "why": "¿Dónde? Pod + instrumental: zeď → pod zdí."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Ráno šla Jana do sklepa za",
+   "after": ".",
+   "options": [
+    "dětmi",
+    "děti",
+    "dětem"
+   ],
+   "answer": 0,
+   "es": "Por la mañana Jana bajó al sótano a ver a los niños.",
+   "why": "Děti → s dětmi, za dětmi (una excepción)."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Tomáš přišel do brány s kovářským",
+   "after": ".",
+   "options": [
+    "kladivem",
+    "kladivo",
+    "kladiva"
+   ],
+   "answer": 0,
+   "es": "Tomáš llegó a la puerta con un martillo de herrero."
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "Robert je přikryl kabátem.",
+   "options": [
+    "Robert los tapó con su abrigo.",
+    "Robert vino a verlos con el abrigo puesto.",
+    "Robert se llevó sus abrigos."
+   ],
+   "answer": 0,
+   "why": "Kabátem es el instrumental del instrumento: ¿con qué?"
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "za hrází",
+   "options": [
+    "detrás de la presa",
+    "encima de la presa",
+    "debajo de la presa"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "¿Cómo se dice?",
+   "word": "Iré contigo.",
+   "options": [
+    "Půjdu s tebou.",
+    "Půjdu s ty.",
+    "Půjdu s tebe."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Traduce",
+   "es": "Luis y Lucie estaban espalda contra espalda.",
+   "answer": [
+    "Luis",
+    "a",
+    "Lucie",
+    "stáli",
+    "zády",
+    "k",
+    "sobě."
+   ],
+   "extra": [
+    "záda",
+    "se"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Elige la respuesta correcta",
+   "question": "Kdo stál v proražené bráně s halapartnou?",
+   "es": "¿Quién estaba en la puerta rota con una alabarda?",
+   "options": [
+    "Lucie.",
+    "Jana.",
+    "Natálie."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Elige la respuesta correcta",
+   "question": "Kde stál Robert, když zpíval?",
+   "es": "¿Dónde estaba Robert cuando cantaba?",
+   "options": [
+    "Na hradbě nad bránou.",
+    "Pod hrází u potoka.",
+    "Ve sklepě pod školou."
+   ],
+   "answer": 0,
+   "why": "Estaba en la muralla encima de la puerta, solo y sin armas."
+  },
+  {
+   "type": "tf",
+   "prompt": "¿Verdadero o falso?",
+   "statement": "Ráno Robert přikryl Luise a Lucii kabátem.",
+   "answer": true,
+   "why": "Sí: se quitó el abrigo y los tapó a los dos con él."
+  },
+  {
+   "type": "tf",
+   "prompt": "¿Verdadero o falso?",
+   "statement": "Tomáš bojoval v bráně s mečem.",
+   "answer": false,
+   "why": "No: Tomáš llevaba un martillo de herrero; la espada era de Petr."
+  },
+  {
+   "type": "write",
+   "prompt": "Escríbelo",
+   "es": "¡Ven con nosotros!",
+   "answers": [
+    "Pojď s námi!",
+    "Pojď s námi",
+    "Pojď s námi.",
+    "Pojďte s námi!",
+    "Pojďte s námi",
+    "Pojďte s námi."
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Escríbelo",
+   "es": "Jana trabaja con una tableta.",
+   "answers": [
+    "Jana pracuje s tabletem.",
+    "Jana pracuje s tabletem"
+   ]
+  }
+ ],
+ "keyboard": [
+  "á",
+  "č",
+  "ď",
+  "é",
+  "ě",
+  "í",
+  "ň",
+  "ó",
+  "ř",
+  "š",
+  "ť",
+  "ú",
+  "ů",
+  "ý",
+  "ž"
+ ]
+}
