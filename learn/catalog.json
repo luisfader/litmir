@@ -1041,6 +1041,49 @@
    ]
   },
   {
+   "lang": "pl",
+   "speak": "pl-PL",
+   "help": [
+    "ru",
+    "en",
+    "es"
+   ],
+   "title": {
+    "pl": "Ucz się polskiego!",
+    "ru": "Польский язык",
+    "en": "Polish",
+    "es": "Polaco"
+   },
+   "units": [
+    {
+     "id": "a1-1",
+     "level": "A1",
+     "n": 1,
+     "title": "Cześć! Jestem Zosia",
+     "sub": {
+      "ru": "Приветствия, знакомство, ty и pan/pani, глагол BYĆ, произношение",
+      "en": "Greetings, introductions, ty and pan/pani, the verb BYĆ, pronunciation",
+      "es": "Saludos, presentaciones, ty y pan/pani, el verbo BYĆ, pronunciación"
+     },
+     "cover": "novels/przeczucie/cover-v2.jpg",
+     "novel": "cien-bazyliszka"
+    },
+    {
+     "id": "a1-2",
+     "level": "A1",
+     "n": 2,
+     "title": "Mark jest fotografem",
+     "sub": {
+      "ru": "Профессии, творительный падеж, три модели глаголов, языки, числа и возраст",
+      "en": "Jobs, the instrumental case, three verb patterns, languages, numbers and age",
+      "es": "Profesiones, el instrumental, tres modelos de verbos, idiomas, números y edad"
+     },
+     "cover": "novels/przeczucie/cover-v2.jpg",
+     "novel": "cien-bazyliszka"
+    }
+   ]
+  },
+  {
    "lang": "sr",
    "speak": "sr-RS",
    "help": [

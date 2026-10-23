@@ -1,0 +1,254 @@
+{
+ "title": "Cześć! Jestem Zosia",
+ "subtitle": "Greetings, introductions, ty and pan/pani, the verb BYĆ.",
+ "speak": "pl-PL",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "Świetnie!",
+   "Doskonale!",
+   "Brawo!",
+   "Super!",
+   "Bardzo dobrze!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! Brawo!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "cześć",
+     "hi"
+    ],
+    [
+     "dziękuję",
+     "thank you"
+    ],
+    [
+     "tak",
+     "yes"
+    ],
+    [
+     "nie",
+     "no"
+    ],
+    [
+     "dobranoc",
+     "good night"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Dzień dobry",
+   "options": [
+    "Good morning (formal)",
+    "Good night",
+    "Goodbye"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "My name is Mark.",
+   "options": [
+    "Mam na imię Mark.",
+    "Masz na imię Mark.",
+    "Jestem na imię Mark."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Ja",
+   "after": "Zosia.",
+   "options": [
+    "jestem",
+    "jesteś",
+    "jest"
+   ],
+   "answer": 0,
+   "es": "I’m Zosia."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Mark",
+   "after": "z Nowego Jorku.",
+   "options": [
+    "jest",
+    "są",
+    "jestem"
+   ],
+   "answer": 0,
+   "es": "Mark is from New York."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "My",
+   "after": "na ty.",
+   "options": [
+    "jesteśmy",
+    "jesteście",
+    "są"
+   ],
+   "answer": 0,
+   "es": "We’re on first-name terms."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Mark i Zosia",
+   "after": "w Warszawie.",
+   "options": [
+    "są",
+    "jest",
+    "jesteśmy"
+   ],
+   "answer": 0,
+   "es": "Mark and Zosia are in Warsaw."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Skąd jesteś?",
+   "options": [
+    "Where are you from?",
+    "What’s your name?",
+    "How are you?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "I’m from Kraków.",
+   "answer": [
+    "Jestem",
+    "z",
+    "Krakowa"
+   ],
+   "extra": [
+    "jest",
+    "Kraków"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Skąd jest Zosia?",
+   "es": "Where is Zosia from?",
+   "options": [
+    "Jest z Krakowa.",
+    "Jest z Nowego Jorku.",
+    "Jestem z Krakowa."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "I’m not Polish.",
+   "options": [
+    "Nie jestem Polakiem.",
+    "Niejestem Polakiem.",
+    "Jestem nie Polakiem."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Skąd pan jest?",
+   "options": [
+    "Where are you from? (formal)",
+    "Where is the man?",
+    "Who are you?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Mark jest z Krakowa.",
+   "answer": false,
+   "why": "No: Mark is from New York; Zosia is from Kraków."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Miło mi.",
+   "options": [
+    "Nice to meet you.",
+    "Thank you.",
+    "Sorry."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "thank you",
+   "answers": [
+    "dziękuję",
+    "dzięki"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "I’m from Poland.",
+   "answers": [
+    "Jestem z Polski",
+    "Ja jestem z Polski"
+   ]
+  }
+ ],
+ "keyboard": [
+  "ą",
+  "ć",
+  "ę",
+  "ł",
+  "ń",
+  "ó",
+  "ś",
+  "ź",
+  "ż"
+ ]
+}

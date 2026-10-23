@@ -1,0 +1,286 @@
+{
+ "title": "Mark jest fotografem",
+ "subtitle": "Jobs, the instrumental, three verb patterns, languages, numbers and age.",
+ "speak": "pl-PL",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "Świetnie!",
+   "Doskonale!",
+   "Brawo!",
+   "Super!",
+   "Bardzo dobrze!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! Brawo!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "fotograf",
+     "photographer"
+    ],
+    [
+     "dziennikarka",
+     "journalist"
+    ],
+    [
+     "lekarz",
+     "doctor"
+    ],
+    [
+     "nauczycielka",
+     "teacher"
+    ],
+    [
+     "kelner",
+     "waiter"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Mark jest",
+   "after": ".",
+   "options": [
+    "fotografem",
+    "fotograf",
+    "fotografą"
+   ],
+   "answer": 0,
+   "es": "Mark is a photographer."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Zosia jest",
+   "after": ".",
+   "options": [
+    "dziennikarką",
+    "dziennikarka",
+    "dziennikarkiem"
+   ],
+   "answer": 0,
+   "es": "Zosia is a journalist."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Co robisz?",
+   "options": [
+    "What do you do?",
+    "Where do you live?",
+    "How old are you?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Ja",
+   "after": "po polsku.",
+   "options": [
+    "mówię",
+    "mówisz",
+    "mówi"
+   ],
+   "answer": 0,
+   "es": "I speak Polish."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Ty",
+   "after": "teksty.",
+   "options": [
+    "piszesz",
+    "piszę",
+    "piszą"
+   ],
+   "answer": 0,
+   "es": "You write the texts."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Oni",
+   "after": "książkę.",
+   "options": [
+    "czytają",
+    "czytamy",
+    "czyta"
+   ],
+   "answer": 0,
+   "es": "They’re reading a book."
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "I don’t understand.",
+   "options": [
+    "Nie rozumiem.",
+    "Nierozumiem.",
+    "Rozumiem nie."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "po hiszpańsku",
+   "options": [
+    "in Spanish",
+    "in Italian",
+    "in Russian"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "Do you speak English?",
+   "answer": [
+    "Czy",
+    "mówisz",
+    "po",
+    "angielsku"
+   ],
+   "extra": [
+    "mówię",
+    "angielski"
+   ]
+  },
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "pięć",
+     "5"
+    ],
+    [
+     "dwanaście",
+     "12"
+    ],
+    [
+     "siedem",
+     "7"
+    ],
+    [
+     "dwadzieścia",
+     "20"
+    ],
+    [
+     "trzy",
+     "3"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Mam trzydzieści dwa",
+   "after": ".",
+   "options": [
+    "lata",
+    "lat",
+    "rok"
+   ],
+   "answer": 0,
+   "es": "I’m thirty-two."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Mam dwadzieścia osiem",
+   "after": ".",
+   "options": [
+    "lat",
+    "lata",
+    "rok"
+   ],
+   "answer": 0,
+   "es": "I’m twenty-eight."
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Co robi Zosia?",
+   "es": "What does Zosia do?",
+   "options": [
+    "Jest dziennikarką.",
+    "Jest fotografem.",
+    "Jest kelnerką."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Mark mówi trochę po polsku.",
+   "answer": true,
+   "why": "Yes: he’s learning Polish and doesn’t understand everything yet."
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "I’m a photographer.",
+   "answers": [
+    "Jestem fotografem",
+    "Ja jestem fotografem"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "I don’t understand.",
+   "answers": [
+    "Nie rozumiem"
+   ]
+  }
+ ],
+ "keyboard": [
+  "ą",
+  "ć",
+  "ę",
+  "ł",
+  "ń",
+  "ó",
+  "ś",
+  "ź",
+  "ż"
+ ]
+}

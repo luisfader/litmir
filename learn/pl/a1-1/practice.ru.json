@@ -1,0 +1,254 @@
+{
+ "title": "Cześć! Jestem Zosia",
+ "subtitle": "Приветствия, знакомство, ty и pan/pani, глагол BYĆ.",
+ "speak": "pl-PL",
+ "hearts": 5,
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "Świetnie!",
+   "Doskonale!",
+   "Brawo!",
+   "Super!",
+   "Bardzo dobrze!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 7 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! Brawo!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "cześć",
+     "привет"
+    ],
+    [
+     "dziękuję",
+     "спасибо"
+    ],
+    [
+     "tak",
+     "да"
+    ],
+    [
+     "nie",
+     "нет"
+    ],
+    [
+     "dobranoc",
+     "спокойной ночи"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Dzień dobry",
+   "options": [
+    "Добрый день",
+    "Спокойной ночи",
+    "До свидания"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать на изучаемом языке?",
+   "word": "Меня зовут Марк.",
+   "options": [
+    "Mam na imię Mark.",
+    "Masz na imię Mark.",
+    "Jestem na imię Mark."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Ja",
+   "after": "Zosia.",
+   "options": [
+    "jestem",
+    "jesteś",
+    "jest"
+   ],
+   "answer": 0,
+   "es": "Я Зося."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Mark",
+   "after": "z Nowego Jorku.",
+   "options": [
+    "jest",
+    "są",
+    "jestem"
+   ],
+   "answer": 0,
+   "es": "Марк из Нью-Йорка."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "My",
+   "after": "na ty.",
+   "options": [
+    "jesteśmy",
+    "jesteście",
+    "są"
+   ],
+   "answer": 0,
+   "es": "Мы на «ты»."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Mark i Zosia",
+   "after": "w Warszawie.",
+   "options": [
+    "są",
+    "jest",
+    "jesteśmy"
+   ],
+   "answer": 0,
+   "es": "Марк и Зося в Варшаве."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Skąd jesteś?",
+   "options": [
+    "Откуда ты?",
+    "Как тебя зовут?",
+    "Как дела?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите",
+   "es": "Я из Кракова.",
+   "answer": [
+    "Jestem",
+    "z",
+    "Krakowa"
+   ],
+   "extra": [
+    "jest",
+    "Kraków"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "Skąd jest Zosia?",
+   "es": "Откуда Зося?",
+   "options": [
+    "Jest z Krakowa.",
+    "Jest z Nowego Jorku.",
+    "Jestem z Krakowa."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать на изучаемом языке?",
+   "word": "Я не поляк.",
+   "options": [
+    "Nie jestem Polakiem.",
+    "Niejestem Polakiem.",
+    "Jestem nie Polakiem."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Skąd pan jest?",
+   "options": [
+    "Откуда вы?",
+    "Где этот господин?",
+    "Кто вы?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Mark jest z Krakowa.",
+   "answer": false,
+   "why": "Нет: Марк из Нью-Йорка, а Зося из Кракова."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Miło mi.",
+   "options": [
+    "Очень приятно.",
+    "Спасибо.",
+    "Извините."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "спасибо",
+   "answers": [
+    "dziękuję",
+    "dzięki"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Я из Польши.",
+   "answers": [
+    "Jestem z Polski",
+    "Ja jestem z Polski"
+   ]
+  }
+ ],
+ "keyboard": [
+  "ą",
+  "ć",
+  "ę",
+  "ł",
+  "ń",
+  "ó",
+  "ś",
+  "ź",
+  "ż"
+ ]
+}

@@ -1,0 +1,254 @@
+{
+ "title": "Cześć! Jestem Zosia",
+ "subtitle": "Saludos, presentaciones, ty y pan/pani, el verbo BYĆ.",
+ "speak": "pl-PL",
+ "hearts": 5,
+ "ui": {
+  "start": "Empezar",
+  "check": "Comprobar",
+  "next": "Continuar",
+  "skip": "No lo sé",
+  "retry": "Intentar de nuevo",
+  "again": "Repetir",
+  "back": "Volver a la unidad",
+  "great": [
+   "Świetnie!",
+   "Doskonale!",
+   "Brawo!",
+   "Super!",
+   "Bardzo dobrze!"
+  ],
+  "wrong": "Respuesta correcta:",
+  "almost": "¡Casi! Fíjate en los acentos:",
+  "done": "¡Unidad completada!",
+  "lost": "Te quedaste sin corazones",
+  "lostP": "No pasa nada: cada error es una palabra que ahora conoces un poco mejor.",
+  "xp": "XP total",
+  "acc": "Precisión",
+  "time": "Tiempo",
+  "ex": "{n} ejercicios",
+  "min": "≈ 7 minutos",
+  "hearts": "corazones",
+  "best": "Tu mejor resultado",
+  "tap": "Toca las palabras en orden",
+  "type": "Escribe aquí…",
+  "perfect": "¡Sin un solo error! Brawo!",
+  "good": "¡Muy buen trabajo!",
+  "ok": "¡Bien hecho! Repite la unidad para mejorar tu precisión.",
+  "sound": "Sonido",
+  "listen": "Escuchar",
+  "meaning": "Significa:",
+  "yes": "Verdadero",
+  "no": "Falso",
+  "score": "Puntuación",
+  "level": "Tu nivel"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Une las parejas",
+   "pairs": [
+    [
+     "cześć",
+     "hola"
+    ],
+    [
+     "dziękuję",
+     "gracias"
+    ],
+    [
+     "tak",
+     "sí"
+    ],
+    [
+     "nie",
+     "no"
+    ],
+    [
+     "dobranoc",
+     "buenas noches"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "Dzień dobry",
+   "options": [
+    "Buenos días (formal)",
+    "Buenas noches",
+    "Adiós"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "¿Cómo se dice?",
+   "word": "Me llamo Mark.",
+   "options": [
+    "Mam na imię Mark.",
+    "Masz na imię Mark.",
+    "Jestem na imię Mark."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Ja",
+   "after": "Zosia.",
+   "options": [
+    "jestem",
+    "jesteś",
+    "jest"
+   ],
+   "answer": 0,
+   "es": "Soy Zosia."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Mark",
+   "after": "z Nowego Jorku.",
+   "options": [
+    "jest",
+    "są",
+    "jestem"
+   ],
+   "answer": 0,
+   "es": "Mark es de Nueva York."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "My",
+   "after": "na ty.",
+   "options": [
+    "jesteśmy",
+    "jesteście",
+    "są"
+   ],
+   "answer": 0,
+   "es": "Nos tuteamos."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Mark i Zosia",
+   "after": "w Warszawie.",
+   "options": [
+    "są",
+    "jest",
+    "jesteśmy"
+   ],
+   "answer": 0,
+   "es": "Mark y Zosia están en Varsovia."
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "Skąd jesteś?",
+   "options": [
+    "¿De dónde eres?",
+    "¿Cómo te llamas?",
+    "¿Qué tal estás?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Traduce",
+   "es": "Soy de Cracovia.",
+   "answer": [
+    "Jestem",
+    "z",
+    "Krakowa"
+   ],
+   "extra": [
+    "jest",
+    "Kraków"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Elige la respuesta correcta",
+   "question": "Skąd jest Zosia?",
+   "es": "¿De dónde es Zosia?",
+   "options": [
+    "Jest z Krakowa.",
+    "Jest z Nowego Jorku.",
+    "Jestem z Krakowa."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "¿Cómo se dice?",
+   "word": "No soy polaco.",
+   "options": [
+    "Nie jestem Polakiem.",
+    "Niejestem Polakiem.",
+    "Jestem nie Polakiem."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "Skąd pan jest?",
+   "options": [
+    "¿De dónde es usted?",
+    "¿Dónde está el señor?",
+    "¿Quién es usted?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "¿Verdadero o falso?",
+   "statement": "Mark jest z Krakowa.",
+   "answer": false,
+   "why": "No: Mark es de Nueva York; Zosia es de Cracovia."
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "Miło mi.",
+   "options": [
+    "Encantado.",
+    "Gracias.",
+    "Perdón."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "write",
+   "prompt": "Escríbelo",
+   "es": "gracias",
+   "answers": [
+    "dziękuję",
+    "dzięki"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Escríbelo",
+   "es": "Soy de Polonia.",
+   "answers": [
+    "Jestem z Polski",
+    "Ja jestem z Polski"
+   ]
+  }
+ ],
+ "keyboard": [
+  "ą",
+  "ć",
+  "ę",
+  "ł",
+  "ń",
+  "ó",
+  "ś",
+  "ź",
+  "ż"
+ ]
+}

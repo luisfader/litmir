@@ -1,0 +1,286 @@
+{
+ "title": "Mark jest fotografem",
+ "subtitle": "Profesiones, el instrumental, tres modelos de verbos, idiomas, números y edad.",
+ "speak": "pl-PL",
+ "hearts": 5,
+ "ui": {
+  "start": "Empezar",
+  "check": "Comprobar",
+  "next": "Continuar",
+  "skip": "No lo sé",
+  "retry": "Intentar de nuevo",
+  "again": "Repetir",
+  "back": "Volver a la unidad",
+  "great": [
+   "Świetnie!",
+   "Doskonale!",
+   "Brawo!",
+   "Super!",
+   "Bardzo dobrze!"
+  ],
+  "wrong": "Respuesta correcta:",
+  "almost": "¡Casi! Fíjate en los acentos:",
+  "done": "¡Unidad completada!",
+  "lost": "Te quedaste sin corazones",
+  "lostP": "No pasa nada: cada error es una palabra que ahora conoces un poco mejor.",
+  "xp": "XP total",
+  "acc": "Precisión",
+  "time": "Tiempo",
+  "ex": "{n} ejercicios",
+  "min": "≈ 7 minutos",
+  "hearts": "corazones",
+  "best": "Tu mejor resultado",
+  "tap": "Toca las palabras en orden",
+  "type": "Escribe aquí…",
+  "perfect": "¡Sin un solo error! Brawo!",
+  "good": "¡Muy buen trabajo!",
+  "ok": "¡Bien hecho! Repite la unidad para mejorar tu precisión.",
+  "sound": "Sonido",
+  "listen": "Escuchar",
+  "meaning": "Significa:",
+  "yes": "Verdadero",
+  "no": "Falso",
+  "score": "Puntuación",
+  "level": "Tu nivel"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Une las parejas",
+   "pairs": [
+    [
+     "fotograf",
+     "fotógrafo"
+    ],
+    [
+     "dziennikarka",
+     "periodista"
+    ],
+    [
+     "lekarz",
+     "médico"
+    ],
+    [
+     "nauczycielka",
+     "profesora"
+    ],
+    [
+     "kelner",
+     "camarero"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Mark jest",
+   "after": ".",
+   "options": [
+    "fotografem",
+    "fotograf",
+    "fotografą"
+   ],
+   "answer": 0,
+   "es": "Mark es fotógrafo."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Zosia jest",
+   "after": ".",
+   "options": [
+    "dziennikarką",
+    "dziennikarka",
+    "dziennikarkiem"
+   ],
+   "answer": 0,
+   "es": "Zosia es periodista."
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "Co robisz?",
+   "options": [
+    "¿A qué te dedicas? / ¿Qué haces?",
+    "¿Dónde vives?",
+    "¿Cuántos años tienes?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Ja",
+   "after": "po polsku.",
+   "options": [
+    "mówię",
+    "mówisz",
+    "mówi"
+   ],
+   "answer": 0,
+   "es": "Hablo polaco."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Ty",
+   "after": "teksty.",
+   "options": [
+    "piszesz",
+    "piszę",
+    "piszą"
+   ],
+   "answer": 0,
+   "es": "Tú escribes los textos."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Oni",
+   "after": "książkę.",
+   "options": [
+    "czytają",
+    "czytamy",
+    "czyta"
+   ],
+   "answer": 0,
+   "es": "Ellos leen un libro."
+  },
+  {
+   "type": "reverse",
+   "prompt": "¿Cómo se dice?",
+   "word": "No entiendo.",
+   "options": [
+    "Nie rozumiem.",
+    "Nierozumiem.",
+    "Rozumiem nie."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "po hiszpańsku",
+   "options": [
+    "en español",
+    "en italiano",
+    "en ruso"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Traduce",
+   "es": "¿Hablas inglés?",
+   "answer": [
+    "Czy",
+    "mówisz",
+    "po",
+    "angielsku"
+   ],
+   "extra": [
+    "mówię",
+    "angielski"
+   ]
+  },
+  {
+   "type": "match",
+   "prompt": "Une las parejas",
+   "pairs": [
+    [
+     "pięć",
+     "5"
+    ],
+    [
+     "dwanaście",
+     "12"
+    ],
+    [
+     "siedem",
+     "7"
+    ],
+    [
+     "dwadzieścia",
+     "20"
+    ],
+    [
+     "trzy",
+     "3"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Mam trzydzieści dwa",
+   "after": ".",
+   "options": [
+    "lata",
+    "lat",
+    "rok"
+   ],
+   "answer": 0,
+   "es": "Tengo treinta y dos años."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Mam dwadzieścia osiem",
+   "after": ".",
+   "options": [
+    "lat",
+    "lata",
+    "rok"
+   ],
+   "answer": 0,
+   "es": "Tengo veintiocho años."
+  },
+  {
+   "type": "story",
+   "prompt": "Elige la respuesta correcta",
+   "question": "Co robi Zosia?",
+   "es": "¿A qué se dedica Zosia?",
+   "options": [
+    "Jest dziennikarką.",
+    "Jest fotografem.",
+    "Jest kelnerką."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "¿Verdadero o falso?",
+   "statement": "Mark mówi trochę po polsku.",
+   "answer": true,
+   "why": "Sí: está aprendiendo polaco y no lo entiende todo."
+  },
+  {
+   "type": "write",
+   "prompt": "Escríbelo",
+   "es": "Soy fotógrafo.",
+   "answers": [
+    "Jestem fotografem",
+    "Ja jestem fotografem"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Escríbelo",
+   "es": "No entiendo.",
+   "answers": [
+    "Nie rozumiem"
+   ]
+  }
+ ],
+ "keyboard": [
+  "ą",
+  "ć",
+  "ę",
+  "ł",
+  "ń",
+  "ó",
+  "ś",
+  "ź",
+  "ż"
+ ]
+}

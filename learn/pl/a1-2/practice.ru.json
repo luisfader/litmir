@@ -1,0 +1,286 @@
+{
+ "title": "Mark jest fotografem",
+ "subtitle": "Профессии, творительный падеж, три модели глаголов, языки, числа и возраст.",
+ "speak": "pl-PL",
+ "hearts": 5,
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "Świetnie!",
+   "Doskonale!",
+   "Brawo!",
+   "Super!",
+   "Bardzo dobrze!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 7 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! Brawo!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "fotograf",
+     "фотограф"
+    ],
+    [
+     "dziennikarka",
+     "журналистка"
+    ],
+    [
+     "lekarz",
+     "врач"
+    ],
+    [
+     "nauczycielka",
+     "учительница"
+    ],
+    [
+     "kelner",
+     "официант"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Mark jest",
+   "after": ".",
+   "options": [
+    "fotografem",
+    "fotograf",
+    "fotografą"
+   ],
+   "answer": 0,
+   "es": "Марк — фотограф."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Zosia jest",
+   "after": ".",
+   "options": [
+    "dziennikarką",
+    "dziennikarka",
+    "dziennikarkiem"
+   ],
+   "answer": 0,
+   "es": "Зося — журналистка."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Co robisz?",
+   "options": [
+    "Чем ты занимаешься?",
+    "Где ты живёшь?",
+    "Сколько тебе лет?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Ja",
+   "after": "po polsku.",
+   "options": [
+    "mówię",
+    "mówisz",
+    "mówi"
+   ],
+   "answer": 0,
+   "es": "Я говорю по-польски."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Ty",
+   "after": "teksty.",
+   "options": [
+    "piszesz",
+    "piszę",
+    "piszą"
+   ],
+   "answer": 0,
+   "es": "Ты пишешь тексты."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Oni",
+   "after": "książkę.",
+   "options": [
+    "czytają",
+    "czytamy",
+    "czyta"
+   ],
+   "answer": 0,
+   "es": "Они читают книгу."
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать на изучаемом языке?",
+   "word": "Не понимаю.",
+   "options": [
+    "Nie rozumiem.",
+    "Nierozumiem.",
+    "Rozumiem nie."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "po hiszpańsku",
+   "options": [
+    "по-испански",
+    "по-итальянски",
+    "по-русски"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите",
+   "es": "Ты говоришь по-английски?",
+   "answer": [
+    "Czy",
+    "mówisz",
+    "po",
+    "angielsku"
+   ],
+   "extra": [
+    "mówię",
+    "angielski"
+   ]
+  },
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "pięć",
+     "5"
+    ],
+    [
+     "dwanaście",
+     "12"
+    ],
+    [
+     "siedem",
+     "7"
+    ],
+    [
+     "dwadzieścia",
+     "20"
+    ],
+    [
+     "trzy",
+     "3"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Mam trzydzieści dwa",
+   "after": ".",
+   "options": [
+    "lata",
+    "lat",
+    "rok"
+   ],
+   "answer": 0,
+   "es": "Мне тридцать два года."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Mam dwadzieścia osiem",
+   "after": ".",
+   "options": [
+    "lat",
+    "lata",
+    "rok"
+   ],
+   "answer": 0,
+   "es": "Мне двадцать восемь лет."
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "Co robi Zosia?",
+   "es": "Чем занимается Зося?",
+   "options": [
+    "Jest dziennikarką.",
+    "Jest fotografem.",
+    "Jest kelnerką."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Mark mówi trochę po polsku.",
+   "answer": true,
+   "why": "Да: он учит польский и понимает ещё не всё."
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Я фотограф.",
+   "answers": [
+    "Jestem fotografem",
+    "Ja jestem fotografem"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Не понимаю.",
+   "answers": [
+    "Nie rozumiem"
+   ]
+  }
+ ],
+ "keyboard": [
+  "ą",
+  "ć",
+  "ę",
+  "ł",
+  "ń",
+  "ó",
+  "ś",
+  "ź",
+  "ż"
+ ]
+}
