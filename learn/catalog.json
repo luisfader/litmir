@@ -907,6 +907,136 @@
      "cover": "novels/podzemni-tajemstvi/cover.jpg",
      "novel": "podzemni-tajemstvi",
      "image": "learn/cs/a1-10/image.jpg"
+    },
+    {
+     "id": "a2-1",
+     "level": "A2",
+     "n": 11,
+     "title": "Co se stalo na Karlštejně?",
+     "sub": {
+      "ru": "Прошедшее время (1): форма на -l, byl jsem, порядок слов, неправильные формы",
+      "en": "The past tense (1): the L-form, byl jsem, word order, irregular forms",
+      "es": "El pasado (1): la forma en -l, byl jsem, el orden de las palabras, formas irregulares"
+     },
+     "cover": "novels/predtucha/cover.jpg",
+     "novel": "predtucha"
+    },
+    {
+     "id": "a2-2",
+     "level": "A2",
+     "n": 12,
+     "title": "Robert hledal Natálii",
+     "sub": {
+      "ru": "Прошедшее время (2): возвратные глаголы, ses/sis, před + твор. падеж, když, биография",
+      "en": "The past tense (2): reflexive verbs, ses/sis, před + instrumental, když, life stories",
+      "es": "El pasado (2): verbos reflexivos, ses/sis, před + instrumental, když, biografías"
+     },
+     "cover": "novels/predtucha/cover.jpg",
+     "novel": "predtucha"
+    },
+    {
+     "id": "a2-3",
+     "level": "A2",
+     "n": 13,
+     "title": "Luis má plán",
+     "sub": {
+      "ru": "Вид глагола: делать и сделать, процесс и результат, будущее время",
+      "en": "Verbal aspect: doing and getting it done, process and result, the future",
+      "es": "El aspecto verbal: hacer y terminar, proceso y resultado, el futuro"
+     },
+     "cover": "novels/predtucha/cover.jpg",
+     "novel": "predtucha"
+    },
+    {
+     "id": "a2-4",
+     "level": "A2",
+     "n": 14,
+     "title": "S Lucií a s Janou",
+     "sub": {
+      "ru": "Творительный падеж: с кем? чем? кем? где? Местоимения со мной, с тобой",
+      "en": "The instrumental case: with whom, by what means, as what, and where. Se mnou, s tebou",
+      "es": "El instrumental: con quién, con qué, como qué y dónde. Se mnou, s tebou"
+     },
+     "cover": "novels/predtucha/cover.jpg",
+     "novel": "predtucha"
+    },
+    {
+     "id": "a2-5",
+     "level": "A2",
+     "n": 15,
+     "title": "Bez vody a bez světla",
+     "sub": {
+      "ru": "Родительный падеж: bez, do, z, od, u, количество и числа",
+      "en": "The genitive: bez, do, z, od, u, quantities and numbers",
+      "es": "El genitivo: bez, do, z, od, u, cantidades y números"
+     },
+     "cover": "novels/predtucha/cover.jpg",
+     "novel": "predtucha"
+    },
+    {
+     "id": "a2-6",
+     "level": "A2",
+     "n": 16,
+     "title": "Komu pomůžeme?",
+     "sub": {
+      "ru": "Дательный падеж: pomoct, děkovat, věřit, k, díky, kvůli, je mi zima",
+      "en": "The dative: pomoct, děkovat, věřit, k, díky, kvůli, je mi zima",
+      "es": "El dativo: pomoct, děkovat, věřit, k, díky, kvůli, je mi zima"
+     },
+     "cover": "novels/predtucha/cover.jpg",
+     "novel": "predtucha"
+    },
+    {
+     "id": "a2-7",
+     "level": "A2",
+     "n": 17,
+     "title": "Stůjte! Tady ne!",
+     "sub": {
+      "ru": "Повелительное наклонение: ty, vy, my. Запреты и вежливые просьбы",
+      "en": "The imperative: ty, vy, my. Prohibitions and polite requests",
+      "es": "El imperativo: ty, vy, my. Prohibiciones y peticiones corteses"
+     },
+     "cover": "novels/predtucha/cover.jpg",
+     "novel": "predtucha"
+    },
+    {
+     "id": "a2-8",
+     "level": "A2",
+     "n": 18,
+     "title": "Kdybych tě neztratil",
+     "sub": {
+      "ru": "Условное наклонение: bych, bys, by… Вежливые просьбы, kdyby и aby",
+      "en": "The conditional: bych, bys, by… Polite requests, kdyby and aby",
+      "es": "El condicional: bych, bys, by… Peticiones corteses, kdyby y aby"
+     },
+     "cover": "novels/predtucha/cover.jpg",
+     "novel": "predtucha"
+    },
+    {
+     "id": "a2-9",
+     "level": "A2",
+     "n": 19,
+     "title": "Nejsilnější žena v Utopii",
+     "sub": {
+      "ru": "Сравнительная и превосходная степень, «než», «čím… tím…». Придаточные с который и co",
+      "en": "Comparatives and superlatives, «než», «čím… tím…». Relative clauses with který and co",
+      "es": "Comparativo y superlativo, «než», «čím… tím…». Oraciones de relativo con který y co"
+     },
+     "cover": "novels/predtucha/cover.jpg",
+     "novel": "predtucha"
+    },
+    {
+     "id": "a2-10",
+     "level": "A2",
+     "n": 20,
+     "title": "Tři srdce",
+     "sub": {
+      "ru": "Чувства и отношения: глаголы эмоций, «je mi smutno», se/si. Повторение A2",
+      "en": "Feelings and relationships: verbs of emotion, «je mi smutno», se/si. A2 review",
+      "es": "Sentimientos y relaciones: verbos de emoción, «je mi smutno», se/si. Repaso del A2"
+     },
+     "cover": "novels/predtucha/cover.jpg",
+     "novel": "predtucha"
     }
    ]
   },

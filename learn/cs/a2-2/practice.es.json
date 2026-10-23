@@ -1,0 +1,296 @@
+{
+ "title": "Robert hledal Natálii",
+ "subtitle": "El pasado (2): verbos reflexivos, ses/sis, před + instrumental, když, biografías.",
+ "speak": "cs-CZ",
+ "hero": "novels/predtucha/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Empezar",
+  "check": "Comprobar",
+  "next": "Continuar",
+  "skip": "No lo sé",
+  "retry": "Intentar de nuevo",
+  "again": "Repetir",
+  "back": "Volver a la unidad",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Respuesta correcta:",
+  "almost": "¡Casi! Fíjate en los acentos:",
+  "done": "¡Unidad completada!",
+  "lost": "Te quedaste sin corazones",
+  "lostP": "No pasa nada: cada error es una palabra que ahora conoces un poco mejor.",
+  "xp": "XP total",
+  "acc": "Precisión",
+  "time": "Tiempo",
+  "ex": "{n} ejercicios",
+  "min": "≈ 7 minutos",
+  "hearts": "corazones",
+  "best": "Tu mejor resultado",
+  "tap": "Toca las palabras en orden",
+  "type": "Escribe aquí…",
+  "perfect": "¡Sin un solo error! ¡Increíble!",
+  "good": "¡Muy buen trabajo!",
+  "ok": "¡Bien hecho! Repite la unidad para mejorar tu precisión.",
+  "sound": "Sonido",
+  "listen": "Escuchar",
+  "meaning": "Significa:",
+  "yes": "Verdadero",
+  "no": "Falso",
+  "score": "Puntuación",
+  "level": "Tu nivel"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Une las parejas",
+   "pairs": [
+    [
+     "narodit se",
+     "nacer"
+    ],
+    [
+     "zemřít",
+     "morir"
+    ],
+    [
+     "ztratit",
+     "perder"
+    ],
+    [
+     "najít",
+     "encontrar"
+    ],
+    [
+     "hledat",
+     "buscar"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Robert ji",
+   "after": "dva roky.",
+   "options": [
+    "hledal",
+    "ztratil",
+    "narodil"
+   ],
+   "answer": 0,
+   "es": "Robert la buscó durante dos años."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Roberte, dal",
+   "after": "kávu?",
+   "options": [
+    "sis",
+    "ses",
+    "si jsi"
+   ],
+   "answer": 0,
+   "es": "Robert, ¿te tomaste un café?",
+   "why": "Dát si + jsi → dal sis."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Proč",
+   "after": "smála, Lucie?",
+   "options": [
+    "ses",
+    "sis",
+    "jsi"
+   ],
+   "answer": 0,
+   "es": "¿Por qué te reías, Lucie?",
+   "why": "Smát se + jsi → ses."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Lucie",
+   "after": "styděla.",
+   "options": [
+    "se",
+    "si",
+    "ji"
+   ],
+   "answer": 0,
+   "es": "Lucie tenía vergüenza.",
+   "why": "Stydět se; en 3.ª persona no hay jsem."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "Robert ztratil Natálii",
+   "after": "",
+   "options": [
+    "před šesti lety",
+    "před šest let",
+    "za šesti lety"
+   ],
+   "answer": 0,
+   "es": "Robert perdió a Natálie hace seis años.",
+   "why": "Před + instrumental: šesti lety."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "",
+   "after": "začala válka, nemocnice byla plná zraněných.",
+   "options": [
+    "Když",
+    "Až",
+    "Proč"
+   ],
+   "answer": 0,
+   "es": "Cuando empezó la guerra, el hospital estaba lleno de heridos.",
+   "why": "Když es «cuando» en un relato (kdy solo en preguntas); až es para el futuro."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa con la palabra que falta",
+   "before": "V nemocnici nenašli",
+   "after": ".",
+   "options": [
+    "nikoho",
+    "někoho",
+    "nikdo"
+   ],
+   "answer": 0,
+   "es": "No encontraron a nadie en el hospital."
+  },
+  {
+   "type": "choice",
+   "prompt": "¿Qué significa?",
+   "word": "Bál ses?",
+   "options": [
+    "¿Tuviste miedo?",
+    "¿Él tuvo miedo?",
+    "¿Te reías?"
+   ],
+   "answer": 0,
+   "why": "Ses = jsi + se, o sea, «tú»."
+  },
+  {
+   "type": "reverse",
+   "prompt": "¿Cómo se dice?",
+   "word": "Yo también te busqué. (dice Robert)",
+   "options": [
+    "Já jsem tě taky hledal.",
+    "Já tě jsem taky hledal.",
+    "Já jsem tě taky hledala."
+   ],
+   "answer": 0,
+   "why": "Orden: jsem → tě. Robert es hombre: hledal."
+  },
+  {
+   "type": "build",
+   "prompt": "Traduce",
+   "es": "Pensabas que yo era ella.",
+   "answer": [
+    "Myslel",
+    "sis,",
+    "že",
+    "jsem",
+    "ona."
+   ],
+   "extra": [
+    "ses",
+    "jsi"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Elige la respuesta correcta",
+   "question": "Kde pracovala Natálie, když začala válka?",
+   "es": "¿Dónde trabajaba Natálie cuando empezó la guerra?",
+   "options": [
+    "V nemocnici v Brně.",
+    "V nemocnici v Jihlavě.",
+    "Na Karlštejně."
+   ],
+   "answer": 0,
+   "why": "Era cirujana en Brno (capítulo 13)."
+  },
+  {
+   "type": "story",
+   "prompt": "Elige la respuesta correcta",
+   "question": "Kde našel Robert její jméno na seznamu mrtvých?",
+   "es": "¿Dónde encontró Robert su nombre en la lista de muertos?",
+   "options": [
+    "V Jihlavě.",
+    "V Brně.",
+    "V Praze."
+   ],
+   "answer": 0,
+   "why": "En Jihlava. Más tarde sabremos que la tenían presa allí (capítulo 37)."
+  },
+  {
+   "type": "tf",
+   "prompt": "¿Verdadero o falso?",
+   "statement": "Natálie opravdu zemřela v nemocnici.",
+   "answer": false,
+   "why": "No: sobrevivió. La tuvieron presa en Jihlava y la pusieron a propósito en la lista de muertos."
+  },
+  {
+   "type": "tf",
+   "prompt": "¿Verdadero o falso?",
+   "statement": "Robert nosil snubní prsten na krku.",
+   "answer": true,
+   "why": "Sí: en una correa de cuero, bajo la camisa (capítulo 15)."
+  },
+  {
+   "type": "write",
+   "prompt": "Escríbelo",
+   "es": "Nació en Praga.",
+   "answers": [
+    "Narodil se v Praze.",
+    "Narodil se v Praze",
+    "On se narodil v Praze.",
+    "On se narodil v Praze",
+    "V Praze se narodil.",
+    "V Praze se narodil"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Escríbelo",
+   "es": "Me tomé un café. (habla un hombre)",
+   "answers": [
+    "Dal jsem si kávu.",
+    "Dal jsem si kávu",
+    "Já jsem si dal kávu.",
+    "Já jsem si dal kávu",
+    "Dal jsem si kafe.",
+    "Dal jsem si kafe",
+    "Já jsem si dal kafe.",
+    "Já jsem si dal kafe"
+   ]
+  }
+ ],
+ "keyboard": [
+  "á",
+  "č",
+  "ď",
+  "é",
+  "ě",
+  "í",
+  "ň",
+  "ó",
+  "ř",
+  "š",
+  "ť",
+  "ú",
+  "ů",
+  "ý",
+  "ž"
+ ]
+}

@@ -1,0 +1,296 @@
+{
+ "title": "Robert hledal Natálii",
+ "subtitle": "Прошедшее время (2): возвратные глаголы, ses/sis, před + твор. падеж, když, биография.",
+ "speak": "cs-CZ",
+ "hero": "novels/predtucha/cover.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Дальше",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти ещё раз",
+  "back": "Вернуться к уроку",
+  "great": [
+   "¡Muy bien! Отлично!",
+   "¡Perfecto!",
+   "¡Correcto! Верно!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обратите внимание на ударения:",
+  "done": "Урок пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое вы теперь знаете чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} упражнений",
+  "min": "≈ 7 минут",
+  "hearts": "сердечек",
+  "best": "Ваш лучший результат",
+  "tap": "Нажимайте на слова по порядку",
+  "type": "Пишите здесь…",
+  "perfect": "Ни одной ошибки! ¡Increíble!",
+  "good": "Отличная работа!",
+  "ok": "Хорошо! Пройдите урок ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значение:",
+  "yes": "Верно",
+  "no": "Неверно",
+  "score": "Баллы",
+  "level": "Ваш уровень"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Соедините пары",
+   "pairs": [
+    [
+     "narodit se",
+     "родиться"
+    ],
+    [
+     "zemřít",
+     "умереть"
+    ],
+    [
+     "ztratit",
+     "потерять"
+    ],
+    [
+     "najít",
+     "найти"
+    ],
+    [
+     "hledat",
+     "искать"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Robert ji",
+   "after": "dva roky.",
+   "options": [
+    "hledal",
+    "ztratil",
+    "narodil"
+   ],
+   "answer": 0,
+   "es": "Роберт искал её два года."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Roberte, dal",
+   "after": "kávu?",
+   "options": [
+    "sis",
+    "ses",
+    "si jsi"
+   ],
+   "answer": 0,
+   "es": "Роберт, ты взял себе кофе?",
+   "why": "Dát si + jsi → dal sis."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Proč",
+   "after": "smála, Lucie?",
+   "options": [
+    "ses",
+    "sis",
+    "jsi"
+   ],
+   "answer": 0,
+   "es": "Почему ты смеялась, Люцие?",
+   "why": "Smát se + jsi → ses."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Lucie",
+   "after": "styděla.",
+   "options": [
+    "se",
+    "si",
+    "ji"
+   ],
+   "answer": 0,
+   "es": "Люцие было стыдно.",
+   "why": "Stydět se; в 3-м лице нет jsem."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "Robert ztratil Natálii",
+   "after": "",
+   "options": [
+    "před šesti lety",
+    "před šest let",
+    "za šesti lety"
+   ],
+   "answer": 0,
+   "es": "Роберт потерял Натали шесть лет назад.",
+   "why": "Před + творительный: šesti lety."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "",
+   "after": "začala válka, nemocnice byla plná zraněných.",
+   "options": [
+    "Když",
+    "Až",
+    "Proč"
+   ],
+   "answer": 0,
+   "es": "Когда началась война, больница была полна раненых.",
+   "why": "Když — «когда» в рассказе (kdy — только в вопросе); až — о будущем."
+  },
+  {
+   "type": "fill",
+   "prompt": "Вставьте пропущенное слово",
+   "before": "V nemocnici nenašli",
+   "after": ".",
+   "options": [
+    "nikoho",
+    "někoho",
+    "nikdo"
+   ],
+   "answer": 0,
+   "es": "В больнице никого не нашли."
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "Bál ses?",
+   "options": [
+    "Ты боялся?",
+    "Он боялся?",
+    "Ты смеялся?"
+   ],
+   "answer": 0,
+   "why": "Ses = jsi + se, то есть «ты»."
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как это сказать на изучаемом языке?",
+   "word": "Я тебя тоже искал. (говорит Роберт)",
+   "options": [
+    "Já jsem tě taky hledal.",
+    "Já tě jsem taky hledal.",
+    "Já jsem tě taky hledala."
+   ],
+   "answer": 0,
+   "why": "Порядок: jsem → tě. Роберт — мужчина: hledal."
+  },
+  {
+   "type": "build",
+   "prompt": "Переведите",
+   "es": "Ты думал, что я — это она.",
+   "answer": [
+    "Myslel",
+    "sis,",
+    "že",
+    "jsem",
+    "ona."
+   ],
+   "extra": [
+    "ses",
+    "jsi"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "Kde pracovala Natálie, když začala válka?",
+   "es": "Где работала Натали, когда началась война?",
+   "options": [
+    "V nemocnici v Brně.",
+    "V nemocnici v Jihlavě.",
+    "Na Karlštejně."
+   ],
+   "answer": 0,
+   "why": "Она была хирургом в Брно (глава 13)."
+  },
+  {
+   "type": "story",
+   "prompt": "Выберите правильный ответ",
+   "question": "Kde našel Robert její jméno na seznamu mrtvých?",
+   "es": "Где Роберт нашёл её имя в списке погибших?",
+   "options": [
+    "V Jihlavě.",
+    "V Brně.",
+    "V Praze."
+   ],
+   "answer": 0,
+   "why": "В Йиглаве. Позже окажется, что там её и держали (глава 37)."
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Natálie opravdu zemřela v nemocnici.",
+   "answer": false,
+   "why": "Нет: она выжила. Её держали в Йиглаве и специально внесли в список погибших."
+  },
+  {
+   "type": "tf",
+   "prompt": "Верно или неверно?",
+   "statement": "Robert nosil snubní prsten na krku.",
+   "answer": true,
+   "why": "Да: на кожаном ремешке, под рубашкой (глава 15)."
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Он родился в Праге.",
+   "answers": [
+    "Narodil se v Praze.",
+    "Narodil se v Praze",
+    "On se narodil v Praze.",
+    "On se narodil v Praze",
+    "V Praze se narodil.",
+    "V Praze se narodil"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Напишите",
+   "es": "Я взял себе кофе. (мужчина)",
+   "answers": [
+    "Dal jsem si kávu.",
+    "Dal jsem si kávu",
+    "Já jsem si dal kávu.",
+    "Já jsem si dal kávu",
+    "Dal jsem si kafe.",
+    "Dal jsem si kafe",
+    "Já jsem si dal kafe.",
+    "Já jsem si dal kafe"
+   ]
+  }
+ ],
+ "keyboard": [
+  "á",
+  "č",
+  "ď",
+  "é",
+  "ě",
+  "í",
+  "ň",
+  "ó",
+  "ř",
+  "š",
+  "ť",
+  "ú",
+  "ů",
+  "ý",
+  "ž"
+ ]
+}
