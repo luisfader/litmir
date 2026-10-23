@@ -5320,11 +5320,46 @@
         {
           "file": "11.md",
           "title": "El Tío, el Yate y la Patrulla Zorro"
+        },
+        {
+          "file": "12.md",
+          "title": "El Espejo Roto"
+        },
+        {
+          "file": "13.md",
+          "title": "La Venganza del Pingüino"
+        },
+        {
+          "file": "14.md",
+          "title": "Coatíes y Cataratas"
+        },
+        {
+          "file": "15.md",
+          "title": "El Subsecretario"
+        },
+        {
+          "file": "16.md",
+          "title": "Carnaval en la Quebrada"
+        },
+        {
+          "file": "17.md",
+          "title": "El Tío Cacho Tiene un Plan (Malísimo)"
+        },
+        {
+          "file": "18.md",
+          "title": "Puente del Inca"
+        },
+        {
+          "file": "19.md",
+          "title": "El Espejo Entero"
+        },
+        {
+          "file": "20.md",
+          "title": "Kilómetro Cero"
         }
       ],
       "cover": "novels/anomalia/cover.jpg",
-      "stars": 3.5,
-      "wip": true
+      "stars": 3.5
     },
     {
       "slug": "la-chica-del-retrato",
