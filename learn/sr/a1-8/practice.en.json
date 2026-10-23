@@ -1,0 +1,301 @@
+{
+ "title": "Пут у Голубац",
+ "subtitle": "The future tense: ићи ћу, читаћу, нећемо. Transport: аутобусом, возом, мотором.",
+ "speak": "sr-RS",
+ "hero": "learn/sr/img/08-put.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "keyboard": [
+  "а",
+  "б",
+  "в",
+  "г",
+  "д",
+  "ђ",
+  "е",
+  "ж",
+  "з",
+  "и",
+  "ј",
+  "к",
+  "л",
+  "љ",
+  "м",
+  "н",
+  "њ",
+  "о",
+  "п",
+  "р",
+  "с",
+  "т",
+  "ћ",
+  "у",
+  "ф",
+  "х",
+  "ц",
+  "ч",
+  "џ",
+  "ш"
+ ],
+ "translit": "sr",
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "воз",
+     "train"
+    ],
+    [
+     "аутобус",
+     "bus"
+    ],
+    [
+     "пешке",
+     "on foot"
+    ],
+    [
+     "брод",
+     "boat"
+    ],
+    [
+     "тврђава",
+     "fortress"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Сутра ћемо",
+   "after": "у Голубац.",
+   "options": [
+    "ићи",
+    "ишли",
+    "идемо"
+   ],
+   "answer": 0,
+   "es": "Tomorrow we’ll go to Golubac."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Ја",
+   "after": "возити.",
+   "options": [
+    "ћу",
+    "ће",
+    "ћемо"
+   ],
+   "answer": 0,
+   "es": "I’ll ride."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Идемо у Голубац",
+   "after": "",
+   "options": [
+    "мотором",
+    "мотор",
+    "мотора"
+   ],
+   "answer": 0,
+   "es": "We’re going to Golubac by motorbike.",
+   "why": "By… → instrumental -ом."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Не,",
+   "after": "ићи аутобусом.",
+   "options": [
+    "нећу",
+    "нисам",
+    "не"
+   ],
+   "answer": 0,
+   "es": "No, I won’t go by bus."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Пут иде поред",
+   "after": "",
+   "options": [
+    "Дунава",
+    "Дунав",
+    "Дунаву"
+   ],
+   "answer": 0,
+   "es": "The road runs along the Danube."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "воз",
+   "options": [
+    "train",
+    "car",
+    "cart"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Кренућемо рано.",
+   "options": [
+    "We’ll set off early.",
+    "We arrived early.",
+    "We’re getting up early."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "прекосутра",
+   "options": [
+    "the day after tomorrow",
+    "the day before yesterday",
+    "next week"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "I’ll read",
+   "options": [
+    "читаћу",
+    "читати ћу",
+    "читао сам"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "by train",
+   "options": [
+    "возом",
+    "у воз",
+    "на возу"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "Tomorrow we will go by motorbike.",
+   "answer": [
+    "Сутра",
+    "ћемо",
+    "ићи",
+    "мотором."
+   ],
+   "extra": [
+    "мотор",
+    "ће"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Шта је Голубац?",
+   "es": "What is Golubac?",
+   "options": [
+    "Стара тврђава на Дунаву.",
+    "Ресторан у Скадарлији.",
+    "Мост у Београду."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Колико ће путовати?",
+   "es": "How long will they travel?",
+   "options": [
+    "Око три сата.",
+    "Цео дан.",
+    "Пола сата."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Луис и Наташа ће ићи аутобусом.",
+   "answer": false,
+   "why": "«Не, мотором!»"
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Кренуће рано, у седам.",
+   "answer": true,
+   "why": "«Кренућемо рано, у седам.»"
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "tomorrow",
+   "answers": [
+    "сутра"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "I won’t go.",
+   "answers": [
+    "Нећу ићи.",
+    "Нећу ићи",
+    "Ја нећу ићи.",
+    "Ја нећу ићи"
+   ]
+  }
+ ]
+}

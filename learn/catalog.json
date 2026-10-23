@@ -1147,6 +1147,84 @@
      "cover": "novels/divlji-chas/cover-v2.jpg",
      "novel": "divlji-chas",
      "image": "learn/sr/img/04-mapa.jpg"
+    },
+    {
+     "id": "a1-5",
+     "level": "A1",
+     "n": 5,
+     "title": "Добро јутро, Луисе!",
+     "sub": {
+      "ru": "Возвратные глаголы с СЕ, который час, части дня, дни недели",
+      "en": "Reflexive verbs with СЕ, telling the time, parts of the day, days of the week"
+     },
+     "cover": "novels/divlji-chas/cover-v2.jpg",
+     "novel": "divlji-chas",
+     "image": "learn/sr/img/05-jutro.jpg"
+    },
+    {
+     "id": "a1-6",
+     "level": "A1",
+     "n": 6,
+     "title": "У ресторану",
+     "sub": {
+      "ru": "Винительный падеж, ХТЕТИ, ЈЕСТИ, ПИТИ, еда и напитки, фразы в ресторане",
+      "en": "The accusative case, ХТЕТИ, ЈЕСТИ, ПИТИ, food and drink, restaurant phrases"
+     },
+     "cover": "novels/divlji-chas/cover-v2.jpg",
+     "novel": "divlji-chas",
+     "image": "learn/sr/img/06-restoran.jpg"
+    },
+    {
+     "id": "a1-7",
+     "level": "A1",
+     "n": 7,
+     "title": "Легенда о змају",
+     "sub": {
+      "ru": "Прошедшее время (перфект), отрицание и вопрос в прошедшем, слова времени",
+      "en": "The past tense (perfect), negation and questions in the past, time words"
+     },
+     "cover": "novels/divlji-chas/cover-v2.jpg",
+     "novel": "divlji-chas",
+     "image": "learn/sr/img/07-legenda.jpg"
+    },
+    {
+     "id": "a1-8",
+     "level": "A1",
+     "n": 8,
+     "title": "Пут у Голубац",
+     "sub": {
+      "ru": "Будущее время (футур), транспорт и творительный падеж, планы",
+      "en": "The future tense, transport and the instrumental case, making plans"
+     },
+     "cover": "novels/divlji-chas/cover-v2.jpg",
+     "novel": "divlji-chas",
+     "image": "learn/sr/img/08-put.jpg"
+    },
+    {
+     "id": "a1-9",
+     "level": "A1",
+     "n": 9,
+     "title": "Црвена сукња",
+     "sub": {
+      "ru": "Одежда, цвета и согласование прилагательных, ОВАЈ / ТАЈ, «Колико кошта?», числа до 1000",
+      "en": "Clothes, colours and adjective agreement, ОВАЈ / ТАЈ, «Колико кошта?», numbers to 1000"
+     },
+     "cover": "novels/divlji-chas/cover-v2.jpg",
+     "novel": "divlji-chas",
+     "image": "learn/sr/img/09-prodavnica.jpg"
+    },
+    {
+     "id": "a1-10",
+     "level": "A1",
+     "n": 10,
+     "title": "Зима у Београду",
+     "sub": {
+      "ru": "Погода, времена года, месяцы, сравнительная степень (топлији, бољи), НЕГО",
+      "en": "Weather, seasons, months, comparatives (топлији, бољи), НЕГО"
+     },
+     "cover": "novels/divlji-chas/cover-v2.jpg",
+     "novel": "divlji-chas",
+     "image": "learn/sr/img/10-zima.jpg"
     }
    ]
   },

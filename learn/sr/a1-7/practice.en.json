@@ -1,0 +1,302 @@
+{
+ "title": "Легенда о змају",
+ "subtitle": "The past tense: био сам, радила је, нисмо знали.",
+ "speak": "sr-RS",
+ "hero": "learn/sr/img/07-legenda.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "keyboard": [
+  "а",
+  "б",
+  "в",
+  "г",
+  "д",
+  "ђ",
+  "е",
+  "ж",
+  "з",
+  "и",
+  "ј",
+  "к",
+  "л",
+  "љ",
+  "м",
+  "н",
+  "њ",
+  "о",
+  "п",
+  "р",
+  "с",
+  "т",
+  "ћ",
+  "у",
+  "ф",
+  "х",
+  "ц",
+  "ч",
+  "џ",
+  "ш"
+ ],
+ "translit": "sr",
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "змај",
+     "dragon"
+    ],
+    [
+     "чувар",
+     "guard"
+    ],
+    [
+     "бајка",
+     "fairy tale"
+    ],
+    [
+     "јуче",
+     "yesterday"
+    ],
+    [
+     "књига",
+     "book"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Јуче смо",
+   "after": "на Калемегдану.",
+   "options": [
+    "били",
+    "био",
+    "била"
+   ],
+   "answer": 0,
+   "es": "Yesterday we were at Kalemegdan."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Наташа је",
+   "after": "стару књигу.",
+   "options": [
+    "читала",
+    "читао",
+    "читали"
+   ],
+   "answer": 0,
+   "es": "Natasha read an old book.",
+   "why": "Natasha is a woman → -ла."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Луис је",
+   "after": "у музеј.",
+   "options": [
+    "ишао",
+    "ишла",
+    "ићи"
+   ],
+   "answer": 0,
+   "es": "Luis went to the museum."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "",
+   "after": "знала! — каже Наташа.",
+   "options": [
+    "Нисам",
+    "Није",
+    "Нисмо"
+   ],
+   "answer": 0,
+   "es": "«I didn’t know!» says Natasha."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Овде је",
+   "after": "змај.",
+   "options": [
+    "живео",
+    "живела",
+    "живели"
+   ],
+   "answer": 0,
+   "es": "A dragon lived here."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "пре петсто година",
+   "options": [
+    "five hundred years ago",
+    "in five hundred years",
+    "for five hundred years"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Јеси ли знала?",
+   "options": [
+    "Did you know?",
+    "Do you know?",
+    "Will you know?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "прошле недеље",
+   "options": [
+    "last week",
+    "next week",
+    "on Sunday"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "I thought (man speaking)",
+   "options": [
+    "мислио сам",
+    "мислила сам",
+    "мислим"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "she went",
+   "options": [
+    "ишла је",
+    "ишао је",
+    "иде"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "Yesterday we were in the underground.",
+   "answer": [
+    "Јуче",
+    "смо",
+    "били",
+    "у",
+    "подземљу."
+   ],
+   "extra": [
+    "су",
+    "био"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Шта је имао стари чувар?",
+   "es": "What did the old guard have?",
+   "options": [
+    "Стару књигу.",
+    "Стари мач.",
+    "Стару мапу."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Шта је радио змај?",
+   "es": "What did the dragon do?",
+   "options": [
+    "Чувао је град.",
+    "Спавао је у реци.",
+    "Јео је људе."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Наташин деда је причао о змају.",
+   "answer": true,
+   "why": "«Мој деда је причао о змају.»"
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Луис је мислио да је змај стварно живео.",
+   "answer": false,
+   "why": "He thought it was just a fairy tale: «да је то само бајка»."
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "yesterday",
+   "answers": [
+    "јуче"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "I was (man speaking)",
+   "answers": [
+    "био сам",
+    "Био сам",
+    "ја сам био",
+    "Ја сам био"
+   ]
+  }
+ ]
+}

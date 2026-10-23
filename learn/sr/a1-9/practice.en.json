@@ -1,0 +1,301 @@
+{
+ "title": "Црвена сукња",
+ "subtitle": "Shopping: clothes, colours, prices and the construction «да + present tense».",
+ "speak": "sr-RS",
+ "hero": "learn/sr/img/09-prodavnica.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "keyboard": [
+  "а",
+  "б",
+  "в",
+  "г",
+  "д",
+  "ђ",
+  "е",
+  "ж",
+  "з",
+  "и",
+  "ј",
+  "к",
+  "л",
+  "љ",
+  "м",
+  "н",
+  "њ",
+  "о",
+  "п",
+  "р",
+  "с",
+  "т",
+  "ћ",
+  "у",
+  "ф",
+  "х",
+  "ц",
+  "ч",
+  "џ",
+  "ш"
+ ],
+ "translit": "sr",
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "сукња",
+     "skirt"
+    ],
+    [
+     "хаљина",
+     "dress"
+    ],
+    [
+     "кошуља",
+     "shirt"
+    ],
+    [
+     "ципеле",
+     "shoes"
+    ],
+    [
+     "шал",
+     "scarf"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Наташа тражи црвену",
+   "after": "",
+   "options": [
+    "сукњу",
+    "сукња",
+    "сукњи"
+   ],
+   "answer": 0,
+   "es": "Natasha is looking for a red skirt."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "",
+   "after": "хаљина је лепа.",
+   "options": [
+    "Ова",
+    "Овај",
+    "Ово"
+   ],
+   "answer": 0,
+   "es": "This dress is pretty."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Колико",
+   "after": "ципеле?",
+   "options": [
+    "коштају",
+    "кошта",
+    "коштам"
+   ],
+   "answer": 0,
+   "es": "How much are the shoes?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Сукња кошта три",
+   "after": "динара.",
+   "options": [
+    "хиљаде",
+    "хиљада",
+    "хиљаду"
+   ],
+   "answer": 0,
+   "es": "The skirt costs three thousand dinars."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Могу ли да",
+   "after": "?",
+   "options": [
+    "пробам",
+    "пробати",
+    "пробао"
+   ],
+   "answer": 0,
+   "es": "May I try it on?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Луис има",
+   "after": "капут.",
+   "options": [
+    "плав",
+    "плава",
+    "плаво"
+   ],
+   "answer": 0,
+   "es": "Luis has a blue coat."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Колико кошта?",
+   "options": [
+    "How much is it?",
+    "What colour is it?",
+    "Where is it?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "бео",
+   "options": [
+    "white",
+    "black",
+    "blue"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Одлично ти стоји!",
+   "options": [
+    "It really suits you!",
+    "It’s standing well!",
+    "It’s very expensive!"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "I’ll take it!",
+   "options": [
+    "Узећу је!",
+    "Узела сам!",
+    "Узми је!"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "I want to buy a red skirt.",
+   "answer": [
+    "Желим",
+    "да",
+    "купим",
+    "црвену",
+    "сукњу."
+   ],
+   "extra": [
+    "купити",
+    "црвена"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Шта тражи Наташа?",
+   "es": "What is Natasha looking for?",
+   "options": [
+    "Црвену сукњу са везом.",
+    "Плаву хаљину.",
+    "Црне чизме."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Колико кошта сукња?",
+   "es": "How much is the skirt?",
+   "options": [
+    "Три хиљаде динара.",
+    "Триста динара.",
+    "Пет хиљада динара."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Луис каже да сукња Наташи одлично стоји.",
+   "answer": true,
+   "why": "«Ова сукња ти одлично стоји!»"
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Наташа не купује сукњу.",
+   "answer": false,
+   "why": "«Узећу је!» — she takes it."
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "red (skirt)",
+   "answers": [
+    "црвена"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "How much is it?",
+   "answers": [
+    "Колико кошта?",
+    "Колико кошта"
+   ]
+  }
+ ]
+}

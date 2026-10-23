@@ -1,0 +1,288 @@
+{
+ "title": "Добро јутро, Луисе!",
+ "subtitle": "Reflexive verbs, «Колико је сати?», parts of the day and days of the week.",
+ "speak": "sr-RS",
+ "hero": "learn/sr/img/05-jutro.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "keyboard": [
+  "а",
+  "б",
+  "в",
+  "г",
+  "д",
+  "ђ",
+  "е",
+  "ж",
+  "з",
+  "и",
+  "ј",
+  "к",
+  "л",
+  "љ",
+  "м",
+  "н",
+  "њ",
+  "о",
+  "п",
+  "р",
+  "с",
+  "т",
+  "ћ",
+  "у",
+  "ф",
+  "х",
+  "ц",
+  "ч",
+  "џ",
+  "ш"
+ ],
+ "translit": "sr",
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "будити се",
+     "to wake up"
+    ],
+    [
+     "облачити се",
+     "to get dressed"
+    ],
+    [
+     "ујутру",
+     "in the morning"
+    ],
+    [
+     "увече",
+     "in the evening"
+    ],
+    [
+     "среда",
+     "Wednesday"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Луис се буди у седам",
+   "after": "",
+   "options": [
+    "сати",
+    "сат",
+    "сата"
+   ],
+   "answer": 0,
+   "es": "Luis wakes up at seven o’clock."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Сада је два",
+   "after": "",
+   "options": [
+    "сата",
+    "сати",
+    "сат"
+   ],
+   "answer": 0,
+   "es": "It’s two o’clock now.",
+   "why": "After 2, 3, 4 → сата."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Ја",
+   "after": "будим у осам.",
+   "options": [
+    "се",
+    "си",
+    "сам"
+   ],
+   "answer": 0,
+   "es": "I wake up at eight."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Видимо се у",
+   "after": "",
+   "options": [
+    "среду",
+    "среда",
+    "среди"
+   ],
+   "answer": 0,
+   "es": "See you on Wednesday."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Наташа ради до",
+   "after": "",
+   "options": [
+    "пет",
+    "петак",
+    "пета"
+   ],
+   "answer": 0,
+   "es": "Natasha works until five."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "пола осам",
+   "options": [
+    "7:30",
+    "8:30",
+    "8:15"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "поподне",
+   "options": [
+    "in the afternoon",
+    "at night",
+    "at noon"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "недеља",
+   "options": [
+    "Sunday",
+    "Monday",
+    "Saturday"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "What time is it?",
+   "options": [
+    "Колико је сати?",
+    "Колико сати имаш?",
+    "Где је сат?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "I get up at seven o’clock.",
+   "answer": [
+    "Устајем",
+    "у",
+    "седам",
+    "сати."
+   ],
+   "extra": [
+    "сата",
+    "се"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Шта Луис ради ујутру?",
+   "es": "What does Luis do in the morning?",
+   "options": [
+    "Свира гитару.",
+    "Ради у фирми.",
+    "Спава до подне."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Где се виде Луис и Наташа?",
+   "es": "Where do Luis and Natasha meet?",
+   "options": [
+    "На Калемегдану.",
+    "У ресторану.",
+    "На мосту."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Наташа ради до седам.",
+   "answer": false,
+   "why": "«Радим до пет.»"
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "Луис се буди у седам сати.",
+   "answer": true,
+   "why": "«Луис се буди у седам сати.»"
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "tomorrow",
+   "answers": [
+    "сутра"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "Good morning!",
+   "answers": [
+    "Добро јутро!",
+    "Добро јутро"
+   ]
+  }
+ ]
+}

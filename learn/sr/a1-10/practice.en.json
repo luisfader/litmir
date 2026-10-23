@@ -1,0 +1,300 @@
+{
+ "title": "Зима у Београду",
+ "subtitle": "Weather, seasons and months. Comparatives: топлији, лепши, бољи.",
+ "speak": "sr-RS",
+ "hero": "learn/sr/img/10-zima.jpg",
+ "hearts": 5,
+ "ui": {
+  "start": "Start",
+  "check": "Check",
+  "next": "Continue",
+  "skip": "I don't know",
+  "retry": "Try again",
+  "again": "Do it again",
+  "back": "Back to the unit",
+  "great": [
+   "¡Muy bien!",
+   "¡Perfecto!",
+   "¡Correcto!",
+   "¡Excelente!",
+   "¡Bravo!"
+  ],
+  "wrong": "Correct answer:",
+  "almost": "Almost! Watch the accents:",
+  "done": "Unit complete!",
+  "lost": "You ran out of hearts",
+  "lostP": "No problem: every mistake is a word you now know a little better.",
+  "xp": "Total XP",
+  "acc": "Accuracy",
+  "time": "Time",
+  "ex": "{n} exercises",
+  "min": "≈ 7 minutes",
+  "hearts": "hearts",
+  "best": "Your best result",
+  "tap": "Tap the words in order",
+  "type": "Type here…",
+  "perfect": "Not a single mistake! ¡Increíble!",
+  "good": "Great job!",
+  "ok": "Well done! Do the unit again to improve your accuracy.",
+  "sound": "Sound",
+  "listen": "Listen",
+  "meaning": "Meaning:",
+  "yes": "True",
+  "no": "False",
+  "score": "Score",
+  "level": "Your level"
+ },
+ "keyboard": [
+  "а",
+  "б",
+  "в",
+  "г",
+  "д",
+  "ђ",
+  "е",
+  "ж",
+  "з",
+  "и",
+  "ј",
+  "к",
+  "л",
+  "љ",
+  "м",
+  "н",
+  "њ",
+  "о",
+  "п",
+  "р",
+  "с",
+  "т",
+  "ћ",
+  "у",
+  "ф",
+  "х",
+  "ц",
+  "ч",
+  "џ",
+  "ш"
+ ],
+ "translit": "sr",
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Match the pairs",
+   "pairs": [
+    [
+     "зима",
+     "winter"
+    ],
+    [
+     "лето",
+     "summer"
+    ],
+    [
+     "пролеће",
+     "spring"
+    ],
+    [
+     "јесен",
+     "autumn"
+    ],
+    [
+     "ветар",
+     "wind"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Пада",
+   "after": ", хладно је.",
+   "options": [
+    "снег",
+    "сунце",
+    "лето"
+   ],
+   "answer": 0,
+   "es": "It’s snowing, it’s cold."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Лето је",
+   "after": "него зима.",
+   "options": [
+    "топлије",
+    "топло",
+    "топлији"
+   ],
+   "answer": 0,
+   "es": "Summer is warmer than winter.",
+   "why": "Лето is neuter → топлије."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Мој рођендан је у",
+   "after": "",
+   "options": [
+    "мају",
+    "мај",
+    "маја"
+   ],
+   "answer": 0,
+   "es": "My birthday is in May."
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Какво је",
+   "after": "данас?",
+   "options": [
+    "време",
+    "сат",
+    "лето"
+   ],
+   "answer": 0,
+   "es": "What’s the weather like today?"
+  },
+  {
+   "type": "fill",
+   "prompt": "Fill in the missing word",
+   "before": "Београд је",
+   "after": "од Новог Сада.",
+   "options": [
+    "већи",
+    "велики",
+    "мањи"
+   ],
+   "answer": 0,
+   "es": "Belgrade is bigger than Novi Sad."
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "Облачно је.",
+   "options": [
+    "It’s cloudy.",
+    "It’s sunny.",
+    "It’s windy."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "бољи",
+   "options": [
+    "better",
+    "worse",
+    "bigger"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "What does it mean?",
+   "word": "време",
+   "options": [
+    "weather / time",
+    "season",
+    "year"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "It’s raining.",
+   "options": [
+    "Пада киша.",
+    "Иде киша.",
+    "Киши је."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "How do you say it?",
+   "word": "in winter",
+   "options": [
+    "зими",
+    "у зима",
+    "на зиму"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Translate",
+   "es": "Summer is warmer than winter.",
+   "answer": [
+    "Лето",
+    "је",
+    "топлије",
+    "него",
+    "зима."
+   ],
+   "extra": [
+    "топао",
+    "од"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Шта пију Луис и Наташа?",
+   "es": "What are Luis and Natasha drinking?",
+   "options": [
+    "Топлу чоколаду.",
+    "Хладан сок.",
+    "Ракију."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Choose the right answer",
+   "question": "Какво је време у Буенос Ајресу у децембру?",
+   "es": "What’s the weather like in Buenos Aires in December?",
+   "options": [
+    "Топло и сунчано.",
+    "Хладно и облачно.",
+    "Пада снег."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "У Београду је минус пет.",
+   "answer": true,
+   "why": "«Овде је минус пет.»"
+  },
+  {
+   "type": "tf",
+   "prompt": "True or false?",
+   "statement": "У Аргентини је у децембру зима.",
+   "answer": false,
+   "why": "«У Аргентини је сада лето.»"
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "It’s cold.",
+   "answers": [
+    "Хладно је.",
+    "Хладно је"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Write it",
+   "es": "better",
+   "answers": [
+    "бољи"
+   ]
+  }
+ ]
+}
