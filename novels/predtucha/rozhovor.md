@@ -6,11 +6,11 @@
 
 **Luis:** Nekreslím plány.
 
-**Lucie:** Kreslí plány. V noci. Pod dekou, s baterkou. Myslí si, že to nevidíme.
+**Lucie:** Kreslí plány. V noci. Pod dekou, s **baterkou**{linterna|torch}. Myslí si, že to nevidíme.
 
 **Novinář:** Začněme od začátku. Luisi, jak jste se vy tři poznali?
 
-**Luis:** S Lucií v Praze. Na začátku války. V Holešovicích, na střeše. Hořel celý sever města a my jsme seděli na střeše a nevěděli jsme, jestli se dožijeme rána.
+**Luis:** S Lucií v Praze. Na začátku války. V Holešovicích, na střeše. Hořel celý sever města a my jsme seděli na střeše a nevěděli jsme, jestli se **dožijeme**{llegaríamos vivos|would live to see} rána.
 
 **Lucie:** On měl strach. Já ne.
 
@@ -36,7 +36,7 @@
 
 **Luis:** Sama.
 
-**Lucie:** Říkáš to pořád. Lidi si budou myslet, že jsem nějaký obr.
+**Lucie:** Říkáš to pořád. Lidi si budou myslet, že jsem nějaký **obr**{gigante|giant}.
 
 **Jana:** Jsi trochu obr.
 
@@ -44,11 +44,11 @@
 
 **Novinář:** Odkud ta síla pochází?
 
-**Lucie:** *(dlouho mlčí)* Z **kořenů**{raíces|roots}. Babička říkala, že Slované nikdy nevyhrávali, protože byli silnější. Vyhrávali, protože se nedali vykořenit. Já jsem tři roky žila pod zemí, v tunelech metra. Když nade mnou hořelo město, zpívala jsem si babiččinu písničku. Myslím, že tam jsem zapustila kořeny. V té tmě. Proto mě teď nic nevytrhne.
+**Lucie:** *(dlouho mlčí)* Z **kořenů**{raíces|roots}. Babička říkala, že Slované nikdy nevyhrávali, protože byli silnější. Vyhrávali, protože se nedali **vykořenit**{desarraigar|be uprooted}. Já jsem tři roky žila pod zemí, v tunelech metra. Když nade mnou hořelo město, zpívala jsem si babiččinu písničku. Myslím, že tam jsem **zapustila kořeny**{eché raíces|put down roots}. V té tmě. Proto mě teď nic nevytrhne.
 
-**Novinář:** Jano, vy jste během obléhání vylezla v bouři na **stožár**{mástil|mast}, abyste opravila anténu. Proč?
+**Novinář:** Jano, vy jste během **obléhání**{asedio|siege} vylezla v bouři na **stožár**{mástil|mast}, abyste opravila anténu. Proč?
 
-**Jana:** Protože v ohradě za stanem Vlčího knížete bylo tři sta lidí. Otroků. A já jsem jim potřebovala říct, kam mají utéct, až přijde voda. Bez antény jsem jim to nemohla říct.
+**Jana:** Protože v **ohradě**{corral|enclosure} za stanem Vlčího knížete bylo tři sta lidí. **Otroků**{Esclavos|Slaves}. A já jsem jim potřebovala říct, kam mají utéct, až přijde voda. Bez antény jsem jim to nemohla říct.
 
 **Luis:** Visela tam na provaze. Dva metry nad mou hlavou. V bouři.
 
@@ -60,7 +60,7 @@
 
 **Novinář:** Je pravda, že jste během obléhání šeptala divochům jména jejich mrtvých?
 
-**Jana:** *(vážně)* Je. To je věc, na kterou nejsem hrdá. Udělala jsem to, protože jsem chtěla, aby se báli. Aby nespali. A fungovalo to. Ale každou noc, když jsem to dělala, jsem plakala. Luis mě držel za ruku.
+**Jana:** *(vážně)* Je. To je věc, na kterou nejsem **hrdá**{orgullosa|proud}. Udělala jsem to, protože jsem chtěla, aby se báli. Aby nespali. A fungovalo to. Ale každou noc, když jsem to dělala, jsem plakala. Luis mě držel za ruku.
 
 **Luis:** Řekla jsi mi tehdy: co ze mě dělá tahle válka?
 
@@ -68,11 +68,11 @@
 
 **Novinář:** Luisi, váš plán s jezerem je dnes legendou. Jak jste na něj přišel?
 
-**Luis:** Celou zimu jsem chodil k potoku nad městem. Díval jsem se na staré stavidlo. A jednou v noci, když mi Jana zase brala tužku z ruky, jsem si vzpomněl na pohádku, kterou mi kdysi vyprávěla máma. Byla o chudém **sedlákovi**{campesino|peasant}, který porazil krále, protože věděl, kudy teče voda. Tak jsem si řekl: my víme, kudy teče voda. Oni ne.
+**Luis:** Celou zimu jsem chodil k potoku nad městem. Díval jsem se na staré **stavidlo**{compuerta|sluice gate}. A jednou v noci, když mi Jana zase brala tužku z ruky, jsem si vzpomněl na pohádku, kterou mi kdysi vyprávěla máma. Byla o chudém **sedlákovi**{campesino|peasant}, který porazil krále, protože věděl, kudy teče voda. Tak jsem si řekl: my víme, kudy teče voda. Oni ne.
 
 **Lucie:** Ale skoro to nevyšlo.
 
-**Luis:** Skoro to nevyšlo. Závora se zasekla. Kdyby nebylo Lucie…
+**Luis:** Skoro to nevyšlo. **Závora**{La barrera|The bar} se zasekla. Kdyby nebylo Lucie…
 
 **Lucie:** Kdyby nebylo babičky.
 
@@ -88,7 +88,7 @@
 
 **Jana:** Hádáme se o **nádobí**{platos|dishes}. O to, kdo bude hlídat. O to, kdo spí uprostřed.
 
-**Lucie:** Uprostřed spí Luis. Je to nejspravedlivější. Nikdo z nás nechce spát vedle zdi.
+**Lucie:** Uprostřed spí Luis. Je to **nejspravedlivější**{lo más justo|the fairest}. Nikdo z nás nechce spát vedle zdi.
 
 **Luis:** Já jsem se nikdy nikoho neptal, jestli chci spát uprostřed.
 
@@ -106,13 +106,13 @@
 
 **Novinář:** Lucie, a Robert? Je to pro vás ještě bolestné?
 
-**Lucie:** *(dlouho mlčí)* Někdy. Když je vidím spolu na lavičce u levandule. Když vidím ten prsten na jeho prstě. Ale už ne tak, jak to bolelo tehdy. Natálie je… *(odmlčí se)* Natálie je ta nejlepší žena, jakou znám. Kromě Jany. Nemůžu jí nic vyčítat. Přišla na motocyklu proti tankům, aby ho zachránila. Já jsem otevřela hráz. Myslím, že jsme si kvit.
+**Lucie:** *(dlouho mlčí)* Někdy. Když je vidím spolu na lavičce u levandule. Když vidím ten prsten na jeho prstě. Ale už ne tak, jak to bolelo tehdy. Natálie je… *(odmlčí se)* Natálie je ta nejlepší žena, jakou znám. Kromě Jany. Nemůžu jí nic **vyčítat**{reprochar|blame}. Přišla na motocyklu proti tankům, aby ho zachránila. Já jsem otevřela hráz. Myslím, že **jsme si kvit**{estamos a mano|we're even}.
 
 **Jana:** Lucie s ní každý den pracuje v nemocnici.
 
 **Lucie:** Má silné ruce. Netřesou se. Jen uvnitř. Jako moje.
 
-**Novinář:** Poslední otázka. Před měsícem přišlo volání z Ostravy. Utopie hlasovala o speciální operaci. Jaký byl výsledek?
+**Novinář:** Poslední otázka. Loni na podzim přišlo volání z Ostravy. Utopie hlasovala o speciální operaci. Jaký byl výsledek?
 
 *(Všichni tři se na sebe podívají. Ticho.)*
 
