@@ -31,7 +31,7 @@ Cada idioma tiene su propio blog (`#/blog`), al que se llega desde el botón «B
 
 ```json
 {"slug": "nombre-corto", "lang": "es", "title": "Título", "date": "2026-10-20",
- "excerpt": "Resumen para la lista", "image": "novels/la-corazonada/cover.jpg"}
+ "excerpt": "Resumen para la lista", "image": "novels/la-corazonada/cover-v4.jpg"}
 ```
 
 `excerpt` e `image` son opcionales. Las entradas se ordenan por fecha, la más reciente primero, y cada una tiene sus propios comentarios.
