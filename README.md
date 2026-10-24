@@ -2,6 +2,8 @@
 
 Sitio web para leer las novelas de Robert Fader. Cada idioma (RU, ES, IT, EN, DE, FR, TR, PT, CS, PL, SR, EO, ISV, VO, IA, LD, LA) muestra solo las novelas escritas en ese idioma. El español es el idioma por defecto.
 
+**Las novelas en ruso están en este sitio** (sección RU), igual que las de los demás idiomas. Antes de dar por hecho dónde está una novela, mirar `novels/catalog.json`.
+
 ## Estructura
 
 ```
@@ -14,7 +16,8 @@ novels/<novela>/            un archivo .md por capítulo (01.md, 02.md, …)
 
 1. Crear la carpeta `novels/<nombre-corto>/<idioma>/` con un archivo por capítulo.
 2. Añadir la novela a `novels/catalog.json` con su título en cada idioma y la lista de capítulos.
-3. Opcional: una portada (`"cover": "novels/<nombre-corto>/cover.jpg"`). Sin portada, el sitio genera una.
+3. Si la novela no está terminada, añadir `"wip": true` (ver «Novelas en proceso de escritura»).
+4. Opcional: una portada (`"cover": "novels/<nombre-corto>/cover.jpg"`). Sin portada, el sitio genera una.
 
 Formato del texto: párrafos separados por una línea en blanco, `*cursiva*`, `**negrita**`, `***` para un cambio de escena.
 
@@ -43,6 +46,10 @@ Cada idioma puede tener su curso (`#/learn`), con la teoría explicada en otros 
 1. Agregar la unidad en `learn/catalog.json` (curso por `lang`, idiomas de explicación en `help`).
 2. Teoría: `learn/<idioma>/<unidad>/theory.<idioma-de-explicación>.md` (mismo formato que los capítulos; admite glosas `**palabra**{traducción}`, tablas y ejercicios `[[a|*b|c]]` y `( V / F ){V}`).
 3. Práctica: `learn/<idioma>/<unidad>/practice.<idioma-de-explicación>.json` (mismo formato que los tests de las novelas: `match`, `choice`, `reverse`, `fill`, `build`, `write`, `story`, `tf`).
+
+## Novelas en proceso de escritura
+
+**Toda novela que no esté terminada debe llevar `"wip": true`** en `catalog.json`. Así aparece la etiqueta «En proceso» en la tarjeta y en la ficha, y un aviso de que llegarán capítulos nuevos. Hay que revisarlo cada vez que se añade una novela o capítulos nuevos: si falta el final (o faltan capítulos intermedios), lleva `"wip": true`. Cuando el autor la termine, se quita la marca.
 
 ## Novelas para adultos
 
