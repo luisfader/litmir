@@ -7364,6 +7364,57 @@
           "title": "Новото начало"
         }
       ]
+    },
+    {
+      "slug": "julian-la-hambru",
+      "lang": "es",
+      "title": "Julián: La Hambru y otras desgracias",
+      "author": "Roberto Fader",
+      "year": 2026,
+      "genre": "Humor · Español para extranjeros · Cultura argentina (A1–A2)",
+      "description": "Julián tiene una vida casi normal, pero las palabras le juegan malas pasadas. Diez relatos breves en presente, con humor absurdo, expresiones argentinas, voseo y explicaciones culturales en ruso al final de cada capítulo.",
+      "chapters": [
+        {
+          "file": "01.md",
+          "title": "La Hambru"
+        },
+        {
+          "file": "02.md",
+          "title": "No me da pelota"
+        },
+        {
+          "file": "03.md",
+          "title": "Estoy en el horno"
+        },
+        {
+          "file": "04.md",
+          "title": "Me toma el pelo"
+        },
+        {
+          "file": "05.md",
+          "title": "No tengo un mango"
+        },
+        {
+          "file": "06.md",
+          "title": "Me importa un pepino"
+        },
+        {
+          "file": "07.md",
+          "title": "Estoy hecho bolsa"
+        },
+        {
+          "file": "08.md",
+          "title": "Me da una mano"
+        },
+        {
+          "file": "09.md",
+          "title": "Se me va la olla"
+        },
+        {
+          "file": "10.md",
+          "title": "La vida es una fiesta"
+        }
+      ]
     }
   ],
   "series": [
