@@ -2274,11 +2274,11 @@
   },
   {
    "id": "luis-volny",
-   "name": "Luis (Olas de amor)",
+   "name": "Luis (Ondas de amor)",
    "langs": [
     "ru"
    ],
-   "role": "Luis de Olas de amor, enamorado de Natalia de Verdegrad.",
+   "role": "Luis de Ondas de amor, enamorado de Natalia de Verdegrad.",
    "novels": [
     "volny-lyubvi",
     "volny-lyubvi-krepost"
@@ -3251,7 +3251,7 @@
   },
   {
    "id": "natalia-verdegrad",
-   "name": "Natalia (Olas de amor)",
+   "name": "Natalia (Ondas de amor)",
    "langs": [
     "ru"
    ],
