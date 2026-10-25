@@ -11,6 +11,8 @@ import json, random, re, os, sys
 
 random.seed(7)
 LANGS = ["es", "ru", "it", "en"]
+# Novels left out of the game (by slug)
+EXCLUDE = {"julian-la-hambru"}
 P = {
  "es": {"who": "¿Quién es?", "quote": "¿De qué novela es esta frase?", "where": "¿En qué novela aparece {name}?", "plot": "La trama",
         "whyWho": "Es {name}, de «{novel}».", "whyQuote": "Es de «{novel}».", "whyWhere": "{name} aparece en «{novel}».", "photo": "¿Quién es este personaje?"},
@@ -44,7 +46,7 @@ def main(root):
     os.makedirs(f"{root}/games", exist_ok=True)
     for L in LANGS:
         p = P[L]
-        novels = [n for n in cat if n["lang"] == L and not n.get("adult") and not n.get("hidden")]
+        novels = [n for n in cat if n["lang"] == L and not n.get("adult") and not n.get("hidden") and n["slug"] not in EXCLUDE]
         by_slug = {n["slug"]: n for n in novels}
         titles = [n["title"] for n in novels]
         pool = []

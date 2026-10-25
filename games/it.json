@@ -19,9 +19,9 @@
    "prompt": "Chi è?",
    "question": "Architetto argentino e uno dei fondatori di Utopia: disegna le mura della fortezza. Ambizioso e tormentato, entra in rivalità con Robert.",
    "options": [
-    "Franco",
-    "Kennet",
-    "Alberto Menichetti",
+    "Oxana",
+    "Sasha",
+    "Francesca",
     "Luis"
    ],
    "answer": 3,
@@ -33,12 +33,12 @@
    "prompt": "Chi è?",
    "question": "Sopravvissuto alla catastrofe che attraversa le rovine sulla sua vecchia moto e fonda «La Nostra Utopia», una fortezza dove vivere senza paura né avidità. Guida idealista e riflessivo, ancora legato alla moglie perduta.",
    "options": [
-    "Franco",
+    "Luis",
+    "Enrico Vitale",
     "Robert",
-    "Sasha",
-    "Fabrizio"
+    "Kennet"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "È Robert, da «Presentimento»."
   },
   {
@@ -47,10 +47,10 @@
    "prompt": "Chi è?",
    "question": "Abitante di Utopia dagli intensi occhi azzurri: dipinge la fortezza e suona il violino. Divisa tra Robert e Luis, sceglie liberamente chi amare.",
    "options": [
-    "Stella",
-    "Franco",
+    "Il commissario Zancan",
+    "Aurora",
     "Natalia",
-    "Alessio"
+    "Franco"
    ],
    "answer": 2,
    "why": "È Natalia, da «Presentimento»."
@@ -61,12 +61,12 @@
    "prompt": "Chi è?",
    "question": "Guerriera dai capelli rossi, tra i primi compagni di Robert. Coordina le risorse di Utopia e combatte in prima linea, ma il suo cuore fragile viene ferito dall’amore per Luis.",
    "options": [
-    "Fabio",
-    "Oxana",
-    "Sasha",
-    "Luca"
+    "Clara",
+    "Il Porpora",
+    "Stella",
+    "Sasha"
    ],
-   "answer": 2,
+   "answer": 3,
    "why": "È Sasha, da «Presentimento»."
   },
   {
@@ -75,12 +75,12 @@
    "prompt": "Chi è?",
    "question": "Fiorentino innamorato dell’arte e ladro gentiluomo. Entra nella villa di Laura per rubare un quadro e ne esce con un amore; insieme a lei aiuta Lorenzo e Carlotta contro i Cromatisti e accompagna Roberto nel Carnevale di Venezia. In Ladro di cuori 2 vive a…",
    "options": [
-    "Natalia (moglie di Robert)",
     "Alessio",
-    "Fabrizio",
-    "Maria"
+    "Franco",
+    "Clara",
+    "Don Salvatore"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "È Alessio, da «Ladro di cuori»."
   },
   {
@@ -89,10 +89,10 @@
    "prompt": "Chi è?",
    "question": "Detective triste e geloso di 35 anni che vive a Sinea. Insegue il treno fantasma che porta via le persone, e con loro la sua ragazza Alice.",
    "options": [
-    "Oxana",
+    "Il Porpora",
     "Marco",
-    "Il commissario Rinaldi",
-    "Alice"
+    "Fabrizio",
+    "Natalia (moglie di Robert)"
    ],
    "answer": 1,
    "why": "È Marco, da «Il treno fantasma»."
@@ -103,12 +103,12 @@
    "prompt": "Chi è?",
    "question": "Astrologa di 30 anni, stanca della gelosia di Marco. Sale sul treno fantasma in cerca di una vita nuova e vive un viaggio pieno di vagoni assurdi e prove d’amore.",
    "options": [
+    "Il commissario Rinaldi",
     "Alice",
-    "Vittorio",
-    "Vanessa",
-    "Il Duca"
+    "Oxana",
+    "Fabrizio"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "È Alice, da «Il treno fantasma»."
   },
   {
@@ -117,12 +117,12 @@
    "prompt": "Chi è?",
    "question": "Veneziana enigmatica dal vestito rosso, figlia di un antico Duca. Trascina Roberto nella lotta contro la Loggia, lo riporta in vita e accoglie nel suo palazzo gli eroi dell’Ora selvaggia, risvegliando la gelosia di Nataša.",
    "options": [
-    "Pietro",
-    "Carla",
-    "Aurora",
-    "Natalia"
+    "Natalia",
+    "Vittorio",
+    "Vanessa",
+    "Il Duca"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "È Natalia, da «Maschera di Venezia»."
   },
   {
@@ -131,12 +131,12 @@
    "prompt": "Chi è?",
    "question": "… Maiani, restauratrice senior agli Uffizi. Dopo un omicidio davanti alla Calunnia di Botticelli fugge con Lorenzo, sfida la setta dei Cromatisti e finisce per diventare regina del Regno Atelier.",
    "options": [
-    "Carlotta",
-    "Lorenzo",
-    "Vittorio",
-    "Clara"
+    "Pietro",
+    "Carla",
+    "Aurora",
+    "Carlotta"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "È Carlotta, da «La Nevicata Rosa»."
   },
   {
@@ -146,9 +146,9 @@
    "question": "Ragazzo di 24 anni, impiegato al Ministero dei Sentimenti. Buono e un po’ timido, ma coraggioso: quando il presidente vieta i sorrisi, decide di restituire la felicità a Sinea e alla fine ne diventa presidente.",
    "options": [
     "Franco",
-    "Il commissario Zancan",
-    "Il Presidente",
-    "Luis"
+    "Lorenzo",
+    "Vittorio",
+    "Clara"
    ],
    "answer": 0,
    "why": "È Franco, da «La città triste»."
@@ -159,12 +159,12 @@
    "prompt": "Chi è?",
    "question": "Ribelle allegra e determinata, la prima persona che sorride nella metro di Sinea. Insieme a Franco riporta la luce in città e ne diventa vicepresidente.",
    "options": [
-    "Il Porpora",
     "Chiara",
-    "Fabrizio",
-    "Marina"
+    "Il commissario Zancan",
+    "Il Presidente",
+    "Luis"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "È Chiara, da «La città triste»."
   },
   {
@@ -173,12 +173,12 @@
    "prompt": "Chi è?",
    "question": "Vecchio inventore ed ex collega di Franco, licenziato perché sorrideva troppo. Nel suo nascondiglio costruisce macchine strampalate per far ridere la gente.",
    "options": [
-    "Dima",
-    "Robert",
-    "Il Presidente",
-    "Marco"
+    "Il Porpora",
+    "Marco",
+    "Fabrizio",
+    "Marina"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "È Marco, da «La città triste»."
   },
   {
@@ -187,12 +187,12 @@
    "prompt": "Chi è?",
    "question": "Comico che fa ridere le riunioni segrete di Sinea e poi il nuovo Teatro delle Risate, dove aiuta Franco a fare la sua proposta a Chiara.",
    "options": [
-    "Luca",
-    "Enrico",
-    "Don Salvatore",
-    "Sasha"
+    "Dima",
+    "Robert",
+    "Il Presidente",
+    "Luca"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "È Luca, da «La città triste»."
   },
   {
@@ -201,12 +201,12 @@
    "prompt": "Chi è?",
    "question": "Presidente serio e severo che vieta i sorrisi a Sinea. Alla fine capisce di aver sbagliato e diventa un felice venditore di gelati.",
    "options": [
-    "Alice",
     "Il Presidente",
-    "Giulia",
-    "Il commissario Rinaldi"
+    "Enrico",
+    "Don Salvatore",
+    "Sasha"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "È Il Presidente, da «La città triste»."
   },
   {
@@ -215,12 +215,12 @@
    "prompt": "Chi è?",
    "question": "Passeggero triste e affamato che accompagna Alice tra i vagoni e si finge il suo nuovo ragazzo. Alla fine rivela la vera missione del treno fantasma: risolvere le crisi d’amore.",
    "options": [
-    "Maria",
-    "Enrico",
+    "Alice",
     "Matteo",
-    "Marco Dandolo"
+    "Giulia",
+    "Il commissario Rinaldi"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "È Matteo, da «Il treno fantasma»."
   },
   {
@@ -229,12 +229,12 @@
    "prompt": "Chi è?",
    "question": "L’uomo grasso ma molto bello che accoglie Alice sul treno. Fratello di Matteo, prende il controllo dei comandi del treno fantasma.",
    "options": [
-    "Kennet",
-    "Carla",
-    "Il Porpora",
-    "Vittorio"
+    "Maria",
+    "Enrico",
+    "Vittorio",
+    "Marco Dandolo"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "È Vittorio, da «Il treno fantasma»."
   },
   {
@@ -243,12 +243,12 @@
    "prompt": "Chi è?",
    "question": "Uomo vestito di nero, direttore del vagone confessionale: nessuno passa senza confessare i propri peccati.",
    "options": [
-    "Francesca",
-    "Il Direttore",
-    "Paolo",
-    "Il Porpora"
+    "Kennet",
+    "Carla",
+    "Il Porpora",
+    "Il Direttore"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "È Il Direttore, da «Il treno fantasma»."
   },
   {
@@ -257,12 +257,12 @@
    "prompt": "Chi è?",
    "question": "… Fader, artista e professore argentino. Incontra Carlotta a Firenze dopo mesi di lettere digitali, fugge con lei accusato ingiustamente e diventa il guerriero e re del Regno Atelier.",
    "options": [
-    "Dima",
-    "Maria",
-    "Luis",
-    "Lorenzo"
+    "Francesca",
+    "Lorenzo",
+    "Paolo",
+    "Il Porpora"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "È Lorenzo, da «La Nevicata Rosa»."
   },
   {
@@ -271,12 +271,12 @@
    "prompt": "Chi è?",
    "question": "Ricca collezionista che vive in una villa sulle colline di Firenze. Sorprende Alessio mentre ruba un suo quadro e diventa la sua complice e il suo amore: elegante, leale e coraggiosa, conosce l’arte quanto lui.",
    "options": [
-    "Natalia (moglie di Robert)",
-    "Laura",
+    "Dima",
     "Maria",
-    "Chiara"
+    "Luis",
+    "Laura"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "È Laura, da «Ladro di cuori»."
   },
   {
@@ -285,12 +285,12 @@
    "prompt": "Chi è?",
    "question": "Direttore degli Uffizi, freddo e calcolatore, legato alla setta dei Cromatisti. Trasforma Carlotta e Lorenzo in ricercati con prove digitali false.",
    "options": [
+    "Natalia (moglie di Robert)",
     "Alberto Menichetti",
-    "Don Salvatore",
-    "Il Duca",
-    "Larissa"
+    "Maria",
+    "Chiara"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "È Alberto Menichetti, da «La Nevicata Rosa»."
   },
   {
@@ -300,9 +300,9 @@
    "question": "Capo della setta dei Cromatisti, che vuole rubare i colori del mondo grazie al Pennello di Eos, un cristallo a forma di prisma.",
    "options": [
     "Il Porpora",
-    "Fabrizio",
-    "Il commissario Zancan",
-    "Sofia Ricci"
+    "Don Salvatore",
+    "Il Duca",
+    "Larissa"
    ],
    "answer": 0,
    "why": "È Il Porpora, da «La Nevicata Rosa»."
@@ -314,9 +314,9 @@
    "question": "Assistente personale di Menichetti: mingherlino, silenzioso, sempre con un’espressione di lieve indigestione.",
    "options": [
     "Fabrizio",
-    "Il commissario Rinaldi",
-    "Luis",
-    "Marina"
+    "Il Porpora",
+    "Il commissario Zancan",
+    "Sofia Ricci"
    ],
    "answer": 0,
    "why": "È Fabrizio, da «La Nevicata Rosa»."
@@ -328,9 +328,9 @@
    "question": "Figlia di Carlotta e Lorenzo, nata nel nuovo campo di energia del Regno Atelier: un ponte vivente tra il mondo reale e quello delle idee creative.",
    "options": [
     "Aurora",
-    "Oxana",
-    "Fabrizio",
-    "Il Presidente"
+    "Il commissario Rinaldi",
+    "Luis",
+    "Marina"
    ],
    "answer": 0,
    "why": "È Aurora, da «La Nevicata Rosa»."
@@ -341,12 +341,12 @@
    "prompt": "Chi è?",
    "question": "Argentino con l’anima del viaggiatore. Al Carnevale di Venezia si innamora di Natalia, scopre il potere della Maschera di Venezia e guida la rivolta contro la Loggia. Vive a Venezia e chiama Luis in aiuto contro la macchina che ruba le anime.",
    "options": [
-    "Marco",
     "Roberto",
-    "Fabio",
-    "Il Direttore"
+    "Oxana",
+    "Fabrizio",
+    "Il Presidente"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "È Roberto, da «Maschera di Venezia»."
   },
   {
@@ -355,12 +355,12 @@
    "prompt": "Chi è?",
    "question": "Erede ambizioso della famiglia Dandolo, nipote dell’ultimo Doge. Si allea con la Loggia per riportare Venezia alla sua gloria e governarla.",
    "options": [
-    "Aurora",
-    "Vittorio",
-    "Enrico Vitale",
-    "Marco Dandolo"
+    "Marco",
+    "Marco Dandolo",
+    "Fabio",
+    "Il Direttore"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "È Marco Dandolo, da «Maschera di Venezia»."
   },
   {
@@ -369,12 +369,12 @@
    "prompt": "Chi è?",
    "question": "Commissario corrotto della questura di Venezia, padre rinnegato di Marco Dandolo. Vuole la maschera a ogni costo.",
    "options": [
-    "Il commissario Zancan",
-    "Laura",
-    "Marina",
-    "Natalia (moglie di Robert)"
+    "Aurora",
+    "Vittorio",
+    "Enrico Vitale",
+    "Il commissario Zancan"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "È Il commissario Zancan, da «Maschera di Venezia»."
   },
   {
@@ -384,9 +384,9 @@
    "question": "Capo della Loggia, gruppo di potenti che vogliono tenere Venezia sotto il loro controllo e uccidono chiunque li minacci.",
    "options": [
     "Ludovico",
-    "Carla",
-    "Oxana",
-    "Enrico Vitale"
+    "Laura",
+    "Marina",
+    "Natalia (moglie di Robert)"
    ],
    "answer": 0,
    "why": "È Ludovico, da «Maschera di Venezia»."
@@ -397,12 +397,12 @@
    "prompt": "Chi è?",
    "question": "Padre di Natalia e vero Duca di un antico lignaggio segreto veneziano.",
    "options": [
-    "Stella",
     "Il Duca",
-    "Marco Dandolo",
-    "Natalia"
+    "Carla",
+    "Oxana",
+    "Enrico Vitale"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "È Il Duca, da «Maschera di Venezia»."
   },
   {
@@ -411,12 +411,12 @@
    "prompt": "Chi è?",
    "question": "Pittore e amico di Alessio: dipinge copie perfette e custodisce il quadro rubato. È lui a proporre di restituirlo.",
    "options": [
-    "Alessio",
-    "Kennet",
+    "Stella",
     "Luca",
-    "Antonio"
+    "Il commissario Zancan",
+    "Natalia"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "È Luca, da «Ladro di cuori»."
   },
   {
@@ -425,10 +425,10 @@
    "prompt": "Chi è?",
    "question": "Amica di Laura e proprietaria dell’Estate, un quadro attribuito a Botticelli. Quando il dipinto sparisce denuncia il furto.",
    "options": [
-    "Clara",
-    "Il Duca",
+    "Alessio",
+    "Kennet",
     "Sofia Ricci",
-    "Il commissario Zancan"
+    "Antonio"
    ],
    "answer": 2,
    "why": "È Sofia Ricci, da «Ladro di cuori»."
@@ -439,12 +439,12 @@
    "prompt": "Chi è?",
    "question": "Giovane violinista argentina, bellissima e talentuosa. La sua musica commuove Laura e affascina Alessio, creando tensione tra loro.",
    "options": [
-    "Marina",
+    "Clara",
+    "Il Duca",
     "Maria",
-    "Don Salvatore",
-    "Il Duca"
+    "Il commissario Zancan"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "È Maria, da «Ladro di cuori 2»."
   },
   {
@@ -453,12 +453,12 @@
    "prompt": "Chi è?",
    "question": "Intermediario elegante e calcolatore della galleria «Arte del Sole». Scopre Alessio e Laura a Malaga e propone loro il colpo del violino d’oro.",
    "options": [
-    "Aurora",
-    "Luca",
+    "Marina",
     "Enrico Vitale",
-    "Il commissario Zancan"
+    "Don Salvatore",
+    "Il Duca"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "È Enrico Vitale, da «Ladro di cuori 2»."
   },
   {
@@ -467,12 +467,12 @@
    "prompt": "Chi è?",
    "question": "Salvatore Ricci, boss mafioso e collezionista d’arte, proprietario del violino d’oro. Potente, autoritario e spietato.",
    "options": [
+    "Aurora",
+    "Luca",
     "Don Salvatore",
-    "Clara",
-    "Carlotta",
-    "Il Presidente"
+    "Il commissario Zancan"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "È Don Salvatore, da «Ladro di cuori 2»."
   },
   {
@@ -482,9 +482,9 @@
    "question": "Fedele assistente di Enrico, magro e con gli occhiali da sole anche di notte. Guida la fuga per le strade di Malaga.",
    "options": [
     "Roberto",
-    "Francesca",
-    "Maria",
-    "Clara"
+    "Clara",
+    "Carlotta",
+    "Il Presidente"
    ],
    "answer": 0,
    "why": "È Roberto, da «Ladro di cuori 2»."
@@ -495,12 +495,12 @@
    "prompt": "Chi è?",
    "question": "Psicologa che sogna lo stesso incubo di una paziente. Con la macchina di Pietro entra nei sogni e lotta per chiudere la porta tra il mondo dei sogni e quello reale.",
    "options": [
-    "Clara",
-    "Vittorio",
     "Irina",
-    "Matteo"
+    "Francesca",
+    "Sofia Ricci",
+    "Clara"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "È Irina, da «La macchina dei sogni»."
   },
   {
@@ -509,12 +509,12 @@
    "prompt": "Chi è?",
    "question": "Ricercatore che studia i sogni e ha costruito una macchina per entrarci restando coscienti.",
    "options": [
-    "Natalia (moglie di Robert)",
-    "Stella",
-    "Francesca",
-    "Pietro"
+    "Clara",
+    "Vittorio",
+    "Pietro",
+    "Matteo"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "È Pietro, da «La macchina dei sogni»."
   },
   {
@@ -523,9 +523,9 @@
    "prompt": "Chi è?",
    "question": "Amica di Irina: nel sogno è una pedina bloccata su una scacchiera vivente. Nella realtà la sostiene e la avverte dei pericoli.",
    "options": [
-    "Sofia Ricci",
-    "Luis",
-    "Larissa",
+    "Natalia (moglie di Robert)",
+    "Stella",
+    "Francesca",
     "Marina"
    ],
    "answer": 3,
@@ -537,9 +537,9 @@
    "prompt": "Chi è?",
    "question": "Paziente di Irina, vedova, che sogna il marito come un tiranno e i quattro cavalieri dell’apocalisse.",
    "options": [
-    "Fabrizio",
-    "Alice",
-    "Il Duca",
+    "Sofia Ricci",
+    "Luis",
+    "Larissa",
     "Clara"
    ],
    "answer": 3,
@@ -551,12 +551,12 @@
    "prompt": "Chi è?",
    "question": "Fuggito dalla Centrale, viene salvato da Robert e diventa uno dei primi compagni di Utopia: la sua vista è la migliore della fortezza. È innamorato di Oxana.",
    "options": [
-    "Matteo",
-    "Kennet",
-    "Pietro",
-    "Il Presidente"
+    "Fabrizio",
+    "Alice",
+    "Il Duca",
+    "Kennet"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "È Kennet, da «Presentimento»."
   },
   {
@@ -565,12 +565,12 @@
    "prompt": "Chi è?",
    "question": "Donna dalla bellezza sorprendente e dagli occhi color marrone caldo. Gentile e comprensiva, è contesa tra Kennet e Robert.",
    "options": [
-    "Natalia (moglie di Robert)",
     "Matteo",
-    "Sofia Ricci",
-    "Oxana"
+    "Oxana",
+    "Pietro",
+    "Il Presidente"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "È Oxana, da «Presentimento»."
   },
   {
@@ -579,9 +579,9 @@
    "prompt": "Chi è?",
    "question": "Amico di Luis e programmatore: riattiva Internet, pilota i droni e mimetizza la fortezza.",
    "options": [
-    "Clara",
-    "Giulia",
-    "Marina",
+    "Natalia (moglie di Robert)",
+    "Matteo",
+    "Sofia Ricci",
     "Dima"
    ],
    "answer": 3,
@@ -593,12 +593,12 @@
    "prompt": "Chi è?",
    "question": "Cardiologa e moglie di Robert, partita per curare i soldati durante la guerra. Riappare alla fine alla guida dei ribelli, ma sceglie una missione più grande.",
    "options": [
-    "Natalia (moglie di Robert)",
-    "Luca",
-    "Alessio",
-    "Clara"
+    "Clara",
+    "Giulia",
+    "Marina",
+    "Natalia (moglie di Robert)"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "È Natalia (moglie di Robert), da «Presentimento»."
   },
   {
@@ -607,12 +607,12 @@
    "prompt": "Chi è?",
    "question": "Ex prigioniero di Necropoli, la città sotterranea, costretto a costruire una piattaforma missilistica. Rivela a Utopia i piani del nemico.",
    "options": [
-    "Sasha",
-    "Luis",
     "Alessio",
-    "Vanessa"
+    "Il Presidente",
+    "Marco",
+    "Kennet"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "È Alessio, da «Presentimento»."
   },
   {
@@ -621,12 +621,12 @@
    "prompt": "Chi è?",
    "question": "Portiere orgoglioso dei Leoni. Dopo la sconfitta 5-1 contro le Aquile vuole scoprire il loro segreto e finisce in un gioco molto più grande.",
    "options": [
-    "Alberto Menichetti",
-    "Luca",
-    "Marco Dandolo",
-    "Fabio"
+    "Sasha",
+    "Luis",
+    "Fabio",
+    "Vanessa"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "È Fabio, da «La squadra invincibile»."
   },
   {
@@ -635,12 +635,12 @@
    "prompt": "Chi è?",
    "question": "Sorella di Fabio, che si infiltra tra le ragazze delle Aquile e si ritrova divisa tra le due squadre.",
    "options": [
-    "Stella",
-    "Alessio",
+    "Alberto Menichetti",
+    "Luca",
     "Marco Dandolo",
-    "Natalia (moglie di Robert)"
+    "Stella"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "È Stella, da «La squadra invincibile»."
   },
   {
@@ -649,12 +649,12 @@
    "prompt": "Chi è?",
    "question": "Attaccante e capitana delle Aquile: per lei il segreto non è la forza, ma la squadra. Rivale di Fabio, poi sua alleata.",
    "options": [
-    "Robert",
     "Maria",
-    "Sasha",
-    "Il Direttore"
+    "Alessio",
+    "Marco Dandolo",
+    "Fabio"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "È Maria, da «La squadra invincibile»."
   },
   {
@@ -663,12 +663,12 @@
    "prompt": "Chi è?",
    "question": "Ex ragazza di Fabio, che la allena insieme ad altre ragazze per battere le Aquile.",
    "options": [
-    "Stella",
-    "Sasha",
+    "Robert",
     "Carla",
-    "Enrico Vitale"
+    "Sasha",
+    "Il Direttore"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "È Carla, da «La squadra invincibile»."
   },
   {
@@ -677,12 +677,12 @@
    "prompt": "Chi è?",
    "question": "Ragazza di Fabio che passa alla squadra avversaria e si allea con Maria per vendicarsi.",
    "options": [
-    "Luca",
+    "Stella",
+    "Sasha",
     "Francesca",
-    "Natalia (moglie di Robert)",
-    "Natalia"
+    "Enrico Vitale"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "È Francesca, da «La squadra invincibile»."
   },
   {
@@ -691,10 +691,10 @@
    "prompt": "Chi è?",
    "question": "Bugiarda professionista e stratega legata al «Consiglio», l’organizzazione che trucca le partite. Vuole Fabio come futuro marito.",
    "options": [
-    "Sofia Ricci",
+    "Luca",
     "Vanessa",
-    "Don Salvatore",
-    "Fabrizio"
+    "Natalia (moglie di Robert)",
+    "Natalia"
    ],
    "answer": 1,
    "why": "È Vanessa, da «La squadra invincibile»."
@@ -705,12 +705,12 @@
    "prompt": "Chi è?",
    "question": "Agente della Polizia Calcistica ed ex contabile: chiede aiuto alle squadre per smascherare Vanessa e il Consiglio.",
    "options": [
+    "Sofia Ricci",
     "Enrico",
-    "Antonio",
-    "Ludovico",
-    "Lorenzo"
+    "Don Salvatore",
+    "Fabrizio"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "È Enrico, da «La squadra invincibile»."
   },
   {
@@ -719,12 +719,12 @@
    "prompt": "Chi è?",
    "question": "Pizzaiolo di 28 anni di Trastevere. Per conquistare Larissa le promette tutti i segreti di Roma, ma quando sparisce il Calice d’Oro dei Papi la polizia cerca proprio lui.",
    "options": [
-    "Il Duca",
-    "Paolo",
-    "Pietro",
-    "Antonio"
+    "Antonio",
+    "Enrico",
+    "Ludovico",
+    "Lorenzo"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "È Antonio, da «Antonio e il segreto di Roma»."
   },
   {
@@ -733,12 +733,12 @@
    "prompt": "Chi è?",
    "question": "Ragazza russa bella e colta che Antonio incontra ai Musei Vaticani. In realtà è Elena Ferri, ladra detta «il Camaleonte», che cambia sempre nome, capelli e nazionalità.",
    "options": [
-    "Il Presidente",
-    "Luca",
-    "Larissa",
-    "Marco Dandolo"
+    "Il Duca",
+    "Paolo",
+    "Pietro",
+    "Larissa"
    ],
-   "answer": 2,
+   "answer": 3,
    "why": "È Larissa, da «Antonio e il segreto di Roma»."
   },
   {
@@ -747,10 +747,10 @@
    "prompt": "Chi è?",
    "question": "Vecchio amico di Antonio, genio dei computer con un appartamento pieno di cavi e un gatto nero di nome Bit. Lo aiuta a dimostrare la sua innocenza.",
    "options": [
-    "Dima",
-    "Fabrizio",
+    "Il Presidente",
+    "Luca",
     "Matteo",
-    "Sofia Ricci"
+    "Il commissario Zancan"
    ],
    "answer": 2,
    "why": "È Matteo, da «Antonio e il segreto di Roma»."
@@ -761,12 +761,12 @@
    "prompt": "Chi è?",
    "question": "Cugino di Antonio e guardia dei Musei Vaticani: un uomo grande e simpatico in divisa blu.",
    "options": [
-    "Kennet",
+    "Oxana",
+    "Il Porpora",
     "Paolo",
-    "Ludovico",
-    "Roberto"
+    "Il Duca"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "È Paolo, da «Antonio e il segreto di Roma»."
   },
   {
@@ -775,10 +775,10 @@
    "prompt": "Chi è?",
    "question": "Studentessa di storia dell’arte di 25 anni che il sabato fa la guida ai Musei Vaticani. Figlia del commissario Rinaldi, è il nuovo amore di Antonio.",
    "options": [
-    "Maria",
+    "Kennet",
     "Sofia",
-    "Marco Dandolo",
-    "Carlotta"
+    "Ludovico",
+    "Roberto"
    ],
    "answer": 1,
    "why": "È Sofia, da «Antonio e il segreto di Roma»."
@@ -789,10 +789,10 @@
    "prompt": "Chi è?",
    "question": "Commissario della polizia di Roma, con baffi e impermeabile grigio. Arresta il Camaleonte ed è il padre di Sofia.",
    "options": [
-    "Il Porpora",
+    "Maria",
     "Il commissario Rinaldi",
     "Marco Dandolo",
-    "Don Salvatore"
+    "Carlotta"
    ],
    "answer": 1,
    "why": "È Il commissario Rinaldi, da «Antonio e il segreto di Roma»."
@@ -803,12 +803,12 @@
    "prompt": "Chi è?",
    "question": "Amica di Matteo che fa il trucco agli attori in un teatro: trasforma Antonio in un anziano collezionista.",
    "options": [
-    "Alberto Menichetti",
-    "Robert",
+    "Il Porpora",
     "Giulia",
-    "Vanessa"
+    "Marco Dandolo",
+    "Don Salvatore"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "È Giulia, da «Antonio e il segreto di Roma»."
   },
   {
@@ -817,6 +817,21 @@
    "prompt": "Chi è questo personaggio?",
    "word": "",
    "img": "characters/img/robert-1.jpg",
+   "options": [
+    "Il Porpora",
+    "Natalia",
+    "Robert",
+    "Enrico"
+   ],
+   "answer": 2,
+   "why": "È Robert, da «Presentimento»."
+  },
+  {
+   "type": "choice",
+   "kind": "who",
+   "prompt": "Chi è questo personaggio?",
+   "word": "",
+   "img": "characters/img/robert-2.jpg",
    "options": [
     "Chiara",
     "Robert",
@@ -831,22 +846,22 @@
    "kind": "who",
    "prompt": "Chi è questo personaggio?",
    "word": "",
-   "img": "characters/img/robert-2.jpg",
+   "img": "characters/img/sasha-1.jpg",
    "options": [
     "Don Salvatore",
     "Irina",
-    "Robert",
+    "Sasha",
     "Dima"
    ],
    "answer": 2,
-   "why": "È Robert, da «Presentimento»."
+   "why": "È Sasha, da «Presentimento»."
   },
   {
    "type": "choice",
    "kind": "who",
    "prompt": "Chi è questo personaggio?",
    "word": "",
-   "img": "characters/img/sasha-1.jpg",
+   "img": "characters/img/sasha-2.jpg",
    "options": [
     "Il Direttore",
     "Sasha",
@@ -861,29 +876,14 @@
    "kind": "who",
    "prompt": "Chi è questo personaggio?",
    "word": "",
-   "img": "characters/img/sasha-2.jpg",
+   "img": "characters/img/marco-dandolo-1.jpg",
    "options": [
     "Pietro",
     "Clara",
-    "Sasha",
-    "Aurora"
+    "Marco Dandolo",
+    "Fabrizio"
    ],
    "answer": 2,
-   "why": "È Sasha, da «Presentimento»."
-  },
-  {
-   "type": "choice",
-   "kind": "who",
-   "prompt": "Chi è questo personaggio?",
-   "word": "",
-   "img": "characters/img/marco-dandolo-1.jpg",
-   "options": [
-    "Marco Dandolo",
-    "Antonio",
-    "Paolo",
-    "Franco"
-   ],
-   "answer": 0,
    "why": "È Marco Dandolo, da «Maschera di Venezia»."
   },
   {
@@ -892,12 +892,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Luis?",
    "options": [
-    "La squadra invincibile",
-    "Maschera di Venezia",
     "Presentimento",
-    "Ladro di cuori 2"
+    "La Nevicata Rosa",
+    "Ladro di cuori",
+    "La squadra invincibile"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "Luis compare in «Presentimento»."
   },
   {
@@ -906,12 +906,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Robert?",
    "options": [
+    "La squadra invincibile",
+    "Maschera di Venezia",
     "Presentimento",
-    "Antonio e il segreto di Roma",
-    "Ladro di cuori",
-    "Il treno fantasma"
+    "Antonio e il segreto di Roma"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "Robert compare in «Presentimento»."
   },
   {
@@ -920,12 +920,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Natalia?",
    "options": [
-    "La macchina dei sogni",
+    "Il treno fantasma",
+    "Ladro di cuori 2",
     "Presentimento",
-    "La squadra invincibile",
-    "La città triste"
+    "La Nevicata Rosa"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Natalia compare in «Presentimento»."
   },
   {
@@ -934,12 +934,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Sasha?",
    "options": [
-    "Il treno fantasma",
-    "Ladro di cuori 2",
-    "Presentimento",
-    "La macchina dei sogni"
+    "Ladro di cuori",
+    "Maschera di Venezia",
+    "La città triste",
+    "Presentimento"
    ],
-   "answer": 2,
+   "answer": 3,
    "why": "Sasha compare in «Presentimento»."
   },
   {
@@ -948,12 +948,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Alessio?",
    "options": [
-    "Ladro di cuori",
+    "La macchina dei sogni",
     "Il treno fantasma",
-    "La squadra invincibile",
-    "La città triste"
+    "La città triste",
+    "Ladro di cuori"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "Alessio compare in «Ladro di cuori»."
   },
   {
@@ -962,10 +962,10 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Marco?",
    "options": [
-    "Ladro di cuori 2",
-    "Presentimento",
+    "La macchina dei sogni",
+    "La Nevicata Rosa",
     "Il treno fantasma",
-    "La Nevicata Rosa"
+    "Maschera di Venezia"
    ],
    "answer": 2,
    "why": "Marco compare in «Il treno fantasma»."
