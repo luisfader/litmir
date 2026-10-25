@@ -51,6 +51,17 @@ Cada idioma puede tener su curso (`#/learn`), con la teoría explicada en otros 
 
 **Toda novela que no esté terminada debe llevar `"wip": true`** en `catalog.json`. Así aparece la etiqueta «En proceso» en la tarjeta y en la ficha, y un aviso de que llegarán capítulos nuevos. Hay que revisarlo cada vez que se añade una novela o capítulos nuevos: si falta el final (o faltan capítulos intermedios), lleva `"wip": true`. Cuando el autor la termine, se quita la marca.
 
+## Juego de las novelas
+
+En las secciones ES, RU, IT y EN hay un juego (`#/game`, botón «🎲» en la portada): partidas de 10 preguntas al azar, con corazones, XP, rachas y récord. Mezcla cuatro tipos de preguntas:
+
+- **¿Quién es?** — la descripción (o el retrato) de un personaje de la galería (`characters/catalog.json`, `characters/img/`).
+- **¿De qué novela es esta frase?** — una frase real de los capítulos 1–3 de cada novela.
+- **¿En qué novela aparece…?** — sale del campo `novels` de cada personaje.
+- **La trama** — preguntas escritas a mano en `games/plot.<idioma>.json` (la primera opción es la correcta; comprobar cada dato en el texto).
+
+Las preguntas están en `games/<idioma>.json`. **Al añadir novelas o personajes, regenerarlas:** `python3 tools/juego.py .` Las novelas 18+ quedan fuera del juego.
+
 ## Novelas para adultos
 
 Añadir `"adult": true` a la novela en `catalog.json`: aparece la marca 18+ y se pide confirmación de edad antes de leer.

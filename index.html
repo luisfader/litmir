@@ -988,6 +988,7 @@ function home(){
     <a class="character-entry" href="characters.html" id="charactersEntry">✧ <span id="charactersLabel">Personajes</span> →</a>
     <a class="character-entry" href="#/blog">✎ ${esc(bt("title"))} →</a>
     ${course() ? `<a class="character-entry" href="#/learn">🎓 ${esc(course().title[lang])} →</a>` : ""}
+    ${GAME_T[lang] ? `<a class="character-entry" href="#/game">🎲 ${esc(GAME_T[lang].btn)} →</a>` : ""}
     <a class="character-entry" href="#/mis-lecturas">★ ${esc(ft(0))} · ${esc(rt(1))} →</a>
   </section>
   <section class="wrap" data-auth-dep>
@@ -1406,15 +1407,15 @@ const plain = s => norm(s).normalize("NFD").replace(/[̀-ͯ]/g, "");
 
 async function lesson(n, i, c, o = {}){
   const BASE = o.base || `novels/${n.slug}/`, BACK = o.back || `#/${n.slug}`, BACKT = o.backTitle || n.title, KEY = o.key || n.slug;
-  const src = p => /^(novels|learn)\//.test(p) ? p : BASE + p;
+  const src = p => /^(novels|learn|characters)\//.test(p) ? p : BASE + p;
   let data;
-  try { data = JSON.parse(await getText(BASE + c.file)); }
+  try { data = o.data ? o.data() : JSON.parse(await getText(BASE + c.file)); }
   catch(e) { app.innerHTML = `<div class="empty">${esc(t("notFound"))}</div>`; return; }
   const T = Object.assign({}, LESSON_T, data.ui || {}), SPK = data.speak || "cs-CZ", LL = SPK.slice(0, 2);
   if (typeof T.ex === "string") { const f = T.ex; T.ex = k => f.replace("{n}", k); }
   const M = (mood) => (data.mascot === "dragon" ? DRAGON : TULIP)(mood);
   const tr = v => data.translit === "sr" ? latToCyr(v) : v;
-  const total = data.exercises.length, maxHearts = data.hearts || 5;
+  let total = data.exercises.length; const maxHearts = data.hearts || 5;
   const key = "quiz:" + KEY;
   document.title = (data.title || c.title) + " · " + n.title;
   if (!o.key) store.set("last:" + n.slug, i);
@@ -1440,6 +1441,7 @@ async function lesson(n, i, c, o = {}){
   }
 
   function begin(){
+    if (o.data && S) { data = o.data(); total = data.exercises.length; }
     S = { queue: data.exercises.map((e, k) => ({...e, k})), hearts: maxHearts, solved: new Set(), firstTry: new Set(), missed: new Set(), xp: 0, t0: Date.now(), streak: 0 };
     frame(); next();
   }
@@ -1495,7 +1497,7 @@ async function lesson(n, i, c, o = {}){
     }
     if (e.type === "choice" || e.type === "reverse") {
       e._opts = shuffle(e.options.map((o, k) => ({o, k})));
-      const word = e.type === "choice" ? `<div class="ls-word">${spk(e.word)}<span lang="${LL}">${esc(e.word)}</span></div>` : `<div class="ls-word es">«${esc(e.word)}»</div>`;
+      const word = e.type === "choice" && !e.word ? "" : e.type === "choice" ? `<div class="ls-word">${spk(e.word)}<span lang="${LL}">${esc(e.word)}</span></div>` : `<div class="ls-word es">«${esc(e.word)}»</div>`;
       return head + word + `<div class="ls-grid">${e._opts.map((x, j) => `<button class="ls-opt" data-k="${x.k}"><kbd>${j+1}</kbd><span ${e.type==="reverse"?`lang="${LL}"`:""}>${esc(x.o)}</span></button>`).join("")}</div>`;
     }
     if (e.type === "story") {
@@ -1716,6 +1718,37 @@ function confetti(cv){
   })();
 }
 
+
+/* Novels game: #/game — 10 random questions about the novels of the current language */
+const GAME_T = {
+  es:{btn:"Juego: ¿cuánto sabes de las novelas?", title:"¿Cuánto sabes de las novelas?", sub:"10 preguntas al azar: personajes, frases y tramas. Cada partida es distinta.", kicker:"Juego", back:"Todas las novelas",
+      ui:{again:"Jugar otra vez", back:"Volver a las novelas", done:"¡Partida terminada!", ex:"{n} preguntas", min:"≈ 3 minutos", perfect:"¡Sin un solo error! Conoces las novelas de memoria.", good:"¡Muy bien! Eres un gran lector.", ok:"¡Bien! Juega otra vez: cada partida trae preguntas nuevas.", lostP:"No pasa nada: cada partida es distinta. ¡Prueba otra vez!"}},
+  ru:{btn:"Игра: насколько хорошо вы знаете романы?", title:"Насколько хорошо вы знаете романы?", sub:"10 случайных вопросов: герои, цитаты и сюжеты. Каждая игра — новая.", kicker:"Игра", back:"Все романы",
+      ui:{start:"Начать", check:"Проверить", next:"Дальше", skip:"Не знаю", retry:"Попробовать ещё раз", again:"Сыграть ещё раз", back:"Вернуться к романам", great:["Отлично!","Верно!","Прекрасно!","Браво!","Точно!"], wrong:"Правильный ответ:", almost:"Почти!", done:"Игра окончена!", lost:"Сердечки закончились", lostP:"Ничего страшного: каждая игра — новая. Попробуйте ещё раз!", xp:"Всего XP", acc:"Точность", time:"Время", ex:"{n} вопросов", min:"≈ 3 минуты", hearts:"сердечек", best:"Ваш лучший результат", tap:"Нажимайте на слова по порядку", type:"Пишите здесь…", perfect:"Ни одной ошибки! Вы знаете романы наизусть.", good:"Отлично! Вы настоящий читатель.", ok:"Хорошо! Сыграйте ещё раз — в каждой игре новые вопросы.", sound:"Звук", listen:"Слушать", meaning:"Значение:", yes:"Верно", no:"Неверно", score:"Баллы", level:"Ваш уровень"}},
+  it:{btn:"Gioco: quanto conosci i romanzi?", title:"Quanto conosci i romanzi?", sub:"10 domande a caso: personaggi, frasi e trame. Ogni partita è diversa.", kicker:"Gioco", back:"Tutti i romanzi",
+      ui:{start:"Inizia", check:"Controlla", next:"Continua", skip:"Non lo so", retry:"Riprova", again:"Gioca ancora", back:"Torna ai romanzi", great:["Benissimo!","Perfetto!","Esatto!","Bravo!","Ottimo!"], wrong:"Risposta giusta:", almost:"Quasi!", done:"Partita finita!", lost:"Hai finito i cuori", lostP:"Niente paura: ogni partita è diversa. Riprova!", xp:"XP totali", acc:"Precisione", time:"Tempo", ex:"{n} domande", min:"≈ 3 minuti", hearts:"cuori", best:"Il tuo record", tap:"Tocca le parole in ordine", type:"Scrivi qui…", perfect:"Nessun errore! Conosci i romanzi a memoria.", good:"Benissimo! Sei un vero lettore.", ok:"Bene! Gioca ancora: ogni partita porta domande nuove.", sound:"Suono", listen:"Ascolta", meaning:"Significa:", yes:"Vero", no:"Falso", score:"Punteggio", level:"Il tuo livello"}},
+  en:{btn:"Game: how well do you know the novels?", title:"How well do you know the novels?", sub:"10 random questions: characters, quotes and plots. Every round is different.", kicker:"Game", back:"All novels",
+      ui:{start:"Start", check:"Check", next:"Continue", skip:"I don't know", retry:"Try again", again:"Play again", back:"Back to the novels", great:["Great!","Perfect!","Correct!","Excellent!","Well done!"], wrong:"Correct answer:", almost:"Almost!", done:"Round complete!", lost:"You ran out of hearts", lostP:"No problem: every round is different. Try again!", xp:"Total XP", acc:"Accuracy", time:"Time", ex:"{n} questions", min:"≈ 3 minutes", hearts:"hearts", best:"Your best result", tap:"Tap the words in order", type:"Type here…", perfect:"Not a single mistake! You know the novels by heart.", good:"Great job! You’re a true reader.", ok:"Well done! Play again: every round brings new questions.", sound:"Sound", listen:"Listen", meaning:"Meaning:", yes:"True", no:"False", score:"Score", level:"Your level"}}
+};
+let gamePools = {};
+async function game(){
+  const G = GAME_T[lang]; if (!G) return home();
+  if (!gamePools[lang]) { try { const r = await fetch(`games/${lang}.json`, {cache:"no-cache"}); if (!r.ok) throw 0; gamePools[lang] = await r.json(); } catch(e) { app.innerHTML = `<div class="empty">${esc(t("notFound"))}</div>`; return; } }
+  const P = gamePools[lang];
+  const round = () => {
+    const by = k => shuffle(P.pool.filter(q => q.kind === k));
+    const plan = [["who",3],["quote",3],["where",2],["plot",2]];
+    let pick = [];
+    plan.forEach(([k, n]) => pick.push(...by(k).slice(0, n)));
+    const rest = shuffle(P.pool.filter(q => !pick.includes(q)));
+    while (pick.length < 10 && rest.length) pick.push(rest.pop());
+    return { title:G.title, subtitle:G.sub, speak:{es:"es-ES",ru:"ru-RU",it:"it-IT",en:"en-GB"}[lang], hearts:5,
+             hero: P.covers && P.covers.length ? shuffle(P.covers)[0] : undefined, ui:G.ui, exercises: shuffle(pick).map(q => ({...q})) };
+  };
+  return lesson({slug:"game-" + lang, title:G.title}, 0, {file:"", title:G.title, label:G.kicker},
+                {data:round, back:"#/", backTitle:G.back, key:"game-" + lang, base:""});
+}
+
 /* Soundtrack: voluntary playback; persists between chapters of the same novel. */
 const music = { el:new Audio(), novel:null, i:0, cache:new Map() };
 music.el.preload = "none";
@@ -1905,6 +1938,7 @@ function route(){
   const parts = location.hash.replace(/^#\/?/, "").split("/").filter(Boolean);
   if (parts[0] === "blog") { setSoundtrack(null); return parts[1] ? blogPost(decodeURIComponent(parts[1])) : blogIndex(); }
   if (parts[0] === "mis-lecturas") { setSoundtrack(null); return myReading(); }
+  if (parts[0] === "game") { setSoundtrack(null); return game(); }
   if (parts[0] === "learn") { setSoundtrack(null); return parts[1] ? learnUnit(decodeURIComponent(parts[1]), parts[2] === "practice") : learnHome(); }
   const n = parts.length ? catalog.novels.find(x => x.slug === decodeURIComponent(parts[0])) : null;
   setSoundtrack(n && adultOk(n) ? n : null);
