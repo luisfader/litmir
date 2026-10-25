@@ -9,5 +9,3 @@
 | `03.mp3` | «Завтра будет дождь» |
 
 Музыка включается только после нажатия читателем кнопки воспроизведения. Плеер позволяет выбирать композицию и регулировать громкость и продолжает воспроизведение между главами.
-
-La carpeta está preparada para subir aquí los tres MP3; los archivos de audio todavía no están incorporados al repositorio.
