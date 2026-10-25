@@ -1584,6 +1584,23 @@
           "title": "Песни Оксаны",
           "label": "Дополнение"
         }
+      ],
+      "soundtrack": [
+        {
+          "file": "music/01.mp3",
+          "title": "Душа в бункере",
+          "duration": "3:09"
+        },
+        {
+          "file": "music/02.mp3",
+          "title": "Дождь любви",
+          "duration": "2:38"
+        },
+        {
+          "file": "music/03.mp3",
+          "title": "Завтра будет дождь",
+          "duration": "4:12"
+        }
       ]
     },
     {
