@@ -242,6 +242,8 @@ article.chapter blockquote{margin:1.2em 0;padding-left:1em;border-left:2px solid
 article.chapter figure{margin:2em -20px;text-align:center}
 article.chapter figure.mid{margin:1.8em auto;max-width:520px}
 article.chapter figure.mid img{max-height:none;width:100%}
+article.chapter figure.linked img{max-height:420px;transition:transform .2s}
+article.chapter figure.linked a:hover img{transform:scale(1.02)}
 article.chapter figure img{max-width:100%;max-height:72vh;width:auto;height:auto;border-radius:6px;box-shadow:var(--shadow)}
 article.chapter h3{font-family:var(--sans);font-size:.72em;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:2em 0 .8em;font-weight:600}
 .badge18{position:absolute;top:10px;right:10px;background:#b3261e;color:#fff;font-family:var(--sans);font-weight:700;font-size:12px;padding:3px 7px;border-radius:6px;letter-spacing:.02em;z-index:2}
@@ -675,6 +677,8 @@ function inline(s){ return esc(s).replace(/\[([^\]]+)\]\(((?:#|https?:\/\/|[\w.\
 function renderText(md){
   return md.replace(/\r/g,"").split(/\n\s*\n/).map(b => b.trim()).filter(Boolean).map(b => {
     if (/^(\*\s*){3,}$|^(-\s*){3,}$|^⁂$/.test(b)) return "<hr>";
+    let lk = b.match(/^\[!\[([^\]]*)\]\(([^)\s]+)\)\]\(((?:#|https?:\/\/)[^)\s]*)\)$/);
+    if (lk) return `<figure class="linked"><a href="${esc(lk[3])}"><img src="${esc(lk[2])}" alt="${esc(lk[1])}" loading="lazy"></a></figure>`;
     let m = b.match(/^!\[([^\]]*)\]\(([^)\s]+)\)$/);
     if (m) return m[1] === "m" ? `<figure class="mid"><img src="${esc(m[2])}" alt="" loading="lazy"></figure>` : `<figure><img src="${esc(m[2])}" alt="${esc(m[1])}" loading="lazy"></figure>`;
     if (/^##\s/.test(b)) return "<h2>" + inline(b.replace(/^#+\s*/,"")) + "</h2>";
