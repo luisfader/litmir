@@ -1739,17 +1739,13 @@ function mSync(){
 }
 async function mPlay(){
   if (!music.novel) return;
-  const novel = music.novel, file = mTrack().file;
+  const novel = music.novel;
   try {
-    const res = await fetch("novels/" + novel.slug + "/" + file, {method:"HEAD"});
-    if (!res.ok) {
-      mStatus.textContent = novel.lang === "ru" ? "Аудиозапись ещё не опубликована" : "Audio file not yet available";
-      return;
-    }
-    if (music.novel !== novel || mTrack().file !== file) return;
+    // play() must run inside the click itself: an await before it makes Safari/iOS block playback.
     await music.el.play();
     mStatus.textContent = "";
   } catch(e) {
+    if (music.novel !== novel || e.name === "AbortError" || music.el.error) return;
     mStatus.textContent = novel.lang === "ru" ? "Не удалось воспроизвести запись" : "Unable to play audio";
   }
 }
@@ -1779,7 +1775,12 @@ document.getElementById("mNext").onclick = () => mChoose((music.i+1) % music.nov
 mSelect.onchange = () => mChoose(+mSelect.value, false);
 music.el.onended = () => mChoose((music.i+1) % music.novel.soundtrack.length, true);
 music.el.onplay = music.el.onpause = mSync;
-music.el.onerror = () => { if (music.novel) mStatus.textContent = music.novel.lang === "ru" ? "Не удалось загрузить аудиофайл" : "Audio file unavailable"; };
+music.el.onerror = () => {
+  if (!music.novel || !music.el.getAttribute("src")) return;
+  const ru = music.novel.lang === "ru", missing = music.el.error && music.el.error.code === 4;
+  mStatus.textContent = missing ? (ru ? "Аудиозапись ещё не опубликована" : "Audio file not yet available") : (ru ? "Не удалось загрузить аудиофайл" : "Audio file unavailable");
+  music.el.pause(); mSync();
+};
 const vol = document.getElementById("mVol"); vol.value = music.el.volume;
 vol.oninput = () => { music.el.volume = +vol.value; store.set("vol", +vol.value); };
 
