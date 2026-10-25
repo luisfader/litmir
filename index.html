@@ -437,6 +437,17 @@ article.chapter h3{font-family:var(--sans);font-size:.72em;letter-spacing:.12em;
 .music .mt{color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:180px;padding:0 2px}
 .music .mt b{color:var(--ink);font-weight:600}
 .music input{width:70px;accent-color:var(--accent)}
+.music select{max-width:185px;min-width:125px;padding:7px 8px;background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:10px;font:inherit;cursor:pointer}
+.music .m-status{font-size:11px;color:var(--muted);max-width:185px}
+.music .m-status:empty{display:none}
+.soundtrack-panel{margin:20px 0 24px;padding:19px 22px;border:1px solid var(--line);border-radius:15px;background:var(--paper)}
+.soundtrack-panel h2{margin:0 0 8px;font-size:21px}
+.soundtrack-panel p{font-size:14px;color:var(--muted);line-height:1.6;margin:0 0 12px}
+.soundtrack-list{display:flex;flex-wrap:wrap;gap:8px}
+.soundtrack-list button{font:inherit;font-size:14px;color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:999px;padding:9px 12px;cursor:pointer;text-align:left}
+.soundtrack-list button:hover,.soundtrack-list button:focus-visible{border-color:var(--accent);background:var(--accent-soft)}
+.soundtrack-list small{opacity:.7;margin-left:6px}
+@media(max-width:640px){.music{left:10px;right:10px;bottom:10px;flex-wrap:wrap;border-radius:17px;max-width:none}.music .mt{display:none}.music select{flex:1;max-width:none;min-width:120px}.music .m-status{max-width:none;width:100%;padding:0 8px}.music input{width:55px}}
 @media (max-width:520px){.music input{display:none}.music .mt{max-width:140px}}
 .reflection-card{border:1px solid var(--line);border-radius:14px;padding:1.05em 1.3em;margin:1.2em 0;background:var(--paper);min-width:0}
 .reflection-card legend{font-weight:700;padding:0 .3em;line-height:1.6;max-width:95%}
@@ -475,8 +486,10 @@ article.chapter h3{font-family:var(--sans);font-size:.72em;letter-spacing:.12em;
 <div class="music" id="music" role="region" aria-label="Soundtrack">
   <button class="play" id="mPlay" aria-label="Play">▶</button>
   <span class="mt" id="mTitle"></span>
+  <select id="mTrackSelect" aria-label="Выбрать композицию"></select>
   <button id="mNext" aria-label="Next track">⏭</button>
   <input type="range" id="mVol" min="0" max="1" step="0.05" aria-label="Volume">
+  <span class="m-status" id="mStatus" role="status" aria-live="polite"></span>
 </div>
 <footer><div class="wrap" id="foot"></div></footer>
 
@@ -1218,6 +1231,7 @@ function novelPage(n){
       ${tr.length ? `<div class="notice">${esc(t("also"))} ${tr.join(", ")}</div>` : ""}
       ${moduleProgress(n)}
       ${progressHTML(n)}
+      ${n.soundtrack && n.soundtrack.length ? `<section class="soundtrack-panel" aria-label="Саундтрек"><h2>♫ Саундтрек к роману</h2><p>Музыка звучит только по вашему желанию. Выберите песню — и продолжайте читать: воспроизведение не прервётся при переходе между главами.</p><div class="soundtrack-list">${n.soundtrack.map((tk,i)=>`<button type="button" data-soundtrack-track="${i}" aria-label="Включить ${esc(tk.title)}">▶ ${esc(tk.title)}${tk.duration ? ` <small>${esc(tk.duration)}</small>` : ""}</button>`).join("")}</div></section>` : ""}
       <div class="actions">
         ${last ? `<a class="btn" href="#/${n.slug}/${last}">${esc(t("cont"))} · ${esc(chapterTitle(n, chs[last-1] || {}, last))}</a>` : ""}
         <a class="btn ${last ? "ghost" : ""}" href="#/${n.slug}/${firstStory}">${esc(t("start"))}</a>
@@ -1229,6 +1243,7 @@ function novelPage(n){
     </div>
   </section>`;
   document.getElementById("favorite-toggle").onclick = () => toggleFavorite(n.slug);
+  app.querySelectorAll("[data-soundtrack-track]").forEach(btn => btn.onclick = () => mChoose(+btn.dataset.soundtrackTrack, true));
 }
 
 async function reader(n, idx){
@@ -1701,27 +1716,70 @@ function confetti(cv){
   })();
 }
 
-/* Soundtrack: optional, never autoplays; keeps playing across chapters of the same novel */
+/* Soundtrack: voluntary playback; persists between chapters of the same novel. */
 const music = { el:new Audio(), novel:null, i:0 };
 music.el.preload = "none";
 music.el.volume = store.get("vol", 0.5);
+const mStatus = document.getElementById("mStatus");
+const mSelect = document.getElementById("mTrackSelect");
 function mTrack(){ return music.novel.soundtrack[music.i]; }
-function mLoad(){ const tk = mTrack(); music.el.src = `novels/${music.novel.slug}/${tk.file}`;
-  document.getElementById("mTitle").innerHTML = `♪ <b>${esc(tk.title)}</b>`; }
-function mSync(){ const b = document.getElementById("mPlay"); const on = !music.el.paused;
-  b.textContent = on ? "❚❚" : "▶"; b.setAttribute("aria-label", on ? "Pause" : "Play"); }
+function mSrc(){ return "novels/" + music.novel.slug + "/" + mTrack().file; }
+function mLoad(){
+  const tk = mTrack();
+  music.el.src = mSrc();
+  document.getElementById("mTitle").innerHTML = "♪ <b>" + esc(tk.title) + "</b>";
+  mSelect.value = String(music.i);
+  mStatus.textContent = "";
+  mSync();
+}
+function mSync(){
+  const b = document.getElementById("mPlay"), on = !music.el.paused;
+  b.textContent = on ? "❚❚" : "▶";
+  b.setAttribute("aria-label", on ? "Pause" : "Play");
+}
+async function mPlay(){
+  if (!music.novel) return;
+  const novel = music.novel, file = mTrack().file;
+  try {
+    const res = await fetch("novels/" + novel.slug + "/" + file, {method:"HEAD"});
+    if (!res.ok) {
+      mStatus.textContent = novel.lang === "ru" ? "Аудиозапись ещё не опубликована" : "Audio file not yet available";
+      return;
+    }
+    if (music.novel !== novel || mTrack().file !== file) return;
+    await music.el.play();
+    mStatus.textContent = "";
+  } catch(e) {
+    mStatus.textContent = novel.lang === "ru" ? "Не удалось воспроизвести запись" : "Unable to play audio";
+  }
+}
+function mChoose(i, start){
+  if (!music.novel || i < 0 || i >= music.novel.soundtrack.length) return;
+  const was = !music.el.paused;
+  music.el.pause();
+  music.i = i;
+  mLoad();
+  if (start || was) mPlay();
+}
 function setSoundtrack(n){
-  const box = document.getElementById("music");
-  const has = n && n.soundtrack && n.soundtrack.length;
-  if (music.novel && (!has || music.novel.slug !== n.slug)) { music.el.pause(); music.el.removeAttribute("src"); music.novel = null; }
-  if (!has) { box.classList.remove("on"); return; }
-  if (!music.novel) { music.novel = n; music.i = 0; mLoad(); }
+  const box = document.getElementById("music"), has = n && n.soundtrack && n.soundtrack.length;
+  if (music.novel && (!has || music.novel.slug !== n.slug)) {
+    music.el.pause(); music.el.removeAttribute("src"); music.novel = null;
+  }
+  if (!has){ box.classList.remove("on"); mStatus.textContent = ""; return; }
+  if (!music.novel){
+    music.novel = n; music.i = 0;
+    mSelect.innerHTML = n.soundtrack.map((tk,i) => '<option value="' + i + '">' + esc(tk.title) + '</option>').join("");
+    mLoad();
+  }
   box.classList.add("on"); mSync();
 }
-document.getElementById("mPlay").onclick = () => { music.el.paused ? music.el.play().catch(()=>{}) : music.el.pause(); };
-document.getElementById("mNext").onclick = () => { const was = !music.el.paused; music.i = (music.i+1) % music.novel.soundtrack.length; mLoad(); if (was) music.el.play().catch(()=>{}); };
-music.el.onended = () => { music.i = (music.i+1) % music.novel.soundtrack.length; mLoad(); music.el.play().catch(()=>{}); };
+document.getElementById("mPlay").onclick = () => { music.el.paused ? mPlay() : music.el.pause(); };
+document.getElementById("mNext").onclick = () => mChoose((music.i+1) % music.novel.soundtrack.length, false);
+mSelect.onchange = () => mChoose(+mSelect.value, false);
+music.el.onended = () => mChoose((music.i+1) % music.novel.soundtrack.length, true);
 music.el.onplay = music.el.onpause = mSync;
+music.el.onerror = () => { if (music.novel) mStatus.textContent = music.novel.lang === "ru" ? "Не удалось загрузить аудиофайл" : "Audio file unavailable"; };
 const vol = document.getElementById("mVol"); vol.value = music.el.volume;
 vol.oninput = () => { music.el.volume = +vol.value; store.set("vol", +vol.value); };
 
