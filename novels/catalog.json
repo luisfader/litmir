@@ -1644,17 +1644,23 @@
         {
           "file": "music/01.mp3",
           "title": "Душа в бункере",
-          "duration": "3:09"
+          "duration": "3:09",
+          "parts": 31,
+          "folder": "music/01"
         },
         {
           "file": "music/02.mp3",
           "title": "Дождь любви",
-          "duration": "2:38"
+          "duration": "2:38",
+          "parts": 16,
+          "folder": "music/02"
         },
         {
           "file": "music/03.mp3",
           "title": "Завтра будет дождь",
-          "duration": "4:12"
+          "duration": "4:12",
+          "parts": 24,
+          "folder": "music/03"
         }
       ]
     },

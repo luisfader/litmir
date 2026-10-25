@@ -1717,7 +1717,7 @@ function confetti(cv){
 }
 
 /* Soundtrack: voluntary playback; persists between chapters of the same novel. */
-const music = { el:new Audio(), novel:null, i:0 };
+const music = { el:new Audio(), novel:null, i:0, cache:new Map() };
 music.el.preload = "none";
 music.el.volume = store.get("vol", 0.5);
 const mStatus = document.getElementById("mStatus");
@@ -1726,7 +1726,8 @@ function mTrack(){ return music.novel.soundtrack[music.i]; }
 function mSrc(){ return "novels/" + music.novel.slug + "/" + mTrack().file; }
 function mLoad(){
   const tk = mTrack();
-  music.el.src = mSrc();
+  if (tk.parts) music.el.removeAttribute("src");
+  else music.el.src = mSrc();
   document.getElementById("mTitle").innerHTML = "♪ <b>" + esc(tk.title) + "</b>";
   mSelect.value = String(music.i);
   mStatus.textContent = "";
@@ -1739,8 +1740,28 @@ function mSync(){
 }
 async function mPlay(){
   if (!music.novel) return;
-  const novel = music.novel;
+  const novel = music.novel, tk = mTrack();
   try {
+    if (tk.parts && tk.folder) {
+      const key = novel.slug + "/" + tk.folder;
+      let audioUrl = music.cache.get(key);
+      if (!audioUrl) {
+        mStatus.textContent = novel.lang === "ru" ? "Загружаем песню…" : "Loading soundtrack…";
+        const audioParts = await Promise.all(Array.from({length:tk.parts}, async (_,i)=>{
+          const path = "novels/" + novel.slug + "/" + tk.folder + "/" + String(i).padStart(3,"0") + ".part";
+          const res = await fetch(path);
+          if (!res.ok) throw new Error("Missing audio part " + i);
+          return res.arrayBuffer();
+        }));
+        audioUrl = URL.createObjectURL(new Blob(audioParts,{type:"audio/mpeg"}));
+        music.cache.set(key,audioUrl);
+      }
+      if (music.novel !== novel || mTrack() !== tk) return;
+      if (music.el.src !== audioUrl) music.el.src = audioUrl;
+      await music.el.play();
+      mStatus.textContent = "";
+      return;
+    }
     // play() must run inside the click itself: an await before it makes Safari/iOS block playback.
     await music.el.play();
     mStatus.textContent = "";
