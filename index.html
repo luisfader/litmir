@@ -902,6 +902,13 @@ function coverHTML(n){
 const chapterTitle = (n, c, i) => c.title || (UI[n.lang].chapter + " " + i);
 // Numbered chapters only count entries without a label (prefaces/appendices have one)
 function chapterNo(n, i){ let k = 0; for (let j = 0; j < i; j++) if (!n.chapters[j].label) k++; return k; }
+// URL segment for chapter at position i: story chapters use the number shown to readers ("Глава 25" → /25), extras use /extra-N.
+function chapterSeg(n, i){ const c = n.chapters[i-1]; if (!c) return String(i); if (!c.label) return String(chapterNo(n, i)); let k = 0; for (let j = 0; j < i; j++) if (n.chapters[j].label) k++; return "extra-" + k; }
+function chapterHref(n, i){ return "#/" + n.slug + "/" + chapterSeg(n, i); }
+function chapterIndex(n, seg){ const chs = n.chapters, e = /^extra-(\d+)$/.exec(seg || "");
+  if (e) { let k = 0; for (let j = 0; j < chs.length; j++) if (chs[j].label && ++k === +e[1]) return j + 1; return 1; }
+  const d = parseInt(seg, 10) || 1; let k = 0; for (let j = 0; j < chs.length; j++) if (!chs[j].label && ++k === d) return j + 1;
+  return Math.min(Math.max(d, 1), chs.length); }
 
 /* Reading progress and favourites are saved only in this browser, without accounts. */
 const READ_T = {
@@ -969,7 +976,7 @@ function myReading(){
   ${list.length ? list.map(n => {
     const s = readStats(n), L = UI[n.lang] || UI.en, go = s.last || Math.max(1, n.chapters.findIndex(c => !c.label) + 1);
     const where = s.pct === 100 ? "✔ " + rt(3, n.lang) : (s.last ? L.cont + " · " + chapterTitle(n, n.chapters[s.last - 1] || {}, chapterNo(n, s.last)) : L.start);
-    return `<a class="mr-row" href="#/${esc(n.slug)}${s.pct === 100 ? "" : "/" + go}">${coverHTML(n)}<div>
+    return `<a class="mr-row" href="${s.pct === 100 ? "#/" + esc(n.slug) : esc(chapterHref(n, go))}">${coverHTML(n)}<div>
       <h3>${esc(n.title)}</h3><small>${esc(LANG_NAMES[n.lang] || n.lang)} · ${esc(where)}</small>${progressHTML(n)}</div></a>`;
   }).join("") : `<div class="empty">${esc(rt(2))}</div>`}</section>`;
   window.scrollTo(0, 0);
@@ -1234,11 +1241,11 @@ function novelPage(n){
       ${progressHTML(n)}
       ${n.soundtrack && n.soundtrack.length ? `<section class="soundtrack-panel" aria-label="Саундтрек"><h2>♫ Саундтрек к роману</h2><p>Музыка звучит только по вашему желанию. Выберите песню — и продолжайте читать: воспроизведение не прервётся при переходе между главами.</p><div class="soundtrack-list">${n.soundtrack.map((tk,i)=>`<button type="button" data-soundtrack-track="${i}" aria-label="Включить ${esc(tk.title)}">▶ ${esc(tk.title)}${tk.duration ? ` <small>${esc(tk.duration)}</small>` : ""}</button>`).join("")}</div></section>` : ""}
       <div class="actions">
-        ${last ? `<a class="btn" href="#/${n.slug}/${last}">${esc(t("cont"))} · ${esc(chapterTitle(n, chs[last-1] || {}, last))}</a>` : ""}
-        <a class="btn ${last ? "ghost" : ""}" href="#/${n.slug}/${firstStory}">${esc(t("start"))}</a>
+        ${last ? `<a class="btn" href="${chapterHref(n, last)}">${esc(t("cont"))} · ${esc(chapterTitle(n, chs[last-1] || {}, last))}</a>` : ""}
+        <a class="btn ${last ? "ghost" : ""}" href="${chapterHref(n, firstStory)}">${esc(t("start"))}</a>
         <button type="button" class="btn ghost" id="favorite-toggle" aria-pressed="${isFavorite(n.slug)}">${isFavorite(n.slug) ? "★" : "☆"} ${esc(ft(isFavorite(n.slug)?2:1,n.lang))}</button></div>
       <div class="toc" data-auth-dep><h2>${esc(t("contents"))}</h2><ol>
-        ${chs.map((c,i) => `<li class="${done.includes(i+1)?"done":""} ${c.label?"extra":""}"><a href="#/${n.slug}/${i+1}"><span class="n">${c.type === "quiz" ? "★" : c.label ? "·" : chapterNo(n, i+1)}</span><span>${esc(chapterTitle(n, c, chapterNo(n, i+1)))}${(!signedIn() && chapterLocked(n, i+1)) || (pwLocked(n, i+1) && !pwOpen(n)) ? ' <span class="lock" aria-hidden="true">🔒</span>' : ""}</span></a></li>`).join("")}
+        ${chs.map((c,i) => `<li class="${done.includes(i+1)?"done":""} ${c.label?"extra":""}"><a href="${chapterHref(n, i+1)}"><span class="n">${c.type === "quiz" ? "★" : c.label ? "·" : chapterNo(n, i+1)}</span><span>${esc(chapterTitle(n, c, chapterNo(n, i+1)))}${(!signedIn() && chapterLocked(n, i+1)) || (pwLocked(n, i+1) && !pwOpen(n)) ? ' <span class="lock" aria-hidden="true">🔒</span>' : ""}</span></a></li>`).join("")}
       </ol></div>
       ${sagaHTML(n)}
     </div>
@@ -1280,8 +1287,8 @@ async function reader(n, idx){
   </article>${n.glossPick ? `<aside class="gl-side" id="glSide"></aside></div>` : ""}
   ${n.wip && i === chs.length ? `<div class="wipnote"><div>✎ ${esc(L.wipNote)}</div></div>` : ""}
   <nav class="pager">
-    ${i>1 ? `<a href="#/${n.slug}/${i-1}">← ${esc(t("prev"))}<b>${esc(titleOf(i-1))}</b></a>` : `<span style="flex:1"></span>`}
-    ${i<chs.length ? `<a class="next" href="#/${n.slug}/${i+1}">${esc(t("next"))} →<b>${esc(titleOf(i+1))}</b></a>` : `<a class="next" href="#/">${esc(t("back"))} →<b>${esc(t("hero"))}</b></a>`}
+    ${i>1 ? `<a href="${chapterHref(n, i-1)}">← ${esc(t("prev"))}<b>${esc(titleOf(i-1))}</b></a>` : `<span style="flex:1"></span>`}
+    ${i<chs.length ? `<a class="next" href="${chapterHref(n, i+1)}">${esc(t("next"))} →<b>${esc(titleOf(i+1))}</b></a>` : `<a class="next" href="#/">${esc(t("back"))} →<b>${esc(t("hero"))}</b></a>`}
   </nav>
   <section class="comments" id="comments"></section>`;
   window.scrollTo(0,0);
@@ -1947,7 +1954,7 @@ function route(){
   if (!adultOk(n)) return adultGate(n);
   if (parts[1] === "progreso") return progressPage(n);
   if (parts[1]) {
-    const i = Math.min(Math.max(parseInt(parts[1],10) || 1, 1), n.chapters.length);
+    const i = chapterIndex(n, decodeURIComponent(parts[1]));
     if (chapterLocked(n, i) && !signedIn()) { if (lang !== n.lang) setLang(n.lang); return loginGate("#/" + n.slug); }
     if (pwLocked(n, i) && !pwOpen(n)) { if (lang !== n.lang) setLang(n.lang); return pwGate(n, i); }
     return reader(n, i);
