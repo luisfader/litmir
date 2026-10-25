@@ -34,7 +34,7 @@
 
 **Lucie:** S Tomášem. A dvaceti chlapy. **Halapartnou**{alabarda|halberd}.
 
-**Luis:** Sama.
+**Luis:** Bez tebe bychom tam stáli dodnes.
 
 **Lucie:** Říkáš to pořád. Lidi si budou myslet, že jsem nějaký **obr**{gigante|giant}.
 
@@ -64,7 +64,7 @@
 
 **Luis:** Řekla jsi mi tehdy: co ze mě dělá tahle válka?
 
-**Jana:** A ty jsi mi řekl, že ze mě dělá někoho, kdo se bojí, pláče a přesto nepřestane. Pamatuju si to. Pamatuju si to každý den.
+**Jana:** A ty jsi mi řekl, že nemusíme všechno omlouvat tím, že se bráníme. Pamatuju si to. Protože nechci po válce zjistit, že jsem zapomněla myslet i na druhé.
 
 **Novinář:** Luisi, váš plán s jezerem je dnes legendou. Jak jste na něj přišel?
 
@@ -96,11 +96,11 @@
 
 **Novinář:** Jano, byl to váš nápad. Proč?
 
-**Jana:** *(dlouho mlčí, dívá se na Lucii)* Protože jsem viděla, jak Lucie odchází od lípy, když Robert navlékl ten prsten. Rovně. S hlavou nahoře. A já jsem věděla, že kdybych nic neudělala, odejde takhle navždy. Někam na hradby, do tmy, do samoty. A já jsem nechtěla, aby byla sama. Byla to moje první přítelkyně po válce. A Luis…
+**Jana:** *(dlouho mlčí, dívá se na Lucii)* Protože jsem pochopila, že ji nechci ve svém životě jen jako Luisovu dávnou přítelkyni. Byla tu pro mě, když jsem ji potřebovala. A já jsem si přála, abychom našli způsob, jak být spolu, aniž by kdokoli musel předstírat, co cítí. Neudělala jsem to proto, abych Lucii zachránila před samotou. To by nebylo fér ani k ní, ani ke mně.
 
-**Luis:** Já jsem ji miloval od Holešovic. Jen jsem si to nikdy nedovolil přiznat.
+**Luis:** V Holešovicích jsem jí věřil jako nikomu. Až mnohem později jsem pochopil, že se moje city změnily. Nechtěl jsem lhát Janě ani Lucii. Jen jsem si dlouho neuměl přiznat pravdu.
 
-**Jana:** Láska není koláč. Když ji dělíš, nezmenšuje se. To je jediná věc, kterou jsem se naučila v téhle válce a které jsem si jistá.
+**Jana:** Naučila jsem se, že láska není vlastnictví. To ale neznamená, že žárlivost prostě zmizí. Museli jsme se naučit mluvit o tom, co nás bolí, a respektovat i odpověď, kterou jsme nechtěli slyšet.
 
 **Lucie:** *(utírá si oči)* Vidíte? Takhle to dělá pořád. Řekne něco takového a já pak brečím.
 
