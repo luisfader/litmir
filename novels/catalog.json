@@ -6997,6 +6997,34 @@
       "stars": 4
     },
     {
+      "slug": "ostrovy-nad-prahou",
+      "lang": "cs",
+      "title": "Ostrovy nad Prahou",
+      "author": "Robert Fader",
+      "genre": "Městská fantasy · Romantika · Slovanské legendy",
+      "year": 2026,
+      "description": "Lucie a Mark odjíždějí na dovolenou do Číny a Luis s Janou zůstávají v Praze sami. Po romantické noci u Vltavy přijde ráno, které nikdo nečekal: nad městem visí pět kamenných ostrovů s černými hrady. Obrovské řetězy je drží v pěti srdcích Prahy a pijí sílu města. Luis hledá odpověď ve své Faderpedii a najde starou legendu o Temném pánovi. Praha má jen tři dny.\nČetba pro úroveň A2–B1.",
+      "chapters": [
+        {
+          "file": "01.md",
+          "title": "Letadlo do Pekingu"
+        },
+        {
+          "file": "02.md",
+          "title": "Noc u Vltavy"
+        },
+        {
+          "file": "03.md",
+          "title": "Ostrovy na nebi"
+        },
+        {
+          "file": "04.md",
+          "title": "Faderpedie"
+        }
+      ],
+      "wip": true
+    },
+    {
       "slug": "mundo-turquesa",
       "lang": "pt",
       "title": "Mundo Turquesa",
