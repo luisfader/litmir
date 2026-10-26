@@ -7178,12 +7178,20 @@
       "lang": "en",
       "title": "The Foreboding",
       "genre": "Post-apocalyptic fiction · Dystopian drama",
-      "description": "Four years after the Devastation, the skies have cleared, but civilization has not returned. Unarmed and hungry, Vasily wanders through the ruins of a northern city where armed crews enforce their own brutal rules. In a world that mistakes strength for justice, survival begins with a single request for food.",
+      "description": "Four years after the Devastation, Vasily survives among armed gangs until a stranger named Robert saves him from forced labor. Together they begin building Our Utopia, a fortress for survivors. Given a motorcycle and a mission to recruit three specialists, Vasya discovers that the road to a new world is far from safe.",
       "year": 2026,
       "chapters": [
         {
           "file": "01.md",
           "title": "The Unarmed"
+        },
+        {
+          "file": "02.md",
+          "title": "The Price of Freedom"
+        },
+        {
+          "file": "03.md",
+          "title": "Three Names"
         }
       ],
       "wip": true,
