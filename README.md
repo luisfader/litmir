@@ -62,6 +62,16 @@ En las secciones ES, RU, IT y EN hay un juego (`#/game`, botón «🎲» en la p
 
 Las preguntas están en `games/<idioma>.json`. **Al añadir novelas o personajes, regenerarlas:** `python3 tools/juego.py .` Las novelas 18+ quedan fuera del juego. Para dejar fuera otra novela, añadir su slug a `EXCLUDE` en `tools/juego.py` (ahora: *Julián: La Jabru y otras desgracias*).
 
+## Recomendación del día
+
+En la portada de cada idioma aparece una tarjeta «Recomendación del día» con una novela de ese idioma y el porqué. Los datos están en `recs/calendar.json`:
+
+- `{"date": "MM-DD", "slug": …, "why": …}`: una efeméride o un aniversario que se repite cada año (por ejemplo, el 21 de abril, Natale di Roma → *Antonio e il segreto di Roma*).
+- `{"easter": -47, …}`: una fiesta móvil, contada en días desde el Domingo de Pascua (−47 = martes de Carnaval).
+- `{"month": 10, …}`: la recomendación de todo el mes, cuando ese día no hay efeméride.
+
+Si no hay nada para ese día, se elige una novela al azar (la misma durante todo el día) y se muestra el principio de su descripción. Las novelas para adultos nunca se recomiendan. El motivo (`why`) se escribe en el idioma de la novela. Antes de añadir una fecha histórica, hay que comprobarla.
+
 ## Novelas para adultos
 
 Añadir `"adult": true` a la novela en `catalog.json`: aparece la marca 18+ y se pide confirmación de edad antes de leer.
