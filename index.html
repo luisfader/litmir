@@ -236,6 +236,15 @@ article.chapter blockquote{margin:1.2em 0;padding-left:1em;border-left:2px solid
 .pager a{flex:1;border:1px solid var(--line);border-radius:10px;padding:14px 16px;text-decoration:none;font-family:var(--sans);font-size:13px;color:var(--muted)}
 .pager a b{display:block;color:var(--ink);font-family:var(--serif);font-size:17px;font-weight:400;margin-top:2px}
 .pager a.next{text-align:right}
+.pages{max-width:680px;margin:8px auto 28px;padding:0 20px;font-family:var(--sans);text-align:center}
+.pages .pg-lbl{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+.pages .pg-row{display:flex;flex-wrap:wrap;justify-content:center;gap:6px}
+.pages .pg-row a,.pages .pg-row span{min-width:38px;height:38px;padding:0 10px;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:9px;text-decoration:none;color:var(--ink);font-size:15px;box-sizing:border-box}
+.pages .pg-row a:hover{border-color:var(--accent)}
+.pages .pg-row span.cur{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600}
+.pages .pg-row span.gap{border:0;min-width:16px;padding:0;color:var(--muted)}
+.pages .pg-next{display:block;margin:0 auto 14px;max-width:640px;border:1px solid var(--accent);border-radius:10px;padding:14px 16px;text-decoration:none;color:var(--accent);font-size:16px;font-weight:600}
+.pages .pg-next:hover{background:var(--accent);color:#fff}
 .pager a:hover{border-color:var(--accent)}
 .loading{text-align:center;color:var(--muted);padding:80px 0;font-family:var(--sans)}
 
@@ -675,7 +684,7 @@ const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;
 
 function inline(s){ return esc(s).replace(/\[([^\]]+)\]\(((?:#|https?:\/\/|[\w.\/-])[^)\s]*)\)/g,'<a href="$2">$1</a>').replace(/\*\*([^*]+)\*\*\{([^}]+)\}/g,'<strong class="gloss" tabindex="0" data-tr="$2">$1</strong>').replace(/_{2,}/g,"\u0001").replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>").replace(/(^|[^*])\*(?!\s)(.+?)\*/g,"$1<em>$2</em>").replace(/(^|\W)_(?!\s)(.+?)_(?=\W|$)/g,"$1<em>$2</em>").replace(/\u0001/g,'<span class="blank"></span>'); }
 function renderText(md){
-  return md.replace(/\r/g,"").split(/\n\s*\n/).map(b => b.trim()).filter(Boolean).map(b => {
+  return md.replace(/\r/g,"").split(/\n\s*\n/).map(b => b.trim()).filter(b => b && !/^<!--\s*pagebreak\s*-->$/i.test(b)).map(b => {
     if (/^(\*\s*){3,}$|^(-\s*){3,}$|^⁂$/.test(b)) return "<hr>";
     let lk = b.match(/^\[!\[([^\]]*)\]\(([^)\s]+)\)\]\(((?:#|https?:\/\/)[^)\s]*)\)$/);
     if (lk) return `<figure class="linked"><a href="${esc(lk[3])}"><img src="${esc(lk[2])}" alt="${esc(lk[1])}" loading="lazy"></a></figure>`;
@@ -980,7 +989,7 @@ function myReading(){
   ${list.length ? list.map(n => {
     const s = readStats(n), L = UI[n.lang] || UI.en, go = s.last || Math.max(1, n.chapters.findIndex(c => !c.label) + 1);
     const where = s.pct === 100 ? "✔ " + rt(3, n.lang) : (s.last ? L.cont + " · " + chapterTitle(n, n.chapters[s.last - 1] || {}, chapterNo(n, s.last)) : L.start);
-    return `<a class="mr-row" href="${s.pct === 100 ? "#/" + esc(n.slug) : esc(chapterHref(n, go))}">${coverHTML(n)}<div>
+    return `<a class="mr-row" href="${s.pct === 100 ? "#/" + esc(n.slug) : esc(resumeHref(n, go))}">${coverHTML(n)}<div>
       <h3>${esc(n.title)}</h3><small>${esc(LANG_NAMES[n.lang] || n.lang)} · ${esc(where)}</small>${progressHTML(n)}</div></a>`;
   }).join("") : `<div class="empty">${esc(rt(2))}</div>`}</section>`;
   window.scrollTo(0, 0);
@@ -1245,7 +1254,7 @@ function novelPage(n){
       ${progressHTML(n)}
       ${n.soundtrack && n.soundtrack.length ? `<section class="soundtrack-panel" aria-label="Саундтрек"><h2>♫ Саундтрек к роману</h2><p>Музыка звучит только по вашему желанию. Выберите песню — и продолжайте читать: воспроизведение не прервётся при переходе между главами.</p><div class="soundtrack-list">${n.soundtrack.map((tk,i)=>`<button type="button" data-soundtrack-track="${i}" aria-label="Включить ${esc(tk.title)}">▶ ${esc(tk.title)}${tk.duration ? ` <small>${esc(tk.duration)}</small>` : ""}</button>`).join("")}</div></section>` : ""}
       <div class="actions">
-        ${last ? `<a class="btn" href="${chapterHref(n, last)}">${esc(t("cont"))} · ${esc(chapterTitle(n, chs[last-1] || {}, last))}</a>` : ""}
+        ${last ? `<a class="btn" href="${resumeHref(n, last)}">${esc(t("cont"))} · ${esc(chapterTitle(n, chs[last-1] || {}, last))}</a>` : ""}
         <a class="btn ${last ? "ghost" : ""}" href="${chapterHref(n, firstStory)}">${esc(t("start"))}</a>
         <button type="button" class="btn ghost" id="favorite-toggle" aria-pressed="${isFavorite(n.slug)}">${isFavorite(n.slug) ? "★" : "☆"} ${esc(ft(isFavorite(n.slug)?2:1,n.lang))}</button></div>
       <div class="toc" data-auth-dep><h2>${esc(t("contents"))}</h2><ol>
@@ -1258,7 +1267,32 @@ function novelPage(n){
   app.querySelectorAll("[data-soundtrack-track]").forEach(btn => btn.onclick = () => mChoose(+btn.dataset.soundtrackTrack, true));
 }
 
-async function reader(n, idx){
+/* ───────── Long chapters are shown as pages of ~PAGE_CHARS characters ───────── */
+const PAGE_CHARS = 6000, PAGE_MIN_LAST = 1500;
+const PAGE_WORD = {ru:"Страница",es:"Página",it:"Pagina",en:"Page",de:"Seite",fr:"Page",tr:"Sayfa",pt:"Página",cs:"Strana",pl:"Strona",sr:"Strana",eo:"Paĝo",la:"Pagina",sw:"Ukurasa",ia:"Pagina",bg:"Страница",uk:"Сторінка"};
+function splitPages(md){
+  const manual = md.split(/\n[ \t]*<!--\s*pagebreak\s*-->[ \t]*(?:\n|$)/i);
+  if (manual.length > 1) return manual;
+  if (/\[\[|^\{=/m.test(md)) return [md];                      // interactive blocks stay together
+  const blocks = md.replace(/\r/g,"").split(/\n\s*\n/).filter(b => b.trim());
+  const isImg = b => /^\[?!\[/.test(b.trim());
+  const len = b => isImg(b) ? 0 : b.length;
+  if (blocks.reduce((s,b) => s + len(b), 0) <= PAGE_CHARS + PAGE_MIN_LAST) return [md];
+  const pages = []; let cur = [], size = 0;
+  for (const b of blocks) {
+    if (size >= PAGE_CHARS && !isImg(b)) {
+      const carry = []; while (cur.length && isImg(cur[cur.length-1])) carry.unshift(cur.pop());  // keep a picture with the text after it
+      pages.push(cur); cur = carry; size = 0;
+    }
+    cur.push(b); size += len(b);
+  }
+  if (cur.length) { const s = cur.reduce((x,b) => x + len(b), 0);
+    if (pages.length && s < PAGE_MIN_LAST) pages[pages.length-1].push(...cur); else pages.push(cur); }
+  return pages.map(p => p.join("\n\n"));
+}
+function resumeHref(n, i){ const pg = store.get("pg:" + n.slug, null); return chapterHref(n, i) + (pg && pg.i === i && pg.p > 1 ? "/" + pg.p : ""); }
+
+async function reader(n, idx, page){
   if (lang !== n.lang) setLang(n.lang);
   const chs = n.chapters;
   const i = Math.min(Math.max(idx,1), chs.length), c = chs[i-1];
@@ -1274,6 +1308,18 @@ async function reader(n, idx){
   const titleOf = j => chapterTitle(n, chs[j-1], chapterNo(n, j));
   document.title = title + " · " + n.title;
   md = md.replace(/^#\s+.*\n+/, "");
+  const pages = (n.slug === "predchuvstvie" && c.file === "28.md") ? [md] : splitPages(md);
+  const P = pages.length, pg = Math.min(Math.max(parseInt(page,10) || 1, 1), P), lastPage = pg === P;
+  const pageHref = k => chapterHref(n, i) + (k > 1 ? "/" + k : "");
+  const pagesNav = P < 2 ? "" : (() => {
+    const W = PAGE_WORD[n.lang] || "Page", show = new Set([1, P, pg-1, pg, pg+1]); let row = "", prevK = 0;
+    for (let k = 1; k <= P; k++) { if (!show.has(k)) continue; if (k - prevK > 1) row += `<span class="gap">…</span>`;
+      row += k === pg ? `<span class="cur">${k}</span>` : `<a href="${pageHref(k)}">${k}</a>`; prevK = k; }
+    return `<nav class="pages" aria-label="${esc(W)}">
+      ${lastPage ? "" : `<a class="pg-next" href="${pageHref(pg+1)}">${esc(L.next)} →</a>`}
+      <div class="pg-lbl">${esc(W)} ${pg} / ${P}</div>
+      <div class="pg-row">${pg > 1 ? `<a href="${pageHref(pg-1)}" aria-label="${esc(L.prev)}">←</a>` : ""}${row}${lastPage ? "" : `<a href="${pageHref(pg+1)}" aria-label="${esc(L.next)}">→</a>`}</div></nav>`; })();
+  md = pages[pg-1];
   app.innerHTML = `
   <div class="reader-bar"><div class="wrap">
     <a class="crumb" href="#/${n.slug}">← ${esc(n.title)}</a>
@@ -1284,24 +1330,28 @@ async function reader(n, idx){
       <button class="sw" data-th="dark" style="background:#1d1914" aria-label="dark"></button>
     </div></div><div class="progress" id="prog"></div></div>
   ${n.glossPick ? `<div class="gl-wrap">` : ""}<article class="chapter" lang="${n.lang}"${n.glossLangs ? ` data-gl="${esc(n.glossLangs.join(","))}"` : ""}>
-    <div class="kicker">${esc(label)}</div>
-    <h1>${esc(title)}</h1>
+    <div class="kicker">${esc(label)}${P > 1 && pg > 1 ? ` · ${pg} / ${P}` : ""}</div>
+    ${pg === 1 ? `<h1>${esc(title)}</h1>` : `<h1 style="font-size:1.3em;margin-bottom:28px">${esc(title)}</h1>`}
     ${n.glossPick ? `<div class="gl-pick"></div>` : ""}
     ${renderText(md)}
   </article>${n.glossPick ? `<aside class="gl-side" id="glSide"></aside></div>` : ""}
-  ${n.wip && i === chs.length ? `<div class="wipnote"><div>✎ ${esc(L.wipNote)}</div></div>` : ""}
+  ${pagesNav}
+  ${lastPage ? `${n.wip && i === chs.length ? `<div class="wipnote"><div>✎ ${esc(L.wipNote)}</div></div>` : ""}
   <nav class="pager">
     ${i>1 ? `<a href="${chapterHref(n, i-1)}">← ${esc(t("prev"))}<b>${esc(titleOf(i-1))}</b></a>` : `<span style="flex:1"></span>`}
     ${i<chs.length ? `<a class="next" href="${chapterHref(n, i+1)}">${esc(t("next"))} →<b>${esc(titleOf(i+1))}</b></a>` : `<a class="next" href="#/">${esc(t("back"))} →<b>${esc(t("hero"))}</b></a>`}
   </nav>
-  <section class="comments" id="comments"></section>`;
+  <section class="comments" id="comments"></section>` : ""}`;
   window.scrollTo(0,0);
   window.__activeChapterFile = c.file;
   if (n.slug === "predchuvstvie" && c.file === "28.md") setupPredchuvstvieReflection(app);
   setupQuizzes(app, n.lang);
   setupPsy(app, n.lang);
   setupGlossPick(n, app);
-  mountComments(n, c);
+  if (lastPage) mountComments(n, c);
+  store.set("pg:"+n.slug, {i, p:pg});
+  if (P > 1) document.onkeydown = e => { if (e.target.closest && e.target.closest("input,textarea,select,[contenteditable]")) return;
+    if (e.key === "ArrowRight" && !lastPage) location.hash = pageHref(pg+1); else if (e.key === "ArrowLeft" && pg > 1) location.hash = pageHref(pg-1); };
   store.set("last:"+n.slug, i);
   store.set("seen:"+n.slug, Date.now());
   const doneKey = "done:"+n.slug;
@@ -1315,7 +1365,8 @@ async function reader(n, idx){
   window.onscroll = () => {
     const h = document.documentElement.scrollHeight - innerHeight;
     const p = h > 0 ? Math.min(1, scrollY / h) : 1;
-    prog.style.width = (p*100) + "%";
+    prog.style.width = (((pg-1) + p) / P * 100) + "%";
+    if (!lastPage) return;
     if (p > .95 || (art && art.getBoundingClientRect().bottom <= innerHeight + 40)) markDone();
   };
   setTimeout(() => window.onscroll && window.onscroll(), 600);
@@ -1961,7 +2012,7 @@ function route(){
     const i = chapterIndex(n, decodeURIComponent(parts[1]));
     if (chapterLocked(n, i) && !signedIn()) { if (lang !== n.lang) setLang(n.lang); return loginGate("#/" + n.slug); }
     if (pwLocked(n, i) && !pwOpen(n)) { if (lang !== n.lang) setLang(n.lang); return pwGate(n, i); }
-    return reader(n, i);
+    return reader(n, i, parts[2]);
   }
   novelPage(n);
 }
