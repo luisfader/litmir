@@ -7806,6 +7806,18 @@
         "podzemni-tajemstvi",
         "ostrovy-nad-prahou"
       ]
+    },
+    {
+      "id": "laura-luciano",
+      "name": {
+        "*": "Laura & Luciano",
+        "ru": "Лаура и Лусиано",
+        "es": "Laura y Luciano"
+      },
+      "novels": [
+        "zvezdnyj-roman",
+        "argenta"
+      ]
     }
   ]
 }
