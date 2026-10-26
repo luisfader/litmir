@@ -1877,6 +1877,18 @@
         {
           "file": "music/02.mp3",
           "title": "La mujer que espera"
+        },
+        {
+          "file": "music/03.mp3",
+          "title": "Ледяной путь"
+        },
+        {
+          "file": "music/04.mp3",
+          "title": "Северный остров"
+        },
+        {
+          "file": "music/05.mp3",
+          "title": "Статуя плачет"
         }
       ],
       "stars": 4
