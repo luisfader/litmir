@@ -2970,6 +2970,77 @@
       ]
     },
     {
+      "slug": "meteoritnyj-dozhd",
+      "lang": "ru",
+      "title": "Метеоритный дождь",
+      "author": "Роберт Фадер",
+      "genre": "Любовный роман · Фантастика",
+      "adult": true,
+      "wip": true,
+      "description": "Елене сорок лет, и больше двадцати из них она замужем за Фелипе — жёстким, властным полковником. Однажды вечером в Синее, под грохот метеоритного дождя, незнакомый юноша втягивает её в магазин и спасает. Его зовут Лучано, он иностранец и, кажется, как-то связан с метеоритами. А Фелипе как раз поручают найти и обезвредить «чужака».",
+      "translations": {
+        "es": "lluvia-de-meteoritos"
+      },
+      "chapters": [
+        {
+          "file": "01.md",
+          "title": "Неожиданная встреча"
+        },
+        {
+          "file": "02.md",
+          "title": "Возвращение к рутине"
+        },
+        {
+          "file": "03.md",
+          "title": "Урок испанского"
+        },
+        {
+          "file": "04.md",
+          "title": "Миссия Фелипе"
+        },
+        {
+          "file": "05.md",
+          "title": "Личность Лучано"
+        },
+        {
+          "file": "06.md",
+          "title": "Противостояние"
+        },
+        {
+          "file": "07.md",
+          "title": "Союз"
+        },
+        {
+          "file": "08.md",
+          "title": "Космическая связь"
+        },
+        {
+          "file": "09.md",
+          "title": "Объявление Фелипе"
+        },
+        {
+          "file": "10.md",
+          "title": "Побег к Башне"
+        },
+        {
+          "file": "11.md",
+          "title": "Скандал в прямом эфире"
+        },
+        {
+          "file": "12.md",
+          "title": "То, что нельзя было сказать"
+        },
+        {
+          "file": "13.md",
+          "title": "Злые люди"
+        },
+        {
+          "file": "14.md",
+          "title": "Хрустальный купол и семя надежды"
+        }
+      ]
+    },
+    {
       "slug": "la-citta-triste",
       "lang": "it",
       "title": "La città triste",
@@ -4766,7 +4837,10 @@
         }
       ],
       "cover": "novels/lluvia-de-meteoritos/cover-v2.jpg",
-      "stars": 3.5
+      "stars": 3.5,
+      "translations": {
+        "ru": "meteoritnyj-dozhd"
+      }
     },
     {
       "slug": "el-misterio-de-los-fader",
@@ -7686,6 +7760,7 @@
         "prizrachnyj-poezd",
         "la-citta-triste",
         "lluvia-de-meteoritos",
+        "meteoritnyj-dozhd",
         "la-chica-del-retrato",
         "el-impostor",
         "la-voix",
