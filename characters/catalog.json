@@ -39,7 +39,12 @@
     },
     "ru": {
      "name": "Луис",
-     "description": "Аргентинец, путешественник, художник и философ, муж Наташи. В «Диком часе» вместе с ней и драконом Змаем защищает Белград, Мендосу и Мадрид, а в «Эпическом матче» становится капитаном сборной Человечества. В «Аномальном часе» приезжает в Москву на поиски Имперских пергаментов и встречает Наталью у Патриарших прудов."
+     "description": "Аргентинец, путешественник, художник и философ, муж Наташи. В «Диком часе» вместе с ней и драконом Змаем защищает Белград, Мендосу и Мадрид, а в «Эпическом матче» становится капитаном сборной Человечества. В «Аномальном часе» приезжает в Москву на поиски Имперских пергаментов и встречает Наталью у Патриарших прудов.",
+     "images": [
+      "characters/img/luis-1.jpg",
+      "characters/img/luis-2.jpg",
+      "characters/img/luis-3.jpg"
+     ]
     }
    }
   },
@@ -75,43 +80,83 @@
    "localizations": {
     "it": {
      "name": "Luis",
-     "description": "Architetto argentino e uno dei fondatori di Utopia: disegna le mura della fortezza. Ambizioso e tormentato, entra in rivalità con Robert."
+     "description": "Architetto argentino e uno dei fondatori di Utopia: disegna le mura della fortezza. Ambizioso e tormentato, entra in rivalità con Robert.",
+     "images": [
+      "characters/img/luis-utopia-1.jpg",
+      "characters/img/luis-utopia-2.jpg"
+     ]
     },
     "sr": {
      "name": "Луис",
-     "description": "Аргентински архитекта који помаже Роберту да подигне Утопију. Амбициозан и немиран, често се сукобљава са оснивачем."
+     "description": "Аргентински архитекта који помаже Роберту да подигне Утопију. Амбициозан и немиран, често се сукобљава са оснивачем.",
+     "images": [
+      "characters/img/luis-utopia-1.jpg",
+      "characters/img/luis-utopia-2.jpg"
+     ]
     },
     "es": {
      "name": "Luis",
-     "description": "Arquitecto argentino elegante que dibuja los muros de la Utopía Turquesa. Ambicioso, sensible y celoso, compite con Robert."
+     "description": "Arquitecto argentino elegante que dibuja los muros de la Utopía Turquesa. Ambicioso, sensible y celoso, compite con Robert.",
+     "images": [
+      "characters/img/luis-utopia-1.jpg",
+      "characters/img/luis-utopia-2.jpg"
+     ]
     },
     "tr": {
      "name": "Luis",
-     "description": "Kalenin planlarını çizen zarif Arjantinli mimar. Hırslı, kırılgan ve kıskanç; Robert ile rekabet eder."
+     "description": "Kalenin planlarını çizen zarif Arjantinli mimar. Hırslı, kırılgan ve kıskanç; Robert ile rekabet eder.",
+     "images": [
+      "characters/img/luis-utopia-1.jpg",
+      "characters/img/luis-utopia-2.jpg"
+     ]
     },
     "eo": {
      "name": "Luis",
-     "description": "Argentina arkitekto, kiu desegnas la murojn de la Utopio. Ambicia kaj turmentita, li rivalas kun Robert."
+     "description": "Argentina arkitekto, kiu desegnas la murojn de la Utopio. Ambicia kaj turmentita, li rivalas kun Robert.",
+     "images": [
+      "characters/img/luis-utopia-1.jpg",
+      "characters/img/luis-utopia-2.jpg"
+     ]
     },
     "isv": {
      "name": "Luis",
-     "description": "Argentinsky arhitekt, ktory risuje stěny tvrdynje. Ambiciozny i nemirny, on sopernikuje s Robertom."
+     "description": "Argentinsky arhitekt, ktory risuje stěny tvrdynje. Ambiciozny i nemirny, on sopernikuje s Robertom.",
+     "images": [
+      "characters/img/luis-utopia-1.jpg",
+      "characters/img/luis-utopia-2.jpg"
+     ]
     },
     "de": {
      "name": "Luis",
-     "description": "Argentinischer Architekt, der die Mauern der Festung „Unsere Utopie“ entwirft. Ehrgeizig und eifersüchtig."
+     "description": "Argentinischer Architekt, der die Mauern der Festung „Unsere Utopie“ entwirft. Ehrgeizig und eifersüchtig.",
+     "images": [
+      "characters/img/luis-utopia-1.jpg",
+      "characters/img/luis-utopia-2.jpg"
+     ]
     },
     "cs": {
      "name": "Luis",
-     "description": "Po jaderné katastrofě se snaží s Janou obnovit naději v českých zemích podle myšlenek Roberta, zakladatele Naší utopie."
+     "description": "Po jaderné katastrofě se snaží s Janou obnovit naději v českých zemích podle myšlenek Roberta, zakladatele Naší utopie.",
+     "images": [
+      "characters/img/luis-utopia-1.jpg",
+      "characters/img/luis-utopia-2.jpg"
+     ]
     },
     "ru": {
      "name": "Луис",
-     "description": "Элегантный аргентинский архитектор, который чертит стены и башни «Нашей Утопии». Честолюбивый, ранимый и ревнивый, он соперничает с Робертом, а во второй части строит новые стены крепости."
+     "description": "Элегантный аргентинский архитектор, который чертит стены и башни «Нашей Утопии». Честолюбивый, ранимый и ревнивый, он соперничает с Робертом, а во второй части строит новые стены крепости.",
+     "images": [
+      "characters/img/luis-utopia-1.jpg",
+      "characters/img/luis-utopia-2.jpg"
+     ]
     },
     "fr": {
      "name": "Luis",
-     "description": "Habitant de la forteresse qui rougit facilement quand Jenny lui parle de Mendoza et du vin."
+     "description": "Habitant de la forteresse qui rougit facilement quand Jenny lui parle de Mendoza et du vin.",
+     "images": [
+      "characters/img/luis-utopia-1.jpg",
+      "characters/img/luis-utopia-2.jpg"
+     ]
     }
    }
   },
@@ -131,11 +176,20 @@
    "localizations": {
     "es": {
      "name": "Luis",
-     "description": "Mendocino que gana la lotería y lleva a Natalia de Moscú a Mendoza. Allí descubre la maldición de los Fader, que lo vuelve inmortal; en «Operación Londres» busca el frasco de Rasputín para volver a ser mortal."
+     "description": "Mendocino que gana la lotería y lleva a Natalia de Moscú a Mendoza. Allí descubre la maldición de los Fader, que lo vuelve inmortal; en «Operación Londres» busca el frasco de Rasputín para volver a ser mortal.",
+     "images": [
+      "characters/img/luis-fader-1.jpg",
+      "characters/img/luis-fader-2.jpg",
+      "characters/img/luis-fader-3.jpg"
+     ]
     },
     "ru": {
      "name": "Луис",
-     "description": "Выигрывает в лотерею и везёт Наталью из Москвы в Мендосу, край своего детства. Среди виноградников раскрывает тайну семейного проклятия Фадеров."
+     "description": "Выигрывает в лотерею и везёт Наталью из Москвы в Мендосу, край своего детства. Среди виноградников раскрывает тайну семейного проклятия Фадеров.",
+     "images": [
+      "characters/img/luis-fader-1.jpg",
+      "characters/img/luis-fader-2.jpg"
+     ]
     }
    }
   },
@@ -172,7 +226,11 @@
    "localizations": {
     "cs": {
      "name": "Luis",
-     "description": "Hudebník z Argentiny. V pražské kavárně potká Janu a jeho hudba v podzemí probudí smutnou princeznu Ludmilu. Později s Janou zachraňuje Prahu před pěti kamennými ostrovy Černoboha."
+     "description": "Hudebník z Argentiny. V pražské kavárně potká Janu a jeho hudba v podzemí probudí smutnou princeznu Ludmilu. Později s Janou zachraňuje Prahu před pěti kamennými ostrovy Černoboha.",
+     "images": [
+      "characters/img/luis-praha-1.jpg",
+      "characters/img/luis-praha-2.jpg"
+     ]
     },
     "eo": {
      "name": "Luis",
@@ -225,7 +283,8 @@
      "name": "Наташа",
      "description": "Храбра, страствена и одлучна Српкиња. Њена оданост ближњима праћена је импулсивним темпераментом.",
      "images": [
-      "characters/img/natasha-1.jpg"
+      "characters/img/natasha-1.jpg",
+      "characters/img/natasha-3.jpg"
      ]
     },
     "it": {
@@ -246,7 +305,9 @@
      "name": "Наташа",
      "description": "Смелая, страстная и решительная сербка, жена Луиса. В Белграде в ней пробуждается древняя сила, которая становится только сильнее, когда она защищает любимых. Летает на драконе Змае, а в «Эпическом матче» бросает вызов чемпионату мира и становится тренером сборной Человечества.",
      "images": [
-      "characters/img/natasha-1.jpg"
+      "characters/img/natasha-1.jpg",
+      "characters/img/natasha-2.jpg",
+      "characters/img/natasha-3.jpg"
      ]
     }
    }
@@ -264,7 +325,10 @@
    "localizations": {
     "sr": {
      "name": "Наташа",
-     "description": "Некадашња туристичка водичка која је познавала сваки кутак града пре него што су га бомбе претвориле у прашину. Једна од првих становница Утопије."
+     "description": "Некадашња туристичка водичка која је познавала сваки кутак града пре него што су га бомбе претвориле у прашину. Једна од првих становница Утопије.",
+     "images": [
+      "characters/img/natasha-predosecaj-1.jpg"
+     ]
     }
    }
   },
@@ -324,11 +388,17 @@
     },
     "es": {
      "name": "Robert",
-     "description": "Tras dos años de invierno nuclear sale de su búnker y recorre en su vieja motocicleta un mundo en ruinas. Funda la Utopía Turquesa, una fortaleza donde vivir sin amos ni miedo."
+     "description": "Tras dos años de invierno nuclear sale de su búnker y recorre en su vieja motocicleta un mundo en ruinas. Funda la Utopía Turquesa, una fortaleza donde vivir sin amos ni miedo.",
+     "images": [
+      "characters/img/robert-4.jpg"
+     ]
     },
     "tr": {
      "name": "Robert",
-     "description": "Büyük Felaket'ten sonra eski motosikletiyle çölde hayatta kalanları arar. Rosa ile birlikte turkuaz duvarlı bir kale, efendisiz bir ütopya kurmaya çalışır."
+     "description": "Büyük Felaket'ten sonra eski motosikletiyle çölde hayatta kalanları arar. Rosa ile birlikte turkuaz duvarlı bir kale, efendisiz bir ütopya kurmaya çalışır.",
+     "images": [
+      "characters/img/robert-3.jpg"
+     ]
     },
     "pl": {
      "name": "Robert",
@@ -430,35 +500,67 @@
    "localizations": {
     "sr": {
      "name": "Наталија — виолончелисткиња",
-     "description": "Музичарка чија уметност доноси наду становницима Утопије у тешким временима."
+     "description": "Музичарка чија уметност доноси наду становницима Утопије у тешким временима.",
+     "images": [
+      "characters/img/natalia-cellist-3.jpg",
+      "characters/img/natalia-cellist-4.jpg"
+     ]
     },
     "it": {
      "name": "Natalia",
-     "description": "Abitante di Utopia dagli intensi occhi azzurri: dipinge la fortezza e suona il violino. Divisa tra Robert e Luis, sceglie liberamente chi amare."
+     "description": "Abitante di Utopia dagli intensi occhi azzurri: dipinge la fortezza e suona il violino. Divisa tra Robert e Luis, sceglie liberamente chi amare.",
+     "images": [
+      "characters/img/natalia-cellist-3.jpg",
+      "characters/img/natalia-cellist-4.jpg"
+     ]
     },
     "ia": {
      "name": "Natalia",
-     "description": "Violoncellista con longe capillos castanee obscur e oculos gris-azur. Robert la vide primo in un sonio, interpretante un melodia extraordinari in le placia de Nostre Utopia. Su arrivata cambiara le destino del fortressa e ponera a proba le amor inter Robert e Katerina."
+     "description": "Violoncellista con longe capillos castanee obscur e oculos gris-azur. Robert la vide primo in un sonio, interpretante un melodia extraordinari in le placia de Nostre Utopia. Su arrivata cambiara le destino del fortressa e ponera a proba le amor inter Robert e Katerina.",
+     "images": [
+      "characters/img/natalia-cellist-3.jpg",
+      "characters/img/natalia-cellist-4.jpg"
+     ]
     },
     "pl": {
      "name": "Natalia",
-     "description": "Wiolonczelistka z Filharmonii Krakowskiej o długich kasztanowych włosach. Grała Bacha w ruinach Kościoła Mariackiego, kiedy poznała Roberta. Nosi ciemną, haftowaną sukienkę i turkusowe kolczyki. Razem z Robertem zbudowała Naszą Utopię — i ma przeczucia, które się spełniają."
+     "description": "Wiolonczelistka z Filharmonii Krakowskiej o długich kasztanowych włosach. Grała Bacha w ruinach Kościoła Mariackiego, kiedy poznała Roberta. Nosi ciemną, haftowaną sukienkę i turkusowe kolczyki. Razem z Robertem zbudowała Naszą Utopię — i ma przeczucia, które się spełniają.",
+     "images": [
+      "characters/img/natalia-cellist-3.jpg",
+      "characters/img/natalia-cellist-4.jpg"
+     ]
     },
     "ru": {
      "name": "Наталья — виолончелистка",
-     "description": "Талантливая виолончелистка, чья музыка трогает сердца жителей Утопии. Оказывается между Робертом и Луисом и сама выбирает, кого любить. В «Сияющем горизонте» играет на банкетах Совета Некрологии и встаёт на сторону Оксаны."
+     "description": "Талантливая виолончелистка, чья музыка трогает сердца жителей Утопии. Оказывается между Робертом и Луисом и сама выбирает, кого любить. В «Сияющем горизонте» играет на банкетах Совета Некрологии и встаёт на сторону Оксаны.",
+     "images": [
+      "characters/img/natalia-cellist-3.jpg",
+      "characters/img/natalia-cellist-4.jpg"
+     ]
     },
     "eo": {
      "name": "Natalia",
-     "description": "Violonĉelistino, kies muziko kondukas Robert al ŝi. Kune ili fondas utopion por la postvivantoj."
+     "description": "Violonĉelistino, kies muziko kondukas Robert al ŝi. Kune ili fondas utopion por la postvivantoj.",
+     "images": [
+      "characters/img/natalia-cellist-3.jpg",
+      "characters/img/natalia-cellist-4.jpg"
+     ]
     },
     "isv": {
      "name": "Natalija",
-     "description": "Ljubimica Roberta, ktora ide s nim črěz gory i stroji s nim Tvrdynju Světla."
+     "description": "Ljubimica Roberta, ktora ide s nim črěz gory i stroji s nim Tvrdynju Světla.",
+     "images": [
+      "characters/img/natalia-cellist-3.jpg",
+      "characters/img/natalia-cellist-4.jpg"
+     ]
     },
     "pt": {
      "name": "Natalia",
-     "description": "Violoncelista que coordena os encontros entre as cidades e leva música às escolas."
+     "description": "Violoncelista que coordena os encontros entre as cidades e leva música às escolas.",
+     "images": [
+      "characters/img/natalia-cellist-3.jpg",
+      "characters/img/natalia-cellist-4.jpg"
+     ]
     },
     "ld": {
      "name": "Natalia",
@@ -466,7 +568,13 @@
     },
     "es": {
      "name": "Natalia",
-     "description": "Violinista antes de la guerra, que mira el paisaje como si fuera un lienzo en blanco. Su coraje guía a Nuestra Utopía."
+     "description": "Violinista antes de la guerra, que mira el paisaje como si fuera un lienzo en blanco. Su coraje guía a Nuestra Utopía.",
+     "images": [
+      "characters/img/natalia-cellist-1.jpg",
+      "characters/img/natalia-cellist-2.jpg",
+      "characters/img/natalia-cellist-3.jpg",
+      "characters/img/natalia-cellist-4.jpg"
+     ]
     }
    }
   },
@@ -612,11 +720,21 @@
    "localizations": {
     "it": {
      "name": "Alessio",
-     "description": "Fiorentino innamorato dell’arte e ladro gentiluomo. Entra nella villa di Laura per rubare un quadro e ne esce con un amore; insieme a lei aiuta Lorenzo e Carlotta contro i Cromatisti e accompagna Roberto nel Carnevale di Venezia. In Ladro di cuori 2 vive a Malaga sotto il nome di Marcos Sierra."
+     "description": "Fiorentino innamorato dell’arte e ladro gentiluomo. Entra nella villa di Laura per rubare un quadro e ne esce con un amore; insieme a lei aiuta Lorenzo e Carlotta contro i Cromatisti e accompagna Roberto nel Carnevale di Venezia. In Ladro di cuori 2 vive a Malaga sotto il nome di Marcos Sierra.",
+     "images": [
+      "characters/img/alessio-1.jpg",
+      "characters/img/alessio-2.jpg",
+      "characters/img/alessio-3.jpg"
+     ]
     },
     "ru": {
      "name": "Алессио",
-     "description": "Флорентийский похититель произведений искусства, который проникает туда, куда его не приглашали. Попытка украсть картину у Лауры Беллини оборачивается любовью. В «Эпическом матче» играет за сборную Человечества — быстрый, как вода между камнями."
+     "description": "Флорентийский похититель произведений искусства, который проникает туда, куда его не приглашали. Попытка украсть картину у Лауры Беллини оборачивается любовью. В «Эпическом матче» играет за сборную Человечества — быстрый, как вода между камнями.",
+     "images": [
+      "characters/img/alessio-1.jpg",
+      "characters/img/alessio-2.jpg",
+      "characters/img/alessio-3.jpg"
+     ]
     },
     "es": {
      "name": "Alessio",
@@ -650,7 +768,10 @@
     },
     "ru": {
      "name": "Марк",
-     "description": "Детектив тридцати пяти лет из Синеи, привыкший всё контролировать. Ищет Призрачный поезд, который увёз Алисию — женщину, которую он любил слишком сильно."
+     "description": "Детектив тридцати пяти лет из Синеи, привыкший всё контролировать. Ищет Призрачный поезд, который увёз Алисию — женщину, которую он любил слишком сильно.",
+     "images": [
+      "characters/img/marcos-1.jpg"
+     ]
     }
    }
   },
@@ -681,7 +802,13 @@
     },
     "ru": {
      "name": "Алисия",
-     "description": "Астролог, нумеролог и исследовательница загадок, возлюбленная Марка. Мечтает о свободе и садится в Призрачный поезд; позже помогает Луису и Наталье в Москве и выступает экспертом на чемпионате мира."
+     "description": "Астролог, нумеролог и исследовательница загадок, возлюбленная Марка. Мечтает о свободе и садится в Призрачный поезд; позже помогает Луису и Наталье в Москве и выступает экспертом на чемпионате мира.",
+     "images": [
+      "characters/img/alicia-3.jpg",
+      "characters/img/alicia-1.jpg",
+      "characters/img/alicia-2.jpg",
+      "characters/img/alicia-4.jpg"
+     ]
     }
    }
   },
@@ -698,7 +825,10 @@
    "localizations": {
     "es": {
      "name": "Martín",
-     "description": "Joven curioso que descubre los secretos de una ciudad extraordinaria."
+     "description": "Joven curioso que descubre los secretos de una ciudad extraordinaria.",
+     "images": [
+      "characters/img/martin-1.jpg"
+     ]
     }
    }
   },
@@ -715,7 +845,11 @@
    "localizations": {
     "es": {
      "name": "Marina",
-     "description": "Mujer enigmática vinculada con los secretos de la ciudad."
+     "description": "Mujer enigmática vinculada con los secretos de la ciudad.",
+     "images": [
+      "characters/img/marina-1.jpg",
+      "characters/img/marina-2.jpg"
+     ]
     }
    }
   },
@@ -732,7 +866,10 @@
    "localizations": {
     "es": {
      "name": "Tatiana",
-     "description": "Figura central del misterio de La chica del retrato."
+     "description": "Figura central del misterio de La chica del retrato.",
+     "images": [
+      "characters/img/tatiana-1.jpg"
+     ]
     }
    }
   },
@@ -770,11 +907,23 @@
    "localizations": {
     "it": {
      "name": "Natalia",
-     "description": "Veneziana enigmatica dal vestito rosso, figlia di un antico Duca. Trascina Roberto nella lotta contro la Loggia, lo riporta in vita e accoglie nel suo palazzo gli eroi dell’Ora selvaggia, risvegliando la gelosia di Nataša."
+     "description": "Veneziana enigmatica dal vestito rosso, figlia di un antico Duca. Trascina Roberto nella lotta contro la Loggia, lo riporta in vita e accoglie nel suo palazzo gli eroi dell’Ora selvaggia, risvegliando la gelosia di Nataša.",
+     "images": [
+      "characters/img/natalia-venice-1.jpg",
+      "characters/img/natalia-venice-2.jpg",
+      "characters/img/natalia-venice-3.jpg",
+      "characters/img/natalia-venice-4.jpg"
+     ]
     },
     "ru": {
      "name": "Наталья",
-     "description": "Загадочная венецианка в красном платье, прожившая два столетия, дочь древнего рода. Втягивает Роберто в борьбу с Орденом, возвращает его к жизни и принимает героев «Дикого часа» в своём дворце, пробуждая ревность Наташи."
+     "description": "Загадочная венецианка в красном платье, прожившая два столетия, дочь древнего рода. Втягивает Роберто в борьбу с Орденом, возвращает его к жизни и принимает героев «Дикого часа» в своём дворце, пробуждая ревность Наташи.",
+     "images": [
+      "characters/img/natalia-venice-1.jpg",
+      "characters/img/natalia-venice-2.jpg",
+      "characters/img/natalia-venice-3.jpg",
+      "characters/img/natalia-venice-4.jpg"
+     ]
     }
    }
   },
@@ -791,7 +940,12 @@
    "localizations": {
     "it": {
      "name": "Carlotta",
-     "description": "Carlotta Maiani, restauratrice senior agli Uffizi. Dopo un omicidio davanti alla Calunnia di Botticelli fugge con Lorenzo, sfida la setta dei Cromatisti e finisce per diventare regina del Regno Atelier."
+     "description": "Carlotta Maiani, restauratrice senior agli Uffizi. Dopo un omicidio davanti alla Calunnia di Botticelli fugge con Lorenzo, sfida la setta dei Cromatisti e finisce per diventare regina del Regno Atelier.",
+     "images": [
+      "characters/img/carlotta-1.jpg",
+      "characters/img/carlotta-2.jpg",
+      "characters/img/carlotta-3.jpg"
+     ]
     }
    }
   },
@@ -812,7 +966,11 @@
    "localizations": {
     "cs": {
      "name": "Jana",
-     "description": "Češka, která se s Luisem snaží obnovit naději podle Robertových myšlenek. Na Žižkovské věži ovládá vysílač, který dokáže řídit jen ona. V Praze prožívá s Luisem lásku i nová dobrodružství."
+     "description": "Češka, která se s Luisem snaží obnovit naději podle Robertových myšlenek. Na Žižkovské věži ovládá vysílač, který dokáže řídit jen ona. V Praze prožívá s Luisem lásku i nová dobrodružství.",
+     "images": [
+      "characters/img/jana-1.jpg",
+      "characters/img/jana-2.jpg"
+     ]
     },
     "eo": {
      "name": "Jana",
@@ -835,7 +993,10 @@
    "localizations": {
     "cs": {
      "name": "Lucie",
-     "description": "Stále miluje Luise a bojí se, že o něj znovu přijde. Kdysi bděla u zraněného Roberta. Pak jede s detektivem Markem na dovolenou do Číny."
+     "description": "Stále miluje Luise a bojí se, že o něj znovu přijde. Kdysi bděla u zraněného Roberta. Pak jede s detektivem Markem na dovolenou do Číny.",
+     "images": [
+      "characters/img/lucie-1.jpg"
+     ]
     }
    }
   },
@@ -854,11 +1015,19 @@
    "localizations": {
     "fr": {
      "name": "Sasha",
-     "description": "Une femme qui enquête sur des phénomènes inexplicables dans la ville de Sinea."
+     "description": "Une femme qui enquête sur des phénomènes inexplicables dans la ville de Sinea.",
+     "images": [
+      "characters/img/sasha-voice-1.jpg",
+      "characters/img/sasha-voice-2.jpg"
+     ]
     },
     "ru": {
      "name": "Саша",
-     "description": "Тридцатипятилетняя женщина, уставшая от обычной жизни. Слышит голос, который зовёт её к морю, и становится связующим звеном между людьми и народом дельфинов."
+     "description": "Тридцатипятилетняя женщина, уставшая от обычной жизни. Слышит голос, который зовёт её к морю, и становится связующим звеном между людьми и народом дельфинов.",
+     "images": [
+      "characters/img/sasha-voice-1.jpg",
+      "characters/img/sasha-voice-2.jpg"
+     ]
     }
    }
   },
@@ -877,11 +1046,17 @@
    "localizations": {
     "fr": {
      "name": "Oxana",
-     "description": "Amie et collègue de Sasha dans le roman La voix."
+     "description": "Amie et collègue de Sasha dans le roman La voix.",
+     "images": [
+      "characters/img/oxana-voice-1.jpg"
+     ]
     },
     "ru": {
      "name": "Оксана",
-     "description": "Смелая и надёжная подруга Саши, не верящая в мистику. После катастрофы именно к ней люди идут за помощью, и она становится опорой Синеи."
+     "description": "Смелая и надёжная подруга Саши, не верящая в мистику. После катастрофы именно к ней люди идут за помощью, и она становится опорой Синеи.",
+     "images": [
+      "characters/img/oxana-voice-1.jpg"
+     ]
     }
    }
   },
@@ -900,11 +1075,17 @@
    "localizations": {
     "fr": {
      "name": "Dima",
-     "description": "Un jeune homme qui prend part à la résistance dans La voix."
+     "description": "Un jeune homme qui prend part à la résistance dans La voix.",
+     "images": [
+      "characters/img/dima-voice-1.jpg"
+     ]
     },
     "ru": {
      "name": "Дима",
-     "description": "Молодой студент, живший у парка, где началось вторжение. Узнаёт тёмного лешего из бабушкиных сказок и сражается рядом с Сашей."
+     "description": "Молодой студент, живший у парка, где началось вторжение. Узнаёт тёмного лешего из бабушкиных сказок и сражается рядом с Сашей.",
+     "images": [
+      "characters/img/dima-voice-1.jpg"
+     ]
     }
    }
   },
@@ -924,11 +1105,17 @@
    "localizations": {
     "it": {
      "name": "Franco",
-     "description": "Ragazzo di 24 anni, impiegato al Ministero dei Sentimenti. Buono e un po’ timido, ma coraggioso: quando il presidente vieta i sorrisi, decide di restituire la felicità a Sinea e alla fine ne diventa presidente."
+     "description": "Ragazzo di 24 anni, impiegato al Ministero dei Sentimenti. Buono e un po’ timido, ma coraggioso: quando il presidente vieta i sorrisi, decide di restituire la felicità a Sinea e alla fine ne diventa presidente.",
+     "images": [
+      "characters/img/franco-1.jpg"
+     ]
     },
     "ru": {
      "name": "Франко",
-     "description": "Бывший сотрудник Министерства чувств, который работает курьером в сером городе Синея, где мэр запретил смеяться. Встреча с улыбающейся Кьярой втягивает его в борьбу за радость. В «Эпическом матче» играет нападающим за сборную Человечества."
+     "description": "Бывший сотрудник Министерства чувств, который работает курьером в сером городе Синея, где мэр запретил смеяться. Встреча с улыбающейся Кьярой втягивает его в борьбу за радость. В «Эпическом матче» играет нападающим за сборную Человечества.",
+     "images": [
+      "characters/img/franco-1.jpg"
+     ]
     }
    }
   },
@@ -947,11 +1134,17 @@
    "localizations": {
     "it": {
      "name": "Chiara",
-     "description": "Ribelle allegra e determinata, la prima persona che sorride nella metro di Sinea. Insieme a Franco riporta la luce in città e ne diventa vicepresidente."
+     "description": "Ribelle allegra e determinata, la prima persona che sorride nella metro di Sinea. Insieme a Franco riporta la luce in città e ne diventa vicepresidente.",
+     "images": [
+      "characters/img/chiara-1.jpg"
+     ]
     },
     "ru": {
      "name": "Кьяра",
-     "description": "Девушка с каштановыми волосами, которая улыбается среди сотен потухших лиц Синеи. Поёт на тайных вечеринках и становится для Франко надеждой на другой город."
+     "description": "Девушка с каштановыми волосами, которая улыбается среди сотен потухших лиц Синеи. Поёт на тайных вечеринках и становится для Франко надеждой на другой город.",
+     "images": [
+      "characters/img/chiara-1.jpg"
+     ]
     }
    }
   },
@@ -1070,7 +1263,12 @@
    "localizations": {
     "it": {
      "name": "Lorenzo",
-     "description": "Lorenzo Fader, artista e professore argentino. Incontra Carlotta a Firenze dopo mesi di lettere digitali, fugge con lei accusato ingiustamente e diventa il guerriero e re del Regno Atelier."
+     "description": "Lorenzo Fader, artista e professore argentino. Incontra Carlotta a Firenze dopo mesi di lettere digitali, fugge con lei accusato ingiustamente e diventa il guerriero e re del Regno Atelier.",
+     "images": [
+      "characters/img/lorenzo-1.jpg",
+      "characters/img/lorenzo-2.jpg",
+      "characters/img/lorenzo-3.jpg"
+     ]
     }
    }
   },
@@ -1093,11 +1291,21 @@
    "localizations": {
     "it": {
      "name": "Laura",
-     "description": "Ricca collezionista che vive in una villa sulle colline di Firenze. Sorprende Alessio mentre ruba un suo quadro e diventa la sua complice e il suo amore: elegante, leale e coraggiosa, conosce l’arte quanto lui."
+     "description": "Ricca collezionista che vive in una villa sulle colline di Firenze. Sorprende Alessio mentre ruba un suo quadro e diventa la sua complice e il suo amore: elegante, leale e coraggiosa, conosce l’arte quanto lui.",
+     "images": [
+      "characters/img/laura-bellini-1.jpg",
+      "characters/img/laura-bellini-2.jpg",
+      "characters/img/laura-bellini-3.jpg"
+     ]
     },
     "ru": {
      "name": "Лаура Беллини",
-     "description": "Молодая, богатая и известная коллекционерица с виллой на холмах Флоренции. Слишком хорошо распознаёт ложь и совсем не боится преступников — особенно Алессио."
+     "description": "Молодая, богатая и известная коллекционерица с виллой на холмах Флоренции. Слишком хорошо распознаёт ложь и совсем не боится преступников — особенно Алессио.",
+     "images": [
+      "characters/img/laura-bellini-1.jpg",
+      "characters/img/laura-bellini-2.jpg",
+      "characters/img/laura-bellini-3.jpg"
+     ]
     }
    }
   },
@@ -1114,7 +1322,10 @@
    "localizations": {
     "it": {
      "name": "Alberto Menichetti",
-     "description": "Direttore degli Uffizi, freddo e calcolatore, legato alla setta dei Cromatisti. Trasforma Carlotta e Lorenzo in ricercati con prove digitali false."
+     "description": "Direttore degli Uffizi, freddo e calcolatore, legato alla setta dei Cromatisti. Trasforma Carlotta e Lorenzo in ricercati con prove digitali false.",
+     "images": [
+      "characters/img/menichetti-1.jpg"
+     ]
     }
    }
   },
@@ -1131,7 +1342,10 @@
    "localizations": {
     "it": {
      "name": "Il Porpora",
-     "description": "Capo della setta dei Cromatisti, che vuole rubare i colori del mondo grazie al Pennello di Eos, un cristallo a forma di prisma."
+     "description": "Capo della setta dei Cromatisti, che vuole rubare i colori del mondo grazie al Pennello di Eos, un cristallo a forma di prisma.",
+     "images": [
+      "characters/img/porpora-1.jpg"
+     ]
     }
    }
   },
@@ -1165,7 +1379,10 @@
    "localizations": {
     "it": {
      "name": "Aurora",
-     "description": "Figlia di Carlotta e Lorenzo, nata nel nuovo campo di energia del Regno Atelier: un ponte vivente tra il mondo reale e quello delle idee creative."
+     "description": "Figlia di Carlotta e Lorenzo, nata nel nuovo campo di energia del Regno Atelier: un ponte vivente tra il mondo reale e quello delle idee creative.",
+     "images": [
+      "characters/img/aurora-1.jpg"
+     ]
     }
    }
   },
@@ -1187,11 +1404,19 @@
    "localizations": {
     "it": {
      "name": "Roberto",
-     "description": "Argentino con l’anima del viaggiatore. Al Carnevale di Venezia si innamora di Natalia, scopre il potere della Maschera di Venezia e guida la rivolta contro la Loggia. Vive a Venezia e chiama Luis in aiuto contro la macchina che ruba le anime."
+     "description": "Argentino con l’anima del viaggiatore. Al Carnevale di Venezia si innamora di Natalia, scopre il potere della Maschera di Venezia e guida la rivolta contro la Loggia. Vive a Venezia e chiama Luis in aiuto contro la macchina che ruba le anime.",
+     "images": [
+      "characters/img/roberto-venezia-1.jpg",
+      "characters/img/roberto-venezia-2.jpg"
+     ]
     },
     "ru": {
      "name": "Роберто",
-     "description": "Аргентинец, живущий в Венеции. На Карнавале влюбляется в загадочную Наталью, открывает силу Маски Венеции и поднимает город против Ордена. Позже зовёт Луиса на помощь против машины, отнимающей у людей души; в «Эпическом матче» играет защитником сборной Человечества."
+     "description": "Аргентинец, живущий в Венеции. На Карнавале влюбляется в загадочную Наталью, открывает силу Маски Венеции и поднимает город против Ордена. Позже зовёт Луиса на помощь против машины, отнимающей у людей души; в «Эпическом матче» играет защитником сборной Человечества.",
+     "images": [
+      "characters/img/roberto-venezia-1.jpg",
+      "characters/img/roberto-venezia-2.jpg"
+     ]
     }
    }
   },
@@ -1239,11 +1464,17 @@
    "localizations": {
     "it": {
      "name": "Il commissario Zancan",
-     "description": "Commissario corrotto della questura di Venezia, padre rinnegato di Marco Dandolo. Vuole la maschera a ogni costo."
+     "description": "Commissario corrotto della questura di Venezia, padre rinnegato di Marco Dandolo. Vuole la maschera a ogni costo.",
+     "images": [
+      "characters/img/zancan-1.jpg"
+     ]
     },
     "ru": {
      "name": "Комиссар Занкан",
-     "description": "Коррумпированный комиссар венецианской квестуры, отрёкшийся отец Марко Дандоло. Готов на всё, чтобы завладеть Маской."
+     "description": "Коррумпированный комиссар венецианской квестуры, отрёкшийся отец Марко Дандоло. Готов на всё, чтобы завладеть Маской.",
+     "images": [
+      "characters/img/zancan-1.jpg"
+     ]
     }
    }
   },
@@ -1354,11 +1585,17 @@
    "localizations": {
     "it": {
      "name": "Luca",
-     "description": "Pittore e amico di Alessio: dipinge copie perfette e custodisce il quadro rubato. È lui a proporre di restituirlo."
+     "description": "Pittore e amico di Alessio: dipinge copie perfette e custodisce il quadro rubato. È lui a proporre di restituirlo.",
+     "images": [
+      "characters/img/luca-pittore-1.jpg"
+     ]
     },
     "ru": {
      "name": "Лука",
-     "description": "Художник и друг Алессио, знаток старой живописи и пигментов. Делает такие точные копии полотен, что их трудно отличить от оригинала."
+     "description": "Художник и друг Алессио, знаток старой живописи и пигментов. Делает такие точные копии полотен, что их трудно отличить от оригинала.",
+     "images": [
+      "characters/img/luca-pittore-1.jpg"
+     ]
     }
    }
   },
@@ -1549,35 +1786,67 @@
    "localizations": {
     "it": {
      "name": "Kennet",
-     "description": "Fuggito dalla Centrale, viene salvato da Robert e diventa uno dei primi compagni di Utopia: la sua vista è la migliore della fortezza. È innamorato di Oxana."
+     "description": "Fuggito dalla Centrale, viene salvato da Robert e diventa uno dei primi compagni di Utopia: la sua vista è la migliore della fortezza. È innamorato di Oxana.",
+     "images": [
+      "characters/img/kennet-1.jpg",
+      "characters/img/kennet-2.jpg"
+     ]
     },
     "tr": {
      "name": "Kennet",
-     "description": "Kumun içinde yarı gömülü, susuzluktan ölmek üzereyken Robert'in bulduğu iri, dolap gibi geniş omuzlu adam. Kalenin en güçlü savunucusu olur ve baharın ilk günü Saşa ile evlenir."
+     "description": "Kumun içinde yarı gömülü, susuzluktan ölmek üzereyken Robert'in bulduğu iri, dolap gibi geniş omuzlu adam. Kalenin en güçlü savunucusu olur ve baharın ilk günü Saşa ile evlenir.",
+     "images": [
+      "characters/img/kennet-1.jpg",
+      "characters/img/kennet-2.jpg"
+     ]
     },
     "ru": {
      "name": "Кеннет",
-     "description": "Высокий и крепкий молодой человек из Великобритании, сильный, но добрый. Защищает Утопию с башни и влюбляется в певицу Оксану."
+     "description": "Высокий и крепкий молодой человек из Великобритании, сильный, но добрый. Защищает Утопию с башни и влюбляется в певицу Оксану.",
+     "images": [
+      "characters/img/kennet-1.jpg",
+      "characters/img/kennet-2.jpg"
+     ]
     },
     "isv": {
      "name": "Kennet",
-     "description": "Odin iz prvyh drugov Roberta, ktory s Oksanoju stroji utopiju."
+     "description": "Odin iz prvyh drugov Roberta, ktory s Oksanoju stroji utopiju.",
+     "images": [
+      "characters/img/kennet-1.jpg",
+      "characters/img/kennet-2.jpg"
+     ]
     },
     "de": {
      "name": "Kennet",
-     "description": "Ein Spurenleser, den Robert halb verdurstet in der Wüste findet. „Du hast mein Leben gerettet. Jetzt gehört es dir.“"
+     "description": "Ein Spurenleser, den Robert halb verdurstet in der Wüste findet. „Du hast mein Leben gerettet. Jetzt gehört es dir.“",
+     "images": [
+      "characters/img/kennet-1.jpg",
+      "characters/img/kennet-2.jpg"
+     ]
     },
     "pt": {
      "name": "Kenneth",
-     "description": "Organiza com Vanessa as redes de abastecimento e mantém a amizade dela."
+     "description": "Organiza com Vanessa as redes de abastecimento e mantém a amizade dela.",
+     "images": [
+      "characters/img/kennet-1.jpg",
+      "characters/img/kennet-2.jpg"
+     ]
     },
     "es": {
      "name": "Kennet",
-     "description": "La fuerza de Nuestra Utopía: herido en la expedición, vuelve con los ladrillos turquesa para la fortaleza."
+     "description": "La fuerza de Nuestra Utopía: herido en la expedición, vuelve con los ladrillos turquesa para la fortaleza.",
+     "images": [
+      "characters/img/kennet-1.jpg",
+      "characters/img/kennet-2.jpg"
+     ]
     },
     "sr": {
      "name": "Кенет",
-     "description": "Један од првих Робертових сабораца, који полази с њим у опасне експедиције."
+     "description": "Један од првих Робертових сабораца, који полази с њим у опасне експедиције.",
+     "images": [
+      "characters/img/kennet-1.jpg",
+      "characters/img/kennet-2.jpg"
+     ]
     }
    }
   },
@@ -1618,7 +1887,11 @@
     },
     "ru": {
      "name": "Оксана",
-     "description": "Певица с голубыми глазами. В «Предчувствии» приходит в Утопию с музыкой и сближается с Кеннетом. В «Сияющем горизонте» живёт в бункере, который построил для неё муж, побеждает в конкурсе и попадает в Некрологию, где бросает вызов машине КАМЕРТОН."
+     "description": "Певица с голубыми глазами. В «Предчувствии» приходит в Утопию с музыкой и сближается с Кеннетом. В «Сияющем горизонте» живёт в бункере, который построил для неё муж, побеждает в конкурсе и попадает в Некрологию, где бросает вызов машине КАМЕРТОН.",
+     "images": [
+      "characters/img/oxana-utopia-2.jpg",
+      "characters/img/oxana-utopia-3.jpg"
+     ]
     },
     "isv": {
      "name": "Oksana",
@@ -1716,7 +1989,10 @@
    "localizations": {
     "it": {
      "name": "Natalia (moglie di Robert)",
-     "description": "Cardiologa e moglie di Robert, partita per curare i soldati durante la guerra. Riappare alla fine alla guida dei ribelli, ma sceglie una missione più grande."
+     "description": "Cardiologa e moglie di Robert, partita per curare i soldati durante la guerra. Riappare alla fine alla guida dei ribelli, ma sceglie una missione più grande.",
+     "images": [
+      "characters/img/natalia-cardiologa-1.jpg"
+     ]
     },
     "ru": {
      "name": "Наталья — жена Роберта",
@@ -1724,15 +2000,24 @@
     },
     "de": {
      "name": "Natalia",
-     "description": "Ärztin, die von ihren Patienten erzählt und sich in Robert verliebt. Der Krieg trennt sie; am Ende steigt sie auf einen Panzer, an der Spitze einer Armee."
+     "description": "Ärztin, die von ihren Patienten erzählt und sich in Robert verliebt. Der Krieg trennt sie; am Ende steigt sie auf einen Panzer, an der Spitze einer Armee.",
+     "images": [
+      "characters/img/natalia-cardiologa-1.jpg"
+     ]
     },
     "vo": {
      "name": "Natalia",
-     "description": "Vom in hospital, kel givof vati Roberte e jafof kasteli libik ko om."
+     "description": "Vom in hospital, kel givof vati Roberte e jafof kasteli libik ko om.",
+     "images": [
+      "characters/img/natalia-cardiologa-1.jpg"
+     ]
     },
     "es": {
      "name": "Natalia, la médica",
-     "description": "La esposa de Robert, médica, que despierta y lo abraza al final."
+     "description": "La esposa de Robert, médica, que despierta y lo abraza al final.",
+     "images": [
+      "characters/img/natalia-cardiologa-1.jpg"
+     ]
     }
    }
   },
@@ -2004,7 +2289,11 @@
    "localizations": {
     "en": {
      "name": "Alex",
-     "description": "A 29-year-old computer repairman from Moscow in 3024, a lonely world where all the women disappeared twenty years ago. He finds an old red time machine, travels to Moscow in 2024 and falls in love with Olga."
+     "description": "A 29-year-old computer repairman from Moscow in 3024, a lonely world where all the women disappeared twenty years ago. He finds an old red time machine, travels to Moscow in 2024 and falls in love with Olga.",
+     "images": [
+      "characters/img/alex-future-1.jpg",
+      "characters/img/alex-future-2.jpg"
+     ]
     }
    }
   },
@@ -2021,7 +2310,11 @@
    "localizations": {
     "en": {
      "name": "Olga",
-     "description": "A young woman who works in her aunt Nina’s café and draws when it is quiet. She helps Alex in 2024, secretly travels to his future and meets herself on the way back. In the end she chooses to build a life with Alex in her own time."
+     "description": "A young woman who works in her aunt Nina’s café and draws when it is quiet. She helps Alex in 2024, secretly travels to his future and meets herself on the way back. In the end she chooses to build a life with Alex in her own time.",
+     "images": [
+      "characters/img/olga-future-1.jpg",
+      "characters/img/olga-future-2.jpg"
+     ]
     }
    }
   },
@@ -2055,7 +2348,10 @@
    "localizations": {
     "en": {
      "name": "Svetlana",
-     "description": "A young woman Alex approaches outside a bookshop on his first day in 2024. He asks her to leave her whole life behind for him, and she tells him to stop following her."
+     "description": "A young woman Alex approaches outside a bookshop on his first day in 2024. He asks her to leave her whole life behind for him, and she tells him to stop following her.",
+     "images": [
+      "characters/img/svetlana-future-1.jpg"
+     ]
     }
    }
   },
@@ -2296,11 +2592,17 @@
    "localizations": {
     "es": {
      "name": "Sergio",
-     "description": "Padre de Luis, vive en Mendoza. Recibe a su hijo y a Natalia entre los viñedos y guarda parte del secreto de la familia Fader."
+     "description": "Padre de Luis, vive en Mendoza. Recibe a su hijo y a Natalia entre los viñedos y guarda parte del secreto de la familia Fader.",
+     "images": [
+      "characters/img/sergio-fader-1.jpg"
+     ]
     },
     "ru": {
      "name": "Серхио",
-     "description": "Отец Луиса, живущий в Мендосе. Встречает сына и Наталью у виноградников у подножия Анд и хранит часть тайны семьи Фадер."
+     "description": "Отец Луиса, живущий в Мендосе. Встречает сына и Наталью у виноградников у подножия Анд и хранит часть тайны семьи Фадер.",
+     "images": [
+      "characters/img/sergio-fader-1.jpg"
+     ]
     }
    }
   },
@@ -2343,11 +2645,22 @@
    "localizations": {
     "es": {
      "name": "Natalia",
-     "description": "Moscovita que acompaña a Luis de Moscú a Mendoza y lo ayuda a resolver el misterio de los Fader. En «Operación Londres» sabe que el tiempo corre solo para ella y decide el destino del elixir."
+     "description": "Moscovita que acompaña a Luis de Moscú a Mendoza y lo ayuda a resolver el misterio de los Fader. En «Operación Londres» sabe que el tiempo corre solo para ella y decide el destino del elixir.",
+     "images": [
+      "characters/img/natalia-fader-1.jpg",
+      "characters/img/natalia-fader-2.jpg",
+      "characters/img/natalia-fader-3.jpg",
+      "characters/img/natalia-fader-4.jpg"
+     ]
     },
     "ru": {
      "name": "Наталья",
-     "description": "Москвичка, с которой Луис отправляется из Москвы в Мендосу. Среди виноградников вместе с ним раскрывает тайну семьи Фадер."
+     "description": "Москвичка, с которой Луис отправляется из Москвы в Мендосу. Среди виноградников вместе с ним раскрывает тайну семьи Фадер.",
+     "images": [
+      "characters/img/natalia-fader-1.jpg",
+      "characters/img/natalia-fader-2.jpg",
+      "characters/img/natalia-fader-3.jpg"
+     ]
     }
    }
   },
@@ -2404,19 +2717,31 @@
    "localizations": {
     "tr": {
      "name": "Martin",
-     "description": "Dövüş sanatlarında usta, çabuk karar veren ama çabuk da öfkelenen eski asker. Vahşileri hor görür, gizlice Nekroloji ile anlaşır ve kalenin kapılarını düşmana açmaya çalışır."
+     "description": "Dövüş sanatlarında usta, çabuk karar veren ama çabuk da öfkelenen eski asker. Vahşileri hor görür, gizlice Nekroloji ile anlaşır ve kalenin kapılarını düşmana açmaya çalışır.",
+     "images": [
+      "characters/img/martin-utopia-1.jpg"
+     ]
     },
     "ru": {
      "name": "Мартин",
-     "description": "Случайно примкнувший к Нашей Утопии боец с ракетницей. Вопреки воле Роберта бьёт по дикарям, плетёт интриги с Жени и в итоге изгнан."
+     "description": "Случайно примкнувший к Нашей Утопии боец с ракетницей. Вопреки воле Роберта бьёт по дикарям, плетёт интриги с Жени и в итоге изгнан.",
+     "images": [
+      "characters/img/martin-utopia-1.jpg"
+     ]
     },
     "isv": {
      "name": "Martin",
-     "description": "Vojak v uniformě Nekrologije, ktory vidi, kako Centralna Sila posyla ljudi na smrt, i prěhodi na stranu Tvrdynje."
+     "description": "Vojak v uniformě Nekrologije, ktory vidi, kako Centralna Sila posyla ljudi na smrt, i prěhodi na stranu Tvrdynje.",
+     "images": [
+      "characters/img/martin-utopia-1.jpg"
+     ]
     },
     "es": {
      "name": "Martín",
-     "description": "Escéptico y práctico: cree que contra el armamento enemigo solo queda la retirada."
+     "description": "Escéptico y práctico: cree que contra el armamento enemigo solo queda la retirada.",
+     "images": [
+      "characters/img/martin-utopia-1.jpg"
+     ]
     }
    }
   },
@@ -2437,15 +2762,24 @@
    "localizations": {
     "tr": {
      "name": "Jeni",
-     "description": "Kısa siyah saçlı, keskin hatlı, her konuşmayı kendi lehine çevirmeyi bilen kadın. Robert'e karşı entrika çevirir; ihanetinden sonra bir haftalık su ve yiyecekle kaleden çıkarılır."
+     "description": "Kısa siyah saçlı, keskin hatlı, her konuşmayı kendi lehine çevirmeyi bilen kadın. Robert'e karşı entrika çevirir; ihanetinden sonra bir haftalık su ve yiyecekle kaleden çıkarılır.",
+     "images": [
+      "characters/img/zhenya-1.jpg"
+     ]
     },
     "ru": {
      "name": "Жени",
-     "description": "Её слова завораживают людей. Вносит разлад в Утопию и уводит за собой четверть жителей."
+     "description": "Её слова завораживают людей. Вносит разлад в Утопию и уводит за собой четверть жителей.",
+     "images": [
+      "characters/img/zhenya-1.jpg"
+     ]
     },
     "fr": {
      "name": "Jenny",
-     "description": "Douce et souriante en apparence, elle met une fleur dans ses cheveux chaque matin pour Robert. Quand il la repousse, son visage devient dur, un instant."
+     "description": "Douce et souriante en apparence, elle met une fleur dans ses cheveux chaque matin pour Robert. Quand il la repousse, son visage devient dur, un instant.",
+     "images": [
+      "characters/img/zhenya-1.jpg"
+     ]
     }
    }
   },
@@ -2515,7 +2849,13 @@
    "localizations": {
     "tr": {
      "name": "Rosa",
-     "description": "Kanyondaki asilerin lideri; rüzgârda uçuşan örgüsüyle atının üzerinde Robert'i vahşilerden kurtarır. Nekroloji'nin yeraltı cennetinden kaçan işçilerin yanında savaşır, Robert ile birlikte turkuaz kaleyi kurar. Aşkın inşa edilmediğine, çöl gülü gibi kendiliğinden açtığına inanır."
+     "description": "Kanyondaki asilerin lideri; rüzgârda uçuşan örgüsüyle atının üzerinde Robert'i vahşilerden kurtarır. Nekroloji'nin yeraltı cennetinden kaçan işçilerin yanında savaşır, Robert ile birlikte turkuaz kaleyi kurar. Aşkın inşa edilmediğine, çöl gülü gibi kendiliğinden açtığına inanır.",
+     "images": [
+      "characters/img/rosa-1.jpg",
+      "characters/img/rosa-2.jpg",
+      "characters/img/rosa-3.jpg",
+      "characters/img/rosa-4.jpg"
+     ]
     }
    }
   },
@@ -2584,7 +2924,11 @@
    "localizations": {
     "ru": {
      "name": "Луис",
-     "description": "Художник, который знакомится с Натальей в маленьком кафе Синеи. Из его рисунка появляется Лис, и мир вокруг становится шире. Во второй части впервые едет к Наталье домой, в старинный Вердеград, где просыпается крепость в полумраке."
+     "description": "Художник, который знакомится с Натальей в маленьком кафе Синеи. Из его рисунка появляется Лис, и мир вокруг становится шире. Во второй части впервые едет к Наталье домой, в старинный Вердеград, где просыпается крепость в полумраке.",
+     "images": [
+      "characters/img/luis-volny-1.jpg",
+      "characters/img/luis-volny-2.jpg"
+     ]
     }
    }
   },
@@ -2621,7 +2965,13 @@
    "localizations": {
     "ru": {
      "name": "Лаура",
-     "description": "Девушка, которая уезжает в тихую деревню, чтобы спрятаться от прошлого, и после падения звезды встречает Лусиано. В «Аргенте» вместе с ним открывает старую книгу о Марсе — и их мир начинает трескаться."
+     "description": "Девушка, которая уезжает в тихую деревню, чтобы спрятаться от прошлого, и после падения звезды встречает Лусиано. В «Аргенте» вместе с ним открывает старую книгу о Марсе — и их мир начинает трескаться.",
+     "images": [
+      "characters/img/laura-1.jpg",
+      "characters/img/laura-2.jpg",
+      "characters/img/laura-3.jpg",
+      "characters/img/laura-4.jpg"
+     ]
     }
    }
   },
@@ -2639,7 +2989,12 @@
    "localizations": {
     "ru": {
      "name": "Лусиано",
-     "description": "Прекрасный незнакомец из леса, связанный с исчезнувшей Атлантидой. В «Аргенте» вместе с Лаурой разгадывает тайну древнего Марса."
+     "description": "Прекрасный незнакомец из леса, связанный с исчезнувшей Атлантидой. В «Аргенте» вместе с Лаурой разгадывает тайну древнего Марса.",
+     "images": [
+      "characters/img/luciano-1.jpg",
+      "characters/img/luciano-2.jpg",
+      "characters/img/luciano-3.jpg"
+     ]
     }
    }
   },
@@ -2799,7 +3154,10 @@
     },
     "es": {
      "name": "Mónica",
-     "description": "Esposa de Sergio, que recibe a Luis y Natalia en la finca Fader entre viñedos."
+     "description": "Esposa de Sergio, que recibe a Luis y Natalia en la finca Fader entre viñedos.",
+     "images": [
+      "characters/img/monica-1.jpg"
+     ]
     }
    }
   },
@@ -2896,7 +3254,10 @@
    "localizations": {
     "ru": {
      "name": "Мариано Феррейра",
-     "description": "Крепкий бородатый руководитель спецслужб в Мадриде. Организует экстренные меры во время карнавального безумия и винит во всём Северный альянс."
+     "description": "Крепкий бородатый руководитель спецслужб в Мадриде. Организует экстренные меры во время карнавального безумия и винит во всём Северный альянс.",
+     "images": [
+      "characters/img/mariano-ferreira-1.jpg"
+     ]
     }
    }
   },
@@ -2913,7 +3274,10 @@
    "localizations": {
     "ru": {
      "name": "Агент Л",
-     "description": "Загадочный человек в длинном тёмном плаще из организации «Наследие Педро». Его гитара останавливает даже древнего бога-быка, а в телестудии он затмевает всех экспертов. Под этим именем скрывается Луис Фадер из «Резонанса любви» — другой Луис, не муж Наташи."
+     "description": "Загадочный человек в длинном тёмном плаще из организации «Наследие Педро». Его гитара останавливает даже древнего бога-быка, а в телестудии он затмевает всех экспертов. Под этим именем скрывается Луис Фадер из «Резонанса любви» — другой Луис, не муж Наташи.",
+     "images": [
+      "characters/img/agente-l-1.jpg"
+     ]
     }
    }
   },
@@ -2947,7 +3311,10 @@
    "localizations": {
     "ru": {
      "name": "Хулиета Диас",
-     "description": "Телеведущая, которая сохраняет улыбку, даже когда за окном, возможно, наступает конец света."
+     "description": "Телеведущая, которая сохраняет улыбку, даже когда за окном, возможно, наступает конец света.",
+     "images": [
+      "characters/img/julieta-diaz-1.jpg"
+     ]
     }
    }
   },
@@ -2999,7 +3366,11 @@
    "localizations": {
     "ru": {
      "name": "Василий",
-     "description": "Детектив, привыкший к хладнокровию и одиночеству. Ищет таинственную воровку через череду опасных свиданий; в «Эпическом матче» — главный комментатор чемпионата."
+     "description": "Детектив, привыкший к хладнокровию и одиночеству. Ищет таинственную воровку через череду опасных свиданий; в «Эпическом матче» — главный комментатор чемпионата.",
+     "images": [
+      "characters/img/vasily-1.jpg",
+      "characters/img/vasily-2.jpg"
+     ]
     }
    }
   },
@@ -3085,7 +3456,14 @@
    "localizations": {
     "ru": {
      "name": "Наталья",
-     "description": "Москвичка, которую Луис встречает у Патриарших прудов. Хранит дневник прапрадеда, связанный с Имперскими пергаментами, и знает об «Аномальном часе» больше, чем говорит."
+     "description": "Москвичка, которую Луис встречает у Патриарших прудов. Хранит дневник прапрадеда, связанный с Имперскими пергаментами, и знает об «Аномальном часе» больше, чем говорит.",
+     "images": [
+      "characters/img/natalia-anomalnyj-1.jpg",
+      "characters/img/natalia-anomalnyj-2.jpg",
+      "characters/img/natalia-anomalnyj-3.jpg",
+      "characters/img/natalia-anomalnyj-4.jpg",
+      "characters/img/natalia-anomalnyj-5.jpg"
+     ]
     }
    }
   },
@@ -3289,7 +3667,10 @@
    "localizations": {
     "ru": {
      "name": "Плюшка",
-     "description": "Кошка Натальи, которая умеет работать навигатором и спокойно спит посреди любых приключений."
+     "description": "Кошка Натальи, которая умеет работать навигатором и спокойно спит посреди любых приключений.",
+     "images": [
+      "characters/img/plyushka-1.jpg"
+     ]
     }
    }
   },
@@ -3363,7 +3744,11 @@
    "localizations": {
     "ru": {
      "name": "Надя",
-     "description": "Подруга Василия с ироничным взглядом, видящая людей насквозь. Именно она строила психологические схемы таинственной «Марии»."
+     "description": "Подруга Василия с ироничным взглядом, видящая людей насквозь. Именно она строила психологические схемы таинственной «Марии».",
+     "images": [
+      "characters/img/nadya-date-1.jpg",
+      "characters/img/nadya-date-2.jpg"
+     ]
     }
    }
   },
@@ -3380,7 +3765,10 @@
    "localizations": {
     "ru": {
      "name": "Светлана",
-     "description": "Недавно переведённая сотрудница отдела киберпреступлений. Отвечала за техническую часть «Марии»: камеры, каналы связи, счета и маршруты."
+     "description": "Недавно переведённая сотрудница отдела киберпреступлений. Отвечала за техническую часть «Марии»: камеры, каналы связи, счета и маршруты.",
+     "images": [
+      "characters/img/svetlana-date-1.jpg"
+     ]
     }
    }
   },
@@ -3550,7 +3938,12 @@
    "localizations": {
     "ru": {
      "name": "Роман",
-     "description": "Композитор, который однажды ночью слышит во сне холодную и печальную мелодию. Его музыка становится знаменитой, но она зовёт его на север."
+     "description": "Композитор, который однажды ночью слышит во сне холодную и печальную мелодию. Его музыка становится знаменитой, но она зовёт его на север.",
+     "images": [
+      "characters/img/roman-north-1.jpg",
+      "characters/img/roman-north-2.jpg",
+      "characters/img/roman-north-3.jpg"
+     ]
     }
    }
   },
@@ -3567,7 +3960,10 @@
    "localizations": {
     "ru": {
      "name": "София",
-     "description": "Девушка с севера, среди холодных озёр и долгих зим, чья жизнь связана с таинственной мелодией. Ждёт Романа на ледяном троне."
+     "description": "Девушка с севера, среди холодных озёр и долгих зим, чья жизнь связана с таинственной мелодией. Ждёт Романа на ледяном троне.",
+     "images": [
+      "characters/img/sofia-north-1.jpg"
+     ]
     }
    }
   },
@@ -3584,7 +3980,10 @@
    "localizations": {
     "ru": {
      "name": "Андрей",
-     "description": "Друг Романа, который первым слышит его музыку."
+     "description": "Друг Романа, который первым слышит его музыку.",
+     "images": [
+      "characters/img/andrey-north-1.jpg"
+     ]
     }
    }
   },
@@ -3619,7 +4018,12 @@
    "localizations": {
     "ru": {
      "name": "Наталья",
-     "description": "Девушка из старинного Вердеграда, с которой Луис знакомится в маленьком кафе Синеи. Их поцелуй пробуждает волшебную связь. Для своего города она — Солнце Вердеграда и его сердце."
+     "description": "Девушка из старинного Вердеграда, с которой Луис знакомится в маленьком кафе Синеи. Их поцелуй пробуждает волшебную связь. Для своего города она — Солнце Вердеграда и его сердце.",
+     "images": [
+      "characters/img/natalia-verdegrad-1.jpg",
+      "characters/img/natalia-verdegrad-2.jpg",
+      "characters/img/natalia-verdegrad-3.jpg"
+     ]
     }
    }
   },
@@ -3637,7 +4041,10 @@
    "localizations": {
     "ru": {
      "name": "Лис",
-     "description": "Лис, ожививший рисунок Луиса. Говорит загадками, всегда знает дорогу и ведёт Луиса и Наталью через тайны Синеи и Вердеграда."
+     "description": "Лис, ожививший рисунок Луиса. Говорит загадками, всегда знает дорогу и ведёт Луиса и Наталью через тайны Синеи и Вердеграда.",
+     "images": [
+      "characters/img/lis-1.jpg"
+     ]
     }
    }
   },
@@ -3671,7 +4078,10 @@
    "localizations": {
     "ru": {
      "name": "Виктор",
-     "description": "Отец Натальи, которому являлись видения: войска разных веков пытались пройти через Вердеград, а сам город их останавливал."
+     "description": "Отец Натальи, которому являлись видения: войска разных веков пытались пройти через Вердеград, а сам город их останавливал.",
+     "images": [
+      "characters/img/viktor-verdegrad-1.jpg"
+     ]
     }
    }
   },
@@ -3688,7 +4098,11 @@
    "localizations": {
     "ru": {
      "name": "Жюльен",
-     "description": "Солдат-призрак крепости, давно забывший своё имя. Наталья помогает ему вспомнить детство и вернуться к жизни."
+     "description": "Солдат-призрак крепости, давно забывший своё имя. Наталья помогает ему вспомнить детство и вернуться к жизни.",
+     "images": [
+      "characters/img/julien-1.jpg",
+      "characters/img/julien-2.jpg"
+     ]
     }
    }
   },
@@ -3848,7 +4262,10 @@
    "localizations": {
     "ru": {
      "name": "Гайя",
-     "description": "Мать Франко, которой достаточно посмотреть на сына несколько секунд, чтобы всё понять."
+     "description": "Мать Франко, которой достаточно посмотреть на сына несколько секунд, чтобы всё понять.",
+     "images": [
+      "characters/img/gaia-1.jpg"
+     ]
     }
    }
   },
@@ -3899,7 +4316,10 @@
    "localizations": {
     "ru": {
      "name": "Ромео",
-     "description": "Комик, который со сцены тайной вечеринки издевается над мэром Гранде и сбегает от полиции."
+     "description": "Комик, который со сцены тайной вечеринки издевается над мэром Гранде и сбегает от полиции.",
+     "images": [
+      "characters/img/romeo-1.jpg"
+     ]
     }
    }
   },
@@ -4143,7 +4563,11 @@
    "localizations": {
     "ru": {
      "name": "Иван",
-     "description": "Высокий темноволосый юноша со спокойным взглядом из марсианского города Аргента, 4085 год до нашей эры. Вместе с Марией находит в Запретной пустыне светящиеся кристаллы."
+     "description": "Высокий темноволосый юноша со спокойным взглядом из марсианского города Аргента, 4085 год до нашей эры. Вместе с Марией находит в Запретной пустыне светящиеся кристаллы.",
+     "images": [
+      "characters/img/ivan-argenta-1.jpg",
+      "characters/img/ivan-argenta-2.jpg"
+     ]
     }
    }
   },
@@ -4160,7 +4584,10 @@
    "localizations": {
     "ru": {
      "name": "Мария",
-     "description": "Лёгкая и живая девушка с длинными светлыми волосами, которые в розовом свете марсианского неба кажутся золотыми. Возлюбленная Ивана."
+     "description": "Лёгкая и живая девушка с длинными светлыми волосами, которые в розовом свете марсианского неба кажутся золотыми. Возлюбленная Ивана.",
+     "images": [
+      "characters/img/maria-argenta-1.jpg"
+     ]
     }
    }
   },
@@ -4177,7 +4604,11 @@
    "localizations": {
     "ru": {
      "name": "Пётр",
-     "description": "Строгий и дисциплинированный отец Марии, привыкший всё анализировать, который берётся изучить найденные кристаллы."
+     "description": "Строгий и дисциплинированный отец Марии, привыкший всё анализировать, который берётся изучить найденные кристаллы.",
+     "images": [
+      "characters/img/pyotr-argenta-1.jpg",
+      "characters/img/pyotr-argenta-2.jpg"
+     ]
     }
    }
   },
@@ -4194,7 +4625,10 @@
    "localizations": {
     "ru": {
      "name": "Элондар Масквелл",
-     "description": "Знаменитый на всю планету магнат, одержимый одной идеей — Марсом. Его эксперименты с кристаллами грозят расколоть мир."
+     "description": "Знаменитый на всю планету магнат, одержимый одной идеей — Марсом. Его эксперименты с кристаллами грозят расколоть мир.",
+     "images": [
+      "characters/img/maskvell-1.jpg"
+     ]
     }
    }
   },
@@ -4213,11 +4647,19 @@
    "localizations": {
     "ru": {
      "name": "Елена",
-     "description": "Сорокалетняя элегантная женщина, больше двадцати лет замужем за властным полковником Фелипе. Однажды вечером в Синее, под грохот метеоритного дождя, незнакомый юноша спасает её — и в ней просыпается надежда."
+     "description": "Сорокалетняя элегантная женщина, больше двадцати лет замужем за властным полковником Фелипе. Однажды вечером в Синее, под грохот метеоритного дождя, незнакомый юноша спасает её — и в ней просыпается надежда.",
+     "images": [
+      "characters/img/elena-meteor-1.jpg",
+      "characters/img/elena-meteor-2.jpg"
+     ]
     },
     "es": {
      "name": "Elena",
-     "description": "Tiene cuarenta años y lleva más de veinte casada con Felipe. Estudia español en la clase de Luciano, trabaja en la radio con Sasha y, mientras cae la lluvia de meteoritos, se atreve por fin a decidir su propia vida."
+     "description": "Tiene cuarenta años y lleva más de veinte casada con Felipe. Estudia español en la clase de Luciano, trabaja en la radio con Sasha y, mientras cae la lluvia de meteoritos, se atreve por fin a decidir su propia vida.",
+     "images": [
+      "characters/img/elena-meteor-1.jpg",
+      "characters/img/elena-meteor-2.jpg"
+     ]
     }
    }
   },
@@ -4236,11 +4678,17 @@
    "localizations": {
     "ru": {
      "name": "Фелипе",
-     "description": "Жёсткий и властный полковник, муж Елены, который годами наполняет их дом напряжением и презрением."
+     "description": "Жёсткий и властный полковник, муж Елены, который годами наполняет их дом напряжением и презрением.",
+     "images": [
+      "characters/img/felipe-meteor-1.jpg"
+     ]
     },
     "es": {
      "name": "Felipe",
-     "description": "Coronel autoritario y marido de Elena. Exige un respeto que nunca se ganó y, al perderla, termina escondido entre los árboles."
+     "description": "Coronel autoritario y marido de Elena. Exige un respeto que nunca se ganó y, al perderla, termina escondido entre los árboles.",
+     "images": [
+      "characters/img/felipe-meteor-1.jpg"
+     ]
     }
    }
   },
@@ -4259,11 +4707,19 @@
    "localizations": {
     "ru": {
      "name": "Лучано",
-     "description": "Смелый юноша-иностранец, который спасает Елену во время метеоритного дождя и, кажется, как-то связан с тем, что происходит в небе."
+     "description": "Смелый юноша-иностранец, который спасает Елену во время метеоритного дождя и, кажется, как-то связан с тем, что происходит в небе.",
+     "images": [
+      "characters/img/luciano-meteor-1.jpg",
+      "characters/img/luciano-meteor-2.jpg"
+     ]
     },
     "es": {
      "name": "Luciano Ferrer",
-     "description": "Joven extranjero y profesor de español de Elena, que no es quien dice ser. Conduce un Lada, tiene una hermana, Micaela, y quiere que Sinea enfrente su propia verdad."
+     "description": "Joven extranjero y profesor de español de Elena, que no es quien dice ser. Conduce un Lada, tiene una hermana, Micaela, y quiere que Sinea enfrente su propia verdad.",
+     "images": [
+      "characters/img/luciano-meteor-1.jpg",
+      "characters/img/luciano-meteor-2.jpg"
+     ]
     }
    }
   },
@@ -5692,7 +6148,10 @@
    "localizations": {
     "es": {
      "name": "Vika",
-     "description": "Siempre con sus cuadernos listos: guarda la memoria fundacional de Nuestra Utopía."
+     "description": "Siempre con sus cuadernos listos: guarda la memoria fundacional de Nuestra Utopía.",
+     "images": [
+      "characters/img/vika-1.jpg"
+     ]
     }
    }
   },
@@ -5813,7 +6272,10 @@
    "localizations": {
     "es": {
      "name": "Heinrich",
-     "description": "Guardián del secreto del hidromiel de los Fader, una poción de naturaleza paradójica que en manos puras puede curar cualquier enfermedad."
+     "description": "Guardián del secreto del hidromiel de los Fader, una poción de naturaleza paradójica que en manos puras puede curar cualquier enfermedad.",
+     "images": [
+      "characters/img/heinrich-1.jpg"
+     ]
     }
    }
   },
@@ -5830,7 +6292,11 @@
    "localizations": {
     "es": {
      "name": "María Silvana Roca",
-     "description": "Política de Mendoza con una oficina llena de mapas viejos sobre la Campaña del Desierto. Termina detenida en pleno anfiteatro de la Vendimia."
+     "description": "Política de Mendoza con una oficina llena de mapas viejos sobre la Campaña del Desierto. Termina detenida en pleno anfiteatro de la Vendimia.",
+     "images": [
+      "characters/img/silvana-roca-1.jpg",
+      "characters/img/silvana-roca-2.jpg"
+     ]
     }
    }
   },
@@ -5847,7 +6313,10 @@
    "localizations": {
     "es": {
      "name": "Adolfo",
-     "description": "Hermano de Sergio, de mirada desafiante, que aparece entre los manifestantes."
+     "description": "Hermano de Sergio, de mirada desafiante, que aparece entre los manifestantes.",
+     "images": [
+      "characters/img/adolfo-fader-1.jpg"
+     ]
     }
    }
   },
@@ -5881,7 +6350,10 @@
    "localizations": {
     "es": {
      "name": "Lucy",
-     "description": "Joven de la familia Thorne que estudia el elixir fijado en el óleo de los cuadros de Fernando Fader y ayuda a limpiar el nombre de su familia."
+     "description": "Joven de la familia Thorne que estudia el elixir fijado en el óleo de los cuadros de Fernando Fader y ayuda a limpiar el nombre de su familia.",
+     "images": [
+      "characters/img/lucy-thorne-1.jpg"
+     ]
     }
    }
   },
@@ -5916,7 +6388,10 @@
    "localizations": {
     "es": {
      "name": "Fernando Fader",
-     "description": "El reconocido pintor argentino de principios del siglo XX, cuya casa-taller conserva su legado y cuyos cuadros guardan un elixir."
+     "description": "El reconocido pintor argentino de principios del siglo XX, cuya casa-taller conserva su legado y cuyos cuadros guardan un elixir.",
+     "images": [
+      "characters/img/fernando-fader-1.jpg"
+     ]
     }
    }
   },

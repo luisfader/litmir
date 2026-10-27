@@ -18,7 +18,7 @@
 <div class="tools"><select id="lang" aria-label="Idioma"></select><input id="search" type="search" placeholder="Buscar personajes o novelas…" aria-label="Buscar personajes"></div>
 <div class="stats" id="stats"></div><div class="grid" id="grid"></div></main><footer><div class="wrap">© Robert Fader · <span id="footerText">Personajes del universo literario</span></div></footer>
 <script>
-const NAMES={ru:"Русский",es:"Español",it:"Italiano",en:"English",de:"Deutsch",fr:"Français",tr:"Türkçe",pt:"Português",cs:"Čeština",pl:"Polski",sr:"Српски",eo:"Esperanto",isv:"Medžuslovjansky",vo:"Volapük",ia:"Interlingua"};
+const NAMES={ru:"Русский",es:"Español",it:"Italiano",en:"English",de:"Deutsch",fr:"Français",tr:"Türkçe",pt:"Português",cs:"Čeština",pl:"Polski",sr:"Српски",eo:"Esperanto",isv:"Medžuslovjansky",vo:"Volapük",ia:"Interlingua",ld:"Lingwa de Planeta",la:"Latina",sw:"Kiswahili",bg:"Български"};
 const I={
 es:["Personajes","Universo literario","Descubrí a los protagonistas y personajes de las novelas. Elegí un idioma para explorar sus historias.","Buscar personajes o novelas…","Volver a las novelas","personajes","Todavía no hay fichas para este idioma. Se añadirán a medida que crezca el catálogo."],
 ru:["Персонажи","Литературная вселенная","Знакомьтесь с героями романов. Выберите язык, чтобы открыть их истории.","Поиск персонажей и романов…","К романам","персонажей","Для этого языка пока нет анкет персонажей."],
@@ -34,6 +34,10 @@ sr:["Ликови","Књижевни свет","Упознајте јунаке 
 eo:["Roluloj","Literatura universo","Ekkonu la rolulojn de la romanoj.","Serĉi rolulojn aŭ romanojn…","Reen al romanoj","roluloj","Ankoraŭ ne estas rolulaj profiloj por ĉi tiu lingvo."],
 isv:["Postavy","Literaturny svět","Poznajte postavy romanov.","Iskati postavy ili romany…","Nazad k romanam","postav","Jesče net profilov."],
 vo:["Pösods","Literatüra vol","Datu pösodis romanis.","Sukön pösodis…","Geikön lü romanis","pösods","Pösodaprofils no nog dabinons."],
+bg:["Герои","Литературна вселена","Запознайте се с героите на романите.","Търсене на герои или романи…","Обратно към романите","герои","Все още няма профили за този език."],
+sw:["Wahusika","Ulimwengu wa fasihi","Wafahamu wahusika wa riwaya.","Tafuta wahusika au riwaya…","Rudi kwenye riwaya","wahusika","Bado hakuna wasifu wa wahusika kwa lugha hii."],
+la:["Personae","Universum litterarium","Personas fabularum cognosce.","Quaere personas aut fabulas…","Ad fabulas redi","personae","Nullae adhuc personae hac lingua."],
+ld:["Personajenes","Literatura universa","Konosi la personajenes de la romanes.","Sercha personajenes o romanes…","Reveni a la romanes","personajenes","No es personajenes in sey lingwa."],
 ia:["Personages","Universo litterari","Cognosce le personages del romances.","Cercar personages o romances…","Retornar al romances","personages","Ancora nulle profilos de personages pro iste lingua."]
 };
 const X={
@@ -51,6 +55,10 @@ sr:["Књижевни свет","Ликови књижевног света","Р
 eo:["Literatura mondo","Roluloj de la literatura universo","Romanoj","Ne eblis ŝargi la katalogon."],
 isv:["Literaturny svět","Postavy literaturnogo světa","Romany","Ne bylo možno zagruziti katalog."],
 vo:["Vol literatik","Pösods vola literatik","Romäns","Katalog no pälodon."],
+bg:["Литературен свят","Герои на литературната вселена","Романи","Каталогът не можа да се зареди."],
+sw:["Ulimwengu wa fasihi","Wahusika wa ulimwengu wa fasihi","Riwaya","Katalogi haikuweza kupakiwa."],
+la:["Mundus litterarius","Personae universi litterarii","Fabulae","Catalogus legi non potuit."],
+ld:["Literatura munda","Personajenes de la literatura universa","Romanes","La katalog no pote es karga-te."],
 ia:["Mundo litterari","Personages del universo litterari","Romances","Le catalogo non poteva esser cargate."]
 };
 const E=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
