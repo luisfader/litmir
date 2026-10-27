@@ -3039,7 +3039,12 @@
           "title": "Хрустальный купол и семя надежды"
         }
       ],
-      "cover": "novels/meteoritnyj-dozhd/cover.jpg"
+      "cover": "novels/meteoritnyj-dozhd/cover.jpg",
+      "lock": {
+        "free": 2,
+        "salt": "HEUpatOkMhN/cb/vmsuS/g==",
+        "iter": 250000
+      }
     },
     {
       "slug": "la-citta-triste",
