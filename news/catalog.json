@@ -5,97 +5,252 @@
       "tagline": "Diario independiente desde que la alcaldesa salió del sótano",
       "price": "Precio: un alfajor",
       "edition": "Edición satírica",
-      "disclaimer": "Todas las noticias de este diario son inventadas y salen de las novelas de este sitio. Cualquier parecido con la realidad es pura novela."
+      "disclaimer": "Todas las noticias de este diario son inventadas y salen de las novelas de este sitio. Cualquier parecido con la realidad es pura novela.",
+      "gossipTitle": "Chimentos",
+      "gossipSub": "Lo que se dice por ahí, sin confirmar",
+      "gossip": [
+        {
+          "text": "Dicen que Púas, el puercoespín de Doña Destino, no pudo entrar en la cárcel porque allí no admiten mascotas, y que ahora viaja en una moto brillante con el falso «experto en relaciones» Andrés Cortés. Con gafas de sol.",
+          "novel": "el-impostor"
+        },
+        {
+          "text": "En el parque se comenta que los mismos dos anillos de oro sirvieron para tres propuestas de matrimonio en un solo domingo. Las tres terminaron en «no».",
+          "novel": "el-impostor"
+        },
+        {
+          "text": "Hay quien jura que las Cupidronas, reprogramadas, ya trabajan en bodas: sirven el pastel y cantan ópera con voz metálica.",
+          "novel": "el-impostor"
+        },
+        {
+          "text": "En Iguazú, alguien escribió con fibrón debajo del cartel de la Garganta del Diablo: «y del Ministerio también». El Ministerio no ha pedido que lo borren.",
+          "novel": "anomalia"
+        },
+        {
+          "text": "Varios testigos aseguran que un zorro de madera, tallado en un pequeño taller mendocino, habla. El Ministerio de Anomalías Espaciales lo niega, pero lo busca.",
+          "novel": "anomalia"
+        },
+        {
+          "text": "En la costa patagónica, un pingüino con carácter llamado Don Ernesto habría perseguido a un artesano por la playa. Se desconocen sus motivos políticos.",
+          "novel": "anomalia"
+        },
+        {
+          "text": "Se dice que alguien sacó de un cráter una semilla cristalina que late con luz ámbar. Si es cierto, no la entregó a las fuerzas de seguridad.",
+          "novel": "lluvia-de-meteoritos"
+        },
+        {
+          "text": "En la Ciudad del Norte llamarían a los meteoritos «alarmas cósmicas», y dicen que se activan con emociones muy intensas. El miedo y las mentiras las volverían destructivas. El cuartel no ha comentado.",
+          "novel": "lluvia-de-meteoritos"
+        },
+        {
+          "text": "Durante el programa de televisión, una invitada se sentó junto al coronel y lo saludó con un «¿Me extrañaste?». El coronel tampoco comentó.",
+          "novel": "lluvia-de-meteoritos"
+        },
+        {
+          "text": "En la torre norte, la pintora Oxana habría dibujado en secreto el perfil de Kennet mientras él revisaba los turnos de vigilancia. Él lo descubrió.",
+          "novel": "la-corazonada"
+        },
+        {
+          "text": "Kennet, el vigía de la fortaleza, se definiría a sí mismo como «un yanqui que toda su vida vio películas de espías». Sus dardos sedantes no parecen de película.",
+          "novel": "la-corazonada"
+        },
+        {
+          "text": "Hay quien dice que la esposa de Robert, cardióloga, no está tan lejos como él cree.",
+          "novel": "la-corazonada"
+        },
+        {
+          "text": "El abogado defensor espontáneo habría confesado a su clienta que robó cuadros del Vaticano. Según él, comparado con eso, el juicio «es un paseo».",
+          "novel": "el-tren-fantasma"
+        },
+        {
+          "text": "Pasajeros del tren aseguran haber visto zombies que cantan desafinados y monos con motosierra en los vagones vecinos.",
+          "novel": "el-tren-fantasma"
+        },
+        {
+          "text": "Se rumorea que un detective de Sinea, Marcos, recorre el tren vagón por vagón buscando a su novia, desaparecida hace una semana.",
+          "novel": "el-tren-fantasma"
+        },
+        {
+          "text": "La idea del vino no fue del Consejo en pleno: habría sido de Marco, que levantó la mano y sonrió. «A esos hombres les gusta el oro… pero también les gusta el vino».",
+          "novel": "la-ciudad-secreta"
+        },
+        {
+          "text": "Si un día gana la opción del embajador, en la plaza todos dan por hecho que el elegido sería el profesor Martín, que conoce los dos mundos.",
+          "novel": "la-ciudad-secreta"
+        },
+        {
+          "text": "Dicen que, en la superficie, la vecina Marina pasaba las tardes en un parque leyendo un libro sobre ciudades antiguas. Nadie sospechó que era una guía de viaje.",
+          "novel": "la-ciudad-secreta"
+        }
+      ]
     },
     "it": {
       "name": "Il Corriere del Sorriso",
       "tagline": "Quotidiano di Sinea, Città del Sorriso. Ridere è di nuovo legale.",
       "price": "Prezzo: un sorriso (alla fragola)",
       "edition": "Edizione satirica",
-      "disclaimer": "Tutte le notizie di questo giornale sono inventate e nascono dai romanzi di questo sito. Ogni somiglianza con la realtà è puro romanzo."
+      "disclaimer": "Tutte le notizie di questo giornale sono inventate e nascono dai romanzi di questo sito. Ogni somiglianza con la realtà è puro romanzo.",
+      "gossipTitle": "Pettegolezzi",
+      "gossipSub": "Si dice, si mormora, non è confermato",
+      "gossip": [
+        {
+          "text": "Si dice che il nuovo governo sia nato in un piccolo bar chiamato «Lacrime di coccodrillo», davanti a due caffè.",
+          "novel": "la-citta-triste"
+        },
+        {
+          "text": "La parola d’ordine delle vecchie riunioni segrete era «Il sole è blu». Qualcuno la usa ancora, per nostalgia.",
+          "novel": "la-citta-triste"
+        },
+        {
+          "text": "Nel seminterrato di Marco, durante il primo test del Risatomat, un ragno avrebbe smesso di tessere la ragnatela per ballare.",
+          "novel": "la-citta-triste"
+        },
+        {
+          "text": "Il Risatomat sarebbe nato da un vecchio progetto bocciato dal Ministero: un annaffiatoio che sparava bolle di sapone con musica allegra per i bambini.",
+          "novel": "la-citta-triste"
+        },
+        {
+          "text": "Ai tempi del divieto, si racconta, a Sinea la gente sostituiva le risate con gli starnuti: quando qualcosa era divertente, tutti facevano «Ciccio… etciù!».",
+          "novel": "la-citta-triste"
+        },
+        {
+          "text": "Si dice che la sorella di Fabio, Stella, giocasse infiltrata nelle Aquile.",
+          "novel": "la-squadra-invincibile"
+        },
+        {
+          "text": "Francesca, la ragazza del portiere, avrebbe cambiato squadra. In tutti i sensi.",
+          "novel": "la-squadra-invincibile"
+        },
+        {
+          "text": "Negli spogliatoi si parla di «baci-trappola». Nessuno ammette di averne ricevuto uno.",
+          "novel": "la-squadra-invincibile"
+        },
+        {
+          "text": "Circola un invito a un’asta privata in una villa sulla Via Appia Antica, sabato alle 22: oggetto speciale, un calice d’oro «appena arrivato dal Vaticano». Parola d’ordine: «Roma Eterna».",
+          "novel": "antonio-e-il-segreto-di-roma"
+        },
+        {
+          "text": "Il sospettato non sarebbe solo: un vecchio amico informatico, Matteo, lo starebbe aiutando.",
+          "novel": "antonio-e-il-segreto-di-roma"
+        },
+        {
+          "text": "Una truccatrice di teatro, Giulia, sarebbe capace di trasformare chiunque in un’altra persona. Pare che abbia un nuovo cliente.",
+          "novel": "antonio-e-il-segreto-di-roma"
+        },
+        {
+          "text": "I ricercati sarebbero nascosti in una villa sulle colline, ospiti di un ex ladro d’arte e di una collezionista. Lui legge i giornali in vestaglia di seta, fischiettando.",
+          "novel": "la-nevicata-rosa"
+        },
+        {
+          "text": "Il capo dei Cromatisti parlerebbe di un «esercito di Idee»: la Verità, le Origini, la Guerra, la Fede, la Bellezza.",
+          "novel": "la-nevicata-rosa"
+        },
+        {
+          "text": "La restauratrice e il pittore argentino si sarebbero scritti lettere per mesi, prima di incontrarsi per la prima volta in un piccolo caffè di Firenze.",
+          "novel": "la-nevicata-rosa"
+        },
+        {
+          "text": "Tra i membri della Loggia circolerebbe la paura di una donna dagli occhi azzurri, diventata una leggenda: sfugge a ogni tentativo di cattura.",
+          "novel": "maschera-di-venezia"
+        },
+        {
+          "text": "Una gondola fantasma sarebbe ormeggiata vicino a una piscina interna, in un palazzo che nessuno sa indicare sulla mappa.",
+          "novel": "maschera-di-venezia"
+        },
+        {
+          "text": "Il padre della veneziana Natalia sarebbe un Duca, erede di un lignaggio segreto.",
+          "novel": "maschera-di-venezia"
+        }
+      ]
     },
     "en": {
       "name": "The Sinea Herald",
       "tagline": "Free, like the buses",
       "price": "Price: nothing. Ask the Mayor.",
       "edition": "Satirical edition",
-      "disclaimer": "Every story in this paper is made up and comes from the novels on this site. Any resemblance to reality is pure fiction."
+      "disclaimer": "Every story in this paper is made up and comes from the novels on this site. Any resemblance to reality is pure fiction.",
+      "gossipTitle": "Gossip",
+      "gossipSub": "Unconfirmed, but everybody is talking",
+      "gossip": [
+        {
+          "text": "Sources at the port say the Mayor proposed to Anna at sunset with a simple silver ring. No diamond. “I think I have seen enough diamonds for my whole life,” he is supposed to have said.",
+          "novel": "the-immigrant"
+        },
+        {
+          "text": "Leo, the former hacker, now teaches computers to children. He hopes some of them will become hackers too. “But good hackers.”",
+          "novel": "the-immigrant"
+        },
+        {
+          "text": "The former Mayor, Martin, is said to have written a very short letter from prison. Only three sentences. One of them is “I am sorry.”",
+          "novel": "the-immigrant"
+        },
+        {
+          "text": "The museum director, Mr. Bell, reportedly kept a copy of the theft video on his home computer the whole time. The police never knew.",
+          "novel": "the-immigrant"
+        },
+        {
+          "text": "The former Mayor was caught at the port ten steps from his ship. It was leaving at midnight.",
+          "novel": "the-immigrant"
+        },
+        {
+          "text": "Word from Charles’s country: the mines are closed and three hundred workers have gone home to their families.",
+          "novel": "the-immigrant"
+        },
+        {
+          "text": "Before he met Olga, the traveller reportedly walked up to a woman called Svetlana outside a bookshop and said, “I like you.” In the old romantic movie, the woman smiles. Svetlana did not.",
+          "novel": "a-man-from-the-future"
+        },
+        {
+          "text": "His colleague Pavel is said to have noticed that the old workroom is very clean now. Too clean.",
+          "novel": "a-man-from-the-future"
+        },
+        {
+          "text": "The red machine has a HOME button. Nobody knows if he will press it.",
+          "novel": "a-man-from-the-future"
+        },
+        {
+          "text": "The surgeon on the recruitment list is said to refuse to leave her patients at the old railway hospital near North Station. Even for a utopia.",
+          "novel": "the-foreboding"
+        },
+        {
+          "text": "Last winter, the agronomist reportedly sent a message over the radio. She was looking for fuel to keep her greenhouses warm.",
+          "novel": "the-foreboding"
+        },
+        {
+          "text": "Robert, the man who closed the bag of antibiotics, is said to have been born in Argentina.",
+          "novel": "the-foreboding"
+        },
+        {
+          "text": "One of the detective’s earlier dates reportedly likes dead insects.",
+          "novel": "the-date"
+        },
+        {
+          "text": "A woman called Nadia is said to have kissed him and run away. He did not get her phone number.",
+          "novel": "the-date"
+        },
+        {
+          "text": "The violin player on his list is rumoured to tie her dates to a chair. The detective has accepted the date anyway.",
+          "novel": "the-date"
+        }
+      ]
     }
   },
   "articles": [
-    {"slug": "alcaldesa-sotano", "lang": "es", "lead": true, "date": "2026-10-28", "section": "Gobierno",
-     "title": "La alcaldesa de Sinea reaparece tras tres semanas en el sótano: «Solo comí galletas»",
-     "deck": "Durante su ausencia gobernó la dueña de una app de horóscopos, que llegó a prohibir el amor por decreto y a patrullar la ciudad con robots.",
-     "novels": ["el-impostor"]},
-    {"slug": "capital-mendoza", "lang": "es", "date": "2026-10-27", "section": "Política nacional",
-     "title": "Fracasa otra vez el plan del Ministerio de Anomalías Espaciales para devolver la capital a Buenos Aires",
-     "deck": "El Subsecretario Rodrigo Echeverría Paz terminó sentado sobre una bandeja de medialunas. En Mendoza, el presidente sigue sin querer serlo.",
-     "novels": ["anomalia", "el-misterio-de-los-fader"]},
-    {"slug": "coronel-meteoritos", "lang": "es", "date": "2026-10-26", "section": "Seguridad",
-     "title": "El coronel Felipe culpa a un profesor de español de la lluvia de meteoritos y declara un gobierno de emergencia",
-     "deck": "Prohibidas las reuniones no autorizadas y obligatorio entregar todo lo que caiga del cielo. El Partido por la Decencia sale a la calle.",
-     "novels": ["lluvia-de-meteoritos"]},
-    {"slug": "utopia-consejo", "lang": "es", "date": "2026-10-24", "section": "Internacional",
-     "title": "Nuestra Utopía vota por la paz: Luis en contra, Kennet se abstiene",
-     "deck": "El Consejo de Seguridad rechaza crear un ejército regular. Fuentes de la fortaleza aseguran que el discurso a favor iba dirigido a una violinista.",
-     "novels": ["la-corazonada"]},
-    {"slug": "juez-condena", "lang": "es", "date": "2026-10-22", "section": "Justicia",
-     "title": "Su Señoría Casimiro Condena acusa a una pasajera de «inmigración moral» en el tren fantasma",
-     "deck": "Su único pecado es coleccionar libros de fantasmas. El juez anunció su voto antes que nadie: «Yo voto por mí, que siempre gano».",
-     "image": "novels/el-tren-fantasma/img/13-1.jpg",
-     "novels": ["el-tren-fantasma"]},
-    {"slug": "ciudad-secreta-referendum", "lang": "es", "date": "2026-10-20", "section": "Bajo tierra",
-     "title": "La Ciudad Secreta vota a mano alzada si el mundo puede enterarse de que existe",
-     "deck": "Antes, los invasores rechazaron los conocimientos de la ciudad («¡No necesito libros!») y aceptaron el vino.",
-     "image": "novels/la-ciudad-secreta/img/08.jpg",
-     "novels": ["la-ciudad-secreta"]},
-
-    {"slug": "sinea-ridiamo-troppo", "lang": "it", "lead": true, "date": "2026-10-28", "section": "Governo",
-     "title": "Tre mesi di Ministero dei Sorrisi: il nuovo problema di Sinea è che ridiamo troppo",
-     "deck": "La Legge della Felicità ha tre articoli, i poliziotti sorridono e il presidente gira senza scorta. L’opposizione, per ora, non esiste.",
-     "novels": ["la-citta-triste"]},
-    {"slug": "ex-presidente-gelataio", "lang": "it", "date": "2026-10-27", "section": "L’intervista",
-     "title": "L’ex presidente che vietava i sorrisi oggi vende gelati: «Ero sbagliato»",
-     "deck": "Il suo gusto più venduto è il Sorriso alla Fragola. In Piazza Grande, dice, ha resistito alla risata «almeno dieci secondi».",
-     "novels": ["la-citta-triste"]},
-    {"slug": "polizia-calcistica", "lang": "it", "date": "2026-10-25", "section": "Sport e potere",
-     "title": "La «Polizia Calcistica» era una facciata: il suo vero nome è il Consiglio",
-     "deck": "Scommesse clandestine, sponsorizzazioni forzate e una squadra femminile che vinceva senza pagare. Parla un ex contabile.",
-     "novels": ["la-squadra-invincibile"]},
-    {"slug": "calice-doro", "lang": "it", "date": "2026-10-23", "section": "Cronaca",
-     "title": "Sparito il Calice d’Oro dei Papi: la polizia cerca un pizzaiolo di Trastevere",
-     "deck": "Il sospettato non ama i musei e la guardia della sala è suo cugino. Della ragazza con il cappello, nessuna traccia.",
-     "novels": ["antonio-e-il-segreto-di-roma"]},
-    {"slug": "neve-rosa-firenze", "lang": "it", "date": "2026-10-21", "section": "Comune",
-     "title": "Neve rosa su Firenze: per il sindaco non è un miracolo, è un dossier",
-     "deck": "Nasce l’Operazione Botticelli. Il direttore degli Uffizi, dato per morto, smentisce: «Era un sostituto».",
-     "image": "novels/la-nevicata-rosa/img/11.jpg",
-     "novels": ["la-nevicata-rosa"]},
-    {"slug": "venezia-loggia", "lang": "it", "date": "2026-10-19", "section": "Laguna",
-     "title": "Il commissario Zancan: «Non sono qui per incriminarla. O almeno, non ancora»",
-     "deck": "Quattro scienziati uccisi in due anni, una Loggia che vuole Venezia sotto controllo e una maschera che decide il destino della città.",
-     "novels": ["maschera-di-venezia"]},
-
-    {"slug": "mayor-takes-the-bus", "lang": "en", "lead": true, "date": "2026-10-28", "section": "City Hall",
-     "title": "Mayor takes the bus. Again.",
-     "deck": "One year after his first election was cancelled, Charles wins with real papers, opens a Welcome House and finds out the buses really are free.",
-     "novels": ["the-immigrant"]},
-    {"slug": "dark-sun-hotel", "lang": "en", "date": "2026-10-26", "section": "Courts",
-     "title": "Hotel “Dark Sun” loses its receptionist: two years for a business model built on bribes",
-     "deck": "The court explains how policemen, a hotel and a Mayor shared the money — and why the turquoise diamond ended up under the road.",
-     "novels": ["the-immigrant"]},
-    {"slug": "moscow-3024", "lang": "en", "date": "2026-10-24", "section": "The Future",
-     "title": "Moscow, 3024: still no women, still no explanation, one citizen leaves for a pastry",
-     "deck": "A red time machine, a payment problem and no documents. In 2024 he meets Olga.",
-     "image": "novels/a-man-from-the-future/img/01.jpg",
-     "novels": ["a-man-from-the-future"]},
-    {"slug": "clear-path", "lang": "en", "date": "2026-10-22", "section": "After the Devastation",
-     "title": "The Clear Path explains its philosophy again, with a shotgun and a chainsaw",
-     "deck": "“Every man owns himself.” A stranger called Robert asks whether that includes the man they were taking away.",
-     "novels": ["the-foreboding"]},
-    {"slug": "dating-court", "lang": "en", "date": "2026-10-20", "section": "Society",
-     "title": "Lawyer wants first dates to follow court rules: “Exhibit B: you did not bring flowers”",
-     "deck": "Her date objected. She overruled him. He turned out to be a private detective.",
-     "novels": ["the-date"]}
+    {"slug": "alcaldesa-sotano", "lang": "es", "lead": true, "date": "2026-10-28", "section": "Gobierno", "title": "La alcaldesa de Sinea reaparece tras tres semanas en el sótano: «Solo comí galletas»", "deck": "Durante su ausencia gobernó la dueña de una app de horóscopos, que llegó a prohibir el amor por decreto y a patrullar la ciudad con robots.", "novels": ["el-impostor"]},
+    {"slug": "capital-mendoza", "lang": "es", "date": "2026-10-27", "section": "Política nacional", "title": "Fracasa otra vez el plan del Ministerio de Anomalías Espaciales para devolver la capital a Buenos Aires", "deck": "El Subsecretario Rodrigo Echeverría Paz terminó sentado sobre una bandeja de medialunas. En Mendoza, el presidente sigue sin querer serlo.", "novels": ["anomalia", "el-misterio-de-los-fader"]},
+    {"slug": "coronel-meteoritos", "lang": "es", "date": "2026-10-26", "section": "Seguridad", "title": "El coronel Felipe culpa a un profesor de español de la lluvia de meteoritos y declara un gobierno de emergencia", "deck": "Prohibidas las reuniones no autorizadas y obligatorio entregar todo lo que caiga del cielo. El Partido por la Decencia sale a la calle.", "novels": ["lluvia-de-meteoritos"]},
+    {"slug": "utopia-consejo", "lang": "es", "date": "2026-10-24", "section": "Internacional", "title": "Nuestra Utopía vota por la paz: Luis en contra, Kennet se abstiene", "deck": "El Consejo de Seguridad rechaza crear un ejército regular. Fuentes de la fortaleza aseguran que el discurso a favor iba dirigido a una violinista.", "novels": ["la-corazonada"]},
+    {"slug": "juez-condena", "lang": "es", "date": "2026-10-22", "section": "Justicia", "title": "Su Señoría Casimiro Condena acusa a una pasajera de «inmigración moral» en el tren fantasma", "deck": "Su único pecado es coleccionar libros de fantasmas. El juez anunció su voto antes que nadie: «Yo voto por mí, que siempre gano».", "image": "novels/el-tren-fantasma/img/13-1.jpg", "novels": ["el-tren-fantasma"]},
+    {"slug": "ciudad-secreta-referendum", "lang": "es", "date": "2026-10-20", "section": "Bajo tierra", "title": "La Ciudad Secreta vota a mano alzada si el mundo puede enterarse de que existe", "deck": "Antes, los invasores rechazaron los conocimientos de la ciudad («¡No necesito libros!») y aceptaron el vino.", "image": "novels/la-ciudad-secreta/img/08.jpg", "novels": ["la-ciudad-secreta"]},
+    {"slug": "sinea-ridiamo-troppo", "lang": "it", "lead": true, "date": "2026-10-28", "section": "Governo", "title": "Tre mesi di Ministero dei Sorrisi: il nuovo problema di Sinea è che ridiamo troppo", "deck": "La Legge della Felicità ha tre articoli, i poliziotti sorridono e il presidente gira senza scorta. L’opposizione, per ora, non esiste.", "novels": ["la-citta-triste"]},
+    {"slug": "ex-presidente-gelataio", "lang": "it", "date": "2026-10-27", "section": "L’intervista", "title": "L’ex presidente che vietava i sorrisi oggi vende gelati: «Ero sbagliato»", "deck": "Il suo gusto più venduto è il Sorriso alla Fragola. In Piazza Grande, dice, ha resistito alla risata «almeno dieci secondi».", "novels": ["la-citta-triste"]},
+    {"slug": "polizia-calcistica", "lang": "it", "date": "2026-10-25", "section": "Sport e potere", "title": "La «Polizia Calcistica» era una facciata: il suo vero nome è il Consiglio", "deck": "Scommesse clandestine, sponsorizzazioni forzate e una squadra femminile che vinceva senza pagare. Parla un ex contabile.", "novels": ["la-squadra-invincibile"]},
+    {"slug": "calice-doro", "lang": "it", "date": "2026-10-23", "section": "Cronaca", "title": "Sparito il Calice d’Oro dei Papi: la polizia cerca un pizzaiolo di Trastevere", "deck": "Il sospettato non ama i musei e la guardia della sala è suo cugino. Della ragazza con il cappello, nessuna traccia.", "novels": ["antonio-e-il-segreto-di-roma"]},
+    {"slug": "neve-rosa-firenze", "lang": "it", "date": "2026-10-21", "section": "Comune", "title": "Neve rosa su Firenze: per il sindaco non è un miracolo, è un dossier", "deck": "Nasce l’Operazione Botticelli. Il direttore degli Uffizi, dato per morto, smentisce: «Era un sostituto».", "image": "novels/la-nevicata-rosa/img/11.jpg", "novels": ["la-nevicata-rosa"]},
+    {"slug": "venezia-loggia", "lang": "it", "date": "2026-10-19", "section": "Laguna", "title": "Il commissario Zancan: «Non sono qui per incriminarla. O almeno, non ancora»", "deck": "Quattro scienziati uccisi in due anni, una Loggia che vuole Venezia sotto controllo e una maschera che decide il destino della città.", "novels": ["maschera-di-venezia"]},
+    {"slug": "mayor-takes-the-bus", "lang": "en", "lead": true, "date": "2026-10-28", "section": "City Hall", "title": "Mayor takes the bus. Again.", "deck": "One year after his first election was cancelled, Charles wins with real papers, opens a Welcome House and finds out the buses really are free.", "novels": ["the-immigrant"]},
+    {"slug": "dark-sun-hotel", "lang": "en", "date": "2026-10-26", "section": "Courts", "title": "Hotel “Dark Sun” loses its receptionist: two years for a business model built on bribes", "deck": "The court explains how policemen, a hotel and a Mayor shared the money — and why the turquoise diamond ended up under the road.", "novels": ["the-immigrant"]},
+    {"slug": "moscow-3024", "lang": "en", "date": "2026-10-24", "section": "The Future", "title": "Moscow, 3024: still no women, still no explanation, one citizen leaves for a pastry", "deck": "A red time machine, a payment problem and no documents. In 2024 he meets Olga.", "image": "novels/a-man-from-the-future/img/01.jpg", "novels": ["a-man-from-the-future"]},
+    {"slug": "clear-path", "lang": "en", "date": "2026-10-22", "section": "After the Devastation", "title": "The Clear Path explains its philosophy again, with a shotgun and a chainsaw", "deck": "“Every man owns himself.” A stranger called Robert asks whether that includes the man they were taking away.", "novels": ["the-foreboding"]},
+    {"slug": "dating-court", "lang": "en", "date": "2026-10-20", "section": "Society", "title": "Lawyer wants first dates to follow court rules: “Exhibit B: you did not bring flowers”", "deck": "Her date objected. She overruled him. He turned out to be a private detective.", "novels": ["the-date"]}
   ]
 }

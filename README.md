@@ -74,7 +74,7 @@ En ES, IT y EN hay un periódico satírico (`#/news`, botón «📰» en la port
  "title": "Titular", "deck": "Bajada", "novels": ["el-impostor"], "lead": true}
 ```
 
-`lead: true` la pone como noticia principal de la portada. `novels` enlaza las novelas en las que se basa (de ahí sale la portada que se usa como imagen); `image` permite usar otra ilustración. Para un idioma nuevo, añadir su periódico en `papers` (nombre, lema, precio, aviso). Las noticias no usan personas reales: solo personajes de las novelas. Las novelas 18+ quedan fuera.
+`lead: true` la pone como noticia principal de la portada. `novels` enlaza las novelas en las que se basa (de ahí sale la portada que se usa como imagen); `image` permite usar otra ilustración. Cada periódico tiene al final de la portada una sección de chimentos (*Chimentos*, *Pettegolezzi*, *Gossip*): están en `papers.<idioma>.gossip`, cada uno con su texto y la novela de la que sale (`{"text": "…", "novel": "el-impostor"}`). Para un idioma nuevo, añadir su periódico en `papers` (nombre, lema, precio, aviso). Las noticias no usan personas reales: solo personajes de las novelas. Las novelas 18+ quedan fuera.
 
 ## Recomendación del día
 
