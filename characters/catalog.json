@@ -152,7 +152,7 @@
     },
     "fr": {
      "name": "Luis",
-     "description": "Habitant de la forteresse qui rougit facilement quand Jenny lui parle de Mendoza et du vin.",
+     "description": "Jeune architecte argentin de Mendoza, beau, doué et vaniteux, qui signe chaque dessin en grandes lettres. Il vole la gloire de la Forclaz, chasse Camille et Robert de la vallée, puis tient le mur seul contre les chars de la Puissance centrale.",
      "images": [
       "characters/img/luis-utopia-1.jpg",
       "characters/img/luis-utopia-2.jpg"
@@ -480,7 +480,8 @@
     "isv",
     "pt",
     "ld",
-    "es"
+    "es",
+    "fr"
    ],
    "role": "Música y violonchelista; su arte acompaña la resistencia de Utopía.",
    "novels": [
@@ -495,7 +496,8 @@
     "predcutje",
     "mundo-turquesa",
     "premonision-ldp",
-    "la-corazonada"
+    "la-corazonada",
+    "reve-turquoise"
    ],
    "localizations": {
     "sr": {
@@ -575,6 +577,10 @@
       "characters/img/natalia-cellist-3.jpg",
       "characters/img/natalia-cellist-4.jpg"
      ]
+    },
+    "fr": {
+     "name": "Natalia",
+     "description": "Violoncelliste aux longs cheveux châtain foncé et aux yeux gris-vert très clairs. Évadée de Nécrologie avec son violoncelle fêlé, elle bouleverse le cœur de Robert sans rien lui demander — et devient l’amie de Camille."
     }
    }
   },
@@ -2776,7 +2782,7 @@
     },
     "fr": {
      "name": "Jenny",
-     "description": "Douce et souriante en apparence, elle met une fleur dans ses cheveux chaque matin pour Robert. Quand il la repousse, son visage devient dur, un instant.",
+     "description": "Douce et souriante en apparence, elle met une fleur dans ses cheveux chaque matin. Elle fait entrer les jetons de cuivre dans la forteresse, part avec trente-quatre habitants et devient l’associée de Nécrologie.",
      "images": [
       "characters/img/zhenya-1.jpg"
      ]

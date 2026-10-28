@@ -7017,7 +7017,7 @@
       "genre": "Post-apocalyptique · Aventure · Roman d’amour",
       "year": 2026,
       "cover": "novels/reve-turquoise/cover.jpg",
-      "description": "Le monde s’est éteint un mardi. Trois ans plus tard, Camille, ancienne experte en sécurité informatique, rêve d’une forteresse aux murs turquoise où l’on pourrait enfin vivre à l’abri. Elle rencontre Robert, un architecte blessé, et l’amour renaît au milieu des ruines.\nMais les sauvages brûlent tout sur leur passage. Au fond d’une vallée perdue, le Rêve turquoise prend forme — un refuge fidèle à l’humanisme de Camille. Jusqu’au jour où Jenny frappe à la porte.",
+      "description": "Le monde s’est éteint un mardi. Trois ans plus tard, Camille, ancienne experte en sécurité informatique, construit avec Robert, un architecte blessé, une forteresse aux murs turquoise au fond d’une vallée perdue : le Rêve turquoise, fidèle à son humanisme.\nMais Jenny y fait entrer les jetons de cuivre et la vieille logique de la dette, les Souverains du Baron prêchent la loi de la jungle, et Luis, le jeune architecte, rêve d’être le héros. Exilée dans le désert, Camille découvre Nécrologie, une ville souterraine où l’on naît avec un numéro sur le poignet — et Natalia, une violoncelliste aux yeux clairs qui va bouleverser le cœur de Robert.",
       "translations": {
         "eo": "la-antausento",
         "it": "presentimento",
@@ -7049,9 +7049,108 @@
         {
           "file": "04.md",
           "title": "Jenny"
+        },
+        {
+          "file": "05.md",
+          "title": "Le colporteur"
+        },
+        {
+          "file": "06.md",
+          "title": "Les jetons de cuivre"
+        },
+        {
+          "file": "07.md",
+          "title": "L’assemblée de la neige"
+        },
+        {
+          "file": "08.md",
+          "title": "Quelqu’un qui reste"
+        },
+        {
+          "file": "09.md",
+          "title": "Trente-quatre"
+        },
+        {
+          "file": "10.md",
+          "title": "Les Souverains"
+        },
+        {
+          "file": "11.md",
+          "title": "Le conseil de sécurité"
+        },
+        {
+          "file": "12.md",
+          "title": "Quinze hommes"
+        },
+        {
+          "file": "13.md",
+          "title": "La nuit de la Forclaz"
+        },
+        {
+          "file": "14.md",
+          "title": "Le héros de la fontaine"
+        },
+        {
+          "file": "15.md",
+          "title": "Les saisons tranquilles"
+        },
+        {
+          "file": "16.md",
+          "title": "La nuit de la Saint-Jean"
+        },
+        {
+          "file": "17.md",
+          "title": "Les Plaines brûlées"
+        },
+        {
+          "file": "18.md",
+          "title": "Le violoncelle dans la pierre"
+        },
+        {
+          "file": "19.md",
+          "title": "Nécrologie"
+        },
+        {
+          "file": "20.md",
+          "title": "La violoncelliste"
+        },
+        {
+          "file": "21.md",
+          "title": "L’inventaire"
+        },
+        {
+          "file": "22.md",
+          "title": "Les tambours"
+        },
+        {
+          "file": "23.md",
+          "title": "Cinq tombes"
+        },
+        {
+          "file": "24.md",
+          "title": "La faille"
+        },
+        {
+          "file": "25.md",
+          "title": "Le Grand Livre"
+        },
+        {
+          "file": "26.md",
+          "title": "Deux femmes"
+        },
+        {
+          "file": "27.md",
+          "title": "Le pacte"
+        },
+        {
+          "file": "28.md",
+          "title": "La chute du Rêve turquoise"
+        },
+        {
+          "file": "29.md",
+          "title": "Turquoise"
         }
       ],
-      "wip": true,
       "stars": 4
     },
     {
