@@ -121,6 +121,17 @@ article.chapter.post a{color:var(--accent)}
 .np-gos-item::before{content:"🤫 ";}
 .np-gos-item a{display:block;margin-top:6px;font-family:var(--sans);font-size:12px;color:var(--accent);text-decoration:none}
 .np-gos-item a:hover{text-decoration:underline}
+.np-gos{margin-top:34px;border-top:3px double var(--ink);padding-top:16px}
+.np-gos-h{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+.np-gos-h h2{margin:0;font-family:var(--display);font-weight:600;font-size:clamp(30px,4.5vw,44px);font-style:italic;color:var(--accent)}
+.np-gos-h p{margin:0;font-family:var(--serif);font-style:italic;color:var(--muted)}
+.np-gos-list{columns:3 260px;column-gap:28px;column-rule:1px dashed var(--line)}
+.np-gos-item{break-inside:avoid;margin:0 0 22px;padding:14px 16px;background:var(--accent-soft);border-radius:10px}
+.np-gos-item h3{margin:0 0 6px;font-family:var(--display);font-weight:600;font-size:21px;line-height:1.15}
+.np-gos-item p{margin:0 0 8px;font-size:15px;line-height:1.5}
+.np-gos-item a{font-family:var(--sans);font-size:12px;color:var(--accent);text-decoration:none}
+.np-gos-item a:hover{text-decoration:underline}
+.np-line a{color:var(--accent);text-decoration:none}
 @media (max-width:820px){.np-grid{grid-template-columns:1fr 1fr}.np-grid .np-card:not(:nth-child(3n+1)){border-left:0}.np-grid .np-card:nth-child(2n){border-left:1px solid var(--line)}}
 @media (max-width:620px){.np{padding-top:16px}.np-lead{grid-template-columns:1fr;gap:14px}.np-lead .np-img{order:-1}.np-grid{grid-template-columns:1fr}.np-grid .np-card:nth-child(2n){border-left:0}.np-card{padding:18px 4px}.np-line{justify-content:center}}
 /* Home */
@@ -1207,7 +1218,7 @@ async function newsIndex(){
       <h1 class="np-name">${esc(P.name)}</h1>
       <p class="np-tag">${esc(P.tagline || "")}</p>
     </header>
-    <div class="np-line"><span>${esc(today)}</span><span>${esc(P.price || "")}</span></div>
+    <div class="np-line"><span>${esc(today)}</span>${P.gossip ? `<a href="#gos" onclick="document.getElementById('gos').scrollIntoView({behavior:'smooth'});return false">${esc(P.gossip.title)} ↓</a>` : ""}<span>${esc(P.price || "")}</span></div>
     ${lead ? `<a class="np-lead" href="#/news/${esc(lead.slug)}">
       <div><span class="np-sec">${esc(lead.section || "")}</span><h2>${esc(lead.title)}</h2>${lead.deck ? `<p>${esc(lead.deck)}</p>` : ""}${newsFrom(lead)}</div>
       ${img(lead)}</a>` : `<div class="empty">${esc(nt("empty"))}</div>`}
@@ -1218,6 +1229,11 @@ async function newsIndex(){
       <div class="np-gos-head"><h2>${esc(P.gossipTitle || "")}</h2><span class="np-sec">${esc(P.gossipSub || "")}</span></div>
       <div class="np-gos-grid">${P.gossip.map(g => { const n = catalog.novels.find(x => x.slug === g.novel);
         return `<p class="np-gos-item">${esc(g.text)}${n ? `<a href="#/${esc(n.slug)}">${esc(nt("from"))} «${esc(n.title)}» →</a>` : ""}</p>`; }).join("")}</div>
+    </section>` : ""}
+    ${P.gossip && (P.gossip.items || []).length ? `<section class="np-gos" id="gos">
+      <div class="np-gos-h"><h2>${esc(P.gossip.title)}</h2><p>${esc(P.gossip.sub || "")}</p></div>
+      <div class="np-gos-list">${P.gossip.items.map(g => { const n = catalog.novels.find(x => x.slug === g.novel);
+        return `<div class="np-gos-item"><h3>${esc(g.title)}</h3><p>${esc(g.text)}</p>${n ? `<a href="#/${esc(n.slug)}">«${esc(n.title)}» →</a>` : ""}</div>`; }).join("")}</div>
     </section>` : ""}
     ${P.disclaimer ? `<p class="np-foot">${esc(P.disclaimer)}</p>` : ""}
   </section>`;
