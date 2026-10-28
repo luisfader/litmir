@@ -689,10 +689,10 @@ function setupPredchuvstvieReflection(root) {
   };
 }
 
-const LANGS = ["ru","es","it","en","de","fr","tr","pt","cs","pl","sr","eo","isv","vo","ia","ld","la","sw","bg"];
+const LANGS = ["ru","es","it","en","de","fr","tr","pt","cs","pl","sr","eo","isv","vo","ia","ld","la","sw","bg","vec"];
 const UI_SW = {study:"Jifunze",studyNote:"Kozi ya lugha.",wip:"Inaandikwa",wipNote:"Sura mpya zinakuja.",tag:"Riwaya",hero:"Ulimwengu wa Fasihi",sub:"Riwaya za Robert Fader. Soma bila malipo.",author:"Robert Fader",start:"Anza kusoma",cont:"Endelea kusoma",contents:"Orodha ya sura",chapter:"Sura",prev:"Iliyotangulia",next:"Inayofuata",back:"Riwaya zote",empty:"Hakuna riwaya kwa Kiswahili bado.",foot:"© Robert Fader. Haki zote zimehifadhiwa.",chapters:n=>n===1?"Sura 1":n+" sura",notFound:"Ukurasa haujapatikana.",also:"Riwaya hii inapatikana pia kwa lugha nyingine:",adultT:"Kwa watu wazima pekee",adultP:"Riwaya hii ni kwa watu wazima pekee.",adultYes:"Nina miaka 18 au zaidi",adultNo:"Rudi nyuma"};
 const novelHref = (l, s) => "#/" + s;
-const LANG_NAMES = {ru:"Русский", es:"Español", it:"Italiano", en:"English", de:"Deutsch", fr:"Français", tr:"Türkçe", pt:"Português", cs:"Čeština", pl:"Polski", sr:"Српски", eo:"Esperanto", isv:"Medžuslovjansky", vo:"Volapük", ia:"Interlingua", ld:"Lingwa de Planeta", la:"Latina",sw:"Kiswahili",bg:"Български"};
+const LANG_NAMES = {vec:"Vèneto", ru:"Русский", es:"Español", it:"Italiano", en:"English", de:"Deutsch", fr:"Français", tr:"Türkçe", pt:"Português", cs:"Čeština", pl:"Polski", sr:"Српски", eo:"Esperanto", isv:"Medžuslovjansky", vo:"Volapük", ia:"Interlingua", ld:"Lingwa de Planeta", la:"Latina",sw:"Kiswahili",bg:"Български"};
 const UI = {
   la:{study:"Ad discendum",studyNote:"Liber ad linguam discendam.",wip:"In scribendo",wipNote:"Novissima capita mox venient.",tag:"Fabulae",hero:"Mundus litterarius",sub:"Fabulae Roberti Fader Latine scriptae. Lege gratis.",author:"Robert Fader",start:"Incipe legere",cont:"Perge legere",contents:"Index capitum",chapter:"Caput",prev:"Prius",next:"Proximum",back:"Omnes fabulae",empty:"Nondum fabulae Latinae adsunt.",foot:"© Robert Fader. Omnia iura reservata.",chapters:n=>n+(n===1?" caput":" capita"),notFound:"Pagina non inventa.",also:"Haec fabula etiam aliis linguis legi potest:",adultT:"Solum adultis",adultP:"Haec fabula adultis tantum destinatur.",adultYes:"Duodeviginti annos natus sum",adultNo:"Redi"},
   ld:{study:"Por lern sikin", studyNote:"Kitaba por lernisa de lingwa, kun material por studie.", wip:"En skriba", wipNote:"Se roman es ankor en skriba. Nove kapitels ve lai.", tag:"Romanes", hero:"Literatur-ney Mundo", sub:"Romanes de Robert Fader in Lingwa de Planeta. Lei li online sin paya.", author:"Robert Fader", start:"Begin lekti", cont:"Kontinui lekti", contents:"Konten", chapter:"Kapitel", prev:"Anterior", next:"Sekwen", back:"Oli romanes", empty:"Nul romanes in Lingwa de Planeta ankor.", foot:"© Robert Fader. Oli raitas es reservi.", chapters:n=>n+(n===1?" kapitel":" kapitels"), notFound:"Paja bu es findi.", also:"Se roman es anke availabel in otre lingwas:", adultT:"Solo por adulte jen", adultP:"Se roman konteni eksplicite escenas e es solo por jen ot 18 yar.", adultYes:"Me es 18 yar o pyu", adultNo:"Go bak"},
@@ -714,6 +714,7 @@ const UI = {
 };
 UI.sw = {...UI.en, ...UI_SW};
 UI.bg = {study:"За учене", studyNote:"Книга за изучаване на езика: съдържа учебни материали.", wip:"В процес на писане", wipNote:"Романът още се пише — скоро ще има нови глави.", tag:"Романи", hero:"Литературен свят", sub:"Романите на Роберт Фадер на български език. Четете онлайн безплатно.", author:"Роберт Фадер", start:"Започни да четеш", cont:"Продължи", contents:"Съдържание", chapter:"Глава", prev:"Назад", next:"Напред", back:"Всички романи", empty:"Все още няма романи на български. Очаквайте скоро!", foot:"© Роберт Фадер. Всички права запазени.", chapters:n=>n+(n===1?" глава":" глави"), notFound:"Страницата не е намерена.", also:"Този роман е достъпен и на други езици:", adultT:"Само за възрастни", adultP:"Този роман съдържа откровени сцени и е само за читатели над 18 години.", adultYes:"Навършил/а съм 18 години", adultNo:"Назад"};
+UI.vec = {study:"Par studiar", studyNote:"Libro par inparar la lengua: el ga materiale de studio.", wip:"In scritura", wipNote:"Sto romanso el xe gnancora drio èsar scrito: presto riva novi capìtoli.", tag:"Romansi", hero:"Mondo leterario", sub:"I romansi de Roberto Fader in vèneto. Lèzili online gratis.", author:"Roberto Fader", start:"Scomìnsia a lèzar", cont:"Va vanti", contents:"Ìndese", chapter:"Capìtolo", prev:"Indrìo", next:"Vanti", back:"Tuti i romansi", empty:"No ghe xe gnancora romansi in vèneto. I riva presto!", foot:"© Roberto Fader. Tuti i diriti riservài.", chapters:n=>n+(n===1?" capìtolo":" capìtoli"), notFound:"Pàxena no catada.", also:"Sto romanso el xe anca in altre lengue:", adultT:"Solo par i grandi", adultP:"Sto romanso el ga scene esplìsite e el xe solo par chi ga almanco 18 ani.", adultYes:"Go almanco 18 ani", adultNo:"Torna indrìo"};
 const BLOG_T = {
   ld:{title:"Blog", sub:"Novas, notas e dumas de la autor.", empty:"Nul postas ankor.", more:"Lekti →", back:"← Blog"},
   ru:{title:"Блог", sub:"Новости, заметки и мысли автора.", empty:"Записей пока нет. Скоро появятся!", more:"Читать →", back:"← Блог"},
@@ -731,6 +732,7 @@ const BLOG_T = {
   isv:{title:"Blog", sub:"Novosti, zapiski i mysli avtora.", empty:"Ješče nema zapisov. Skoro!", more:"Čitati →", back:"← Blog"},
   vo:{title:"Blog", sub:"Nuns, noets e tikods lautana.", empty:"No dabinons nog yegeds. Okömoms suno!", more:"Reidön →", back:"← Blog"},
   ia:{title:"Blog", sub:"Novas, notas e reflexiones del autor.", empty:"Ancora nulle articulos. Tosto!", more:"Leger →", back:"← Blog"},
+  vec:{title:"Blog", sub:"Novità, note e pensieri de l’autor.", empty:"Gnancora nissun articolo. I riva presto!", more:"Lezi →", back:"← Blog"},
   bg:{title:"Блог", sub:"Новини, бележки и мисли на автора.", empty:"Все още няма публикации. Очаквайте скоро!", more:"Прочети →", back:"← Блог"}
 };
 const bt = k => (BLOG_T[lang] || BLOG_T.en)[k];
@@ -887,8 +889,8 @@ function setupPsy(root, lang){
 
 /* Comments (Giscus, stored in GitHub Discussions of the repository) */
 const GISCUS = { repo:"luisfader/litmir", repoId:"R_kgDOVM8Utg", category:"General", categoryId:"DIC_kwDOVM8Uts4DIsSO" };
-const COMMENTS_T = {ld:"Komentas", ru:"Комментарии", es:"Comentarios", it:"Commenti", en:"Comments", de:"Kommentare", fr:"Commentaires", tr:"Yorumlar", pt:"Comentários", cs:"Komentáře", pl:"Komentarze", sr:"Коментари", eo:"Komentoj", isv:"Komentarji", ia:"Commentos", bg:"Коментари"};
-const GISCUS_LANG = {ru:"ru", es:"es", it:"it", en:"en", de:"de", fr:"fr", tr:"tr", pt:"pt", cs:"cs", pl:"pl", sr:"ru", eo:"eo", isv:"en", ia:"en"};
+const COMMENTS_T = {vec:"Comenti",ld:"Komentas", ru:"Комментарии", es:"Comentarios", it:"Commenti", en:"Comments", de:"Kommentare", fr:"Commentaires", tr:"Yorumlar", pt:"Comentários", cs:"Komentáře", pl:"Komentarze", sr:"Коментари", eo:"Komentoj", isv:"Komentarji", ia:"Commentos", bg:"Коментари"};
+const GISCUS_LANG = {vec:"it",ru:"ru", es:"es", it:"it", en:"en", de:"de", fr:"fr", tr:"tr", pt:"pt", cs:"cs", pl:"pl", sr:"ru", eo:"eo", isv:"en", ia:"en"};
 function giscusTheme(){
   const th = store.get("theme", null);
   if (th === "dark") return "dark_dimmed";
@@ -936,7 +938,7 @@ document.getElementById("langs").addEventListener("click", e => {
 
 const PALETTE = ["#7a2e2e","#2f4a5c","#4b5b35","#5a3b5f","#8a5a24","#2e4f4a","#3d3a6b","#6b3a2a"];
 function author(n){ return n.author || (UI[n.lang] ? UI[n.lang].author : t("author")); }
-const STARS_T={es:"Valoración del editor",ru:"Оценка редакции",it:"Valutazione della redazione",en:"Editor's rating",de:"Bewertung der Redaktion",fr:"Note de la rédaction",tr:"Editörün puanı",pt:"Avaliação do editor",cs:"Hodnocení redakce",pl:"Ocena redakcji",sr:"Оцена уредништва",eo:"Takso de la redakcio",isv:"Ocěnka redakcije",ia:"Evalutation del redaction"};
+const STARS_T={vec:"Voto de la redasion",es:"Valoración del editor",ru:"Оценка редакции",it:"Valutazione della redazione",en:"Editor's rating",de:"Bewertung der Redaktion",fr:"Note de la rédaction",tr:"Editörün puanı",pt:"Avaliação do editor",cs:"Hodnocení redakce",pl:"Ocena redakcji",sr:"Оцена уредништва",eo:"Takso de la redakcio",isv:"Ocěnka redakcije",ia:"Evalutation del redaction"};
 function starsHTML(n, withNum){
   if (!n.stars) return "";
   const s = Math.round(n.stars*2)/2, lab = (STARS_T[n.lang] || STARS_T.en) + ": " + String(s).replace(".", n.lang==="en"?".":",") + "/5";
@@ -990,6 +992,7 @@ function chapterIndex(n, seg){ const chs = n.chapters, e = /^extra-(\d+)$/.exec(
 
 /* Reading progress and favourites are saved only in this browser, without accounts. */
 const READ_T = {
+  vec:["I to progressi","Le me leture","No te ghe gnancora scominsià nissun romanso.","Finìo"],
   es:["Tu progreso","Mis lecturas","Todavía no empezaste ninguna novela.","Terminada"],
   ru:["Ваш прогресс","Мои книги","Вы ещё не начали читать ни одного романа.","Прочитано"],
   en:["Your progress","My reading","You haven't started any novel yet.","Finished"],
@@ -1020,6 +1023,7 @@ function progressHTML(n){
     <div class="rbar" role="progressbar" aria-label="${esc(rt(0, n.lang))}" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${s.pct}"><i style="width:${s.pct}%"></i></div></div>`;
 }
 const FAV_T = {
+  vec:["Preferìi","Zonta ai preferìi","Cava dai preferìi","No te ghe gnancora romansi preferìi."],
   es:["Favoritos","Añadir a favoritos","Quitar de favoritos","Todavía no tenés novelas favoritas."],
   ru:["Избранное","Добавить в избранное","Убрать из избранного","Вы ещё не добавили романы в избранное."],
   en:["Favourites","Add to favourites","Remove from favourites","No favourite novels yet."],
@@ -1061,6 +1065,7 @@ function myReading(){
 }
 
 const REC_T = {
+  vec:{t:"El consejo del zorno",go:"Lezi"},
   es:{t:"Recomendación del día",go:"Leer"}, ru:{t:"Что почитать сегодня",go:"Читать"}, it:{t:"Il consiglio del giorno",go:"Leggi"},
   en:{t:"Today’s pick",go:"Read"}, de:{t:"Lesetipp des Tages",go:"Lesen"}, fr:{t:"La suggestion du jour",go:"Lire"},
   tr:{t:"Günün önerisi",go:"Oku"}, pt:{t:"Sugestão do dia",go:"Ler"}, cs:{t:"Tip na dnešní čtení",go:"Číst"},
@@ -1098,7 +1103,7 @@ async function renderRec(){
 function home(){
   document.title = t("hero") + " — " + t("author");
   const list = catalog.novels.filter(n => !n.hidden && n.lang === lang).map((n,i)=>[n,i]).sort((a,b)=>(b[0].stars||0)-(a[0].stars||0)||a[1]-b[1]).map(x=>x[0]);
-  const characterLabels = {ru:"Персонажи",es:"Personajes",it:"Personaggi",en:"Characters",de:"Figuren",fr:"Personnages",tr:"Karakterler",pt:"Personagens",cs:"Postavy",pl:"Postacie",sr:"Ликови",eo:"Roluloj",isv:"Postavy",vo:"Pösods",ia:"Personages",ld:"Personajenes",bg:"Герои"};
+  const characterLabels = {vec:"Personagi",ru:"Персонажи",es:"Personajes",it:"Personaggi",en:"Characters",de:"Figuren",fr:"Personnages",tr:"Karakterler",pt:"Personagens",cs:"Postavy",pl:"Postacie",sr:"Ликови",eo:"Roluloj",isv:"Postavy",vo:"Pösods",ia:"Personages",ld:"Personajenes",bg:"Герои"};
   app.innerHTML = `
   <section class="hero wrap">
     <div class="eyebrow">${esc(t("tag"))}</div>
@@ -1181,6 +1186,7 @@ async function blogPost(slug){
 
 /* Satirical newspaper per language: news/catalog.json + news/<lang>/<slug>.md */
 const NEWS_T = {
+  vec:{btn:"Notìsie", back:"← Prima pàxena", from:"Tirada da", read:"Lezi el romanso", more:"Altre notìsie", empty:"Gnancora nissuna notìsia."},
   es:{btn:"Noticias", back:"← Portada", from:"Basada en", read:"Leer la novela", more:"Más noticias", empty:"Todavía no hay noticias."},
   it:{btn:"Notizie", back:"← Prima pagina", from:"Tratta da", read:"Leggi il romanzo", more:"Altre notizie", empty:"Ancora nessuna notizia."},
   en:{btn:"News", back:"← Front page", from:"Based on", read:"Read the novel", more:"More stories", empty:"No stories yet."}
@@ -1302,6 +1308,7 @@ const signedIn = () => false; /* the site has no sign-in */
    that key in localStorage, so the reader types it once. A wrong password simply fails to decrypt. */
 const PW_MARK = "LITMIR-PW1:";
 const PW_T = {
+  vec:["Capìtolo protezù","Par lèzar vanti te serve la password. Scrivi a l’autor e domàndighe la password.","Password","Verzi","Password sbaglià. Prova ancora.","Torna indrìo"],
   it:["Capitolo protetto","Per continuare a leggere ti serve la password. Contatta l’autore e chiedigli la password.","Password","Sblocca","Password errata. Riprova.","Torna indietro"],
   es:["Capítulo protegido","Para seguir leyendo necesitas la contraseña. Contacta al autor y pídele la contraseña.","Contraseña","Desbloquear","Contraseña incorrecta. Inténtalo de nuevo.","Volver"],
   en:["Protected chapter","You need the password to keep reading. Contact the author and ask for the password.","Password","Unlock","Wrong password. Try again.","Go back"],
@@ -1354,6 +1361,7 @@ function pwGate(n, i){
 const chapterLocked = () => false;
 const unitLocked = () => false;
 const LOGIN_T = {
+  vec:["Entra par lèzar vanti","El seguito el xe par i letori registrài. Entrar co Google xe gratis e i to progressi i resta salvài su tuti i dispositivi.","Entra co Google","Torna indrìo"],
   es:["Entra para seguir leyendo","Lo que sigue es para lectores registrados. Registrarse con Google es gratis y tu progreso se guarda en todos tus dispositivos.","Entrar con Google","Volver"],
   ru:["Войдите, чтобы читать дальше","Продолжение доступно зарегистрированным читателям. Вход через Google бесплатный, а ваш прогресс сохраняется на всех устройствах.","Войти через Google","Вернуться"],
   en:["Sign in to keep reading","What comes next is for registered readers. Signing in with Google is free, and your progress is saved on all your devices.","Sign in with Google","Go back"],
@@ -1380,7 +1388,7 @@ function loginGate(back){
   window.scrollTo(0, 0);
 }
 
-const SAGA_W = {ru:"Цикл", es:"Saga", it:"Saga", en:"Series", de:"Reihe", fr:"Saga", tr:"Seri", pt:"Saga", cs:"Série", pl:"Cykl", sr:"Серијал", eo:"Serio", isv:"Serija", vo:"Saga", ia:"Serie", ld:"Seria"};
+const SAGA_W = {vec:"Saga",ru:"Цикл", es:"Saga", it:"Saga", en:"Series", de:"Reihe", fr:"Saga", tr:"Seri", pt:"Saga", cs:"Série", pl:"Cykl", sr:"Серијал", eo:"Serio", isv:"Serija", vo:"Saga", ia:"Serie", ld:"Seria"};
 function sagaHTML(n){
   const all = catalog.series || [], bySlug = Object.fromEntries(catalog.novels.map(x => [x.slug, x]));
   const mine = new Set([n.slug, ...Object.values(n.translations || {})]);
@@ -1463,7 +1471,7 @@ function novelPage(n){
 
 /* ───────── Long chapters are shown as pages of ~PAGE_CHARS characters ───────── */
 const PAGE_CHARS = 6000, PAGE_MIN_LAST = 1500;
-const PAGE_WORD = {ru:"Страница",es:"Página",it:"Pagina",en:"Page",de:"Seite",fr:"Page",tr:"Sayfa",pt:"Página",cs:"Strana",pl:"Strona",sr:"Strana",eo:"Paĝo",la:"Pagina",sw:"Ukurasa",ia:"Pagina",bg:"Страница",uk:"Сторінка"};
+const PAGE_WORD = {vec:"Pàxena",ru:"Страница",es:"Página",it:"Pagina",en:"Page",de:"Seite",fr:"Page",tr:"Sayfa",pt:"Página",cs:"Strana",pl:"Strona",sr:"Strana",eo:"Paĝo",la:"Pagina",sw:"Ukurasa",ia:"Pagina",bg:"Страница",uk:"Сторінка"};
 function splitPages(md){
   const manual = md.split(/\n[ \t]*<!--\s*pagebreak\s*-->[ \t]*(?:\n|$)/i);
   if (manual.length > 1) return manual;
