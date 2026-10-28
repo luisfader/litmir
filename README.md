@@ -62,6 +62,20 @@ En las secciones ES, RU, IT y EN hay un juego (`#/game`, botón «🎲» en la p
 
 Las preguntas están en `games/<idioma>.json`. **Al añadir novelas o personajes, regenerarlas:** `python3 tools/juego.py .` Las novelas 18+ quedan fuera del juego. Para dejar fuera otra novela, añadir su slug a `EXCLUDE` en `tools/juego.py` (ahora: *Julián: La Jabru y otras desgracias*).
 
+## Noticias satíricas
+
+En ES, IT y EN hay un periódico satírico (`#/news`, botón «📰» en la portada), con noticias políticas inventadas a partir de las novelas de cada idioma: *El Heraldo de Sinea* (ES), *Il Corriere del Sorriso* (IT) y *The Sinea Herald* (EN). El botón aparece solo en los idiomas que tienen periódico.
+
+1. Escribir la noticia en `news/<idioma>/<nombre-corto>.md` (mismo formato que los capítulos).
+2. Añadirla a `news/catalog.json`:
+
+```json
+{"slug": "nombre-corto", "lang": "es", "date": "2026-10-28", "section": "Gobierno",
+ "title": "Titular", "deck": "Bajada", "novels": ["el-impostor"], "lead": true}
+```
+
+`lead: true` la pone como noticia principal de la portada. `novels` enlaza las novelas en las que se basa (de ahí sale la portada que se usa como imagen); `image` permite usar otra ilustración. Para un idioma nuevo, añadir su periódico en `papers` (nombre, lema, precio, aviso). Las noticias no usan personas reales: solo personajes de las novelas. Las novelas 18+ quedan fuera.
+
 ## Recomendación del día
 
 En la portada de cada idioma aparece una tarjeta «Recomendación del día» con una novela de ese idioma y el porqué. Los datos están en `recs/calendar.json`:
