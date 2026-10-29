@@ -1,6 +1,14 @@
 {
   "posts": [
     {
+      "slug": "intervista-natalia-stregoneria-veneziana",
+      "lang": "it",
+      "title": "«Gelosa? Io? Per favore.»: Natalia racconta la stregoneria veneziana",
+      "date": "2026-10-30",
+      "excerpt": "La veneziana dall’abito blu notte ricorda la macchina sotto la città, la notte del mate, piazza San Marco e le parole di Roberto. È ancora offesa con Luis. E giura di non essere gelosa di Nataša.",
+      "image": "characters/img/natalia-venice-1.jpg"
+    },
+    {
       "slug": "esperanto-kiel-ponto-inter-homoj",
       "lang": "eo",
       "title": "Esperanto kiel ponto inter homoj: intervjuo kun Robert Fader",
