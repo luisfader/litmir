@@ -1,6 +1,6 @@
 # Литературный мир — Robert Fader
 
-Sitio web para leer las novelas de Robert Fader. Cada idioma (RU, ES, IT, EN, DE, FR, TR, PT, CS, PL, SR, EO, ISV, VO, IA, LD, LA) muestra solo las novelas escritas en ese idioma. El español es el idioma por defecto.
+Sitio web para leer las novelas de Robert Fader. Cada idioma (RU, ES, IT, EN, DE, FR, TR, PT, CS, PL, SR, EO, ISV, VO, IA, LD, LA, SW, BG, VEC) muestra solo las novelas escritas en ese idioma. El español es el idioma por defecto.
 
 **Las novelas en ruso están en este sitio** (sección RU), igual que las de los demás idiomas. Antes de dar por hecho dónde está una novela, mirar `novels/catalog.json`.
 
@@ -18,8 +18,11 @@ novels/<novela>/            un archivo .md por capítulo (01.md, 02.md, …)
 2. Añadir la novela a `novels/catalog.json` con su título en cada idioma y la lista de capítulos.
 3. Si la novela no está terminada, añadir `"wip": true` (ver «Novelas en proceso de escritura»).
 4. Opcional: una portada (`"cover": "novels/<nombre-corto>/cover.jpg"`). Sin portada, el sitio genera una.
+5. Clasificación por edad: `"rating": "12+"` o `"16+"`, o `"adult": true` para 18+ (muestra un aviso antes de entrar). Toda novela debe tener una de las dos.
 
 Formato del texto: párrafos separados por una línea en blanco, `*cursiva*`, `**negrita**`, `***` para un cambio de escena.
+
+Servicios de Meta (prohibida en Rusia): no nombrarlos en las novelas; usar los nombres inventados. Alfabeto latino: Guatsap (WhatsApp), Instadram (Instagram), Feisbut (Facebook). Cirílico: Гуатсап, Инстадрам, Фейсбут.
 
 ## Publicación
 
@@ -61,6 +64,22 @@ En las secciones ES, RU, IT y EN hay un juego (`#/game`, botón «🎲» en la p
 - **La trama** — preguntas escritas a mano en `games/plot.<idioma>.json` (la primera opción es la correcta; comprobar cada dato en el texto).
 
 Las preguntas están en `games/<idioma>.json`. **Al añadir novelas o personajes, regenerarlas:** `python3 tools/juego.py .` Las novelas 18+ quedan fuera del juego. Para dejar fuera otra novela, añadir su slug a `EXCLUDE` en `tools/juego.py` (ahora: *Julián: La Jabru y otras desgracias*).
+
+## Noticias satíricas
+
+En ES, IT y EN hay un periódico satírico (`#/news`, botón «📰» en la portada), con noticias políticas inventadas a partir de las novelas de cada idioma: *El Heraldo de Sinea* (ES), *Il Corriere del Sorriso* (IT) y *The Sinea Herald* (EN). El botón aparece solo en los idiomas que tienen periódico.
+
+1. Escribir la noticia en `news/<idioma>/<nombre-corto>.md` (mismo formato que los capítulos).
+2. Añadirla a `news/catalog.json`:
+
+```json
+{"slug": "nombre-corto", "lang": "es", "date": "2026-10-28", "section": "Gobierno",
+ "title": "Titular", "deck": "Bajada", "novels": ["el-impostor"], "lead": true}
+```
+
+`lead: true` la pone como noticia principal de la portada. `novels` enlaza las novelas en las que se basa (de ahí sale la portada que se usa como imagen); `image` permite usar otra ilustración. Cada periódico tiene al final de la portada una sección de chimentos (*Chimentos*, *Pettegolezzi*, *Gossip*): están en `papers.<idioma>.gossip`, cada uno con su texto y la novela de la que sale (`{"text": "…", "novel": "el-impostor"}`). Para un idioma nuevo, añadir su periódico en `papers` (nombre, lema, precio, aviso).
+
+Cada periódico tiene al final de la portada una sección de chimentos (ES «Chimentos», IT «Pettegolezzi», EN «Gossip»), en `papers.<idioma>.gossip`: `title`, `sub` y una lista `items` con `title`, `text` y `novel` (la novela a la que enlaza). Las noticias no usan personas reales: solo personajes de las novelas. Las novelas 18+ quedan fuera.
 
 ## Recomendación del día
 
