@@ -152,7 +152,7 @@
     },
     "fr": {
      "name": "Luis",
-     "description": "Habitant de la forteresse qui rougit facilement quand Jenny lui parle de Mendoza et du vin.",
+     "description": "Jeune architecte argentin de Mendoza, beau, doué et vaniteux, qui signe chaque dessin en grandes lettres. Il vole la gloire de la Forclaz, chasse Camille et Robert de la vallée, puis tient le mur seul contre les chars de la Puissance centrale.",
      "images": [
       "characters/img/luis-utopia-1.jpg",
       "characters/img/luis-utopia-2.jpg"
@@ -480,7 +480,8 @@
     "isv",
     "pt",
     "ld",
-    "es"
+    "es",
+    "fr"
    ],
    "role": "Música y violonchelista; su arte acompaña la resistencia de Utopía.",
    "novels": [
@@ -495,7 +496,8 @@
     "predcutje",
     "mundo-turquesa",
     "premonision-ldp",
-    "la-corazonada"
+    "la-corazonada",
+    "reve-turquoise"
    ],
    "localizations": {
     "sr": {
@@ -575,6 +577,10 @@
       "characters/img/natalia-cellist-3.jpg",
       "characters/img/natalia-cellist-4.jpg"
      ]
+    },
+    "fr": {
+     "name": "Natalia",
+     "description": "Violoncelliste aux longs cheveux châtain foncé et aux yeux gris-vert très clairs. Sainte en apparence, rusée en vérité : dès le premier soir, elle décide de conquérir Robert sans jamais faire le premier pas. Rivale de Camille, puis son amie la plus honnête."
     }
    }
   },
@@ -2778,7 +2784,7 @@
     },
     "fr": {
      "name": "Jenny",
-     "description": "Douce et souriante en apparence, elle met une fleur dans ses cheveux chaque matin pour Robert. Quand il la repousse, son visage devient dur, un instant.",
+     "description": "Ancienne journaliste économique, elle a grandi dans une tour de Vaulx-en-Velin et ne veut plus jamais avoir peur. Elle fait entrer les jetons de cuivre dans la forteresse, fonde le Comptoir du Pont et devient l’associée de Nécrologie — mais garde le secret du passage.",
      "images": [
       "characters/img/zhenya-1.jpg"
      ]
