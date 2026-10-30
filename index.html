@@ -253,8 +253,9 @@ article.chapter .gloss:focus-visible{background:var(--accent-soft);border-radius
 article.chapter p.vf{display:flex;align-items:center;justify-content:space-between;gap:12px;text-align:left;margin:0 0 .55em;padding:6px 10px;border-radius:8px;border:1px solid transparent;transition:background .15s,border-color .15s}
 article.chapter p.vf .vfq{flex:1}
 article.chapter p.vf .vfb{display:flex;gap:6px;flex:none}
+article.chapter p.vf .vfb button{white-space:nowrap;hyphens:none}
 article.chapter p.vf::after{content:"";width:16px;flex:none;text-align:center}
-article.chapter p.vf button{font:600 14px/1 var(--sans);width:38px;height:34px;border-radius:8px;border:1px solid var(--line);background:var(--paper);color:var(--ink);cursor:pointer}
+article.chapter p.vf button{font:600 14px/1 var(--sans);min-width:38px;padding:0 10px;height:34px;border-radius:8px;border:1px solid var(--line);background:var(--paper);color:var(--ink);cursor:pointer}
 article.chapter p.vf button:hover{border-color:var(--accent)}
 article.chapter p.vf button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
 article.chapter p.vf.ok{background:#e3efe6;border-color:#9cc8a9}
@@ -779,13 +780,14 @@ function renderText(md){
 }
 
 /* Interactive true/false exercises: lines "a) … ( V / F ){F}" */
-const QUIZ_T = {ld:["Kontroli","korrekt","Proba snova"], es:["Comprobar","correctas","Volver a intentar"], it:["Verifica","corrette","Riprova"], en:["Check","correct","Try again"], ru:["Проверить","правильно","Ещё раз"], pt:["Verificar","corretas","Tentar de novo"], fr:["Vérifier","correctes","Réessayer"], de:["Prüfen","richtig","Nochmal"]};
+const QUIZ_T = {ld:["Kontroli","korrekt","Proba snova"], es:["Comprobar","correctas","Volver a intentar"], it:["Verifica","corrette","Riprova"], en:["Check","correct","Try again"], ru:["Проверить","правильно","Ещё раз"], pt:["Verificar","corretas","Tentar de novo"], fr:["Vérifier","correctes","Réessayer"], de:["Prüfen","richtig","Nochmal"], cs:["Zkontrolovat","správně","Zkusit znovu"], pl:["Sprawdź","poprawnie","Spróbuj ponownie"], sr:["Провери","тачно","Покушај поново"], bg:["Провери","вярно","Опитай пак"], eo:["Kontroli","ĝustaj","Reprovi"], tr:["Kontrol et","doğru","Tekrar dene"], ia:["Verificar","correcte","Reprobar"], isv:["Provjerj","pravilno","Poprobuj opet"], la:["Proba","recta","Iterum"], sw:["Angalia","sahihi","Jaribu tena"], vec:["Controla","giuste","Prova ancora"]};
 function setupQuizzes(root, lang){
   const T = QUIZ_T[lang] || QUIZ_T.es;
   const items = [...root.querySelectorAll("p.vf, p.mc")];
-  const PICK = {es:"— elige —", it:"— scegli —", en:"— choose —", ru:"— выбери —", pt:"— escolha —", fr:"— choisis —", de:"— wähle —"};
+  const PICK = {es:"— elige —", it:"— scegli —", en:"— choose —", ru:"— выбери —", pt:"— escolha —", fr:"— choisis —", de:"— wähle —", cs:"— vyber —", pl:"— wybierz —", sr:"— изабери —", bg:"— избери —", eo:"— elektu —", tr:"— seç —", ia:"— elige —", isv:"— izberi —", la:"— elige —", sw:"— chagua —", vec:"— sièlzi —"};
   root.querySelectorAll("p.mc select").forEach(sel => { if (sel.options[0]) sel.options[0].textContent = PICK[lang] || PICK.es; });
   if (lang === "en") root.querySelectorAll('p.vf button[data-v="V"]').forEach(b => b.textContent = "T");
+  if (lang === "cs") root.querySelectorAll("p.vf button[data-v]").forEach(b => { b.textContent = b.dataset.v === "V" ? "Pravda" : "Lež"; });
   if (lang === "ru") root.querySelectorAll("p.vf button[data-v]").forEach(b => { b.textContent = b.dataset.v === "V" ? "Да" : "Нет"; b.title = b.dataset.v === "V" ? "Верно" : "Неверно"; });
   const isModule = !!root.querySelector("article.chapter") && /^(?:modulo-[1-4]|test-final)[.]md$/.test(window.__activeChapterFile || "");
   if (isModule && items.length) {
@@ -838,7 +840,7 @@ function setupQuizzes(root, lang){
     return;
   }
   const groups = [];
-  items.forEach(p => { const k = p.classList.contains("mc") ? "mc" : "vf", prev = p.previousElementSibling; if (prev && prev.classList.contains(k) && groups.length) groups[groups.length-1].push(p); else groups.push([p]); });
+  items.forEach(p => { const prev = p.previousElementSibling; if (prev && (prev.classList.contains("vf") || prev.classList.contains("mc")) && groups.length) groups[groups.length-1].push(p); else groups.push([p]); });
   groups.forEach(g => {
     const bar = document.createElement("div"); bar.className = "vfcheck";
     bar.innerHTML = `<button type="button" class="vfgo">${T[0]}</button><span class="vfres" aria-live="polite"></span>`;
