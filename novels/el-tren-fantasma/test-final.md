@@ -1,6 +1,6 @@
 # Evaluación final · El tren fantasma
 
-**25 preguntas · 100 puntos.** Este examen repasa la comprensión de la novela, el vocabulario y la gramática española. Elegí una respuesta por pregunta y pulsá «Calificar módulo». Podés repetirlo; se conservará tu mejor nota. **Aprobado: 70 puntos o más.**
+**25 preguntas · 100 puntos.** Este examen repasa la comprensión de la novela, el vocabulario y la gramática española. Elige una respuesta por pregunta y pulsa «Calificar módulo». Podés repetirlo; se conservará tu mejor nota. **Aprobado: 70 puntos o más.**
 
 ## I. Comprensión de la novela · Verdadero o falso
 
@@ -20,11 +20,11 @@
 
 8. Marcos y Alicia deciden permanecer para siempre en el tren. ( V / F ){F}
 
-9. Los boyscouts zombis aparecen en la historia. ( V / F ){V}
+9. Los boy scouts zombis aparecen en la historia. ( V / F ){V}
 
 10. Al final, Alicia le pide a Marcos que no escuche sus conversaciones a escondidas. ( V / F ){V}
 
-## II. Personajes y vocabulario · Elegí la opción correcta
+## II. Personajes y vocabulario · Elige la opción correcta
 
 11. ¿Quién busca a Alicia? [[*Marcos|Leonardo Circuito|Casimiro Condena]]
 
@@ -46,7 +46,7 @@
 
 20. ¿Qué significa «a escondidas»? [[*Sin que los demás lo sepan|En voz alta|Con mucho entusiasmo]]
 
-## III. Gramática · Elegí la forma correcta
+## III. Gramática · Elige la forma correcta
 
 21. Si Marcos tuviera la tableta, [[*podría|puede|pudo]] cambiar el rumbo del tren.
 

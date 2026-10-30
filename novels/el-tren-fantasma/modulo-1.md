@@ -8,7 +8,7 @@
 
 ## Evaluación autocorregible · 15 preguntas · 100 puntos
 
-Respondé las 15 preguntas y pulsá «Calificar módulo». Cada respuesta correcta vale lo mismo. Podés repetir el examen para mejorar tu mejor nota.
+Responde las 15 preguntas y pulsa «Calificar módulo». Cada respuesta correcta vale lo mismo. Puedes repetir el examen para mejorar tu mejor nota.
 
 ## Test · Comprensión lectora
 
@@ -22,7 +22,7 @@ Respondé las 15 preguntas y pulsá «Calificar módulo». Cada respuesta correc
 
 5. El tren aparece únicamente al mediodía. ( V / F ){F}
 
-## Elegí la respuesta correcta
+## Elige la respuesta correcta
 
 6. ¿Qué busca Marcos? [[*A su novia|A su hermana]]
 
@@ -48,4 +48,4 @@ Respondé las 15 preguntas y pulsá «Calificar módulo». Cada respuesta correc
 
 ## Producción escrita
 
-Escribí cinco oraciones sobre Marcos: cómo es, dónde vive, a quién busca y qué hace para encontrarla. Usá **ser**, **estar**, **tener** y **buscar**.
+Escribe cinco oraciones sobre Marcos: cómo es, dónde vive, a quién busca y qué hace para encontrarla. Usa **ser**, **estar**, **tener** y **buscar**.

@@ -77,6 +77,63 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-family:var(--san
 @media (max-width:520px){.post-card.has-img{grid-template-columns:1fr}.post-card.has-img img{grid-row:auto;width:100%;height:auto;aspect-ratio:16/9}}
 article.chapter.post p{text-align:left}
 article.chapter.post a{color:var(--accent)}
+/* News (satirical newspaper, one per language) */
+.np{max-width:1040px;margin:0 auto;padding:28px 0 72px}
+.np-mast{text-align:center;border-bottom:3px double var(--ink);padding:6px 0 14px}
+.np-kick{font-family:var(--sans);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-weight:600}
+.np-name{font-family:var(--display);font-weight:600;font-size:clamp(40px,8vw,82px);line-height:1;margin:8px 0 6px;letter-spacing:-.01em}
+.np-tag{font-family:var(--serif);font-style:italic;color:var(--muted);margin:0}
+.np-line{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-family:var(--sans);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--ink);padding:8px 2px}
+.np-sec{font-family:var(--sans);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:600}
+.np-lead{display:grid;grid-template-columns:1.25fr 1fr;gap:28px;padding:26px 0;border-bottom:1px solid var(--line);text-decoration:none;color:inherit}
+.np-lead h2{font-family:var(--display);font-weight:600;font-size:clamp(30px,4.4vw,46px);line-height:1.05;margin:8px 0 12px}
+.np-lead p{font-size:18px;line-height:1.55;color:var(--muted);margin:0 0 12px}
+.np-lead:hover h2,.np-card:hover h3{color:var(--accent)}
+.np-img{border-radius:4px;overflow:hidden;background:var(--accent-soft);aspect-ratio:4/3}
+.np-img img{width:100%;height:100%;object-fit:cover;object-position:50% 30%;display:block}
+.np-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0}
+.np-card{display:flex;flex-direction:column;gap:8px;padding:22px 20px;text-decoration:none;color:inherit;border-bottom:1px solid var(--line)}
+.np-grid .np-card:not(:nth-child(3n+1)){border-left:1px solid var(--line)}
+.np-card .np-img{aspect-ratio:16/10}
+.np-card h3{font-family:var(--display);font-weight:600;font-size:24px;line-height:1.12;margin:0}
+.np-card p{margin:0;color:var(--muted);font-size:15.5px;line-height:1.5}
+.np-from{font-family:var(--sans);font-size:12.5px;color:var(--muted);margin-top:auto}
+.np-from b{font-weight:600;color:var(--ink)}
+.np-foot{margin-top:28px;padding:16px 18px;border:1px dashed var(--line);border-radius:10px;font-family:var(--sans);font-size:13px;color:var(--muted);text-align:center}
+.np-art .np-meta{font-family:var(--sans);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.np-art .np-meta b{color:var(--accent)}
+.np-art .np-deck{font-style:italic;color:var(--muted);font-size:1.05em;line-height:1.55;border-bottom:1px solid var(--line);padding-bottom:18px;margin:0 0 22px;text-align:left}
+.np-art .np-paper{font-family:var(--display);font-weight:600;font-size:22px;text-align:center;border-bottom:3px double var(--ink);padding-bottom:8px;margin-bottom:26px}
+.np-art .np-paper a{color:inherit;text-decoration:none}
+.np-src{display:flex;gap:16px;align-items:center;margin:34px 0 0;padding:16px;border:1px solid var(--line);border-radius:12px;background:var(--paper);text-decoration:none;color:inherit;font-family:var(--sans);font-size:14px}
+.np-src .cover{width:62px;flex:none;margin:0}
+.np-src b{display:block;font-family:var(--display);font-size:20px;font-weight:600;color:var(--ink)}
+.np-src span{color:var(--accent)}
+.np-more{max-width:680px;margin:0 auto;padding:0 20px 20px}
+.np-more h2{font-family:var(--sans);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);border-top:1px solid var(--ink);padding-top:12px}
+.np-more a{display:block;padding:10px 0;border-bottom:1px solid var(--line);text-decoration:none;color:inherit;font-family:var(--display);font-size:20px;font-weight:600;line-height:1.2}
+.np-more a small{display:block;font-family:var(--sans);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:2px}
+.np-gos{margin-top:34px;border-top:3px double var(--ink);padding-top:16px}
+.np-gos-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:6px}
+.np-gos-head h2{font-family:var(--display);font-weight:600;font-size:clamp(30px,4vw,40px);margin:0;font-style:italic}
+.np-gos-grid{columns:3 280px;column-gap:28px}
+.np-gos-item{break-inside:avoid;padding:14px 0;border-bottom:1px dashed var(--line);font-size:16px;line-height:1.55}
+.np-gos-item::before{content:"🤫 ";}
+.np-gos-item a{display:block;margin-top:6px;font-family:var(--sans);font-size:12px;color:var(--accent);text-decoration:none}
+.np-gos-item a:hover{text-decoration:underline}
+.np-gos{margin-top:34px;border-top:3px double var(--ink);padding-top:16px}
+.np-gos-h{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+.np-gos-h h2{margin:0;font-family:var(--display);font-weight:600;font-size:clamp(30px,4.5vw,44px);font-style:italic;color:var(--accent)}
+.np-gos-h p{margin:0;font-family:var(--serif);font-style:italic;color:var(--muted)}
+.np-gos-list{columns:3 260px;column-gap:28px;column-rule:1px dashed var(--line)}
+.np-gos-item{break-inside:avoid;margin:0 0 22px;padding:14px 16px;background:var(--accent-soft);border-radius:10px}
+.np-gos-item h3{margin:0 0 6px;font-family:var(--display);font-weight:600;font-size:21px;line-height:1.15}
+.np-gos-item p{margin:0 0 8px;font-size:15px;line-height:1.5}
+.np-gos-item a{font-family:var(--sans);font-size:12px;color:var(--accent);text-decoration:none}
+.np-gos-item a:hover{text-decoration:underline}
+.np-line a{color:var(--accent);text-decoration:none}
+@media (max-width:820px){.np-grid{grid-template-columns:1fr 1fr}.np-grid .np-card:not(:nth-child(3n+1)){border-left:0}.np-grid .np-card:nth-child(2n){border-left:1px solid var(--line)}}
+@media (max-width:620px){.np{padding-top:16px}.np-lead{grid-template-columns:1fr;gap:14px}.np-lead .np-img{order:-1}.np-grid{grid-template-columns:1fr}.np-grid .np-card:nth-child(2n){border-left:0}.np-card{padding:18px 4px}.np-line{justify-content:center}}
 /* Home */
 .hero{padding:72px 0 40px;text-align:center}
 .hero .eyebrow{font-family:var(--sans);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-weight:600}
@@ -196,8 +253,9 @@ article.chapter .gloss:focus-visible{background:var(--accent-soft);border-radius
 article.chapter p.vf{display:flex;align-items:center;justify-content:space-between;gap:12px;text-align:left;margin:0 0 .55em;padding:6px 10px;border-radius:8px;border:1px solid transparent;transition:background .15s,border-color .15s}
 article.chapter p.vf .vfq{flex:1}
 article.chapter p.vf .vfb{display:flex;gap:6px;flex:none}
+article.chapter p.vf .vfb button{white-space:nowrap;hyphens:none}
 article.chapter p.vf::after{content:"";width:16px;flex:none;text-align:center}
-article.chapter p.vf button{font:600 14px/1 var(--sans);width:38px;height:34px;border-radius:8px;border:1px solid var(--line);background:var(--paper);color:var(--ink);cursor:pointer}
+article.chapter p.vf button{font:600 14px/1 var(--sans);min-width:38px;padding:0 10px;height:34px;border-radius:8px;border:1px solid var(--line);background:var(--paper);color:var(--ink);cursor:pointer}
 article.chapter p.vf button:hover{border-color:var(--accent)}
 article.chapter p.vf button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
 article.chapter p.vf.ok{background:#e3efe6;border-color:#9cc8a9}
@@ -269,6 +327,7 @@ article.chapter h3{font-family:var(--sans);font-size:.72em;letter-spacing:.12em;
 :root[data-theme="dark"] .pill.study{background:#23382b;color:#9fd4b0}
 @media (prefers-color-scheme: dark){:root:not([data-theme]) .pill.study{background:#23382b;color:#9fd4b0}}
 .pill.wip{background:var(--accent-soft);color:var(--accent);border-color:transparent}
+.pill.done{color:var(--muted)}
 .wipnote{max-width:680px;margin:0 auto 28px;padding:0 20px}
 .wipnote div{font-family:var(--sans);font-size:14px;background:var(--accent-soft);border-radius:8px;padding:12px 14px;text-align:center}
 .pill.adult{background:#b3261e;color:#fff;border-color:#b3261e}
@@ -632,31 +691,32 @@ function setupPredchuvstvieReflection(root) {
   };
 }
 
-const LANGS = ["ru","es","it","en","de","fr","tr","pt","cs","pl","sr","eo","isv","vo","ia","ld","la","sw","bg"];
-const UI_SW = {study:"Jifunze",studyNote:"Kozi ya lugha.",wip:"Inaandikwa",wipNote:"Sura mpya zinakuja.",tag:"Riwaya",hero:"Ulimwengu wa Fasihi",sub:"Riwaya za Robert Fader. Soma bila malipo.",author:"Robert Fader",start:"Anza kusoma",cont:"Endelea kusoma",contents:"Orodha ya sura",chapter:"Sura",prev:"Iliyotangulia",next:"Inayofuata",back:"Riwaya zote",empty:"Hakuna riwaya kwa Kiswahili bado.",foot:"© Robert Fader. Haki zote zimehifadhiwa.",chapters:n=>n===1?"Sura 1":n+" sura",notFound:"Ukurasa haujapatikana.",also:"Riwaya hii inapatikana pia kwa lugha nyingine:",adultT:"Kwa watu wazima pekee",adultP:"Riwaya hii ni kwa watu wazima pekee.",adultYes:"Nina miaka 18 au zaidi",adultNo:"Rudi nyuma"};
+const LANGS = ["ru","es","it","en","de","fr","tr","pt","cs","pl","sr","eo","isv","vo","ia","ld","la","sw","bg","vec"];
+const UI_SW = {study:"Jifunze",studyNote:"Kozi ya lugha.",wip:"Inaandikwa",done:"Riwaya kamili",wipNote:"Sura mpya zinakuja.",tag:"Riwaya",hero:"Ulimwengu wa Fasihi",sub:"Riwaya za Robert Fader. Soma bila malipo.",author:"Robert Fader",start:"Anza kusoma",cont:"Endelea kusoma",contents:"Orodha ya sura",chapter:"Sura",prev:"Iliyotangulia",next:"Inayofuata",back:"Riwaya zote",empty:"Hakuna riwaya kwa Kiswahili bado.",foot:"© Robert Fader. Haki zote zimehifadhiwa.",chapters:n=>n===1?"Sura 1":n+" sura",notFound:"Ukurasa haujapatikana.",also:"Riwaya hii inapatikana pia kwa lugha nyingine:",adultT:"Kwa watu wazima pekee",adultP:"Riwaya hii ni kwa watu wazima pekee.",adultYes:"Nina miaka 18 au zaidi",adultNo:"Rudi nyuma"};
 const novelHref = (l, s) => "#/" + s;
-const LANG_NAMES = {ru:"Русский", es:"Español", it:"Italiano", en:"English", de:"Deutsch", fr:"Français", tr:"Türkçe", pt:"Português", cs:"Čeština", pl:"Polski", sr:"Српски", eo:"Esperanto", isv:"Medžuslovjansky", vo:"Volapük", ia:"Interlingua", ld:"Lingwa de Planeta", la:"Latina",sw:"Kiswahili",bg:"Български"};
+const LANG_NAMES = {vec:"Vèneto", ru:"Русский", es:"Español", it:"Italiano", en:"English", de:"Deutsch", fr:"Français", tr:"Türkçe", pt:"Português", cs:"Čeština", pl:"Polski", sr:"Српски", eo:"Esperanto", isv:"Medžuslovjansky", vo:"Volapük", ia:"Interlingua", ld:"Lingwa de Planeta", la:"Latina",sw:"Kiswahili",bg:"Български"};
 const UI = {
-  la:{study:"Ad discendum",studyNote:"Liber ad linguam discendam.",wip:"In scribendo",wipNote:"Novissima capita mox venient.",tag:"Fabulae",hero:"Mundus litterarius",sub:"Fabulae Roberti Fader Latine scriptae. Lege gratis.",author:"Robert Fader",start:"Incipe legere",cont:"Perge legere",contents:"Index capitum",chapter:"Caput",prev:"Prius",next:"Proximum",back:"Omnes fabulae",empty:"Nondum fabulae Latinae adsunt.",foot:"© Robert Fader. Omnia iura reservata.",chapters:n=>n+(n===1?" caput":" capita"),notFound:"Pagina non inventa.",also:"Haec fabula etiam aliis linguis legi potest:",adultT:"Solum adultis",adultP:"Haec fabula adultis tantum destinatur.",adultYes:"Duodeviginti annos natus sum",adultNo:"Redi"},
-  ld:{study:"Por lern sikin", studyNote:"Kitaba por lernisa de lingwa, kun material por studie.", wip:"En skriba", wipNote:"Se roman es ankor en skriba. Nove kapitels ve lai.", tag:"Romanes", hero:"Literatur-ney Mundo", sub:"Romanes de Robert Fader in Lingwa de Planeta. Lei li online sin paya.", author:"Robert Fader", start:"Begin lekti", cont:"Kontinui lekti", contents:"Konten", chapter:"Kapitel", prev:"Anterior", next:"Sekwen", back:"Oli romanes", empty:"Nul romanes in Lingwa de Planeta ankor.", foot:"© Robert Fader. Oli raitas es reservi.", chapters:n=>n+(n===1?" kapitel":" kapitels"), notFound:"Paja bu es findi.", also:"Se roman es anke availabel in otre lingwas:", adultT:"Solo por adulte jen", adultP:"Se roman konteni eksplicite escenas e es solo por jen ot 18 yar.", adultYes:"Me es 18 yar o pyu", adultNo:"Go bak"},
-  ru:{study:"Для учёбы", studyNote:"Книга для изучения языка: в ней есть учебные материалы.", wip:"Пишется", wipNote:"Роман ещё в процессе написания — новые главы появятся позже.", tag:"Романы", hero:"Литературный мир", sub:"Романы Роберта Фадера на русском языке. Читайте онлайн бесплатно.", author:"Роберт Фадер", start:"Начать читать", cont:"Продолжить", contents:"Содержание", chapter:"Глава", prev:"Назад", next:"Далее", back:"Все романы", empty:"Романов на русском языке пока нет. Скоро появятся!", foot:"© Роберт Фадер. Все права защищены.", chapters:n=>n+" "+plural(n,["глава","главы","глав"]), notFound:"Страница не найдена.", also:"Этот роман есть и на других языках:", adultT:"Только для взрослых", adultP:"Этот роман содержит откровенные сцены и предназначен для читателей старше 18 лет.", adultYes:"Мне есть 18 лет", adultNo:"Вернуться"},
-  es:{study:"Para estudiar", studyNote:"Libro para aprender el idioma: incluye material de estudio.", wip:"En proceso", wipNote:"Esta novela está en proceso de escritura: pronto habrá nuevos capítulos.", tag:"Novelas", hero:"Mundo literario", sub:"Las novelas de Robert Fader en español. Léelas en línea gratis.", author:"Robert Fader", start:"Empezar a leer", cont:"Continuar", contents:"Índice", chapter:"Capítulo", prev:"Anterior", next:"Siguiente", back:"Todas las novelas", empty:"Todavía no hay novelas en español. ¡Pronto llegarán!", foot:"© Robert Fader. Todos los derechos reservados.", chapters:n=>n+(n===1?" capítulo":" capítulos"), notFound:"Página no encontrada.", also:"Esta novela también está en otros idiomas:", adultT:"Solo para adultos", adultP:"Esta novela contiene escenas explícitas y es solo para mayores de 18 años.", adultYes:"Tengo 18 años o más", adultNo:"Volver"},
-  it:{study:"Per studiare", studyNote:"Libro per imparare la lingua: include materiale di studio.", wip:"In corso", wipNote:"Questo romanzo è in fase di scrittura: presto arriveranno nuovi capitoli.", tag:"Romanzi", hero:"Mondo letterario", sub:"I romanzi di Roberto Fader in italiano. Leggili online gratuitamente.", author:"Roberto Fader", start:"Inizia a leggere", cont:"Continua", contents:"Indice", chapter:"Capitolo", prev:"Precedente", next:"Successivo", back:"Tutti i romanzi", empty:"Non ci sono ancora romanzi in italiano. Arriveranno presto!", foot:"© Roberto Fader. Tutti i diritti riservati.", chapters:n=>n+(n===1?" capitolo":" capitoli"), notFound:"Pagina non trovata.", also:"Questo romanzo è disponibile anche in altre lingue:", adultT:"Solo per adulti", adultP:"Questo romanzo contiene scene esplicite ed è riservato ai maggiori di 18 anni.", adultYes:"Ho almeno 18 anni", adultNo:"Torna indietro"},
-  en:{study:"For study", studyNote:"A book for language learners: it includes study material.", wip:"In progress", wipNote:"This novel is still being written — new chapters are coming.", tag:"Novels", hero:"Literary World", sub:"Robert Fader's novels in English. Read them online for free.", author:"Robert Fader", start:"Start reading", cont:"Continue", contents:"Contents", chapter:"Chapter", prev:"Previous", next:"Next", back:"All novels", empty:"No novels in English yet. Coming soon!", foot:"© Robert Fader. All rights reserved.", chapters:n=>n+(n===1?" chapter":" chapters"), notFound:"Page not found.", also:"This novel is also available in:", adultT:"Adults only", adultP:"This novel contains explicit scenes and is for readers aged 18 and over.", adultYes:"I am 18 or older", adultNo:"Go back"},
-  de:{study:"Zum Lernen", studyNote:"Ein Buch zum Sprachenlernen – mit Lernmaterial.", wip:"In Arbeit", wipNote:"Dieser Roman wird noch geschrieben – neue Kapitel folgen.", tag:"Romane", hero:"Literarische Welt", sub:"Die Romane von Robert Fader auf Deutsch. Kostenlos online lesen.", author:"Robert Fader", start:"Jetzt lesen", cont:"Weiterlesen", contents:"Inhalt", chapter:"Kapitel", prev:"Zurück", next:"Weiter", back:"Alle Romane", empty:"Noch keine Romane auf Deutsch. Bald!", foot:"© Robert Fader. Alle Rechte vorbehalten.", chapters:n=>n+(n===1?" Kapitel":" Kapitel"), notFound:"Seite nicht gefunden.", also:"Dieser Roman ist auch verfügbar auf:", adultT:"Nur für Erwachsene", adultP:"Dieser Roman enthält explizite Szenen und ist für Leser ab 18 Jahren.", adultYes:"Ich bin 18 oder älter", adultNo:"Zurück"},
-  fr:{study:"Pour apprendre", studyNote:"Un livre pour apprendre la langue : il contient du matériel d’étude.", wip:"En cours", wipNote:"Ce roman est en cours d’écriture : de nouveaux chapitres arrivent bientôt.", tag:"Romans", hero:"Monde littéraire", sub:"Les romans de Robert Fader en français. Lisez-les en ligne gratuitement.", author:"Robert Fader", start:"Commencer la lecture", cont:"Continuer", contents:"Sommaire", chapter:"Chapitre", prev:"Précédent", next:"Suivant", back:"Tous les romans", empty:"Pas encore de romans en français. Bientôt !", foot:"© Robert Fader. Tous droits réservés.", chapters:n=>n+(n===1?" chapitre":" chapitres"), notFound:"Page introuvable.", also:"Ce roman existe aussi dans d’autres langues :", adultT:"Réservé aux adultes", adultP:"Ce roman contient des scènes explicites et est réservé aux lecteurs de 18 ans et plus.", adultYes:"J’ai 18 ans ou plus", adultNo:"Retour"},
-  tr:{study:"Öğrenmek için", studyNote:"Dil öğrenenler için bir kitap: çalışma materyali içerir.", wip:"Yazılıyor", wipNote:"Bu roman hâlâ yazılıyor; yeni bölümler yakında gelecek.", tag:"Romanlar", hero:"Edebiyat Dünyası", sub:"Robert Fader'ın Türkçe romanları. Çevrimiçi ve ücretsiz okuyun.", author:"Robert Fader", start:"Okumaya başla", cont:"Devam et", contents:"İçindekiler", chapter:"Bölüm", prev:"Önceki", next:"Sonraki", back:"Tüm romanlar", empty:"Henüz Türkçe roman yok. Yakında!", foot:"© Robert Fader. Tüm hakları saklıdır.", chapters:n=>n+" bölüm", notFound:"Sayfa bulunamadı.", also:"Bu roman başka dillerde de var:", adultT:"Yalnızca yetişkinler için", adultP:"Bu roman açık sahneler içerir ve yalnızca 18 yaş ve üzeri okurlar içindir.", adultYes:"18 yaşında veya daha büyüğüm", adultNo:"Geri dön"},
-  pt:{study:"Para estudar", studyNote:"Livro para aprender o idioma: inclui material de estudo.", wip:"Em andamento", wipNote:"Este romance ainda está sendo escrito: novos capítulos em breve.", tag:"Romances", hero:"Mundo literário", sub:"Os romances de Robert Fader em português. Leia online de graça.", author:"Robert Fader", start:"Começar a ler", cont:"Continuar", contents:"Índice", chapter:"Capítulo", prev:"Anterior", next:"Seguinte", back:"Todos os romances", empty:"Ainda não há romances em português. Em breve!", foot:"© Robert Fader. Todos os direitos reservados.", chapters:n=>n+(n===1?" capítulo":" capítulos"), notFound:"Página não encontrada.", also:"Este romance também está disponível em:", adultT:"Somente para adultos", adultP:"Este romance contém cenas explícitas e é destinado a maiores de 18 anos.", adultYes:"Tenho 18 anos ou mais", adultNo:"Voltar"},
-  cs:{study:"Ke studiu", studyNote:"Kniha pro studenty jazyka: obsahuje studijní materiály.", wip:"Rozepsáno", wipNote:"Tento román se stále píše – nové kapitoly brzy přibudou.", tag:"Romány", hero:"Literární svět", sub:"Romány Roberta Fadera v češtině. Čtěte online zdarma.", author:"Robert Fader", start:"Začít číst", cont:"Pokračovat", contents:"Obsah", chapter:"Kapitola", prev:"Předchozí", next:"Další", back:"Všechny romány", empty:"Zatím tu nejsou žádné romány v češtině. Brzy přibudou!", foot:"© Robert Fader. Všechna práva vyhrazena.", chapters:n=>n+" "+(n===1?"kapitola":n>=2&&n<=4?"kapitoly":"kapitol"), notFound:"Stránka nenalezena.", also:"Tento román je k dispozici i v jiných jazycích:", adultT:"Pouze pro dospělé", adultP:"Tento román obsahuje explicitní scény a je určen čtenářům starším 18 let.", adultYes:"Je mi 18 let nebo více", adultNo:"Zpět"},
-  pl:{study:"Do nauki", studyNote:"Książka do nauki języka: zawiera materiały do nauki.", wip:"W trakcie pisania", wipNote:"Ta powieść jest wciąż pisana — nowe rozdziały pojawią się wkrótce.", tag:"Powieści", hero:"Świat literacki", sub:"Powieści Roberta Fadera po polsku. Czytaj online za darmo.", author:"Robert Fader", start:"Zacznij czytać", cont:"Czytaj dalej", contents:"Spis treści", chapter:"Rozdział", prev:"Poprzedni", next:"Następny", back:"Wszystkie powieści", empty:"Nie ma jeszcze powieści po polsku. Wkrótce!", foot:"© Robert Fader. Wszelkie prawa zastrzeżone.", chapters:n=>n+" "+(n===1?"rozdział":n%10>=2&&n%10<=4&&(n%100<10||n%100>=20)?"rozdziały":"rozdziałów"), notFound:"Nie znaleziono strony.", also:"Ta powieść jest dostępna także w innych językach:", adultT:"Tylko dla dorosłych", adultP:"Ta powieść zawiera sceny dla dorosłych i jest przeznaczona dla czytelników od 18 lat.", adultYes:"Mam 18 lat lub więcej", adultNo:"Wróć"},
-  sr:{study:"За учење", studyNote:"Књига за учење језика: садржи материјал за вежбање.", wip:"У писању", wipNote:"Овај роман се још пише — нова поглавља стижу ускоро.", tag:"Романи", hero:"Књижевни свет", sub:"Романи Роберта Фадера на српском. Читајте онлајн бесплатно.", author:"Роберт Фадер", start:"Почни да читаш", cont:"Настави", contents:"Садржај", chapter:"Поглавље", prev:"Претходно", next:"Следеће", back:"Сви романи", empty:"Још нема романа на српском. Ускоро!", foot:"© Роберт Фадер. Сва права задржана.", chapters:n=>n+" "+(n%10===1&&n%100!==11?"поглавље":"поглавља"), notFound:"Страница није пронађена.", also:"Овај роман постоји и на другим језицима:", adultT:"Само за одрасле", adultP:"Овај роман садржи експлицитне сцене и намењен је читаоцима старијим од 18 година.", adultYes:"Имам 18 или више година", adultNo:"Назад"},
-  eo:{study:"Por lerni", studyNote:"Libro por lernantoj de la lingvo: ĝi enhavas lernomaterialon.", wip:"Verkata", wipNote:"Ĉi tiu romano ankoraŭ estas verkata — novaj ĉapitroj baldaŭ aperos.", tag:"Romanoj", hero:"Literatura mondo", sub:"La romanoj de Robert Fader en Esperanto. Legu ilin rete senpage.", author:"Robert Fader", start:"Komenci legi", cont:"Daŭrigi", contents:"Enhavo", chapter:"Ĉapitro", prev:"Antaŭa", next:"Sekva", back:"Ĉiuj romanoj", empty:"Ankoraŭ ne estas romanoj en Esperanto. Baldaŭ!", foot:"© Robert Fader. Ĉiuj rajtoj rezervitaj.", chapters:n=>n+(n===1?" ĉapitro":" ĉapitroj"), notFound:"Paĝo ne trovita.", also:"Ĉi tiu romano ekzistas ankaŭ en aliaj lingvoj:", adultT:"Nur por plenkreskuloj", adultP:"Ĉi tiu romano enhavas eksplicitajn scenojn kaj estas nur por legantoj de 18 jaroj aŭ pli.", adultYes:"Mi havas 18 jarojn aŭ pli", adultNo:"Reen"},
-  vo:{study:"Ad studön", studyNote:"Buk ad lärnön puki: ninädon studamateriali.", wip:"In penam", wipNote:"Romän at binon nog in penam. Kapitels nulik okömoms.", tag:"Romäns", hero:"Vol literatik", sub:"Romäns fa Robert Fader in Volapük. Reidols onis pö net nen päm.", author:"Robert Fader", start:"Primön reidami", cont:"Fövön reidami", contents:"Ninäd", chapter:"Kapitel", prev:"Büik", next:"Sököl", back:"Romäns valik", empty:"No dabinons nog romäns in Volapük. Okömoms suno!", foot:"© Robert Fader. Reits valik binons pälälöl.", chapters:n=>n+" kapitel"+(n===1?"":"s"), notFound:"Pad no petuvon.", also:"Romän at dabinon i in puks votik:", adultT:"Te pro gretans", adultP:"Romän at ninädon jenotis pro gretans te, de yels 18.", adultYes:"Labob yelis 18 u plu", adultNo:"Geikön"},
-  ia:{study:"Pro studiar", studyNote:"Libro pro apprender le lingua: illo include material de studio.", wip:"In progresso", wipNote:"Iste romance es ancora in scriptura — nove capitulos arrivara tosto.", tag:"Romances", hero:"Mundo litterari", sub:"Le romances de Robert Fader in interlingua. Lege los in linea gratuitemente.", author:"Robert Fader", start:"Comenciar a leger", cont:"Continuar", contents:"Indice", chapter:"Capitulo", prev:"Precedente", next:"Sequente", back:"Tote le romances", empty:"Ancora nulle romances in interlingua. Tosto!", foot:"© Robert Fader. Tote le derectos reservate.", chapters:n=>n+(n===1?" capitulo":" capitulos"), notFound:"Pagina non trovate.", also:"Iste romance es anque disponibile in:", adultT:"Solmente pro adultos", adultP:"Iste romance contine scenas explicite e es solmente pro lectores de 18 annos o plus.", adultYes:"Io ha 18 annos o plus", adultNo:"Retornar"},
-  isv:{study:"Za učenje", studyNote:"Kniga za učenje jezyka: imaje materialy za učenje.", wip:"V pisanju", wipNote:"Toj roman se ješče piše — nove glavy prijdut skoro.", tag:"Romany", hero:"Literaturny svět", sub:"Romany Roberta Fadera na medžuslovjanskom jezyku. Čitajte onlajn bezplatno.", author:"Robert Fader", start:"Načati čitanje", cont:"Prodolžiti", contents:"Sodržanje", chapter:"Glava", prev:"Prědhodna", next:"Slědujuča", back:"Vse romany", empty:"Ješče nema romanov na medžuslovjanskom. Skoro!", foot:"© Robert Fader. Vse prava zaščiščene.", chapters:n=>n+" "+(n===1?"glava":n>=2&&n<=4?"glavy":"glav"), notFound:"Stranica ne jest najdena.", also:"Toj roman jest takože na drugyh jezykah:", adultT:"Jedino za odraslyh", adultP:"Toj roman imaje eksplicitne sceny i jest jedino za čitateljev od 18 lět.", adultYes:"Imam 18 lět ili boljše", adultNo:"Nazad"}
+  la:{study:"Ad discendum",studyNote:"Liber ad linguam discendam.",wip:"In scribendo",done:"Fabula perfecta",wipNote:"Novissima capita mox venient.",tag:"Fabulae",hero:"Mundus litterarius",sub:"Fabulae Roberti Fader Latine scriptae. Lege gratis.",author:"Robert Fader",start:"Incipe legere",cont:"Perge legere",contents:"Index capitum",chapter:"Caput",prev:"Prius",next:"Proximum",back:"Omnes fabulae",empty:"Nondum fabulae Latinae adsunt.",foot:"© Robert Fader. Omnia iura reservata.",chapters:n=>n+(n===1?" caput":" capita"),notFound:"Pagina non inventa.",also:"Haec fabula etiam aliis linguis legi potest:",adultT:"Solum adultis",adultP:"Haec fabula adultis tantum destinatur.",adultYes:"Duodeviginti annos natus sum",adultNo:"Redi"},
+  ld:{study:"Por lern sikin", studyNote:"Kitaba por lernisa de lingwa, kun material por studie.", wip:"En skriba",done:"Komplete roman", wipNote:"Se roman es ankor en skriba. Nove kapitels ve lai.", tag:"Romanes", hero:"Literatur-ney Mundo", sub:"Romanes de Robert Fader in Lingwa de Planeta. Lei li online sin paya.", author:"Robert Fader", start:"Begin lekti", cont:"Kontinui lekti", contents:"Konten", chapter:"Kapitel", prev:"Anterior", next:"Sekwen", back:"Oli romanes", empty:"Nul romanes in Lingwa de Planeta ankor.", foot:"© Robert Fader. Oli raitas es reservi.", chapters:n=>n+(n===1?" kapitel":" kapitels"), notFound:"Paja bu es findi.", also:"Se roman es anke availabel in otre lingwas:", adultT:"Solo por adulte jen", adultP:"Se roman konteni eksplicite escenas e es solo por jen ot 18 yar.", adultYes:"Me es 18 yar o pyu", adultNo:"Go bak"},
+  ru:{study:"Для учёбы", studyNote:"Книга для изучения языка: в ней есть учебные материалы.", wip:"Пишется",done:"Роман завершён", wipNote:"Роман ещё в процессе написания — новые главы появятся позже.", tag:"Романы", hero:"Литературный мир", sub:"Романы Роберта Фадера на русском языке. Читайте онлайн бесплатно.", author:"Роберт Фадер", start:"Начать читать", cont:"Продолжить", contents:"Содержание", chapter:"Глава", prev:"Назад", next:"Далее", back:"Все романы", empty:"Романов на русском языке пока нет. Скоро появятся!", foot:"© Роберт Фадер. Все права защищены.", chapters:n=>n+" "+plural(n,["глава","главы","глав"]), notFound:"Страница не найдена.", also:"Этот роман есть и на других языках:", adultT:"Только для взрослых", adultP:"Этот роман содержит откровенные сцены и предназначен для читателей старше 18 лет.", adultYes:"Мне есть 18 лет", adultNo:"Вернуться"},
+  es:{study:"Para estudiar", studyNote:"Libro para aprender el idioma: incluye material de estudio.", wip:"En proceso",done:"Novela completa", wipNote:"Esta novela está en proceso de escritura: pronto habrá nuevos capítulos.", tag:"Novelas", hero:"Mundo literario", sub:"Las novelas de Robert Fader en español. Léelas en línea gratis.", author:"Robert Fader", start:"Empezar a leer", cont:"Continuar", contents:"Índice", chapter:"Capítulo", prev:"Anterior", next:"Siguiente", back:"Todas las novelas", empty:"Todavía no hay novelas en español. ¡Pronto llegarán!", foot:"© Robert Fader. Todos los derechos reservados.", chapters:n=>n+(n===1?" capítulo":" capítulos"), notFound:"Página no encontrada.", also:"Esta novela también está en otros idiomas:", adultT:"Solo para adultos", adultP:"Esta novela contiene escenas explícitas y es solo para mayores de 18 años.", adultYes:"Tengo 18 años o más", adultNo:"Volver"},
+  it:{study:"Per studiare", studyNote:"Libro per imparare la lingua: include materiale di studio.", wip:"In corso",done:"Romanzo completo", wipNote:"Questo romanzo è in fase di scrittura: presto arriveranno nuovi capitoli.", tag:"Romanzi", hero:"Mondo letterario", sub:"I romanzi di Roberto Fader in italiano. Leggili online gratuitamente.", author:"Roberto Fader", start:"Inizia a leggere", cont:"Continua", contents:"Indice", chapter:"Capitolo", prev:"Precedente", next:"Successivo", back:"Tutti i romanzi", empty:"Non ci sono ancora romanzi in italiano. Arriveranno presto!", foot:"© Roberto Fader. Tutti i diritti riservati.", chapters:n=>n+(n===1?" capitolo":" capitoli"), notFound:"Pagina non trovata.", also:"Questo romanzo è disponibile anche in altre lingue:", adultT:"Solo per adulti", adultP:"Questo romanzo contiene scene esplicite ed è riservato ai maggiori di 18 anni.", adultYes:"Ho almeno 18 anni", adultNo:"Torna indietro"},
+  en:{study:"For study", studyNote:"A book for language learners: it includes study material.", wip:"In progress",done:"Complete novel", wipNote:"This novel is still being written — new chapters are coming.", tag:"Novels", hero:"Literary World", sub:"Robert Fader's novels in English. Read them online for free.", author:"Robert Fader", start:"Start reading", cont:"Continue", contents:"Contents", chapter:"Chapter", prev:"Previous", next:"Next", back:"All novels", empty:"No novels in English yet. Coming soon!", foot:"© Robert Fader. All rights reserved.", chapters:n=>n+(n===1?" chapter":" chapters"), notFound:"Page not found.", also:"This novel is also available in:", adultT:"Adults only", adultP:"This novel contains explicit scenes and is for readers aged 18 and over.", adultYes:"I am 18 or older", adultNo:"Go back"},
+  de:{study:"Zum Lernen", studyNote:"Ein Buch zum Sprachenlernen – mit Lernmaterial.", wip:"In Arbeit",done:"Abgeschlossener Roman", wipNote:"Dieser Roman wird noch geschrieben – neue Kapitel folgen.", tag:"Romane", hero:"Literarische Welt", sub:"Die Romane von Robert Fader auf Deutsch. Kostenlos online lesen.", author:"Robert Fader", start:"Jetzt lesen", cont:"Weiterlesen", contents:"Inhalt", chapter:"Kapitel", prev:"Zurück", next:"Weiter", back:"Alle Romane", empty:"Noch keine Romane auf Deutsch. Bald!", foot:"© Robert Fader. Alle Rechte vorbehalten.", chapters:n=>n+(n===1?" Kapitel":" Kapitel"), notFound:"Seite nicht gefunden.", also:"Dieser Roman ist auch verfügbar auf:", adultT:"Nur für Erwachsene", adultP:"Dieser Roman enthält explizite Szenen und ist für Leser ab 18 Jahren.", adultYes:"Ich bin 18 oder älter", adultNo:"Zurück"},
+  fr:{study:"Pour apprendre", studyNote:"Un livre pour apprendre la langue : il contient du matériel d’étude.", wip:"En cours",done:"Roman complet", wipNote:"Ce roman est en cours d’écriture : de nouveaux chapitres arrivent bientôt.", tag:"Romans", hero:"Monde littéraire", sub:"Les romans de Robert Fader en français. Lisez-les en ligne gratuitement.", author:"Robert Fader", start:"Commencer la lecture", cont:"Continuer", contents:"Sommaire", chapter:"Chapitre", prev:"Précédent", next:"Suivant", back:"Tous les romans", empty:"Pas encore de romans en français. Bientôt !", foot:"© Robert Fader. Tous droits réservés.", chapters:n=>n+(n===1?" chapitre":" chapitres"), notFound:"Page introuvable.", also:"Ce roman existe aussi dans d’autres langues :", adultT:"Réservé aux adultes", adultP:"Ce roman contient des scènes explicites et est réservé aux lecteurs de 18 ans et plus.", adultYes:"J’ai 18 ans ou plus", adultNo:"Retour"},
+  tr:{study:"Öğrenmek için", studyNote:"Dil öğrenenler için bir kitap: çalışma materyali içerir.", wip:"Yazılıyor",done:"Tamamlanmış roman", wipNote:"Bu roman hâlâ yazılıyor; yeni bölümler yakında gelecek.", tag:"Romanlar", hero:"Edebiyat Dünyası", sub:"Robert Fader'ın Türkçe romanları. Çevrimiçi ve ücretsiz okuyun.", author:"Robert Fader", start:"Okumaya başla", cont:"Devam et", contents:"İçindekiler", chapter:"Bölüm", prev:"Önceki", next:"Sonraki", back:"Tüm romanlar", empty:"Henüz Türkçe roman yok. Yakında!", foot:"© Robert Fader. Tüm hakları saklıdır.", chapters:n=>n+" bölüm", notFound:"Sayfa bulunamadı.", also:"Bu roman başka dillerde de var:", adultT:"Yalnızca yetişkinler için", adultP:"Bu roman açık sahneler içerir ve yalnızca 18 yaş ve üzeri okurlar içindir.", adultYes:"18 yaşında veya daha büyüğüm", adultNo:"Geri dön"},
+  pt:{study:"Para estudar", studyNote:"Livro para aprender o idioma: inclui material de estudo.", wip:"Em andamento",done:"Romance completo", wipNote:"Este romance ainda está sendo escrito: novos capítulos em breve.", tag:"Romances", hero:"Mundo literário", sub:"Os romances de Robert Fader em português. Leia online de graça.", author:"Robert Fader", start:"Começar a ler", cont:"Continuar", contents:"Índice", chapter:"Capítulo", prev:"Anterior", next:"Seguinte", back:"Todos os romances", empty:"Ainda não há romances em português. Em breve!", foot:"© Robert Fader. Todos os direitos reservados.", chapters:n=>n+(n===1?" capítulo":" capítulos"), notFound:"Página não encontrada.", also:"Este romance também está disponível em:", adultT:"Somente para adultos", adultP:"Este romance contém cenas explícitas e é destinado a maiores de 18 anos.", adultYes:"Tenho 18 anos ou mais", adultNo:"Voltar"},
+  cs:{study:"Ke studiu", studyNote:"Kniha pro studenty jazyka: obsahuje studijní materiály.", wip:"Rozepsáno",done:"Dokončený román", wipNote:"Tento román se stále píše – nové kapitoly brzy přibudou.", tag:"Romány", hero:"Literární svět", sub:"Romány Roberta Fadera v češtině. Čtěte online zdarma.", author:"Robert Fader", start:"Začít číst", cont:"Pokračovat", contents:"Obsah", chapter:"Kapitola", prev:"Předchozí", next:"Další", back:"Všechny romány", empty:"Zatím tu nejsou žádné romány v češtině. Brzy přibudou!", foot:"© Robert Fader. Všechna práva vyhrazena.", chapters:n=>n+" "+(n===1?"kapitola":n>=2&&n<=4?"kapitoly":"kapitol"), notFound:"Stránka nenalezena.", also:"Tento román je k dispozici i v jiných jazycích:", adultT:"Pouze pro dospělé", adultP:"Tento román obsahuje explicitní scény a je určen čtenářům starším 18 let.", adultYes:"Je mi 18 let nebo více", adultNo:"Zpět"},
+  pl:{study:"Do nauki", studyNote:"Książka do nauki języka: zawiera materiały do nauki.", wip:"W trakcie pisania",done:"Powieść ukończona", wipNote:"Ta powieść jest wciąż pisana — nowe rozdziały pojawią się wkrótce.", tag:"Powieści", hero:"Świat literacki", sub:"Powieści Roberta Fadera po polsku. Czytaj online za darmo.", author:"Robert Fader", start:"Zacznij czytać", cont:"Czytaj dalej", contents:"Spis treści", chapter:"Rozdział", prev:"Poprzedni", next:"Następny", back:"Wszystkie powieści", empty:"Nie ma jeszcze powieści po polsku. Wkrótce!", foot:"© Robert Fader. Wszelkie prawa zastrzeżone.", chapters:n=>n+" "+(n===1?"rozdział":n%10>=2&&n%10<=4&&(n%100<10||n%100>=20)?"rozdziały":"rozdziałów"), notFound:"Nie znaleziono strony.", also:"Ta powieść jest dostępna także w innych językach:", adultT:"Tylko dla dorosłych", adultP:"Ta powieść zawiera sceny dla dorosłych i jest przeznaczona dla czytelników od 18 lat.", adultYes:"Mam 18 lat lub więcej", adultNo:"Wróć"},
+  sr:{study:"За учење", studyNote:"Књига за учење језика: садржи материјал за вежбање.", wip:"У писању",done:"Завршен роман", wipNote:"Овај роман се још пише — нова поглавља стижу ускоро.", tag:"Романи", hero:"Књижевни свет", sub:"Романи Роберта Фадера на српском. Читајте онлајн бесплатно.", author:"Роберт Фадер", start:"Почни да читаш", cont:"Настави", contents:"Садржај", chapter:"Поглавље", prev:"Претходно", next:"Следеће", back:"Сви романи", empty:"Још нема романа на српском. Ускоро!", foot:"© Роберт Фадер. Сва права задржана.", chapters:n=>n+" "+(n%10===1&&n%100!==11?"поглавље":"поглавља"), notFound:"Страница није пронађена.", also:"Овај роман постоји и на другим језицима:", adultT:"Само за одрасле", adultP:"Овај роман садржи експлицитне сцене и намењен је читаоцима старијим од 18 година.", adultYes:"Имам 18 или више година", adultNo:"Назад"},
+  eo:{study:"Por lerni", studyNote:"Libro por lernantoj de la lingvo: ĝi enhavas lernomaterialon.", wip:"Verkata",done:"Kompleta romano", wipNote:"Ĉi tiu romano ankoraŭ estas verkata — novaj ĉapitroj baldaŭ aperos.", tag:"Romanoj", hero:"Literatura mondo", sub:"La romanoj de Robert Fader en Esperanto. Legu ilin rete senpage.", author:"Robert Fader", start:"Komenci legi", cont:"Daŭrigi", contents:"Enhavo", chapter:"Ĉapitro", prev:"Antaŭa", next:"Sekva", back:"Ĉiuj romanoj", empty:"Ankoraŭ ne estas romanoj en Esperanto. Baldaŭ!", foot:"© Robert Fader. Ĉiuj rajtoj rezervitaj.", chapters:n=>n+(n===1?" ĉapitro":" ĉapitroj"), notFound:"Paĝo ne trovita.", also:"Ĉi tiu romano ekzistas ankaŭ en aliaj lingvoj:", adultT:"Nur por plenkreskuloj", adultP:"Ĉi tiu romano enhavas eksplicitajn scenojn kaj estas nur por legantoj de 18 jaroj aŭ pli.", adultYes:"Mi havas 18 jarojn aŭ pli", adultNo:"Reen"},
+  vo:{study:"Ad studön", studyNote:"Buk ad lärnön puki: ninädon studamateriali.", wip:"In penam",done:"Romän lölik", wipNote:"Romän at binon nog in penam. Kapitels nulik okömoms.", tag:"Romäns", hero:"Vol literatik", sub:"Romäns fa Robert Fader in Volapük. Reidols onis pö net nen päm.", author:"Robert Fader", start:"Primön reidami", cont:"Fövön reidami", contents:"Ninäd", chapter:"Kapitel", prev:"Büik", next:"Sököl", back:"Romäns valik", empty:"No dabinons nog romäns in Volapük. Okömoms suno!", foot:"© Robert Fader. Reits valik binons pälälöl.", chapters:n=>n+" kapitel"+(n===1?"":"s"), notFound:"Pad no petuvon.", also:"Romän at dabinon i in puks votik:", adultT:"Te pro gretans", adultP:"Romän at ninädon jenotis pro gretans te, de yels 18.", adultYes:"Labob yelis 18 u plu", adultNo:"Geikön"},
+  ia:{study:"Pro studiar", studyNote:"Libro pro apprender le lingua: illo include material de studio.", wip:"In progresso",done:"Romance complete", wipNote:"Iste romance es ancora in scriptura — nove capitulos arrivara tosto.", tag:"Romances", hero:"Mundo litterari", sub:"Le romances de Robert Fader in interlingua. Lege los in linea gratuitemente.", author:"Robert Fader", start:"Comenciar a leger", cont:"Continuar", contents:"Indice", chapter:"Capitulo", prev:"Precedente", next:"Sequente", back:"Tote le romances", empty:"Ancora nulle romances in interlingua. Tosto!", foot:"© Robert Fader. Tote le derectos reservate.", chapters:n=>n+(n===1?" capitulo":" capitulos"), notFound:"Pagina non trovate.", also:"Iste romance es anque disponibile in:", adultT:"Solmente pro adultos", adultP:"Iste romance contine scenas explicite e es solmente pro lectores de 18 annos o plus.", adultYes:"Io ha 18 annos o plus", adultNo:"Retornar"},
+  isv:{study:"Za učenje", studyNote:"Kniga za učenje jezyka: imaje materialy za učenje.", wip:"V pisanju",done:"Završeny roman", wipNote:"Toj roman se ješče piše — nove glavy prijdut skoro.", tag:"Romany", hero:"Literaturny svět", sub:"Romany Roberta Fadera na medžuslovjanskom jezyku. Čitajte onlajn bezplatno.", author:"Robert Fader", start:"Načati čitanje", cont:"Prodolžiti", contents:"Sodržanje", chapter:"Glava", prev:"Prědhodna", next:"Slědujuča", back:"Vse romany", empty:"Ješče nema romanov na medžuslovjanskom. Skoro!", foot:"© Robert Fader. Vse prava zaščiščene.", chapters:n=>n+" "+(n===1?"glava":n>=2&&n<=4?"glavy":"glav"), notFound:"Stranica ne jest najdena.", also:"Toj roman jest takože na drugyh jezykah:", adultT:"Jedino za odraslyh", adultP:"Toj roman imaje eksplicitne sceny i jest jedino za čitateljev od 18 lět.", adultYes:"Imam 18 lět ili boljše", adultNo:"Nazad"}
 };
 UI.sw = {...UI.en, ...UI_SW};
-UI.bg = {study:"За учене", studyNote:"Книга за изучаване на езика: съдържа учебни материали.", wip:"В процес на писане", wipNote:"Романът още се пише — скоро ще има нови глави.", tag:"Романи", hero:"Литературен свят", sub:"Романите на Роберт Фадер на български език. Четете онлайн безплатно.", author:"Роберт Фадер", start:"Започни да четеш", cont:"Продължи", contents:"Съдържание", chapter:"Глава", prev:"Назад", next:"Напред", back:"Всички романи", empty:"Все още няма романи на български. Очаквайте скоро!", foot:"© Роберт Фадер. Всички права запазени.", chapters:n=>n+(n===1?" глава":" глави"), notFound:"Страницата не е намерена.", also:"Този роман е достъпен и на други езици:", adultT:"Само за възрастни", adultP:"Този роман съдържа откровени сцени и е само за читатели над 18 години.", adultYes:"Навършил/а съм 18 години", adultNo:"Назад"};
+UI.bg = {study:"За учене", studyNote:"Книга за изучаване на езика: съдържа учебни материали.", wip:"В процес на писане",done:"Завършен роман", wipNote:"Романът още се пише — скоро ще има нови глави.", tag:"Романи", hero:"Литературен свят", sub:"Романите на Роберт Фадер на български език. Четете онлайн безплатно.", author:"Роберт Фадер", start:"Започни да четеш", cont:"Продължи", contents:"Съдържание", chapter:"Глава", prev:"Назад", next:"Напред", back:"Всички романи", empty:"Все още няма романи на български. Очаквайте скоро!", foot:"© Роберт Фадер. Всички права запазени.", chapters:n=>n+(n===1?" глава":" глави"), notFound:"Страницата не е намерена.", also:"Този роман е достъпен и на други езици:", adultT:"Само за възрастни", adultP:"Този роман съдържа откровени сцени и е само за читатели над 18 години.", adultYes:"Навършил/а съм 18 години", adultNo:"Назад"};
+UI.vec = {study:"Par studiar", studyNote:"Libro par inparar la lengua: el ga materiale de studio.", wip:"In scritura",done:"Romanso conpleto", wipNote:"Sto romanso el xe gnancora drio èsar scrito: presto riva novi capìtoli.", tag:"Romansi", hero:"Mondo leterario", sub:"I romansi de Roberto Fader in vèneto. Lèzili online gratis.", author:"Roberto Fader", start:"Scomìnsia a lèzar", cont:"Va vanti", contents:"Ìndese", chapter:"Capìtolo", prev:"Indrìo", next:"Vanti", back:"Tuti i romansi", empty:"No ghe xe gnancora romansi in vèneto. I riva presto!", foot:"© Roberto Fader. Tuti i diriti riservài.", chapters:n=>n+(n===1?" capìtolo":" capìtoli"), notFound:"Pàxena no catada.", also:"Sto romanso el xe anca in altre lengue:", adultT:"Solo par i grandi", adultP:"Sto romanso el ga scene esplìsite e el xe solo par chi ga almanco 18 ani.", adultYes:"Go almanco 18 ani", adultNo:"Torna indrìo"};
 const BLOG_T = {
   ld:{title:"Blog", sub:"Novas, notas e dumas de la autor.", empty:"Nul postas ankor.", more:"Lekti →", back:"← Blog"},
   ru:{title:"Блог", sub:"Новости, заметки и мысли автора.", empty:"Записей пока нет. Скоро появятся!", more:"Читать →", back:"← Блог"},
@@ -674,6 +734,7 @@ const BLOG_T = {
   isv:{title:"Blog", sub:"Novosti, zapiski i mysli avtora.", empty:"Ješče nema zapisov. Skoro!", more:"Čitati →", back:"← Blog"},
   vo:{title:"Blog", sub:"Nuns, noets e tikods lautana.", empty:"No dabinons nog yegeds. Okömoms suno!", more:"Reidön →", back:"← Blog"},
   ia:{title:"Blog", sub:"Novas, notas e reflexiones del autor.", empty:"Ancora nulle articulos. Tosto!", more:"Leger →", back:"← Blog"},
+  vec:{title:"Blog", sub:"Novità, note e pensieri de l’autor.", empty:"Gnancora nissun articolo. I riva presto!", more:"Lezi →", back:"← Blog"},
   bg:{title:"Блог", sub:"Новини, бележки и мисли на автора.", empty:"Все още няма публикации. Очаквайте скоро!", more:"Прочети →", back:"← Блог"}
 };
 const bt = k => (BLOG_T[lang] || BLOG_T.en)[k];
@@ -719,13 +780,14 @@ function renderText(md){
 }
 
 /* Interactive true/false exercises: lines "a) … ( V / F ){F}" */
-const QUIZ_T = {ld:["Kontroli","korrekt","Proba snova"], es:["Comprobar","correctas","Volver a intentar"], it:["Verifica","corrette","Riprova"], en:["Check","correct","Try again"], ru:["Проверить","правильно","Ещё раз"], pt:["Verificar","corretas","Tentar de novo"], fr:["Vérifier","correctes","Réessayer"], de:["Prüfen","richtig","Nochmal"]};
+const QUIZ_T = {ld:["Kontroli","korrekt","Proba snova"], es:["Comprobar","correctas","Volver a intentar"], it:["Verifica","corrette","Riprova"], en:["Check","correct","Try again"], ru:["Проверить","правильно","Ещё раз"], pt:["Verificar","corretas","Tentar de novo"], fr:["Vérifier","correctes","Réessayer"], de:["Prüfen","richtig","Nochmal"], cs:["Zkontrolovat","správně","Zkusit znovu"], pl:["Sprawdź","poprawnie","Spróbuj ponownie"], sr:["Провери","тачно","Покушај поново"], bg:["Провери","вярно","Опитай пак"], eo:["Kontroli","ĝustaj","Reprovi"], tr:["Kontrol et","doğru","Tekrar dene"], ia:["Verificar","correcte","Reprobar"], isv:["Provjerj","pravilno","Poprobuj opet"], la:["Proba","recta","Iterum"], sw:["Angalia","sahihi","Jaribu tena"], vec:["Controla","giuste","Prova ancora"]};
 function setupQuizzes(root, lang){
   const T = QUIZ_T[lang] || QUIZ_T.es;
   const items = [...root.querySelectorAll("p.vf, p.mc")];
-  const PICK = {es:"— elige —", it:"— scegli —", en:"— choose —", ru:"— выбери —", pt:"— escolha —", fr:"— choisis —", de:"— wähle —"};
+  const PICK = {es:"— elige —", it:"— scegli —", en:"— choose —", ru:"— выбери —", pt:"— escolha —", fr:"— choisis —", de:"— wähle —", cs:"— vyber —", pl:"— wybierz —", sr:"— изабери —", bg:"— избери —", eo:"— elektu —", tr:"— seç —", ia:"— elige —", isv:"— izberi —", la:"— elige —", sw:"— chagua —", vec:"— sièlzi —"};
   root.querySelectorAll("p.mc select").forEach(sel => { if (sel.options[0]) sel.options[0].textContent = PICK[lang] || PICK.es; });
   if (lang === "en") root.querySelectorAll('p.vf button[data-v="V"]').forEach(b => b.textContent = "T");
+  if (lang === "cs") root.querySelectorAll("p.vf button[data-v]").forEach(b => { b.textContent = b.dataset.v === "V" ? "Pravda" : "Lež"; });
   if (lang === "ru") root.querySelectorAll("p.vf button[data-v]").forEach(b => { b.textContent = b.dataset.v === "V" ? "Да" : "Нет"; b.title = b.dataset.v === "V" ? "Верно" : "Неверно"; });
   const isModule = !!root.querySelector("article.chapter") && /^(?:modulo-[1-4]|test-final)[.]md$/.test(window.__activeChapterFile || "");
   if (isModule && items.length) {
@@ -778,7 +840,7 @@ function setupQuizzes(root, lang){
     return;
   }
   const groups = [];
-  items.forEach(p => { const k = p.classList.contains("mc") ? "mc" : "vf", prev = p.previousElementSibling; if (prev && prev.classList.contains(k) && groups.length) groups[groups.length-1].push(p); else groups.push([p]); });
+  items.forEach(p => { const prev = p.previousElementSibling; if (prev && (prev.classList.contains("vf") || prev.classList.contains("mc")) && groups.length) groups[groups.length-1].push(p); else groups.push([p]); });
   groups.forEach(g => {
     const bar = document.createElement("div"); bar.className = "vfcheck";
     bar.innerHTML = `<button type="button" class="vfgo">${T[0]}</button><span class="vfres" aria-live="polite"></span>`;
@@ -830,8 +892,8 @@ function setupPsy(root, lang){
 
 /* Comments (Giscus, stored in GitHub Discussions of the repository) */
 const GISCUS = { repo:"luisfader/litmir", repoId:"R_kgDOVM8Utg", category:"General", categoryId:"DIC_kwDOVM8Uts4DIsSO" };
-const COMMENTS_T = {ld:"Komentas", ru:"Комментарии", es:"Comentarios", it:"Commenti", en:"Comments", de:"Kommentare", fr:"Commentaires", tr:"Yorumlar", pt:"Comentários", cs:"Komentáře", pl:"Komentarze", sr:"Коментари", eo:"Komentoj", isv:"Komentarji", ia:"Commentos", bg:"Коментари"};
-const GISCUS_LANG = {ru:"ru", es:"es", it:"it", en:"en", de:"de", fr:"fr", tr:"tr", pt:"pt", cs:"cs", pl:"pl", sr:"ru", eo:"eo", isv:"en", ia:"en"};
+const COMMENTS_T = {vec:"Comenti",ld:"Komentas", ru:"Комментарии", es:"Comentarios", it:"Commenti", en:"Comments", de:"Kommentare", fr:"Commentaires", tr:"Yorumlar", pt:"Comentários", cs:"Komentáře", pl:"Komentarze", sr:"Коментари", eo:"Komentoj", isv:"Komentarji", ia:"Commentos", bg:"Коментари"};
+const GISCUS_LANG = {vec:"it",ru:"ru", es:"es", it:"it", en:"en", de:"de", fr:"fr", tr:"tr", pt:"pt", cs:"cs", pl:"pl", sr:"ru", eo:"eo", isv:"en", ia:"en"};
 function giscusTheme(){
   const th = store.get("theme", null);
   if (th === "dark") return "dark_dimmed";
@@ -873,13 +935,13 @@ function renderChrome(){
 document.getElementById("langs").addEventListener("click", e => {
   const l = e.target.dataset && e.target.dataset.l; if (!l) return;
   setLang(l);
-  const home = location.hash.startsWith("#/blog") ? "#/blog" : location.hash.startsWith("#/learn") && learnCat && learnCat.courses.some(c => c.lang === l) ? "#/learn" : "#/";
+  const home = location.hash.startsWith("#/blog") ? "#/blog" : location.hash.startsWith("#/news") && newsPaper(l) ? "#/news" : location.hash.startsWith("#/learn") && learnCat && learnCat.courses.some(c => c.lang === l) ? "#/learn" : "#/";
   if (location.hash && location.hash !== home) location.hash = home; else route();
 });
 
 const PALETTE = ["#7a2e2e","#2f4a5c","#4b5b35","#5a3b5f","#8a5a24","#2e4f4a","#3d3a6b","#6b3a2a"];
 function author(n){ return n.author || (UI[n.lang] ? UI[n.lang].author : t("author")); }
-const STARS_T={es:"Valoración del editor",ru:"Оценка редакции",it:"Valutazione della redazione",en:"Editor's rating",de:"Bewertung der Redaktion",fr:"Note de la rédaction",tr:"Editörün puanı",pt:"Avaliação do editor",cs:"Hodnocení redakce",pl:"Ocena redakcji",sr:"Оцена уредништва",eo:"Takso de la redakcio",isv:"Ocěnka redakcije",ia:"Evalutation del redaction"};
+const STARS_T={vec:"Voto de la redasion",es:"Valoración del editor",ru:"Оценка редакции",it:"Valutazione della redazione",en:"Editor's rating",de:"Bewertung der Redaktion",fr:"Note de la rédaction",tr:"Editörün puanı",pt:"Avaliação do editor",cs:"Hodnocení redakce",pl:"Ocena redakcji",sr:"Оцена уредништва",eo:"Takso de la redakcio",isv:"Ocěnka redakcije",ia:"Evalutation del redaction"};
 function starsHTML(n, withNum){
   if (!n.stars) return "";
   const s = Math.round(n.stars*2)/2, lab = (STARS_T[n.lang] || STARS_T.en) + ": " + String(s).replace(".", n.lang==="en"?".":",") + "/5";
@@ -933,6 +995,7 @@ function chapterIndex(n, seg){ const chs = n.chapters, e = /^extra-(\d+)$/.exec(
 
 /* Reading progress and favourites are saved only in this browser, without accounts. */
 const READ_T = {
+  vec:["I to progressi","Le me leture","No te ghe gnancora scominsià nissun romanso.","Finìo"],
   es:["Tu progreso","Mis lecturas","Todavía no empezaste ninguna novela.","Terminada"],
   ru:["Ваш прогресс","Мои книги","Вы ещё не начали читать ни одного романа.","Прочитано"],
   en:["Your progress","My reading","You haven't started any novel yet.","Finished"],
@@ -963,6 +1026,7 @@ function progressHTML(n){
     <div class="rbar" role="progressbar" aria-label="${esc(rt(0, n.lang))}" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${s.pct}"><i style="width:${s.pct}%"></i></div></div>`;
 }
 const FAV_T = {
+  vec:["Preferìi","Zonta ai preferìi","Cava dai preferìi","No te ghe gnancora romansi preferìi."],
   es:["Favoritos","Añadir a favoritos","Quitar de favoritos","Todavía no tenés novelas favoritas."],
   ru:["Избранное","Добавить в избранное","Убрать из избранного","Вы ещё не добавили романы в избранное."],
   en:["Favourites","Add to favourites","Remove from favourites","No favourite novels yet."],
@@ -1004,6 +1068,7 @@ function myReading(){
 }
 
 const REC_T = {
+  vec:{t:"El consejo del zorno",go:"Lezi"},
   es:{t:"Recomendación del día",go:"Leer"}, ru:{t:"Что почитать сегодня",go:"Читать"}, it:{t:"Il consiglio del giorno",go:"Leggi"},
   en:{t:"Today’s pick",go:"Read"}, de:{t:"Lesetipp des Tages",go:"Lesen"}, fr:{t:"La suggestion du jour",go:"Lire"},
   tr:{t:"Günün önerisi",go:"Oku"}, pt:{t:"Sugestão do dia",go:"Ler"}, cs:{t:"Tip na dnešní čtení",go:"Číst"},
@@ -1041,7 +1106,7 @@ async function renderRec(){
 function home(){
   document.title = t("hero") + " — " + t("author");
   const list = catalog.novels.filter(n => !n.hidden && n.lang === lang).map((n,i)=>[n,i]).sort((a,b)=>(b[0].stars||0)-(a[0].stars||0)||a[1]-b[1]).map(x=>x[0]);
-  const characterLabels = {ru:"Персонажи",es:"Personajes",it:"Personaggi",en:"Characters",de:"Figuren",fr:"Personnages",tr:"Karakterler",pt:"Personagens",cs:"Postavy",pl:"Postacie",sr:"Ликови",eo:"Roluloj",isv:"Postavy",vo:"Pösods",ia:"Personages",ld:"Personajenes",bg:"Герои"};
+  const characterLabels = {vec:"Personagi",ru:"Персонажи",es:"Personajes",it:"Personaggi",en:"Characters",de:"Figuren",fr:"Personnages",tr:"Karakterler",pt:"Personagens",cs:"Postavy",pl:"Postacie",sr:"Ликови",eo:"Roluloj",isv:"Postavy",vo:"Pösods",ia:"Personages",ld:"Personajenes",bg:"Герои"};
   app.innerHTML = `
   <section class="hero wrap">
     <div class="eyebrow">${esc(t("tag"))}</div>
@@ -1050,6 +1115,7 @@ function home(){
     <div class="ornament">✦ ✦ ✦</div>
     <a class="character-entry" href="characters.html" id="charactersEntry">✧ <span id="charactersLabel">Personajes</span> →</a>
     <a class="character-entry" href="#/blog">✎ ${esc(bt("title"))} →</a>
+    ${newsPaper(lang) ? `<a class="character-entry" href="#/news">📰 ${esc(nt("btn"))} →</a>` : ""}
     ${course() ? `<a class="character-entry" href="#/learn">🎓 ${esc(course().title[lang])} →</a>` : ""}
     ${GAME_T[lang] ? `<a class="character-entry" href="#/game">🎲 ${esc(GAME_T[lang].btn)} →</a>` : ""}
     <a class="character-entry" href="#/mis-lecturas">★ ${esc(ft(0))} · ${esc(rt(1))} →</a>
@@ -1060,7 +1126,7 @@ function home(){
       const nch = n.chapters.filter(c => !c.label).length;
       return `<a class="card" href="#/${esc(n.slug)}">${coverHTML(n)}
         <h3>${esc(n.title)}</h3>
-        <div class="meta">${n.genre ? esc(n.genre) + " · " : ""}${esc(t("chapters")(nch))}${n.study ? ` <span class="pill study">${esc(t("study"))}</span>` : ""}${n.wip ? ` <span class="pill wip">${esc(t("wip"))}</span>` : ""}${n.adult ? ' <span class="pill adult">18+</span>' : ""}${!n.adult && n.rating ? ` <span class="pill">${esc(n.rating)}</span>` : ""}</div>${starsHTML(n)}${(s => s.started ? `<div class="rbar sm" title="${esc(rt(0))}: ${s.read} / ${s.total} · ${s.pct}%"><i style="width:${s.pct}%"></i></div>` : "")(readStats(n))}</a>`;
+        <div class="meta">${n.genre ? esc(n.genre) + " · " : ""}${esc(t("chapters")(nch))}${n.study ? ` <span class="pill study">${esc(t("study"))}</span>` : ""}${n.wip ? ` <span class="pill wip">${esc(t("wip"))}</span>` : ` <span class="pill done">✓ ${esc(t("done"))}</span>`}${n.adult ? ' <span class="pill adult">18+</span>' : ""}${!n.adult && n.rating ? ` <span class="pill">${esc(n.rating)}</span>` : ""}</div>${starsHTML(n)}${(s => s.started ? `<div class="rbar sm" title="${esc(rt(0))}: ${s.read} / ${s.total} · ${s.pct}%"><i style="width:${s.pct}%"></i></div>` : "")(readStats(n))}</a>`;
     }).join("")}</div>` : `<div class="empty">${esc(t("empty"))}</div>`}
   </section>`;
   const charactersEntry = document.getElementById("charactersEntry");
@@ -1121,6 +1187,98 @@ async function blogPost(slug){
   mountComments({lang:p.lang, slug:"blog/" + p.lang}, {file:p.slug + ".md"});
 }
 
+/* Satirical newspaper per language: news/catalog.json + news/<lang>/<slug>.md */
+const NEWS_T = {
+  vec:{btn:"Notìsie", back:"← Prima pàxena", from:"Tirada da", read:"Lezi el romanso", more:"Altre notìsie", empty:"Gnancora nissuna notìsia."},
+  es:{btn:"Noticias", back:"← Portada", from:"Basada en", read:"Leer la novela", more:"Más noticias", empty:"Todavía no hay noticias."},
+  it:{btn:"Notizie", back:"← Prima pagina", from:"Tratta da", read:"Leggi il romanzo", more:"Altre notizie", empty:"Ancora nessuna notizia."},
+  en:{btn:"News", back:"← Front page", from:"Based on", read:"Read the novel", more:"More stories", empty:"No stories yet."}
+};
+const nt = k => (NEWS_T[lang] || NEWS_T.en)[k];
+let newsCat = null;
+async function loadNews(){
+  if (!newsCat) { try { const r = await fetch("news/catalog.json", {cache:"no-cache"}); newsCat = r.ok ? await r.json() : {papers:{}, articles:[]}; } catch(e) { newsCat = {papers:{}, articles:[]}; } }
+  return newsCat;
+}
+const newsPaper = l => newsCat && newsCat.papers && newsCat.papers[l];
+function newsNovels(a){ return (a.novels || []).map(s => catalog.novels.find(n => n.slug === s)).filter(Boolean); }
+function newsImg(a){ const n = newsNovels(a)[0]; return a.image || (n && n.cover) || ""; }
+function newsFrom(a){
+  const ns = newsNovels(a); if (!ns.length) return "";
+  return `<span class="np-from">${esc(nt("from"))}: ${ns.map(n => `<b>«${esc(n.title)}»</b>`).join(" · ")}</span>`;
+}
+function newsList(l){
+  return (newsCat.articles || []).filter(a => a.lang === l && !a.hidden)
+    .sort((a, b) => (b.lead ? 1 : 0) - (a.lead ? 1 : 0) || (b.date || "").localeCompare(a.date || ""));
+}
+async function newsIndex(){
+  app.innerHTML = `<div class="loading">…</div>`;
+  await loadNews();
+  const P = newsPaper(lang);
+  if (!P) { app.innerHTML = `<div class="empty">${esc(nt("empty"))}</div>`; return; }
+  document.title = P.name + " — " + t("hero");
+  const list = newsList(lang), lead = list[0], rest = list.slice(1);
+  let today = ""; try { today = new Date().toLocaleDateString(lang, {weekday:"long", year:"numeric", month:"long", day:"numeric"}); } catch(e) {}
+  const img = a => newsImg(a) ? `<div class="np-img"><img src="${esc(newsImg(a))}" alt="" loading="lazy"></div>` : "";
+  app.innerHTML = `
+  <section class="np wrap" lang="${esc(lang)}">
+    <header class="np-mast">
+      <div class="np-kick">${esc(P.edition || "")}</div>
+      <h1 class="np-name">${esc(P.name)}</h1>
+      <p class="np-tag">${esc(P.tagline || "")}</p>
+    </header>
+    <div class="np-line"><span>${esc(today)}</span>${P.gossip ? `<a href="#gos" onclick="document.getElementById('gos').scrollIntoView({behavior:'smooth'});return false">${esc(P.gossip.title)} ↓</a>` : ""}<span>${esc(P.price || "")}</span></div>
+    ${lead ? `<a class="np-lead" href="#/news/${esc(lead.slug)}">
+      <div><span class="np-sec">${esc(lead.section || "")}</span><h2>${esc(lead.title)}</h2>${lead.deck ? `<p>${esc(lead.deck)}</p>` : ""}${newsFrom(lead)}</div>
+      ${img(lead)}</a>` : `<div class="empty">${esc(nt("empty"))}</div>`}
+    ${rest.length ? `<div class="np-grid">${rest.map(a => `<a class="np-card" href="#/news/${esc(a.slug)}">
+      ${img(a)}<span class="np-sec">${esc(a.section || "")} · ${esc(postDate(a.date))}</span>
+      <h3>${esc(a.title)}</h3>${a.deck ? `<p>${esc(a.deck)}</p>` : ""}${newsFrom(a)}</a>`).join("")}</div>` : ""}
+    ${(P.gossip || []).length ? `<section class="np-gos" id="chimentos">
+      <div class="np-gos-head"><h2>${esc(P.gossipTitle || "")}</h2><span class="np-sec">${esc(P.gossipSub || "")}</span></div>
+      <div class="np-gos-grid">${P.gossip.map(g => { const n = catalog.novels.find(x => x.slug === g.novel);
+        return `<p class="np-gos-item">${esc(g.text)}${n ? `<a href="#/${esc(n.slug)}">${esc(nt("from"))} «${esc(n.title)}» →</a>` : ""}</p>`; }).join("")}</div>
+    </section>` : ""}
+    ${P.gossip && (P.gossip.items || []).length ? `<section class="np-gos" id="gos">
+      <div class="np-gos-h"><h2>${esc(P.gossip.title)}</h2><p>${esc(P.gossip.sub || "")}</p></div>
+      <div class="np-gos-list">${P.gossip.items.map(g => { const n = catalog.novels.find(x => x.slug === g.novel);
+        return `<div class="np-gos-item"><h3>${esc(g.title)}</h3><p>${esc(g.text)}</p>${n ? `<a href="#/${esc(n.slug)}">«${esc(n.title)}» →</a>` : ""}</div>`; }).join("")}</div>
+    </section>` : ""}
+    ${P.disclaimer ? `<p class="np-foot">${esc(P.disclaimer)}</p>` : ""}
+  </section>`;
+  window.scrollTo(0, 0);
+}
+async function newsArticle(slug){
+  app.innerHTML = `<div class="loading">…</div>`;
+  await loadNews();
+  const all = newsCat.articles || [];
+  const a = all.find(x => x.slug === slug && x.lang === lang) || all.find(x => x.slug === slug);
+  if (!a) { app.innerHTML = `<div class="empty">${esc(t("notFound"))}</div>`; return; }
+  if (lang !== a.lang && LANGS.includes(a.lang)) setLang(a.lang);
+  const P = newsPaper(a.lang) || {name:nt("btn")};
+  let md = "";
+  try { const r = await fetch(`news/${a.lang}/${a.slug}.md`); if (!r.ok) throw 0; md = await r.text(); } catch(e) { md = "*—*"; }
+  md = md.replace(/^#\s+.*\n+/, "");
+  document.title = a.title + " — " + P.name;
+  const ns = newsNovels(a), im = a.image || "";
+  const more = newsList(a.lang).filter(x => x.slug !== a.slug).slice(0, 4);
+  app.innerHTML = `
+  <div class="reader-bar"><div class="wrap"><a class="crumb" href="#/news">${esc(nt("back"))}</a></div></div>
+  <article class="chapter post np-art" lang="${esc(a.lang)}">
+    <div class="np-paper"><a href="#/news">${esc(P.name)}</a></div>
+    <div class="np-meta"><b>${esc(a.section || "")}</b> · ${esc(postDate(a.date))}</div>
+    <h1>${esc(a.title)}</h1>
+    ${a.deck ? `<p class="np-deck">${esc(a.deck)}</p>` : ""}
+    ${im ? `<figure><img src="${esc(im)}" alt="" loading="lazy"></figure>` : ""}
+    ${renderText(md)}
+    ${ns.map(n => `<a class="np-src" href="#/${esc(n.slug)}">${coverHTML(n)}<div>${esc(nt("from"))}<b>${esc(n.title)}</b><span>${esc(nt("read"))} →</span></div></a>`).join("")}
+  </article>
+  ${more.length ? `<section class="np-more"><h2>${esc(nt("more"))}</h2>${more.map(x => `<a href="#/news/${esc(x.slug)}"><small>${esc(x.section || "")}</small>${esc(x.title)}</a>`).join("")}</section>` : ""}
+  <section class="comments" id="comments"></section>`;
+  window.scrollTo(0, 0);
+  mountComments({lang:a.lang, slug:"news/" + a.lang}, {file:a.slug + ".md"});
+}
+
 function adultOk(n){ return !n.adult || store.get("adult", false); }
 function adultGate(n){
   document.title = UI[n.lang].adultT;
@@ -1153,6 +1311,7 @@ const signedIn = () => false; /* the site has no sign-in */
    that key in localStorage, so the reader types it once. A wrong password simply fails to decrypt. */
 const PW_MARK = "LITMIR-PW1:";
 const PW_T = {
+  vec:["Capìtolo protezù","Par lèzar vanti te serve la password. Scrivi a l’autor e domàndighe la password.","Password","Verzi","Password sbaglià. Prova ancora.","Torna indrìo"],
   it:["Capitolo protetto","Per continuare a leggere ti serve la password. Contatta l’autore e chiedigli la password.","Password","Sblocca","Password errata. Riprova.","Torna indietro"],
   es:["Capítulo protegido","Para seguir leyendo necesitas la contraseña. Contacta al autor y pídele la contraseña.","Contraseña","Desbloquear","Contraseña incorrecta. Inténtalo de nuevo.","Volver"],
   en:["Protected chapter","You need the password to keep reading. Contact the author and ask for the password.","Password","Unlock","Wrong password. Try again.","Go back"],
@@ -1205,6 +1364,7 @@ function pwGate(n, i){
 const chapterLocked = () => false;
 const unitLocked = () => false;
 const LOGIN_T = {
+  vec:["Entra par lèzar vanti","El seguito el xe par i letori registrài. Entrar co Google xe gratis e i to progressi i resta salvài su tuti i dispositivi.","Entra co Google","Torna indrìo"],
   es:["Entra para seguir leyendo","Lo que sigue es para lectores registrados. Registrarse con Google es gratis y tu progreso se guarda en todos tus dispositivos.","Entrar con Google","Volver"],
   ru:["Войдите, чтобы читать дальше","Продолжение доступно зарегистрированным читателям. Вход через Google бесплатный, а ваш прогресс сохраняется на всех устройствах.","Войти через Google","Вернуться"],
   en:["Sign in to keep reading","What comes next is for registered readers. Signing in with Google is free, and your progress is saved on all your devices.","Sign in with Google","Go back"],
@@ -1231,7 +1391,7 @@ function loginGate(back){
   window.scrollTo(0, 0);
 }
 
-const SAGA_W = {ru:"Цикл", es:"Saga", it:"Saga", en:"Series", de:"Reihe", fr:"Saga", tr:"Seri", pt:"Saga", cs:"Série", pl:"Cykl", sr:"Серијал", eo:"Serio", isv:"Serija", vo:"Saga", ia:"Serie", ld:"Seria"};
+const SAGA_W = {vec:"Saga",ru:"Цикл", es:"Saga", it:"Saga", en:"Series", de:"Reihe", fr:"Saga", tr:"Seri", pt:"Saga", cs:"Série", pl:"Cykl", sr:"Серијал", eo:"Serio", isv:"Serija", vo:"Saga", ia:"Serie", ld:"Seria"};
 function sagaHTML(n){
   const all = catalog.series || [], bySlug = Object.fromEntries(catalog.novels.map(x => [x.slug, x]));
   const mine = new Set([n.slug, ...Object.values(n.translations || {})]);
@@ -1289,7 +1449,7 @@ function novelPage(n){
     <div>${coverHTML(n)}</div>
     <div>
       <h1>${esc(n.title)}</h1>
-      <div class="by">${esc(author(n))}${n.genre ? " · " + esc(n.genre) : ""}${n.year ? " · " + esc(n.year) : ""}${n.study ? ` <span class="pill study">${esc(t("study"))}</span>` : ""}${n.wip ? ` <span class="pill wip">${esc(t("wip"))}</span>` : ""}${n.adult ? ' <span class="pill adult">18+</span>' : ""}${!n.adult && n.rating ? ` <span class="pill">${esc(n.rating)}</span>` : ""}</div>
+      <div class="by">${esc(author(n))}${n.genre ? " · " + esc(n.genre) : ""}${n.year ? " · " + esc(n.year) : ""}${n.study ? ` <span class="pill study">${esc(t("study"))}</span>` : ""}${n.wip ? ` <span class="pill wip">${esc(t("wip"))}</span>` : ` <span class="pill done">✓ ${esc(t("done"))}</span>`}${n.adult ? ' <span class="pill adult">18+</span>' : ""}${!n.adult && n.rating ? ` <span class="pill">${esc(n.rating)}</span>` : ""}</div>
       ${n.stars ? `<div class="by">${starsHTML(n, true)} <small>${esc(STARS_T[n.lang] || STARS_T.en)}</small></div>` : ""}
       ${n.description ? `<div class="desc">${esc(n.description)}</div>` : ""}
       ${n.study ? `<div class="notice">📖 ${esc(t("studyNote"))}</div>` : ""}
@@ -1314,7 +1474,7 @@ function novelPage(n){
 
 /* ───────── Long chapters are shown as pages of ~PAGE_CHARS characters ───────── */
 const PAGE_CHARS = 6000, PAGE_MIN_LAST = 1500;
-const PAGE_WORD = {ru:"Страница",es:"Página",it:"Pagina",en:"Page",de:"Seite",fr:"Page",tr:"Sayfa",pt:"Página",cs:"Strana",pl:"Strona",sr:"Strana",eo:"Paĝo",la:"Pagina",sw:"Ukurasa",ia:"Pagina",bg:"Страница",uk:"Сторінка"};
+const PAGE_WORD = {vec:"Pàxena",ru:"Страница",es:"Página",it:"Pagina",en:"Page",de:"Seite",fr:"Page",tr:"Sayfa",pt:"Página",cs:"Strana",pl:"Strona",sr:"Strana",eo:"Paĝo",la:"Pagina",sw:"Ukurasa",ia:"Pagina",bg:"Страница",uk:"Сторінка"};
 function splitPages(md){
   const manual = md.split(/\n[ \t]*<!--\s*pagebreak\s*-->[ \t]*(?:\n|$)/i);
   if (manual.length > 1) return manual;
@@ -2043,6 +2203,7 @@ function route(){
   window.onscroll = null; document.onkeydown = null;
   if (!catalog) return;
   const parts = location.hash.replace(/^#\/?/, "").split("/").filter(Boolean);
+  if (parts[0] === "news") { setSoundtrack(null); return parts[1] ? newsArticle(decodeURIComponent(parts[1])) : newsIndex(); }
   if (parts[0] === "blog") { setSoundtrack(null); return parts[1] ? blogPost(decodeURIComponent(parts[1])) : blogIndex(); }
   if (parts[0] === "mis-lecturas") { setSoundtrack(null); return myReading(); }
   if (parts[0] === "game") { setSoundtrack(null); return game(); }
@@ -2064,7 +2225,7 @@ function route(){
 window.addEventListener("hashchange", route);
 
 applyTheme(); renderChrome();
-Promise.all([fetch("novels/catalog.json", {cache:"no-cache"}).then(r => r.json()), loadLearn()]).then(([j]) => { catalog = j; route(); })
+Promise.all([fetch("novels/catalog.json", {cache:"no-cache"}).then(r => r.json()), loadLearn(), loadNews()]).then(([j]) => { catalog = j; route(); })
   .catch(() => { catalog = {novels:[]}; route(); });
 
 /* Glosses: **palabra**{перевод} shows the translation on hover, focus or tap */
