@@ -1,291 +1,307 @@
 {
- "posts": [
-  {
-   "slug": "cinco-preguntas-al-escritor-2026",
-   "lang": "ru",
-   "title": "Писать, чтобы сказать миру: я существую. Пять вопросов Роберту Фадеру",
-   "date": "2026-10-21",
-   "excerpt": "Пять ответов о потребности писать, неожиданных идеях, надежде и мечте увидеть свои книги на полках магазина."
-  },
-  {
-   "slug": "intervyu-robert-fader-rossiya-i-russkiy-yazyk",
-   "lang": "ru",
-   "title": "Россия, музыка и новая культурная идентичность: интервью с Робертом Фадером",
-   "date": "2026-10-20",
-   "excerpt": "Роберт Фадер рассказывает о музыке Чайковского, первом знакомстве с кириллицей, впечатлениях от Москвы и о том, как Россия повлияла на его жизнь и творчество."
-  },
-  {
-   "slug": "chto-takoe-rezonans-lyubvi",
-   "lang": "ru",
-   "title": "Что такое «Резонанс любви»?",
-   "date": "2026-10-20",
-   "excerpt": "Ожившие сфинксы на Невском, атланты, берущие плату за проход, агенты по небесным делам — и москвичка, которая приехала в Петербург отдохнуть. Рассказываем, о чём новый роман.",
-   "image": "novels/rezonans-lyubvi/cover.jpg"
-  },
-  {
-   "slug": "cinco-preguntas-al-escritor-2026",
-   "lang": "es",
-   "title": "Escribir para decirle al mundo que existo: cinco preguntas a Luis Fader",
-   "date": "2026-10-21",
-   "excerpt": "Cinco respuestas sobre la vocación de escribir, la inspiración espontánea, el optimismo y el sueño de ver sus libros en una librería."
-  },
-  {
-   "slug": "cinco-preguntas-al-escritor-2026",
-   "lang": "en",
-   "title": "Writing to Tell the World I Exist: Five Questions for Luis Fader",
-   "date": "2026-10-21",
-   "excerpt": "Five answers on writing as a need, unexpected inspiration, hope and the dream of finding his books in a bookshop."
-  },
-  {
-   "slug": "cinco-preguntas-al-escritor-2026",
-   "lang": "it",
-   "title": "Scrivere per dire al mondo che esisto: cinque domande a Roberto Fader",
-   "date": "2026-10-21",
-   "excerpt": "Cinque risposte sulla vocazione di scrivere, l'ispirazione inattesa, l'ottimismo e il sogno di vedere i propri libri in libreria."
-  },
-  {
-   "slug": "cinco-preguntas-al-escritor-2026",
-   "lang": "fr",
-   "title": "Écrire pour dire au monde que j'existe : cinq questions à Robert Fader",
-   "date": "2026-10-21",
-   "excerpt": "Cinq réponses sur le besoin d'écrire, l'inspiration inattendue, l'espoir et le rêve de voir ses livres en librairie."
-  },
-  {
-   "slug": "cinco-preguntas-al-escritor-2026",
-   "lang": "de",
-   "title": "Schreiben, um der Welt zu sagen: Ich bin da – fünf Fragen an Robert Fader",
-   "date": "2026-10-21",
-   "excerpt": "Fünf Antworten über die Lust am Schreiben, spontane Ideen, Hoffnung und den Traum von eigenen Büchern im Buchhandel."
-  },
-  {
-   "slug": "cinco-preguntas-al-escritor-2026",
-   "lang": "pt",
-   "title": "Escrever para dizer ao mundo que existo: cinco perguntas a Robert Fader",
-   "date": "2026-10-21",
-   "excerpt": "Cinco respostas sobre a necessidade de escrever, a inspiração espontânea, o otimismo e o sonho de ver os livros numa livraria."
-  },
-  {
-   "slug": "cinco-preguntas-al-escritor-2026",
-   "lang": "cs",
-   "title": "Píšu, abych světu řekl, že existuji: pět otázek pro Roberta Fadera",
-   "date": "2026-10-21",
-   "excerpt": "Pět odpovědí o potřebě psát, nečekané inspiraci, optimismu a snu vidět své knihy v knihkupectví."
-  },
-  {
-   "slug": "cinco-preguntas-al-escritor-2026",
-   "lang": "sr",
-   "title": "Пишем да кажем свету да постојим: пет питања за Роберта Фадера",
-   "date": "2026-10-21",
-   "excerpt": "Пет одговора о потреби за писањем, спонтаној инспирацији, оптимизму и сну о књигама у књижари."
-  },
-  {
-   "slug": "cinco-preguntas-al-escritor-2026",
-   "lang": "tr",
-   "title": "Dünyaya var olduğumu söylemek için yazıyorum: Robert Fader'e beş soru",
-   "date": "2026-10-21",
-   "excerpt": "Yazma ihtiyacı, beklenmedik ilham, umut ve kitaplarını kitabevinde görme hayali üzerine beş yanıt."
-  },
-  {
-   "slug": "cinco-preguntas-al-escritor-2026",
-   "lang": "eo",
-   "title": "Verki por diri al la mondo, ke mi ekzistas: kvin demandoj al Robert Fader",
-   "date": "2026-10-21",
-   "excerpt": "Kvin respondoj pri la bezono verki, spontanea inspiro, espero kaj la revo vidi siajn librojn en librovendejo."
-  },
-  {
-   "slug": "cinco-preguntas-al-escritor-2026",
-   "lang": "ia",
-   "title": "Scriber pro dicer al mundo que io existe: cinque questiones a Robert Fader",
-   "date": "2026-10-21",
-   "excerpt": "Cinque responsas super le necessitate de scriber, inspiration spontane, sperantia e le sonio de vider su libros in librerias."
-  },
-  {
-   "slug": "cinco-preguntas-al-escritor-2026",
-   "lang": "isv",
-   "title": "Pisati, da by skazati světu, že ja jesm: pet pytanj Robertu Faderu",
-   "date": "2026-10-21",
-   "excerpt": "Pet odgovorov o potrebě pisanja, inspiraciji, optimizmu i snu o knigah v knigarni."
-  },
-  {
-   "slug": "cinco-preguntas-al-escritor-2026",
-   "lang": "vo",
-   "title": "Penön ad sagön at vol, das eg binob: lul pöls pro Robert Fader",
-   "date": "2026-10-21",
-   "excerpt": "Lul respondis dö penam, ideas, spel e drem dö buks in bukiselöp."
-  },
-  {
-   "slug": "intervju-s-natalijeju",
-   "lang": "isv",
-   "title": "„Utopija jest kako slonova kost“: intervju s Natalijeju",
-   "date": "2026-10-21",
-   "excerpt": "Medicinska sestra iz romana „Prědčutje“ govori o Robertovyh viděnjah, o lažnoj svobodě divjakov i o tom, čego najbolje boji se v Tvrdynji Světla.",
-   "image": "novels/predcutje/cover.jpg"
-  },
-  {
-   "slug": "intervjuo-kun-natalia",
-   "lang": "eo",
-   "title": "«Mi ludis por la malpleno, nun mi ludas por homoj»: intervjuo kun Natalia",
-   "date": "2026-10-21",
-   "excerpt": "La violonĉelistino de «La Antaŭsento» rakontas, kial ŝi kredis je Nia Utopio, kion ŝi sentis en Nova Misio kaj kial ŝi silente ĉirkaŭprenis Robert antaŭ la Konsilio.",
-   "image": "novels/la-antausento/cover.jpg"
-  },
-  {
-   "slug": "sakeds-lul-pro-natalia",
-   "lang": "vo",
-   "title": "«No binob doktor pro drem olik!» — Säkeds lul pro Natalia",
-   "date": "2026-10-21",
-   "excerpt": "Natalia, doktor in «FÖT LÄTIK», sagof dö Robert, dö kastel in muns, dö vät e dö spel.",
-   "image": "novels/fot-latik/cover.jpg"
-  },
-  {
-   "slug": "interview-con-natalia",
-   "lang": "ia",
-   "title": "«Tu me ha attendite»: interview con Natalia, le violoncellista del sonios",
-   "date": "2026-10-21",
-   "excerpt": "Illa non ha ancora arrivate a Nostre Utopia. Natalia parla del sonios de Robert, de Katerina e del question: pote on salvar le mundo e le personas que on ama?",
-   "image": "novels/le-presentimento/cover.jpg"
-  },
-  {
-   "slug": "intervista-maschera-di-venezia-roberto-fader",
-   "lang": "it",
-   "title": "«L’amore, di per sé, è un mistero»: Roberto Fader racconta «Maschera di Venezia»",
-   "date": "2026-10-21",
-   "excerpt": "Roberto Fader racconta Venezia, il Carnevale notturno, Natalia e il romanticismo che anima il suo romanzo.",
-   "image": "novels/maschera-di-venezia/cover.jpg"
-  },
-  {
-   "slug": "resenha-mundo-turquesa",
-   "lang": "pt",
-   "title": "«Mundo Turquesa»: uma utopia que aprende a trocar muros por pontes",
-   "date": "2026-10-21",
-   "excerpt": "Muralhas turquesa, uma cisterna antes de qualquer torre e vilões que chamam liberdade ao medo. A nossa resenha do romance pós-apocalíptico de Robert Fader.",
-   "image": "novels/mundo-turquesa/cover.jpg"
-  },
-  {
-   "slug": "rosa-ile-soylesi",
-   "lang": "tr",
-   "title": "“Çöl kimseye ait değildir, ben de”: Rosa ile söyleşi",
-   "date": "2026-10-21",
-   "excerpt": "«Çöl Gülü»nün kahramanı Rosa; madenlerden kaçışını, turkuaz kaleyi, Robert'i, defterindeki isimleri ve sadık köpeği Kum'u anlatıyor.",
-   "image": "blog/tr/img/rosa-portre.webp"
-  },
-  {
-   "slug": "intervju-sa-natasom",
-   "lang": "sr",
-   "title": "„Мој град није на продају“: интервју са Наташом",
-   "date": "2026-10-20",
-   "excerpt": "Јунакиња романа „Дивљи час“ говори о љубави према Луису, о љубомори без резервног излаза и о угњетачима који мисле да се Београд може купити.",
-   "image": "blog/sr/img/natasa-naslovna.webp"
-  },
-  {
-   "slug": "entretien-avec-camille",
-   "lang": "fr",
-   "title": "« Un mur gris, c'est une prison. Un mur turquoise, c'est un rêve qu'on protège » : entretien avec Camille",
-   "date": "2026-10-20",
-   "excerpt": "L'héroïne de « Rêve turquoise » raconte pourquoi, après la fin du monde, elle a décidé de construire une forteresse — et un monde nouveau — au fond d'une vallée perdue.",
-   "image": "novels/reve-turquoise/cover.jpg"
-  },
-  {
-   "slug": "lucie-o-podzemnim-tajemstvi",
-   "lang": "cs",
-   "title": "„Pravidla jsou pravidla – ale srdce má svoje“: Lucie o Podzemním tajemství",
-   "date": "2026-10-23",
-   "excerpt": "Průvodkyně Lucie vypráví o babiččině klíči, o strachu, který vypadal jako žárlivost, o pádu z žebříku do Markových rukou a o tom, proč má teď ráda i výjimky.",
-   "image": "blog/cs/img/lucie-terasa.jpg"
-  },
-  {
-   "slug": "jana-o-podzemnim-tajemstvi",
-   "lang": "cs",
-   "title": "„Jsem krásná v dlouhé i krátké sukni“: Jana o Podzemním tajemství",
-   "date": "2026-10-20",
-   "excerpt": "Jana vzpomíná na první kávu s Luisem, na mámu a bordó sukni, na hlas princezny Ludmily i na nejdůležitější větu v češtině. Upřímně o lásce, strachu a odpuštění.",
-   "image": "blog/cs/img/jana.webp"
-  },
-  {
-   "slug": "interview-mit-oxana",
-   "lang": "de",
-   "title": "„Ich habe nicht gefragt, weil ich die Antwort kannte“: ein Interview mit Oxana",
-   "date": "2026-10-20",
-   "excerpt": "Die Ingenieurin aus „Vorahnung“ spricht über Roberts Vergangenheit, die Nacht ohne Strom, die Frau mit den roten Haaren – und warum sie am Ende seine Hand nicht genommen hat.",
-   "image": "novels/vorahnung/cover.jpg"
-  },
-  {
-   "slug": "entrevista-la-corazonada-optimismo",
-   "lang": "es",
-   "title": "«La Corazonada es optimismo»: entrevista con Luis Fader",
-   "date": "2026-10-20",
-   "excerpt": "Luis Fader habla de Natalia, la ausencia que inspiró La Corazonada, su reescritura en español y la esperanza de construir un mundo más humano.",
-   "image": "novels/la-corazonada/cover-v4.jpg"
-  },
-  {
-   "slug": "intervjuo-robert-fader-esperanto-kaj-utopio",
-   "lang": "eo",
-   "title": "«Esperanto estas por mi lingvo de espero»: intervjuo kun Robert Fader",
-   "date": "2026-10-20",
-   "excerpt": "Robert Fader rakontas kial li verkis La antaŭsenton en Esperanto, pri Volapuko en la romano, la konstruado de Utopio kaj la solidareco de esperantistoj, kiu iam savis lian vivon.",
-   "image": "novels/la-antausento/cover.jpg"
-  },
-  {
-   "slug": "robert-fader-col-gulu-soylesi",
-   "lang": "tr",
-   "title": "“Aşk, çölün ortasında bile bir gülü yeniden yeşertebilir”: Robert Fader ile Çöl Gülü üzerine söyleşi",
-   "date": "2026-10-20",
-   "excerpt": "Robert Fader, Gülgül'den aldığı ilhamı, Presentimiento ile Çöl Gülü arasındaki bağı ve yıkılmış bir dünyada bile aşkın yeniden doğuşunu anlatıyor.",
-   "image": "novels/col-gulu/cover.jpg"
-  },
-  {
-   "slug": "intervista-luis-fader-italiano",
-   "lang": "it",
-   "title": "Dall'indifferenza all'amore per l'italiano: intervista a Roberto Fader",
-   "date": "2026-10-20",
-   "excerpt": "Roberto Fader racconta il suo rapporto con l'italiano: dalla delusione iniziale alla scoperta della lingua, fino all'insegnamento, alla scrittura e alla musica."
-  },
-  {
-   "slug": "interview-luis-fader-love-and-magic",
-   "lang": "en",
-   "title": "Writing, Love and the Dream of a Better World: An Interview with Luis Fader",
-   "date": "2026-10-20",
-   "excerpt": "Luis Fader talks about childhood stories, teaching languages, romance and his hope for a better world."
-  },
-  {
-   "slug": "a-man-from-the-future",
-   "lang": "en",
-   "title": "A Man from the Future: travelling a thousand years to learn how to love",
-   "date": "2026-10-20",
-   "excerpt": "Moscow, 3024: a world without women, a lonely man and a red time machine. Why Luis Fader's easy reader is a funny, tender story about learning to listen — and a perfect first novel in English.",
-   "image": "novels/a-man-from-the-future/cover.jpg"
-  },
-  {
-   "slug": "la-voix",
-   "lang": "fr",
-   "title": "« La voix » : écouter, dans un monde qui fait trop de bruit",
-   "date": "2026-10-20",
-   "excerpt": "Des dauphins disparus, une employée de bureau qui entend une voix venue de la mer, une ville abandonnée par ses dirigeants. Ce que le roman de Robert Fader nous dit sur l'écoute, l'amitié et le prix de la lumière.",
-   "image": "novels/la-voix/cover.jpg"
-  },
-  {
-   "slug": "col-gulu-birgule",
-   "lang": "tr",
-   "title": "Bir gül, bir çöl gülü: «Çöl Gülü» Birgül'e bir saygı duruşudur",
-   "date": "2026-10-20",
-   "excerpt": "Rosa'nın adı, çöl gülü ve kendiliğinden açan aşk: «Çöl Gülü», ruhumun hâlâ âşık olduğu Birgül'e yazılmış bir mektuptur.",
-   "image": "novels/col-gulu/cover.jpg"
-  },
-  {
-   "slug": "presentimento-psicologia-e-filosofia",
-   "lang": "it",
-   "title": "Costruire un mondo nuovo con un cuore vecchio: la psicologia e la filosofia di «Presentimento»",
-   "date": "2026-10-20",
-   "excerpt": "Un'utopia nel deserto, un leader che soffre per le sue vittorie, cuori che non seguono i piani. Che cosa ci racconta «Presentimento» sulla natura umana, sulla violenza e sull'amore come scelta libera.",
-   "image": "novels/presentimento/cover.jpg"
-  },
-  {
-   "slug": "entrevista-misterio-de-los-fader",
-   "lang": "es",
-   "title": "«El amor y la magia son inseparables»: entrevista con Luis Fader",
-   "date": "2026-10-20",
-   "excerpt": "Luis Fader habla sobre Mendoza, Natalia y el desenlace de «El misterio de los Fader» en el anfiteatro Frank Romero Day.",
-   "image": "blog/img/entrevista-misterio-de-los-fader.jpg"
-  }
- ]
+  "posts": [
+    {
+      "slug": "intervista-natalia-stregoneria-veneziana",
+      "lang": "it",
+      "title": "«Gelosa? Io? Per favore.»: Natalia racconta la stregoneria veneziana",
+      "date": "2026-10-30",
+      "excerpt": "La veneziana dall’abito blu notte ricorda la macchina sotto la città, la notte del mate, piazza San Marco e le parole di Roberto. È ancora offesa con Luis. E giura di non essere gelosa di Nataša.",
+      "image": "characters/img/natalia-venice-1.jpg"
+    },
+    {
+      "slug": "esperanto-kiel-ponto-inter-homoj",
+      "lang": "eo",
+      "title": "Esperanto kiel ponto inter homoj: intervjuo kun Robert Fader",
+      "date": "2026-10-24",
+      "excerpt": "Robert Fader parolas pri sia unua renkonto kun Esperanto, pri lingvoj kiel ponto inter homoj kaj pri sia espero por la estonteco.",
+      "image": "novels/la-antausento/cover.jpg"
+    },
+    {
+      "slug": "cinco-preguntas-al-escritor-2026",
+      "lang": "ru",
+      "title": "Писать, чтобы сказать миру: я существую. Пять вопросов Роберту Фадеру",
+      "date": "2026-10-21",
+      "excerpt": "Пять ответов о потребности писать, неожиданных идеях, надежде и мечте увидеть свои книги на полках магазина."
+    },
+    {
+      "slug": "intervyu-robert-fader-rossiya-i-russkiy-yazyk",
+      "lang": "ru",
+      "title": "Россия, музыка и новая культурная идентичность: интервью с Робертом Фадером",
+      "date": "2026-10-20",
+      "excerpt": "Роберт Фадер рассказывает о музыке Чайковского, первом знакомстве с кириллицей, впечатлениях от Москвы и о том, как Россия повлияла на его жизнь и творчество."
+    },
+    {
+      "slug": "chto-takoe-rezonans-lyubvi",
+      "lang": "ru",
+      "title": "Что такое «Резонанс любви»?",
+      "date": "2026-10-20",
+      "excerpt": "Ожившие сфинксы на Невском, атланты, берущие плату за проход, агенты по небесным делам — и москвичка, которая приехала в Петербург отдохнуть. Рассказываем, о чём новый роман.",
+      "image": "novels/rezonans-lyubvi/cover.jpg"
+    },
+    {
+      "slug": "cinco-preguntas-al-escritor-2026",
+      "lang": "es",
+      "title": "Escribir para decirle al mundo que existo: cinco preguntas a Luis Fader",
+      "date": "2026-10-21",
+      "excerpt": "Cinco respuestas sobre la vocación de escribir, la inspiración espontánea, el optimismo y el sueño de ver sus libros en una librería."
+    },
+    {
+      "slug": "cinco-preguntas-al-escritor-2026",
+      "lang": "en",
+      "title": "Writing to Tell the World I Exist: Five Questions for Luis Fader",
+      "date": "2026-10-21",
+      "excerpt": "Five answers on writing as a need, unexpected inspiration, hope and the dream of finding his books in a bookshop."
+    },
+    {
+      "slug": "cinco-preguntas-al-escritor-2026",
+      "lang": "it",
+      "title": "Scrivere per dire al mondo che esisto: cinque domande a Roberto Fader",
+      "date": "2026-10-21",
+      "excerpt": "Cinque risposte sulla vocazione di scrivere, l'ispirazione inattesa, l'ottimismo e il sogno di vedere i propri libri in libreria."
+    },
+    {
+      "slug": "cinco-preguntas-al-escritor-2026",
+      "lang": "fr",
+      "title": "Écrire pour dire au monde que j'existe : cinq questions à Robert Fader",
+      "date": "2026-10-21",
+      "excerpt": "Cinq réponses sur le besoin d'écrire, l'inspiration inattendue, l'espoir et le rêve de voir ses livres en librairie."
+    },
+    {
+      "slug": "cinco-preguntas-al-escritor-2026",
+      "lang": "de",
+      "title": "Schreiben, um der Welt zu sagen: Ich bin da – fünf Fragen an Robert Fader",
+      "date": "2026-10-21",
+      "excerpt": "Fünf Antworten über die Lust am Schreiben, spontane Ideen, Hoffnung und den Traum von eigenen Büchern im Buchhandel."
+    },
+    {
+      "slug": "cinco-preguntas-al-escritor-2026",
+      "lang": "pt",
+      "title": "Escrever para dizer ao mundo que existo: cinco perguntas a Robert Fader",
+      "date": "2026-10-21",
+      "excerpt": "Cinco respostas sobre a necessidade de escrever, a inspiração espontânea, o otimismo e o sonho de ver os livros numa livraria."
+    },
+    {
+      "slug": "cinco-preguntas-al-escritor-2026",
+      "lang": "cs",
+      "title": "Píšu, abych světu řekl, že existuji: pět otázek pro Roberta Fadera",
+      "date": "2026-10-21",
+      "excerpt": "Pět odpovědí o potřebě psát, nečekané inspiraci, optimismu a snu vidět své knihy v knihkupectví."
+    },
+    {
+      "slug": "cinco-preguntas-al-escritor-2026",
+      "lang": "sr",
+      "title": "Пишем да кажем свету да постојим: пет питања за Роберта Фадера",
+      "date": "2026-10-21",
+      "excerpt": "Пет одговора о потреби за писањем, спонтаној инспирацији, оптимизму и сну о књигама у књижари."
+    },
+    {
+      "slug": "cinco-preguntas-al-escritor-2026",
+      "lang": "tr",
+      "title": "Dünyaya var olduğumu söylemek için yazıyorum: Robert Fader'e beş soru",
+      "date": "2026-10-21",
+      "excerpt": "Yazma ihtiyacı, beklenmedik ilham, umut ve kitaplarını kitabevinde görme hayali üzerine beş yanıt."
+    },
+    {
+      "slug": "cinco-preguntas-al-escritor-2026",
+      "lang": "eo",
+      "title": "Verki por diri al la mondo, ke mi ekzistas: kvin demandoj al Robert Fader",
+      "date": "2026-10-21",
+      "excerpt": "Kvin respondoj pri la bezono verki, spontanea inspiro, espero kaj la revo vidi siajn librojn en librovendejo."
+    },
+    {
+      "slug": "cinco-preguntas-al-escritor-2026",
+      "lang": "ia",
+      "title": "Scriber pro dicer al mundo que io existe: cinque questiones a Robert Fader",
+      "date": "2026-10-21",
+      "excerpt": "Cinque responsas super le necessitate de scriber, inspiration spontane, sperantia e le sonio de vider su libros in librerias."
+    },
+    {
+      "slug": "cinco-preguntas-al-escritor-2026",
+      "lang": "isv",
+      "title": "Pisati, da by skazati světu, že ja jesm: pet pytanj Robertu Faderu",
+      "date": "2026-10-21",
+      "excerpt": "Pet odgovorov o potrebě pisanja, inspiraciji, optimizmu i snu o knigah v knigarni."
+    },
+    {
+      "slug": "cinco-preguntas-al-escritor-2026",
+      "lang": "vo",
+      "title": "Penön ad sagön at vol, das eg binob: lul pöls pro Robert Fader",
+      "date": "2026-10-21",
+      "excerpt": "Lul respondis dö penam, ideas, spel e drem dö buks in bukiselöp."
+    },
+    {
+      "slug": "intervju-s-natalijeju",
+      "lang": "isv",
+      "title": "„Utopija jest kako slonova kost“: intervju s Natalijeju",
+      "date": "2026-10-21",
+      "excerpt": "Medicinska sestra iz romana „Prědčutje“ govori o Robertovyh viděnjah, o lažnoj svobodě divjakov i o tom, čego najbolje boji se v Tvrdynji Světla.",
+      "image": "novels/predcutje/cover.jpg"
+    },
+    {
+      "slug": "intervjuo-kun-natalia",
+      "lang": "eo",
+      "title": "«Mi ludis por la malpleno, nun mi ludas por homoj»: intervjuo kun Natalia",
+      "date": "2026-10-21",
+      "excerpt": "La violonĉelistino de «La Antaŭsento» rakontas, kial ŝi kredis je Nia Utopio, kion ŝi sentis en Nova Misio kaj kial ŝi silente ĉirkaŭprenis Robert antaŭ la Konsilio.",
+      "image": "novels/la-antausento/cover.jpg"
+    },
+    {
+      "slug": "sakeds-lul-pro-natalia",
+      "lang": "vo",
+      "title": "«No binob doktor pro drem olik!» — Säkeds lul pro Natalia",
+      "date": "2026-10-21",
+      "excerpt": "Natalia, doktor in «FÖT LÄTIK», sagof dö Robert, dö kastel in muns, dö vät e dö spel.",
+      "image": "novels/fot-latik/cover.jpg"
+    },
+    {
+      "slug": "interview-con-natalia",
+      "lang": "ia",
+      "title": "«Tu me ha attendite»: interview con Natalia, le violoncellista del sonios",
+      "date": "2026-10-21",
+      "excerpt": "Illa non ha ancora arrivate a Nostre Utopia. Natalia parla del sonios de Robert, de Katerina e del question: pote on salvar le mundo e le personas que on ama?",
+      "image": "novels/le-presentimento/cover.jpg"
+    },
+    {
+      "slug": "intervista-maschera-di-venezia-roberto-fader",
+      "lang": "it",
+      "title": "«L’amore, di per sé, è un mistero»: Roberto Fader racconta «Maschera di Venezia»",
+      "date": "2026-10-21",
+      "excerpt": "Roberto Fader racconta Venezia, il Carnevale notturno, Natalia e il romanticismo che anima il suo romanzo.",
+      "image": "novels/maschera-di-venezia/cover.jpg"
+    },
+    {
+      "slug": "resenha-mundo-turquesa",
+      "lang": "pt",
+      "title": "«Mundo Turquesa»: uma utopia que aprende a trocar muros por pontes",
+      "date": "2026-10-21",
+      "excerpt": "Muralhas turquesa, uma cisterna antes de qualquer torre e vilões que chamam liberdade ao medo. A nossa resenha do romance pós-apocalíptico de Robert Fader.",
+      "image": "novels/mundo-turquesa/cover.jpg"
+    },
+    {
+      "slug": "rosa-ile-soylesi",
+      "lang": "tr",
+      "title": "“Çöl kimseye ait değildir, ben de”: Rosa ile söyleşi",
+      "date": "2026-10-21",
+      "excerpt": "«Çöl Gülü»nün kahramanı Rosa; madenlerden kaçışını, turkuaz kaleyi, Robert'i, defterindeki isimleri ve sadık köpeği Kum'u anlatıyor.",
+      "image": "blog/tr/img/rosa-portre.webp"
+    },
+    {
+      "slug": "intervju-sa-natasom",
+      "lang": "sr",
+      "title": "„Мој град није на продају“: интервју са Наташом",
+      "date": "2026-10-20",
+      "excerpt": "Јунакиња романа „Дивљи час“ говори о љубави према Луису, о љубомори без резервног излаза и о угњетачима који мисле да се Београд може купити.",
+      "image": "blog/sr/img/natasa-naslovna.webp"
+    },
+    {
+      "slug": "entretien-avec-camille",
+      "lang": "fr",
+      "title": "« Un mur gris, c'est une prison. Un mur turquoise, c'est un rêve qu'on protège » : entretien avec Camille",
+      "date": "2026-10-20",
+      "excerpt": "L'héroïne de « Rêve turquoise » raconte pourquoi, après la fin du monde, elle a décidé de construire une forteresse — et un monde nouveau — au fond d'une vallée perdue.",
+      "image": "novels/reve-turquoise/cover.jpg"
+    },
+    {
+      "slug": "lucie-o-podzemnim-tajemstvi",
+      "lang": "cs",
+      "title": "„Pravidla jsou pravidla – ale srdce má svoje“: Lucie o Podzemním tajemství",
+      "date": "2026-10-23",
+      "excerpt": "Průvodkyně Lucie vypráví o babiččině klíči, o strachu, který vypadal jako žárlivost, o pádu z žebříku do Markových rukou a o tom, proč má teď ráda i výjimky.",
+      "image": "blog/cs/img/lucie-terasa.jpg"
+    },
+    {
+      "slug": "jana-o-podzemnim-tajemstvi",
+      "lang": "cs",
+      "title": "„Jsem krásná v dlouhé i krátké sukni“: Jana o Podzemním tajemství",
+      "date": "2026-10-20",
+      "excerpt": "Jana vzpomíná na první kávu s Luisem, na mámu a bordó sukni, na hlas princezny Ludmily i na nejdůležitější větu v češtině. Upřímně o lásce, strachu a odpuštění.",
+      "image": "blog/cs/img/jana.webp"
+    },
+    {
+      "slug": "interview-mit-oxana",
+      "lang": "de",
+      "title": "„Ich habe nicht gefragt, weil ich die Antwort kannte“: ein Interview mit Oxana",
+      "date": "2026-10-20",
+      "excerpt": "Die Ingenieurin aus „Vorahnung“ spricht über Roberts Vergangenheit, die Nacht ohne Strom, die Frau mit den roten Haaren – und warum sie am Ende seine Hand nicht genommen hat.",
+      "image": "novels/vorahnung/cover.jpg"
+    },
+    {
+      "slug": "entrevista-la-corazonada-optimismo",
+      "lang": "es",
+      "title": "«La Corazonada es optimismo»: entrevista con Luis Fader",
+      "date": "2026-10-20",
+      "excerpt": "Luis Fader habla de Natalia, la ausencia que inspiró La Corazonada, su reescritura en español y la esperanza de construir un mundo más humano.",
+      "image": "novels/la-corazonada/cover-v4.jpg"
+    },
+    {
+      "slug": "intervjuo-robert-fader-esperanto-kaj-utopio",
+      "lang": "eo",
+      "title": "«Esperanto estas por mi lingvo de espero»: intervjuo kun Robert Fader",
+      "date": "2026-10-20",
+      "excerpt": "Robert Fader rakontas kial li verkis La antaŭsenton en Esperanto, pri Volapuko en la romano, la konstruado de Utopio kaj la solidareco de esperantistoj, kiu iam savis lian vivon.",
+      "image": "novels/la-antausento/cover.jpg"
+    },
+    {
+      "slug": "robert-fader-col-gulu-soylesi",
+      "lang": "tr",
+      "title": "“Aşk, çölün ortasında bile bir gülü yeniden yeşertebilir”: Robert Fader ile Çöl Gülü üzerine söyleşi",
+      "date": "2026-10-20",
+      "excerpt": "Robert Fader, Gülgül'den aldığı ilhamı, Presentimiento ile Çöl Gülü arasındaki bağı ve yıkılmış bir dünyada bile aşkın yeniden doğuşunu anlatıyor.",
+      "image": "novels/col-gulu/cover.jpg"
+    },
+    {
+      "slug": "intervista-luis-fader-italiano",
+      "lang": "it",
+      "title": "Dall'indifferenza all'amore per l'italiano: intervista a Roberto Fader",
+      "date": "2026-10-20",
+      "excerpt": "Roberto Fader racconta il suo rapporto con l'italiano: dalla delusione iniziale alla scoperta della lingua, fino all'insegnamento, alla scrittura e alla musica."
+    },
+    {
+      "slug": "interview-luis-fader-love-and-magic",
+      "lang": "en",
+      "title": "Writing, Love and the Dream of a Better World: An Interview with Luis Fader",
+      "date": "2026-10-20",
+      "excerpt": "Luis Fader talks about childhood stories, teaching languages, romance and his hope for a better world."
+    },
+    {
+      "slug": "a-man-from-the-future",
+      "lang": "en",
+      "title": "A Man from the Future: travelling a thousand years to learn how to love",
+      "date": "2026-10-20",
+      "excerpt": "Moscow, 3024: a world without women, a lonely man and a red time machine. Why Luis Fader's easy reader is a funny, tender story about learning to listen — and a perfect first novel in English.",
+      "image": "novels/a-man-from-the-future/cover.jpg"
+    },
+    {
+      "slug": "la-voix",
+      "lang": "fr",
+      "title": "« La voix » : écouter, dans un monde qui fait trop de bruit",
+      "date": "2026-10-20",
+      "excerpt": "Des dauphins disparus, une employée de bureau qui entend une voix venue de la mer, une ville abandonnée par ses dirigeants. Ce que le roman de Robert Fader nous dit sur l'écoute, l'amitié et le prix de la lumière.",
+      "image": "novels/la-voix/cover.jpg"
+    },
+    {
+      "slug": "col-gulu-birgule",
+      "lang": "tr",
+      "title": "Bir gül, bir çöl gülü: «Çöl Gülü» Birgül'e bir saygı duruşudur",
+      "date": "2026-10-20",
+      "excerpt": "Rosa'nın adı, çöl gülü ve kendiliğinden açan aşk: «Çöl Gülü», ruhumun hâlâ âşık olduğu Birgül'e yazılmış bir mektuptur.",
+      "image": "novels/col-gulu/cover.jpg"
+    },
+    {
+      "slug": "presentimento-psicologia-e-filosofia",
+      "lang": "it",
+      "title": "Costruire un mondo nuovo con un cuore vecchio: la psicologia e la filosofia di «Presentimento»",
+      "date": "2026-10-20",
+      "excerpt": "Un'utopia nel deserto, un leader che soffre per le sue vittorie, cuori che non seguono i piani. Che cosa ci racconta «Presentimento» sulla natura umana, sulla violenza e sull'amore come scelta libera.",
+      "image": "novels/presentimento/cover.jpg"
+    },
+    {
+      "slug": "entrevista-misterio-de-los-fader",
+      "lang": "es",
+      "title": "«El amor y la magia son inseparables»: entrevista con Luis Fader",
+      "date": "2026-10-20",
+      "excerpt": "Luis Fader habla sobre Mendoza, Natalia y el desenlace de «El misterio de los Fader» en el anfiteatro Frank Romero Day.",
+      "image": "blog/img/entrevista-misterio-de-los-fader.jpg"
+    }
+  ]
 }

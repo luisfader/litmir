@@ -54,7 +54,7 @@ Otevře oči. Jsou suché.
 
 Žena vstane. Natáhne se pro starý vojenský kabát, který visí na **hřebíku**{clavo|nail} u dveří. Ten, který si vzala z Jihlavy, když utíkala. V jeho kapse má pořád **svazek**{fajo|bundle} papírů, které tam ukradla. Kódy. Frekvence. Všechny frekvence, kterými Mocnost řídí své drony.
 
-Šest let je nosila u sebe a čekala, k čemu budou.
+Poslední dva roky schovávala poznámky ve švu kabátu. Některé kódy mohly být zastaralé, ale znala vojenské frekvence a označení dronů. Doufala, že jí jednou pomohou najít cestu ven.
 
 „Kolik lidí můžeme mít připravených do **svítání**{amanecer|dawn}?“ zeptá se.
 
@@ -78,7 +78,7 @@ Ještě se otočí ke stolu. K mladému muži se sešitou rukou.
 
 Pak otevře dveře do deště.
 
-Venku na ni čekají lidé. Tři sta lidí s bílým křížem na rukávech, s puškami, s lékařskými kufry, se starými nákladními auty. Lidé, které vyvedla ze sklepů v Jihlavě. Lidé, kterým zašila rány.
+Venku na ni čekají lidé. Tři sta lékařů, řidičů a ozbrojených dobrovolníků se starými nákladními auty. Zdravotníci s bílými kříži připravují nosítka a kufry s léky, zatímco ostatní kontrolují zbraně. Jsou to lidé, které vyvedla ze sklepů v Jihlavě. Lidé, kterým zašila rány.
 
 Žena se na ně podívá. A řekne jen jedno slovo.
 

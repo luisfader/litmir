@@ -6,7 +6,7 @@
 
 ## Evaluación autocorregible · 15 preguntas · 100 puntos
 
-Respondé las 15 preguntas y pulsá «Calificar módulo». Podés repetir el examen para mejorar tu mejor nota.
+Responde las 15 preguntas y pulsa «Calificar módulo». Puedes repetir el examen para mejorar tu mejor nota.
 
 ## Test · Comprensión lectora
 
@@ -20,7 +20,7 @@ Respondé las 15 preguntas y pulsá «Calificar módulo». Podés repetir el exa
 
 5. Marcos siente miedo al agua. ( V / F ){V}
 
-## Elegí la respuesta correcta
+## Elige la respuesta correcta
 
 6. ¿Qué vagón visita después del restaurante? [[*La biblioteca|La locomotora]]
 
@@ -46,4 +46,4 @@ Respondé las 15 preguntas y pulsá «Calificar módulo». Podés repetir el exa
 
 ## Producción escrita
 
-Describí dos vagones utilizando **hay**, **estar**, **tener** y adjetivos. Después, explicá qué harías vos si encontraras una pista misteriosa.
+Describe dos vagones utilizando **hay**, **estar**, **tener** y adjetivos. Después, explica qué harías tú si encontraras una pista misteriosa.

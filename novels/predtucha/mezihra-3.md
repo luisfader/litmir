@@ -15,7 +15,7 @@ Jedna písnička byla moje nejmilejší. Neznám nikoho jiného, kdo by ji znal.
 *Řeka teče, kámen stojí,*
 *vítr jde a les se bojí.*
 *Kdo má pole, kdo má chléb,*
-*ten se nebojí, i když zeb.*
+*ten se nezalekne běd.*
 
 *Otec **orá**{ara|plows}, máti šije,*
 *dokud srdce v hrudi bije.*

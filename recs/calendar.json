@@ -1,0 +1,73 @@
+{
+  "_doc": "Recomendación del día. «date» = MM-DD (cada año); «easter» = días respecto al Domingo de Pascua (-47 = martes de Carnaval); «month» = recomendación para todo el mes cuando ese día no hay efeméride. El idioma sale de la novela (slug). Si no hay nada, la portada elige una novela al azar del día.",
+  "events": [
+    {"date": "01-10", "slug": "el-misterio-de-los-fader", "why": "Un 10 de enero de 1934, un aluvión del río Mendoza arrasó la usina hidroeléctrica Fader de Cacheuta. Esa historia —y la de toda la familia Fader— late en esta novela."},
+    {"date": "02-14", "slug": "el-impostor", "why": "Es San Valentín: el día perfecto para una comedia romántica en la que una propuesta de matrimonio fracasa… porque lo manda el horóscopo."},
+    {"date": "02-28", "slug": "operacion-londres", "why": "Un 28 de febrero de 1935 murió el pintor Fernando Fader en Loza Corral, Córdoba. Uno de los capítulos de esta novela ocurre ese mismo día, en su casa."},
+    {"date": "04-02", "slug": "operacion-londres", "why": "2 de abril: Día del Veterano y de los Caídos en la Guerra de Malvinas. La novela empieza un 2 de abril en Mendoza y recuerda a los conscriptos que fueron a las islas en 1982."},
+    {"date": "04-11", "slug": "el-misterio-de-los-fader", "why": "Un 11 de abril de 1882 nació en Burdeos Fernando Fader, el pintor que decía ser «mendocino por elección». Su apellido y su Mendoza están en el corazón de esta novela."},
+    {"date": "04-23", "slug": "la-ciudad-secreta", "why": "Día del Libro y del Idioma Español. Martín, el protagonista, es profesor de español, y todo empieza con una mujer que lee un libro sobre ciudades antiguas."},
+    {"date": "08-12", "slug": "lluvia-de-meteoritos", "why": "Estas noches llegan a su máximo las Perseidas, la lluvia de estrellas de agosto. Mira el cielo… y lee cómo una lluvia de meteoritos le cambia la vida a Elena."},
+    {"date": "08-19", "slug": "la-chica-del-retrato", "why": "Día Mundial de la Fotografía. Tatiana comparte sus fotos en las redes, hasta que una mañana la policía llama a su puerta."},
+    {"date": "08-29", "slug": "la-corazonada", "why": "Día Internacional contra los Ensayos Nucleares. Una novela sobre lo que queda después de un invierno nuclear y sobre la esperanza de volver a construir."},
+    {"date": "10-31", "slug": "el-tren-fantasma", "why": "Noche de Halloween: sube al tren fantasma de Sinea con el detective Marcos, que busca a su novia desaparecida."},
+    {"date": "12-14", "slug": "lluvia-de-meteoritos", "why": "Esta noche llegan a su máximo las Gemínidas, la lluvia de estrellas más intensa del año. Una ocasión perfecta para leer «Lluvia de meteoritos»."},
+
+    {"date": "03-20", "slug": "grustnyj-gorod", "why": "Сегодня Международный день счастья. А в городе Синея смеяться запрещено — пока Франко не решает вернуть людям радость."},
+    {"date": "03-25", "slug": "venecianskaya-maska", "why": "По преданию, Венеция была основана 25 марта 421 года. Лучший день, чтобы спуститься в её тайные воды за маской с безграничной силой."},
+    {"date": "05-15", "slug": "anomalnyj-chas", "why": "15 мая 1891 года родился Михаил Булгаков. А эта история, как и «Мастер и Маргарита», начинается со случайной встречи у Патриарших прудов."},
+    {"date": "05-17", "slug": "pokhititel-serdec", "why": "17 мая 1510 года умер Сандро Боттичелли. Алессио знает цену каждой картине — и не только картине."},
+    {"date": "05-27", "slug": "rezonans-lyubvi", "why": "Сегодня День города Санкт-Петербурга, основанного 27 мая 1703 года. В этом романе памятники Петербурга оживают, а город живёт по невозможным законам."},
+    {"date": "06-21", "slug": "siyayushchij-gorizont", "why": "Сегодня Всемирный день музыки. «Сияющий горизонт» — роман-мюзикл о певице, которая поёт, даже когда мир замолчал."},
+    {"date": "08-29", "slug": "predchuvstvie", "why": "Международный день действий против ядерных испытаний. Роман о мире после катастрофы — и о людях, которые верят, что его можно построить заново."},
+    {"date": "10-31", "slug": "prizrachnyj-poezd", "why": "Ночь Хэллоуина — самое время сесть в Призрачный поезд, который по ночам уносит жителей Синеи."},
+    {"date": "11-18", "slug": "vlyublennye-lebedi", "why": "Сегодня день рождения Деда Мороза. А действие романа происходит в заснеженном Устюге — там, где, по преданию, он родился."},
+    {"easter": -47, "slug": "dikij-chas-karnaval-razdora", "why": "Сегодня карнавальный вторник. А в Мадриде после огней карнавальной ночи начинается странное безумие."},
+    {"month": 10, "slug": "sny-i-zver", "why": "Октябрь — месяц этой истории: всё начинается дождливым октябрьским вечером в кафе «Уголок вздохов»."},
+    {"month": 12, "slug": "tajna-semi-fader", "why": "Зимнее чтение: всё начинается морозным днём на московском катке — с новости, которая меняет жизнь Луиса и Натальи."},
+    {"month": 1, "slug": "vlyublennye-lebedi", "why": "Январская сказка о заснеженных лесах, хрустальном воздухе и любви, которая сильнее колдовства."},
+
+    {"date": "02-20", "slug": "maschera-di-venezia", "why": "«Venezia, 20 febbraio 2025»: il romanzo comincia proprio oggi, in una notte di Carnevale, con un uomo in fuga e un piccolo oggetto avvolto in un panno scuro."},
+    {"easter": -47, "slug": "maschera-di-venezia", "why": "È Martedì grasso, l’ultima notte del Carnevale di Venezia. Mettiti la maschera e leggi."},
+    {"date": "03-08", "slug": "la-squadra-invincibile", "why": "Festa della donna: le ragazze delle Aquile sfidano i Leoni… e vincono 5 a 1."},
+    {"date": "03-20", "slug": "la-citta-triste", "why": "Oggi è la Giornata internazionale della felicità. A Sinea, invece, il presidente ha vietato i sorrisi: Franco e Chiara vogliono restituirli alla gente."},
+    {"date": "03-25", "slug": "maschera-di-venezia", "why": "Secondo la tradizione, Venezia fu fondata il 25 marzo 421. Buon compleanno, Venezia!"},
+    {"date": "04-21", "slug": "antonio-e-il-segreto-di-roma", "why": "Oggi è il Natale di Roma: la città fu fondata, secondo la leggenda, il 21 aprile del 753 a.C. Il giorno giusto per scoprire il segreto di Roma con Antonio e Larissa."},
+    {"date": "05-17", "slug": "ladro-di-cuori", "why": "Il 17 maggio 1510 moriva Sandro Botticelli. Alessio vive a Firenze, ama l’arte… e i Botticelli."},
+    {"date": "08-29", "slug": "presentimento", "why": "Giornata internazionale contro i test nucleari. Un romanzo sul mondo dopo la catastrofe e sulla speranza di ricostruirlo."},
+    {"date": "10-31", "slug": "il-treno-fantasma", "why": "Notte di Halloween: sali sul treno fantasma con Marco, il detective triste che cerca la sua ragazza Alice."},
+    {"month": 1, "slug": "la-nevicata-rosa", "why": "Una lettura d’inverno: su Firenze comincia a cadere una neve rosa…"},
+
+    {"date": "02-14", "slug": "the-date", "why": "Happy Valentine’s Day! Just be careful with online dates: two years ago, Frank’s brother went on one and never came back."},
+    {"date": "03-08", "slug": "a-man-from-the-future", "why": "It’s International Women’s Day. Alex comes from the Moscow of 3024 — a world without women — and travels back in time to find love."},
+    {"date": "08-29", "slug": "the-foreboding", "why": "International Day against Nuclear Tests. A novel about surviving after the Devastation — and about building something better."},
+    {"date": "12-18", "slug": "the-immigrant", "why": "Today is International Migrants Day. Charles arrives in Sinea with a small bag, no money and no papers."},
+
+    {"date": "09-01", "slug": "podzemni-tajemstvi", "why": "„Je září. Luis je v Praze.“ Tak začíná tento román — a dnes začíná září."},
+    {"date": "10-28", "slug": "podzemni-tajemstvi", "why": "Dnes je Den vzniku samostatného československého státu. Oslavte ho s Prahou — a s bordó sukní, která Prahu zachránila."},
+    {"date": "08-29", "slug": "predtucha", "why": "Mezinárodní den proti jaderným zkouškám. Román o naději po jaderné katastrofě."},
+
+    {"date": "11-11", "slug": "cien-bazyliszka", "why": "Dziś Narodowe Święto Niepodległości. Listopad, Warszawa — właśnie tu i właśnie teraz dzieje się ta historia."},
+    {"month": 11, "slug": "cien-bazyliszka", "why": "Listopad, Warszawa: miesiąc i miasto tej powieści."},
+    {"date": "08-29", "slug": "przeczucie", "why": "Międzynarodowy Dzień Przeciwdziałania Próbom Jądrowym. Powieść o nadziei po nuklearnej zimie."},
+
+    {"date": "01-27", "slug": "27-ocak", "why": "Bugün 27 Ocak: Mateo ile Rosa’nın doğum günü! İkisi de aynı gün doğmuş."},
+    {"date": "08-29", "slug": "col-gulu", "why": "Bugün Nükleer Denemelere Karşı Uluslararası Gün. Büyük Felaket’ten sonra umudu arayan bir roman."},
+
+    {"date": "06-08", "slug": "la-voix", "why": "C’est la Journée mondiale de l’océan. Un groupe de dauphins disparaît du parc de Sinea… et Sasha rêve d’un dauphin argenté."},
+    {"date": "08-29", "slug": "reve-turquoise", "why": "Journée internationale contre les essais nucléaires. Un roman sur l’espoir après la fin du monde."},
+
+    {"date": "08-29", "slug": "vorahnung", "why": "Heute ist der Internationale Tag gegen Nuklearversuche. Ein Roman über Liebe und Hoffnung nach der Katastrophe."},
+    {"date": "08-29", "slug": "mundo-turquesa", "why": "Hoje é o Dia Internacional contra os Testes Nucleares. Um romance sobre amor e esperança depois do inverno nuclear."},
+    {"date": "08-29", "slug": "predosecaj", "why": "Данас је Међународни дан против нуклеарних проба. Роман о нади после слома цивилизације."},
+
+    {"date": "12-15", "slug": "la-savo-de-zmaj", "why": "Hodiaŭ estas la Zamenhof-tago, la festo de Esperanto kaj de la esperanta libro."},
+    {"date": "07-26", "slug": "la-antausento", "why": "Hodiaŭ estas la Esperanto-tago: la 26-an de julio 1887 aperis la Unua Libro de Zamenhof."},
+    {"date": "08-29", "slug": "la-antausento", "why": "Hodiaŭ estas la Internacia Tago kontraŭ Nukleaj Provoj. Romano pri espero post la apokalipso."},
+
+    {"date": "05-24", "slug": "zagadachniyat-vazdushen-korab", "why": "Днес е Денят на светите братя Кирил и Методий, на българската азбука, просвета и култура и на славянската книжовност. Чудесен ден за роман, вдъхновен от славянската митология."},
+    {"date": "04-21", "slug": "lux-pacis", "why": "Hodie Natalis Romae est: urbs, ut fertur, a. d. XI Kal. Mai. condita est."},
+    {"date": "09-21", "slug": "lux-pacis", "why": "Hodie Dies Internationalis Pacis est. Lege «Lux Pacis»."},
+    {"date": "07-07", "slug": "ngome-ya-watu-huru", "why": "Leo ni Siku ya Kiswahili Duniani. Sherehekea kwa kusoma riwaya kwa Kiswahili!"}
+  ]
+}

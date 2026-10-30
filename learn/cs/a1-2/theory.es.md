@@ -7,7 +7,7 @@ Así empieza el segundo capítulo de la novela «Podzemní tajemství»:
 En una cafetería Luis conoce a Jana, y luego llegan sus amigos, Lucie y Mark:
 
 > „To jsou moji přátelé,“ říká Jana. „Lucie a Mark.“
-> Lucie je vysoká a má světlé vlasy. **Je průvodkyně**{Es guía}. **Zná pražské podzemí**{Conoce el subsuelo de Praga}. **Mark je fotograf**{Mark es fotógrafo}.
+> Lucie je vysoká a má světlé vlasy. **Je průvodkyně**{Es guía}. **Zná pražské podzemí**{Conoce el subsuelo de Praga}. **Mark je detektiv a fotograf**{Mark es detective y fotógrafo}. **Teď je v Praze na dovolené**{Está de vacaciones en Praga}.
 > — **Co děláš?**{¿A qué te dedicas?} — ptá se Lucie.
 > — **Jsem hudebník**{Soy músico}. **Hraju**{Toco} na kytaru. **Ty pracuješ**{¿Tú trabajas…} v podzemí?
 > — Ano. **Dělám průvodkyni**{Trabajo de guía}. **Mluvím**{Hablo} česky, anglicky a trochu **španělsky**{español}.

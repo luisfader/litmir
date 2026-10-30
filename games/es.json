@@ -1,0 +1,789 @@
+{
+ "lang": "es",
+ "covers": [
+  "novels/lluvia-de-meteoritos/cover-v2.jpg",
+  "novels/el-misterio-de-los-fader/cover.jpg",
+  "novels/operacion-londres/cover.jpg",
+  "novels/el-tren-fantasma/cover.jpg",
+  "novels/la-ciudad-secreta/cover.jpg",
+  "novels/la-corazonada/cover-v4.jpg",
+  "novels/anomalia/cover.jpg",
+  "novels/la-chica-del-retrato/cover.jpg",
+  "novels/el-impostor/cover.jpg",
+  "novels/las-coordenadas-del-amor/cover.jpg"
+ ],
+ "pool": [
+  {
+   "type": "story",
+   "kind": "who",
+   "prompt": "¿Quién es?",
+   "question": "Arquitecto argentino elegante que dibuja los muros de la Utopía Turquesa. Ambicioso, sensible y celoso, compite con Robert.",
+   "options": [
+    "Tatiana",
+    "Alicia",
+    "Martín",
+    "Luis"
+   ],
+   "answer": 3,
+   "why": "Es Luis, de «La Corazonada»."
+  },
+  {
+   "type": "story",
+   "kind": "who",
+   "prompt": "¿Quién es?",
+   "question": "Mendocino que gana la lotería y lleva a Natalia de Moscú a Mendoza. Allí descubre la maldición de los Fader, que lo vuelve inmortal; en «Operación Londres» busca el frasco de Rasputín para volver a ser mortal.",
+   "options": [
+    "Marina",
+    "Robert",
+    "Luis",
+    "Tatiana"
+   ],
+   "answer": 2,
+   "why": "Es Luis, de «El misterio de los Fader»."
+  },
+  {
+   "type": "story",
+   "kind": "who",
+   "prompt": "¿Quién es?",
+   "question": "Tras dos años de invierno nuclear sale de su búnker y recorre en su vieja motocicleta un mundo en ruinas. Funda la Utopía Turquesa, una fortaleza donde vivir sin amos ni miedo.",
+   "options": [
+    "Natalia",
+    "Luis",
+    "Robert",
+    "Nadezhda"
+   ],
+   "answer": 2,
+   "why": "Es Robert, de «La Corazonada»."
+  },
+  {
+   "type": "story",
+   "kind": "who",
+   "prompt": "¿Quién es?",
+   "question": "Detective que investiga la desaparición de Alicia en un tren misterioso.",
+   "options": [
+    "Sergio",
+    "Luis",
+    "Robert",
+    "Marcos"
+   ],
+   "answer": 3,
+   "why": "Es Marcos, de «El tren fantasma»."
+  },
+  {
+   "type": "story",
+   "kind": "who",
+   "prompt": "¿Quién es?",
+   "question": "Mujer desaparecida cuya búsqueda pone en marcha el misterio del tren.",
+   "options": [
+    "Alicia",
+    "Martín",
+    "Natalia",
+    "Luis"
+   ],
+   "answer": 0,
+   "why": "Es Alicia, de «El tren fantasma»."
+  },
+  {
+   "type": "story",
+   "kind": "who",
+   "prompt": "¿Quién es?",
+   "question": "Joven curioso que descubre los secretos de una ciudad extraordinaria.",
+   "options": [
+    "Marcos",
+    "Martín",
+    "Marina",
+    "Robert"
+   ],
+   "answer": 1,
+   "why": "Es Martín, de «La ciudad secreta»."
+  },
+  {
+   "type": "story",
+   "kind": "who",
+   "prompt": "¿Quién es?",
+   "question": "Mujer enigmática vinculada con los secretos de la ciudad.",
+   "options": [
+    "Robert",
+    "Marcos",
+    "Alicia",
+    "Marina"
+   ],
+   "answer": 3,
+   "why": "Es Marina, de «La ciudad secreta»."
+  },
+  {
+   "type": "story",
+   "kind": "who",
+   "prompt": "¿Quién es?",
+   "question": "Figura central del misterio de La chica del retrato.",
+   "options": [
+    "Tatiana",
+    "Alicia",
+    "Luis",
+    "Sergio"
+   ],
+   "answer": 0,
+   "why": "Es Tatiana, de «La chica del retrato»."
+  },
+  {
+   "type": "story",
+   "kind": "who",
+   "prompt": "¿Quién es?",
+   "question": "Padre de Luis, vive en Mendoza. Recibe a su hijo y a Natalia entre los viñedos y guarda parte del secreto de la familia Fader.",
+   "options": [
+    "Marcos",
+    "Marina",
+    "Sergio",
+    "Nadezhda"
+   ],
+   "answer": 2,
+   "why": "Es Sergio, de «El misterio de los Fader»."
+  },
+  {
+   "type": "story",
+   "kind": "who",
+   "prompt": "¿Quién es?",
+   "question": "Moscovita que acompaña a Luis de Moscú a Mendoza y lo ayuda a resolver el misterio de los Fader. En «Operación Londres» sabe que el tiempo corre solo para ella y decide el destino del elixir.",
+   "options": [
+    "Natalia",
+    "Martín",
+    "Robert",
+    "Nadezhda"
+   ],
+   "answer": 0,
+   "why": "Es Natalia, de «El misterio de los Fader»."
+  },
+  {
+   "type": "choice",
+   "kind": "who",
+   "prompt": "¿Quién es este personaje?",
+   "word": "",
+   "img": "characters/img/robert-1.jpg",
+   "options": [
+    "Marcos",
+    "Marina",
+    "Robert",
+    "Luis"
+   ],
+   "answer": 2,
+   "why": "Es Robert, de «La Corazonada»."
+  },
+  {
+   "type": "choice",
+   "kind": "who",
+   "prompt": "¿Quién es este personaje?",
+   "word": "",
+   "img": "characters/img/robert-2.jpg",
+   "options": [
+    "Alicia",
+    "Martín",
+    "Sergio",
+    "Robert"
+   ],
+   "answer": 3,
+   "why": "Es Robert, de «La Corazonada»."
+  },
+  {
+   "type": "story",
+   "kind": "where",
+   "prompt": "La trama",
+   "question": "¿En qué novela aparece Luis?",
+   "options": [
+    "La Corazonada",
+    "El impostor",
+    "Las coordenadas del amor",
+    "La chica del retrato"
+   ],
+   "answer": 0,
+   "why": "Luis aparece en «La Corazonada»."
+  },
+  {
+   "type": "story",
+   "kind": "where",
+   "prompt": "La trama",
+   "question": "¿En qué novela aparece Luis?",
+   "options": [
+    "La chica del retrato",
+    "Anomalía",
+    "El misterio de los Fader",
+    "Las coordenadas del amor"
+   ],
+   "answer": 2,
+   "why": "Luis aparece en «El misterio de los Fader»."
+  },
+  {
+   "type": "story",
+   "kind": "where",
+   "prompt": "La trama",
+   "question": "¿En qué novela aparece Robert?",
+   "options": [
+    "El impostor",
+    "La ciudad secreta",
+    "Anomalía",
+    "La Corazonada"
+   ],
+   "answer": 3,
+   "why": "Robert aparece en «La Corazonada»."
+  },
+  {
+   "type": "story",
+   "kind": "where",
+   "prompt": "La trama",
+   "question": "¿En qué novela aparece Marcos?",
+   "options": [
+    "El tren fantasma",
+    "El impostor",
+    "La Corazonada",
+    "Anomalía"
+   ],
+   "answer": 0,
+   "why": "Marcos aparece en «El tren fantasma»."
+  },
+  {
+   "type": "story",
+   "kind": "where",
+   "prompt": "La trama",
+   "question": "¿En qué novela aparece Alicia?",
+   "options": [
+    "El misterio de los Fader: Operación Londres",
+    "El tren fantasma",
+    "El impostor",
+    "Lluvia de meteoritos"
+   ],
+   "answer": 1,
+   "why": "Alicia aparece en «El tren fantasma»."
+  },
+  {
+   "type": "story",
+   "kind": "where",
+   "prompt": "La trama",
+   "question": "¿En qué novela aparece Martín?",
+   "options": [
+    "El impostor",
+    "El misterio de los Fader",
+    "La ciudad secreta",
+    "Lluvia de meteoritos"
+   ],
+   "answer": 2,
+   "why": "Martín aparece en «La ciudad secreta»."
+  },
+  {
+   "type": "story",
+   "kind": "where",
+   "prompt": "La trama",
+   "question": "¿En qué novela aparece Marina?",
+   "options": [
+    "La chica del retrato",
+    "Las coordenadas del amor",
+    "La ciudad secreta",
+    "El impostor"
+   ],
+   "answer": 2,
+   "why": "Marina aparece en «La ciudad secreta»."
+  },
+  {
+   "type": "story",
+   "kind": "where",
+   "prompt": "La trama",
+   "question": "¿En qué novela aparece Tatiana?",
+   "options": [
+    "La ciudad secreta",
+    "El impostor",
+    "La chica del retrato",
+    "Anomalía"
+   ],
+   "answer": 2,
+   "why": "Tatiana aparece en «La chica del retrato»."
+  },
+  {
+   "type": "story",
+   "kind": "where",
+   "prompt": "La trama",
+   "question": "¿En qué novela aparece Nadezhda?",
+   "options": [
+    "Las coordenadas del amor",
+    "La ciudad secreta",
+    "El impostor",
+    "La Corazonada"
+   ],
+   "answer": 0,
+   "why": "Nadezhda aparece en «Las coordenadas del amor»."
+  },
+  {
+   "type": "story",
+   "kind": "where",
+   "prompt": "La trama",
+   "question": "¿En qué novela aparece Sergio?",
+   "options": [
+    "Lluvia de meteoritos",
+    "El tren fantasma",
+    "El misterio de los Fader",
+    "La Corazonada"
+   ],
+   "answer": 2,
+   "why": "Sergio aparece en «El misterio de los Fader»."
+  },
+  {
+   "type": "story",
+   "kind": "where",
+   "prompt": "La trama",
+   "question": "¿En qué novela aparece Natalia?",
+   "options": [
+    "El misterio de los Fader",
+    "Lluvia de meteoritos",
+    "Las coordenadas del amor",
+    "La Corazonada"
+   ],
+   "answer": 0,
+   "why": "Natalia aparece en «El misterio de los Fader»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "¿De qué novela es esta frase?",
+   "question": "«Saludó a Sasha y se incorporó a la conversación sin saber todavía de qué hablaban.»",
+   "options": [
+    "La chica del retrato",
+    "El misterio de los Fader: Operación Londres",
+    "Lluvia de meteoritos",
+    "La ciudad secreta"
+   ],
+   "answer": 2,
+   "why": "Es de «Lluvia de meteoritos»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "¿De qué novela es esta frase?",
+   "question": "«—Muy interesante —respondió Elena, sintiendo que su corazón late más rápido—.»",
+   "options": [
+    "La ciudad secreta",
+    "El impostor",
+    "Lluvia de meteoritos",
+    "El misterio de los Fader: Operación Londres"
+   ],
+   "answer": 2,
+   "why": "Es de «Lluvia de meteoritos»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "¿De qué novela es esta frase?",
+   "question": "«Agradeció que Luciano no intentara convertir lo sucedido en una hazaña.»",
+   "options": [
+    "Las coordenadas del amor",
+    "Lluvia de meteoritos",
+    "El misterio de los Fader: Operación Londres",
+    "El misterio de los Fader"
+   ],
+   "answer": 1,
+   "why": "Es de «Lluvia de meteoritos»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "¿De qué novela es esta frase?",
+   "question": "«Era un «Kultrún», un símbolo mapuche que representaba el tambor ceremonial usado en rituales y que simbolizaba la conexión entre el mundo terrenal y el espiritual.»",
+   "options": [
+    "El misterio de los Fader",
+    "El impostor",
+    "El misterio de los Fader: Operación Londres",
+    "La ciudad secreta"
+   ],
+   "answer": 0,
+   "why": "Es de «El misterio de los Fader»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "¿De qué novela es esta frase?",
+   "question": "«Su aspecto era impecable, demasiado pulcro para el ambiente relajado de Mendoza, especialmente en esa época del año.»",
+   "options": [
+    "El misterio de los Fader",
+    "El misterio de los Fader: Operación Londres",
+    "Lluvia de meteoritos",
+    "El tren fantasma"
+   ],
+   "answer": 0,
+   "why": "Es de «El misterio de los Fader»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "¿De qué novela es esta frase?",
+   "question": "«El otoño en Mendoza teñía los viñedos de tonos dorados y rojizos, y el aire fresco anunciaba la llegada de una nueva estación.»",
+   "options": [
+    "El tren fantasma",
+    "El impostor",
+    "La Corazonada",
+    "El misterio de los Fader"
+   ],
+   "answer": 3,
+   "why": "Es de «El misterio de los Fader»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "¿De qué novela es esta frase?",
+   "question": "«Karl se volvió hacia su hijo, y por primera vez en mucho tiempo, Fernando vio una sonrisa abierta, casi pícara, en el rostro de su padre.»",
+   "options": [
+    "El misterio de los Fader: Operación Londres",
+    "El impostor",
+    "Anomalía",
+    "Lluvia de meteoritos"
+   ],
+   "answer": 0,
+   "why": "Es de «El misterio de los Fader: Operación Londres»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "¿De qué novela es esta frase?",
+   "question": "«Schließlich verstand ein Polizist, dass ich Ausländer war, und ließ mich gehen – unter der Bedingung, dass ich meine Tasche mit all meinen Habseligkeiten aushändige.»",
+   "options": [
+    "Las coordenadas del amor",
+    "El misterio de los Fader: Operación Londres",
+    "La ciudad secreta",
+    "Anomalía"
+   ],
+   "answer": 1,
+   "why": "Es de «El misterio de los Fader: Operación Londres»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "¿De qué novela es esta frase?",
+   "question": "«— No tengo nada que decir, padre —respondió Fernando, sin apartar la vista del lienzo vacío—.»",
+   "options": [
+    "El misterio de los Fader",
+    "La ciudad secreta",
+    "El misterio de los Fader: Operación Londres",
+    "El impostor"
+   ],
+   "answer": 2,
+   "why": "Es de «El misterio de los Fader: Operación Londres»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "¿De qué novela es esta frase?",
+   "question": "«A Marcos no le gusta pagar por información, pero quiere encontrar a su novia.»",
+   "options": [
+    "La Corazonada",
+    "El impostor",
+    "La ciudad secreta",
+    "El tren fantasma"
+   ],
+   "answer": 3,
+   "why": "Es de «El tren fantasma»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "¿De qué novela es esta frase?",
+   "question": "«Antes de despedirse, Martín y Marina intercambian sus números de teléfono.»",
+   "options": [
+    "La chica del retrato",
+    "La ciudad secreta",
+    "El impostor",
+    "El misterio de los Fader"
+   ],
+   "answer": 1,
+   "why": "Es de «La ciudad secreta»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "¿De qué novela es esta frase?",
+   "question": "«—Cerca de aquí… más o menos —responde ella, y mira hacia las montañas.»",
+   "options": [
+    "La ciudad secreta",
+    "Anomalía",
+    "La chica del retrato",
+    "Lluvia de meteoritos"
+   ],
+   "answer": 0,
+   "why": "Es de «La ciudad secreta»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "¿De qué novela es esta frase?",
+   "question": "«—Ustedes no están al mando de nadie —dijo Robert, y su voz sonó más firme de lo que esperaba—.»",
+   "options": [
+    "El tren fantasma",
+    "El misterio de los Fader: Operación Londres",
+    "La Corazonada",
+    "El misterio de los Fader"
+   ],
+   "answer": 2,
+   "why": "Es de «La Corazonada»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "¿De qué novela es esta frase?",
+   "question": "«Las llamas pintaban sombras danzantes en los rostros de los sobrevivientes, todos fijos en Robert.»",
+   "options": [
+    "La Corazonada",
+    "El misterio de los Fader: Operación Londres",
+    "El tren fantasma",
+    "La ciudad secreta"
+   ],
+   "answer": 0,
+   "why": "Es de «La Corazonada»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "¿De qué novela es esta frase?",
+   "question": "«Pero Robert ya había sido piadoso en otras situaciones de su vida, y después siempre había lamentado no haber sido implacable.»",
+   "options": [
+    "La chica del retrato",
+    "El impostor",
+    "La Corazonada",
+    "La ciudad secreta"
+   ],
+   "answer": 2,
+   "why": "Es de «La Corazonada»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "¿De qué novela es esta frase?",
+   "question": "«Él miró hacia un punto detrás de ella, como si viera algo que Julieta no podía.»",
+   "options": [
+    "El misterio de los Fader: Operación Londres",
+    "Anomalía",
+    "El misterio de los Fader",
+    "Lluvia de meteoritos"
+   ],
+   "answer": 1,
+   "why": "Es de «Anomalía»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "¿De qué novela es esta frase?",
+   "question": "«Estoy harta de estos infelices..\", pensó, y decidió seguir caminando para despejar la cabeza.»",
+   "options": [
+    "Las coordenadas del amor",
+    "Lluvia de meteoritos",
+    "Anomalía",
+    "El misterio de los Fader: Operación Londres"
+   ],
+   "answer": 2,
+   "why": "Es de «Anomalía»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "¿De qué novela es esta frase?",
+   "question": "«—Ese lo hice yo —dijo el chico, limpiándose las manos en el delantal—.»",
+   "options": [
+    "Las coordenadas del amor",
+    "El tren fantasma",
+    "El misterio de los Fader: Operación Londres",
+    "Anomalía"
+   ],
+   "answer": 3,
+   "why": "Es de «Anomalía»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "¿De qué novela es esta frase?",
+   "question": "«Era casi igual al dibujo que había aparecido en las páginas del banco y de la Bolsa.»",
+   "options": [
+    "La chica del retrato",
+    "La Corazonada",
+    "Las coordenadas del amor",
+    "El tren fantasma"
+   ],
+   "answer": 0,
+   "why": "Es de «La chica del retrato»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "¿De qué novela es esta frase?",
+   "question": "«Cuando los agentes se fueron, Tatiana cerró la puerta y miró su teléfono.»",
+   "options": [
+    "Las coordenadas del amor",
+    "La chica del retrato",
+    "La Corazonada",
+    "El tren fantasma"
+   ],
+   "answer": 1,
+   "why": "Es de «La chica del retrato»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "¿De qué novela es esta frase?",
+   "question": "«—Tenga cuidado con los mensajes de desconocidos —aconsejó el policía—.»",
+   "options": [
+    "El tren fantasma",
+    "El misterio de los Fader: Operación Londres",
+    "El impostor",
+    "La chica del retrato"
+   ],
+   "answer": 3,
+   "why": "Es de «La chica del retrato»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "¿De qué novela es esta frase?",
+   "question": "«Él sabe que a Florencia le gustan las cosas caras, pero la ama de todo corazón.»",
+   "options": [
+    "Anomalía",
+    "La chica del retrato",
+    "El impostor",
+    "El misterio de los Fader"
+   ],
+   "answer": 2,
+   "why": "Es de «El impostor»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "¿De qué novela es esta frase?",
+   "question": "«Esa noche, Leonardo está en su casa y mira las noticias en la televisión.»",
+   "options": [
+    "El misterio de los Fader: Operación Londres",
+    "El impostor",
+    "La chica del retrato",
+    "La Corazonada"
+   ],
+   "answer": 1,
+   "why": "Es de «El impostor»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "¿De qué novela es esta frase?",
+   "question": "«Nos conocimos el martes en la librería, ¿recuerdas? ¿Cenamos juntos esta noche?»",
+   "options": [
+    "El tren fantasma",
+    "El impostor",
+    "Anomalía",
+    "El misterio de los Fader"
+   ],
+   "answer": 1,
+   "why": "Es de «El impostor»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "¿De qué novela es esta frase?",
+   "question": "«Sacó de la mochila dos walkie-talkies, se quedó con uno y le dio el otro a Lucía.»",
+   "options": [
+    "Lluvia de meteoritos",
+    "Las coordenadas del amor",
+    "La Corazonada",
+    "El misterio de los Fader: Operación Londres"
+   ],
+   "answer": 1,
+   "why": "Es de «Las coordenadas del amor»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "¿De qué novela es esta frase?",
+   "question": "«Entre las raíces de una ceiba, Matías sostenía un objeto de metal cubierto de barro.»",
+   "options": [
+    "Anomalía",
+    "Las coordenadas del amor",
+    "La ciudad secreta",
+    "La Corazonada"
+   ],
+   "answer": 1,
+   "why": "Es de «Las coordenadas del amor»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "¿De qué novela es esta frase?",
+   "question": "«Al llegar a un claro del bosque, la brújula empezó a vibrar en la mano de Alejandro.»",
+   "options": [
+    "Lluvia de meteoritos",
+    "El tren fantasma",
+    "El misterio de los Fader",
+    "Las coordenadas del amor"
+   ],
+   "answer": 3,
+   "why": "Es de «Las coordenadas del amor»."
+  },
+  {
+   "type": "story",
+   "kind": "plot",
+   "prompt": "La trama",
+   "question": "En «La Corazonada», ¿cómo llama Robert a la fortaleza que quieren construir?",
+   "options": [
+    "Rojo Fuego",
+    "Nueva Misión",
+    "Kilómetro Cero",
+    "Nuestra Utopía"
+   ],
+   "answer": 3,
+   "why": "«Una fortaleza, un nuevo comienzo. Lo llamamos “Nuestra Utopía”»."
+  },
+  {
+   "type": "story",
+   "kind": "plot",
+   "prompt": "La trama",
+   "question": "En «La Corazonada», ¿qué instrumento toca Natalia?",
+   "options": [
+    "El violín",
+    "La guitarra",
+    "La flauta",
+    "El piano"
+   ],
+   "answer": 0,
+   "why": "Natalia llena el atardecer con su violín eléctrico portátil."
+  },
+  {
+   "type": "story",
+   "kind": "plot",
+   "prompt": "La trama",
+   "question": "En «La Corazonada», ¿cómo llegan las tres mujeres al grupo de Robert?",
+   "options": [
+    "A caballo por el desierto",
+    "En un tren abandonado",
+    "En motos que robaron a los salvajes",
+    "En un camión de la Central"
+   ],
+   "answer": 2,
+   "why": "«Las robamos», confiesa Natalia: escaparon de un grupo de salvajes."
+  },
+  {
+   "type": "story",
+   "kind": "plot",
+   "prompt": "La trama",
+   "question": "En «La Corazonada», ¿qué abre Sasha en Nuestra Utopía?",
+   "options": [
+    "Un taller de armas",
+    "El centro cultural «Sueño Turquesa»",
+    "El café «Rojo Fuego»",
+    "Una escuela de música"
+   ],
+   "answer": 2,
+   "why": "El nombre es un homenaje a su cabello llameante."
+  },
+  {
+   "type": "story",
+   "kind": "plot",
+   "prompt": "La trama",
+   "question": "En «La Corazonada», ¿qué crean juntas Natalia y Oxana?",
+   "options": [
+    "Un hospital de campaña",
+    "Una biblioteca subterránea",
+    "Un café junto al lago",
+    "Un centro cultural llamado «Sueño Turquesa»"
+   ],
+   "answer": 3,
+   "why": "Natalia aporta la música y Oxana sus pinturas del lago y la fortaleza."
+  }
+ ]
+}
