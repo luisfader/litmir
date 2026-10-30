@@ -63,7 +63,7 @@ En las secciones ES, RU, IT y EN hay un juego (`#/game`, botón «🎲» en la p
 - **¿En qué novela aparece…?** — sale del campo `novels` de cada personaje.
 - **La trama** — preguntas escritas a mano en `games/plot.<idioma>.json` (la primera opción es la correcta; comprobar cada dato en el texto).
 
-Las preguntas están en `games/<idioma>.json`. **Al añadir novelas o personajes, regenerarlas:** `python3 tools/juego.py .` Las novelas 18+ quedan fuera del juego. Para dejar fuera otra novela, añadir su slug a `EXCLUDE` en `tools/juego.py` (ahora: *Julián: La Jabru y otras desgracias*).
+Las preguntas están en `games/<idioma>.json`. **Al añadir novelas o personajes, regenerarlas:** `python3 tools/juego.py .` Las novelas 18+ quedan fuera del juego. Para dejar fuera otra novela, añadir su slug a `EXCLUDE` en `tools/juego.py`.
 
 ## Noticias satíricas
 

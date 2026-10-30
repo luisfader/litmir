@@ -12,7 +12,7 @@ import json, random, re, os, sys
 random.seed(7)
 LANGS = ["es", "ru", "it", "en"]
 # Novels left out of the game (by slug)
-EXCLUDE = {"julian-la-hambru"}
+EXCLUDE = set()
 P = {
  "es": {"who": "¿Quién es?", "quote": "¿De qué novela es esta frase?", "where": "¿En qué novela aparece {name}?", "plot": "La trama",
         "whyWho": "Es {name}, de «{novel}».", "whyQuote": "Es de «{novel}».", "whyWhere": "{name} aparece en «{novel}».", "photo": "¿Quién es este personaje?"},
