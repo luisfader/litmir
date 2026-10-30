@@ -7,7 +7,7 @@
 В кафе Луис знакомится с Яной, а потом приходят её друзья — Люцие и Марк:
 
 > „To jsou moji přátelé,“ říká Jana. „Lucie a Mark.“
-> Lucie je vysoká a má světlé vlasy. **Je průvodkyně**{Она экскурсовод}. **Zná pražské podzemí**{Знает пражское подземелье}. **Mark je fotograf**{Марк — фотограф}.
+> Lucie je vysoká a má světlé vlasy. **Je průvodkyně**{Она экскурсовод}. **Zná pražské podzemí**{Знает пражское подземелье}. **Mark je detektiv a fotograf**{Марк — детектив и фотограф}. **Teď je v Praze na dovolené**{Он в отпуске в Праге}.
 > — **Co děláš?**{Чем ты занимаешься?} — ptá se Lucie.
 > — **Jsem hudebník**{Я музыкант}. **Hraju**{Играю} na kytaru. **Ty pracuješ**{Ты работаешь} v podzemí?
 > — Ano. **Dělám průvodkyni**{Работаю экскурсоводом}. **Mluvím**{Я говорю} česky, anglicky a trochu **španělsky**{по-испански}.

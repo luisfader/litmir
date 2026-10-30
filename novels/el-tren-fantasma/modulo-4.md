@@ -1,12 +1,12 @@
 ## Dossier del módulo: Leonardo Circuito
 
-**Nombre:** Leonardo Circuito. **Papel:** fiscal y tecnólogo del tren. **Personalidad:** extravagante, orgulloso de sus inventos y muy preocupado por sus prototipos. **Objetos característicos:** una tableta electrónica y un cohete experimental.
+**Nombre:** Leonardo Circuito. **Papel:** fiscal y buchón del tren. **Personalidad:** chismoso, servil con los poderosos y obsesionado con denunciar a los demás. **Objetos característicos:** una tableta electrónica y un Libro de Denuncias.
 
 **Dato clave:** controlar un aparato no equivale a controlar a las personas. La investigación de Alicia y la valentía de Marcos resultan tan importantes como la tecnología para resolver el misterio.
 
 ## Evaluación autocorregible · 15 preguntas · 100 puntos
 
-Respondé las 15 preguntas y pulsá «Calificar módulo». Podés repetir el examen para mejorar tu mejor nota.
+Responde las 15 preguntas y pulsa «Calificar módulo». Puedes repetir el examen para mejorar tu mejor nota.
 
 ## Test · Comprensión lectora
 
@@ -20,7 +20,7 @@ Respondé las 15 preguntas y pulsá «Calificar módulo». Podés repetir el exa
 
 5. Marcos decide abandonar a Alicia. ( V / F ){F}
 
-## Elegí la respuesta correcta
+## Elige la respuesta correcta
 
 6. ¿Cuál es el objetivo del grupo? [[*Llegar a la locomotora|Volver a la piscina]]
 
@@ -28,7 +28,7 @@ Respondé las 15 preguntas y pulsá «Calificar módulo». Podés repetir el exa
 
 8. ¿Qué revela el confesionario? [[*Secretos y miedos|Recetas de cocina]]
 
-9. ¿Qué lleva Leonardo Circuito? [[*Un cohete experimental|Un paraguas mágico]]
+9. ¿Qué lleva Leonardo Circuito? [[*Un libro de denuncias|Un paraguas mágico]]
 
 10. ¿Qué tema une los episodios? [[*Superar los miedos|Ganar una carrera]]
 
@@ -46,4 +46,4 @@ Respondé las 15 preguntas y pulsá «Calificar módulo». Podés repetir el exa
 
 ## Producción escrita
 
-Escribí un final alternativo de ocho oraciones. Usá al menos tres verbos en pasado y explicá cómo los protagonistas consiguen escapar.
+Escribe un final alternativo de ocho oraciones. Usa al menos tres verbos en pasado y explica cómo los protagonistas consiguen escapar.
