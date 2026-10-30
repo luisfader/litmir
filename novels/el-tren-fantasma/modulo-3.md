@@ -6,13 +6,13 @@
 
 ## Evaluación autocorregible · 15 preguntas · 100 puntos
 
-Respondé las 15 preguntas y pulsá «Calificar módulo». Podés repetir el examen para mejorar tu mejor nota.
+Responde las 15 preguntas y pulsa «Calificar módulo». Puedes repetir el examen para mejorar tu mejor nota.
 
 ## Test · Comprensión lectora
 
 1. Marcos encuentra a Alicia en la discoteca. ( V / F ){V}
 
-2. Los boyscouts zombis se llevan a Alicia. ( V / F ){V}
+2. Los boy scouts zombis se llevan a Alicia. ( V / F ){V}
 
 3. Casimiro Condena trabaja como cocinero. ( V / F ){F}
 
@@ -20,7 +20,7 @@ Respondé las 15 preguntas y pulsá «Calificar módulo». Podés repetir el exa
 
 5. La tableta carece de importancia para la historia. ( V / F ){F}
 
-## Elegí la respuesta correcta
+## Elige la respuesta correcta
 
 6. ¿Quién preside el juicio? [[*Casimiro Condena|Marcos]]
 
@@ -46,4 +46,4 @@ Respondé las 15 preguntas y pulsá «Calificar módulo». Podés repetir el exa
 
 ## Producción escrita
 
-Imaginá un juicio absurdo en el tren. Escribí seis líneas de diálogo entre el juez y un pasajero. Usá **deber**, **poder** y **tener que**.
+Imagina un juicio absurdo en el tren. Escribe seis líneas de diálogo entre el juez y un pasajero. Usa **deber**, **poder** y **tener que**.

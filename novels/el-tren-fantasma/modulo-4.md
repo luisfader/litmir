@@ -6,7 +6,7 @@
 
 ## Evaluación autocorregible · 15 preguntas · 100 puntos
 
-Respondé las 15 preguntas y pulsá «Calificar módulo». Podés repetir el examen para mejorar tu mejor nota.
+Responde las 15 preguntas y pulsa «Calificar módulo». Puedes repetir el examen para mejorar tu mejor nota.
 
 ## Test · Comprensión lectora
 
@@ -20,7 +20,7 @@ Respondé las 15 preguntas y pulsá «Calificar módulo». Podés repetir el exa
 
 5. Marcos decide abandonar a Alicia. ( V / F ){F}
 
-## Elegí la respuesta correcta
+## Elige la respuesta correcta
 
 6. ¿Cuál es el objetivo del grupo? [[*Llegar a la locomotora|Volver a la piscina]]
 
@@ -46,4 +46,4 @@ Respondé las 15 preguntas y pulsá «Calificar módulo». Podés repetir el exa
 
 ## Producción escrita
 
-Escribí un final alternativo de ocho oraciones. Usá al menos tres verbos en pasado y explicá cómo los protagonistas consiguen escapar.
+Escribe un final alternativo de ocho oraciones. Usa al menos tres verbos en pasado y explica cómo los protagonistas consiguen escapar.
