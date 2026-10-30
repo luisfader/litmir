@@ -18,8 +18,11 @@ novels/<novela>/            un archivo .md por capítulo (01.md, 02.md, …)
 2. Añadir la novela a `novels/catalog.json` con su título en cada idioma y la lista de capítulos.
 3. Si la novela no está terminada, añadir `"wip": true` (ver «Novelas en proceso de escritura»).
 4. Opcional: una portada (`"cover": "novels/<nombre-corto>/cover.jpg"`). Sin portada, el sitio genera una.
+5. Clasificación por edad: `"rating": "12+"` o `"16+"`, o `"adult": true` para 18+ (muestra un aviso antes de entrar). Toda novela debe tener una de las dos.
 
 Formato del texto: párrafos separados por una línea en blanco, `*cursiva*`, `**negrita**`, `***` para un cambio de escena.
+
+Servicios de Meta (prohibida en Rusia): no nombrarlos en las novelas; usar los nombres inventados. Alfabeto latino: Guatsap (WhatsApp), Instadram (Instagram), Feisbut (Facebook). Cirílico: Гуатсап, Инстадрам, Фейсбут.
 
 ## Publicación
 
