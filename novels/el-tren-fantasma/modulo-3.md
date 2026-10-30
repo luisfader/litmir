@@ -1,6 +1,6 @@
 ## Dossier del módulo: Casimiro Condena
 
-**Nombre:** Casimiro Condena. **Cargo:** juez del vagón del juicio final. **Personalidad:** autoritario, vanidoso y teatral. **Accesorio:** un martillo con el que exige silencio. **Aliado:** Leonardo Circuito, el fiscal que utiliza dispositivos tecnológicos.
+**Nombre:** Casimiro Condena. **Cargo:** juez del vagón del juicio final. **Personalidad:** autoritario, vanidoso y teatral. **Accesorio:** un martillo con el que exige silencio. **Aliado:** Leonardo Circuito, el fiscal buchón que lo anota y lo denuncia todo.
 
 **Pista reservada:** la autoridad del juez parece absoluta, pero sus decisiones son arbitrarias. La tableta que aparece durante el juicio puede resultar decisiva para cambiar el recorrido del tren.
 
