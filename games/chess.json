@@ -1,0 +1,628 @@
+{
+ "armies": [
+  {
+   "id": "utopia",
+   "title": {
+    "es": "Nuestra Utopía",
+    "ru": "Наша Утопия",
+    "it": "La nostra Utopia",
+    "en": "Our Utopia",
+    "de": "Unsere Utopie",
+    "fr": "Notre Utopie",
+    "pt": "A nossa Utopia"
+   },
+   "novel": {
+    "es": {
+     "title": "La Corazonada",
+     "slug": "la-corazonada"
+    },
+    "ru": {
+     "title": "Предчувствие",
+     "slug": "predchuvstvie"
+    },
+    "it": {
+     "title": "Presentimento",
+     "slug": "presentimento"
+    },
+    "en": {
+     "title": "The Foreboding",
+     "slug": "the-foreboding"
+    },
+    "de": {
+     "title": "Vorahnung",
+     "slug": "vorahnung"
+    },
+    "fr": {
+     "title": "Rêve turquoise",
+     "slug": "reve-turquoise"
+    },
+    "pt": {
+     "title": "Mundo Turquesa",
+     "slug": "mundo-turquesa"
+    }
+   },
+   "pieces": {
+    "k": {
+     "id": "robert",
+     "img": "games/chess/robert.jpg",
+     "name": {
+      "es": "Robert",
+      "ru": "Роберт",
+      "it": "Robert",
+      "en": "Robert",
+      "de": "Robert",
+      "fr": "Robert",
+      "pt": "Robert"
+     }
+    },
+    "q": {
+     "id": "natalia-cellist",
+     "img": "games/chess/natalia-cellist.jpg",
+     "name": {
+      "es": "Natalia",
+      "ru": "Наталья",
+      "it": "Natalia",
+      "en": "Natalia",
+      "de": "Natalia",
+      "fr": "Natalia",
+      "pt": "Natalia"
+     }
+    },
+    "r": {
+     "id": "kennet",
+     "img": "games/chess/kennet.jpg",
+     "name": {
+      "es": "Kennet",
+      "ru": "Кеннет",
+      "it": "Kennet",
+      "en": "Kennet",
+      "de": "Kennet",
+      "fr": "Kennet",
+      "pt": "Kenneth"
+     }
+    },
+    "b": {
+     "id": "luis-utopia",
+     "img": "games/chess/luis-utopia.jpg",
+     "name": {
+      "es": "Luis",
+      "ru": "Луис",
+      "it": "Luis",
+      "en": "Luis",
+      "de": "Luis",
+      "fr": "Luis",
+      "pt": "Luis"
+     }
+    },
+    "n": {
+     "id": "sasha",
+     "img": "games/chess/sasha.jpg",
+     "name": {
+      "es": "Sasha",
+      "ru": "Саша",
+      "it": "Sasha",
+      "en": "Sasha",
+      "de": "Sasha",
+      "fr": "Sasha",
+      "pt": "Sasha"
+     }
+    },
+    "p": {
+     "id": "oxana-utopia",
+     "img": "games/chess/oxana-utopia.jpg",
+     "name": {
+      "es": "Oxana",
+      "ru": "Оксана",
+      "it": "Oxana",
+      "en": "Oxana",
+      "de": "Oxana",
+      "fr": "Oxana",
+      "pt": "Oksana"
+     }
+    }
+   }
+  },
+  {
+   "id": "hora-salvaje",
+   "title": {
+    "es": "La hora salvaje",
+    "ru": "Дикий час",
+    "it": "L’ora selvaggia",
+    "en": "The Wild Hour",
+    "de": "Die wilde Stunde",
+    "fr": "L’heure sauvage",
+    "pt": "A hora selvagem"
+   },
+   "novel": {
+    "ru": {
+     "title": "Дикий час: Карнавал раздора",
+     "slug": "dikij-chas-karnaval-razdora"
+    },
+    "it": {
+     "title": "L’ora selvaggia: La stregoneria veneziana",
+     "slug": "ora-selvaggia-venezia"
+    }
+   },
+   "pieces": {
+    "k": {
+     "id": "luis",
+     "img": "games/chess/luis.jpg",
+     "name": {
+      "es": "Luis",
+      "ru": "Луис",
+      "it": "Luis",
+      "en": "Luis",
+      "de": "Luis",
+      "fr": "Luis",
+      "pt": "Luis"
+     }
+    },
+    "q": {
+     "id": "natasha",
+     "img": "games/chess/natasha.jpg",
+     "name": {
+      "es": "Natasha",
+      "ru": "Наташа",
+      "it": "Nataša",
+      "en": "Natasha",
+      "de": "Natasha",
+      "fr": "Natasha",
+      "pt": "Natasha"
+     }
+    },
+    "r": {
+     "id": "mariano-ferreira",
+     "img": "games/chess/mariano-ferreira.jpg",
+     "name": {
+      "es": "Mariano Ferreira",
+      "ru": "Мариано Феррейра",
+      "it": "Mariano Ferreira",
+      "en": "Mariano Ferreira",
+      "de": "Mariano Ferreira",
+      "fr": "Mariano Ferreira",
+      "pt": "Mariano Ferreira"
+     }
+    },
+    "b": {
+     "id": "natalia-anomalnyj",
+     "img": "games/chess/natalia-anomalnyj.jpg",
+     "name": {
+      "es": "Natalia",
+      "ru": "Наталья",
+      "it": "Natalia",
+      "en": "Natalia",
+      "de": "Natalia",
+      "fr": "Natalia",
+      "pt": "Natalia"
+     }
+    },
+    "n": {
+     "id": "agente-l",
+     "img": "games/chess/agente-l.jpg",
+     "name": {
+      "es": "Agente L",
+      "ru": "Агент Л",
+      "it": "Agente L",
+      "en": "Agente L",
+      "de": "Agente L",
+      "fr": "Agente L",
+      "pt": "Agente L"
+     }
+    },
+    "p": {
+     "id": "julieta-diaz",
+     "img": "games/chess/julieta-diaz.jpg",
+     "name": {
+      "es": "Julieta Díaz",
+      "ru": "Хулиета Диас",
+      "it": "Julieta Díaz",
+      "en": "Julieta Díaz",
+      "de": "Julieta Díaz",
+      "fr": "Julieta Díaz",
+      "pt": "Julieta Díaz"
+     }
+    }
+   }
+  },
+  {
+   "id": "fader",
+   "title": {
+    "es": "Los Fader",
+    "ru": "Семья Фадер",
+    "it": "I Fader",
+    "en": "The Faders",
+    "de": "Die Faders",
+    "fr": "Les Fader",
+    "pt": "Os Fader"
+   },
+   "novel": {
+    "es": {
+     "title": "El misterio de los Fader",
+     "slug": "el-misterio-de-los-fader"
+    },
+    "ru": {
+     "title": "Тайна семьи Фадер",
+     "slug": "tajna-semi-fader"
+    }
+   },
+   "pieces": {
+    "k": {
+     "id": "luis-fader",
+     "img": "games/chess/luis-fader.jpg",
+     "name": {
+      "es": "Luis",
+      "ru": "Луис",
+      "it": "Luis",
+      "en": "Luis",
+      "de": "Luis",
+      "fr": "Luis",
+      "pt": "Luis"
+     }
+    },
+    "q": {
+     "id": "natalia-fader",
+     "img": "games/chess/natalia-fader.jpg",
+     "name": {
+      "es": "Natalia",
+      "ru": "Наталья",
+      "it": "Natalia",
+      "en": "Natalia",
+      "de": "Natalia",
+      "fr": "Natalia",
+      "pt": "Natalia"
+     }
+    },
+    "r": {
+     "id": "sergio-fader",
+     "img": "games/chess/sergio-fader.jpg",
+     "name": {
+      "es": "Sergio",
+      "ru": "Серхио",
+      "it": "Sergio",
+      "en": "Sergio",
+      "de": "Sergio",
+      "fr": "Sergio",
+      "pt": "Sergio"
+     }
+    },
+    "b": {
+     "id": "fernando-fader",
+     "img": "games/chess/fernando-fader.jpg",
+     "name": {
+      "es": "Fernando Fader",
+      "ru": "Фернандо Фадер",
+      "it": "Fernando Fader",
+      "en": "Fernando Fader",
+      "de": "Fernando Fader",
+      "fr": "Fernando Fader",
+      "pt": "Fernando Fader"
+     }
+    },
+    "n": {
+     "id": "heinrich",
+     "img": "games/chess/heinrich.jpg",
+     "name": {
+      "es": "Heinrich",
+      "ru": "Хайнрих",
+      "it": "Heinrich",
+      "en": "Heinrich",
+      "de": "Heinrich",
+      "fr": "Heinrich",
+      "pt": "Heinrich"
+     }
+    },
+    "p": {
+     "id": "adolfo-fader",
+     "img": "games/chess/adolfo-fader.jpg",
+     "name": {
+      "es": "Adolfo",
+      "ru": "Адольфо",
+      "it": "Adolfo",
+      "en": "Adolfo",
+      "de": "Adolfo",
+      "fr": "Adolfo",
+      "pt": "Adolfo"
+     }
+    }
+   }
+  },
+  {
+   "id": "florencia",
+   "title": {
+    "es": "Los artistas de Florencia",
+    "ru": "Флорентийские художники",
+    "it": "Gli artisti di Firenze",
+    "en": "The artists of Florence",
+    "de": "Die Künstler von Florenz",
+    "fr": "Les artistes de Florence",
+    "pt": "Os artistas de Florença"
+   },
+   "novel": {
+    "it": {
+     "title": "La Nevicata Rosa",
+     "slug": "la-nevicata-rosa"
+    }
+   },
+   "pieces": {
+    "k": {
+     "id": "lorenzo",
+     "img": "games/chess/lorenzo.jpg",
+     "name": {
+      "es": "Lorenzo",
+      "ru": "Лоренцо",
+      "it": "Lorenzo",
+      "en": "Lorenzo",
+      "de": "Lorenzo",
+      "fr": "Lorenzo",
+      "pt": "Lorenzo"
+     }
+    },
+    "q": {
+     "id": "carlotta",
+     "img": "games/chess/carlotta.jpg",
+     "name": {
+      "es": "Carlotta",
+      "ru": "Карлотта",
+      "it": "Carlotta",
+      "en": "Carlotta",
+      "de": "Carlotta",
+      "fr": "Carlotta",
+      "pt": "Carlotta"
+     }
+    },
+    "r": {
+     "id": "luca-pittore",
+     "img": "games/chess/luca-pittore.jpg",
+     "name": {
+      "es": "Luca",
+      "ru": "Лука",
+      "it": "Luca",
+      "en": "Luca",
+      "de": "Luca",
+      "fr": "Luca",
+      "pt": "Luca"
+     }
+    },
+    "b": {
+     "id": "laura-bellini",
+     "img": "games/chess/laura-bellini.jpg",
+     "name": {
+      "es": "Laura",
+      "ru": "Лаура Беллини",
+      "it": "Laura",
+      "en": "Laura",
+      "de": "Laura",
+      "fr": "Laura",
+      "pt": "Laura"
+     }
+    },
+    "n": {
+     "id": "alessio",
+     "img": "games/chess/alessio.jpg",
+     "name": {
+      "es": "Alessio",
+      "ru": "Алессио",
+      "it": "Alessio",
+      "en": "Alessio",
+      "de": "Alessio",
+      "fr": "Alessio",
+      "pt": "Alessio"
+     }
+    },
+    "p": {
+     "id": "aurora",
+     "img": "games/chess/aurora.jpg",
+     "name": {
+      "es": "Aurora",
+      "ru": "Аврора",
+      "it": "Aurora",
+      "en": "Aurora",
+      "de": "Aurora",
+      "fr": "Aurora",
+      "pt": "Aurora"
+     }
+    }
+   }
+  },
+  {
+   "id": "argenta",
+   "title": {
+    "es": "Argenta",
+    "ru": "Аргента",
+    "it": "Argenta",
+    "en": "Argenta",
+    "de": "Argenta",
+    "fr": "Argenta",
+    "pt": "Argenta"
+   },
+   "novel": {
+    "ru": {
+     "title": "Аргента",
+     "slug": "argenta"
+    }
+   },
+   "pieces": {
+    "k": {
+     "id": "luciano",
+     "img": "games/chess/luciano.jpg",
+     "name": {
+      "es": "Luciano",
+      "ru": "Лусиано",
+      "it": "Luciano",
+      "en": "Luciano",
+      "de": "Luciano",
+      "fr": "Luciano",
+      "pt": "Luciano"
+     }
+    },
+    "q": {
+     "id": "laura",
+     "img": "games/chess/laura.jpg",
+     "name": {
+      "es": "Laura",
+      "ru": "Лаура",
+      "it": "Laura",
+      "en": "Laura",
+      "de": "Laura",
+      "fr": "Laura",
+      "pt": "Laura"
+     }
+    },
+    "r": {
+     "id": "pyotr-argenta",
+     "img": "games/chess/pyotr-argenta.jpg",
+     "name": {
+      "es": "Piotr",
+      "ru": "Пётр",
+      "it": "Piotr",
+      "en": "Piotr",
+      "de": "Piotr",
+      "fr": "Piotr",
+      "pt": "Piotr"
+     }
+    },
+    "b": {
+     "id": "maria-argenta",
+     "img": "games/chess/maria-argenta.jpg",
+     "name": {
+      "es": "María",
+      "ru": "Мария",
+      "it": "María",
+      "en": "María",
+      "de": "María",
+      "fr": "María",
+      "pt": "María"
+     }
+    },
+    "n": {
+     "id": "ivan-argenta",
+     "img": "games/chess/ivan-argenta.jpg",
+     "name": {
+      "es": "Iván",
+      "ru": "Иван",
+      "it": "Iván",
+      "en": "Iván",
+      "de": "Iván",
+      "fr": "Iván",
+      "pt": "Iván"
+     }
+    },
+    "p": {
+     "id": "maskvell",
+     "img": "games/chess/maskvell.jpg",
+     "name": {
+      "es": "Elondar Maskvell",
+      "ru": "Элондар Масквелл",
+      "it": "Elondar Maskvell",
+      "en": "Elondar Maskvell",
+      "de": "Elondar Maskvell",
+      "fr": "Elondar Maskvell",
+      "pt": "Elondar Maskvell"
+     }
+    }
+   }
+  },
+  {
+   "id": "sinea",
+   "title": {
+    "es": "Sinea",
+    "ru": "Синея",
+    "it": "Sinea",
+    "en": "Sinea",
+    "de": "Sinea",
+    "fr": "Sinea",
+    "pt": "Sinea"
+   },
+   "novel": {
+    "ru": {
+     "title": "Грустный город",
+     "slug": "grustnyj-gorod"
+    },
+    "it": {
+     "title": "La città triste",
+     "slug": "la-citta-triste"
+    }
+   },
+   "pieces": {
+    "k": {
+     "id": "franco",
+     "img": "games/chess/franco.jpg",
+     "name": {
+      "es": "Franco",
+      "ru": "Франко",
+      "it": "Franco",
+      "en": "Franco",
+      "de": "Franco",
+      "fr": "Franco",
+      "pt": "Franco"
+     }
+    },
+    "q": {
+     "id": "chiara",
+     "img": "games/chess/chiara.jpg",
+     "name": {
+      "es": "Chiara",
+      "ru": "Кьяра",
+      "it": "Chiara",
+      "en": "Chiara",
+      "de": "Chiara",
+      "fr": "Chiara",
+      "pt": "Chiara"
+     }
+    },
+    "r": {
+     "id": "oxana-voice",
+     "img": "games/chess/oxana-voice.jpg",
+     "name": {
+      "es": "Oxana",
+      "ru": "Оксана",
+      "it": "Oxana",
+      "en": "Oxana",
+      "de": "Oxana",
+      "fr": "Oxana",
+      "pt": "Oxana"
+     }
+    },
+    "b": {
+     "id": "sasha-voice",
+     "img": "games/chess/sasha-voice.jpg",
+     "name": {
+      "es": "Sasha",
+      "ru": "Саша",
+      "it": "Sasha",
+      "en": "Sasha",
+      "de": "Sasha",
+      "fr": "Sasha",
+      "pt": "Sasha"
+     }
+    },
+    "n": {
+     "id": "romeo",
+     "img": "games/chess/romeo.jpg",
+     "name": {
+      "es": "Romeo",
+      "ru": "Ромео",
+      "it": "Romeo",
+      "en": "Romeo",
+      "de": "Romeo",
+      "fr": "Romeo",
+      "pt": "Romeo"
+     }
+    },
+    "p": {
+     "id": "gaia",
+     "img": "games/chess/gaia.jpg",
+     "name": {
+      "es": "Gaia",
+      "ru": "Гайя",
+      "it": "Gaia",
+      "en": "Gaia",
+      "de": "Gaia",
+      "fr": "Gaia",
+      "pt": "Gaia"
+     }
+    }
+   }
+  }
+ ]
+}
