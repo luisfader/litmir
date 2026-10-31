@@ -1106,6 +1106,8 @@ async function renderRec(){
 function home(){
   document.title = t("hero") + " — " + t("author");
   const list = catalog.novels.filter(n => !n.hidden && n.lang === lang).map((n,i)=>[n,i]).sort((a,b)=>(b[0].stars||0)-(a[0].stars||0)||a[1]-b[1]).map(x=>x[0]);
+  // Magazine (PDF) per language: magazine/<file>.pdf
+  const MAGAZINES = {ru: {file: "magazine/literatura-pered-snom-2026-11.pdf", btn: "Журнал «Литература перед сном» · ноябрь (PDF)"}};
   const characterLabels = {vec:"Personagi",ru:"Персонажи",es:"Personajes",it:"Personaggi",en:"Characters",de:"Figuren",fr:"Personnages",tr:"Karakterler",pt:"Personagens",cs:"Postavy",pl:"Postacie",sr:"Ликови",eo:"Roluloj",isv:"Postavy",vo:"Pösods",ia:"Personages",ld:"Personajenes",bg:"Герои"};
   app.innerHTML = `
   <section class="hero wrap">
@@ -1118,6 +1120,7 @@ function home(){
     ${newsPaper(lang) ? `<a class="character-entry" href="#/news">📰 ${esc(nt("btn"))} →</a>` : ""}
     ${course() ? `<a class="character-entry" href="#/learn">🎓 ${esc(course().title[lang])} →</a>` : ""}
     ${GAME_T[lang] ? `<a class="character-entry" href="#/game">🎲 ${esc(GAME_T[lang].btn)} →</a>` : ""}
+    ${MAGAZINES[lang] ? `<a class="character-entry" href="${esc(MAGAZINES[lang].file)}" download>📖 ${esc(MAGAZINES[lang].btn)} →</a>` : ""}
     <a class="character-entry" href="#/mis-lecturas">★ ${esc(ft(0))} · ${esc(rt(1))} →</a>
   </section>
   <section class="wrap" id="rec"></section>
