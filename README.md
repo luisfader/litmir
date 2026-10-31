@@ -69,6 +69,14 @@ En las secciones ES, RU, IT y EN hay un juego (`#/game`, botón «🎲» en la p
 
 Las preguntas están en `games/<idioma>.json`. **Al añadir novelas o personajes, regenerarlas:** `python3 tools/juego.py .` Las novelas 18+ quedan fuera del juego. Para dejar fuera otra novela, añadir su slug a `EXCLUDE` en `tools/juego.py`.
 
+## Ajedrez de las novelas
+
+En la misma página del sitio (`#/ajedrez`, botón «♞» en la portada de ES, RU, IT, EN, DE, FR y PT): ajedrez contra la computadora en el que las figuras son personajes de las novelas. El jugador elige su ejército, el de la computadora, el color y uno de cinco niveles (Principiante, Fácil, Intermedio, Difícil, Maestro). Se puede deshacer, pedir una pista y rendirse; la partida en curso, la configuración y las victorias por nivel se guardan en el navegador (`lm:chess:game`, `lm:chess:cfg`, `lm:chess:wins`).
+
+- El código de la página está en `index.html` (`chessPage`, textos en `UI` dentro de ella; estilos `.cz-*`). Motor: `games/chess-engine.js`, sin dependencias; se carga solo al abrir el ajedrez. Corre en un Web Worker para que el tablero no se congele mientras la computadora piensa.
+- Ejércitos: seis personajes de un mismo mundo, uno por figura (rey, dama, torre, alfil, caballo, peón). Se definen en `ARMIES` dentro de `tools/ajedrez.py`, junto con el recorte de cada retrato alrededor de la cara (`CROP`).
+- **Al cambiar ejércitos, recortes o nombres, regenerar:** `python3 tools/ajedrez.py .` (escribe `games/chess.json` y los retratos redondos de `games/chess/`).
+
 ## Noticias satíricas
 
 En ES, IT y EN hay un periódico satírico (`#/news`, botón «📰» en la portada), con noticias políticas inventadas a partir de las novelas de cada idioma: *El Heraldo de Sinea* (ES), *Il Corriere del Sorriso* (IT) y *The Sinea Herald* (EN). El botón aparece solo en los idiomas que tienen periódico.
