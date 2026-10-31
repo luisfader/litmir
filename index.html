@@ -551,6 +551,97 @@ article.chapter h3{font-family:var(--sans);font-size:.72em;letter-spacing:.12em;
 .lr-unit img{object-position:50% 28%}
 .lr-soon{padding:8px 0 0}
 .lr-test{border-color:var(--accent)}
+
+/* Novels chess (#/ajedrez) */
+.cz{--sq-l:#efe2cb;--sq-d:#b98a66;--hl:rgba(214,170,60,.55);--sel:rgba(140,47,47,.45);padding-bottom:50px}
+:root[data-theme="dark"] .cz{--sq-l:#cdb594;--sq-d:#86603f;--sel:rgba(217,140,122,.55)}
+@media (prefers-color-scheme: dark){:root:not([data-theme]) .cz{--sq-l:#cdb594;--sq-d:#86603f;--sel:rgba(217,140,122,.55)}}
+.cz-hide{display:none!important}
+.cz-hero{padding:34px 0 6px;text-align:center}
+.cz-hero h1{font-family:var(--display);font-weight:500;font-size:clamp(36px,7vw,60px);line-height:1.05;margin:8px 0 10px}
+.cz-lead{max-width:640px;margin:0 auto;color:var(--muted);font-size:17px}
+.cz h2{font-family:var(--display);font-weight:600;font-size:26px;margin:28px 0 12px}
+.cz-armies{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.cz-army{border:1px solid var(--line);background:var(--paper);border-radius:14px;padding:12px 14px;text-align:left;display:flex;flex-direction:column;gap:8px;cursor:pointer;transition:border-color .15s,box-shadow .15s,transform .15s}
+.cz-army:hover{transform:translateY(-1px)}
+.cz-army[aria-pressed="true"]{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent) inset,var(--shadow)}
+.cz-army .cz-faces{display:flex}
+.cz-army .cz-faces img{width:38px;height:38px;border-radius:50%;object-fit:cover;border:2px solid var(--paper);margin-right:-7px;background:var(--line)}
+.cz-army b{font-family:var(--display);font-size:21px;font-weight:600;line-height:1.1}
+.cz-army small{font:12.5px var(--sans);color:var(--muted)}
+.cz-army[disabled]{opacity:.38;cursor:not-allowed;transform:none}
+@media (max-width:560px){.cz-armies{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px}.cz-army{min-width:0;padding:10px}.cz-army .cz-faces img{width:27px;height:27px;margin-right:-6px}.cz-army b{font-size:18px}.cz-army small{font-size:11.5px}}
+.cz-seg{display:flex;flex-wrap:wrap;gap:8px}
+.cz-seg button{border:1px solid var(--line);background:var(--paper);border-radius:12px;padding:10px 14px;text-align:left;min-width:120px;flex:1;cursor:pointer}
+.cz-seg button[aria-pressed="true"]{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent) inset;color:var(--accent)}
+.cz-seg button b{display:block;font:600 15px var(--sans)}
+.cz-seg button small{display:block;font:12px var(--sans);color:var(--muted)}
+.cz-cta{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:30px 0 20px}
+.cz-btn{border:1px solid var(--accent);background:var(--accent);color:#fff;border-radius:30px;padding:12px 26px;font:600 15px var(--sans);cursor:pointer}
+:root[data-theme="dark"] .cz-btn{color:#1d1914}
+@media (prefers-color-scheme: dark){:root:not([data-theme]) .cz-btn{color:#1d1914}}
+.cz-btn.cz-alt{background:transparent;color:var(--accent)}
+.cz-game{display:grid;grid-template-columns:minmax(0,600px) minmax(240px,1fr);gap:26px;align-items:start;padding-top:18px}
+@media (max-width:860px){.cz-game{grid-template-columns:1fr;gap:16px;padding-top:10px}}
+.cz-side{display:flex;align-items:center;gap:10px;min-height:52px;font-family:var(--sans)}
+.cz-who{display:flex;align-items:center;gap:9px;min-width:0;flex:1}
+.cz-who img{width:40px;height:40px;border-radius:50%;object-fit:cover;flex:none}
+.cz-who div{min-width:0}
+.cz-who b{display:block;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cz-who span{display:block;font-size:12px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cz-caps{display:flex;flex-wrap:wrap;justify-content:flex-end;align-items:center;max-width:55%}
+.cz-caps img{width:20px;height:20px;border-radius:50%;object-fit:cover;margin-left:-5px;border:1.5px solid var(--bg)}
+.cz-caps em{font-style:normal;font-size:12px;color:var(--muted);margin-left:6px}
+.cz-think{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--accent);margin-left:6px;animation:czpulse 1s infinite ease-in-out;vertical-align:middle}
+@keyframes czpulse{0%,100%{opacity:.25;transform:scale(.8)}50%{opacity:1;transform:scale(1.15)}}
+.cz-board{position:relative;width:100%;aspect-ratio:1;display:grid;grid-template-columns:repeat(8,1fr);grid-template-rows:repeat(8,1fr);border-radius:8px;overflow:hidden;box-shadow:var(--shadow);touch-action:none;user-select:none;-webkit-user-select:none;-webkit-tap-highlight-color:transparent}
+.cz-sq{position:relative;border:0;padding:0;margin:0;background:var(--sq-l);display:grid;place-items:center;cursor:pointer}
+.cz-sq.d{background:var(--sq-d)}
+.cz-sq.last::before{content:"";position:absolute;inset:0;background:var(--hl)}
+.cz-sq.sel::before{content:"";position:absolute;inset:0;background:var(--sel)}
+.cz-sq.hint::before{content:"";position:absolute;inset:0;background:rgba(70,150,110,.55)}
+.cz-sq.chk::after{content:"";position:absolute;inset:0;z-index:1;background:radial-gradient(circle,rgba(225,25,25,1) 0%,rgba(225,25,25,.9) 55%,rgba(225,25,25,0) 74%)}
+.cz-sq.chk .cz-pc{animation:czchk 1.2s ease-in-out 2;box-shadow:0 0 0 2.5px #e11919,0 0 12px 3px rgba(225,25,25,.9)}
+@keyframes czchk{50%{transform:scale(1.08)}}
+.cz-dot{position:absolute;width:28%;height:28%;border-radius:50%;background:rgba(40,25,15,.32);z-index:3;pointer-events:none}
+.cz-ring{position:absolute;inset:3%;border-radius:50%;border:4px solid rgba(40,25,15,.35);z-index:3;pointer-events:none}
+.cz-co{position:absolute;font:600 9px var(--sans);opacity:.7;pointer-events:none;z-index:1}
+.cz-co.f{right:3px;bottom:1px} .cz-co.r{left:3px;top:1px}
+.cz-sq.d .cz-co{color:var(--sq-l)} .cz-sq:not(.d) .cz-co{color:var(--sq-d)}
+.cz-pc{position:relative;z-index:2;display:block;width:84%;height:84%;border-radius:50%;background-size:cover;background-position:center;pointer-events:none;will-change:transform}
+.cz-pc.w{box-shadow:0 0 0 2.5px #fffaf0,0 0 0 4px rgba(40,25,15,.55),0 3px 6px rgba(0,0,0,.35)}
+.cz-pc.b{box-shadow:0 0 0 2.5px #1b1512,0 0 0 4px rgba(255,245,230,.6),0 3px 6px rgba(0,0,0,.4)}
+.cz-pc.k,.cz-pc.q{width:90%;height:90%} .cz-pc.p{width:72%;height:72%}
+.cz-pc i{position:absolute;right:-9%;bottom:-9%;width:44%;height:44%;border-radius:50%;display:grid;place-items:center;font-style:normal;font-size:clamp(9px,2.6vw,16px);line-height:1;font-family:"Segoe UI Symbol","DejaVu Sans","Noto Sans Symbols 2",serif}
+.cz-pc.w i{background:#fffaf0;color:#2a2420;box-shadow:0 0 0 1.5px rgba(40,25,15,.55)}
+.cz-pc.b i{background:#1b1512;color:#f5eadb;box-shadow:0 0 0 1.5px rgba(255,245,230,.6)}
+.cz-pc.p i{width:50%;height:50%}
+.cz-drag{position:fixed;z-index:50;pointer-events:none;transform:translate(-50%,-50%) scale(1.12)}
+.cz-status{font-family:var(--sans);font-size:15px;text-align:center;min-height:24px;margin:10px 0 2px;font-weight:500}
+.cz-status.end{color:var(--accent);font-weight:600}
+.cz-selinfo{font:13px var(--sans);color:var(--muted);text-align:center;min-height:20px}
+.cz-tools{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:12px}
+.cz-tools button{border:1px solid var(--line);background:var(--paper);border-radius:30px;padding:9px 15px;font:500 14px var(--sans);cursor:pointer}
+.cz-tools button:disabled{opacity:.4;cursor:default}
+.cz-tools button.warn{border-color:var(--accent);color:var(--accent)}
+.cz-end{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:12px}
+.cz-panel{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-bottom:14px}
+.cz-panel h3{font:600 12px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0 0 10px}
+.cz-moves{font:14px var(--sans);display:grid;grid-template-columns:34px 1fr 1fr;gap:2px 8px;max-height:260px;overflow:auto}
+.cz-moves span:nth-child(3n+1){color:var(--muted)}
+.cz-moves .cur{color:var(--accent);font-weight:600}
+.cz-legend{display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font:13px var(--sans)}
+.cz-legend h4{grid-column:1/-1;margin:6px 0 0;font:600 18px var(--display)}
+.cz-legend div{display:flex;align-items:center;gap:8px;min-width:0}
+.cz-legend img{width:30px;height:30px;border-radius:50%;object-fit:cover;flex:none}
+.cz-legend span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cz-legend small{color:var(--muted)}
+.cz-modal{position:fixed;inset:0;z-index:60;background:rgba(20,14,10,.55);display:grid;place-items:center;padding:18px}
+.cz-modal .cz-card{background:var(--paper);border-radius:16px;padding:20px;max-width:380px;width:100%;text-align:center;box-shadow:var(--shadow)}
+.cz-modal h3{font-family:var(--display);font-size:24px;margin:0 0 14px;font-weight:600}
+.cz-promo{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.cz-promo button{border:1px solid var(--line);background:var(--bg);border-radius:12px;padding:8px 4px;font:12px var(--sans);display:flex;flex-direction:column;align-items:center;gap:5px;cursor:pointer}
+.cz-promo .cz-pc{width:52px;height:52px}
 </style>
 </head>
 <body>
@@ -935,7 +1026,7 @@ function renderChrome(){
 document.getElementById("langs").addEventListener("click", e => {
   const l = e.target.dataset && e.target.dataset.l; if (!l) return;
   setLang(l);
-  const home = location.hash.startsWith("#/blog") ? "#/blog" : location.hash.startsWith("#/news") && newsPaper(l) ? "#/news" : location.hash.startsWith("#/learn") && learnCat && learnCat.courses.some(c => c.lang === l) ? "#/learn" : "#/";
+  const home = location.hash.startsWith("#/ajedrez") && CHESS_BTN[l] ? "#/ajedrez" : location.hash.startsWith("#/blog") ? "#/blog" : location.hash.startsWith("#/news") && newsPaper(l) ? "#/news" : location.hash.startsWith("#/learn") && learnCat && learnCat.courses.some(c => c.lang === l) ? "#/learn" : "#/";
   if (location.hash && location.hash !== home) location.hash = home; else route();
 });
 
@@ -1120,6 +1211,7 @@ function home(){
     ${newsPaper(lang) ? `<a class="character-entry" href="#/news">📰 ${esc(nt("btn"))} →</a>` : ""}
     ${course() ? `<a class="character-entry" href="#/learn">🎓 ${esc(course().title[lang])} →</a>` : ""}
     ${GAME_T[lang] ? `<a class="character-entry" href="#/game">🎲 ${esc(GAME_T[lang].btn)} →</a>` : ""}
+    ${CHESS_BTN[lang] ? `<a class="character-entry" href="#/ajedrez">♞ ${esc(CHESS_BTN[lang])} →</a>` : ""}
     ${MAGAZINES[lang] ? `<a class="character-entry" href="${esc(MAGAZINES[lang].file)}" download>📖 ${esc(MAGAZINES[lang].btn)} →</a>` : ""}
     <a class="character-entry" href="#/mis-lecturas">★ ${esc(ft(0))} · ${esc(rt(1))} →</a>
   </section>
@@ -1989,6 +2081,372 @@ function confetti(cv){
 }
 
 
+/* Novels chess: #/ajedrez — play the computer; the pieces are characters from the novels (games/chess.json, engine in games/chess-engine.js) */
+const CHESS_BTN = {es:"Ajedrez de las novelas", ru:"Шахматы с героями романов", it:"Gli scacchi dei romanzi", en:"Novel chess", de:"Schach mit den Romanfiguren", fr:"Les échecs des romans", pt:"O xadrez dos romances"};
+const chessPage = (function(){
+  const UI = {
+   es:{brand:"Mundo literario",back:"Volver a las novelas",kicker:"Juego",title:"Ajedrez de las novelas",lead:"Las figuras son personajes de las novelas de Robert Fader. Elige tu ejército, el de la computadora y el nivel, y juega.",
+       mine:"Tu ejército",cpu:"El ejército de la computadora",level:"Nivel",color:"Juegas con",white:"Blancas",black:"Negras",random:"Al azar",whiteD:"Mueves primero",blackD:"Mueve primero la computadora",randomD:"Que decida la suerte",
+       start:"Empezar la partida",resume:"Continuar la partida guardada",levels:["Principiante","Fácil","Intermedio","Difícil","Maestro"],levelD:["Se equivoca a menudo","Ve una o dos jugadas","Piensa tres jugadas","Calcula en profundidad","Juega con toda su fuerza"],
+       you:"Tú",computer:"Computadora",yourTurn:"Tu turno",thinking:"La computadora piensa…",check:"¡Jaque!",won:"¡Jaque mate! Ganaste la partida.",lost:"Jaque mate. Ganó la computadora.",
+       stalemate:"Tablas: rey ahogado.",fifty:"Tablas: cincuenta jugadas sin capturas ni movimientos de peón.",repetition:"Tablas por triple repetición.",material:"Tablas: no queda material para dar mate.",resigned:"Te rendiste. Ganó la computadora.",
+       undo:"↶ Deshacer",hint:"💡 Pista",resign:"⚑ Rendirse",sure:"¿Seguro? Toca otra vez",newGame:"Nueva partida",rematch:"Revancha",change:"Cambiar ejércitos o nivel",moves:"Jugadas",pieces:"Las figuras",
+       roles:["Rey","Dama","Torre","Alfil","Caballo","Peón"],promote:"¿En qué se convierte el peón?",wins:n=>n===1?"1 victoria":n+" victorias",foot:"Ajedrez de las novelas",whiteS:"blancas",blackS:"negras"},
+   ru:{brand:"Литературный мир",back:"К романам",kicker:"Игра",title:"Шахматы с героями романов",lead:"Фигуры — персонажи романов Роберта Фадера. Выберите свою армию, армию компьютера и уровень — и играйте.",
+       mine:"Ваша армия",cpu:"Армия компьютера",level:"Уровень",color:"Вы играете",white:"Белыми",black:"Чёрными",random:"Наугад",whiteD:"Ваш первый ход",blackD:"Первым ходит компьютер",randomD:"Пусть решит жребий",
+       start:"Начать партию",resume:"Продолжить сохранённую партию",levels:["Новичок","Лёгкий","Средний","Сложный","Мастер"],levelD:["Часто ошибается","Видит на ход-два вперёд","Думает на три хода","Считает глубоко","Играет в полную силу"],
+       you:"Вы",computer:"Компьютер",yourTurn:"Ваш ход",thinking:"Компьютер думает…",check:"Шах!",won:"Мат! Вы выиграли партию.",lost:"Мат. Победил компьютер.",
+       stalemate:"Ничья: пат.",fifty:"Ничья: пятьдесят ходов без взятий и ходов пешками.",repetition:"Ничья: троекратное повторение.",material:"Ничья: не хватает материала для мата.",resigned:"Вы сдались. Победил компьютер.",
+       undo:"↶ Отменить",hint:"💡 Подсказка",resign:"⚑ Сдаться",sure:"Точно? Нажмите ещё раз",newGame:"Новая партия",rematch:"Реванш",change:"Сменить армии или уровень",moves:"Ходы",pieces:"Фигуры",
+       roles:["Король","Ферзь","Ладья","Слон","Конь","Пешка"],promote:"В какую фигуру превратить пешку?",wins:n=>n+" "+(n%10===1&&n%100!==11?"победа":n%10>=2&&n%10<=4&&(n%100<10||n%100>=20)?"победы":"побед"),foot:"Шахматы с героями романов",whiteS:"белые",blackS:"чёрные"},
+   it:{brand:"Mondo letterario",back:"Torna ai romanzi",kicker:"Gioco",title:"Gli scacchi dei romanzi",lead:"I pezzi sono i personaggi dei romanzi di Robert Fader. Scegli il tuo esercito, quello del computer e il livello, e gioca.",
+       mine:"Il tuo esercito",cpu:"L’esercito del computer",level:"Livello",color:"Giochi con",white:"Bianchi",black:"Neri",random:"A caso",whiteD:"Muovi per primo",blackD:"Muove prima il computer",randomD:"Decide la sorte",
+       start:"Inizia la partita",resume:"Riprendi la partita salvata",levels:["Principiante","Facile","Intermedio","Difficile","Maestro"],levelD:["Sbaglia spesso","Vede una o due mosse","Pensa tre mosse","Calcola in profondità","Gioca al massimo"],
+       you:"Tu",computer:"Computer",yourTurn:"Tocca a te",thinking:"Il computer pensa…",check:"Scacco!",won:"Scacco matto! Hai vinto la partita.",lost:"Scacco matto. Ha vinto il computer.",
+       stalemate:"Patta: stallo.",fifty:"Patta: cinquanta mosse senza catture né mosse di pedone.",repetition:"Patta per triplice ripetizione.",material:"Patta: materiale insufficiente per dare matto.",resigned:"Hai abbandonato. Ha vinto il computer.",
+       undo:"↶ Annulla",hint:"💡 Suggerimento",resign:"⚑ Abbandona",sure:"Sicuro? Tocca di nuovo",newGame:"Nuova partita",rematch:"Rivincita",change:"Cambia eserciti o livello",moves:"Mosse",pieces:"I pezzi",
+       roles:["Re","Donna","Torre","Alfiere","Cavallo","Pedone"],promote:"In quale pezzo si trasforma il pedone?",wins:n=>n===1?"1 vittoria":n+" vittorie",foot:"Gli scacchi dei romanzi",whiteS:"bianchi",blackS:"neri"},
+   en:{brand:"Literary World",back:"Back to the novels",kicker:"Game",title:"Novel chess",lead:"The pieces are characters from Robert Fader’s novels. Choose your army, the computer’s army and the level, and play.",
+       mine:"Your army",cpu:"The computer’s army",level:"Level",color:"You play",white:"White",black:"Black",random:"Random",whiteD:"You move first",blackD:"The computer moves first",randomD:"Let luck decide",
+       start:"Start the game",resume:"Continue the saved game",levels:["Beginner","Easy","Intermediate","Hard","Master"],levelD:["Makes many mistakes","Sees one or two moves","Thinks three moves ahead","Calculates deeply","Plays at full strength"],
+       you:"You",computer:"Computer",yourTurn:"Your move",thinking:"The computer is thinking…",check:"Check!",won:"Checkmate! You won the game.",lost:"Checkmate. The computer won.",
+       stalemate:"Draw: stalemate.",fifty:"Draw: fifty moves without a capture or pawn move.",repetition:"Draw by threefold repetition.",material:"Draw: not enough material to mate.",resigned:"You resigned. The computer won.",
+       undo:"↶ Undo",hint:"💡 Hint",resign:"⚑ Resign",sure:"Sure? Tap again",newGame:"New game",rematch:"Rematch",change:"Change armies or level",moves:"Moves",pieces:"The pieces",
+       roles:["King","Queen","Rook","Bishop","Knight","Pawn"],promote:"What should the pawn become?",wins:n=>n===1?"1 win":n+" wins",foot:"Novel chess",whiteS:"white",blackS:"black"},
+   de:{brand:"Literarische Welt",back:"Zurück zu den Romanen",kicker:"Spiel",title:"Schach mit den Romanfiguren",lead:"Die Schachfiguren sind Figuren aus den Romanen von Robert Fader. Wähle deine Armee, die des Computers und die Stufe – und spiel.",
+       mine:"Deine Armee",cpu:"Die Armee des Computers",level:"Stufe",color:"Du spielst",white:"Weiß",black:"Schwarz",random:"Zufall",whiteD:"Du ziehst zuerst",blackD:"Der Computer zieht zuerst",randomD:"Das Los entscheidet",
+       start:"Partie beginnen",resume:"Gespeicherte Partie fortsetzen",levels:["Anfänger","Leicht","Mittel","Schwer","Meister"],levelD:["Macht oft Fehler","Sieht ein, zwei Züge","Denkt drei Züge voraus","Rechnet tief","Spielt mit voller Kraft"],
+       you:"Du",computer:"Computer",yourTurn:"Du bist am Zug",thinking:"Der Computer denkt…",check:"Schach!",won:"Schachmatt! Du hast gewonnen.",lost:"Schachmatt. Der Computer hat gewonnen.",
+       stalemate:"Remis: Patt.",fifty:"Remis: fünfzig Züge ohne Schlagen oder Bauernzug.",repetition:"Remis durch dreifache Wiederholung.",material:"Remis: zu wenig Material zum Mattsetzen.",resigned:"Du hast aufgegeben. Der Computer hat gewonnen.",
+       undo:"↶ Zurück",hint:"💡 Tipp",resign:"⚑ Aufgeben",sure:"Sicher? Nochmal tippen",newGame:"Neue Partie",rematch:"Revanche",change:"Armeen oder Stufe ändern",moves:"Züge",pieces:"Die Figuren",
+       roles:["König","Dame","Turm","Läufer","Springer","Bauer"],promote:"Wozu wird der Bauer?",wins:n=>n===1?"1 Sieg":n+" Siege",foot:"Schach mit den Romanfiguren",whiteS:"Weiß",blackS:"Schwarz"},
+   fr:{brand:"Monde littéraire",back:"Retour aux romans",kicker:"Jeu",title:"Les échecs des romans",lead:"Les pièces sont des personnages des romans de Robert Fader. Choisissez votre armée, celle de l’ordinateur et le niveau, puis jouez.",
+       mine:"Votre armée",cpu:"L’armée de l’ordinateur",level:"Niveau",color:"Vous jouez",white:"Les blancs",black:"Les noirs",random:"Au hasard",whiteD:"Vous jouez en premier",blackD:"L’ordinateur commence",randomD:"Le sort décide",
+       start:"Commencer la partie",resume:"Reprendre la partie enregistrée",levels:["Débutant","Facile","Intermédiaire","Difficile","Maître"],levelD:["Se trompe souvent","Voit un ou deux coups","Réfléchit trois coups","Calcule en profondeur","Joue à pleine force"],
+       you:"Vous",computer:"Ordinateur",yourTurn:"À vous de jouer",thinking:"L’ordinateur réfléchit…",check:"Échec !",won:"Échec et mat ! Vous avez gagné.",lost:"Échec et mat. L’ordinateur a gagné.",
+       stalemate:"Nulle : pat.",fifty:"Nulle : cinquante coups sans prise ni coup de pion.",repetition:"Nulle par triple répétition.",material:"Nulle : matériel insuffisant pour mater.",resigned:"Vous avez abandonné. L’ordinateur a gagné.",
+       undo:"↶ Annuler",hint:"💡 Indice",resign:"⚑ Abandonner",sure:"Sûr ? Touchez encore",newGame:"Nouvelle partie",rematch:"Revanche",change:"Changer d’armées ou de niveau",moves:"Coups",pieces:"Les pièces",
+       roles:["Roi","Dame","Tour","Fou","Cavalier","Pion"],promote:"En quoi le pion se transforme-t-il ?",wins:n=>n<=1?n+" victoire":n+" victoires",foot:"Les échecs des romans",whiteS:"blancs",blackS:"noirs"},
+   pt:{brand:"Mundo literário",back:"Voltar aos romances",kicker:"Jogo",title:"O xadrez dos romances",lead:"As peças são personagens dos romances de Robert Fader. Escolha o seu exército, o do computador e o nível, e jogue.",
+       mine:"O seu exército",cpu:"O exército do computador",level:"Nível",color:"Você joga com",white:"Brancas",black:"Pretas",random:"Ao acaso",whiteD:"Você começa",blackD:"O computador começa",randomD:"A sorte decide",
+       start:"Começar a partida",resume:"Continuar a partida salva",levels:["Iniciante","Fácil","Intermédio","Difícil","Mestre"],levelD:["Erra muitas vezes","Vê uma ou duas jogadas","Pensa três jogadas","Calcula a fundo","Joga com toda a força"],
+       you:"Você",computer:"Computador",yourTurn:"É a sua vez",thinking:"O computador está a pensar…",check:"Xeque!",won:"Xeque-mate! Você ganhou a partida.",lost:"Xeque-mate. O computador ganhou.",
+       stalemate:"Empate: afogamento.",fifty:"Empate: cinquenta lances sem capturas nem lances de peão.",repetition:"Empate por tripla repetição.",material:"Empate: material insuficiente para dar mate.",resigned:"Você desistiu. O computador ganhou.",
+       undo:"↶ Desfazer",hint:"💡 Dica",resign:"⚑ Desistir",sure:"Tem a certeza? Toque de novo",newGame:"Nova partida",rematch:"Desforra",change:"Mudar exércitos ou nível",moves:"Lances",pieces:"As peças",
+       roles:["Rei","Dama","Torre","Bispo","Cavalo","Peão"],promote:"Em que peça o peão se transforma?",wins:n=>n===1?"1 vitória":n+" vitórias",foot:"O xadrez dos romances",whiteS:"brancas",blackS:"pretas"}
+  };
+  const ROLE = [null, "p", "n", "b", "r", "q", "k"];      // engine piece type -> role key
+  const ROLE_I = {k:0, q:1, r:2, b:3, n:4, p:5};          // role key -> index in the roles list
+  const GLYPH = {k:"♚", q:"♛", r:"♜", b:"♝", n:"♞", p:"♟︎"};
+  const $ = id => document.getElementById(id);
+  let C = null, ARMIES = null, worker = null, T = UI.es, nameLang = "es";
+  const cfg = Object.assign({mine: null, cpu: null, level: 3, color: "w"}, store.get("chess:cfg", {}));
+  let screen = "setup", game = null, pos = null, sel = -1, targets = [], hintMv = 0, lastAnim = null, busy = 0, reqId = 0, resignArm = false, pending = null, drag = null;
+
+  const army = id => ARMIES.find(a => a.id === id) || ARMIES[0];
+  const pname = (a, r) => a.pieces[r].name[nameLang] || a.pieces[r].name.es;
+  const atitle = a => a.title[nameLang] || a.title.es;
+  const anovel = a => (a.novel[lang] || {}).title || "";
+  const onPage = () => !!$("czBoard");
+
+  function loadEngine(){
+    if (window.Chess) return Promise.resolve();
+    return new Promise((ok, fail) => { const s = document.createElement("script"); s.src = "games/chess-engine.js"; s.onload = ok; s.onerror = fail; document.head.appendChild(s); });
+  }
+  function startWorker(){
+    if (worker) return;
+    try { worker = new Worker("games/chess-engine.js"); worker.onmessage = e => onEngine(e.data); worker.onerror = () => { worker = null; }; } catch(e) { worker = null; }
+  }
+
+  /* ---------- Page ---------- */
+  async function page(){
+    T = UI[lang] || UI.en; nameLang = UI[lang] ? lang : "en";
+    document.title = T.title + " — " + t("author");
+    app.innerHTML = `<div class="reader-bar"><div class="wrap"><a class="crumb" href="#/">${esc(t("back"))}</a></div></div><div class="wrap cz"><div class="empty">…</div></div>`;
+    try {
+      await loadEngine(); C = window.Chess; startWorker();
+      if (!ARMIES) ARMIES = (await (await fetch("games/chess.json", {cache: "no-cache"})).json()).armies;
+    } catch(e) { app.querySelector(".cz").innerHTML = `<div class="empty">${esc(t("notFound"))}</div>`; return; }
+    if (!ARMIES.some(a => a.id === cfg.mine)) cfg.mine = ARMIES[0].id;
+    if (!ARMIES.some(a => a.id === cfg.cpu) || cfg.cpu === cfg.mine) cfg.cpu = ARMIES.find(a => a.id !== cfg.mine).id;
+    app.querySelector(".cz").innerHTML = `
+    <section id="czSetup">
+      <div class="cz-hero"><div class="eyebrow">♞ ${esc(T.kicker)}</div><h1>${esc(T.title)}</h1><p class="cz-lead">${esc(T.lead)}</p>
+        <p><button class="cz-btn cz-alt cz-hide" id="czResume">${esc(T.resume)}</button></p></div>
+      <h2>${esc(T.mine)}</h2><div class="cz-armies" id="czMine"></div>
+      <h2>${esc(T.cpu)}</h2><div class="cz-armies" id="czCpu"></div>
+      <h2>${esc(T.level)}</h2><div class="cz-seg" id="czLevels"></div>
+      <h2>${esc(T.color)}</h2><div class="cz-seg" id="czColors"></div>
+      <div class="cz-cta"><button class="cz-btn" id="czStart">${esc(T.start)}</button></div>
+    </section>
+    <section id="czPlay" class="cz-game cz-hide">
+      <div>
+        <div class="cz-side" id="czTop"></div>
+        <div class="cz-board" id="czBoard" role="grid"></div>
+        <div class="cz-side" id="czBottom"></div>
+        <div class="cz-status" id="czStatus" aria-live="polite"></div>
+        <div class="cz-selinfo" id="czSel"></div>
+        <div class="cz-tools"><button id="czUndo">${esc(T.undo)}</button><button id="czHint">${esc(T.hint)}</button><button id="czResign">${esc(T.resign)}</button><button id="czNew">${esc(T.newGame)}</button></div>
+        <div class="cz-end cz-hide" id="czEnd"><button class="cz-btn" id="czRematch">${esc(T.rematch)}</button><button class="cz-btn cz-alt" id="czChange">${esc(T.change)}</button></div>
+      </div>
+      <aside>
+        <div class="cz-panel"><h3>${esc(T.moves)}</h3><div class="cz-moves" id="czMoves"></div></div>
+        <div class="cz-panel"><h3>${esc(T.pieces)}</h3><div class="cz-legend" id="czLegend"></div></div>
+      </aside>
+    </section>
+    <div class="cz-modal cz-hide" id="czPromoModal"><div class="cz-card"><h3>${esc(T.promote)}</h3><div class="cz-promo" id="czPromo"></div></div></div>`;
+    bind();
+    if (screen === "play" && game) { pos = C.fromMoves(game.moves); showPlay(); maybeCpu(); }
+    else drawSetup();
+  }
+
+  /* ---------- Setup ---------- */
+  function armyCard(a, which){
+    const on = cfg[which] === a.id, other = cfg[which === "mine" ? "cpu" : "mine"] === a.id;
+    return `<button class="cz-army" data-which="${which}" data-id="${esc(a.id)}" aria-pressed="${on}" ${other ? "disabled" : ""}>
+      <span class="cz-faces">${"kqrbnp".split("").map(r => `<img src="${esc(a.pieces[r].img)}" alt="" loading="lazy">`).join("")}</span>
+      <b>${esc(atitle(a))}</b>
+      <small>${"kqrb".split("").map(r => esc(pname(a, r))).join(" · ")}${anovel(a) ? `<br>«${esc(anovel(a))}»` : ""}</small></button>`;
+  }
+  function drawSetup(){
+    screen = "setup";
+    $("czPlay").classList.add("cz-hide"); $("czSetup").classList.remove("cz-hide");
+    $("czMine").innerHTML = ARMIES.map(a => armyCard(a, "mine")).join("");
+    $("czCpu").innerHTML = ARMIES.map(a => armyCard(a, "cpu")).join("");
+    const wins = store.get("chess:wins", {});
+    $("czLevels").innerHTML = T.levels.map((n, i) => `<button data-level="${i + 1}" aria-pressed="${cfg.level === i + 1}"><b>${i + 1} · ${esc(n)}</b><small>${esc(T.levelD[i])}${wins[i + 1] ? " · ★ " + esc(T.wins(wins[i + 1])) : ""}</small></button>`).join("");
+    $("czColors").innerHTML = [["w", "♔ " + T.white, T.whiteD], ["b", "♚ " + T.black, T.blackD], ["r", "🎲 " + T.random, T.randomD]]
+      .map(([k, n, d]) => `<button data-color="${k}" aria-pressed="${cfg.color === k}"><b>${esc(n)}</b><small>${esc(d)}</small></button>`).join("");
+    const saved = store.get("chess:game", null);
+    $("czResume").classList.toggle("cz-hide", !(saved && saved.moves && saved.moves.length && !saved.over));
+  }
+  function newGame(me){
+    me = me || (cfg.color === "r" ? (Math.random() < .5 ? "w" : "b") : cfg.color);
+    startGame({mine: cfg.mine, cpu: cfg.cpu, level: cfg.level, me, moves: [], over: ""});
+  }
+  function startGame(g){
+    cancelEngine();
+    game = g; pos = C.fromMoves(game.moves); sel = -1; targets = []; hintMv = 0; lastAnim = null; resignArm = false;
+    if (!ARMIES.some(a => a.id === game.mine)) game.mine = ARMIES[0].id;
+    if (!ARMIES.some(a => a.id === game.cpu)) game.cpu = ARMIES[1].id;
+    save(); showPlay(); window.scrollTo(0, 0);
+    maybeCpu();
+  }
+  function showPlay(){ screen = "play"; $("czSetup").classList.add("cz-hide"); $("czPlay").classList.remove("cz-hide"); render(); }
+  const save = () => store.set("chess:game", game);
+
+  /* ---------- Board ---------- */
+  const myColor = () => game.me === "w" ? 0 : C.BLACK;
+  const armyOf = color => army(color === myColor() ? game.mine : game.cpu);
+  function pieceHTML(p){
+    const color = p & C.BLACK, r = ROLE[p & 7], a = armyOf(color);
+    return `<span class="cz-pc ${color ? "b" : "w"} ${r}" style="background-image:url('${esc(a.pieces[r].img)}')"><i>${GLYPH[r]}</i></span>`;
+  }
+  function lastMove(){ if (!pos.undo.length) return null; const m = pos.undo[pos.undo.length - 1][0]; return [C.from(m), C.to(m)]; }
+  function render(){
+    if (!onPage()) return;
+    const flip = game.me === "b", lm = lastMove(), chk = C.inCheck(pos) ? pos.kings[pos.side ? 1 : 0] : -1;
+    let h = "";
+    for (let row = 0; row < 8; row++) for (let col = 0; col < 8; col++) {
+      const r = flip ? row : 7 - row, f = flip ? 7 - col : col, sq = r * 16 + f, p = pos.b[sq];
+      const cls = ["cz-sq"]; if ((r + f) % 2 === 0) cls.push("d");
+      if (lm && (sq === lm[0] || sq === lm[1])) cls.push("last");
+      if (sq === sel) cls.push("sel");
+      if (hintMv && (sq === C.from(hintMv) || sq === C.to(hintMv))) cls.push("hint");
+      if (sq === chk) cls.push("chk");
+      const tgt = targets.find(m => C.to(m) === sq);
+      let label = C.sqName(sq);
+      if (p) { const a = armyOf(p & C.BLACK), rr = ROLE[p & 7]; label += ", " + pname(a, rr) + " (" + T.roles[ROLE_I[rr]] + ", " + ((p & C.BLACK) ? T.blackS : T.whiteS) + ")"; }
+      h += `<button class="${cls.join(" ")}" data-sq="${sq}" aria-label="${esc(label)}">`
+        + (col === 0 ? `<span class="cz-co r">${r + 1}</span>` : "") + (row === 7 ? `<span class="cz-co f">${"abcdefgh"[f]}</span>` : "")
+        + (p ? pieceHTML(p) : "") + (tgt ? (p || C.isEp(tgt) ? '<span class="cz-ring"></span>' : '<span class="cz-dot"></span>') : "") + "</button>";
+    }
+    $("czBoard").innerHTML = h;
+    animate();
+    drawSides(); drawStatus(); drawMoves(); drawLegend(); drawTools();
+  }
+  function animate(){
+    if (!lastAnim) return;
+    const [from, to, rook] = lastAnim; lastAnim = null;
+    const step = $("czBoard").clientWidth / 8, flip = game.me === "b";
+    const xy = sq => { const r = sq >> 4, f = sq & 7; return [(flip ? 7 - f : f) * step, (flip ? r : 7 - r) * step]; };
+    const one = (a, b) => {
+      const el = $("czBoard").querySelector(`[data-sq="${b}"] .cz-pc`); if (!el) return;
+      const [x1, y1] = xy(a), [x2, y2] = xy(b);
+      el.style.transition = "none"; el.style.transform = `translate(${x1 - x2}px,${y1 - y2}px)`;
+      el.getBoundingClientRect();
+      el.style.transition = "transform .22s ease-out"; el.style.transform = "";
+    };
+    one(from, to); if (rook) one(rook[0], rook[1]);
+  }
+  function capturedBy(color){
+    const start = {1:8, 2:2, 3:2, 4:2, 5:1}, left = {1:0, 2:0, 3:0, 4:0, 5:0}, other = color ^ C.BLACK;
+    for (let s = 0; s < 128; s++) { if (s & 0x88) { s += 7; continue; } const p = pos.b[s]; if (p && (p & C.BLACK) === other && (p & 7) < 6) left[p & 7]++; }
+    const out = []; for (const k of [5, 4, 3, 2, 1]) for (let i = 0; i < Math.max(0, start[k] - left[k]); i++) out.push(k);
+    return out;
+  }
+  function material(color){ const v = [0, 1, 3, 3, 5, 9, 0]; let s = 0; for (let q = 0; q < 128; q++) { if (q & 0x88) { q += 7; continue; } const p = pos.b[q]; if (p && (p & C.BLACK) === color) s += v[p & 7]; } return s; }
+  function sideHTML(color, isMe){
+    const a = armyOf(color), caps = capturedBy(color), oa = armyOf(color ^ C.BLACK), diff = material(color) - material(color ^ C.BLACK);
+    const thinking = !isMe && busy && !game.over;
+    return `<div class="cz-who"><img src="${esc(a.pieces.k.img)}" alt=""><div><b>${esc(isMe ? T.you : T.computer + " · " + T.levels[game.level - 1])}${thinking ? '<span class="cz-think"></span>' : ""}</b><span>${color ? "♚" : "♔"} ${esc(atitle(a))}</span></div></div>
+      <div class="cz-caps">${caps.map(k => `<img src="${esc(oa.pieces[ROLE[k]].img)}" alt="${esc(T.roles[ROLE_I[ROLE[k]]])}" title="${esc(pname(oa, ROLE[k]))}">`).join("")}${diff > 0 ? `<em>+${diff}</em>` : ""}</div>`;
+  }
+  function drawSides(){
+    if (!onPage()) return;
+    $("czTop").innerHTML = sideHTML(myColor() ^ C.BLACK, false);
+    $("czBottom").innerHTML = sideHTML(myColor(), true);
+  }
+  function drawStatus(){
+    if (!onPage()) return;
+    const st = $("czStatus"); st.classList.toggle("end", !!game.over);
+    $("czEnd").classList.toggle("cz-hide", !game.over);
+    if (game.over) { st.textContent = T[game.over] || game.over; return; }
+    st.textContent = (C.inCheck(pos) ? T.check + " " : "") + (pos.side === myColor() ? T.yourTurn : T.thinking);
+  }
+  function drawMoves(){
+    const p = C.fromMoves([]), list = [];
+    for (const u of game.moves) { const m = C.fromUci(p, u); if (!m) break; list.push(C.san(p, m)); C.make(p, m); }
+    let h = "";
+    for (let i = 0; i < list.length; i += 2) h += `<span>${i / 2 + 1}.</span><span${i === list.length - 1 ? ' class="cur"' : ""}>${esc(list[i])}</span><span${i + 1 === list.length - 1 ? ' class="cur"' : ""}>${esc(list[i + 1] || "")}</span>`;
+    const box = $("czMoves"); box.innerHTML = h || "<span>—</span>"; box.scrollTop = box.scrollHeight;
+  }
+  function drawLegend(){
+    const one = (color, isMe) => { const a = armyOf(color); return `<h4>${color ? "♚" : "♔"} ${esc(atitle(a))} — ${esc(isMe ? T.you : T.computer)}</h4>`
+      + "kqrbnp".split("").map(r => `<div><img src="${esc(a.pieces[r].img)}" alt=""><span>${esc(pname(a, r))}<br><small>${GLYPH[r]} ${esc(T.roles[ROLE_I[r]])}</small></span></div>`).join(""); };
+    $("czLegend").innerHTML = one(myColor(), true) + one(myColor() ^ C.BLACK, false);
+  }
+  function drawTools(){
+    if (!onPage()) return;
+    const myTurn = pos.side === myColor();
+    $("czUndo").disabled = !game.moves.some((_, i) => (i % 2 === 0) === (game.me === "w"));
+    $("czHint").disabled = !!game.over || !myTurn || busy > 0;
+    $("czResign").disabled = !!game.over; $("czResign").classList.toggle("warn", resignArm);
+    $("czResign").textContent = resignArm ? T.sure : T.resign;
+  }
+  function selInfo(sq){
+    if (!onPage()) return;
+    const p = sq >= 0 ? pos.b[sq] : 0;
+    if (!p) { $("czSel").textContent = ""; return; }
+    const a = armyOf(p & C.BLACK), r = ROLE[p & 7];
+    $("czSel").textContent = `${pname(a, r)} · ${T.roles[ROLE_I[r]]} · ${atitle(a)}`;
+  }
+
+  /* ---------- Moving ---------- */
+  const canMove = () => game && !game.over && pos.side === myColor() && !busy;
+  function select(sq){ sel = sq; targets = sq >= 0 ? C.legal(pos).filter(m => C.from(m) === sq) : []; render(); selInfo(sq); }
+  function tryMove(from, to){
+    const opts = C.legal(pos).filter(m => C.from(m) === from && C.to(m) === to);
+    if (!opts.length) return false;
+    if (opts.length > 1) { askPromo(opts); return true; }
+    play(opts[0]); return true;
+  }
+  function play(m, fromCpu){
+    const from = C.from(m), to = C.to(m);
+    let rook = null;
+    if (C.isCastle(m)) rook = to === 6 ? [7, 5] : to === 2 ? [0, 3] : to === 0x76 ? [0x77, 0x75] : [0x70, 0x73];
+    game.moves.push(C.uci(m)); C.make(pos, m);
+    sel = -1; targets = []; hintMv = 0; resignArm = false; lastAnim = [from, to, rook];
+    const st = C.status(pos);
+    if (st) {
+      game.over = st === "mate" ? (fromCpu ? "lost" : "won") : st;
+      if (game.over === "won") { const w = store.get("chess:wins", {}); w[game.level] = (w[game.level] || 0) + 1; store.set("chess:wins", w); }
+    }
+    save(); render(); selInfo(-1);
+    maybeCpu();
+  }
+  function askPromo(opts){
+    const color = pos.side, a = armyOf(color);
+    $("czPromo").innerHTML = [C.Q, C.R, C.B, C.N].map(k => { const r = ROLE[k]; return `<button data-t="${k}">${pieceHTML(k | color)}<span>${esc(pname(a, r))}</span><small>${esc(T.roles[ROLE_I[r]])}</small></button>`; }).join("");
+    $("czPromoModal").classList.remove("cz-hide");
+    $("czPromo").onclick = e => { const b = e.target.closest("button"); if (!b) return; $("czPromoModal").classList.add("cz-hide"); play(opts.find(m => C.promo(m) === +b.dataset.t)); };
+  }
+
+  /* ---------- Computer ---------- */
+  function maybeCpu(){
+    if (!game || game.over || pos.side === myColor() || pending) return;
+    ask(game.level, mv => { const m = mv && C.fromUci(pos, mv); if (m) play(m, true); });
+  }
+  function ask(level, cb){
+    const id = ++reqId, t0 = Date.now(), moves = game.moves.slice();
+    busy++; pending = {id, cb, t0}; drawSides(); drawStatus(); drawTools();
+    if (worker) worker.postMessage({id, moves, level});
+    else setTimeout(() => { const p = C.fromMoves(moves), m = C.bestMove(p, level); onEngine({id, move: m ? C.uci(m) : null}); }, 60);
+  }
+  function onEngine(d){
+    if (!pending || d.id !== pending.id) return;
+    const {cb, t0} = pending, wait = Math.max(0, 420 - (Date.now() - t0));
+    setTimeout(() => { if (!pending || pending.id !== d.id) return; pending = null; busy = 0; cb(d.move); drawSides(); drawStatus(); drawTools(); }, wait);
+  }
+  function cancelEngine(){ pending = null; busy = 0; }
+
+  /* ---------- Events (bound on every render of the page) ---------- */
+  function bind(){
+    $("czSetup").addEventListener("click", e => {
+      const a = e.target.closest(".cz-army");
+      if (a && !a.disabled) { cfg[a.dataset.which] = a.dataset.id; store.set("chess:cfg", cfg); drawSetup(); return; }
+      const l = e.target.closest("[data-level]"); if (l) { cfg.level = +l.dataset.level; store.set("chess:cfg", cfg); drawSetup(); return; }
+      const c = e.target.closest("[data-color]"); if (c) { cfg.color = c.dataset.color; store.set("chess:cfg", cfg); drawSetup(); }
+    });
+    $("czStart").onclick = () => newGame();
+    $("czResume").onclick = () => { const g = store.get("chess:game", null); if (g) startGame(g); };
+    $("czChange").onclick = $("czNew").onclick = () => { cancelEngine(); game = null; drawSetup(); window.scrollTo(0, 0); };
+    $("czRematch").onclick = () => newGame(game.me === "w" ? "b" : "w");
+    $("czPromoModal").addEventListener("click", e => { if (e.target.id === "czPromoModal") { $("czPromoModal").classList.add("cz-hide"); select(-1); } });
+    $("czHint").onclick = () => { if (canMove()) ask(4, mv => { const m = mv && C.fromUci(pos, mv); if (m) { hintMv = m; sel = -1; targets = []; render(); } }); };
+    $("czUndo").onclick = () => {
+      cancelEngine();
+      const mine = i => (i % 2 === 0) === (game.me === "w");
+      while (game.moves.length && !mine(game.moves.length - 1)) game.moves.pop();  // the computer's reply
+      if (game.moves.length) game.moves.pop();                                      // my move
+      game.over = ""; pos = C.fromMoves(game.moves); sel = -1; targets = []; hintMv = 0; resignArm = false;
+      save(); render(); selInfo(-1); maybeCpu();
+    };
+    $("czResign").onclick = () => {
+      if (!game || game.over) return;
+      if (!resignArm) { resignArm = true; drawTools(); setTimeout(() => { resignArm = false; if (game && onPage()) drawTools(); }, 4000); return; }
+      cancelEngine(); game.over = "resigned"; resignArm = false; save(); render();
+    };
+    const board = $("czBoard");
+    board.addEventListener("pointerdown", e => {
+      const b = e.target.closest(".cz-sq"); if (!b || !game) return;
+      const sq = +b.dataset.sq, p = pos.b[sq];
+      if (!canMove()) { selInfo(sq); return; }
+      if (sel >= 0 && sq !== sel && targets.some(m => C.to(m) === sq)) { tryMove(sel, sq); return; }
+      if (p && (p & C.BLACK) === myColor()) {
+        const wasSel = sel === sq;
+        if (!wasSel) select(sq);
+        drag = {sq, x: e.clientX, y: e.clientY, ghost: null, id: e.pointerId, wasSel};
+        board.setPointerCapture(e.pointerId);
+      } else if (sel >= 0) select(-1); else selInfo(sq);
+    });
+    board.addEventListener("pointermove", e => {
+      if (!drag || e.pointerId !== drag.id) return;
+      if (!drag.ghost && Math.hypot(e.clientX - drag.x, e.clientY - drag.y) > 6) {
+        const src = board.querySelector(`[data-sq="${drag.sq}"] .cz-pc`); if (!src) return;
+        const g = src.cloneNode(true), size = src.getBoundingClientRect().width;
+        g.classList.add("cz-drag"); g.style.width = g.style.height = size + "px"; document.body.appendChild(g);
+        src.style.opacity = ".25"; drag.ghost = g;
+      }
+      if (drag.ghost) { drag.ghost.style.left = e.clientX + "px"; drag.ghost.style.top = e.clientY + "px"; }
+    });
+    const end = e => {
+      if (!drag || e.pointerId !== drag.id) return;
+      const d = drag; drag = null;
+      if (!d.ghost) { if (d.wasSel) select(-1); return; }
+      d.ghost.remove();
+      const el = document.elementFromPoint(e.clientX, e.clientY), b = el && el.closest && el.closest(".cz-sq");
+      const to = b ? +b.dataset.sq : -1;
+      if (to >= 0 && to !== d.sq && tryMove(d.sq, to)) return;
+      render(); selInfo(sel);
+    };
+    board.addEventListener("pointerup", end);
+    board.addEventListener("pointercancel", end);
+  }
+  window.addEventListener("resize", () => { if (game && screen === "play" && onPage()) render(); });
+  return page;
+})();
+
 /* Novels game: #/game — 10 random questions about the novels of the current language */
 const GAME_T = {
   es:{btn:"Juego: ¿cuánto sabes de las novelas?", title:"¿Cuánto sabes de las novelas?", sub:"10 preguntas al azar: personajes, frases y tramas. Cada partida es distinta.", kicker:"Juego", back:"Todas las novelas",
@@ -2210,6 +2668,7 @@ function route(){
   if (parts[0] === "blog") { setSoundtrack(null); return parts[1] ? blogPost(decodeURIComponent(parts[1])) : blogIndex(); }
   if (parts[0] === "mis-lecturas") { setSoundtrack(null); return myReading(); }
   if (parts[0] === "game") { setSoundtrack(null); return game(); }
+  if (parts[0] === "ajedrez") { setSoundtrack(null); return chessPage(); }
   if (parts[0] === "learn") { setSoundtrack(null); return parts[1] ? learnUnit(decodeURIComponent(parts[1]), parts[2] === "practice") : learnHome(); }
   const n = parts.length ? catalog.novels.find(x => x.slug === decodeURIComponent(parts[0])) : null;
   setSoundtrack(n && adultOk(n) ? n : null);
