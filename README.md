@@ -77,6 +77,14 @@ En la misma página del sitio (`#/ajedrez`, botón «♞» en la portada de ES, 
 - Ejércitos: seis personajes de un mismo mundo, uno por figura (rey, dama, torre, alfil, caballo, peón). Se definen en `ARMIES` dentro de `tools/ajedrez.py`, junto con el recorte de cada retrato alrededor de la cara (`CROP`).
 - **Al cambiar ejércitos, recortes o nombres, regenerar:** `python3 tools/ajedrez.py .` (escribe `games/chess.json` y los retratos redondos de `games/chess/`).
 
+## Quest: El carnaval de la discordia
+
+Aventura de apuntar y hacer clic basada en «Дикий час: Карнавал раздора» (`#/quest`, botón «🐂» en la portada de ES y RU). Luis y Natasha recorren Madrid desde la casa segura hasta la plaza de Colón: escenas con zonas para tocar, inventario, diálogos con opciones y minijuegos (huir del toro de bronce, la Cruz del Sur, el duelo con el torero, el reloj negro, el rodeo sobre Taurán…). Termina donde termina la novela por ahora, con «Continuará…». El progreso se guarda en el navegador (`carnaval:quest:v1`).
+
+- Código: `games/carnaval/quest.js` (motor y escenas, textos en español y ruso con `T(es, ru)`) y `games/carnaval/quest.css`. Se cargan solo al abrir el quest; la ruta y el botón están en `index.html` (`questPage`, `QUEST_BTN`).
+- Imágenes: `games/carnaval/img/`. Los fondos van a 1600×900 en JPG; los personajes, en WebP con fondo transparente. Para el final se usan las ilustraciones de la novela (`novels/dikij-chas-karnaval-razdora/img/13-*.jpg`).
+- Imágenes opcionales: si se añaden, reemplazan a las de reserva sin tocar el código: `pagina.jpg` (la página del manuscrito), `tauran.jpg`, `boton.jpg` (el botón HACERLO MANSITO), `tauran-manso.jpg`, `objetos.png` (hoja de iconos 4×3 sobre fondo blanco), `mariquita.jpg` y `final.jpg`.
+
 ## Noticias satíricas
 
 En ES, IT y EN hay un periódico satírico (`#/news`, botón «📰» en la portada), con noticias políticas inventadas a partir de las novelas de cada idioma: *El Heraldo de Sinea* (ES), *Il Corriere del Sorriso* (IT) y *The Sinea Herald* (EN). El botón aparece solo en los idiomas que tienen periódico.
