@@ -1026,7 +1026,7 @@ function renderChrome(){
 document.getElementById("langs").addEventListener("click", e => {
   const l = e.target.dataset && e.target.dataset.l; if (!l) return;
   setLang(l);
-  const home = location.hash.startsWith("#/ajedrez") && CHESS_BTN[l] ? "#/ajedrez" : location.hash.startsWith("#/blog") ? "#/blog" : location.hash.startsWith("#/news") && newsPaper(l) ? "#/news" : location.hash.startsWith("#/learn") && learnCat && learnCat.courses.some(c => c.lang === l) ? "#/learn" : "#/";
+  const home = location.hash.startsWith("#/quest") && QUEST_BTN[l] ? "#/quest" : location.hash.startsWith("#/ajedrez") && CHESS_BTN[l] ? "#/ajedrez" : location.hash.startsWith("#/blog") ? "#/blog" : location.hash.startsWith("#/news") && newsPaper(l) ? "#/news" : location.hash.startsWith("#/learn") && learnCat && learnCat.courses.some(c => c.lang === l) ? "#/learn" : "#/";
   if (location.hash && location.hash !== home) location.hash = home; else route();
 });
 
@@ -1212,6 +1212,7 @@ function home(){
     ${course() ? `<a class="character-entry" href="#/learn">🎓 ${esc(course().title[lang])} →</a>` : ""}
     ${GAME_T[lang] ? `<a class="character-entry" href="#/game">🎲 ${esc(GAME_T[lang].btn)} →</a>` : ""}
     ${CHESS_BTN[lang] ? `<a class="character-entry" href="#/ajedrez">♞ ${esc(CHESS_BTN[lang])} →</a>` : ""}
+    ${QUEST_BTN[lang] ? `<a class="character-entry" href="#/quest">🐂 ${esc(QUEST_BTN[lang])} →</a>` : ""}
     ${MAGAZINES[lang] ? `<a class="character-entry" href="${esc(MAGAZINES[lang].file)}" download>📖 ${esc(MAGAZINES[lang].btn)} →</a>` : ""}
     <a class="character-entry" href="#/mis-lecturas">★ ${esc(ft(0))} · ${esc(rt(1))} →</a>
   </section>
@@ -2082,6 +2083,18 @@ function confetti(cv){
 
 
 /* Novels chess: #/ajedrez — play the computer; the pieces are characters from the novels (games/chess.json, engine in games/chess-engine.js) */
+/* Quest «El carnaval de la discordia»: #/quest — point-and-click adventure based on «Дикий час: Карнавал раздора» (games/carnaval/) */
+const QUEST_BTN = {es:"Quest: El carnaval de la discordia", ru:"Квест: Карнавал раздора"};
+function questPage(){
+  const ql = QUEST_BTN[lang] ? lang : "es";
+  document.title = (ql === "ru" ? "Квест: Карнавал раздора" : "Quest: El carnaval de la discordia") + " — " + t("hero");
+  window.scrollTo(0, 0);
+  const go = () => { if (location.hash.startsWith("#/quest")) window.CarnavalQuest.mount(app, ql, {back: t("back")}); };
+  if (window.CarnavalQuest) return go();
+  app.innerHTML = `<div class="empty">…</div>`;
+  if (!document.getElementById("cqCss")) { const c = document.createElement("link"); c.id = "cqCss"; c.rel = "stylesheet"; c.href = "games/carnaval/quest.css"; document.head.appendChild(c); }
+  const s = document.createElement("script"); s.src = "games/carnaval/quest.js"; s.onload = go; document.head.appendChild(s);
+}
 const CHESS_BTN = {es:"Ajedrez de las novelas", ru:"Шахматы с героями романов", it:"Gli scacchi dei romanzi", en:"Novel chess", de:"Schach mit den Romanfiguren", fr:"Les échecs des romans", pt:"O xadrez dos romances"};
 const chessPage = (function(){
   const UI = {
@@ -2669,6 +2682,7 @@ function route(){
   if (parts[0] === "mis-lecturas") { setSoundtrack(null); return myReading(); }
   if (parts[0] === "game") { setSoundtrack(null); return game(); }
   if (parts[0] === "ajedrez") { setSoundtrack(null); return chessPage(); }
+  if (parts[0] === "quest") { setSoundtrack(null); return questPage(); }
   if (parts[0] === "learn") { setSoundtrack(null); return parts[1] ? learnUnit(decodeURIComponent(parts[1]), parts[2] === "practice") : learnHome(); }
   const n = parts.length ? catalog.novels.find(x => x.slug === decodeURIComponent(parts[0])) : null;
   setSoundtrack(n && adultOk(n) ? n : null);
