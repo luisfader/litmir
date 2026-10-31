@@ -61,6 +61,11 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-family:var(--san
 .rec h3{margin:6px 0 6px;font-size:22px}
 .rec p{margin:0 0 10px;color:var(--muted);line-height:1.5}
 .rec-go{font-family:var(--sans);font-size:14px;color:var(--accent)}
+.rec.mag img{display:block;width:110px;height:auto;border-radius:6px;box-shadow:var(--shadow)}
+.rec.mag:hover{transform:none}
+.mag-btn{display:inline-block;margin-top:4px;padding:11px 20px;border-radius:30px;background:var(--accent);color:var(--paper);font-family:var(--sans);font-size:14px;font-weight:600;text-decoration:none}
+.mag-btn:hover{opacity:.9}
+@media (max-width:520px){.rec.mag img{width:80px}}
 @media (max-width:520px){.rec{grid-template-columns:80px 1fr;gap:14px;padding:14px}.rec .cover{width:80px}.rec h3{font-size:18px}}
 .character-entry:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
 .hero .character-entry + .character-entry{margin-left:10px}
@@ -1121,6 +1126,13 @@ function home(){
     <a class="character-entry" href="#/mis-lecturas">★ ${esc(ft(0))} · ${esc(rt(1))} →</a>
   </section>
   <section class="wrap" id="rec"></section>
+  ${lang === "ru" ? `<section class="wrap"><div class="rec mag">
+    <a href="revista/aquella-vez-1.pdf" download><img src="revista/aquella-vez-1.jpg" alt="Обложка журнала «Aquella vez» № 1" width="420" height="594" loading="lazy"></a>
+    <div><div class="rec-k">✦ Бесплатный журнал · испанский язык A2</div>
+    <h3>«Aquella vez» № 1</h3>
+    <p>Журнал для продолжающих по материалам 1-го и 2-го разделов учебника «Aquella vez 2»: танго, герои учебника, комикс, биографии, грамматика, игры и ответы. Все задания объяснены по-русски.</p>
+    <a class="mag-btn" href="revista/aquella-vez-1.pdf" download>⬇ Скачать журнал (PDF, 6,4 МБ)</a></div>
+  </div></section>` : ""}
   <section class="wrap" data-auth-dep>
     ${list.length ? `<div class="grid">${list.map(n => {
       const nch = n.chapters.filter(c => !c.label).length;
