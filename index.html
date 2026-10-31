@@ -1120,6 +1120,7 @@ function home(){
     ${newsPaper(lang) ? `<a class="character-entry" href="#/news">📰 ${esc(nt("btn"))} →</a>` : ""}
     ${course() ? `<a class="character-entry" href="#/learn">🎓 ${esc(course().title[lang])} →</a>` : ""}
     ${GAME_T[lang] ? `<a class="character-entry" href="#/game">🎲 ${esc(GAME_T[lang].btn)} →</a>` : ""}
+    ${CHESS_BTN[lang] ? `<a class="character-entry" href="chess.html?lang=${encodeURIComponent(lang)}">♞ ${esc(CHESS_BTN[lang])} →</a>` : ""}
     ${MAGAZINES[lang] ? `<a class="character-entry" href="${esc(MAGAZINES[lang].file)}" download>📖 ${esc(MAGAZINES[lang].btn)} →</a>` : ""}
     <a class="character-entry" href="#/mis-lecturas">★ ${esc(ft(0))} · ${esc(rt(1))} →</a>
   </section>
@@ -1988,6 +1989,9 @@ function confetti(cv){
   })();
 }
 
+
+/* Novels chess: chess.html — the pieces are characters from the novels (games/chess.json) */
+const CHESS_BTN = {es:"Ajedrez de las novelas", ru:"Шахматы с героями романов", it:"Gli scacchi dei romanzi", en:"Novel chess", de:"Schach mit den Romanfiguren", fr:"Les échecs des romans", pt:"O xadrez dos romances"};
 
 /* Novels game: #/game — 10 random questions about the novels of the current language */
 const GAME_T = {
