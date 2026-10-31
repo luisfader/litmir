@@ -28,6 +28,10 @@ Servicios de Meta (prohibida en Rusia): no nombrarlos en las novelas; usar los n
 
 
 
+## Revista (PDF)
+
+Un idioma puede ofrecer su revista en PDF para descargar: un botón en la portada de ese idioma. El archivo va en `magazine/` y se registra en `MAGAZINES` dentro de `index.html` (`{ru: {file, btn}}`). Ahora: «Литература перед сном», noviembre de 2026 (RU).
+
 ## Blog
 
 Cada idioma tiene su propio blog (`#/blog`), al que se llega desde el botón «Blog» de la portada. Cada idioma muestra solo sus entradas.
