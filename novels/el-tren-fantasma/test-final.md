@@ -14,7 +14,7 @@
 
 5. La locomotora es uno de los objetivos de los protagonistas. ( V / F ){V}
 
-6. Alessio y Laura confiesan que son ladrones de trenes. ( V / F ){V}
+6. Alessio y Lucrecia confiesan que son ladrones de trenes. ( V / F ){V}
 
 7. El tren regresa a la estación central de Sinea. ( V / F ){V}
 
@@ -42,7 +42,7 @@
 
 18. ¿Qué significa «reconciliarse»? [[*Recuperar una buena relación|Perder el tren|Olvidar un nombre]]
 
-19. ¿Quiénes se llevan el tren al final? [[*Alessio y Laura|Marcos y Alicia|Los vendedores de periódicos]]
+19. ¿Quiénes se llevan el tren al final? [[*Alessio y Lucrecia|Marcos y Alicia|Los vendedores de periódicos]]
 
 20. ¿Qué significa «a escondidas»? [[*Sin que los demás lo sepan|En voz alta|Con mucho entusiasmo]]
 
