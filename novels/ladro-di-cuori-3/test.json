@@ -1,0 +1,469 @@
+{
+ "title": "Test finale",
+ "subtitle": "Повтори всё, что ты узнал в романе «Ladro di cuori 3»",
+ "speak": "it-IT",
+ "hero": "img/10.jpg",
+ "hearts": 5,
+ "keyboard": [
+  "à",
+  "è",
+  "é",
+  "ì",
+  "ò",
+  "ù",
+  "'"
+ ],
+ "perfect": "Ни одной ошибки! Даже Призрак не нашёл бы, к чему придраться.",
+ "good": "Отличная работа! Дон Серхио тобой гордится.",
+ "ui": {
+  "start": "Начать",
+  "check": "Проверить",
+  "next": "Продолжить",
+  "skip": "Не знаю",
+  "retry": "Попробовать ещё раз",
+  "again": "Пройти тест ещё раз",
+  "back": "Вернуться к роману",
+  "great": [
+   "Отлично!",
+   "Молодец!",
+   "Правильно!",
+   "Превосходно!",
+   "Так держать!",
+   "Bravo!",
+   "Perfetto!"
+  ],
+  "wrong": "Правильный ответ:",
+  "almost": "Почти! Обрати внимание на акценты:",
+  "done": "Тест пройден!",
+  "lost": "Сердечки закончились",
+  "lostP": "Ничего страшного: каждая ошибка — это слово, которое ты теперь знаешь чуть лучше.",
+  "xp": "Всего XP",
+  "acc": "Точность",
+  "time": "Время",
+  "ex": "{n} заданий",
+  "min": "≈ 12 минут",
+  "hearts": "сердечек",
+  "best": "Твой лучший результат",
+  "tap": "Нажимай на слова по порядку",
+  "type": "Пиши здесь…",
+  "ok": "Хорошо! Пройди тест ещё раз, чтобы улучшить точность.",
+  "sound": "Звук",
+  "listen": "Слушать",
+  "meaning": "Значит:"
+ },
+ "exercises": [
+  {
+   "type": "story",
+   "prompt": "Понимание текста",
+   "question": "Dove vivono Alessio e Laura all'inizio del romanzo?",
+   "es": "Где живут Алессио и Лаура в начале романа?",
+   "options": [
+    "In una fattoria vicino a Buenos Aires",
+    "In un appartamento a Mendoza",
+    "In una villa a Málaga",
+    "In un albergo a Bordeaux"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "la fattoria",
+   "options": [
+    "ферма",
+    "фабрика",
+    "фонтан",
+    "фотография"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Понимание текста",
+   "question": "Che cosa sono i «Cuori di Diamante»?",
+   "es": "Что такое «Сердца из бриллиантов»?",
+   "options": [
+    "Due diamanti a forma di cuore, uno rosa e uno bianco",
+    "Una serie di quadri di Adriana",
+    "Un tango di Carlos Gardel",
+    "Una banda di ladri"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Заполни пропуск",
+   "before": "Laura canta «Volver», una canzone sul",
+   "after": "e sul tempo che passa.",
+   "options": [
+    "ritorno",
+    "viaggio",
+    "vino"
+   ],
+   "answer": 0,
+   "es": "«Лаура поёт „Volver“ — песню о возвращении и о том, как проходит время.»"
+  },
+  {
+   "type": "story",
+   "prompt": "Понимание текста",
+   "question": "Perché Alessio propone il viaggio a Mendoza?",
+   "es": "Почему Алессио предлагает поехать в Мендосу?",
+   "options": [
+    "Perché ha letto che i ladri si nascondono lì",
+    "Perché vuole comprare una cantina",
+    "Perché don Ramón glielo chiede",
+    "Perché Laura è malata"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "match",
+   "prompt": "Соедини пары",
+   "pairs": [
+    [
+     "la notifica",
+     "уведомление"
+    ],
+    [
+     "la cassaforte",
+     "сейф"
+    ],
+    [
+     "il bagagliaio",
+     "багажник"
+    ],
+    [
+     "la pianura",
+     "равнина"
+    ],
+    [
+     "il soprannome",
+     "прозвище"
+    ]
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Понимание текста",
+   "question": "Chi è Adriana per Laura?",
+   "es": "Кем Адриана приходится Лауре?",
+   "options": [
+    "Una cugina di sua madre",
+    "Sua sorella",
+    "Sua nonna",
+    "Una vecchia amica di scuola"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как сказать по-итальянски?",
+   "word": "рама",
+   "options": [
+    "la cornice",
+    "la camicia",
+    "la cantina",
+    "la cassa"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Понимание текста",
+   "question": "Che cosa attira l'attenzione di Alessio a casa di Adriana?",
+   "es": "Что привлекает внимание Алессио в доме Адрианы?",
+   "options": [
+    "Un piccolo cuore rosso granata con una cornice spessa",
+    "Un violino d'oro",
+    "Una cassaforte aperta",
+    "Una fotografia di Maria"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Заполни пропуск",
+   "before": "Fernando Fader è nato a",
+   "after": "nel 1882.",
+   "options": [
+    "Bordeaux",
+    "Mendoza",
+    "Monaco"
+   ],
+   "answer": 0,
+   "es": "«Фернандо Фадер родился в Бордо в 1882 году.»"
+  },
+  {
+   "type": "story",
+   "prompt": "Понимание текста",
+   "question": "Che cosa ha dipinto Fader nella casa del museo?",
+   "es": "Что Фадер написал в доме-музее?",
+   "options": [
+    "Gli unici murales della sua vita",
+    "Un ritratto di Don Sergio",
+    "Un cuore di diamante",
+    "La mappa della pampa"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "Что это значит?",
+   "word": "l'airone",
+   "options": [
+    "цапля",
+    "самолёт",
+    "ветер",
+    "ангел"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Понимание текста",
+   "question": "Che lavoro faceva Sergio Fader prima della pensione?",
+   "es": "Кем работал Серхио Фадер до пенсии?",
+   "options": [
+    "Il restauratore di quadri",
+    "Il poliziotto",
+    "Il mercante d'arte",
+    "Il viticoltore"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Понимание текста",
+   "question": "Che cosa vede Alessio di notte nel parco del museo?",
+   "es": "Что видит Алессио ночью в парке музея?",
+   "options": [
+    "Don Sergio che parla con l'uomo della cicatrice",
+    "Adriana che dipinge",
+    "Enrico con la polizia",
+    "Laura che canta"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "write",
+   "prompt": "Напиши по-итальянски",
+   "es": "сообщник",
+   "answers": [
+    "il complice",
+    "complice"
+   ],
+   "hint": "Alessio pensa che Don Sergio sia … dei ladri."
+  },
+  {
+   "type": "story",
+   "prompt": "Понимание текста",
+   "question": "Perché Laura si arrabbia con Alessio?",
+   "es": "Почему Лаура злится на Алессио?",
+   "options": [
+    "Perché le ha mentito fin da Buenos Aires",
+    "Perché ha rotto la macchina",
+    "Perché ha perso il cane",
+    "Perché ha bevuto troppo vino"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Переведи на итальянский",
+   "es": "На этот раз мы делаем это вместе.",
+   "answer": [
+    "Questa",
+    "volta",
+    "lo",
+    "facciamo",
+    "insieme"
+   ],
+   "extra": [
+    "sola",
+    "fanno",
+    "prima"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Понимание текста",
+   "question": "Che cosa ha fatto Ignacio dieci anni fa?",
+   "es": "Что Игнасио сделал десять лет назад?",
+   "options": [
+    "Ha venduto quadri falsi come originali",
+    "Ha rubato il violino d'oro",
+    "È partito per la Russia",
+    "Ha comprato il museo"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Понимание текста",
+   "question": "Che cosa trovano dentro la cornice del piccolo quadro?",
+   "es": "Что они находят внутри рамы маленькой картины?",
+   "options": [
+    "Due incavi vuoti a forma di cuore",
+    "I due diamanti",
+    "Una lettera di Maria",
+    "Una chiave del museo"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "match",
+   "prompt": "Соедини пары",
+   "pairs": [
+    [
+     "il cacciavite",
+     "отвёртка"
+    ],
+    [
+     "il tribunale",
+     "суд"
+    ],
+    [
+     "il custode",
+     "смотритель"
+    ],
+    [
+     "il rastrello",
+     "грабли"
+    ],
+    [
+     "la ricompensa",
+     "вознаграждение"
+    ]
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Понимание текста",
+   "question": "Chi è in realtà «Don Sergio El Fantasma»?",
+   "es": "Кто на самом деле «Дон Серхио Призрак»?",
+   "options": [
+    "Ignacio, il fratello di Adriana",
+    "Sergio Fader",
+    "Hugo, l'uomo della cicatrice",
+    "Enrico dell'Interpol"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Понимание текста",
+   "question": "Perché il Fantasma usa il nome di Sergio Fader?",
+   "es": "Почему Призрак использует имя Серхио Фадера?",
+   "options": [
+    "Perché, se qualcosa va storto, la polizia arresta un vecchio innocente",
+    "Perché sono cugini",
+    "Perché Sergio gli ha venduto il nome",
+    "Perché è il nome del pittore"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Заполни пропуск",
+   "before": "«Nonno, lei legge troppi",
+   "after": "», dice l'agente a Don Sergio.",
+   "options": [
+    "gialli",
+    "giornali",
+    "libri di cucina"
+   ],
+   "answer": 0,
+   "es": "«Дедушка, вы читаете слишком много детективов», — говорит полицейский дону Серхио."
+  },
+  {
+   "type": "story",
+   "prompt": "Понимание текста",
+   "question": "Come aiuta Don Sergio nella notte di giovedì?",
+   "es": "Как дон Серхио помогает в четверг ночью?",
+   "options": [
+    "Spegne tutte le luci del museo",
+    "Chiama i pompieri",
+    "Chiude Ignacio in una cassa",
+    "Guida il furgone"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "reverse",
+   "prompt": "Как сказать по-итальянски?",
+   "word": "я был вором",
+   "options": [
+    "ero un ladro",
+    "sono un ladro",
+    "avevo un ladro",
+    "era un ladro"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Понимание текста",
+   "question": "Che cosa offre Ignacio ad Alessio vicino alla fontana?",
+   "es": "Что Игнасио предлагает Алессио у фонтана?",
+   "options": [
+    "Il diamante rosa",
+    "Un posto nella sua banda",
+    "Il quadro di Adriana",
+    "Un biglietto per Bordeaux"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Понимание текста",
+   "question": "Come si chiama il figlio di Don Sergio, che scrive romanzi?",
+   "es": "Как зовут сына дона Серхио, который пишет романы?",
+   "options": [
+    "Roberto",
+    "Ignacio",
+    "Enrico",
+    "Tomás"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Переведи на итальянский",
+   "es": "Мне нравится эта жизнь.",
+   "answer": [
+    "Mi",
+    "piace",
+    "questa",
+    "vita"
+   ],
+   "extra": [
+    "piacciono",
+    "quella",
+    "ti"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Понимание текста",
+   "question": "Che cosa arriva alla fattoria alla fine del romanzo?",
+   "es": "Что приходит на ферму в конце романа?",
+   "options": [
+    "Una cartolina di Venezia firmata «M.»",
+    "Una lettera di Enrico",
+    "Un pacco con i diamanti",
+    "Un quadro di Adriana"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "write",
+   "prompt": "Напиши по-итальянски",
+   "es": "всегда возвращаются к первой любви",
+   "answers": [
+    "si torna sempre al primo amore",
+    "si torna sempre al primo amore."
+   ],
+   "hint": "È il proverbio del primo capitolo."
+  }
+ ]
+}
