@@ -26,9 +26,9 @@ Responde las 15 preguntas y pulsa «Calificar módulo». Puedes repetir el exame
 
 7. ¿Qué libro contiene una pista? [[*Un libro de paellas|Un diccionario de latín]]
 
-8. ¿Quién nada en la piscina? [[*Laura Schmidt|Alicia Gómez]]
+8. ¿Quién nada en la piscina? [[*Lucrecia Schmidt|Alicia Gómez]]
 
-9. ¿Adónde dice Laura que fue Alicia? [[*A la discoteca|A la estación]]
+9. ¿Adónde dice Lucrecia que fue Alicia? [[*A la discoteca|A la estación]]
 
 10. ¿Qué debe vencer Marcos? [[*Su miedo al agua|Su miedo a volar]]
 
@@ -42,7 +42,7 @@ Responde las 15 preguntas y pulsa «Calificar módulo». Puedes repetir el exame
 
 14. Cuando era niño, Marcos [[*tenía|tuvo]] miedo al agua.
 
-15. Laura [[*estaba|eran]] en la piscina cuando llegó Marcos.
+15. Lucrecia [[*estaba|eran]] en la piscina cuando llegó Marcos.
 
 ## Producción escrita
 
