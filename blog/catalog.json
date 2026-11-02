@@ -1,5 +1,11 @@
 {
   "posts": [
+    {"slug": "entrevista-novelas-de-mendoza", "lang": "es", "title": "«Las acequias son las venas de la ciudad»: Luis Fader habla de sus novelas de Mendoza", "date": "2026-11-02", "excerpt": "Reinas extranjeras, un zorro que quizá sea Roca, un padre presidente y las ganas de volver: ocho preguntas sobre la Mendoza de sus novelas.", "image": "novels/el-misterio-de-los-fader/cover.jpg"},
+    {"slug": "intervyu-romany-o-mendose", "lang": "ru", "title": "«Асекии — это вены города»: Роберт Фадер о своих романах про Мендосу", "date": "2026-11-02", "excerpt": "Королевы-иностранки, лис, который, возможно, и есть Рока, отец-президент и желание вернуться: восемь вопросов о Мендосе в его романах.", "image": "novels/tajna-semi-fader/cover.jpg"},
+    {"slug": "intervista-romanzi-di-mendoza", "lang": "it", "title": "«Le acequie sono le vene della città»: Roberto Fader racconta i suoi romanzi su Mendoza", "date": "2026-11-02", "excerpt": "Regine straniere, una volpe che forse è Roca, un padre presidente e la voglia di tornare: otto domande sulla Mendoza dei suoi romanzi.", "image": "novels/ladro-di-cuori-3/cover.jpg"},
+    {"slug": "interview-novels-of-mendoza", "lang": "en", "title": "\"The acequias are the city's veins\": Robert Fader on his Mendoza novels", "date": "2026-11-02", "excerpt": "Foreign queens, a fox who may be Roca, a father turned president and the wish to return: eight questions about the Mendoza of his novels.", "image": "novels/el-misterio-de-los-fader/cover.jpg"},
+    {"slug": "rozhovor-romany-o-mendoze", "lang": "cs", "title": "„Acequie jsou žíly města“: Robert Fader o svých románech z Mendozy", "date": "2026-11-02", "excerpt": "Královny z ciziny, liška, která je možná Roca, otec prezidentem a touha vrátit se: osm otázek o Mendoze v jeho románech.", "image": "novels/kralovna-vinobrani/cover.jpg"},
+    {"slug": "intervju-romani-o-mendozi", "lang": "sr", "title": "„Асекије су вене града“: Роберт Фадер о својим романима о Мендози", "date": "2026-11-02", "excerpt": "Краљице странкиње, лисац који је можда Рока, отац председник и жеља за повратком: осам питања о Мендози из његових романа.", "image": "novels/divlji-chas-malbec/cover.jpg"},
     {
       "slug": "intervista-natalia-stregoneria-veneziana",
       "lang": "it",
