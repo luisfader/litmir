@@ -51,7 +51,7 @@ Cada idioma tiene su propio blog (`#/blog`), al que se llega desde el botón «B
 Cada idioma puede tener su curso (`#/learn`), con la teoría explicada en otros idiomas que el estudiante elige (por ejemplo, español con explicaciones en ruso o inglés). El botón aparece en la portada del idioma solo si existe un curso.
 
 1. Agregar la unidad en `learn/catalog.json` (curso por `lang`, idiomas de explicación en `help`).
-2. Teoría: `learn/<idioma>/<unidad>/theory.<idioma-de-explicación>.md` (mismo formato que los capítulos; admite glosas `**palabra**{traducción}`, tablas y ejercicios `[[a|*b|c]]` y `( V / F ){V}`).
+2. Teoría: `learn/<idioma>/<unidad>/theory.<idioma-de-explicación>.md` (mismo formato que los capítulos; admite glosas `**palabra**{traducción}`, tablas y ejercicios `[[a|*b|c]]` y `( V / F ){V}`). En capítulos y teoría también hay ejercicios para ordenar palabras tocándolas, `[[= palabra / palabra / palabra => Frase correcta.|Otra frase válida.]]`, y para escribir la respuesta, `[[~ Respuesta.|Otra respuesta válida.]]`; cada ítem va en su propio párrafo y los ítems seguidos comparten el botón «Verifica». Las glosas pueden llevar varias traducciones, `**palabra**{слово|word}`, con el orden de `glossLangs` en el catálogo.
 3. Práctica: `learn/<idioma>/<unidad>/practice.<idioma-de-explicación>.json` (mismo formato que los tests de las novelas: `match`, `choice`, `reverse`, `fill`, `build`, `write`, `story`, `tf`).
 
 ## Novelas en proceso de escritura

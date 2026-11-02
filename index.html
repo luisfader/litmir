@@ -276,6 +276,25 @@ article.chapter p.mc.bad::after{content:"✗";color:#b3261e;font:700 16px var(--
 :root[data-theme="dark"] article.chapter p.mc.ok{background:#23382b;border-color:#3f6b4d}
 :root[data-theme="dark"] article.chapter p.mc.bad{background:#3d2420;border-color:#7a3f36}
 @media (prefers-color-scheme: dark){:root:not([data-theme]) article.chapter p.mc.ok{background:#23382b;border-color:#3f6b4d}:root:not([data-theme]) article.chapter p.mc.bad{background:#3d2420;border-color:#7a3f36}}
+article.chapter div.bd,article.chapter div.tx{position:relative;text-align:left;margin:0 0 .7em;padding:8px 34px 8px 10px;border-radius:8px;border:1px solid transparent;transition:background .15s,border-color .15s}
+article.chapter div.tx{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px}
+article.chapter div.tx input{flex:1 1 220px;min-width:0;font:16px/1.3 var(--sans);padding:8px 10px;border-radius:8px;border:1px solid var(--line);background:var(--paper);color:var(--ink)}
+article.chapter div.tx input:focus{outline:2px solid var(--accent);outline-offset:1px}
+article.chapter .bdline{min-height:46px;display:flex;flex-wrap:wrap;align-items:center;gap:6px;padding:5px 0;margin:4px 0 8px;border-bottom:2px dashed var(--line)}
+article.chapter .bdline:empty::before{content:attr(data-ph);color:var(--muted);font:14px/1.3 var(--sans)}
+article.chapter .bdbank{display:flex;flex-wrap:wrap;gap:6px;min-height:38px}
+article.chapter .bdt{font:500 15px/1 var(--sans);padding:0 12px;height:38px;border-radius:9px;border:1px solid var(--line);border-bottom-width:3px;background:var(--paper);color:var(--ink);cursor:pointer;touch-action:manipulation}
+article.chapter .bdt:hover{border-color:var(--accent)}
+article.chapter .bdline .bdt{border-color:var(--accent)}
+article.chapter .exfix{flex-basis:100%;margin-top:6px;font:14px/1.35 var(--sans);color:var(--muted)}
+article.chapter .exfix b{color:var(--ink)}
+article.chapter div.bd.ok,article.chapter div.tx.ok{background:#e3efe6;border-color:#9cc8a9}
+article.chapter div.bd.bad,article.chapter div.tx.bad{background:#f6e0dd;border-color:#e0a59c}
+:root[data-theme="dark"] article.chapter div.bd.ok,:root[data-theme="dark"] article.chapter div.tx.ok{background:#23382b;border-color:#3f6b4d}
+:root[data-theme="dark"] article.chapter div.bd.bad,:root[data-theme="dark"] article.chapter div.tx.bad{background:#3d2420;border-color:#7a3f36}
+@media (prefers-color-scheme: dark){:root:not([data-theme]) article.chapter div.bd.ok,:root:not([data-theme]) article.chapter div.tx.ok{background:#23382b;border-color:#3f6b4d}:root:not([data-theme]) article.chapter div.bd.bad,:root:not([data-theme]) article.chapter div.tx.bad{background:#3d2420;border-color:#7a3f36}}
+article.chapter div.bd.ok::after,article.chapter div.tx.ok::after{content:"✓";position:absolute;top:10px;right:12px;color:#2f6b45;font:700 16px var(--sans)}
+article.chapter div.bd.bad::after,article.chapter div.tx.bad::after{content:"✗";position:absolute;top:10px;right:12px;color:#b3261e;font:700 16px var(--sans)}
 article.chapter .vfcheck{display:flex;align-items:center;gap:14px;margin:.6em 0 1.4em;font-family:var(--sans);font-size:14px}
 article.chapter .vfcheck .vfgo{font:600 14px/1 var(--sans);padding:10px 16px;border-radius:8px;border:0;background:var(--accent);color:#fff;cursor:pointer}
 article.chapter .vfcheck .vfres{font-weight:600}
@@ -860,6 +879,12 @@ function renderText(md){
     if (psy) return `<div class="psy"><p class="psyq">${inline(psy[1])}</p><div class="psyb"><button type="button" data-k="${psy[2]}" aria-pressed="false">${inline(psy[3].trim())}</button><button type="button" data-k="${psy[4]}" aria-pressed="false">${inline(psy[5].trim())}</button></div></div>`;
     const psyr = b.match(/^\{=([A-Z])\}\s*([\s\S]+)$/);
     if (psyr) return `<div class="psyr" data-k="${psyr[1]}" hidden><p>${inline(psyr[2]).replace(/\n/g,"<br>")}</p></div>`;
+    const bd = b.match(/^([\s\S]*?)\s*\[\[=\s*([^\]]+?)\s*=>\s*([^\]]+?)\s*\]\]\s*$/);
+    if (bd) { const tiles = bd[2].split("/").map(w => w.trim()).filter(Boolean), alts = bd[3].split("|").map(w => w.trim()).filter(Boolean);
+      return `<div class="bd" data-alts="${esc(alts.join("|"))}">${bd[1].trim() ? `<span class="vfq">${inline(bd[1].trim())}</span>` : ""}<div class="bdline"></div><div class="bdbank">${tiles.map((w,i) => `<button type="button" class="bdt" data-i="${i}">${esc(w)}</button>`).join("")}</div></div>`; }
+    const tx = b.match(/^([\s\S]*?)\s*\[\[~\s*([^\]]+?)\s*\]\]\s*$/);
+    if (tx) { const alts = tx[2].split("|").map(w => w.trim()).filter(Boolean);
+      return `<div class="tx" data-alts="${esc(alts.join("|"))}"><span class="vfq">${inline(tx[1].trim())}</span><input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" enterkeyhint="done"></div>`; }
     const mc = b.match(/^([\s\S]*?)\s*\[\[([^\]]*\|[^\]]*)\]\]([\s\S]*)$/);
     if (mc) { const ops = mc[2].split("|"); const a = ops.findIndex(o => o.trim().startsWith("*"));
       const q = mc[3].trim() ? inline(mc[1]) + " ＿＿＿ " + inline(mc[3].trim()) : inline(mc[1]);
@@ -872,9 +897,55 @@ function renderText(md){
 
 /* Interactive true/false exercises: lines "a) … ( V / F ){F}" */
 const QUIZ_T = {ld:["Kontroli","korrekt","Proba snova"], es:["Comprobar","correctas","Volver a intentar"], it:["Verifica","corrette","Riprova"], en:["Check","correct","Try again"], ru:["Проверить","правильно","Ещё раз"], pt:["Verificar","corretas","Tentar de novo"], fr:["Vérifier","correctes","Réessayer"], de:["Prüfen","richtig","Nochmal"], cs:["Zkontrolovat","správně","Zkusit znovu"], pl:["Sprawdź","poprawnie","Spróbuj ponownie"], sr:["Провери","тачно","Покушај поново"], bg:["Провери","вярно","Опитай пак"], eo:["Kontroli","ĝustaj","Reprovi"], tr:["Kontrol et","doğru","Tekrar dene"], ia:["Verificar","correcte","Reprobar"], isv:["Provjerj","pravilno","Poprobuj opet"], la:["Proba","recta","Iterum"], sw:["Angalia","sahihi","Jaribu tena"], vec:["Controla","giuste","Prova ancora"]};
+/* Word-order ("[[= a / b / c => Answer]]") and typed ("[[~ Answer|Alt]]") exercises share the check button with V/F and selects */
+const EX_T = {it:["Tocca le parole nell'ordine giusto","Scrivi qui…","Risposta giusta:"], es:["Toca las palabras en el orden correcto","Escribe aquí…","Respuesta correcta:"], en:["Tap the words in the right order","Type here…","Correct answer:"], ru:["Нажимай на слова в правильном порядке","Пиши здесь…","Правильный ответ:"], pt:["Toque as palavras na ordem certa","Escreva aqui…","Resposta certa:"], fr:["Touche les mots dans le bon ordre","Écris ici…","Bonne réponse :"], de:["Tippe die Wörter in der richtigen Reihenfolge","Hier schreiben…","Richtige Antwort:"]};
+const exNorm = v => String(v || "").normalize("NFC").toLowerCase().replace(/[’‘`´]/g,"'").replace(/[.,!?¿¡«»"“”„—–…;:()]/g," ").replace(/\s+/g," ").trim();
+const exBare = v => exNorm(v).normalize("NFD").replace(/[̀-ͯ]/g,"");
+function exRight(p){
+  if (!p.dataset.alts) return p.dataset.sel === p.dataset.a ? 1 : 0;
+  const v = p.dataset.sel || "", alts = p.dataset.alts.split("|");
+  if (!exNorm(v)) return 0;
+  if (alts.some(a => exNorm(a) === exNorm(v))) return 1;
+  return p.classList.contains("tx") && alts.some(a => exBare(a) === exBare(v)) ? 0.5 : 0;
+}
+function exMark(p, r, label){
+  p.classList.toggle("ok", r > 0); p.classList.toggle("bad", r === 0);
+  let f = p.querySelector(".exfix");
+  if (p.dataset.alts && r < 1){ if (!f){ f = document.createElement("div"); f.className = "exfix"; p.appendChild(f); } f.innerHTML = esc(label) + " <b>" + esc(p.dataset.alts.split("|")[0]) + "</b>"; }
+  else if (f) f.remove();
+}
+function exUnmark(p){ p.classList.remove("ok","bad"); const f = p.querySelector(".exfix"); if (f) f.remove(); }
+function exClear(p){
+  delete p.dataset.sel; exUnmark(p);
+  p.querySelectorAll("button[data-v]").forEach(x => x.setAttribute("aria-pressed","false"));
+  const sel = p.querySelector("select"); if (sel) sel.selectedIndex = 0;
+  const inp = p.querySelector("input"); if (inp) inp.value = "";
+  const bank = p.querySelector(".bdbank");
+  if (bank) [...p.querySelectorAll(".bdt")].sort((a,b) => a.dataset.i - b.dataset.i).forEach(t => bank.appendChild(t));
+}
+function exBind(p, changed, enter){
+  p.querySelectorAll("button[data-v]").forEach(b => b.onclick = () => {
+    changed(); p.dataset.sel = b.dataset.v;
+    p.querySelectorAll("button[data-v]").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
+  });
+  const sel = p.querySelector("select"); if (sel) sel.onchange = () => { changed(); p.dataset.sel = sel.value; };
+  const inp = p.querySelector("input");
+  if (inp){ inp.oninput = () => { changed(); p.dataset.sel = inp.value; }; inp.onkeydown = e => { if (e.key === "Enter"){ e.preventDefault(); enter(); } }; }
+  const line = p.querySelector(".bdline"), bank = p.querySelector(".bdbank");
+  if (line && bank) p.onclick = e => {
+    const t = e.target.closest(".bdt"); if (!t || t.disabled) return;
+    changed();
+    if (t.parentNode === bank) line.appendChild(t);
+    else { const after = [...bank.children].find(x => +x.dataset.i > +t.dataset.i); bank.insertBefore(t, after || null); }
+    p.dataset.sel = [...line.children].map(x => x.textContent).join(" ");
+  };
+}
 function setupQuizzes(root, lang){
   const T = QUIZ_T[lang] || QUIZ_T.es;
-  const items = [...root.querySelectorAll("p.vf, p.mc")];
+  const items = [...root.querySelectorAll("p.vf, p.mc, div.bd, div.tx")];
+  const EX = EX_T[lang] || EX_T.en;
+  root.querySelectorAll("div.bd .bdline").forEach(l => l.dataset.ph = EX[0]);
+  root.querySelectorAll("div.tx input").forEach(i => { i.placeholder = EX[1]; if (lang) i.lang = lang; });
   const PICK = {es:"— elige —", it:"— scegli —", en:"— choose —", ru:"— выбери —", pt:"— escolha —", fr:"— choisis —", de:"— wähle —", cs:"— vyber —", pl:"— wybierz —", sr:"— изабери —", bg:"— избери —", eo:"— elektu —", tr:"— seç —", ia:"— elige —", isv:"— izberi —", la:"— elige —", sw:"— chagua —", vec:"— sièlzi —"};
   root.querySelectorAll("p.mc select").forEach(sel => { if (sel.options[0]) sel.options[0].textContent = PICK[lang] || PICK.es; });
   if (lang === "en") root.querySelectorAll('p.vf button[data-v="V"]').forEach(b => b.textContent = "T");
@@ -894,22 +965,13 @@ function setupQuizzes(root, lang){
     const grade = box.querySelector(".module-grade"), retry = box.querySelector(".module-retry");
     const best = () => { const v = store.get(key, null); bestEl.textContent = v === null ? "Todavía no hay una calificación guardada." : "Mejor nota: " + v + " / 100"; };
     best();
-    items.forEach(p => {
-      p.querySelectorAll("button[data-v]").forEach(b => b.onclick = () => {
-        p.dataset.sel = b.dataset.v;
-        p.querySelectorAll("button[data-v]").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
-        p.classList.remove("ok", "bad");
-      });
-      const select = p.querySelector("select");
-      if (select) select.onchange = () => { p.dataset.sel = select.value; p.classList.remove("ok", "bad"); };
-    });
+    items.forEach(p => exBind(p, () => exUnmark(p), () => {}));
     grade.onclick = () => {
       const answered = items.filter(p => p.dataset.sel !== undefined && p.dataset.sel !== "").length;
       if (answered < items.length) { result.textContent = "Respondé todas las preguntas antes de calificar (" + answered + " de " + items.length + ")."; return; }
       const correct = items.reduce((count,p) => {
-        const ok = p.dataset.sel === p.dataset.a;
-        p.classList.toggle("ok", ok); p.classList.toggle("bad", !ok);
-        return count + Number(ok);
+        const r = exRight(p); exMark(p, r, EX[2]);
+        return count + (r ? 1 : 0);
       }, 0);
       const score = Math.round(100 * correct / items.length);
       const previous = store.get(key, null);
@@ -917,38 +979,29 @@ function setupQuizzes(root, lang){
       best();
       result.textContent = "Resultado: " + score + " / 100 · " + correct + " de " + items.length + " respuestas correctas." + (finalExam ? (score >= 70 ? " ¡Aprobado!" : " Necesitás 70 puntos para aprobar.") : "");
       grade.hidden = true; retry.hidden = false;
-      items.forEach(p => { p.querySelectorAll("button,select").forEach(el => el.disabled = true); });
+      items.forEach(p => { p.querySelectorAll("button,select,input").forEach(el => el.disabled = true); });
     };
     retry.onclick = () => {
-      items.forEach(p => {
-        delete p.dataset.sel; p.classList.remove("ok", "bad");
-        p.querySelectorAll("button[data-v]").forEach(b => { b.disabled = false; b.setAttribute("aria-pressed", "false"); });
-        const sel = p.querySelector("select"); if (sel) { sel.disabled = false; sel.selectedIndex = 0; }
-      });
+      items.forEach(p => { exClear(p); p.querySelectorAll("button,select,input").forEach(el => el.disabled = false); });
       result.textContent = ""; grade.hidden = false; retry.hidden = true;
       box.scrollIntoView({behavior:"smooth",block:"nearest"});
     };
     return;
   }
   const groups = [];
-  items.forEach(p => { const prev = p.previousElementSibling; if (prev && (prev.classList.contains("vf") || prev.classList.contains("mc")) && groups.length) groups[groups.length-1].push(p); else groups.push([p]); });
+  items.forEach(p => { const prev = p.previousElementSibling; if (prev && prev.matches("p.vf, p.mc, div.bd, div.tx") && groups.length) groups[groups.length-1].push(p); else groups.push([p]); });
   groups.forEach(g => {
     const bar = document.createElement("div"); bar.className = "vfcheck";
     bar.innerHTML = `<button type="button" class="vfgo">${T[0]}</button><span class="vfres" aria-live="polite"></span>`;
     g[g.length-1].after(bar);
     const res = bar.querySelector(".vfres"), go = bar.querySelector(".vfgo");
     let checked = false;
-    const reset = () => { checked = false; g.forEach(p => p.classList.remove("ok","bad")); res.textContent = ""; go.textContent = T[0]; };
-    g.forEach(p => p.querySelectorAll("button").forEach(btn => btn.onclick = () => {
-      if (checked) reset();
-      p.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", x === btn ? "true" : "false"));
-      p.dataset.sel = btn.dataset.v;
-    }));
-    g.forEach(p => { const sel = p.querySelector("select"); if (sel) sel.onchange = () => { if (checked) reset(); p.dataset.sel = sel.value; }; });
+    const reset = () => { checked = false; g.forEach(exUnmark); res.textContent = ""; go.textContent = T[0]; };
+    g.forEach(p => exBind(p, () => { if (checked) reset(); }, () => { if (!checked) go.click(); }));
     go.onclick = () => {
-      if (checked) { g.forEach(p => { delete p.dataset.sel; p.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed","false")); const sel = p.querySelector("select"); if (sel) sel.selectedIndex = 0; }); reset(); return; }
+      if (checked) { g.forEach(exClear); reset(); return; }
       let ok = 0;
-      g.forEach(p => { const good = p.dataset.sel === p.dataset.a; if (good) ok++; p.classList.toggle("ok", good); p.classList.toggle("bad", !good); });
+      g.forEach(p => { const r = exRight(p); if (r) ok++; exMark(p, r, EX[2]); });
       res.textContent = `${ok} / ${g.length} ${T[1]}`; go.textContent = T[2]; checked = true;
     };
   });
