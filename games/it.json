@@ -7,6 +7,7 @@
   "novels/maschera-di-venezia/cover.jpg",
   "novels/ladro-di-cuori/cover.jpg",
   "novels/ladro-di-cuori-2/cover-v2.jpg",
+  "novels/ladro-di-cuori-3/cover.jpg",
   "novels/la-macchina-dei-sogni/cover.jpg",
   "novels/presentimento/cover.jpg",
   "novels/la-squadra-invincibile/cover.jpg",
@@ -160,7 +161,7 @@
    "question": "Ribelle allegra e determinata, la prima persona che sorride nella metro di Sinea. Insieme a Franco riporta la luce in città e ne diventa vicepresidente.",
    "options": [
     "Stella",
-    "Sofia",
+    "Luciana",
     "Chiara",
     "Il commissario Rinaldi"
    ],
@@ -455,7 +456,7 @@
    "options": [
     "Il commissario Rinaldi",
     "Francesca",
-    "Sofia",
+    "Luciana",
     "Enrico Vitale"
    ],
    "answer": 3,
@@ -777,17 +778,17 @@
    "options": [
     "Larissa",
     "Enrico",
-    "Sofia",
+    "Luciana",
     "Stella"
    ],
    "answer": 2,
-   "why": "È Sofia, da «Antonio e il segreto di Roma»."
+   "why": "È Luciana, da «Antonio e il segreto di Roma»."
   },
   {
    "type": "story",
    "kind": "who",
    "prompt": "Chi è?",
-   "question": "Commissario della polizia di Roma, con baffi e impermeabile grigio. Arresta il Camaleonte ed è il padre di Sofia.",
+   "question": "Commissario della polizia di Roma, con baffi e impermeabile grigio. Arresta il Camaleonte ed è il padre di Luciana.",
    "options": [
     "Matteo",
     "Stella",
@@ -819,7 +820,7 @@
    "options": [
     "Larissa",
     "Ettore",
-    "Sofia",
+    "Luciana",
     "Il signor Gallo"
    ],
    "answer": 1,
@@ -846,7 +847,7 @@
    "question": "Anziana che racconta di un Natale di guerra e applaude più forte di tutti.",
    "options": [
     "Paolo",
-    "Sofia",
+    "Luciana",
     "Stella",
     "La signora Teresa"
    ],
@@ -1400,7 +1401,7 @@
    "question": "In quale romanzo compare Luis?",
    "options": [
     "Il treno fantasma",
-    "La macchina dei sogni",
+    "La squadra invincibile",
     "La città triste",
     "Presentimento"
    ],
@@ -1413,12 +1414,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Robert?",
    "options": [
-    "La macchina dei sogni",
+    "Presentimento",
     "La Nevicata Rosa",
-    "La squadra invincibile",
-    "Presentimento"
+    "Ladro di cuori 3",
+    "La città triste"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "Robert compare in «Presentimento»."
   },
   {
@@ -1427,12 +1428,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Natalia?",
    "options": [
+    "La macchina dei sogni",
     "Presentimento",
     "La Nevicata Rosa",
-    "La macchina dei sogni",
-    "Antonio e il segreto di Roma"
+    "Ladro di cuori 2"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "Natalia compare in «Presentimento»."
   },
   {
@@ -1441,12 +1442,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Sasha?",
    "options": [
-    "Ladro di cuori 2",
-    "La città triste",
+    "Ladro di cuori 3",
     "Presentimento",
-    "La Nevicata Rosa"
+    "Il treno fantasma",
+    "Ladro di cuori 2"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "Sasha compare in «Presentimento»."
   },
   {
@@ -1455,12 +1456,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Alessio?",
    "options": [
+    "Antonio e il segreto di Roma",
+    "Ladro di cuori 3",
     "Ladro di cuori",
-    "La squadra invincibile",
-    "Il treno fantasma",
     "La macchina dei sogni"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "Alessio compare in «Ladro di cuori»."
   },
   {
@@ -1469,12 +1470,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Marco?",
    "options": [
-    "La squadra invincibile",
-    "Maschera di Venezia",
-    "La macchina dei sogni",
-    "Il treno fantasma"
+    "Il treno fantasma",
+    "Ladro di cuori",
+    "La Nevicata Rosa",
+    "Presentimento"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "Marco compare in «Il treno fantasma»."
   },
   {
@@ -1483,12 +1484,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Alice?",
    "options": [
-    "Ladro di cuori 2",
+    "Ladro di cuori 3",
+    "Ladro di cuori",
     "Il treno fantasma",
-    "La macchina dei sogni",
-    "Ladro di cuori"
+    "La città triste"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Alice compare in «Il treno fantasma»."
   },
   {
@@ -1497,12 +1498,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Natalia?",
    "options": [
-    "La città triste",
-    "La Nevicata Rosa",
     "Maschera di Venezia",
-    "Ladro di cuori"
+    "La macchina dei sogni",
+    "Il treno fantasma",
+    "La città triste"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "Natalia compare in «Maschera di Venezia»."
   },
   {
@@ -1511,12 +1512,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Carlotta?",
    "options": [
-    "Antonio e il segreto di Roma",
+    "Ladro di cuori 3",
+    "Il treno fantasma",
     "La Nevicata Rosa",
-    "La macchina dei sogni",
-    "Presentimento"
+    "La squadra invincibile"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Carlotta compare in «La Nevicata Rosa»."
   },
   {
@@ -1525,12 +1526,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Franco?",
    "options": [
-    "Ladro di cuori",
-    "La Nevicata Rosa",
+    "La squadra invincibile",
     "La città triste",
-    "Antonio e il segreto di Roma"
+    "Il treno fantasma",
+    "Ladro di cuori"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "Franco compare in «La città triste»."
   },
   {
@@ -1539,9 +1540,9 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Chiara?",
    "options": [
-    "Antonio e il segreto di Roma",
-    "La squadra invincibile",
+    "Ladro di cuori 2",
     "Ladro di cuori",
+    "Antonio e il segreto di Roma",
     "La città triste"
    ],
    "answer": 3,
@@ -1553,10 +1554,10 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Marco?",
    "options": [
-    "La Nevicata Rosa",
+    "Presentimento",
     "La città triste",
-    "Ladro di cuori 2",
-    "Ladro di cuori"
+    "Maschera di Venezia",
+    "La squadra invincibile"
    ],
    "answer": 1,
    "why": "Marco compare in «La città triste»."
@@ -1567,12 +1568,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Luca?",
    "options": [
+    "La Nevicata Rosa",
     "La città triste",
-    "Ladro di cuori 2",
-    "La macchina dei sogni",
-    "Maschera di Venezia"
+    "Ladro di cuori 3",
+    "Presentimento"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "Luca compare in «La città triste»."
   },
   {
@@ -1581,12 +1582,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Il Presidente?",
    "options": [
-    "Presentimento",
-    "Maschera di Venezia",
+    "Ladro di cuori 2",
     "La città triste",
-    "Ladro di cuori"
+    "Ladro di cuori",
+    "La Nevicata Rosa"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "Il Presidente compare in «La città triste»."
   },
   {
@@ -1595,12 +1596,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Matteo?",
    "options": [
-    "Maschera di Venezia",
-    "Il treno fantasma",
+    "La Nevicata Rosa",
     "La macchina dei sogni",
-    "Ladro di cuori"
+    "Maschera di Venezia",
+    "Il treno fantasma"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "Matteo compare in «Il treno fantasma»."
   },
   {
@@ -1609,12 +1610,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Vittorio?",
    "options": [
+    "La squadra invincibile",
     "La Nevicata Rosa",
-    "Presentimento",
-    "Maschera di Venezia",
-    "Il treno fantasma"
+    "Il treno fantasma",
+    "La città triste"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "Vittorio compare in «Il treno fantasma»."
   },
   {
@@ -1623,12 +1624,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Il Direttore?",
    "options": [
-    "Antonio e il segreto di Roma",
-    "La squadra invincibile",
+    "Presentimento",
     "Il treno fantasma",
-    "La città triste"
+    "La squadra invincibile",
+    "La Nevicata Rosa"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "Il Direttore compare in «Il treno fantasma»."
   },
   {
@@ -1637,12 +1638,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Lorenzo?",
    "options": [
+    "Ladro di cuori 2",
     "La Nevicata Rosa",
-    "Antonio e il segreto di Roma",
     "Il treno fantasma",
-    "La macchina dei sogni"
+    "La squadra invincibile"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "Lorenzo compare in «La Nevicata Rosa»."
   },
   {
@@ -1652,9 +1653,9 @@
    "question": "In quale romanzo compare Laura?",
    "options": [
     "Ladro di cuori",
-    "La città triste",
-    "Presentimento",
-    "Il treno fantasma"
+    "La squadra invincibile",
+    "La macchina dei sogni",
+    "La città triste"
    ],
    "answer": 0,
    "why": "Laura compare in «Ladro di cuori»."
@@ -1665,12 +1666,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Alberto Menichetti?",
    "options": [
-    "Ladro di cuori",
-    "Maschera di Venezia",
-    "Presentimento",
-    "La Nevicata Rosa"
+    "La macchina dei sogni",
+    "La città triste",
+    "La Nevicata Rosa",
+    "Ladro di cuori"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "Alberto Menichetti compare in «La Nevicata Rosa»."
   },
   {
@@ -1679,12 +1680,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Il Porpora?",
    "options": [
-    "La macchina dei sogni",
-    "Ladro di cuori",
-    "La Nevicata Rosa",
-    "La città triste"
+    "Ladro di cuori 3",
+    "Antonio e il segreto di Roma",
+    "Ladro di cuori 2",
+    "La Nevicata Rosa"
    ],
-   "answer": 2,
+   "answer": 3,
    "why": "Il Porpora compare in «La Nevicata Rosa»."
   },
   {
@@ -1693,12 +1694,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Fabrizio?",
    "options": [
-    "La squadra invincibile",
+    "Il treno fantasma",
+    "Ladro di cuori 2",
     "La Nevicata Rosa",
-    "Ladro di cuori",
-    "La macchina dei sogni"
+    "Maschera di Venezia"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Fabrizio compare in «La Nevicata Rosa»."
   },
   {
@@ -1707,12 +1708,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Aurora?",
    "options": [
-    "La Nevicata Rosa",
-    "La città triste",
     "Il treno fantasma",
-    "Ladro di cuori"
+    "Presentimento",
+    "Maschera di Venezia",
+    "La Nevicata Rosa"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "Aurora compare in «La Nevicata Rosa»."
   },
   {
@@ -1721,12 +1722,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Roberto?",
    "options": [
-    "Il treno fantasma",
-    "Maschera di Venezia",
+    "Ladro di cuori",
     "La città triste",
-    "La macchina dei sogni"
+    "Il treno fantasma",
+    "Maschera di Venezia"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "Roberto compare in «Maschera di Venezia»."
   },
   {
@@ -1735,12 +1736,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Marco Dandolo?",
    "options": [
-    "La città triste",
-    "La Nevicata Rosa",
-    "Presentimento",
-    "Maschera di Venezia"
+    "Ladro di cuori 2",
+    "Maschera di Venezia",
+    "Ladro di cuori 3",
+    "La Nevicata Rosa"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "Marco Dandolo compare in «Maschera di Venezia»."
   },
   {
@@ -1749,12 +1750,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Il commissario Zancan?",
    "options": [
-    "Il treno fantasma",
+    "Ladro di cuori 2",
+    "Maschera di Venezia",
     "La Nevicata Rosa",
-    "La città triste",
-    "Maschera di Venezia"
+    "Ladro di cuori 3"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "Il commissario Zancan compare in «Maschera di Venezia»."
   },
   {
@@ -1763,12 +1764,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Ludovico?",
    "options": [
-    "Antonio e il segreto di Roma",
-    "Ladro di cuori 2",
     "Maschera di Venezia",
-    "La macchina dei sogni"
+    "Il treno fantasma",
+    "Ladro di cuori",
+    "La squadra invincibile"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "Ludovico compare in «Maschera di Venezia»."
   },
   {
@@ -1777,12 +1778,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Il Duca?",
    "options": [
-    "La Nevicata Rosa",
     "Maschera di Venezia",
-    "La macchina dei sogni",
-    "Ladro di cuori 2"
+    "Ladro di cuori",
+    "La squadra invincibile",
+    "La città triste"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "Il Duca compare in «Maschera di Venezia»."
   },
   {
@@ -1791,12 +1792,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Luca?",
    "options": [
-    "La Nevicata Rosa",
-    "Ladro di cuori",
     "Ladro di cuori 2",
-    "La squadra invincibile"
+    "La squadra invincibile",
+    "Maschera di Venezia",
+    "Ladro di cuori"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "Luca compare in «Ladro di cuori»."
   },
   {
@@ -1805,12 +1806,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Sofia Ricci?",
    "options": [
-    "Antonio e il segreto di Roma",
-    "Ladro di cuori",
     "Maschera di Venezia",
-    "Il treno fantasma"
+    "La macchina dei sogni",
+    "Ladro di cuori",
+    "Ladro di cuori 3"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Sofia Ricci compare in «Ladro di cuori»."
   },
   {
@@ -1819,9 +1820,9 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Maria?",
    "options": [
-    "La Nevicata Rosa",
-    "Antonio e il segreto di Roma",
     "La città triste",
+    "Antonio e il segreto di Roma",
+    "Presentimento",
     "Ladro di cuori 2"
    ],
    "answer": 3,
@@ -1833,12 +1834,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Enrico Vitale?",
    "options": [
-    "La Nevicata Rosa",
-    "Maschera di Venezia",
     "La macchina dei sogni",
-    "Ladro di cuori 2"
+    "Ladro di cuori 2",
+    "Il treno fantasma",
+    "Antonio e il segreto di Roma"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "Enrico Vitale compare in «Ladro di cuori 2»."
   },
   {
@@ -1847,12 +1848,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Don Salvatore?",
    "options": [
-    "Ladro di cuori 2",
-    "La squadra invincibile",
-    "Il treno fantasma",
-    "La città triste"
+    "Maschera di Venezia",
+    "La macchina dei sogni",
+    "Presentimento",
+    "Ladro di cuori 2"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "Don Salvatore compare in «Ladro di cuori 2»."
   },
   {
@@ -1861,10 +1862,10 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Roberto?",
    "options": [
-    "Ladro di cuori",
+    "Ladro di cuori 3",
     "Ladro di cuori 2",
     "Il treno fantasma",
-    "La città triste"
+    "La Nevicata Rosa"
    ],
    "answer": 1,
    "why": "Roberto compare in «Ladro di cuori 2»."
@@ -1875,9 +1876,9 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Irina?",
    "options": [
-    "Maschera di Venezia",
-    "Presentimento",
-    "Antonio e il segreto di Roma",
+    "Ladro di cuori 2",
+    "La città triste",
+    "La squadra invincibile",
     "La macchina dei sogni"
    ],
    "answer": 3,
@@ -1889,12 +1890,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Pietro?",
    "options": [
-    "Ladro di cuori",
-    "La macchina dei sogni",
-    "Il treno fantasma",
-    "La Nevicata Rosa"
+    "Maschera di Venezia",
+    "Presentimento",
+    "Ladro di cuori 3",
+    "La macchina dei sogni"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "Pietro compare in «La macchina dei sogni»."
   },
   {
@@ -1903,12 +1904,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Marina?",
    "options": [
-    "La città triste",
     "La macchina dei sogni",
-    "La squadra invincibile",
-    "Ladro di cuori 2"
+    "Maschera di Venezia",
+    "La città triste",
+    "La squadra invincibile"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "Marina compare in «La macchina dei sogni»."
   },
   {
@@ -1917,12 +1918,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Clara?",
    "options": [
-    "Presentimento",
     "La macchina dei sogni",
     "Il treno fantasma",
-    "La città triste"
+    "Maschera di Venezia",
+    "La squadra invincibile"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "Clara compare in «La macchina dei sogni»."
   },
   {
@@ -1931,12 +1932,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Kennet?",
    "options": [
-    "Maschera di Venezia",
-    "Ladro di cuori",
     "Presentimento",
-    "La Nevicata Rosa"
+    "La macchina dei sogni",
+    "La Nevicata Rosa",
+    "Il treno fantasma"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "Kennet compare in «Presentimento»."
   },
   {
@@ -1945,12 +1946,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Oxana?",
    "options": [
-    "La squadra invincibile",
-    "Presentimento",
     "Il treno fantasma",
-    "La Nevicata Rosa"
+    "Ladro di cuori",
+    "Presentimento",
+    "Maschera di Venezia"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Oxana compare in «Presentimento»."
   },
   {
@@ -1959,12 +1960,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Dima?",
    "options": [
-    "Il treno fantasma",
-    "Ladro di cuori 2",
+    "Ladro di cuori",
     "Presentimento",
-    "La squadra invincibile"
+    "Antonio e il segreto di Roma",
+    "La macchina dei sogni"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "Dima compare in «Presentimento»."
   },
   {
@@ -1973,9 +1974,9 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Natalia (moglie di Robert)?",
    "options": [
+    "La squadra invincibile",
+    "La macchina dei sogni",
     "La città triste",
-    "Ladro di cuori",
-    "Ladro di cuori 2",
     "Presentimento"
    ],
    "answer": 3,
@@ -1987,12 +1988,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Alessio?",
    "options": [
-    "La squadra invincibile",
-    "La città triste",
+    "Il treno fantasma",
     "La macchina dei sogni",
-    "Presentimento"
+    "Presentimento",
+    "La squadra invincibile"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "Alessio compare in «Presentimento»."
   },
   {
@@ -2001,10 +2002,10 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Fabio?",
    "options": [
-    "La città triste",
+    "Antonio e il segreto di Roma",
     "La squadra invincibile",
-    "Ladro di cuori",
-    "Presentimento"
+    "La città triste",
+    "Ladro di cuori 2"
    ],
    "answer": 1,
    "why": "Fabio compare in «La squadra invincibile»."
@@ -2015,12 +2016,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Stella?",
    "options": [
-    "Ladro di cuori 2",
+    "La città triste",
+    "La macchina dei sogni",
     "La squadra invincibile",
-    "Maschera di Venezia",
-    "La Nevicata Rosa"
+    "Il treno fantasma"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Stella compare in «La squadra invincibile»."
   },
   {
@@ -2029,12 +2030,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Maria?",
    "options": [
-    "Presentimento",
     "La squadra invincibile",
-    "Antonio e il segreto di Roma",
-    "La macchina dei sogni"
+    "Presentimento",
+    "Il treno fantasma",
+    "Ladro di cuori"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "Maria compare in «La squadra invincibile»."
   },
   {
@@ -2043,12 +2044,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Carla?",
    "options": [
-    "Presentimento",
-    "Ladro di cuori 2",
-    "La città triste",
-    "La squadra invincibile"
+    "Antonio e il segreto di Roma",
+    "Maschera di Venezia",
+    "La squadra invincibile",
+    "Il treno fantasma"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "Carla compare in «La squadra invincibile»."
   },
   {
@@ -2057,8 +2058,8 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Francesca?",
    "options": [
-    "Ladro di cuori",
-    "Maschera di Venezia",
+    "Ladro di cuori 2",
+    "La macchina dei sogni",
     "La squadra invincibile",
     "La città triste"
    ],
@@ -2071,12 +2072,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Vanessa?",
    "options": [
-    "Ladro di cuori 2",
-    "Maschera di Venezia",
+    "La macchina dei sogni",
     "La squadra invincibile",
-    "La città triste"
+    "Presentimento",
+    "Ladro di cuori 2"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "Vanessa compare in «La squadra invincibile»."
   },
   {
@@ -2085,12 +2086,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Enrico?",
    "options": [
-    "Ladro di cuori 2",
-    "Maschera di Venezia",
     "La squadra invincibile",
-    "La città triste"
+    "Antonio e il segreto di Roma",
+    "Maschera di Venezia",
+    "La macchina dei sogni"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "Enrico compare in «La squadra invincibile»."
   },
   {
@@ -2099,12 +2100,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Antonio?",
    "options": [
-    "La squadra invincibile",
+    "Ladro di cuori 2",
+    "Maschera di Venezia",
     "Antonio e il segreto di Roma",
-    "Presentimento",
-    "Ladro di cuori 2"
+    "La città triste"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Antonio compare in «Antonio e il segreto di Roma»."
   },
   {
@@ -2113,12 +2114,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Larissa?",
    "options": [
+    "Ladro di cuori 2",
+    "La città triste",
     "Antonio e il segreto di Roma",
-    "Il treno fantasma",
-    "Maschera di Venezia",
-    "Presentimento"
+    "Ladro di cuori 3"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "Larissa compare in «Antonio e il segreto di Roma»."
   },
   {
@@ -2127,12 +2128,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Matteo?",
    "options": [
-    "Presentimento",
+    "Antonio e il segreto di Roma",
+    "Ladro di cuori 2",
     "Maschera di Venezia",
-    "Ladro di cuori",
-    "Antonio e il segreto di Roma"
+    "Presentimento"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "Matteo compare in «Antonio e il segreto di Roma»."
   },
   {
@@ -2141,9 +2142,9 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Paolo?",
    "options": [
-    "La squadra invincibile",
-    "Ladro di cuori 2",
-    "La macchina dei sogni",
+    "Maschera di Venezia",
+    "Ladro di cuori",
+    "La Nevicata Rosa",
     "Antonio e il segreto di Roma"
    ],
    "answer": 3,
@@ -2153,15 +2154,15 @@
    "type": "story",
    "kind": "where",
    "prompt": "La trama",
-   "question": "In quale romanzo compare Sofia?",
+   "question": "In quale romanzo compare Luciana?",
    "options": [
-    "Maschera di Venezia",
     "La Nevicata Rosa",
-    "La macchina dei sogni",
-    "Antonio e il segreto di Roma"
+    "Presentimento",
+    "Antonio e il segreto di Roma",
+    "La squadra invincibile"
    ],
-   "answer": 3,
-   "why": "Sofia compare in «Antonio e il segreto di Roma»."
+   "answer": 2,
+   "why": "Luciana compare in «Antonio e il segreto di Roma»."
   },
   {
    "type": "story",
@@ -2169,12 +2170,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Il commissario Rinaldi?",
    "options": [
-    "La squadra invincibile",
-    "Presentimento",
-    "Antonio e il segreto di Roma",
-    "Ladro di cuori"
+    "La Nevicata Rosa",
+    "Maschera di Venezia",
+    "Ladro di cuori 3",
+    "Antonio e il segreto di Roma"
    ],
-   "answer": 2,
+   "answer": 3,
    "why": "Il commissario Rinaldi compare in «Antonio e il segreto di Roma»."
   },
   {
@@ -2183,12 +2184,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Giulia?",
    "options": [
-    "Maschera di Venezia",
-    "Il treno fantasma",
     "Antonio e il segreto di Roma",
-    "La Nevicata Rosa"
+    "Maschera di Venezia",
+    "Ladro di cuori",
+    "Ladro di cuori 3"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "Giulia compare in «Antonio e il segreto di Roma»."
   },
   {
@@ -2197,10 +2198,10 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Ettore?",
    "options": [
-    "Antonio e il segreto di Roma",
-    "Ladro di cuori",
+    "Ladro di cuori 3",
+    "Il treno fantasma",
     "La macchina dei sogni",
-    "La Nevicata Rosa"
+    "La città triste"
    ],
    "answer": 2,
    "why": "Ettore compare in «La macchina dei sogni»."
@@ -2212,11 +2213,11 @@
    "question": "In quale romanzo compare Il signor Gallo?",
    "options": [
     "Il treno fantasma",
-    "Maschera di Venezia",
-    "Presentimento",
-    "La macchina dei sogni"
+    "Antonio e il segreto di Roma",
+    "La macchina dei sogni",
+    "Ladro di cuori"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "Il signor Gallo compare in «La macchina dei sogni»."
   },
   {
@@ -2225,12 +2226,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare La signora Teresa?",
    "options": [
-    "Ladro di cuori",
-    "La squadra invincibile",
+    "Il treno fantasma",
     "La macchina dei sogni",
-    "Presentimento"
+    "Ladro di cuori 3",
+    "La squadra invincibile"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "La signora Teresa compare in «La macchina dei sogni»."
   },
   {
@@ -2240,65 +2241,79 @@
    "question": "«SORPRESA! 🎉 La coordinatrice è... la ragazza della metro! 😳 \"Chiara?!»",
    "options": [
     "Presentimento",
-    "La Nevicata Rosa",
     "La città triste",
-    "Il treno fantasma"
+    "Antonio e il segreto di Roma",
+    "Ladro di cuori"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "È da «La città triste»."
   },
   {
    "type": "story",
    "kind": "quote",
    "prompt": "Da quale romanzo è questa frase?",
-   "question": "«Camminavano in silenzio verso Ponte Vecchio, ancora immersi nell’incantesimo del museo.»",
-   "options": [
-    "La macchina dei sogni",
-    "La Nevicata Rosa",
-    "Ladro di cuori 2",
-    "La squadra invincibile"
-   ],
-   "answer": 1,
-   "why": "È da «La Nevicata Rosa»."
-  },
-  {
-   "type": "story",
-   "kind": "quote",
-   "prompt": "Da quale romanzo è questa frase?",
-   "question": "«Stava guardando il profilo di Carlotta, illuminato dalla stessa luce pallida, e per un attimo le parve che stesse cercando di memorizzarne ogni curva, ogni ombra.»",
-   "options": [
-    "Ladro di cuori 2",
-    "La Nevicata Rosa",
-    "Il treno fantasma",
-    "Presentimento"
-   ],
-   "answer": 1,
-   "why": "È da «La Nevicata Rosa»."
-  },
-  {
-   "type": "story",
-   "kind": "quote",
-   "prompt": "Da quale romanzo è questa frase?",
-   "question": "«All’interno, nel corridoio che portava alla sala di Botticelli, il caos regnava.»",
-   "options": [
-    "Presentimento",
-    "La Nevicata Rosa",
-    "Ladro di cuori 2",
-    "La macchina dei sogni"
-   ],
-   "answer": 1,
-   "why": "È da «La Nevicata Rosa»."
-  },
-  {
-   "type": "story",
-   "kind": "quote",
-   "prompt": "Da quale romanzo è questa frase?",
-   "question": "«Che ne pensi, Roberto?» chiese Alessio, il suo amico fiorentino, sistemandosi il cappello a tricorno, perfettamente intonato al suo costume settecentesco.»",
+   "question": "«Cosa sta succedendo, Carlotta?», la sua domanda era una lama che tagliava via ogni possibilità che fosse tutto una tragica coincidenza.»",
    "options": [
     "Ladro di cuori",
-    "Maschera di Venezia",
+    "La città triste",
+    "La Nevicata Rosa",
+    "Presentimento"
+   ],
+   "answer": 2,
+   "why": "È da «La Nevicata Rosa»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "Da quale romanzo è questa frase?",
+   "question": "«Il primo incontro tra Lorenzo e Carlotta avvenne in un caffè minuscolo e silenzioso, a due passi dalla basilica di Santa Croce, un luogo che sembrava sospeso nel tempo.»",
+   "options": [
+    "Ladro di cuori 3",
+    "La Nevicata Rosa",
     "Presentimento",
-    "Antonio e il segreto di Roma"
+    "Maschera di Venezia"
+   ],
+   "answer": 1,
+   "why": "È da «La Nevicata Rosa»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "Da quale romanzo è questa frase?",
+   "question": "«Non guardare», disse, ma la sua voce era tesa, gli occhi già a caccia di dettagli, di incongruenze, come un soldato addestrato a valutare un campo di battaglia.»",
+   "options": [
+    "Il treno fantasma",
+    "La Nevicata Rosa",
+    "La macchina dei sogni",
+    "Ladro di cuori"
+   ],
+   "answer": 1,
+   "why": "È da «La Nevicata Rosa»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "Da quale romanzo è questa frase?",
+   "question": "«Hai detto che sei qui per una ragione precisa, non solo per il Carnevale.»",
+   "options": [
+    "Maschera di Venezia",
+    "Il treno fantasma",
+    "La squadra invincibile",
+    "Presentimento"
+   ],
+   "answer": 0,
+   "why": "È da «Maschera di Venezia»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "Da quale romanzo è questa frase?",
+   "question": "«La gondola scivolava silenziosa lungo il Canal Grande, cullata dalle acque scure che riflettevano le luci della città.»",
+   "options": [
+    "La macchina dei sogni",
+    "Maschera di Venezia",
+    "Antonio e il segreto di Roma",
+    "Ladro di cuori 3"
    ],
    "answer": 1,
    "why": "È da «Maschera di Venezia»."
@@ -2309,23 +2324,9 @@
    "prompt": "Da quale romanzo è questa frase?",
    "question": "«Scusi… permesso…» mormorò, scostando gentilmente le persone per avvicinarsi.»",
    "options": [
-    "Antonio e il segreto di Roma",
-    "Maschera di Venezia",
-    "La macchina dei sogni",
-    "Ladro di cuori"
-   ],
-   "answer": 1,
-   "why": "È da «Maschera di Venezia»."
-  },
-  {
-   "type": "story",
-   "kind": "quote",
-   "prompt": "Da quale romanzo è questa frase?",
-   "question": "«No, non mi sono confuso», insistette Roberto, con un tono più deciso.»",
-   "options": [
-    "Ladro di cuori",
-    "Antonio e il segreto di Roma",
+    "Ladro di cuori 3",
     "La Nevicata Rosa",
+    "La macchina dei sogni",
     "Maschera di Venezia"
    ],
    "answer": 3,
@@ -2335,25 +2336,11 @@
    "type": "story",
    "kind": "quote",
    "prompt": "Da quale romanzo è questa frase?",
-   "question": "«Lunedì pomeriggio · Firenze Alessio vive a Firenze, in un piccolo appartamento vicino allo studio del suo amico Luca.»",
+   "question": "«Lunedì notte · La villa di Laura Quando Alessio arriva alla villa, è già notte.»",
    "options": [
-    "La macchina dei sogni",
-    "Ladro di cuori",
-    "La Nevicata Rosa",
-    "Presentimento"
-   ],
-   "answer": 1,
-   "why": "È da «Ladro di cuori»."
-  },
-  {
-   "type": "story",
-   "kind": "quote",
-   "prompt": "Da quale romanzo è questa frase?",
-   "question": "«Pensa al quadro che vuole rubare, ma ricorda anche il sorriso di Laura nella fotografia.»",
-   "options": [
+    "Maschera di Venezia",
     "Antonio e il segreto di Roma",
-    "La Nevicata Rosa",
-    "Presentimento",
+    "La città triste",
     "Ladro di cuori"
    ],
    "answer": 3,
@@ -2363,14 +2350,28 @@
    "type": "story",
    "kind": "quote",
    "prompt": "Da quale romanzo è questa frase?",
-   "question": "«Il giorno dopo prepara la borsa e guarda a lungo la fotografia di L'Estate.»",
+   "question": "«Entro quale giorno e ora Laura vuole ricevere il quadro? 02 Vero o falso?»",
    "options": [
-    "La macchina dei sogni",
-    "Ladro di cuori",
-    "Maschera di Venezia",
-    "Antonio e il segreto di Roma"
+    "La squadra invincibile",
+    "Ladro di cuori 2",
+    "La città triste",
+    "Ladro di cuori"
    ],
-   "answer": 1,
+   "answer": 3,
+   "why": "È da «Ladro di cuori»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "Da quale romanzo è questa frase?",
+   "question": "«Lunedì pomeriggio · Firenze Alessio vive a Firenze, in un piccolo appartamento vicino allo studio del suo amico Luca.»",
+   "options": [
+    "La città triste",
+    "Maschera di Venezia",
+    "Ladro di cuori",
+    "Il treno fantasma"
+   ],
+   "answer": 2,
    "why": "È da «Ladro di cuori»."
   },
   {
@@ -2380,9 +2381,23 @@
    "question": "«Una bottiglia di Chianti Classico toscano, rubacchiata qualche giorno prima da una cantina di Firenze, stappata tra loro due.»",
    "options": [
     "Ladro di cuori 2",
-    "La città triste",
+    "Antonio e il segreto di Roma",
     "Maschera di Venezia",
-    "Antonio e il segreto di Roma"
+    "Il treno fantasma"
+   ],
+   "answer": 0,
+   "why": "È da «Ladro di cuori 2»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "Da quale romanzo è questa frase?",
+   "question": "«Poi, senza dire una parola, Alessio le accarezzò la guancia e la baciò.»",
+   "options": [
+    "Ladro di cuori 2",
+    "Ladro di cuori 3",
+    "Il treno fantasma",
+    "La squadra invincibile"
    ],
    "answer": 0,
    "why": "È da «Ladro di cuori 2»."
@@ -2393,9 +2408,9 @@
    "prompt": "Da quale romanzo è questa frase?",
    "question": "«La sera era calda e silenziosa quando Alessio e Laura si ritrovarono sul piccolo balcone del loro appartamento.»",
    "options": [
-    "La città triste",
-    "Il treno fantasma",
+    "Ladro di cuori",
     "Presentimento",
+    "Ladro di cuori 3",
     "Ladro di cuori 2"
    ],
    "answer": 3,
@@ -2405,15 +2420,71 @@
    "type": "story",
    "kind": "quote",
    "prompt": "Da quale romanzo è questa frase?",
-   "question": "«Alessio, adesso conosciuto come Marcos Sierra era in piedi sul balcone della loro casa bianca, osservando le onde turchesi del Mar Mediterraneo.»",
+   "question": "«Secondo la polizia, i ladri appartengono a una banda internazionale e potrebbero essere già in Argentina.»",
+   "options": [
+    "Il treno fantasma",
+    "La squadra invincibile",
+    "Ladro di cuori 3",
+    "Presentimento"
+   ],
+   "answer": 2,
+   "why": "È da «Ladro di cuori 3»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "Da quale romanzo è questa frase?",
+   "question": "«Un giornale di Mendoza scrive che l'Interpol cerca un uomo conosciuto come «Don Sergio».»",
+   "options": [
+    "Ladro di cuori 3",
+    "Presentimento",
+    "Maschera di Venezia",
+    "Il treno fantasma"
+   ],
+   "answer": 0,
+   "why": "È da «Ladro di cuori 3»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "Da quale romanzo è questa frase?",
+   "question": "«Allora sarà felice di riposarsi da loro per qualche giorno» risponde Alessio con un sorriso.»",
    "options": [
     "La città triste",
-    "Il treno fantasma",
-    "Ladro di cuori 2",
+    "Maschera di Venezia",
+    "Ladro di cuori 3",
+    "La Nevicata Rosa"
+   ],
+   "answer": 2,
+   "why": "È da «Ladro di cuori 3»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "Da quale romanzo è questa frase?",
+   "question": "«È al secondo piano di un vecchio palazzo in via Santo Stefano, sotto i portici.»",
+   "options": [
+    "Antonio e il segreto di Roma",
+    "La città triste",
+    "Maschera di Venezia",
+    "La macchina dei sogni"
+   ],
+   "answer": 3,
+   "why": "È da «La macchina dei sogni»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "Da quale romanzo è questa frase?",
+   "question": "«Alle sette di sera Irina sta per chiudere lo studio quando qualcuno bussa alla porta.»",
+   "options": [
+    "Presentimento",
+    "Antonio e il segreto di Roma",
+    "La macchina dei sogni",
     "Maschera di Venezia"
    ],
    "answer": 2,
-   "why": "È da «Ladro di cuori 2»."
+   "why": "È da «La macchina dei sogni»."
   },
   {
    "type": "story",
@@ -2421,37 +2492,9 @@
    "prompt": "Da quale romanzo è questa frase?",
    "question": "«Il venerdì sera incontra la sua amica Marina in un piccolo bar in piazza Santo Stefano.»",
    "options": [
-    "La macchina dei sogni",
-    "Antonio e il segreto di Roma",
-    "La squadra invincibile",
-    "Il treno fantasma"
-   ],
-   "answer": 0,
-   "why": "È da «La macchina dei sogni»."
-  },
-  {
-   "type": "story",
-   "kind": "quote",
-   "prompt": "Da quale romanzo è questa frase?",
-   "question": "«Ha avuto un fidanzato, Luca, ma due anni fa lui è partito per Londra e la loro storia è finita.»",
-   "options": [
-    "La macchina dei sogni",
     "La Nevicata Rosa",
-    "Il treno fantasma",
-    "Ladro di cuori 2"
-   ],
-   "answer": 0,
-   "why": "È da «La macchina dei sogni»."
-  },
-  {
-   "type": "story",
-   "kind": "quote",
-   "prompt": "Da quale romanzo è questa frase?",
-   "question": "«Non è quello che ho chiesto», dice Clara con un piccolo sorriso triste.»",
-   "options": [
-    "Ladro di cuori 2",
-    "La città triste",
     "Ladro di cuori",
+    "La squadra invincibile",
     "La macchina dei sogni"
    ],
    "answer": 3,
@@ -2461,42 +2504,42 @@
    "type": "story",
    "kind": "quote",
    "prompt": "Da quale romanzo è questa frase?",
-   "question": "«Qui, sulla cima della collina, costruiremo le mura», spiegava Luis, mostrando i suoi schizzi.»",
+   "question": "«Mentre esploravano i grandi spazi vuoti della fabbrica, pieni di polvere e macchinari arrugginiti, Robert parlò a Luis dei suoi sogni.»",
    "options": [
-    "La Nevicata Rosa",
-    "Presentimento",
     "Maschera di Venezia",
-    "La macchina dei sogni"
+    "La squadra invincibile",
+    "Presentimento",
+    "Ladro di cuori 2"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "È da «Presentimento»."
   },
   {
    "type": "story",
    "kind": "quote",
    "prompt": "Da quale romanzo è questa frase?",
-   "question": "«Maneggiava la spada con una rapidità e una precisione che Robert non aveva mai visto.»",
+   "question": "«Un altro attaccò da dietro, ma Robert lo sentì, si girò e bloccò il colpo con l'elsa della spada, per poi colpirlo con il calcio dell'arma.»",
    "options": [
-    "Ladro di cuori",
-    "La macchina dei sogni",
     "Maschera di Venezia",
+    "La macchina dei sogni",
+    "Presentimento",
+    "La città triste"
+   ],
+   "answer": 2,
+   "why": "È da «Presentimento»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "Da quale romanzo è questa frase?",
+   "question": "«Dopo che Kennet si fu ripreso un po', Robert gli parlò della sua missione.»",
+   "options": [
+    "La macchina dei sogni",
+    "La squadra invincibile",
+    "Ladro di cuori",
     "Presentimento"
    ],
    "answer": 3,
-   "why": "È da «Presentimento»."
-  },
-  {
-   "type": "story",
-   "kind": "quote",
-   "prompt": "Da quale romanzo è questa frase?",
-   "question": "«La donna dai capelli rossi si avvicinò a Robert, che era ancora a terra.»",
-   "options": [
-    "La Nevicata Rosa",
-    "Presentimento",
-    "Il treno fantasma",
-    "Antonio e il segreto di Roma"
-   ],
-   "answer": 1,
    "why": "È da «Presentimento»."
   },
   {
@@ -2505,10 +2548,10 @@
    "prompt": "Da quale romanzo è questa frase?",
    "question": "«Voi uomini non siete così bravi come credete!\", dice una di loro ridendo.»",
    "options": [
-    "Il treno fantasma",
-    "Presentimento",
+    "Ladro di cuori 3",
+    "Antonio e il segreto di Roma",
     "La squadra invincibile",
-    "Ladro di cuori"
+    "Presentimento"
    ],
    "answer": 2,
    "why": "È da «La squadra invincibile»."
@@ -2517,28 +2560,14 @@
    "type": "story",
    "kind": "quote",
    "prompt": "Da quale romanzo è questa frase?",
-   "question": "«Riordina le parole 1. cugino / lavora / mio / nei / Vaticani / Musei 2. domani / possiamo / al / tornare / museo / ?»",
-   "options": [
-    "Antonio e il segreto di Roma",
-    "Il treno fantasma",
-    "La squadra invincibile",
-    "Presentimento"
-   ],
-   "answer": 0,
-   "why": "È da «Antonio e il segreto di Roma»."
-  },
-  {
-   "type": "story",
-   "kind": "quote",
-   "prompt": "Da quale romanzo è questa frase?",
    "question": "«Abita a Roma, nel quartiere di Trastevere, in un piccolo appartamento al terzo piano.»",
    "options": [
-    "La squadra invincibile",
-    "Ladro di cuori 2",
-    "Presentimento",
-    "Antonio e il segreto di Roma"
+    "Antonio e il segreto di Roma",
+    "La macchina dei sogni",
+    "Ladro di cuori 3",
+    "Ladro di cuori 2"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "È da «Antonio e il segreto di Roma»."
   },
   {
@@ -2547,12 +2576,26 @@
    "prompt": "Da quale romanzo è questa frase?",
    "question": "«Ehm… sai che se metti la mano nella Bocca della Verità e dici una bugia, la bocca ti mangia la mano?»",
    "options": [
-    "Ladro di cuori",
     "La città triste",
+    "La squadra invincibile",
     "Antonio e il segreto di Roma",
-    "Maschera di Venezia"
+    "Il treno fantasma"
    ],
    "answer": 2,
+   "why": "È da «Antonio e il segreto di Roma»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "Da quale romanzo è questa frase?",
+   "question": "«Riordina le parole 1. cugino / lavora / mio / nei / Vaticani / Musei 2. domani / possiamo / al / tornare / museo / ?»",
+   "options": [
+    "La città triste",
+    "La squadra invincibile",
+    "La Nevicata Rosa",
+    "Antonio e il segreto di Roma"
+   ],
+   "answer": 3,
    "why": "È da «Antonio e il segreto di Roma»."
   },
   {
@@ -2561,12 +2604,12 @@
    "prompt": "La trama",
    "question": "In «La città triste», che cosa vieta il nuovo presidente di Sinea?",
    "options": [
-    "I cellulari",
-    "La musica di notte",
+    "Le automobili in centro",
     "I sorrisi in luoghi pubblici",
-    "Le automobili in centro"
+    "I cellulari",
+    "La musica di notte"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "«La felicità è pericolosa», dice il presidente."
   },
   {
@@ -2575,12 +2618,12 @@
    "prompt": "La trama",
    "question": "In «La città triste», dove lavora Franco all’inizio della storia?",
    "options": [
+    "Alla stazione della metro",
     "Nel Ministero dei Sentimenti",
     "In un ufficio postale",
-    "Alla stazione della metro",
     "In un bar di Sinea"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "È un ministero speciale che si occupa della felicità della gente."
   },
   {
@@ -2589,12 +2632,12 @@
    "prompt": "La trama",
    "question": "Nel «Treno fantasma», che lavoro fa Marco?",
    "options": [
-    "L’astrologo",
     "Il cameriere",
     "Il detective",
+    "L’astrologo",
     "Il capostazione"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "«Sono un detective. Vivo a Sinea.»"
   },
   {
@@ -2603,12 +2646,12 @@
    "prompt": "La trama",
    "question": "Nel «Treno fantasma», chi cerca Marco?",
    "options": [
-    "La sua ragazza, Alice",
     "Il capostazione",
+    "Suo fratello Matteo",
     "Un uomo grasso",
-    "Suo fratello Matteo"
+    "La sua ragazza, Alice"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "«Cerco la mia ragazza. È scomparsa la settimana scorsa.»"
   },
   {
@@ -2617,12 +2660,12 @@
    "prompt": "La trama",
    "question": "Nel «Treno fantasma», che cosa studia Alice?",
    "options": [
-    "Le stelle: è un’astrologa",
     "La musica",
-    "La storia dei treni",
-    "La medicina"
+    "Le stelle: è un’astrologa",
+    "La medicina",
+    "La storia dei treni"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "«Sono un’astrologa. Studio le stelle.»"
   }
  ]

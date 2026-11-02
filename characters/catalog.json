@@ -2234,8 +2234,8 @@
    }
   },
   {
-   "id": "sofia-roma",
-   "name": "Sofía (Roma)",
+   "id": "luciana-roma",
+   "name": "Luciana (Roma)",
    "langs": [
     "it"
    ],
@@ -2245,7 +2245,7 @@
    ],
    "localizations": {
     "it": {
-     "name": "Sofia",
+     "name": "Luciana",
      "description": "Studentessa di storia dell’arte di 25 anni che il sabato fa la guida ai Musei Vaticani. Figlia del commissario Rinaldi, è il nuovo amore di Antonio."
     }
    }
@@ -2263,7 +2263,7 @@
    "localizations": {
     "it": {
      "name": "Il commissario Rinaldi",
-     "description": "Commissario della polizia di Roma, con baffi e impermeabile grigio. Arresta il Camaleonte ed è il padre di Sofia."
+     "description": "Commissario della polizia di Roma, con baffi e impermeabile grigio. Arresta il Camaleonte ed è il padre di Luciana."
     }
    }
   },
