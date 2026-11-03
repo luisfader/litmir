@@ -1,0 +1,339 @@
+{
+ "title": "Teste final: Do outro lado do mundo",
+ "subtitle": "21 exercícios sobre a história de Mateus e Vika: vocabulário, verdadeiro ou falso, frases para montar e para escrever.",
+ "speak": "pt-BR",
+ "hero": "cover.jpg",
+ "hearts": 5,
+ "perfect": "Nenhum erro! Você entendeu tudo: isso é magia!",
+ "good": "Muito bem! Você conhece bem a história de Mateus e Vika.",
+ "keyboard": [
+  "á",
+  "â",
+  "ã",
+  "à",
+  "ç",
+  "é",
+  "ê",
+  "í",
+  "ó",
+  "ô",
+  "õ",
+  "ú"
+ ],
+ "ui": {
+  "start": "Começar",
+  "check": "Verificar",
+  "next": "Continuar",
+  "skip": "Não sei",
+  "retry": "Tentar de novo",
+  "again": "Fazer o teste de novo",
+  "back": "Voltar ao romance",
+  "great": [
+   "Muito bem!",
+   "Excelente!",
+   "Correto!",
+   "Perfeito!",
+   "Isso aí!"
+  ],
+  "wrong": "Resposta certa:",
+  "almost": "Quase! Atenção aos acentos:",
+  "done": "Teste concluído!",
+  "lost": "Seus corações acabaram",
+  "lostP": "Não tem problema: cada erro é uma palavra que você agora conhece um pouco melhor.",
+  "xp": "XP total",
+  "acc": "Precisão",
+  "time": "Tempo",
+  "ex": "{n} exercícios",
+  "min": "≈ 7 minutos",
+  "hearts": "corações",
+  "best": "Seu melhor resultado",
+  "tap": "Toque as palavras na ordem certa",
+  "type": "Escreva aqui…",
+  "ok": "Bom trabalho! Faça o teste de novo para melhorar a precisão.",
+  "sound": "Som",
+  "listen": "Ouvir",
+  "meaning": "Significa:",
+  "yes": "Verdadeiro",
+  "no": "Falso",
+  "score": "Pontos",
+  "level": "Seu nível de compreensão"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Ligue as palavras",
+   "pairs": [
+    [
+     "a promessa",
+     "обещание"
+    ],
+    [
+     "o dinheiro",
+     "деньги"
+    ],
+    [
+     "o jornal",
+     "газета"
+    ],
+    [
+     "o anúncio",
+     "объявление"
+    ],
+    [
+     "a passagem",
+     "билет"
+    ]
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Escolha a resposta certa",
+   "question": "Por que Mateus precisa de dinheiro?",
+   "es": "Зачем Матеусу деньги?",
+   "options": [
+    "Para comprar a passagem e ir à Rússia.",
+    "Para comprar um carro novo.",
+    "Para pagar a faculdade."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "Verdadeiro ou falso?",
+   "statement": "Vika mora no Brasil.",
+   "answer": false,
+   "why": "Vika mora na Rússia, do outro lado do mundo."
+  },
+  {
+   "type": "fill",
+   "prompt": "Complete a frase",
+   "before": "No segundo tempo, Mateus faz três",
+   "after": "!",
+   "options": [
+    "gols",
+    "goles",
+    "bolas"
+   ],
+   "answer": 0,
+   "es": "Во втором тайме Матеус забивает три гола!"
+  },
+  {
+   "type": "choice",
+   "prompt": "O que significa?",
+   "word": "o time adversário",
+   "options": [
+    "команда соперника",
+    "своя команда",
+    "судья"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Escolha a resposta certa",
+   "question": "O que Mateus sabe sobre guitarra no começo?",
+   "es": "Что Матеус знает о гитаре вначале?",
+   "options": [
+    "Só algumas notas básicas.",
+    "Ele toca há dez anos.",
+    "Ele é professor de música."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Traduza para o português",
+   "es": "Я очень тебя люблю.",
+   "answer": [
+    "Te",
+    "amo",
+    "muito"
+   ],
+   "extra": [
+    "muita",
+    "Eu",
+    "tem"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "Verdadeiro ou falso?",
+   "statement": "O Agente Castro acha que Mateus usa magia.",
+   "answer": true,
+   "why": "«Isso não é normal. Você está usando magia.»"
+  },
+  {
+   "type": "match",
+   "prompt": "Ligue as palavras",
+   "pairs": [
+    [
+     "a plateia",
+     "зрители"
+    ],
+    [
+     "o baterista",
+     "барабанщик"
+    ],
+    [
+     "o caderninho",
+     "блокнотик"
+    ],
+    [
+     "a fuga",
+     "побег"
+    ],
+    [
+     "o autógrafo",
+     "автограф"
+    ]
+   ]
+  },
+  {
+   "type": "reverse",
+   "prompt": "Como se diz em português?",
+   "word": "Я никогда её не видел.",
+   "options": [
+    "Nunca a vi.",
+    "Nunca a vejo.",
+    "Sempre a vi."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Escolha a resposta certa",
+   "question": "O que Vika quer mostrar em Moscou?",
+   "es": "Что Вика хочет показать в Москве?",
+   "options": [
+    "O metrô, a Praça Vermelha e o Kremlin.",
+    "A praia de Copacabana.",
+    "O Cristo Redentor."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Complete a frase",
+   "before": "Se eu",
+   "after": "essa corrida, vou ter dinheiro para tudo!",
+   "options": [
+    "ganhar",
+    "ganho",
+    "ganhou"
+   ],
+   "answer": 0,
+   "es": "Если я выиграю эту гонку, у меня будут деньги на всё!"
+  },
+  {
+   "type": "tf",
+   "prompt": "Verdadeiro ou falso?",
+   "statement": "Mateus perde a corrida de Fórmula 1.",
+   "answer": false,
+   "why": "Mateus cruza a linha de chegada em primeiro e ganha 50 mil reais."
+  },
+  {
+   "type": "match",
+   "prompt": "Ligue as palavras",
+   "pairs": [
+    [
+     "o volante",
+     "руль"
+    ],
+    [
+     "a curva",
+     "поворот"
+    ],
+    [
+     "ultrapassar",
+     "обгонять"
+    ],
+    [
+     "a delegacia",
+     "полицейский участок"
+    ],
+    [
+     "a bruxa",
+     "ведьма"
+    ]
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Escolha a resposta certa",
+   "question": "O que acontece com os olhos de Mateus na delegacia?",
+   "es": "Что происходит с глазами Матеуса в участке?",
+   "options": [
+    "Brilham com uma luz laranja, como fogo.",
+    "Ficam azuis como gelo.",
+    "Ele fecha os olhos e dorme."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Traduza para o português",
+   "es": "Он превращает блокнот в паспорт.",
+   "answer": [
+    "Ele",
+    "transforma",
+    "um",
+    "caderno",
+    "em",
+    "passaporte"
+   ],
+   "extra": [
+    "jornal",
+    "faz"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Escreva em português",
+   "es": "Счастливого пути!",
+   "answers": [
+    "boa viagem",
+    "boa viagem!"
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "Verdadeiro ou falso?",
+   "statement": "No aeroporto, Vika diz que Mateus também é um bruxo.",
+   "answer": true,
+   "why": "«Sim, Mateus. E você também é um bruxo. Um bruxo muito bom e muito poderoso.»"
+  },
+  {
+   "type": "choice",
+   "prompt": "O que significa?",
+   "word": "de mãos dadas",
+   "options": [
+    "держась за руки",
+    "с пустыми руками",
+    "своими руками"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "story",
+   "prompt": "Escolha a resposta certa",
+   "question": "Quem é, na verdade, o Agente Castro?",
+   "es": "Кто на самом деле агент Кастро?",
+   "options": [
+    "O tio de Vika.",
+    "O pai de Mateus.",
+    "Um piloto de Fórmula 1."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "write",
+   "prompt": "Escreva em português",
+   "es": "Их любовь волшебная.",
+   "answers": [
+    "o amor deles é mágico",
+    "seu amor é mágico",
+    "o seu amor é mágico"
+   ]
+  }
+ ]
+}
