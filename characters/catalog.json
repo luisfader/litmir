@@ -244,14 +244,14 @@
    "langs": [
     "pt"
    ],
-   "role": "Joven brasileño de 20 años que promete conocer a Vika.",
+   "role": "Joven brasileño de 20 años que promete conocer a Rita.",
    "novels": [
     "do-outro-lado-do-mundo"
    ],
    "localizations": {
     "pt": {
      "name": "Mateus",
-     "description": "Tem 20 anos e prometeu conhecer Vika, que mora do outro lado do mundo. Sem dinheiro para a passagem, aceita qualquer desafio para cumprir a promessa."
+     "description": "Tem 20 anos e prometeu conhecer Rita, que mora do outro lado do mundo. Sem dinheiro para a passagem, aceita qualquer desafio para cumprir a promessa."
     }
    }
   },
@@ -2690,19 +2690,19 @@
    }
   },
   {
-   "id": "vika-pt",
-   "name": "Vika (Do outro lado do mundo)",
+   "id": "rita-pt",
+   "name": "Rita (Do outro lado do mundo)",
    "langs": [
     "pt"
    ],
-   "role": "Joven rusa (Viktoria) que conversa con Mateus por internet.",
+   "role": "Joven rusa (Margarita) que conversa con Mateus por internet.",
    "novels": [
     "do-outro-lado-do-mundo"
    ],
    "localizations": {
     "pt": {
-     "name": "Vika",
-     "description": "Viktoria, ou simplesmente Vika, mora do outro lado do mundo, na Rússia, e conversa com Mateus pela internet. Por ela, Mateus atravessa meio planeta."
+     "name": "Rita",
+     "description": "Margarita, ou simplesmente Rita, mora do outro lado do mundo, na Rússia, e conversa com Mateus pela internet. Por ela, Mateus atravessa meio planeta."
     }
    }
   },
@@ -6528,14 +6528,14 @@
    "langs": [
     "pt"
    ],
-   "role": "Agente da polícia mística e tio de Natalia, que conta histórias embaraçosas da infância dela.",
+   "role": "Agente da polícia mística e tio de Rita, que conta histórias embaraçosas da infância dela.",
    "novels": [
     "do-outro-lado-do-mundo"
    ],
    "localizations": {
     "pt": {
      "name": "Agente Castro",
-     "description": "Agente da polícia mística e tio de Natalia, que conta histórias embaraçosas da infância dela."
+     "description": "Agente da polícia mística e tio de Rita, que conta histórias embaraçosas da infância dela."
     }
    }
   },

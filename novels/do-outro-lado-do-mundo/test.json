@@ -1,11 +1,11 @@
 {
  "title": "Teste final: Do outro lado do mundo",
- "subtitle": "21 exercícios sobre a história de Mateus e Vika: vocabulário, verdadeiro ou falso, frases para montar e para escrever.",
+ "subtitle": "21 exercícios sobre a história de Mateus e Rita: vocabulário, verdadeiro ou falso, frases para montar e para escrever.",
  "speak": "pt-BR",
  "hero": "cover.jpg",
  "hearts": 5,
  "perfect": "Nenhum erro! Você entendeu tudo: isso é magia!",
- "good": "Muito bem! Você conhece bem a história de Mateus e Vika.",
+ "good": "Muito bem! Você conhece bem a história de Mateus e Rita.",
  "keyboard": [
   "á",
   "â",
@@ -100,9 +100,9 @@
   {
    "type": "tf",
    "prompt": "Verdadeiro ou falso?",
-   "statement": "Vika mora no Brasil.",
+   "statement": "Rita mora no Brasil.",
    "answer": false,
-   "why": "Vika mora na Rússia, do outro lado do mundo."
+   "why": "Rita mora na Rússia, do outro lado do mundo."
   },
   {
    "type": "fill",
@@ -202,7 +202,7 @@
   {
    "type": "story",
    "prompt": "Escolha a resposta certa",
-   "question": "O que Vika quer mostrar em Moscou?",
+   "question": "O que Rita quer mostrar em Moscou?",
    "es": "Что Вика хочет показать в Москве?",
    "options": [
     "O metrô, a Praça Vermelha e o Kremlin.",
@@ -298,7 +298,7 @@
   {
    "type": "tf",
    "prompt": "Verdadeiro ou falso?",
-   "statement": "No aeroporto, Vika diz que Mateus também é um bruxo.",
+   "statement": "No aeroporto, Rita diz que Mateus também é um bruxo.",
    "answer": true,
    "why": "«Sim, Mateus. E você também é um bruxo. Um bruxo muito bom e muito poderoso.»"
   },
@@ -319,7 +319,7 @@
    "question": "Quem é, na verdade, o Agente Castro?",
    "es": "Кто на самом деле агент Кастро?",
    "options": [
-    "O tio de Vika.",
+    "O tio de Rita.",
     "O pai de Mateus.",
     "Um piloto de Fórmula 1."
    ],
