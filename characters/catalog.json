@@ -239,19 +239,19 @@
    }
   },
   {
-   "id": "luiz-pt",
-   "name": "Luiz",
+   "id": "mateus-pt",
+   "name": "Mateus",
    "langs": [
     "pt"
    ],
-   "role": "Joven de 20 años que promete conocer a Natalia.",
+   "role": "Joven brasileño de 20 años que promete conocer a Vika.",
    "novels": [
     "do-outro-lado-do-mundo"
    ],
    "localizations": {
     "pt": {
-     "name": "Luiz",
-     "description": "Tem 20 anos e prometeu conhecer Natalia, que mora do outro lado do mundo. Sem dinheiro para a passagem, aceita qualquer desafio para cumprir a promessa."
+     "name": "Mateus",
+     "description": "Tem 20 anos e prometeu conhecer Vika, que mora do outro lado do mundo. Sem dinheiro para a passagem, aceita qualquer desafio para cumprir a promessa."
     }
    }
   },
@@ -2690,19 +2690,19 @@
    }
   },
   {
-   "id": "natalia-pt",
-   "name": "Natalia (Do outro lado do mundo)",
+   "id": "vika-pt",
+   "name": "Vika (Do outro lado do mundo)",
    "langs": [
     "pt"
    ],
-   "role": "Joven rusa que conversa con Luiz por internet.",
+   "role": "Joven rusa (Viktoria) que conversa con Mateus por internet.",
    "novels": [
     "do-outro-lado-do-mundo"
    ],
    "localizations": {
     "pt": {
-     "name": "Natalia",
-     "description": "Mora do outro lado do mundo, na Rússia, e conversa com Luiz pela internet. Por ela, Luiz atravessa meio planeta."
+     "name": "Vika",
+     "description": "Viktoria, ou simplesmente Vika, mora do outro lado do mundo, na Rússia, e conversa com Mateus pela internet. Por ela, Mateus atravessa meio planeta."
     }
    }
   },
