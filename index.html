@@ -339,6 +339,11 @@ article.chapter figure.mid img{max-height:none;width:100%}
 article.chapter figure.linked img{max-height:420px;transition:transform .2s}
 article.chapter figure.linked a:hover img{transform:scale(1.02)}
 article.chapter figure img{max-width:100%;max-height:72vh;width:auto;height:auto;border-radius:6px;box-shadow:var(--shadow)}
+article.chapter .gallery{columns:2 260px;column-gap:16px;margin:2em -20px}
+article.chapter .gallery figure{margin:0 0 16px;break-inside:avoid}
+article.chapter .gallery figure img{width:100%;max-height:none;display:block;transition:transform .2s}
+article.chapter .gallery figure a:hover img{transform:scale(1.015)}
+article.chapter .gallery figcaption{font-size:.85em;opacity:.75;margin-top:6px;line-height:1.35;font-style:italic}
 article.chapter h3{font-family:var(--sans);font-size:.72em;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:2em 0 .8em;font-weight:600}
 .badge18{position:absolute;top:10px;right:10px;background:#b3261e;color:#fff;font-family:var(--sans);font-weight:700;font-size:12px;padding:3px 7px;border-radius:6px;letter-spacing:.02em;z-index:2}
 .badge18.big{position:static;display:inline-block;font-size:22px;padding:8px 14px;border-radius:10px;margin-bottom:18px}
@@ -867,6 +872,8 @@ function renderText(md){
     if (/^(\*\s*){3,}$|^(-\s*){3,}$|^⁂$/.test(b)) return "<hr>";
     let lk = b.match(/^\[!\[([^\]]*)\]\(([^)\s]+)\)\]\(((?:#|https?:\/\/)[^)\s]*)\)$/);
     if (lk) return `<figure class="linked"><a href="${esc(lk[3])}"><img src="${esc(lk[2])}" alt="${esc(lk[1])}" loading="lazy"></a></figure>`;
+    if (/^:::\s*gallery\s*\n/i.test(b)) { const items = b.split("\n").slice(1).map(r => r.trim().match(/^!\[([^\]]*)\]\(([^)\s]+)\)$/)).filter(Boolean);
+      return `<div class="gallery">${items.map(x => `<figure><a href="${esc(x[2])}" target="_blank" rel="noopener"><img src="${esc(x[2])}" alt="${esc(x[1])}" loading="lazy"></a>${x[1] ? `<figcaption>${inline(x[1])}</figcaption>` : ""}</figure>`).join("")}</div>`; }
     let m = b.match(/^!\[([^\]]*)\]\(([^)\s]+)\)$/);
     if (m) return m[1] === "m" ? `<figure class="mid"><img src="${esc(m[2])}" alt="" loading="lazy"></figure>` : `<figure><img src="${esc(m[2])}" alt="${esc(m[1])}" loading="lazy"></figure>`;
     if (/^##\s/.test(b)) return "<h2>" + inline(b.replace(/^#+\s*/,"")) + "</h2>";
