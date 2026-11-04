@@ -1,0 +1,7 @@
+Falliscono i colloqui tra La Nostra Utopia e i selvaggi. Robert, fondatore della fortezza, e Luis si sono presentati all'accampamento dei selvaggi all'alba, su due motociclette e con una bandiera bianca. La risposta è stata un rifiuto.
+
+Robert aveva proposto di condividere risorse e conoscenze, sostenendo che la guerra non avrebbe portato nulla di buono a nessuno. I capi dei selvaggi hanno risposto che prenderanno la fortezza con la forza e che i suoi abitanti diventeranno loro schiavi. «Allora avrete la guerra che cercate», ha detto Robert prima di ripartire. «Ma non sarà la guerra che vi aspettate.»
+
+La decisione di tentare il dialogo era stata presa nonostante le obiezioni di una parte del Consiglio. «La violenza è l'ultima opzione», aveva ricordato Robert. Al ritorno, la fortezza ha cominciato subito i preparativi per la difesa: Sasha coordina le risorse e le riserve d'acqua, Kennet guida arcieri e frombolieri dalle torri, il tecnico Dima prepara inganni visivi per deviare l'ariete nemico.
+
+Nei giorni precedenti, il Consiglio Direttivo era stato convocato d'urgenza per un altro motivo. Le vedette Kennet e Oxana avevano avvistato degli aerei nel cielo notturno. Secondo Dima, che prima del collasso aveva accesso a vecchi database militari, appartengono alla Potenza Centrale, lo Stato da cui era fuggito Kennet. La Potenza Centrale, dunque, è sopravvissuta alla guerra. «Ci stanno studiando», ha concluso Robert. «E prima o poi sapranno di noi.»

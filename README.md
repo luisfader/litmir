@@ -85,21 +85,27 @@ Aventura de apuntar y hacer clic basada en «Дикий час: Карнавал
 - Imágenes: `games/carnaval/img/`. Los fondos van a 1600×900 en JPG; los personajes, en WebP con fondo transparente. Para el final se usan las ilustraciones de la novela (`novels/dikij-chas-karnaval-razdora/img/13-*.jpg`).
 - Imágenes opcionales: si se añaden, reemplazan a las de reserva sin tocar el código: `pagina.jpg` (la página del manuscrito), `tauran.jpg`, `boton.jpg` (el botón HACERLO MANSITO), `tauran-manso.jpg`, `objetos.png` (hoja de iconos 4×3 sobre fondo blanco), `mariquita.jpg` y `final.jpg`.
 
-## Noticias satíricas
+## Noticias políticas
 
-En ES, IT y EN hay un periódico satírico (`#/news`, botón «📰» en la portada), con noticias políticas inventadas a partir de las novelas de cada idioma: *El Heraldo de Sinea* (ES), *Il Corriere del Sorriso* (IT) y *The Sinea Herald* (EN). El botón aparece solo en los idiomas que tienen periódico.
+En RU, ES, IT, SR y CS hay un periódico serio (`#/news`, botón «📰» en la portada) con los acontecimientos políticos que ocurren de fondo en las novelas de ese idioma: *Вестник миров* (RU), *Gaceta de los Mundos* (ES), *Gazzetta dei Mondi* (IT), *Весник светова* (SR) y *Kronika světů* (CS). No es satírico: cuenta en tono de noticia lo que pasa en cada novela (gobiernos, consejos, votaciones, leyes, guerras, revueltas, cambios de poder). Cada novela tiene su propio mundo y su propio tiempo, así que la cronología de una novela no coincide con la de otra. El botón aparece solo en los idiomas que tienen periódico; con dos novelas o más, la portada muestra un filtro por novela.
 
 1. Escribir la noticia en `news/<idioma>/<nombre-corto>.md` (mismo formato que los capítulos).
 2. Añadirla a `news/catalog.json`:
 
 ```json
-{"slug": "nombre-corto", "lang": "es", "date": "2026-10-28", "section": "Gobierno",
- "title": "Titular", "deck": "Bajada", "novels": ["el-impostor"], "lead": true}
+{"slug": "nombre-corto", "lang": "ru", "date": "2026-11-04", "order": 18, "section": "Некрология",
+ "title": "Titular", "deck": "Bajada", "novels": ["siyayushchij-gorizont"], "ch": [17, 18], "lead": true}
 ```
 
-`lead: true` la pone como noticia principal de la portada. `novels` enlaza las novelas en las que se basa (de ahí sale la portada que se usa como imagen); `image` permite usar otra ilustración. Cada periódico tiene al final de la portada una sección de chimentos (*Chimentos*, *Pettegolezzi*, *Gossip*): están en `papers.<idioma>.gossip`, cada uno con su texto y la novela de la que sale (`{"text": "…", "novel": "el-impostor"}`). Para un idioma nuevo, añadir su periódico en `papers` (nombre, lema, precio, aviso).
+- `date`: el día en que se publicaron los capítulos de los que sale la noticia (así lo más nuevo queda arriba).
+- `ch`: primer y último capítulo de la novela donde ocurre el hecho, con la numeración del sitio (los capítulos con `label` no cuentan). La noticia enlaza al primero.
+- `order`: el último capítulo de `ch`; ordena las noticias de una misma fecha.
+- `lead: true`: noticia principal de la portada (una por idioma).
+- Los datos del periódico (nombre, lema, aviso) están en `papers.<idioma>`.
 
-Cada periódico tiene al final de la portada una sección de chimentos (ES «Chimentos», IT «Pettegolezzi», EN «Gossip»), en `papers.<idioma>.gossip`: `title`, `sub` y una lista `items` con `title`, `text` y `novel` (la novela a la que enlaza). Las noticias no usan personas reales: solo personajes de las novelas. Las novelas 18+ quedan fuera.
+Reglas: solo hechos que están en el texto, comprobados capítulo por capítulo; nada inventado. Solo personajes de las novelas, nunca personas reales. Las novelas 18+ quedan fuera.
+
+**Al publicar capítulos nuevos** de una novela en RU, ES, IT, SR o CS, revisar si traen acontecimientos políticos de fondo y, si los hay, añadir o actualizar la noticia (por ejemplo, *Дикий час: Карнавал раздора* está en proceso y su noticia dice que se va actualizando). La primera tanda (noviembre de 2026) salió de las 5 novelas actualizadas más recientemente de cada idioma.
 
 ## Recomendación del día
 
