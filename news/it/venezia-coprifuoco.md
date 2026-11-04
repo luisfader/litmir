@@ -1,0 +1,7 @@
+Venezia è sotto coprifuoco. Dal rintocco della mezzanotte nessuno può uscire di casa senza un lume blu, presentato come segno di immunità. Le acque dei canali minori sono state dichiarate avvelenate, e per le calli circolano medici con la maschera a becco, come ai tempi della peste.
+
+Il motivo ufficiale è un'epidemia. In diretta televisiva, nel programma di Giancarlo Buffoni, il sindaco Luigi Rossini ha annunciato il primo caso di «Matevirus» a Venezia: un virus che, secondo il sindaco, si trasmette con il mate condiviso, con il tango e con la Nutella contaminata. Il «paziente zero», ha aggiunto, sarebbe un argentino senza permesso di soggiorno in Italia. L'appello del sindaco ai cittadini: «#RestaACasa». Buffoni ha parlato di «guerra biologica».
+
+Nei giorni successivi la voce del sindaco ha continuato a risuonare dagli altoparlanti della città, chiedendo aiuto ai cittadini per trovare l'argentino, identificato come Roberto.
+
+Come si è saputo in seguito, l'epidemia era falsa. Il coprifuoco, la dichiarazione sulle acque avvelenate e i centoventi falsi medici della peste facevano parte di un piano della Loggia, un'organizzazione segreta di mercanti senza scrupoli, politici corrotti ed ex nobili guidata dal Provveditore Ludovico Gradenigo. L'obiettivo era seminare il panico e catturare Roberto, l'argentino che aveva trovato la leggendaria Maschera di Venezia, l'antico artefatto che secondo la tradizione comanda le acque della città.
