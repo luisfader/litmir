@@ -364,6 +364,7 @@ article.chapter h3{font-family:var(--sans);font-size:.72em;letter-spacing:.12em;
 .lock-big{font-size:44px;margin-bottom:12px}
 .lock{font-size:.8em;opacity:.7}
 .toc li.extra a{font-style:italic;color:var(--muted)}
+.toc .note-mus{color:var(--accent);font-size:.9em;margin-left:4px;cursor:help}
 .langs{flex-wrap:wrap;justify-content:flex-end}
 
 /* ───────── Lesson / final test ───────── */
@@ -1619,7 +1620,7 @@ function novelPage(n){
         <a class="btn ${last ? "ghost" : ""}" href="${chapterHref(n, firstStory)}">${esc(t("start"))}</a>
         <button type="button" class="btn ghost" id="favorite-toggle" aria-pressed="${isFavorite(n.slug)}">${isFavorite(n.slug) ? "★" : "☆"} ${esc(ft(isFavorite(n.slug)?2:1,n.lang))}</button></div>
       <div class="toc" data-auth-dep><h2>${esc(t("contents"))}</h2><ol>
-        ${chs.map((c,i) => `<li class="${done.includes(i+1)?"done":""} ${c.label?"extra":""}"><a href="${chapterHref(n, i+1)}"><span class="n">${c.type === "quiz" ? "★" : c.label ? "·" : chapterNo(n, i+1)}</span><span>${esc(chapterTitle(n, c, chapterNo(n, i+1)))}${(!signedIn() && chapterLocked(n, i+1)) || (pwLocked(n, i+1) && !pwOpen(n)) ? ' <span class="lock" aria-hidden="true">🔒</span>' : ""}</span></a></li>`).join("")}
+        ${chs.map((c,i) => `<li class="${done.includes(i+1)?"done":""} ${c.label?"extra":""}"><a href="${chapterHref(n, i+1)}"><span class="n">${c.type === "quiz" ? "★" : c.label ? "·" : chapterNo(n, i+1)}</span><span>${esc(chapterTitle(n, c, chapterNo(n, i+1)))}${(()=>{const songs=(n.soundtrack||[]).filter(tk=>(tk.chapters||[]).includes(c.file)).map(tk=>tk.title);return songs.length?` <span class="note-mus" title="${esc(songs.join(" · "))}" aria-label="${esc(songs.join(", "))}">♪</span>`:"";})()}${(!signedIn() && chapterLocked(n, i+1)) || (pwLocked(n, i+1) && !pwOpen(n)) ? ' <span class="lock" aria-hidden="true">🔒</span>' : ""}</span></a></li>`).join("")}
       </ol></div>
       ${sagaHTML(n)}
     </div>
