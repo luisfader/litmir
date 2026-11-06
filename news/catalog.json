@@ -77,7 +77,7 @@
    "order": 14,
    "section": "Некрология",
    "title": "Тысячи жителей нижних ярусов вышли к фонтанам с пустыми кружками",
-   "deck": "Охладители ушли со смены после того, как КАМЕРТОН отказал больному в воде. Совет молчит, а на экранах звучит поддельное обращение.",
+   "deck": "Охладители ушли со смены после того, как КОРОЛЕВА отказала больному в воде. Совет молчит, а на экранах звучит поддельное обращение.",
    "novels": [
     "siyayushchij-gorizont"
    ],
@@ -552,6 +552,198 @@
    "ch": [
     23,
     23
+   ]
+  },
+  {
+   "slug": "verdegrad-solnce",
+   "lang": "ru",
+   "date": "2026-11-03",
+   "order": 12,
+   "section": "Вердеград",
+   "title": "Вердеград провозгласил Наталью королевой, но она попросила называть её Солнцем",
+   "deck": "В первую ночь после пробуждения крепости город выбрал руководителя прямо у крепостной стены. Порядок на улицах обеспечивает добровольная стража.",
+   "novels": [
+    "volny-lyubvi-krepost"
+   ],
+   "ch": [
+    10,
+    12
+   ]
+  },
+  {
+   "slug": "verdegrad-mer-sinei",
+   "lang": "ru",
+   "date": "2026-11-03",
+   "order": 13,
+   "section": "Вердеград",
+   "title": "Мэр Синеи: оснований для паники из-за Вердеграда нет",
+   "deck": "Городские каналы показывают сияющие башни над соседним городом. Мэр обещает предупредить жителей, если появится реальная опасность.",
+   "novels": [
+    "volny-lyubvi-krepost"
+   ],
+   "ch": [
+    13,
+    13
+   ]
+  },
+  {
+   "slug": "shturm-severnyh-vorot",
+   "lang": "ru",
+   "date": "2026-11-03",
+   "order": 14,
+   "section": "Вердеград",
+   "title": "Штурм северных ворот: призрачное войско пробило стену и похитило музыканта крепости",
+   "deck": "Таран проломил стену у северных ворот, гаргульи забросали стражу гранатами. Вместе с музыкантом нападавшие увезли рояль.",
+   "novels": [
+    "volny-lyubvi-krepost"
+   ],
+   "ch": [
+    14,
+    14
+   ]
+  },
+  {
+   "slug": "assambleya-verdegrada",
+   "lang": "ru",
+   "date": "2026-11-03",
+   "order": 17,
+   "section": "Вердеград",
+   "title": "Вместо эвакуации — спасательная операция: ассамблея Вердеграда отправила автобус за похищенным музыкантом",
+   "deck": "Жители переоборудовали городской автобус, колонна дошла до тёмной крепости противника. Музыкант освобождён, рояль вернулся в город.",
+   "novels": [
+    "volny-lyubvi-krepost"
+   ],
+   "ch": [
+    16,
+    17
+   ]
+  },
+  {
+   "slug": "ubezhishche-zhyulenu",
+   "lang": "ru",
+   "date": "2026-11-03",
+   "order": 18,
+   "section": "Вердеград",
+   "title": "Временный совет спорил, изгнать ли бывшего вражеского солдата",
+   "deck": "Часть совета требовала изоляции или изгнания. Солнце Вердеграда: «Осторожность не должна превращаться в жестокость».",
+   "novels": [
+    "volny-lyubvi-krepost"
+   ],
+   "ch": [
+    18,
+    18
+   ]
+  },
+  {
+   "slug": "melodiya-povinoveniya",
+   "lang": "ru",
+   "date": "2026-11-03",
+   "order": 23,
+   "section": "Вердеград",
+   "title": "Ночь под мелодией повиновения: Вердеград освободился, крепость исчезла",
+   "deck": "Чужая воля подчинила игру музыканта и остановила город. Жители старого квартала будили соседей голосами; к утру крепость растворилась вместе с музыкантом.",
+   "novels": [
+    "volny-lyubvi-krepost"
+   ],
+   "ch": [
+    20,
+    23
+   ]
+  },
+  {
+   "slug": "sinea-pioggia-nera",
+   "lang": "it",
+   "date": "2026-11-06",
+   "order": 10,
+   "section": "Sinea",
+   "title": "Pioggia nera su Sinea: una notte di risse, barricate e uomini armati",
+   "deck": "Strade bloccate da cassonetti in fiamme, pietre contro le auto. La violenza si è fermata di colpo; sopra la città ora c'è una torre nuova.",
+   "novels": [
+    "onde-d-amore"
+   ],
+   "ch": [
+    3,
+    10
+   ]
+  },
+  {
+   "slug": "verdegrado-sole",
+   "lang": "it",
+   "date": "2026-11-06",
+   "order": 19,
+   "section": "Verdegrado",
+   "title": "Verdegrado proclama Natalia regina, ma lei chiede di essere chiamata Sole",
+   "deck": "Nella prima notte dopo il risveglio della fortezza la città sceglie la sua guida in piazza. Nasce la prima guardia di volontari.",
+   "novels": [
+    "onde-d-amore"
+   ],
+   "ch": [
+    19,
+    19
+   ]
+  },
+  {
+   "slug": "assalto-porta-nord",
+   "lang": "it",
+   "date": "2026-11-06",
+   "order": 20,
+   "section": "Verdegrado",
+   "title": "Assalto alla porta nord: un esercito fantasma apre una breccia e rapisce il musicista",
+   "deck": "Cavalieri, fanti e lanzichenecchi agli ordini del Komtur. Con il musicista gli assalitori hanno portato via anche il pianoforte delle mura.",
+   "novels": [
+    "onde-d-amore"
+   ],
+   "ch": [
+    20,
+    20
+   ]
+  },
+  {
+   "slug": "assemblea-verdegrado",
+   "lang": "it",
+   "date": "2026-11-06",
+   "order": 23,
+   "section": "Verdegrado",
+   "title": "Dall'assemblea di Verdegrado parte un autobus per liberare il musicista",
+   "deck": "Abitanti e artisti di Sinea trasformano un autobus di linea. Il musicista è libero, il pianoforte torna in città, la fortezza nemica svanisce.",
+   "novels": [
+    "onde-d-amore"
+   ],
+   "ch": [
+    22,
+    23
+   ]
+  },
+  {
+   "slug": "rifugio-julien",
+   "lang": "it",
+   "date": "2026-11-06",
+   "order": 24,
+   "section": "Verdegrado",
+   "title": "Il consiglio provvisorio discute se cacciare il soldato nemico",
+   "deck": "C'era chi voleva isolarlo o espellerlo. Il Sole di Verdegrado: «La prudenza non deve diventare crudeltà».",
+   "novels": [
+    "onde-d-amore"
+   ],
+   "ch": [
+    24,
+    24
+   ]
+  },
+  {
+   "slug": "melodia-obbedienza",
+   "lang": "it",
+   "date": "2026-11-06",
+   "order": 26,
+   "section": "Verdegrado",
+   "title": "La notte della melodia dell'obbedienza: Verdegrado si libera, la fortezza scompare",
+   "deck": "Una volontà estranea ha fermato la città attraverso il pianoforte. Il quartiere vecchio ha risvegliato i vicini con voci e ninne nanne.",
+   "novels": [
+    "onde-d-amore"
+   ],
+   "ch": [
+    25,
+    26
    ]
   }
  ]
