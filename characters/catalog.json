@@ -4662,7 +4662,7 @@
    "localizations": {
     "ru": {
      "name": "Елена",
-     "description": "Сорокалетняя элегантная женщина, больше двадцати лет замужем за властным полковником Фелипе. Однажды вечером в Синее, под грохот метеоритного дождя, незнакомый юноша спасает её — и в ней просыпается надежда.",
+     "description": "Сорокалетняя элегантная женщина, больше двадцати лет замужем за властным полковником Фелипе. Когда-то вела на радио вечернюю программу «Голос Синеи». Возвращается одна в город под куполом и в прямом эфире говорит правду, которую боялась сказать двадцать лет.",
      "images": [
       "characters/img/elena-meteor-1.jpg",
       "characters/img/elena-meteor-2.jpg"
@@ -4693,7 +4693,7 @@
    "localizations": {
     "ru": {
      "name": "Фелипе",
-     "description": "Жёсткий и властный полковник, муж Елены, который годами наполняет их дом напряжением и презрением.",
+     "description": "Жёсткий и властный полковник, муж Елены. Захватывает власть под хрустальным куполом и вводит Закон о правде, который заставляет всех лгать. В конце остаётся один — без мундира, без подчинённых и впервые без слов.",
      "images": [
       "characters/img/felipe-meteor-1.jpg"
      ]
@@ -4722,7 +4722,7 @@
    "localizations": {
     "ru": {
      "name": "Лучано",
-     "description": "Смелый юноша-иностранец, который спасает Елену во время метеоритного дождя и, кажется, как-то связан с тем, что происходит в небе.",
+     "description": "Смелый юноша-иностранец, наблюдатель из-за звёзд, связанный с метеоритами. Нарушает протокол ради Елены, а в конце отказывается от дороги домой, чтобы жить обычной жизнью учителя испанского в Синее.",
      "images": [
       "characters/img/luciano-meteor-1.jpg",
       "characters/img/luciano-meteor-2.jpg"
@@ -4742,16 +4742,22 @@
    "id": "svetlana-meteor",
    "name": "Svetlana (Lluvia de meteoritos)",
    "langs": [
-    "es"
+    "es",
+    "ru"
    ],
    "role": "Compañera de clase de Elena que coquetea con Luciano y, por celos, ayuda a investigarlo. Hermana de Sasha.",
    "novels": [
-    "lluvia-de-meteoritos"
+    "lluvia-de-meteoritos",
+    "meteoritnyj-dozhd"
    ],
    "localizations": {
     "es": {
      "name": "Svetlana",
      "description": "Compañera de clase de Elena que coquetea con Luciano y, por celos, ayuda a investigarlo. Hermana de Sasha."
+    },
+    "ru": {
+     "name": "Светлана",
+     "description": "Коллега Елены по радио. Сначала из ревности помогает Фелипе, получает от него пульт от ворот купола и роль «тени» — а потом открывает Елене ворота и сама говорит правду в эфире."
     }
    }
   },
@@ -4759,16 +4765,22 @@
    "id": "sasha-meteor",
    "name": "Sasha (Lluvia de meteoritos)",
    "langs": [
-    "es"
+    "es",
+    "ru"
    ],
    "role": "Hermana de Svetlana y compañera de Elena en la clase de español y en la radio.",
    "novels": [
-    "lluvia-de-meteoritos"
+    "lluvia-de-meteoritos",
+    "meteoritnyj-dozhd"
    ],
    "localizations": {
     "es": {
      "name": "Sasha",
      "description": "Hermana de Svetlana y compañera de Elena en la clase de español y en la radio."
+    },
+    "ru": {
+     "name": "Саша",
+     "description": "Рыжеволосая коллега Елены, ставшая «первой леди» при Фелипе. Её признание в прямом эфире окончательно разрушает купол."
     }
    }
   },
@@ -6850,6 +6862,23 @@
     "ru": {
      "name": "Хранительница Европы",
      "description": "Последняя память погибшей цивилизации с Европы, спутника Юпитера, живущая в кристалле под Запретной пустыней."
+    }
+   }
+  },
+  {
+   "id": "dmitrij-meteor",
+   "name": "Dmitri (Lluvia de meteoritos)",
+   "langs": [
+    "ru"
+   ],
+   "role": "Estudiante que encuentra la semilla de cristal.",
+   "novels": [
+    "meteoritnyj-dozhd"
+   ],
+   "localizations": {
+    "ru": {
+     "name": "Дмитрий",
+     "description": "Девятнадцатилетний студент-инженер, который поднял над толпой кристаллическое семя из кратера. Помогает Елене выйти в эфир со старой радиостанции."
     }
    }
   }
