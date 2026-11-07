@@ -532,6 +532,7 @@ article.chapter h3{font-family:var(--sans);font-size:.72em;letter-spacing:.12em;
 .soundtrack-panel{margin:20px 0 24px;padding:19px 22px;border:1px solid var(--line);border-radius:15px;background:var(--paper)}
 .soundtrack-panel h2{margin:0 0 8px;font-size:21px}
 .soundtrack-panel p{font-size:14px;color:var(--muted);line-height:1.6;margin:0 0 12px}
+.soundtrack-site{margin:0 0 12px!important}.soundtrack-site a{color:var(--accent);font-weight:600;text-decoration:none}.soundtrack-site a:hover{text-decoration:underline}
 .soundtrack-list{display:flex;flex-wrap:wrap;gap:8px}
 .soundtrack-list button{font:inherit;font-size:14px;color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:999px;padding:9px 12px;cursor:pointer;text-align:left}
 .soundtrack-list button:hover,.soundtrack-list button:focus-visible{border-color:var(--accent);background:var(--accent-soft)}
@@ -1602,7 +1603,7 @@ function novelPage(n){
       ${tr.length ? `<div class="notice">${esc(t("also"))} ${tr.join(", ")}</div>` : ""}
       ${moduleProgress(n)}
       ${progressHTML(n)}
-      ${n.soundtrack && n.soundtrack.length ? `<section class="soundtrack-panel" aria-label="${esc(stText(n.lang).aria)}"><h2>♫ ${esc(stText(n.lang).h)}</h2><p>${esc(stText(n.lang).p)}</p><div class="soundtrack-list">${n.soundtrack.map((tk,i)=>`<button type="button" data-soundtrack-track="${i}" aria-label="${esc(stText(n.lang).play)} ${esc(tk.title)}">▶ ${esc(tk.title)}${tk.duration ? ` <small>${esc(tk.duration)}</small>` : ""}</button>`).join("")}</div></section>` : ""}
+      ${n.soundtrack && n.soundtrack.length ? `<section class="soundtrack-panel" aria-label="${esc(stText(n.lang).aria)}"><h2>♫ ${esc(stText(n.lang).h)}</h2><p>${esc(stText(n.lang).p)}</p>${n.soundtrackSite ? `<p class="soundtrack-site"><a href="${esc(n.soundtrackSite)}" target="_blank" rel="noopener">${esc(stText(n.lang).site)} ↗</a></p>` : ""}<div class="soundtrack-list">${n.soundtrack.map((tk,i)=>`<button type="button" data-soundtrack-track="${i}" aria-label="${esc(stText(n.lang).play)} ${esc(tk.title)}">▶ ${esc(tk.title)}${tk.duration ? ` <small>${esc(tk.duration)}</small>` : ""}</button>`).join("")}</div></section>` : ""}
       <div class="actions">
         ${last ? `<a class="btn" href="${resumeHref(n, last)}">${esc(t("cont"))} · ${esc(chapterTitle(n, chs[last-1] || {}, last))}</a>` : ""}
         <a class="btn ${last ? "ghost" : ""}" href="${chapterHref(n, firstStory)}">${esc(t("start"))}</a>
@@ -2541,10 +2542,10 @@ async function game(){
 
 /* Soundtrack: voluntary playback; persists between chapters of the same novel. */
 const ST_TEXT = {
-  ru:{aria:"Саундтрек",h:"Саундтрек к роману",p:"Музыка звучит только по вашему желанию. Выберите песню — и продолжайте читать: воспроизведение не прервётся при переходе между главами.",play:"Включить",loading:"Загружаем песню…",fail:"Не удалось воспроизвести запись"},
-  it:{aria:"Colonna sonora",h:"La colonna sonora del romanzo",p:"La musica parte solo se lo vuoi tu. Scegli una canzone e continua a leggere: la riproduzione non si interrompe quando cambi capitolo.",play:"Ascolta",loading:"Carico la canzone…",fail:"Impossibile riprodurre il brano"},
-  es:{aria:"Banda sonora",h:"La banda sonora de la novela",p:"La música suena solo si vos querés. Elegí una canción y seguí leyendo: no se corta cuando pasás de capítulo.",play:"Escuchar",loading:"Cargando la canción…",fail:"No se pudo reproducir la canción"},
-  en:{aria:"Soundtrack",h:"The novel's soundtrack",p:"Music plays only if you choose. Pick a song and keep reading: playback continues between chapters.",play:"Play",loading:"Loading soundtrack…",fail:"Unable to play audio"}
+  ru:{aria:"Саундтрек",h:"Саундтрек к роману",p:"Музыка звучит только по вашему желанию. Выберите песню — и продолжайте читать: воспроизведение не прервётся при переходе между главами.",play:"Включить",loading:"Загружаем песню…",fail:"Не удалось воспроизвести запись",site:"Сайт саундтрека: песни, сцены и тексты"},
+  it:{aria:"Colonna sonora",h:"La colonna sonora del romanzo",p:"La musica parte solo se lo vuoi tu. Scegli una canzone e continua a leggere: la riproduzione non si interrompe quando cambi capitolo.",play:"Ascolta",loading:"Carico la canzone…",fail:"Impossibile riprodurre il brano",site:"Il sito della colonna sonora: canzoni, scene e testi"},
+  es:{aria:"Banda sonora",h:"La banda sonora de la novela",p:"La música suena solo si vos querés. Elegí una canción y seguí leyendo: no se corta cuando pasás de capítulo.",play:"Escuchar",loading:"Cargando la canción…",fail:"No se pudo reproducir la canción",site:"El sitio de la banda sonora: canciones, escenas y letras"},
+  en:{aria:"Soundtrack",h:"The novel's soundtrack",p:"Music plays only if you choose. Pick a song and keep reading: playback continues between chapters.",play:"Play",loading:"Loading soundtrack…",fail:"Unable to play audio",site:"Soundtrack website: songs, scenes and lyrics"}
 };
 function stText(l){ return ST_TEXT[l] || ST_TEXT.en; }
 const music = { el:new Audio(), novel:null, i:0, cache:new Map() };
