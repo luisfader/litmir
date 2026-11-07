@@ -1602,7 +1602,7 @@ function novelPage(n){
       ${tr.length ? `<div class="notice">${esc(t("also"))} ${tr.join(", ")}</div>` : ""}
       ${moduleProgress(n)}
       ${progressHTML(n)}
-      ${n.soundtrack && n.soundtrack.length ? `<section class="soundtrack-panel" aria-label="Саундтрек"><h2>♫ Саундтрек к роману</h2><p>Музыка звучит только по вашему желанию. Выберите песню — и продолжайте читать: воспроизведение не прервётся при переходе между главами.</p><div class="soundtrack-list">${n.soundtrack.map((tk,i)=>`<button type="button" data-soundtrack-track="${i}" aria-label="Включить ${esc(tk.title)}">▶ ${esc(tk.title)}${tk.duration ? ` <small>${esc(tk.duration)}</small>` : ""}</button>`).join("")}</div></section>` : ""}
+      ${n.soundtrack && n.soundtrack.length ? `<section class="soundtrack-panel" aria-label="${esc(stText(n.lang).aria)}"><h2>♫ ${esc(stText(n.lang).h)}</h2><p>${esc(stText(n.lang).p)}</p><div class="soundtrack-list">${n.soundtrack.map((tk,i)=>`<button type="button" data-soundtrack-track="${i}" aria-label="${esc(stText(n.lang).play)} ${esc(tk.title)}">▶ ${esc(tk.title)}${tk.duration ? ` <small>${esc(tk.duration)}</small>` : ""}</button>`).join("")}</div></section>` : ""}
       <div class="actions">
         ${last ? `<a class="btn" href="${resumeHref(n, last)}">${esc(t("cont"))} · ${esc(chapterTitle(n, chs[last-1] || {}, last))}</a>` : ""}
         <a class="btn ${last ? "ghost" : ""}" href="${chapterHref(n, firstStory)}">${esc(t("start"))}</a>
@@ -2540,6 +2540,13 @@ async function game(){
 }
 
 /* Soundtrack: voluntary playback; persists between chapters of the same novel. */
+const ST_TEXT = {
+  ru:{aria:"Саундтрек",h:"Саундтрек к роману",p:"Музыка звучит только по вашему желанию. Выберите песню — и продолжайте читать: воспроизведение не прервётся при переходе между главами.",play:"Включить",loading:"Загружаем песню…",fail:"Не удалось воспроизвести запись"},
+  it:{aria:"Colonna sonora",h:"La colonna sonora del romanzo",p:"La musica parte solo se lo vuoi tu. Scegli una canzone e continua a leggere: la riproduzione non si interrompe quando cambi capitolo.",play:"Ascolta",loading:"Carico la canzone…",fail:"Impossibile riprodurre il brano"},
+  es:{aria:"Banda sonora",h:"La banda sonora de la novela",p:"La música suena solo si vos querés. Elegí una canción y seguí leyendo: no se corta cuando pasás de capítulo.",play:"Escuchar",loading:"Cargando la canción…",fail:"No se pudo reproducir la canción"},
+  en:{aria:"Soundtrack",h:"The novel's soundtrack",p:"Music plays only if you choose. Pick a song and keep reading: playback continues between chapters.",play:"Play",loading:"Loading soundtrack…",fail:"Unable to play audio"}
+};
+function stText(l){ return ST_TEXT[l] || ST_TEXT.en; }
 const music = { el:new Audio(), novel:null, i:0, cache:new Map() };
 music.el.preload = "none";
 music.el.volume = store.get("vol", 0.5);
@@ -2569,7 +2576,7 @@ async function mPlay(){
       const key = novel.slug + "/" + tk.folder;
       let audioUrl = music.cache.get(key);
       if (!audioUrl) {
-        mStatus.textContent = novel.lang === "ru" ? "Загружаем песню…" : "Loading soundtrack…";
+        mStatus.textContent = stText(novel.lang).loading;
         const audioParts = await Promise.all(Array.from({length:tk.parts}, async (_,i)=>{
           const path = "novels/" + novel.slug + "/" + tk.folder + "/" + String(i).padStart(3,"0") + ".part";
           const res = await fetch(path);
@@ -2590,7 +2597,7 @@ async function mPlay(){
     mStatus.textContent = "";
   } catch(e) {
     if (music.novel !== novel || e.name === "AbortError" || music.el.error) return;
-    mStatus.textContent = novel.lang === "ru" ? "Не удалось воспроизвести запись" : "Unable to play audio";
+    mStatus.textContent = stText(novel.lang).fail;
   }
 }
 function mChoose(i, start){
