@@ -623,6 +623,7 @@
     "presentimento",
     "predchuvstvie",
     "predchuvstvie-2",
+    "predchuvstvie-2-2",
     "przeczucie",
     "col-gulu",
     "la-antausento",
@@ -1945,6 +1946,7 @@
     "presentimento",
     "predchuvstvie",
     "predchuvstvie-2",
+    "predchuvstvie-2-2",
     "przeczucie",
     "la-antausento",
     "predcutje",
@@ -2807,7 +2809,8 @@
    "novels": [
     "predchuvstvie",
     "przeczucie",
-    "predchuvstvie-2"
+    "predchuvstvie-2",
+    "predchuvstvie-2-2"
    ],
    "localizations": {
     "pl": {
