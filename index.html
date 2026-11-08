@@ -794,7 +794,10 @@ function setupPredchuvstvieReflection(root) {
   };
 }
 
-const LANGS = ["ru","es","it","en","de","fr","tr","pt","cs","pl","sr","eo","isv","vo","ia","ld","la","sw","bg","vec"];
+const ALL_LANGS = ["ru","es","it","en","de","fr","tr","pt","cs","pl","sr","eo","isv","vo","ia","ld","la","sw","bg","vec"];
+// Languages taken off the site for now. Their files stay in the repo; remove a code from this list to bring it back.
+const HIDDEN_LANGS = ["de","pl","vo","ia","ld","la","vec","bg","sw"];
+const LANGS = ALL_LANGS.filter(l => !HIDDEN_LANGS.includes(l));
 const UI_SW = {study:"Jifunze",studyNote:"Kozi ya lugha.",wip:"Inaandikwa",done:"Riwaya kamili",wipNote:"Sura mpya zinakuja.",tag:"Riwaya",hero:"Ulimwengu wa Fasihi",sub:"Riwaya za Robert Fader. Soma bila malipo.",author:"Robert Fader",start:"Anza kusoma",cont:"Endelea kusoma",contents:"Orodha ya sura",chapter:"Sura",prev:"Iliyotangulia",next:"Inayofuata",back:"Riwaya zote",empty:"Hakuna riwaya kwa Kiswahili bado.",foot:"© Robert Fader. Haki zote zimehifadhiwa.",chapters:n=>n===1?"Sura 1":n+" sura",notFound:"Ukurasa haujapatikana.",also:"Riwaya hii inapatikana pia kwa lugha nyingine:",adultT:"Kwa watu wazima pekee",adultP:"Riwaya hii ni kwa watu wazima pekee.",adultYes:"Nina miaka 18 au zaidi",adultNo:"Rudi nyuma"};
 const novelHref = (l, s) => "#/" + s;
 const LANG_NAMES = {vec:"Vèneto", ru:"Русский", es:"Español", it:"Italiano", en:"English", de:"Deutsch", fr:"Français", tr:"Türkçe", pt:"Português", cs:"Čeština", pl:"Polski", sr:"Српски", eo:"Esperanto", isv:"Medžuslovjansky", vo:"Volapük", ia:"Interlingua", ld:"Lingwa de Planeta", la:"Latina",sw:"Kiswahili",bg:"Български"};
@@ -2758,7 +2761,11 @@ function route(){
 window.addEventListener("hashchange", route);
 
 applyTheme(); renderChrome();
-Promise.all([fetch("novels/catalog.json", {cache:"no-cache"}).then(r => r.json()), loadLearn(), loadNews()]).then(([j]) => { catalog = j; route(); })
+Promise.all([fetch("novels/catalog.json", {cache:"no-cache"}).then(r => r.json()), loadLearn(), loadNews()]).then(([j]) => {
+  const shown = new Set(j.novels.filter(n => LANGS.includes(n.lang)).map(n => n.slug));
+  j.novels = j.novels.filter(n => shown.has(n.slug));
+  j.novels.forEach(n => { if (n.translations) n.translations = Object.fromEntries(Object.entries(n.translations).filter(([l, s]) => LANGS.includes(l) && shown.has(s))); });
+  catalog = j; route(); })
   .catch(() => { catalog = {novels:[]}; route(); });
 
 /* Glosses: **palabra**{перевод} shows the translation on hover, focus or tap */
