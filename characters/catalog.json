@@ -76,7 +76,8 @@
     "predcutje",
     "vorahnung",
     "predtucha",
-    "reve-turquoise"
+    "reve-turquoise",
+    "la-corazonada-2"
    ],
    "localizations": {
     "it": {
@@ -97,7 +98,7 @@
     },
     "es": {
      "name": "Luis",
-     "description": "Arquitecto argentino elegante que dibuja los muros de la Utopía Turquesa. Ambicioso, sensible y celoso, compite con Robert.",
+     "description": "Arquitecto argentino elegante que dibuja los muros de la Utopía Turquesa. Ambicioso, sensible y celoso, compite con Robert. En La Corazonada 2 funda su propia fortaleza, El Refugio, en una represa del Cañón Negro, y termina compartiendo su vida con las dos Natalias.",
      "images": [
       "characters/img/luis-utopia-1.jpg",
       "characters/img/luis-utopia-2.jpg"
@@ -373,7 +374,8 @@
     "predtucha",
     "mundo-turquesa",
     "premonision-ldp",
-    "the-foreboding"
+    "the-foreboding",
+    "la-corazonada-2"
    ],
    "localizations": {
     "sr": {
@@ -500,7 +502,8 @@
     "mundo-turquesa",
     "premonision-ldp",
     "la-corazonada",
-    "reve-turquoise"
+    "reve-turquoise",
+    "la-corazonada-2"
    ],
    "localizations": {
     "sr": {
@@ -573,7 +576,7 @@
     },
     "es": {
      "name": "Natalia",
-     "description": "Violinista antes de la guerra, que mira el paisaje como si fuera un lienzo en blanco. Su coraje guía a Nuestra Utopía.",
+     "description": "Violinista antes de la guerra, que mira el paisaje como si fuera un lienzo en blanco. Su coraje guía a Nuestra Utopía. En La Corazonada 2 cambia el violín por un violonchelo, desafía a duelo a la médica y acaba sellando con ella un pacto inesperado.",
      "images": [
       "characters/img/natalia-cellist-1.jpg",
       "characters/img/natalia-cellist-2.jpg",
@@ -628,7 +631,8 @@
     "col-gulu",
     "la-antausento",
     "predcutje",
-    "la-corazonada"
+    "la-corazonada",
+    "la-corazonada-2"
    ],
    "localizations": {
     "sr": {
@@ -1794,7 +1798,8 @@
     "vorahnung",
     "mundo-turquesa",
     "la-corazonada",
-    "predosecaj"
+    "predosecaj",
+    "la-corazonada-2"
    ],
    "localizations": {
     "it": {
@@ -1888,7 +1893,8 @@
     "vorahnung",
     "mundo-turquesa",
     "la-corazonada",
-    "predosecaj"
+    "predosecaj",
+    "la-corazonada-2"
    ],
    "localizations": {
     "it": {
@@ -1951,7 +1957,8 @@
     "la-antausento",
     "predcutje",
     "la-corazonada",
-    "predosecaj"
+    "predosecaj",
+    "la-corazonada-2"
    ],
    "localizations": {
     "it": {
@@ -1999,7 +2006,8 @@
     "presentimento",
     "vorahnung",
     "fot-latik",
-    "la-corazonada"
+    "la-corazonada",
+    "la-corazonada-2"
    ],
    "localizations": {
     "it": {
@@ -2029,7 +2037,7 @@
     },
     "es": {
      "name": "Natalia, la médica",
-     "description": "La esposa de Robert, médica, que despierta y lo abraza al final.",
+     "description": "La esposa de Robert, médica, que despierta y lo abraza al final. En La Corazonada 2 se casa con Luis, huye a Viktoria tras la firma del tratado y vuelve para salvarle la vida a la luz de una linterna.",
      "images": [
       "characters/img/natalia-cardiologa-1.jpg"
      ]
@@ -2727,7 +2735,8 @@
     "predchuvstvie",
     "col-gulu",
     "predcutje",
-    "la-corazonada"
+    "la-corazonada",
+    "la-corazonada-2"
    ],
    "localizations": {
     "tr": {
@@ -3735,7 +3744,8 @@
    "role": "Cofundador de Utopía.",
    "novels": [
     "predchuvstvie",
-    "la-corazonada"
+    "la-corazonada",
+    "la-corazonada-2"
    ],
    "localizations": {
     "ru": {
@@ -6888,6 +6898,125 @@
     "ru": {
      "name": "Дмитрий",
      "description": "Девятнадцатилетний студент-инженер, который поднял над толпой кристаллическое семя из кратера. Помогает Елене выйти в эфир со старой радиостанции."
+    }
+   }
+  },
+  {
+   "id": "tadeo",
+   "name": "Tadeo",
+   "langs": [
+    "es"
+   ],
+   "role": "Ex esclavo de los salvajes y jefe de la defensa del Refugio. Leal a Luis, pero nunca ciego.",
+   "novels": [
+    "la-corazonada-2"
+   ],
+   "localizations": {
+    "es": {
+     "name": "Tadeo",
+     "description": "Ex esclavo de los salvajes y jefe de la defensa del Refugio. Leal a Luis, pero nunca ciego."
+    }
+   }
+  },
+  {
+   "id": "mirna",
+   "name": "Mirna",
+   "langs": [
+    "es"
+   ],
+   "role": "Ingeniera hidráulica del Refugio. Controla las compuertas de la represa y, con ellas, la electricidad de todos.",
+   "novels": [
+    "la-corazonada-2"
+   ],
+   "localizations": {
+    "es": {
+     "name": "Mirna",
+     "description": "Ingeniera hidráulica del Refugio. Controla las compuertas de la represa y, con ellas, la electricidad de todos."
+    }
+   }
+  },
+  {
+   "id": "carmela",
+   "name": "Carmela",
+   "langs": [
+    "es"
+   ],
+   "role": "Enfermera del hospital del Refugio, madre adoptiva del pequeño Tomás.",
+   "novels": [
+    "la-corazonada-2"
+   ],
+   "localizations": {
+    "es": {
+     "name": "Carmela",
+     "description": "Enfermera del hospital del Refugio, madre adoptiva del pequeño Tomás."
+    }
+   }
+  },
+  {
+   "id": "el-polaco",
+   "name": "El Polaco",
+   "langs": [
+    "es"
+   ],
+   "role": "Mecánico del Refugio: si tiene motor o cables, él lo arregla.",
+   "novels": [
+    "la-corazonada-2"
+   ],
+   "localizations": {
+    "es": {
+     "name": "El Polaco",
+     "description": "Mecánico del Refugio: si tiene motor o cables, él lo arregla."
+    }
+   }
+  },
+  {
+   "id": "kessler",
+   "name": "Mayor Kessler",
+   "langs": [
+    "es"
+   ],
+   "role": "Comandante de la guarnición de la Federación en El Refugio.",
+   "novels": [
+    "la-corazonada-2"
+   ],
+   "localizations": {
+    "es": {
+     "name": "Mayor Kessler",
+     "description": "Comandante de la guarnición de la Federación en El Refugio."
+    }
+   }
+  },
+  {
+   "id": "edward-haskell",
+   "name": "Edward Haskell",
+   "langs": [
+    "es"
+   ],
+   "role": "Emisario de la Potencia Central que impone a Luis el tratado de la Federación de Repúblicas por la Libertad.",
+   "novels": [
+    "la-corazonada-2"
+   ],
+   "localizations": {
+    "es": {
+     "name": "Edward Haskell",
+     "description": "Emisario de la Potencia Central que impone a Luis el tratado de la Federación de Repúblicas por la Libertad."
+    }
+   }
+  },
+  {
+   "id": "emisario-oriente",
+   "name": "El Emisario",
+   "langs": [
+    "es"
+   ],
+   "role": "Hombre de abrigo blanco y voz suave que llega en nombre de la Potencia del Oriente con un ultimátum de treinta días.",
+   "novels": [
+    "la-corazonada-2"
+   ],
+   "localizations": {
+    "es": {
+     "name": "El Emisario",
+     "description": "Hombre de abrigo blanco y voz suave que llega en nombre de la Potencia del Oriente con un ultimátum de treinta días."
     }
    }
   }
