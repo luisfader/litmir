@@ -126,6 +126,7 @@ article.chapter.post a{color:var(--accent)}
 .hero h1{font-family:var(--display);font-weight:500;font-size:clamp(44px,8vw,80px);line-height:1.02;margin:14px 0 16px}
 .hero p{max-width:560px;margin:0 auto;color:var(--muted);font-size:18px}
 .ornament{color:var(--accent);font-size:20px;margin:28px 0 0;letter-spacing:.5em}
+.home-links{text-align:center;padding-bottom:24px}
 
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:28px;padding:24px 0 72px}
 .card{text-decoration:none;display:flex;flex-direction:column;gap:12px}
@@ -1296,6 +1297,9 @@ function home(){
     <h1>${esc(t("hero"))}</h1>
     <p>${esc(t("sub"))}</p>
     <div class="ornament">✦ ✦ ✦</div>
+  </section>
+  <section class="wrap" id="rec"></section>
+  <section class="wrap home-links">
     <a class="character-entry" href="characters.html" id="charactersEntry">✧ <span id="charactersLabel">Personajes</span> →</a>
     <a class="character-entry" href="#/blog">✎ ${esc(bt("title"))} →</a>
     ${newsPaper(lang) ? `<a class="character-entry" href="#/news">📰 ${esc(nt("btn"))} →</a>` : ""}
@@ -1306,7 +1310,6 @@ function home(){
     ${MAGAZINES[lang] ? `<a class="character-entry" href="${esc(MAGAZINES[lang].file)}" download>📖 ${esc(MAGAZINES[lang].btn)} →</a>` : ""}
     <a class="character-entry" href="#/mis-lecturas">★ ${esc(ft(0))} · ${esc(rt(1))} →</a>
   </section>
-  <section class="wrap" id="rec"></section>
   <section class="wrap" data-auth-dep>
     ${list.length ? homeViewSwitch(list) + homeListHTML(list) : `<div class="empty">${esc(t("empty"))}</div>`}
   </section>`;
