@@ -127,6 +127,17 @@ article.chapter.post a{color:var(--accent)}
 .hero p{max-width:560px;margin:0 auto;color:var(--muted);font-size:18px}
 .ornament{color:var(--accent);font-size:20px;margin:28px 0 0;letter-spacing:.5em}
 .home-links{text-align:center;padding-bottom:24px}
+.menu-open{cursor:pointer;font-weight:600}
+.home-menu{border:1px solid var(--line);border-radius:18px;background:var(--paper);color:var(--ink);padding:0;width:min(440px,calc(100% - 32px));max-height:85vh;box-shadow:var(--shadow)}
+.home-menu::backdrop{background:rgba(0,0,0,.5)}
+.hm-head{display:flex;align-items:center;justify-content:space-between;padding:16px 18px 10px;border-bottom:1px solid var(--line)}
+.hm-head h2{font-family:var(--display);font-weight:500;font-size:24px;margin:0}
+.hm-close{border:0;background:transparent;color:var(--muted);font-size:20px;cursor:pointer;padding:4px 8px}
+.hm-list{display:flex;flex-direction:column;padding:8px 10px 14px}
+.hm-item{display:block;text-align:left;text-decoration:none;font-family:var(--sans);font-size:15.5px;color:var(--ink);padding:13px 12px;border-radius:10px}
+.hm-item:hover,.hm-item:focus-visible{background:var(--bg);color:var(--accent)}
+.hm-item + .hm-item{border-top:1px solid var(--line)}
+@media (max-width:620px){.home-menu{margin:auto 0 0;width:100%;max-width:100%;border-radius:18px 18px 0 0;border-bottom:0;max-height:80vh}}
 
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:28px;padding:24px 0 72px}
 .card{text-decoration:none;display:flex;flex-direction:column;gap:12px}
@@ -1252,6 +1263,8 @@ async function renderRec(){
     <div class="rec-k">✦ ${esc(T.t)}${dateTxt ? " · " + esc(dateTxt) : ""}</div>
     <h3>${esc(n.title)}</h3><p>${esc(why || "")}</p><span class="rec-go">${esc(T.go)} →</span></div></a>`;
 }
+const MENU_T = {ru:["Разделы сайта","Разделы сайта","Закрыть"], es:["Explorar el sitio","Explorar el sitio","Cerrar"], it:["Esplora il sito","Esplora il sito","Chiudi"], en:["Explore the site","Explore the site","Close"], fr:["Explorer le site","Explorer le site","Fermer"], tr:["Siteyi keşfet","Siteyi keşfet","Kapat"], pt:["Explorar o site","Explorar o site","Fechar"], cs:["Prozkoumat web","Prozkoumat web","Zavřít"], sr:["Одељци сајта","Одељци сајта","Затвори"], eo:["Esplori la retejon","Esplori la retejon","Fermi"], isv:["Razděly sajta","Razděly sajta","Zatvoriti"], de:["Die Seite entdecken","Die Seite entdecken","Schließen"], pl:["Odkryj stronę","Odkryj stronę","Zamknij"]};
+const mt = i => (MENU_T[lang] || MENU_T.en)[i];
 // Home view: classic grid (default) or grouped by saga. The choice is kept in this browser (lm:homeView).
 const VIEW_T = {ru:["Классический","По циклам","Другие романы"], es:["Clásica","Por sagas","Otras novelas"], it:["Classica","Per saga","Altri romanzi"], en:["Classic","By series","Other novels"], fr:["Classique","Par saga","Autres romans"], tr:["Klasik","Serilere göre","Diğer romanlar"], pt:["Clássica","Por sagas","Outros romances"], cs:["Klasické","Podle sérií","Další romány"], sr:["Класично","По серијалима","Остали романи"], eo:["Klasika","Laŭ serioj","Aliaj romanoj"], isv:["Klasično","Po serijah","Drugi romany"], de:["Klassisch","Nach Reihen","Weitere Romane"], pl:["Klasyczny","Według cykli","Inne powieści"]};
 const vt = i => (VIEW_T[lang] || VIEW_T.en)[i];
@@ -1300,21 +1313,34 @@ function home(){
   </section>
   <section class="wrap" id="rec"></section>
   <section class="wrap home-links">
-    <a class="character-entry" href="characters.html" id="charactersEntry">✧ <span id="charactersLabel">Personajes</span> →</a>
-    <a class="character-entry" href="#/blog">✎ ${esc(bt("title"))} →</a>
-    ${newsPaper(lang) ? `<a class="character-entry" href="#/news">📰 ${esc(nt("btn"))} →</a>` : ""}
-    ${course() ? `<a class="character-entry" href="#/learn">🎓 ${esc(course().title[lang])} →</a>` : ""}
-    ${GAME_T[lang] ? `<a class="character-entry" href="#/game">🎲 ${esc(GAME_T[lang].btn)} →</a>` : ""}
-    ${CHESS_BTN[lang] ? `<a class="character-entry" href="#/ajedrez">♞ ${esc(CHESS_BTN[lang])} →</a>` : ""}
-    ${QUEST_BTN[lang] ? `<a class="character-entry" href="#/quest">🐂 ${esc(QUEST_BTN[lang])} →</a>` : ""}
-    ${MAGAZINES[lang] ? `<a class="character-entry" href="${esc(MAGAZINES[lang].file)}" download>📖 ${esc(MAGAZINES[lang].btn)} →</a>` : ""}
-    <a class="character-entry" href="#/mis-lecturas">★ ${esc(ft(0))} · ${esc(rt(1))} →</a>
+    <button type="button" class="character-entry menu-open" id="homeMenuBtn" aria-haspopup="dialog">☰ ${esc(mt(0))}</button>
+    <dialog class="home-menu" id="homeMenu" aria-label="${esc(mt(1))}">
+      <div class="hm-head"><h2>${esc(mt(1))}</h2><button type="button" class="hm-close" aria-label="${esc(mt(2))}">✕</button></div>
+      <nav class="hm-list">
+    <a class="hm-item" href="characters.html" id="charactersEntry">✧ <span id="charactersLabel">Personajes</span></a>
+    <a class="hm-item" href="#/blog">✎ ${esc(bt("title"))}</a>
+    ${newsPaper(lang) ? `<a class="hm-item" href="#/news">📰 ${esc(nt("btn"))}</a>` : ""}
+    ${course() ? `<a class="hm-item" href="#/learn">🎓 ${esc(course().title[lang])}</a>` : ""}
+    ${GAME_T[lang] ? `<a class="hm-item" href="#/game">🎲 ${esc(GAME_T[lang].btn)}</a>` : ""}
+    ${CHESS_BTN[lang] ? `<a class="hm-item" href="#/ajedrez">♞ ${esc(CHESS_BTN[lang])}</a>` : ""}
+    ${QUEST_BTN[lang] ? `<a class="hm-item" href="#/quest">🐂 ${esc(QUEST_BTN[lang])}</a>` : ""}
+    ${MAGAZINES[lang] ? `<a class="hm-item" href="${esc(MAGAZINES[lang].file)}" download>📖 ${esc(MAGAZINES[lang].btn)}</a>` : ""}
+    <a class="hm-item" href="#/mis-lecturas">★ ${esc(ft(0))} · ${esc(rt(1))}</a>
+      </nav>
+    </dialog>
   </section>
   <section class="wrap" data-auth-dep>
     ${list.length ? homeViewSwitch(list) + homeListHTML(list) : `<div class="empty">${esc(t("empty"))}</div>`}
   </section>`;
   const charactersEntry = document.getElementById("charactersEntry");
   renderRec();
+  const menu = document.getElementById("homeMenu"), menuBtn = document.getElementById("homeMenuBtn");
+  if (menu && menuBtn) {
+    menuBtn.onclick = () => { if (menu.showModal) menu.showModal(); else menu.setAttribute("open", ""); };
+    const close = () => { if (menu.close) menu.close(); else menu.removeAttribute("open"); };
+    menu.querySelector(".hm-close").onclick = close;
+    menu.addEventListener("click", e => { if (e.target === menu || e.target.closest("a")) close(); });
+  }
   if (charactersEntry) { charactersEntry.href = "characters.html?lang=" + encodeURIComponent(lang); document.getElementById("charactersLabel").textContent = characterLabels[lang] || "Characters"; }
 }
 
