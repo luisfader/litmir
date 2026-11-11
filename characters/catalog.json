@@ -22,7 +22,8 @@
     "divlji-chas-malbec",
     "ora-selvaggia-venezia",
     "la-savo-de-zmaj",
-    "dikij-chas-venecianskoe-koldovstvo"
+    "dikij-chas-venecianskoe-koldovstvo",
+    "volny-lyubvi-labirint-zabveniya"
    ],
    "localizations": {
     "sr": {
@@ -4046,7 +4047,8 @@
    "role": "Joven de Verdegrad, el Sol de su ciudad.",
    "novels": [
     "volny-lyubvi",
-    "volny-lyubvi-krepost"
+    "volny-lyubvi-krepost",
+    "volny-lyubvi-labirint-zabveniya"
    ],
    "localizations": {
     "ru": {
@@ -4069,7 +4071,8 @@
    "role": "Zorro mágico nacido de un dibujo.",
    "novels": [
     "volny-lyubvi",
-    "volny-lyubvi-krepost"
+    "volny-lyubvi-krepost",
+    "volny-lyubvi-labirint-zabveniya"
    ],
    "localizations": {
     "ru": {
@@ -4106,7 +4109,8 @@
    ],
    "role": "Padre de Natalia.",
    "novels": [
-    "volny-lyubvi-krepost"
+    "volny-lyubvi-krepost",
+    "volny-lyubvi-labirint-zabveniya"
    ],
    "localizations": {
     "ru": {
@@ -7017,6 +7021,23 @@
     "es": {
      "name": "El Emisario",
      "description": "Hombre de abrigo blanco y voz suave que llega en nombre de la Potencia del Oriente con un ultimátum de treinta días."
+    }
+   }
+  },
+  {
+   "id": "valeria-verdegrad",
+   "name": "Valeria (Olas de amor)",
+   "langs": [
+    "ru"
+   ],
+   "role": "Inventora de Verdegrad, amiga de Natalia.",
+   "novels": [
+    "volny-lyubvi-labirint-zabveniya"
+   ],
+   "localizations": {
+    "ru": {
+     "name": "Валерия",
+     "description": "Изобретательница из Вердеграда, подруга Натальи. Держит мастерскую «Ремонт всего» в Кузнечном тупике. Четыре года назад потеряла мужа Диму — всё, что умеет, она умеет благодаря ему. Собирает визор запахов по его чертежам и водит его старую гоночную «пятёрку» так, будто дорога ей должна денег."
     }
    }
   }
