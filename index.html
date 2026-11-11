@@ -163,6 +163,12 @@ article.chapter.post a{color:var(--accent)}
 .mr-row .rprog{margin:8px 0 0}
 .by .stars{margin-left:2px}
 .empty{text-align:center;color:var(--muted);padding:40px 0 80px;font-size:18px}
+.view-switch{display:flex;justify-content:flex-end;gap:4px;margin:8px 0 -8px}
+.view-switch button{font-family:var(--sans);font-size:12.5px;border:1px solid var(--line);background:transparent;color:var(--muted);padding:5px 12px;border-radius:999px;cursor:pointer}
+.view-switch button.on{color:var(--accent);border-color:var(--accent);background:var(--paper)}
+.saga-head{font-family:var(--display);font-weight:500;font-size:26px;margin:32px 0 -8px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+.saga-head small{font-family:var(--sans);font-size:12px;color:var(--muted);font-weight:600;vertical-align:middle}
+.saga-head + .grid{padding-bottom:16px}
 
 /* Novel page */
 .novel{display:grid;grid-template-columns:260px 1fr;gap:48px;padding:48px 0 72px}
@@ -1245,6 +1251,39 @@ async function renderRec(){
     <div class="rec-k">✦ ${esc(T.t)}${dateTxt ? " · " + esc(dateTxt) : ""}</div>
     <h3>${esc(n.title)}</h3><p>${esc(why || "")}</p><span class="rec-go">${esc(T.go)} →</span></div></a>`;
 }
+// Home view: classic grid (default) or grouped by saga. The choice is kept in this browser (lm:homeView).
+const VIEW_T = {ru:["Классический","По циклам","Другие романы"], es:["Clásica","Por sagas","Otras novelas"], it:["Classica","Per saga","Altri romanzi"], en:["Classic","By series","Other novels"], fr:["Classique","Par saga","Autres romans"], tr:["Klasik","Serilere göre","Diğer romanlar"], pt:["Clássica","Por sagas","Outros romances"], cs:["Klasické","Podle sérií","Další romány"], sr:["Класично","По серијалима","Остали романи"], eo:["Klasika","Laŭ serioj","Aliaj romanoj"], isv:["Klasično","Po serijah","Drugi romany"], de:["Klassisch","Nach Reihen","Weitere Romane"], pl:["Klasyczny","Według cykli","Inne powieści"]};
+const vt = i => (VIEW_T[lang] || VIEW_T.en)[i];
+function cardHTML(n){
+      const nch = n.chapters.filter(c => !c.label).length;
+      return `<a class="card" href="#/${esc(n.slug)}">${coverHTML(n)}
+        <h3>${esc(n.title)}</h3>
+        <div class="meta">${n.genre ? esc(n.genre) + " · " : ""}${esc(t("chapters")(nch))}${n.study ? ` <span class="pill study">${esc(t("study"))}</span>` : ""}${n.wip ? ` <span class="pill wip">${esc(t("wip"))}</span>` : ` <span class="pill done">✓ ${esc(t("done"))}</span>`}${n.adult ? ' <span class="pill adult">18+</span>' : ""}${!n.adult && n.rating ? ` <span class="pill">${esc(n.rating)}</span>` : ""}</div>${starsHTML(n)}${(s => s.started ? `<div class="rbar sm" title="${esc(rt(0))}: ${s.read} / ${s.total} · ${s.pct}%"><i style="width:${s.pct}%"></i></div>` : "")(readStats(n))}</a>`;
+}
+function homeSagas(list){
+  const mine = new Map(list.map(n => [n.slug, n]));
+  return (catalog.series || []).map(s => ({s, items: s.novels.map(m => mine.get(m)).filter(Boolean)})).filter(g => g.items.length >= 2);
+}
+function homeViewSwitch(list){
+  if (!homeSagas(list).length) return "";
+  const v = store.get("homeView", "classic");
+  return `<div class="view-switch" role="group" aria-label="${esc(vt(0))} / ${esc(vt(1))}">${["classic","sagas"].map((k, i) => `<button type="button" data-view="${k}" aria-pressed="${v === k}" class="${v === k ? "on" : ""}">${i ? "❖ " : "▦ "}${esc(vt(i))}</button>`).join("")}</div>`;
+}
+function homeListHTML(list){
+  const groups = homeSagas(list);
+  if (store.get("homeView", "classic") !== "sagas" || !groups.length) return `<div class="grid">${list.map(cardHTML).join("")}</div>`;
+  const inSaga = new Set(groups.flatMap(g => g.items.map(n => n.slug)));
+  const rest = list.filter(n => !inSaga.has(n.slug));
+  return groups.map(({s, items}) => `<h2 class="saga-head">${esc(SAGA_W[lang] || "Saga")} · ${esc(s.name[lang] || s.name["*"])} <small>${items.length}</small></h2><div class="grid">${items.map(cardHTML).join("")}</div>`).join("")
+    + (rest.length ? `<h2 class="saga-head">${esc(vt(2))} <small>${rest.length}</small></h2><div class="grid">${rest.map(cardHTML).join("")}</div>` : "");
+}
+document.addEventListener("click", e => {
+  const b = e.target.closest && e.target.closest(".view-switch button");
+  if (!b) return;
+  store.set("homeView", b.dataset.view);
+  const y = window.scrollY; home(); window.scrollTo(0, y);
+});
+
 function home(){
   document.title = t("hero") + " — " + t("author");
   const list = catalog.novels.filter(n => !n.hidden && n.lang === lang).map((n,i)=>[n,i]).sort((a,b)=>(b[0].stars||0)-(a[0].stars||0)||a[1]-b[1]).map(x=>x[0]);
@@ -1269,12 +1308,7 @@ function home(){
   </section>
   <section class="wrap" id="rec"></section>
   <section class="wrap" data-auth-dep>
-    ${list.length ? `<div class="grid">${list.map(n => {
-      const nch = n.chapters.filter(c => !c.label).length;
-      return `<a class="card" href="#/${esc(n.slug)}">${coverHTML(n)}
-        <h3>${esc(n.title)}</h3>
-        <div class="meta">${n.genre ? esc(n.genre) + " · " : ""}${esc(t("chapters")(nch))}${n.study ? ` <span class="pill study">${esc(t("study"))}</span>` : ""}${n.wip ? ` <span class="pill wip">${esc(t("wip"))}</span>` : ` <span class="pill done">✓ ${esc(t("done"))}</span>`}${n.adult ? ' <span class="pill adult">18+</span>' : ""}${!n.adult && n.rating ? ` <span class="pill">${esc(n.rating)}</span>` : ""}</div>${starsHTML(n)}${(s => s.started ? `<div class="rbar sm" title="${esc(rt(0))}: ${s.read} / ${s.total} · ${s.pct}%"><i style="width:${s.pct}%"></i></div>` : "")(readStats(n))}</a>`;
-    }).join("")}</div>` : `<div class="empty">${esc(t("empty"))}</div>`}
+    ${list.length ? homeViewSwitch(list) + homeListHTML(list) : `<div class="empty">${esc(t("empty"))}</div>`}
   </section>`;
   const charactersEntry = document.getElementById("charactersEntry");
   renderRec();
