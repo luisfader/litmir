@@ -56,6 +56,10 @@ Cada idioma puede tener su curso (`#/learn`), con la teoría explicada en otros 
 2. Teoría: `learn/<idioma>/<unidad>/theory.<idioma-de-explicación>.md` (mismo formato que los capítulos; admite glosas `**palabra**{traducción}`, tablas y ejercicios `[[a|*b|c]]` y `( V / F ){V}`). En capítulos y teoría también hay ejercicios para ordenar palabras tocándolas, `[[= palabra / palabra / palabra => Frase correcta.|Otra frase válida.]]`, y para escribir la respuesta, `[[~ Respuesta.|Otra respuesta válida.]]`; cada ítem va en su propio párrafo y los ítems seguidos comparten el botón «Verifica». Las glosas pueden llevar varias traducciones, `**palabra**{слово|word}`, con el orden de `glossLangs` en el catálogo.
 3. Práctica: `learn/<idioma>/<unidad>/practice.<idioma-de-explicación>.json` (mismo formato que los tests de las novelas: `match`, `choice`, `reverse`, `fill`, `build`, `write`, `story`, `tf`).
 
+## Vista por sagas
+
+En la portada de cada idioma, encima de las novelas, hay un pequeño selector «Clásica / Por sagas». La vista clásica es la de siempre (por defecto). «Por sagas» agrupa las novelas de ese idioma según `series` en `novels/catalog.json`, en el orden de la lista de cada saga, y deja el resto en «Otras novelas». Solo se muestra una saga si tiene al menos dos novelas en ese idioma; si no hay ninguna, el selector no aparece. La elección se guarda en el navegador (`lm:homeView`). **Al añadir una novela de una saga, añadir su slug a la lista `novels` de esa saga, en orden de lectura.**
+
 ## Novelas en proceso de escritura
 
 **Toda novela que no esté terminada debe llevar `"wip": true`** en `catalog.json`. Así aparece la etiqueta «En proceso» en la tarjeta y en la ficha, y un aviso de que llegarán capítulos nuevos. Hay que revisarlo cada vez que se añade una novela o capítulos nuevos: si falta el final (o faltan capítulos intermedios), lleva `"wip": true`. Cuando el autor la termine, se quita la marca.
