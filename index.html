@@ -2825,15 +2825,16 @@ function route(){
   setSoundtrack(n && adultOk(n) ? n : null);
   if (!parts.length) return home();
   if (!n) { app.innerHTML = `<div class="empty">${esc(t("notFound"))}</div>`; return; }
-  if (!adultOk(n)) return adultGate(n);
-  if (parts[1] === "progreso") return progressPage(n);
+  if (!adultOk(n)) { adultGate(n); return toTop(); }
+  if (parts[1] === "progreso") { progressPage(n); return toTop(); }
   if (parts[1]) {
     const i = chapterIndex(n, decodeURIComponent(parts[1]));
-    if (chapterLocked(n, i) && !signedIn()) { if (lang !== n.lang) setLang(n.lang); return loginGate("#/" + n.slug); }
-    if (pwLocked(n, i) && !pwOpen(n)) { if (lang !== n.lang) setLang(n.lang); return pwGate(n, i); }
+    if (chapterLocked(n, i) && !signedIn()) { if (lang !== n.lang) setLang(n.lang); loginGate("#/" + n.slug); return toTop(); }
+    if (pwLocked(n, i) && !pwOpen(n)) { if (lang !== n.lang) setLang(n.lang); pwGate(n, i); return toTop(); }
     return reader(n, i, parts[2]);
   }
   novelPage(n);
+  toTop();
 }
 window.addEventListener("hashchange", route);
 
