@@ -152,6 +152,7 @@ article.chapter.post a{color:var(--accent)}
 .card .meta{font-family:var(--sans);font-size:12px;color:var(--muted);display:flex;gap:6px;flex-wrap:wrap;align-items:center}
 .pill{border:1px solid var(--line);border-radius:999px;padding:1px 7px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;font-size:10.5px}
 .pill.off{opacity:.4}
+html,body{overflow-anchor:none}
 .stars{display:inline-flex;gap:1px;font-family:var(--sans);font-size:14px;line-height:1;letter-spacing:0;vertical-align:middle}
 .stars i{font-style:normal;position:relative;color:color-mix(in srgb,var(--muted) 45%,transparent)}
 .stars i.f{color:#d4a017}
@@ -1709,6 +1710,18 @@ function splitPages(md){
 }
 function resumeHref(n, i){ const pg = store.get("pg:" + n.slug, null); return chapterHref(n, i) + (pg && pg.i === i && pg.p > 1 ? "/" + pg.p : ""); }
 
+/* Mobile browsers (Safari, Chrome on Android) can restore the old scroll position after a hash
+   navigation or keep a momentum scroll running, so a single scrollTo(0,0) may be undone and the
+   next page opens at its bottom. Jump to the top now and again over the next frames. */
+try { history.scrollRestoration = "manual"; } catch(e) {}
+function toTop(){
+  const go = () => { window.scrollTo(0, 0); const se = document.scrollingElement || document.documentElement; if (se) se.scrollTop = 0; document.body.scrollTop = 0; };
+  go(); requestAnimationFrame(() => { go(); requestAnimationFrame(go); });
+  let moved = false; const stop = () => { moved = true; };
+  addEventListener("touchstart", stop, {once:true, passive:true}); addEventListener("wheel", stop, {once:true, passive:true});
+  [60, 200, 450].forEach(ms => setTimeout(() => { if (!moved) go(); }, ms));
+  setTimeout(() => { removeEventListener("touchstart", stop); removeEventListener("wheel", stop); }, 500);
+}
 async function reader(n, idx, page){
   if (lang !== n.lang) setLang(n.lang);
   const chs = n.chapters;
@@ -1759,7 +1772,8 @@ async function reader(n, idx, page){
     ${i<chs.length ? `<a class="next" href="${chapterHref(n, i+1)}">${esc(t("next"))} →<b>${esc(titleOf(i+1))}</b></a>` : `<a class="next" href="#/">${esc(t("back"))} →<b>${esc(t("hero"))}</b></a>`}
   </nav>
   <section class="comments" id="comments"></section>` : ""}`;
-  window.scrollTo(0,0);
+  if (document.activeElement && document.activeElement !== document.body) document.activeElement.blur();
+  toTop();
   window.__activeChapterFile = c.file;
   if (n.slug === "predchuvstvie" && c.file === "28.md") setupPredchuvstvieReflection(app);
   setupQuizzes(app, n.lang);
