@@ -34,13 +34,13 @@ Servicios de Meta (prohibida en Rusia): no nombrarlos en las novelas; usar los n
 
 Un idioma puede ofrecer su revista en PDF para descargar: un botón en la portada de ese idioma. El archivo va en `magazine/` y se registra en `MAGAZINES` dentro de `index.html` (`{ru: {file, btn}}`). Ahora: «Литература перед сном», noviembre de 2026 (RU), y «Al chiaro di luna», noviembre de 2026 (IT, 20 páginas).
 
-## Mini-juegos entre capítulos
+## Secciones de la novela (banda sonora, juegos, galería)
 
-Una novela puede tener un juego de correr y saltar (como el dinosaurio de Chrome) cada N capítulos: Natalia corre, salta, se agacha y recoge objetos, y solo al ganar se abre el capítulo siguiente. Se activa con `"runner": 5` en `novels/catalog.json` (juego antes de los capítulos 6, 11, 16…).
+En la página de la novela, un botón «Разделы романа» abre hasta tres pestañas:
 
-- Los niveles están en `LEVELS` dentro de `games/runner/runner.js` (uno por cada bloque de capítulos): título, texto de introducción, objeto a recoger, cuántos, velocidad, obstáculos y escenario. Todo se dibuja con código, sin imágenes.
-- Ahora: «Волны любви: Город без улыбок», 8 niveles (antes de los capítulos 6, 11, 16, 21, 26, 31, 36 y 41).
-- Un nivel ganado queda guardado en el navegador del lector y no vuelve a aparecer. Los capítulos que el lector ya había leído no se bloquean. Si alguien pierde varias veces seguidas, el juego va un poco más lento.
+- **Banda sonora**: sale sola si la novela tiene `soundtrack`.
+- **Juegos**: `"runner": 8` en `catalog.json` (número de niveles). Son minijuegos opcionales de correr y saltar (como el dinosaurio de Chrome), uno por cada 5 capítulos; **no bloquean la lectura**. Al final de los capítulos 5, 10, 15… aparece una invitación discreta a jugar. Cada nivel tiene su página: `#/<novela>/juego/<n>`. Los niveles se definen en `LEVELS`, dentro de `games/runner/runner.js`; todo se dibuja con código. Ahora solo «Волны любви: Город без улыбок» tiene juegos (8 niveles).
+- **Galería**: `"gallery": true` y un archivo `novels/<novela>/gallery.json` con `[{ch, src, th}]` (capítulo, imagen, miniatura en `img/thumbs/`). El lector solo ve las imágenes de los capítulos que ya leyó; las demás aparecen con candado.
 
 ## Blog
 
