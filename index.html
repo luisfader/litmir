@@ -1658,7 +1658,8 @@ function progressPage(n){
   app.innerHTML='<section class="wrap" style="max-width:850px;margin:40px auto"><a href="#/'+esc(n.slug)+'">← Volver a la novela</a><h1>Mi progreso · '+esc(n.title)+'</h1>'+moduleProgress(n)+'</section>';
 }
 
-/* Gamebooks ("gamebook": true in the catalog; endings carry "ending": "tragic" | "neutral" | "good").
+/* Gamebooks ("gamebook": true in the catalog; endings carry "ending": "tragic" | "neutral" | "good";
+   "hideEndingKinds": true hides the kind of each ending, so the list does not give anything away).
    The reader follows the links at the end of each section; endings found are kept in this browser. */
 const GB_T = {ru:["Финалы","Найдено","из","Ещё не найден","Все финалы","Начать сначала","Финал найден","трагический","ни победа, ни поражение","раскрытие дела"],
               es:["Finales","Encontrados","de","Todavía no encontrado","Todos los finales","Empezar de nuevo","Final encontrado","trágico","ni victoria ni derrota","caso resuelto"]};
@@ -1666,10 +1667,12 @@ const gbT = n => GB_T[n.lang] || GB_T.es;
 function gbEndings(n){
   const T = gbT(n), got = store.get("gbEnd:"+n.slug, []), ends = n.chapters.filter(c => c.ending);
   const cls = {good:"g", neutral:"n", tragic:"t"}, kind = {tragic:T[7], neutral:T[8], good:T[9]};
-  const order = ["good","neutral","tragic"], list = ends.slice().sort((a,b) => order.indexOf(a.ending) - order.indexOf(b.ending));
+  const order = ["good","neutral","tragic"], hide = n.hideEndingKinds;
+  const list = hide ? ends : ends.slice().sort((a,b) => order.indexOf(a.ending) - order.indexOf(b.ending));
+  const kd = c => hide ? "" : ` <small>· ${esc(kind[c.ending])}</small>`;
   return `<div class="gb-ends"><h2>${esc(T[0])}</h2><p class="by">${esc(T[1])}: ${got.length} ${esc(T[2])} ${ends.length}</p><ol>${list.map(c => got.includes(c.file)
-    ? `<li class="${cls[c.ending]}">${esc(c.title)} <small>· ${esc(kind[c.ending])}</small></li>`
-    : `<li class="unk">${esc(T[3])} <small>· ${esc(kind[c.ending])}</small></li>`).join("")}</ol></div>`;
+    ? `<li class="${hide ? "" : cls[c.ending]}">${esc(c.title)}${kd(c)}</li>`
+    : `<li class="unk">${esc(T[3])}${kd(c)}</li>`).join("")}</ol></div>`;
 }
 function gbFooter(n, c){
   const T = gbT(n), got = store.get("gbEnd:"+n.slug, []), total = n.chapters.filter(x => x.ending).length;

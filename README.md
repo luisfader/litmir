@@ -127,6 +127,10 @@ En la portada de cada idioma aparece una tarjeta «Recomendación del día» con
 
 Si no hay nada para ese día, se elige una novela al azar (la misma durante todo el día) y se muestra el principio de su descripción. Las novelas para adultos nunca se recomiendan. El motivo (`why`) se escribe en el idioma de la novela. Antes de añadir una fecha histórica, hay que comprobarla.
 
+## Libros-juego
+
+Novelas en las que el lector elige el camino: `"gamebook": true` en `catalog.json`. Cada sección es un archivo (`01.md`, `02.md`, …) y termina con las opciones como enlaces, `- [Texto de la opción — § 5](#/<slug>/5)`. Las secciones que son un final llevan `"ending": "tragic" | "neutral" | "good"`; los finales encontrados se guardan en el navegador. Con `"hideEndingKinds": true` la lista de finales no dice de qué tipo es cada uno, para no adelantar nada (así está *El tren*). Ahora: *Алмазный дождь* (RU) y *El tren* (ES, nivel A1, con glosas en ruso e inglés).
+
 ## Novelas para adultos
 
 Añadir `"adult": true` a la novela en `catalog.json`: aparece la marca 18+ y se pide confirmación de edad antes de leer.
