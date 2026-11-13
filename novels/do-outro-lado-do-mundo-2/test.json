@@ -1,0 +1,354 @@
+{
+ "title": "Teste final: Ilhas no Céu",
+ "subtitle": "24 exercícios sobre a aventura de Mateus e Rita em São Petersburgo: vocabulário, verdadeiro ou falso, frases para montar e para escrever.",
+ "speak": "pt-BR",
+ "hearts": 5,
+ "perfect": "Nenhum erro! Você pulou de ilha em ilha sem cair!",
+ "good": "Muito bem! A cidade voltou para o lugar, e você entendeu a história.",
+ "keyboard": [
+  "á",
+  "â",
+  "ã",
+  "à",
+  "ç",
+  "é",
+  "ê",
+  "í",
+  "ó",
+  "ô",
+  "õ",
+  "ú"
+ ],
+ "ui": {
+  "start": "Começar",
+  "check": "Verificar",
+  "next": "Continuar",
+  "skip": "Não sei",
+  "retry": "Tentar de novo",
+  "again": "Fazer o teste de novo",
+  "back": "Voltar ao romance",
+  "great": [
+   "Muito bem!",
+   "Excelente!",
+   "Correto!",
+   "Perfeito!",
+   "Isso aí!"
+  ],
+  "wrong": "Resposta certa:",
+  "almost": "Quase! Atenção aos acentos:",
+  "done": "Teste concluído!",
+  "lost": "Seus corações acabaram",
+  "lostP": "Não tem problema: cada erro é uma palavra que você agora conhece um pouco melhor.",
+  "xp": "XP total",
+  "acc": "Precisão",
+  "time": "Tempo",
+  "ex": "{n} exercícios",
+  "min": "≈ 8 minutos",
+  "hearts": "corações",
+  "best": "Seu melhor resultado",
+  "tap": "Toque as palavras na ordem certa",
+  "type": "Escreva aqui…",
+  "ok": "Bom trabalho! Faça o teste de novo para melhorar a precisão.",
+  "sound": "Som",
+  "listen": "Ouvir",
+  "meaning": "Significa:",
+  "yes": "Verdadeiro",
+  "no": "Falso",
+  "score": "Pontos",
+  "level": "Seu nível de compreensão"
+ },
+ "exercises": [
+  {
+   "type": "match",
+   "prompt": "Ligue as palavras",
+   "pairs": [
+    [
+     "a ilha",
+     "остров"
+    ],
+    [
+     "a ponte",
+     "мост"
+    ],
+    [
+     "o telhado",
+     "крыша"
+    ],
+    [
+     "o raio",
+     "луч"
+    ],
+    [
+     "a borda",
+     "край"
+    ]
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Escolha a resposta certa",
+   "question": "Por que Rita quis levar Mateus a São Petersburgo?",
+   "es": "Почему Рита захотела повезти Матеуса в Петербург?",
+   "options": [
+    "Para mostrar as noites brancas.",
+    "Para visitar o tio Castro.",
+    "Para comprar uma guitarra."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "Verdadeiro ou falso?",
+   "statement": "Os atlantes cobravam duzentos rublos para passar.",
+   "answer": true,
+   "why": "Na rua Milionnaya, os atlantes cobravam duzentos rublos pela passagem para a Praça do Palácio."
+  },
+  {
+   "type": "choice",
+   "prompt": "O que significa?",
+   "word": "a fila",
+   "options": [
+    "очередь",
+    "улица",
+    "фонтан"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Complete a frase",
+   "before": "No cartão de Natalia estava escrito: Agente de Assuntos",
+   "after": ".",
+   "options": [
+    "Celestiais",
+    "Secretos",
+    "Policiais"
+   ],
+   "answer": 0,
+   "es": "На визитке Натальи было написано: агент по небесным делам."
+  },
+  {
+   "type": "story",
+   "prompt": "Escolha a resposta certa",
+   "question": "Como o homem de capa pegou a esfinge?",
+   "es": "Как человек в плаще поймал сфинкса?",
+   "options": [
+    "Com uma boleadeira.",
+    "Com uma rede.",
+    "Com magia de gelo."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "Verdadeiro ou falso?",
+   "statement": "Rita chamou os policiais de «pinguins».",
+   "answer": false,
+   "why": "Foi Mateus que disse: «São os pinguins!», por causa do uniforme preto e branco."
+  },
+  {
+   "type": "reverse",
+   "prompt": "Como se diz em português?",
+   "word": "Я боюсь высоты.",
+   "options": [
+    "Eu tenho medo de altura.",
+    "Eu tenho medo de água.",
+    "Eu sou muito alto."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "match",
+   "prompt": "Ligue as palavras",
+   "pairs": [
+    [
+     "a chave",
+     "ключ"
+    ],
+    [
+     "a cauda",
+     "хвост"
+    ],
+    [
+     "os óculos",
+     "очки"
+    ],
+    [
+     "a estrela",
+     "звезда"
+    ],
+    [
+     "o motorista",
+     "водитель"
+    ]
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Escolha a resposta certa",
+   "question": "O que aconteceu na Casa Singer ao nascer do sol?",
+   "es": "Что произошло на Доме Зингера на рассвете?",
+   "options": [
+    "Um raio de luz voou para a Praça do Palácio.",
+    "O café abriu mais cedo.",
+    "Os grifos pousaram no telhado."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Complete a frase",
+   "before": "O palácio subiu, e Rita e Mateus ficaram presos numa",
+   "after": "no céu.",
+   "options": [
+    "ilha",
+    "praia",
+    "estação"
+   ],
+   "answer": 0,
+   "es": "Дворец поднялся, и Рита с Матеусом оказались в ловушке на острове в небе."
+  },
+  {
+   "type": "tf",
+   "prompt": "Verdadeiro ou falso?",
+   "statement": "A guarda do museu ficou com medo e fugiu.",
+   "answer": false,
+   "why": "Ela ficou calma na cadeira. Ela trabalha lá há quarenta anos e quis cuidar do museu."
+  },
+  {
+   "type": "build",
+   "prompt": "Traduza para o português",
+   "es": "Не смотри вниз!",
+   "answer": [
+    "Não",
+    "olha",
+    "para",
+    "baixo"
+   ],
+   "extra": [
+    "cima",
+    "olhou"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Escolha a resposta certa",
+   "question": "Como o Relógio do Pavão ajudou?",
+   "es": "Как помогли часы «Павлин»?",
+   "options": [
+    "Quando o pavão abriu a cauda, a ponte de luz ficou forte.",
+    "O galo mostrou o caminho com a asa.",
+    "A coruja levou Rita até a ilha verde."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "prompt": "O que significa?",
+   "word": "o degrau",
+   "options": [
+    "ступенька",
+    "перила",
+    "дыра"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "Verdadeiro ou falso?",
+   "statement": "Rita ajudou Natalia: na frente dela apareceu uma nova ponte de luz.",
+   "answer": true,
+   "why": "Rita mandou uma faísca dourada para a ilha do palácio amarelo, e a ponte apareceu."
+  },
+  {
+   "type": "story",
+   "prompt": "Escolha a resposta certa",
+   "question": "O que Mateus ensinou ao macaco do Jardim de Verão?",
+   "es": "Чему Матеус научил мартышку в Летнем саду?",
+   "options": [
+    "A colocar os óculos no nariz.",
+    "A ler um livro de fábulas.",
+    "A pular nas flores de luz."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "prompt": "Complete a frase",
+   "before": "No Brasil, a gente não vê a Estrela Polar. Lá a gente tem o",
+   "after": "do Sul.",
+   "options": [
+    "Cruzeiro",
+    "Caminho",
+    "Rio"
+   ],
+   "answer": 0,
+   "es": "В Бразилии не видно Полярной звезды. Там есть Южный Крест."
+  },
+  {
+   "type": "reverse",
+   "prompt": "Como se diz em português?",
+   "word": "Кто-то зовёт город обратно.",
+   "options": [
+    "Alguém está chamando a cidade de volta.",
+    "Alguém chamou a cidade ontem.",
+    "A cidade está chamando alguém."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "build",
+   "prompt": "Traduza para o português",
+   "es": "Мы справились.",
+   "answer": [
+    "A",
+    "gente",
+    "conseguiu"
+   ],
+   "extra": [
+    "vai",
+    "conseguiram"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Escolha a resposta certa",
+   "question": "Como Rita e Mateus desceram da última ilha?",
+   "es": "Как Рита и Матеус спустились с последнего острова?",
+   "options": [
+    "Num trólebus, por uma rampa de luz.",
+    "Num grifo, com Natalia.",
+    "A pé, por uma escada de flores."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "tf",
+   "prompt": "Verdadeiro ou falso?",
+   "statement": "No fim, Rita e Mateus viram dois pinguins de verdade na margem do rio.",
+   "answer": true,
+   "why": "Dois pinguins pretos e brancos passaram pela calçada, andando com muita importância."
+  },
+  {
+   "type": "write",
+   "prompt": "Escreva em português",
+   "es": "Все русские города такие?",
+   "answers": [
+    "todas as cidades russas são assim",
+    "todas as cidades russas são assim?",
+    "as cidades russas são todas assim",
+    "todas as cidades russas têm essas particularidades"
+   ]
+  },
+  {
+   "type": "write",
+   "prompt": "Escreva em português",
+   "es": "Только лучшие.",
+   "answers": [
+    "só as melhores",
+    "somente as melhores",
+    "apenas as melhores"
+   ]
+  }
+ ]
+}

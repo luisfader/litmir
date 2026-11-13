@@ -905,7 +905,7 @@ function renderText(md){
     const mc = b.match(/^([\s\S]*?)\s*\[\[([^\]]*\|[^\]]*)\]\]([\s\S]*)$/);
     if (mc) { const ops = mc[2].split("|"); const a = ops.findIndex(o => o.trim().startsWith("*"));
       const q = mc[3].trim() ? inline(mc[1]) + " ＿＿＿ " + inline(mc[3].trim()) : inline(mc[1]);
-      return `<p class="mc" data-a="${a}"><span class="vfq">${q}</span><select aria-label="Respuesta"><option value="" selected disabled>— elige —</option>${ops.map((o,i) => `<option value="${i}">${esc(o.trim().replace(/^\*/,""))}</option>`).join("")}</select></p>`; }
+      return `<p class="mc" data-a="${a}"><span class="vfq">${q}</span><select aria-label="Respuesta"><option value="" selected disabled>${({pt:"— escolha —",it:"— scegli —",en:"— choose —",ru:"— выбери —",fr:"— choisis —"})[lang] || "— elige —"}</option>${ops.map((o,i) => `<option value="${i}">${esc(o.trim().replace(/^\*/,""))}</option>`).join("")}</select></p>`; }
     const vf = b.match(/^([\s\S]*?)\s*\(\s*V\s*\/\s*F\s*\)\s*\{([VF])\}\s*$/);
     if (vf) return `<p class="vf" data-a="${vf[2]}"><span class="vfq">${inline(vf[1])}</span><span class="vfb"><button type="button" data-v="V" aria-pressed="false">V</button><button type="button" data-v="F" aria-pressed="false">F</button></span></p>`;
     return "<p>" + inline(b).replace(/\n/g,"<br>") + "</p>";
@@ -1109,7 +1109,7 @@ function starsHTML(n, withNum){
   let h = ""; for (let k=1;k<=5;k++) h += `<i class="${s>=k?"f":s>=k-0.5?"h":""}">★</i>`;
   return `<span class="stars" title="${esc(lab)}" aria-label="${esc(lab)}">${h}${withNum?`<small>${esc(String(s).replace(".", n.lang==="en"?".":","))}</small>`:""}</span>`;
 }
-const GLP_T={es:{pick:"Traducción:",list:"Palabras del capítulo"},it:{pick:"Traduzione:",list:"Parole del capitolo"},en:{pick:"Translation:",list:"Words in this chapter"},ru:{pick:"Перевод:",list:"Слова главы"}};
+const GLP_T={es:{pick:"Traducción:",list:"Palabras del capítulo"},it:{pick:"Traduzione:",list:"Parole del capitolo"},en:{pick:"Translation:",list:"Words in this chapter"},ru:{pick:"Перевод:",list:"Слова главы"},pt:{pick:"Tradução:",list:"Palavras do capítulo"}};
 function glossLangOf(n){ const gl = n.glossLangs || []; const v = store.get("glossLang", gl[0]); return gl.includes(v) ? v : gl[0]; }
 function setupGlossPick(n, root){
   if (!n.glossPick || !n.glossLangs) return;
