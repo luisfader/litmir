@@ -364,9 +364,6 @@ article.chapter h3{font-family:var(--sans);font-size:.72em;letter-spacing:.12em;
 .chapter.gb ul a{display:block;border:1px solid var(--line);border-radius:10px;padding:14px 18px;text-decoration:none;color:var(--ink);font-family:var(--sans);font-size:.82em;line-height:1.4;transition:border-color .15s,background .15s}
 .chapter.gb ul a::before{content:"→ ";color:var(--accent)}
 .chapter.gb ul a:hover{border-color:var(--accent);background:rgba(127,127,127,.06)}
-.gb-end{max-width:680px;margin:0 auto 18px;padding:0 20px;font-family:var(--sans);font-size:13px;color:var(--muted)}
-.gb-ends{margin:26px 0}.gb-ends h2{font-size:18px;margin:0 0 10px}.gb-ends ol{margin:0;padding-left:22px;font-family:var(--sans);font-size:14px;line-height:1.8}
-.gb-ends .unk{color:var(--muted)}.gb-ends .g{color:#2e8b57}.gb-ends .n{color:#b08a2e}.gb-ends .t{color:#b03a2e}
 .wipnote div{font-family:var(--sans);font-size:14px;background:var(--accent-soft);border-radius:8px;padding:12px 14px;text-align:center}
 .pill.adult{background:#b3261e;color:#fff;border-color:#b3261e}
 .gate{text-align:center;padding:90px 20px;max-width:560px}
@@ -1664,20 +1661,9 @@ function progressPage(n){
 const GB_T = {ru:["Финалы","Найдено","из","Ещё не найден","Все финалы","Начать сначала","Финал найден","трагический","ни победа, ни поражение","раскрытие дела"],
               es:["Finales","Encontrados","de","Todavía no encontrado","Todos los finales","Empezar de nuevo","Final encontrado","trágico","ni victoria ni derrota","caso resuelto"]};
 const gbT = n => GB_T[n.lang] || GB_T.es;
-function gbEndings(n){
-  const T = gbT(n), got = store.get("gbEnd:"+n.slug, []), ends = n.chapters.filter(c => c.ending);
-  const cls = {good:"g", neutral:"n", tragic:"t"}, kind = {tragic:T[7], neutral:T[8], good:T[9]};
-  const order = ["good","neutral","tragic"], hide = n.hideEndingKinds;
-  const list = hide ? ends : ends.slice().sort((a,b) => order.indexOf(a.ending) - order.indexOf(b.ending));
-  const kd = c => hide ? "" : ` <small>· ${esc(kind[c.ending])}</small>`;
-  return `<div class="gb-ends"><h2>${esc(T[0])}</h2><p class="by">${esc(T[1])}: ${got.length} ${esc(T[2])} ${ends.length}</p><ol>${list.map(c => got.includes(c.file)
-    ? `<li class="${hide ? "" : cls[c.ending]}">${esc(c.title)}${kd(c)}</li>`
-    : `<li class="unk">${esc(T[3])}${kd(c)}</li>`).join("")}</ol></div>`;
-}
 function gbFooter(n, c){
-  const T = gbT(n), got = store.get("gbEnd:"+n.slug, []), total = n.chapters.filter(x => x.ending).length;
-  return `${c.ending ? `<div class="gb-end">★ ${esc(T[6])}: ${got.length} ${esc(T[2])} ${total}</div>` : ""}
-  <nav class="pager"><a href="#/${n.slug}">← ${esc(T[4])}<b>${esc(n.title)}</b></a><a class="next" href="${chapterHref(n, 1)}">↺ ${esc(T[5])}<b>§ 1</b></a></nav>`;
+  const T = gbT(n);
+  return `<nav class="pager"><a href="#/${n.slug}">← ${esc(T[4])}<b>${esc(n.title)}</b></a><a class="next" href="${chapterHref(n, 1)}">↺ ${esc(T[5])}<b>§ 1</b></a></nav>`;
 }
 function novelPage(n){
   if (lang !== n.lang) setLang(n.lang);
@@ -1705,7 +1691,7 @@ function novelPage(n){
         ${last ? `<a class="btn" href="${resumeHref(n, last)}">${esc(t("cont"))} · ${esc(chapterTitle(n, chs[last-1] || {}, last))}</a>` : ""}
         <a class="btn ${last ? "ghost" : ""}" href="${chapterHref(n, firstStory)}">${esc(t("start"))}</a>
         <button type="button" class="btn ghost" id="favorite-toggle" aria-pressed="${isFavorite(n.slug)}">${isFavorite(n.slug) ? "★" : "☆"} ${esc(ft(isFavorite(n.slug)?2:1,n.lang))}</button></div>
-      ${n.gamebook ? gbEndings(n) : `<div class="toc" data-auth-dep><h2>${esc(t("contents"))}</h2><ol>
+      ${n.gamebook ? "" : `<div class="toc" data-auth-dep><h2>${esc(t("contents"))}</h2><ol>
         ${chs.map((c,i) => `<li class="${done.includes(i+1)?"done":""} ${c.label?"extra":""}"><a href="${chapterHref(n, i+1)}"><span class="n">${c.type === "quiz" ? "★" : c.label ? "·" : chapterNo(n, i+1)}</span><span>${esc(chapterTitle(n, c, chapterNo(n, i+1)))}${(()=>{const songs=(n.soundtrack||[]).filter(tk=>(tk.chapters||[]).includes(c.file)).map(tk=>tk.title);return songs.length?` <span class="note-mus" title="${esc(songs.join(" · "))}" aria-label="${esc(songs.join(", "))}">♪</span>`:"";})()}${(!signedIn() && chapterLocked(n, i+1)) || (pwLocked(n, i+1) && !pwOpen(n)) ? ' <span class="lock" aria-hidden="true">🔒</span>' : ""}</span></a></li>`).join("")}
       </ol></div>`}
       ${sagaHTML(n)}
@@ -1780,7 +1766,6 @@ async function reader(n, idx, page){
       <div class="pg-lbl">${esc(W)} ${pg} / ${P}</div>
       <div class="pg-row">${pg > 1 ? `<a href="${pageHref(pg-1)}" aria-label="${esc(L.prev)}">←</a>` : ""}${row}${lastPage ? "" : `<a href="${pageHref(pg+1)}" aria-label="${esc(L.next)}">→</a>`}</div></nav>`; })();
   md = pages[pg-1];
-  if (n.gamebook && c.ending) { const e = store.get("gbEnd:"+n.slug, []); if (!e.includes(c.file)) { e.push(c.file); store.set("gbEnd:"+n.slug, e); } }
   app.innerHTML = `
   <div class="reader-bar"><div class="wrap">
     <a class="crumb" href="#/${n.slug}">← ${esc(n.title)}</a>
