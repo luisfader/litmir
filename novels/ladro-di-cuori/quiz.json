@@ -1,0 +1,70 @@
+{
+  "title": "Quanto sei bravo come ladro?",
+  "intro": "Alessio pensava di essere un ladro perfetto. E tu? Rispondi a otto domande e scopri se potresti rubare un quadro… o se ti scoprirebbero ancora prima di entrare.",
+  "questions": [
+    {"q": "Giri l'angolo e vedi due poliziotti. Che cosa fai?",
+     "a": [
+       {"t": "Scappo correndo, urlando «Non sono stato io!»", "s": 0},
+       {"t": "Fischietto una canzone a caso. Fortissimo. Stonato.", "s": 1},
+       {"t": "Fingo di mangiare un hot dog. Non ho un hot dog.", "s": 2},
+       {"t": "Chiedo loro con calma la strada per gli Uffizi.", "s": 3}
+     ]},
+    {"q": "Sei nella villa di notte. Che cosa porti con te?",
+     "a": [
+       {"t": "Una torcia, dei guanti e una borsa vuota.", "s": 3},
+       {"t": "Tutta la famiglia, «così vedono come lavoro».", "s": 0},
+       {"t": "Un panino alla mortadella, per sicurezza.", "s": 1},
+       {"t": "Un mantello nero e una maschera, come nei film.", "s": 2}
+     ]},
+    {"q": "Arriva un cane enorme e ti guarda negli occhi.",
+     "a": [
+       {"t": "Abbaio anch'io. Così capisce chi comanda.", "s": 0},
+       {"t": "Gli offro il mio panino alla mortadella.", "s": 3},
+       {"t": "Mi arrampico sulla prima statua che vedo.", "s": 1},
+       {"t": "Resto immobile e faccio finta di essere un vaso.", "s": 2}
+     ]},
+    {"q": "Ti trovi davanti a una cassaforte con la combinazione.",
+     "a": [
+       {"t": "Provo 1-2-3-4. Funziona sempre, no?", "s": 1},
+       {"t": "Appoggio l'orecchio e ascolto i clic.", "s": 3},
+       {"t": "La prendo a calci finché non si apre. O finché non arriva qualcuno.", "s": 0},
+       {"t": "Cerco un bigliettino sotto il tappeto. Qualcuno lo lascia sempre.", "s": 2}
+     ]},
+    {"q": "Squilla il telefono nel momento peggiore. È tua madre.",
+     "a": [
+       {"t": "Rispondo: «Mamma, ora non posso, sto rubando».", "s": 0},
+       {"t": "Ho spento il telefono prima di uscire di casa.", "s": 3},
+       {"t": "Rifiuto la chiamata e le mando un cuore.", "s": 2},
+       {"t": "Lo lascio squillare. La suoneria è «Bella ciao».", "s": 1}
+     ]},
+    {"q": "Quale quadro scegli di portare via?",
+     "a": [
+       {"t": "Il più grande. Due metri per tre. Si nota appena.", "s": 0},
+       {"t": "Uno piccolo, facile da portare via.", "s": 3},
+       {"t": "Quello con la cornice più dorata, ovviamente.", "s": 1},
+       {"t": "Nessuno: rubo il cuore della padrona di casa.", "s": 2}
+     ]},
+    {"q": "Scatta l'allarme. Le luci si accendono.",
+     "a": [
+       {"t": "Esco tranquillo dalla finestra che ho già preparato.", "s": 3},
+       {"t": "Mi nascondo dietro una tenda. Si vedono solo le scarpe.", "s": 1},
+       {"t": "Ballo. Forse pensano che sia una festa.", "s": 0},
+       {"t": "Mi siedo in poltrona e dico: «Vi stavo aspettando».", "s": 2}
+     ]},
+    {"q": "Il giorno dopo, al bar, che cosa racconti?",
+     "a": [
+       {"t": "Niente. Bevo il mio caffè e leggo il giornale.", "s": 3},
+       {"t": "Tutto, con i dettagli, al barista e a tre turisti.", "s": 0},
+       {"t": "Dico che ho dormito tutta la notte. Ho ancora la torcia in mano.", "s": 1},
+       {"t": "Parlo solo del tempo. E del calcio. Molto del calcio.", "s": 2}
+     ]}
+  ],
+  "verdicts": [
+    {"min": 19, "icon": "🖼️", "title": "Maestro del furto!",
+     "text": "Potresti rubare la Gioconda dal Louvre in un batter d'occhio. Mentre la guardia sbadiglia, tu sei già in treno per Firenze, con un cappuccino in mano e la Monna Lisa che ti sorride sotto il cappotto. Alessio prenderebbe appunti."},
+    {"min": 10, "icon": "🎭", "title": "Apprendista ladro",
+     "text": "Hai talento, ma anche qualche panino alla mortadella di troppo in tasca. Riesci a entrare nella villa… e poi ti fermi a guardare i quadri per tre ore. Come qualcuno che conosciamo."},
+    {"min": 0, "icon": "🪳", "title": "Uno scarafaggio su un muro bianco!",
+     "text": "Sei un ladro discreto come uno scarafaggio su un muro bianco: ti scoprirebbero sul fatto. Probabilmente il cane ti ha già adottato e la polizia ti ha offerto un caffè. Forse la tua vera vocazione è un'altra… per esempio, il pittore, come Luca."}
+  ]
+}
