@@ -221,12 +221,45 @@ Object.assign(X.THEMES, {
     ground(c, s, w){ slabs(c, s, w, "#97808a", "#71606b", "rgba(40,25,35,.35)"); }
   }
 });
+X.THEMES.spbDay.back = crowd(6, .72); X.THEMES.spbNeva.back = crowd(4, .7); X.THEMES.spbWhite.back = crowd(3, .7);
+X.THEMES.spbDawn.back = crowd(4, .72); X.THEMES.spbSunset.back = crowd(4, .7);
 function island(c, r, x, y, s, rock, build){
   c.fillStyle = rock; c.beginPath(); c.moveTo(x - 70 * s, y); c.lineTo(x + 70 * s, y); c.lineTo(x + 30 * s, y + 40 * s); c.lineTo(x, y + 70 * s); c.lineTo(x - 36 * s, y + 36 * s); c.closePath(); c.fill();
   c.fillStyle = build; c.fillRect(x - 50 * s, y - 34 * s, 100 * s, 34 * s);
   c.fillStyle = "rgba(0,0,0,.15)"; for (let k = 0; k < 7; k++) c.fillRect(x - 46 * s + k * 14 * s, y - 30 * s, 4 * s, 26 * s);
   c.fillStyle = build; c.beginPath(); c.moveTo(x - 54 * s, y - 34 * s); c.lineTo(x, y - 54 * s); c.lineTo(x + 54 * s, y - 34 * s); c.fill();
   glow(c, x, y + 20 * s, 60 * s, "255,214,120", .18);
+}
+
+/* ───────── Прохожие: немного людей на улицах (не мешают, просто идут по своим делам) ───────── */
+const WALK = [
+  {coat:"#c9b28f", legs:"#3a3a40", hair:"#4a3020", bag:"#5a3a28"}, {coat:"#5d6b7a", legs:"#2a2a30", hair:"#1f1a18", cap:"#3a3f48"},
+  {coat:"#8a3f4a", legs:"#2e2a2e", hair:"#c99a5a", long:true}, {coat:"#3f5a4a", legs:"#2a2a2a", hair:"#6b4a30", umbrella:"#2f3e5c"},
+  {coat:"#d8cfc0", legs:"#4a4a52", hair:"#8a8a8f", long:true}, {coat:"#2f3550", legs:"#22222a", hair:"#3a2418", phone:true}
+];
+function walker(c, x, s, t, o, dir){
+  const y = GY - 2, ph = t * 7 + x * .01, sw = Math.sin(ph) * .45;
+  c.save(); c.translate(x, y); c.scale(dir * s, s); c.globalAlpha = .88;
+  c.strokeStyle = o.legs; c.lineWidth = 6; c.lineCap = "round";
+  c.beginPath(); c.moveTo(0, -44); c.lineTo(Math.sin(sw) * 22, -2); c.moveTo(0, -44); c.lineTo(Math.sin(-sw) * 22, -2); c.stroke();
+  c.fillStyle = o.coat; c.beginPath(); c.moveTo(-10, -92); c.lineTo(10, -92); c.lineTo(o.long ? 15 : 12, o.long ? -30 : -42); c.lineTo(o.long ? -15 : -12, o.long ? -30 : -42); c.closePath(); c.fill();
+  c.strokeStyle = o.coat; c.lineWidth = 6; c.beginPath(); c.moveTo(0, -88); c.lineTo(Math.sin(-sw) * 14, -56); c.stroke();
+  if (o.bag) { c.fillStyle = o.bag; rrect(c, Math.sin(-sw) * 14 - 5, -58, 11, 12, 2); c.fill(); }
+  if (o.phone) { c.fillStyle = "#111"; c.fillRect(8, -82, 4, 7); c.strokeStyle = o.coat; c.beginPath(); c.moveTo(4, -86); c.lineTo(10, -80); c.stroke(); }
+  c.fillStyle = "#e3c1a5"; ell(c, 2, -101, 8, 9); c.fill();
+  c.fillStyle = o.cap || o.hair; c.beginPath(); c.ellipse(0, -104, 9, 7, 0, Math.PI, TAU); c.fill(); if (!o.cap) c.fillRect(-9, -104, 6, 9);
+  if (o.umbrella) { c.strokeStyle = "#222"; c.lineWidth = 1.5; c.beginPath(); c.moveTo(4, -84); c.lineTo(4, -128); c.stroke(); c.fillStyle = o.umbrella; c.beginPath(); c.moveTo(-24, -122); c.quadraticCurveTo(4, -150, 32, -122); c.closePath(); c.fill(); }
+  c.restore();
+}
+function crowd(n, s){
+  return function(c, t, scroll, VW){
+    const span = VW + 300;
+    for (let i = 0; i < n; i++) {
+      const dir = hash(i * 17) < .5 ? -1 : 1, v = 26 + hash(i * 5) * 22;
+      const x = ((i * span / n + hash(i * 3) * 120 - scroll * .92 + dir * t * v) % span + span) % span - 150;
+      walker(c, x, s * (.9 + hash(i * 9) * .15), t + i, WALK[i % WALK.length], dir);
+    }
+  };
 }
 
 /* ───────── Препятствия ───────── */
