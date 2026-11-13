@@ -70,7 +70,7 @@ En la portada de cada idioma, encima de las novelas, hay un pequeño selector «
 
 ## Libros-juego (elige tu propia aventura)
 
-Una novela con `"gamebook": true` en `catalog.json` se lee como libro-juego: cada episodio termina con una lista de decisiones y el lector salta al episodio que elige. Ahora: «Мост» (`novels/most/`, 24 episodios y 22 finales: 7 trágicos, 7 neutrales, 7 felices y 1 de boda).
+Una novela con `"gamebook": true` en `catalog.json` se lee como libro-juego: cada episodio termina con una lista de decisiones y el lector salta al episodio que elige. Ahora no hay ninguna en el sitio: «Мост» se publica por separado en el repositorio `luisfader/most`.
 
 - Las decisiones van al final del episodio, en un bloque `::: choices` con la pregunta en la misma línea y una opción por línea, enlazando al archivo del episodio:
 
