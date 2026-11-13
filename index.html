@@ -1801,7 +1801,9 @@ function exMusic(n, pane, T){
 function loadRunner(cb){
   if (window.LitmirRunner) return cb();
   if (!document.getElementById("rnCss")) { const l = document.createElement("link"); l.id = "rnCss"; l.rel = "stylesheet"; l.href = "games/runner/runner.css"; document.head.appendChild(l); }
-  const s = document.createElement("script"); s.src = "games/runner/runner.js"; s.onload = cb; document.head.appendChild(s);
+  // runner.js — движок; дальше подключаются уровни других романов (rezonans.js — «Резонанс любви»)
+  const add = (src, next) => { const s = document.createElement("script"); s.src = src; s.onload = next; s.onerror = next; document.head.appendChild(s); };
+  add("games/runner/runner.js", () => add("games/runner/rezonans.js", cb));
 }
 function exGames(n, pane, T){
   pane.innerHTML = `<div class="loading">…</div>`;
