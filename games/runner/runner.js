@@ -462,7 +462,7 @@ function mount(el, opt){
     o.hit = true; trips++; stumble = .6; slow = .3; shake = .2; chill = 1; snd.hit();
     puff(PX + 14, GY, 8);
     const cs = L.curses || ["Ой!"], first = trips === 1 && L.firstCurse;
-    say(first ? L.firstCurse : cs[curseI++ % cs.length], 1.9);
+    say(first ? L.firstCurse : cs[curseI++ % cs.length], 2.8);
   }
   function hit(o){ if (o.d.trip) return trip(o); o.hit = true; hearts--; inv = 1.4; shake = .35; slow = .55; snd.hit(); sparkle(PX + 6, GY - py - 50, "rgba(255,120,120,.9)", 14); if (hearts <= 0) { state = "over"; endT = 0; snd.lose(); fails++; try { sessionStorage.setItem(keyFail, fails); } catch(e) {} } }
   function update(dt){
@@ -474,7 +474,7 @@ function mount(el, opt){
     if (meet) meet.x -= speed * dt;
     if (state === "meet") {
       meetT += dt;
-      const lines = L.meet.lines, step = 2.6, i = Math.floor((meetT - .3) / step);
+      const lines = L.meet.lines, step = 4.4, i = Math.floor((meetT - .3) / step);
       if (i >= 0 && i < lines.length && i !== meetI) { meetI = i; say(lines[i][1], step - .15, lines[i][0]); }
       if (meetT > .3 + lines.length * step + .2 && ovEnd.hidden) showEnd();
     }
@@ -535,17 +535,17 @@ function mount(el, opt){
   }
   // ── отрисовка
   function speech(x, y, text, a){
-    c.save(); c.globalAlpha = a; c.font = "600 14px system-ui, -apple-system, Segoe UI, sans-serif";
+    c.save(); c.globalAlpha = a; c.font = "600 17px system-ui, -apple-system, Segoe UI, sans-serif";
     const words = text.split(" "), lines = []; let cur = "";
-    for (const wd of words) { const tst = cur ? cur + " " + wd : wd; if (c.measureText(tst).width > 230 && cur) { lines.push(cur); cur = wd; } else cur = tst; }
+    for (const wd of words) { const tst = cur ? cur + " " + wd : wd; if (c.measureText(tst).width > Math.min(310, VW - 40) && cur) { lines.push(cur); cur = wd; } else cur = tst; }
     lines.push(cur);
-    const w = Math.max(...lines.map(l => c.measureText(l).width)) + 22, h = lines.length * 18 + 12;
+    const w = Math.max(...lines.map(l => c.measureText(l).width)) + 26, h = lines.length * 22 + 14;
     const x0 = clamp(x - w / 2, 6, VW - w - 6), y0 = Math.max(6, y - h - 9);
     c.fillStyle = "rgba(0,0,0,.18)"; rrect(c, x0 + 2, y0 + 3, w, h, 10); c.fill();
     c.fillStyle = "#fffdf8"; rrect(c, x0, y0, w, h, 10); c.fill();
     c.beginPath(); const tx = clamp(x, x0 + 14, x0 + w - 14); c.moveTo(tx - 7, y0 + h - 1); c.lineTo(tx - 2, y0 + h + 9); c.lineTo(tx + 6, y0 + h - 1); c.fill();
     c.fillStyle = "#2a2018"; c.textBaseline = "top"; c.textAlign = "left";
-    lines.forEach((l, i) => c.fillText(l, x0 + 11, y0 + 7 + i * 18));
+    lines.forEach((l, i) => c.fillText(l, x0 + 13, y0 + 8 + i * 22));
     c.restore(); c.textBaseline = "alphabetic";
   }
   function heart(x, y, s, col){ c.fillStyle = col; c.beginPath(); c.moveTo(x, y + s * .3); c.bezierCurveTo(x, y, x - s * .5, y, x - s * .5, y + s * .3); c.bezierCurveTo(x - s * .5, y + s * .6, x, y + s * .8, x, y + s); c.bezierCurveTo(x, y + s * .8, x + s * .5, y + s * .6, x + s * .5, y + s * .3); c.bezierCurveTo(x + s * .5, y, x, y, x, y + s * .3); c.fill(); }
@@ -563,6 +563,7 @@ function mount(el, opt){
     if (T.lighthouse) { const lx = ((1200 - scroll * .12) % TW + TW) % TW; if (lx < VW + 60) { c.fillStyle = "#1a2636"; c.beginPath(); c.moveTo(lx - 9, 232); c.lineTo(lx - 5, 150); c.lineTo(lx + 5, 150); c.lineTo(lx + 9, 232); c.fill(); ell(c, lx, 146, 6, 6, "#ffe9a8"); const a = time * 1.4; c.save(); c.translate(lx, 146); c.scale(Math.cos(a), 1); const g = c.createLinearGradient(0, 0, 300, 0); g.addColorStop(0, "rgba(255,240,190,.35)"); g.addColorStop(1, "rgba(255,240,190,0)"); c.fillStyle = g; c.beginPath(); c.moveTo(0, -3); c.lineTo(300, -26); c.lineTo(300, 26); c.lineTo(0, 3); c.fill(); c.restore(); glow(c, lx, 146, 30, "255,235,170", .6); } }
     if (T.shafts) { c.save(); c.globalCompositeOperation = "lighter"; for (let i = 0; i < 3; i++) { const sx = ((i * 520 + 200 - scroll * .3) % 1560 + 1560) % 1560 - 200; const g = c.createLinearGradient(sx, 80, sx + 160, GY); g.addColorStop(0, "rgba(255,200,120,.16)"); g.addColorStop(1, "rgba(255,200,120,0)"); c.fillStyle = g; c.beginPath(); c.moveTo(sx, 80); c.lineTo(sx + 18, 80); c.lineTo(sx + 200, GY); c.lineTo(sx + 120, GY); c.fill(); } c.restore(); }
     T.ground(c, scroll, VW + 2);
+    if (T.back) T.back(c, time, scroll, VW);   // прохожие и другие фигуры за дорожкой
     for (const ly of layers) { if (ly.f < 1) continue; const off = scroll % TW; c.drawImage(ly.cv, -off, 0, TW, H); if (TW - off < VW) c.drawImage(ly.cv, TW - off, 0, TW, H); }
     // предметы
     for (const it of items) ITEM[L.item](c, it.x, it.y + Math.sin(it.t * 3) * 4, it.t, it.id);

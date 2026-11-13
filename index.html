@@ -555,12 +555,20 @@ article.chapter h3{font-family:var(--sans);font-size:.72em;letter-spacing:.12em;
 .music .m-status{font-size:11px;color:var(--muted);max-width:185px}
 .music .m-status:empty{display:none}
 /* Разделы романа: саундтрек, игры, галерея */
-.ex{margin:22px 0 26px;border:1px solid var(--line);border-radius:18px;background:var(--paper);box-shadow:var(--shadow);overflow:hidden}
-.ex-open{all:unset;box-sizing:border-box;width:100%;display:flex;align-items:center;gap:14px;padding:16px 18px;cursor:pointer}
+/* Кнопка «Разделы романа» выделена: цветной фон, тень, мягкое свечение и блик, чтобы её замечали */
+.ex{position:relative;margin:24px 0 28px;border:1.5px solid color-mix(in srgb,var(--accent) 45%,var(--line));border-radius:20px;background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 13%,var(--paper)),var(--paper) 62%);box-shadow:0 0 0 0 color-mix(in srgb,var(--accent) 30%,transparent),0 10px 28px color-mix(in srgb,var(--accent) 20%,transparent);overflow:hidden;animation:exGlow 3.4s ease-in-out infinite}
+@keyframes exGlow{50%{box-shadow:0 0 0 5px color-mix(in srgb,var(--accent) 14%,transparent),0 14px 38px color-mix(in srgb,var(--accent) 34%,transparent)}}
+.ex::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(110deg,transparent 35%,rgba(255,255,255,.45) 50%,transparent 65%);transform:translateX(-100%);animation:exShine 5.5s ease-in-out infinite}
+@keyframes exShine{0%,62%{transform:translateX(-100%)}82%,100%{transform:translateX(100%)}}
+.ex.on{animation:none}.ex.on::after{display:none}
+@media (prefers-reduced-motion:reduce){.ex,.ex::after{animation:none}.ex::after{display:none}}
+.ex-open{all:unset;box-sizing:border-box;width:100%;display:flex;align-items:center;gap:14px;padding:18px 18px;cursor:pointer;position:relative;z-index:1}
+.ex-open:hover .ex-ic i{transform:translateY(-2px) rotate(-6deg)}
 .ex-open:focus-visible{outline:2px solid var(--accent);outline-offset:-4px;border-radius:18px}
-.ex-ic{display:flex}.ex-ic i{font-style:normal;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-size:17px;background:var(--accent-soft);color:var(--accent);border:2px solid var(--paper);margin-left:-10px}.ex-ic i:first-child{margin-left:0}
-.ex-lbl{flex:1;display:flex;flex-direction:column;gap:2px;font-family:var(--sans)}.ex-lbl b{font-size:16px;color:var(--ink)}.ex-lbl small{font-size:13px;color:var(--muted)}
-.ex-ch{font-size:26px;color:var(--muted);transition:transform .2s;line-height:1}.ex.on .ex-ch{transform:rotate(90deg)}
+.ex-ic{display:flex}.ex-ic i{font-style:normal;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font-size:20px;color:#fff;background:var(--accent);border:2.5px solid var(--paper);margin-left:-12px;box-shadow:0 4px 12px rgba(0,0,0,.18);transition:transform .2s}.ex-ic i:first-child{margin-left:0}
+.ex-ic .ex-i-music{background:linear-gradient(135deg,#9b6bd6,#6a3fb0)}.ex-ic .ex-i-games{background:linear-gradient(135deg,#f6a53a,#e0632a)}.ex-ic .ex-i-gallery{background:linear-gradient(135deg,#3fb6a8,#2a7f9e)}
+.ex-lbl{flex:1;display:flex;flex-direction:column;gap:2px;font-family:var(--sans)}.ex-lbl b{font-size:17px;color:var(--accent)}.ex-lbl small{font-size:13px;color:var(--muted)}
+.ex-ch{font-size:24px;color:#fff;background:var(--accent);width:36px;height:36px;border-radius:50%;display:grid;place-items:center;transition:transform .2s;line-height:1;flex:none;box-shadow:0 4px 12px color-mix(in srgb,var(--accent) 40%,transparent)}.ex.on .ex-ch{transform:rotate(90deg)}
 .ex-body{border-top:1px solid var(--line);padding:14px 16px 18px}
 .ex-tabs{display:flex;gap:6px;background:var(--bg);border-radius:999px;padding:4px;margin-bottom:14px}
 .ex-tabs button{flex:1;font:600 13px var(--sans);border:0;border-radius:999px;padding:9px 6px;background:transparent;color:var(--muted);cursor:pointer;white-space:nowrap}
@@ -1762,7 +1770,7 @@ function extrasHTML(n){
   const T = exT(n.lang);
   return `<section class="ex" id="ex">
     <button type="button" class="ex-open" aria-expanded="false" aria-controls="exBody">
-      <span class="ex-ic">${tabs.map(k => `<i>${EX_IC[k]}</i>`).join("")}</span>
+      <span class="ex-ic">${tabs.map(k => `<i class="ex-i-${k}">${EX_IC[k]}</i>`).join("")}</span>
       <span class="ex-lbl"><b>${esc(T.btn)}</b><small>${tabs.map(k => esc(T[k])).join(" · ")}</small></span>
       <span class="ex-ch" aria-hidden="true">›</span></button>
     <div class="ex-body" id="exBody" hidden>
