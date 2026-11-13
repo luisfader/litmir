@@ -1,0 +1,160 @@
+{
+ "title": "¿Por qué?",
+ "intro": "Catorce preguntas sobre Mendoza y la familia Fader. Cada una tiene dos respuestas: una es verdad y la otra… bueno, la otra es muy mendocina, pero no.",
+ "questions": [
+  {
+   "img": "novels/el-misterio-de-los-fader/img/09.jpg",
+   "q": "¿Por qué Mendoza está llena de acequias?",
+   "a": [
+    "Porque es un oasis en medio del desierto: el agua del deshielo de los Andes se reparte por canales, como ya hacían los huarpes",
+    "Porque a los mendocinos les gusta pescar en la vereda"
+   ],
+   "ok": 0,
+   "why": "En Mendoza casi no llueve. Sin acequias no habría árboles en las calles ni viñedos. En la novela, el frasco de hidromiel cae a una acequia, viaja medio Mendoza y termina regando la finca Fader."
+  },
+  {
+   "img": "novels/el-misterio-de-los-fader/img/07.jpg",
+   "q": "¿Por qué se celebra la Fiesta de la Vendimia?",
+   "a": [
+    "Para despedir el invierno con fuegos artificiales",
+    "Para festejar la cosecha de la uva y el trabajo de los viñateros"
+   ],
+   "ok": 1,
+   "why": "La Fiesta Nacional de la Vendimia se hace en Mendoza desde 1936, a fines del verano, cuando se cosecha la uva. Cada departamento elige su reina y en el anfiteatro se corona a la reina nacional."
+  },
+  {
+   "img": "novels/el-misterio-de-los-fader/img/06.jpg",
+   "q": "¿Por qué Natalia, que es rusa, termina coronada reina de la Vendimia?",
+   "a": [
+    "Porque la candidata de la Sexta Sección se desmayó y necesitaban una reina YA",
+    "Porque ganó un concurso de pisar uvas en Moscú"
+   ],
+   "ok": 0,
+   "why": "Pisar uvas en Moscú, con la nieve, habría sido complicado. Natalia estaba ahí de casualidad y la suben al escenario a último momento. Ella solo pregunta: «¿Y cuando sepan que soy rusa?»"
+  },
+  {
+   "img": "characters/img/fernando-fader-1.jpg",
+   "q": "¿Por qué Fernando Fader es famoso en la Argentina?",
+   "a": [
+    "Porque inventó el Malbec",
+    "Porque fue uno de los grandes pintores argentinos de paisajes, con una luz impresionista"
+   ],
+   "ok": 1,
+   "why": "Fernando Fader (1882–1935) nació en Burdeos, en una familia de origen alemán, y se crió en Mendoza. Pintó los murales de la casa familiar de Mayor Drummond, que hoy es un museo. En la novela, sus cuadros esconden una pista sobre el hidromiel."
+  },
+  {
+   "img": "novels/el-misterio-de-los-fader/img/04.jpg",
+   "q": "¿Por qué en Mendoza se hace tan buen vino?",
+   "a": [
+    "Por el sol, el clima seco, la altura y el agua de riego que baja de la cordillera",
+    "Porque llueve todos los días y las uvas toman mucha agua"
+   ],
+   "ok": 0,
+   "why": "Días de sol, noches frescas y poca humedad: las uvas maduran despacio y sanas. El Malbec llegó de Francia y encontró en Mendoza su segundo hogar. Y en la finca Fader, además, las uvas brillan…"
+  },
+  {
+   "img": "characters/img/luis-fader-2.jpg",
+   "q": "¿Por qué brillan las uvas de la finca Fader?",
+   "a": [
+    "Porque Sergio las pinta de noche con témpera fosforescente",
+    "Porque el hidromiel se mezcló con el agua de riego de la finca"
+   ],
+   "ok": 1,
+   "why": "Adolfo lo confiesa en la comisaría: el hidromiel se mezcló con el agua y ahora las uvas tienen magia. Quien las come se llena de energía, y Luis dibuja las montañas como nunca."
+  },
+  {
+   "img": "novels/el-misterio-de-los-fader/img/10.jpg",
+   "q": "¿Por qué hay una protesta en la Plaza Independencia?",
+   "a": [
+    "Contra un monumento a Julio Argentino Roca y la Conquista del Desierto",
+    "Porque subió el precio de las empanadas"
+   ],
+   "ok": 0,
+   "why": "María Silvana Roca, tataranieta de Roca, sube al escenario y habla de las culturas destruidas. Los carteles dicen «La masacre del desierto no se olvida». Las empanadas, por suerte, siguen a un precio razonable."
+  },
+  {
+   "img": "novels/el-misterio-de-los-fader/img/01.jpg",
+   "q": "¿Por qué los mendocinos le temen al viento Zonda?",
+   "a": [
+    "Porque trae nieve en pleno enero",
+    "Porque es un viento caliente y seco que baja de la cordillera y levanta tierra"
+   ],
+   "ok": 1,
+   "why": "El Zonda pierde la humedad al cruzar los Andes y llega a la ciudad seco y caliente: sube la temperatura, vuela la tierra y todos andan de mal humor. Karl Fader lo dice en alemán: «Nada es peor que el viento Zonda»."
+  },
+  {
+   "img": "characters/img/heinrich-1.jpg",
+   "q": "¿Por qué Cacheuta es famosa?",
+   "a": [
+    "Por sus aguas termales junto al río Mendoza",
+    "Por tener la única playa de mar de Mendoza"
+   ],
+   "ok": 0,
+   "why": "En Cacheuta sale agua caliente de la montaña. Hubo un gran hotel termal que un aluvión destruyó en 1934. En la novela, entre sus ruinas se esconden un mapa, la serpiente Treng-Treng y el hidromiel."
+  },
+  {
+   "img": "novels/el-misterio-de-los-fader/img/08.jpg",
+   "q": "¿Por qué la Vía Blanca es tan esperada?",
+   "a": [
+    "Porque es una carrera de autos sobre la nieve",
+    "Porque es el desfile nocturno de las reinas, con carros iluminados"
+   ],
+   "ok": 1,
+   "why": "La Vía Blanca de las Reinas es el desfile de noche de la Vendimia: carros llenos de luces, reinas y uvas que vuelan hacia el público. Natalia tira uvas desde su carro y la gente las ataja."
+  },
+  {
+   "img": "novels/el-misterio-de-los-fader/img/05.jpg",
+   "q": "¿Por qué el anfiteatro de la Vendimia es especial?",
+   "a": [
+    "Porque es un teatro griego al aire libre entre los cerros del Parque General San Martín",
+    "Porque está bajo tierra, en una bodega abandonada"
+   ],
+   "ok": 0,
+   "why": "El teatro griego Frank Romero Day está al pie de los cerros. Ahí se corona a la reina… y en la novela, ahí se libra la gran batalla final."
+  },
+  {
+   "img": "characters/img/adolfo-fader-1.jpg",
+   "q": "¿Por qué el zorro le muerde el trasero a Adolfo?",
+   "a": [
+    "Porque Adolfo le robó el último choripán",
+    "Porque defiende la finca Fader: es su guardián"
+   ],
+   "ok": 1,
+   "why": "Adolfo llega a la finca a llevarse el frasco de hidromiel y el zorro se lo impide como un rayo. «Es nuestro guardián», dice Natalia. Marcos sospecha que el zorro sabe más de lo que parece."
+  },
+  {
+   "img": "characters/img/sergio-fader-1.jpg",
+   "q": "¿Por qué Sergio maneja un Volkswagen Gacel?",
+   "a": [
+    "Porque es un clásico argentino, «tan mendocino como las montañas»",
+    "Porque es el auto oficial de la policía alemana"
+   ],
+   "ok": 0,
+   "why": "El Gacel se fabricó en la Argentina en los años 80 y 90. En la novela aguanta persecuciones por el centro de Mendoza y lleva al zorro en el asiento de atrás."
+  },
+  {
+   "img": "characters/img/luis-fader-1.jpg",
+   "q": "¿Por qué Luis se vuelve inmortal?",
+   "a": [
+    "Porque toma mate todos los días",
+    "Porque destruye el cetro cargado de hidromiel y es el elegido para recibir su energía"
+   ],
+   "ok": 1,
+   "why": "Karl se lo dice en el anfiteatro: «Sos inmortal ahora, Luis». Lo del mate, de todos modos, no le hace mal a nadie."
+  }
+ ],
+ "end": [
+  {
+   "min": 12,
+   "t": "¡Sos más mendocino que el Malbec! Te invitan a la próxima Vendimia."
+  },
+  {
+   "min": 8,
+   "t": "¡Muy bien! Con un poco más de práctica, te dan una finca en Luján de Cuyo."
+  },
+  {
+   "min": 0,
+   "t": "Hmm… El Zonda te desordenó las ideas. Probá de nuevo, con un mate al lado."
+  }
+ ]
+}
