@@ -3071,29 +3071,29 @@
    "type": "story",
    "kind": "quote",
    "prompt": "¿De qué novela es esta frase?",
-   "question": "«Trabajo en esta estación desde hace cuarenta años. ¿Usted va a subir al tren fantasma?»",
+   "question": "«Una hora después, por el pasillo pasan corriendo Marcos, Alicia y Lucrecia. ¡Se escapan!»",
    "options": [
-    "La chica del retrato",
     "Anomalía",
     "El tren",
-    "Ondas de amor"
+    "El misterio de los Fader: Operación Londres",
+    "La chica del retrato"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "Es de «El tren»."
   },
   {
    "type": "story",
    "kind": "quote",
    "prompt": "¿De qué novela es esta frase?",
-   "question": "«Antes de despedirse, Martín y Marina intercambian sus números de teléfono.»",
+   "question": "«—Condena golpea el martillo—. ¡Diez años en el vagón prisión! ¡Para los dos!»",
    "options": [
     "Anomalía",
-    "La ciudad secreta",
+    "El tren",
     "La chica del retrato",
     "Las coordenadas del amor"
    ],
    "answer": 1,
-   "why": "Es de «La ciudad secreta»."
+   "why": "Es de «El tren»."
   },
   {
    "type": "story",
@@ -3101,10 +3101,10 @@
    "prompt": "¿De qué novela es esta frase?",
    "question": "«—Cerca de aquí… más o menos —responde ella, y mira hacia las montañas.»",
    "options": [
-    "Anomalía",
-    "La ciudad secreta",
     "Lluvia de meteoritos",
-    "El tren fantasma"
+    "La ciudad secreta",
+    "El tren fantasma",
+    "Ondas de amor"
    ],
    "answer": 1,
    "why": "Es de «La ciudad secreta»."
@@ -3113,11 +3113,25 @@
    "type": "story",
    "kind": "quote",
    "prompt": "¿De qué novela es esta frase?",
-   "question": "«—Ustedes no están al mando de nadie —dijo Robert, y su voz sonó más firme de lo que esperaba—.»",
+   "question": "«Antes de despedirse, Martín y Marina intercambian sus números de teléfono.»",
+   "options": [
+    "La Corazonada 2: El Refugio",
+    "La Corazonada",
+    "Las coordenadas del amor",
+    "La ciudad secreta"
+   ],
+   "answer": 3,
+   "why": "Es de «La ciudad secreta»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "¿De qué novela es esta frase?",
+   "question": "«Las llamas pintaban sombras danzantes en los rostros de los sobrevivientes, todos fijos en Robert.»",
    "options": [
     "El tren fantasma",
-    "El tren",
-    "Lluvia de meteoritos",
+    "El misterio de los Fader: Operación Londres",
+    "El impostor",
     "La Corazonada"
    ],
    "answer": 3,
@@ -3127,63 +3141,35 @@
    "type": "story",
    "kind": "quote",
    "prompt": "¿De qué novela es esta frase?",
-   "question": "«—Queridos sobrevivientes —dijo, y esta vez todas las miradas estaban puestas en él, expectantes—.»",
+   "question": "«La teoría de la Utopía se enfrentaba de pronto a su primera, y más sangrienta, prueba práctica.»",
    "options": [
-    "El impostor",
-    "La Corazonada",
     "El tren fantasma",
-    "Anomalía"
-   ],
-   "answer": 1,
-   "why": "Es de «La Corazonada»."
-  },
-  {
-   "type": "story",
-   "kind": "quote",
-   "prompt": "¿De qué novela es esta frase?",
-   "question": "«Sus dos compañeros corrieron hacia él, pero Robert, movido por un instinto que no sabía que poseía, los enfrentó con la misma eficacia despiadada.»",
-   "options": [
-    "Anomalía",
+    "El misterio de los Fader: Operación Londres",
     "La Corazonada",
-    "Ondas de amor",
-    "Lluvia de meteoritos"
+    "El misterio de los Fader"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Es de «La Corazonada»."
   },
   {
    "type": "story",
    "kind": "quote",
    "prompt": "¿De qué novela es esta frase?",
-   "question": "«Después miró a Luis, arrodillado en el charco, con los ojos brillantes y el anillo temblándole en la mano.»",
+   "question": "«—él estalló, la voz quebrada por la desesperación—. ¡Esta guerra es entre los ricos! ¡Entre políticos e industriales militares!»",
    "options": [
-    "El misterio de los Fader",
-    "Ondas de amor",
-    "El impostor",
-    "La Corazonada 2: El Refugio"
-   ],
-   "answer": 3,
-   "why": "Es de «La Corazonada 2: El Refugio»."
-  },
-  {
-   "type": "story",
-   "kind": "quote",
-   "prompt": "¿De qué novela es esta frase?",
-   "question": "«Esa noche, por primera vez en mucho tiempo, Luis durmió tres horas seguidas.»",
-   "options": [
+    "La Corazonada",
+    "La ciudad secreta",
     "El tren",
-    "El misterio de los Fader",
-    "Ondas de amor",
-    "La Corazonada 2: El Refugio"
+    "El misterio de los Fader: Operación Londres"
    ],
-   "answer": 3,
-   "why": "Es de «La Corazonada 2: El Refugio»."
+   "answer": 0,
+   "why": "Es de «La Corazonada»."
   },
   {
    "type": "story",
    "kind": "quote",
    "prompt": "¿De qué novela es esta frase?",
-   "question": "«Una cardióloga aprende a escuchar lo que late debajo de las palabras, y debajo de las de Luis latía algo que no tenía nada que ver con murallas.»",
+   "question": "«—Suena a lugar donde te quedás —corrigió Mirna, sin dejar de mirar las compuertas.»",
    "options": [
     "Las coordenadas del amor",
     "Ondas de amor",
@@ -3197,14 +3183,42 @@
    "type": "story",
    "kind": "quote",
    "prompt": "¿De qué novela es esta frase?",
-   "question": "«El colectivo se sacudía sobre el asfalto mientras Julieta apretaba con fuerza el pasamanos, los nudillos blancos.»",
+   "question": "«—Luis sonrió con esa sonrisa de vendedor que ella todavía no sabía si le gustaba—.»",
    "options": [
-    "Lluvia de meteoritos",
-    "Anomalía",
-    "Ondas de amor",
-    "El impostor"
+    "El tren",
+    "La Corazonada 2: El Refugio",
+    "La chica del retrato",
+    "Lluvia de meteoritos"
    ],
    "answer": 1,
+   "why": "Es de «La Corazonada 2: El Refugio»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "¿De qué novela es esta frase?",
+   "question": "«El Polaco tenía setenta y dos años, una boina siempre manchada de grasa y una desconfianza absoluta hacia cualquier cosa que no tuviera motor.»",
+   "options": [
+    "Lluvia de meteoritos",
+    "La ciudad secreta",
+    "La Corazonada 2: El Refugio",
+    "Las coordenadas del amor"
+   ],
+   "answer": 2,
+   "why": "Es de «La Corazonada 2: El Refugio»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "¿De qué novela es esta frase?",
+   "question": "«La gente a su alrededor hablaba con ese tono nasal y acelerado tan típico de Buenos Aires.»",
+   "options": [
+    "El tren fantasma",
+    "La ciudad secreta",
+    "El tren",
+    "Anomalía"
+   ],
+   "answer": 3,
    "why": "Es de «Anomalía»."
   },
   {
@@ -3214,54 +3228,26 @@
    "question": "«La cita era en la fuente del Kilómetro Cero, un lugar simbólico ahora que Mendoza era el centro del país.»",
    "options": [
     "Anomalía",
-    "El misterio de los Fader: Operación Londres",
-    "El misterio de los Fader",
-    "Lluvia de meteoritos"
-   ],
-   "answer": 0,
-   "why": "Es de «Anomalía»."
-  },
-  {
-   "type": "story",
-   "kind": "quote",
-   "prompt": "¿De qué novela es esta frase?",
-   "question": "«Estaba segura de haber estado en Plaza España, pero ahora los edificios le resultaban extrañamente diferentes.»",
-   "options": [
-    "Anomalía",
-    "Ondas de amor",
-    "La ciudad secreta",
-    "El tren fantasma"
-   ],
-   "answer": 0,
-   "why": "Es de «Anomalía»."
-  },
-  {
-   "type": "story",
-   "kind": "quote",
-   "prompt": "¿De qué novela es esta frase?",
-   "question": "«Nicolás explicó que esa persona también le había enviado el anuncio de Tatiana.»",
-   "options": [
-    "Anomalía",
     "El tren fantasma",
+    "El tren",
+    "Ondas de amor"
+   ],
+   "answer": 0,
+   "why": "Es de «Anomalía»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "¿De qué novela es esta frase?",
+   "question": "«Estoy harta de estos infelices..\", pensó, y decidió seguir caminando para despejar la cabeza.»",
+   "options": [
     "La chica del retrato",
+    "El tren fantasma",
+    "Anomalía",
     "Ondas de amor"
    ],
    "answer": 2,
-   "why": "Es de «La chica del retrato»."
-  },
-  {
-   "type": "story",
-   "kind": "quote",
-   "prompt": "¿De qué novela es esta frase?",
-   "question": "«—Tenga cuidado con los mensajes de desconocidos —aconsejó el policía—.»",
-   "options": [
-    "La Corazonada 2: El Refugio",
-    "La chica del retrato",
-    "Lluvia de meteoritos",
-    "El tren"
-   ],
-   "answer": 1,
-   "why": "Es de «La chica del retrato»."
+   "why": "Es de «Anomalía»."
   },
   {
    "type": "story",
@@ -3281,29 +3267,29 @@
    "type": "story",
    "kind": "quote",
    "prompt": "¿De qué novela es esta frase?",
-   "question": "«Nos conocimos el martes en la librería, ¿recuerdas? ¿Cenamos juntos esta noche?»",
+   "question": "«Nicolás explicó que esa persona también le había enviado el anuncio de Tatiana.»",
    "options": [
+    "La ciudad secreta",
     "La chica del retrato",
-    "El impostor",
-    "El tren fantasma",
-    "Ondas de amor"
+    "Ondas de amor",
+    "El misterio de los Fader"
    ],
    "answer": 1,
-   "why": "Es de «El impostor»."
+   "why": "Es de «La chica del retrato»."
   },
   {
    "type": "story",
    "kind": "quote",
    "prompt": "¿De qué novela es esta frase?",
-   "question": "«Juan Carlos sigue de rodillas, mojándose bajo la lluvia, con la caja abierta en la mano.»",
+   "question": "«—Tenga cuidado con los mensajes de desconocidos —aconsejó el policía—.»",
    "options": [
-    "El impostor",
+    "El tren",
     "La Corazonada",
-    "Las coordenadas del amor",
-    "El misterio de los Fader"
+    "Ondas de amor",
+    "La chica del retrato"
    ],
-   "answer": 0,
-   "why": "Es de «El impostor»."
+   "answer": 3,
+   "why": "Es de «La chica del retrato»."
   },
   {
    "type": "story",
@@ -3323,26 +3309,40 @@
    "type": "story",
    "kind": "quote",
    "prompt": "¿De qué novela es esta frase?",
-   "question": "«Al llegar a un claro del bosque, la brújula empezó a vibrar en la mano de Alejandro.»",
+   "question": "«Él sabe que a Florencia le gustan las cosas caras, pero la ama de todo corazón.»",
    "options": [
-    "El tren",
-    "Las coordenadas del amor",
+    "El misterio de los Fader",
     "Lluvia de meteoritos",
-    "La ciudad secreta"
+    "La Corazonada",
+    "El impostor"
    ],
-   "answer": 1,
-   "why": "Es de «Las coordenadas del amor»."
+   "answer": 3,
+   "why": "Es de «El impostor»."
   },
   {
    "type": "story",
    "kind": "quote",
    "prompt": "¿De qué novela es esta frase?",
-   "question": "«Pensó en la esperanza que lo había llevado hasta allí. ¿Estaba seguro?»",
+   "question": "«Nos conocimos el martes en la librería, ¿recuerdas? ¿Cenamos juntos esta noche?»",
    "options": [
-    "Ondas de amor",
-    "La ciudad secreta",
     "Las coordenadas del amor",
-    "La chica del retrato"
+    "El tren",
+    "La chica del retrato",
+    "El impostor"
+   ],
+   "answer": 3,
+   "why": "Es de «El impostor»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "¿De qué novela es esta frase?",
+   "question": "«—insistió Matías—. ¿Un camino de verdad, en el bosque? ¿O el camino de la vida?»",
+   "options": [
+    "La ciudad secreta",
+    "La chica del retrato",
+    "Las coordenadas del amor",
+    "El misterio de los Fader: Operación Londres"
    ],
    "answer": 2,
    "why": "Es de «Las coordenadas del amor»."
@@ -3351,12 +3351,26 @@
    "type": "story",
    "kind": "quote",
    "prompt": "¿De qué novela es esta frase?",
-   "question": "«Pensó en el sueño de toda su vida, en su padre, en la responsabilidad de ser el jefe, en Lucía y Matías esperándolo.»",
+   "question": "«Alejandro se acercó y sacó su cuaderno, donde Lucía le había apuntado algunas letras eslavas.»",
    "options": [
-    "La ciudad secreta",
     "Las coordenadas del amor",
-    "La Corazonada 2: El Refugio",
-    "El tren fantasma"
+    "Anomalía",
+    "El impostor",
+    "El tren"
+   ],
+   "answer": 0,
+   "why": "Es de «Las coordenadas del amor»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "¿De qué novela es esta frase?",
+   "question": "«Sacó de la mochila dos walkie-talkies, se quedó con uno y le dio el otro a Lucía.»",
+   "options": [
+    "El misterio de los Fader",
+    "Las coordenadas del amor",
+    "La chica del retrato",
+    "La Corazonada"
    ],
    "answer": 1,
    "why": "Es de «Las coordenadas del amor»."
@@ -3367,12 +3381,12 @@
    "prompt": "La trama",
    "question": "En «La Corazonada», ¿cómo llama Robert a la fortaleza que quieren construir?",
    "options": [
-    "Nueva Misión",
-    "Rojo Fuego",
     "Nuestra Utopía",
-    "Kilómetro Cero"
+    "Rojo Fuego",
+    "Kilómetro Cero",
+    "Nueva Misión"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "«Una fortaleza, un nuevo comienzo. Lo llamamos “Nuestra Utopía”»."
   },
   {
@@ -3381,12 +3395,12 @@
    "prompt": "La trama",
    "question": "En «La Corazonada», ¿qué instrumento toca Natalia?",
    "options": [
-    "El violín",
-    "El piano",
     "La flauta",
-    "La guitarra"
+    "El violín",
+    "La guitarra",
+    "El piano"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "Natalia llena el atardecer con su violín eléctrico portátil."
   },
   {
@@ -3395,12 +3409,12 @@
    "prompt": "La trama",
    "question": "En «La Corazonada», ¿cómo llegan las tres mujeres al grupo de Robert?",
    "options": [
-    "En motos que robaron a los salvajes",
-    "A caballo por el desierto",
     "En un camión de la Central",
-    "En un tren abandonado"
+    "En motos que robaron a los salvajes",
+    "En un tren abandonado",
+    "A caballo por el desierto"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "«Las robamos», confiesa Natalia: escaparon de un grupo de salvajes."
   },
   {
@@ -3409,12 +3423,12 @@
    "prompt": "La trama",
    "question": "En «La Corazonada», ¿qué abre Sasha en Nuestra Utopía?",
    "options": [
-    "El café «Rojo Fuego»",
     "Una escuela de música",
     "Un taller de armas",
+    "El café «Rojo Fuego»",
     "El centro cultural «Sueño Turquesa»"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "El nombre es un homenaje a su cabello llameante."
   },
   {
@@ -3424,11 +3438,11 @@
    "question": "En «La Corazonada», ¿qué crean juntas Natalia y Oxana?",
    "options": [
     "Un hospital de campaña",
-    "Un centro cultural llamado «Sueño Turquesa»",
     "Una biblioteca subterránea",
+    "Un centro cultural llamado «Sueño Turquesa»",
     "Un café junto al lago"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Natalia aporta la música y Oxana sus pinturas del lago y la fortaleza."
   }
  ]
