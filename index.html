@@ -323,6 +323,7 @@ article.chapter blockquote{margin:1.2em 0;padding-left:1em;border-left:2px solid
 .pager{max-width:680px;margin:0 auto 80px;padding:0 20px;display:flex;justify-content:space-between;gap:12px}
 .comments{max-width:680px;margin:-32px auto 80px;padding:0 20px}
 .comments h2{font-family:var(--display);font-weight:500;font-size:28px;margin:0 0 16px;padding-top:28px;border-top:1px solid var(--line)}
+.pager a.rn-next b::before{content:"🎮 "}
 .pager a{flex:1;border:1px solid var(--line);border-radius:10px;padding:14px 16px;text-decoration:none;font-family:var(--sans);font-size:13px;color:var(--muted)}
 .pager a b{display:block;color:var(--ink);font-family:var(--serif);font-size:17px;font-weight:400;margin-top:2px}
 .pager a.next{text-align:right}
@@ -1738,12 +1739,43 @@ function toTop(){
   [60, 200, 450].forEach(ms => setTimeout(() => { if (!moved) go(); }, ms));
   setTimeout(() => { removeEventListener("touchstart", stop); removeEventListener("wheel", stop); }, 500);
 }
+/* Мини-игры между главами (games/runner/): в catalog.json у романа "runner": 5 — игра перед главами 6, 11, 16…
+   Глава открывается после победы; уже прочитанные главы не блокируются. */
+const RUN_NEXT = {ru:"Сначала игра", es:"Primero, un juego"};
+function runLevel(n, i){ const e = n.runner; if (!e || n.gamebook || i <= 1 || (i - 1) % e) return 0; return (i - 1) / e; }
+function runLocked(n, i){
+  const lv = runLevel(n, i); if (!lv) return false;
+  if (store.get("run:" + n.slug, []).includes(lv)) return false;
+  if (store.get("done:" + n.slug, []).some(d => d >= i)) return false;
+  if (window.LitmirRunner && !window.LitmirRunner.has(n.slug, lv)) return false;
+  return true;
+}
+function runnerGate(n, i, page){
+  const lv = runLevel(n, i), unlock = () => { const d = store.get("run:" + n.slug, []); if (!d.includes(lv)) { d.push(lv); store.set("run:" + n.slug, d); } };
+  const here = location.hash;
+  const go = () => {
+    if (location.hash !== here) return;
+    if (!window.LitmirRunner.has(n.slug, lv)) { unlock(); return reader(n, i, page); }
+    document.title = n.title;
+    app.innerHTML = `<div class="reader-bar"><div class="wrap"><a class="crumb" href="#/${n.slug}">← ${esc(n.title)}</a></div></div><div id="rnHost"></div>`;
+    window.onscroll = null; document.onkeydown = null; toTop();
+    const c = n.chapters[i-1];
+    window.LitmirRunner.mount(document.getElementById("rnHost"), {slug:n.slug, level:lv, nextNum:chapterNo(n, i), nextTitle:c && c.title, sfx,
+      onUnlock:unlock, onWin:() => { unlock(); reader(n, i, page); }});
+  };
+  if (window.LitmirRunner) return go();
+  app.innerHTML = `<div class="loading">…</div>`;
+  if (!document.getElementById("rnCss")) { const l = document.createElement("link"); l.id = "rnCss"; l.rel = "stylesheet"; l.href = "games/runner/runner.css"; document.head.appendChild(l); }
+  const s = document.createElement("script"); s.src = "games/runner/runner.js"; s.onload = go; s.onerror = () => { unlock(); reader(n, i, page); }; document.head.appendChild(s);
+}
+
 async function reader(n, idx, page){
   if (lang !== n.lang) setLang(n.lang);
   const chs = n.chapters;
   const i = Math.min(Math.max(idx,1), chs.length), c = chs[i-1];
   const L = UI[n.lang];
   if (c.type === "quiz") return lesson(n, i, c);
+  if (runLocked(n, i)) return runnerGate(n, i, page);
   app.innerHTML = `<div class="loading">…</div>`;
   let md = "";
   try { md = await getText(`novels/${n.slug}/${c.file}`, n); }
@@ -1785,7 +1817,7 @@ async function reader(n, idx, page){
   ${lastPage ? `${n.wip && i === chs.length ? `<div class="wipnote"><div>✎ ${esc(L.wipNote)}</div></div>` : ""}
   ${n.gamebook ? gbFooter(n, c) : `<nav class="pager">
     ${i>1 ? `<a href="${chapterHref(n, i-1)}">← ${esc(t("prev"))}<b>${esc(titleOf(i-1))}</b></a>` : `<span style="flex:1"></span>`}
-    ${i<chs.length ? `<a class="next" href="${chapterHref(n, i+1)}">${esc(t("next"))} →<b>${esc(titleOf(i+1))}</b></a>` : `<a class="next" href="#/">${esc(t("back"))} →<b>${esc(t("hero"))}</b></a>`}
+    ${i<chs.length ? `<a class="next${runLocked(n, i+1) ? " rn-next" : ""}" href="${chapterHref(n, i+1)}">${esc(runLocked(n, i+1) ? (RUN_NEXT[n.lang] || RUN_NEXT.es) : t("next"))} →<b>${esc(titleOf(i+1))}</b></a>` : `<a class="next" href="#/">${esc(t("back"))} →<b>${esc(t("hero"))}</b></a>`}
   </nav>`}
   <section class="comments" id="comments"></section>` : ""}`;
   if (document.activeElement && document.activeElement !== document.body) document.activeElement.blur();
