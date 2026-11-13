@@ -34,6 +34,14 @@ Servicios de Meta (prohibida en Rusia): no nombrarlos en las novelas; usar los n
 
 Un idioma puede ofrecer su revista en PDF para descargar: un botón en la portada de ese idioma. El archivo va en `magazine/` y se registra en `MAGAZINES` dentro de `index.html` (`{ru: {file, btn}}`). Ahora: «Литература перед сном», noviembre de 2026 (RU), y «Al chiaro di luna», noviembre de 2026 (IT, 20 páginas).
 
+## Mini-juegos entre capítulos
+
+Una novela puede tener un juego de correr y saltar (como el dinosaurio de Chrome) cada N capítulos: Natalia corre, salta, se agacha y recoge objetos, y solo al ganar se abre el capítulo siguiente. Se activa con `"runner": 5` en `novels/catalog.json` (juego antes de los capítulos 6, 11, 16…).
+
+- Los niveles están en `LEVELS` dentro de `games/runner/runner.js` (uno por cada bloque de capítulos): título, texto de introducción, objeto a recoger, cuántos, velocidad, obstáculos y escenario. Todo se dibuja con código, sin imágenes.
+- Ahora: «Волны любви: Город без улыбок», 8 niveles (antes de los capítulos 6, 11, 16, 21, 26, 31, 36 y 41).
+- Un nivel ganado queda guardado en el navegador del lector y no vuelve a aparecer. Los capítulos que el lector ya había leído no se bloquean. Si alguien pierde varias veces seguidas, el juego va un poco más lento.
+
 ## Blog
 
 Cada idioma tiene su propio blog (`#/blog`), al que se llega desde el botón «Blog» de la portada. Cada idioma muestra solo sus entradas.
