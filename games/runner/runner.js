@@ -1,5 +1,5 @@
 /* «Бегущая Наталья» — мини-игры между главами (раннер в духе динозавра Chrome).
-   Подключается из index.html: window.LitmirRunner.mount(el, {slug, level, nextNum, nextTitle, sfx, onWin, onBack}).
+   Подключается из index.html: window.LitmirRunner.mount(el, {slug, level, sfx, onNext, onBack}). Игры необязательные: открываются из раздела «Игры» на странице романа.
    Уровни описаны в LEVELS (по одному на каждые 5 глав). Графика рисуется кодом, без картинок. */
 (function(){
 "use strict";
@@ -311,28 +311,28 @@ const THEMES = {
 /* ───────── Уровни ───────── */
 const LEVELS = {
   "volny-lyubvi-gorod-bez-ulybok": [
-    {theme:"day", title:"Бегом от полиции", item:"smile", names:["улыбку","улыбки","улыбок"], goal:12, speed:350,
+    {theme:"day", title:"Бегом от полиции", item:"smile", names:["улыбку","улыбки","улыбок"], goal:10, speed:250,
      intro:"Мариса рассмеялась на привокзальной площади — и двое полицейских уже идут к вам. Беги за ней по старому городу Синеи: перепрыгивай лужи и велосипеды, пригибайся под бельём. По дороге собери улыбки, которые горожане боятся показывать.",
      obs:{puddle:3, pot:2, bike:2, basket:2, laundry:3, gull:2}},
-    {theme:"night", title:"Серые нити", item:"note", names:["ноту","ноты","нот"], goal:14, speed:370,
+    {theme:"night", title:"Серые нити", item:"note", names:["ноту","ноты","нот"], goal:11, speed:260,
      intro:"Синея спит, а над головами горожан тянутся серые нити — к четырём башням. Не дай им коснуться тебя: пригибайся. Перепрыгивай скамейки и чёрных котов и собери рассыпанные ноты Луисовой мелодии.",
      obs:{bench:2, bin:2, cat:2, pot:1, thread:5}},
-    {theme:"dawn", title:"Вниз с телебашни", item:"wave", names:["волну","волны","волн"], goal:15, speed:390,
+    {theme:"dawn", title:"Вниз с телебашни", item:"wave", names:["волну","волны","волн"], goal:12, speed:270,
      intro:"Синея проснулась под песню из эфира, а по серпантину к телебашне уже поднимаются машины. Беги вниз по дороге, уворачивайся от дронов и низких проводов и лови волны эфира, которые разносят музыку по городу.",
      obs:{cone:3, barrier:2, drone:3, lowcable:2}},
-    {theme:"office", title:"Коридоры министерства", item:"card", names:["улыбку","улыбки","улыбок"], goal:16, speed:400,
+    {theme:"office", title:"Коридоры министерства", item:"card", names:["улыбку","улыбки","улыбок"], goal:12, speed:280,
      intro:"Центральное управление Службы эмоционального контроля. Ты — уборщица с тележкой, но камеры не спят, а печати «НЕТ» летают по коридорам. Собери конфискованные улыбки, пока никто не заметил.",
      obs:{bucket:3, folders:2, cart:2, stamp:3, camera:2}},
-    {theme:"port", title:"Тень в порту", item:"lantern", names:["огонёк","огонька","огоньков"], goal:17, speed:410,
+    {theme:"port", title:"Тень в порту", item:"lantern", names:["огонёк","огонька","огоньков"], goal:13, speed:290,
      intro:"Ночью Тень пришла на «Синьору Фортуну». Беги по причалам сквозь туман, перепрыгивай ящики и канаты, пригибайся, когда Тень проносится над головой. Тень боится света — собери огоньки фонарей.",
      obs:{crate:3, rope:2, bollard:2, shadow:3, gull:1}},
-    {theme:"roofs", title:"По крышам к русалке", item:"rose", names:["розу","розы","роз"], goal:18, speed:420,
+    {theme:"roofs", title:"По крышам к русалке", item:"rose", names:["розу","розы","роз"], goal:14, speed:300,
      intro:"Полночь над площадью Порядка, по крышам шарят прожекторы. Беги по черепице, перепрыгивай трубы и антенны, пригибайся под проводами с голубями. Собери розы: когда-то здесь был цветочный рынок, и каменная русалка их ждёт.",
      obs:{chimney:3, antenna:2, vent:2, lowcable:3, gull:1}},
-    {theme:"piazza", title:"Площадь Данте", item:"balloon", names:["шарик","шарика","шариков"], goal:19, speed:430,
+    {theme:"piazza", title:"Площадь Данте", item:"balloon", names:["шарик","шарика","шариков"], goal:14, speed:310,
      intro:"На площади Данте собрался весь город. Пробеги сквозь праздник — через барьеры и барабаны, под гирляндами флажков — и собери воздушные шарики: каждый из них — чей-то вернувшийся смех.",
      obs:{pbarrier:3, drum:2, chair:2, flags:3}},
-    {theme:"clock", title:"Часовая башня", item:"bell", names:["колокольчик","колокольчика","колокольчиков"], goal:20, speed:440,
+    {theme:"clock", title:"Часовая башня", item:"bell", names:["колокольчик","колокольчика","колокольчиков"], goal:15, speed:320,
      intro:"Двести ступеней, триста… Внутри часовой башни бьётся каменное сердце, катятся шестерёнки и раскачиваются противовесы, а в темноте прячутся тени. Собери колокольчики карильона, чтобы Синея снова запела.",
      obs:{gear:3, step:2, crate:1, weight:3, shadow:2}}
   ]
@@ -367,14 +367,14 @@ function mount(el, opt){
       <div class="rn-ov rn-start">
         <img class="rn-ico" src="${icon(44)}" alt="">
         <p>${L.intro}</p>
-        <div class="rn-goal">Собери <b>${L.goal} ${plural(L.goal, L.names)}</b> — и откроется глава ${opt.nextNum}.</div>
+        <div class="rn-goal">Собери <b>${L.goal} ${plural(L.goal, L.names)}</b> — и уровень пройден.</div>
         <button class="rn-btn" data-act="go">Бежать!</button>
         <div class="rn-keys"><span><kbd>Пробел</kbd> или <kbd>↑</kbd> — прыжок</span><span><kbd>↓</kbd> — пригнуться</span><span class="rn-touch">На телефоне — кнопки под игрой</span></div>
       </div>
       <div class="rn-ov rn-end" hidden></div>
     </div>
     <div class="rn-pad"><button class="rn-pb" data-k="duck" aria-label="Пригнуться">▼<small>пригнуться</small></button><button class="rn-pb" data-k="jump" aria-label="Прыжок">▲<small>прыжок</small></button></div>
-    <p class="rn-note">Сначала игра — потом глава. Прогресс сохраняется: пройденный уровень больше не появится.</p>
+    <p class="rn-note">Игра по главам ${(opt.level - 1) * 5 + 1}–${opt.level * 5}. Играть необязательно — роман можно читать и без неё.</p>
   </div>`;
   const root = el.querySelector(".rn"), cv = root.querySelector("canvas"), c = cv.getContext("2d");
   const ovStart = root.querySelector(".rn-start"), ovEnd = root.querySelector(".rn-end");
@@ -396,7 +396,7 @@ function mount(el, opt){
   // ── состояние
   const bag = []; for (const [n, w] of Object.entries(L.obs)) for (let i = 0; i < w; i++) bag.push(n);
   const assist = Math.max(.72, 1 - fails * .07);
-  let state = "ready", time = 0, scroll = 0, speed = 0, hearts = 3, got = 0, inv = 0, shake = 0, endT = 0, slow = 1;
+  let state = "ready", time = 0, scroll = 0, speed = 0, hearts = 5, got = 0, inv = 0, shake = 0, endT = 0, slow = 1;
   let py = 0, vy = 0, onGround = true, ducking = false, holdJump = false, jumpT = 0, ph = 0, dustT = 0;
   let objs = [], items = [], parts = [], sinceOb = 0, gapOb = 500, sinceIt = 0, gapIt = 260, itemId = 0, lastOb = null;
   const PX = 150;
@@ -404,7 +404,7 @@ function mount(el, opt){
   const keys = {jump:false, duck:false};
   const base = () => L.speed * assist;
   function reset(){
-    state = "play"; time = 0; scroll = 0; speed = base(); hearts = 3; got = 0; inv = 0; shake = 0; slow = 1;
+    state = "play"; time = 0; scroll = 0; speed = base(); hearts = 5; got = 0; inv = 0; shake = 0; slow = 1;
     py = 0; vy = 0; onGround = true; objs = []; items = []; parts = []; sinceOb = 0; gapOb = 520; sinceIt = 0; gapIt = 200; lastOb = null;
     ovStart.hidden = true; ovEnd.hidden = true;
   }
@@ -416,7 +416,7 @@ function mount(el, opt){
     if (lastOb && OB[lastOb.n].hb.bottom > 0 && OB[name].hb.bottom > 0 && Math.random() < .5) name = bag.find(n => OB[n].hb.bottom === 0) || name;
     const d = OB[name], o = {n:name, x:VW + 30, d, t:Math.random() * 10, pig:name === "lowcable" && L.theme === "roofs"};
     objs.push(o); lastOb = o;
-    gapOb = speed * (.78 + Math.random() * .85) + 110 + d.w;
+    gapOb = speed * (1.05 + Math.random() * .9) + 150 + d.w;
   }
   function spawnItem(){
     let y = GY - 34;
@@ -432,7 +432,7 @@ function mount(el, opt){
     time += dt;
     if (state === "ready") { ph += dt * 2; return; }
     const running = state === "play" || state === "win";
-    if (state === "play") speed = (base() + Math.min(150, time * 4.5)) * slow;
+    if (state === "play") speed = (base() + Math.min(70, time * 2)) * slow;
     else if (state === "win") speed = lerp(speed, base() * 1.1, dt * 2);
     else speed = lerp(speed, 0, dt * 4);
     slow = lerp(slow, 1, dt * 1.6);
@@ -476,11 +476,11 @@ function mount(el, opt){
   function showEnd(){
     ovEnd.hidden = false;
     if (state === "win") {
-      ovEnd.innerHTML = `<div class="rn-big">Получилось!</div><p>Ты собрала ${L.goal} ${plural(L.goal, L.names)}. Открыта глава ${opt.nextNum}${opt.nextTitle ? ` — «${opt.nextTitle}»` : ""}.</p><button class="rn-btn" data-act="next">Читать главу ${opt.nextNum} →</button>`;
+      ovEnd.innerHTML = `<div class="rn-big">Получилось!</div><p>Ты собрала ${L.goal} ${plural(L.goal, L.names)}.</p><div class="rn-row">${levels[opt.level] ? `<button class="rn-btn" data-act="next">Следующий уровень →</button>` : ""}<button class="rn-btn rn-ghost" data-act="back">К роману</button></div>`;
       if (opt.onUnlock) opt.onUnlock();
     } else {
       const easier = Math.max(.72, 1 - fails * .07) < assist || fails > 0;
-      ovEnd.innerHTML = `<div class="rn-big">Ой!</div><p>Собрано ${got} из ${L.goal}. ${easier ? "В следующий раз бег будет чуть медленнее." : ""}</p><button class="rn-btn" data-act="again">Ещё раз</button>`;
+      ovEnd.innerHTML = `<div class="rn-big">Ой!</div><p>Собрано ${got} из ${L.goal}. ${easier ? "В следующий раз бег будет чуть медленнее." : ""}</p><div class="rn-row"><button class="rn-btn" data-act="again">Ещё раз</button><button class="rn-btn rn-ghost" data-act="back">К роману</button></div>`;
     }
     const b = ovEnd.querySelector("button"); if (b) b.focus({preventScroll:true});
   }
@@ -521,7 +521,7 @@ function mount(el, opt){
     // HUD
     c.setTransform(k * dpr, 0, 0, k * dpr, 0, 0);
     if (state !== "ready") {
-      for (let i = 0; i < 3; i++) heart(24 + i * 26, 14, 18, i < hearts ? "#e8424f" : "rgba(120,110,110,.4)");
+      for (let i = 0; i < 5; i++) heart(24 + i * 26, 14, 18, i < hearts ? "#e8424f" : "rgba(120,110,110,.4)");
       const txt = `${got} / ${L.goal}`; c.font = "600 18px system-ui, -apple-system, Segoe UI, sans-serif"; c.textAlign = "right"; c.textBaseline = "middle";
       const tw = c.measureText(txt).width; c.fillStyle = T.dark ? "rgba(0,0,0,.35)" : "rgba(255,255,255,.55)"; rrect(c, VW - tw - 62, 10, tw + 52, 30, 15); c.fill();
       c.fillStyle = T.hud; c.fillText(txt, VW - 16, 26); ITEM[L.item](c, VW - tw - 38, 25, time, 1);
@@ -553,7 +553,7 @@ function mount(el, opt){
   function togglePause(){ if (state !== "play") return; paused = !paused; if (paused) { ovEnd.hidden = false; ovEnd.innerHTML = `<div class="rn-big">Пауза</div><button class="rn-btn" data-act="resume">Продолжить</button>`; } else { ovEnd.hidden = true; last = performance.now(); } }
   function vis(){ if (document.hidden && state === "play" && !paused) togglePause(); }
   root.addEventListener("click", e => { const b = e.target.closest("[data-act]"); if (!b) return; const a = b.dataset.act;
-    if (a === "go" || a === "again") reset(); else if (a === "resume") togglePause(); else if (a === "next") opt.onWin && opt.onWin(); });
+    if (a === "go" || a === "again") reset(); else if (a === "resume") togglePause(); else if (a === "next") opt.onNext && opt.onNext(); else if (a === "back") opt.onBack && opt.onBack(); });
   root.querySelectorAll(".rn-pb").forEach(b => { const kname = b.dataset.k;
     const on = e => { e.preventDefault(); if (state === "ready" || (state === "over" && !ovEnd.hidden)) { if (kname === "jump") reset(); return; } keys[kname] = true; b.classList.add("on"); };
     const off = e => { e.preventDefault(); keys[kname] = false; b.classList.remove("on"); };
@@ -570,6 +570,9 @@ function mount(el, opt){
 window.LitmirRunner = {
   mount,
   has(slug, level){ return !!(LEVELS[slug] && LEVELS[slug][level - 1]); },
-  count(slug){ return (LEVELS[slug] || []).length; }
+  count(slug){ return (LEVELS[slug] || []).length; },
+  list(slug){ return (LEVELS[slug] || []).map((L, i) => ({n:i + 1, title:L.title, theme:L.theme, goal:L.goal, what:plural(L.goal, L.names), intro:L.intro, from:i * 5 + 1, to:i * 5 + 5})); },
+  icon(slug, level, sz){ const L = (LEVELS[slug] || [])[level - 1]; if (!L) return ""; sz = sz || 48; const cv = document.createElement("canvas"); cv.width = cv.height = sz * 2; const c = cv.getContext("2d"); c.scale(sz * 2 / 40, sz * 2 / 40); ITEM[L.item](c, 20, 20, 0, 1); return cv.toDataURL(); },
+  sky(slug, level){ const L = (LEVELS[slug] || [])[level - 1]; return L ? THEMES[L.theme].sky : null; }
 };
 })();

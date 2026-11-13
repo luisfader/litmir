@@ -323,7 +323,6 @@ article.chapter blockquote{margin:1.2em 0;padding-left:1em;border-left:2px solid
 .pager{max-width:680px;margin:0 auto 80px;padding:0 20px;display:flex;justify-content:space-between;gap:12px}
 .comments{max-width:680px;margin:-32px auto 80px;padding:0 20px}
 .comments h2{font-family:var(--display);font-weight:500;font-size:28px;margin:0 0 16px;padding-top:28px;border-top:1px solid var(--line)}
-.pager a.rn-next b::before{content:"🎮 "}
 .pager a{flex:1;border:1px solid var(--line);border-radius:10px;padding:14px 16px;text-decoration:none;font-family:var(--sans);font-size:13px;color:var(--muted)}
 .pager a b{display:block;color:var(--ink);font-family:var(--serif);font-size:17px;font-weight:400;margin-top:2px}
 .pager a.next{text-align:right}
@@ -555,6 +554,49 @@ article.chapter h3{font-family:var(--sans);font-size:.72em;letter-spacing:.12em;
 .music select{max-width:185px;min-width:125px;padding:7px 8px;background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:10px;font:inherit;cursor:pointer}
 .music .m-status{font-size:11px;color:var(--muted);max-width:185px}
 .music .m-status:empty{display:none}
+/* Разделы романа: саундтрек, игры, галерея */
+.ex{margin:22px 0 26px;border:1px solid var(--line);border-radius:18px;background:var(--paper);box-shadow:var(--shadow);overflow:hidden}
+.ex-open{all:unset;box-sizing:border-box;width:100%;display:flex;align-items:center;gap:14px;padding:16px 18px;cursor:pointer}
+.ex-open:focus-visible{outline:2px solid var(--accent);outline-offset:-4px;border-radius:18px}
+.ex-ic{display:flex}.ex-ic i{font-style:normal;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-size:17px;background:var(--accent-soft);color:var(--accent);border:2px solid var(--paper);margin-left:-10px}.ex-ic i:first-child{margin-left:0}
+.ex-lbl{flex:1;display:flex;flex-direction:column;gap:2px;font-family:var(--sans)}.ex-lbl b{font-size:16px;color:var(--ink)}.ex-lbl small{font-size:13px;color:var(--muted)}
+.ex-ch{font-size:26px;color:var(--muted);transition:transform .2s;line-height:1}.ex.on .ex-ch{transform:rotate(90deg)}
+.ex-body{border-top:1px solid var(--line);padding:14px 16px 18px}
+.ex-tabs{display:flex;gap:6px;background:var(--bg);border-radius:999px;padding:4px;margin-bottom:14px}
+.ex-tabs button{flex:1;font:600 13px var(--sans);border:0;border-radius:999px;padding:9px 6px;background:transparent;color:var(--muted);cursor:pointer;white-space:nowrap}
+.ex-tabs button[aria-selected="true"]{background:var(--paper);color:var(--accent);box-shadow:0 1px 4px rgba(0,0,0,.08)}
+.ex-p{font:14px/1.55 var(--sans);color:var(--muted);margin:0 0 12px}.ex-p a{color:var(--accent);font-weight:600;text-decoration:none}.ex-p b{color:var(--ink);font-weight:600}
+.ex-tracks{list-style:none;margin:0 0 10px;padding:0;display:flex;flex-direction:column;gap:2px}
+.ex-tr{all:unset;box-sizing:border-box;width:100%;display:flex;align-items:center;gap:12px;padding:9px 10px;border-radius:12px;cursor:pointer;font-family:var(--sans)}
+.ex-tr:hover,.ex-tr:focus-visible{background:var(--bg)}.ex-tr.on{background:var(--accent-soft)}
+.ex-pl{width:34px;height:34px;flex:none;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:#fff;font-size:12px}
+.ex-n{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.ex-tt{flex:1;font-family:var(--serif);font-size:17px;color:var(--ink)}.ex-tr.on .ex-tt{color:var(--accent)}
+.ex-du{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.ex-eq{display:flex;align-items:flex-end;gap:2px;height:14px}.ex-eq i{width:3px;background:var(--accent);border-radius:2px;animation:exEq .9s ease-in-out infinite}.ex-eq i:nth-child(2){animation-delay:.2s}.ex-eq i:nth-child(3){animation-delay:.45s}
+@keyframes exEq{0%,100%{height:4px}50%{height:14px}}
+.ex-games{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.ex-game{position:relative;display:flex;flex-direction:column;gap:4px;min-height:132px;padding:12px;border-radius:14px;text-decoration:none;color:#fff;text-shadow:0 1px 3px rgba(0,0,0,.45);overflow:hidden;transition:transform .15s}
+.ex-game::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05),rgba(0,0,0,.38))}.ex-game>*{position:relative}.ex-game:hover{transform:translateY(-2px)}.ex-game img{width:40px;height:40px}
+.ex-gk{font:600 10px var(--sans);letter-spacing:.08em;text-transform:uppercase;opacity:.9}
+.ex-game b{font-family:var(--serif);font-weight:400;font-size:17px;line-height:1.2}
+.ex-gs{margin-top:auto;font:600 12px var(--sans);background:rgba(0,0,0,.28);border-radius:999px;padding:4px 10px;align-self:flex-start;text-shadow:none}
+.ex-gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(96px,1fr));gap:6px}
+.ex-ph{all:unset;position:relative;aspect-ratio:3/2;border-radius:10px;overflow:hidden;cursor:pointer;background:var(--bg)}
+.ex-ph img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .25s}.ex-ph:hover img{transform:scale(1.05)}
+.ex-ph>span{position:absolute;left:5px;bottom:5px;font:600 10px var(--sans);color:#fff;background:rgba(0,0,0,.5);border-radius:6px;padding:1px 6px}
+.ex-ph:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.ex-ph.locked{cursor:default;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;background:repeating-linear-gradient(135deg,var(--bg),var(--bg) 8px,var(--accent-soft) 8px,var(--accent-soft) 16px);border:1px dashed var(--line)}
+.ex-ph.locked .ex-lock{position:static;background:none;font-size:18px;opacity:.7;padding:0}.ex-ph.more{background:var(--bg)}.ex-ph.more b{font:600 15px var(--sans);color:var(--ink)}.ex-ph.locked small{font:600 10px var(--sans);color:var(--muted)}
+.ex-lb{position:fixed;inset:0;z-index:1000;background:rgba(10,8,6,.92);display:flex;align-items:center;justify-content:center;padding:20px}
+.ex-lb figure{margin:0;max-width:min(1100px,100%);display:flex;flex-direction:column;align-items:center;gap:10px}
+.ex-lb img{max-width:100%;max-height:80vh;border-radius:8px;box-shadow:0 10px 40px rgba(0,0,0,.5)}
+.ex-lb figcaption{color:#eee;font:14px var(--sans);text-align:center}.ex-lb figcaption a{color:#ffd36e;text-decoration:none;margin-left:6px}
+.ex-x,.ex-nav{position:absolute;border:0;background:rgba(255,255,255,.12);color:#fff;border-radius:50%;width:44px;height:44px;font-size:22px;cursor:pointer}
+.ex-x{top:14px;right:14px}.ex-nav{top:50%;transform:translateY(-50%);font-size:30px}.ex-nav.prev{left:10px}.ex-nav.next{right:10px}
+.ex-note{max-width:680px;margin:0 auto 18px;padding:12px 16px;border:1px dashed var(--line);border-radius:12px;font:14px var(--sans);color:var(--muted);text-align:center}
+.ex-note a{color:var(--accent);font-weight:600;text-decoration:none}
+@media (max-width:560px){.ex-games{grid-template-columns:1fr 1fr}.ex-tabs button{font-size:12px}.ex-gal{grid-template-columns:repeat(3,1fr)}}
 .soundtrack-panel{margin:20px 0 24px;padding:19px 22px;border:1px solid var(--line);border-radius:15px;background:var(--paper)}
 .soundtrack-panel h2{margin:0 0 8px;font-size:21px}
 .soundtrack-panel p{font-size:14px;color:var(--muted);line-height:1.6;margin:0 0 12px}
@@ -1687,7 +1729,7 @@ function novelPage(n){
       ${tr.length ? `<div class="notice">${esc(t("also"))} ${tr.join(", ")}</div>` : ""}
       ${moduleProgress(n)}
       ${n.gamebook ? "" : progressHTML(n)}
-      ${n.soundtrack && n.soundtrack.length ? `<section class="soundtrack-panel" aria-label="${esc(stText(n.lang).aria)}"><h2>♫ ${esc(stText(n.lang).h)}</h2><p>${esc(stText(n.lang).p)}</p>${n.soundtrackSite ? `<p class="soundtrack-site"><a href="${esc(n.soundtrackSite)}" target="_blank" rel="noopener">${esc(stText(n.lang).site)} ↗</a></p>` : ""}<div class="soundtrack-list">${n.soundtrack.map((tk,i)=>`<button type="button" data-soundtrack-track="${i}" aria-label="${esc(stText(n.lang).play)} ${esc(tk.title)}">▶ ${esc(tk.title)}${tk.duration ? ` <small>${esc(tk.duration)}</small>` : ""}</button>`).join("")}</div></section>` : ""}
+      ${extrasHTML(n)}
       <div class="actions">
         ${last ? `<a class="btn" href="${resumeHref(n, last)}">${esc(t("cont"))} · ${esc(chapterTitle(n, chs[last-1] || {}, last))}</a>` : ""}
         <a class="btn ${last ? "ghost" : ""}" href="${chapterHref(n, firstStory)}">${esc(t("start"))}</a>
@@ -1699,7 +1741,130 @@ function novelPage(n){
     </div>
   </section>`;
   document.getElementById("favorite-toggle").onclick = () => toggleFavorite(n.slug);
-  app.querySelectorAll("[data-soundtrack-track]").forEach(btn => btn.onclick = () => mChoose(+btn.dataset.soundtrackTrack, true));
+  setupExtras(n);
+}
+
+/* ───────── Разделы романа: саундтрек, игры, галерея (одна кнопка на странице романа) ─────────
+   Саундтрек — n.soundtrack; игры — n.runner (сколько уровней в games/runner/runner.js);
+   галерея — n.gallery: novels/<slug>/gallery.json [{ch, src, th}], картинки непрочитанных глав закрыты. */
+const XT = {
+  ru:{btn:"Разделы романа", music:"Саундтрек", games:"Игры", gallery:"Галерея", gamesP:"Мини-игры по главам романа: Наталья бежит, прыгает, пригибается и собирает предметы. Играть необязательно — это просто бонус.", level:"Уровень", chs:(a,b)=>`главы ${a}–${b}`, done:"Пройдено", play:"Играть", galP:"Иллюстрации открываются по мере чтения: дочитайте главу — и её картинки появятся здесь.", locked:n=>`Глава ${n}`, moreCh:"ещё закрыто", opened:(a,b)=>`Открыто ${a} из ${b}`, ch:"Глава", close:"Закрыть", gameNote:(a,b)=>`По главам ${a}–${b} есть мини-игра`, gameGo:"Сыграть", opt:"по желанию", back:"К роману"},
+  es:{btn:"Secciones de la novela", music:"Banda sonora", games:"Juegos", gallery:"Galería", gamesP:"Minijuegos basados en los capítulos: corré, saltá, agachate y recogé objetos. Son opcionales, un regalo extra.", level:"Nivel", chs:(a,b)=>`capítulos ${a}–${b}`, done:"Superado", play:"Jugar", galP:"Las ilustraciones se desbloquean a medida que leés: terminá un capítulo y sus imágenes aparecerán aquí.", locked:n=>`Capítulo ${n}`, moreCh:"bloqueados", opened:(a,b)=>`Desbloqueadas ${a} de ${b}`, ch:"Capítulo", close:"Cerrar", gameNote:(a,b)=>`Hay un minijuego sobre los capítulos ${a}–${b}`, gameGo:"Jugar", opt:"opcional", back:"Volver a la novela"},
+  it:{btn:"Sezioni del romanzo", music:"Colonna sonora", games:"Giochi", gallery:"Galleria", gamesP:"Minigiochi ispirati ai capitoli: corri, salta, abbassati e raccogli oggetti. Sono facoltativi.", level:"Livello", chs:(a,b)=>`capitoli ${a}–${b}`, done:"Superato", play:"Gioca", galP:"Le illustrazioni si sbloccano man mano che leggi.", locked:n=>`Capitolo ${n}`, moreCh:"bloccati", opened:(a,b)=>`Sbloccate ${a} su ${b}`, ch:"Capitolo", close:"Chiudi", gameNote:(a,b)=>`C'è un minigioco sui capitoli ${a}–${b}`, gameGo:"Gioca", opt:"facoltativo", back:"Torna al romanzo"},
+  en:{btn:"Novel extras", music:"Soundtrack", games:"Games", gallery:"Gallery", gamesP:"Mini-games based on the chapters. Optional — just a bonus.", level:"Level", chs:(a,b)=>`chapters ${a}–${b}`, done:"Completed", play:"Play", galP:"Illustrations unlock as you read.", locked:n=>`Chapter ${n}`, moreCh:"locked", opened:(a,b)=>`Unlocked ${a} of ${b}`, ch:"Chapter", close:"Close", gameNote:(a,b)=>`There's a mini-game for chapters ${a}–${b}`, gameGo:"Play", opt:"optional", back:"Back to the novel"}
+};
+const exT = l => XT[l] || XT.en;
+const EX_IC = {music:"♫", games:"🎮", gallery:"▦"};
+let exReturn = null;
+function exTabs(n){ const t = []; if (n.soundtrack && n.soundtrack.length) t.push("music"); if (n.runner) t.push("games"); if (n.gallery) t.push("gallery"); return t; }
+function extrasHTML(n){
+  const tabs = exTabs(n); if (!tabs.length) return "";
+  const T = exT(n.lang);
+  return `<section class="ex" id="ex">
+    <button type="button" class="ex-open" aria-expanded="false" aria-controls="exBody">
+      <span class="ex-ic">${tabs.map(k => `<i>${EX_IC[k]}</i>`).join("")}</span>
+      <span class="ex-lbl"><b>${esc(T.btn)}</b><small>${tabs.map(k => esc(T[k])).join(" · ")}</small></span>
+      <span class="ex-ch" aria-hidden="true">›</span></button>
+    <div class="ex-body" id="exBody" hidden>
+      ${tabs.length > 1 ? `<div class="ex-tabs" role="tablist">${tabs.map(k => `<button type="button" role="tab" data-ex="${k}" aria-selected="false">${EX_IC[k]} ${esc(T[k])}</button>`).join("")}</div>` : ""}
+      <div class="ex-pane" id="exPane"></div></div></section>`;
+}
+function readChapters(n){ const d = new Set(store.get("done:" + n.slug, [])), last = store.get("last:" + n.slug, 0) || 0; return ch => d.has(ch) || ch < last; }
+function setupExtras(n){
+  const box = document.getElementById("ex"); if (!box) return;
+  const tabs = exTabs(n), body = box.querySelector(".ex-body"), pane = box.querySelector("#exPane"), opener = box.querySelector(".ex-open"), T = exT(n.lang);
+  const show = k => {
+    store.set("exTab:" + n.slug, k);
+    box.querySelectorAll("[data-ex]").forEach(b => b.setAttribute("aria-selected", b.dataset.ex === k));
+    if (k === "music") exMusic(n, pane, T); else if (k === "games") exGames(n, pane, T); else exGallery(n, pane, T);
+  };
+  const open = (yes, k) => { body.hidden = !yes; box.classList.toggle("on", yes); opener.setAttribute("aria-expanded", yes); if (yes) show(k || (tabs.includes(store.get("exTab:" + n.slug)) ? store.get("exTab:" + n.slug) : tabs[0])); };
+  opener.onclick = () => open(body.hidden);
+  box.querySelectorAll("[data-ex]").forEach(b => b.onclick = () => show(b.dataset.ex));
+  if (exReturn === n.slug) { exReturn = null; open(true, "games"); setTimeout(() => box.scrollIntoView({block:"start"}), 50); }
+}
+function exMusic(n, pane, T){
+  const S = stText(n.lang), cur = music.novel === n || (music.novel && music.novel.slug === n.slug);
+  pane.innerHTML = `<div class="ex-music"><p class="ex-p">${esc(S.p)}</p>
+    <ol class="ex-tracks">${n.soundtrack.map((tk, i) => { const on = cur && music.i === i && !music.el.paused;
+      return `<li><button type="button" class="ex-tr${on ? " on" : ""}" data-tr="${i}" aria-label="${esc(S.play)} ${esc(tk.title)}">
+        <span class="ex-pl" aria-hidden="true">${on ? "❚❚" : "▶"}</span><span class="ex-n">${String(i + 1).padStart(2, "0")}</span>
+        <span class="ex-tt">${esc(tk.title)}</span>${on ? `<span class="ex-eq" aria-hidden="true"><i></i><i></i><i></i></span>` : ""}<span class="ex-du">${esc(tk.duration || "")}</span></button></li>`; }).join("")}</ol>
+    ${n.soundtrackSite ? `<p class="ex-p"><a href="${esc(n.soundtrackSite)}" target="_blank" rel="noopener">${esc(S.site)} ↗</a></p>` : ""}</div>`;
+  pane.querySelectorAll("[data-tr]").forEach(b => b.onclick = () => {
+    const i = +b.dataset.tr;
+    if (music.novel && music.i === i && !music.el.paused) music.el.pause(); else if (music.novel && music.i === i && music.el.src) mPlay(); else mChoose(i, true);
+  });
+  const sync = () => { if (!pane.isConnected || !pane.querySelector(".ex-music")) { music.el.removeEventListener("play", sync); music.el.removeEventListener("pause", sync); return; } exMusic(n, pane, T); };
+  music.el.addEventListener("play", sync, {once:true}); music.el.addEventListener("pause", sync, {once:true});
+}
+function loadRunner(cb){
+  if (window.LitmirRunner) return cb();
+  if (!document.getElementById("rnCss")) { const l = document.createElement("link"); l.id = "rnCss"; l.rel = "stylesheet"; l.href = "games/runner/runner.css"; document.head.appendChild(l); }
+  const s = document.createElement("script"); s.src = "games/runner/runner.js"; s.onload = cb; document.head.appendChild(s);
+}
+function exGames(n, pane, T){
+  pane.innerHTML = `<div class="loading">…</div>`;
+  loadRunner(() => {
+    if (!pane.isConnected) return;
+    const won = store.get("run:" + n.slug, []), R = window.LitmirRunner;
+    pane.innerHTML = `<p class="ex-p">${esc(T.gamesP)}</p><div class="ex-games">${R.list(n.slug).map(g => { const sky = R.sky(n.slug, g.n) || ["#555", "#888", "#aaa"];
+      return `<a class="ex-game" href="#/${n.slug}/juego/${g.n}" style="background:linear-gradient(160deg,${sky[0]},${sky[1]} 60%,${sky[2]})">
+        <img src="${R.icon(n.slug, g.n, 40)}" alt="" width="40" height="40">
+        <span class="ex-gk">${esc(T.level)} ${g.n} · ${esc(T.chs(g.from, g.to))}</span>
+        <b>${esc(g.title)}</b>
+        <span class="ex-gs">${won.includes(g.n) ? `✓ ${esc(T.done)}` : `▶ ${esc(T.play)}`}</span></a>`; }).join("")}</div>`;
+  });
+}
+async function exGallery(n, pane, T){
+  pane.innerHTML = `<div class="loading">…</div>`;
+  let g = [];
+  try { g = await (await fetch(`novels/${n.slug}/gallery.json`, {cache:"no-cache"})).json(); } catch(e) {}
+  if (!pane.isConnected) return;
+  const isRead = readChapters(n), title = ch => chapterTitle(n, n.chapters[ch - 1] || {}, chapterNo(n, ch));
+  const open = g.filter(o => isRead(o.ch));
+  pane.innerHTML = `<p class="ex-p">${esc(T.galP)} <b>${esc(T.opened(open.length, g.length))}</b></p>
+    <div class="ex-gal">${open.map((o, i) => `<button type="button" class="ex-ph" data-ph="${i}" aria-label="${esc(T.ch + " " + o.ch + ": " + title(o.ch))}"><img src="novels/${n.slug}/${o.th || o.src}" alt="" loading="lazy"><span>${o.ch}</span></button>`).join("")}${(() => {
+      const shut = [...new Set(g.filter(o => !isRead(o.ch)).map(o => o.ch))], SHOW = 5;
+      return shut.slice(0, SHOW).map(ch => `<div class="ex-ph locked" title="${esc(T.locked(ch))}"><span class="ex-lock" aria-hidden="true">🔒</span><small>${esc(T.locked(ch))}</small></div>`).join("")
+        + (shut.length > SHOW ? `<div class="ex-ph locked more"><b>+${shut.length - SHOW}</b><small>${esc(T.moreCh)}</small></div>` : ""); })()}</div>`;
+  pane.querySelectorAll("[data-ph]").forEach(b => b.onclick = () => exLightbox(n, open, +b.dataset.ph, T, title));
+}
+function exLightbox(n, list, i, T, title){
+  const lb = document.createElement("div"); lb.className = "ex-lb"; lb.setAttribute("role", "dialog"); lb.setAttribute("aria-modal", "true");
+  const draw = () => { const o = list[i]; lb.innerHTML = `<button type="button" class="ex-x" aria-label="${esc(T.close)}">✕</button>
+    ${i > 0 ? `<button type="button" class="ex-nav prev" aria-label="←">‹</button>` : ""}${i < list.length - 1 ? `<button type="button" class="ex-nav next" aria-label="→">›</button>` : ""}
+    <figure><img src="novels/${n.slug}/${o.src}" alt=""><figcaption>${esc(T.ch)} ${o.ch} · ${esc(title(o.ch))} <a href="${chapterHref(n, o.ch)}">→</a></figcaption></figure>`;
+    lb.querySelector(".ex-x").onclick = close; const p = lb.querySelector(".prev"), q = lb.querySelector(".next");
+    if (p) p.onclick = e => { e.stopPropagation(); i--; draw(); }; if (q) q.onclick = e => { e.stopPropagation(); i++; draw(); };
+    lb.querySelector("figcaption a").onclick = close; };
+  const key = e => { if (e.key === "Escape") close(); else if (e.key === "ArrowLeft" && i > 0) { i--; draw(); } else if (e.key === "ArrowRight" && i < list.length - 1) { i++; draw(); } };
+  function close(){ lb.remove(); document.removeEventListener("keydown", key); document.body.style.overflow = ""; }
+  lb.onclick = e => { if (e.target === lb || e.target.tagName === "FIGURE") close(); };
+  let x0 = null; lb.addEventListener("touchstart", e => { x0 = e.touches[0].clientX; }, {passive:true});
+  lb.addEventListener("touchend", e => { if (x0 === null) return; const dx = e.changedTouches[0].clientX - x0; x0 = null; if (dx > 50 && i > 0) { i--; draw(); } else if (dx < -50 && i < list.length - 1) { i++; draw(); } });
+  draw(); document.body.appendChild(lb); document.addEventListener("keydown", key); document.body.style.overflow = "hidden";
+}
+/* Страница мини-игры: #/<slug>/juego/<уровень> */
+function gamePage(n, lv){
+  if (lang !== n.lang) setLang(n.lang);
+  const T = exT(n.lang), here = location.hash;
+  app.innerHTML = `<div class="loading">…</div>`;
+  loadRunner(() => {
+    if (location.hash !== here) return;
+    const R = window.LitmirRunner; lv = Math.min(Math.max(lv || 1, 1), R.count(n.slug) || 1);
+    document.title = n.title;
+    app.innerHTML = `<div class="reader-bar"><div class="wrap"><a class="crumb" href="#/${n.slug}" id="rnBack">← ${esc(n.title)}</a></div></div><div id="rnHost"></div>`;
+    document.getElementById("rnBack").onclick = () => { exReturn = n.slug; };
+    const won = () => { const d = store.get("run:" + n.slug, []); if (!d.includes(lv)) { d.push(lv); store.set("run:" + n.slug, d); } };
+    R.mount(document.getElementById("rnHost"), {slug:n.slug, level:lv, sfx, onUnlock:won,
+      onNext:() => { location.hash = `#/${n.slug}/juego/${lv + 1}`; }, onBack:() => { exReturn = n.slug; location.hash = `#/${n.slug}`; }});
+  });
+}
+function chapterGameNote(n, i){
+  const k = n.runner && !n.gamebook && i % 5 === 0 ? i / 5 : 0; if (!k || k > n.runner) return "";
+  const T = exT(n.lang);
+  return `<div class="ex-note">🎮 ${esc(T.gameNote(i - 4, i))} <a href="#/${n.slug}/juego/${k}">${esc(T.gameGo)} →</a> <small>(${esc(T.opt)})</small></div>`;
 }
 
 /* ───────── Long chapters are shown as pages of ~PAGE_CHARS characters ───────── */
@@ -1739,43 +1904,12 @@ function toTop(){
   [60, 200, 450].forEach(ms => setTimeout(() => { if (!moved) go(); }, ms));
   setTimeout(() => { removeEventListener("touchstart", stop); removeEventListener("wheel", stop); }, 500);
 }
-/* Мини-игры между главами (games/runner/): в catalog.json у романа "runner": 5 — игра перед главами 6, 11, 16…
-   Глава открывается после победы; уже прочитанные главы не блокируются. */
-const RUN_NEXT = {ru:"Сначала игра", es:"Primero, un juego"};
-function runLevel(n, i){ const e = n.runner; if (!e || n.gamebook || i <= 1 || (i - 1) % e) return 0; return (i - 1) / e; }
-function runLocked(n, i){
-  const lv = runLevel(n, i); if (!lv) return false;
-  if (store.get("run:" + n.slug, []).includes(lv)) return false;
-  if (store.get("done:" + n.slug, []).some(d => d >= i)) return false;
-  if (window.LitmirRunner && !window.LitmirRunner.has(n.slug, lv)) return false;
-  return true;
-}
-function runnerGate(n, i, page){
-  const lv = runLevel(n, i), unlock = () => { const d = store.get("run:" + n.slug, []); if (!d.includes(lv)) { d.push(lv); store.set("run:" + n.slug, d); } };
-  const here = location.hash;
-  const go = () => {
-    if (location.hash !== here) return;
-    if (!window.LitmirRunner.has(n.slug, lv)) { unlock(); return reader(n, i, page); }
-    document.title = n.title;
-    app.innerHTML = `<div class="reader-bar"><div class="wrap"><a class="crumb" href="#/${n.slug}">← ${esc(n.title)}</a></div></div><div id="rnHost"></div>`;
-    window.onscroll = null; document.onkeydown = null; toTop();
-    const c = n.chapters[i-1];
-    window.LitmirRunner.mount(document.getElementById("rnHost"), {slug:n.slug, level:lv, nextNum:chapterNo(n, i), nextTitle:c && c.title, sfx,
-      onUnlock:unlock, onWin:() => { unlock(); reader(n, i, page); }});
-  };
-  if (window.LitmirRunner) return go();
-  app.innerHTML = `<div class="loading">…</div>`;
-  if (!document.getElementById("rnCss")) { const l = document.createElement("link"); l.id = "rnCss"; l.rel = "stylesheet"; l.href = "games/runner/runner.css"; document.head.appendChild(l); }
-  const s = document.createElement("script"); s.src = "games/runner/runner.js"; s.onload = go; s.onerror = () => { unlock(); reader(n, i, page); }; document.head.appendChild(s);
-}
-
 async function reader(n, idx, page){
   if (lang !== n.lang) setLang(n.lang);
   const chs = n.chapters;
   const i = Math.min(Math.max(idx,1), chs.length), c = chs[i-1];
   const L = UI[n.lang];
   if (c.type === "quiz") return lesson(n, i, c);
-  if (runLocked(n, i)) return runnerGate(n, i, page);
   app.innerHTML = `<div class="loading">…</div>`;
   let md = "";
   try { md = await getText(`novels/${n.slug}/${c.file}`, n); }
@@ -1815,9 +1949,10 @@ async function reader(n, idx, page){
   </article>${n.glossPick ? `<aside class="gl-side" id="glSide"></aside></div>` : ""}
   ${pagesNav}
   ${lastPage ? `${n.wip && i === chs.length ? `<div class="wipnote"><div>✎ ${esc(L.wipNote)}</div></div>` : ""}
+  ${chapterGameNote(n, i)}
   ${n.gamebook ? gbFooter(n, c) : `<nav class="pager">
     ${i>1 ? `<a href="${chapterHref(n, i-1)}">← ${esc(t("prev"))}<b>${esc(titleOf(i-1))}</b></a>` : `<span style="flex:1"></span>`}
-    ${i<chs.length ? `<a class="next${runLocked(n, i+1) ? " rn-next" : ""}" href="${chapterHref(n, i+1)}">${esc(runLocked(n, i+1) ? (RUN_NEXT[n.lang] || RUN_NEXT.es) : t("next"))} →<b>${esc(titleOf(i+1))}</b></a>` : `<a class="next" href="#/">${esc(t("back"))} →<b>${esc(t("hero"))}</b></a>`}
+    ${i<chs.length ? `<a class="next" href="${chapterHref(n, i+1)}">${esc(t("next"))} →<b>${esc(titleOf(i+1))}</b></a>` : `<a class="next" href="#/">${esc(t("back"))} →<b>${esc(t("hero"))}</b></a>`}
   </nav>`}
   <section class="comments" id="comments"></section>` : ""}`;
   if (document.activeElement && document.activeElement !== document.body) document.activeElement.blur();
@@ -2875,6 +3010,7 @@ function route(){
   if (!n) { app.innerHTML = `<div class="empty">${esc(t("notFound"))}</div>`; return; }
   if (!adultOk(n)) { adultGate(n); return toTop(); }
   if (parts[1] === "progreso") { progressPage(n); return toTop(); }
+  if (parts[1] === "juego" && n.runner) { gamePage(n, parseInt(parts[2], 10)); return toTop(); }
   if (parts[1]) {
     const i = chapterIndex(n, decodeURIComponent(parts[1]));
     if (chapterLocked(n, i) && !signedIn()) { if (lang !== n.lang) setLang(n.lang); loginGate("#/" + n.slug); return toTop(); }
