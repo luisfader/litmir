@@ -26,3 +26,5 @@
 .rn-note{text-align:center;color:var(--muted);font-size:13px;margin:14px 0 0}
 @media (pointer:coarse){.rn-pad{display:flex}.rn-touch{display:inline}.rn-keys span:not(.rn-touch){display:none}}
 @media (max-width:560px){.rn{padding:14px 8px 40px}.rn-stage{border-radius:12px}.rn-ov{gap:8px;padding:10px 14px}.rn-ico{display:none}.rn-ov p{font-size:13px;line-height:1.4}.rn-btn{padding:10px 22px;font-size:15px}}
+.rn-row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.rn-ghost{background:rgba(255,255,255,.14);color:#fbf6ec;box-shadow:none;border:1px solid rgba(255,255,255,.35)}
