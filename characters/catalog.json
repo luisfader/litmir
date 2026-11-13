@@ -249,12 +249,13 @@
    ],
    "role": "Joven brasileño de 20 años que promete conocer a Rita.",
    "novels": [
-    "do-outro-lado-do-mundo"
+    "do-outro-lado-do-mundo",
+    "do-outro-lado-do-mundo-2"
    ],
    "localizations": {
     "pt": {
      "name": "Mateus",
-     "description": "Tem 20 anos e prometeu conhecer Rita, que mora do outro lado do mundo. Sem dinheiro para a passagem, aceita qualquer desafio para cumprir a promessa."
+     "description": "Tem 20 anos e prometeu conhecer Rita, que mora do outro lado do mundo. Sem dinheiro para a passagem, aceita qualquer desafio para cumprir a promessa. Depois, em São Petersburgo, fica preso com Rita numa ilha voadora e vence o medo de altura para voltar ao chão."
     }
    }
   },
@@ -2713,12 +2714,13 @@
    ],
    "role": "Joven rusa (Margarita) que conversa con Mateus por internet.",
    "novels": [
-    "do-outro-lado-do-mundo"
+    "do-outro-lado-do-mundo",
+    "do-outro-lado-do-mundo-2"
    ],
    "localizations": {
     "pt": {
      "name": "Rita",
-     "description": "Margarita, ou simplesmente Rita, mora do outro lado do mundo, na Rússia, e conversa com Mateus pela internet. Por ela, Mateus atravessa meio planeta."
+     "description": "Margarita, ou simplesmente Rita, mora do outro lado do mundo, na Rússia, e conversa com Mateus pela internet. Por ela, Mateus atravessa meio planeta. É uma bruxa boa: escuta a memória das coisas e conserta o que está quebrado. Em São Petersburgo, leva Mateus de ilha em ilha pelo céu."
     }
    }
   },
@@ -2962,18 +2964,24 @@
    "id": "luis-rezonans",
    "name": "Luis (Resonancia del amor)",
    "langs": [
-    "ru"
+    "ru",
+    "pt"
    ],
    "role": "Luis Fader de Resonancia del amor; aparece como Agente L en El carnaval de la discordia.",
    "novels": [
     "rezonans-lyubvi",
     "rezonans-lyubvi-3-protiv-mraka",
-    "dikij-chas-karnaval-razdora"
+    "dikij-chas-karnaval-razdora",
+    "do-outro-lado-do-mundo-2"
    ],
    "localizations": {
     "ru": {
      "name": "Луис Фадер",
      "description": "Обаятельный сотрудник с очень странным чувством юмора, которого Наталья встречает в весеннем Петербурге. Помогает городу, где оживают сфинксы и атланты, а затем вместе с Натальей сражается с Хмурью от Москвы до Ярославля. В «Карнавале раздора» появляется рядом с другим Луисом — под именем агента Л."
+    },
+    "pt": {
+     "name": "Luiz Fader",
+     "description": "Agente de Assuntos Celestiais, de cabelo prateado e capa escura. Pega esfinges com uma boleadeira e deixa cartões sem telefone. Em São Petersburgo, cruza o caminho de Rita e Mateus."
     }
    }
   },
@@ -3456,17 +3464,23 @@
    "id": "natalia-rezonans",
    "name": "Natalia (Resonancia del amor)",
    "langs": [
-    "ru"
+    "ru",
+    "pt"
    ],
    "role": "Moscovita que conoce a Luis Fader en San Petersburgo.",
    "novels": [
     "rezonans-lyubvi",
-    "rezonans-lyubvi-3-protiv-mraka"
+    "rezonans-lyubvi-3-protiv-mraka",
+    "do-outro-lado-do-mundo-2"
    ],
    "localizations": {
     "ru": {
      "name": "Наталья",
      "description": "Москвичка, красивая, умная и с характером. Приезжает весной в Петербург, встречает там Луиса Фадера и оказывается самым сильным резонантом города. Не позволяет говорить за себя и не хочет быть удобной фигурой в чужом плане. В «Против мрака» вместе с Луисом ищет древний артефакт от Москвы до Ярославля."
+    },
+    "pt": {
+     "name": "Natalia",
+     "description": "Moscovita de camisa branca e saia vermelha que veio a São Petersburgo para descansar. A cidade escuta essa moça: quando ela fica brava, até as xícaras tremem."
     }
    }
   },
