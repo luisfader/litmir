@@ -40,6 +40,7 @@ En la página de la novela, un botón «Разделы романа» abre hasta
 
 - **Banda sonora**: sale sola si la novela tiene `soundtrack`.
 - **Juegos**: `"runner": 8` en `catalog.json` (número de niveles). Son minijuegos opcionales de correr y saltar (como el dinosaurio de Chrome), uno por cada 5 capítulos; **no bloquean la lectura**. Al final de los capítulos 5, 10, 15… aparece una invitación discreta a jugar. Cada nivel tiene su página: `#/<novela>/juego/<n>`. Los niveles se definen en `LEVELS`, dentro de `games/runner/runner.js`; todo se dibuja con código. Ahora solo «Волны любви: Город без улыбок» tiene juegos (8 niveles).
+- **Juego de la moto**: `"moto": {"ch": 10, "title": …, "about": …, "note": …}` en `catalog.json`. Un solo juego sobre un capítulo, con su página `#/<novela>/juego/moto`; al final del capítulo `ch` aparece la invitación (`note`). Código: `games/moto/moto.js` y `games/moto/moto.css` (vista desde arriba, todo dibujado con código). Ahora: «Грустный город», «Погоня по Синее» (capítulo 10): Franco huye en la moto secreta del padre, sigue a Kiara, la ayuda a saltar a su moto cuando la policía le revienta la rueda y escapan juntos hasta el túnel. Tres etapas; si se pierde, se puede seguir desde la última etapa alcanzada. Las «смешинки» (caritas) cargan una broma que desconcierta a la policía.
 - **Galería**: `"gallery": true` y un archivo `novels/<novela>/gallery.json` con `[{ch, src, th}]` (capítulo, imagen, miniatura en `img/thumbs/`). El lector solo ve las imágenes de los capítulos que ya leyó; las demás aparecen con candado.
 
 ## Blog
