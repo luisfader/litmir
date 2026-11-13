@@ -68,6 +68,22 @@ En la portada de cada idioma, encima de las novelas, hay un pequeño selector «
 
 **Toda novela que no esté terminada debe llevar `"wip": true`** en `catalog.json`. Así aparece la etiqueta «En proceso» en la tarjeta y en la ficha, y un aviso de que llegarán capítulos nuevos. Hay que revisarlo cada vez que se añade una novela o capítulos nuevos: si falta el final (o faltan capítulos intermedios), lleva `"wip": true`. Cuando el autor la termine, se quita la marca.
 
+## Libros-juego (elige tu propia aventura)
+
+Una novela con `"gamebook": true` en `catalog.json` se lee como libro-juego: cada episodio termina con una lista de decisiones y el lector salta al episodio que elige. Ahora: «Мост» (`novels/most/`, 24 episodios y 22 finales: 7 trágicos, 7 neutrales, 7 felices y 1 de boda).
+
+- Las decisiones van al final del episodio, en un bloque `::: choices` con la pregunta en la misma línea y una opción por línea, enlazando al archivo del episodio:
+
+```
+::: choices Что ты выберешь?
+[Primera opción](02.md)
+[Segunda opción](03.md)
+```
+
+- Los finales llevan `"ending": "tragic" | "neutral" | "happy" | "wedding"` en su entrada de `chapters`. Al llegar a uno se muestra una tarjeta con el tipo de final, los finales descubiertos (se guardan en el navegador, `gbend:<novela>`), «Empezar de nuevo» y «Volver a la última decisión».
+- En la ficha de la novela no se muestra el índice (sería un spoiler) ni la barra de progreso; en su lugar aparece el panel de finales. En el lector no hay botones «Anterior / Siguiente».
+- Al cambiar episodios, comprobar que cada episodio sin final tiene sus decisiones, que todos los enlaces apuntan a archivos del catálogo y que todos los finales se pueden alcanzar desde el episodio 1.
+
 ## Juego de las novelas
 
 En las secciones ES, RU, IT y EN hay un juego (`#/game`, botón «🎲» en la portada): partidas de 10 preguntas al azar, con corazones, XP, rachas y récord. Mezcla cuatro tipos de preguntas:

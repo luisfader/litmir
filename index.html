@@ -326,6 +326,22 @@ article.chapter blockquote{margin:1.2em 0;padding-left:1em;border-left:2px solid
 .pager a{flex:1;border:1px solid var(--line);border-radius:10px;padding:14px 16px;text-decoration:none;font-family:var(--sans);font-size:13px;color:var(--muted)}
 .pager a b{display:block;color:var(--ink);font-family:var(--serif);font-size:17px;font-weight:400;margin-top:2px}
 .pager a.next{text-align:right}
+.gb-choices{margin:40px 0 10px;display:flex;flex-direction:column;gap:12px}
+.gb-choices .gb-q{font-family:var(--sans);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);text-align:center;margin-bottom:4px}
+.gb-choices a{display:flex;gap:12px;align-items:flex-start;border:1px solid var(--accent);border-radius:12px;padding:16px 18px;text-decoration:none;color:var(--ink);background:var(--accent-soft);line-height:1.45;transition:transform .15s}
+.gb-choices a::before{content:"→";color:var(--accent);font-family:var(--sans);flex:none}
+.gb-choices a:hover{transform:translateX(3px)}
+.gb-end{max-width:680px;width:calc(100% - 32px);box-sizing:border-box;margin:0 auto 40px;padding:26px 20px;border:1px solid var(--line);border-radius:16px;text-align:center;font-family:var(--sans)}
+.gb-end .gb-badge{font-family:var(--display);font-size:28px;margin-bottom:6px}
+.gb-end.tragic .gb-badge{color:#7a2a3a}.gb-end.neutral .gb-badge{color:var(--muted)}.gb-end.happy .gb-badge{color:#b0702a}.gb-end.wedding .gb-badge{color:#b8902a}
+.gb-end .actions{justify-content:center;margin-top:18px}
+.gb-end .gb-chips{justify-content:center}
+.gb-panel{margin:28px 0;padding:20px 22px;border:1px solid var(--line);border-radius:16px;font-family:var(--sans)}
+.gb-panel h2{margin-top:0}
+.gb-row{margin:12px 0}.gb-row b{display:block;font-size:13px;color:var(--muted);margin-bottom:6px}
+.gb-chips{display:flex;flex-wrap:wrap;gap:6px}
+.gb-chips a,.gb-chips span{display:inline-block;min-width:30px;padding:5px 10px;border-radius:999px;border:1px solid var(--line);font-size:13px;text-decoration:none;color:var(--ink);text-align:center}
+.gb-chips span{color:var(--muted);opacity:.6}.gb-chips a{border-color:var(--accent);background:var(--accent-soft)}
 .pages{max-width:680px;margin:8px auto 28px;padding:0 20px;font-family:var(--sans);text-align:center}
 .pages .pg-lbl{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
 .pages .pg-row{display:flex;flex-wrap:wrap;justify-content:center;gap:6px}
@@ -882,6 +898,9 @@ function renderText(md){
     if (/^(\*\s*){3,}$|^(-\s*){3,}$|^⁂$/.test(b)) return "<hr>";
     let lk = b.match(/^\[!\[([^\]]*)\]\(([^)\s]+)\)\]\(((?:#|https?:\/\/)[^)\s]*)\)$/);
     if (lk) return `<figure class="linked"><a href="${esc(lk[3])}"><img src="${esc(lk[2])}" alt="${esc(lk[1])}" loading="lazy"></a></figure>`;
+    if (/^:::\s*choices/i.test(b)) { const rows = b.split("\n"), q = rows[0].replace(/^:::\s*choices\s*/i, "").trim();
+      const items = rows.slice(1).map(r => r.trim().match(/^\[([^\]]+)\]\(([^)\s]+)\)$/)).filter(Boolean);
+      return `<nav class="gb-choices">${q ? `<div class="gb-q">${inline(q)}</div>` : ""}${items.map(x => `<a href="#" data-gb="${esc(x[2])}">${inline(x[1])}</a>`).join("")}</nav>`; }
     if (/^:::\s*gallery\s*\n/i.test(b)) { const items = b.split("\n").slice(1).map(r => r.trim().match(/^!\[([^\]]*)\]\(([^)\s]+)\)$/)).filter(Boolean);
       return `<div class="gallery">${items.map(x => `<figure><a href="${esc(x[2])}" target="_blank" rel="noopener"><img src="${esc(x[2])}" alt="${esc(x[1])}" loading="lazy"></a>${x[1] ? `<figcaption>${inline(x[1])}</figcaption>` : ""}</figure>`).join("")}</div>`; }
     let m = b.match(/^!\[([^\]]*)\]\(([^)\s]+)\)$/);
@@ -1669,15 +1688,15 @@ function novelPage(n){
       ${n.wip ? `<div class="notice">✎ ${esc(t("wipNote"))}</div>` : ""}
       ${tr.length ? `<div class="notice">${esc(t("also"))} ${tr.join(", ")}</div>` : ""}
       ${moduleProgress(n)}
-      ${progressHTML(n)}
+      ${n.gamebook ? "" : progressHTML(n)}
       ${n.soundtrack && n.soundtrack.length ? `<section class="soundtrack-panel" aria-label="${esc(stText(n.lang).aria)}"><h2>♫ ${esc(stText(n.lang).h)}</h2><p>${esc(stText(n.lang).p)}</p>${n.soundtrackSite ? `<p class="soundtrack-site"><a href="${esc(n.soundtrackSite)}" target="_blank" rel="noopener">${esc(stText(n.lang).site)} ↗</a></p>` : ""}<div class="soundtrack-list">${n.soundtrack.map((tk,i)=>`<button type="button" data-soundtrack-track="${i}" aria-label="${esc(stText(n.lang).play)} ${esc(tk.title)}">▶ ${esc(tk.title)}${tk.duration ? ` <small>${esc(tk.duration)}</small>` : ""}</button>`).join("")}</div></section>` : ""}
       <div class="actions">
         ${last ? `<a class="btn" href="${resumeHref(n, last)}">${esc(t("cont"))} · ${esc(chapterTitle(n, chs[last-1] || {}, last))}</a>` : ""}
         <a class="btn ${last ? "ghost" : ""}" href="${chapterHref(n, firstStory)}">${esc(t("start"))}</a>
         <button type="button" class="btn ghost" id="favorite-toggle" aria-pressed="${isFavorite(n.slug)}">${isFavorite(n.slug) ? "★" : "☆"} ${esc(ft(isFavorite(n.slug)?2:1,n.lang))}</button></div>
-      <div class="toc" data-auth-dep><h2>${esc(t("contents"))}</h2><ol>
+      ${n.gamebook ? `<section class="gb-panel"><h2>${esc(gbT(n).panel)}</h2><p>${esc(gbT(n).note)}</p>${gbEndingsHTML(n)}</section>` : `<div class="toc" data-auth-dep><h2>${esc(t("contents"))}</h2><ol>
         ${chs.map((c,i) => `<li class="${done.includes(i+1)?"done":""} ${c.label?"extra":""}"><a href="${chapterHref(n, i+1)}"><span class="n">${c.type === "quiz" ? "★" : c.label ? "·" : chapterNo(n, i+1)}</span><span>${esc(chapterTitle(n, c, chapterNo(n, i+1)))}${(()=>{const songs=(n.soundtrack||[]).filter(tk=>(tk.chapters||[]).includes(c.file)).map(tk=>tk.title);return songs.length?` <span class="note-mus" title="${esc(songs.join(" · "))}" aria-label="${esc(songs.join(", "))}">♪</span>`:"";})()}${(!signedIn() && chapterLocked(n, i+1)) || (pwLocked(n, i+1) && !pwOpen(n)) ? ' <span class="lock" aria-hidden="true">🔒</span>' : ""}</span></a></li>`).join("")}
-      </ol></div>
+      </ol></div>`}
       ${sagaHTML(n)}
     </div>
   </section>`;
@@ -1722,6 +1741,30 @@ function toTop(){
   [60, 200, 450].forEach(ms => setTimeout(() => { if (!moved) go(); }, ms));
   setTimeout(() => { removeEventListener("touchstart", stop); removeEventListener("wheel", stop); }, 500);
 }
+/* ───────── Gamebooks ("gamebook": true): sections end in "::: choices", endings carry "ending" ───────── */
+const GB_T = {
+  ru:{ep:"Эпизод", types:{tragic:["Трагический финал","Трагические финалы"],neutral:["Нейтральный финал","Нейтральные финалы"],happy:["Счастливый финал","Счастливые финалы"],wedding:["Свадебный финал","Свадьба"]}, found:(a,b)=>`Открыто финалов: ${a} из ${b}`, panel:"Финалы", note:"Это книга-игра: в конце каждого эпизода ты выбираешь, что делать дальше. Твои решения ведут к одному из финалов. Открытые финалы сохраняются в этом браузере.", restart:"Начать сначала", back:"← Вернуться к последнему выбору", all:"Все финалы"},
+  es:{ep:"Episodio", types:{tragic:["Final trágico","Finales trágicos"],neutral:["Final neutral","Finales neutrales"],happy:["Final feliz","Finales felices"],wedding:["Final de boda","Boda"]}, found:(a,b)=>`Finales descubiertos: ${a} de ${b}`, panel:"Finales", note:"Es un libro-juego: al final de cada episodio eliges qué hacer. Tus decisiones llevan a uno de los finales. Los finales descubiertos se guardan en este navegador.", restart:"Empezar de nuevo", back:"← Volver a la última decisión", all:"Todos los finales"},
+  en:{ep:"Episode", types:{tragic:["Tragic ending","Tragic endings"],neutral:["Neutral ending","Neutral endings"],happy:["Happy ending","Happy endings"],wedding:["Wedding ending","Wedding"]}, found:(a,b)=>`Endings found: ${a} of ${b}`, panel:"Endings", note:"This is a gamebook: at the end of each episode you choose what to do next. Your choices lead to one of the endings. Endings you find are saved in this browser.", restart:"Start again", back:"← Back to the last choice", all:"All endings"}
+};
+const GB_ORDER = ["tragic","neutral","happy","wedding"];
+const gbT = n => GB_T[n.lang] || GB_T.en;
+function gbStart(n){ return Math.max(1, n.chapters.findIndex(c => !c.label) + 1); }
+function gbEndingsHTML(n, cur){
+  const T = gbT(n), found = store.get("gbend:" + n.slug, []);
+  const all = n.chapters.map((c, i) => ({c, i: i + 1})).filter(x => x.c.ending);
+  const rows = GB_ORDER.map(ty => { const xs = all.filter(x => x.c.ending === ty); if (!xs.length) return "";
+    return `<div class="gb-row"><b>${esc(T.types[ty][1])} · ${xs.filter(x => found.includes(x.c.file)).length} / ${xs.length}</b><div class="gb-chips">${xs.map((x, k) =>
+      found.includes(x.c.file) ? `<a href="${chapterHref(n, x.i)}" title="${esc(x.c.title || "")}"${x.i === cur ? ' aria-current="true"' : ""}>${esc(x.c.title || String(k + 1))}</a>` : `<span>?</span>`).join("")}</div></div>`; }).join("");
+  return `<div class="gb-count">${esc(T.found(all.filter(x => found.includes(x.c.file)).length, all.length))}</div>${rows}`;
+}
+function gbFoot(n, c, i){
+  const T = gbT(n);
+  if (!c.ending) return "";
+  const lastChoice = store.get("gblast:" + n.slug, null);
+  return `<section class="gb-end ${esc(c.ending)}"><div class="gb-badge">✦ ${esc(T.types[c.ending][0])} ✦</div>${gbEndingsHTML(n, i)}
+    <div class="actions"><a class="btn" href="${chapterHref(n, gbStart(n))}">${esc(T.restart)}</a>${lastChoice ? `<a class="btn ghost" href="${chapterHref(n, lastChoice)}">${esc(T.back)}</a>` : ""}</div></section>`;
+}
 async function reader(n, idx, page){
   if (lang !== n.lang) setLang(n.lang);
   const chs = n.chapters;
@@ -1734,7 +1777,9 @@ async function reader(n, idx, page){
   catch(e) { if (pwLocked(n, i)) { store.set("pw:" + n.slug, null); try { localStorage.removeItem("lm:pw:" + n.slug); } catch(x) {} delete pwKeys[n.slug]; return pwGate(n, i); } md = "*—*"; }
   const num = chapterNo(n, i);
   const title = chapterTitle(n, c, num);
-  const label = c.label || (L.chapter + " " + num);
+  const gb = !!n.gamebook;
+  if (gb && c.ending) { const f = store.get("gbend:" + n.slug, []); if (!f.includes(c.file)) { f.push(c.file); store.set("gbend:" + n.slug, f); } }
+  const label = c.label || (gb ? (c.ending ? gbT(n).types[c.ending][0] : gbT(n).ep + " " + num) : (L.chapter + " " + num));
   const titleOf = j => chapterTitle(n, chs[j-1], chapterNo(n, j));
   document.title = title + " · " + n.title;
   md = md.replace(/^#\s+.*\n+/, "");
@@ -1766,15 +1811,19 @@ async function reader(n, idx, page){
     ${renderText(md)}
   </article>${n.glossPick ? `<aside class="gl-side" id="glSide"></aside></div>` : ""}
   ${pagesNav}
-  ${lastPage ? `${n.wip && i === chs.length ? `<div class="wipnote"><div>✎ ${esc(L.wipNote)}</div></div>` : ""}
-  <nav class="pager">
+  ${lastPage ? `${n.wip && !gb && i === chs.length ? `<div class="wipnote"><div>✎ ${esc(L.wipNote)}</div></div>` : ""}
+  ${gb ? gbFoot(n, c, i) : `<nav class="pager">
     ${i>1 ? `<a href="${chapterHref(n, i-1)}">← ${esc(t("prev"))}<b>${esc(titleOf(i-1))}</b></a>` : `<span style="flex:1"></span>`}
     ${i<chs.length ? `<a class="next" href="${chapterHref(n, i+1)}">${esc(t("next"))} →<b>${esc(titleOf(i+1))}</b></a>` : `<a class="next" href="#/">${esc(t("back"))} →<b>${esc(t("hero"))}</b></a>`}
-  </nav>
+  </nav>`}
   <section class="comments" id="comments"></section>` : ""}`;
   if (document.activeElement && document.activeElement !== document.body) document.activeElement.blur();
   toTop();
   window.__activeChapterFile = c.file;
+  if (gb) {
+    app.querySelectorAll("a[data-gb]").forEach(a => { const j = chs.findIndex(x => x.file === a.dataset.gb) + 1; if (j) a.href = chapterHref(n, j); });
+    if (!c.ending) store.set("gblast:" + n.slug, i);
+  }
   if (n.slug === "predchuvstvie" && c.file === "28.md") setupPredchuvstvieReflection(app);
   setupQuizzes(app, n.lang);
   setupPsy(app, n.lang);
