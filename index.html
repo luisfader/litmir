@@ -566,7 +566,9 @@ article.chapter h3{font-family:var(--sans);font-size:.72em;letter-spacing:.12em;
 .ex-open:hover .ex-ic i{transform:translateY(-2px) rotate(-6deg)}
 .ex-open:focus-visible{outline:2px solid var(--accent);outline-offset:-4px;border-radius:18px}
 .ex-ic{display:flex}.ex-ic i{font-style:normal;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font-size:20px;color:#fff;background:var(--accent);border:2.5px solid var(--paper);margin-left:-12px;box-shadow:0 4px 12px rgba(0,0,0,.18);transition:transform .2s}.ex-ic i:first-child{margin-left:0}
-.ex-ic .ex-i-music{background:linear-gradient(135deg,#9b6bd6,#6a3fb0)}.ex-ic .ex-i-games{background:linear-gradient(135deg,#f6a53a,#e0632a)}.ex-ic .ex-i-gallery{background:linear-gradient(135deg,#3fb6a8,#2a7f9e)}
+.ex-ic .ex-i-music{background:linear-gradient(135deg,#9b6bd6,#6a3fb0)}.ex-ic .ex-i-games{background:linear-gradient(135deg,#f6a53a,#e0632a)}.ex-ic .ex-i-gallery{background:linear-gradient(135deg,#3fb6a8,#2a7f9e)}.ex-ic .ex-i-riddles{background:linear-gradient(135deg,#e9637a,#b8325a);font-weight:800}
+.ex-h{font:400 20px var(--serif);color:var(--ink);margin:4px 0 6px}.ex-h+.ex-p{margin-bottom:10px}.ex-games+.ex-h{margin-top:22px}
+.ex-vs{font:900 italic 30px Georgia,serif;color:#ffcf5a;text-shadow:0 2px 0 #7a1d0e;line-height:1}
 .ex-lbl{flex:1;display:flex;flex-direction:column;gap:2px;font-family:var(--sans)}.ex-lbl b{font-size:17px;color:var(--accent)}.ex-lbl small{font-size:13px;color:var(--muted)}
 .ex-ch{font-size:24px;color:#fff;background:var(--accent);width:36px;height:36px;border-radius:50%;display:grid;place-items:center;transition:transform .2s;line-height:1;flex:none;box-shadow:0 4px 12px color-mix(in srgb,var(--accent) 40%,transparent)}.ex.on .ex-ch{transform:rotate(90deg)}
 .ex-body{border-top:1px solid var(--line);padding:14px 16px 18px}
@@ -1756,15 +1758,15 @@ function novelPage(n){
    Саундтрек — n.soundtrack; игры — n.runner (сколько уровней в games/runner/runner.js);
    галерея — n.gallery: novels/<slug>/gallery.json [{ch, src, th}], картинки непрочитанных глав закрыты. */
 const XT = {
-  ru:{btn:"Разделы романа", music:"Саундтрек", games:"Игры", gallery:"Галерея", gamesP:"Мини-игры по главам романа: Наталья бежит, прыгает, пригибается и собирает предметы. Играть необязательно — это просто бонус.", level:"Уровень", chs:(a,b)=>`главы ${a}–${b}`, done:"Пройдено", play:"Играть", galP:"Иллюстрации открываются по мере чтения: дочитайте главу — и её картинки появятся здесь.", locked:n=>`Глава ${n}`, moreCh:"ещё закрыто", opened:(a,b)=>`Открыто ${a} из ${b}`, ch:"Глава", close:"Закрыть", gameNote:(a,b)=>`По главам ${a}–${b} есть мини-игра`, gameGo:"Сыграть", opt:"по желанию", back:"К роману"},
-  es:{btn:"Secciones de la novela", music:"Banda sonora", games:"Juegos", gallery:"Galería", gamesP:"Minijuegos basados en los capítulos: corré, saltá, agachate y recogé objetos. Son opcionales, un regalo extra.", level:"Nivel", chs:(a,b)=>`capítulos ${a}–${b}`, done:"Superado", play:"Jugar", galP:"Las ilustraciones se desbloquean a medida que leés: terminá un capítulo y sus imágenes aparecerán aquí.", locked:n=>`Capítulo ${n}`, moreCh:"bloqueados", opened:(a,b)=>`Desbloqueadas ${a} de ${b}`, ch:"Capítulo", close:"Cerrar", gameNote:(a,b)=>`Hay un minijuego sobre los capítulos ${a}–${b}`, gameGo:"Jugar", opt:"opcional", back:"Volver a la novela"},
-  it:{btn:"Sezioni del romanzo", music:"Colonna sonora", games:"Giochi", gallery:"Galleria", gamesP:"Minigiochi ispirati ai capitoli: corri, salta, abbassati e raccogli oggetti. Sono facoltativi.", level:"Livello", chs:(a,b)=>`capitoli ${a}–${b}`, done:"Superato", play:"Gioca", galP:"Le illustrazioni si sbloccano man mano che leggi.", locked:n=>`Capitolo ${n}`, moreCh:"bloccati", opened:(a,b)=>`Sbloccate ${a} su ${b}`, ch:"Capitolo", close:"Chiudi", gameNote:(a,b)=>`C'è un minigioco sui capitoli ${a}–${b}`, gameGo:"Gioca", opt:"facoltativo", back:"Torna al romanzo"},
-  en:{btn:"Novel extras", music:"Soundtrack", games:"Games", gallery:"Gallery", gamesP:"Mini-games based on the chapters. Optional — just a bonus.", level:"Level", chs:(a,b)=>`chapters ${a}–${b}`, done:"Completed", play:"Play", galP:"Illustrations unlock as you read.", locked:n=>`Chapter ${n}`, moreCh:"locked", opened:(a,b)=>`Unlocked ${a} of ${b}`, ch:"Chapter", close:"Close", gameNote:(a,b)=>`There's a mini-game for chapters ${a}–${b}`, gameGo:"Play", opt:"optional", back:"Back to the novel"}
+  ru:{btn:"Разделы романа", music:"Саундтрек", games:"Игры", gallery:"Галерея", gamesP:"Мини-игры по главам романа: Наталья бежит, прыгает, пригибается и собирает предметы. Играть необязательно — это просто бонус.", level:"Уровень", chs:(a,b)=>`главы ${a}–${b}`, done:"Пройдено", play:"Играть", galP:"Иллюстрации открываются по мере чтения: дочитайте главу — и её картинки появятся здесь.", locked:n=>`Глава ${n}`, moreCh:"ещё закрыто", opened:(a,b)=>`Открыто ${a} из ${b}`, ch:"Глава", close:"Закрыть", gameNote:(a,b)=>`По главам ${a}–${b} есть мини-игра`, gameGo:"Сыграть", opt:"по желанию", back:"К роману", riddles:"Загадки", runT:"Бегущая Наталья", fightT:"Поединок", fightP:"Файтинг в духе Street Fighter: агент Луис против противников из романа. Удары, пинки, блок, мандарины и супер-приём.", bout:"Бой", ridP:"Наталья и Луис загадывают друг другу загадки о Петербурге. Отвечай за того, кого спросили."},
+  es:{btn:"Secciones de la novela", music:"Banda sonora", games:"Juegos", gallery:"Galería", gamesP:"Minijuegos basados en los capítulos: corré, saltá, agachate y recogé objetos. Son opcionales, un regalo extra.", level:"Nivel", chs:(a,b)=>`capítulos ${a}–${b}`, done:"Superado", play:"Jugar", galP:"Las ilustraciones se desbloquean a medida que leés: terminá un capítulo y sus imágenes aparecerán aquí.", locked:n=>`Capítulo ${n}`, moreCh:"bloqueados", opened:(a,b)=>`Desbloqueadas ${a} de ${b}`, ch:"Capítulo", close:"Cerrar", gameNote:(a,b)=>`Hay un minijuego sobre los capítulos ${a}–${b}`, gameGo:"Jugar", opt:"opcional", back:"Volver a la novela", riddles:"Adivinanzas", runT:"Natalia corre", fightT:"Pelea", fightP:"Un juego de pelea al estilo Street Fighter: el agente Luis contra rivales de la novela. Golpes, patadas, bloqueo, mandarinas y un superataque.", bout:"Pelea", ridP:"Natalia y Luis se hacen adivinanzas sobre San Petersburgo. Respondé por el que tiene que contestar."},
+  it:{btn:"Sezioni del romanzo", music:"Colonna sonora", games:"Giochi", gallery:"Galleria", gamesP:"Minigiochi ispirati ai capitoli: corri, salta, abbassati e raccogli oggetti. Sono facoltativi.", level:"Livello", chs:(a,b)=>`capitoli ${a}–${b}`, done:"Superato", play:"Gioca", galP:"Le illustrazioni si sbloccano man mano che leggi.", locked:n=>`Capitolo ${n}`, moreCh:"bloccati", opened:(a,b)=>`Sbloccate ${a} su ${b}`, ch:"Capitolo", close:"Chiudi", gameNote:(a,b)=>`C'è un minigioco sui capitoli ${a}–${b}`, gameGo:"Gioca", opt:"facoltativo", back:"Torna al romanzo", riddles:"Indovinelli", runT:"Natalia corre", fightT:"Duello", fightP:"Un picchiaduro in stile Street Fighter: l'agente Luis contro gli avversari del romanzo.", bout:"Duello", ridP:"Natalia e Luis si fanno indovinelli su San Pietroburgo."},
+  en:{btn:"Novel extras", music:"Soundtrack", games:"Games", gallery:"Gallery", gamesP:"Mini-games based on the chapters. Optional — just a bonus.", level:"Level", chs:(a,b)=>`chapters ${a}–${b}`, done:"Completed", play:"Play", galP:"Illustrations unlock as you read.", locked:n=>`Chapter ${n}`, moreCh:"locked", opened:(a,b)=>`Unlocked ${a} of ${b}`, ch:"Chapter", close:"Close", gameNote:(a,b)=>`There's a mini-game for chapters ${a}–${b}`, gameGo:"Play", opt:"optional", back:"Back to the novel", riddles:"Riddles", runT:"Running Natalia", fightT:"Fight", fightP:"A Street Fighter–style fighting game: agent Luis against rivals from the novel.", bout:"Fight", ridP:"Natalia and Luis ask each other riddles about Saint Petersburg."}
 };
 const exT = l => XT[l] || XT.en;
-const EX_IC = {music:"♫", games:"🎮", gallery:"▦"};
+const EX_IC = {music:"♫", games:"🎮", gallery:"▦", riddles:"?"};
 let exReturn = null;
-function exTabs(n){ const t = []; if (n.soundtrack && n.soundtrack.length) t.push("music"); if (n.runner) t.push("games"); if (n.gallery) t.push("gallery"); return t; }
+function exTabs(n){ const t = []; if (n.soundtrack && n.soundtrack.length) t.push("music"); if (n.runner || n.fight) t.push("games"); if (n.riddles) t.push("riddles"); if (n.gallery) t.push("gallery"); return t; }
 function extrasHTML(n){
   const tabs = exTabs(n); if (!tabs.length) return "";
   const T = exT(n.lang);
@@ -1784,7 +1786,7 @@ function setupExtras(n){
   const show = k => {
     store.set("exTab:" + n.slug, k);
     box.querySelectorAll("[data-ex]").forEach(b => b.setAttribute("aria-selected", b.dataset.ex === k));
-    if (k === "music") exMusic(n, pane, T); else if (k === "games") exGames(n, pane, T); else exGallery(n, pane, T);
+    if (k === "music") exMusic(n, pane, T); else if (k === "games") exGames(n, pane, T); else if (k === "riddles") exRiddles(n, pane, T); else exGallery(n, pane, T);
   };
   const open = (yes, k) => { body.hidden = !yes; box.classList.toggle("on", yes); opener.setAttribute("aria-expanded", yes); if (yes) show(k || (tabs.includes(store.get("exTab:" + n.slug)) ? store.get("exTab:" + n.slug) : tabs[0])); };
   opener.onclick = () => open(body.hidden);
@@ -1811,19 +1813,36 @@ function loadRunner(cb){
   if (!document.getElementById("rnCss")) { const l = document.createElement("link"); l.id = "rnCss"; l.rel = "stylesheet"; l.href = "games/runner/runner.css"; document.head.appendChild(l); }
   // runner.js — движок; дальше подключаются уровни других романов (rezonans.js — «Резонанс любви»)
   const add = (src, next) => { const s = document.createElement("script"); s.src = src; s.onload = next; s.onerror = next; document.head.appendChild(s); };
-  add("games/runner/runner.js", () => add("games/runner/rezonans.js", cb));
+  add("games/runner/runner.js", () => add("games/runner/rezonans.js", () => add("games/fight/fight.js", () => add("games/riddles/riddles.js", cb))));
 }
 function exGames(n, pane, T){
   pane.innerHTML = `<div class="loading">…</div>`;
   loadRunner(() => {
     if (!pane.isConnected) return;
-    const won = store.get("run:" + n.slug, []), R = window.LitmirRunner;
-    pane.innerHTML = `<p class="ex-p">${esc(T.gamesP)}</p><div class="ex-games">${R.list(n.slug).map(g => { const sky = R.sky(n.slug, g.n) || ["#555", "#888", "#aaa"];
+    const won = store.get("run:" + n.slug, []), R = window.LitmirRunner, Fg = window.LitmirFight;
+    let html = "";
+    if (n.runner) html += `${n.fight ? `<h4 class="ex-h">${esc(T.runT)}</h4>` : ""}<p class="ex-p">${esc(T.gamesP)}</p><div class="ex-games">${R.list(n.slug).map(g => { const sky = R.sky(n.slug, g.n) || ["#555", "#888", "#aaa"];
       return `<a class="ex-game" href="#/${n.slug}/juego/${g.n}" style="background:linear-gradient(160deg,${sky[0]},${sky[1]} 60%,${sky[2]})">
         <img src="${R.icon(n.slug, g.n, 40)}" alt="" width="40" height="40">
         <span class="ex-gk">${esc(T.level)} ${g.n} · ${esc(T.chs(g.from, g.to))}</span>
         <b>${esc(g.title)}</b>
         <span class="ex-gs">${won.includes(g.n) ? `✓ ${esc(T.done)}` : `▶ ${esc(T.play)}`}</span></a>`; }).join("")}</div>`;
+    if (n.fight && Fg && Fg.has(n.slug)) { const fw = store.get("fight:" + n.slug, 0);
+      html += `<h4 class="ex-h">${esc(T.fightT)}</h4><p class="ex-p">${esc(T.fightP)}</p><div class="ex-games">${Fg.list(n.slug).map(g => { const sky = (R.ext.THEMES[g.theme] || {}).sky || ["#333", "#555", "#777"];
+        return `<a class="ex-game" href="#/${n.slug}/boj/${g.n}" style="background:linear-gradient(160deg,${sky[0]},${sky[1]} 60%,${sky[2]})">
+          <span class="ex-vs">VS</span>
+          <span class="ex-gk">${esc(T.bout)} ${g.n} · ${esc(g.place)}</span>
+          <b>${esc(g.name)}</b>
+          <span class="ex-gs">${fw >= g.n ? `✓ ${esc(T.done)}` : `▶ ${esc(T.play)}`}</span></a>`; }).join("")}</div>`; }
+    pane.innerHTML = html;
+  });
+}
+function exRiddles(n, pane, T){
+  pane.innerHTML = `<div class="loading">…</div>`;
+  loadRunner(() => {
+    if (!pane.isConnected) return;
+    pane.innerHTML = `<p class="ex-p">${esc(T.ridP)}</p><div class="ex-rd"></div>`;
+    if (window.LitmirRiddles) window.LitmirRiddles.mount(pane.querySelector(".ex-rd"), {slug:n.slug, store});
   });
 }
 async function exGallery(n, pane, T){
@@ -1869,6 +1888,22 @@ function gamePage(n, lv){
     const won = () => { const d = store.get("run:" + n.slug, []); if (!d.includes(lv)) { d.push(lv); store.set("run:" + n.slug, d); } };
     R.mount(document.getElementById("rnHost"), {slug:n.slug, level:lv, sfx, onUnlock:won,
       onNext:() => { location.hash = `#/${n.slug}/juego/${lv + 1}`; }, onBack:() => { exReturn = n.slug; location.hash = `#/${n.slug}`; }});
+  });
+}
+/* Страница поединка: #/<slug>/boj/<бой> */
+function fightPage(n, stg){
+  if (lang !== n.lang) setLang(n.lang);
+  const here = location.hash;
+  app.innerHTML = `<div class="loading">…</div>`;
+  loadRunner(() => {
+    if (location.hash !== here) return;
+    const Fg = window.LitmirFight; if (!Fg || !Fg.has(n.slug)) { location.hash = `#/${n.slug}`; return; }
+    document.title = n.title;
+    app.innerHTML = `<div class="reader-bar"><div class="wrap"><a class="crumb" href="#/${n.slug}" id="rnBack">← ${esc(n.title)}</a></div></div><div id="rnHost"></div>`;
+    document.getElementById("rnBack").onclick = () => { exReturn = n.slug; };
+    Fg.mount(document.getElementById("rnHost"), {slug:n.slug, stage:stg || 1, sfx,
+      onWin:k => { if (k > store.get("fight:" + n.slug, 0)) store.set("fight:" + n.slug, k); },
+      onNext:k => { location.hash = `#/${n.slug}/boj/${k}`; }, onBack:() => { exReturn = n.slug; location.hash = `#/${n.slug}`; }});
   });
 }
 function chapterGameNote(n, i){
@@ -3021,6 +3056,7 @@ function route(){
   if (!adultOk(n)) { adultGate(n); return toTop(); }
   if (parts[1] === "progreso") { progressPage(n); return toTop(); }
   if (parts[1] === "juego" && n.runner) { gamePage(n, parseInt(parts[2], 10)); return toTop(); }
+  if (parts[1] === "boj" && n.fight) { fightPage(n, parseInt(parts[2], 10) || 1); return toTop(); }
   if (parts[1]) {
     const i = chapterIndex(n, decodeURIComponent(parts[1]));
     if (chapterLocked(n, i) && !signedIn()) { if (lang !== n.lang) setLang(n.lang); loginGate("#/" + n.slug); return toTop(); }

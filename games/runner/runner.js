@@ -644,7 +644,7 @@ function mount(el, opt){
 /* Расширения: другие романы добавляют свои уровни, фоны, препятствия и героев (см. rezonans.js) */
 const HEROES = {}, PEOPLE = {};
 window.LitmirRunner = {
-  ext:{LEVELS, THEMES, OB, ITEM, HEROES, PEOPLE, POSES, S0, h:{H, GY, TW, TAU, clamp, lerp, rng, hash, lg, glow, rrect, ell, wrap, facade, hillsLine, cloud, stars}},
+  ext:{LEVELS, THEMES, OB, ITEM, HEROES, PEOPLE, POSES, S0, h:{H, GY, TW, TAU, clamp, lerp, rng, hash, lg, glow, rrect, ell, wrap, facade, hillsLine, cloud, stars, drawNatalia, runPose, plural}},
   mount,
   has(slug, level){ return !!(LEVELS[slug] && LEVELS[slug][level - 1]); },
   count(slug){ return (LEVELS[slug] || []).length; },
