@@ -1,8 +1,7 @@
 *Il treno fantasma è grande, nero e molto silenzioso. Nessuno sa dove va. Ecco tutta la composizione, carrozza per carrozza, nell'ordine in cui Marco e Alice l'hanno attraversata. E ogni vagone nasconde un segreto.*
 
-![](novels/il-treno-fantasma/img/vagoni.jpg)
 
-## 0 · Il Quartiere dei Pazzi
+## 🤪 0 · Il Quartiere dei Pazzi
 
 **Che cosa c'è.** Un posto strano, dove molte persone ridono e parlano da sole. Qui il treno passa «tra un'ora», dice il capostazione, dopo aver preso 200 rubli.
 
@@ -10,7 +9,7 @@
 
 **Il segreto.** I due pazzi avevano ragione. Il treno fantasma non ha un binario: passa ovunque ci sia una crisi d'amore.
 
-## 1 · Il vagone della gente seria
+## 😐 1 · Il vagone della gente seria
 
 **Che cosa c'è.** Facce severe, voci basse. Nessuno ride.
 
@@ -18,7 +17,7 @@
 
 **Il segreto.** La pensionata è la suocera che il treno ha «portato via» la settimana scorsa: quella dell'uomo grasso della stazione, che ne era contentissimo.
 
-## 2 · Il vagone ristorante
+## 🍝 2 · Il vagone ristorante
 
 **Che cosa c'è.** Un vagone bello e luminoso, tavoli apparecchiati e gnocchi al pesto.
 
@@ -26,7 +25,7 @@
 
 **Il segreto.** Le carte di Alice dicono a Matteo: «Secondo i pianeti, tu puoi mangiare!». Non era una profezia: era il primo passo del piano del treno per farli diventare amici. Il conto, alla fine, lo paga Marco.
 
-## 3 · Il vagone biblioteca
+## 📚 3 · Il vagone biblioteca
 
 **Che cosa c'è.** Silenzio e libri antichi. Una sezione esoterica. Due titoli molto speciali: «Istruzioni per guidare il treno» e «Come trovare una ragazza in fuga».
 
@@ -34,7 +33,7 @@
 
 **Il segreto.** I due libri sono sullo stesso scaffale, uno accanto all'altro. Il treno li ha messi lì apposta: uno per chi scappa, l'altro per chi insegue.
 
-## 4 · Il vagone confessionale
+## 🕯️ 4 · Il vagone confessionale
 
 **Che cosa c'è.** Un vagone diverso dagli altri. Sulla porta, una targa: «Confessionale». Atmosfera pesante, silenzio e ombre.
 
@@ -42,7 +41,7 @@
 
 **Il segreto.** Alice e Matteo scappano ridendo senza pagare. Marco invece paga 200 rubli. Il treno voleva sapere proprio questo: chi dei due è pronto a cambiare.
 
-## 5 · La cabina del macchinista
+## 🧭 5 · La cabina del macchinista
 
 **Che cosa c'è.** Una porta pesante, un pannello di controllo e un uomo anziano con il berretto da lavoro.
 
@@ -50,7 +49,7 @@
 
 **Il segreto.** Vittorio chiama Matteo «fratello». Forse lo sono davvero. E Vittorio prende subito i comandi, come se conoscesse la strada fin dall'inizio.
 
-## 6 · Il vagone campeggio
+## ⛺ 6 · Il vagone campeggio
 
 **Che cosa c'è.** Piccole tende a strisce, sacchi a pelo e un odore di legna bruciata.
 
@@ -58,7 +57,7 @@
 
 **Il segreto.** Il mate amaro che uno zombie offre a Marco non è veleno: è coraggio. Dopo un sorso, Marco riparte all'inseguimento.
 
-## 7 · Il vagone labirinto
+## 🪞 7 · Il vagone labirinto
 
 **Che cosa c'è.** Specchi e pareti che si muovono. Chi entra si perde.
 
@@ -66,7 +65,7 @@
 
 **Il segreto.** Dal labirinto si esce solo dicendo la verità. Marco: «Tenerti stretta non significa amarti». Alice: «Forse mi piaceva un po' vederti soffrire». Proprio allora il treno frena, e lei cade tra le sue braccia.
 
-## 8 · Il vagone piscina
+## 🧊 8 · Il vagone piscina
 
 **Che cosa c'è.** Acqua che ondeggia pericolosamente. Marco non sa nuotare.
 
@@ -74,7 +73,7 @@
 
 **Il segreto.** La carta magica di Alice ha un nome latino: «Per Aspera ad Aquam». In un secondo l'acqua diventa un ponte di ghiaccio, ma solo per chi lo attraversa mano nella mano.
 
-## 9 · Il vagone prigione
+## 🔒 9 · Il vagone prigione
 
 **Che cosa c'è.** Buio totale. Poi le luci si accendono e le sbarre si chiudono.
 
@@ -82,7 +81,7 @@
 
 **Il segreto.** È la verità sul Treno Fantasma: era tutto una messa in scena. Il treno ha un solo obiettivo, risolvere le crisi d'amore. E la crisi di Marco e Alice è risolta.
 
-## ★ · Sinea, capolinea
+## 🌕 ★ · Sinea, capolinea
 
 **Che cosa c'è.** Una panchina, la luna luminosa di Sinea e un treno che sparisce nella notte, come era arrivato.
 
