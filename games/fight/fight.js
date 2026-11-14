@@ -12,8 +12,10 @@ const AW = 1000, G = 1900, ROUND_T = 60;
 const CH = {
   luis:{name:"Луис", sub:"агент по небесным делам", hp:100, spd:175, jump:660, s:1.08, special:"mandarin", superName:"Грифоны!",
     look:{skin:"#d9b294", hair:"#b9b9bf", hairStyle:"swept", coat:"#1f2433", arm:"#262c3e", lining:"#8a2230", pants:"#17181e", shoe:"#0c0c0f", shirt:"#2d2d33", long:true, stubble:true}},
-  cap:{name:"Капитан", sub:"полиция хаоса", hp:100, spd:195, jump:680, s:1.0, special:"dart", superName:"Задержание!",
-    look:{skin:"#efd2bf", hair:"#ece6d4", hairStyle:"bun", coat:"#1c2438", arm:"#232d46", pants:"#161b28", shoe:"#0b0b0e", shirt:"#e8eef5", epaulet:true, lips:true}},
+  atlant:{name:"Атлант", sub:"берёт двести рублей за проход", hp:140, spd:120, jump:520, s:1.3, special:"stone", superName:"Двести рублей!",
+    look:{skin:"#9a948e", hair:"#7d7772", hairStyle:"curly", beard:true, coat:"#9a948e", arm:"#9a948e", pants:"#8d8782", shoe:"#7d7772", shirt:null, stone:true, bulk:1.45}},
+  agent:{name:"Агент", sub:"полиция хаоса", hp:100, spd:195, jump:680, s:1.0, special:"cuffs", superName:"Задержание!",
+    look:{skin:"#e6c3a6", hair:"#2c2420", hairStyle:"short", cap:"#1a2236", coat:"#1c2438", arm:"#232d46", pants:"#161b28", shoe:"#0b0b0e", shirt:"#e8eef5", epaulet:true}},
   dp:{name:"Дмитрий Петрович", sub:"глава службы небесных дел", hp:125, spd:140, jump:560, s:1.02, special:"thread", superName:"Золотой луч!",
     look:{skin:"#e3c2a8", hair:"#ecebe7", hairStyle:"short", coat:"#59606e", arm:"#636b7a", pants:"#383d48", shoe:"#151515", shirt:"#ece9e2", tie:"#c9a23a", glasses:true, aura:true}}
 };
@@ -49,10 +51,16 @@ const KEYS = Object.keys(PS.idle);
 /* ───────── Этапы ───────── */
 const FIGHTS = {
   "rezonans-lyubvi":{hero:"luis", foes:[
-    {id:"cap", theme:"spbWhite", place:"Канал Грибоедова, белая ночь",
-     intro:"Белая ночь, канал Грибоедова. Капитан полиции хаоса перекрыла дорогу к гостинице «Океан», где ждёт Наталья. Отступать Луис не умеет.",
-     lines:[["cap", "Ты снова мешаешь работе полиции хаоса, Луис."], ["luis", "А ты снова пришла без приглашения."]]},
+    {id:"atlant", theme:"spbDay", place:"Миллионная улица, у Нового Эрмитажа",
+     intro:"Миллионная улица. Каменный атлант сошёл с портика Нового Эрмитажа и никого не пропускает без двухсот рублей. Луис торопится к Наталье — и платить не собирается.",
+     win:"Атлант вернулся держать портик. Проход снова бесплатный.",
+     lines:[["atlant", "Проход — двести рублей."], ["luis", "Я агент по небесным делам. У меня служебный пропуск."], ["atlant", "Пропуски не принимаем."]]},
+    {id:"agent", theme:"spbWhite", place:"Канал Грибоедова, белая ночь",
+     intro:"Белая ночь, канал Грибоедова. Агент полиции хаоса перекрыл дорогу к гостинице «Океан», где ждёт Наталья. Он очень хочет верить, что поймает Луиса.",
+     win:"Агент полиции хаоса отступил. Дорога к Наталье свободна.",
+     lines:[["agent", "Надо верить, что мы тебя поймаем, Луис."], ["luis", "Верь. Это бесплатно."]]},
     {id:"dp", theme:"spbDawn", place:"Невский, рассвет у Дома Зингера",
+     win:"Город снова принадлежит самому себе.",
      intro:"Рассвет над Невским. Дмитрий Петрович тянет золотые нити к куполу Дома Зингера и поднимает город в небо. Остановить его может только агент, которому больше нечего терять.",
      lines:[["dp", "Город должен принадлежать тем, кто его понимает."], ["luis", "Город принадлежит самому себе."]]}
   ], finale:[["nat", "Вы что, дрались мандаринами?"], ["luis", "Привет от витаминного отдела."], ["nat", "Мой герой… в мандариновом соке."]]}
@@ -94,9 +102,10 @@ function drawFighter(c, f, t){
   const hipY = f.y > 0 ? -54 : -Math.max(f1[1], f2[1], 20);
   const sx = Math.sin(P.lean) * 42, sy = hipY - Math.cos(P.lean) * 42;
   // дальние рука и нога
-  limb(c, sx - 3, sy + 4, P.a2, 21, P.e2, 20, 8, 7, L.arm, L.arm);
+  const bk = L.bulk || 1;
+  limb(c, sx - 3, sy + 4, P.a2, 21, P.e2, 20, 8 * bk, 7 * bk, L.stone ? "#857f79" : L.arm, L.stone ? "#857f79" : L.arm);
   { const [ex, ey] = [sx - 3 + Math.sin(P.a2) * 21 + Math.sin(P.a2 + P.e2) * 20, sy + 4 + Math.cos(P.a2) * 21 + Math.cos(P.a2 + P.e2) * 20]; ell(c, ex, ey, 4.4, 4.4, L.skin); }
-  const [b2x, b2y] = limb(c, -3, hipY, P.h2, 27, P.k2, 27, 10, 9, L.pants);
+  const [b2x, b2y] = limb(c, -3, hipY, P.h2, 27, P.k2, 27, 10 * bk, 9 * bk, L.stone ? "#827c77" : L.pants);
   ell(c, b2x + 4, b2y + 2, 8, 3.6, L.shoe);
   // пальто: полы развеваются
   if (L.long) {
@@ -105,12 +114,20 @@ function drawFighter(c, f, t){
     c.fillStyle = L.coat; c.beginPath(); c.moveTo(-12, hipY - 6); c.lineTo(12, hipY - 6); c.lineTo(16 + fl * .3, hipY + 38); c.quadraticCurveTo(0, hipY + 42, -17 - fl, hipY + 40); c.closePath(); c.fill();
   }
   // ближняя нога
-  const [b1x, b1y] = limb(c, 3, hipY, P.h1, 27, P.k1, 27, 10.5, 9.5, L.pants);
+  const [b1x, b1y] = limb(c, 3, hipY, P.h1, 27, P.k1, 27, 10.5 * bk, 9.5 * bk, L.pants);
   ell(c, b1x + 4, b1y + 2, 8.5, 3.8, L.shoe);
   // торс
   c.save(); c.translate(0, hipY); c.rotate(P.lean);
-  c.fillStyle = L.coat; rrect(c, -13, -46, 26, 50, 8); c.fill();
-  c.fillStyle = L.shirt; c.beginPath(); c.moveTo(-1, -46); c.lineTo(7, -46); c.lineTo(4, -28); c.closePath(); c.fill();
+  if (L.stone) {
+    // каменный торс атланта: мышцы, трещинки и набедренная повязка
+    c.fillStyle = lg(c, -16, 0, 16, 0, ["#7f7974", "#aaa49e", "#8a847f"]); rrect(c, -16, -48, 32, 52, 10); c.fill();
+    c.strokeStyle = "rgba(60,55,52,.45)"; c.lineWidth = 1.2; c.beginPath(); c.moveTo(0, -42); c.lineTo(0, -8); c.moveTo(-12, -34); c.quadraticCurveTo(-4, -28, 0, -34); c.quadraticCurveTo(4, -28, 12, -34);
+    for (let k = 0; k < 3; k++) { c.moveTo(-7, -22 + k * 7); c.lineTo(7, -22 + k * 7); } c.moveTo(-14, -12); c.lineTo(-10, -18); c.stroke();
+    c.fillStyle = "#77716c"; c.beginPath(); c.moveTo(-15, -4); c.lineTo(15, -4); c.lineTo(10, 14); c.lineTo(-12, 14); c.closePath(); c.fill();
+  } else {
+    c.fillStyle = L.coat; rrect(c, -13, -46, 26, 50, 8); c.fill();
+    c.fillStyle = L.shirt; c.beginPath(); c.moveTo(-1, -46); c.lineTo(7, -46); c.lineTo(4, -28); c.closePath(); c.fill();
+  }
   if (L.tie) { c.fillStyle = L.tie; c.beginPath(); c.moveTo(3, -44); c.lineTo(6, -38); c.lineTo(4, -22); c.lineTo(2, -38); c.fill(); }
   if (L.epaulet) { c.fillStyle = "#e3b84e"; c.fillRect(-14, -47, 10, 3.5); c.fillRect(5, -47, 9, 3.5); c.fillRect(-12, -6, 25, 3); for (let k = 0; k < 3; k++) ell(c, 9, -36 + k * 9, 1.4, 1.4, "#e3b84e"); }
   if (L.long) { c.fillStyle = L.lining; c.fillRect(9, -44, 3, 46); }
@@ -122,17 +139,20 @@ function drawFighter(c, f, t){
   ell(c, 6.5, hy - 2, 1.3, 1.6, "#1f1818");
   c.strokeStyle = "#5a3a2a"; c.lineWidth = 1.2; c.beginPath(); c.moveTo(4.5, hy - 5.5); c.lineTo(9, hy - 5); c.stroke();
   if (L.glasses) { c.strokeStyle = "#222"; c.lineWidth = 1.1; c.beginPath(); c.arc(6.5, hy - 2, 3.6, 0, TAU); c.moveTo(3, hy - 2); c.lineTo(-6, hy - 3); c.stroke(); }
+  if (L.beard) { c.fillStyle = L.hair; c.beginPath(); c.moveTo(-6, hy + 1); c.quadraticCurveTo(2, hy + 22, 11, hy + 3); c.lineTo(10, hy + 8); c.quadraticCurveTo(3, hy + 9, -2, hy + 5); c.fill(); for (let q = 0; q < 4; q++) ell(c, -3 + q * 4, hy + 12 + (q % 2) * 3, 2.6, 2.6, L.hair); }
   if (L.stubble) { c.fillStyle = "rgba(110,110,115,.4)"; c.beginPath(); c.ellipse(3, hy + 6, 8, 5, 0, 0, Math.PI); c.fill(); }
   c.strokeStyle = L.lips ? "#b0484a" : "#8a4a3a"; c.lineWidth = 1.3; c.beginPath();
   if (f.st === "hit" || f.st === "ko") { ell(c, 7, hy + 6, 1.8, 2.2, "#5a1e1e"); } else { c.moveTo(4, hy + 6); c.lineTo(9, hy + 5.5); c.stroke(); }
   c.fillStyle = L.hair;
-  if (L.hairStyle === "bun") { ell(c, -2, hy - 5, 11, 9, L.hair); ell(c, -10, hy - 9, 6, 6, L.hair); c.fillRect(-11, hy - 6, 7, 12); }
+  if (L.hairStyle === "curly") { for (const [hx2, hy2] of [[-8, -6], [-3, -10], [3, -11], [8, -8], [-10, 0], [-6, 4]]) ell(c, hx2, hy + hy2, 4.6, 4.6, L.hair); }
+  else if (L.hairStyle === "bun") { ell(c, -2, hy - 5, 11, 9, L.hair); ell(c, -10, hy - 9, 6, 6, L.hair); c.fillRect(-11, hy - 6, 7, 12); }
   else if (L.hairStyle === "swept") { c.beginPath(); c.ellipse(-1, hy - 5, 11.5, 8.5, 0, Math.PI * .9, TAU * 1.03); c.fill(); c.fillRect(-11, hy - 6, 8, 13); c.beginPath(); c.moveTo(9, hy - 8); c.quadraticCurveTo(0, hy - 20, -12, hy - 8); c.lineTo(-10, hy - 3); c.fill(); }
   else { c.beginPath(); c.ellipse(-1, hy - 6, 11, 7, 0, Math.PI * .95, TAU * 1.02); c.fill(); c.fillRect(-11, hy - 6, 7, 10); }
+  if (L.cap) { c.fillStyle = L.cap; c.beginPath(); c.ellipse(0, hy - 9, 12, 5, 0, Math.PI, TAU); c.fill(); c.fillRect(-11, hy - 10, 22, 4); c.fillStyle = "#111"; c.beginPath(); c.ellipse(9, hy - 6.5, 7, 2, 0, 0, TAU); c.fill(); c.fillStyle = "#e3b84e"; ell(c, 3, hy - 11, 2.2, 2.2); c.fill(); }
   c.restore();
   // ближняя рука (поверх всего)
-  const [fx, fy] = limb(c, sx + 2, sy + 4, P.a1, 21, P.e1, 20, 9, 8, L.arm, L.arm);
-  ell(c, fx, fy, 5, 5, L.skin);
+  const [fx, fy] = limb(c, sx + 2, sy + 4, P.a1, 21, P.e1, 20, 9 * bk, 8 * bk, L.arm, L.arm);
+  ell(c, fx, fy, 5 * bk, 5 * bk, L.skin);
   if (f.st === "attack" && f.mv && f.mv.pose === "wind" && f.d.special === "mandarin") drawMandarin(c, fx, fy - 2, t, 6);
   c.restore();
 }
@@ -164,7 +184,7 @@ function mount(el, opt){
       <div class="fg-dpad"><button data-k="l" aria-label="Влево">◀</button><button data-k="u" aria-label="Прыжок">▲</button><button data-k="d" aria-label="Присесть">▼</button><button data-k="r" aria-label="Вправо">▶</button></div>
       <div class="fg-btns"><button data-k="p">Удар</button><button data-k="k">Пинок</button><button data-k="s">🍊</button><button data-k="x" class="fg-sup">Супер</button></div>
     </div>
-    <p class="rn-note">Назад — это блок. Присесть можно и от дротиков, и от золотого луча. Мандарин летит через всю арену, а когда шкала внизу заполнится — жми «Супер».</p>
+    <p class="rn-note">Назад — это блок. Присесть можно от наручников и золотого луча, а от ударной волны атланта — только прыгать. Мандарин летит через всю арену, а когда шкала внизу заполнится — жми «Супер».</p>
   </div>`;
   const root = el.querySelector(".fg"), cv = root.querySelector("canvas"), c = cv.getContext("2d");
   const ovStart = root.querySelector(".rn-start"), ovEnd = root.querySelector(".rn-end");
@@ -182,7 +202,7 @@ function mount(el, opt){
 
   // ── состояние
   const assist = Math.max(.6, 1 - fails * .1);
-  const AI = {cap:{react:.18, block:.45, special:.24, aggr:.78, jump:.08}, dp:{react:.16, block:.52, special:.32, aggr:.62, jump:.05}}[F.id];
+  const AI = {atlant:{react:.26, block:.28, special:.26, aggr:.7, jump:.02}, agent:{react:.17, block:.45, special:.24, aggr:.8, jump:.1}, dp:{react:.16, block:.52, special:.32, aggr:.62, jump:.05}}[F.id];
   let phase = "ready", time = 0, roundT = ROUND_T, round = 1, msg = null, hitstop = 0, shake = 0, slowmo = 1, phaseT = 0, cam = 0;
   let parts = [], projs = [], fx = [], bubble = null, nat = null, finI = -1;
   let A, B;
@@ -249,14 +269,16 @@ function mount(el, opt){
   function spawnProj(f){
     const s = f.d.s;
     if (f.d.special === "mandarin") projs.push({kind:"mandarin", owner:f, x:f.x + f.face * 40 * s, h:f.y + 80 * s, vx:f.face * 430, t:0, dmg:9, kb:130, stun:.3});
-    else if (f.d.special === "dart") { for (let i = 0; i < 2; i++) projs.push({kind:"dart", owner:f, x:f.x + f.face * (40 + i * 26) * s, h:f.y + 84 * s, vx:f.face * 560, t:0, dmg:5, kb:80, stun:.22}); }
+    else if (f.d.special === "cuffs") projs.push({kind:"cuffs", owner:f, x:f.x + f.face * 40 * s, h:f.y + 84 * s, vx:f.face * 540, t:0, dmg:7, kb:90, stun:.32});
+    else if (f.d.special === "stone") projs.push({kind:"stone", owner:f, x:f.x + f.face * 50 * s, h:f.y + 60, vx:f.face * 300, t:0, dmg:12, kb:180, stun:.4});
     else if (f.d.special === "thread") { const tg = f === A ? B : A; projs.push({kind:"thread", owner:f, x:tg.x, h:0, vx:0, t:0, dmg:12, kb:60, stun:.4}); }
     snd.throw();
   }
   function doSuper(f){
     const tg = f === A ? B : A;
     if (f.d.special === "mandarin") projs.push({kind:"griffin", owner:f, x:f.x - f.face * 120, h:50, vx:f.face * 760, t:0, dmg:26, kb:300, stun:.7, launch:true});
-    else if (f.d.special === "dart") { f.mv = MV.rush; f.mvName = "rush"; f.mvT = 0; f.hitDone = false; }
+    else if (f.d.special === "cuffs") { f.mv = MV.rush; f.mvName = "rush"; f.mvT = 0; f.hitDone = false; }
+    else if (f.d.special === "stone") { shake = .5; projs.push({kind:"wave", owner:f, x:f.x + f.face * 40, h:8, vx:f.face * 420, t:0, dmg:20, kb:200, stun:.6, launch:true}); }
     else projs.push({kind:"beam", owner:f, x:f.x + f.face * 40, h:f.y + 70, vx:0, t:0, dmg:22, kb:220, stun:.6, dir:f.face});
   }
 
@@ -324,7 +346,7 @@ function mount(el, opt){
     if (ai.t > 0) { if (ai.walk) out[ai.walk] = true; return [out, pr]; }
     ai.t = AI.react * (.7 + Math.random() * .6) / Math.max(.75, assist); ai.walk = null;
     if (danger && Math.random() < AI.block * assist) {
-      const lowP = projs.some(p => p.owner === o && p.kind === "dart");
+      const lowP = projs.some(p => p.owner === o && p.kind === "cuffs");
       if (projs.some(p => p.owner === o && (p.kind === "mandarin") && Math.abs(p.x - f.x) < 170) && Math.random() < .45) { out.u = true; out[toward] = true; return [out, pr]; }
       ai.want = {inp:{[away]:true, d:lowP && Math.random() < .5}}; ai.hold = .35; Object.assign(out, ai.want.inp); return [out, pr];
     }
@@ -396,7 +418,7 @@ function mount(el, opt){
       }
       const ts = tg.d.s, top = tg.y + (tg.crouch && tg.y <= 0 ? 64 : 112) * ts;
       if (Math.abs(p.x - tg.x) < 22 * ts + 8 && p.h > tg.y && p.h < top) { p.done = true; applyHit(p.owner, tg, p.dmg, p.kb, p.stun, {launch:p.launch}); }
-      for (const q of projs) if (q !== p && !q.done && q.owner !== p.owner && q.kind !== "thread" && q.kind !== "beam" && p.kind !== "griffin" && q.kind !== "griffin" && Math.abs(q.x - p.x) < 20) { p.done = q.done = true; spark(p.x, GY - p.h, "255,220,150", 10); }
+      for (const q of projs) if (q !== p && !q.done && q.owner !== p.owner && q.kind !== "thread" && q.kind !== "beam" && q.kind !== "wave" && p.kind !== "wave" && p.kind !== "griffin" && q.kind !== "griffin" && Math.abs(q.x - p.x) < 20) { p.done = q.done = true; spark(p.x, GY - p.h, "255,220,150", 10); }
       if (p.x < -100 || p.x > AW + 100) p.done = true;
     }
     projs = projs.filter(p => !p.done || (p.kind === "thread" && p.t < 1) || (p.kind === "beam" && p.t < .9));
@@ -413,17 +435,17 @@ function mount(el, opt){
       snd.win();
       if (stage === cfg.foes.length - 1 && cfg.finale) { phase = "finale"; phaseT = 0; finI = -1; nat = {x:cam - 40, tx:A.x - 70, ph:0}; A.st = "win"; A.face = -1; return; }
       ovEnd.hidden = false;
-      ovEnd.innerHTML = `<div class="rn-big">Победа!</div><p>${F.id === "cap" ? "Капитан полиции хаоса отступила. Дорога к Наталье свободна." : "Город снова принадлежит самому себе."}</p><div class="rn-row">${cfg.foes[stage + 1] ? `<button class="rn-btn" data-act="next">Следующий бой →</button>` : ""}<button class="rn-btn rn-ghost" data-act="again">Ещё раз</button><button class="rn-btn rn-ghost" data-act="back">К роману</button></div>`;
+      ovEnd.innerHTML = `<div class="rn-big">Победа!</div><p>${F.win}</p><div class="rn-row">${cfg.foes[stage + 1] ? `<button class="rn-btn" data-act="next">Следующий бой →</button>` : ""}<button class="rn-btn rn-ghost" data-act="again">Ещё раз</button><button class="rn-btn rn-ghost" data-act="back">К роману</button></div>`;
     } else {
       fails++; try { sessionStorage.setItem(keyFail, fails); } catch(e) {}
       ovEnd.hidden = false;
-      ovEnd.innerHTML = `<div class="rn-big">Поражение</div><p>${foe.name} оказалась сильнее в этот раз. В следующей попытке противник будет чуть медленнее.</p><div class="rn-row"><button class="rn-btn" data-act="again">Реванш</button><button class="rn-btn rn-ghost" data-act="back">К роману</button></div>`.replace("оказалась", F.id === "dp" ? "оказался" : "оказалась");
+      ovEnd.innerHTML = `<div class="rn-big">Поражение</div><p>${foe.name} оказался сильнее в этот раз. В следующей попытке противник будет чуть медленнее.</p><div class="rn-row"><button class="rn-btn" data-act="again">Реванш</button><button class="rn-btn rn-ghost" data-act="back">К роману</button></div>`;
     }
     const b = ovEnd.querySelector("button"); if (b) b.focus({preventScroll:true});
   }
   function showFinal(){
     ovEnd.hidden = false;
-    ovEnd.innerHTML = `<div class="rn-big">Петербург свободен!</div><p>Луис победил обоих противников. Дмитрий Петрович больше не держит город золотыми нитями.</p><div class="rn-row"><button class="rn-btn" data-act="again">Сыграть ещё</button><button class="rn-btn rn-ghost" data-act="back">К роману</button></div>`;
+    ovEnd.innerHTML = `<div class="rn-big">Петербург свободен!</div><p>Луис победил всех противников. Дмитрий Петрович больше не держит город золотыми нитями.</p><div class="rn-row"><button class="rn-btn" data-act="again">Сыграть ещё</button><button class="rn-btn rn-ghost" data-act="back">К роману</button></div>`;
   }
 
   // ── отрисовка
@@ -482,6 +504,9 @@ function mount(el, opt){
     for (const p of projs) {
       const y = GY - p.h;
       if (p.kind === "mandarin") { c.save(); c.translate(p.x, y); c.rotate(p.t * 14); drawMandarin(c, 0, 0, p.t, 8); c.restore(); glow(c, p.x, y, 20, "255,160,60", .3); for (let i = 1; i < 4; i++) ell(c, p.x - p.vx * .012 * i, y, 5 - i, 5 - i, `rgba(255,150,40,${.3 - i * .07})`); }
+      else if (p.kind === "cuffs") { c.save(); c.translate(p.x, y); c.rotate(p.t * 16); c.strokeStyle = "#cfd4da"; c.lineWidth = 2.6; c.beginPath(); c.arc(-6, 0, 5, 0, TAU); c.stroke(); c.beginPath(); c.arc(6, 0, 5, 0, TAU); c.stroke(); c.lineWidth = 1.6; c.beginPath(); c.moveTo(-1, 0); c.lineTo(1, 0); c.stroke(); c.restore(); }
+      else if (p.kind === "stone") { c.save(); c.translate(p.x, y); c.rotate(p.t * 5); c.fillStyle = lg(c, -14, -12, 14, 12, ["#b3ada6", "#7d7772"]); c.fillRect(-14, -11, 28, 22); c.fillStyle = "rgba(0,0,0,.18)"; c.fillRect(-14, 4, 28, 3); c.fillRect(-2, -11, 3, 22); c.restore(); }
+      else if (p.kind === "wave") { c.save(); c.translate(p.x, GY); c.scale(p.vx > 0 ? 1 : -1, 1); c.fillStyle = "rgba(150,140,130,.75)"; c.beginPath(); c.moveTo(-40, 0); c.quadraticCurveTo(-10, -26 - Math.sin(p.t * 30) * 4, 14, 0); c.fill(); for (let i = 0; i < 5; i++) ell(c, -20 + i * 8, -6 - (i % 2) * 10, 4, 4, "rgba(120,110,100,.8)"); c.restore(); }
       else if (p.kind === "dart") { c.save(); c.translate(p.x, y); c.scale(p.vx > 0 ? 1 : -1, 1); c.strokeStyle = "#333"; c.lineWidth = 2; c.beginPath(); c.moveTo(-14, 0); c.lineTo(6, 0); c.stroke(); c.fillStyle = "#c22"; c.beginPath(); c.moveTo(-16, 0); c.lineTo(-22, -5); c.lineTo(-19, 0); c.lineTo(-22, 5); c.fill(); c.fillStyle = "#ccc"; c.beginPath(); c.moveTo(6, -1.5); c.lineTo(12, 0); c.lineTo(6, 1.5); c.fill(); c.restore(); }
       else if (p.kind === "griffin") { c.save(); c.translate(p.x, 0); if (p.vx > 0) c.scale(-1, 1); c.scale(1.4, 1.4); c.translate(-47, -GY * .4 / 1.4 * 0 - (GY * 1.4 - GY) / 1.4); X.OB.griffin.draw(c, 0, p.t * 1.6); c.restore(); glow(c, p.x, GY - 90, 70, "255,214,110", .4); }
       else if (p.kind === "beam") { const a = p.t < .15 ? p.t / .15 : 1 - clamp((p.t - .7) / .2, 0, 1); c.save(); c.globalCompositeOperation = "lighter"; const x0 = p.x, x1 = p.dir > 0 ? AW + 50 : -50; const g = c.createLinearGradient(0, y - 16, 0, y + 16); g.addColorStop(0, "rgba(255,200,80,0)"); g.addColorStop(.5, `rgba(255,240,170,${a})`); g.addColorStop(1, "rgba(255,200,80,0)"); c.fillStyle = g; c.fillRect(Math.min(x0, x1), y - 16, Math.abs(x1 - x0), 32); c.restore(); }
