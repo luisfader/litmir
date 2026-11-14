@@ -555,6 +555,7 @@ article.chapter h3{font-family:var(--sans);font-size:.72em;letter-spacing:.12em;
 .music .m-status{font-size:11px;color:var(--muted);max-width:185px}
 .music .m-status:empty{display:none}
 /* Разделы романа: саундтрек, игры, галерея */
+.ex-sec{margin:0;padding:4px 2px 8px;max-width:none}.ex-sec h2:first-child{margin-top:4px}.ex-sec img{display:block;width:100%!important;max-width:100%!important;max-height:none!important;height:auto!important;border-radius:12px;margin:12px auto;cursor:zoom-in}.ex-sec .ex-zoom{display:block;text-align:center;font-family:var(--sans);font-size:13px;color:var(--muted);margin:-4px 0 14px}
 /* Кнопка «Разделы романа» выделена: цветной фон, тень, мягкое свечение и блик, чтобы её замечали */
 .ex{position:relative;margin:24px 0 28px;border:1.5px solid color-mix(in srgb,var(--accent) 45%,var(--line));border-radius:20px;background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 13%,var(--paper)),var(--paper) 62%);box-shadow:0 0 0 0 color-mix(in srgb,var(--accent) 30%,transparent),0 10px 28px color-mix(in srgb,var(--accent) 20%,transparent);overflow:hidden;animation:exGlow 3.4s ease-in-out infinite}
 @keyframes exGlow{50%{box-shadow:0 0 0 5px color-mix(in srgb,var(--accent) 14%,transparent),0 14px 38px color-mix(in srgb,var(--accent) 34%,transparent)}}
@@ -1767,19 +1768,23 @@ const XT = {
   en:{btn:"Novel extras", music:"Soundtrack", games:"Games", gallery:"Gallery", gamesP:"Mini-games based on the chapters. Optional — just a bonus.", level:"Level", chs:(a,b)=>`chapters ${a}–${b}`, done:"Completed", play:"Play", galP:"Illustrations unlock as you read.", locked:n=>`Chapter ${n}`, moreCh:"locked", opened:(a,b)=>`Unlocked ${a} of ${b}`, ch:"Chapter", close:"Close", gameNote:(a,b)=>`There's a mini-game for chapters ${a}–${b}`, gameGo:"Play", opt:"optional", back:"Back to the novel", riddles:"Riddles", runT:"Running Natalia", fightT:"Fight", fightP:"A Street Fighter–style fighting game: agent Luis against rivals from the novel.", bout:"Fight", ridP:"Natalia and Luis ask each other riddles about Saint Petersburg.", quiz:"Quiz", qOf:(a,b)=>`Question ${a} of ${b}`, qAgain:"Take it again", qPts:(a,b)=>`${a} of ${b} points`, why:"Why?", queen:"Harvest Queen", fox:"The fox and the mead", map:"Map of Moscow", diary:"Keeper’s diary"}
 };
 const exT = l => XT[l] || XT.en;
+/* Свои разделы романа (карты, схемы): n.sections = [{file, title, icon}] — markdown-файл из папки романа */
+const exSec = (n, k) => /^sec\d+$/.test(k) ? (n.sections || [])[+k.slice(3)] : null;
+const exIc = (n, k) => { const s = exSec(n, k); return s ? (s.icon || "✦") : EX_IC[k]; };
+const exLb = (n, T, k) => { const s = exSec(n, k); return s ? s.title : T[k]; };
 const EX_IC = {music:"♫", games:"🎮", gallery:"▦", riddles:"?", quiz:"🕵", why:"🍇", queen:"👑", fox:"🦊", map:"🗺", diary:"✒"};
 let exReturn = null;
-function exTabs(n){ const t = []; if (n.soundtrack && n.soundtrack.length) t.push("music"); if (n.runner || n.fight || n.moto) t.push("games"); if (n.riddles) t.push("riddles"); if (n.quiz) t.push("quiz"); if (n.why) t.push("why"); if (n.queen) t.push("queen"); if (n.fox) t.push("fox"); if (n.moscowMap) t.push("map"); if (n.diary) t.push("diary"); if (n.gallery) t.push("gallery"); return t; }
+function exTabs(n){ const t = []; if (n.soundtrack && n.soundtrack.length) t.push("music"); (n.sections || []).forEach((x, i) => t.push("sec" + i)); if (n.runner || n.fight || n.moto) t.push("games"); if (n.riddles) t.push("riddles"); if (n.quiz) t.push("quiz"); if (n.why) t.push("why"); if (n.queen) t.push("queen"); if (n.fox) t.push("fox"); if (n.moscowMap) t.push("map"); if (n.diary) t.push("diary"); if (n.gallery) t.push("gallery"); return t; }
 function extrasHTML(n){
   const tabs = exTabs(n); if (!tabs.length) return "";
   const T = exT(n.lang);
   return `<section class="ex" id="ex">
     <button type="button" class="ex-open" aria-expanded="false" aria-controls="exBody">
-      <span class="ex-ic">${tabs.map(k => `<i class="ex-i-${k}">${EX_IC[k]}</i>`).join("")}</span>
-      <span class="ex-lbl"><b>${esc(T.btn)}</b><small>${tabs.map(k => esc(T[k])).join(" · ")}</small></span>
+      <span class="ex-ic">${tabs.map(k => `<i class="ex-i-${k}">${exIc(n, k)}</i>`).join("")}</span>
+      <span class="ex-lbl"><b>${esc(T.btn)}</b><small>${tabs.map(k => esc(exLb(n, T, k))).join(" · ")}</small></span>
       <span class="ex-ch" aria-hidden="true">›</span></button>
     <div class="ex-body" id="exBody" hidden>
-      ${tabs.length > 1 ? `<div class="ex-tabs" role="tablist">${tabs.map(k => `<button type="button" role="tab" data-ex="${k}" aria-selected="false">${EX_IC[k]} ${esc(T[k])}</button>`).join("")}</div>` : ""}
+      ${tabs.length > 1 ? `<div class="ex-tabs" role="tablist">${tabs.map(k => `<button type="button" role="tab" data-ex="${k}" aria-selected="false">${exIc(n, k)} ${esc(exLb(n, T, k))}</button>`).join("")}</div>` : ""}
       <div class="ex-pane" id="exPane"></div></div></section>`;
 }
 function readChapters(n){ const d = new Set(store.get("done:" + n.slug, [])), last = store.get("last:" + n.slug, 0) || 0; return ch => d.has(ch) || ch < last; }
@@ -1789,7 +1794,7 @@ function setupExtras(n){
   const show = k => {
     store.set("exTab:" + n.slug, k);
     box.querySelectorAll("[data-ex]").forEach(b => b.setAttribute("aria-selected", b.dataset.ex === k));
-    if (k === "music") exMusic(n, pane, T); else if (k === "games") exGames(n, pane, T); else if (k === "riddles") exRiddles(n, pane, T); else if (k === "quiz") exQuiz(n, pane, T); else if (k === "why" || k === "queen" || k === "fox") exFader(k, n, pane); else if (k === "map" || k === "diary") exAnomal(k, n, pane); else exGallery(n, pane, T);
+    if (exSec(n, k)) exSection(n, exSec(n, k), pane); else if (k === "music") exMusic(n, pane, T); else if (k === "games") exGames(n, pane, T); else if (k === "riddles") exRiddles(n, pane, T); else if (k === "quiz") exQuiz(n, pane, T); else if (k === "why" || k === "queen" || k === "fox") exFader(k, n, pane); else if (k === "map" || k === "diary") exAnomal(k, n, pane); else exGallery(n, pane, T);
   };
   const open = (yes, k) => { body.hidden = !yes; box.classList.toggle("on", yes); opener.setAttribute("aria-expanded", yes); if (yes) show(k || (tabs.includes(store.get("exTab:" + n.slug)) ? store.get("exTab:" + n.slug) : tabs[0])); };
   opener.onclick = () => open(body.hidden);
@@ -1860,6 +1865,15 @@ function exRiddles(n, pane, T){
 }
 /* «Тайна семьи Фадер»: «Почему?», королева Вендимии, «Лис и медовуха» — games/fader/fader.js */
 /* «Аномальный час»: карта Москвы и дневник хранителя — games/anomal/anomal.js */
+async function exSection(n, sec, pane){
+  pane.innerHTML = `<div class="loading">…</div>`;
+  let md = "*—*";
+  try { const r = await fetch(`novels/${n.slug}/${sec.file}`, {cache:"no-cache"}); if (r.ok) md = await r.text(); } catch(e) {}
+  if (!pane.isConnected) return;
+  md = md.replace(/^#\s+.*\n+/, "");
+  pane.innerHTML = `<article class="chapter ex-sec" lang="${esc(n.lang)}"><h2>${esc(sec.title)}</h2>${renderText(md)}</article>`;
+  pane.querySelectorAll(".ex-sec img").forEach(im => { im.onclick = () => window.open(im.src, "_blank"); const z = document.createElement("span"); z.className = "ex-zoom"; z.textContent = "⤢"; im.after(z); });
+}
 function exAnomal(k, n, pane){
   pane.innerHTML = `<div class="loading">…</div>`;
   const go = () => { if (!pane.isConnected || !window.LitmirAnomal) return; window.LitmirAnomal[k](pane, {lang:n.lang, slug:n.slug, store}); };
