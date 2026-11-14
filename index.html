@@ -3246,7 +3246,12 @@ function route(){
   if (parts[0] === "ajedrez") { setSoundtrack(null); return chessPage(); }
   if (parts[0] === "quest") { setSoundtrack(null); return questPage(); }
   if (parts[0] === "learn") { setSoundtrack(null); return parts[1] ? learnUnit(decodeURIComponent(parts[1]), parts[2] === "practice") : learnHome(); }
-  const n = parts.length ? catalog.novels.find(x => x.slug === decodeURIComponent(parts[0])) : null;
+  let n = parts.length ? catalog.novels.find(x => x.slug === decodeURIComponent(parts[0])) : null;
+  /* Скрытые романы: нет в каталоге, открываются только по прямой ссылке (novels/<slug>/novel.json) */
+  if (!n && parts.length) { const sl = decodeURIComponent(parts[0]);
+    if (!(sl in HIDDEN)) { HIDDEN[sl] = null; if (/^[a-z0-9-]{8,}$/.test(sl)) fetch(`novels/${sl}/novel.json`, {cache:"no-cache"}).then(r => r.ok ? r.json() : null).then(j => { if (j && j.slug === sl) { HIDDEN[sl] = j; route(); } }).catch(() => {}); }
+    n = HIDDEN[sl] || null; }
+  { let m = document.querySelector('meta[name="robots"]'); if (n && n.unlisted) { if (!m) { m = document.createElement("meta"); m.name = "robots"; document.head.appendChild(m); } m.content = "noindex,nofollow"; } else if (m) m.remove(); }
   setSoundtrack(n && adultOk(n) ? n : null);
   if (!parts.length) return home();
   if (!n) { app.innerHTML = `<div class="empty">${esc(t("notFound"))}</div>`; return; }
@@ -3264,6 +3269,7 @@ function route(){
   novelPage(n);
   toTop();
 }
+const HIDDEN = {};
 window.addEventListener("hashchange", route);
 
 applyTheme(); renderChrome();
