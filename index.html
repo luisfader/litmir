@@ -555,6 +555,57 @@ article.chapter h3{font-family:var(--sans);font-size:.72em;letter-spacing:.12em;
 .music .m-status{font-size:11px;color:var(--muted);max-width:185px}
 .music .m-status:empty{display:none}
 /* Разделы романа: саундтрек, игры, галерея */
+/* Инфографика вагонов */
+.wg{--wb:#0f1d27;--wc:#16293a;--wl:#2c4a5e;--wt:#eef3f6;--wm:#a9c0cc;--wa:#e6c06e;--wk:#e6c06e;--wh:#1e3647;--ws:#2a2216;border-radius:18px;padding:18px 14px 22px;background:var(--wb);color:var(--wt);font-family:var(--sans)}
+.wg-fog{background:radial-gradient(120% 60% at 80% 0%,#28465c 0%,#0f1d27 60%) var(--wb)}
+.wg-comic{--wb:#ffd23f;--wc:#fffaf0;--wl:#1d1410;--wt:#1d1410;--wm:#5a4030;--wa:#e5403b;--wk:#1f6fb5;--wh:#e5403b;--ws:#1d1410;background:repeating-linear-gradient(135deg,#ffd23f 0 22px,#ffcb2b 22px 44px)}
+.wg-blueprint{--wb:#1c4a86;--wc:#1f5294;--wl:#d9e8ff;--wt:#f2f7ff;--wm:#bcd3f5;--wa:#ffffff;--wk:#ffe08a;--wh:#173f74;--ws:#0f2d57;background:linear-gradient(#ffffff14 1px,transparent 1px) 0 0/24px 24px,linear-gradient(90deg,#ffffff14 1px,transparent 1px) 0 0/24px 24px,var(--wb);font-family:ui-monospace,"DejaVu Sans Mono",monospace}
+.wg-hero{text-align:center;padding:6px 6px 14px}
+.wg-title{font-family:var(--display);font-size:clamp(24px,5vw,34px);font-weight:700;letter-spacing:.04em;color:var(--wa)}
+.wg-comic .wg-title{font-family:var(--sans);font-weight:900;text-transform:uppercase;color:#1d1410;text-shadow:3px 3px 0 #fff}
+.wg-blueprint .wg-title{font-family:inherit;text-transform:uppercase;letter-spacing:.12em}
+.wg-intro{max-width:640px;margin:8px auto 0;font-size:15px;line-height:1.55;color:var(--wm);font-style:italic}
+.wg-comic .wg-intro{font-style:normal;font-weight:600}
+.wg-strip{display:flex;align-items:center;gap:0;overflow-x:auto;padding:10px 4px 14px;margin:0 -4px 6px;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch}
+.wg-chip{flex:0 0 auto;scroll-snap-align:start;display:flex;flex-direction:column;align-items:center;gap:2px;min-width:52px;padding:7px 6px 5px;border-radius:12px 12px 8px 8px;border:2px solid var(--wl);background:var(--wc);color:var(--wt);cursor:pointer;font:inherit}
+.wg-chip span{font-size:22px;line-height:1}.wg-chip b{font-size:12px;font-weight:700;color:var(--wm)}
+.wg-chip:hover,.wg-chip:focus-visible{transform:translateY(-2px);border-color:var(--wa)}
+.wg-comic .wg-chip{border-width:3px;box-shadow:3px 3px 0 #1d1410}
+.wg-link{flex:0 0 12px;height:4px;background:var(--wl);opacity:.7}
+.wg-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:22px 18px}
+.wg-car{position:relative;background:var(--wc);border:2px solid var(--wl);border-radius:16px 16px 12px 12px;padding:0 0 26px;display:flex;flex-direction:column;scroll-margin-top:80px;transition:box-shadow .3s}
+.wg-car.hl{box-shadow:0 0 0 4px var(--wa)}
+.wg-comic .wg-car{border-width:3px;box-shadow:5px 5px 0 #1d1410;border-radius:14px}
+.wg-blueprint .wg-car{border-style:dashed;border-radius:6px}
+.wg-top{display:flex;align-items:center;gap:10px;padding:12px 14px;background:var(--wh);border-radius:14px 14px 0 0;border-bottom:2px solid var(--wl)}
+.wg-comic .wg-top{border-bottom-width:3px;color:#fff}
+.wg-comic .wg-car:nth-child(4n+2) .wg-top{background:#1f9e8f}.wg-comic .wg-car:nth-child(4n+3) .wg-top{background:#7b4fd0}.wg-comic .wg-car:nth-child(4n+4) .wg-top{background:#f08a1c}
+.wg-blueprint .wg-top{border-radius:4px 4px 0 0;border-bottom-style:dashed}
+.wg-ic{font-size:30px;line-height:1;filter:drop-shadow(0 2px 3px #0005)}
+.wg-num{flex:0 0 auto;min-width:28px;height:28px;padding:0 6px;border-radius:14px;display:grid;place-items:center;font-size:13px;font-weight:800;background:var(--wa);color:var(--ws)}
+.wg-comic .wg-num{background:#fff;color:#1d1410;border:2px solid #1d1410}
+.wg-top h3{margin:0;font-family:var(--display);font-size:19px;line-height:1.2;font-weight:700;color:inherit}
+.wg-comic .wg-top h3{font-family:var(--sans);font-weight:800}
+.wg-blueprint .wg-top h3{font-family:inherit;font-size:16px;text-transform:uppercase;letter-spacing:.04em}
+.wg-body{padding:6px 14px 4px;display:flex;flex-direction:column;gap:2px;flex:1}
+.wg-row{padding:9px 0;border-bottom:1px dashed color-mix(in srgb,var(--wl) 55%,transparent)}
+.wg-row:last-child{border-bottom:0}
+.wg-k{font-size:11.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--wk);margin-bottom:4px}
+.wg-v{font-size:15px;line-height:1.55;color:var(--wt)}
+.wg-v strong,.wg-v b{color:var(--wa)}
+.wg-comic .wg-v strong{color:#c0312c}
+.wg-sec{margin-top:4px;padding:10px 12px;border-radius:12px;background:var(--ws);border:1px solid var(--wa);border-bottom:1px solid var(--wa)}
+.wg-sec .wg-v{color:#fff6dc}
+.wg-comic .wg-sec{background:#1d1410}.wg-comic .wg-sec .wg-k{color:#ffd23f}
+.wg-reveal{width:100%;margin-top:2px;padding:10px;border-radius:10px;border:1px dashed var(--wa);background:transparent;color:var(--wa);font:inherit;font-weight:700;font-size:14px;cursor:pointer}
+.wg-comic .wg-reveal{color:#ffd23f;border-color:#ffd23f}
+.wg-v.on{animation:wgIn .45s ease}
+@keyframes wgIn{from{opacity:0;filter:blur(6px)}to{opacity:1;filter:none}}
+.wg-wheels{position:absolute;left:18px;right:18px;bottom:-11px;display:flex;align-items:center;gap:10px}
+.wg-wheels i{width:20px;height:20px;border-radius:50%;background:var(--wb);border:3px solid var(--wl);box-shadow:inset 0 0 0 4px var(--wc)}
+.wg-wheels span{flex:1}
+@media (max-width:520px){.wg{padding:14px 10px 20px;border-radius:14px}.wg-v{font-size:15.5px}}
+
 .ex-sec{margin:0;padding:4px 2px 8px;max-width:none}.ex-sec h2:first-child{margin-top:4px}.ex-sec img{display:block;width:100%!important;max-width:100%!important;max-height:none!important;height:auto!important;border-radius:12px;margin:12px auto;cursor:zoom-in}.ex-sec .ex-zoom{display:block;text-align:center;font-family:var(--sans);font-size:13px;color:var(--muted);margin:-4px 0 14px}
 /* Кнопка «Разделы романа» выделена: цветной фон, тень, мягкое свечение и блик, чтобы её замечали */
 .ex{position:relative;margin:24px 0 28px;border:1.5px solid color-mix(in srgb,var(--accent) 45%,var(--line));border-radius:20px;background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 13%,var(--paper)),var(--paper) 62%);box-shadow:0 0 0 0 color-mix(in srgb,var(--accent) 30%,transparent),0 10px 28px color-mix(in srgb,var(--accent) 20%,transparent);overflow:hidden;animation:exGlow 3.4s ease-in-out infinite}
@@ -1865,12 +1916,38 @@ function exRiddles(n, pane, T){
 }
 /* «Тайна семьи Фадер»: «Почему?», королева Вендимии, «Лис и медовуха» — games/fader/fader.js */
 /* «Аномальный час»: карта Москвы и дневник хранителя — games/anomal/anomal.js */
+/* Инфографика вагонов: markdown «## 🎫 1 · Название» + абзацы «**Метка.** текст» (что внутри / кто / секрет) */
+const WG_T = {ru:{open:"Открыть секрет", map:"Состав", k:["Что внутри","Кто здесь","Секрет"]}, es:{open:"Descubrir el secreto", map:"El tren", k:["Qué hay","Quién aparece","El secreto"]}, it:{open:"Scopri il segreto", map:"Il treno", k:["Che cosa c'è","Chi c'è","Il segreto"]}, en:{open:"Reveal the secret", map:"The train", k:["Inside","Who","Secret"]}};
+const wgInline = t => renderText(t).replace(/^\s*<p>|<\/p>\s*$/g, "");
+function wagonsHTML(md, sec, n){
+  const T = WG_T[n.lang] || WG_T.en, parts = md.split(/^## /m), intro = parts.shift().trim();
+  const cars = parts.map(p => {
+    const lines = p.split("\n"), h = lines.shift().trim(), m = /^(\S+)\s+(\S+)\s+·\s+(.+)$/.exec(h) || [h, "🚃", "", h];
+    const rows = lines.join("\n").split(/\n\s*\n/).map(x => x.trim()).filter(Boolean).map(x => { const r = /^\*\*(.+?)\*\*\s*([\s\S]*)$/.exec(x); return r ? {k:r[1].replace(/[.:]\s*$/, ""), v:r[2]} : {k:"", v:x}; });
+    return {ic:m[1], num:m[2], name:m[3], rows};
+  });
+  const ico = ["🧭", "👥", "🔐"];
+  return `<div class="wg wg-${esc(sec.theme || "fog")}" lang="${esc(n.lang)}">
+    <div class="wg-hero"><div class="wg-title">${esc(sec.title)}</div>${intro ? `<div class="wg-intro">${wgInline(intro.replace(/^\*|\*$/g, ""))}</div>` : ""}</div>
+    <div class="wg-strip" role="list" aria-label="${esc(T.map)}">${cars.map((c, i) => `<button type="button" class="wg-chip" data-go="${i}" role="listitem"><span>${c.ic}</span><b>${esc(c.num)}</b></button>`).join(`<i class="wg-link" aria-hidden="true"></i>`)}</div>
+    <ol class="wg-list">${cars.map((c, i) => `<li class="wg-car" id="wg-${i}">
+      <div class="wg-top"><span class="wg-ic" aria-hidden="true">${c.ic}</span><span class="wg-num">${esc(c.num)}</span><h3>${esc(c.name)}</h3></div>
+      <div class="wg-body">${c.rows.map((r, j) => j === 2 || (j > 2 && j === c.rows.length - 1)
+        ? `<div class="wg-row wg-sec"><div class="wg-k">${ico[2]} ${esc(r.k || T.k[2])}</div><button type="button" class="wg-reveal">${esc(T.open)}</button><div class="wg-v" hidden>${wgInline(r.v)}</div></div>`
+        : `<div class="wg-row"><div class="wg-k">${ico[j] || "•"} ${esc(r.k || T.k[j] || "")}</div><div class="wg-v">${wgInline(r.v)}</div></div>`).join("")}</div>
+      <div class="wg-wheels" aria-hidden="true"><i></i><i></i><span></span><i></i><i></i></div></li>`).join("")}</ol></div>`;
+}
+function setupWagons(pane){
+  pane.querySelectorAll(".wg-reveal").forEach(b => b.onclick = () => { b.hidden = true; const v = b.nextElementSibling; v.hidden = false; v.classList.add("on"); });
+  pane.querySelectorAll(".wg-chip").forEach(b => b.onclick = () => { const el = pane.querySelector("#wg-" + b.dataset.go); if (el) { el.scrollIntoView({behavior:"smooth", block:"start"}); el.classList.remove("hl"); void el.offsetWidth; el.classList.add("hl"); } });
+}
 async function exSection(n, sec, pane){
   pane.innerHTML = `<div class="loading">…</div>`;
   let md = "*—*";
   try { const r = await fetch(`novels/${n.slug}/${sec.file}`, {cache:"no-cache"}); if (r.ok) md = await r.text(); } catch(e) {}
   if (!pane.isConnected) return;
   md = md.replace(/^#\s+.*\n+/, "");
+  if (sec.style === "wagons") { pane.innerHTML = wagonsHTML(md, sec, n); setupWagons(pane); return; }
   pane.innerHTML = `<article class="chapter ex-sec" lang="${esc(n.lang)}"><h2>${esc(sec.title)}</h2>${renderText(md)}</article>`;
   pane.querySelectorAll(".ex-sec img").forEach(im => { im.onclick = () => window.open(im.src, "_blank"); const z = document.createElement("span"); z.className = "ex-zoom"; z.textContent = "⤢"; im.after(z); });
 }
