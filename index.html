@@ -580,7 +580,9 @@ article.chapter h3{font-family:var(--sans);font-size:.72em;letter-spacing:.12em;
 .wg-nav button:disabled{opacity:.35;cursor:default}
 .wg-comic .wg-nav button{border-width:3px;box-shadow:3px 3px 0 #1d1410}
 .wg-count{font-weight:700;font-size:15px;color:var(--wm);min-width:64px;text-align:center}.wg-count b{color:var(--wa);font-size:18px}
-.wg-chip.lk{opacity:.55}.wg-locked{align-items:center;text-align:center;padding:26px 18px 18px;gap:10px}.wg-lk-ic{font-size:42px;line-height:1;opacity:.85}.wg-locked p{margin:0;font-size:15px;line-height:1.5;color:var(--wm)}.wg-lk-go{display:inline-block;margin-top:4px;padding:8px 18px;border-radius:20px;border:2px solid var(--wa);color:var(--wa);font-weight:700;font-size:14px;text-decoration:none}
+.wg-chip.lk{opacity:.55}.wg-full{margin:18px 0 0;text-align:center}.wg-full figcaption{font-weight:800;letter-spacing:.06em;text-transform:uppercase;font-size:13px;color:var(--wa);margin-bottom:8px}.wg-full img{display:block;width:100%;height:auto;border-radius:12px;border:2px solid var(--wl)}.wg-full-lk{padding:14px;border:2px dashed var(--wl);border-radius:12px;color:var(--wm);font-size:14px}
+.wg-necro{--wb:#120f14;--wc:#1d1a22;--wl:#5a4636;--wt:#f4ead8;--wm:#c9b49a;--wa:#f0b866;--wk:#8fd8ff;--wh:#2a2230;--ws:#0d1a26;background:linear-gradient(180deg,#8a4a3c 0%,#3a2d25 22%,#1a1a20 60%,#0a1420 100%)}
+.wg-necro .wg-title{letter-spacing:.14em;text-transform:uppercase}.wg-locked{align-items:center;text-align:center;padding:26px 18px 18px;gap:10px}.wg-lk-ic{font-size:42px;line-height:1;opacity:.85}.wg-locked p{margin:0;font-size:15px;line-height:1.5;color:var(--wm)}.wg-lk-go{display:inline-block;margin-top:4px;padding:8px 18px;border-radius:20px;border:2px solid var(--wa);color:var(--wa);font-weight:700;font-size:14px;text-decoration:none}
 .wg-chip.on{border-color:var(--wa);background:var(--wh);transform:translateY(-3px)}.wg-comic .wg-chip.on{background:#e5403b;color:#fff}.wg-comic .wg-chip.on b{color:#fff}
 .wg-car{position:relative;background:var(--wc);border:2px solid var(--wl);border-radius:16px 16px 12px 12px;padding:0 0 26px;display:flex;flex-direction:column;scroll-margin-top:80px;transition:box-shadow .3s}
 .wg-car.hl{box-shadow:0 0 0 4px var(--wa)}
@@ -1926,7 +1928,7 @@ function exRiddles(n, pane, T){
 /* «Тайна семьи Фадер»: «Почему?», королева Вендимии, «Лис и медовуха» — games/fader/fader.js */
 /* «Аномальный час»: карта Москвы и дневник хранителя — games/anomal/anomal.js */
 /* Инфографика вагонов: markdown «## 🎫 1 · Название» + абзацы «**Метка.** текст» (что внутри / кто / секрет) */
-const WG_T = {ru:{lock:(c,t)=>`Этот вагон откроется, когда вы дойдёте до главы ${c} «${t}». Никаких спойлеров!`, go:"Читать", open:"Открыть секрет", map:"Состав", k:["Что внутри","Кто здесь","Секрет"]}, es:{lock:(c,t)=>`Este vagón se abre cuando llegues al capítulo ${c}, «${t}». ¡Nada de spoilers!`, go:"Leer", open:"Descubrir el secreto", map:"El tren", k:["Qué hay","Quién aparece","El secreto"]}, it:{lock:(c,t)=>`Questo vagone si apre quando arrivi al capitolo ${c}, «${t}». Niente spoiler!`, go:"Leggi", open:"Scopri il segreto", map:"Il treno", k:["Che cosa c'è","Chi c'è","Il segreto"]}, en:{lock:(c,t)=>`This carriage opens when you reach chapter ${c}, “${t}”. No spoilers!`, go:"Read", open:"Reveal the secret", map:"The train", k:["Inside","Who","Secret"]}};
+const WG_T = {ru:{lock:(c,t)=>`Этот вагон откроется, когда вы дойдёте до главы ${c} «${t}». Никаких спойлеров!`, go:"Читать", full:"Полная карта", fullLock:(c,t)=>`Полная карта откроется после главы ${c} «${t}».`, open:"Открыть секрет", map:"Состав", k:["Что внутри","Кто здесь","Секрет"]}, es:{lock:(c,t)=>`Este vagón se abre cuando llegues al capítulo ${c}, «${t}». ¡Nada de spoilers!`, go:"Leer", full:"Mapa completo", fullLock:(c,t)=>`El mapa completo se abre después del capítulo ${c}, «${t}».`, open:"Descubrir el secreto", map:"El tren", k:["Qué hay","Quién aparece","El secreto"]}, it:{lock:(c,t)=>`Questo vagone si apre quando arrivi al capitolo ${c}, «${t}». Niente spoiler!`, go:"Leggi", full:"Mappa completa", fullLock:(c,t)=>`La mappa completa si apre dopo il capitolo ${c}, «${t}».`, open:"Scopri il segreto", map:"Il treno", k:["Che cosa c'è","Chi c'è","Il segreto"]}, en:{lock:(c,t)=>`This carriage opens when you reach chapter ${c}, “${t}”. No spoilers!`, go:"Read", full:"Full map", fullLock:(c,t)=>`The full map opens after chapter ${c}, “${t}”.`, open:"Reveal the secret", map:"The train", k:["Inside","Who","Secret"]}};
 const wgInline = t => renderText(t).replace(/^\s*<p>|<\/p>\s*$/g, "");
 function wagonsHTML(md, sec, n){
   const T = WG_T[n.lang] || WG_T.en, parts = md.split(/^## /m), intro = parts.shift().trim();
@@ -1949,7 +1951,11 @@ function wagonsHTML(md, sec, n){
       `<div class="wg-body">${c.rows.map((r, j) => j === 2 || (j > 2 && j === c.rows.length - 1)
         ? `<div class="wg-row wg-sec"><div class="wg-k">${ico[2]} ${esc(r.k || T.k[2])}</div><button type="button" class="wg-reveal">${esc(T.open)}</button><div class="wg-v" hidden>${wgInline(r.v)}</div></div>`
         : `<div class="wg-row"><div class="wg-k">${ico[j] || "•"} ${esc(r.k || T.k[j] || "")}</div><div class="wg-v">${wgInline(r.v)}</div></div>`).join("")}</div>`}
-      <div class="wg-wheels" aria-hidden="true"><i></i><i></i><span></span><i></i><i></i></div></li>`).join("")}</ol></div>`;
+      <div class="wg-wheels" aria-hidden="true"><i></i><i></i><span></span><i></i><i></i></div></li>`).join("")}</ol>${(() => {
+      if (!sec.image) return "";
+      const pos = sec.imageAt ? n.chapters.findIndex(x => x.file === sec.imageAt) + 1 : 0, ok = !pos || done.has(pos) || pos <= last;
+      if (ok) return `<figure class="wg-full"><figcaption>🗺 ${esc(T.full)}</figcaption><a href="${esc(sec.image)}" target="_blank" rel="noopener"><img src="${esc(sec.image)}" alt="${esc(T.full)}" loading="lazy"></a></figure>`;
+      const no = chapterNo(n, pos); return `<div class="wg-full wg-full-lk">🔒 ${esc(T.fullLock(no, chapterTitle(n, n.chapters[pos - 1], no)))}</div>`; })()}</div>`;
 }
 function setupWagons(pane){
   pane.querySelectorAll(".wg-reveal").forEach(b => b.onclick = () => { b.hidden = true; const v = b.nextElementSibling; v.hidden = false; v.classList.add("on"); });
