@@ -556,23 +556,31 @@ article.chapter h3{font-family:var(--sans);font-size:.72em;letter-spacing:.12em;
 .music .m-status:empty{display:none}
 /* Разделы романа: саундтрек, игры, галерея */
 /* Инфографика вагонов */
-.wg{--wb:#0f1d27;--wc:#16293a;--wl:#2c4a5e;--wt:#eef3f6;--wm:#a9c0cc;--wa:#e6c06e;--wk:#e6c06e;--wh:#1e3647;--ws:#2a2216;border-radius:18px;padding:18px 14px 22px;background:var(--wb);color:var(--wt);font-family:var(--sans)}
+.wg-car{margin-bottom:12px}
+.wg{max-width:640px;margin:0 auto;--wb:#0f1d27;--wc:#16293a;--wl:#2c4a5e;--wt:#eef3f6;--wm:#a9c0cc;--wa:#e6c06e;--wk:#e6c06e;--wh:#1e3647;--ws:#2a2216;border-radius:18px;padding:18px 14px 22px;background:var(--wb);color:var(--wt);font-family:var(--sans)}
 .wg-fog{background:radial-gradient(120% 60% at 80% 0%,#28465c 0%,#0f1d27 60%) var(--wb)}
 .wg-comic{--wb:#ffd23f;--wc:#fffaf0;--wl:#1d1410;--wt:#1d1410;--wm:#5a4030;--wa:#e5403b;--wk:#1f6fb5;--wh:#e5403b;--ws:#1d1410;background:repeating-linear-gradient(135deg,#ffd23f 0 22px,#ffcb2b 22px 44px)}
 .wg-blueprint{--wb:#1c4a86;--wc:#1f5294;--wl:#d9e8ff;--wt:#f2f7ff;--wm:#bcd3f5;--wa:#ffffff;--wk:#ffe08a;--wh:#173f74;--ws:#0f2d57;background:linear-gradient(#ffffff14 1px,transparent 1px) 0 0/24px 24px,linear-gradient(90deg,#ffffff14 1px,transparent 1px) 0 0/24px 24px,var(--wb);font-family:ui-monospace,"DejaVu Sans Mono",monospace}
-.wg-hero{text-align:center;padding:6px 6px 14px}
+.wg-hero{text-align:center;padding:2px 6px 8px}
 .wg-title{font-family:var(--display);font-size:clamp(24px,5vw,34px);font-weight:700;letter-spacing:.04em;color:var(--wa)}
 .wg-comic .wg-title{font-family:var(--sans);font-weight:900;text-transform:uppercase;color:#1d1410;text-shadow:3px 3px 0 #fff}
 .wg-blueprint .wg-title{font-family:inherit;text-transform:uppercase;letter-spacing:.12em}
-.wg-intro{max-width:640px;margin:8px auto 0;font-size:15px;line-height:1.55;color:var(--wm);font-style:italic}
+.wg-intro{max-width:640px;margin:6px auto 0;font-size:14px;line-height:1.55;color:var(--wm);font-style:italic}
 .wg-comic .wg-intro{font-style:normal;font-weight:600}
-.wg-strip{display:flex;align-items:center;gap:0;overflow-x:auto;padding:10px 4px 14px;margin:0 -4px 6px;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch}
+.wg-strip{position:relative;display:flex;align-items:center;gap:0;overflow-x:auto;padding:10px 4px 14px;margin:0 -4px 6px;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch}
 .wg-chip{flex:0 0 auto;scroll-snap-align:start;display:flex;flex-direction:column;align-items:center;gap:2px;min-width:52px;padding:7px 6px 5px;border-radius:12px 12px 8px 8px;border:2px solid var(--wl);background:var(--wc);color:var(--wt);cursor:pointer;font:inherit}
 .wg-chip span{font-size:22px;line-height:1}.wg-chip b{font-size:12px;font-weight:700;color:var(--wm)}
 .wg-chip:hover,.wg-chip:focus-visible{transform:translateY(-2px);border-color:var(--wa)}
 .wg-comic .wg-chip{border-width:3px;box-shadow:3px 3px 0 #1d1410}
 .wg-link{flex:0 0 12px;height:4px;background:var(--wl);opacity:.7}
-.wg-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:22px 18px}
+.wg-list{position:relative;list-style:none;margin:0 -4px;padding:4px 4px 10px;display:flex;align-items:flex-start;gap:16px;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain;scrollbar-width:none;transition:height .25s ease}.wg-list::-webkit-scrollbar{display:none}
+.wg-list>.wg-car{flex:0 0 100%;scroll-snap-align:center;scroll-snap-stop:always;box-sizing:border-box}
+.wg-nav{display:flex;align-items:center;justify-content:center;gap:14px;margin:0 0 10px}
+.wg-nav button{width:42px;height:42px;border-radius:50%;border:2px solid var(--wl);background:var(--wc);color:var(--wt);font-size:24px;line-height:1;cursor:pointer;display:grid;place-items:center;padding:0 0 3px}
+.wg-nav button:disabled{opacity:.35;cursor:default}
+.wg-comic .wg-nav button{border-width:3px;box-shadow:3px 3px 0 #1d1410}
+.wg-count{font-weight:700;font-size:15px;color:var(--wm);min-width:64px;text-align:center}.wg-count b{color:var(--wa);font-size:18px}
+.wg-chip.on{border-color:var(--wa);background:var(--wh);transform:translateY(-3px)}.wg-comic .wg-chip.on{background:#e5403b;color:#fff}.wg-comic .wg-chip.on b{color:#fff}
 .wg-car{position:relative;background:var(--wc);border:2px solid var(--wl);border-radius:16px 16px 12px 12px;padding:0 0 26px;display:flex;flex-direction:column;scroll-margin-top:80px;transition:box-shadow .3s}
 .wg-car.hl{box-shadow:0 0 0 4px var(--wa)}
 .wg-comic .wg-car{border-width:3px;box-shadow:5px 5px 0 #1d1410;border-radius:14px}
@@ -1930,6 +1938,7 @@ function wagonsHTML(md, sec, n){
   return `<div class="wg wg-${esc(sec.theme || "fog")}" lang="${esc(n.lang)}">
     <div class="wg-hero"><div class="wg-title">${esc(sec.title)}</div>${intro ? `<div class="wg-intro">${wgInline(intro.replace(/^\*|\*$/g, ""))}</div>` : ""}</div>
     <div class="wg-strip" role="list" aria-label="${esc(T.map)}">${cars.map((c, i) => `<button type="button" class="wg-chip" data-go="${i}" role="listitem"><span>${c.ic}</span><b>${esc(c.num)}</b></button>`).join(`<i class="wg-link" aria-hidden="true"></i>`)}</div>
+    <div class="wg-nav"><button type="button" class="wg-prev" aria-label="‹">‹</button><span class="wg-count"><b>1</b> / ${cars.length}</span><button type="button" class="wg-next" aria-label="›">›</button></div>
     <ol class="wg-list">${cars.map((c, i) => `<li class="wg-car" id="wg-${i}">
       <div class="wg-top"><span class="wg-ic" aria-hidden="true">${c.ic}</span><span class="wg-num">${esc(c.num)}</span><h3>${esc(c.name)}</h3></div>
       <div class="wg-body">${c.rows.map((r, j) => j === 2 || (j > 2 && j === c.rows.length - 1)
@@ -1939,7 +1948,22 @@ function wagonsHTML(md, sec, n){
 }
 function setupWagons(pane){
   pane.querySelectorAll(".wg-reveal").forEach(b => b.onclick = () => { b.hidden = true; const v = b.nextElementSibling; v.hidden = false; v.classList.add("on"); });
-  pane.querySelectorAll(".wg-chip").forEach(b => b.onclick = () => { const el = pane.querySelector("#wg-" + b.dataset.go); if (el) { el.scrollIntoView({behavior:"smooth", block:"start"}); el.classList.remove("hl"); void el.offsetWidth; el.classList.add("hl"); } });
+  const list = pane.querySelector(".wg-list"), cars = [...pane.querySelectorAll(".wg-car")], chips = [...pane.querySelectorAll(".wg-chip")], cnt = pane.querySelector(".wg-count b"), strip = pane.querySelector(".wg-strip");
+  if (!list || !cars.length) return;
+  let cur = 0;
+  const go = i => { i = Math.max(0, Math.min(cars.length - 1, i)); list.scrollTo({left: cars[i].offsetLeft - cars[0].offsetLeft, behavior:"smooth"}); };
+  const mark = i => { if (i === cur && cnt.textContent == i + 1) return; cur = i; cnt.textContent = i + 1;
+    chips.forEach((c, k) => c.classList.toggle("on", k === i));
+    const ch = chips[i]; if (ch && strip) strip.scrollTo({left: ch.offsetLeft - strip.clientWidth / 2 + ch.clientWidth / 2, behavior:"smooth"});
+    pane.querySelector(".wg-prev").disabled = i === 0; pane.querySelector(".wg-next").disabled = i === cars.length - 1;
+    list.style.height = cars[i].offsetHeight + 14 + "px"; };
+  let t; list.addEventListener("scroll", () => { clearTimeout(t); t = setTimeout(() => mark(Math.round(list.scrollLeft / (cars[0].offsetWidth + 16))), 60); }, {passive:true});
+  pane.querySelector(".wg-prev").onclick = () => go(cur - 1);
+  pane.querySelector(".wg-next").onclick = () => go(cur + 1);
+  chips.forEach(b => b.onclick = () => go(+b.dataset.go));
+  pane.querySelectorAll(".wg-reveal").forEach(b => b.addEventListener("click", () => setTimeout(() => { list.style.height = cars[cur].offsetHeight + 14 + "px"; }, 30)));
+  cur = -1; mark(0);
+  window.addEventListener("resize", () => { if (pane.isConnected && cars[cur]) list.style.height = cars[cur].offsetHeight + 14 + "px"; });
 }
 async function exSection(n, sec, pane){
   pane.innerHTML = `<div class="loading">…</div>`;
