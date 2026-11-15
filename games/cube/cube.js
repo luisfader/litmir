@@ -1,14 +1,16 @@
-/* «Кубик Рубика» — раздел романа: настоящий кубик 3×3×3, на каждой грани — картина.
-   Шесть комбинаций (уровней): в каждой надо собрать одну грань — и на ней появляется герой.
+/* «Кубик Рубика» — раздел романа: настоящий кубик 3×3×3. Два режима:
+   • классический (m="c") — обычные цвета, шесть уровней (перемешано 1…6 ходов) + свободная игра (20 ходов); собрать весь кубик;
+   • с героями (m="p") — на каждой грани картина, шесть комбинаций: собрать одну грань — и на ней появляется герой.
    Данные по романам — в DATA ниже (картинки 480×480 в games/cube/img/).
-   Подключение: window.LitmirCube.mount(el, {slug, store}). Прогресс — store "cube:<slug>" (сколько комбинаций собрано).
+   Подключение: window.LitmirCube.mount(el, {slug, store}). Прогресс — store "cube:<slug>" (картинки) и "cubeC:<slug>" (классика).
    Координаты как в CSS: x вправо, y вниз, z к зрителю. Грани: F(+z) R(+x) B(−z) L(−x) D(+y) U(−y). */
 (function(){
 "use strict";
 const DATA = {
   "dikij-chas": {
     title: "Кубик Рубика",
-    intro: "В романе Луис достаёт из кармана кубик Рубика. Теперь он у вас. Шесть граней — шесть картин, шесть комбинаций. Соберите грань — и на ней появится герой.",
+    intro: "В романе Луис достаёт из кармана кубик Рубика. Теперь он у вас. Как будете играть?",
+    pics: "Шесть граней — шесть картин, шесть комбинаций. Соберите грань — и на ней появится герой.",
     end: "Все шесть комбинаций собраны. Кубик Луиса теперь слушается и вас.",
     levels: [
       {f:"F", img:"luis.jpg",    name:"Луис",          n:1, text:"Художник и путешественник. Приехал в Сербию рисовать города и учить язык — и нашёл гораздо больше."},
@@ -29,6 +31,10 @@ const FACES = {
   D:{n:[0,1,0],  tf:"rotateX(-90deg)",  ex:[1,0,0],  ey:[0,0,-1], view:[90,0]}
 };
 const FK = Object.keys(FACES), AXN = ["X","Y","Z"];
+const COL = {F:"#1fa34a", R:"#d8312b", B:"#1f5fd6", L:"#f08a1c", U:"#f4f4ef", D:"#f5d317"};
+const CNAME = {F:"зелёная", R:"красная", B:"синяя", L:"оранжевая", U:"белая", D:"жёлтая"};
+const CL = [1, 2, 3, 4, 5, 6], FREE = 20;
+const MINI = "conic-gradient(#1fa34a 0 16.6%,#d8312b 0 33.3%,#1f5fd6 0 50%,#f08a1c 0 66.6%,#f5d317 0 83.3%,#f4f4ef 0)";
 const CSS = `
 .rc{font-family:var(--sans);color:var(--ink);max-width:520px;margin:0 auto}
 .rc h3{font-family:var(--serif,Georgia,serif);font-size:24px;font-weight:400;margin:0 0 8px;text-align:center}
@@ -37,6 +43,13 @@ const CSS = `
 .rc-lv button{position:relative;width:46px;height:46px;border-radius:10px;border:2px solid var(--line);background:var(--paper) center/cover;cursor:pointer;padding:0;font:700 15px var(--sans);color:var(--muted);overflow:hidden}
 .rc-lv button.done{color:transparent}
 .rc-lv button.done::after{content:"✓";position:absolute;right:2px;bottom:1px;font-size:12px;color:#fff;text-shadow:0 0 3px #000,0 0 3px #000}
+.rc-lv button.cd{color:#fff;text-shadow:0 0 3px #000}
+.rc-lv button.cd::after{content:"✓"}
+.rc-mode{border:1px solid var(--line);border-radius:16px;padding:14px 12px 16px;margin:0 0 12px;background:var(--paper)}
+.rc-mode h4{font:400 19px var(--serif,Georgia,serif);margin:0 0 4px;text-align:center}
+.rc-mode .rc-p{font-size:13.5px;margin-bottom:12px}
+.rc-mini{display:inline-block;width:22px;height:22px;border-radius:6px;vertical-align:-5px;margin-right:6px;border:1px solid var(--line)}
+.rc-f.st.cl::after{background:var(--c)}
 .rc-lv button.on{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft,rgba(160,60,60,.2))}
 .rc-lv button:disabled{cursor:default;opacity:.55}
 .rc-goal{display:flex;align-items:center;gap:12px;justify-content:center;margin:0 0 6px;font-size:14.5px;line-height:1.35}
@@ -55,7 +68,7 @@ const CSS = `
 .rc-hud b{color:var(--ink)}
 .rc-dir{border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:999px;padding:6px 12px;font:600 13px var(--sans);cursor:pointer}
 .rc-faces{display:grid;grid-template-columns:repeat(6,1fr);gap:6px;margin:0 0 10px}
-.rc-faces button{aspect-ratio:1;border-radius:10px;border:2px solid var(--line);background:center/cover;cursor:pointer;padding:0;position:relative;overflow:hidden}
+.rc-faces button{aspect-ratio:1;background-color:#222;border-radius:10px;border:2px solid var(--line);background:center/cover;cursor:pointer;padding:0;position:relative;overflow:hidden}
 .rc-faces button.goal{border-color:var(--accent)}
 .rc-faces button::after{content:attr(data-a);position:absolute;right:3px;bottom:0;color:#fff;font:700 15px var(--sans);text-shadow:0 0 4px #000,0 0 4px #000}
 .rc-faces button:active{transform:scale(.94)}
@@ -83,31 +96,44 @@ function mount(el, opt){
   if (!D) { el.innerHTML = ""; return; }
   if (!document.getElementById("rcCss")) { const st = document.createElement("style"); st.id = "rcCss"; st.textContent = CSS; document.head.appendChild(st); }
   const IMG = "games/cube/img/", L = D.levels, byFace = {}; L.forEach(l => byFace[l.f] = l);
-  const KEY = "cube:" + slug, done = () => Math.min(L.length, store.get(KEY, 0) || 0);
-  const chips = cur => `<div class="rc-lv">${L.map((l, i) => { const d = i < done(); return `<button type="button" data-lv="${i}" class="${d ? "done" : ""}${i === cur ? " on" : ""}" ${i > done() ? "disabled" : ""} ${d ? `style="background-image:url(${IMG}${l.img})"` : ""} aria-label="Комбинация ${i + 1}">${i > done() ? "🔒" : i + 1}</button>`; }).join("")}</div>`;
-  const bindChips = () => el.querySelectorAll("[data-lv]").forEach(b => b.onclick = () => play(+b.dataset.lv));
+  const KEY = {p: "cube:" + slug, c: "cubeC:" + slug}, CNT = {p: L.length, c: CL.length};
+  const done = m => Math.min(CNT[m], store.get(KEY[m], 0) || 0);
+  const chips = (m, cur) => { const dn = done(m); return `<div class="rc-lv">${Array.from({length: CNT[m]}, (_, i) => { const d = i < dn, lk = i > dn;
+    const bg = d ? (m === "p" ? `background-image:url(${IMG}${L[i].img})` : `background:${MINI}`) : "";
+    return `<button type="button" data-m="${m}" data-lv="${i}" class="${d ? (m === "p" ? "done" : "cd") : ""}${i === cur ? " on" : ""}" ${lk ? "disabled" : ""} ${bg ? `style="${bg}"` : ""} aria-label="${m === "p" ? "Комбинация" : "Уровень"} ${i + 1}">${lk ? "🔒" : m === "c" && d ? "" : i + 1}</button>`; }).join("")}</div>`; };
+  const bindChips = () => el.querySelectorAll("[data-lv]").forEach(b => b.onclick = () => play(b.dataset.m, +b.dataset.lv));
+  const goTxt = m => { const d = done(m); return d === 0 ? "Играть" : d >= CNT[m] ? "Сыграть ещё раз" : "Продолжить"; };
 
   function start(){
-    const d = done();
-    el.innerHTML = `<div class="rc"><h3>${esc(D.title)}</h3><p class="rc-p">${esc(d >= L.length ? D.end : D.intro)}</p>${chips(-1)}
-      <div class="rc-act"><button type="button" class="rc-go">${d === 0 ? "Играть" : d >= L.length ? "Собрать ещё раз" : "Продолжить"}</button></div></div>`;
-    el.querySelector(".rc-go").onclick = () => play(d >= L.length ? 0 : d);
+    const dc = done("c"), dp = done("p");
+    el.innerHTML = `<div class="rc"><h3>${esc(D.title)}</h3><p class="rc-p">${esc(D.intro)}</p>
+      <div class="rc-mode"><h4><i class="rc-mini" style="background:${MINI}"></i>Классический кубик</h4><p class="rc-p">Без картинок — обычные цвета. Шесть уровней: с каждым кубик перемешан сильнее. Соберите его целиком.</p>${chips("c", -1)}
+        <div class="rc-act"><button type="button" class="rc-go" data-go="c">${goTxt("c")}</button><button type="button" class="rc-btn" data-free>Свободная игра</button></div></div>
+      <div class="rc-mode"><h4>🖼 Кубик с героями</h4><p class="rc-p">${esc(dp >= L.length ? D.end : D.pics)}</p>${chips("p", -1)}
+        <div class="rc-act"><button type="button" class="rc-go" data-go="p">${goTxt("p")}</button></div></div></div>`;
+    el.querySelector('[data-go="c"]').onclick = () => play("c", dc >= CL.length ? 0 : dc);
+    el.querySelector('[data-go="p"]').onclick = () => play("p", dp >= L.length ? 0 : dp);
+    el.querySelector("[data-free]").onclick = () => play("c", -1);
     bindChips();
   }
 
-  function play(lv){
-    const T = L[lv], tf = FACES[T.f], w = Math.min(el.clientWidth || 340, 520), s = Math.max(40, Math.min(64, Math.floor((w - 30) / 5.4)));
-    el.innerHTML = `<div class="rc" style="--s:${s}px;--h:${Math.round(s * 5.6)}px">${chips(lv)}
-      <div class="rc-goal"><i style="background-image:url(${IMG}${T.img})"></i><div><span>Комбинация ${lv + 1} из ${L.length}</span><b>Соберите грань: ${esc(T.name)}</b></div></div>
+  function play(m, lv){
+    const P = m === "p", free = !P && lv < 0, T = P ? L[lv] : null, tf = P ? FACES[T.f] : null, nMix = P ? T.n : free ? FREE : CL[lv], w = Math.min(el.clientWidth || 340, 520), s = Math.max(40, Math.min(64, Math.floor((w - 30) / 5.4)));
+    const goal = P ? `<div class="rc-goal"><i style="background-image:url(${IMG}${T.img})"></i><div><span>Комбинация ${lv + 1} из ${L.length}</span><b>Соберите грань: ${esc(T.name)}</b></div></div>`
+      : `<div class="rc-goal"><i style="background:${MINI}"></i><div><span>${free ? `Свободная игра · перемешано ходов: ${FREE}` : `Уровень ${lv + 1} из ${CL.length} · перемешано ходов: ${nMix}`}</span><b>Соберите весь кубик</b></div></div>`;
+    const fbtn = P ? L.map(l => `<button type="button" data-f="${l.f}" class="${l.f === T.f ? "goal" : ""}" style="background-image:url(${IMG}${l.img})" aria-label="Повернуть грань: ${esc(l.name)}"></button>`).join("")
+      : FK.map(k => `<button type="button" data-f="${k}" style="background:${COL[k]}" aria-label="Повернуть грань: ${CNAME[k]}"></button>`).join("");
+    el.innerHTML = `<div class="rc" style="--s:${s}px;--h:${Math.round(s * 5.6)}px">${chips(m, free ? -1 : lv)}
+      ${goal}
       <div class="rc-stage"><div class="rc-cube"></div></div>
       <div class="rc-hud"><span>Ходов: <b class="rc-n">0</b></span><button type="button" class="rc-dir"></button></div>
-      <div class="rc-faces">${L.map(l => `<button type="button" data-f="${l.f}" class="${l.f === T.f ? "goal" : ""}" style="background-image:url(${IMG}${l.img})" aria-label="Повернуть грань: ${esc(l.name)}"></button>`).join("")}</div>
-      <p class="rc-tip">Нажмите на картинку — и эта грань повернётся (середина грани всегда остаётся на месте). Кубик можно вращать пальцем, а грань — повернуть и нажатием прямо на кубике.</p>
-      <div class="rc-act"><button type="button" class="rc-btn" data-a="hint">Подсказка</button><button type="button" class="rc-btn" data-a="mix">Перемешать заново</button></div>
+      <div class="rc-faces">${fbtn}</div>
+      <p class="rc-tip">Нажмите на ${P ? "картинку" : "цвет"} — и эта грань повернётся (середина грани всегда остаётся на месте). Кубик можно вращать пальцем, а грань — повернуть и нажатием прямо на кубике.</p>
+      <div class="rc-act"><button type="button" class="rc-btn" data-a="hint">Подсказка</button><button type="button" class="rc-btn" data-a="mix">Перемешать заново</button><button type="button" class="rc-btn" data-a="menu">Режимы</button></div>
       <div class="rc-out"></div></div>`;
     bindChips();
     const root = el.querySelector(".rc"), stage = el.querySelector(".rc-stage"), cube = el.querySelector(".rc-cube"), nEl = el.querySelector(".rc-n"), dirB = el.querySelector(".rc-dir");
-    let rx = tf.view[0] ? tf.view[0] * .72 : -22, ry = tf.view[0] ? -24 : tf.view[1] - 30, cw = true, busy = false, won = false, moves = 0, hints = 0, stack = [], alive = true;
+    let rx = !P ? -24 : tf.view[0] ? tf.view[0] * .72 : -22, ry = !P ? -32 : tf.view[0] ? -24 : tf.view[1] - 30, cw = true, busy = false, won = false, moves = 0, hints = 0, stack = [], alive = true;
     const setView = () => { cube.style.transform = `rotateX(${rx}deg) rotateY(${ry}deg)`; };
     const setDir = () => { dirB.textContent = cw ? "↻ по часовой" : "↺ против часовой"; el.querySelectorAll(".rc-faces button").forEach(b => b.dataset.a = cw ? "↻" : "↺"); };
     setView(); setDir();
@@ -120,13 +146,15 @@ function mount(el, opt){
       const home = [x, y, z], e = document.createElement("div"); e.className = "rc-c";
       FK.forEach(k => { const F = FACES[k], f = document.createElement("div"), out = dot(home, F.n) === 1;
         f.className = "rc-f" + (out ? " st" : ""); f.style.transform = `${F.tf} translateZ(${s / 2}px)`;
-        if (out) { f.style.backgroundImage = `url(${IMG}${byFace[k].img})`; f.style.backgroundPosition = `${(dot(home, F.ex) + 1) * 50}% ${(dot(home, F.ey) + 1) * 50}%`; f.dataset.k = k; }
+        if (out && !P) { f.classList.add("cl"); f.style.setProperty("--c", COL[k]); f.dataset.k = k; }
+        else if (out) { f.style.backgroundImage = `url(${IMG}${byFace[k].img})`; f.style.backgroundPosition = `${(dot(home, F.ex) + 1) * 50}% ${(dot(home, F.ey) + 1) * 50}%`; f.dataset.k = k; }
         e.appendChild(f); });
       const c = {home, pos: home.slice(), m: ID(), e}; e._c = c; cubies.push(c); cube.appendChild(e);
     }
     const base = c => `translate3d(${c.pos[0] * s}px,${c.pos[1] * s}px,${c.pos[2] * s}px) matrix3d(${c.m[0][0]},${c.m[1][0]},${c.m[2][0]},0,${c.m[0][1]},${c.m[1][1]},${c.m[2][1]},0,${c.m[0][2]},${c.m[1][2]},${c.m[2][2]},0,0,0,0,1)`;
     const place = c => { c.e.style.transition = "none"; c.e.style.transform = base(c); };
     cubies.forEach(place);
+    const goalOk = () => P ? solved(T.f) : FK.every(solved);
     const solved = k => { const F = FACES[k]; return cubies.every(c => dot(c.home, F.n) !== 1 || (isId(c.m) && c.pos.every((v, i) => v === c.home[i]))); };
 
     /* поворот грани k: q = +1 по часовой (если смотреть на грань снаружи) */
@@ -149,40 +177,46 @@ function mount(el, opt){
       /* вернуть в собранное состояние и показать картину */
       cubies.forEach(c => { c.pos = c.home.slice(); c.m = ID(); place(c); }); stack = []; moves = 0; hints = 0; nEl.textContent = 0;
       await wait(900); if (!alive) return;
-      const len = T.n; let seq;
+      const len = nMix, sp = len > 8 ? 150 : 260; let seq;
       do { seq = []; while (seq.length < len) { const k = FK[Math.random() * 6 | 0], q = Math.random() < .5 ? 1 : -1, p = seq[seq.length - 1];
-          if (p && p[0] === k) continue; if (!seq.length && dot(FACES[k].n, tf.n) !== 0) continue; seq.push([k, q]); } } while (!checkSeq(seq));
-      for (const [k, q] of seq) { await turn(k, q, 260); if (!alive) return; push(k, q); await wait(60); }
+          if (p && p[0] === k) continue; if (!seq.length && P && dot(FACES[k].n, tf.n) !== 0) continue; seq.push([k, q]); } } while (!checkSeq(seq));
+      for (const [k, q] of seq) { await turn(k, q, sp); if (!alive) return; push(k, q); await wait(sp / 4); }
       lock(false);
     }
     /* перемешивание должно реально разрушать нужную грань */
     function checkSeq(seq){
       const sim = cubies.map(c => ({home: c.home, pos: c.home.slice(), m: ID()}));
       seq.forEach(([k, q]) => { const F = FACES[k], a = F.n.findIndex(v => v), sgn = F.n[a], R = rot(a, sgn * q); sim.forEach(c => { if (c.pos[a] === sgn) { c.pos = mv(R, c.pos); c.m = mm(R, c.m); } }); });
-      const bad = sim.filter(c => dot(c.home, tf.n) === 1 && !(isId(c.m) && c.pos.every((v, i) => v === c.home[i]))).length;
-      return bad >= Math.min(6, 1 + 2 * seq.length);
+      const bad = sim.filter(c => (!P || dot(c.home, tf.n) === 1) && !(isId(c.m) && c.pos.every((v, i) => v === c.home[i]))).length;
+      return P ? bad >= Math.min(6, 1 + 2 * seq.length) : bad >= Math.min(14, 4 + 2 * seq.length);
     }
     async function move(k, q, hint){
       if (busy || won) return; lock(true);
       await turn(k, q, 240); if (!alive) return;
       push(k, q); moves++; if (hint) hints++; nEl.textContent = moves;
-      if (solved(T.f)) return win();
+      if (goalOk()) return win();
       lock(false);
     }
     function win(){
       won = true; busy = false; root.classList.remove("rc-busy");
-      if (lv + 1 > done()) store.set(KEY, lv + 1);
-      cube.classList.add("anim"); rx = tf.view[0] ? tf.view[0] * .8 : -12; ry = tf.view[0] ? 0 : tf.view[1] - 14; setView();
-      const last = lv + 1 >= L.length;
-      el.querySelector(".rc-faces").style.display = "none"; el.querySelector(".rc-tip").style.display = "none"; el.querySelector(".rc-act").style.display = "none"; el.querySelector(".rc-hud").style.display = "none";
-      el.querySelector(".rc-out").innerHTML = `<div class="rc-win"><i style="background-image:url(${IMG}${T.img})"></i><small>Комбинация ${lv + 1} собрана · ходов: ${moves}${hints ? `, подсказок: ${hints}` : ""}</small><h3>${esc(T.name)}</h3><p class="rc-p">${esc(T.text)}</p>${last ? `<p class="rc-p"><b>${esc(D.end)}</b></p>` : ""}
-        <div class="rc-act"><button type="button" class="rc-go">${last ? "К началу" : "Следующая комбинация"}</button></div></div>`;
-      el.querySelector(".rc-win .rc-go").onclick = () => last ? start() : play(lv + 1);
-      el.querySelectorAll("[data-lv]").forEach((b, i) => { if (i <= lv) { b.classList.add("done"); b.style.backgroundImage = `url(${IMG}${L[i].img})`; b.textContent = i + 1; } if (i <= lv + 1) b.disabled = false; });
+      if (!free && lv + 1 > done(m)) store.set(KEY[m], lv + 1);
+      cube.classList.add("anim"); rx = !P ? -26 : tf.view[0] ? tf.view[0] * .8 : -12; ry = !P ? -36 : tf.view[0] ? 0 : tf.view[1] - 14; setView();
+      const last = !free && lv + 1 >= CNT[m];
+      ["rc-faces", "rc-tip", "rc-act", "rc-hud"].forEach(c => el.querySelector("." + c).style.display = "none");
+      const stat = `ходов: ${moves}${hints ? `, подсказок: ${hints}` : ""}`;
+      const btns = free ? `<button type="button" class="rc-go" data-w="again">Ещё раз</button><button type="button" class="rc-btn" data-w="menu">Режимы</button>`
+        : last ? `${P ? "" : `<button type="button" class="rc-go" data-w="free">Свободная игра</button>`}<button type="button" class="${P ? "rc-go" : "rc-btn"}" data-w="menu">К началу</button>`
+        : `<button type="button" class="rc-go" data-w="next">${P ? "Следующая комбинация" : "Следующий уровень"}</button>`;
+      el.querySelector(".rc-out").innerHTML = P
+        ? `<div class="rc-win"><i style="background-image:url(${IMG}${T.img})"></i><small>Комбинация ${lv + 1} собрана · ${stat}</small><h3>${esc(T.name)}</h3><p class="rc-p">${esc(T.text)}</p>${last ? `<p class="rc-p"><b>${esc(D.end)}</b></p>` : ""}<div class="rc-act">${btns}</div></div>`
+        : `<div class="rc-win"><small>${free ? "Свободная игра" : `Уровень ${lv + 1} из ${CL.length}`} · ${stat}</small><h3>Кубик собран!</h3>${last ? `<p class="rc-p"><b>Все шесть уровней пройдены. Попробуйте свободную игру — там кубик перемешан по-настоящему.</b></p>` : ""}<div class="rc-act">${btns}</div></div>`;
+      el.querySelectorAll("[data-w]").forEach(b => b.onclick = () => { const a = b.dataset.w; if (a === "menu") start(); else if (a === "again") play("c", -1); else if (a === "free") play("c", -1); else play(m, lv + 1); });
+      el.querySelector(".rc-lv").outerHTML = chips(m, free ? -1 : lv); bindChips();
       el.querySelector(".rc-win").scrollIntoView({block: "nearest", behavior: "smooth"});
     }
     el.querySelectorAll(".rc-faces button").forEach(b => b.onclick = () => move(b.dataset.f, cw ? 1 : -1));
     el.querySelector('[data-a="mix"]').onclick = mix;
+    el.querySelector('[data-a="menu"]').onclick = () => { alive = false; start(); };
     el.querySelector('[data-a="hint"]').onclick = () => { const t = stack[stack.length - 1]; if (t) move(t[0], -t[1], true); };
 
     /* вращение кубика пальцем; короткое нажатие на наклейку — поворот грани, на которой она сейчас */
