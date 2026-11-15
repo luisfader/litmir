@@ -1,9 +1,9 @@
-/* «Гонка к маяку» — аркадная мини-игра по главе 1 романа «Тихая любовь» (Ti amo in silenzio, RU).
+/* «Гонка к маяку» / «La Corsa del Faro» — аркадная мини-игра по главе 1 романа «Ti amo in silenzio» (IT) / «Тихая любовь» (RU).
    Лето 1997 года, Синея. Фабрицио стартует последним на дедушкином зелёном мотоцикле 1968 года,
    обгоняет соперников на прибрежной дороге (12 км поворотов) и в конце сражается с Лючией.
    На Чёртовом повороте ветер нанёс песок: Лючию заносит на полсекунды — и тогда надо дать газу.
    Псевдо-3D в духе старых аркадных автоматов; всё рисуется кодом.
-   Подключается из index.html: window.LitmirFaro.mount(el, {slug, sfx, onWin, next, back}). */
+   Подключается из index.html: window.LitmirFaro.mount(el, {slug, lang, sfx, onWin, next, back}); lang — "it" или "ru". */
 (function(){
 "use strict";
 const W = 400, H = 600, HY = 250;                 // холст и линия горизонта
@@ -17,12 +17,56 @@ const rnd = (a, b) => a + Math.random() * (b - a);
 const hsh = i => { const x = Math.sin(i * 127.1 + 311.7) * 43758.5453; return x - Math.floor(x); };
 function rr(c, x, y, w, h, r){ r = Math.min(r, w / 2, h / 2); c.beginPath(); c.moveTo(x + r, y); c.arcTo(x + w, y, x + w, y + h, r); c.arcTo(x + w, y + h, x, y + h, r); c.arcTo(x, y + h, x, y, r); c.arcTo(x, y, x + w, y, r); c.closePath(); }
 
-/* ───────── Тексты ───────── */
-const CROWD = "Из толпы", FAB = "Фабрицио", NONNO = "Дед Этторе", BRUNO = "Бруно", LUC = "Лючия";
-const LEGS = [                                     // отметки трассы: доля пути → подпись
-  {at:.00, txt:"Порт · старт"}, {at:.10, txt:"Третий поворот"}, {at:.19, txt:"Пятый поворот"},
-  {at:.29, txt:"Поворот у Сосны"}, {at:.40, txt:"Спуск к Каменистому пляжу"}, {at:.70, txt:"Последние три километра"}
-];
+/* ───────── Тексты (ru — «Тихая любовь», it — «Ti amo in silenzio») ───────── */
+const TX = {
+  ru:{crowd:"Из толпы", fab:"Фабрицио", nonno:"Дед Этторе", bruno:"Бруно", luc:"Лючия", judge:"Судья",
+    legs:["Порт · старт", "Третий поворот", "Пятый поворот", "Поворот у Сосны", "Спуск к Каменистому пляжу", "Последние три километра"],
+    pine:"СОСНА", devilSign:"ЧЁРТОВ ПОВОРОТ", gate:"ФИНИШ · МАЯК",
+    kick:"Игра по главе 1 · «Тихая любовь»", title:"Гонка к маяку", aria:"Игра «Гонка к маяку»",
+    intro:"Лето девяносто седьмого. В порту Синеи больше тысячи зрителей, на старте — двадцать два мотоцикла. Японские, итальянские, новые и блестящие. И дедушкин — зелёный, шестьдесят восьмого года, с помятым бензобаком.",
+    steps:[["Двенадцать километров", "От порта до старого маяка: с одной стороны море, с другой горы."], ["Лёгкий, как кошка", "На прямых тебя обгоняют, зато в поворотах старый мотоцикл ловчее всех. Перед крутыми поворотами чуть притормози."], ["Чёртов поворот", "Прямо под маяком ветер наносит песок. Держись внутренней стороны — и, когда придёт момент, дай газу!"]],
+    quote:"«Не смотри туда, где боишься упасть. Смотри туда, куда хочешь ехать».", go:"На старт!",
+    keys:"<kbd>←</kbd><kbd>→</kbd> — руль, <kbd>↓</kbd> — тормоз, <kbd>Пробел</kbd> — газ!", touch:"Кнопки под экраном: руль, тормоз и «Газ!»", best:"Лучшее время",
+    left:"Влево", right:"Вправо", brake:"Тормоз", gasBtn:"Газ!",
+    note:"Мотор сам держит газ — тебе остаются руль и тормоз. Кнопка «Газ!» загорится один раз, в самый нужный момент. Играть необязательно — роман можно читать и без игры.",
+    s1:"Эй, пекарь! Ты из музея мотоцикл угнал?", s2:"Это мотоцикл моего деда…", s3:"Не смотри туда, где боишься упасть. Смотри туда, куда хочешь ехать.",
+    gasSay:"И я дал газу!", cough:"Мотор закашлял… Ну и ладно — по крайней мере, меня никто не видит.", sing:"И тут мой старый мотоцикл проснулся. Мотор запел!",
+    crash:["Встаёшь! И не ноешь!", "Когда падаешь — встаёшь. Без слёз!"], lucBump:"Не так близко, пекарь!",
+    c1:"Кто это там на зелёном мотоцикле?", c2:"Это сын пекаря!", c3:"Пекаря? Давай, пекарь, давай!",
+    seeL:"Красный мотоцикл. Красный шлем с белой звездой. Лючия.", last3:"Последние три километра были самыми длинными в моей жизни.",
+    look:"Она на миг обернулась. Даже сквозь шлем я понял: она удивилась.", warn:"Чёртов поворот. Песок! Смотри туда, куда хочешь ехать…",
+    j1:"Фотофиниш… Номер семнадцать! Фабрицио Орсини!", j2:"Номер семнадцать! Фабрицио Орсини!",
+    win:"Победа!", wPhoto:"Колесо в колесо. Никто из зрителей не понял, кто победил. Судья посмотрел фотофиниш, поднял руку и крикнул:", wCrowd:"Толпа взорвалась. Судья поднял руку и крикнул:",
+    shout:"«Номер семнадцать! Фабрицио Орсини!»", dialog:"— Ты кто такой? — спросила Лючия.<br>— Я пеку хлеб.",
+    time:"Время", newRec:"новый рекорд", rec:"рекорд", again:"Ещё заезд", next:"Читать главу 2", back:"К роману", retry:"Ещё раз",
+    place:n => `${n}-е место`, l2:"Красный мотоцикл пересёк финиш первым. Лючия сняла шлем и даже не посмотрела в твою сторону.", lN:"Двенадцать километров позади, но до маяка первыми добрались другие.",
+    tipT:"Совет Бруно", tip2:"На Чёртовом повороте держись внутренней стороны, подальше от песка. Когда Лючию занесёт — жми «Газ!».", tipN:"В поворотах старый мотоцикл сильнее всех: обгоняй там. Перед самыми крутыми чуть притормози, чтобы не вылететь на обочину.",
+    of:n => `место из ${n}`, kmh:"км/ч", km:"км", GAS:"ГАЗ!", flag:"Флаг!", flagUp:"Судья гонки поднимает флаг…", pause:"Пауза"},
+  it:{crowd:"Dal pubblico", fab:"Fabrizio", nonno:"Nonno Ettore", bruno:"Bruno", luc:"Lucia", judge:"Il giudice",
+    legs:["Porto · partenza", "Terza curva", "Quinta curva", "Curva del Pino", "Discesa verso la spiaggia dei Sassi", "Ultimi tre chilometri"],
+    pine:"PINO", devilSign:"CURVA DEL DIAVOLO", gate:"TRAGUARDO · FARO",
+    kick:"Gioco sul capitolo 1 · «Ti amo in silenzio»", title:"La Corsa del Faro", aria:"Gioco «La Corsa del Faro»",
+    intro:"Estate del 1997. Al porto di Sinea ci sono più di mille persone, alla partenza ventidue moto. Giapponesi, italiane, nuove e lucide. E poi c'è quella del nonno: verde, del 1968, con il serbatoio ammaccato.",
+    steps:[["Dodici chilometri", "Dal porto fino al vecchio faro: il mare da una parte, la montagna dall'altra."], ["Agile come un gatto", "Sui rettilinei gli altri ti superano, ma nelle curve la vecchia moto è la più agile. Prima delle curve più strette, frena un po'."], ["La curva del Diavolo", "Proprio sotto il faro il vento porta la sabbia. Resta all'interno della curva e, al momento giusto, dai gas!"]],
+    quote:"«Non devi guardare dove hai paura di cadere. Devi guardare dove vuoi andare.»", go:"Alla partenza!",
+    keys:"<kbd>←</kbd><kbd>→</kbd> — sterzo, <kbd>↓</kbd> — freno, <kbd>Spazio</kbd> — gas!", touch:"Pulsanti sotto lo schermo: sterzo, freno e «Gas!»", best:"Miglior tempo",
+    left:"Sinistra", right:"Destra", brake:"Freno", gasBtn:"Gas!",
+    note:"Il motore accelera da solo: tu pensi allo sterzo e al freno. Il pulsante «Gas!» si accende una volta sola, nel momento giusto. Il gioco è facoltativo: puoi leggere il romanzo anche senza giocare.",
+    s1:"Ehi, panettiere! Hai preso la moto da un museo?", s2:"È la moto di mio nonno…", s3:"Fabrizio, in moto non devi guardare dove hai paura di cadere. Devi guardare dove vuoi andare.",
+    gasSay:"E ho dato gas!", cough:"La moto ha tossito… Bene, almeno nessuno mi vede.", sing:"Poi la mia vecchia moto si è svegliata. Il motore ha cominciato a cantare!",
+    crash:["Ti rialzi! Senza piangere!", "Quando cadi, ti rialzi. Senza piangere!"], lucBump:"Non così vicino, panettiere!",
+    c1:"Chi è quello con la moto verde?", c2:"È il figlio del panettiere!", c3:"Il panettiere? Vai, panettiere, vai!",
+    seeL:"La moto rossa. Il casco rosso con la stella bianca. Lucia.", last3:"Gli ultimi tre chilometri sono stati i più lunghi della mia vita.",
+    look:"Si è girata un attimo. Anche con il casco, ho capito che era sorpresa.", warn:"La curva del Diavolo. Sabbia! Guarda dove vuoi andare…",
+    j1:"Fotofinish… Numero diciassette! Fabrizio Orsini!", j2:"Numero diciassette! Fabrizio Orsini!",
+    win:"Vittoria!", wPhoto:"Ruota contro ruota. Nessuno, tra il pubblico, ha capito chi aveva vinto. Il giudice ha guardato la fotografia, ha alzato la mano e ha gridato:", wCrowd:"Il pubblico è esploso. Il giudice ha alzato la mano e ha gridato:",
+    shout:"«Numero diciassette! Fabrizio Orsini!»", dialog:"«Chi sei tu?» ha chiesto Lucia.<br>«Faccio il pane.»",
+    time:"Tempo", newRec:"nuovo record", rec:"record", again:"Un'altra gara", next:"Leggi il capitolo 2", back:"Torna al romanzo", retry:"Riprova",
+    place:n => `${n}° posto`, l2:"La moto rossa ha tagliato il traguardo per prima. Lucia si è tolta il casco e non ti ha neanche guardato.", lN:"Dodici chilometri, ma al faro sono arrivati prima gli altri.",
+    tipT:"Il consiglio di Bruno", tip2:"Nella curva del Diavolo resta all'interno, lontano dalla sabbia. Quando Lucia slitta, premi «Gas!».", tipN:"Nelle curve la vecchia moto è la più forte: supera lì. Prima delle curve più strette frena un po', così non esci di strada.",
+    of:n => `posto su ${n}`, kmh:"km/h", km:"km", GAS:"GAS!", flag:"Via!", flagUp:"Il giudice di gara alza la bandiera…", pause:"Pausa"}
+};
+const LEG_AT = [0, .10, .19, .29, .40, .70];
 const RIVAL_COL = ["#2f6fd6", "#f2c230", "#e8e6e0", "#1d1f24", "#ee7a2b", "#9aa3ad", "#7c4fc2", "#16a39a", "#c23b6b", "#3c4c9e", "#d9d2b6",
   "#5c6b2e", "#b83c2c", "#2b8fd9", "#f0f0f0", "#7d5a3a", "#5a5f69", "#d8a020", "#4a2f6a", "#1f6b4a", "#c9c3b5"];
 
@@ -90,7 +134,7 @@ function buildTrack(){
   for (let i = marks.devilExit; i < marks.devilOut + 6; i++) segs[i].sand = [-1, .42];
   return {segs, marks};
 }
-function decorate(T){
+function decorate(T, X){
   const {segs, marks} = T, L = segs.length;
   const put = (i, kind, x, extra) => { if (i >= 0 && i < L) segs[i].sprites.push(Object.assign({kind, x}, extra || {})); };
   for (let i = 0; i < marks.finish + 60; i++) {
@@ -105,9 +149,9 @@ function decorate(T){
   crowd(marks.devilOut, marks.finish + 10, 1, 3); crowd(marks.devilOut + 4, marks.finish + 10, -1, 3);
   put(marks.start + 3, "flagman", -1.3);
   [["c3", "3"], ["c5", "5"]].forEach(([k, t]) => put(marks[k] - 25, "sign", 1.3, {txt:t}));
-  put(marks.pino + 45, "bigpine", -1.6); put(marks.pino - 20, "sign", 1.3, {txt:"СОСНА"});
+  put(marks.pino + 45, "bigpine", -1.6); put(marks.pino - 20, "sign", 1.3, {txt:X.pine});
   put(marks.discesa - 10, "sign", 1.3, {txt:"⬇ 12%"});
-  put(marks.devilWarn, "sign", 1.3, {txt:"ЧЁРТОВ ПОВОРОТ", wide:true});
+  put(marks.devilWarn, "sign", 1.3, {txt:X.devilSign, wide:true});
   for (let i = marks.devil; i < marks.devilOut; i += 5) put(i, "chevron", -1.3);
   put(marks.finish + 14, "lighthouse", 2.6);
   put(marks.finish, "gate", 0);
@@ -168,48 +212,46 @@ function drawSprite(c, s, x, y, k){                        // k — пиксел
       c.fillStyle = "#c23b2c"; c.beginPath(); c.moveTo(x - u * 2.2, y - u * 30); c.lineTo(x, y - u * 33); c.lineTo(x + u * 2.2, y - u * 30); c.fill(); break;
   }
 }
-function drawGate(c, x, y, half){                        // финишная арка с клетчатым флагом
+function drawGate(c, x, y, half, txt){                        // финишная арка с клетчатым флагом
   const u = half * .12, top = y - u * 15, pl = x - half * 1.15, pr = x + half * 1.15;
   c.fillStyle = "#e8e4da"; c.fillRect(pl - u * .5, top, u, y - top); c.fillRect(pr - u * .5, top, u, y - top);
   const bw = pr - pl, cells = 16, cw = bw / cells, ch2 = u * 1.3;
   for (let r = 0; r < 2; r++) for (let i = 0; i < cells; i++) { c.fillStyle = (i + r) % 2 ? "#111" : "#fafafa"; c.fillRect(pl + i * cw, top + r * ch2, cw + .5, ch2 + .5); }
   c.fillStyle = "#c23b2c"; c.fillRect(pl, top + ch2 * 2, bw, u * 1.4);
-  c.fillStyle = "#fff"; c.font = `800 ${Math.max(6, u * 1.1)}px system-ui, sans-serif`; c.textAlign = "center"; c.textBaseline = "middle"; c.fillText("ФИНИШ · МАЯК", x, top + ch2 * 2 + u * .72);
+  c.fillStyle = "#fff"; c.font = `800 ${Math.max(6, u * 1.1)}px system-ui, sans-serif`; c.textAlign = "center"; c.textBaseline = "middle"; c.fillText(txt, x, top + ch2 * 2 + u * .72);
 }
 
 /* ───────── Игра ───────── */
 function mount(el, opt){
   opt = opt || {};
+  const L = TX[opt.lang] || TX.ru, CROWD = L.crowd, FAB = L.fab, NONNO = L.nonno, BRUNO = L.bruno, LUC = L.luc;
+  const LEGS = L.legs.map((txt, i) => ({at:LEG_AT[i], txt}));
   const snd = makeSound(() => !opt.sfx || opt.sfx.on());
   const bestKey = "faro:best:" + (opt.slug || "tikhaya-lyubov");
   let best = 0; try { best = +localStorage.getItem(bestKey) || 0; } catch(e) {}
   el.innerHTML = `
-  <div class="mt fr">
-    <div class="mt-head"><div class="mt-kick">Игра по главе 1 · «Тихая любовь»</div><h1>Гонка к маяку</h1></div>
+  <div class="mt fr" lang="${opt.lang || "ru"}">
+    <div class="mt-head"><div class="mt-kick">${L.kick}</div><h1>${L.title}</h1></div>
     <div class="mt-stage">
-      <canvas class="mt-cv" aria-label="Игра «Гонка к маяку»"></canvas>
+      <canvas class="mt-cv" aria-label="${L.aria}"></canvas>
       <div class="mt-ov fr-start">
-        <div class="mt-big">Гонка к маяку</div>
-        <p>Лето девяносто седьмого. В порту Синеи больше тысячи зрителей, на старте — двадцать два мотоцикла. Японские, итальянские, новые и блестящие. И дедушкин — зелёный, шестьдесят восьмого года, с помятым бензобаком.</p>
-        <ul class="mt-steps">
-          <li><b>Двенадцать километров</b><br>От порта до старого маяка: с одной стороны море, с другой горы.</li>
-          <li><b>Лёгкий, как кошка</b><br>На прямых тебя обгоняют, зато в поворотах старый мотоцикл ловчее всех. Перед крутыми поворотами чуть притормози.</li>
-          <li><b>Чёртов поворот</b><br>Прямо под маяком ветер наносит песок. Держись внутренней стороны — и, когда придёт момент, дай газу!</li>
-        </ul>
-        <p class="mt-q">«Не смотри туда, где боишься упасть. Смотри туда, куда хочешь ехать».</p>
-        <div class="mt-row"><button class="mt-btn" data-act="go">На старт!</button></div>
-        <div class="mt-keys"><span><kbd>←</kbd><kbd>→</kbd> — руль, <kbd>↓</kbd> — тормоз, <kbd>Пробел</kbd> — газ!</span><span class="mt-touch">Кнопки под экраном: руль, тормоз и «Газ!»</span></div>
-        ${best ? `<div class="mt-keys">Лучшее время: ${fmt(best)}</div>` : ""}
+        <div class="mt-big">${L.title}</div>
+        <p>${L.intro}</p>
+        <ul class="mt-steps">${L.steps.map(([b, t]) => `<li><b>${b}</b><br>${t}</li>`).join("")}</ul>
+        <p class="mt-q">${L.quote}</p>
+        <div class="mt-row"><button class="mt-btn" data-act="go">${L.go}</button></div>
+        <div class="mt-keys"><span>${L.keys}</span><span class="mt-touch">${L.touch}</span></div>
+        ${best ? `<div class="mt-keys">${L.best}: ${fmt(best)}</div>` : ""}
       </div>
       <div class="mt-ov fr-end" hidden></div>
     </div>
     <div class="fr-pad">
-      <button class="fr-b" data-k="l" type="button" aria-label="Влево">◀</button>
-      <button class="fr-b fr-br" data-k="d" type="button">Тормоз</button>
-      <button class="fr-b fr-gas" data-k="g" type="button" disabled>Газ!</button>
-      <button class="fr-b" data-k="r" type="button" aria-label="Вправо">▶</button>
+      <button class="fr-b" data-k="l" type="button" aria-label="${L.left}">◀</button>
+      <button class="fr-b fr-br" data-k="d" type="button">${L.brake}</button>
+      <button class="fr-b fr-gas" data-k="g" type="button" disabled>${L.gasBtn}</button>
+      <button class="fr-b" data-k="r" type="button" aria-label="${L.right}">▶</button>
     </div>
-    <p class="mt-note">Мотор сам держит газ — тебе остаются руль и тормоз. Кнопка «Газ!» загорится один раз, в самый нужный момент. Играть необязательно — роман можно читать и без игры.</p>
+    <p class="mt-note">${L.note}</p>
   </div>`;
   const root = el.querySelector(".mt"), stage = root.querySelector(".mt-stage"), cv = root.querySelector("canvas"), c = cv.getContext("2d");
   const ovStart = root.querySelector(".fr-start"), ovEnd = root.querySelector(".fr-end"), gasBtn = root.querySelector(".fr-gas");
@@ -225,7 +267,7 @@ function mount(el, opt){
   }
   size(); window.addEventListener("resize", size);
 
-  const T = buildTrack(); decorate(T);
+  const T = buildTrack(); decorate(T, L);
   const segs = T.segs, M = T.marks, LEN = segs.length * SEG;
   const finishZ = M.finish * SEG, raceLen = finishZ - PLAYER_Z;
   const seg = z => segs[clamp(Math.floor(z / SEG), 0, segs.length - 1)];
@@ -247,7 +289,7 @@ function mount(el, opt){
     S = {t:0, pos:0, x:0, speed:0, bikes, place:N_BIKES + 1, prevPlace:N_BIKES + 1, msg:null, q:[], leg:0, shake:0, lean:0,
       crash:0, sand:0, boost:0, gas:"off", fin:0, finT:0, done:false, lookBack:false, crowdLine:0, sung:false, flash:0, cd:3.2, photo:false};
     bikes.forEach(b => seg(b.z).bikes.push(b));
-    say(CROWD, "Эй, пекарь! Ты из музея мотоцикл угнал?"); say(FAB, "Это мотоцикл моего деда…"); say(NONNO, "Не смотри туда, где боишься упасть. Смотри туда, куда хочешь ехать.");
+    say(CROWD, L.s1); say(FAB, L.s2); say(NONNO, L.s3);
     setGas("off");
   }
   function say(who, text){ const it = {who, text, t:Math.min(4.2, 1.4 + text.length * .04)}; if (!S.msg) S.msg = it; else if (S.q.length < 3) S.q.push(it); }
@@ -266,7 +308,7 @@ function mount(el, opt){
     b.addEventListener("pointerdown", on); b.addEventListener("pointerup", off); b.addEventListener("pointerleave", off); b.addEventListener("pointercancel", off);
     b.addEventListener("contextmenu", e => e.preventDefault());
   });
-  function gas(){ if (S && S.gas === "ready") { S.boost = 1.6; setGas("used"); snd.boost(); say(FAB, "И я дал газу!"); } }
+  function gas(){ if (S && S.gas === "ready") { S.boost = 1.6; setGas("used"); snd.boost(); say(FAB, L.gasSay); } }
   function vis(){ if (document.hidden && mode === "run") { mode = "pause"; snd.stop(); } else if (!document.hidden && mode === "pause") { mode = "run"; tPrev = performance.now(); } }
   document.addEventListener("visibilitychange", vis);
   function cleanup(){ cancelAnimationFrame(raf); snd.stop(); window.removeEventListener("keydown", kd); window.removeEventListener("keyup", ku); window.removeEventListener("resize", size); document.removeEventListener("visibilitychange", vis); }
@@ -317,8 +359,8 @@ function mount(el, opt){
     /* старт: мотор кашляет, потом просыпается */
     const cough = S.t < 2.6, warm = pz < PLAYER_Z + raceLen / 12;
     let cap = MAX * (cough ? .28 : warm ? .82 : 1) * (S.boost > 0 ? 1.18 : 1);
-    if (!S.sung && !cough && S.t > 2.6) { S.sung = true; say(FAB, "Мотор закашлял… Ну и ладно — по крайней мере, меня никто не видит."); }
-    if (S.sung === true && !warm && !S.done) { S.sung = 2; say(FAB, "И тут мой старый мотоцикл проснулся. Мотор запел!"); }
+    if (!S.sung && !cough && S.t > 2.6) { S.sung = true; say(FAB, L.cough); }
+    if (S.sung === true && !warm && !S.done) { S.sung = 2; say(FAB, L.sing); }
     if (S.boost > 0) S.boost -= dt;
     /* песок */
     const onSand = ps.sand && S.x > ps.sand[0] - .05 && S.x < ps.sand[1];
@@ -343,7 +385,7 @@ function mount(el, opt){
         if (s.kind === "gate" || s.kind === "post" || s.kind === "bush" || s.kind === "chevron") continue;
         if (Math.abs(S.x - s.x) < (s.kind === "lighthouse" ? .5 : .22) && S.crash <= 0) {
           S.speed = MAX / 6; S.crash = 1; S.shake = .6; S.x = clamp(S.x - Math.sign(S.x) * .35, -1.2, 1.2); snd.crash();
-          say(BRUNO, Math.random() < .5 ? "Встаёшь! И не ноешь!" : "Когда падаешь — встаёшь. Без слёз!"); break;
+          say(BRUNO, L.crash[Math.random() < .5 ? 0 : 1]); break;
         }
       }
     }
@@ -356,7 +398,7 @@ function mount(el, opt){
       const gap = b.z - pz;
       if (gap > -SEG * .2 && gap < SEG * .9 && Math.abs(S.x - b.x) < .3 && S.speed > b.speed) {
         S.speed = b.speed * .82; S.pos = b.z - PLAYER_Z - SEG * .9; S.shake = .25; snd.bump();
-        if (b.lucia && Math.random() < .4) say(LUC, "Не так близко, пекарь!");
+        if (b.lucia && Math.random() < .4) say(LUC, L.lucBump);
         break;
       }
     }
@@ -365,18 +407,18 @@ function mount(el, opt){
     S.pos = Math.min(S.pos + S.speed * dt, LEN - (DRAW + 5) * SEG);
     updateBikes(dt);
     /* места */
-    const npz = S.pos + PLAYER_Z, L = S.bikes[0];
+    const npz = S.pos + PLAYER_Z, LU = S.bikes[0];
     if (!S.done) {
       S.place = 1 + S.bikes.filter(b => b.z > npz).length;
       if (S.place < S.prevPlace && S.t > 3) snd.pass();
-      if (S.place <= 10 && S.crowdLine === 0) { S.crowdLine = 1; say(CROWD, "Кто это там на зелёном мотоцикле?"); say(CROWD, "Это сын пекаря!"); }
-      if (S.place <= 4 && S.crowdLine === 1) { S.crowdLine = 2; say(CROWD, "Пекарь? Давай, пекарь, давай!"); }
-      if (S.place === 2 && S.crowdLine === 2) { S.crowdLine = 3; say(FAB, "Красный мотоцикл. Красный шлем с белой звездой. Лючия."); }
+      if (S.place <= 10 && S.crowdLine === 0) { S.crowdLine = 1; say(CROWD, L.c1); say(CROWD, L.c2); }
+      if (S.place <= 4 && S.crowdLine === 1) { S.crowdLine = 2; say(CROWD, L.c3); }
+      if (S.place === 2 && S.crowdLine === 2) { S.crowdLine = 3; say(FAB, L.seeL); }
       S.prevPlace = S.place;
       const fr = (npz - PLAYER_Z) / raceLen;
-      while (S.leg + 1 < LEGS.length && fr >= LEGS[S.leg + 1].at) { S.leg++; S.flash = Math.max(S.flash, .25); if (S.leg === LEGS.length - 1) say(FAB, "Последние три километра были самыми длинными в моей жизни."); }
-      if (!S.lookBack && L.z - npz < SEG * 6 && L.z > npz && npz > M.final * SEG) { S.lookBack = true; say(FAB, "Она на миг обернулась. Даже сквозь шлем я понял: она удивилась."); }
-      if (npz > M.devilWarn * SEG && !S.warned) { S.warned = true; say(FAB, "Чёртов поворот. Песок! Смотри туда, куда хочешь ехать…"); }
+      while (S.leg + 1 < LEGS.length && fr >= LEGS[S.leg + 1].at) { S.leg++; S.flash = Math.max(S.flash, .25); if (S.leg === LEGS.length - 1) say(FAB, L.last3); }
+      if (!S.lookBack && LU.z - npz < SEG * 6 && LU.z > npz && npz > M.final * SEG) { S.lookBack = true; say(FAB, L.look); }
+      if (npz > M.devilWarn * SEG && !S.warned) { S.warned = true; say(FAB, L.warn); }
       if (S.gas === "ready" && npz > M.finish * SEG) setGas("used");
       if (npz >= finishZ) finish(npz);
     } else if ((S.finT += dt) > 2.4) end();
@@ -386,10 +428,10 @@ function mount(el, opt){
     S.done = true; S.fin = S.t; setGas("used");
     const ahead = S.bikes.filter(b => b.fin && b.fin < S.t).length + S.bikes.filter(b => !b.fin && b.z > npz).length;
     S.place = 1 + ahead;
-    const L = S.bikes[0], lgap = L.fin ? (S.t - L.fin) : (npz - L.z) / Math.max(1, L.speed);
+    const LU = S.bikes[0], lgap = LU.fin ? (S.t - LU.fin) : (npz - LU.z) / Math.max(1, LU.speed);
     S.photo = Math.abs(lgap) < .35;
     S.flash = .6;
-    if (S.place === 1) { say("Судья", S.photo ? "Фотофиниш… Номер семнадцать! Фабрицио Орсини!" : "Номер семнадцать! Фабрицио Орсини!"); snd.win(); }
+    if (S.place === 1) { say(L.judge, S.photo ? L.j1 : L.j2); snd.win(); }
     else snd.lose();
   }
   function end(){
@@ -397,17 +439,17 @@ function mount(el, opt){
     const win = S.place === 1, t = S.fin;
     if (win) { if (!best || t < best) { best = t; try { localStorage.setItem(bestKey, String(t)); } catch(e) {} } if (opt.onWin) opt.onWin(); }
     ovEnd.innerHTML = win ? `
-      <div class="mt-big">Победа!</div>
-      <p>${S.photo ? "Колесо в колесо. Никто из зрителей не понял, кто победил. Судья посмотрел фотофиниш, поднял руку и крикнул:" : "Толпа взорвалась. Судья поднял руку и крикнул:"}</p>
-      <p class="fr-shout">«Номер семнадцать! Фабрицио Орсини!»</p>
-      <p class="mt-q">— Ты кто такой? — спросила Лючия.<br>— Я пеку хлеб.</p>
-      <div class="mt-keys">Время: ${fmt(t)}${best === t ? " · новый рекорд" : best ? ` · рекорд ${fmt(best)}` : ""}</div>
-      <div class="mt-row"><button class="mt-btn" data-act="go">Ещё заезд</button>${opt.next ? `<a class="mt-btn mt-ghost" href="${opt.next}">Читать главу 2</a>` : ""}<button class="mt-btn mt-ghost" data-act="back">К роману</button></div>` : `
-      <div class="mt-big">${S.place}-е место</div>
-      <p>${S.place === 2 ? "Красный мотоцикл пересёк финиш первым. Лючия сняла шлем и даже не посмотрела в твою сторону." : "Двенадцать километров позади, но до маяка первыми добрались другие."}</p>
-      <p class="mt-q">«Не смотри туда, где боишься упасть. Смотри туда, куда хочешь ехать».</p>
-      <ul class="mt-steps"><li><b>Совет Бруно</b><br>${S.place === 2 ? "На Чёртовом повороте держись внутренней стороны, подальше от песка. Когда Лючию занесёт — жми «Газ!»." : "В поворотах старый мотоцикл сильнее всех: обгоняй там. Перед самыми крутыми чуть притормози, чтобы не вылететь на обочину."}</li></ul>
-      <div class="mt-row"><button class="mt-btn" data-act="go">Ещё раз</button><button class="mt-btn mt-ghost" data-act="back">К роману</button></div>`;
+      <div class="mt-big">${L.win}</div>
+      <p>${S.photo ? L.wPhoto : L.wCrowd}</p>
+      <p class="fr-shout">${L.shout}</p>
+      <p class="mt-q">${L.dialog}</p>
+      <div class="mt-keys">${L.time}: ${fmt(t)}${best === t ? ` · ${L.newRec}` : best ? ` · ${L.rec} ${fmt(best)}` : ""}</div>
+      <div class="mt-row"><button class="mt-btn" data-act="go">${L.again}</button>${opt.next ? `<a class="mt-btn mt-ghost" href="${opt.next}">${L.next}</a>` : ""}<button class="mt-btn mt-ghost" data-act="back">${L.back}</button></div>` : `
+      <div class="mt-big">${L.place(S.place)}</div>
+      <p>${S.place === 2 ? L.l2 : L.lN}</p>
+      <p class="mt-q">${L.quote}</p>
+      <ul class="mt-steps"><li><b>${L.tipT}</b><br>${S.place === 2 ? L.tip2 : L.tipN}</li></ul>
+      <div class="mt-row"><button class="mt-btn" data-act="go">${L.retry}</button><button class="mt-btn mt-ghost" data-act="back">${L.back}</button></div>`;
     ovEnd.hidden = false; setGas("off");
   }
 
@@ -460,7 +502,7 @@ function mount(el, opt){
       c.save(); c.beginPath(); c.rect(0, 0, W, s.clip); c.clip();
       for (const sp of s.sprites) {
         const sx = s.p1.screen.x + half * sp.x, sy = s.p1.screen.y;
-        if (sp.kind === "gate") drawGate(c, s.p1.screen.x, sy, half); else if (half * .12 > .25 && sx > -half * 4 && sx < W + half * 4) drawSprite(c, sp, sx, sy, half);
+        if (sp.kind === "gate") drawGate(c, s.p1.screen.x, sy, half, L.gate); else if (half * .12 > .25 && sx > -half * 4 && sx < W + half * 4) drawSprite(c, sp, sx, sy, half);
       }
       for (const b of s.bikes) {
         const t = (b.z % SEG) / SEG, bx = lerp(s.p1.screen.x, s.p2.screen.x, t) + lerp(s.p1.screen.w, s.p2.screen.w, t) * b.x, by = lerp(s.p1.screen.y, s.p2.screen.y, t);
@@ -501,14 +543,14 @@ function mount(el, opt){
     c.fillStyle = "rgba(14,18,28,.62)"; rr(c, 8, 8, W - 16, 46, 10); c.fill();
     c.fillStyle = "#fff"; c.textBaseline = "middle"; c.textAlign = "left";
     c.font = "800 20px system-ui, sans-serif"; c.fillText(`${S.place}`, 18, 26);
-    c.font = "600 11px system-ui, sans-serif"; c.fillStyle = "#cfd6e4"; c.fillText(`место из ${N_BIKES + 1}`, 18 + (S.place > 9 ? 26 : 14), 28);
+    c.font = "600 11px system-ui, sans-serif"; c.fillStyle = "#cfd6e4"; c.fillText(L.of(N_BIKES + 1), 18 + (S.place > 9 ? 26 : 14), 28);
     const fr = clamp(S.pos / raceLen, 0, 1);
     c.textAlign = "right"; c.fillStyle = "#fff"; c.font = "700 13px system-ui, sans-serif";
-    c.fillText(`${Math.round(S.speed / MAX * 140)} км/ч`, W - 18, 22);
-    c.font = "600 11px system-ui, sans-serif"; c.fillStyle = "#cfd6e4"; c.fillText(`${(fr * KM).toFixed(1).replace(".", ",")} / ${KM} км · ${fmt(S.done ? S.fin : S.t)}`, W - 18, 38);
+    c.fillText(`${Math.round(S.speed / MAX * 140)} ${L.kmh}`, W - 18, 22);
+    c.font = "600 11px system-ui, sans-serif"; c.fillStyle = "#cfd6e4"; c.fillText(`${(fr * KM).toFixed(1).replace(".", ",")} / ${KM} ${L.km} · ${fmt(S.done ? S.fin : S.t)}`, W - 18, 38);
     const bx0 = 112, bx1 = W - 150, by = 42;                                   // полоска пути к маяку
     c.fillStyle = "rgba(255,255,255,.25)"; c.fillRect(bx0, by, bx1 - bx0, 3);
-    const L = S.bikes[0], lf = clamp((L.z - PLAYER_Z) / raceLen, 0, 1);
+    const LU = S.bikes[0], lf = clamp((LU.z - PLAYER_Z) / raceLen, 0, 1);
     c.fillStyle = "#e0322a"; c.beginPath(); c.arc(bx0 + (bx1 - bx0) * lf, by + 1.5, 4, 0, Math.PI * 2); c.fill();
     c.fillStyle = "#56c25a"; c.beginPath(); c.arc(bx0 + (bx1 - bx0) * fr, by + 1.5, 4.5, 0, Math.PI * 2); c.fill();
     c.fillStyle = "#fff"; c.fillRect(bx1 + 2, by - 7, 3, 10); c.fillStyle = "#e0322a"; c.fillRect(bx1 + 1, by - 9, 5, 3);
@@ -522,11 +564,11 @@ function mount(el, opt){
       c.textAlign = "left"; c.fillStyle = m.who === LUC ? "#c8221c" : m.who === FAB ? "#2f7a34" : "#8a5a20"; c.font = "700 11px system-ui, sans-serif"; c.fillText(m.who, 28, y0 + 12);
       c.fillStyle = "#1c1a16"; c.font = `600 ${fs}px system-ui, sans-serif`; lines.forEach((l, i) => c.fillText(l, 28, y0 + 29 + i * 17));
     }
-    if (S.gas === "ready") { c.textAlign = "center"; c.font = "900 34px system-ui, sans-serif"; c.fillStyle = `rgba(255,${180 + Math.sin(S.t * 14) * 60},60,1)`; c.strokeStyle = "#2a1404"; c.lineWidth = 4; c.strokeText("ГАЗ!", W / 2, H * .62); c.fillText("ГАЗ!", W / 2, H * .62); }
+    if (S.gas === "ready") { c.textAlign = "center"; c.font = "900 34px system-ui, sans-serif"; c.fillStyle = `rgba(255,${180 + Math.sin(S.t * 14) * 60},60,1)`; c.strokeStyle = "#2a1404"; c.lineWidth = 4; c.strokeText(L.GAS, W / 2, H * .62); c.fillText(L.GAS, W / 2, H * .62); }
     if (mode === "count") { const n = Math.ceil(S.cd - .2); c.textAlign = "center"; c.font = "900 56px system-ui, sans-serif"; c.fillStyle = "#fff"; c.strokeStyle = "rgba(0,0,0,.5)"; c.lineWidth = 5;
-      const t = S.cd > .2 ? (n > 0 ? String(n) : "") : "Флаг!"; c.strokeText(t, W / 2, H * .45); c.fillText(t, W / 2, H * .45);
-      c.font = "600 13px system-ui, sans-serif"; c.fillStyle = "#fff"; c.fillText("Судья гонки поднимает флаг…", W / 2, H * .45 + 40); }
-    if (mode === "pause") { c.fillStyle = "rgba(0,0,0,.5)"; c.fillRect(0, 0, W, H); c.fillStyle = "#fff"; c.textAlign = "center"; c.font = "700 22px system-ui, sans-serif"; c.fillText("Пауза", W / 2, H / 2); }
+      const t = S.cd > .2 ? (n > 0 ? String(n) : "") : L.flag; c.strokeText(t, W / 2, H * .45); c.fillText(t, W / 2, H * .45);
+      c.font = "600 13px system-ui, sans-serif"; c.fillStyle = "#fff"; c.fillText(L.flagUp, W / 2, H * .45 + 40); }
+    if (mode === "pause") { c.fillStyle = "rgba(0,0,0,.5)"; c.fillRect(0, 0, W, H); c.fillStyle = "#fff"; c.textAlign = "center"; c.font = "700 22px system-ui, sans-serif"; c.fillText(L.pause, W / 2, H / 2); }
   }
 
   /* ── цикл ── */
