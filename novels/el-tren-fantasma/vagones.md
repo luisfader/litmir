@@ -43,7 +43,7 @@
 
 ## ⚖️ 6 · Vagón del juicio final
 
-**Qué hay.** Olor a puro rancio, sillas doradas, un gran escritorio oscuro y un letrero luminoso: JUSTICIA RÁPIDA — ¡SIN MIEDO! Un martillo de juguete.
+**Qué hay.** Olor a cera vieja, sillas doradas, un gran escritorio oscuro y un letrero luminoso: JUSTICIA RÁPIDA — ¡SIN MIEDO! Un martillo de juguete.
 
 **Quién aparece.** Su Señoría Casimiro Condena, con su copete de algodón y su lazo rojo enorme. El fiscal Leonardo Circuito, que lo anota todo en su tableta. Alessio, el abogado defensor «especialista en arte». Los boy scouts zombis como jurado.
 
