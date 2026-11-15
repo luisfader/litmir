@@ -7,28 +7,168 @@
 const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 
 const KIND = {
-  city:{t:"Город", es:"Ciudad", c:"#2f6f8f"},
-  vino:{t:"Вино и виноградники", es:"Vino y viñedos", c:"#7a2e5a"},
-  hist:{t:"История", es:"Historia", c:"#8a5a1e"},
-  park:{t:"Парки и праздник", es:"Parques y fiesta", c:"#3f7a34"},
-  mont:{t:"Горы и вода", es:"Montaña y agua", c:"#5a5f86"}
+  city:{t:"Город", es:"Ciudad", cs:"Město", c:"#2f6f8f"},
+  vino:{t:"Вино и виноградники", es:"Vino y viñedos", cs:"Víno a vinice", c:"#7a2e5a"},
+  hist:{t:"История", es:"Historia", cs:"Historie", c:"#8a5a1e"},
+  park:{t:"Парки и праздник", es:"Parques y fiesta", cs:"Parky a slavnost", c:"#3f7a34"},
+  mont:{t:"Горы и вода", es:"Montaña y agua", cs:"Hory a voda", c:"#5a5f86"}
 };
 const UI = {
   ru:{zoomIn:"🔍 Центр крупнее", zoomOut:"🔍 Вся провинция", all:"Показать все места", nov:"📖 В романе", real:"🌎 В реальности", ch:"Глава",
       L:{city:"Мендоса", acon:"Аконкагуа · 6961 м", tupu:"Тупунгато", river:"река Мендоса", lujan:"Лухан-де-Куйо", heras:"Лас-Эрас", godoy:"Годой-Крус", andes:"А Н Д Ы", cach:"Качеута", potr:"Потрерильос", chile:"дорога в Чили", n:"С", sub:"центр — крупно, горы — далеко: масштаб сжат к краям"}},
+  cs:{zoomIn:"🔍 Zvětšit centrum", zoomOut:"🔍 Celá provincie", all:"Ukázat všechna místa", nov:"📖 V románu", real:"🌎 Ve skutečnosti", ch:"Kapitola",
+      L:{city:"Mendoza", acon:"Aconcagua · 6961 m", tupu:"Tupungato", river:"řeka Mendoza", lujan:"Luján de Cuyo", heras:"Las Heras", godoy:"Godoy Cruz", andes:"A N D Y", cach:"Cacheuta", potr:"Potrerillos", chile:"cesta do Chile", n:"S", sub:"centrum zblízka, hory zdálky: měřítko se k okrajům zmenšuje"}},
   es:{zoomIn:"🔍 Agrandar el centro", zoomOut:"🔍 Toda la provincia", all:"Mostrar todos los lugares", nov:"📖 En la novela", real:"🌎 En la realidad", ch:"Capítulo",
       L:{city:"Mendoza", acon:"Aconcagua · 6961 m", tupu:"Tupungato", river:"río Mendoza", lujan:"Luján de Cuyo", heras:"Las Heras", godoy:"Godoy Cruz", andes:"L O S   A N D E S", cach:"Cacheuta", potr:"Potrerillos", chile:"ruta a Chile", n:"N", sub:"el centro, grande; la montaña, lejos: la escala se achica hacia los bordes"}}
 };
-const ui = D => UI[D.lang === "es" ? "es" : "ru"], kt = (D, k) => D.lang === "es" ? KIND[k].es : KIND[k].t;
+const ui = D => UI[UI[D.lang] ? D.lang : "ru"], kt = (D, k) => KIND[k][D.lang] || KIND[k].t;
 const P = {
   plaza:[-32.8895,-68.8458], espana:[-32.8935,-68.8412], km0:[-32.8872,-68.8390], patr:[-32.8930,-68.8345], gob:[-32.8985,-68.8440],
   parque:[-32.8890,-68.8630], fuente:[-32.8920,-68.8700], anfi:[-32.8990,-68.8770], uncuyo:[-32.8810,-68.8750],
   aero:[-32.8317,-68.7929], plum:[-32.8585,-68.8270], heras:[-32.8480,-68.8380], challao:[-32.8560,-68.9030], godoy:[-32.9260,-68.8450],
   lujan:[-33.0360,-68.8780], fader:[-32.9960,-68.8690], finca:[-33.0650,-68.9300], cacheuta:[-33.0170,-69.1150], potr:[-32.9580,-69.1980],
-  acon:[-32.6532,-70.0109], tupu:[-33.3580,-69.7710], inca:[-32.8250,-69.9110]
+  acon:[-32.6532,-70.0109], tupu:[-33.3580,-69.7710], inca:[-32.8250,-69.9110],
+  arist:[-32.8893,-68.8575], chacras:[-32.9850,-68.8720], fund:[-32.8820,-68.8320], rural:[-32.9780,-68.7930], uco:[-33.4300,-69.1700],
+  guana:[-32.2800,-68.1500], gloria:[-32.8935,-68.8850], uspa:[-32.5200,-69.3000], plata:[-33.0500,-69.4300], horc:[-32.8100,-69.9400],
+  malar:[-35.4700,-69.5800], russell:[-33.0350,-68.7900], cipo:[-33.0480,-68.8790], hplaza:[-32.8880,-68.8360]
 };
 
 const DATA = {
+  "la-reina-de-la-vendimia": {
+    lang:"es", ks:72, cy:380, wide:true, title:"La Mendoza de la reina",
+    intro:"Todos los lugares de Mendoza por donde pasa «La reina de la Vendimia»: del centro de la ciudad a las lagunas de Lavalle, el pie del Aconcagua y los salares de Malargüe. Tocá un punto: vas a ver qué pasa ahí en la novela y por qué el lugar es famoso en la realidad.",
+    places:[
+      {id:"aero", ll:P.aero, k:"city", n:"Aeropuerto y base El Plumerillo", ch:[2,31],
+        nov:"Jana aterriza en Mendoza y ve por la ventanilla una montaña más alta que todas, «blanca y solitaria, como una reina sentada en su trono». Más tarde, de la base de El Plumerillo sale un helicóptero hacia la isla: a los cuatro mil metros se le congelan las palas.",
+        real:"El aeropuerto internacional de Mendoza, junto a una base aérea. Toma su nombre del Campo Histórico El Plumerillo, donde San Martín entrenó al Ejército de los Andes en 1816 y 1817."},
+      {id:"hplaza", ll:P.plaza, k:"city", n:"Plaza Independencia y el hotel", ch:[3,5,6,18,31,41],
+        nov:"Jana alquila un cuarto chico en un hotel antiguo frente a la plaza: techo alto, ventilador lento, cama de hierro y un balcón sobre la fuente. Ahí lee de noche el cuaderno negro de Mark. Después de la semana sin borde, la vaca de la fuente vuelve a su dueño, un tambero de Guaymallén.",
+        real:"La plaza principal de Mendoza, trazada después del terremoto de 1861, con cuatro plazas satélite en las esquinas. Enfrente está el viejo Hotel Plaza, hoy Park Hyatt."},
+      {id:"arist", ll:P.arist, k:"city", n:"Calle Arístides Villanueva", ch:[3,15,21,25],
+        nov:"Ahí está «Mirta, Estilo & Color», la peluquería donde a Jana la tiñen de rubia trigo con reflejos de miel, entre un bar con mesas en la vereda y una heladería. Después, Jana y Julieta comen un lomito sentadas en el cordón, con los pies en la acequia.",
+        real:"La calle de bares, cervecerías y restaurantes más famosa de Mendoza, en la Quinta Sección: de noche, las mesas ocupan las veredas y la ciudad sale a la calle."},
+      {id:"gob", ll:P.gob, k:"hist", n:"Casa de Gobierno", ch:[4,25,41,44],
+        nov:"Clara, de Canal 9, entrevista en vivo a «la reina rubia» frente a la Casa de Gobierno. Más tarde, Antonio Ferrer sube dos veces las escaleras de mármol, y al final la presidenta Irina habla desde el balcón a una plaza llena de gente que acaba de barrerla.",
+        real:"La sede del gobierno de la provincia, en el Barrio Cívico, con el edificio de la Legislatura y los tribunales alrededor."},
+      {id:"fund", ll:P.fund, k:"hist", n:"Ruinas de San Francisco y Área Fundacional", ch:[6,10,16,17,18,42,49],
+        nov:"«Debajo de Mendoza hay otra Mendoza». Bajo las ruinas, después del sismo de la fiesta, aparece una losa removida y un acceso a criptas. Ahí Luis encuentra la piedra que respira vino, y ahí, a las nueve de la noche, Jana y Luis se encuentran entre los arcos rotos.",
+        real:"Acá estuvo la ciudad colonial, fundada por Pedro del Castillo en 1561 y destruida por el terremoto del 20 de marzo de 1861. Quedan las ruinas de San Francisco, la Plaza Pedro del Castillo y un museo con las excavaciones del antiguo Cabildo bajo el piso."},
+      {id:"sanmartin", ll:P.km0, k:"park", n:"Avenida San Martín: desfiles y Carrusel", ch:[4,23,24,25],
+        nov:"Los carros de la Vendimia avanzan por la avenida iluminados como barcos en la noche. El día del Carrusel, a las ocho de la mañana ya no queda lugar en las veredas, y en medio de la avenida aparecen un dragón, un carruaje negro y Luis Fader con las zapatillas mojadas.",
+        real:"La avenida principal de la ciudad. Por ella pasan la Vía Blanca de las Reinas, el desfile nocturno de carros iluminados, y el Carrusel, el desfile del sábado por la mañana, con gauchos, caballos y las reinas de los dieciocho departamentos."},
+      {id:"gloria", ll:P.gloria, k:"park", n:"Parque San Martín y Cerro de la Gloria", ch:[4,21,43],
+        nov:"La primera reunión de candidatas es en un salón del parque: «Esto no es un concurso de belleza. Es la Vendimia». Julieta lleva a Jana en su Fiat Uno por el lago, los remos y el Rosedal hasta el Cerro de la Gloria, y más tarde la cita ahí: «Hoy a las ocho. Sola».",
+        real:"En lo alto del cerro está el Monumento al Ejército de los Andes, inaugurado en 1914: San Martín a caballo, soldados, cañones y la figura de la Libertad. Desde arriba se ve toda la ciudad y, al oeste, la cordillera."},
+      {id:"teatro", ll:P.anfi, k:"park", n:"Teatro Griego Frank Romero Day", ch:[7,27,28,46,47],
+        nov:"«No se parece a ningún teatro. No tiene techo. Es un cerro». En la fiesta de la Ciudad se abre una grieta y salen llamas doradas y violetas: las uvas de toda la provincia empiezan a brillar. En el Acto Central, el escrutinio va voto a voto entre Maipú y Godoy Cruz.",
+        real:"El anfiteatro al pie de los cerros del Parque San Martín donde cada año se hace el Acto Central de la Fiesta Nacional de la Vendimia y se elige a la Reina Nacional entre las candidatas de los dieciocho departamentos."},
+      {id:"chacras", ll:P.chacras, k:"vino", n:"Chacras de Coria, la casa de Sergio", ch:[3,5,11,15,22],
+        nov:"«Sergio Fader. Calle de los Olmos, Chacras de Coria». La casa del padre de Luis, con galería y parral, a media hora del centro. Ahí Luis vuelve de noche con un racimo en la mano y ahí, en la cama angosta de su infancia, debajo de los dibujos de la cordillera, duerme con Jana.",
+        real:"Un pueblo de Luján de Cuyo de calles arboladas, casas bajas y quintas, rodeado de bodegas. Es uno de los barrios más tranquilos y queridos del Gran Mendoza."},
+      {id:"godoy", ll:P.godoy, k:"city", n:"Godoy Cruz, la tierra de Julieta", ch:[3,4,5,7],
+        nov:"«Este año la de Godoy Cruz es Julieta Arancibia. Esa chica es una leona». Banda verde, caballo negro, corona de plata en el pelo negro: la rival que termina siendo la mejor amiga de Jana.",
+        real:"El departamento pegado al sur de la capital, con nombre del diputado mendocino en el Congreso de Tucumán de 1816. Es la tierra del club Godoy Cruz Antonio Tomba, «el Tomba»."},
+      {id:"rural", ll:P.rural, k:"vino", n:"Bodega La Rural, Maipú", ch:[12,47],
+        nov:"La gala de coronación de la reina de la Ciudad: el intendente, gente del gobierno de la presidenta Irina, los intendentes de los dieciocho departamentos… y un viñatero de sombrero que baila el vals con la reina y llora porque su viña fue la que más se secó.",
+        real:"Una bodega histórica de Maipú, fundada a fines del siglo XIX, que tiene uno de los museos del vino más importantes de América Latina, con prensas, toneles y herramientas de la vitivinicultura antigua."},
+      {id:"russell", ll:P.russell, k:"vino", n:"La finca de Estela, Russell (Maipú)", ch:[45,47,48],
+        nov:"Estela González, la reina de Maipú que no sale en las fotos, espera a Jana a las seis de la mañana con una tijera de cosecha en cada mano. El sábado gana la corona nacional, y el domingo hace en Russell, bajo el parral de la casa amarilla, el asado más grande que vio Maipú en cincuenta años.",
+        real:"Un distrito rural de Maipú de callejones con álamos, acequias, viñedos y olivares. Maipú es famoso por sus bodegas, su aceite de oliva y los recorridos en bicicleta entre fincas."},
+      {id:"uco", ll:P.uco, k:"vino", n:"Bodega del Valle de Uco", ch:[13,14],
+        nov:"La visita de las reinas a las viñas más altas de la provincia termina en emboscada: el zonda sopla caliente desde la cordillera, el cielo se pone amarillo y seis hombres esperan a la reina rubia en una bodega de piedra y vidrio medio enterrada en la ladera.",
+        real:"El valle de viñedos de altura de Tunuyán, Tupungato y San Carlos, al pie de la cordillera. Sus bodegas modernas y sus vinos de altura son de los más premiados de la Argentina. El zonda es real: un viento caliente y seco que baja de los Andes."},
+      {id:"guana", ll:P.guana, k:"mont", n:"Lagunas de Guanacache, Lavalle", ch:[6,23,37],
+        nov:"La leyenda de la abuela de Luis: cuando Hunuc y Huar rompieron su promesa, Xumuc, el sol de los huarpes, los castigó, se arrepintió y lloró tanto que con sus lágrimas se hicieron las lagunas. De ahí viene Ayelén, la tímida reina de Lavalle.",
+        real:"Humedales en el límite de Mendoza, San Juan y San Luis, sitio Ramsar desde 1999 y tierra ancestral de los huarpes laguneros. Durante el siglo XX se fueron secando, porque el agua de los ríos se quedó río arriba."},
+      {id:"potr", ll:P.potr, k:"mont", n:"Potrerillos", ch:[19,20,21,22,25,34],
+        nov:"«Si es turismo, yo te llevo a Potrerillos. Al refugio. Tres días sin señal». Al amanecer, el embalse aparece de golpe en una curva, «como una piedra preciosa tirada entre los cerros». Después, en el refugio, Nátasha sostiene la cabeza de Rodrigo sobre las rodillas.",
+        real:"El dique y el embalse sobre el río Mendoza, terminados a comienzos de los 2000. El lago turquesa es lugar de kayak, rafting y windsurf, y por ahí pasa la ruta a Chile."},
+      {id:"uspa", ll:P.uspa, k:"mont", n:"Paramillos de Uspallata y el puesto de Don Anselmo", ch:[24,25,31,32],
+        nov:"Una de las siete raíces negras de la isla se clava en los cerros pelados de Paramillos, donde hace cien años los mineros sacaban oro con la mano. Un arriero llama a la radio: vio un hilo negro bajando del cielo. Don Anselmo vive a quince kilómetros, con cuarenta cabras y un perro que se llama Presidente.",
+        real:"Paramillos guarda minas antiguas y un bosque petrificado de araucarias que Charles Darwin describió en 1835. El valle de Uspallata, con sus álamos y cerros de colores, sirvió de escenario para la película «Siete años en el Tíbet»."},
+      {id:"plata", ll:P.plata, k:"mont", n:"Cordón del Plata", ch:[24,31],
+        nov:"Otra raíz de la isla baja sobre el cordón del Plata, «donde las vetas de cobre dormían debajo de la nieve». La isla está chupando las montañas: oro, cobre, litio.",
+        real:"Un cordón montañoso frente a Luján de Cuyo, con cumbres de casi seis mil metros. Muchos andinistas lo suben para aclimatarse antes del Aconcagua."},
+      {id:"horc", ll:P.horc, k:"mont", n:"Laguna de Horcones y el Aconcagua", ch:[2,28,29,30,33,36,40],
+        nov:"«Horcones. La laguna de Horcones. El pie de la madre», dice la Mulánima. Jana llega descalza, con el vestido roto y negro de ceniza. Después, a cuatro mil doscientos metros, la tormenta blanca baja de la isla; Olguina espera en su puesto al fondo de la última quebrada, y el Aconcagua se despierta «como una persona muy vieja».",
+        real:"La laguna de Horcones está en la entrada del Parque Provincial Aconcagua, donde empieza la ruta normal a la cumbre. El Aconcagua mide 6961 metros: es la montaña más alta de América."},
+      {id:"tupu", ll:P.tupu, k:"mont", n:"Volcán Tupungato", ch:[14,31,35,40],
+        nov:"En la emboscada del zonda, Jana ve las montañas tan cerca que da vértigo: el Tupungato, blanco. Después, una nube enorme queda pegada a la cordillera del Aconcagua al Tupungato, y adentro están los dos hijos de Sergio.",
+        real:"Un volcán de unos 6570 metros en el límite con Chile. Le da nombre al departamento de Tupungato, en el Valle de Uco."},
+      {id:"malar", ll:P.malar, k:"mont", n:"Malargüe y Las Leñas", ch:[19,31,40],
+        nov:"Las raíces más lejanas de la isla se clavan en Las Leñas y en los salares de Malargüe. Al final se desclavan «con un ruido de piedra arrancada» y vuelven a la isla. Antes, Jana tenía en la agenda una gira por San Rafael, Malargüe y General Alvear.",
+        real:"El sur de Mendoza: el campo volcánico de La Payunia, uno de los más grandes del mundo, el centro de esquí Las Leñas y el observatorio Pierre Auger, que estudia los rayos cósmicos."},
+      {id:"challao", ll:P.challao, k:"mont", n:"Cerros del Challao", ch:[27,31],
+        nov:"Después del Carrusel, Nátasha manda a Zmaj a dormir a los cerros del Challao. Lo encuentra en una quebrada, «enroscado como un gato», y vuelan juntos hacia el teatro.",
+        real:"Los cerros al noroeste de la ciudad, en Las Heras, con el santuario de la Virgen de Lourdes y una vista de toda Mendoza."}
+    ]
+  },
+  "kralovna-vinobrani": {
+    lang:"cs", ks:72, cy:380, wide:true, title:"Mendoza královny",
+    intro:"Všechna místa Mendozy, kudy prochází «Královna vinobraní»: od centra města přes laguny Lavalle až k úpatí Aconcaguy a solným jezerům Malargüe. Klepni na bod: uvidíš, co se tam v románu děje a čím je to místo slavné ve skutečnosti.",
+    places:[
+      {id:"aero", ll:P.aero, k:"city", n:"Letiště El Plumerillo", ch:[2,30],
+        nov:"Jana přistává v Mendoze a z okénka vidí horu vyšší než všechny ostatní, bílou a osamělou, jako královnu na trůnu. Na konci odtud odlétá: z malé haly s nejhorší kávou v Mendoze a nejlepšími alfajores.",
+        real:"Mezinárodní letiště Mendozy. Jméno má po Historickém poli El Plumerillo, kde generál San Martín v letech 1816–1817 cvičil Andskou armádu."},
+      {id:"hplaza", ll:P.plaza, k:"city", n:"Náměstí Independencia a hotel", ch:[3,5,6,18,19],
+        nov:"Jana si pronajme malý pokoj ve starém hotelu u náměstí: vysoký strop, pomalý ventilátor, železná postel a balkon nad fontánou. V noci tu čte Markův černý sešit.",
+        real:"Hlavní náměstí Mendozy, vytyčené po zemětřesení roku 1861, se čtyřmi menšími náměstími v rozích. Naproti stojí starý Hotel Plaza, dnes Park Hyatt."},
+      {id:"arist", ll:P.arist, k:"city", n:"Ulice Arístides Villanueva", ch:[3,15,20,30],
+        nov:"Tady je kadeřnictví «Mirta, Estilo & Color», kde Janu obarví na pšeničnou blond s medovými odlesky. Později tu s Julietou jedí *lomito* z pojízdného stánku, sedí na obrubníku a mají nohy v acequii.",
+        real:"Nejslavnější ulice barů a restaurací v Mendoze: večer zabírají stolky celé chodníky a město vychází ven."},
+      {id:"gob", ll:P.gob, k:"hist", n:"Vládní palác", ch:[4],
+        nov:"Clara z Canal 9 dělá s «blonďatou královnou» živý rozhovor přímo před vládním palácem.",
+        real:"Sídlo vlády provincie v Občanské čtvrti (Barrio Cívico), obklopené budovami parlamentu a soudů."},
+      {id:"fund", ll:P.fund, k:"hist", n:"Ruiny San Francisco a Área Fundacional", ch:[6,10,16,17,18,28,29],
+        nov:"„Pod Mendozou je jiná Mendoza.“ Po otřesech během slavnosti se pod ruinami objeví odsunutá deska a vstup do krypt. Luis tu najde kámen, který dýchá vínem, a v devět večer se tu s Janou setkají mezi rozbitými oblouky.",
+        real:"Zde stálo koloniální město, založené Pedrem del Castillo roku 1561 a zničené zemětřesením 20. března 1861. Zůstaly ruiny kostela San Francisco, náměstí Pedra del Castillo a muzeum s vykopávkami starého Cabilda pod podlahou."},
+      {id:"sanmartin", ll:P.km0, k:"park", n:"Třída San Martín: průvody a Karusel", ch:[4,22,23],
+        nov:"Vozy vinobraní jedou po třídě nasvícené jako lodě v noci. V den Karuselu už v osm ráno není na chodnících k hnutí: sto tisíc lidí, platany a uprostřed na asfaltu blonďatá královna v roztrhaných šatech.",
+        real:"Hlavní třída města. Projíždí jí Vía Blanca, noční průvod královen na osvětlených vozech, a Karusel, sobotní dopolední průvod s gaučy, koňmi a královnami osmnácti okresů."},
+      {id:"gloria", ll:P.gloria, k:"park", n:"Park San Martín a Cerro de la Gloria", ch:[4,20],
+        nov:"Julieta veze Janu parkem: tamhle jezero, tamhle veslice, tamhle růžová zahrada. Pak vyjedou po klikaté silnici až na vrchol Cerro de la Gloria, k obrovskému pomníku.",
+        real:"Na vrcholu kopce stojí Pomník Andské armády z roku 1914: generál San Martín na koni, vojáci, děla a postava Svobody. Shora je vidět celé město a na západě Kordillery."},
+      {id:"teatro", ll:P.anfi, k:"park", n:"Řecké divadlo Frank Romero Day", ch:[7,26],
+        nov:"Divadlo, které nemá střechu: je to celý kopec. Při slavnosti Města se otevře trhlina a z ní vyšlehnou zlaté a fialové plameny; hrozny v celé provincii se rozzáří. Při Hlavním představení se nad divadlem snáší popel.",
+        real:"Amfiteátr pod kopci parku San Martín, kde se každý rok koná Hlavní představení Národní slavnosti vinobraní a volí se národní královna."},
+      {id:"chacras", ll:P.chacras, k:"vino", n:"Chacras de Coria, Sergiův dům", ch:[3,5,11,15,19,20,21,30],
+        nov:"Dům Luisova otce s verandou a loubím, půl hodiny od centra. Sem jezdí Jana s Luisem, odsud ji ráno vyzvedává Julieta v červeném Fiatu Uno a sem, do prázdné acequie u verandy, na konci přiteče zlatá voda.",
+        real:"Klidná obec v Luján de Cuyo se stromořadími, nízkými domy a usedlostmi, obklopená vinařstvími."},
+      {id:"godoy", ll:P.godoy, k:"city", n:"Godoy Cruz, Julietin domov", ch:[3,4,5,7,22],
+        nov:"„Letos je za Godoy Cruz Julieta Arancibia. Ta holka je lvice.“ Zelená šerpa, černý kůň, stříbrná korunka v černých vlasech: soupeřka, ze které se stane Janina nejlepší kamarádka.",
+        real:"Okres hned na jih od centra, pojmenovaný po mendozském poslanci Tukumánského kongresu z roku 1816. Domov fotbalového klubu Godoy Cruz."},
+      {id:"rural", ll:P.rural, k:"vino", n:"Vinařství La Rural, Maipú", ch:[12],
+        nov:"Korunovační gala královny Města: starosta, lidé z vlády prezidentky Iriny a starostové všech osmnácti okresů.",
+        real:"Historické vinařství v Maipú z konce 19. století s jedním z nejvýznamnějších muzeí vína v Latinské Americe: lisy, sudy a nástroje starého vinařství."},
+      {id:"cipo", ll:P.cipo, k:"hist", n:"Hráz Cipolletti", ch:[21,30],
+        nov:"Ve čtyři ráno tečou všechny acequie Velké Mendozy dvanáct minut pozpátku a hlídač na hrázi vidí, jak řeka klesla o půl metru. Na konci tentýž hlídač upustí termosku: řeka se ve tmě rozzáří zlatou vodou.",
+        real:"Historický jez a rozdělovací hráz na řece Mendoza z let 1889–1890, kterou postavil italský inženýr César Cipolletti. Rozvádí vodu do kanálů, z nichž žije celá oáza."},
+      {id:"uco", ll:P.uco, k:"vino", n:"Vinařství v údolí Uco", ch:[13,14,19],
+        nov:"Návštěva královen u nejvýše položených vinic provincie skončí přepadením: od hor fouká horká zonda, nebe zežloutne a šest mužů čeká na blonďatou královnu ve vinařství z kamene a skla, napůl zapuštěném do svahu.",
+        real:"Údolí vysokohorských vinic v okresech Tunuyán, Tupungato a San Carlos pod Kordillerou. Zdejší moderní vinařství patří k nejoceňovanějším v Argentině. Zonda je skutečný horký a suchý vítr z And."},
+      {id:"guana", ll:P.guana, k:"mont", n:"Laguny Guanacache, Lavalle", ch:[6,21,22,23],
+        nov:"Legenda Luisovy babičky: Xumuc, slunce Huarpů, plakalo tak dlouho, až z jeho slz vznikly laguny. Odsud je Ayelén, plachá královna z Lavalle, a její babička doňa Ermelinda. A u Lavalle Jana uvidí, čím by se Mendoza stala: bílou, rozpraskanou pouští.",
+        real:"Mokřady na hranici Mendozy, San Juanu a San Luis, od roku 1999 chráněné Ramsarskou úmluvou, prastará země Huarpů. Ve 20. století vysychaly, protože voda řek zůstala proti proudu."},
+      {id:"potr", ll:P.potr, k:"mont", n:"Přehrada Potrerillos", ch:[23,24,28,30],
+        nov:"Jeden ze sedmi kabelů ostrova se zanoří do přehrady, „jejíž tyrkysová voda dávala pít celému městu“. Luis jako obr ji v měsíčním světle vidí pod sebou jako drahokam, ponoří ruku a kabel vytrhne.",
+        real:"Přehrada a nádrž na řece Mendoza dokončené na začátku 21. století. Tyrkysové jezero v horách láká na kajaky, rafting a windsurfing; vede kolem silnice do Chile."},
+      {id:"uspa", ll:P.uspa, k:"mont", n:"Paramillos u Uspallaty", ch:[23,24,25,28],
+        nov:"První kabel dopadne na holé kopce Paramillos, kde před sto lety horníci vybírali zlato rukama. Luis tam jede s Ferrerem a lidmi z Madridu: „Je to tady. Vidím ho. Je obrovský.“",
+        real:"Na Paramillos jsou staré doly a zkamenělý les araukárií, který v roce 1835 popsal Charles Darwin. V údolí Uspallata se natáčel film «Sedm let v Tibetu»."},
+      {id:"plata", ll:P.plata, k:"mont", n:"Cordón del Plata", ch:[23,24,28],
+        nov:"Druhý kabel dopadne na Cordón del Plata, „kde pod sněhem spaly žíly mědi“. Měděný, mrtvý — a Luis ho přetrhne.",
+        real:"Horský hřbet naproti Luján de Cuyo s vrcholy vysokými skoro šest tisíc metrů. Mnoho horolezců se tu aklimatizuje před výstupem na Aconcaguu."},
+      {id:"tupu", ll:P.tupu, k:"mont", n:"Sopka Tupungato", ch:[14,23,24,28],
+        nov:"Pátý a šestý kabel vedou do roklí pod Tupungatem, kde pomalu tají ledovce. Luis klekne na hřeben a trhá oběma rukama najednou; ledovce pod ním zapraskají.",
+        real:"Sopka vysoká asi 6570 metrů na hranici s Chile. Dala jméno okresu Tupungato v údolí Uco."},
+      {id:"malar", ll:P.malar, k:"mont", n:"Malargüe", ch:[22,23,24,28],
+        nov:"Nejvzdálenější kabel: „Malargüe. Čtyři sta kilometrů na jih.“ Míří do bílých solných jezer, kde voda skrývá něco cennějšího než zlato — lithium, „bílé zlato“. Na Karuselu jede královna z Malargüe v bílém, s ozdobou z kondořího peří.",
+        real:"Jih Mendozy: sopečné pole La Payunia, jedno z největších na světě, lyžařské středisko Las Leñas a observatoř Pierre Auger, která zkoumá kosmické záření."},
+      {id:"horc", ll:P.horc, k:"mont", n:"Aconcagua", ch:[2,9,10,19,29,30],
+        nov:"Nad Aconcaguou visí ostrov se sopkou, nejdřív jen malá šedá skvrna, pak díra bez hvězd. Mulánima vletí zlatou trhlinou dovnitř hory, a uvnitř hory není tma, ale světlo. Na konci odtud roklemi sestupuje zlatá voda.",
+        real:"Nejvyšší hora Ameriky, 6961 metrů, v provinčním parku Aconcagua. Normální cesta na vrchol začíná u laguny Horcones."}
+    ]
+  },
   "el-misterio-de-los-fader": {
     lang:"es", title:"La Mendoza de los Fader",
     intro:"Todos los lugares de Mendoza donde transcurre «El misterio de los Fader». Tocá un punto: vas a ver qué pasa ahí en la novela y por qué ese lugar es famoso en la realidad. El color del punto indica el tipo de lugar.",
@@ -193,11 +333,12 @@ const DATA = {
   }
 };
 
-const LAT0 = -32.8895, LON0 = -68.8458, CX = 640, CY = 470;
+const LAT0 = -32.8895, LON0 = -68.8458, CX = 640;
+let CY = 470, KS = 86;
 function proj(ll){
   const dx = (ll[1] - LON0) * 111.32 * Math.cos(LAT0 * Math.PI / 180), dy = (ll[0] - LAT0) * 110.57, r = Math.hypot(dx, dy);
   if (r < 1e-6) return [CX, CY];
-  const R = 86 * Math.log(1 + r / 0.6); return [CX + dx / r * R, CY - dy / r * R];
+  const R = KS * Math.log(1 + r / 0.6); return [CX + dx / r * R, CY - dy / r * R];
 }
 const path = (a, close) => { const Q = a.map(proj); let d = `M${Q[0][0].toFixed(1)},${Q[0][1].toFixed(1)}`;
   for (let i = 1; i < Q.length - 1; i++) { const mx = (Q[i][0] + Q[i + 1][0]) / 2, my = (Q[i][1] + Q[i + 1][1]) / 2; d += ` Q${Q[i][0].toFixed(1)},${Q[i][1].toFixed(1)} ${mx.toFixed(1)},${my.toFixed(1)}`; }
@@ -226,6 +367,10 @@ function svg(D){
     <path d="${path(RIVER)}" fill="none" stroke="#7d9db0" stroke-width="10" opacity=".7" stroke-linecap="round"/><path d="${path(RIVER)}" fill="none" stroke="#3f6178" stroke-width="1.6" opacity=".7"/>
     <ellipse cx="${px.toFixed(0)}" cy="${(py + 6).toFixed(0)}" rx="26" ry="11" fill="#5fb8b0" stroke="#3f6178" stroke-width="1.5"/>
     <path d="${path(RN7)}" fill="none" stroke="#8a5a1e" stroke-width="2.5" stroke-dasharray="8 6" opacity=".7"/>
+    ${D.wide ? (() => { const [gx, gy] = proj(P.guana);
+      return [[-34.20,-69.85,34],[-34.70,-70.05,36],[-35.15,-70.10,38],[-35.60,-69.95,34],[-33.80,-69.70,34],[-36.00,-69.30,30],[-35.85,-69.15,26]].map(q => peak([q[0], q[1]], q[2], q[2] > 31)).join("")
+        + `<ellipse cx="${gx.toFixed(0)}" cy="${gy.toFixed(0)}" rx="40" ry="16" fill="#a9c9cf" stroke="#3f6178" stroke-width="1.5" stroke-dasharray="5 4"/>`
+        + `<path d="${path([[-33.05,-68.88],[-33.60,-68.70],[-34.20,-68.55],[-34.62,-68.33],[-35.00,-68.10]])}" fill="none" stroke="#8a5a1e" stroke-width="2.5" stroke-dasharray="8 6" opacity=".6"/>`; })() : ""}
   </g>
   <circle cx="${CX}" cy="${CY}" r="78" fill="none" stroke="#8a5a1e" stroke-width="1.5" stroke-dasharray="3 6" opacity=".6"/>
   ${T([-32.8895,-68.8458], U.city, 0, -88, 30, "middle")}
@@ -233,7 +378,8 @@ function svg(D){
   ${T([-32.97,-68.73], U.river, 14, 30, 20)}${T(P.lujan, U.lujan, 20, 34, 20)}${T(P.heras, U.heras, -40, -30, 20)}
   ${T(P.godoy, U.godoy, 22, 10, 18)}<text x="70" y="520" transform="rotate(-90 70 520)" text-anchor="middle" font-family="Marck Script, cursive" font-size="40" fill="#5a3c1c" opacity=".8">${U.andes}</text>${T(P.cacheuta, U.cach, 0, 34, 19, "middle")}${T(P.potr, U.potr, 0, -26, 19, "middle")}
   ${T([-32.62,-69.33], U.chile, 34, 0, 17, "start")}
-  <g transform="translate(920 90)" font-family="Marck Script, cursive" fill="#5a3c1c"><circle r="34" fill="none" stroke="#5a3c1c" stroke-width="2"/><path d="M0,-30 L7,0 L0,30 L-7,0 Z" fill="#7a2e5a" opacity=".8"/><text y="-40" text-anchor="middle" font-size="22">${U.n}</text></g>
+  ${D.wide ? T(P.guana, D.lang === "cs" ? "laguny Guanacache" : "lagunas de Guanacache", 0, 40, 18, "middle") + T([-34.61,-68.33], "San Rafael", 12, 6, 18) + T(P.malar, "Malargüe", 0, 44, 20, "middle") + T(P.uco, D.lang === "cs" ? "údolí Uco" : "Valle de Uco", 22, 28, 18) : ""}
+  <g transform="translate(925 905)" font-family="Marck Script, cursive" fill="#5a3c1c"><circle r="34" fill="none" stroke="#5a3c1c" stroke-width="2"/><path d="M0,-30 L7,0 L0,30 L-7,0 Z" fill="#7a2e5a" opacity=".8"/><text y="-40" text-anchor="middle" font-size="22">${U.n}</text></g>
   <text x="40" y="930" font-family="Marck Script, cursive" font-size="40" fill="#3b2611">${esc(D.title)}</text>
   <text x="42" y="962" font-family="Marck Script, cursive" font-size="20" fill="#6d5232">${U.sub}</text>
   <g class="pins">${pins}</g><rect width="1000" height="1000" fill="url(#mzVig)" pointer-events="none"/></svg>`;
@@ -262,7 +408,7 @@ function css(){
 }
 
 function map(el, o){
-  css(); const D = DATA[o.slug]; if (!D) { el.innerHTML = ""; return; } const U = ui(D);
+  css(); const D = DATA[o.slug]; if (!D) { el.innerHTML = ""; return; } const U = ui(D); KS = D.ks || 86; CY = D.cy || 470;
   let kind = null, sel = null, zoom = false;
   el.innerHTML = `<div class="mz"><h3>${esc(D.title)}</h3><p class="mz-p">${esc(D.intro)}</p>
     <div class="mz-kinds">${Object.entries(KIND).filter(([k]) => D.places.some(p => p.k === k)).map(([k, v]) => `<button type="button" data-k="${k}" style="--c:${v.c}"><i></i>${esc(kt(D, k))}</button>`).join("")}</div>
