@@ -1873,8 +1873,8 @@ XT.cs = Object.assign({}, XT.en, {btn:"Oddíly románu", mendoza:"Místa Mendozy
 const exT = l => XT[l] || XT.en;
 /* Свои разделы романа (карты, схемы): n.sections = [{file, title, icon}] — markdown-файл из папки романа */
 const exSec = (n, k) => /^sec\d+$/.test(k) ? (n.sections || [])[+k.slice(3)] : null;
-const exIc = (n, k) => { const s = exSec(n, k); return s ? (s.icon || "✦") : EX_IC[k]; };
-const exLb = (n, T, k) => { const s = exSec(n, k); return s ? s.title : T[k]; };
+const exIc = (n, k) => { const s = exSec(n, k); return s ? (s.icon || "✦") : k === "quiz" && n.quizIcon ? n.quizIcon : EX_IC[k]; };
+const exLb = (n, T, k) => { const s = exSec(n, k); return s ? s.title : k === "quiz" && n.quizTitle ? n.quizTitle : T[k]; };
 const EX_IC = {music:"♫", games:"🎮", gallery:"▦", riddles:"?", who:"💬", notebook:"📓", quiz:"🕵", why:"🍇", queen:"👑", fox:"🦊", map:"🗺", diary:"✒", mendoza:"📍"};
 let exReturn = null;
 function exTabs(n){ const t = []; if (n.soundtrack && n.soundtrack.length) t.push("music"); (n.sections || []).forEach((x, i) => t.push("sec" + i)); if (n.runner || n.fight || n.moto) t.push("games"); if (n.riddles) t.push("riddles"); if (n.whoSaid) t.push("who"); if (n.notebook) t.push("notebook"); if (n.quiz) t.push("quiz"); if (n.why) t.push("why"); if (n.queen) t.push("queen"); if (n.fox) t.push("fox"); if (n.moscowMap) t.push("map"); if (n.diary) t.push("diary"); if (n.mendozaMap) t.push("mendoza"); if (n.gallery) t.push("gallery"); return t; }
