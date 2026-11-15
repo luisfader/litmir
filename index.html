@@ -2411,7 +2411,7 @@ function motoPage(n){
     document.title = n.moto.title + " · " + n.title;
     app.innerHTML = `<div class="reader-bar"><div class="wrap"><a class="crumb" href="#/${n.slug}" id="mtBack">← ${esc(n.title)}</a></div></div><div id="mtHost"></div>`;
     document.getElementById("mtBack").onclick = () => { exReturn = n.slug; };
-    window[G].mount(document.getElementById("mtHost"), {slug:n.slug, sfx,
+    window[G].mount(document.getElementById("mtHost"), {slug:n.slug, lang:n.lang, sfx,
       onWin:() => store.set("moto:" + n.slug, true),
       next:n.moto.ch < n.chapters.length ? chapterHref(n, n.moto.ch + 1) : "",
       back:() => { exReturn = n.slug; location.hash = `#/${n.slug}`; }});
