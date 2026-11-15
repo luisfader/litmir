@@ -655,6 +655,33 @@ article.chapter h3{font-family:var(--sans);font-size:.72em;letter-spacing:.12em;
 .wg-wheels{position:absolute;left:18px;right:18px;bottom:-11px;display:flex;align-items:center;gap:10px}
 .wg-wheels i{width:20px;height:20px;border-radius:50%;background:var(--wb);border:3px solid var(--wl);box-shadow:inset 0 0 0 4px var(--wc)}
 .wg-wheels span{flex:1}
+.mp{max-width:720px;margin:0 auto;border-radius:18px;padding:0 12px 22px;color:#2b2118;font-family:var(--sans);background:#efe3c8;overflow:hidden}
+.mp-hero{text-align:center;color:#e8fbf8;padding:18px 14px 16px;margin:0 -12px 14px;background:linear-gradient(180deg,#0f3b3f,#174d4f)}.mp-title{font-family:var(--serif);font-size:24px;font-weight:700;letter-spacing:.02em}.mp-intro{font-size:14.5px;line-height:1.5;opacity:.9;margin-top:6px}
+.mp-scroll{overflow:hidden;border-radius:14px;border:2px solid #b89a63;box-shadow:inset 0 0 40px rgba(110,80,30,.25);-webkit-overflow-scrolling:touch}
+.mp-svg{display:block;width:100%;height:auto;font-family:var(--sans)}
+.mp-bg{fill:#f1e4c4}.mp-sand{fill:#e8cf97;opacity:.75}.mp-dune{fill:none;stroke:#c8a463;stroke-width:2.5;stroke-linecap:round}.mp-sea{fill:#5aa7b6}.mp-wave{fill:none;stroke:#e9f7f7;stroke-width:3;stroke-linecap:round;opacity:.8}
+.mp-river{fill:none;stroke:#6fb3c2;stroke-width:9;stroke-linecap:round;opacity:.85}.mp-fields rect{fill:#b9c46a;stroke:#8d9a45;stroke-width:1.5}.mp-hill{fill:#a9b871;opacity:.7}
+.mp-tree{fill:#3f7a52;opacity:.85}.mp-ruin{fill:#8d8072;stroke:#5d5146;stroke-width:1.2}.mp-rock{fill:#a8774a;stroke:#6d4a2b;stroke-width:1.5}
+.mp-pit ellipse{fill:#3a2a2a;opacity:.35}.mp-ring{fill:none;stroke:#7a5c2e;stroke-width:1.5;stroke-dasharray:3 9;opacity:.45}
+.mp-rose circle{fill:none;stroke:#7a5c2e;stroke-width:2;opacity:.6}.mp-rose path{fill:#7a5c2e;opacity:.75}.mp-rose text{font-size:20px;font-weight:700;fill:#7a5c2e;text-anchor:middle}
+.mp-route{stroke:#8c2f2f;stroke-width:3;stroke-dasharray:10 8;opacity:.55}
+.mp-pin{cursor:pointer;outline:none}.mp-pin circle{fill:#fffaf0;stroke:#174d4f;stroke-width:4;transition:transform .2s}.mp-pin.home circle{fill:#45c7bd;stroke:#0f3b3f}
+.mp-pin .mp-ic{font-size:30px;text-anchor:middle}.mp-pin.home .mp-ic{font-size:38px}.mp-lb{font-size:31px;font-weight:700;text-anchor:middle;fill:#2b2118;paint-order:stroke;stroke:#f6ecd4;stroke-width:6px;stroke-linejoin:round}
+.mp-pin.lk circle{fill:#d9cdb3;stroke:#9a8a6c;stroke-dasharray:5 4}.mp-pin.lk .mp-lb{fill:#8a7a5e}
+.mp-pin:hover circle,.mp-pin:focus-visible circle,.mp-pin.on circle{stroke:#8c2f2f;stroke-width:6}.mp-pin.on .mp-lb{fill:#8c2f2f}
+.mp-eic{font-size:30px;text-anchor:middle;fill:#7a5c2e}.mp-elb{font-size:26px;font-weight:700;text-anchor:middle;fill:#7a5c2e;font-style:italic;paint-order:stroke;stroke:#f1e4c4;stroke-width:5px}
+.mp-edges{margin:10px 2px 0;font-size:14px;line-height:1.45;color:#5b4a35}.mp-edges p{margin:6px 0}
+.mp-card{margin-top:14px;background:#fffaf0;border:1px solid #d9c49a;border-radius:14px;padding:14px 14px 10px;box-shadow:0 6px 18px rgba(80,60,20,.12)}
+.mp-top{display:flex;gap:12px;align-items:center;margin-bottom:8px}.mp-cic{font-size:34px;line-height:1}.mp-top h3{margin:0;font-family:var(--serif);font-size:21px;color:#174d4f}.mp-top small{color:#7a5c2e;font-size:13.5px}
+.mp-row{margin:10px 0}.mp-row b{display:block;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:#7a5c2e;margin-bottom:3px}.mp-row p{margin:0;font-size:16px;line-height:1.55}
+.mp-sec{background:#f3ead8;border-radius:10px;padding:8px 10px}.mp-reveal{border:2px solid #8c2f2f;background:none;color:#8c2f2f;border-radius:18px;padding:6px 14px;font-weight:700;font-size:14px;cursor:pointer}
+.mp-more,.mp-first{font-size:14px;color:#6d5b47;margin:8px 0 4px}.mp-first a,.mp-lk a{color:#8c2f2f;font-weight:700}
+.mp-lk{text-align:center;padding:12px 6px}.mp-lk div{font-size:38px}.mp-lk p{margin:6px 0 10px;color:#6d5b47}
+.mp-h{margin:20px 4px 8px;font-family:var(--serif);font-size:18px;color:#174d4f}.mp-ladder{display:flex;flex-direction:column;gap:6px}
+.mp-scale{display:flex;justify-content:space-between;font-size:12.5px;color:#7a5c2e;padding:0 4px}
+.mp-step{display:grid;grid-template-columns:minmax(120px,40%) 1fr;gap:10px;align-items:center;background:#fffaf0;border:1px solid #e0cfa8;border-radius:10px;padding:7px 10px;text-align:left;font:inherit;color:inherit;cursor:pointer}
+.mp-step.lk{opacity:.6}.mp-sn{font-size:14.5px;font-weight:600}.mp-bar{height:10px;border-radius:6px;background:#eadcbc;overflow:hidden}.mp-bar i{display:block;height:100%;border-radius:6px;background:linear-gradient(90deg,#45c7bd,#8c2f2f)}
+@media (max-width:520px){.mp{padding:0 8px 20px;border-radius:14px}.mp-hero{margin:0 -8px 12px}.mp-title{font-size:21px}.mp-intro{font-size:13.5px}}
 @media (max-width:520px){.wg{padding:14px 10px 20px;border-radius:14px}.wg-v{font-size:15.5px}}
 
 .ex-sec{margin:0;padding:4px 2px 8px;max-width:none}.ex-sec h2:first-child{margin-top:4px}.ex-sec img{display:block;width:100%!important;max-width:100%!important;max-height:none!important;height:auto!important;border-radius:12px;margin:12px auto;cursor:zoom-in}.ex-sec .ex-zoom{display:block;text-align:center;font-family:var(--sans);font-size:13px;color:var(--muted);margin:-4px 0 14px}
@@ -2089,6 +2116,72 @@ function setupEncyclopedia(pane, render){
     if (!el || q.value) { q.value = ""; pick("all"); draw(); el = list.querySelector("#enc-" + b.dataset.see); }
     if (!el) return; el.open = true; el.scrollIntoView({block:"start", behavior:"smooth"}); el.classList.remove("flash"); void el.offsetWidth; el.classList.add("flash"); });
 }
+/* Карта мира романа (sec.style === "map"): novels/<slug>/<file>.json — {intro, home, places:[{id,icon,name,x,y,at,dist,what,who,secrets:[{at,text}]}], edges:[{icon,name,x,y,at,text}]}.
+   Координаты в рамке 1000×780; расстояние от «home» на карте = примерное расстояние в мире. Точки и секреты открываются по главам. */
+const MP_T = {ru:{lock:(c,t)=>`Это место откроется после главы ${c} «${t}».`, go:"Читать", what:"Что здесь", who:"Кто здесь", sec:"Секрет", open:"Открыть секрет", secLk:(c,t)=>`Ещё один секрет откроется после главы ${c} «${t}».`, far:"Как далеко от крепости", first:"Впервые", tap:"Нажмите на точку на карте", unk:"???", near:"близко", farW:"далеко"}};
+function mapHTML(D, sec, n){
+  const T = MP_T[n.lang] || MP_T.ru;
+  const done = new Set(store.get("done:" + n.slug, [])), last = store.get("last:" + n.slug, 0) || 0;
+  const posOf = f => f ? n.chapters.findIndex(x => x.file === f) + 1 : 0;
+  const isOpen = f => { const p = posOf(f); return p <= 1 || done.has(p) || p <= last; };
+  const ref = p => { const c = n.chapters[p - 1]; return [chapterNo(n, p), c ? c.title : ""]; };
+  const P = D.places.map(p => ({...p, open:isOpen(p.at), pos:posOf(p.at)}));
+  const home = P.find(p => p.id === D.home) || P[0];
+  const dist = p => Math.hypot(p.x - home.x, p.y - home.y);
+  const far = Math.max(...P.map(dist));
+  const E = (D.edges || []).map(e => ({...e, open:isOpen(e.at), pos:posOf(e.at)}));
+  /* рельеф */
+  const rnd = (s => () => (s = (s * 9301 + 49297) % 233280) / 233280)(7);
+  const trees = (cx, cy, r, k) => Array.from({length:k}, () => { const a = rnd() * 6.28, d = Math.sqrt(rnd()) * r, x = cx + Math.cos(a) * d, y = cy + Math.sin(a) * d * .7, s = 9 + rnd() * 7;
+    return `<path d="M${x} ${y - s * 1.6}L${x + s} ${y}H${x - s}Z" class="mp-tree"/>`; }).join("");
+  const dunes = Array.from({length:22}, () => { const x = 560 + rnd() * 420, y = 470 + rnd() * 260; return `<path d="M${x} ${y}q14 -10 28 0t28 0" class="mp-dune"/>`; }).join("");
+  const ruins = Array.from({length:14}, () => { const x = 110 + rnd() * 120, y = 175 + rnd() * 80, w = 8 + rnd() * 14, h = 8 + rnd() * 22; return `<rect x="${x}" y="${y - h}" width="${w}" height="${h}" class="mp-ruin"/>`; }).join("");
+  const rocks = [[700,545],[725,560],[612,610],[690,625]].map(([x, y]) => `<path d="M${x - 16} ${y}l9 -20l8 6l7 -12l12 26z" class="mp-rock"/>`).join("");
+  const rings = [1, 2, 3, 4].map(k => `<circle cx="${home.x}" cy="${home.y}" r="${far * k / 4}" class="mp-ring"/>`).join("");
+  const art = `<rect width="1000" height="780" class="mp-bg"/>
+    <path d="M560 470Q700 430 1000 460V780H520Q500 620 560 470Z" class="mp-sand"/>${dunes}
+    <path d="M0 600Q90 640 170 700T300 780H0Z" class="mp-sea"/><path d="M20 690q20 -8 40 0t40 0M40 740q20 -8 40 0t40 0M150 760q20 -8 40 0t40 0" class="mp-wave"/>
+    <path d="M300 0Q260 140 330 260T300 470Q250 560 200 640" class="mp-river"/>
+    <g class="mp-fields">${[[380,470],[410,488],[383,502]].map(([x, y]) => `<rect x="${x}" y="${y}" width="26" height="12" transform="rotate(-12 ${x} ${y})"/>`).join("")}</g>
+    <ellipse cx="${home.x}" cy="${home.y + 14}" rx="70" ry="30" class="mp-hill"/>
+    ${trees(515, 320, 70, 34)}${trees(620, 262, 85, 30)}${trees(410, 300, 40, 10)}${ruins}${rocks}
+    <g class="mp-pit"><ellipse cx="880" cy="112" rx="74" ry="38"/><ellipse cx="880" cy="114" rx="52" ry="26"/><ellipse cx="880" cy="116" rx="30" ry="15"/></g>
+    ${rings}
+    <g class="mp-rose" transform="translate(930 690)"><circle r="34"/><path d="M0 -30L7 0L0 30L-7 0Z"/><text y="-38">С</text></g>`;
+  const routes = P.filter(p => p !== home && p.open).map(p => `<line x1="${home.x}" y1="${home.y}" x2="${p.x}" y2="${p.y}" class="mp-route"/>`).join("");
+  const pins = P.map((p, i) => `<g class="mp-pin${p.open ? "" : " lk"}${p === home ? " home" : ""}" data-i="${i}" tabindex="0" role="button" aria-label="${esc(p.open ? p.name : T.unk)}" transform="translate(${p.x} ${p.y})">
+      <circle r="${p === home ? 36 : 28}"/><text class="mp-ic" y="${p === home ? 13 : 10}">${p.open ? p.icon : "🔒"}</text>
+      <text class="mp-lb" y="${p.lp === "up" ? -40 : p === home ? 68 : 58}">${esc(p.open ? p.name : T.unk)}</text></g>`).join("");
+  const edges = E.map(e => `<g class="mp-edge${e.open ? "" : " lk"}" transform="translate(${e.x} ${e.y})"><text class="mp-eic">${e.open ? e.icon : "🔒"}</text>${e.open ? `<text class="mp-elb" y="${e.y > 700 ? -18 : 34}" ${e.x > 900 ? `style="text-anchor:end" x="12"` : ""}>${esc(e.name)}</text>` : ""}</g>`).join("");
+  const card = (p) => {
+    if (!p.open) { const [no, t] = ref(p.pos); return `<div class="mp-lk"><div aria-hidden="true">🔒</div><p>${esc(T.lock(no, t))}</p><a href="${chapterHref(n, p.pos)}">${esc(T.go)} →</a></div>`; }
+    const sv = (p.secrets || []).filter(s => isOpen(s.at)), sh = (p.secrets || []).filter(s => !isOpen(s.at)).map(s => posOf(s.at)).sort((a, b) => a - b);
+    const [fno, ft] = p.pos ? ref(p.pos) : [0, ""];
+    return `<div class="mp-top"><span class="mp-cic" aria-hidden="true">${p.icon}</span><div><h3>${esc(p.name)}</h3><small>📏 ${esc(p.dist)}</small></div></div>
+      <div class="mp-row"><b>🧭 ${esc(T.what)}</b><p>${wgInline(p.what)}</p></div>
+      <div class="mp-row"><b>👥 ${esc(T.who)}</b><p>${wgInline(p.who)}</p></div>
+      ${sv.map(s => `<div class="mp-row mp-sec"><b>🔐 ${esc(T.sec)}</b><button type="button" class="mp-reveal">${esc(T.open)}</button><p hidden>${wgInline(s.text)}</p></div>`).join("")}
+      ${sh.length ? (() => { const [no, t] = ref(sh[0]); return `<p class="mp-more">🔒 ${esc(T.secLk(no, t))}</p>`; })() : ""}
+      ${p.pos ? `<p class="mp-first">📍 ${esc(T.first)}: <a href="${chapterHref(n, p.pos)}">${esc(`${fno}. ${ft}`)}</a></p>` : ""}`;
+  };
+  const ladder = P.filter(p => p !== home).sort((a, b) => dist(a) - dist(b)).map(p => { const w = Math.round(dist(p) / far * 100);
+    return `<button type="button" class="mp-step${p.open ? "" : " lk"}" data-i="${P.indexOf(p)}"><span class="mp-sn">${p.open ? p.icon : "🔒"} ${esc(p.open ? p.name : T.unk)}</span><span class="mp-bar"><i style="width:${w}%"></i></span></button>`; }).join("");
+  return {P, card, html:`<div class="mp" lang="${esc(n.lang)}">
+    <div class="mp-hero"><div class="mp-title">${esc(sec.icon || "🗺")} ${esc(sec.title)}</div>${D.intro ? `<div class="mp-intro">${wgInline(D.intro)}</div>` : ""}</div>
+    <div class="mp-scroll"><svg class="mp-svg" viewBox="0 0 1000 780" role="img" aria-label="${esc(sec.title)}">${art}${routes}${edges}${pins}</svg></div>
+    <div class="mp-edges">${E.filter(e => e.open).map(e => `<p><b>${e.icon} ${esc(e.name)}.</b> ${wgInline(e.text)}</p>`).join("")}</div>
+    <div class="mp-card" aria-live="polite">${card(home)}</div>
+    <h4 class="mp-h">📏 ${esc(T.far)}</h4><div class="mp-ladder"><div class="mp-scale"><span>${esc(home.icon)} ${esc(T.near)}</span><span>${esc(T.farW)} →</span></div>${ladder}</div></div>`};
+}
+function setupMap(pane, M){
+  const cardEl = pane.querySelector(".mp-card"), pins = [...pane.querySelectorAll(".mp-pin")];
+  const pick = (i, scroll) => { pins.forEach(g => g.classList.toggle("on", +g.dataset.i === i)); cardEl.innerHTML = M.card(M.P[i]);
+    cardEl.querySelectorAll(".mp-reveal").forEach(b => b.onclick = () => { b.hidden = true; b.nextElementSibling.hidden = false; });
+    if (scroll) cardEl.scrollIntoView({block:"nearest", behavior:"smooth"}); };
+  pins.forEach(g => { g.onclick = () => pick(+g.dataset.i, true); g.onkeydown = e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); pick(+g.dataset.i, true); } }; });
+  pane.querySelectorAll(".mp-step").forEach(b => b.onclick = () => pick(+b.dataset.i, true));
+  pick(M.P.findIndex(p => pins[M.P.indexOf(p)] && pins[M.P.indexOf(p)].classList.contains("home")), false);
+}
 async function exSection(n, sec, pane){
   pane.innerHTML = `<div class="loading">…</div>`;
   let md = "*—*";
@@ -2096,6 +2189,7 @@ async function exSection(n, sec, pane){
   if (!pane.isConnected) return;
   md = md.replace(/^#\s+.*\n+/, "");
   if (sec.style === "wagons") { pane.innerHTML = wagonsHTML(md, sec, n); setupWagons(pane); return; }
+  if (sec.style === "map") { let D; try { D = JSON.parse(md); } catch(e) { D = null; } if (D) { const M = mapHTML(D, sec, n); pane.innerHTML = M.html; setupMap(pane, M); return; } }
   if (sec.style === "encyclopedia") { const E = encyclopediaHTML(md, sec, n); pane.innerHTML = E.html; setupEncyclopedia(pane, E.render); return; }
   pane.innerHTML = `<article class="chapter ex-sec" lang="${esc(n.lang)}"><h2>${esc(sec.title)}</h2>${renderText(md)}</article>`;
   pane.querySelectorAll(".ex-sec img").forEach(im => { im.onclick = () => window.open(im.src, "_blank"); const z = document.createElement("span"); z.className = "ex-zoom"; z.textContent = "⤢"; im.after(z); });
