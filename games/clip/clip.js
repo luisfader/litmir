@@ -14,6 +14,7 @@ function css(){
 .clip{position:relative;margin:0 auto;width:100%;max-width:640px;aspect-ratio:896/1152;max-height:86vh;border-radius:14px;overflow:hidden;background:#05080c center/cover no-repeat;box-shadow:0 6px 30px rgba(0,0,0,.35);user-select:none;-webkit-user-select:none}
 .clip:fullscreen{max-width:none;max-height:none;width:100vw;height:100vh;border-radius:0;background-size:contain;background-color:#000}
 .clip [hidden]{display:none!important}
+.clip-tracks{display:flex;flex-wrap:wrap;gap:8px;margin:0 auto 12px;max-width:640px}.clip-tracks button{font:600 13px var(--sans);display:inline-flex;align-items:center;gap:8px;border:2px solid #39b86a;background:transparent;color:var(--ink);border-radius:999px;padding:7px 14px 7px 7px;cursor:pointer}.clip-tracks button i{font-style:normal;width:22px;height:22px;border-radius:50%;background:#0b3d1e;color:#39ff6a;font:700 12px/22px ui-monospace,monospace;text-align:center}.clip-tracks button.on{background:#0b3d1e;color:#c9ffd6}
 .clip canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
 .clip .clip-start{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;background:radial-gradient(ellipse at center,rgba(0,0,0,.25),rgba(0,0,0,.65));color:#d8ffe2;border:0;cursor:pointer;font:600 15px var(--sans);width:100%}
 .clip .clip-start b{width:84px;height:84px;border-radius:50%;background:rgba(57,255,106,.16);border:2px solid #39ff6a;box-shadow:0 0 30px rgba(57,255,106,.55);display:flex;align-items:center;justify-content:center;font-size:34px;color:#39ff6a;padding-left:6px}
@@ -40,13 +41,16 @@ const GLY = "01アイウエオカキクケコサシスセソ0123456789ABCDEF<>/{
 function mount(el, o){
   css();
   const C = o.clip, lang = o.lang || "es";
+  const TR = C.tracks && C.tracks.length ? C.tracks : [{title:C.title, audio:C.audio, label:C.startLabel}];
+  let ti = 0;
   el.innerHTML = `<div class="clip-wrap"><h3>${esc(C.title)}</h3><p class="clip-p">${esc(C.about || "")}</p>
+    ${TR.length > 1 ? `<div class="clip-tracks">${TR.map((t, i) => `<button type="button" data-tr="${i}"${i ? "" : ' class="on"'}><i>${i + 1}</i>${esc(t.title)}</button>`).join("")}</div>` : ""}
     <div class="clip" style="background-image:url('${esc(C.image)}')"><canvas></canvas>
-      <button type="button" class="clip-start"><b>▶</b><span>${esc(C.startLabel || "PLAY")}</span></button>
+      <button type="button" class="clip-start"><b>▶</b><span>${esc(TR[0].label || C.startLabel || "PLAY")}</span></button>
       <div class="clip-bar" hidden><button type="button" data-pp aria-label="Pausa">❚❚</button><span class="clip-t">0:00</span><div class="clip-seek"><i></i></div><span class="clip-d">0:00</span><button type="button" data-fs aria-label="Pantalla completa">⛶</button></div></div></div>`;
   const box = el.querySelector(".clip"), cv = box.querySelector("canvas"), c = cv.getContext("2d"), start = box.querySelector(".clip-start"), bar = box.querySelector(".clip-bar"),
         pp = bar.querySelector("[data-pp]"), seek = bar.querySelector(".clip-seek"), fill = seek.querySelector("i"), tEl = bar.querySelector(".clip-t"), dEl = bar.querySelector(".clip-d");
-  const audio = new Audio(C.audio); audio.preload = "metadata";
+  const audio = new Audio(TR[0].audio); audio.preload = "metadata";
   let lines = [], ctx = null, an = null, data = null, raf = 0, W = 0, H = 0, dpr = 1, avg = 0, last = 0, cool = 0, snips = [], cols = [], flash = 0, idleT = 0;
   fetch(C.lines, {cache:"no-cache"}).then(r => r.json()).then(j => { lines = j; }).catch(() => {});
   const fit = () => { dpr = Math.min(2, window.devicePixelRatio || 1); W = box.clientWidth; H = box.clientHeight; cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr);
@@ -131,7 +135,11 @@ function mount(el, o){
   };
   start.onclick = play;
   pp.onclick = () => { if (audio.paused) play(); else { audio.pause(); pp.textContent = "▶"; box.classList.remove("idle"); } };
-  audio.onended = () => { pp.textContent = "↻"; box.classList.remove("idle"); };
+  const pick = (i, auto) => { ti = i; const wasOn = auto || !audio.paused; audio.pause(); audio.src = TR[i].audio; audio.currentTime = 0;
+    el.querySelectorAll("[data-tr]").forEach(b => b.classList.toggle("on", +b.dataset.tr === i)); start.querySelector("span").textContent = TR[i].label || TR[i].title;
+    snips = []; if (wasOn) play(); else { start.hidden = false; bar.hidden = true; } };
+  el.querySelectorAll("[data-tr]").forEach(b => b.onclick = () => pick(+b.dataset.tr));
+  audio.onended = () => { if (ti + 1 < TR.length) pick(ti + 1, true); else { pp.textContent = "↻"; box.classList.remove("idle"); } };
   seek.onclick = e => { if (!audio.duration) return; const r = seek.getBoundingClientRect(); audio.currentTime = (e.clientX - r.left) / r.width * audio.duration; };
   bar.querySelector("[data-fs]").onclick = () => { if (document.fullscreenElement) document.exitFullscreen(); else if (box.requestFullscreen) box.requestFullscreen().catch(() => {}); };
   box.addEventListener("pointermove", () => { idleT = 0; box.classList.remove("idle"); });
