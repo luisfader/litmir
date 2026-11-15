@@ -1,0 +1,129 @@
+{
+  "art": "venice",
+  "theme": "carta",
+  "intro": "La Venezia di Roberto e Natalia, sopra e sotto l'acqua. Cambia livello per scendere nella Venezia perduta. I luoghi e i segreti si aprono man mano che leggi.",
+  "home": "piazza",
+  "layers": true,
+  "legend": "Tutti i luoghi sulla mappa",
+  "nowhere": "Da qualche parte a Venezia — senza indirizzo",
+  "places": [
+    {"id": "piazza", "icon": "🎭", "name": "Piazza San Marco", "x": 600, "y": 480, "at": "01.md",
+     "sub": "Il cuore di Venezia",
+     "what": "Venezia, 20 febbraio 2025: la notte di Carnevale, un turbinio di luci, colori e risate. Roberto, argentino di nascita con l'anima del viaggiatore, è finalmente nella città che ha sempre sognato.",
+     "who": "Roberto, i suoi amici Alessio e Laura, la folla in maschera.",
+     "secrets": [
+       {"at": "08.md", "text": "Durante il Volo dell'Angelo compare Natalia e lo guida fino a un canale laterale, dove li aspetta una gondola senza gondoliere."},
+       {"at": "29.md", "text": "La notte della rivoluzione: a pochi passi dalla piazza, Alessio è al centro del caos: dietro la finta «processione del Sindaco del Popolo», con decine di gondolieri che cantano contro la Loggia, si scatena una pioggia di fuochi d'artificio."},
+       {"at": "30.md", "text": "All'alba gli uomini in nero vengono trovati addormentati, uno accanto all'altro, sui gradini di San Marco."}
+     ]},
+    {"id": "campanile", "icon": "🔔", "name": "Campanile di San Marco", "x": 535, "y": 455, "at": "08.md",
+     "sub": "La torre più alta della città",
+     "what": "Da qui, durante il Volo dell'Angelo, un'acrobata vestita da angelo scende sopra la folla.",
+     "who": "L'angelo e tutto il Carnevale col naso all'insù.",
+     "secrets": [
+       {"at": "18.md", "text": "Mentre la Loggia decide la sua trappola, le campane di San Marco cominciano a suonare a morto."},
+       {"at": "30.md", "text": "Venezia è salva: le campane del Campanile suonano una sinfonia di libertà."}
+     ]},
+    {"id": "basilica", "icon": "⛪", "name": "Basilica di San Marco", "x": 660, "y": 430, "at": "13.md",
+     "sub": "L'ingresso del regno perduto",
+     "what": "La gondola di Roberto riprende a muoversi da sola e scivola verso un tunnel nascosto sotto la Basilica.",
+     "who": "Roberto. Alessio e Laura vengono fatti scendere prima. Zancan arriva da un vecchio canale di servizio.",
+     "secrets": [
+       {"at": "15.md", "text": "All'uscita del tunnel lo aspettano Zancan e i suoi agenti, fradici e furiosi — e Alessio e Laura in manette accanto al motoscafo della polizia."}
+     ]},
+    {"id": "canal", "icon": "🛶", "name": "Canal Grande", "x": 270, "y": 335, "at": "03.md",
+     "sub": "La via d'acqua della città",
+     "what": "In gondola, sotto le coperte di lana, Roberto racconta finalmente la sua teoria delle acque: Venezia è stata costruita sulla terraferma e poi sommersa. Nella gondola accanto siede una donna misteriosa.",
+     "who": "Roberto, Alessio, Laura — e lei.",
+     "secrets": [
+       {"at": "11.md", "text": "Nella nebbia della sera Roberto stringe la chiave d'oro che Natalia gli ha affidato."},
+       {"at": "25.md", "text": "Inseguimento sul Canal Grande: un motoscafo della polizia li avvista, e Roberto, con la Maschera, gli scaglia contro un'onda."}
+     ]},
+    {"id": "flat", "icon": "🏠", "name": "L'appartamento di Roberto", "x": 770, "y": 445, "at": "05.md",
+     "sub": "Con vista sul Ponte dei Sospiri",
+     "what": "Un appartamento in affitto in un palazzo antico. Dalla finestra del soggiorno, il ponte illuminato sembra sospeso tra cielo e acqua.",
+     "who": "Roberto e le sue foto: un labirinto, un occhio, una stella a sette punte.",
+     "secrets": [
+       {"at": "05.md", "text": "Uno sparo nel cortile interno del palazzo. Roberto scende di corsa: un uomo anziano è riverso a terra. Poco dopo arriva Zancan: «Lei viene con noi in questura»."}
+     ]},
+    {"id": "sospiri", "icon": "🌉", "name": "Ponte dei Sospiri", "x": 715, "y": 500, "at": "05.md",
+     "sub": "Davanti alla finestra di Roberto",
+     "what": "Il ponte che Roberto vede ogni sera, con le gondole che scivolano silenziose sotto le sue arcate.",
+     "who": "Gondole e gondolieri.",
+     "secrets": []},
+    {"id": "ducale", "icon": "🏛️", "name": "Palazzo Ducale", "x": 650, "y": 530, "at": "11.md",
+     "sub": "Sull'acqua, accanto alla piazza",
+     "what": "«Sono su una gondola, vicino a Palazzo Ducale». Dieci minuti dopo, un taxi acqueo con Alessio e Laura si affianca alla gondola.",
+     "who": "Roberto, Alessio, Laura.",
+     "secrets": [
+       {"at": "28.md", "text": "Natalia indica un punto sulla mappa: la vera Maschera è nelle segrete della Loggia, proprio sotto Palazzo Ducale, protetta da guardie e trappole."}
+     ]},
+    {"id": "rialto", "icon": "🧺", "name": "Rialto", "x": 470, "y": 325, "at": "28.md",
+     "sub": "Il mercato sul Canal Grande",
+     "what": "Le calli si riempiono di barricate: tavole di legno, gondole rovesciate e perfino i banchi del mercato di Rialto.",
+     "who": "Il popolo di Venezia, i gondolieri.",
+     "secrets": []},
+    {"id": "loggia", "icon": "🕯️", "name": "La sala della Loggia", "x": 395, "y": 390, "at": "06.md",
+     "sub": "Nascosta nel cuore di Venezia",
+     "what": "Uomini vestiti di nero attorno a un tavolo di legno antico, libri polverosi e mappe ingiallite. Il capo segreto è il Provveditore.",
+     "who": "La Loggia, il Provveditore Ludovico Gradenigo, poi Marco Dandolo.",
+     "secrets": [
+       {"at": "15.md", "text": "Zancan confessa: «Un antico palazzo vicino a San Polo. È lì che si riuniscono»."},
+       {"at": "22.md", "text": "Nella prigione della Loggia, Alessio si presenta come esperto di vini toscani e offre ai guardiani una «degustazione» di Chianti."},
+       {"at": "26.md", "text": "L'assalto al quartier generale: Natalia soffia una nuvola di polvere dorata contro gli uomini in nero."}
+     ]},
+    {"id": "lagoon", "icon": "🌊", "name": "La laguna", "x": 850, "y": 640, "at": "22.md",
+     "sub": "Tutto intorno alla città",
+     "what": "Fuga nella laguna: Alessio e Laura scappano su un barchino a motore rubato, mentre medici della peste e agenti pattugliano i canali in cerca di un argentino.",
+     "who": "Alessio e Laura.",
+     "secrets": [
+       {"at": "30.md", "text": "Il Provveditore viene arrestato mentre cerca di fuggire su un motoscafo carico di lingotti d'oro."}
+     ]},
+
+    {"id": "perduta", "layer": "under", "icon": "👑", "name": "La Venezia perduta", "x": 660, "y": 400, "at": "13.md",
+     "sub": "Sotto la Basilica di San Marco",
+     "what": "La porta si apre con un rombo di tuono: un mondo sotterraneo dorato. Sull'arco, in antico veneziano: *Solo l'omo dal cuor neto pol 'rivar a la Maschera.*",
+     "who": "Roberto, da solo.",
+     "secrets": [
+       {"at": "14.md", "text": "Sull'altare c'è la Maschera. Quando arrivano i nemici, l'acqua del canale sotterraneo si alza e forma un muro tra lui e loro."}
+     ]},
+    {"id": "segrete", "layer": "under", "icon": "⛓️", "name": "Le segrete della Loggia", "x": 640, "y": 560, "at": "28.md",
+     "sub": "Sotto Palazzo Ducale",
+     "what": "Ci si arriva solo dai tunnel sotterranei, un labirinto di pietra e d'acqua che conoscono solo i Custodi. Qui la Loggia tiene nascosta la vera Maschera di Venezia.",
+     "who": "Roberto, Natalia e Laura.",
+     "secrets": [
+       {"at": "29.md", "text": "Laura disattiva le trappole una dopo l'altra, Natalia apre la serratura con un antico canto veneziano."},
+       {"at": "30.md", "text": "Un codice nascosto in una filastrocca veneziana per bambini apre una cella: ne escono i genitori di Natalia, dopo dieci anni di prigionia."}
+     ]},
+
+    {"id": "calle", "icon": "🌒", "name": "La calle dell'agguato", "at": "01.md",
+     "what": "Lontano dalla folla, nelle calli più strette, un giovane in fuga stringe un oggetto avvolto in un panno scuro. Gli uomini in nero lo raggiungono; lo sparo è coperto dal rumore di una barca a motore.",
+     "who": "Il giovane in fuga e gli uomini in nero.",
+     "secrets": [
+       {"at": "01.md", "text": "Nel panno c'erano un piccolo medaglione d'oro e una scatola di legno scuro. «Non è quello che cercavamo», dice uno di loro. «Ma sembra importante»."}
+     ]},
+    {"id": "questura", "icon": "👮", "name": "La questura", "at": "07.md",
+     "what": "Pareti scrostate, luci al neon che tremolano. Che cosa ci fa un argentino a Venezia, a cercare di dimostrare che la città era sulla terraferma?",
+     "who": "Il commissario Zancan e Roberto.",
+     "secrets": []},
+    {"id": "rifugio", "layer": "under", "icon": "🏯", "name": "Il palazzo segreto di Natalia", "at": "09.md",
+     "what": "La gondola svolta in un canale nascosto tra due edifici in rovina, il canale si apre in un vortice — e oltre una porta c'è un rifugio sottomarino: mosaici dorati e un soffitto di vetro antico attraverso cui si vede l'acqua.",
+     "who": "Natalia e Roberto. Poi anche Alessio e Laura.",
+     "secrets": [
+       {"at": "21.md", "text": "Ci si arriva da un tunnel sommerso; le lanterne blu si accendono una dopo l'altra, e sopra la cupola di vetro passa la luna piena."},
+       {"at": "24.md", "text": "Natalia confessa che dieci anni fa la Loggia ha catturato i suoi genitori: non sa dove li tengano."}
+     ]},
+    {"id": "studio", "icon": "📺", "name": "Lo studio televisivo", "at": "20.md",
+     "what": "Giancarlo Buffoni annuncia l'«emergenza sanitaria»: il Matevirus, e il paziente zero è un argentino.",
+     "who": "Buffoni e il suo pubblico.",
+     "secrets": [
+       {"at": "27.md", "text": "In diretta nazionale, in gabbia: Roberto, Natalia, Laura e Alessio. Ma i gondolieri invitati come «testimoni del contagio» aprono la gabbia a forza."}
+     ]}
+  ],
+  "edges": [
+    {"icon": "⬅", "name": "Firenze", "x": 30, "y": 470, "at": "04.md",
+     "text": "Alessio e Laura partono per Firenze all'alba — «Ci vediamo tra un paio di giorni» — e lasciano Roberto solo a Venezia."},
+    {"icon": "⬇", "name": "Roma", "x": 120, "y": 760, "at": "30.md",
+     "text": "La Duchessa, la madre di Natalia, guarda verso sud: la radice del potere di Marco e della Loggia è a Roma. Roberto e Natalia dovranno andarci. «Roma la conosco come le mie tasche», dice Alessio, un po' troppo in fretta."}
+  ]
+}
