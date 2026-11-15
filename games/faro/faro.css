@@ -1,0 +1,10 @@
+/* «Гонка к маяку» — мини-игра по главе 1 романа «Тихая любовь». Базовые классы .mt-* — из games/moto/moto.css */
+.fr-pad{display:flex;justify-content:center;gap:8px;margin:12px auto 0;max-width:440px}
+.fr-b{appearance:none;flex:1;min-width:0;border:1px solid var(--line);border-radius:14px;background:var(--paper);color:var(--ink);font:700 18px var(--sans, system-ui, sans-serif);padding:14px 6px;touch-action:none;user-select:none;-webkit-user-select:none;-webkit-tap-highlight-color:transparent;cursor:pointer}
+.fr-b.on{background:var(--ink);color:var(--paper)}
+.fr-br{font-size:14px}
+.fr-gas{font-size:15px;color:var(--muted)}
+.fr-gas:disabled{opacity:.45;cursor:default}
+.fr-gas.ready{background:linear-gradient(180deg,#ffe48a,#f6a53a);border-color:#e0632a;color:#2a1404;opacity:1;animation:mtPulse .6s infinite}
+.fr-shout{font-family:var(--serif, Georgia, serif);font-size:clamp(18px,3.4vw,24px)!important;color:#ffd36e}
+@media (pointer:fine){.fr-pad .fr-b:not(.fr-gas){display:none}.fr-gas{flex:0 0 auto;padding:12px 30px}}
