@@ -62,3 +62,10 @@ Cruces ya fijados en la Parte I: los dos zorros se reconocen en la plaza; Chiara
 2. Luis (de «Волны любви») no está: Natalia lo perdió hace un año; la melodía de «tres notas» es suya.
 3. Tatiana viene de «La chica del retrato» (ES), Vasily de «Опасное свидание»/«Алмазный дождь».
 4. Cada novela tiene su propio mundo; aquí se mezclan por el nodo de Sinea. No se cierra ninguna trama principal de las novelas originales (el hombre gris de Buenos Aires, Dandolo vivo en Roma): solo aparecen como *rostros* de Nullio.
+
+## 7. Parte III (escrita): cierre
+
+- La Hora completa es la **tercera noche** (domingo → lunes), 03:33–04:33. Señal común: **04:00, tres destellos del faro**.
+- Regla única del enemigo: *no puede tomar nada por sí mismo*; solo lo que se le da (máscara puesta, orden firmada, rostro prestado, miedo). Nullio regatea con cada pareja a las 03:50 y de él solo queda la ropa.
+- Seis nudos: Espejo/torre (Luis y Natasha, §81–85) · Éter/torre de TV, cuarta nota (Natalia, Lis, Marisa, §86–90) · Matriz/fábrica, «la máscara oculta el rostro» (Roberto y Natalia, §91–95) · Solicitud de llegada/andén (Marcos y Alicia, §96–100) · Balcón, la orden y el carillón que desafina en la tercera nota (Franco y Chiara, §101–105) · Escenario, quitarse la máscara la primera (Tatiana y Vasily, §106–110).
+- Final común §111 (llega el tren con los 41 y la Hora salvaje; todos los carnavales entran en Sinea) y epílogo §112 (los trece a la mesa; quedan abiertos Buenos Aires y Dandolo).
