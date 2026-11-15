@@ -7,12 +7,19 @@
 const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 
 const KIND = {
-  city:{t:"Город", c:"#2f6f8f"},
-  vino:{t:"Вино и виноградники", c:"#7a2e5a"},
-  hist:{t:"История", c:"#8a5a1e"},
-  park:{t:"Парки и праздник", c:"#3f7a34"},
-  mont:{t:"Горы и вода", c:"#5a5f86"}
+  city:{t:"Город", es:"Ciudad", c:"#2f6f8f"},
+  vino:{t:"Вино и виноградники", es:"Vino y viñedos", c:"#7a2e5a"},
+  hist:{t:"История", es:"Historia", c:"#8a5a1e"},
+  park:{t:"Парки и праздник", es:"Parques y fiesta", c:"#3f7a34"},
+  mont:{t:"Горы и вода", es:"Montaña y agua", c:"#5a5f86"}
 };
+const UI = {
+  ru:{zoomIn:"🔍 Центр крупнее", zoomOut:"🔍 Вся провинция", all:"Показать все места", nov:"📖 В романе", real:"🌎 В реальности", ch:"Глава",
+      L:{city:"Мендоса", acon:"Аконкагуа · 6961 м", tupu:"Тупунгато", river:"река Мендоса", lujan:"Лухан-де-Куйо", heras:"Лас-Эрас", godoy:"Годой-Крус", andes:"А Н Д Ы", cach:"Качеута", potr:"Потрерильос", chile:"дорога в Чили", n:"С", sub:"центр — крупно, горы — далеко: масштаб сжат к краям"}},
+  es:{zoomIn:"🔍 Agrandar el centro", zoomOut:"🔍 Toda la provincia", all:"Mostrar todos los lugares", nov:"📖 En la novela", real:"🌎 En la realidad", ch:"Capítulo",
+      L:{city:"Mendoza", acon:"Aconcagua · 6961 m", tupu:"Tupungato", river:"río Mendoza", lujan:"Luján de Cuyo", heras:"Las Heras", godoy:"Godoy Cruz", andes:"L O S   A N D E S", cach:"Cacheuta", potr:"Potrerillos", chile:"ruta a Chile", n:"N", sub:"el centro, grande; la montaña, lejos: la escala se achica hacia los bordes"}}
+};
+const ui = D => UI[D.lang === "es" ? "es" : "ru"], kt = (D, k) => D.lang === "es" ? KIND[k].es : KIND[k].t;
 const P = {
   plaza:[-32.8895,-68.8458], espana:[-32.8935,-68.8412], km0:[-32.8872,-68.8390], patr:[-32.8930,-68.8345], gob:[-32.8985,-68.8440],
   parque:[-32.8890,-68.8630], fuente:[-32.8920,-68.8700], anfi:[-32.8990,-68.8770], uncuyo:[-32.8810,-68.8750],
@@ -22,6 +29,57 @@ const P = {
 };
 
 const DATA = {
+  "el-misterio-de-los-fader": {
+    lang:"es", title:"La Mendoza de los Fader",
+    intro:"Todos los lugares de Mendoza donde transcurre «El misterio de los Fader». Tocá un punto: vas a ver qué pasa ahí en la novela y por qué ese lugar es famoso en la realidad. El color del punto indica el tipo de lugar.",
+    places:[
+      {id:"aero", ll:P.aero, k:"city", n:"Aeropuerto El Plumerillo", ch:[3,5], img:"novels/el-misterio-de-los-fader/img/01.jpg",
+        nov:"Acá aterrizan Luis y Natalia desde Moscú. Sergio los espera en el aeropuerto, y Natalia se queda quieta: en el horizonte, las cumbres nevadas de los Andes brillan bajo el sol.",
+        real:"El aeropuerto internacional de Mendoza. Toma su nombre del vecino Campo Histórico El Plumerillo, en Las Heras, donde en 1816 y 1817 el general San Martín entrenó al Ejército de los Andes antes de cruzar la cordillera."},
+      {id:"plaza", ll:P.plaza, k:"city", n:"Plaza Independencia", ch:[7,9,42,43,54], img:"novels/el-misterio-de-los-fader/img/07.jpg",
+        nov:"El escenario de la Vendimia, guirnaldas de hojas de parra doradas y un grito: «¡Necesitamos una reina YA! La candidata de la Sexta Sección se desmayó». Así una rusa, Natalia Fader, termina coronada. Después, acá se protesta contra el monumento a Roca, y Luis y Natalia duermen en el hotel de enfrente.",
+        real:"La plaza principal de Mendoza. Después del terremoto de 1861, que destruyó la ciudad colonial, la ciudad nueva se trazó a su alrededor, con cuatro plazas satélite en las esquinas: España, Italia, Chile y San Martín. Debajo funciona el Museo de Arte Moderno; alrededor hay fuentes, ferias de artesanos y el Park Hyatt."},
+      {id:"km0", ll:P.km0, k:"city", n:"Kilómetro Cero, avenida San Martín", ch:[7,40],
+        nov:"«Desde acá se miden todas las distancias de la provincia. Es el corazón de Mendoza», le dice Luis a Natalia mientras pasan con el Gacel por la avenida San Martín, rumbo a la fiesta.",
+        real:"El punto desde el que se cuentan las rutas de la provincia, sobre la avenida principal de la ciudad. Alrededor está el microcentro: cafés, heladerías, peatonales y el eterno paseo mendocino."},
+      {id:"godoy", ll:P.godoy, k:"hist", n:"Las acequias de Godoy Cruz", ch:[8,11], img:"novels/el-misterio-de-los-fader/img/09.jpg",
+        nov:"El maletín con el hidromiel cae a una acequia y viaja medio Mendoza. En un puentecito de ladrillo de Godoy Cruz la corriente lo aprieta contra una piedra… y después se lo lleva hasta la finca Fader.",
+        real:"Mendoza está en medio del desierto y casi no llueve. La ciudad vive gracias a las acequias, canales con el agua del deshielo de los Andes que ya trazaban los huarpes. Sin ellas no habría árboles en las calles ni viñedos. El departamento lleva el nombre de Tomás Godoy Cruz, diputado en el Congreso de Tucumán de 1816."},
+      {id:"parque", ll:P.parque, k:"park", n:"Parque General San Martín", ch:[6,10,34,40], img:"novels/el-misterio-de-los-fader/img/08.jpg",
+        nov:"En la entrada del parque, un hombre de guantes y maletín negro hace un intercambio secreto. Siglo y medio después de que Karl Fader mandara esconder acá unos baúles, en la noche de la Vía Blanca el parque brilla con miles de luces y Natalia sube a su carro, pintado al estilo de Fernando Fader.",
+        real:"El gran parque del oeste de la ciudad, diseñado en 1896 por el paisajista Carlos Thays: decenas de miles de árboles en pleno desierto, un lago para regatas, el rosedal, el Cerro de la Gloria con el monumento al Ejército de los Andes y los famosos portones de hierro de la entrada."},
+      {id:"anfi", ll:P.anfi, k:"park", n:"Anfiteatro Frank Romero Day", ch:[46,47,48,49,50,51,52],
+        nov:"El Acto Central de la Vendimia: Natalia y Carlita Martínez empatan y todo depende del último sobre. Después los guerreros mapuches toman el escenario, empieza la batalla y Luis, al romper el cetro cargado de hidromiel, se vuelve inmortal.",
+        real:"El teatro griego al aire libre al pie de los cerros del Parque San Martín, con lugar para más de veinte mil personas. Cada año acá se hace el Acto Central de la Fiesta Nacional de la Vendimia y se corona a la reina nacional."},
+      {id:"uncuyo", ll:P.uncuyo, k:"hist", n:"Universidad Nacional de Cuyo", ch:[35],
+        nov:"De noche, en el campus vacío de la Facultad de Ciencias Políticas y Sociales, un grupo de mapuches desentierra un tesoro escondido ahí hace muchos años.",
+        real:"La principal universidad de Mendoza, fundada en 1939. Su campus está pegado al Parque San Martín, cerca de los cerros y del anfiteatro de la Vendimia."},
+      {id:"heras", ll:P.heras, k:"city", n:"Las Heras", ch:[45,48,51],
+        nov:"De acá es Carlita Martínez, la gran rival de Natalia. La hinchada de Huracán Las Heras primero la alienta a ella y después canta para Luis en la pelea con el chamán. Al final, Carlita es la reina.",
+        real:"El departamento al norte de la capital, con el nombre del general Juan Gregorio de Las Heras, héroe del Ejército de los Andes. Ahí están el Campo Histórico El Plumerillo, los cerros del Challao y el comienzo del camino a la alta montaña."},
+      {id:"challao", ll:P.challao, k:"hist", n:"Santuario del Challao", ch:[41],
+        nov:"De noche, María Silvana Roca entra a la vieja catedral del Challao. En el altar la esperan el chamán Lautaro y el joven guerrero Antu, con una botella de vidrio verde llena de hidromiel dorado encontrado en las ruinas de Cacheuta.",
+        real:"El santuario de la Virgen de Lourdes, en los cerros del Challao, en Las Heras. Es lugar de grandes peregrinaciones: la gente sube a pie por el Vía Crucis y desde arriba se ve toda Mendoza."},
+      {id:"fader", ll:P.fader, k:"vino", n:"Museo Fader (Mayor Drummond)", ch:[4,6,38,53],
+        nov:"En una sala del museo, dos hombres intercambian maletines. Para Luis es un lugar especial, y no del todo grato: a los quince años participó ahí de un concurso de pintura. Al final, Karl anuncia que el museo Fader ahora es de Sergio.",
+        real:"La casona de la familia Fader en Luján de Cuyo, cuyas paredes pintó al fresco Fernando Fader. Hoy es el Museo Provincial de Bellas Artes Emiliano Guiñazú, la «Casa de Fader», con jardín y una colección de pintura argentina."},
+      {id:"lujan", ll:P.lujan, k:"vino", n:"Luján de Cuyo", ch:[11,17,47,52],
+        nov:"Sobre los viñedos de Luján de Cuyo se levanta, como un castillo feudal, la mansión del misterioso hombre de negro. Mónica y Sergio van al centro de Luján a hacer compras, y en la Vendimia la virreina es María Voloshchin, de Luján de Cuyo.",
+        real:"La «primera zona» del vino argentino y cuna del Malbec mendocino: decenas de bodegas al pie de los Andes. Fue la primera región vitivinícola de la Argentina con denominación de origen controlada."},
+      {id:"finca", ll:P.finca, k:"vino", n:"Finca Fader (ficticia)", ch:[12,17,18,19,21,28,33,36,55],
+        nov:"El corazón de la novela. El maletín queda trabado entre las piedras del canal del viñedo, el hidromiel se mezcla con el agua… y las uvas empiezan a brillar. Acá Luis y Natalia pintan los Andes, aparece el zorro que le muerde el trasero a Adolfo, y Karl Fader da su entrevista con el mate en una mano y el Malbec en la otra.",
+        real:"La finca Fader no existe, pero se parece a muchas fincas familiares de Luján de Cuyo: casa con galería, hileras de vides, acequia y vista a los Andes nevados. La cosecha va de febrero a abril."},
+      {id:"cacheuta", ll:P.cacheuta, k:"mont", n:"Ruinas de la usina de Cacheuta", ch:[14,20,21,22,27,36,41],
+        nov:"El esqueleto de hormigón de la primera central hidroeléctrica de la Argentina, la que construyó el ingeniero Carlos Fader. Ahí los mapuches buscan un escondite, ahí aparecen dos gendarmes muertos, y entre las ruinas Antu encuentra el hidromiel que Karl había enterrado bajo los cimientos.",
+        real:"Cacheuta es famosa por sus aguas termales junto al río Mendoza. Hubo un gran hotel termal y una usina, pero en enero de 1934 un aluvión bajó de la montaña y destruyó casi todo. Hoy funcionan ahí piletas termales."},
+      {id:"potr", ll:P.potr, k:"mont", n:"Potrerillos", ch:[14,22],
+        nov:"Domingo Castro, «Kurüf», maneja su Ford F-150 por el camino de cornisa a Potrerillos: a la izquierda, el río Mendoza dibuja curvas plateadas entre quebradas de piedra rojiza. Después, por esa misma ruta, una caravana de autos va hacia las ruinas de Cacheuta.",
+        real:"Un pueblo junto al dique y el embalse sobre el río Mendoza, construidos a principios de los 2000. El lago turquesa en la montaña es lugar de kayak, rafting y windsurf, y por ahí pasa la ruta a Chile."},
+      {id:"acon", ll:P.acon, k:"mont", n:"Aconcagua", ch:[5], far:true,
+        nov:"Los Andes reciben a Natalia apenas baja del avión: cumbres nevadas en el horizonte y, entre ellas, la más alta.",
+        real:"La montaña más alta de América y del mundo fuera de Asia: 6961 metros. Está en la provincia de Mendoza, dentro del Parque Provincial Aconcagua, y cada año llegan andinistas de todo el planeta."}
+    ]
+  },
   "tajna-semi-fader": {
     title:"Мендоса семьи Фадер",
     intro:"Все места Мендосы, где происходит «Тайна семьи Фадер». Нажми на точку: увидишь, что там случилось в романе и чем это место знаменито на самом деле. Цвет точки — тип места.",
@@ -150,6 +208,7 @@ const OASIS = [[-32.80,-68.80],[-32.82,-68.74],[-32.88,-68.72],[-32.97,-68.74],[
 const PEAKS = [[-32.80,-68.98,26],[-32.88,-68.99,30],[-32.96,-69.02,28],[-33.06,-69.06,26],[-32.75,-69.06,24],[-33.10,-69.20,30],[-32.87,-69.12,32],[-32.70,-69.20,30],[-33.20,-69.40,36],[-32.62,-69.50,34],[-33.00,-69.45,38],[-32.75,-69.70,38],[-33.30,-69.55,36],[-32.95,-69.80,40],[-32.55,-69.85,38],[-33.15,-69.95,40],[-32.45,-70.05,36],[-33.45,-69.95,36],[-32.80,-70.15,40]];
 
 function svg(D){
+  const U = ui(D).L;
   const T = (ll, t, dx, dy, sz, an) => { const [x, y] = proj(ll); return `<text x="${(x + (dx || 0)).toFixed(0)}" y="${(y + (dy || 0)).toFixed(0)}" text-anchor="${an || "start"}" font-family="Marck Script, cursive" font-size="${sz || 24}" fill="#5a3c1c">${t}</text>`; };
   const peak = (ll, h, snow) => { const [x, y] = proj(ll); return `<path d="M${(x - h).toFixed(0)},${(y + h * .55).toFixed(0)} L${x.toFixed(0)},${(y - h * .75).toFixed(0)} L${(x + h).toFixed(0)},${(y + h * .55).toFixed(0)}" fill="#b9a98d" stroke="#5a4a36" stroke-width="2"/>${snow ? `<path d="M${(x - h * .32).toFixed(0)},${(y - h * .3).toFixed(0)} L${x.toFixed(0)},${(y - h * .75).toFixed(0)} L${(x + h * .32).toFixed(0)},${(y - h * .3).toFixed(0)} L${(x + h * .12).toFixed(0)},${(y - h * .2).toFixed(0)} L${x.toFixed(0)},${(y - h * .34).toFixed(0)} L${(x - h * .14).toFixed(0)},${(y - h * .18).toFixed(0)} Z" fill="#fbf7ee" stroke="none"/>` : ""}<path d="M${x.toFixed(0)},${(y - h * .75).toFixed(0)} L${(x + h * .3).toFixed(0)},${(y + h * .55).toFixed(0)}" stroke="#5a4a36" stroke-width="1" opacity=".5"/>`; };
   const [ax, ay] = proj(P.acon), [tx, ty] = proj(P.tupu), [px, py] = proj(P.potr);
@@ -169,14 +228,14 @@ function svg(D){
     <path d="${path(RN7)}" fill="none" stroke="#8a5a1e" stroke-width="2.5" stroke-dasharray="8 6" opacity=".7"/>
   </g>
   <circle cx="${CX}" cy="${CY}" r="78" fill="none" stroke="#8a5a1e" stroke-width="1.5" stroke-dasharray="3 6" opacity=".6"/>
-  ${T([-32.8895,-68.8458], "Мендоса", 0, -88, 30, "middle")}
-  ${T(P.acon, "Аконкагуа · 6961 м", 0, -100, 22, "middle")}${T(P.tupu, "Тупунгато", 0, 56, 22, "middle")}
-  ${T([-32.97,-68.73], "река Мендоса", 14, 30, 20)}${T(P.lujan, "Лухан-де-Куйо", 20, 34, 20)}${T(P.heras, "Лас-Эрас", -40, -30, 20)}
-  ${T(P.godoy, "Годой-Крус", 22, 10, 18)}<text x="70" y="520" transform="rotate(-90 70 520)" text-anchor="middle" font-family="Marck Script, cursive" font-size="40" fill="#5a3c1c" opacity=".8">А Н Д Ы</text>${T(P.cacheuta, "Качеута", 0, 34, 19, "middle")}${T(P.potr, "Потрерильос", 0, -26, 19, "middle")}
-  ${T([-32.62,-69.33], "дорога в Чили", 34, 0, 17, "start")}
-  <g transform="translate(920 90)" font-family="Marck Script, cursive" fill="#5a3c1c"><circle r="34" fill="none" stroke="#5a3c1c" stroke-width="2"/><path d="M0,-30 L7,0 L0,30 L-7,0 Z" fill="#7a2e5a" opacity=".8"/><text y="-40" text-anchor="middle" font-size="22">С</text></g>
+  ${T([-32.8895,-68.8458], U.city, 0, -88, 30, "middle")}
+  ${T(P.acon, U.acon, 0, -100, 22, "middle")}${T(P.tupu, U.tupu, 0, 56, 22, "middle")}
+  ${T([-32.97,-68.73], U.river, 14, 30, 20)}${T(P.lujan, U.lujan, 20, 34, 20)}${T(P.heras, U.heras, -40, -30, 20)}
+  ${T(P.godoy, U.godoy, 22, 10, 18)}<text x="70" y="520" transform="rotate(-90 70 520)" text-anchor="middle" font-family="Marck Script, cursive" font-size="40" fill="#5a3c1c" opacity=".8">${U.andes}</text>${T(P.cacheuta, U.cach, 0, 34, 19, "middle")}${T(P.potr, U.potr, 0, -26, 19, "middle")}
+  ${T([-32.62,-69.33], U.chile, 34, 0, 17, "start")}
+  <g transform="translate(920 90)" font-family="Marck Script, cursive" fill="#5a3c1c"><circle r="34" fill="none" stroke="#5a3c1c" stroke-width="2"/><path d="M0,-30 L7,0 L0,30 L-7,0 Z" fill="#7a2e5a" opacity=".8"/><text y="-40" text-anchor="middle" font-size="22">${U.n}</text></g>
   <text x="40" y="930" font-family="Marck Script, cursive" font-size="40" fill="#3b2611">${esc(D.title)}</text>
-  <text x="42" y="962" font-family="Marck Script, cursive" font-size="20" fill="#6d5232">центр — крупно, горы — далеко: масштаб сжат к краям</text>
+  <text x="42" y="962" font-family="Marck Script, cursive" font-size="20" fill="#6d5232">${U.sub}</text>
   <g class="pins">${pins}</g><rect width="1000" height="1000" fill="url(#mzVig)" pointer-events="none"/></svg>`;
 }
 
@@ -203,12 +262,12 @@ function css(){
 }
 
 function map(el, o){
-  css(); const D = DATA[o.slug]; if (!D) { el.innerHTML = ""; return; }
+  css(); const D = DATA[o.slug]; if (!D) { el.innerHTML = ""; return; } const U = ui(D);
   let kind = null, sel = null, zoom = false;
   el.innerHTML = `<div class="mz"><h3>${esc(D.title)}</h3><p class="mz-p">${esc(D.intro)}</p>
-    <div class="mz-kinds">${Object.entries(KIND).filter(([k]) => D.places.some(p => p.k === k)).map(([k, v]) => `<button type="button" data-k="${k}" style="--c:${v.c}"><i></i>${esc(v.t)}</button>`).join("")}</div>
+    <div class="mz-kinds">${Object.entries(KIND).filter(([k]) => D.places.some(p => p.k === k)).map(([k, v]) => `<button type="button" data-k="${k}" style="--c:${v.c}"><i></i>${esc(kt(D, k))}</button>`).join("")}</div>
     <div class="mz-map">${svg(D)}</div>
-    <div class="mz-tools"><button type="button" class="mz-btn" data-zoom>🔍 Центр крупнее</button><button type="button" class="mz-btn" data-all>Показать все места</button></div>
+    <div class="mz-tools"><button type="button" class="mz-btn" data-zoom>${esc(U.zoomIn)}</button><button type="button" class="mz-btn" data-all>${esc(U.all)}</button></div>
     <div class="mz-box"></div>
     <ol class="mz-list">${D.places.map((p, i) => `<li><button type="button" data-l="${p.id}"><b style="background:${KIND[p.k].c}">${i + 1}</b><span>${esc(p.n)}</span></button></li>`).join("")}</ol></div>`;
   const sv = el.querySelector("svg"), box = el.querySelector(".mz-box");
@@ -218,16 +277,16 @@ function map(el, o){
   };
   const show = id => {
     sel = id; apply(); const p = D.places.find(x => x.id === id), i = D.places.indexOf(p) + 1, K = KIND[p.k];
-    box.innerHTML = `<div class="mz-card">${p.img ? `<img src="${esc(p.img)}" alt="" loading="lazy">` : ""}<h4>${i}. ${esc(p.n)}</h4><span class="kd" style="background:${K.c}">${esc(K.t)}</span>
-      <div class="mz-two"><section><b>📖 В романе</b><p>${esc(p.nov)}</p></section><section><b>🌎 В реальности</b><p>${esc(p.real)}</p></section></div>
-      <p class="chs">${p.ch.map(c => `<a href="#/${o.slug}/${c}">Глава ${c}</a>`).join(" · ")}</p></div>`;
+    box.innerHTML = `<div class="mz-card">${p.img ? `<img src="${esc(p.img)}" alt="" loading="lazy">` : ""}<h4>${i}. ${esc(p.n)}</h4><span class="kd" style="background:${K.c}">${esc(kt(D, p.k))}</span>
+      <div class="mz-two"><section><b>${esc(U.nov)}</b><p>${esc(p.nov)}</p></section><section><b>${esc(U.real)}</b><p>${esc(p.real)}</p></section></div>
+      <p class="chs">${p.ch.map(c => `<a href="#/${o.slug}/${c}">${esc(U.ch)} ${c}</a>`).join(" · ")}</p></div>`;
     box.scrollIntoView({block:"nearest", behavior:"smooth"});
   };
   el.querySelectorAll(".mz-pin").forEach(g => { g.onclick = () => show(g.dataset.p); g.onkeydown = e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); show(g.dataset.p); } }; });
   el.querySelectorAll("[data-l]").forEach(b => b.onclick = () => show(b.dataset.l));
   el.querySelectorAll("[data-k]").forEach(b => b.onclick = () => { kind = kind === b.dataset.k ? null : b.dataset.k; apply(); });
   el.querySelector("[data-all]").onclick = () => { kind = null; apply(); };
-  el.querySelector("[data-zoom]").onclick = e => { zoom = !zoom; sv.setAttribute("viewBox", zoom ? `${CX - 230} ${CY - 230} 460 460` : "0 0 1000 1000"); e.currentTarget.textContent = zoom ? "🔍 Вся провинция" : "🔍 Центр крупнее"; };
+  el.querySelector("[data-zoom]").onclick = e => { zoom = !zoom; sv.setAttribute("viewBox", zoom ? `${CX - 230} ${CY - 230} 460 460` : "0 0 1000 1000"); e.currentTarget.textContent = zoom ? U.zoomOut : U.zoomIn; };
 }
 
 window.LitmirMendoza = {map};
