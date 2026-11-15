@@ -1,0 +1,70 @@
+{
+  "title": "¿Qué tan buen hacker sos?",
+  "intro": "Alguien hackeó medio Sinea y la agente Rivera todavía lo está buscando. ¿Y vos? Respondé diez preguntas y descubrí si podrías esconderte detrás de «el espejo»… o si la policía toca tu timbre antes de que prendas la computadora.",
+  "questions": [
+    {"q": "Te llega un mensaje: «Hola, soy pintor, te mando un ejemplo». El archivo se llama «retrato_NO_ES_VIRUS.exe».",
+     "a": [
+       {"t": "Lo abro. El nombre es muy tranquilizador.", "s": 0},
+       {"t": "Lo borro y desconfío del pintor, del archivo y un poco de mí mismo.", "s": 1}
+     ]},
+    {"q": "¿Cuál es tu contraseña?",
+     "a": [
+       {"t": "Una frase larguísima que no anoté en ningún lado. Ni en un papelito.", "s": 1},
+       {"t": "Mi nombre y 123. Así no me la olvido. Ni yo ni nadie.", "s": 0}
+     ]},
+    {"q": "¿Cómo ocultás tu conexión?",
+     "a": [
+       {"t": "Con un espejo de verdad. Lo apunto a la computadora, por las dudas.", "s": 0},
+       {"t": "Con la técnica del espejo: mi señal da tantas vueltas que llega mareada.", "s": 1}
+     ]},
+    {"q": "Vas a trabajar a un café con buena conexión. ¿Dónde te sentás?",
+     "a": [
+       {"t": "Al fondo, de espaldas a la pared y lejos de la cámara de seguridad.", "s": 1},
+       {"t": "Justo enfrente de la cámara. Saludo. Hay que ser educado.", "s": 0}
+     ]},
+    {"q": "Sábado, nueve de la mañana. La policía toca tu puerta.",
+     "a": [
+       {"t": "Grito «¡Yo no hice nada!» con una notebook llena de stickers de calaveras.", "s": 0},
+       {"t": "Los hago pasar y les ofrezco un café. Muy tranquilo. Sin wifi.", "s": 1}
+     ]},
+    {"q": "Necesitás que nadie reconozca tu voz por los altavoces de la ciudad.",
+     "a": [
+       {"t": "Pongo voz grave y digo «no soy yo» al final de cada frase.", "s": 0},
+       {"t": "Uso un modulador y sueno como un robot resfriado.", "s": 1}
+     ]},
+    {"q": "Tomaste el control de todas las pantallas de Sinea. ¿Qué mostrás?",
+     "a": [
+       {"t": "Un mensaje que no deja ni una sola pista sobre mí.", "s": 1},
+       {"t": "Un chiste interno que entienden tres personas en el mundo. Una soy yo.", "s": 0}
+     ]},
+    {"q": "Tu antivirus te avisa: «Amenaza detectada».",
+     "a": [
+       {"t": "Lo desactivo. Me pone nervioso.", "s": 0},
+       {"t": "Le hago caso. Es el único que me avisa algo sin pedirme un video sonriendo.", "s": 1}
+     ]},
+    {"q": "Encontraste una falla en la página del banco de Sinea.",
+     "a": [
+       {"t": "Le aviso al banco para que la arreglen. Sin retratos, sin dramas.", "s": 1},
+       {"t": "Pongo mi retrato favorito en la portada. Arte es arte.", "s": 0}
+     ]},
+    {"q": "La red wifi de tu vecino se llama «NO_ENTRES_POLICIA».",
+     "a": [
+       {"t": "Me conecto. Parece un vecino divertido.", "s": 0},
+       {"t": "Ni loco. Ese nombre es sospechoso hasta para mí.", "s": 1}
+     ]}
+  ],
+  "verdicts": [
+    {"min": 0, "icon": "🚓", "title": "Te encuentran antes de que apretés la primera tecla",
+     "text": "Felicitaciones: sos tan buen hacker que la policía llega antes de que prendas la computadora. Rivera ya tiene tu foto, tu dirección y tu contraseña (es tu nombre y 123). Sos el primer pirata informático de la historia que se arresta solo. Al menos ahorraste nafta a la patrulla."},
+    {"min": 2, "icon": "🥔", "title": "Hacker de papa",
+     "text": "Tu mayor ataque informático fue cambiarle el fondo de pantalla a tu abuela. Y te descubrió en cinco minutos, porque pusiste una foto tuya. Los semáforos de Sinea pueden dormir tranquilos."},
+    {"min": 4, "icon": "🐢", "title": "Aprendiz con el wifi del vecino",
+     "text": "Tenés potencial, pero tu conexión pasa por un solo lugar: el router del vecino. Sabés lo que es una contraseña segura, aunque la tuya sigue pegada en un papelito debajo del teclado. Seguí practicando… lejos de las cámaras."},
+    {"min": 6, "icon": "🪞", "title": "Maestro del espejo",
+     "text": "Tu conexión da tantas vueltas que ni vos sabés desde dónde escribís. Los especialistas de la policía te siguen la pista y siempre terminan en un café de Rosario donde nadie te vio. Un solo error y te encuentran, pero hoy no es ese día."},
+    {"min": 8, "icon": "🕶️", "title": "Maestro de los hackers",
+     "text": "Escribís en silencio, no dejás huellas y tu antivirus te tiene miedo. Las pantallas de Sinea se apagan cuando vos querés y se prenden cuando vos decís. La agente Rivera tiene una carpeta con tu nombre… vacía. Y eso la pone muy nerviosa."},
+    {"min": 10, "icon": "🏛️", "title": "Te contrata la inteligencia del Estado",
+     "text": "Un auto negro te espera en la puerta. Un señor sin nombre te ofrece un trabajo que no existe, en una oficina que no figura en ningún mapa, con un sueldo que nunca vas a poder contar. Lo mejor: sos de los buenos. Avisaste al banco, no te conectaste al wifi sospechoso y no pusiste ningún retrato en ninguna pantalla. Rivera quiere tu número. El señor sin nombre dice que ya lo tiene."}
+  ]
+}
