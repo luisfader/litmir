@@ -1983,8 +1983,8 @@ function loadRunner(cb){
 /* Мотоцикл-погоня (games/moto/moto.js): n.moto = {ch, title, about} — одна игра по главе ch, ссылка #/<slug>/juego/moto */
 function motoCard(n, T){
   const m = n.moto, won = store.get("moto:" + n.slug, false);
-  return `<a class="ex-game" href="#/${n.slug}/juego/moto" style="background:linear-gradient(160deg,#1b2233,#3b3552 55%,#c8734a)">
-    <span style="font-size:32px;line-height:40px;height:40px" aria-hidden="true">🏍️</span>
+  return `<a class="ex-game" href="#/${n.slug}/juego/moto" style="background:${m.bg || "linear-gradient(160deg,#1b2233,#3b3552 55%,#c8734a)"}">
+    <span style="font-size:32px;line-height:40px;height:40px" aria-hidden="true">${m.icon || "🏍️"}</span>
     <span class="ex-gk">${esc(T.ch)} ${m.ch}</span>
     <b>${esc(m.title)}</b>
     <span class="ex-gs">${won ? `✓ ${esc(T.done)}` : `▶ ${esc(T.play)}`}</span></a>`;
@@ -2401,24 +2401,25 @@ function fightPage(n, stg){
       onNext:k => { location.hash = `#/${n.slug}/boj/${k}`; }, onBack:() => { exReturn = n.slug; location.hash = `#/${n.slug}`; }});
   });
 }
-/* Страница мото-игры: #/<slug>/juego/moto */
+/* Страница мото-игры: #/<slug>/juego/moto. Другая игра того же типа: n.moto.js (скрипт), n.moto.api (имя в window), n.moto.css (доп. стили) */
 function motoPage(n){
   if (lang !== n.lang) setLang(n.lang);
-  const here = location.hash;
+  const here = location.hash, G = n.moto.api || "LitmirMoto";
   app.innerHTML = `<div class="loading">…</div>`;
   const go = () => {
-    if (location.hash !== here || !window.LitmirMoto) return;
+    if (location.hash !== here || !window[G]) return;
     document.title = n.moto.title + " · " + n.title;
     app.innerHTML = `<div class="reader-bar"><div class="wrap"><a class="crumb" href="#/${n.slug}" id="mtBack">← ${esc(n.title)}</a></div></div><div id="mtHost"></div>`;
     document.getElementById("mtBack").onclick = () => { exReturn = n.slug; };
-    window.LitmirMoto.mount(document.getElementById("mtHost"), {slug:n.slug, sfx,
+    window[G].mount(document.getElementById("mtHost"), {slug:n.slug, sfx,
       onWin:() => store.set("moto:" + n.slug, true),
       next:n.moto.ch < n.chapters.length ? chapterHref(n, n.moto.ch + 1) : "",
       back:() => { exReturn = n.slug; location.hash = `#/${n.slug}`; }});
   };
-  if (window.LitmirMoto) return go();
-  if (!document.getElementById("mtCss")) { const l = document.createElement("link"); l.id = "mtCss"; l.rel = "stylesheet"; l.href = "games/moto/moto.css"; document.head.appendChild(l); }
-  const s = document.createElement("script"); s.src = "games/moto/moto.js"; s.onload = go; document.head.appendChild(s);
+  if (window[G]) return go();
+  const css = (id, href) => { if (!document.getElementById(id)) { const l = document.createElement("link"); l.id = id; l.rel = "stylesheet"; l.href = href; document.head.appendChild(l); } };
+  css("mtCss", "games/moto/moto.css"); if (n.moto.css) css("mtCss-" + G, n.moto.css);
+  const s = document.createElement("script"); s.src = n.moto.js || "games/moto/moto.js"; s.onload = go; document.head.appendChild(s);
 }
 function chapterGameNote(n, i){
   if (n.moto && i === n.moto.ch) { const T = exT(n.lang); return `<div class="ex-note">🏍️ ${esc(n.moto.note || n.moto.title)} <a href="#/${n.slug}/juego/moto">${esc(T.gameGo)} →</a> <small>(${esc(T.opt)})</small></div>`; }
