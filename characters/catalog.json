@@ -643,7 +643,7 @@
     },
     "it": {
      "name": "Sasha",
-     "description": "Guerriera dai capelli rossi, tra i primi compagni di Robert. Coordina le risorse di Utopia e combatte in prima linea, ma il suo cuore fragile viene ferito dall’amore per Luis."
+     "description": "Guerriera dai capelli rossi e corti, tra i primi compagni di Robert. Coordina le risorse di Utopia e combatte in prima linea, ma il suo cuore fragile viene ferito dall’amore per Luis."
     },
     "pl": {
      "name": "Sasza",
@@ -1901,7 +1901,7 @@
    "localizations": {
     "it": {
      "name": "Oxana",
-     "description": "Donna dalla bellezza sorprendente e dagli occhi color marrone caldo. Gentile e comprensiva, è contesa tra Kennet e Robert."
+     "description": "Donna dalla bellezza sorprendente, l’unica bionda del gruppo, con lunghi capelli color grano e occhi color marrone caldo. Cantante. Gentile e comprensiva, è contesa tra Kennet e Robert."
     },
     "tr": {
      "name": "Oksana",
@@ -2014,7 +2014,7 @@
    "localizations": {
     "it": {
      "name": "Natalia (moglie di Robert)",
-     "description": "Cardiologa e moglie di Robert, partita per curare i soldati durante la guerra. Riappare alla fine alla guida dei ribelli, ma sceglie una missione più grande.",
+     "description": "Cardiologa dai lunghi capelli rossi e moglie di Robert, partita per curare i soldati durante la guerra. Riappare alla fine alla guida dei ribelli, ma sceglie una missione più grande.",
      "images": [
       "characters/img/natalia-cardiologa-1.jpg"
      ]
