@@ -41,7 +41,7 @@ El sitio se puede instalar como app, sin tiendas ni búsquedas: en el celular o 
 
 ## Revista (PDF)
 
-Un idioma puede ofrecer su revista en PDF para descargar: un botón en la portada de ese idioma. El archivo va en `magazine/` y se registra en `MAGAZINES` dentro de `index.html` (`{ru: {file, btn}}`). Ahora: «Литература перед сном», noviembre de 2026 (RU), y «Al chiaro di luna», noviembre de 2026 (IT, 20 páginas).
+Un idioma puede ofrecer sus revistas en PDF: en el menú de la portada aparece «Журналы» / «Riviste», que abre la página `#/magazine` con todas las revistas de ese idioma (portada, descripción, «Abrir» y «Descargar PDF»). Cada PDF va en `magazine/`, su miniatura en `magazine/covers/` y se registra en `MAGAZINES` dentro de `index.html` (`{ru: {…, items: [{file, cover, name, issue, pages, desc}]}}`, la más nueva primero). Ahora: RU — «Волны любви» № 1 y № 2 (noviembre de 2026, 20 páginas cada una) y «Литература перед сном» (noviembre de 2026); IT — «Al chiaro di luna» (noviembre de 2026, 20 páginas).
 
 ## Secciones de la novela (banda sonora, juegos, galería)
 
