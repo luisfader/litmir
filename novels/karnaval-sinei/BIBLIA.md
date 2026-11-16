@@ -69,3 +69,15 @@ Cruces ya fijados en la Parte I: los dos zorros se reconocen en la plaza; Chiara
 - Regla única del enemigo: *no puede tomar nada por sí mismo*; solo lo que se le da (máscara puesta, orden firmada, rostro prestado, miedo). Nullio regatea con cada pareja a las 03:50 y de él solo queda la ropa.
 - Seis nudos: Espejo/torre (Luis y Natasha, §81–85) · Éter/torre de TV, cuarta nota (Natalia, Lis, Marisa, §86–90) · Matriz/fábrica, «la máscara oculta el rostro» (Roberto y Natalia, §91–95) · Solicitud de llegada/andén (Marcos y Alicia, §96–100) · Balcón, la orden y el carillón que desafina en la tercera nota (Franco y Chiara, §101–105) · Escenario, quitarse la máscara la primera (Tatiana y Vasily, §106–110).
 - Final común §111 (llega el tren con los 41 y la Hora salvaje; todos los carnavales entran en Sinea) y epílogo §112 (los trece a la mesa; quedan abiertos Buenos Aires y Dandolo).
+
+## 8. Línea de tiempo única (igual para las seis parejas)
+
+Regla: las elecciones solo cambian la ruta privada de la pareja. Todo encuentro entre parejas ocurre en secciones comunes (no en una rama), y es breve.
+
+**Viernes.** 18:04 llegan Luis y Natasha (tren); 18:10 Roberto y Natalia (tren); 18:20 Natalia y Lis (autobús). ~18:30, plaza de la estación: los dos zorros se reconocen (Natalia/Lis/Marisa ↔ Marcos/Alicia, sin presentarse). 21:00 Chiara canta el himno; 21:30 Alfredo en el balcón con Nullio. 00:00 golpe 13, 13 minutos (plaza: Luis, Roberto, Franco, Tatiana; torre de TV: Natalia; parque: Marcos). Faro, por orden: Marcos y Alicia 00:45 · Vasily y Tatiana 01:10 · Franco y Chiara 01:45 (los trae Dima) · Roberto y Natalia 02:05 · Natalia, Lis y Marisa 02:25 · Luis y Natasha 02:50.
+
+**Sábado.** ~10:00 fábrica: Roberto y Natalia ↔ Tatiana y Vasily (nota de la Máscara, Irina despierta 20 s; se separan en el canal). 12:00 onda rosa sobre los tejados. ~13:30 despacho del alcalde: Luis y Natasha ↔ Franco y Chiara; entra Nullio. ~14:30 Alfredo desaparece; 17:00 pasa por la torre de TV. De día, ramal abandonado: Natalia y Lis ↔ Marcos y Alicia. 23:30 parque: Marcos y Alicia ↔ Franco y Chiara. 00:00, 33 minutos: torre del reloj (rosa), torre de TV (turquesa), muelle (Máscara; canta el mar; Irina apaga la fábrica; Tatiana y Vasily miran desde el faro), parque (coro, risa, el tren se lleva a 41).
+
+**Domingo.** Sasha visita a cada pareja (seis nudos, señal 04:00). 16:00–anochecer: marcha del coro de Benito por la ciudad (ocurre siempre). 03:20 sacan a Alfredo al balcón. 03:33 empieza la Hora. 03:50 Nullio regatea con cada pareja. 04:00 tres destellos: todo a la vez. 04:33 llega el tren con los 41 y la Hora salvaje. Lunes: los trece a la mesa del faro.
+
+Cambio de canon propio: el carillón no lo retiró Octavio; se averió antes de su mandato y nadie lo arregló (la llave pasaba de alcalde a alcalde).
