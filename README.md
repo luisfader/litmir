@@ -30,6 +30,15 @@ Servicios de Meta (prohibida en Rusia): no nombrarlos en las novelas; usar los n
 
 
 
+## App instalable (PWA)
+
+El sitio se puede instalar como app, sin tiendas ni búsquedas: en el celular o la computadora aparece el botón «Instalar app» al pie de la página (en iPhone, un aviso explica cómo: Compartir → «Añadir a pantalla de inicio»). Una vez instalada, abre como app propia y las páginas ya visitadas funcionan sin conexión.
+
+- `manifest.webmanifest`: nombre, colores e íconos de la app.
+- `sw.js`: service worker. Siempre pide primero lo más nuevo a la red y, sin conexión, usa lo guardado. Si se cambia la estrategia, subir el número de `CACHE`.
+- `app/`: íconos (192, 512, 180 para iPhone y favicon).
+- El botón y el registro del service worker están al inicio del primer `<script>` de `index.html`.
+
 ## Revista (PDF)
 
 Un idioma puede ofrecer su revista en PDF para descargar: un botón en la portada de ese idioma. El archivo va en `magazine/` y se registra en `MAGAZINES` dentro de `index.html` (`{ru: {file, btn}}`). Ahora: «Литература перед сном», noviembre de 2026 (RU), y «Al chiaro di luna», noviembre de 2026 (IT, 20 páginas).
