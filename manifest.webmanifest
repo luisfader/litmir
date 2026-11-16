@@ -1,6 +1,6 @@
 {
-  "name": "Mundo literario — Robert Fader",
-  "short_name": "Litmir",
+  "name": "LitFader",
+  "short_name": "LitFader",
   "description": "Las novelas de Robert Fader en muchos idiomas. Lee gratis, también sin conexión.",
   "id": "./",
   "start_url": "./?source=pwa",
