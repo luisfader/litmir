@@ -34,7 +34,7 @@ Servicios de Meta (prohibida en Rusia): no nombrarlos en las novelas; usar los n
 
 El sitio se puede instalar como app, sin tiendas ni búsquedas: en el celular o la computadora aparece el botón «Instalar app» al pie de la página (en iPhone, un aviso explica cómo: Compartir → «Añadir a pantalla de inicio»). Una vez instalada, abre como app propia y las páginas ya visitadas funcionan sin conexión.
 
-- `manifest.webmanifest`: nombre, colores e íconos de la app.
+- `manifest.webmanifest`: nombre de la app («LitFader»), colores e íconos de la app.
 - `sw.js`: service worker. Siempre pide primero lo más nuevo a la red y, sin conexión, usa lo guardado. Si se cambia la estrategia, subir el número de `CACHE`.
 - `app/`: íconos (el zorro dibujado por Robert, a 192, 512, 180 para iPhone y favicon).
 - El botón y el registro del service worker están al inicio del primer `<script>` de `index.html`.
