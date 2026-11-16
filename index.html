@@ -1874,7 +1874,8 @@ function progressPage(n){
    "hideEndingKinds": true hides the kind of each ending, so the list does not give anything away).
    The reader follows the links at the end of each section; endings found are kept in this browser. */
 const GB_T = {ru:["Финалы","Найдено","из","Ещё не найден","Все финалы","Начать сначала","Финал найден","трагический","ни победа, ни поражение","раскрытие дела"],
-              es:["Finales","Encontrados","de","Todavía no encontrado","Todos los finales","Empezar de nuevo","Final encontrado","trágico","ni victoria ni derrota","caso resuelto"]};
+              es:["Finales","Encontrados","de","Todavía no encontrado","Todos los finales","Empezar de nuevo","Final encontrado","trágico","ni victoria ni derrota","caso resuelto"],
+              it:["Finali","Trovati","su","Non ancora trovato","Tutti i finali","Ricomincia","Finale trovato","triste","lo risolvono altri","lieto fine"]};
 const gbT = n => GB_T[n.lang] || GB_T.es;
 function gbFooter(n, c){
   const T = gbT(n);
