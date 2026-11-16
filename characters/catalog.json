@@ -1022,12 +1022,14 @@
    "name": "Sasha",
    "langs": [
     "ru",
-    "fr"
+    "fr",
+    "it"
    ],
    "role": "Mujer que investiga acontecimientos inexplicables en la ciudad de Sinea.",
    "novels": [
     "la-voix",
-    "golos"
+    "golos",
+    "chi-ha-visto-sasha"
    ],
    "localizations": {
     "fr": {
@@ -1045,6 +1047,14 @@
       "characters/img/sasha-voice-1.jpg",
       "characters/img/sasha-voice-2.jpg"
      ]
+    },
+    "it": {
+     "name": "Sasha",
+     "description": "Vive al Faro di Ael. Due anni fa ha sentito la voce dei delfini e ha aiutato a salvare Sinea. Una notte di novembre scende in mare con il Cuore del Mare e sparisce.",
+     "images": [
+      "characters/img/sasha-voice-1.jpg",
+      "characters/img/sasha-voice-2.jpg"
+     ]
     }
    }
   },
@@ -1053,12 +1063,14 @@
    "name": "Oxana",
    "langs": [
     "ru",
-    "fr"
+    "fr",
+    "it"
    ],
    "role": "Amiga y compañera de Sasha en La voix.",
    "novels": [
     "la-voix",
-    "golos"
+    "golos",
+    "chi-ha-visto-sasha"
    ],
    "localizations": {
     "fr": {
@@ -1074,6 +1086,13 @@
      "images": [
       "characters/img/oxana-voice-1.jpg"
      ]
+    },
+    "it": {
+     "name": "Oxana",
+     "description": "La migliore amica di Sasha. Non è la sindaca, ma a Sinea tutti vanno da lei. Non crede alle voci, ma chiama il detective Vasily.",
+     "images": [
+      "characters/img/oxana-voice-1.jpg"
+     ]
     }
    }
   },
@@ -1082,12 +1101,14 @@
    "name": "Dima",
    "langs": [
     "ru",
-    "fr"
+    "fr",
+    "it"
    ],
    "role": "Joven que participa en la resistencia de La voix.",
    "novels": [
     "la-voix",
-    "golos"
+    "golos",
+    "chi-ha-visto-sasha"
    ],
    "localizations": {
     "fr": {
@@ -1100,6 +1121,13 @@
     "ru": {
      "name": "Дима",
      "description": "Молодой студент, живший у парка, где началось вторжение. Узнаёт тёмного лешего из бабушкиных сказок и сражается рядом с Сашей.",
+     "images": [
+      "characters/img/dima-voice-1.jpg"
+     ]
+    },
+    "it": {
+     "name": "Dima",
+     "description": "Il compagno di Sasha. Due anni fa ha combattuto con lei contro le ombre. Adesso studia i delfini e le balene su una nave, nel Mare del Nord.",
      "images": [
       "characters/img/dima-voice-1.jpg"
      ]
@@ -3390,17 +3418,27 @@
    "id": "vasily",
    "name": "Vasili",
    "langs": [
-    "ru"
+    "ru",
+    "it"
    ],
    "role": "Detective, protagonista de Una cita peligrosa.",
    "novels": [
     "opasnoe-svidanie",
-    "epicheskij-match"
+    "epicheskij-match",
+    "chi-ha-visto-sasha"
    ],
    "localizations": {
     "ru": {
      "name": "Василий",
      "description": "Детектив, привыкший к хладнокровию и одиночеству. Ищет таинственную воровку через череду опасных свиданий; в «Эпическом матче» — главный комментатор чемпионата.",
+     "images": [
+      "characters/img/vasily-1.jpg",
+      "characters/img/vasily-2.jpg"
+     ]
+    },
+    "it": {
+     "name": "Vasily",
+     "description": "Detective privato russo che vive a Sinea. Ha una regola: per un anno, niente amore. Cerca Sasha, sparita dal Faro di Ael, e di notte comincia a sentire la sua voce.",
      "images": [
       "characters/img/vasily-1.jpg",
       "characters/img/vasily-2.jpg"
@@ -4161,12 +4199,14 @@
    "name": "Ael",
    "langs": [
     "ru",
-    "fr"
+    "fr",
+    "it"
    ],
    "role": "Delfín que guía a Sasha.",
    "novels": [
     "golos",
-    "la-voix"
+    "la-voix",
+    "chi-ha-visto-sasha"
    ],
    "localizations": {
     "ru": {
@@ -4176,6 +4216,10 @@
     "fr": {
      "name": "Ael",
      "description": "Le dauphin meneur, à la marque bien visible, dont la voix résonne dans l’esprit de Sasha. Le Phare d’Ael porte son nom."
+    },
+    "it": {
+     "name": "Ael",
+     "description": "Il capo dei delfini. È morto per salvare Sinea, e il faro porta il suo nome. Suo figlio Lume ha la sua macchia bianca sulla schiena."
     }
    }
   },
@@ -4184,12 +4228,14 @@
    "name": "Nira",
    "langs": [
     "ru",
-    "fr"
+    "fr",
+    "it"
    ],
    "role": "Delfín del pueblo de los delfines.",
    "novels": [
     "golos",
-    "la-voix"
+    "la-voix",
+    "chi-ha-visto-sasha"
    ],
    "localizations": {
     "ru": {
@@ -4199,6 +4245,10 @@
     "fr": {
      "name": "Nyra",
      "description": "Conscience du peuple des dauphins, liée à Ael. Elle fait ses adieux à Sasha dans une dernière danse."
+    },
+    "it": {
+     "name": "Nira",
+     "description": "La più saggia dei delfini e la mamma di Lume. Due anni fa ha fatto un patto con Sinea."
     }
    }
   },
@@ -4269,16 +4319,56 @@
    "id": "maria-voice",
    "name": "María (La voz)",
    "langs": [
-    "ru"
+    "ru",
+    "it"
    ],
    "role": "Compañera de trabajo de Sasha.",
    "novels": [
-    "golos"
+    "golos",
+    "chi-ha-visto-sasha"
    ],
    "localizations": {
     "ru": {
      "name": "Мария",
      "description": "Коллега Саши, чьи слова о странном сне не дают ей покоя."
+    },
+    "it": {
+     "name": "Maria Conti",
+     "description": "Ha lavorato con Sasha in ufficio. Due anni fa ha sognato i delfini, e tutti hanno riso. Adesso li sogna di nuovo, e conosce la canzone di Sasha."
+    }
+   }
+  },
+  {
+   "id": "lume",
+   "name": "Lume",
+   "langs": [
+    "it"
+   ],
+   "role": "Delfín joven, hijo de Ael y de Nira.",
+   "novels": [
+    "chi-ha-visto-sasha"
+   ],
+   "localizations": {
+    "it": {
+     "name": "Lume",
+     "description": "Un piccolo delfino con una macchia bianca sulla schiena, come suo padre Ael. Chiama Sasha sotto il mare e fa le bolle di luce per respirare sott'acqua."
+    }
+   }
+  },
+  {
+   "id": "valli",
+   "name": "Ernesto Valli",
+   "langs": [
+    "it"
+   ],
+   "role": "Ex científico del laboratorio secreto de Sinea.",
+   "novels": [
+    "chi-ha-visto-sasha"
+   ],
+   "localizations": {
+    "it": {
+     "name": "Ernesto Valli",
+     "description": "Un signore gentile con il cappotto grigio e gli occhiali d'oro. Due anni fa ha lavorato nel laboratorio segreto della vecchia centrale. Adesso è tornato a Sinea e vuole il Cuore del Mare."
     }
    }
   },
