@@ -13,7 +13,15 @@
 .stats{font:13px system-ui,sans-serif;color:var(--muted);margin-bottom:16px}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(245px,1fr));gap:18px;padding-bottom:70px}
 .card{background:var(--paper);border:1px solid var(--line);border-radius:13px;padding:23px;box-shadow:0 6px 18px rgba(50,35,25,.035);display:flex;flex-direction:column;gap:12px}.monogram{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;font:28px Georgia,serif;color:var(--accent);background:color-mix(in srgb,var(--accent) 12%,var(--paper))}.card h2{font-size:24px;font-weight:normal;line-height:1.2;margin:0}.card h2 .in{display:block;font-size:14px;color:var(--muted);font-style:italic;margin-top:4px}.card p{font-size:15px;color:var(--muted);margin:0;flex:1}.novels{display:flex;flex-wrap:wrap;gap:7px}.novels a{font:12px system-ui,sans-serif;text-decoration:none;border:1px solid var(--line);border-radius:20px;padding:6px 9px;color:var(--accent)}.novels a:hover{background:var(--bg)}.gallery{margin:-23px -23px 0;border-radius:13px 13px 0 0;overflow:hidden;background:var(--bg)}.gallery .main{display:block;width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center top}.thumbs{display:flex;gap:6px;padding:8px}.thumbs button{border:2px solid transparent;border-radius:7px;padding:0;background:none;cursor:pointer;width:52px;height:52px;overflow:hidden}.thumbs button.on{border-color:var(--accent)}.thumbs img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
 .empty{padding:55px 0;color:var(--muted)}footer{border-top:1px solid var(--line);padding:24px 0;font:13px system-ui,sans-serif;color:var(--muted)}
-</style></head><body><header><div class="wrap"><a class="brand" id="brand" href="./index.html">✦ Mundo literario</a><a class="back" id="back" href="./index.html">← Volver a las novelas</a></div></header>
+</style><link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#8c2f2f">
+<link rel="icon" type="image/png" sizes="32x32" href="app/favicon-32.png">
+<link rel="apple-touch-icon" href="app/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="LitFader">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+</head><body><header><div class="wrap"><a class="brand" id="brand" href="./index.html">✦ Mundo literario</a><a class="back" id="back" href="./index.html">← Volver a las novelas</a></div></header>
 <main class="wrap"><section class="hero"><div class="eyebrow" id="eyebrow">Universo literario</div><h1 id="heading">Personajes</h1><p class="lead" id="lead">Descubrí a los protagonistas y personajes de las novelas. Elegí un idioma para explorar sus historias.</p></section>
 <div class="tools"><select id="lang" aria-label="Idioma"></select><input id="search" type="search" placeholder="Buscar personajes o novelas…" aria-label="Buscar personajes"></div>
 <div class="stats" id="stats"></div><div class="grid" id="grid"></div></main><footer><div class="wrap">© Robert Fader · <span id="footerText">Personajes del universo literario</span></div></footer>

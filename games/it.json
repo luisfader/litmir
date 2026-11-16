@@ -49,7 +49,7 @@
    "type": "story",
    "kind": "who",
    "prompt": "Chi è?",
-   "question": "Abitante di Utopia dagli intensi occhi azzurri: dipinge la fortezza e suona il violino. Divisa tra Robert e Luis, sceglie liberamente chi amare.",
+   "question": "Abitante di Utopia dai lunghi capelli castano scuro e dagli intensi occhi azzurri: dipinge la fortezza e suona il violino. Indossa una giacca di pelle verde scuro ricamata a fiori e una gonna blu con l’orlo ricamato. Divisa tra Robert e Luis, sceglie…",
    "options": [
     "Aurora",
     "Luciana",
@@ -63,7 +63,7 @@
    "type": "story",
    "kind": "who",
    "prompt": "Chi è?",
-   "question": "Guerriera dai capelli rossi, tra i primi compagni di Robert. Coordina le risorse di Utopia e combatte in prima linea, ma il suo cuore fragile viene ferito dall’amore per Luis.",
+   "question": "Guerriera dai lunghi capelli rossi raccolti in una treccia, con lentiggini e occhi verdi, tra i primi compagni di Robert. Coordina le risorse di Utopia e combatte in prima linea, ma il suo cuore fragile viene ferito dall’amore per Luis.",
    "options": [
     "Luca",
     "Marco",
@@ -567,7 +567,7 @@
    "type": "story",
    "kind": "who",
    "prompt": "Chi è?",
-   "question": "Donna dalla bellezza sorprendente e dagli occhi color marrone caldo. Gentile e comprensiva, è contesa tra Kennet e Robert.",
+   "question": "Donna dalla bellezza sorprendente, l’unica bionda del gruppo, con lunghi capelli color grano e occhi color marrone caldo. Cantante. Gentile e comprensiva, è contesa tra Kennet e Robert.",
    "options": [
     "Oxana",
     "Il Direttore",
@@ -595,7 +595,7 @@
    "type": "story",
    "kind": "who",
    "prompt": "Chi è?",
-   "question": "Cardiologa e moglie di Robert, partita per curare i soldati durante la guerra. Riappare alla fine alla guida dei ribelli, ma sceglie una missione più grande.",
+   "question": "Cardiologa dai lunghi capelli rosso scuro, quasi color vino, e moglie di Robert, partita per curare i soldati durante la guerra. Riappare alla fine alla guida dei ribelli, ma sceglie una missione più grande.",
    "options": [
     "Fabrizio",
     "Natalia (moglie di Robert)",
