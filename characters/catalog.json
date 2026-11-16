@@ -518,8 +518,9 @@
     },
     "it": {
      "name": "Natalia",
-     "description": "Abitante di Utopia dagli intensi occhi azzurri: dipinge la fortezza e suona il violino. Divisa tra Robert e Luis, sceglie liberamente chi amare.",
+     "description": "Abitante di Utopia dai lunghi capelli castano scuro e dagli intensi occhi azzurri: dipinge la fortezza e suona il violino. Indossa una giacca di pelle verde scuro ricamata a fiori e una gonna blu con l’orlo ricamato. Divisa tra Robert e Luis, sceglie liberamente chi amare.",
      "images": [
+      "characters/img/natalia-presentimento-1.jpg",
       "characters/img/natalia-cellist-3.jpg",
       "characters/img/natalia-cellist-4.jpg"
      ]
