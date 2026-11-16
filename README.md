@@ -36,7 +36,7 @@ El sitio se puede instalar como app, sin tiendas ni búsquedas: en el celular o 
 
 - `manifest.webmanifest`: nombre, colores e íconos de la app.
 - `sw.js`: service worker. Siempre pide primero lo más nuevo a la red y, sin conexión, usa lo guardado. Si se cambia la estrategia, subir el número de `CACHE`.
-- `app/`: íconos (192, 512, 180 para iPhone y favicon).
+- `app/`: íconos (el zorro de «Волны любви», a 192, 512, 180 para iPhone y favicon).
 - El botón y el registro del service worker están al inicio del primer `<script>` de `index.html`.
 
 ## Revista (PDF)
