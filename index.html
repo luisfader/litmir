@@ -84,6 +84,8 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-family:var(--san
 .mag-btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:auto;padding-top:10px}
 .mag-btn{font-family:var(--sans);font-size:14px;font-weight:600;text-decoration:none;padding:9px 16px;border-radius:999px;background:var(--accent);color:#fff;border:1px solid var(--accent)}
 .mag-btn.ghost{background:transparent;color:var(--accent)}
+.pod-card .mag-cover img{aspect-ratio:2/3}
+.pod-audio{width:100%;margin-top:8px}
 @media (max-width:520px){.mag-card{grid-template-columns:96px 1fr;gap:6px 14px;padding:14px}.mag-cover img{width:96px}.mag-body h3{font-size:21px}}
 /* Blog */
 .blog-list{max-width:720px;margin:0 auto;padding:8px 0 72px;display:flex;flex-direction:column;gap:22px}
@@ -1387,7 +1389,7 @@ function renderChrome(){
 document.getElementById("langs").addEventListener("click", e => {
   const l = e.target.dataset && e.target.dataset.l; if (!l) return;
   setLang(l);
-  const home = location.hash.startsWith("#/magazine") && MAGAZINES[l] ? "#/magazine" : location.hash.startsWith("#/quest") && QUEST_BTN[l] ? "#/quest" : location.hash.startsWith("#/ajedrez") && CHESS_BTN[l] ? "#/ajedrez" : location.hash.startsWith("#/blog") ? "#/blog" : location.hash.startsWith("#/news") && newsPaper(l) ? "#/news" : location.hash.startsWith("#/learn") && learnCat && learnCat.courses.some(c => c.lang === l) ? "#/learn" : "#/";
+  const home = location.hash.startsWith("#/magazine") && MAGAZINES[l] ? "#/magazine" : location.hash.startsWith("#/podcast") && PODCASTS[l] ? "#/podcast" : location.hash.startsWith("#/quest") && QUEST_BTN[l] ? "#/quest" : location.hash.startsWith("#/ajedrez") && CHESS_BTN[l] ? "#/ajedrez" : location.hash.startsWith("#/blog") ? "#/blog" : location.hash.startsWith("#/news") && newsPaper(l) ? "#/news" : location.hash.startsWith("#/learn") && learnCat && learnCat.courses.some(c => c.lang === l) ? "#/learn" : "#/";
   if (location.hash && location.hash !== home) location.hash = home; else route();
 });
 
@@ -1630,6 +1632,38 @@ function magazinePage(){
     </article>`).join("")}</div></section>`;
   toTop();
 }
+/* Pódcasts: página #/podcast por idioma. Cada audio va en podcasts/ y se registra aquí (el más nuevo primero). */
+const PODCASTS = {
+  it: {btn: "Podcast", title: "Podcast", sub: "«Pagine in onda»: i romanzi di Roberto Fader raccontati a voce. Ascoltali online o scaricali in MP3.", dl: "Scarica MP3", read: "Leggi il romanzo", items: [
+    {file: "podcasts/onde-d-amore-it.mp3", novel: "onde-d-amore", cover: "novels/onde-d-amore/cover.jpg", name: "«Onde d'amore»", issue: "Pagine in onda · Episodio 1 · Novembre 2026", duration: "2:48", desc: "Chiara ci porta a Sinea, sotto la pioggia della discordia: un piccolo caffè, un disegno, una volpe che parla, le onde di luce turchese e rosa e il viaggio verso Verdegrado. Senza svelare il finale.", credit: "Voce generata con ElevenLabs · elevenlabs.io"}
+  ]}
+};
+function podcastPage(){
+  const P = PODCASTS[lang];
+  if (!P) { location.hash = "#/"; return; }
+  document.title = P.title + " — " + t("author");
+  app.innerHTML = `
+  <div class="reader-bar"><div class="wrap"><a class="crumb" href="#/">${esc(t("back"))}</a></div></div>
+  <section class="hero wrap">
+    <div class="eyebrow">${esc(t("hero"))}</div>
+    <h1>${esc(P.title)}</h1>
+    <p>${esc(P.sub)}</p>
+    <div class="ornament">✦ ✦ ✦</div>
+  </section>
+  <section class="wrap"><div class="mag-list">${P.items.map(m => `
+    <article class="mag-card pod-card">
+      <a class="mag-cover" href="#/${esc(m.novel)}"><img src="${esc(m.cover)}" alt="${esc(m.name)}" loading="lazy"></a>
+      <div class="mag-body">
+        <span class="date">${esc(m.issue)}${m.duration ? ` · ${esc(m.duration)}` : ""}</span>
+        <h3>${esc(m.name)}</h3>
+        ${m.desc ? `<p>${esc(m.desc)}</p>` : ""}
+        ${m.credit ? `<p><small>${esc(m.credit)}</small></p>` : ""}
+        <audio class="pod-audio" controls preload="none" src="${esc(m.file)}"></audio>
+        <div class="mag-btns"><a class="mag-btn" href="#/${esc(m.novel)}">${esc(P.read)}</a><a class="mag-btn ghost" href="${esc(m.file)}" download>⬇ ${esc(P.dl)}</a></div>
+      </div>
+    </article>`).join("")}</div></section>`;
+  toTop();
+}
 function home(){
   document.title = t("hero") + " — " + t("author");
   const list = catalog.novels.filter(n => !n.hidden && n.lang === lang).map((n,i)=>[n,i]).sort((a,b)=>(b[0].stars||0)-(a[0].stars||0)||a[1]-b[1]).map(x=>x[0]);
@@ -1655,6 +1689,7 @@ function home(){
     ${CHESS_BTN[lang] ? `<a class="hm-item" href="#/ajedrez">♞ ${esc(CHESS_BTN[lang])}</a>` : ""}
     ${QUEST_BTN[lang] ? `<a class="hm-item" href="#/quest">🐂 ${esc(QUEST_BTN[lang])}</a>` : ""}
     ${MAGAZINES[lang] ? `<a class="hm-item" href="#/magazine">📖 ${esc(MAGAZINES[lang].btn)}</a>` : ""}
+    ${PODCASTS[lang] ? `<a class="hm-item" href="#/podcast">🎙 ${esc(PODCASTS[lang].btn)}</a>` : ""}
     <a class="hm-item" href="#/mis-lecturas">★ ${esc(ft(0))} · ${esc(rt(1))}</a>
       </nav>
     </dialog>
@@ -3707,6 +3742,7 @@ function route(){
   if (parts[0] === "news") { setSoundtrack(null); return parts[1] ? newsArticle(decodeURIComponent(parts[1])) : newsIndex(); }
   if (parts[0] === "blog") { setSoundtrack(null); return parts[1] ? blogPost(decodeURIComponent(parts[1])) : blogIndex(); }
   if (parts[0] === "magazine") { setSoundtrack(null); return magazinePage(); }
+  if (parts[0] === "podcast") { setSoundtrack(null); return podcastPage(); }
   if (parts[0] === "mis-lecturas") { setSoundtrack(null); return myReading(); }
   if (parts[0] === "game") { setSoundtrack(null); return game(); }
   if (parts[0] === "ajedrez") { setSoundtrack(null); return chessPage(); }
