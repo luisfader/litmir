@@ -1,0 +1,7 @@
+Estela González, de Maipú, es la nueva Reina Nacional de la Vendimia. Ganó con 22 votos. La virreina es Julieta Arancibia, de Godoy Cruz, con 19. La gran favorita, la candidata checa Jana Nováková, que se presentó primero como «Yanina», la rubia de la Capital, quedó tercera con 16.
+
+La votación sorprendió a todos: la tele, los diarios y las apuestas daban ganadora a Nováková. Pero cuando se anunció el resultado, los doce cosechadores del jurado, uno por cada departamento con viñas y con las manos negras de la cosecha, se pusieron de pie y empezaron a aplaudir. Detrás de ellos se paró el resto del jurado.
+
+El motivo hay que buscarlo en lo que pasó el fin de semana anterior. Durante el primer intento de Acto Central, en el Teatro Griego, la tierra se abrió bajo el escenario y cuarenta mil personas tuvieron que salir como pudieron. Mientras Mendoza vivía la llamada «hora salvaje», Estela González, hija de un contratista de viña de Russell, sacó a varios chicos del teatro. Después, junto a los tomeros, cerró las compuertas de las acequias sin que nadie la mirara. «Ganaste porque hiciste lo que había que hacer. Sin que nadie te mirara», le dijo Nováková en el escenario, abrazándola.
+
+La crisis terminó con detenciones en la Laguna de Horcones: un hombre identificado como Valdés y doce colaboradores quedaron en manos de las autoridades. Desde entonces, según los productores de Lavalle, las lagunas de Guanacache volvieron a llenarse de agua.
