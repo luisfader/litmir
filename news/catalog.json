@@ -51,8 +51,7 @@
    "ch": [
     17,
     18
-   ],
-   "lead": true
+   ]
   },
   {
    "slug": "golos-nekrologii",
@@ -244,8 +243,7 @@
    "ch": [
     15,
     19
-   ],
-   "lead": true
+   ]
   },
   {
    "slug": "primeros-decretos",
@@ -341,8 +339,7 @@
    "ch": [
     28,
     30
-   ],
-   "lead": true
+   ]
   },
   {
    "slug": "venezia-sindaco-dandolo",
@@ -422,8 +419,7 @@
    "ch": [
     49,
     49
-   ],
-   "lead": true
+   ]
   },
   {
    "slug": "bitka-za-prestonicu",
@@ -471,8 +467,7 @@
    "ch": [
     30,
     30
-   ],
-   "lead": true
+   ]
   },
   {
    "slug": "ostrovy-nad-prahou",
@@ -745,6 +740,187 @@
     25,
     26
    ]
+  },
+  {
+   "slug": "pangeya-pala",
+   "lang": "ru",
+   "date": "2026-11-17",
+   "order": 4,
+   "section": "Мир",
+   "title": "Пангея пала: Майлз и его Совет высажены на необитаемый остров",
+   "deck": "После ультиматума «десять дней на выбор стороны» объединённый флот взял Кристал-Шорс. Казней не будет: «Мы не убийцы».",
+   "novels": [
+    "predchuvstvie-2-4"
+   ],
+   "ch": [
+    31,
+    46
+   ],
+   "lead": true
+  },
+  {
+   "slug": "biryuzovaya-federaciya",
+   "lang": "ru",
+   "date": "2026-11-17",
+   "order": 3,
+   "section": "Наша Утопия",
+   "title": "Люсия и Вася избраны главами «Нашей Утопии». Создана Бирюзовая Федерация",
+   "deck": "Совет трёх отказался баллотироваться. На вокзале Новой Миссии пять столов единогласно проголосовали за Федерацию и за мир с Северным Союзом.",
+   "novels": [
+    "predchuvstvie-2-4"
+   ],
+   "ch": [
+    47,
+    48
+   ]
+  },
+  {
+   "slug": "portret-osnovatelya",
+   "lang": "ru",
+   "date": "2026-11-17",
+   "order": 2,
+   "section": "Синея",
+   "title": "Портрет основателя вернулся в музей. Форсе и Ровере отправлены в отставку",
+   "deck": "Мэр Гранде: «Луис дома». Миллион драконов вознаграждения ушёл городу, коллекция Моралеса — музею.",
+   "novels": [
+    "pokhititel-serdec-portret-osnovatelya"
+   ],
+   "ch": [
+    18,
+    51
+   ]
+  },
+  {
+   "slug": "karnaval-sinei",
+   "lang": "ru",
+   "date": "2026-11-17",
+   "order": 1,
+   "section": "Синея",
+   "title": "После карнавала: Альфредо Гранде подписал постановление № 15",
+   "deck": "Триста тысяч восковых масок, загадочный распорядитель Нуллио и «Постановление № 13», которого мэр не подписывал. Теперь маски — только картонные.",
+   "novels": [
+    "karnaval-sinei"
+   ],
+   "ch": [
+    1,
+    112
+   ]
+  },
+  {
+   "slug": "pacto-del-lago",
+   "lang": "es",
+   "date": "2026-11-17",
+   "order": 3,
+   "section": "Nuestra Utopía",
+   "title": "El Refugio rompe con el Gobierno Central y firma el Pacto del Lago con la República Turquesa",
+   "deck": "Luis renunció a la Federación de Repúblicas por la Libertad y a «decidir solo». El mayor Kessler se fue sin disparar un tiro.",
+   "novels": [
+    "la-corazonada-2"
+   ],
+   "ch": [
+    28,
+    31
+   ],
+   "lead": true
+  },
+  {
+   "slug": "refugio-tratado",
+   "lang": "es",
+   "date": "2026-11-17",
+   "order": 2,
+   "section": "Nuestra Utopía",
+   "title": "El Refugio firma con el Gobierno Central a las tres de la mañana",
+   "deck": "Guarnición federal, control de las turbinas y «coordinación» con la capital. Antes de la firma, un pueblo entero se convirtió en un círculo negro.",
+   "novels": [
+    "la-corazonada-2"
+   ],
+   "ch": [
+    8,
+    10
+   ]
+  },
+  {
+   "slug": "reina-estela",
+   "lang": "es",
+   "date": "2026-11-17",
+   "order": 1,
+   "section": "Mendoza",
+   "title": "Estela González, de Maipú, nueva Reina Nacional de la Vendimia",
+   "deck": "Ganó con 22 votos; la favorita, la checa Jana Nováková, quedó tercera. Los doce cosechadores del jurado la aplaudieron de pie.",
+   "novels": [
+    "la-reina-de-la-vendimia"
+   ],
+   "ch": [
+    28,
+    47
+   ]
+  },
+  {
+   "slug": "roma-senatrice",
+   "lang": "it",
+   "date": "2026-11-17",
+   "order": 2,
+   "section": "Roma",
+   "title": "Arrestata la senatrice Massimi con la mano nella Bocca della Verità",
+   "deck": "Sirene che nessuno ricorda, tremori che nessuno sente e il Consortium Umbrarum: nel Natale di Roma una lupa di pietra ha consegnato la senatrice ai Carabinieri.",
+   "novels": [
+    "la-roma-sotterranea"
+   ],
+   "ch": [
+    15,
+    42
+   ],
+   "lead": true
+  },
+  {
+   "slug": "armonia-blackout",
+   "lang": "it",
+   "date": "2026-11-17",
+   "order": 1,
+   "section": "Armonia",
+   "title": "Armonia torna alla luce: i carabinieri portano via Cesare Muri",
+   "deck": "Cinque quartieri, un Diapason spento e un'app chiamata Recinto. Alla Festa dei Cinque il sindaco Pace ha buttato il discorso: «Abbracciatevi e basta!».",
+   "novels": [
+    "onde-d-amore-2"
+   ],
+   "ch": [
+    13,
+    50
+   ]
+  },
+  {
+   "slug": "arkaim-vrhovni-istok",
+   "lang": "sr",
+   "date": "2026-11-17",
+   "order": 1,
+   "section": "Аркаим",
+   "title": "Врховни Исток преузео Аркаим после пораза Реда Гримизног Змаја",
+   "deck": "Ноћни воз из Москве нападнут, машиновођа нестала, а у древном кругу на Уралу одиграла се битка. Онда су стигли људи у сивим капутима.",
+   "novels": [
+    "divlji-chas-sudbina-arkaima"
+   ],
+   "ch": [
+    3,
+    19
+   ],
+   "lead": true
+  },
+  {
+   "slug": "recke-divadlo",
+   "lang": "cs",
+   "date": "2026-11-17",
+   "order": 1,
+   "section": "Mendoza",
+   "title": "Čtyřicet tisíc lidí usnulo v Řeckém divadle. Mendoza se probudila se zlatou vodou",
+   "deck": "Hlavní představení vinobraní přerušil popel z hor. Do přímého přenosu promluvila jen Julieta Arancibia, královna Godoy Cruz.",
+   "novels": [
+    "kralovna-vinobrani"
+   ],
+   "ch": [
+    26,
+    30
+   ],
+   "lead": true
   }
  ]
 }
