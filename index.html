@@ -362,6 +362,9 @@ article.chapter blockquote{margin:1.2em 0;padding-left:1em;border-left:2px solid
 article.chapter figure{margin:2em -20px;text-align:center}
 article.chapter figure.mid{margin:1.8em auto;max-width:520px}
 article.chapter figure.mid img{max-height:none;width:100%}
+article.chapter figure.audio{margin:1.8em auto;max-width:520px}
+article.chapter figure.audio audio{width:100%}
+article.chapter figure.audio figcaption{font-size:.85em;opacity:.75;margin-top:.4em;font-style:italic}
 article.chapter figure.linked img{max-height:420px;transition:transform .2s}
 article.chapter figure.linked a:hover img{transform:scale(1.02)}
 article.chapter figure img{max-width:100%;max-height:72vh;width:auto;height:auto;border-radius:6px;box-shadow:var(--shadow)}
@@ -1170,6 +1173,8 @@ function renderText(md){
     if (lk) return `<figure class="linked"><a href="${esc(lk[3])}"><img src="${esc(lk[2])}" alt="${esc(lk[1])}" loading="lazy"></a></figure>`;
     if (/^:::\s*gallery\s*\n/i.test(b)) { const items = b.split("\n").slice(1).map(r => r.trim().match(/^!\[([^\]]*)\]\(([^)\s]+)\)$/)).filter(Boolean);
       return `<div class="gallery">${items.map(x => `<figure><a href="${esc(x[2])}" target="_blank" rel="noopener"><img src="${esc(x[2])}" alt="${esc(x[1])}" loading="lazy"></a>${x[1] ? `<figcaption>${inline(x[1])}</figcaption>` : ""}</figure>`).join("")}</div>`; }
+    const au = b.match(/^!audio\[([^\]]*)\]\(([^)\s]+)\)$/);
+    if (au) return `<figure class="audio"><audio controls preload="none" src="${esc(au[2])}"></audio>${au[1] ? `<figcaption>${inline(au[1])}</figcaption>` : ""}</figure>`;
     let m = b.match(/^!\[([^\]]*)\]\(([^)\s]+)\)$/);
     if (m) return m[1] === "m" ? `<figure class="mid"><img src="${esc(m[2])}" alt="" loading="lazy"></figure>` : `<figure><img src="${esc(m[2])}" alt="${esc(m[1])}" loading="lazy"></figure>`;
     if (/^##\s/.test(b)) return "<h2>" + inline(b.replace(/^#+\s*/,"")) + "</h2>";
@@ -3507,6 +3512,13 @@ const ST_TEXT = {
 };
 function stText(l){ return ST_TEXT[l] || ST_TEXT.en; }
 const music = { el:new Audio(), novel:null, i:0, cache:new Map() };
+// una música dentro del capítulo (!audio[…](…)) pausa la banda sonora, y viceversa
+document.addEventListener("play", e => {
+  if (!(e.target instanceof HTMLMediaElement) || !e.target.closest("figure.audio")) return;
+  try { music.el.pause(); } catch {}
+  document.querySelectorAll("figure.audio audio").forEach(a => { if (a !== e.target) a.pause(); });
+}, true);
+music.el.addEventListener("play", () => document.querySelectorAll("figure.audio audio").forEach(a => a.pause()));
 music.el.preload = "none";
 music.el.volume = store.get("vol", 0.5);
 const mStatus = document.getElementById("mStatus");

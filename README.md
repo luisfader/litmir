@@ -22,7 +22,7 @@ novels/<novela>/            un archivo .md por capítulo (01.md, 02.md, …)
 4. Opcional: una portada (`"cover": "novels/<nombre-corto>/cover.jpg"`). Sin portada, el sitio genera una.
 5. Clasificación por edad: `"rating": "12+"` o `"16+"`, o `"adult": true` para 18+ (muestra un aviso antes de entrar). Toda novela debe tener una de las dos.
 
-Formato del texto: párrafos separados por una línea en blanco, `*cursiva*`, `**negrita**`, `***` para un cambio de escena.
+Formato del texto: párrafos separados por una línea en blanco, `*cursiva*`, `**negrita**`, `***` para un cambio de escena. Para poner una música dentro de un capítulo: `!audio[Texto que va debajo](novels/<novela>/music/archivo.mp3)` en un párrafo propio; muestra un reproductor y, al darle play, pausa la banda sonora.
 
 Servicios de Meta (prohibida en Rusia): no nombrarlos en las novelas; usar los nombres inventados. Alfabeto latino: Guatsap (WhatsApp), Instadram (Instagram), Feisbut (Facebook). Cirílico: Гуатсап, Инстадрам, Фейсбут.
 
