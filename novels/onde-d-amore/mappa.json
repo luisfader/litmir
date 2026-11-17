@@ -1,0 +1,98 @@
+{
+  "art": "city",
+  "theme": "sinea",
+  "intro": "Sinea, la città di Luis e Natalia: un cielo grigio madreperla, strade che luccicano come vetro antico e due torri. Tocca un luogo per sapere che cosa è successo lì. I luoghi e i segreti si aprono man mano che leggi.",
+  "home": "caffe",
+  "legend": "Tutti i luoghi sulla mappa",
+  "nowhere": "Senza indirizzo",
+  "labels": [
+    {"x": 560, "y": 300, "t": "Centro"},
+    {"x": 265, "y": 748, "t": "Il quartiere di Natalia"}
+  ],
+  "net": {
+    "at": "10.md",
+    "glow": "26.md",
+    "from": ["caffe", "centro", "sciarpa", "rovina", "esperanza", "casa"],
+    "to": "amore",
+    "title": "Le onde dell'amore",
+    "text": "Dalla cima della Torre dell'Amore le onde turchesi e rosa si sono sparse per tutta Sinea: le armi sono cadute dalle mani, la pioggia nera si è dissolta nella luce e la città ha ritrovato i suoi colori."
+  },
+  "places": [
+    {"id": "caffe", "icon": "☕", "name": "Il caffè all'angolo", "x": 450, "y": 380, "at": "01.md",
+     "sub": "Nel centro di Sinea, con un pianoforte in fondo alla sala",
+     "what": "Un piccolo caffè quasi invisibile: una finestra calda, una luce morbida, la sagoma di un pianoforte. Qui Luis aspetta Natalia, la sente canticchiare prima ancora di vederla e le regala il disegno di una volpe.",
+     "who": "Luis, Natalia, il cameriere e una bambina con un biscotto in mano.",
+     "secrets": [
+       {"at": "02.md", "text": "Le loro mani si toccano sopra il tavolo e il tempo si ferma: il vapore resta sospeso sopra la tazza, un cane resta in aria a metà salto. Si baciano, e la volpe esce dal disegno: «Sono qui per aiutarvi a salvare la città»."},
+       {"at": "28.md", "text": "Due anni dopo Natalia torna qui da sola, suona il pianoforte e canta nella lingua della nonna. Sull'ultima nota il tempo si ferma di nuovo, caldo come il primo giorno, e una mano si posa sulla sua: «Sono qui. Vivi»."},
+       {"at": "28.md", "text": "Al tavolo vicino alla finestra si siede una giovane coppia con una bambina. Come portafortuna hanno con sé il disegno che Luis aveva fatto per loro in treno, tanto tempo prima."}
+     ]},
+    {"id": "centro", "icon": "🏙", "name": "Le strade del centro", "x": 300, "y": 300, "at": "03.md",
+     "sub": "Vetrine, fari e asfalto che luccica come vetro antico",
+     "what": "Qui cadono le prime gocce della pioggia della discordia. Non schizzano: si accendono di una luce sorda. Chi viene toccato si risveglia pieno di rabbia, e in pochi secondi tutto il centro è nel caos.",
+     "who": "Passanti, automobilisti, due poliziotti che si azzuffano. E la volpe sul davanzale, che ha già capito tutto.",
+     "secrets": [
+       {"at": "09.md", "text": "Di notte Luis attraversa il caos in macchina, si ferma in mezzo alla strada e chiama con l'altoparlante: «Artisti! Parlo a voi!». Dalla folla escono dieci persone avvolte da una luce color miele, e un pulmino urbano vuoto apre le porte per loro."}
+     ]},
+    {"id": "sciarpa", "icon": "🧣", "name": "La strada della sciarpa", "x": 590, "y": 470, "at": "04.md",
+     "sub": "Sulla via verso la torre",
+     "what": "Tre uomini escono dall'ombra e sbarrano la strada. Luis mette Natalia dietro di sé e si difende con la sciarpa che porta al collo, veloce e preciso come se l'avesse sempre saputo fare.",
+     "who": "Luis, Natalia, la volpe, che morde uno dei tre, e gli aggressori, che scappano nella pioggia.",
+     "secrets": [
+       {"at": "04.md", "text": "Subito dopo è Natalia a baciarlo per prima, senza pensarci. E da qui, attraverso la pioggia, si vede già la Torre."}
+     ]},
+    {"id": "rovina", "icon": "🏚", "name": "L'edificio in rovina", "x": 700, "y": 350, "at": "05.md",
+     "sub": "All'ombra della Torre Esperanza",
+     "what": "Al riparo di un palazzo in rovina Natalia dice a Luis che lo ha sempre aspettato. Lui risponde che l'amore è proprio lotta contro il male, perché rivela la verità.",
+     "who": "Luis e Natalia. La volpe si allontana apposta per lasciarli soli, poi torna: ha trovato una via meno pericolosa.",
+     "secrets": [
+       {"at": "05.md", "text": "Davanti all'ingresso della torre tre uomini dagli occhi vuoti attaccano Luis. Natalia alza la mano e dice soltanto «Basta». È il suo dono: non ferisce, mostra la verità."}
+     ]},
+    {"id": "esperanza", "icon": "📡", "name": "Torre Esperanza", "x": 800, "y": 240, "at": "05.md",
+     "sub": "La Grande Torre, con l'antenna sopra la città",
+     "what": "Era soltanto un trasmettitore. Adesso è la sorgente del male: l'antenna amplifica una frequenza che deforma l'acqua nelle nuvole, e la pioggia porta con sé uno stato d'animo.",
+     "who": "All'ingresso, uomini dagli occhi vuoti che aspettano. Dentro, qualcuno che non si fa ancora vedere.",
+     "secrets": [
+       {"at": "06.md", "text": "Dentro ci sono due scale, una verde e una bordeaux: i colori di Natalia e di Luis. Luis sceglie il verde, e la scala bordeaux si sgretola nel vuoto. «Non hai scelto un colore», dice la volpe. «Hai scelto Natalia.»"},
+       {"at": "07.md", "text": "In cima c'è una capsula di vetro piena di figure semitrasparenti: le anime degli abitanti. David la chiama purificazione. Le sue creature alate allagano le scale di acqua nera, e Luis, Natalia e la volpe ferita escono da una finestra infranta, dentro la sfera di luce di Natalia."},
+       {"at": "09.md", "text": "Dall'alto David segue la macchina di Luis nel caos, tira una leva e rinforza la pioggia. Poi accende gli altoparlanti della torre per prenderlo in giro: «Idealista»."},
+       {"at": "18.md", "text": "Ora si sa chi aveva messo David lassù: quelli del cerchio con la stella. A Sinea cercano qualcosa da molto tempo, ma la strada dritta gliel'ha chiusa la Torre dell'Amore."}
+     ]},
+    {"id": "casa", "icon": "🏠", "name": "L'appartamento di Natalia", "x": 190, "y": 560, "at": "08.md",
+     "sub": "Un piccolo appartamento in affitto, al terzo piano",
+     "what": "Natalia lo ha preso quando è venuta a lavorare a Sinea. Ci sono i suoi quaderni pieni di canzoni, una pianta sul davanzale e una lampada dalla luce gialla. La sua vera casa è lontana, a Verdegrado.",
+     "who": "Natalia, Luis e la volpe ferita, posata sul tavolo.",
+     "secrets": [
+       {"at": "08.md", "text": "Natalia posa la volpe su un foglio bianco e lei ridiventa un disegno, debole e triste. Luis la ridisegna da capo, tratto dopo tratto, finché non respira e torna viva. Poi, da un bacio, nascono le prime scintille turchesi e rosa: le onde dell'amore."},
+       {"at": "09.md", "text": "Luis torna dal centro con il pulmino degli artisti dietro di sé. Natalia corre fuori dal portone e lo abbraccia così forte, come se potesse sparire."},
+       {"at": "11.md", "text": "Qualche settimana dopo, proprio qui, Natalia gli dice: «Voglio portarti a casa mia. A casa mia davvero. A Verdegrado»."}
+     ]},
+    {"id": "amore", "icon": "💗", "name": "Torre dell'Amore", "x": 330, "y": 650, "at": "10.md",
+     "sub": "È salita dall'asfalto, davanti alla casa di Natalia",
+     "what": "Gli artisti disegnano sull'asfalto bagnato mentre Natalia canta, e dalla strada sale una torre luminosa, rosa, turchese e dorata. Luis e Natalia salgono in cima e si baciano: le onde spazzano via la pioggia nera e Sinea ritrova i suoi colori.",
+     "who": "Luis, Natalia, i dieci artisti, la volpe. E David con i suoi uomini, che l'onda sveglia.",
+     "secrets": [
+       {"at": "10.md", "text": "La volpe, colpita da David, dice che la sua missione è compiuta: «Io sono una creatura del tuo amore». Natalia canta per lei, e lei si dissolve. Al suo posto resta un disegno."},
+       {"at": "10.md", "text": "Gli artisti si danno un nome, come un club: «La Volpe Pittrice». A parte loro, nessuno sa che cosa sia successo davvero."},
+       {"at": "26.md", "text": "La notte di Verdegrado le onde corrono lungo i binari fino alle strade di Sinea, e la Torre dell'Amore, dicono in tanti, brilla come non aveva mai brillato."}
+     ]},
+    {"id": "club", "icon": "🎨", "name": "I murales della Volpe Pittrice", "at": "11.md",
+     "sub": "Un po' dappertutto, sui muri di Sinea",
+     "what": "Il club degli artisti si riunisce il giovedì. Massimo ha già dipinto tre murales, e Giulia giura che di notte le volpi disegnate muovono la coda.",
+     "who": "Giulia, Massimo, Sofia, Pietro, Anna, Elia, Marina, Sergio, Daria e Alessio.",
+     "secrets": [
+       {"at": "22.md", "text": "Quando vedono al telegiornale le luci della fortezza, partono per Verdegrado con un furgone coperto di volpi dipinte. Al volante c'è David."}
+     ]},
+    {"id": "stanza", "icon": "🖥", "name": "La stanza senza finestre", "at": "10.md",
+     "sub": "Lontano da Sinea, davanti a schermi accesi",
+     "what": "Qualcuno senza volto guarda la Torre dell'Amore brillare sopra Sinea. «La strada per Sinea è chiusa», dice una voce. «Per ora.»",
+     "who": "Quelli del cerchio con la stella.",
+     "secrets": [
+       {"at": "21.md", "text": "Il Komtur lo dice chiaro: Verdegrado era la porta, Sinea è la direzione. La prima volta hanno provato dall'alto, con la torre e con David. Adesso provano dal basso, dalla strada antica."}
+     ]}
+  ],
+  "edges": [
+    {"icon": "🚆", "name": "Verso Nuvoletta e Verdegrado", "x": 935, "y": 722, "at": "11.md",
+     "text": "Un venerdì sera Luis e Natalia salgono sul treno regionale. In mezzo ai campi il tempo si ferma, e nella nebbia compaiono cavalieri fantasma. Dalla stazione Nuvoletta ci vogliono ancora quaranta minuti di autobus tra i boschi per arrivare a Verdegrado."}
+  ]
+}

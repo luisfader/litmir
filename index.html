@@ -729,6 +729,14 @@ article.chapter h3{font-family:var(--sans);font-size:.72em;letter-spacing:.12em;
 .mp-t-carta .mp-water{fill:#d9c9a0}.mp-t-carta .mp-ripples path{stroke:#b9a274}.mp-t-carta .mp-land{fill:#f6ead0;stroke:#7a4a2a}.mp-t-carta .mp-calli path{stroke:#d6c19b}.mp-t-carta .mp-canal{stroke:#7a4a2a}.mp-t-carta .mp-canal-in{stroke:#d9c9a0}
 .mp-t-carta .mp-dist{fill:#7a4a2a;font-family:var(--serif)}.mp-t-carta .mp-scroll{border-color:#7a4a2a}.mp-t-carta .mp-pin circle{stroke:#8c2f2f}.mp-t-carta .mp-pin.home circle{fill:#e8b84a;stroke:#6b1f1a}.mp-t-carta .mp-lb{font-family:var(--serif);font-style:italic}
 .mp-t-carta.mp-under .mp-water{fill:#a8c3bf}.mp-t-carta .mp-ghosts path{stroke:#1f7a74}.mp-t-carta .mp-L-under circle{fill:#1f4f4c;stroke:#bff0ea}.mp-t-carta .mp-L-under .mp-lb{fill:#0f3b3f;stroke:#e7f5f2}
+.mp-s-bg{fill:#e9e4dc}.mp-s-block rect{fill:#d8d0c3;stroke:#c2b7a6;stroke-width:1.2}.mp-s-road{fill:none;stroke:#f7f3ec;stroke-width:11;stroke-linecap:round}.mp-s-ring{fill:none;stroke:#f7f3ec;stroke-width:9}
+.mp-s-park{fill:#b9cf9c;stroke:#93ad73;stroke-width:2}.mp-s-tree circle{fill:#6f9a5c;opacity:.85}.mp-s-bank{fill:none;stroke:#c2b7a6;stroke-width:54}.mp-s-river{fill:none;stroke:#9cc9cf;stroke-width:44}.mp-s-bridge{fill:#efe9df;stroke:#a89c8a;stroke-width:2}
+.mp-s-rail{stroke:#6b5f55;stroke-width:4}.mp-s-ties path{stroke:#6b5f55;stroke-width:3}
+.mp-t-sinea{background:#efe9e2}.mp-t-sinea .mp-hero{background:linear-gradient(135deg,#0f4a52,#2a7d80 55%,#a8507a)}.mp-t-sinea .mp-title{color:#fff4f8}
+.mp-t-sinea .mp-scroll{border-color:#2a7d80;box-shadow:inset 0 0 40px rgba(20,70,80,.18)}.mp-t-sinea .mp-dist{fill:#5d6f70;font-family:var(--serif);font-size:26px}
+.mp-t-sinea .mp-pin circle{stroke:#1f6b70}.mp-t-sinea .mp-pin.home circle{fill:#f6c1d3;stroke:#a8507a}.mp-t-sinea .mp-pin.on circle,.mp-t-sinea .mp-pin:hover circle{stroke:#d0467f}.mp-t-sinea .mp-pin.on .mp-lb{fill:#a8507a}
+.mp-t-sinea .mp-rose circle{stroke:#1f6b70}.mp-t-sinea .mp-rose path,.mp-t-sinea .mp-rose text{fill:#1f6b70}.mp-t-sinea .mp-eic,.mp-t-sinea .mp-elb{fill:#1f6b70}.mp-t-sinea .mp-elb{stroke:#e9e4dc}
+.mp-t-sinea .mp-net{stroke:#45c7bd}.mp-t-sinea .mp-net.on{stroke:#ff6fa0}.mp-t-sinea .mp-top h3,.mp-t-sinea .mp-h{color:#1f6b70}.mp-t-sinea .mp-reveal{border-color:#a8507a;color:#a8507a}.mp-t-sinea .mp-first a,.mp-t-sinea .mp-lk a{color:#a8507a}.mp-t-sinea .mp-nb.on{border-color:#a8507a;color:#a8507a}
 .mp-card{color:#2b2118}.mp-quiet .mp-lb{opacity:0;transition:opacity .2s}.mp-quiet .mp-pin.on .mp-lb,.mp-quiet .mp-pin:hover .mp-lb,.mp-quiet .mp-pin:focus-visible .mp-lb{opacity:1}.mp-quiet .mp-pin.on{transform-box:fill-box}
 .mp-quiet .mp-pin .mp-ic{font-size:26px}.mp-quiet .mp-pin.home .mp-ic{font-size:30px}.mp-quiet .mp-pin.on circle{stroke-width:7}
 @media (max-width:520px){.mp{padding:0 8px 20px;border-radius:14px}.mp-hero{margin:0 -8px 12px}.mp-title{font-size:21px}.mp-intro{font-size:13.5px}}
@@ -2289,6 +2297,34 @@ const MP_ART = {
       ${lbl(360, 700, it ? "Giudecca" : "Джудекка")}${lbl(730, 70, it ? "Murano" : "Мурано")}${lbl(985, 560, it ? "Lido" : "Лидо")}
       <g class="mp-ghosts">${ghosts}<path d="${island}" class="mp-ghost-isl"/></g>
       <g class="mp-rose" transform="translate(70 90)"><circle r="34"/><path d="M0 -30L7 0L0 30L-7 0Z"/><text y="-38">${D.lang === "ru" ? "С" : "N"}</text></g>`;
+  },
+  /* Город (Синея и т. п.): река с мостами на севере, кварталы, парки, железная дорога к краю карты. D.labels: [{x,y,t}] — подписи районов */
+  city(home, far, rnd, D){
+    const river = "M0 150C160 105 300 185 470 150S780 85 1000 135";
+    const parks = [[130, 330, 85, 62], [850, 560, 78, 56]];
+    const inPark = (x, y) => parks.some(([cx, cy, rx, ry]) => ((x - cx) / (rx + 20)) ** 2 + ((y - cy) / (ry + 20)) ** 2 < 1);
+    const rail = [[480, 560], [1000, 745]];
+    const nearRail = (x, y) => { const [[x1, y1], [x2, y2]] = rail, t = Math.max(0, Math.min(1, ((x - x1) * (x2 - x1) + (y - y1) * (y2 - y1)) / ((x2 - x1) ** 2 + (y2 - y1) ** 2)));
+      return Math.hypot(x - (x1 + t * (x2 - x1)), y - (y1 + t * (y2 - y1))) < 34; };
+    let blocks = "";
+    for (let y = 205; y < 760; y += 54) for (let x = 18; x < 990; x += 64) {
+      if (rnd() < .2) continue; const w = 40 + rnd() * 12, h = 30 + rnd() * 10, bx = x + rnd() * 6, by = y + rnd() * 6;
+      if (inPark(bx + w / 2, by + h / 2) || nearRail(bx + w / 2, by + h / 2)) continue;
+      blocks += `<rect x="${bx.toFixed(1)}" y="${by.toFixed(1)}" width="${w.toFixed(1)}" height="${h.toFixed(1)}" rx="4"/>`; }
+    const trees = parks.map(([cx, cy, rx, ry]) => Array.from({length:16}, () => { const a = rnd() * 6.28, d = Math.sqrt(rnd()) * .8;
+      return `<circle cx="${(cx + Math.cos(a) * rx * d).toFixed(1)}" cy="${(cy + Math.sin(a) * ry * d).toFixed(1)}" r="${(7 + rnd() * 5).toFixed(1)}"/>`; }).join("")).join("");
+    const ties = Array.from({length:22}, (_, i) => { const t = (i + .5) / 22, x = rail[0][0] + t * (rail[1][0] - rail[0][0]), y = rail[0][1] + t * (rail[1][1] - rail[0][1]);
+      return `<path d="M${(x - 4).toFixed(1)} ${(y + 11).toFixed(1)}L${(x + 4).toFixed(1)} ${(y - 11).toFixed(1)}"/>`; }).join("");
+    const lbl = (D.labels || []).map(l => `<text x="${l.x}" y="${l.y}" class="mp-dist">${esc(l.t)}</text>`).join("");
+    return `<rect width="1000" height="780" class="mp-s-bg"/>
+      <g class="mp-s-block">${blocks}</g>
+      <path d="M0 420H1000M0 610H1000M250 190V780M640 190V780M${home.x} ${home.y}L800 240M${home.x} ${home.y}L190 560" class="mp-s-road"/>
+      <ellipse cx="${home.x}" cy="${home.y}" rx="250" ry="165" class="mp-s-ring"/>
+      ${parks.map(([cx, cy, rx, ry]) => `<ellipse cx="${cx}" cy="${cy}" rx="${rx}" ry="${ry}" class="mp-s-park"/>`).join("")}<g class="mp-s-tree">${trees}</g>
+      <path d="${river}" class="mp-s-bank"/><path d="${river}" class="mp-s-river"/>
+      ${[[250, 140], [640, 118], [880, 118]].map(([x, y]) => `<rect x="${x - 9}" y="${y - 40}" width="18" height="80" rx="3" class="mp-s-bridge"/>`).join("")}
+      <path d="M${rail[0][0]} ${rail[0][1]}L${rail[1][0]} ${rail[1][1]}" class="mp-s-rail"/><g class="mp-s-ties">${ties}</g>
+      ${lbl}<g class="mp-rose" transform="translate(70 70)"><circle r="34"/><path d="M0 -30L7 0L0 30L-7 0Z"/><text y="-38">${D.lang === "ru" ? "С" : "N"}</text></g>`;
   }
 };
 function mapHTML(D, sec, n){
