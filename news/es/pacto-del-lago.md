@@ -1,0 +1,9 @@
+El Refugio ya no pertenece a la Federación de Repúblicas por la Libertad. Y la República Turquesa tiene un nuevo aliado.
+
+«Yo, Luis, en nombre del Refugio, renuncio a la Federación de Repúblicas por la Libertad. Desde este momento, este tratado no vale nada». Con esas palabras, el fundador del Refugio anuló el acuerdo que había firmado con el Gobierno Central. Y agregó: «Renuncio también a decidir solo. Desde hoy, en El Refugio, las cosas importantes se votan. Aunque tardemos seis horas en decidir el color de una puerta».
+
+La respuesta federal no llegó. El mayor Kessler apareció en el Cañón Negro con dos blindados y treinta hombres. Encontró el puente del foso levantado y a mil personas armadas en la muralla. La guarnición federal ya se había ido hacia el sur. Kessler esperó una noche frente a la puerta. A la mañana recibió por radio un mensaje del Consejo Federal: el informe de Radio Turquesa había llegado a la capital y el Consejo pedía explicaciones. Kessler se fue hacia el este sin disparar un tiro.
+
+Un mes después, a orillas del lago de Viktoria, las dos comunidades firmaron el Pacto del Lago. No hubo uniformes ni banderas: hubo una mesa de tablones, mate, pan del Rojo Fuego y vino de las viñas que sobrevivieron alrededor del círculo negro. El pacto declara a la República Turquesa y al Refugio comunidades libres e independientes. Establece comercio sin aranceles, médicos, maestros e ingenieros compartidos y ayuda mutua en caso de ataque. Además, ninguna de las dos firmará un tratado con una potencia extranjera sin consultar a la otra. Los doce misiles de Necrología quedarán en una mina del Cañón Negro, custodiados por gente de las dos comunidades.
+
+«Lo llamamos el Pacto del Lago porque no se nos ocurrió nada más solemne», explicó Robert. Firmaron él y Luis, a plena luz del día, frente a mil personas y con la misma birome mordida.
