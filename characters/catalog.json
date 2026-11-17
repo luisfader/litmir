@@ -730,7 +730,8 @@
     "maschera-di-venezia",
     "epicheskij-match",
     "venecianskaya-maska",
-    "el-tren-fantasma"
+    "el-tren-fantasma",
+    "amor-en-el-cosmos"
    ],
    "localizations": {
     "it": {
@@ -772,7 +773,8 @@
     "prizrachnyj-poezd",
     "anomalnyj-chas",
     "el-misterio-de-los-fader",
-    "tajna-semi-fader"
+    "tajna-semi-fader",
+    "amor-en-el-cosmos"
    ],
    "localizations": {
     "es": {
@@ -806,7 +808,8 @@
     "il-treno-fantasma",
     "prizrachnyj-poezd",
     "anomalnyj-chas",
-    "epicheskij-match"
+    "epicheskij-match",
+    "amor-en-el-cosmos"
    ],
    "localizations": {
     "es": {
@@ -1145,7 +1148,8 @@
    "novels": [
     "la-citta-triste",
     "grustnyj-gorod",
-    "epicheskij-match"
+    "epicheskij-match",
+    "amor-en-el-cosmos"
    ],
    "localizations": {
     "it": {
@@ -1174,7 +1178,8 @@
    "role": "Rebelde alegre que se une a Franco y llega a vicepresidenta de Sinea.",
    "novels": [
     "la-citta-triste",
-    "grustnyj-gorod"
+    "grustnyj-gorod",
+    "amor-en-el-cosmos"
    ],
    "localizations": {
     "it": {
@@ -1331,7 +1336,8 @@
     "la-nevicata-rosa",
     "maschera-di-venezia",
     "pokhititel-serdec",
-    "venecianskaya-maska"
+    "venecianskaya-maska",
+    "amor-en-el-cosmos"
    ],
    "localizations": {
     "it": {
@@ -2974,7 +2980,8 @@
    "role": "Luis de Olas de amor, enamorado de Natalia de Verdegrad.",
    "novels": [
     "volny-lyubvi",
-    "volny-lyubvi-krepost"
+    "volny-lyubvi-krepost",
+    "amor-en-el-cosmos"
    ],
    "localizations": {
     "ru": {
@@ -4099,7 +4106,8 @@
    "novels": [
     "volny-lyubvi",
     "volny-lyubvi-krepost",
-    "volny-lyubvi-labirint-zabveniya"
+    "volny-lyubvi-labirint-zabveniya",
+    "amor-en-el-cosmos"
    ],
    "localizations": {
     "ru": {
@@ -4123,7 +4131,8 @@
    "novels": [
     "volny-lyubvi",
     "volny-lyubvi-krepost",
-    "volny-lyubvi-labirint-zabveniya"
+    "volny-lyubvi-labirint-zabveniya",
+    "amor-en-el-cosmos"
    ],
    "localizations": {
     "ru": {
@@ -4380,7 +4389,8 @@
    ],
    "role": "Padre de Franco.",
    "novels": [
-    "grustnyj-gorod"
+    "grustnyj-gorod",
+    "amor-en-el-cosmos"
    ],
    "localizations": {
     "ru": {
@@ -4471,7 +4481,8 @@
    ],
    "role": "Alcalde que prohíbe la risa en Sinea.",
    "novels": [
-    "grustnyj-gorod"
+    "grustnyj-gorod",
+    "amor-en-el-cosmos"
    ],
    "localizations": {
     "ru": {
@@ -4782,7 +4793,8 @@
    "role": "Сорокалетняя элегантная женщина, больше двадцати лет замужем за властным полковником Фелипе. Однажды вечером в Синее, по",
    "novels": [
     "meteoritnyj-dozhd",
-    "lluvia-de-meteoritos"
+    "lluvia-de-meteoritos",
+    "amor-en-el-cosmos"
    ],
    "localizations": {
     "ru": {
@@ -4842,7 +4854,8 @@
    "role": "Смелый юноша-иностранец, который спасает Елену во время метеоритного дождя и, кажется, как-то связан с тем, что происход",
    "novels": [
     "meteoritnyj-dozhd",
-    "lluvia-de-meteoritos"
+    "lluvia-de-meteoritos",
+    "amor-en-el-cosmos"
    ],
    "localizations": {
     "ru": {
@@ -4917,7 +4930,8 @@
    ],
    "role": "Aliado de Luciano que roba del cráter una semilla cristalina que late con luz ámbar.",
    "novels": [
-    "lluvia-de-meteoritos"
+    "lluvia-de-meteoritos",
+    "amor-en-el-cosmos"
    ],
    "localizations": {
     "es": {
