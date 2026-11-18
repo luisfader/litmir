@@ -98,6 +98,10 @@ En la portada de cada idioma, encima de las novelas, hay un pequeño selector «
 
 **Toda novela que no esté terminada debe llevar `"wip": true`** en `catalog.json`. Así aparece la etiqueta «En proceso» en la tarjeta y en la ficha, y un aviso de que llegarán capítulos nuevos. Hay que revisarlo cada vez que se añade una novela o capítulos nuevos: si falta el final (o faltan capítulos intermedios), lleva `"wip": true`. Cuando el autor la termine, se quita la marca.
 
+## Brújula de la lectura («Las coordenadas del amor»)
+
+Pestaña «🧭 La brújula» en «Secciones de la novela» (`n.compass` en el catálogo; código en `games/compass/compass.js`; textos en `novels/<slug>/compass.json`). La aguja apunta a la letra del último capítulo leído (C → mapa → E → R → S → C); las palabras de las letras (Esperanza, Riqueza, Sacrificio, Corazón) se revelan solo después del capítulo indicado en `reveal`, sin spoilers. Al volver a abrirla, si se leyó algo nuevo, la aguja gira desde donde estaba («¡La aguja se movió!»); «Recorrer el viaje» repasa el camino. `n.compass` es un objeto {"<capítulo>": "nota"}: al final de esos capítulos aparece un aviso con el enlace a la brújula.
+
 ## Sección «Juegos» (`#/juegos`)
 
 Todos los juegos están reunidos en una sola sección del menú: «🎲 Juegos» / «Игры» / «Giochi» / «Games»… (`gamesHub` en `index.html`, textos en `JUEGOS_T`, estilos `.gh-*`). La página muestra:
