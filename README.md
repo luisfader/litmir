@@ -8,7 +8,7 @@ Sitio web para leer las novelas de Robert Fader. Cada idioma (RU, ES, IT, EN, FR
 
 **Nombre:** el sitio y la app se llaman **LitFader** en todos los idiomas (antes «Mundo literario» / «Литературный мир»). Los nombres internos del código (`Litmir…`, `litmir-lang`, la carpeta del repositorio) no se cambian.
 
-**Menú lateral:** a la izquierda hay un menú con todas las secciones del idioma (novelas, personajes, blog, noticias, curso, juegos, revistas, pódcasts, favoritos). En pantallas anchas queda abierto y se pliega con ☰ (se recuerda en `snav`); en el celular se despliega desde la izquierda con ☰, y en la portada las secciones se ven además como botones. Las secciones salen de `navItems()` en `index.html`: una sección nueva se añade ahí.
+**Menú lateral:** a la izquierda hay un menú con todas las secciones del idioma (novelas, personajes, blog, noticias, curso, juegos, revistas, pódcasts, favoritos). En pantallas anchas queda abierto y se pliega con ☰ (se recuerda en `snav`); en el celular se despliega desde la izquierda con ☰. Las secciones salen de `navItems()` en `index.html`: una sección nueva se añade ahí.
 
 ## Estructura
 
