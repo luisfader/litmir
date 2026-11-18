@@ -938,6 +938,7 @@ article.chapter h3{font-family:var(--sans);font-size:.72em;letter-spacing:.12em;
 .gh-card{display:flex;flex-direction:column;gap:10px;padding:18px;border:1px solid var(--line);border-radius:16px;background:var(--paper);text-decoration:none;color:var(--ink);box-shadow:var(--shadow);transition:transform .15s}
 .gh-card:hover{transform:translateY(-2px)}
 .gh-ic{font-size:30px;line-height:1}
+.gh-pic{padding-top:0;overflow:hidden}.gh-img{display:block;width:calc(100% + 36px);margin:0 -18px 2px;aspect-ratio:16/9;object-fit:cover;background:var(--line)}.gh-pic .gh-ic{display:none}
 .gh-tx b{display:block;font-family:var(--display);font-size:20px;font-weight:600;margin-bottom:4px}
 .gh-tx small{font-family:var(--sans);font-size:14px;color:var(--muted);line-height:1.45}
 .gh-go{margin-top:auto;font-family:var(--sans);font-size:14px;font-weight:600;color:var(--accent)}
@@ -3586,12 +3587,27 @@ const JUEGOS_T = {
       quiz:"Perguntas ao acaso sobre personagens, frases e enredos.", chess:"Jogue contra o computador: as peças são personagens dos romances.", quest:"Uma aventura de apontar e clicar."}
 };
 const jt = k => (JUEGOS_T[lang] || JUEGOS_T.en)[k];
+/* Juegos traídos del portal fader1234.github.io/juegos (copiados en games/portal/; páginas propias, en es/en/it/ru).
+   Se abren con ?lang= del idioma actual; su botón «volver» lleva a #/juegos. */
+const PORTAL_GAMES = [
+  {id:"ladrillos", icon:"🧱", title:{es:"Ladrillos de LitFader",en:"LitFader Bricks",it:"Mattoncini di LitFader",ru:"Кирпичики ЛитФадера"},
+   desc:{es:"Un juego muy fácil: rompe los ladrillos con la pelota y descubre a seis personajes de las novelas.",en:"A very easy game: break the bricks with the ball and reveal six characters from the novels.",it:"Un gioco facilissimo: rompi i mattoncini con la pallina e scopri sei personaggi dei romanzi.",ru:"Очень простая игра: разбивайте кирпичики мячом и открывайте шестерых героев романов."}},
+  {id:"bloques", icon:"🟨", title:{es:"Bloques de LitFader",en:"LitFader Blocks",it:"Blocchi di LitFader",ru:"Блоки ЛитФадера"},
+   desc:{es:"Encaja las piezas que caen en 5 niveles: del hombre gordo del tren fantasma hasta Natasha. Cada línea descubre al personaje.",en:"Fit the falling pieces across 5 levels: from the ghost train's fat man to Natasha. Every line reveals the character.",it:"Incastra i pezzi che cadono in 5 livelli: dall'uomo grasso del treno fantasma fino a Nataša. Ogni linea svela il personaggio.",ru:"Укладывайте падающие фигуры на 5 уровнях: от толстяка из призрачного поезда до Наташи. Каждая линия открывает героя."}},
+  {id:"ajedrez", icon:"♚", title:{es:"Ajedrez: reta a los personajes",en:"Chess: challenge the characters",it:"Scacchi: sfida i personaggi",ru:"Шахматы: вызов героям"},
+   desc:{es:"Desafía a Natalia, Roberto, Natasha y Luis, cada uno más fuerte que el anterior.",en:"Challenge Natalia, Roberto, Natasha and Luis, each stronger than the last.",it:"Sfida Natalia, Roberto, Nataša e Luis, ognuno più forte del precedente.",ru:"Сразитесь с Натальей, Роберто, Наташей и Луисом — каждый сильнее предыдущего."}},
+  {id:"escoba", icon:"🃏", title:{es:"Escoba de 15",en:"Escoba (15)",it:"Scopa a 15",ru:"Эскоба на 15"},
+   desc:{es:"El clásico juego de cartas con baraja napolitana. Suma 15 y barre la mesa contra la computadora.",en:"The classic card game with a Neapolitan deck. Make 15 and sweep the table against the computer.",it:"Il classico gioco di carte con le carte napoletane. Fai 15 e spazza il tavolo contro il computer.",ru:"Классическая карточная игра с неаполитанской колодой. Набирайте 15 и сметайте стол в игре против компьютера."}},
+  {id:"tres-en-raya", icon:"⭕", title:{es:"Tatetí",en:"Tic-tac-toe",it:"Tris",ru:"Крестики-нолики"},
+   desc:{es:"El clásico de siempre. Juega contra un amigo o contra la máquina.",en:"The timeless classic. Play against a friend or the computer.",it:"Il classico di sempre. Gioca contro un amico o contro il computer.",ru:"Вечная классика. Играйте с другом или против компьютера."}}
+];
 const novelGames = l => catalog ? catalog.novels.filter(n => n.lang === l && !n.hidden && !n.unlisted && !n.adult)
   .map(n => ({n, tabs: NOVEL_GAME_TABS.filter(k => exTabs(n).includes(k))})).filter(x => x.tabs.length) : [];
 const siteGames = l => [
   GAME_T[l] && {href:"#/game", icon:"🎲", title:GAME_T[l].title, desc:(JUEGOS_T[l] || JUEGOS_T.en).quiz},
   CHESS_BTN[l] && {href:"#/ajedrez", icon:"♞", title:CHESS_BTN[l], desc:(JUEGOS_T[l] || JUEGOS_T.en).chess},
-  QUEST_BTN[l] && {href:"#/quest", icon:"🐂", title:QUEST_BTN[l], desc:(JUEGOS_T[l] || JUEGOS_T.en).quest}
+  QUEST_BTN[l] && {href:"#/quest", icon:"🐂", title:QUEST_BTN[l], desc:(JUEGOS_T[l] || JUEGOS_T.en).quest},
+  ...PORTAL_GAMES.filter(g => g.title[l]).map(g => ({href:`games/portal/games/${g.id}/index.html?lang=${l}`, icon:g.icon, title:g.title[l], desc:g.desc[l], img:`games/portal/games/${g.id}/cover.jpg`}))
 ].filter(Boolean);
 const hasGames = l => siteGames(l).length > 0 || novelGames(l).length > 0;
 function gamesHub(){
@@ -3600,8 +3616,8 @@ function gamesHub(){
   const sg = siteGames(lang), ng = novelGames(lang);
   app.innerHTML = `<section class="hero wrap"><div class="eyebrow">${esc(t("hero"))}</div><h1>${esc(jt("title"))}</h1><p class="sub">${esc(jt("lead"))}</p><div class="ornament">✦ ✦ ✦</div></section>
   <section class="wrap gh">
-    ${sg.length ? `<h2 class="gh-h">${esc(jt("site"))}</h2><div class="gh-grid">${sg.map(g => `<a class="gh-card" href="${g.href}">
-      <span class="gh-ic" aria-hidden="true">${g.icon}</span><span class="gh-tx"><b>${esc(g.title)}</b><small>${esc(g.desc)}</small></span><span class="gh-go">${esc(jt("play"))} →</span></a>`).join("")}</div>` : ""}
+    ${sg.length ? `<h2 class="gh-h">${esc(jt("site"))}</h2><div class="gh-grid">${sg.map(g => `<a class="gh-card${g.img ? " gh-pic" : ""}" href="${g.href}">
+      ${g.img ? `<img class="gh-img" src="${esc(g.img)}" alt="" loading="lazy">` : ""}<span class="gh-ic" aria-hidden="true">${g.icon}</span><span class="gh-tx"><b>${esc(g.title)}</b><small>${esc(g.desc)}</small></span><span class="gh-go">${esc(jt("play"))} →</span></a>`).join("")}</div>` : ""}
     ${ng.length ? `<h2 class="gh-h">${esc(jt("novels"))}</h2><div class="gh-novels">${ng.map(({n, tabs}) => { const T = exT(n.lang);
       return `<div class="gh-nv">${coverHTML(n)}<div><h3><a href="#/${esc(n.slug)}">${esc(n.title)}</a></h3><div class="gh-chips">${tabs.map(k =>
         `<a class="gh-chip" href="#/${esc(n.slug)}" data-xj="${k}" data-slug="${esc(n.slug)}">${exIc(n, k)} ${esc(k === "games" && n.moto && !n.runner ? n.moto.title : exLb(n, T, k))}</a>`).join("")}</div></div></div>`; }).join("")}</div>` : ""}
