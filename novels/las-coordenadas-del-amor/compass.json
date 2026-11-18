@@ -1,0 +1,23 @@
+{
+  "title": "La brújula E·S·C·R",
+  "intro": "La brújula que Matías encontró en el barro de la selva no marca el norte. Su aguja se mueve con la historia: cada capítulo que leés la hace girar. Las letras guardan un secreto que se revela solo a quien vive el camino.",
+  "empty": "La aguja duerme. Empezá a leer el capítulo 1 y la brújula despertará.",
+  "letters": {
+    "E": {"pos": "top", "word": "Esperanza", "reveal": 5, "hint": "«La E te trajo hasta mí», dijo Nadezhda. Su nombre significa esperanza: sin ella nadie empieza a buscar."},
+    "C": {"pos": "right", "word": "Corazón", "reveal": 10, "hint": "El destino. Por eso la aguja volvía siempre a la C: los esperaba al final."},
+    "S": {"pos": "bottom", "word": "Sacrificio", "reveal": 8, "hint": "Dar algo que amas sin pedir nada a cambio."},
+    "R": {"pos": "left", "word": "Riqueza", "reveal": 7, "hint": "La tentación que todos encuentran y casi todos aceptan."}
+  },
+  "steps": [
+    {"ch": 1, "dir": "C", "text": "Gire como gire, la aguja no se mueve: apunta siempre a la C. De noche brilla levemente, como una brasa diminuta."},
+    {"ch": 2, "dir": "map", "angle": 52, "label": "el mapa", "text": "Sobre el mapa, encima del sol dibujado, la aguja deja la C por primera vez y señala un río que entra en una montaña. «La esperanza es el camino»."},
+    {"ch": 3, "dir": "E", "text": "En el claro la brújula vibra, la aguja gira como loca y se clava en la E. Junto al templo empieza a brillar con una luz dorada."},
+    {"ch": 4, "dir": "E", "text": "Del otro lado de la puerta hay nieve y silencio. La aguja no se aparta de la E."},
+    {"ch": 5, "dir": "E", "text": "Nadezhda lo explica: la brújula no señala lugares, señala etapas. Cada letra se revela solo a quien la vive."},
+    {"ch": 6, "dir": "R", "text": "Igor desaparece. La brújula vibra con violencia en la mochila y la aguja se detiene, firme, sobre la R."},
+    {"ch": 7, "dir": "S", "text": "Ante el oro, la aguja tiembla indecisa: la etapa de la R terminó. Luego gira una vez más y se posa en la S, hacia la caverna del dragón."},
+    {"ch": 8, "dir": "S", "text": "En el paso de las almas heladas la brújula brilla con fuerza. Lucía lo entiende: la S es de sacrificio."},
+    {"ch": 9, "dir": "C", "text": "Después del sacrificio, la aguja abandona la S y vuelve a la C, como quien vuelve a casa."},
+    {"ch": 10, "dir": "C", "text": "La aguja brilla como un pequeño sol. Siempre apuntó aquí, desde el primer día: la respuesta está al principio, pero solo se entiende al final."}
+  ]
+}
