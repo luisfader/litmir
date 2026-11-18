@@ -68,7 +68,10 @@ function mount(pane, opt){
     .catch(() => { pane.innerHTML = `<p class="cp-intro">—</p>`; });
 }
 
+const UI_DEF = {chapter:"Capítulo", points:"La aguja señala", letterRef:"la {k}", moved:"¡La aguja se movió!", play:"▶ Recorrer el viaje", pause:"❚❚ Pausa",
+  prev:"Anterior", next:"Siguiente", letters:"Las letras", locked:"Se revela en la lectura", diary:"El diario de la aguja", keepReading:"Seguí leyendo para que la aguja se mueva", order:["E","R","S","C"]};
 function draw(pane, opt, D){
+  const U = Object.assign({}, UI_DEF, D.ui || {});
   const isRead = opt.isRead, store = opt.store, KEY = "compass:" + opt.slug;
   const steps = D.steps, maxCh = Math.max(...steps.map(s => s.ch));
   // Último capítulo leído (los capítulos de después del final cuentan como el final)
@@ -105,15 +108,15 @@ function draw(pane, opt, D){
         <circle class="cp-hub" cx="130" cy="130" r="9"/></g></g>
     </svg></div>
     <div class="cp-card" id="cpCard"></div>
-    ${open.length ? `<div class="cp-nav"><button type="button" id="cpPrev" aria-label="Anterior">◀</button><button type="button" class="go" id="cpPlay">▶ Recorrer el viaje</button><button type="button" id="cpNext" aria-label="Siguiente">▶</button></div>` : ""}
-    <h4 class="cp-h">Las letras</h4>
-    <div class="cp-keys">${["E","R","S","C"].filter(k => D.letters[k]).map(k => revealed(k)
+    ${open.length ? `<div class="cp-nav"><button type="button" id="cpPrev" aria-label="${esc(U.prev)}">◀</button><button type="button" class="go" id="cpPlay">${esc(U.play)}</button><button type="button" id="cpNext" aria-label="${esc(U.next)}">▶</button></div>` : ""}
+    <h4 class="cp-h">${esc(U.letters)}</h4>
+    <div class="cp-keys">${U.order.filter(k => D.letters[k]).map(k => revealed(k)
       ? `<div class="cp-key"><b>${k}</b><span>${esc(D.letters[k].word)}</span><small>${esc(D.letters[k].hint)}</small></div>`
-      : `<div class="cp-key lock"><b>${k}</b><span>?</span><small>Se revela en la lectura</small></div>`).join("")}</div>
-    <h4 class="cp-h">El diario de la aguja</h4>
+      : `<div class="cp-key lock"><b>${k}</b><span>?</span><small>${esc(U.locked)}</small></div>`).join("")}</div>
+    <h4 class="cp-h">${esc(U.diary)}</h4>
     <ol class="cp-log">${steps.map((s, i) => s.ch <= reached
-      ? `<li><button type="button" data-i="${i}"><span class="b">${s.dir in D.letters ? esc(s.dir) : "✦"}</span><span class="t">Capítulo ${s.ch}<small>${esc(s.text.split(/(?<=[.!?…»])\s/)[0])}</small></span></button></li>`
-      : `<li><button type="button" class="lock" disabled><span class="b">?</span><span class="t">Capítulo ${s.ch}<small>Seguí leyendo para que la aguja se mueva</small></span></button></li>`).join("")}</ol>
+      ? `<li><button type="button" data-i="${i}"><span class="b">${s.dir in D.letters ? esc(s.dir) : "✦"}</span><span class="t">${esc(U.chapter)} ${s.ch}<small>${esc(s.text.split(/(?<=[.!?…»])\s/)[0])}</small></span></button></li>`
+      : `<li><button type="button" class="lock" disabled><span class="b">?</span><span class="t">${esc(U.chapter)} ${s.ch}<small>${esc(U.keepReading)}</small></span></button></li>`).join("")}</ol>
   </div>`;
 
   const needle = pane.querySelector(".cp-needle"), card = pane.querySelector("#cpCard");
@@ -127,8 +130,8 @@ function draw(pane, opt, D){
     cur = i; const s = open[i];
     pane.querySelectorAll(".cp-let").forEach(t => t.classList.toggle("now", t.dataset.l === s.dir));
     pane.querySelectorAll(".cp-log [data-i]").forEach(b => b.classList.toggle("cur", +b.dataset.i === i));
-    const where = s.dir in D.letters ? (revealed(s.dir) ? `${s.dir} · ${D.letters[s.dir].word}` : `la ${s.dir}`) : (s.label || "");
-    card.innerHTML = `${fresh ? `<div class="cp-new">¡La aguja se movió!</div>` : ""}<div class="cp-k">Capítulo ${s.ch} · La aguja señala ${esc(where)}</div><p>${esc(s.text)}</p>`;
+    const where = s.dir in D.letters ? (revealed(s.dir) ? `${s.dir} · ${D.letters[s.dir].word}` : U.letterRef.replace("{k}", s.dir)) : (s.label || "");
+    card.innerHTML = `${fresh ? `<div class="cp-new">${esc(U.moved)}</div>` : ""}<div class="cp-k">${esc(U.chapter)} ${s.ch} · ${esc(U.points)} ${esc(where)}</div><p>${esc(s.text)}</p>`;
     turn(angleOf(s), spin);
     const p = pane.querySelector("#cpPrev"), n = pane.querySelector("#cpNext");
     if (p) p.disabled = i <= 0; if (n) n.disabled = i >= open.length - 1;
@@ -143,14 +146,14 @@ function draw(pane, opt, D){
   } else if (before < 0) setTimeout(() => show(last, true, seen === 0 && reached > 0 && open.length > 0), 200);
   else { rot = angleOf(open[last]); needle.style.transition = "none"; show(last, false, false); void needle.offsetWidth; needle.style.transition = ""; }
 
-  const stop = () => { if (timer) { clearInterval(timer); timer = null; const b = pane.querySelector("#cpPlay"); if (b) b.textContent = "▶ Recorrer el viaje"; } };
+  const stop = () => { if (timer) { clearInterval(timer); timer = null; const b = pane.querySelector("#cpPlay"); if (b) b.textContent = U.play; } };
   pane.querySelectorAll(".cp-log [data-i]").forEach(b => b.onclick = () => { stop(); show(+b.dataset.i, false, false); });
   const prev = pane.querySelector("#cpPrev"), next = pane.querySelector("#cpNext"), play = pane.querySelector("#cpPlay");
   if (prev) prev.onclick = () => { stop(); if (cur > 0) show(cur - 1, false, false); };
   if (next) next.onclick = () => { stop(); if (cur < open.length - 1) show(cur + 1, false, false); };
   if (play) play.onclick = () => {
     if (timer) return stop();
-    play.textContent = "❚❚ Pausa"; show(0, true, false); let i = 0;
+    play.textContent = U.pause; show(0, true, false); let i = 0;
     timer = setInterval(() => { if (!pane.isConnected) return stop(); if (++i >= open.length) return stop(); show(i, false, false); }, 3200);
   };
 }

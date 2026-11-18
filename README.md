@@ -102,6 +102,8 @@ En la portada de cada idioma, encima de las novelas, hay un pequeño selector «
 
 Pestaña «🧭 La brújula» en «Secciones de la novela» (`n.compass` en el catálogo; código en `games/compass/compass.js`; textos en `novels/<slug>/compass.json`). La aguja apunta a la letra del último capítulo leído (C → mapa → E → R → S → C); las palabras de las letras (Esperanza, Riqueza, Sacrificio, Corazón) se revelan solo después del capítulo indicado en `reveal`, sin spoilers. Al volver a abrirla, si se leyó algo nuevo, la aguja gira desde donde estaba («¡La aguja se movió!»); «Recorrer el viaje» repasa el camino. `n.compass` es un objeto {"<capítulo>": "nota"}: al final de esos capítulos aparece un aviso con el enlace a la brújula.
 
+La versión rusa, **«Координаты любви»** (`novels/koordinaty-lyubvi/`), no es una traducción sino una variación: un lugar sin nombre de la taiga siberiana, pirámides escondidas bajo las colinas, los simargly (lobos alados que primero roban y luego se dejan montar), el Gran Polóz, dueño del oro, y una brújula con las letras С·Н·Ж·Б (Сердце, Надежда, Жертва, Богатство). Tiene su propia brújula (`compass.json` con `ui` en ruso; `compass.js` toma los textos de ahí). La portada es tipográfica (dibujada en HTML).
+
 ## Sección «Juegos» (`#/juegos`)
 
 Todos los juegos están reunidos en una sola sección del menú: «🎲 Juegos» / «Игры» / «Giochi» / «Games»… (`gamesHub` en `index.html`, textos en `JUEGOS_T`, estilos `.gh-*`). La página muestra:
