@@ -6,7 +6,7 @@ Sitio web para leer las novelas de Robert Fader. Cada idioma (RU, ES, IT, EN, FR
 
 **Las novelas en ruso están en este sitio** (sección RU), igual que las de los demás idiomas. Antes de dar por hecho dónde está una novela, mirar `novels/catalog.json`.
 
-**Nombre:** el sitio y la app se llaman **LitFader** en todos los idiomas (antes «Mundo literario» / «Литературный мир»). Los nombres internos del código (`Litmir…`, `litmir-lang`, la carpeta del repositorio) no se cambian.
+**Nombre:** el sitio y la app se llaman **LitFader** en todos los idiomas, salvo en ruso, donde se escribe en cirílico: **ЛитФадер** (antes «Mundo literario» / «Литературный мир»). Los nombres internos del código (`Litmir…`, `litmir-lang`, la carpeta del repositorio) no se cambian.
 
 **Menú lateral:** a la izquierda hay un menú con todas las secciones del idioma (novelas, personajes, blog, noticias, curso, juegos, revistas, pódcasts, favoritos). En pantallas anchas queda abierto y se pliega con ☰ (se recuerda en `snav`); en el celular se despliega desde la izquierda con ☰. Las secciones salen de `navItems()` en `index.html`: una sección nueva se añade ahí.
 
