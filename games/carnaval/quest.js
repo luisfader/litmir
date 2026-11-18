@@ -1007,7 +1007,7 @@ function mount(el, lang, opts = {}){
   L = lang === "ru" ? "ru" : "es";
   run++;
   el.innerHTML = `<div class="cq"><div class="cq-wrap">
-    <div class="cq-top"><a href="#/">← ${esc(opts.back || T("Volver a las novelas","К романам"))}</a><div class="cq-ch"></div>
+    <div class="cq-top"><a href="${esc(opts.backHref || "#/")}">← ${esc(opts.back || T("Volver a las novelas","К романам"))}</a><div class="cq-ch"></div>
       <button class="cq-tb" data-a="spots" aria-pressed="false">🔍 ${T("Zonas","Зоны")}</button><button class="cq-tb" data-a="hint">💡 ${T("Pista","Подсказка")}</button><button class="cq-tb" data-a="menu">☰ ${T("Inicio","Меню")}</button></div>
     <div class="cq-screen"><div class="cq-stage"><div class="cq-bg"></div><div class="cq-fx"></div><div class="cq-spr"></div><div class="cq-spots"></div><div class="cq-ov"></div></div><div class="cq-dlg idle"></div></div>
     <div class="cq-inv"></div>

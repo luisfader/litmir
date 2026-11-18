@@ -932,6 +932,21 @@ article.chapter h3{font-family:var(--sans);font-size:.72em;letter-spacing:.12em;
 
 /* Menú lateral */
 .brandbox{display:flex;align-items:center;gap:4px;flex:none}
+.gh{max-width:900px;margin:0 auto 60px}
+.gh-h{font:600 12px var(--sans);text-transform:uppercase;letter-spacing:.14em;color:var(--muted);margin:34px 0 14px}
+.gh-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+.gh-card{display:flex;flex-direction:column;gap:10px;padding:18px;border:1px solid var(--line);border-radius:16px;background:var(--paper);text-decoration:none;color:var(--ink);box-shadow:var(--shadow);transition:transform .15s}
+.gh-card:hover{transform:translateY(-2px)}
+.gh-ic{font-size:30px;line-height:1}
+.gh-tx b{display:block;font-family:var(--display);font-size:20px;font-weight:600;margin-bottom:4px}
+.gh-tx small{font-family:var(--sans);font-size:14px;color:var(--muted);line-height:1.45}
+.gh-go{margin-top:auto;font-family:var(--sans);font-size:14px;font-weight:600;color:var(--accent)}
+.gh-novels{display:flex;flex-direction:column;gap:12px}
+.gh-nv{display:flex;gap:14px;align-items:flex-start;padding:14px;border:1px solid var(--line);border-radius:14px;background:var(--paper)}
+.gh-nv .cover{width:62px;flex:none;margin:0}.gh-nv .cover img{width:100%;border-radius:6px}
+.gh-nv h3{margin:2px 0 10px;font-family:var(--display);font-size:19px}.gh-nv h3 a{color:var(--ink);text-decoration:none}
+.gh-chips{display:flex;flex-wrap:wrap;gap:8px}
+.gh-chip{font-family:var(--sans);font-size:13.5px;padding:7px 12px;border-radius:999px;background:var(--accent-soft);color:var(--accent);text-decoration:none}
 .snav-toggle{border:0;background:none;font-size:21px;line-height:1;cursor:pointer;padding:7px 9px;border-radius:9px;color:var(--ink);flex:none}
 .snav-toggle:hover,.snav-toggle[aria-expanded="true"]{background:var(--accent-soft);color:var(--accent)}
 .snav{position:fixed;top:61px;left:0;bottom:0;width:240px;z-index:9;background:var(--paper);border-right:1px solid var(--line);overflow-y:auto;padding:16px 10px 90px;font-family:var(--sans);transform:translateX(-100%);visibility:hidden;transition:transform .22s ease,visibility .22s}
@@ -1412,7 +1427,7 @@ function renderChrome(){
 document.getElementById("langs").addEventListener("click", e => {
   const l = e.target.dataset && e.target.dataset.l; if (!l) return;
   setLang(l);
-  const home = location.hash.startsWith("#/magazine") && MAGAZINES[l] ? "#/magazine" : location.hash.startsWith("#/podcast") && PODCASTS[l] ? "#/podcast" : location.hash.startsWith("#/quest") && QUEST_BTN[l] ? "#/quest" : location.hash.startsWith("#/ajedrez") && CHESS_BTN[l] ? "#/ajedrez" : location.hash.startsWith("#/blog") ? "#/blog" : location.hash.startsWith("#/news") && newsPaper(l) ? "#/news" : location.hash.startsWith("#/learn") && learnCat && learnCat.courses.some(c => c.lang === l) ? "#/learn" : "#/";
+  const home = location.hash.startsWith("#/magazine") && MAGAZINES[l] ? "#/magazine" : location.hash.startsWith("#/podcast") && PODCASTS[l] ? "#/podcast" : GAME_SECS.has(location.hash.replace(/^#\/?/, "").split("/")[0]) && hasGames(l) ? "#/juegos" : location.hash.startsWith("#/blog") ? "#/blog" : location.hash.startsWith("#/news") && newsPaper(l) ? "#/news" : location.hash.startsWith("#/learn") && learnCat && learnCat.courses.some(c => c.lang === l) ? "#/learn" : "#/";
   if (location.hash && location.hash !== home) location.hash = home; else route();
 });
 
@@ -1591,9 +1606,7 @@ function navItems(){
   const it = [["#/", "📚", st(0), ""], ["characters.html?lang=" + encodeURIComponent(lang), "✧", CHAR_LABELS[lang] || "Characters", "characters"], ["#/blog", "✎", bt("title"), "blog"]];
   if (newsPaper(lang)) it.push(["#/news", "📰", nt("btn"), "news"]);
   if (course()) it.push(["#/learn", "🎓", course().title[lang], "learn"]);
-  if (GAME_T[lang]) it.push(["#/game", "🎲", GAME_T[lang].btn, "game"]);
-  if (CHESS_BTN[lang]) it.push(["#/ajedrez", "♞", CHESS_BTN[lang], "ajedrez"]);
-  if (QUEST_BTN[lang]) it.push(["#/quest", "🐂", QUEST_BTN[lang], "quest"]);
+  if (hasGames(lang)) it.push(["#/juegos", "🎲", jt("btn"), "juegos"]);
   if (MAGAZINES[lang]) it.push(["#/magazine", "📖", MAGAZINES[lang].btn, "magazine"]);
   if (PODCASTS[lang]) it.push(["#/podcast", "🎙", PODCASTS[lang].btn, "podcast"]);
   it.push(["#/mis-lecturas", "★", ft(0) + " · " + rt(1), "mis-lecturas"]);
@@ -1604,8 +1617,8 @@ function navOpen(v){ document.body.classList.toggle("snav-open", !!v); const b =
 function renderSiteNav(){
   const box = document.getElementById("siteNav"); if (!box || !catalog) return;
   const sec = location.hash.replace(/^#\/?/, "").split("/")[0];
-  const known = new Set(["blog","news","learn","game","ajedrez","quest","magazine","podcast","mis-lecturas"]);
-  const cur = known.has(sec) ? sec : "";
+  const known = new Set(["blog","news","learn","juegos","magazine","podcast","mis-lecturas"]);
+  const cur = GAME_SECS.has(sec) ? "juegos" : known.has(sec) ? sec : "";
   box.innerHTML = `<h2>${esc(st(1))}</h2>` + navItems().map(([h, i, l, k]) =>
     `<a href="${esc(h)}"${k === cur ? ' aria-current="page"' : ""}><span class="i">${i}</span><span>${esc(l)}</span></a>`).join("");
   document.getElementById("snavBtn").setAttribute("aria-label", st(1));
@@ -2118,7 +2131,7 @@ const exSec = (n, k) => /^sec\d+$/.test(k) ? (n.sections || [])[+k.slice(3)] : n
 const exIc = (n, k) => { const s = exSec(n, k); return s ? (s.icon || "✦") : k === "quiz" && n.quizIcon ? n.quizIcon : k === "clip" && n.clip ? (n.clip.icon || "🎵") : EX_IC[k]; };
 const exLb = (n, T, k) => { const s = exSec(n, k); return s ? s.title : k === "quiz" && n.quizTitle ? n.quizTitle : k === "clip" && n.clip ? n.clip.title : T[k]; };
 const EX_IC = {music:"♫", games:"🎮", gallery:"▦", riddles:"?", who:"💬", notebook:"📓", quiz:"🕵", why:"🍇", queen:"👑", fox:"🦊", map:"🗺", diary:"✒", mendoza:"📍", belgrade:"🌙", cube:"🧊"};
-let exReturn = null;
+let exReturn = null, exJump = null;
 function exTabs(n){ const t = []; if (n.soundtrack && n.soundtrack.length) t.push("music"); if (n.clip) t.push("clip"); (n.sections || []).forEach((x, i) => t.push("sec" + i)); if (n.runner || n.fight || n.moto) t.push("games"); if (n.riddles) t.push("riddles"); if (n.whoSaid) t.push("who"); if (n.notebook) t.push("notebook"); if (n.quiz) t.push("quiz"); if (n.why) t.push("why"); if (n.queen) t.push("queen"); if (n.fox) t.push("fox"); if (n.moscowMap) t.push("map"); if (n.diary) t.push("diary"); if (n.mendozaMap) t.push("mendoza"); if (n.belgradeMap) t.push("belgrade"); if (n.cube) t.push("cube"); if (n.gallery) t.push("gallery"); return t; }
 function extrasHTML(n){
   const tabs = exTabs(n); if (!tabs.length) return "";
@@ -2145,6 +2158,7 @@ function setupExtras(n){
   opener.onclick = () => open(body.hidden);
   box.querySelectorAll("[data-ex]").forEach(b => b.onclick = () => show(b.dataset.ex));
   if (exReturn === n.slug) { exReturn = null; open(true, "games"); setTimeout(() => box.scrollIntoView({block:"start"}), 50); }
+  else if (exJump && exJump.slug === n.slug) { const k = exJump.k; exJump = null; if (tabs.includes(k)) { open(true, k); setTimeout(() => box.scrollIntoView({block:"start"}), 50); } }
 }
 function exMusic(n, pane, T){
   const S = stText(n.lang), cur = music.novel === n || (music.novel && music.novel.slug === n.slug);
@@ -3179,7 +3193,7 @@ function questPage(){
   const ql = QUEST_BTN[lang] ? lang : "es";
   document.title = (ql === "ru" ? "Квест: Карнавал раздора" : "Quest: El carnaval de la discordia") + " — " + t("hero");
   window.scrollTo(0, 0);
-  const go = () => { if (location.hash.startsWith("#/quest")) window.CarnavalQuest.mount(app, ql, {back: t("back")}); };
+  const go = () => { if (location.hash.startsWith("#/quest")) window.CarnavalQuest.mount(app, ql, {back: jt("back"), backHref: "#/juegos"}); };
   if (window.CarnavalQuest) return go();
   app.innerHTML = `<div class="empty">…</div>`;
   if (!document.getElementById("cqCss")) { const c = document.createElement("link"); c.id = "cqCss"; c.rel = "stylesheet"; c.href = "games/carnaval/quest.css"; document.head.appendChild(c); }
@@ -3265,7 +3279,7 @@ const chessPage = (function(){
   async function page(){
     T = UI[lang] || UI.en; nameLang = UI[lang] ? lang : "en";
     document.title = T.title + " — " + t("author");
-    app.innerHTML = `<div class="reader-bar"><div class="wrap"><a class="crumb" href="#/">${esc(t("back"))}</a></div></div><div class="wrap cz"><div class="empty">…</div></div>`;
+    app.innerHTML = `<div class="reader-bar"><div class="wrap"><a class="crumb" href="#/juegos">${esc(jt("back"))}</a></div></div><div class="wrap cz"><div class="empty">…</div></div>`;
     try {
       await loadEngine(); C = window.Chess; startWorker();
       if (!ARMIES) ARMIES = (await (await fetch("games/chess.json", {cache: "no-cache"})).json()).armies;
@@ -3550,6 +3564,51 @@ const chessPage = (function(){
   return page;
 })();
 
+/* Sección «Juegos» (#/juegos): reúne en un solo lugar todos los juegos del idioma —
+   el juego de preguntas (#/game), el ajedrez (#/ajedrez), el quest (#/quest) y los minijuegos
+   que viven dentro de cada novela (se abren en la pestaña correspondiente de «Secciones de la novela»). */
+const GAME_SECS = new Set(["juegos", "game", "ajedrez", "quest"]);
+const NOVEL_GAME_TABS = ["games", "riddles", "who", "quiz", "fox", "cube"];
+const JUEGOS_T = {
+  es:{btn:"Juegos", title:"Juegos", lead:"Todos los juegos de LitFader en un solo lugar: preguntas sobre las novelas, ajedrez con sus personajes, el quest y los minijuegos de cada novela.", site:"Para jugar ahora", novels:"Juegos dentro de las novelas", back:"Todos los juegos", play:"Jugar",
+      quiz:"10 preguntas al azar sobre personajes, frases y tramas. Cada partida es distinta.", chess:"Juega contra la computadora: las piezas son personajes de las novelas.", quest:"Aventura de apuntar y hacer clic: explora el carnaval, reúne objetos y resuelve el misterio."},
+  ru:{btn:"Игры", title:"Игры", lead:"Все игры ЛитФадера в одном месте: вопросы по романам, шахматы с героями, квест и мини-игры внутри романов.", site:"Сыграть прямо сейчас", novels:"Игры внутри романов", back:"Все игры", play:"Играть",
+      quiz:"10 случайных вопросов о героях, цитатах и сюжетах. Каждая игра — новая.", chess:"Партия с компьютером: фигуры — персонажи романов.", quest:"Приключенческий квест: исследуйте карнавал, собирайте предметы и разгадайте тайну."},
+  it:{btn:"Giochi", title:"Giochi", lead:"Tutti i giochi di LitFader in un solo posto: domande sui romanzi, scacchi con i personaggi e i minigiochi dentro i romanzi.", site:"Da giocare subito", novels:"Giochi dentro i romanzi", back:"Tutti i giochi", play:"Gioca",
+      quiz:"10 domande a caso su personaggi, frasi e trame. Ogni partita è diversa.", chess:"Gioca contro il computer: i pezzi sono i personaggi dei romanzi.", quest:"Un’avventura punta e clicca: esplora il carnevale, raccogli oggetti e risolvi il mistero."},
+  en:{btn:"Games", title:"Games", lead:"All of LitFader’s games in one place: questions about the novels, chess with their characters and the mini-games inside each novel.", site:"Play now", novels:"Games inside the novels", back:"All games", play:"Play",
+      quiz:"10 random questions about characters, quotes and plots. Every round is different.", chess:"Play the computer: the pieces are characters from the novels.", quest:"A point-and-click adventure: explore the carnival, collect items and solve the mystery."},
+  de:{btn:"Spiele", title:"Spiele", lead:"Alle Spiele von LitFader an einem Ort.", site:"Jetzt spielen", novels:"Spiele in den Romanen", back:"Alle Spiele", play:"Spielen",
+      quiz:"Zufällige Fragen zu Figuren, Zitaten und Handlungen.", chess:"Spiel gegen den Computer: Die Figuren sind Romanfiguren.", quest:"Ein Point-and-Click-Abenteuer."},
+  fr:{btn:"Jeux", title:"Jeux", lead:"Tous les jeux de LitFader au même endroit.", site:"Jouer maintenant", novels:"Jeux dans les romans", back:"Tous les jeux", play:"Jouer",
+      quiz:"Des questions au hasard sur les personnages, les citations et les intrigues.", chess:"Jouez contre l’ordinateur : les pièces sont des personnages des romans.", quest:"Une aventure en pointer-cliquer."},
+  pt:{btn:"Jogos", title:"Jogos", lead:"Todos os jogos do LitFader num só lugar.", site:"Jogar agora", novels:"Jogos dentro dos romances", back:"Todos os jogos", play:"Jogar",
+      quiz:"Perguntas ao acaso sobre personagens, frases e enredos.", chess:"Jogue contra o computador: as peças são personagens dos romances.", quest:"Uma aventura de apontar e clicar."}
+};
+const jt = k => (JUEGOS_T[lang] || JUEGOS_T.en)[k];
+const novelGames = l => catalog ? catalog.novels.filter(n => n.lang === l && !n.hidden && !n.unlisted && !n.adult)
+  .map(n => ({n, tabs: NOVEL_GAME_TABS.filter(k => exTabs(n).includes(k))})).filter(x => x.tabs.length) : [];
+const siteGames = l => [
+  GAME_T[l] && {href:"#/game", icon:"🎲", title:GAME_T[l].title, desc:(JUEGOS_T[l] || JUEGOS_T.en).quiz},
+  CHESS_BTN[l] && {href:"#/ajedrez", icon:"♞", title:CHESS_BTN[l], desc:(JUEGOS_T[l] || JUEGOS_T.en).chess},
+  QUEST_BTN[l] && {href:"#/quest", icon:"🐂", title:QUEST_BTN[l], desc:(JUEGOS_T[l] || JUEGOS_T.en).quest}
+].filter(Boolean);
+const hasGames = l => siteGames(l).length > 0 || novelGames(l).length > 0;
+function gamesHub(){
+  if (!hasGames(lang)) return home();
+  document.title = jt("title") + " — " + t("hero");
+  const sg = siteGames(lang), ng = novelGames(lang);
+  app.innerHTML = `<section class="hero wrap"><div class="eyebrow">${esc(t("hero"))}</div><h1>${esc(jt("title"))}</h1><p class="sub">${esc(jt("lead"))}</p><div class="ornament">✦ ✦ ✦</div></section>
+  <section class="wrap gh">
+    ${sg.length ? `<h2 class="gh-h">${esc(jt("site"))}</h2><div class="gh-grid">${sg.map(g => `<a class="gh-card" href="${g.href}">
+      <span class="gh-ic" aria-hidden="true">${g.icon}</span><span class="gh-tx"><b>${esc(g.title)}</b><small>${esc(g.desc)}</small></span><span class="gh-go">${esc(jt("play"))} →</span></a>`).join("")}</div>` : ""}
+    ${ng.length ? `<h2 class="gh-h">${esc(jt("novels"))}</h2><div class="gh-novels">${ng.map(({n, tabs}) => { const T = exT(n.lang);
+      return `<div class="gh-nv">${coverHTML(n)}<div><h3><a href="#/${esc(n.slug)}">${esc(n.title)}</a></h3><div class="gh-chips">${tabs.map(k =>
+        `<a class="gh-chip" href="#/${esc(n.slug)}" data-xj="${k}" data-slug="${esc(n.slug)}">${exIc(n, k)} ${esc(k === "games" && n.moto && !n.runner ? n.moto.title : exLb(n, T, k))}</a>`).join("")}</div></div></div>`; }).join("")}</div>` : ""}
+  </section>`;
+  app.querySelectorAll("[data-xj]").forEach(a => a.addEventListener("click", () => { exJump = {slug: a.dataset.slug, k: a.dataset.xj}; }));
+  window.scrollTo(0, 0);
+}
 /* Novels game: #/game — 10 random questions about the novels of the current language */
 const GAME_T = {
   es:{btn:"Juego: ¿cuánto sabes de las novelas?", title:"¿Cuánto sabes de las novelas?", sub:"10 preguntas al azar: personajes, frases y tramas. Cada partida es distinta.", kicker:"Juego", back:"Todas las novelas",
@@ -3577,7 +3636,7 @@ async function game(){
              hero: P.covers && P.covers.length ? shuffle(P.covers)[0] : undefined, ui:G.ui, exercises: shuffle(pick).map(q => ({...q})) };
   };
   return lesson({slug:"game-" + lang, title:G.title}, 0, {file:"", title:G.title, label:G.kicker},
-                {data:round, back:"#/", backTitle:G.back, key:"game-" + lang, base:""});
+                {data:round, back:"#/juegos", backTitle:jt("back"), key:"game-" + lang, base:""});
 }
 
 /* Soundtrack: voluntary playback; persists between chapters of the same novel. */
@@ -3787,6 +3846,7 @@ function route(){
   if (parts[0] === "magazine") { setSoundtrack(null); return magazinePage(); }
   if (parts[0] === "podcast") { setSoundtrack(null); return podcastPage(); }
   if (parts[0] === "mis-lecturas") { setSoundtrack(null); return myReading(); }
+  if (parts[0] === "juegos") { setSoundtrack(null); return gamesHub(); }
   if (parts[0] === "game") { setSoundtrack(null); return game(); }
   if (parts[0] === "ajedrez") { setSoundtrack(null); return chessPage(); }
   if (parts[0] === "quest") { setSoundtrack(null); return questPage(); }
