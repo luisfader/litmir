@@ -98,6 +98,15 @@ En la portada de cada idioma, encima de las novelas, hay un pequeño selector «
 
 **Toda novela que no esté terminada debe llevar `"wip": true`** en `catalog.json`. Así aparece la etiqueta «En proceso» en la tarjeta y en la ficha, y un aviso de que llegarán capítulos nuevos. Hay que revisarlo cada vez que se añade una novela o capítulos nuevos: si falta el final (o faltan capítulos intermedios), lleva `"wip": true`. Cuando el autor la termine, se quita la marca.
 
+## Sección «Juegos» (`#/juegos`)
+
+Todos los juegos están reunidos en una sola sección del menú: «🎲 Juegos» / «Игры» / «Giochi» / «Games»… (`gamesHub` en `index.html`, textos en `JUEGOS_T`, estilos `.gh-*`). La página muestra:
+
+- **Juegos del sitio:** el juego de preguntas (`#/game`), el ajedrez (`#/ajedrez`) y el quest (`#/quest`), solo los que existen en el idioma.
+- **Juegos dentro de las novelas:** las novelas del idioma con minijuegos (pestañas `games`, `riddles`, `who`, `quiz`, `fox`, `cube` de «Secciones de la novela»; lista en `NOVEL_GAME_TABS`). Cada botón abre la novela con esa pestaña ya abierta.
+
+En el menú lateral ya no hay entradas sueltas para cada juego; los botones «volver» de los juegos llevan a «Todos los juegos». Un juego nuevo se añade en `siteGames` (si es del sitio) o en `NOVEL_GAME_TABS` (si vive dentro de una novela).
+
 ## Juego de las novelas
 
 En las secciones ES, RU, IT y EN hay un juego (`#/game`, botón «🎲» en la portada): partidas de 10 preguntas al azar, con corazones, XP, rachas y récord. Mezcla cuatro tipos de preguntas:
