@@ -1,6 +1,6 @@
 /* LitFader — service worker.
    Red primero: siempre se pide el texto más nuevo; si no hay conexión, se usa lo ya visitado. */
-const CACHE = "litmir-v6";
+const CACHE = "litmir-v7";
 const SHELL = ["./", "index.html", "characters.html", "manifest.webmanifest", "app/icon-192.png", "app/icon-512.png"];
 
 self.addEventListener("install", e => {

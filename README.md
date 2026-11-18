@@ -105,6 +105,8 @@ Todos los juegos están reunidos en una sola sección del menú: «🎲 Juegos»
 - **Juegos del sitio:** el juego de preguntas (`#/game`), el ajedrez (`#/ajedrez`) y el quest (`#/quest`), solo los que existen en el idioma.
 - **Juegos dentro de las novelas:** las novelas del idioma con minijuegos (pestañas `games`, `riddles`, `who`, `quiz`, `fox`, `cube` de «Secciones de la novela»; lista en `NOVEL_GAME_TABS`). Cada botón abre la novela con esa pestaña ya abierta.
 
+**Juegos del portal** (copiados de `fader1234/juegos`, commit 28716c6) en `games/portal/`: Ladrillos, Bloques, Ajedrez «reta a los personajes», Escoba de 15 y Tatetí. Son páginas propias en es/en/it/ru (`games/portal/games/<id>/index.html`, textos en su `strings.js`, idiomas en `games/portal/js/i18n.js`); se abren con `?lang=` del idioma actual y su botón «← Juegos» vuelve a `#/juegos`. Se registran en `PORTAL_GAMES` de `index.html`.
+
 En el menú lateral ya no hay entradas sueltas para cada juego; los botones «volver» de los juegos llevan a «Todos los juegos». Un juego nuevo se añade en `siteGames` (si es del sitio) o en `NOVEL_GAME_TABS` (si vive dentro de una novela).
 
 ## Juego de las novelas
