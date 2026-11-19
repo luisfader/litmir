@@ -1216,7 +1216,7 @@ function renderText(md){
     if (/^:::\s*gallery\s*\n/i.test(b)) { const items = b.split("\n").slice(1).map(r => r.trim().match(/^!\[([^\]]*)\]\(([^)\s]+)\)$/)).filter(Boolean);
       return `<div class="gallery">${items.map(x => `<figure><a href="${esc(x[2])}" target="_blank" rel="noopener"><img src="${esc(x[2])}" alt="${esc(x[1])}" loading="lazy"></a>${x[1] ? `<figcaption>${inline(x[1])}</figcaption>` : ""}</figure>`).join("")}</div>`; }
     const au = b.match(/^!audio\[([^\]]*)\]\(([^)\s]+)\)$/);
-    if (au) return `<figure class="audio"><audio controls preload="none" src="${esc(au[2])}"></audio>${au[1] ? `<figcaption>${inline(au[1])}</figcaption>` : ""}</figure>`;
+    if (au) return `<figure class="audio"><audio controls preload="none" src="${esc(audioUrl(au[2]))}"></audio>${au[1] ? `<figcaption>${inline(au[1])}</figcaption>` : ""}</figure>`;
     let m = b.match(/^!\[([^\]]*)\]\(([^)\s]+)\)$/);
     if (m) return m[1] === "m" ? `<figure class="mid"><img src="${esc(m[2])}" alt="" loading="lazy"></figure>` : `<figure><img src="${esc(m[2])}" alt="${esc(m[1])}" loading="lazy"></figure>`;
     if (/^##\s/.test(b)) return "<h2>" + inline(b.replace(/^#+\s*/,"")) + "</h2>";
@@ -1708,6 +1708,10 @@ function magazinePage(){
     </article>`).join("")}</div></section>`;
   toTop();
 }
+/* Todo el audio (podcasts, bandas sonoras y audios de capítulos) vive en el repositorio luisfader/podcasts,
+   publicado en AUDIO_BASE, con las mismas rutas que tenía acá (novels/…/music/…, podcasts/…). */
+const AUDIO_BASE = "https://luisfader.github.io/podcasts/";
+function audioUrl(p){ return /^(https?:|blob:|data:)/.test(p) ? p : AUDIO_BASE + String(p).replace(/^\.?\//, ""); }
 /* Pódcasts: página #/podcast por idioma. Cada audio va en podcasts/ y se registra aquí (el más nuevo primero). */
 const PODCASTS = {
   ru: {btn: "Подкасты", title: "Подкасты", sub: "«Страницы в эфире»: романы Роберта Фадера, рассказанные вслух. Слушайте онлайн или скачайте в MP3.", dl: "Скачать MP3", read: "Читать роман", items: [
@@ -1748,8 +1752,8 @@ function podcastPage(){
         <h3>${esc(m.name)}</h3>
         ${m.desc ? `<p>${esc(m.desc)}</p>` : ""}
         ${m.credit ? `<p><small>${esc(m.credit)}</small></p>` : ""}
-        <audio class="pod-audio" controls preload="none" src="${esc(m.file)}"></audio>
-        <div class="mag-btns"><a class="mag-btn" href="#/${esc(m.novel)}">${esc(P.read)}</a><a class="mag-btn ghost" href="${esc(m.file)}" download>⬇ ${esc(P.dl)}</a></div>
+        <audio class="pod-audio" controls preload="none" src="${esc(audioUrl(m.file))}"></audio>
+        <div class="mag-btns"><a class="mag-btn" href="#/${esc(m.novel)}">${esc(P.read)}</a><a class="mag-btn ghost" href="${esc(audioUrl(m.file))}" download>⬇ ${esc(P.dl)}</a></div>
       </div>
     </article>`).join("")}</div></section>`;
   toTop();
@@ -3689,7 +3693,7 @@ music.el.volume = store.get("vol", 0.5);
 const mStatus = document.getElementById("mStatus");
 const mSelect = document.getElementById("mTrackSelect");
 function mTrack(){ return music.novel.soundtrack[music.i]; }
-function mSrc(){ return "novels/" + music.novel.slug + "/" + mTrack().file; }
+function mSrc(){ return new URL("novels/" + music.novel.slug + "/" + mTrack().file, AUDIO_BASE).href; }
 function mLoad(){
   const tk = mTrack();
   if (tk.parts) music.el.removeAttribute("src");
@@ -3715,7 +3719,7 @@ async function mPlay(){
         mStatus.textContent = stText(novel.lang).loading;
         const audioParts = await Promise.all(Array.from({length:tk.parts}, async (_,i)=>{
           const path = "novels/" + novel.slug + "/" + tk.folder + "/" + String(i).padStart(3,"0") + ".part";
-          const res = await fetch(path);
+          const res = await fetch(audioUrl(path));
           if (!res.ok) throw new Error("Missing audio part " + i);
           return res.arrayBuffer();
         }));
