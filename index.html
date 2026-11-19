@@ -763,6 +763,16 @@ article.chapter h3{font-family:var(--sans);font-size:.72em;letter-spacing:.12em;
 .ex-ic .ex-i-compass{background:linear-gradient(135deg,#e3b65a,#8a5a1c)}.ex-ic .ex-i-music{background:linear-gradient(135deg,#9b6bd6,#6a3fb0)}.ex-ic .ex-i-games{background:linear-gradient(135deg,#f6a53a,#e0632a)}.ex-ic .ex-i-gallery{background:linear-gradient(135deg,#3fb6a8,#2a7f9e)}.ex-ic .ex-i-riddles{background:linear-gradient(135deg,#e9637a,#b8325a);font-weight:800}.ex-ic .ex-i-notebook{background:linear-gradient(135deg,#7a5238,#3a2418)}.ex-ic .ex-i-who{background:linear-gradient(135deg,#e86a5c,#3fbfb0)}.ex-ic .ex-i-quiz{background:linear-gradient(135deg,#4a5568,#1a202c)}.ex-ic .ex-i-why{background:linear-gradient(135deg,#7a3e95,#4d2160);font-weight:800}.ex-ic .ex-i-queen{background:linear-gradient(135deg,#f2c14e,#c98a1b)}.ex-ic .ex-i-fox{background:linear-gradient(135deg,#f08a3c,#c4521d)}.ex-ic .ex-i-map{background:linear-gradient(135deg,#c9a66b,#7a5a2a)}.ex-ic .ex-i-diary{background:linear-gradient(135deg,#6a4b9a,#2f2140)}.ex-ic .ex-i-mendoza{background:linear-gradient(135deg,#7a2e5a,#3f7a34)}.ex-ic .ex-i-clip{background:linear-gradient(135deg,#0b3d1e,#39b86a)}.ex-ic .ex-i-cube{background:linear-gradient(135deg,#e0453a,#2f6fd6)}
 .ex-qz h3{font:400 22px var(--serif);color:var(--ink);margin:2px 0 8px}.ex-qz .qn{font:600 12px var(--sans);color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin:0 0 6px}.ex-qz .qbar{height:4px;background:var(--bg);border-radius:4px;margin:0 0 14px;overflow:hidden}.ex-qz .qbar i{display:block;height:100%;background:var(--accent);transition:width .3s}
 .ex-qz .qq{font:500 18px/1.4 var(--serif);color:var(--ink);margin:0 0 12px}.ex-qz .qa{display:grid;gap:8px}.ex-qz .qa button{text-align:left;font:15px/1.4 var(--sans);color:var(--ink);background:var(--bg);border:1px solid transparent;border-radius:12px;padding:12px 14px;cursor:pointer}.ex-qz .qa button:hover{border-color:var(--accent)}
+.ex-qz .qa button:disabled{cursor:default}.ex-qz .qa button.ok{border-color:#2f8a57;background:rgba(47,138,87,.14)}.ex-qz .qa button.no{border-color:#c0392b;background:rgba(192,57,43,.12)}.ex-qz .qa button.dim{opacity:.55}
+.ex-qz .qhd{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;margin:0 0 6px}.ex-qz .qhd .qn{margin:0}.cp-lv{font:600 11.5px var(--sans);padding:3px 9px;border-radius:999px;color:#fff;letter-spacing:.02em}.cp-lv.l0{background:#3f9a63}.cp-lv.l1{background:#7a9a3a}.cp-lv.l2{background:#c08a2b}.cp-lv.l3{background:#c4602e}.cp-lv.l4{background:#a33a3a}
+.ex-cp .cp-name{font:400 20px var(--serif);margin:2px 0 4px}.ex-cp .qq{font-size:16.5px}
+.cp-board{--sq-l:#efe2cb;--sq-d:#b98a66;width:100%;max-width:400px;aspect-ratio:1;margin:4px auto 14px;display:grid;grid-template-columns:repeat(8,1fr);grid-template-rows:repeat(8,1fr);border-radius:8px;overflow:hidden;box-shadow:var(--shadow);user-select:none;-webkit-user-select:none}
+:root[data-theme="dark"] .cp-board{--sq-l:#cdb594;--sq-d:#86603f}
+@media (prefers-color-scheme: dark){:root:not([data-theme]) .cp-board{--sq-l:#cdb594;--sq-d:#86603f}}
+.cp-sq{position:relative;background:var(--sq-l);display:grid;place-items:center;container-type:size}.cp-sq.d{background:var(--sq-d)}.cp-sq.hl::before{content:"";position:absolute;inset:0;background:rgba(214,170,60,.6)}
+.cp-pc{position:relative;z-index:1;font-size:min(9vw,40px);font-size:78cqh;line-height:1;font-family:"Segoe UI Symbol","DejaVu Sans","Noto Sans Symbols 2",serif}.cp-pc.w{color:#fffaf0;-webkit-text-stroke:1.2px #2a2118;text-shadow:0 1px 2px rgba(0,0,0,.35)}.cp-pc.b{color:#1d1914;text-shadow:0 1px 1px rgba(255,255,255,.25)}
+.cp-co{position:absolute;font:600 9px var(--sans);opacity:.75;pointer-events:none}.cp-co.f{right:3px;bottom:1px}.cp-co.r{left:3px;top:1px}.cp-sq.d .cp-co{color:var(--sq-l)}.cp-sq:not(.d) .cp-co{color:var(--sq-d)}
+.ex-qz .qfb{margin:12px 0 0;padding:12px 14px;border-radius:12px;background:var(--bg)}.ex-qz .qfb b{display:block;font:600 15px var(--sans);margin-bottom:4px}.ex-qz .qfb b.ok{color:#2f8a57}.ex-qz .qfb b.no{color:#c0392b}.ex-qz .qfb p{font:14.5px/1.5 var(--sans);color:var(--ink);margin:0 0 10px}
 .ex-qz .qv{text-align:center;padding:8px 4px}.ex-qz .qv .qi{font-size:54px;line-height:1.1}.ex-qz .qv h3{margin-top:6px}.ex-qz .qv p{font:15px/1.55 var(--sans);color:var(--ink);margin:0 0 10px}.ex-qz .qv small{display:block;font:600 13px var(--sans);color:var(--muted);margin-bottom:14px}.ex-qz .qr{font:600 14px var(--sans);border:0;border-radius:999px;padding:10px 18px;background:var(--accent);color:#fff;cursor:pointer}
 .ex-h{font:400 20px var(--serif);color:var(--ink);margin:4px 0 6px}.ex-h+.ex-p{margin-bottom:10px}.ex-games+.ex-h{margin-top:22px}
 .ex-vs{font:900 italic 30px Georgia,serif;color:#ffcf5a;text-shadow:0 2px 0 #7a1d0e;line-height:1}
@@ -2500,9 +2510,61 @@ async function exSection(n, sec, pane){
   md = md.replace(/^#\s+.*\n+/, "");
   if (sec.style === "wagons") { pane.innerHTML = wagonsHTML(md, sec, n); setupWagons(pane); return; }
   if (sec.style === "map") { let D; try { D = JSON.parse(md); } catch(e) { D = null; } if (D) { const M = mapHTML(D, sec, n); pane.innerHTML = M.html; setupMap(pane, M); return; } }
+  if (sec.style === "chess-puzzles" || sec.style === "trivia") { let D; try { D = JSON.parse(md); } catch(e) { D = null; } if (D) { exQuizRun(n, sec, D, pane, sec.style === "trivia" ? "trivia" : "chess"); return; } }
   if (sec.style === "encyclopedia") { const E = encyclopediaHTML(md, sec, n); pane.innerHTML = E.html; setupEncyclopedia(pane, E.render); return; }
   pane.innerHTML = `<article class="chapter ex-sec" lang="${esc(n.lang)}"><h2>${esc(sec.title)}</h2>${renderText(md)}</article>`;
   pane.querySelectorAll(".ex-sec img").forEach(im => { im.onclick = () => window.open(im.src, "_blank"); const z = document.createElement("span"); z.className = "ex-zoom"; z.textContent = "⤢"; im.after(z); });
+}
+/* Задачи и викторина (sec.style "chess-puzzles" / "trivia"): JSON в папке романа.
+   Задачи: {title, intro, ui, puzzles:[{level, name, fen, flip, goal, options:[{uci, san}], answer, explain}]};
+   викторина: {title, intro, ui, questions:[{q, a:[...], answer, explain}]}. Варианты перемешиваются при каждом показе. */
+const qzFmt = (s, o) => String(s || "").replace(/\{(\w+)\}/g, (_, k) => o[k] != null ? o[k] : "");
+const qzShuf = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+const CP_GLYPH = {k:"♚", q:"♛", r:"♜", b:"♝", n:"♞", p:"♟︎"};
+function cpBoard(fen, flip, mv){
+  const B = {};
+  fen.split(" ")[0].split("/").forEach((row, i) => { let f = 0; for (const c of row) { if (/\d/.test(c)) f += +c; else { B["abcdefgh"[f] + (8 - i)] = c; f++; } } });
+  let hl = [];
+  if (mv) { const a = mv.slice(0, 2), b = mv.slice(2, 4); let pc = B[a]; if (mv[4] && pc) pc = pc === pc.toUpperCase() ? mv[4].toUpperCase() : mv[4]; delete B[a]; B[b] = pc; hl = [a, b]; }
+  let h = "";
+  for (let r = 0; r < 8; r++) for (let c = 0; c < 8; c++) {
+    const file = flip ? 7 - c : c, rank = flip ? r + 1 : 8 - r, sq = "abcdefgh"[file] + rank, pc = B[sq];
+    h += `<div class="cp-sq${(file + rank) % 2 ? " d" : ""}${hl.includes(sq) ? " hl" : ""}">`
+      + (pc ? `<span class="cp-pc ${pc === pc.toUpperCase() ? "w" : "b"}">${CP_GLYPH[pc.toLowerCase()]}</span>` : "")
+      + (r === 7 ? `<span class="cp-co f">${"abcdefgh"[file]}</span>` : "") + (c === 0 ? `<span class="cp-co r">${rank}</span>` : "") + `</div>`;
+  }
+  return `<div class="cp-board" role="img" aria-label="${esc(fen.split(" ")[0])}">${h}</div>`;
+}
+function exQuizRun(n, sec, D, pane, kind){
+  const U = D.ui || {}, items = kind === "chess" ? D.puzzles : D.questions, N = items.length, key = (kind === "chess" ? "cpz:" : "trv:") + n.slug;
+  let i = 0, sc = 0;
+  const draw = () => {
+    if (!pane.isConnected) return;
+    if (i >= N) {
+      const v = (U.verdicts || []).slice().sort((a, b) => b.min - a.min).find(v => sc >= v.min);
+      const best = Math.max(sc, +store.get(key, 0) || 0); store.set(key, best);
+      pane.innerHTML = `<div class="ex-qz"><div class="qv"><div class="qi" aria-hidden="true">${kind === "chess" ? "♞" : "♛"}</div>${v ? `<h3>${esc(v.title)}</h3><p>${esc(v.text)}</p>` : ""}<small>${esc(qzFmt(U.score, {s: sc, N}))}</small><button type="button" class="qr">${esc(U.again || "↻")}</button></div></div>`;
+      pane.querySelector(".qr").onclick = () => { i = 0; sc = 0; draw(); };
+      return;
+    }
+    const x = items[i];
+    const opts = qzShuf(kind === "chess" ? x.options.map((o, k) => ({t: o.san, k})) : x.a.map((t, k) => ({t, k})));
+    const lvl = kind === "chess" ? `<span class="cp-lv l${Math.min(4, Math.floor(i / Math.max(1, N / 5)))}">${esc(x.level || "")}</span>` : "";
+    pane.innerHTML = `<div class="ex-qz${kind === "chess" ? " ex-cp" : ""}">${i === 0 ? `<h3>${esc(D.title || sec.title)}</h3><p class="ex-p">${esc(D.intro || "")}</p>` : ""}
+      <div class="qhd"><p class="qn">${esc(qzFmt(U.of, {n: i + 1, N}))}</p>${lvl}</div><div class="qbar"><i style="width:${i / N * 100}%"></i></div>
+      ${kind === "chess" ? `<h3 class="cp-name">${esc(x.name || "")}</h3><p class="qq">${esc(x.goal)}</p><div class="cp-wrap">${cpBoard(x.fen, x.flip)}</div>` : `<p class="qq">${esc(x.q)}</p>`}
+      <div class="qa">${opts.map(o => `<button type="button" data-k="${o.k}">${esc(o.t)}</button>`).join("")}</div><div class="qfb" hidden></div></div>`;
+    pane.querySelectorAll("[data-k]").forEach(b => b.onclick = () => {
+      const k = +b.dataset.k, ok = k === x.answer; if (ok) sc++;
+      pane.querySelectorAll("[data-k]").forEach(o => { o.disabled = true; const kk = +o.dataset.k; o.classList.add(kk === x.answer ? "ok" : kk === k ? "no" : "dim"); });
+      if (kind === "chess") pane.querySelector(".cp-wrap").innerHTML = cpBoard(x.fen, x.flip, x.options[x.answer].uci);
+      const right = kind === "chess" ? x.options[x.answer].san : x.a[x.answer];
+      const fb = pane.querySelector(".qfb"); fb.hidden = false;
+      fb.innerHTML = `<b class="${ok ? "ok" : "no"}">${esc(ok ? U.right || "✓" : U.wrong || "✗")}</b>${ok ? "" : `<p>${esc(qzFmt(U.correct, {m: right, a: right}))}</p>`}${x.explain ? `<p>${esc(x.explain)}</p>` : ""}<button type="button" class="qr">${esc(i + 1 < N ? U.next || "→" : U.finish || "→")}</button>`;
+      fb.querySelector(".qr").onclick = () => { i++; draw(); pane.scrollIntoView({block: "nearest"}); };
+    });
+  };
+  draw();
 }
 function exWho(n, pane){
   pane.innerHTML = `<div class="loading">…</div>`;
