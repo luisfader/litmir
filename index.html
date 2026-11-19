@@ -366,6 +366,9 @@ article.chapter figure.mid{margin:1.8em auto;max-width:520px}
 article.chapter figure.mid img{max-height:none;width:100%}
 article.chapter figure.audio{margin:1.8em auto;max-width:520px}
 article.chapter figure.audio audio{width:100%}
+article.chapter figure.au-parts{display:flex;flex-direction:column;align-items:center;gap:8px;padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:var(--paper)}
+article.chapter figure.au-parts .au-go{font:inherit;font-size:.95em;color:var(--ink);background:var(--accent-soft);border:1px solid var(--accent);border-radius:999px;padding:10px 18px;cursor:pointer}
+article.chapter figure.au-parts .au-st{opacity:.7;font-size:.8em}
 article.chapter figure.audio figcaption{font-size:.85em;opacity:.75;margin-top:.4em;font-style:italic}
 article.chapter figure.linked img{max-height:420px;transition:transform .2s}
 article.chapter figure.linked a:hover img{transform:scale(1.02)}
@@ -1226,6 +1229,9 @@ function renderText(md){
     if (/^:::\s*gallery\s*\n/i.test(b)) { const items = b.split("\n").slice(1).map(r => r.trim().match(/^!\[([^\]]*)\]\(([^)\s]+)\)$/)).filter(Boolean);
       return `<div class="gallery">${items.map(x => `<figure><a href="${esc(x[2])}" target="_blank" rel="noopener"><img src="${esc(x[2])}" alt="${esc(x[1])}" loading="lazy"></a>${x[1] ? `<figcaption>${inline(x[1])}</figcaption>` : ""}</figure>`).join("")}</div>`; }
     const au = b.match(/^!audio\[([^\]]*)\]\(([^)\s]+)\)$/);
+    /* !audio[título](carpeta/#N): canción guardada en N trozos (000.part…) en el repositorio de audio; se arma al tocar ▶ */
+    const auP = au && au[2].match(/^(.+?)\/?#(\d+)$/);
+    if (auP) return `<figure class="audio au-parts" data-folder="${esc(auP[1])}" data-n="${auP[2]}"><button type="button" class="au-go">▶ <span>${au[1] ? inline(au[1]) : "♪"}</span></button><audio controls preload="none" hidden></audio><small class="au-st" aria-live="polite"></small></figure>`;
     if (au) return `<figure class="audio"><audio controls preload="none" src="${esc(audioUrl(au[2]))}"></audio>${au[1] ? `<figcaption>${inline(au[1])}</figcaption>` : ""}</figure>`;
     let m = b.match(/^!\[([^\]]*)\]\(([^)\s]+)\)$/);
     if (m) return m[1] === "m" ? `<figure class="mid"><img src="${esc(m[2])}" alt="" loading="lazy"></figure>` : `<figure><img src="${esc(m[2])}" alt="${esc(m[1])}" loading="lazy"></figure>`;
@@ -3792,6 +3798,23 @@ document.addEventListener("play", e => {
   document.querySelectorAll("figure.audio audio").forEach(a => { if (a !== e.target) a.pause(); });
 }, true);
 music.el.addEventListener("play", () => document.querySelectorAll("figure.audio audio").forEach(a => a.pause()));
+/* canciones en trozos dentro del capítulo: se descargan y se unen solo cuando el lector toca ▶ */
+const auCache = new Map();
+document.addEventListener("click", async e => {
+  const btn = e.target.closest && e.target.closest("figure.au-parts .au-go"); if (!btn) return;
+  const fig = btn.closest("figure"), au = fig.querySelector("audio"), st = fig.querySelector(".au-st"), folder = fig.dataset.folder, n = +fig.dataset.n;
+  const T = {ru:["Загрузка…","Не удалось загрузить песню"], it:["Carico la canzone…","Impossibile caricare la canzone. Riprova."], en:["Loading the song…","Couldn't load the song. Try again."]}[lang] || ["Cargando la canción…","No se pudo cargar la canción. Probá de nuevo."];
+  btn.disabled = true; st.textContent = T[0];
+  try {
+    let url = auCache.get(folder);
+    if (!url) {
+      const parts = await Promise.all(Array.from({length:n}, async (_, i) => { const r = await fetch(audioUrl(folder + "/" + String(i).padStart(3, "0") + ".part")); if (!r.ok) throw new Error("part " + i); return r.arrayBuffer(); }));
+      url = URL.createObjectURL(new Blob(parts, {type:"audio/mpeg"})); auCache.set(folder, url);
+    }
+    au.src = url; au.hidden = false; btn.hidden = true; st.textContent = "";
+    try { await au.play(); } catch (err) {}
+  } catch (err) { btn.disabled = false; st.textContent = T[1]; }
+});
 music.el.preload = "none";
 music.el.volume = store.get("vol", 0.5);
 const mStatus = document.getElementById("mStatus");
