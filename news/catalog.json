@@ -38,6 +38,22 @@
  },
  "articles": [
   {
+   "slug": "citta-del-nord-cupola",
+   "lang": "it",
+   "date": "2026-11-19",
+   "order": 23,
+   "section": "Città del Nord",
+   "title": "Città del Nord esce dalla cupola: ANIMA spenta, BOREA passa ai cittadini",
+   "deck": "Una ragazza di Sinea usata come chiave, un caffè del 1902 che suona «Penombra misteriosa» e la sindaca Altieri sulla scalinata: «Parlatevi. Chiamate vostra madre».",
+   "novels": [
+    "onde-d-amore-3"
+   ],
+   "ch": [
+    17,
+    23
+   ]
+  },
+  {
    "slug": "nekrologiya-voda",
    "lang": "ru",
    "date": "2026-11-04",
