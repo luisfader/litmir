@@ -1,0 +1,121 @@
+{
+ "art": "city",
+ "theme": "carta",
+ "intro": "La città dei Leoni e delle Aquile: campi di calcio, caffè sotto la pioggia e uno stadio pieno di colori. Tocca un luogo per sapere che cosa succede lì. I luoghi si aprono man mano che leggi.",
+ "home": "periferia",
+ "legend": "Tutti i luoghi sulla mappa",
+ "labels": [
+  {
+   "x": 500,
+   "y": 470,
+   "t": "Centro"
+  },
+  {
+   "x": 150,
+   "y": 730,
+   "t": "Periferia"
+  }
+ ],
+ "places": [
+  {
+   "id": "periferia",
+   "icon": "🥅",
+   "name": "Il campo di periferia",
+   "x": 180,
+   "y": 620,
+   "at": "01.md",
+   "sub": "Erba alta e reti delle porte strappate",
+   "what": "Qui le Aquile sfidano i Leoni e vincono 5 a 1. Fabio, il portiere, salta a destra e a sinistra, ma non riesce a fermarle.",
+   "who": "Fabio, i Leoni e le ragazze delle Aquile.",
+   "secrets": [
+    {
+     "at": "14.md",
+     "text": "Sotto la luna piena, nel vecchio magazzino degli attrezzi, nasce l'alleanza impossibile: Leoni e Aquile insieme."
+    }
+   ]
+  },
+  {
+   "id": "allenamento",
+   "icon": "🦅",
+   "name": "Il campo delle Aquile",
+   "x": 380,
+   "y": 300,
+   "at": "02.md",
+   "sub": "Dove si allenano le ragazze",
+   "what": "Stella, la sorella di Fabio, entra nella squadra come riserva. Deve scoprire il segreto delle Aquile.",
+   "who": "Stella, Maria, Elena e Sofia.",
+   "secrets": [
+    {
+     "at": "03.md",
+     "text": "Maria capisce subito: Stella impara troppo in fretta e parla piano al telefono. «So tutto! Tuo fratello è Fabio!» Ma non dice niente a nessuno."
+    }
+   ]
+  },
+  {
+   "id": "campovuoto",
+   "icon": "⚽",
+   "name": "Il campo vuoto",
+   "x": 800,
+   "y": 330,
+   "at": "06.md",
+   "sub": "Dove nasce una squadra speciale",
+   "what": "Fabio non vuole più fare il portiere. Chiama Carla, la sua ex ragazza, e le sue amiche: comincia ad allenare una squadra nuova.",
+   "who": "Fabio, Carla e sette ragazze."
+  },
+  {
+   "id": "ristorante",
+   "icon": "🍝",
+   "name": "Il ristorante «Lo Zio Gianluca»",
+   "x": 560,
+   "y": 520,
+   "at": "08.md",
+   "sub": "Un posto elegante in centro",
+   "what": "Maria aspetta Fabio con un vestito nero lungo. Lui arriva in felpa e jeans. «Niente parole», dice lei, e lo bacia.",
+   "who": "Maria, Fabio e Francesca.",
+   "secrets": [
+    {
+     "at": "08.md",
+     "text": "Click. Alle loro spalle Francesca scatta una fotografia e scappa con il telefono. Il bacio era una trappola."
+    }
+   ]
+  },
+  {
+   "id": "tazzina",
+   "icon": "☔",
+   "name": "Il caffè «La Tazzina d'Oro»",
+   "x": 690,
+   "y": 440,
+   "at": "12.md",
+   "sub": "Un caffè tranquillo, sotto la pioggia",
+   "what": "Stella e Maria si incontrano di nascosto. Fuori piove forte. Un uomo elegante si avvicina al loro tavolo.",
+   "who": "Stella, Maria ed Enrico.",
+   "secrets": [
+    {
+     "at": "12.md",
+     "text": "«Mi chiamo Enrico. Sono un agente della Polizia Calcistica.»"
+    },
+    {
+     "at": "13.md",
+     "text": "Enrico spiega il piano segreto: dietro le partite c'è un'organizzazione chiamata «Il Consiglio»."
+    }
+   ]
+  },
+  {
+   "id": "stadio",
+   "icon": "🏟",
+   "name": "Lo stadio comunale",
+   "x": 500,
+   "y": 300,
+   "at": "15.md",
+   "sub": "Il giorno della sfida finale",
+   "what": "Lo stadio è un mare di colori e di voci. L'alleanza gioca contro la «Macchina Grigia», la squadra del Consiglio.",
+   "who": "Fabio, Maria, Stella, Carla, tutte le Aquile e i Leoni, Vanessa in tribuna.",
+   "secrets": [
+    {
+     "at": "17.md",
+     "text": "Dopo la partita ragazzi e ragazze fanno il giro del campo tenendosi per mano. Il Consiglio crolla nei giorni seguenti."
+    }
+   ]
+  }
+ ]
+}

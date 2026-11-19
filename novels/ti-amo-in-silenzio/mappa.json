@@ -1,0 +1,197 @@
+{
+ "art": "region",
+ "theme": "carta",
+ "sea": "south",
+ "mountains": [
+  [
+   650,
+   110,
+   1.1
+  ],
+  [
+   760,
+   140,
+   0.9
+  ],
+  [
+   540,
+   150,
+   0.7
+  ],
+  [
+   860,
+   120,
+   0.8
+  ]
+ ],
+ "woods": [
+  [
+   180,
+   250,
+   60
+  ],
+  [
+   420,
+   280,
+   45
+  ]
+ ],
+ "intro": "Sinea sul mare, estate del 1997: una piazza con la fontana, il bar di Gino, il porto e un faro bianco sulla costa. Tocca un luogo per sapere che cosa è successo lì. I luoghi si aprono man mano che leggi.",
+ "home": "piazza",
+ "legend": "Tutti i luoghi sulla mappa",
+ "labels": [
+  {
+   "x": 500,
+   "y": 420,
+   "t": "Sinea"
+  },
+  {
+   "x": 520,
+   "y": 735,
+   "t": "Il mare"
+  },
+  {
+   "x": 700,
+   "y": 230,
+   "t": "La montagna"
+  }
+ ],
+ "places": [
+  {
+   "id": "casa",
+   "icon": "🏚",
+   "name": "La casa gialla di Fabrizio",
+   "x": 330,
+   "y": 470,
+   "at": "01.md",
+   "sub": "In cima alla collina, sopra il porto · oggi",
+   "what": "Una casa piccola e un po' storta, piena di disegni: sulle pareti, sulle porte, perfino sul soffitto della cucina. Ritraggono tutti la stessa donna.",
+   "who": "Fabrizio Orsini, disegnatore di fumetti, la giornalista Chiara e il cameraman Tommaso.",
+   "secrets": [
+    {
+     "at": "05.md",
+     "text": "In fondo a un vecchio quaderno c'è una busta piena di lettere mai spedite. Cominciano tutte con «Cara Lucia»."
+    },
+    {
+     "at": "09.md",
+     "text": "Dietro la porta c'è un solo disegno senza Lucia: una moto verde che esce dal fumo, all'alba. Tutta Sinea conosce quell'immagine."
+    }
+   ]
+  },
+  {
+   "id": "piazza",
+   "icon": "⛲",
+   "name": "La piazza della fontana",
+   "x": 500,
+   "y": 500,
+   "at": "01.md",
+   "sub": "Il cuore di Sinea",
+   "what": "Ogni mattina alle sette e un quarto Lucia entra in piazza sulla sua moto rossa. Fabrizio, timido, la guarda da lontano.",
+   "who": "Lucia, Fabrizio e tutta la città.",
+   "secrets": [
+    {
+     "at": "04.md",
+     "text": "Un giorno di settembre la moto rossa tossisce e si ferma proprio davanti alla fontana. È la grande occasione di Fabrizio."
+    },
+    {
+     "at": "07.md",
+     "text": "L'ultimo sabato di settembre c'è la festa di fine estate: lanterne colorate, un'orchestra, tutta la città che balla fino a mezzanotte."
+    }
+   ]
+  },
+  {
+   "id": "bar",
+   "icon": "☕",
+   "name": "Il bar di Gino",
+   "x": 590,
+   "y": 460,
+   "at": "03.md",
+   "sub": "A dieci metri dalla fontana",
+   "what": "Per farsi notare Fabrizio impara a fare il caffè perfetto: scalda la tazzina, macina a mano, pressa con delicatezza. Lucia risponde sempre «quasi».",
+   "who": "Fabrizio, Gino e Lucia.",
+   "secrets": [
+    {
+     "at": "06.md",
+     "text": "Nel retro del bar, tra le casse di bottiglie, Lucia racconta a Fabrizio il suo sospetto: il terremoto di ieri notte viene dal cantiere."
+    },
+    {
+     "at": "08.md",
+     "text": "Da ottobre Lucia non viene più. Ogni mattina Fabrizio prepara la tazzina e alle sette e mezza butta il caffè nel lavandino."
+    }
+   ]
+  },
+  {
+   "id": "faro",
+   "icon": "🗼",
+   "name": "Il faro",
+   "x": 840,
+   "y": 610,
+   "at": "01.md",
+   "sub": "In fondo alla strada della costa",
+   "what": "Qui finisce la Corsa del Faro, la gara di moto dell'estate 1997. Per Lucia Fabrizio impara ad andare in moto.",
+   "who": "Lucia, Fabrizio e i piloti della corsa.",
+   "secrets": [
+    {
+     "at": "05.md",
+     "text": "La sera della gita al faro Fabrizio non riesce a dormire e comincia a scrivere le sue lettere."
+    }
+   ]
+  },
+  {
+   "id": "porto",
+   "icon": "⚓",
+   "name": "Il porto",
+   "x": 420,
+   "y": 620,
+   "at": "06.md",
+   "sub": "Sotto la collina",
+   "what": "Nuvole grigie, il mare del colore del ferro. Da qui parte il vecchio canale che porta sotto la città.",
+   "who": "Fabrizio e Lucia.",
+   "secrets": [
+    {
+     "at": "09.md",
+     "text": "Fabrizio guida verso il porto in una città che non riconosce più. Dal vecchio canale arriva un rumore di passi di metallo."
+    }
+   ]
+  },
+  {
+   "id": "gallerie",
+   "icon": "🕳",
+   "name": "Le gallerie sotto la città",
+   "x": 560,
+   "y": 330,
+   "at": "06.md",
+   "sub": "Sotto Sinea, sotto il cantiere",
+   "what": "Sotto la città qualcuno prepara un piano terribile. Lucia vuole scoprire che cosa nasconde il cantiere e chiede aiuto a Fabrizio.",
+   "who": "Lucia, Fabrizio e suo padre, l'ingegnere.",
+   "secrets": [
+    {
+     "at": "09.md",
+     "text": "Nella galleria grigia le luci blu lampeggiano. A cento metri, una fila di robot cammina verso l'uscita."
+    },
+    {
+     "at": "10.md",
+     "text": "Il piano viene dalla Città dell'Ovest. Lucia e suo padre diventano i testimoni più importanti del paese e partono all'estero con nomi nuovi."
+    }
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "icon": "✏",
+   "name": "La Scuola Nazionale del Fumetto",
+   "x": 960,
+   "y": 300,
+   "at": "08.md",
+   "text": "L'unica scuola di fumetto del paese prende dodici studenti all'anno. Uno è Fabrizio, con i disegni del Panettiere Volante."
+  },
+  {
+   "icon": "🏙",
+   "name": "La Città dell'Ovest",
+   "x": 40,
+   "y": 400,
+   "at": "10.md",
+   "text": "Da qui arrivavano i soldi e le persone che avevano organizzato il piano sotto Sinea."
+  }
+ ]
+}

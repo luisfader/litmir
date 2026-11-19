@@ -1,0 +1,164 @@
+{
+ "art": "city",
+ "theme": "carta",
+ "intro": "Firenze, la città di Alessio: musei, ponti sull'Arno e ville nascoste sulle colline. Tocca un luogo per sapere che cosa succede lì. I luoghi si aprono man mano che leggi.",
+ "home": "appartamento",
+ "legend": "Tutti i luoghi sulla mappa",
+ "labels": [
+  {
+   "x": 470,
+   "y": 95,
+   "t": "Arno"
+  },
+  {
+   "x": 500,
+   "y": 470,
+   "t": "Centro storico"
+  },
+  {
+   "x": 830,
+   "y": 730,
+   "t": "Colline"
+  }
+ ],
+ "places": [
+  {
+   "id": "appartamento",
+   "icon": "🏠",
+   "name": "L'appartamento di Alessio",
+   "x": 430,
+   "y": 360,
+   "at": "02.md",
+   "sub": "Un piccolo appartamento in centro",
+   "what": "Alessio ama l'arte e cerca sempre una nuova avventura. Qui legge un articolo su Laura Bellini, una ricca collezionista, e gli viene un'idea pericolosa.",
+   "who": "Alessio."
+  },
+  {
+   "id": "studio",
+   "icon": "🎨",
+   "name": "Lo studio di Luca",
+   "x": 560,
+   "y": 330,
+   "at": "02.md",
+   "sub": "Vicino alla casa di Alessio",
+   "what": "Luca è il migliore amico di Alessio. Nel suo studio ci sono cavalletti, colori e quadri: con lui Alessio parla per ore di pittura.",
+   "who": "Luca e Alessio.",
+   "secrets": [
+    {
+     "at": "07.md",
+     "text": "Luca sa fare copie perfette: tira fuori da un armadio uno studio di «L'Estate» che ha dipinto lui. Ma la copia ha un difetto, un piccolo fiore bianco."
+    },
+    {
+     "at": "10.md",
+     "text": "L'originale non si è mai mosso dall'armadio di Luca: a Laura è arrivata soltanto la copia."
+    }
+   ]
+  },
+  {
+   "id": "villalaura",
+   "icon": "🏰",
+   "name": "La villa di Laura",
+   "x": 820,
+   "y": 610,
+   "at": "03.md",
+   "sub": "Sulle colline di Firenze",
+   "what": "Di notte Alessio attraversa il giardino ed entra da una porta laterale per rubare un piccolo quadro. Ma Laura lo aspetta.",
+   "who": "Alessio e Laura Bellini.",
+   "secrets": [
+    {
+     "at": "04.md",
+     "text": "Laura ha le immagini della telecamera all'ingresso. In cambio del silenzio vuole «L'Estate», un quadro attribuito a Botticelli che appartiene alla sua amica Sofia."
+    },
+    {
+     "at": "08.md",
+     "text": "Giovedì alle nove Alessio porta a Laura la copia di Luca. Lei la guarda con attenzione…"
+    }
+   ]
+  },
+  {
+   "id": "villasofia",
+   "icon": "🌳",
+   "name": "La villa di Sofia Ricci",
+   "x": 160,
+   "y": 620,
+   "at": "05.md",
+   "sub": "Una facciata chiara e un lungo vialetto",
+   "what": "Martedì sera Alessio entra nella villa di Sofia e prende «L'Estate» dalla parete.",
+   "who": "Alessio, Sofia Ricci e il suo cane.",
+   "secrets": [
+    {
+     "at": "06.md",
+     "text": "Il cane di Sofia morde Alessio a una gamba. Lui riesce a uscire dal cancello con il quadro sulla spalla."
+    }
+   ]
+  },
+  {
+   "id": "ospedale",
+   "icon": "🏥",
+   "name": "L'ospedale",
+   "x": 300,
+   "y": 470,
+   "at": "06.md",
+   "sub": "Il pronto soccorso",
+   "what": "Alessio passa qui parte della notte di martedì, con la gamba morsa dal cane di Sofia.",
+   "who": "Alessio e i medici."
+  },
+  {
+   "id": "questura",
+   "icon": "🚓",
+   "name": "La questura",
+   "x": 700,
+   "y": 450,
+   "at": "09.md",
+   "sub": "Celle e un piccolo ufficio",
+   "what": "Alessio e Laura passano diverse ore in due celle separate. Poi un commissario li porta in un ufficio per chiarire i loro racconti.",
+   "who": "Alessio, Laura e un commissario.",
+   "secrets": [
+    {
+     "at": "10.md",
+     "text": "Alessio e Laura riescono a scappare insieme e chiedono aiuto a Luca."
+    }
+   ]
+  },
+  {
+   "id": "magazzino",
+   "icon": "📦",
+   "name": "Il magazzino privato",
+   "x": 900,
+   "y": 300,
+   "at": "10.md",
+   "sub": "Fuori dal centro",
+   "what": "Non è un mercato con bancarelle: qui avviene la vendita segreta del vero Botticelli.",
+   "who": "Luca, Alessio, Laura e un acquirente misterioso."
+  },
+  {
+   "id": "stazione",
+   "icon": "🚉",
+   "name": "La stazione di Firenze",
+   "x": 540,
+   "y": 560,
+   "at": "11.md",
+   "sub": "Il tabellone delle partenze",
+   "what": "Alessio e Laura guardano il tabellone. Lei non ha una valigia, lui ha una piccola borsa. «La Spagna», propone Alessio.",
+   "who": "Alessio e Laura."
+  }
+ ],
+ "edges": [
+  {
+   "icon": "⚓",
+   "name": "Genova",
+   "x": 960,
+   "y": 470,
+   "at": "11.md",
+   "text": "Da Firenze in treno fino al porto di Genova, poi una nave diretta a Barcellona."
+  },
+  {
+   "icon": "🇪🇸",
+   "name": "Barcellona e la Spagna",
+   "x": 960,
+   "y": 720,
+   "at": "11.md",
+   "text": "Sul ponte della nave Laura prende la mano di Alessio: comincia una vita nuova."
+  }
+ ]
+}

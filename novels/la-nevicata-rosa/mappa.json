@@ -1,0 +1,221 @@
+{
+ "art": "region",
+ "theme": "carta",
+ "sea": "west",
+ "mountains": [
+  [
+   640,
+   110,
+   1
+  ],
+  [
+   760,
+   90,
+   0.9
+  ],
+  [
+   880,
+   130,
+   0.8
+  ]
+ ],
+ "woods": [
+  [
+   560,
+   470,
+   60
+  ],
+  [
+   360,
+   300,
+   50
+  ],
+  [
+   790,
+   380,
+   45
+  ]
+ ],
+ "rivers": [
+  "M190 300C320 290 420 250 520 260S700 250 820 230"
+ ],
+ "intro": "La Toscana di Carlotta e Lorenzo: Firenze con l'Arno e gli Uffizi, le colline di Fiesole, le ville tra i cipressi e le Crete Senesi. Tocca un luogo per sapere che cosa succede lì. I luoghi si aprono man mano che leggi.",
+ "home": "caffe",
+ "legend": "Tutti i luoghi sulla mappa",
+ "labels": [
+  {
+   "x": 560,
+   "y": 330,
+   "t": "Firenze"
+  },
+  {
+   "x": 620,
+   "y": 640,
+   "t": "Crete Senesi"
+  },
+  {
+   "x": 80,
+   "y": 420,
+   "t": "Mar Tirreno"
+  }
+ ],
+ "places": [
+  {
+   "id": "caffe",
+   "icon": "☕",
+   "name": "Il caffè di Santa Croce",
+   "x": 590,
+   "y": 300,
+   "at": "01.md",
+   "sub": "Firenze, a due passi dalla basilica",
+   "what": "Un caffè minuscolo con i tavolini di marmo consumati. Dopo mesi di lettere digitali Carlotta e Lorenzo si vedono per la prima volta.",
+   "who": "Carlotta e Lorenzo."
+  },
+  {
+   "id": "uffizi",
+   "icon": "🖼",
+   "name": "Gli Uffizi",
+   "x": 540,
+   "y": 270,
+   "at": "02.md",
+   "sub": "Firenze, sull'Arno",
+   "what": "Entrare nel museo è come entrare in un altro mondo. Qui Carlotta non è più la donna nervosa del caffè, ma la sacerdotessa di un tempio.",
+   "who": "Carlotta, Lorenzo e i visitatori.",
+   "secrets": [
+    {
+     "at": "03.md",
+     "text": "Un grido nella notte: davanti alla «Calunnia» di Botticelli c'è il corpo del direttore, Alberto Menichetti. La polizia sigilla il museo."
+    },
+    {
+     "at": "18.md",
+     "text": "Nei manoscritti alchemici della biblioteca degli Uffizi si parla di una congrega antica: i Cromatisti, che vogliono rubare i colori del mondo."
+    }
+   ]
+  },
+  {
+   "id": "podere",
+   "icon": "🍷",
+   "name": "Il podere tra i cipressi",
+   "x": 420,
+   "y": 420,
+   "at": "04.md",
+   "sub": "Una casa di campagna isolata",
+   "what": "Un antico podere toscano tra filari di vite, pieno di libri e oggetti d'arte. Il fuoco scoppietta nel camino, ma la tranquillità è una menzogna.",
+   "who": "Carlotta e Lorenzo.",
+   "secrets": [
+    {
+     "at": "04.md",
+     "text": "Davanti al fuoco arriva la rivelazione: tra Carlotta e Lorenzo c'era un segreto nascosto in tutte le loro lettere."
+    }
+   ]
+  },
+  {
+   "id": "grattacielo",
+   "icon": "🏢",
+   "name": "Il palazzo di vetro",
+   "x": 680,
+   "y": 340,
+   "at": "10.md",
+   "sub": "Il quartiere finanziario di Firenze",
+   "what": "L'ultimo piano di un edificio anonimo di cristallo e acciaio. Pareti d'ebano, un tappeto che assorbe ogni rumore: è il quartier generale segreto.",
+   "who": "Alberto Menichetti.",
+   "secrets": [
+    {
+     "at": "10.md",
+     "text": "Il quartier generale di Menichetti non è agli Uffizi. E Menichetti non è affatto morto: la sua morte era una scenografia."
+    }
+   ]
+  },
+  {
+   "id": "villa",
+   "icon": "🏛",
+   "name": "La villa di Laura",
+   "x": 330,
+   "y": 520,
+   "at": "07.md",
+   "sub": "In campagna, lontano dalla strada provinciale",
+   "what": "Feriti e braccati, Carlotta e Lorenzo trovano rifugio qui. La cucina con i muri di pietra diventa il quartier generale della resistenza.",
+   "who": "Laura, Alessio, Carlotta e Lorenzo.",
+   "secrets": [
+    {
+     "at": "09.md",
+     "text": "Nel piccolo chiostro con il pozzo di pietra, sotto la neve rosa, Laura e Carlotta si raccontano la verità."
+    },
+    {
+     "at": "17.md",
+     "text": "Un mattino, sul tavolo di quercia, l'orrore si materializza davanti a tutti."
+    }
+   ]
+  },
+  {
+   "id": "palazzovecchio",
+   "icon": "🏰",
+   "name": "Palazzo Vecchio",
+   "x": 610,
+   "y": 240,
+   "at": "11.md",
+   "sub": "Piazza della Signoria",
+   "what": "Il sindaco di Firenze, pallido e con le occhiaie, convoca una conferenza stampa d'emergenza davanti al palazzo.",
+   "who": "Il sindaco e i giornalisti.",
+   "secrets": [
+    {
+     "at": "30.md",
+     "text": "Una sera, sulla terrazza di Palazzo Vecchio, Carlotta e Lorenzo guardano il loro regno."
+    }
+   ]
+  },
+  {
+   "id": "deposito",
+   "icon": "🔐",
+   "name": "Il deposito nelle Crete",
+   "x": 640,
+   "y": 590,
+   "at": "12.md",
+   "sub": "Lungo la Cassia, tra le colline senesi",
+   "what": "Un capannone basso con telecamere a infrarossi e una recinzione elettrificata. Il Land Rover di Alessio resta nascosto dietro un casolare abbandonato.",
+   "who": "Alessio, Lorenzo, Carlotta e Laura.",
+   "secrets": [
+    {
+     "at": "13.md",
+     "text": "Strisciando nel buio, entrano nel deposito per prendere la «sacca del sindaco»."
+    },
+    {
+     "at": "14.md",
+     "text": "Tutto va troppo bene. Troppo facile."
+    }
+   ]
+  },
+  {
+   "id": "fiesole",
+   "icon": "🎭",
+   "name": "Il Teatro del Silenzio",
+   "x": 660,
+   "y": 180,
+   "at": "19.md",
+   "sub": "Un teatro romano sulla collina di Fiesole",
+   "what": "Un teatro antico scavato nella collina, abbandonato da secoli. Ma stanotte non è deserto: i Cromatisti aspettano.",
+   "who": "Carlotta, Lorenzo, Alessio, Laura e i Cromatisti.",
+   "secrets": [
+    {
+     "at": "20.md",
+     "text": "Dalle ombre del teatro non escono figure umane, ma una presenza: il Guerriero delle Idee di Lorenzo."
+    },
+    {
+     "at": "22.md",
+     "text": "Carlotta diventa Regina e invita i colori rubati a tornare a casa, nel flusso della storia."
+    }
+   ]
+  },
+  {
+   "id": "siena",
+   "icon": "🪞",
+   "name": "La piazza di Siena",
+   "x": 560,
+   "y": 690,
+   "at": "28.md",
+   "sub": "Una visita di stato",
+   "what": "Gli eredi dei Cromatisti creano un'illusione con specchi e riflessi. Carlotta chiede alla piazza vera, alle pietre calde e al profumo del panforte, di farsi sentire più forte.",
+   "who": "Carlotta, Lorenzo e la gente di Siena."
+  }
+ ]
+}

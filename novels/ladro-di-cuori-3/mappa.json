@@ -1,0 +1,212 @@
+{
+ "art": "region",
+ "theme": "carta",
+ "sea": "east",
+ "mountains": [
+  [
+   70,
+   200,
+   1.2
+  ],
+  [
+   120,
+   330,
+   1
+  ],
+  [
+   60,
+   460,
+   1.3
+  ],
+  [
+   110,
+   600,
+   0.9
+  ],
+  [
+   170,
+   150,
+   0.8
+  ]
+ ],
+ "woods": [
+  [
+   330,
+   430,
+   60
+  ],
+  [
+   600,
+   600,
+   50
+  ]
+ ],
+ "rivers": [
+  "M60 380C140 370 200 360 260 330"
+ ],
+ "intro": "Dall'Atlantico alle Ande: la fattoria nella pampa, mille chilometri di strada dritta e i vigneti di Mendoza. Tocca un luogo per sapere che cosa succede lì. I luoghi si aprono man mano che leggi.",
+ "home": "fattoria",
+ "legend": "Tutti i luoghi sulla mappa",
+ "labels": [
+  {
+   "x": 150,
+   "y": 720,
+   "t": "Ande"
+  },
+  {
+   "x": 290,
+   "y": 520,
+   "t": "Mendoza"
+  },
+  {
+   "x": 560,
+   "y": 400,
+   "t": "Pampa"
+  },
+  {
+   "x": 760,
+   "y": 560,
+   "t": "Provincia di Buenos Aires"
+  }
+ ],
+ "places": [
+  {
+   "id": "fattoria",
+   "icon": "🐓",
+   "name": "La fattoria nella pampa",
+   "x": 740,
+   "y": 380,
+   "at": "01.md",
+   "sub": "Provincia di Buenos Aires, lontano dalla città",
+   "what": "Una casa bianca con il tetto rosso, campi verdi e un cielo enorme. Alessio e Laura vivono qui con nuovi documenti, tra galline, capre e pomodori.",
+   "who": "Alessio e Laura.",
+   "secrets": [
+    {
+     "at": "02.md",
+     "text": "La notizia arriva in TV: ad Anversa sono spariti i «Cuori di Diamante», e la polizia sospetta che i ladri si nascondano a Mendoza. Alessio non riesce a stare fermo."
+    }
+   ]
+  },
+  {
+   "id": "strada",
+   "icon": "🚗",
+   "name": "La strada nella pampa",
+   "x": 520,
+   "y": 330,
+   "at": "03.md",
+   "sub": "Centinaia di chilometri sempre dritti",
+   "what": "Mucche, campi di grano, piccoli paesi con una chiesa bianca. Sulla vecchia Torino Laura racconta di una parente che non ha mai conosciuto.",
+   "who": "Alessio e Laura.",
+   "secrets": [
+    {
+     "at": "03.md",
+     "text": "Dopo mesi di ricerche Laura ha trovato Adriana, la figlia di Beatrice, sorella di sua nonna: una pittrice che dipinge montagne, vigneti e… cuori."
+    }
+   ]
+  },
+  {
+   "id": "villa",
+   "icon": "🌸",
+   "name": "La villa di Adriana",
+   "x": 280,
+   "y": 420,
+   "at": "04.md",
+   "sub": "Luján de Cuyo, tra le bouganville viola",
+   "what": "Una villa bianca con un portico di legno e un giardino pieno di rose. Dentro sembra una galleria d'arte: montagne, vigne d'autunno, ritratti di contadini.",
+   "who": "Adriana, Laura e Alessio.",
+   "secrets": [
+    {
+     "at": "04.md",
+     "text": "Sulla parete c'è un cuore rosso granata, sfaccettato come un diamante. Alessio non riesce a smettere di guardarlo."
+    },
+    {
+     "at": "07.md",
+     "text": "Nella foto di famiglia ci sono cinque fratelli. Uno, Ignacio, era un mercante d'arte; due mesi fa è tornato, ha chiesto perdono e ha comprato tutta la serie dei cuori di Adriana."
+    }
+   ]
+  },
+  {
+   "id": "fader",
+   "icon": "🏛",
+   "name": "La Casa di Fader",
+   "x": 230,
+   "y": 340,
+   "at": "05.md",
+   "sub": "Mayor Drummond, a pochi minuti dalla villa",
+   "what": "Il Museo Emiliano Guiñazú: un viale tra gli alberi e una villa antica con colonne di ferro. Nella galleria ci sono gli unici murales che Fernando Fader abbia mai dipinto.",
+   "who": "Don Sergio Fader, il vecchio restauratore, Alessio e Laura.",
+   "secrets": [
+    {
+     "at": "05.md",
+     "text": "Alessio studia Don Sergio con il cappello di paglia: «È lui il Fantasma? Sarebbe il travestimento perfetto»."
+    },
+    {
+     "at": "09.md",
+     "text": "Di notte entrano due uomini con le torce: Hugo e Ignacio. Dalla cornice del cuore rosso escono due piccole luci, una rosa e una bianca. I Cuori di Diamante."
+    }
+   ]
+  },
+  {
+   "id": "vigneti",
+   "icon": "🍇",
+   "name": "I vigneti di Mayor Drummond",
+   "x": 330,
+   "y": 280,
+   "at": "06.md",
+   "sub": "Dieci minuti a piedi dal museo",
+   "what": "La Torino fa troppo rumore, così Alessio attraversa i vigneti a piedi, di notte, verso la Casa di Fader.",
+   "who": "Alessio, da solo nel buio."
+  },
+  {
+   "id": "labirinto",
+   "icon": "🌲",
+   "name": "Il labirinto di cipressi",
+   "x": 190,
+   "y": 270,
+   "at": "08.md",
+   "sub": "Nel parco della Casa di Fader",
+   "what": "Siepi più alte di un uomo e sentieri sempre uguali. Dopo tre curve i rumori del giardino spariscono: è il posto giusto per parlare di segreti.",
+   "who": "Adriana, Don Sergio, Alessio e Laura.",
+   "secrets": [
+    {
+     "at": "08.md",
+     "text": "Nel piccolo spazio rotondo al centro del labirinto nasce il piano: domani notte qualcuno aspetterà il Fantasma."
+    }
+   ]
+  },
+  {
+   "id": "mendoza",
+   "icon": "⚖",
+   "name": "Mendoza",
+   "x": 300,
+   "y": 560,
+   "at": "10.md",
+   "sub": "La città, sotto le Ande",
+   "what": "Enrico arriva con una scatola di alfajores e racconta come finisce: Ignacio è in prigione, Hugo in ospedale con una caviglia rotta.",
+   "who": "Enrico, Adriana, Alessio e Laura."
+  }
+ ],
+ "edges": [
+  {
+   "icon": "💎",
+   "name": "Anversa",
+   "x": 960,
+   "y": 60,
+   "at": "02.md",
+   "text": "Da qui sono spariti i «Cuori di Diamante», dall'altra parte dell'oceano."
+  },
+  {
+   "icon": "🇫🇷",
+   "name": "Bordeaux",
+   "x": 960,
+   "y": 730,
+   "at": "10.md",
+   "text": "In un magazzino vicino al porto la polizia francese arresta l'amico di Ignacio."
+  }
+ ],
+ "rose": [
+  640,
+  720
+ ],
+ "trip": true
+}

@@ -1,0 +1,186 @@
+{
+ "art": "venice",
+ "theme": "night",
+ "layers": true,
+ "intro": "Venezia sopra e sotto l'acqua, dove una macchina oscura toglie alle persone la volontà. Cambia livello per scendere nel palazzo sott'acqua. I luoghi si aprono man mano che leggi.",
+ "home": "sanmarco",
+ "legend": "Tutti i luoghi sulla mappa",
+ "nowhere": "Da qualche parte a Venezia",
+ "places": [
+  {
+   "id": "aeroporto",
+   "icon": "✈",
+   "name": "L'aeroporto Marco Polo",
+   "x": 780,
+   "y": 90,
+   "at": "04.md",
+   "sub": "Sulla terraferma",
+   "what": "Venezia non li accoglie con il romanticismo, ma con un'aria umida e pesante. La gente cammina e parla, ma il ritmo della città sembra inceppato.",
+   "who": "Luis e Nataša.",
+   "secrets": [
+    {
+     "at": "05.md",
+     "text": "Ad aspettarli c'è una vecchia Fiat 600, piccolissima. E poi, per forza, una gondola."
+    }
+   ]
+  },
+  {
+   "id": "canal",
+   "icon": "🛶",
+   "name": "Il Canal Grande",
+   "x": 300,
+   "y": 345,
+   "at": "06.md",
+   "sub": "Dalla stazione a San Marco",
+   "what": "Il Canal Grande si apre davanti a loro come un quadro vivo di un'altra epoca. Ma la gondola non ha gondoliere.",
+   "who": "Luis, Nataša e una donna misteriosa.",
+   "secrets": [
+    {
+     "at": "24.md",
+     "text": "Nataša e Natalia, in piedi sulla stessa gondola, nella tenebra del canale. Natalia fischia, breve e sicura."
+    }
+   ]
+  },
+  {
+   "id": "palazzo",
+   "icon": "🏛",
+   "name": "Il palazzo sott'acqua",
+   "x": 460,
+   "y": 400,
+   "layer": "under",
+   "at": "07.md",
+   "sub": "Sotto i canali",
+   "what": "Luce calda sulla pietra e sull'oro, volte altissime che si perdono nella penombra. Qui vive Natalia, e da qui si guida l'operazione.",
+   "who": "Natalia, Luis, Nataša e Roberto.",
+   "secrets": [
+    {
+     "at": "09.md",
+     "text": "Anche la cucina è come il palazzo: luminosa, perfetta, come se qui non si sbagliasse mai niente. Ma tra due donne il fuoco è già acceso."
+    },
+    {
+     "at": "11.md",
+     "text": "Nella stanza degli ospiti, dietro le tende pesanti, si sente sussurrare l'acqua. Arrivano le rivelazioni."
+    },
+    {
+     "at": "25.md",
+     "text": "Si torna al palazzo sotterraneo, e questa volta tutto è diverso."
+    }
+   ]
+  },
+  {
+   "id": "arsenale",
+   "icon": "⚙",
+   "name": "L'Arsenale",
+   "x": 830,
+   "y": 420,
+   "at": "13.md",
+   "sub": "Castello, il vecchio cantiere delle navi",
+   "what": "L'Arsenale si sveglia lentamente, ma quella mattina è strano. E comincia a cambiare: dentro c'è un altro arsenale.",
+   "who": "Luis, Roberto e gli uomini di McGregor.",
+   "secrets": [
+    {
+     "at": "21.md",
+     "text": "In una sala dalla luce smorzata, che non illumina ma nasconde, si prepara il piano di distruzione."
+    },
+    {
+     "at": "31.md",
+     "text": "Dall'Arsenale si alza una cupola trasparente che chiude tutta la città come una gabbia. Lo Zmaj ruggisce e prova a fuggire."
+    },
+    {
+     "at": "33.md",
+     "text": "L'anticupola deve nascere da due punti insieme: dal cuore dell'Arsenale, dove la macchina è stata distrutta, e da San Marco."
+    }
+   ]
+  },
+  {
+   "id": "castello",
+   "icon": "📡",
+   "name": "Le calli di Castello",
+   "x": 740,
+   "y": 480,
+   "at": "16.md",
+   "sub": "A piedi da San Marco",
+   "what": "La maschera sente che qui c'è uno dei trasmettitori. Una folla senza volontà trascina Luis e Roberto sempre più a fondo.",
+   "who": "Luis, Roberto e la folla."
+  },
+  {
+   "id": "sanmarco",
+   "icon": "🦁",
+   "name": "Piazza San Marco",
+   "x": 600,
+   "y": 480,
+   "at": "14.md",
+   "sub": "Il cuore di Venezia",
+   "what": "Il centro della città, con la basilica e il campanile. Qui la follia degli uomini comincia a farsi vedere.",
+   "who": "Luis, Roberto e la gente di Venezia.",
+   "secrets": [
+    {
+     "at": "30.md",
+     "text": "La piazza non sembra più il cuore di Venezia: gli uomini rispondono con un ruggito che passa come un'onda d'urto. Dalla laguna arriva qualcosa, tra il fumo e le grida delle donne."
+    },
+    {
+     "at": "34.md",
+     "text": "La prima a svegliarsi è una donna con un fazzoletto rosso. Poi tutta la piazza ricorda chi ha rubato la sua volontà, e il nome di McGregor rotola sulle pietre."
+    }
+   ]
+  },
+  {
+   "id": "contarini",
+   "icon": "🌀",
+   "name": "Palazzo Contarini del Bovolo",
+   "x": 520,
+   "y": 430,
+   "at": "26.md",
+   "sub": "La scala a chiocciola",
+   "what": "Nelle sale mezze in rovina del vecchio palazzo le donne si riuniscono per capire che cosa sta succedendo alla città.",
+   "who": "Le donne di Venezia.",
+   "secrets": [
+    {
+     "at": "29.md",
+     "text": "Non succede solo a Venezia: a Parigi, a Roma, a Vienna gli uomini urlano e umiliano chi amano. Le donne escono dall'ombra."
+    }
+   ]
+  },
+  {
+   "id": "cannaregio",
+   "icon": "🕯",
+   "name": "Le cantine di Cannaregio",
+   "x": 240,
+   "y": 300,
+   "at": "26.md",
+   "sub": "Sotto le calli strette",
+   "what": "Nei vecchi sotterranei di Cannaregio e nelle botteghe dimenticate vicino all'Arsenale le donne si nascondono e si organizzano.",
+   "who": "Le donne di Venezia e Nataša."
+  },
+  {
+   "id": "rifugio",
+   "icon": "🍷",
+   "name": "Il rifugio nella cantina",
+   "x": 380,
+   "y": 300,
+   "layer": "under",
+   "at": "28.md",
+   "sub": "Una vecchia cantina e una bottega abbandonata",
+   "what": "In fondo alle calli, una vecchia cantina da vino collegata a una bottega da un corridoio di pietra. Qui si sentono le voci nell'ombra.",
+   "who": "Nataša, Natalia e le donne del rifugio."
+  }
+ ],
+ "edges": [
+  {
+   "icon": "⛪",
+   "name": "Siviglia",
+   "x": 30,
+   "y": 650,
+   "at": "01.md",
+   "text": "In un antico monastero del Seicento ha sede il «Sud Mistico», un'organizzazione di cui nessun governo sa niente."
+  },
+  {
+   "icon": "🌉",
+   "name": "Belgrado",
+   "x": 970,
+   "y": 200,
+   "at": "02.md",
+   "text": "Le luci del lungofiume nel Danubio. Luis, alla finestra, gira il cubo di Rubik con calma. Tutto da qui sembra tranquillo, troppo tranquillo."
+  }
+ ]
+}

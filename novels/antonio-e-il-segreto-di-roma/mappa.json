@@ -1,0 +1,131 @@
+{
+ "art": "city",
+ "theme": "carta",
+ "intro": "La Roma di Antonio: Trastevere, il Vaticano, Testaccio e una villa sull'Appia Antica. Tocca un luogo per sapere che cosa succede lì. I luoghi si aprono man mano che leggi.",
+ "home": "trastevere",
+ "legend": "Tutti i luoghi sulla mappa",
+ "labels": [
+  {
+   "x": 470,
+   "y": 95,
+   "t": "Tevere"
+  },
+  {
+   "x": 170,
+   "y": 470,
+   "t": "Trastevere"
+  },
+  {
+   "x": 760,
+   "y": 740,
+   "t": "verso l'Appia Antica"
+  }
+ ],
+ "places": [
+  {
+   "id": "trastevere",
+   "icon": "🏠",
+   "name": "La casa di Antonio",
+   "x": 330,
+   "y": 430,
+   "at": "01.md",
+   "sub": "Trastevere, un piccolo appartamento al terzo piano",
+   "what": "Antonio è un ragazzo di Roma. Lavora in una pizzeria vicino a casa e non sa quasi niente di arte.",
+   "who": "Antonio.",
+   "secrets": [
+    {
+     "at": "05.md",
+     "text": "Al telegiornale Antonio vede il video delle telecamere del museo. E vede se stesso: la polizia pensa che sia il complice della ladra."
+    }
+   ]
+  },
+  {
+   "id": "musei",
+   "icon": "🏛",
+   "name": "I Musei Vaticani",
+   "x": 200,
+   "y": 260,
+   "at": "02.md",
+   "sub": "Il museo più grande di Roma",
+   "what": "Antonio entra per la prima volta nei Musei Vaticani e incontra Larissa, una ragazza russa bella e colta. Per conquistarla le promette di raccontarle tutti i segreti di Roma.",
+   "who": "Antonio e Larissa.",
+   "secrets": [
+    {
+     "at": "04.md",
+     "text": "Nella Sala dei Tesori Antichi Larissa chiede ad Antonio di parlare con suo cugino Paolo, la guardia. Pochi minuti dopo il Calice d'Oro dei Papi non c'è più."
+    },
+    {
+     "at": "11.md",
+     "text": "Davanti a un quadro c'è una ragazza con un vestito azzurro e un quaderno in mano. Si chiama Luciana e il sabato fa la guida al museo."
+    }
+   ]
+  },
+  {
+   "id": "bar",
+   "icon": "☕",
+   "name": "Il bar vicino a San Pietro",
+   "x": 330,
+   "y": 300,
+   "at": "03.md",
+   "sub": "Vicino a Piazza San Pietro",
+   "what": "Un piccolo bar vecchio ma accogliente. Antonio e Larissa bevono un caffè e lui inventa tante storie per impressionarla.",
+   "who": "Antonio e Larissa."
+  },
+  {
+   "id": "testaccio",
+   "icon": "💻",
+   "name": "La casa di Matteo",
+   "x": 560,
+   "y": 620,
+   "at": "06.md",
+   "sub": "Testaccio, un quartiere popolare",
+   "what": "Matteo è un genio del computer e vive con il gatto Bit. Antonio si nasconde qui dalla polizia.",
+   "who": "Matteo, Antonio e il gatto Bit.",
+   "secrets": [
+    {
+     "at": "07.md",
+     "text": "Larissa non è russa e non si chiama Larissa: è Elena Ferri, nata a Milano, detta «il Camaleonte». Su un forum segreto Matteo trova un'asta di oggetti rubati."
+    }
+   ]
+  },
+  {
+   "id": "teatro",
+   "icon": "🎭",
+   "name": "Il teatro di Giulia",
+   "x": 680,
+   "y": 400,
+   "at": "08.md",
+   "sub": "Il camerino del trucco",
+   "what": "Giulia fa il trucco agli attori. In due ore trasforma Antonio in un vecchio collezionista svizzero, con la barba grigia, il cappello nero e un bastone.",
+   "who": "Giulia, Matteo e Antonio («Sembro mio nonno!»)."
+  },
+  {
+   "id": "villa",
+   "icon": "🔨",
+   "name": "Villa Aurora",
+   "x": 850,
+   "y": 650,
+   "at": "09.md",
+   "sub": "Via Appia Antica",
+   "what": "Un salone con lampadari di cristallo e trenta persone che non dicono il loro vero nome: è l'asta clandestina. In seconda fila c'è una donna con un vestito rosso.",
+   "who": "Antonio travestito, Larissa, il banditore e i compratori ricchi.",
+   "secrets": [
+    {
+     "at": "10.md",
+     "text": "Le luci si spengono, entra il commissario Rinaldi. Larissa corre verso il giardino, ma inciampa nel bastone di Antonio."
+    }
+   ]
+  },
+  {
+   "id": "gianicolo",
+   "icon": "🌅",
+   "name": "Il Gianicolo",
+   "x": 120,
+   "y": 560,
+   "at": "11.md",
+   "sub": "La collina sopra Trastevere",
+   "what": "Alle sette Antonio e Luciana sono qui, con tutta Roma ai loro piedi. Questa volta Antonio non inventa niente.",
+   "who": "Antonio e Luciana."
+  }
+ ]
+}

@@ -1,0 +1,152 @@
+{
+ "art": "region",
+ "theme": "carta",
+ "sea": "south",
+ "mountains": [
+  [
+   760,
+   130,
+   1
+  ],
+  [
+   860,
+   170,
+   0.8
+  ],
+  [
+   660,
+   160,
+   0.7
+  ]
+ ],
+ "woods": [
+  [
+   240,
+   260,
+   70
+  ],
+  [
+   520,
+   230,
+   50
+  ]
+ ],
+ "intro": "Málaga, dove Alessio e Laura vivono con nomi nuovi, tra case bianche e il Mediterraneo. Tocca un luogo per sapere che cosa succede lì. I luoghi si aprono man mano che leggi.",
+ "home": "casa",
+ "legend": "Tutti i luoghi sulla mappa",
+ "labels": [
+  {
+   "x": 470,
+   "y": 430,
+   "t": "Málaga"
+  },
+  {
+   "x": 520,
+   "y": 730,
+   "t": "Mar Mediterraneo"
+  }
+ ],
+ "places": [
+  {
+   "id": "casa",
+   "icon": "🏡",
+   "name": "La casa bianca",
+   "x": 420,
+   "y": 500,
+   "at": "01.md",
+   "sub": "Con un balcone sul mare",
+   "what": "Qui Alessio e Laura vivono come Marcos Sierra e sua moglie, lontani dal furto del Botticelli. Ma sul giornale si legge che l'Interpol cerca ancora i sospettati.",
+   "who": "Alessio (Marcos) e Laura.",
+   "secrets": [
+    {
+     "at": "03.md",
+     "text": "Sul balcone, con un Chianti toscano nei bicchieri, Alessio e Laura decidono se accettare il colpo."
+    },
+    {
+     "at": "05.md",
+     "text": "Una notte, sotto la luna, Alessio trova Maria seduta in giardino. E nasce la gelosia."
+    }
+   ]
+  },
+  {
+   "id": "lungomare",
+   "icon": "🌊",
+   "name": "Il lungomare",
+   "x": 300,
+   "y": 590,
+   "at": "01.md",
+   "sub": "La passeggiata marittima",
+   "what": "Durante una passeggiata un uomo in completo nero li fotografa e li segue in un vicolo che profuma di gelsomino.",
+   "who": "Alessio, Laura e un uomo in nero.",
+   "secrets": [
+    {
+     "at": "01.md",
+     "text": "L'uomo si chiama Enrico e lavora per la galleria «Arte del Sole». Sa chi sono davvero."
+    }
+   ]
+  },
+  {
+   "id": "galleria",
+   "icon": "🖼",
+   "name": "La galleria «Arte del Sole»",
+   "x": 560,
+   "y": 470,
+   "at": "02.md",
+   "sub": "Nel centro di Málaga",
+   "what": "Enrico propone il colpo: il violino d'oro di Don Salvatore, che vale venti milioni di euro.",
+   "who": "Enrico, Alessio e Laura."
+  },
+  {
+   "id": "bar",
+   "icon": "🍷",
+   "name": "Il Bar La Luna",
+   "x": 660,
+   "y": 540,
+   "at": "04.md",
+   "sub": "Un locale buio e pieno di fumo",
+   "what": "Qui si decide la divisione del bottino: settanta per loro, trenta per Enrico. E Enrico racconta chi è davvero Don Salvatore.",
+   "who": "Alessio, Laura, Enrico e una giovane donna che entra con passo sicuro.",
+   "secrets": [
+    {
+     "at": "04.md",
+     "text": "La giovane donna è Maria, una violinista. Sarà la chiave del piano."
+    }
+   ]
+  },
+  {
+   "id": "villa",
+   "icon": "🎻",
+   "name": "La villa di Don Salvatore",
+   "x": 780,
+   "y": 380,
+   "at": "06.md",
+   "sub": "Sulla collina, affacciata sul mare",
+   "what": "Una villa lussuosa con candelabri dorati, guardie e telecamere. In una teca di vetro luccica il violino d'oro.",
+   "who": "Don Salvatore, i suoi uomini, Maria, Alessio e Laura.",
+   "secrets": [
+    {
+     "at": "06.md",
+     "text": "Quando Maria suona «Ciuri ciuri», Don Salvatore si porta una mano al cuore: si è innamorato di lei."
+    },
+    {
+     "at": "09.md",
+     "text": "Mentre la musica tiene i mafiosi in trance, Alessio apre la teca. Ma suona l'allarme, e i tre scappano attraverso il giardino illuminato dalla luna."
+    }
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "icon": "🇫🇷",
+   "name": "Bordeaux",
+   "x": 950,
+   "y": 60,
+   "at": "10.md",
+   "text": "Un piccolo appartamento in centro, i tetti arancioni al tramonto. E sotto un lampione, una voce: «Ciao, carino»."
+  }
+ ],
+ "rose": [
+  90,
+  90
+ ]
+}

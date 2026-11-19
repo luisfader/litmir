@@ -1,0 +1,182 @@
+{
+ "art": "utopia",
+ "theme": "night",
+ "intro": "Il mondo dopo la catastrofe: una città morta, un deserto grigio e, su una collina, la fortezza «La Nostra Utopia». Più un luogo è lontano dalla fortezza, più è lontano sulla mappa. I luoghi si aprono man mano che leggi.",
+ "home": "utopia",
+ "nowhere": "Senza indirizzo",
+ "places": [
+  {
+   "id": "utopia",
+   "icon": "🏰",
+   "name": "La Nostra Utopia",
+   "x": 520,
+   "y": 360,
+   "at": "03.md",
+   "sub": "Sulla cima della collina",
+   "what": "Luis, l'architetto, disegna le mura nella polvere con un bastone: «Qui costruiremo le mura. Possiamo vedere qualsiasi pericolo in arrivo.» In due mesi la collina diventa una fortezza.",
+   "who": "Robert, Luis, Kennet, Natalia, Oxana, Sasha, Dima e i sopravvissuti.",
+   "secrets": [
+    {
+     "at": "07.md",
+     "text": "La piazza principale ha un nome nuovo: «Piazza della Nostra Utopia»."
+    },
+    {
+     "at": "11.md",
+     "text": "Un secondo anello di mura, più largo e più alto, rende la fortezza quasi inespugnabile. Ma i muri più difficili sono quelli tra le persone."
+    },
+    {
+     "at": "21.md",
+     "text": "Per la prima volta la fortezza si divide: Robert propone un referendum. Poche ore dopo vede Natalia uscire di casa con un piccolo fagotto."
+    }
+   ]
+  },
+  {
+   "id": "caffe",
+   "icon": "🌹",
+   "name": "Il caffè «Rose Rosse»",
+   "x": 630,
+   "y": 410,
+   "at": "05.md",
+   "sub": "Dentro le mura",
+   "what": "Il primo caffè della nuova città. «La fortezza cresce», dice qualcuno, «ma dobbiamo costruire una società, non solo un rifugio.»",
+   "who": "Oxana, Kennet e gli abitanti di Utopia.",
+   "secrets": [
+    {
+     "at": "19.md",
+     "text": "Due persone vanno al caffè insieme. E un'altra figura le osserva in silenzio."
+    }
+   ]
+  },
+  {
+   "id": "torre",
+   "icon": "🗼",
+   "name": "La torre nord",
+   "x": 470,
+   "y": 270,
+   "at": "06.md",
+   "sub": "La torre di guardia",
+   "what": "Kennet sistema i cavi alla base della torre, quasi finita. Da qui si vede tutto il deserto.",
+   "who": "Kennet, Oxana e Natalia, che la sera ci sale a disegnare.",
+   "secrets": [
+    {
+     "at": "16.md",
+     "text": "Con il carboncino Natalia disegna la luna sopra la torre nord, la stessa torre da cui ha visto partire Luis."
+    },
+    {
+     "at": "23.md",
+     "text": "Durante l'assedio, sulla torre, Oxana sente la musica."
+    }
+   ]
+  },
+  {
+   "id": "ufficio",
+   "icon": "💻",
+   "name": "L'ufficio tecnico di Dima",
+   "x": 400,
+   "y": 400,
+   "at": "13.md",
+   "sub": "Un vecchio magazzino pieno di cavi",
+   "what": "Batterie, pannelli solari e uno schermo polveroso. Dopo settimane Dima grida: «Ci sono! Ho un accesso!»",
+   "who": "Dima, Robert e Natalia.",
+   "secrets": [
+    {
+     "at": "13.md",
+     "text": "Dalla rete arriva un nome: «Necropoli», una città sotterranea costruita in segreto prima della catastrofe."
+    },
+    {
+     "at": "18.md",
+     "text": "Il magazzino vuoto accanto diventa la «sala interrogatori», con una sedia e un tavolo."
+    }
+   ]
+  },
+  {
+   "id": "rifugio",
+   "icon": "🕳",
+   "name": "Il rifugio sotterraneo",
+   "x": 170,
+   "y": 230,
+   "at": "01.md",
+   "sub": "Sotto le macerie della città morta",
+   "what": "Robert ha passato qui due anni, durante l'inverno nucleare. Prima di partire si guarda in un frammento di specchio appeso alla parete.",
+   "who": "Robert."
+  },
+  {
+   "id": "citta",
+   "icon": "🏚",
+   "name": "La città morta",
+   "x": 230,
+   "y": 300,
+   "at": "01.md",
+   "sub": "Rovine e silenzio",
+   "what": "Robert attraversa le strade distrutte sulla sua vecchia moto. Il silenzio del mondo è la cosa più strana di tutte.",
+   "who": "Robert, Kennet e i primi selvaggi.",
+   "secrets": [
+    {
+     "at": "02.md",
+     "text": "Robert vince il combattimento ma non uccide nessuno: «Non voglio violenza. Non voglio guerre. Abbiamo già perso tutto per questo.»"
+    }
+   ]
+  },
+  {
+   "id": "campobase",
+   "icon": "⛺",
+   "name": "Il campo base",
+   "x": 380,
+   "y": 540,
+   "at": "03.md",
+   "sub": "Ai piedi della collina",
+   "what": "Qui comincia tutto: tende, polvere e una lista di materiali che non c'è. Cemento, legname e soprattutto mattoni.",
+   "who": "Robert, Luis e Kennet."
+  },
+  {
+   "id": "selvaggi",
+   "icon": "🔥",
+   "name": "Il campo dei selvaggi",
+   "x": 800,
+   "y": 620,
+   "at": "08.md",
+   "sub": "Nel deserto grigio",
+   "what": "Venti moto di pattuglia solcano il deserto. Poi, con urla di battaglia, i selvaggi caricano e dividono la pattuglia in due.",
+   "who": "Kennet, la pattuglia e i selvaggi.",
+   "secrets": [
+    {
+     "at": "09.md",
+     "text": "Robert decide di andare da loro con la bandiera bianca: «La violenza è l'ultima opzione.»"
+    },
+    {
+     "at": "10.md",
+     "text": "All'alba un'onda nera e urlante avanza verso Utopia. Robert, sulle mura, prova a fermarla con un megafono."
+    }
+   ]
+  },
+  {
+   "id": "cantiere",
+   "icon": "🔦",
+   "name": "Il cantiere nel deserto",
+   "x": 720,
+   "y": 520,
+   "at": "17.md",
+   "sub": "Dietro una duna",
+   "what": "Le luci dei fari creano ombre lunghe sulla sabbia. Luis e Kennet osservano un uomo magro in tuta mimetica che si allontana dal gruppo.",
+   "who": "Luis, Kennet e un prigioniero.",
+   "secrets": [
+    {
+     "at": "18.md",
+     "text": "Il prigioniero, legato e incappucciato, arriva a Utopia sulle moto all'alba. Sa qualcosa di Necropoli."
+    }
+   ]
+  },
+  {
+   "id": "necropoli",
+   "icon": "☢",
+   "name": "Necropoli",
+   "x": 880,
+   "y": 140,
+   "at": "15.md",
+   "sub": "Una città sotterranea, posizione cifrata",
+   "what": "Sotto una luna d'argento Kennet e Luis partono in moto per cercarla. Un rifugio di massa iper-tecnologico, nascosto da qualche parte nel deserto.",
+   "who": "Kennet e Luis."
+  }
+ ],
+ "legend": "Tutti i luoghi sulla mappa"
+}

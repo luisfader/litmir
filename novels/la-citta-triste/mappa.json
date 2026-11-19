@@ -1,0 +1,149 @@
+{
+ "art": "city",
+ "theme": "sinea",
+ "intro": "Sinea, la città dove il presidente ha vietato i sorrisi. Tocca un luogo per scoprire che cosa succede lì. I luoghi si aprono man mano che leggi, capitolo dopo capitolo.",
+ "home": "piazza",
+ "legend": "Tutti i luoghi sulla mappa",
+ "labels": [
+  {
+   "x": 520,
+   "y": 470,
+   "t": "Centro"
+  },
+  {
+   "x": 760,
+   "y": 690,
+   "t": "Periferia"
+  }
+ ],
+ "places": [
+  {
+   "id": "ministero",
+   "icon": "🏛",
+   "name": "Il Ministero dei Sentimenti",
+   "x": 600,
+   "y": 300,
+   "at": "01.md",
+   "sub": "Un palazzo grigio vicino al centro",
+   "what": "Qui Franco lavora come impiegato. Il Ministero controlla i sentimenti della gente: la felicità, dice il presidente, è pericolosa.",
+   "who": "Franco e tutti gli impiegati tristi del Ministero.",
+   "secrets": [
+    {
+     "at": "06.md",
+     "text": "Anche Marco lavorava qui. Lo hanno licenziato perché sorrideva troppo."
+    }
+   ]
+  },
+  {
+   "id": "metro",
+   "icon": "🚇",
+   "name": "La metro",
+   "x": 330,
+   "y": 500,
+   "at": "01.md",
+   "sub": "La linea che porta Franco a casa",
+   "what": "La sera tutti tornano a casa in metro. Nessuno parla, nessuno ride. Ma su un vagone c'è una ragazza che sorride.",
+   "who": "Franco, i passeggeri tristi e Chiara.",
+   "secrets": [
+    {
+     "at": "02.md",
+     "text": "La ragazza si chiama Chiara. Sorride «perché la vita è bella» e scende alla sua fermata prima di Franco."
+    }
+   ]
+  },
+  {
+   "id": "casa",
+   "icon": "🏠",
+   "name": "La casa di Franco",
+   "x": 180,
+   "y": 640,
+   "at": "02.md",
+   "sub": "Un quartiere tranquillo, lontano dal centro",
+   "what": "Vicino a casa sua due poliziotti fermano Franco: hanno visto che parlava con una ragazza che sorrideva.",
+   "who": "Franco e due poliziotti.",
+   "secrets": [
+    {
+     "at": "03.md",
+     "text": "A casa Franco trova un invito segreto: Via Roma 10, ore 18:00, password «Il sole è blu»."
+    }
+   ]
+  },
+  {
+   "id": "viaroma",
+   "icon": "🚪",
+   "name": "Via Roma 10",
+   "x": 760,
+   "y": 470,
+   "at": "04.md",
+   "sub": "Una porta come tante, con una stanza segreta",
+   "what": "Qui si tiene la riunione segreta delle persone che vogliono ancora ridere. Franco entra con la password e, finalmente, si sente a casa.",
+   "who": "Franco, Chiara e i ribelli della risata."
+  },
+  {
+   "id": "bar",
+   "icon": "☕",
+   "name": "Il bar «Lacrime di coccodrillo»",
+   "x": 470,
+   "y": 640,
+   "at": "05.md",
+   "sub": "Un piccolo bar con un nome triste",
+   "what": "Franco e Chiara passano una bella serata qui, parlano e ridono piano. Per un momento Franco dimentica la tristezza della città.",
+   "who": "Franco e Chiara.",
+   "secrets": [
+    {
+     "at": "05.md",
+     "text": "Appena escono arrivano due auto nere della polizia. Franco e Chiara scappano e si nascondono tra i bidoni della spazzatura."
+    }
+   ]
+  },
+  {
+   "id": "laboratorio",
+   "icon": "🕯",
+   "name": "Il laboratorio di Marco",
+   "x": 860,
+   "y": 300,
+   "at": "06.md",
+   "sub": "Dietro una vecchia porta di legno, sotto terra",
+   "what": "Si bussa in un modo strano: tre colpi leggeri, uno forte, due leggeri. Sotto c'è un seminterrato pieno di libri e oggetti strani. La polizia non lo conosce.",
+   "who": "Marco, un vecchio collega di Franco, Franco e Chiara.",
+   "secrets": [
+    {
+     "at": "07.md",
+     "text": "Qui nasce il «Risatomat», un'arma segreta che sembra un grande annaffiatoio d'argento e spara risate registrate con un vecchio grammofono."
+    }
+   ]
+  },
+  {
+   "id": "piazza",
+   "icon": "⛲",
+   "name": "Piazza Grande",
+   "x": 500,
+   "y": 400,
+   "at": "08.md",
+   "sub": "Il cuore di Sinea",
+   "what": "Il presidente parla alla gente da un palco. Franco e Chiara arrivano in mezzo alla piazza con il Risatomat nello zaino.",
+   "who": "Franco, Chiara, Marco, il presidente e tutta la città.",
+   "secrets": [
+    {
+     "at": "08.md",
+     "text": "La gente sente una risata meravigliosa e, dopo tanto tempo, comincia a ridere anche lei."
+    },
+    {
+     "at": "09.md",
+     "text": "Tutta la piazza grida «FRAN-CO!»: la città è salva."
+    }
+   ]
+  },
+  {
+   "id": "teatro",
+   "icon": "🎭",
+   "name": "Il Teatro delle Risate",
+   "x": 300,
+   "y": 300,
+   "at": "10.md",
+   "sub": "Il regalo nuovo della città",
+   "what": "La sorpresa sul palco: un teatro nuovo dove ogni sera ci sono spettacoli comici. È sempre pieno di gente felice.",
+   "who": "Franco, Chiara e tutta Sinea che ride."
+  }
+ ]
+}

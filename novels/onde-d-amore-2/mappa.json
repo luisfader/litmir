@@ -1,0 +1,232 @@
+{
+ "art": "region",
+ "theme": "carta",
+ "sea": "none",
+ "mountains": [
+  [
+   120,
+   110,
+   0.9
+  ],
+  [
+   230,
+   90,
+   0.7
+  ],
+  [
+   880,
+   650,
+   0.8
+  ]
+ ],
+ "woods": [
+  [
+   130,
+   560,
+   60
+  ],
+  [
+   870,
+   440,
+   55
+  ],
+  [
+   760,
+   720,
+   40
+  ]
+ ],
+ "intro": "Armonia, il paesino tra le colline costruito come una persona: cinque quartieri e, al centro, la torre del Diapason. Tocca un luogo per sapere che cosa succede lì. I luoghi si aprono man mano che leggi la storia principale.",
+ "home": "diapason",
+ "legend": "Tutti i luoghi sulla mappa",
+ "labels": [
+  {
+   "x": 500,
+   "y": 160,
+   "t": "La Mente"
+  },
+  {
+   "x": 300,
+   "y": 480,
+   "t": "Il Cuore"
+  },
+  {
+   "x": 720,
+   "y": 470,
+   "t": "I Sentimenti"
+  },
+  {
+   "x": 650,
+   "y": 700,
+   "t": "L'Anima"
+  },
+  {
+   "x": 300,
+   "y": 720,
+   "t": "Le Radici"
+  }
+ ],
+ "places": [
+  {
+   "id": "villa",
+   "icon": "🏡",
+   "name": "La villa di Sasha",
+   "x": 860,
+   "y": 200,
+   "at": "01.md",
+   "sub": "Sulla collina, quattordici stanze",
+   "what": "Sasha ha comprato una villa enorme e non vuole stare da sola mentre Dima è su una nave. Chiama Natalia a Verdegrado: «Vieni ad Armonia.»",
+   "who": "Sasha, Natalia e la volpe.",
+   "secrets": [
+    {
+     "at": "04.md",
+     "text": "Sulla terrazza Sasha racconta la sua storia: i delfini, la voce, la notte in cui Sinea fu invasa dalle ombre. E proprio allora tutte le luci di Armonia si spengono insieme."
+    },
+    {
+     "at": "07.md",
+     "text": "Senza luci il cielo è incredibile: un milione di stelle. A mezzanotte, dal paese, arrivano grida e una campana che suona da sola."
+    }
+   ]
+  },
+  {
+   "id": "diapason",
+   "icon": "🔔",
+   "name": "Il Diapason",
+   "x": 500,
+   "y": 380,
+   "at": "04.md",
+   "sub": "La torre al centro del paese",
+   "what": "In cima c'è una palla di vetro che illumina Armonia. Quella sera si spegne con tutto il resto.",
+   "who": "Tutto il paese lo guarda.",
+   "secrets": [
+    {
+     "at": "49.md",
+     "text": "Il sabato della Festa dei Cinque brillano tutte e cinque le Lanterne, una per ogni quartiere."
+    }
+   ]
+  },
+  {
+   "id": "piazza",
+   "icon": "⛲",
+   "name": "Piazza Grande e il bar di Gino",
+   "x": 520,
+   "y": 470,
+   "at": "09.md",
+   "sub": "Il centro di Armonia",
+   "what": "Al buio, Natalia sale sul bordo della fontana e canta piano, come canta la mattina in cucina.",
+   "who": "Natalia, Gino e la gente del paese.",
+   "secrets": [
+    {
+     "at": "11.md",
+     "text": "Al bar di Gino tutti parlano di Recinto, l'applicazione del paese: «Il tuo quartiere. La tua gente. La tua verità.» Non c'è un'opzione per gli ospiti."
+    }
+   ]
+  },
+  {
+   "id": "mente",
+   "icon": "🔭",
+   "name": "La biblioteca di Ilde e il municipio",
+   "x": 500,
+   "y": 220,
+   "at": "10.md",
+   "sub": "Il quartiere della Mente",
+   "what": "Strade dritte, case bianche, alberi tagliati tutti uguali. Ilde è la bibliotecaria. Sulla collina c'è l'Osservatorio.",
+   "who": "Ilde, Mia, Paolo e il sindaco Bruno Pace.",
+   "secrets": [
+    {
+     "at": "13.md",
+     "text": "Il sindaco ha tre telefoni e la cravatta storta. Entra un uomo sorridente: «Cesare Muri. Della Muri Sicurezza.»"
+    }
+   ]
+  },
+  {
+   "id": "cuore",
+   "icon": "💗",
+   "name": "La Fontana dei Baci",
+   "x": 320,
+   "y": 420,
+   "at": "17.md",
+   "sub": "Il quartiere del Cuore",
+   "what": "Il quartiere più vivo: tetti rossi, balconi pieni di fiori, panni stesi e la piazzetta del mercato.",
+   "who": "Rosaria la panettiera e la gente del Cuore.",
+   "secrets": [
+    {
+     "at": "21.md",
+     "text": "Senza elettricità tutto il quartiere va da Rosaria per il pane. Suo figlio Paolo ha scritto una battuta stupida su Recinto e da tre mesi non si parlano."
+    }
+   ]
+  },
+  {
+   "id": "teatro",
+   "icon": "🎭",
+   "name": "Il Teatro delle Emozioni",
+   "x": 720,
+   "y": 400,
+   "at": "26.md",
+   "sub": "Il quartiere dei Sentimenti",
+   "what": "Case arancioni, gialle, viola, con poesie e note sui muri. Ma adesso i colori sembrano grigi. Sopra la porta del teatro c'è una finestra rotonda come un fiore.",
+   "who": "Leo Ventura, con la sciarpa viola.",
+   "secrets": [
+    {
+     "at": "31.md",
+     "text": "Leo apre il teatro: il palco è pronto."
+    },
+    {
+     "at": "35.md",
+     "text": "Il canto dei delfini: tutto il teatro scoppia a ridere."
+    }
+   ]
+  },
+  {
+   "id": "quercia",
+   "icon": "🌳",
+   "name": "La quercia delle Radici",
+   "x": 280,
+   "y": 640,
+   "at": "28.md",
+   "sub": "Il quartiere più vecchio",
+   "what": "Case di pietra, orti, galline libere e una quercia di cinquecento anni. Su Recinto li chiamano «i dinosauri».",
+   "who": "Teo, il signor Nando, la signora Gina e nonna Pina.",
+   "secrets": [
+    {
+     "at": "48.md",
+     "text": "Sotto la quercia si ricorda chi ha costruito Armonia."
+    }
+   ]
+  },
+  {
+   "id": "magazzino",
+   "icon": "🖥",
+   "name": "Il magazzino della Muri Sicurezza",
+   "x": 160,
+   "y": 700,
+   "at": "22.md",
+   "sub": "Alla fine del paese",
+   "what": "Un punto rosso sulla mappa di Mia: @CuoreVero, @MenteLucida e gli altri profili cattivi scrivono tutti da qui.",
+   "who": "Natalia, Sasha, Mia e Teo.",
+   "secrets": [
+    {
+     "at": "37.md",
+     "text": "Dietro una porticina di ferro: centinaia di computer, gli schermi con i gruppi dei cinque quartieri e, alla scrivania, Cesare Muri."
+    }
+   ]
+  },
+  {
+   "id": "anima",
+   "icon": "🕊",
+   "name": "Il giardino del silenzio",
+   "x": 640,
+   "y": 620,
+   "at": "38.md",
+   "sub": "Il quartiere dell'Anima",
+   "what": "Niente negozi, niente bar: solo giardini e un vecchio monastero. Il cancello è chiuso: «Silenzio. Gli altri quartieri sono pregati di restare fuori.»",
+   "who": "Ettore, il giardiniere.",
+   "secrets": [
+    {
+     "at": "41.md",
+     "text": "Dopo sei mesi la campana del campanile suona di nuovo. Dall'alto si vedono due luci nel paese buio: una rossa nel Cuore e una arancione nei Sentimenti."
+    }
+   ]
+  }
+ ]
+}

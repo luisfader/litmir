@@ -1,0 +1,205 @@
+{
+ "art": "region",
+ "theme": "night",
+ "sea": "south",
+ "mountains": [
+  [
+   700,
+   110,
+   1
+  ],
+  [
+   820,
+   140,
+   0.8
+  ],
+  [
+   580,
+   140,
+   0.7
+  ]
+ ],
+ "woods": [
+  [
+   180,
+   230,
+   60
+  ]
+ ],
+ "intro": "Sinea sul mare, di notte: il porto, il Faro di Ael, le scogliere con i vecchi tunnel e, sotto il mare, una grotta di cristalli. Tocca un luogo per sapere che cosa succede lì. I luoghi si aprono man mano che segui la storia di Vasily.",
+ "home": "ufficio",
+ "legend": "Tutti i luoghi sulla mappa",
+ "labels": [
+  {
+   "x": 420,
+   "y": 420,
+   "t": "Sinea"
+  },
+  {
+   "x": 520,
+   "y": 740,
+   "t": "Il mare"
+  },
+  {
+   "x": 860,
+   "y": 560,
+   "t": "Costa est"
+  }
+ ],
+ "places": [
+  {
+   "id": "ufficio",
+   "icon": "🕵",
+   "name": "L'ufficio di Vasily",
+   "x": 360,
+   "y": 560,
+   "at": "01.md",
+   "sub": "Un vecchio magazzino vicino al porto",
+   "what": "Vasily è un detective russo che vive a Sinea, con una sola regola: per un anno, niente amore. Una mattina entra Oxana: la sua migliore amica, Sasha, è sparita.",
+   "who": "Vasily e Oxana.",
+   "secrets": [
+    {
+     "at": "16.md",
+     "text": "Sopra l'ufficio c'è il suo piccolo appartamento. Di notte, alle tre e sette, Vasily sente una voce di donna."
+    }
+   ]
+  },
+  {
+   "id": "faro",
+   "icon": "🗼",
+   "name": "Il Faro di Ael",
+   "x": 560,
+   "y": 640,
+   "at": "02.md",
+   "sub": "Alla fine del vecchio molo, sopra le rocce nere",
+   "what": "Sabato notte, alle tre e sette, il faro si spegne per sette minuti. Quando la luce torna, Sasha non c'è più. Sulle scale restano le sue scarpe.",
+   "who": "Vasily, Oxana e il ricordo di Sasha.",
+   "secrets": [
+    {
+     "at": "05.md",
+     "text": "Nel diario blu di Sasha: «Stanotte il Cuore del Mare è blu. Dopo due anni! Perché?» E da una settimana non si vedono delfini."
+    },
+    {
+     "at": "07.md",
+     "text": "Vasily scrive «Dov'è Sasha?» e la risposta arriva nella sua testa: «Sasha è giù. Con noi. Sotto il mare. Sono Lume, il figlio di Ael.»"
+    },
+    {
+     "at": "44.md",
+     "text": "In cima ai centotrentadue gradini, nella scatola di vetro, il Cuore del Mare brilla blu e tranquillo. Sasha è lì, con una sciarpa rossa."
+    }
+   ]
+  },
+  {
+   "id": "tunnel",
+   "icon": "🔦",
+   "name": "La porta 7",
+   "x": 830,
+   "y": 610,
+   "at": "09.md",
+   "sub": "I vecchi tunnel nella scogliera della costa est",
+   "what": "Sopra la spiaggia c'è la scogliera, alta e grigia, piena di buchi neri. Vasily entra con la torcia di Oxana.",
+   "who": "Vasily.",
+   "secrets": [
+    {
+     "at": "11.md",
+     "text": "Arrivano due uomini con una lanterna e provano ad aprire la porta 7. «Il dottore l'ha detto: questa porta si apre solo…»"
+    },
+    {
+     "at": "39.md",
+     "text": "All'alba, dopo la tempesta, escono dai vecchi tunnel sulla spiaggia. Arriva la barca di Leo, e Dima salta in acqua fino alle ginocchia."
+    }
+   ]
+  },
+  {
+   "id": "porto",
+   "icon": "⚓",
+   "name": "Il porto",
+   "x": 300,
+   "y": 640,
+   "at": "12.md",
+   "sub": "Barche, gabbiani e odore di pesce",
+   "what": "Nel pomeriggio il porto è pieno di vita. Ma qualcuno ha visto una barca senza luci, in una notte di tempesta.",
+   "who": "Vasily, i pescatori, Leo e suo cugino Gino."
+  },
+  {
+   "id": "commissariato",
+   "icon": "🚓",
+   "name": "Il commissariato",
+   "x": 470,
+   "y": 470,
+   "at": "13.md",
+   "sub": "Il centro di Sinea",
+   "what": "Il commissario Pace è grande e lento. Mangia un panino e ascolta: sale, impronte, un cavo tagliato, il signor Valli.",
+   "who": "Vasily e il commissario Pace.",
+   "secrets": [
+    {
+     "at": "13.md",
+     "text": "«Lo sa che la signora ha una villa ad Armonia, in collina?»"
+    }
+   ]
+  },
+  {
+   "id": "miramare",
+   "icon": "🏨",
+   "name": "L'hotel Miramare",
+   "x": 650,
+   "y": 560,
+   "at": "15.md",
+   "sub": "Un vecchio hotel rosa sul lungomare",
+   "what": "Alle dieci di sera, nel bar dell'hotel, un signore magro con gli occhiali d'oro e un cappotto grigio resta solo al tavolo.",
+   "who": "Vasily e il signor Valli, l'uomo grigio.",
+   "secrets": [
+    {
+     "at": "23.md",
+     "text": "Oxana invita Valli a cena alle nove. Vasily entra in cucina con una giacca bianca da cameriere, e in tasca ha una pietra della spiaggia."
+    },
+    {
+     "at": "24.md",
+     "text": "Quando Valli si rimette la catenina al collo, sulla catenina c'è una pietra della spiaggia."
+    }
+   ]
+  },
+  {
+   "id": "conti",
+   "icon": "🐈",
+   "name": "Via del Porto 14",
+   "x": 240,
+   "y": 520,
+   "at": "21.md",
+   "sub": "Terzo piano, con la catena alla porta",
+   "what": "Maria Conti ha trentacinque anni, i capelli ricci, gli occhiali rotondi e un gatto grigio in braccio. Sa qualcosa della Voce.",
+   "who": "Vasily e Maria Conti."
+  },
+  {
+   "id": "grotta",
+   "icon": "💎",
+   "name": "La Grotta del Canto",
+   "x": 620,
+   "y": 730,
+   "at": "33.md",
+   "sub": "Sotto il mare",
+   "what": "Lume porta Vasily in un tunnel sott'acqua fino a una grotta piena di cristalli blu, deboli come candele alla fine della notte. Da una parte c'è un pozzo che porta al mare.",
+   "who": "Vasily, Lume, Sasha e Valli.",
+   "secrets": [
+    {
+     "at": "35.md",
+     "text": "Il Cuore del Mare brilla nelle mani di qualcuno, e nella grotta si sentono due voci."
+    },
+    {
+     "at": "37.md",
+     "text": "Vasily canta, e la voce di Sasha torna. Lume esce dal pozzo come una freccia. Tutti i cristalli si accendono, blu e bianchi: il Seme Nero si rompe."
+    }
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "icon": "🏡",
+   "name": "Armonia",
+   "x": 960,
+   "y": 220,
+   "at": "13.md",
+   "text": "Un paesino tra le colline, dove Sasha ha una villa."
+  }
+ ]
+}

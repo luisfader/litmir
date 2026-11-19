@@ -1,0 +1,214 @@
+{
+ "art": "region",
+ "theme": "carta",
+ "sea": "south",
+ "mountains": [
+  [
+   640,
+   80,
+   1.1
+  ],
+  [
+   760,
+   70,
+   1
+  ],
+  [
+   880,
+   110,
+   0.9
+  ],
+  [
+   520,
+   100,
+   0.7
+  ]
+ ],
+ "woods": [
+  [
+   150,
+   330,
+   70
+  ],
+  [
+   420,
+   420,
+   45
+  ]
+ ],
+ "rivers": [
+  "M120 260C220 300 300 360 360 470"
+ ],
+ "intro": "Da Verdegrado a Sinea, e poi verso nord sulla strada vecchia, fino a Città del Nord sotto le montagne. Tocca un luogo per sapere che cosa succede lì. I luoghi si aprono man mano che leggi.",
+ "home": "verdegrado",
+ "legend": "Tutti i luoghi sulla mappa",
+ "labels": [
+  {
+   "x": 150,
+   "y": 450,
+   "t": "Verdegrado"
+  },
+  {
+   "x": 560,
+   "y": 690,
+   "t": "Sinea"
+  },
+  {
+   "x": 760,
+   "y": 230,
+   "t": "Città del Nord"
+  }
+ ],
+ "places": [
+  {
+   "id": "verdegrado",
+   "icon": "🌳",
+   "name": "Verdegrado",
+   "x": 150,
+   "y": 400,
+   "at": "01.md",
+   "sub": "La città verde, vicino al bosco",
+   "what": "Qui l'autunno arriva sempre dal bosco. Natalia vive ancora qui con la volpe che parla, finché non squilla il telefono.",
+   "who": "Natalia e la volpe.",
+   "secrets": [
+    {
+     "at": "01.md",
+     "text": "È Marisa, l'amica d'infanzia: ha appena divorziato e ha due settimane di ferie. «Vieni a Sinea. Niente problemi, niente drammi.»"
+    }
+   ]
+  },
+  {
+   "id": "marisa",
+   "icon": "🏠",
+   "name": "La casa di Marisa",
+   "x": 470,
+   "y": 620,
+   "at": "02.md",
+   "sub": "Sinea",
+   "what": "Il treno arriva alle nove e un quarto. Ma Sinea è cambiata: la gente litiga per niente, le coppie si lasciano, nessuno ride.",
+   "who": "Marisa, Natalia e la volpe.",
+   "secrets": [
+    {
+     "at": "05.md",
+     "text": "Sul divano, con una tazza di tè, Natalia racconta tutto: le radici nere escono dalle pietre ed entrano dritte nel cuore delle persone. Marisa non la interrompe neanche una volta."
+    },
+    {
+     "at": "08.md",
+     "text": "Una mattina, sotto la porta, c'è un foglio."
+    }
+   ]
+  },
+  {
+   "id": "dante",
+   "icon": "🕳",
+   "name": "Piazza Dante",
+   "x": 560,
+   "y": 640,
+   "at": "04.md",
+   "sub": "Il cuore del centro di Sinea",
+   "what": "Solo Natalia e la volpe vedono le radici nere che escono da sotto terra.",
+   "who": "Natalia, la volpe e la gente triste di Sinea.",
+   "secrets": [
+    {
+     "at": "05.md",
+     "text": "Le radici non stanno ferme: vanno verso il porto."
+    }
+   ]
+  },
+  {
+   "id": "torre",
+   "icon": "🗼",
+   "name": "La Torre ANIMA",
+   "x": 640,
+   "y": 600,
+   "at": "06.md",
+   "sub": "La torre di vetro, porte aperte il sabato",
+   "what": "«Conosci da vicino l'intelligenza che ti capisce.» ANIMA risponde a tutte le domande e dà consigli a tutti.",
+   "who": "Natalia, Marisa e la voce di ANIMA.",
+   "secrets": [
+    {
+     "at": "07.md",
+     "text": "Dentro c'è una colonna di luce, e una voce che sa tutto di Natalia."
+    }
+   ]
+  },
+  {
+   "id": "strada",
+   "icon": "🚙",
+   "name": "La strada vecchia per il nord",
+   "x": 520,
+   "y": 430,
+   "at": "09.md",
+   "sub": "Dietro il cimitero, poi colline e vigneti",
+   "what": "La Pulce, la piccola macchina gialla di Marisa, corre tra i campi e i paesi addormentati con tre voci che escono dai finestrini.",
+   "who": "Natalia, Marisa e la volpe.",
+   "secrets": [
+    {
+     "at": "10.md",
+     "text": "Di notte, vicino a un casolare, la volpe alza le orecchie. Passi lenti e pesanti sulla ghiaia: gli stessi delle scale di Marisa, alle tre di notte."
+    }
+   ]
+  },
+  {
+   "id": "nord",
+   "icon": "🏛",
+   "name": "Città del Nord",
+   "x": 760,
+   "y": 280,
+   "at": "13.md",
+   "sub": "Sotto le montagne",
+   "what": "Bellissima e fredda, come un salotto elegante dove nessuno ti invita a sederti. Strade larghe, palazzi con colonne e un monumento in ogni piazza.",
+   "who": "Natalia, Marisa, la volpe e Vasily.",
+   "secrets": [
+    {
+     "at": "15.md",
+     "text": "Dormono in una piccola pensione di periferia, vicino alla stazione dei treni merci."
+    }
+   ]
+  },
+  {
+   "id": "specchio",
+   "icon": "🪞",
+   "name": "Lo studio Specchio",
+   "x": 840,
+   "y": 330,
+   "at": "14.md",
+   "sub": "Via dei Cristalli, il quartiere nuovo",
+   "what": "Una strada stretta e lunga, dove i palazzi di pietra lasciano il posto al vetro e all'acciaio.",
+   "who": "Natalia, Marisa e Vasily."
+  },
+  {
+   "id": "lanterna",
+   "icon": "🏮",
+   "name": "Il Caffè della Lanterna",
+   "x": 700,
+   "y": 330,
+   "at": "19.md",
+   "sub": "Città del Nord, sei tavolini di marmo",
+   "what": "Piccolo e vecchio, con una macchina del caffè d'ottone lucida come una tromba. In fondo, sotto una lampada verde, c'è un pianoforte.",
+   "who": "Natalia e la volpe."
+  },
+  {
+   "id": "stella",
+   "icon": "⭐",
+   "name": "Piazza della Stella Polare",
+   "x": 770,
+   "y": 230,
+   "at": "20.md",
+   "sub": "Il centro di Città del Nord",
+   "what": "Marisa ha paura, ma la sua voce sarà importante.",
+   "who": "Marisa.",
+   "secrets": [
+    {
+     "at": "21.md",
+     "text": "La porta di bronzo della biblioteca si apre da sola: un atrio a scacchi bianchi e neri e un soffitto dipinto di stelle. Sotto c'è un'altra cupola, senza stelle."
+    },
+    {
+     "at": "23.md",
+     "text": "La sindaca, Ginevra Altieri, arriva a piedi, senza guardie, con le scarpe sporche di polvere, e guarda la sua città come per la prima volta."
+    }
+   ]
+  }
+ ],
+ "trip": true
+}

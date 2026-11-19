@@ -1,0 +1,170 @@
+{
+ "art": "city",
+ "theme": "carta",
+ "intro": "Bologna dei portici, delle torri e delle colline, e la Bologna dei sogni, che a volte è in rovina. Tocca un luogo per sapere che cosa succede lì. I luoghi si aprono man mano che leggi.",
+ "home": "studio",
+ "legend": "Tutti i luoghi sulla mappa",
+ "nowhere": "Nel mondo dei sogni",
+ "labels": [
+  {
+   "x": 520,
+   "y": 470,
+   "t": "Centro"
+  },
+  {
+   "x": 120,
+   "y": 740,
+   "t": "Colli bolognesi"
+  }
+ ],
+ "places": [
+  {
+   "id": "studio",
+   "icon": "🛋",
+   "name": "Lo studio di Irina",
+   "x": 600,
+   "y": 420,
+   "at": "01.md",
+   "sub": "Via Santo Stefano, secondo piano, sotto i portici",
+   "what": "Dalla finestra si vedono i tetti rossi e le colline. Il signor Gallo, un ferroviere in pensione, racconta un sogno: quattro cavalieri passano sotto i portici e il quarto lo guarda.",
+   "who": "Irina Ricci, psicologa, e il signor Gallo.",
+   "secrets": [
+    {
+     "at": "03.md",
+     "text": "Una sera di pioggia bussa un uomo con un ombrello rotto: «Mi chiamo Pietro Valli. Sono un ricercatore. Studio i sogni.»"
+    },
+    {
+     "at": "18.md",
+     "text": "Accanto alla porta dello studio c'è una targa nuova."
+    }
+   ]
+  },
+  {
+   "id": "barsantostefano",
+   "icon": "🍷",
+   "name": "Il bar di piazza Santo Stefano",
+   "x": 680,
+   "y": 520,
+   "at": "03.md",
+   "sub": "Un piccolo bar, il venerdì sera",
+   "what": "Irina racconta i sogni strani dei pazienti alla sua amica Marina, psicologa anche lei, con i capelli rossi e gli orecchini grandi.",
+   "who": "Irina e Marina."
+  },
+  {
+   "id": "villa",
+   "icon": "🏡",
+   "name": "La villa gialla di Pietro",
+   "x": 170,
+   "y": 620,
+   "at": "04.md",
+   "sub": "Sulle colline, sopra il Meloncello",
+   "what": "Una villa con le persiane verdi e un albero di cachi. Nella cantina c'è il laboratorio: computer, schermi e due poltrone con un casco. È la macchina dei sogni.",
+   "who": "Pietro, Irina e il gatto Freud.",
+   "secrets": [
+    {
+     "at": "07.md",
+     "text": "Marina arriva in motorino con la giacca al contrario: anche lei ha sognato la scacchiera. Era un pedone, e la voce di Irina l'ha liberata."
+    },
+    {
+     "at": "11.md",
+     "text": "Sei poltrone in cerchio, una torta di mele e un violino «per sicurezza»: è la notte del sogno collettivo."
+    }
+   ]
+  },
+  {
+   "id": "ospedale",
+   "icon": "🏥",
+   "name": "L'ospedale Maggiore",
+   "x": 300,
+   "y": 360,
+   "at": "10.md",
+   "sub": "Un reparto speciale al terzo piano",
+   "what": "Il signor Gallo e altri pazienti non si svegliano più. «Sono i suoi pedoni», dice Marina piano.",
+   "who": "Irina, Pietro, Marina e i pazienti addormentati."
+  },
+  {
+   "id": "maggiore",
+   "icon": "⛪",
+   "name": "Piazza Maggiore",
+   "x": 480,
+   "y": 380,
+   "at": "11.md",
+   "sub": "Con San Petronio e il Nettuno",
+   "what": "Nel sogno la piazza è in rovina: San Petronio è nera di fumo, il Nettuno è caduto e i portici sono crollati. Qui si combatte la grande battaglia.",
+   "who": "Irina, Pietro, Marina, Davide, la signora Teresa e i quattro cavalieri.",
+   "secrets": [
+    {
+     "at": "12.md",
+     "text": "Pietro diventa un gigante di pietra e lancia un cavaliere sopra i tetti di Bologna."
+    },
+    {
+     "at": "14.md",
+     "text": "A dicembre, nella piazza vera, c'è un grande albero di Natale. Ma il re non ha smesso di aspettare."
+    }
+   ]
+  },
+  {
+   "id": "sanluca",
+   "icon": "⛰",
+   "name": "Il portico di San Luca",
+   "x": 90,
+   "y": 470,
+   "at": "12.md",
+   "sub": "Quasi quattro chilometri di archi",
+   "what": "All'alba Irina e Pietro salgono verso il santuario sotto il portico più lungo del mondo.",
+   "who": "Irina e Pietro.",
+   "secrets": [
+    {
+     "at": "12.md",
+     "text": "Il nonno di Pietro diceva che gli archi di San Luca si contano solo una volta nella vita: se li conti due volte, non trovi mai lo stesso numero."
+    }
+   ]
+  },
+  {
+   "id": "rizzoli",
+   "icon": "🐎",
+   "name": "Via Rizzoli e le Due Torri",
+   "x": 560,
+   "y": 300,
+   "at": "14.md",
+   "sub": "Nella nebbia dell'alba",
+   "what": "L'autista dell'autobus numero 13 racconta al giornale di aver visto passare quattro cavalli nella nebbia.",
+   "who": "Un autista dell'autobus e i quattro cavalieri."
+  },
+  {
+   "id": "stazione",
+   "icon": "🚉",
+   "name": "La stazione",
+   "x": 520,
+   "y": 230,
+   "at": "15.md",
+   "sub": "Arrivi per la vigilia di Natale",
+   "what": "Un abbraccio sul binario prima della cena di Natale alla villa gialla.",
+   "who": "Irina e chi arriva per le feste."
+  },
+  {
+   "id": "scacchiera",
+   "icon": "♟",
+   "name": "La scacchiera dei sogni",
+   "at": "06.md",
+   "sub": "Sotto un soffitto grigio, come in una vecchia stazione",
+   "what": "Nel primo viaggio Irina si trova su una scacchiera enorme. Tutti i pezzi girano la testa insieme, e dal fondo si avvicina una figura altissima.",
+   "who": "Irina, Pietro e il re con la corona di spine."
+  },
+  {
+   "id": "limbo",
+   "icon": "🌫",
+   "name": "Il limbo",
+   "at": "16.md",
+   "sub": "Né cielo né terra, solo luce grigia",
+   "what": "Qui Ettore è più forte: a ogni colpo Irina dimentica qualcosa. Il colore degli occhi di sua madre. La strada del suo studio.",
+   "who": "Irina, Ettore e Pietro, a piedi nudi.",
+   "secrets": [
+    {
+     "at": "17.md",
+     "text": "Irina si sveglia nel laboratorio, e la cantina è piena di persone."
+    }
+   ]
+  }
+ ]
+}

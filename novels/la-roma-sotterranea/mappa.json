@@ -1,0 +1,309 @@
+{
+ "art": "city",
+ "theme": "carta",
+ "intro": "Roma sopra e Roma sotto: fontane, piazze e colli, e sotto le pietre fogne antiche, templi nascosti e acquedotti. Tocca un luogo per sapere che cosa succede lì. I luoghi si aprono man mano che leggi.",
+ "home": "hotel",
+ "legend": "Tutti i luoghi sulla mappa",
+ "labels": [
+  {
+   "x": 470,
+   "y": 95,
+   "t": "Tevere"
+  },
+  {
+   "x": 140,
+   "y": 250,
+   "t": "Trastevere"
+  },
+  {
+   "x": 870,
+   "y": 740,
+   "t": "EUR"
+  }
+ ],
+ "places": [
+  {
+   "id": "termini",
+   "icon": "🚉",
+   "name": "Stazione Termini",
+   "x": 900,
+   "y": 300,
+   "at": "01.md",
+   "sub": "L'arrivo nella città eterna",
+   "what": "Roberto, Natalia, Alessio e Laura scendono dal treno con le valigie e il cuore ancora pesante per i ricordi di Venezia. Hanno con sé la Maschera.",
+   "who": "Roberto, Natalia, Alessio e Laura."
+  },
+  {
+   "id": "hotel",
+   "icon": "🏨",
+   "name": "L'hotel vicino al Pantheon",
+   "x": 520,
+   "y": 330,
+   "at": "02.md",
+   "sub": "Tovaglie a quadri e profumo di caffè",
+   "what": "Il piccolo albergo è la loro base. Qui si studiano mappe e si fanno piani.",
+   "who": "I quattro amici.",
+   "secrets": [
+    {
+     "at": "06.md",
+     "text": "Alle due di notte Roberto riapre l'Enciclopedia tascabile dei misteri e delle arti occulte della nonna."
+    },
+    {
+     "at": "12.md",
+     "text": "L'albergo non è più sicuro: devono andarsene."
+    }
+   ]
+  },
+  {
+   "id": "trevi",
+   "icon": "⛲",
+   "name": "La Fontana di Trevi",
+   "x": 640,
+   "y": 260,
+   "at": "03.md",
+   "sub": "Acqua e luce",
+   "what": "Il fragore delle cascate copre il piano. Natalia indica il braccio della statua dell'Abbondanza: deve esserci una giuntura.",
+   "who": "Roberto e Natalia.",
+   "secrets": [
+    {
+     "at": "03.md",
+     "text": "Nella statua c'è un frammento. E subito dopo scatta l'allarme."
+    },
+    {
+     "at": "17.md",
+     "text": "Nel vicolo del Puttarello, dietro la fontana, dove i turisti non passano mai, c'è la strada verso l'Acqua Vergine, l'acquedotto antico."
+    }
+   ]
+  },
+  {
+   "id": "assunta",
+   "icon": "🍝",
+   "name": "La casa di nonna Assunta",
+   "x": 180,
+   "y": 300,
+   "at": "05.md",
+   "sub": "Trastevere, oltre Ponte Sisto",
+   "what": "Un labirinto di vicoli, panni stesi ed edera che scende dai muri. Nonna Assunta cucina rigatoni alla gricia e cacio e pepe, e ha sempre ragione.",
+   "who": "Nonna Assunta e i quattro amici.",
+   "secrets": [
+    {
+     "at": "18.md",
+     "text": "Nonna Assunta sa molte più cose di quello che sembra."
+    },
+    {
+     "at": "28.md",
+     "text": "Alessio confessa: è scappato di casa e ha lasciato sua nonna da sola per dodici anni."
+    }
+   ]
+  },
+  {
+   "id": "bocca",
+   "icon": "🗿",
+   "name": "La Bocca della Verità",
+   "x": 420,
+   "y": 560,
+   "at": "07.md",
+   "sub": "Santa Maria in Cosmedin, chiude alle sei",
+   "what": "Il mascherone di pietra che, si dice, morde la mano dei bugiardi. Ma qui comincia anche una strada sotto terra.",
+   "who": "I quattro amici.",
+   "secrets": [
+    {
+     "at": "08.md",
+     "text": "Sotto c'è la Cloaca Massima, la fogna dei re di Roma. Per un'ora camminano lungo un fiume nero. «La usiamo come autostrada per i misteri», dice Alessio."
+    }
+   ]
+  },
+  {
+   "id": "campo",
+   "icon": "🌼",
+   "name": "Campo de' Fiori",
+   "x": 400,
+   "y": 380,
+   "at": "10.md",
+   "sub": "Il mercato e la statua di Giordano Bruno",
+   "what": "Alessio torna con un sacchetto di supplì caldi. Ma Laura sa dove è stato davvero.",
+   "who": "Alessio, Laura e Maria, la violinista.",
+   "secrets": [
+    {
+     "at": "09.md",
+     "text": "Alessio dice che va a prendere un caffè. Invece va a Piazza di Spagna, dove una ragazza suona il violino: è Maria, il suo vecchio amore."
+    },
+    {
+     "at": "15.md",
+     "text": "Sono tutti e quattro in piazza quando suona la seconda sirena."
+    }
+   ]
+  },
+  {
+   "id": "gianicolo",
+   "icon": "🌅",
+   "name": "Il Gianicolo",
+   "x": 90,
+   "y": 420,
+   "at": "11.md",
+   "sub": "La terrazza con la statua di Garibaldi",
+   "what": "Un messaggio da un numero sconosciuto: «Gianicolo. Mezzogiorno. Vieni da solo. Lei sta bene. Per ora.» Sotto la terrazza, Roma color miele.",
+   "who": "Alessio e l'uomo dagli occhi freddi.",
+   "secrets": [
+    {
+     "at": "32.md",
+     "text": "All'alba Alessio arriva sulla Vespa verde menta, nello stesso punto dove l'aspettava suo padre. Corrado è già lì."
+    }
+   ]
+  },
+  {
+   "id": "castello",
+   "icon": "🏰",
+   "name": "Castel Sant'Angelo",
+   "x": 330,
+   "y": 230,
+   "at": "13.md",
+   "sub": "Sul Tevere, a mezzanotte e mezza",
+   "what": "Sotto il ponte il fiume è nero e gonfio di pioggia. Il piano di Natalia comincia qui.",
+   "who": "I quattro amici.",
+   "secrets": [
+    {
+     "at": "14.md",
+     "text": "Dietro una vetrina di armature c'è una porticina di legno: il Passetto di Borgo, il corridoio segreto dei papi verso il Vaticano."
+    }
+   ]
+  },
+  {
+   "id": "serratura",
+   "icon": "🔑",
+   "name": "Il buco della serratura",
+   "x": 300,
+   "y": 640,
+   "at": "16.md",
+   "sub": "Sull'Aventino",
+   "what": "Guardi nel buco della serratura di un portone e vedi la cupola di San Pietro, perfetta in fondo a un viale di alberi.",
+   "who": "Roberto e Laura."
+  },
+  {
+   "id": "argentina",
+   "icon": "🐈",
+   "name": "Largo di Torre Argentina",
+   "x": 480,
+   "y": 430,
+   "at": "19.md",
+   "sub": "Rovine di templi e tanti gatti",
+   "what": "Una piazza strana: in mezzo al traffico ci sono templi antichi, e tra le pietre vivono i gatti di Roma.",
+   "who": "I quattro amici e i gatti."
+  },
+  {
+   "id": "massimi",
+   "icon": "🎭",
+   "name": "Il Palazzo dei Massimi",
+   "x": 760,
+   "y": 450,
+   "at": "20.md",
+   "sub": "Rione Monti, dietro un portone scuro",
+   "what": "Qui vive la Senatrice Aurelia, del Consortium Umbrarum. Porta solo un anello.",
+   "who": "La Senatrice Aurelia e Roberto.",
+   "secrets": [
+    {
+     "at": "34.md",
+     "text": "Il venti aprile, alle nove di sera, il palazzo brilla come una lanterna: è il ballo in maschera."
+    },
+    {
+     "at": "35.md",
+     "text": "Maria scende dal palco con il violino e Tommaso blocca due guardie con il suo violoncello. La Maschera è ritrovata."
+    }
+   ]
+  },
+  {
+   "id": "colosseo",
+   "icon": "🏟",
+   "name": "Il Colosseo",
+   "x": 700,
+   "y": 560,
+   "at": "21.md",
+   "sub": "Di notte",
+   "what": "Se il Consortium entra stanotte, avrà già pensato a tutto.",
+   "who": "Roberto, Natalia, Alessio, Laura e il Consortium.",
+   "secrets": [
+    {
+     "at": "22.md",
+     "text": "Per la prima volta in duemila anni il Colosseo si allaga: Roberto alza le braccia e l'acqua arriva dai tombini. Una naumachia."
+    }
+   ]
+  },
+  {
+   "id": "sanclemente",
+   "icon": "🕯",
+   "name": "Il Mitreo di San Clemente",
+   "x": 820,
+   "y": 600,
+   "at": "24.md",
+   "sub": "Sotto una chiesa del dodicesimo secolo",
+   "what": "Sopra una chiesa medievale, sotto una chiesa più antica, e ancora più sotto un tempio del dio Mitra.",
+   "who": "I quattro amici."
+  },
+  {
+   "id": "foro",
+   "icon": "🔥",
+   "name": "Il Foro Romano",
+   "x": 620,
+   "y": 480,
+   "at": "25.md",
+   "sub": "Alla luna piena",
+   "what": "Un mare d'argento e di ombre. Qui ardeva il fuoco delle Vestali.",
+   "who": "I quattro amici.",
+   "secrets": [
+    {
+     "at": "39.md",
+     "text": "Sotto il Palatino c'è il Lupercale, la grotta dove la Lupa allattò Romolo e Remo."
+    }
+   ]
+  },
+  {
+   "id": "testaccio",
+   "icon": "🏺",
+   "name": "Il Monte dei Cocci",
+   "x": 200,
+   "y": 720,
+   "at": "26.md",
+   "sub": "Testaccio",
+   "what": "«È 'na collina fatta de anfore rotte»: milioni di anfore antiche, una sopra l'altra.",
+   "who": "I quattro amici."
+  },
+  {
+   "id": "eur",
+   "icon": "🏛",
+   "name": "Sotto l'EUR",
+   "x": 820,
+   "y": 700,
+   "at": "27.md",
+   "sub": "Una sala bianca e fredda",
+   "what": "Quando gli tolgono il cappuccio, Roberto vede pilastri bianchi tutti uguali e una scritta di pietra alta un metro.",
+   "who": "Roberto e il Consortium Umbrarum.",
+   "secrets": [
+    {
+     "at": "29.md",
+     "text": "La fuga in metropolitana: l'hanno portata via con il Collare."
+    }
+   ]
+  },
+  {
+   "id": "nando",
+   "icon": "🛵",
+   "name": "Il rifugio di nonno Nando",
+   "x": 230,
+   "y": 480,
+   "at": "30.md",
+   "sub": "Trastevere, un posto segreto",
+   "what": "Non possono tornare da nonna Assunta. Il vecchio rifugio di nonno Nando, con la Vespa in mezzo, diventa casa.",
+   "who": "I quattro amici, Maria e Tommaso.",
+   "secrets": [
+    {
+     "at": "33.md",
+     "text": "Per cinque giorni il rifugio diventa un laboratorio: si prepara il colpo del secolo."
+    },
+    {
+     "at": "37.md",
+     "text": "All'alba del ventuno aprile: caffè, tanto caffè, in tre moke che borbottano insieme."
+    }
+   ]
+  }
+ ]
+}
