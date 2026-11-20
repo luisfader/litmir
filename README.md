@@ -69,6 +69,10 @@ En la página de la novela, un botón «Разделы романа» abre hasta
 
 Las novelas pueden llevar diagramas de ajedrez como imágenes normales (`![](novels/<novela>/img/NN.png)`). Se dibujan con `python3 tools/diagramas_ajedrez.py novels/<novela>/diagramas.json novels/<novela>/img` (solo necesita Pillow y la fuente DejaVu). Cada entrada del JSON lleva `file`, `fen` (o `startpos`), `moves` (desde→hasta, sin comprobar la legalidad: hay que verificar cada jugada a mano; el enroque son dos jugadas, `e1c1` y `a1d1`), y opcionalmente `hl`/`red` (casillas resaltadas), `arrows`/`red_arrows`, `labels` (texto sobre una casilla) y `caption` (texto debajo del tablero). Ahora: «Стратег» (`novels/strateg/`, RU, 20 capítulos, 17 diagramas): Мигель, el hermano de 12 años de Марк (el detective de «Призрачный поезд»), resuelve casos con ajedrez como el anónimo «Шахматист» y, con Василий, frena un golpe contra el alcalde Альфредо Гранде planeado por Энцо Ферреро en alianza con el Северный город.
 
+## Música de piano con partitura (MIDI)
+
+`tools/piano/` compone y prepara la música de piano de una novela: escribe la partitura como imagen (pentagrama doble, acordes, tempo), el archivo MIDI y el MP3. El MP3 se hace con el piano del banco de sonidos del sistema (`/usr/share/sounds/sf2/TimGM6mb.sf2`), con pedal, un filtro suave para que no suene chillón y reverberación. Las piezas (melodía y acordes por compás) están en `tools/piano/pieces.py`; se generan con `python3 tools/piano/make.py <carpeta>`. En el capítulo van tres párrafos: la partitura `![Партитура «…»](novels/<novela>/img/score-….png)`, el reproductor `!audio[…](novels/<novela>/music/….mp3)` (el MP3 se sube a `luisfader/podcasts`) y el enlace `[🎼 Скачать MIDI «…»](novels/<novela>/midi/….mid)`. Ahora: «Северная любовь: Восточный ветер», una pieza por capítulo (8).
+
 ## Blog
 
 Cada idioma tiene su propio blog (`#/blog`), al que se llega desde el botón «Blog» de la portada. Cada idioma muestra solo sus entradas.
