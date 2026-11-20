@@ -6,8 +6,11 @@
   "novels/el-misterio-de-los-fader/cover.jpg",
   "novels/operacion-londres/cover.jpg",
   "novels/el-tren-fantasma/cover.jpg",
+  "novels/el-tren/cover-v2.jpg",
+  "novels/amor-en-el-cosmos/cover.jpg",
   "novels/la-ciudad-secreta/cover.jpg",
   "novels/la-corazonada/cover-v5.jpg",
+  "novels/la-corazonada-2/cover.jpg",
   "novels/anomalia/cover.jpg",
   "novels/la-chica-del-retrato/cover.jpg",
   "novels/el-impostor/cover.jpg",
@@ -1773,8 +1776,8 @@
    "options": [
     "Ondas de amor",
     "La Corazonada",
-    "La chica del retrato",
-    "El tren"
+    "Anomalía",
+    "El impostor"
    ],
    "answer": 1,
    "why": "Luis aparece en «La Corazonada»."
@@ -1785,9 +1788,9 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Luis?",
    "options": [
-    "El tren fantasma",
     "La ciudad secreta",
-    "La chica del retrato",
+    "Amor en el cosmos",
+    "Anomalía",
     "El misterio de los Fader"
    ],
    "answer": 3,
@@ -1802,7 +1805,7 @@
     "El tren",
     "El misterio de los Fader",
     "La Corazonada",
-    "El impostor"
+    "La chica del retrato"
    ],
    "answer": 2,
    "why": "Robert aparece en «La Corazonada»."
@@ -1814,9 +1817,9 @@
    "question": "¿En qué novela aparece Natalia?",
    "options": [
     "La Corazonada",
-    "La chica del retrato",
+    "Anomalía",
     "El tren",
-    "Las coordenadas del amor"
+    "El impostor"
    ],
    "answer": 0,
    "why": "Natalia aparece en «La Corazonada»."
@@ -1899,7 +1902,7 @@
    "options": [
     "El misterio de los Fader",
     "La ciudad secreta",
-    "El impostor",
+    "La chica del retrato",
     "El tren fantasma"
    ],
    "answer": 1,
@@ -1927,7 +1930,7 @@
    "options": [
     "Ondas de amor",
     "El misterio de los Fader: Operación Londres",
-    "Anomalía",
+    "La Corazonada 2: El Refugio",
     "Las coordenadas del amor"
    ],
    "answer": 3,
@@ -1942,7 +1945,7 @@
     "El tren fantasma",
     "La Corazonada",
     "El tren",
-    "Anomalía"
+    "La ciudad secreta"
    ],
    "answer": 1,
    "why": "Kennet aparece en «La Corazonada»."
@@ -1954,7 +1957,7 @@
    "question": "¿En qué novela aparece Oxana?",
    "options": [
     "La Corazonada",
-    "La chica del retrato",
+    "Anomalía",
     "El misterio de los Fader: Operación Londres",
     "Ondas de amor"
    ],
@@ -1997,8 +2000,8 @@
    "options": [
     "El misterio de los Fader",
     "Ondas de amor",
-    "Anomalía",
-    "La Corazonada"
+    "La Corazonada 2: El Refugio",
+    "La ciudad secreta"
    ],
    "answer": 0,
    "why": "Sergio aparece en «El misterio de los Fader»."
@@ -2009,12 +2012,12 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Natalia?",
    "options": [
+    "Ondas de amor",
     "El tren",
-    "El misterio de los Fader",
-    "La chica del retrato",
-    "Ondas de amor"
+    "Amor en el cosmos",
+    "El misterio de los Fader"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "Natalia aparece en «El misterio de los Fader»."
   },
   {
@@ -2023,12 +2026,12 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Martín?",
    "options": [
-    "El misterio de los Fader: Operación Londres",
-    "Las coordenadas del amor",
+    "El tren fantasma",
     "La Corazonada",
-    "La chica del retrato"
+    "Las coordenadas del amor",
+    "El misterio de los Fader: Operación Londres"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "Martín aparece en «La Corazonada»."
   },
   {
@@ -2038,11 +2041,11 @@
    "question": "¿En qué novela aparece Mónica?",
    "options": [
     "El tren",
-    "La Corazonada 2: El Refugio",
     "El misterio de los Fader",
-    "El tren fantasma"
+    "Las coordenadas del amor",
+    "Lluvia de meteoritos"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "Mónica aparece en «El misterio de los Fader»."
   },
   {
@@ -2051,12 +2054,12 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Alexey?",
    "options": [
-    "El misterio de los Fader",
-    "La Corazonada",
-    "El impostor",
-    "El misterio de los Fader: Operación Londres"
+    "El misterio de los Fader: Operación Londres",
+    "Amor en el cosmos",
+    "La ciudad secreta",
+    "La Corazonada"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "Alexey aparece en «La Corazonada»."
   },
   {
@@ -2065,9 +2068,9 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Domingo Castro (Kurüf)?",
    "options": [
-    "La chica del retrato",
-    "El misterio de los Fader: Operación Londres",
-    "La Corazonada",
+    "La ciudad secreta",
+    "El tren fantasma",
+    "Ondas de amor",
     "El misterio de los Fader"
    ],
    "answer": 3,
@@ -2079,12 +2082,12 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Lucrecia Schmidt?",
    "options": [
-    "La chica del retrato",
-    "La Corazonada",
-    "El misterio de los Fader",
-    "El tren fantasma"
+    "El tren fantasma",
+    "Ondas de amor",
+    "El impostor",
+    "La ciudad secreta"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "Lucrecia Schmidt aparece en «El tren fantasma»."
   },
   {
@@ -2093,10 +2096,10 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Elena?",
    "options": [
-    "El misterio de los Fader: Operación Londres",
+    "El misterio de los Fader",
     "Lluvia de meteoritos",
-    "Anomalía",
-    "La Corazonada 2: El Refugio"
+    "El impostor",
+    "La Corazonada"
    ],
    "answer": 1,
    "why": "Elena aparece en «Lluvia de meteoritos»."
@@ -2107,10 +2110,10 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Felipe?",
    "options": [
+    "La chica del retrato",
     "El misterio de los Fader: Operación Londres",
-    "La ciudad secreta",
     "Lluvia de meteoritos",
-    "El misterio de los Fader"
+    "La Corazonada 2: El Refugio"
    ],
    "answer": 2,
    "why": "Felipe aparece en «Lluvia de meteoritos»."
@@ -2121,12 +2124,12 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Luciano Ferrer?",
    "options": [
+    "La ciudad secreta",
     "Lluvia de meteoritos",
-    "La Corazonada",
-    "Ondas de amor",
-    "El tren"
+    "El impostor",
+    "La Corazonada"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "Luciano Ferrer aparece en «Lluvia de meteoritos»."
   },
   {
@@ -2135,12 +2138,12 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Svetlana?",
    "options": [
+    "Las coordenadas del amor",
     "El misterio de los Fader",
-    "Ondas de amor",
-    "El misterio de los Fader: Operación Londres",
-    "Lluvia de meteoritos"
+    "Lluvia de meteoritos",
+    "Ondas de amor"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "Svetlana aparece en «Lluvia de meteoritos»."
   },
   {
@@ -2150,8 +2153,8 @@
    "question": "¿En qué novela aparece Sasha?",
    "options": [
     "Lluvia de meteoritos",
-    "Anomalía",
     "El misterio de los Fader",
+    "La chica del retrato",
     "La ciudad secreta"
    ],
    "answer": 0,
@@ -2177,10 +2180,10 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Micaela?",
    "options": [
-    "La ciudad secreta",
+    "Amor en el cosmos",
     "El tren fantasma",
     "Lluvia de meteoritos",
-    "Anomalía"
+    "La Corazonada 2: El Refugio"
    ],
    "answer": 2,
    "why": "Micaela aparece en «Lluvia de meteoritos»."
@@ -2191,12 +2194,12 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Julieta?",
    "options": [
-    "La Corazonada",
+    "La ciudad secreta",
     "El tren",
-    "Anomalía",
-    "Ondas de amor"
+    "El impostor",
+    "Anomalía"
    ],
-   "answer": 2,
+   "answer": 3,
    "why": "Julieta aparece en «Anomalía»."
   },
   {
@@ -2205,12 +2208,12 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Mauro?",
    "options": [
-    "Ondas de amor",
-    "La ciudad secreta",
-    "Anomalía",
-    "Las coordenadas del amor"
+    "La chica del retrato",
+    "Amor en el cosmos",
+    "El misterio de los Fader: Operación Londres",
+    "Anomalía"
    ],
-   "answer": 2,
+   "answer": 3,
    "why": "Mauro aparece en «Anomalía»."
   },
   {
@@ -2219,12 +2222,12 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece El tío Cacho?",
    "options": [
+    "La ciudad secreta",
+    "Ondas de amor",
     "Anomalía",
-    "Lluvia de meteoritos",
-    "El tren fantasma",
-    "El misterio de los Fader: Operación Londres"
+    "Lluvia de meteoritos"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "El tío Cacho aparece en «Anomalía»."
   },
   {
@@ -2233,12 +2236,12 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Rodrigo Echeverría Paz?",
    "options": [
+    "El impostor",
     "Anomalía",
-    "El tren",
-    "Ondas de amor",
-    "La chica del retrato"
+    "La Corazonada 2: El Refugio",
+    "El tren"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "Rodrigo Echeverría Paz aparece en «Anomalía»."
   },
   {
@@ -2247,12 +2250,12 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Don Ernesto?",
    "options": [
+    "El tren",
+    "Anomalía",
     "El tren fantasma",
-    "Las coordenadas del amor",
-    "Ondas de amor",
-    "Anomalía"
+    "El impostor"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "Don Ernesto aparece en «Anomalía»."
   },
   {
@@ -2261,12 +2264,12 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Rivera?",
    "options": [
-    "La chica del retrato",
-    "La Corazonada",
-    "Lluvia de meteoritos",
-    "El impostor"
+    "El impostor",
+    "La Corazonada 2: El Refugio",
+    "Anomalía",
+    "La chica del retrato"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "Rivera aparece en «La chica del retrato»."
   },
   {
@@ -2275,12 +2278,12 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Irina?",
    "options": [
-    "El misterio de los Fader",
-    "Las coordenadas del amor",
     "La chica del retrato",
-    "La Corazonada"
+    "La ciudad secreta",
+    "Lluvia de meteoritos",
+    "El impostor"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "Irina aparece en «La chica del retrato»."
   },
   {
@@ -2289,12 +2292,12 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Iván?",
    "options": [
-    "La chica del retrato",
     "El misterio de los Fader",
-    "Anomalía",
-    "Las coordenadas del amor"
+    "Las coordenadas del amor",
+    "La chica del retrato",
+    "La ciudad secreta"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "Iván aparece en «La chica del retrato»."
   },
   {
@@ -2303,12 +2306,12 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Sofía?",
    "options": [
-    "La Corazonada",
-    "Anomalía",
-    "El tren",
-    "El impostor"
+    "El impostor",
+    "El misterio de los Fader",
+    "La Corazonada 2: El Refugio",
+    "La chica del retrato"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "Sofía aparece en «El impostor»."
   },
   {
@@ -2318,11 +2321,11 @@
    "question": "¿En qué novela aparece Leonardo?",
    "options": [
     "La ciudad secreta",
-    "El misterio de los Fader",
-    "El impostor",
-    "El misterio de los Fader: Operación Londres"
+    "La Corazonada 2: El Refugio",
+    "El tren",
+    "El impostor"
    ],
-   "answer": 2,
+   "answer": 3,
    "why": "Leonardo aparece en «El impostor»."
   },
   {
@@ -2331,10 +2334,10 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Daniel?",
    "options": [
-    "La chica del retrato",
-    "La Corazonada",
+    "Amor en el cosmos",
+    "El misterio de los Fader",
     "El impostor",
-    "La Corazonada 2: El Refugio"
+    "El misterio de los Fader: Operación Londres"
    ],
    "answer": 2,
    "why": "Daniel aparece en «El impostor»."
@@ -2345,12 +2348,12 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Juan Carlos?",
    "options": [
-    "Lluvia de meteoritos",
-    "Las coordenadas del amor",
-    "El tren fantasma",
-    "El impostor"
+    "La chica del retrato",
+    "La ciudad secreta",
+    "El impostor",
+    "La Corazonada"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "Juan Carlos aparece en «El impostor»."
   },
   {
@@ -2359,12 +2362,12 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Florencia?",
    "options": [
-    "La chica del retrato",
-    "La Corazonada",
-    "El impostor",
-    "La ciudad secreta"
+    "Lluvia de meteoritos",
+    "Las coordenadas del amor",
+    "El tren fantasma",
+    "El impostor"
    ],
-   "answer": 2,
+   "answer": 3,
    "why": "Florencia aparece en «El impostor»."
   },
   {
@@ -2373,12 +2376,12 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Valeria?",
    "options": [
-    "Anomalía",
+    "La chica del retrato",
+    "La ciudad secreta",
     "El impostor",
-    "La Corazonada",
-    "La ciudad secreta"
+    "Amor en el cosmos"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Valeria aparece en «El impostor»."
   },
   {
@@ -2387,12 +2390,12 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Andrés Cortés?",
    "options": [
+    "La Corazonada 2: El Refugio",
     "El impostor",
-    "La chica del retrato",
-    "El tren fantasma",
-    "Las coordenadas del amor"
+    "La ciudad secreta",
+    "Amor en el cosmos"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "Andrés Cortés aparece en «El impostor»."
   },
   {
@@ -2401,12 +2404,12 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Doña Destino?",
    "options": [
-    "Las coordenadas del amor",
-    "El tren fantasma",
     "El impostor",
-    "El misterio de los Fader: Operación Londres"
+    "Las coordenadas del amor",
+    "La chica del retrato",
+    "El tren fantasma"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "Doña Destino aparece en «El impostor»."
   },
   {
@@ -2415,10 +2418,10 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Alejandro?",
    "options": [
-    "El misterio de los Fader: Operación Londres",
+    "El tren fantasma",
     "Las coordenadas del amor",
-    "El misterio de los Fader",
-    "El impostor"
+    "La chica del retrato",
+    "El tren"
    ],
    "answer": 1,
    "why": "Alejandro aparece en «Las coordenadas del amor»."
@@ -2429,12 +2432,12 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Lucía?",
    "options": [
-    "El tren",
-    "La ciudad secreta",
+    "El misterio de los Fader: Operación Londres",
     "Las coordenadas del amor",
-    "Lluvia de meteoritos"
+    "La chica del retrato",
+    "El misterio de los Fader"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "Lucía aparece en «Las coordenadas del amor»."
   },
   {
@@ -2443,12 +2446,12 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Matías?",
    "options": [
-    "La chica del retrato",
-    "Lluvia de meteoritos",
-    "La Corazonada",
-    "Las coordenadas del amor"
+    "El tren",
+    "Amor en el cosmos",
+    "Las coordenadas del amor",
+    "Lluvia de meteoritos"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "Matías aparece en «Las coordenadas del amor»."
   },
   {
@@ -2457,10 +2460,10 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Igor?",
    "options": [
-    "El impostor",
-    "La Corazonada",
+    "Anomalía",
+    "Lluvia de meteoritos",
     "Las coordenadas del amor",
-    "El misterio de los Fader: Operación Londres"
+    "El impostor"
    ],
    "answer": 2,
    "why": "Igor aparece en «Las coordenadas del amor»."
@@ -2471,9 +2474,9 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Zmey Gorynych?",
    "options": [
-    "Ondas de amor",
+    "La ciudad secreta",
     "Las coordenadas del amor",
-    "Lluvia de meteoritos",
+    "Ondas de amor",
     "El misterio de los Fader: Operación Londres"
    ],
    "answer": 1,
@@ -2485,12 +2488,12 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Vika?",
    "options": [
-    "La Corazonada",
-    "El tren",
-    "Anomalía",
-    "Lluvia de meteoritos"
+    "El tren fantasma",
+    "El misterio de los Fader: Operación Londres",
+    "Lluvia de meteoritos",
+    "La Corazonada"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "Vika aparece en «La Corazonada»."
   },
   {
@@ -2499,12 +2502,12 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Karl Fader?",
    "options": [
-    "Las coordenadas del amor",
-    "Lluvia de meteoritos",
     "El misterio de los Fader",
-    "Ondas de amor"
+    "La ciudad secreta",
+    "Anomalía",
+    "Lluvia de meteoritos"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "Karl Fader aparece en «El misterio de los Fader»."
   },
   {
@@ -2513,12 +2516,12 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Heinrich?",
    "options": [
-    "Las coordenadas del amor",
-    "La Corazonada",
-    "El tren fantasma",
-    "El misterio de los Fader"
+    "El impostor",
+    "Lluvia de meteoritos",
+    "El misterio de los Fader",
+    "Ondas de amor"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "Heinrich aparece en «El misterio de los Fader»."
   },
   {
@@ -2527,9 +2530,9 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece María Silvana Roca?",
    "options": [
-    "El tren fantasma",
-    "La chica del retrato",
-    "Ondas de amor",
+    "Las coordenadas del amor",
+    "Amor en el cosmos",
+    "El misterio de los Fader: Operación Londres",
     "El misterio de los Fader"
    ],
    "answer": 3,
@@ -2541,10 +2544,10 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Adolfo?",
    "options": [
-    "El impostor",
-    "El misterio de los Fader: Operación Londres",
+    "Anomalía",
+    "La chica del retrato",
     "El misterio de los Fader",
-    "La ciudad secreta"
+    "Ondas de amor"
    ],
    "answer": 2,
    "why": "Adolfo aparece en «El misterio de los Fader»."
@@ -2555,12 +2558,12 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Damián Roca?",
    "options": [
-    "La Corazonada 2: El Refugio",
-    "Ondas de amor",
     "El misterio de los Fader: Operación Londres",
-    "Anomalía"
+    "Amor en el cosmos",
+    "La chica del retrato",
+    "La ciudad secreta"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "Damián Roca aparece en «El misterio de los Fader: Operación Londres»."
   },
   {
@@ -2569,12 +2572,12 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Lucy?",
    "options": [
-    "Anomalía",
     "El misterio de los Fader: Operación Londres",
-    "La Corazonada",
-    "Lluvia de meteoritos"
+    "Lluvia de meteoritos",
+    "El tren fantasma",
+    "Ondas de amor"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "Lucy aparece en «El misterio de los Fader: Operación Londres»."
   },
   {
@@ -2583,12 +2586,12 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Cedric Thorne?",
    "options": [
+    "Lluvia de meteoritos",
     "El misterio de los Fader: Operación Londres",
-    "La Corazonada",
-    "El impostor",
-    "El misterio de los Fader"
+    "La ciudad secreta",
+    "Las coordenadas del amor"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "Cedric Thorne aparece en «El misterio de los Fader: Operación Londres»."
   },
   {
@@ -2597,12 +2600,12 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Fernando Fader?",
    "options": [
-    "La Corazonada 2: El Refugio",
-    "La ciudad secreta",
-    "Las coordenadas del amor",
-    "El misterio de los Fader"
+    "El misterio de los Fader",
+    "Anomalía",
+    "Lluvia de meteoritos",
+    "El impostor"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "Fernando Fader aparece en «El misterio de los Fader»."
   },
   {
@@ -2611,10 +2614,10 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Leonardo Circuito?",
    "options": [
-    "La Corazonada",
+    "La chica del retrato",
     "El tren fantasma",
-    "Ondas de amor",
-    "Las coordenadas del amor"
+    "La ciudad secreta",
+    "El tren"
    ],
    "answer": 1,
    "why": "Leonardo Circuito aparece en «El tren fantasma»."
@@ -2625,12 +2628,12 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Su Señoría Casimiro Condena?",
    "options": [
-    "Las coordenadas del amor",
-    "El misterio de los Fader: Operación Londres",
-    "La Corazonada",
-    "El tren fantasma"
+    "El tren fantasma",
+    "Anomalía",
+    "El tren",
+    "El impostor"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "Su Señoría Casimiro Condena aparece en «El tren fantasma»."
   },
   {
@@ -2640,9 +2643,9 @@
    "question": "¿En qué novela aparece Marco?",
    "options": [
     "La ciudad secreta",
-    "La Corazonada",
-    "Lluvia de meteoritos",
-    "El impostor"
+    "El tren",
+    "La chica del retrato",
+    "Ondas de amor"
    ],
    "answer": 0,
    "why": "Marco aparece en «La ciudad secreta»."
@@ -2653,12 +2656,12 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Julián?",
    "options": [
-    "La Corazonada 2: El Refugio",
-    "El misterio de los Fader",
-    "El impostor",
-    "La ciudad secreta"
+    "Ondas de amor",
+    "La ciudad secreta",
+    "Amor en el cosmos",
+    "El misterio de los Fader: Operación Londres"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "Julián aparece en «La ciudad secreta»."
   },
   {
@@ -2667,10 +2670,10 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Carlos?",
    "options": [
-    "El impostor",
+    "Anomalía",
     "La ciudad secreta",
     "Lluvia de meteoritos",
-    "La Corazonada"
+    "Amor en el cosmos"
    ],
    "answer": 1,
    "why": "Carlos aparece en «La ciudad secreta»."
@@ -2681,12 +2684,12 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Elena?",
    "options": [
-    "El tren",
     "La ciudad secreta",
-    "La Corazonada",
+    "El impostor",
+    "Ondas de amor",
     "El misterio de los Fader: Operación Londres"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "Elena aparece en «La ciudad secreta»."
   },
   {
@@ -2695,12 +2698,12 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece El zorro?",
    "options": [
-    "Las coordenadas del amor",
     "Lluvia de meteoritos",
     "El misterio de los Fader",
-    "La Corazonada"
+    "El impostor",
+    "Anomalía"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "El zorro aparece en «El misterio de los Fader»."
   },
   {
@@ -2709,12 +2712,12 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Lautaro?",
    "options": [
-    "La Corazonada 2: El Refugio",
-    "El misterio de los Fader: Operación Londres",
+    "El tren",
     "El misterio de los Fader",
-    "Ondas de amor"
+    "Amor en el cosmos",
+    "El misterio de los Fader: Operación Londres"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "Lautaro aparece en «El misterio de los Fader»."
   },
   {
@@ -2723,12 +2726,12 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Nahuel Kallfü?",
    "options": [
+    "Las coordenadas del amor",
+    "Lluvia de meteoritos",
     "El misterio de los Fader",
-    "El misterio de los Fader: Operación Londres",
-    "La chica del retrato",
-    "Lluvia de meteoritos"
+    "La ciudad secreta"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "Nahuel Kallfü aparece en «El misterio de los Fader»."
   },
   {
@@ -2737,12 +2740,12 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Antu?",
    "options": [
-    "La Corazonada 2: El Refugio",
+    "La Corazonada",
+    "El misterio de los Fader: Operación Londres",
     "El misterio de los Fader",
-    "El tren fantasma",
-    "La chica del retrato"
+    "Ondas de amor"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Antu aparece en «El misterio de los Fader»."
   },
   {
@@ -2751,12 +2754,12 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Carlita Martínez?",
    "options": [
-    "El misterio de los Fader",
-    "La Corazonada",
     "Anomalía",
-    "Ondas de amor"
+    "El misterio de los Fader",
+    "El impostor",
+    "Lluvia de meteoritos"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "Carlita Martínez aparece en «El misterio de los Fader»."
   },
   {
@@ -2765,12 +2768,12 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Pierre?",
    "options": [
-    "El tren fantasma",
-    "El misterio de los Fader: Operación Londres",
+    "La ciudad secreta",
     "El misterio de los Fader",
-    "Lluvia de meteoritos"
+    "Las coordenadas del amor",
+    "Anomalía"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "Pierre aparece en «El misterio de los Fader»."
   },
   {
@@ -2779,12 +2782,12 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Clara?",
    "options": [
+    "Anomalía",
     "El misterio de los Fader",
-    "El impostor",
-    "La ciudad secreta",
-    "Lluvia de meteoritos"
+    "El tren fantasma",
+    "Ondas de amor"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "Clara aparece en «El misterio de los Fader»."
   },
   {
@@ -2793,12 +2796,12 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Tadeo?",
    "options": [
-    "El impostor",
+    "Lluvia de meteoritos",
+    "El tren",
     "La Corazonada 2: El Refugio",
-    "Anomalía",
-    "El tren fantasma"
+    "Amor en el cosmos"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Tadeo aparece en «La Corazonada 2: El Refugio»."
   },
   {
@@ -2807,12 +2810,12 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Mirna?",
    "options": [
-    "La Corazonada 2: El Refugio",
-    "La ciudad secreta",
-    "Las coordenadas del amor",
-    "El tren"
+    "La chica del retrato",
+    "Ondas de amor",
+    "La Corazonada",
+    "La Corazonada 2: El Refugio"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "Mirna aparece en «La Corazonada 2: El Refugio»."
   },
   {
@@ -2821,12 +2824,12 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Carmela?",
    "options": [
-    "Ondas de amor",
     "La Corazonada 2: El Refugio",
-    "El misterio de los Fader",
-    "El impostor"
+    "Lluvia de meteoritos",
+    "Amor en el cosmos",
+    "Anomalía"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "Carmela aparece en «La Corazonada 2: El Refugio»."
   },
   {
@@ -2836,9 +2839,9 @@
    "question": "¿En qué novela aparece El Polaco?",
    "options": [
     "La Corazonada 2: El Refugio",
-    "La chica del retrato",
-    "Las coordenadas del amor",
-    "La Corazonada"
+    "Amor en el cosmos",
+    "El tren fantasma",
+    "La chica del retrato"
    ],
    "answer": 0,
    "why": "El Polaco aparece en «La Corazonada 2: El Refugio»."
@@ -2849,12 +2852,12 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Mayor Kessler?",
    "options": [
+    "La chica del retrato",
+    "El tren",
     "La Corazonada 2: El Refugio",
-    "El misterio de los Fader",
-    "Lluvia de meteoritos",
-    "Las coordenadas del amor"
+    "La ciudad secreta"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "Mayor Kessler aparece en «La Corazonada 2: El Refugio»."
   },
   {
@@ -2863,12 +2866,12 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece Edward Haskell?",
    "options": [
-    "Lluvia de meteoritos",
-    "La Corazonada",
     "Anomalía",
-    "La Corazonada 2: El Refugio"
+    "Ondas de amor",
+    "La Corazonada 2: El Refugio",
+    "La ciudad secreta"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "Edward Haskell aparece en «La Corazonada 2: El Refugio»."
   },
   {
@@ -2877,66 +2880,80 @@
    "prompt": "La trama",
    "question": "¿En qué novela aparece El Emisario?",
    "options": [
-    "El tren",
-    "Lluvia de meteoritos",
+    "La Corazonada 2: El Refugio",
     "Anomalía",
-    "La Corazonada 2: El Refugio"
+    "La ciudad secreta",
+    "Las coordenadas del amor"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "El Emisario aparece en «La Corazonada 2: El Refugio»."
   },
   {
    "type": "story",
    "kind": "quote",
    "prompt": "¿De qué novela es esta frase?",
-   "question": "«—Porque en el momento exacto en que se robaron la hora de Sinea, ustedes dos se estaban tocando las manos por primera vez.»",
+   "question": "«Pero ahora, mirando con más atención, Luis notó algo que antes se le había escapado.»",
    "options": [
-    "El tren fantasma",
+    "El misterio de los Fader",
+    "La Corazonada",
     "La Corazonada 2: El Refugio",
-    "Ondas de amor",
-    "El misterio de los Fader: Operación Londres"
+    "Ondas de amor"
    ],
-   "answer": 2,
+   "answer": 3,
    "why": "Es de «Ondas de amor»."
   },
   {
    "type": "story",
    "kind": "quote",
    "prompt": "¿De qué novela es esta frase?",
-   "question": "«De cada persona congelada de Sinea salía un hilo de miel, y todos los hilos subían al cielo como los cordones de miles de barriletes invisibles.»",
+   "question": "«Las líneas de lápiz que Luis había trazado la noche anterior, en la cocina, temblaron sobre el papel como cuerdas de guitarra que alguien acaba de pulsar.»",
+   "options": [
+    "El impostor",
+    "El misterio de los Fader",
+    "Amor en el cosmos",
+    "Ondas de amor"
+   ],
+   "answer": 3,
+   "why": "Es de «Ondas de amor»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "¿De qué novela es esta frase?",
+   "question": "«—Luis señaló la hoja en blanco, después al zorro, después otra vez la hoja—.»",
    "options": [
     "La chica del retrato",
-    "El misterio de los Fader",
-    "Ondas de amor",
-    "La ciudad secreta"
+    "Lluvia de meteoritos",
+    "El misterio de los Fader: Operación Londres",
+    "Ondas de amor"
    ],
-   "answer": 2,
+   "answer": 3,
    "why": "Es de «Ondas de amor»."
   },
   {
    "type": "story",
    "kind": "quote",
    "prompt": "¿De qué novela es esta frase?",
-   "question": "«—De esto —dijo, y señaló la calle con el hocico—. ¿Ustedes se creen que pararon el tiempo con un beso?»",
+   "question": "«No le gustó descubrir que también a Svetlana le interesaba Luciano, aunque no tenía ningún derecho a reclamar nada.»",
    "options": [
-    "Ondas de amor",
-    "El tren",
+    "Lluvia de meteoritos",
+    "La Corazonada",
     "La Corazonada 2: El Refugio",
-    "La chica del retrato"
+    "El tren"
    ],
    "answer": 0,
-   "why": "Es de «Ondas de amor»."
+   "why": "Es de «Lluvia de meteoritos»."
   },
   {
    "type": "story",
    "kind": "quote",
    "prompt": "¿De qué novela es esta frase?",
-   "question": "«Sasha notó que Elena seguía con la vista al profesor incluso cuando él escribía en el pizarrón.»",
+   "question": "«La segunda ciudad de la República de Mendoza atravesaba una época de prosperidad, visible sobre todo en las vidrieras del centro.»",
    "options": [
-    "Anomalía",
+    "El tren fantasma",
     "Lluvia de meteoritos",
-    "Ondas de amor",
-    "La ciudad secreta"
+    "Anomalía",
+    "La Corazonada 2: El Refugio"
    ],
    "answer": 1,
    "why": "Es de «Lluvia de meteoritos»."
@@ -2945,12 +2962,12 @@
    "type": "story",
    "kind": "quote",
    "prompt": "¿De qué novela es esta frase?",
-   "question": "«Al regresar a la clase, Svetlana se sienta en la primera fila y comienza a juguetear con Luciano.»",
+   "question": "«Al salir de la radio, Elena encontró un mensaje de Felipe preguntando a qué hora volvería.»",
    "options": [
     "Lluvia de meteoritos",
-    "La Corazonada",
-    "El tren",
-    "Anomalía"
+    "La ciudad secreta",
+    "El misterio de los Fader: Operación Londres",
+    "El tren fantasma"
    ],
    "answer": 0,
    "why": "Es de «Lluvia de meteoritos»."
@@ -2959,70 +2976,70 @@
    "type": "story",
    "kind": "quote",
    "prompt": "¿De qué novela es esta frase?",
-   "question": "«—Muy interesante —respondió Elena, sintiendo que su corazón late más rápido—.»",
+   "question": "«Con el amor como su guía y un futuro lleno de sueños por cumplir, Luis y Natalia estuvieron listos para emprender esta nueva aventura juntos.»",
+   "options": [
+    "Amor en el cosmos",
+    "El misterio de los Fader",
+    "El impostor",
+    "El tren"
+   ],
+   "answer": 1,
+   "why": "Es de «El misterio de los Fader»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "¿De qué novela es esta frase?",
+   "question": "«Su aspecto era impecable, demasiado pulcro para el ambiente relajado de Mendoza, especialmente en esa época del año.»",
+   "options": [
+    "Amor en el cosmos",
+    "Las coordenadas del amor",
+    "El misterio de los Fader",
+    "Lluvia de meteoritos"
+   ],
+   "answer": 2,
+   "why": "Es de «El misterio de los Fader»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "¿De qué novela es esta frase?",
+   "question": "«Mientras tanto, Natalia entró a la habitación, mirando a Luis con curiosidad.»",
+   "options": [
+    "El misterio de los Fader",
+    "Anomalía",
+    "Ondas de amor",
+    "El impostor"
+   ],
+   "answer": 0,
+   "why": "Es de «El misterio de los Fader»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "¿De qué novela es esta frase?",
+   "question": "«Primero fue el cielo, un cielo bajo y plomizo, pero atravesado por esas grietas de luz roja y dorada que solo se ven en las mañanas frías de Mendoza.»",
    "options": [
     "El misterio de los Fader: Operación Londres",
-    "Lluvia de meteoritos",
-    "La ciudad secreta",
-    "La chica del retrato"
-   ],
-   "answer": 1,
-   "why": "Es de «Lluvia de meteoritos»."
-  },
-  {
-   "type": "story",
-   "kind": "quote",
-   "prompt": "¿De qué novela es esta frase?",
-   "question": "«Tenía una cámara en las manos y no dejaba de tomar fotos de Natalia mientras ella se deslizaba sobre el hielo.»",
-   "options": [
-    "El misterio de los Fader",
-    "Ondas de amor",
-    "El tren fantasma",
-    "Las coordenadas del amor"
+    "Amor en el cosmos",
+    "Las coordenadas del amor",
+    "La Corazonada 2: El Refugio"
    ],
    "answer": 0,
-   "why": "Es de «El misterio de los Fader»."
+   "why": "Es de «El misterio de los Fader: Operación Londres»."
   },
   {
    "type": "story",
    "kind": "quote",
    "prompt": "¿De qué novela es esta frase?",
-   "question": "«El final del verano en Mendoza teñía los viñedos de tonos dorados y rojizos, y el aire de la tarde ya anunciaba la llegada del otoño.»",
+   "question": "«En su legado, Karl indica que le había confiado el secreto a su hijo Fernando.»",
    "options": [
+    "El misterio de los Fader: Operación Londres",
     "Anomalía",
-    "La Corazonada",
-    "La ciudad secreta",
-    "El misterio de los Fader"
-   ],
-   "answer": 3,
-   "why": "Es de «El misterio de los Fader»."
-  },
-  {
-   "type": "story",
-   "kind": "quote",
-   "prompt": "¿De qué novela es esta frase?",
-   "question": "«Era un «Kultrún», un símbolo mapuche que representaba el tambor ceremonial usado en rituales y que simbolizaba la conexión entre el mundo terrenal y el espiritual.»",
-   "options": [
     "El tren fantasma",
-    "La chica del retrato",
-    "Ondas de amor",
     "El misterio de los Fader"
    ],
-   "answer": 3,
-   "why": "Es de «El misterio de los Fader»."
-  },
-  {
-   "type": "story",
-   "kind": "quote",
-   "prompt": "¿De qué novela es esta frase?",
-   "question": "«—preguntó Fernando, sintiendo la presión paterna como un yugo sobre los hombros.»",
-   "options": [
-    "Ondas de amor",
-    "La Corazonada",
-    "El tren",
-    "El misterio de los Fader: Operación Londres"
-   ],
-   "answer": 3,
+   "answer": 0,
    "why": "Es de «El misterio de los Fader: Operación Londres»."
   },
   {
@@ -3031,26 +3048,12 @@
    "prompt": "¿De qué novela es esta frase?",
    "question": "«El taller estaba ahora sumido en la penumbra del atardecer, pero el cuadro, titulado La Mañana Triste, parecía emitir su propia luz tenue.»",
    "options": [
-    "El misterio de los Fader: Operación Londres",
-    "La chica del retrato",
-    "El impostor",
-    "Las coordenadas del amor"
-   ],
-   "answer": 0,
-   "why": "Es de «El misterio de los Fader: Operación Londres»."
-  },
-  {
-   "type": "story",
-   "kind": "quote",
-   "prompt": "¿De qué novela es esta frase?",
-   "question": "«Fernando había visitado Rusia y en su territorio había perdido el secreto más preciado de la familia que el mismo Karl había pedido destruir.»",
-   "options": [
-    "El tren fantasma",
-    "El misterio de los Fader",
     "Ondas de amor",
-    "El misterio de los Fader: Operación Londres"
+    "El misterio de los Fader: Operación Londres",
+    "Las coordenadas del amor",
+    "El misterio de los Fader"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "Es de «El misterio de los Fader: Operación Londres»."
   },
   {
@@ -3059,13 +3062,55 @@
    "prompt": "¿De qué novela es esta frase?",
    "question": "«A Marcos no le gusta pagar por información, pero quiere encontrar a su novia.»",
    "options": [
-    "El misterio de los Fader: Operación Londres",
-    "El misterio de los Fader",
     "El tren fantasma",
+    "El impostor",
+    "Lluvia de meteoritos",
     "La Corazonada"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "Es de «El tren fantasma»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "¿De qué novela es esta frase?",
+   "question": "«Ustedes fueron elegidos entre todas las parejas de Sinea por la intensidad de su amor.»",
+   "options": [
+    "Amor en el cosmos",
+    "Anomalía",
+    "La chica del retrato",
+    "Las coordenadas del amor"
+   ],
+   "answer": 0,
+   "why": "Es de «Amor en el cosmos»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "¿De qué novela es esta frase?",
+   "question": "«Esa misma tarde salieron de la Ciudad del Norte los primeros trenes especiales.»",
+   "options": [
+    "El misterio de los Fader: Operación Londres",
+    "El misterio de los Fader",
+    "Ondas de amor",
+    "Amor en el cosmos"
+   ],
+   "answer": 3,
+   "why": "Es de «Amor en el cosmos»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "¿De qué novela es esta frase?",
+   "question": "«Al día siguiente, cuando la noticia de que las cinco parejas aceptaban salió en las pantallas, en las gradas del Norte se rieron.»",
+   "options": [
+    "El misterio de los Fader: Operación Londres",
+    "El misterio de los Fader",
+    "Amor en el cosmos",
+    "La ciudad secreta"
+   ],
+   "answer": 2,
+   "why": "Es de «Amor en el cosmos»."
   },
   {
    "type": "story",
@@ -3073,12 +3118,12 @@
    "prompt": "¿De qué novela es esta frase?",
    "question": "«Antes de despedirse, Martín y Marina intercambian sus números de teléfono.»",
    "options": [
-    "Anomalía",
+    "La Corazonada 2: El Refugio",
+    "La chica del retrato",
     "La ciudad secreta",
-    "El misterio de los Fader: Operación Londres",
-    "La chica del retrato"
+    "Anomalía"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Es de «La ciudad secreta»."
   },
   {
@@ -3087,10 +3132,10 @@
    "prompt": "¿De qué novela es esta frase?",
    "question": "«—Cerca de aquí… más o menos —responde ella, y mira hacia las montañas.»",
    "options": [
-    "Anomalía",
+    "El misterio de los Fader: Operación Londres",
     "La ciudad secreta",
-    "La chica del retrato",
-    "Las coordenadas del amor"
+    "La Corazonada 2: El Refugio",
+    "Anomalía"
    ],
    "answer": 1,
    "why": "Es de «La ciudad secreta»."
@@ -3129,10 +3174,10 @@
    "prompt": "¿De qué novela es esta frase?",
    "question": "«El matón principal desvió su mirada hacia Robert, que lo observaba con un poco de miedo y curiosidad.»",
    "options": [
-    "El impostor",
+    "La chica del retrato",
     "La Corazonada",
     "El tren fantasma",
-    "Anomalía"
+    "La Corazonada 2: El Refugio"
    ],
    "answer": 1,
    "why": "Es de «La Corazonada»."
@@ -3143,7 +3188,7 @@
    "prompt": "¿De qué novela es esta frase?",
    "question": "«Esa noche Natalia se durmió con la mano del anillo apoyada sobre el corazón de Luis.»",
    "options": [
-    "La chica del retrato",
+    "Anomalía",
     "La Corazonada 2: El Refugio",
     "El tren fantasma",
     "El misterio de los Fader: Operación Londres"
@@ -3157,7 +3202,7 @@
    "prompt": "¿De qué novela es esta frase?",
    "question": "«—Los planos no curan a nadie —contestó Natalia, poniéndose los guantes—.»",
    "options": [
-    "La chica del retrato",
+    "Anomalía",
     "El misterio de los Fader",
     "El impostor",
     "La Corazonada 2: El Refugio"
@@ -3174,7 +3219,7 @@
     "Lluvia de meteoritos",
     "El misterio de los Fader",
     "La Corazonada 2: El Refugio",
-    "La chica del retrato"
+    "Anomalía"
    ],
    "answer": 2,
    "why": "Es de «La Corazonada 2: El Refugio»."
@@ -3185,12 +3230,12 @@
    "prompt": "¿De qué novela es esta frase?",
    "question": "«Estoy harta de estos infelices..\", pensó, y decidió seguir caminando para despejar la cabeza.»",
    "options": [
-    "Lluvia de meteoritos",
-    "La ciudad secreta",
-    "Anomalía",
-    "Las coordenadas del amor"
+    "Las coordenadas del amor",
+    "El impostor",
+    "Amor en el cosmos",
+    "Anomalía"
    ],
-   "answer": 2,
+   "answer": 3,
    "why": "Es de «Anomalía»."
   },
   {
@@ -3199,9 +3244,9 @@
    "prompt": "¿De qué novela es esta frase?",
    "question": "«—Debo ser como diez años mayor que vos —comentó, guardando la figurita en su bolsillo.»",
    "options": [
-    "El impostor",
-    "Lluvia de meteoritos",
+    "El misterio de los Fader: Operación Londres",
     "Ondas de amor",
+    "Lluvia de meteoritos",
     "Anomalía"
    ],
    "answer": 3,
@@ -3213,51 +3258,23 @@
    "prompt": "¿De qué novela es esta frase?",
    "question": "«—Ese lo hice yo —dijo el chico, limpiándose las manos en el delantal—.»",
    "options": [
-    "La Corazonada",
-    "El misterio de los Fader",
-    "Lluvia de meteoritos",
-    "Anomalía"
+    "El impostor",
+    "Anomalía",
+    "Las coordenadas del amor",
+    "La chica del retrato"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "Es de «Anomalía»."
   },
   {
    "type": "story",
    "kind": "quote",
    "prompt": "¿De qué novela es esta frase?",
-   "question": "«Un sábado por la mañana, Tatiana desayunaba en su pequeño departamento cuando alguien llamó con fuerza a la puerta.»",
+   "question": "«El encuentro se organizó para la tarde siguiente, en un café del centro de Sinea.»",
    "options": [
     "El tren fantasma",
-    "Ondas de amor",
-    "La chica del retrato",
-    "El tren"
-   ],
-   "answer": 2,
-   "why": "Es de «La chica del retrato»."
-  },
-  {
-   "type": "story",
-   "kind": "quote",
-   "prompt": "¿De qué novela es esta frase?",
-   "question": "«Era casi igual al dibujo que había aparecido en las páginas del banco y de la Bolsa.»",
-   "options": [
-    "Anomalía",
-    "La chica del retrato",
+    "Amor en el cosmos",
     "El tren",
-    "La Corazonada 2: El Refugio"
-   ],
-   "answer": 1,
-   "why": "Es de «La chica del retrato»."
-  },
-  {
-   "type": "story",
-   "kind": "quote",
-   "prompt": "¿De qué novela es esta frase?",
-   "question": "«—Tenga cuidado con los mensajes de desconocidos —aconsejó el policía—.»",
-   "options": [
-    "Las coordenadas del amor",
-    "Ondas de amor",
-    "La ciudad secreta",
     "La chica del retrato"
    ],
    "answer": 3,
@@ -3267,9 +3284,51 @@
    "type": "story",
    "kind": "quote",
    "prompt": "¿De qué novela es esta frase?",
+   "question": "«Cuando los agentes se fueron, Tatiana cerró la puerta y miró su teléfono.»",
+   "options": [
+    "La chica del retrato",
+    "El tren fantasma",
+    "El tren",
+    "Ondas de amor"
+   ],
+   "answer": 0,
+   "why": "Es de «La chica del retrato»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "¿De qué novela es esta frase?",
+   "question": "«Era casi igual al dibujo que había aparecido en las páginas del banco y de la Bolsa.»",
+   "options": [
+    "La Corazonada 2: El Refugio",
+    "El tren fantasma",
+    "La chica del retrato",
+    "Ondas de amor"
+   ],
+   "answer": 2,
+   "why": "Es de «La chica del retrato»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "¿De qué novela es esta frase?",
    "question": "«Esa noche, Leonardo está en su casa y mira las noticias en la televisión.»",
    "options": [
-    "Anomalía",
+    "La Corazonada",
+    "El impostor",
+    "Ondas de amor",
+    "La chica del retrato"
+   ],
+   "answer": 1,
+   "why": "Es de «El impostor»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "¿De qué novela es esta frase?",
+   "question": "«Juan Carlos sigue de rodillas, mojándose bajo la lluvia, con la caja abierta en la mano.»",
+   "options": [
+    "La Corazonada 2: El Refugio",
     "El tren fantasma",
     "El impostor",
     "El misterio de los Fader"
@@ -3281,7 +3340,7 @@
    "type": "story",
    "kind": "quote",
    "prompt": "¿De qué novela es esta frase?",
-   "question": "«Nos conocimos el martes en la librería, ¿recuerdas? ¿Cenamos juntos esta noche?»",
+   "question": "«Él sabe que a Florencia le gustan las cosas caras, pero la ama de todo corazón.»",
    "options": [
     "La chica del retrato",
     "El impostor",
@@ -3295,24 +3354,24 @@
    "type": "story",
    "kind": "quote",
    "prompt": "¿De qué novela es esta frase?",
-   "question": "«Juan Carlos sigue de rodillas, mojándose bajo la lluvia, con la caja abierta en la mano.»",
+   "question": "«—Lo que entiendo yo es que algo así vale una fortuna —murmuró Igor, sin quitarle los ojos de encima.»",
    "options": [
-    "El impostor",
-    "La Corazonada",
+    "El tren fantasma",
+    "El misterio de los Fader: Operación Londres",
     "Las coordenadas del amor",
-    "El misterio de los Fader"
+    "La chica del retrato"
    ],
-   "answer": 0,
-   "why": "Es de «El impostor»."
+   "answer": 2,
+   "why": "Es de «Las coordenadas del amor»."
   },
   {
    "type": "story",
    "kind": "quote",
    "prompt": "¿De qué novela es esta frase?",
-   "question": "«Alejandro se acercó y sacó su cuaderno, donde Lucía le había apuntado algunas letras eslavas.»",
+   "question": "«Entre las raíces de una ceiba, Matías sostenía un objeto de metal cubierto de barro.»",
    "options": [
-    "La Corazonada",
-    "La chica del retrato",
+    "La ciudad secreta",
+    "Anomalía",
     "Lluvia de meteoritos",
     "Las coordenadas del amor"
    ],
@@ -3323,28 +3382,14 @@
    "type": "story",
    "kind": "quote",
    "prompt": "¿De qué novela es esta frase?",
-   "question": "«Pensó en el sueño de toda su vida, en su padre, en la responsabilidad de ser el jefe, en Lucía y Matías esperándolo.»",
+   "question": "«—insistió Matías—. ¿Un camino de verdad, en el bosque? ¿O el camino de la vida?»",
    "options": [
     "El tren",
     "Las coordenadas del amor",
     "Lluvia de meteoritos",
-    "La ciudad secreta"
+    "Amor en el cosmos"
    ],
    "answer": 1,
-   "why": "Es de «Las coordenadas del amor»."
-  },
-  {
-   "type": "story",
-   "kind": "quote",
-   "prompt": "¿De qué novela es esta frase?",
-   "question": "«Entre las raíces de una ceiba, Matías sostenía un objeto de metal cubierto de barro.»",
-   "options": [
-    "Ondas de amor",
-    "La ciudad secreta",
-    "Las coordenadas del amor",
-    "La chica del retrato"
-   ],
-   "answer": 2,
    "why": "Es de «Las coordenadas del amor»."
   },
   {
@@ -3353,10 +3398,10 @@
    "prompt": "La trama",
    "question": "En «La Corazonada», ¿cómo llama Robert a la fortaleza que quieren construir?",
    "options": [
-    "Kilómetro Cero",
-    "Nuestra Utopía",
     "Nueva Misión",
-    "Rojo Fuego"
+    "Nuestra Utopía",
+    "Rojo Fuego",
+    "Kilómetro Cero"
    ],
    "answer": 1,
    "why": "«Una fortaleza, un nuevo comienzo. Lo llamamos “Nuestra Utopía”»."
@@ -3367,12 +3412,12 @@
    "prompt": "La trama",
    "question": "En «La Corazonada», ¿qué instrumento toca Natalia?",
    "options": [
+    "La flauta",
     "El piano",
     "El violín",
-    "La guitarra",
-    "La flauta"
+    "La guitarra"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Natalia llena el atardecer con su violín eléctrico portátil."
   },
   {
@@ -3381,12 +3426,12 @@
    "prompt": "La trama",
    "question": "En «La Corazonada», ¿cómo llegan las tres mujeres al grupo de Robert?",
    "options": [
-    "En un tren abandonado",
-    "A caballo por el desierto",
+    "En un camión de la Central",
     "En motos que robaron a los salvajes",
-    "En un camión de la Central"
+    "En un tren abandonado",
+    "A caballo por el desierto"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "«Las robamos», confiesa Natalia: escaparon de un grupo de salvajes."
   },
   {
@@ -3395,12 +3440,12 @@
    "prompt": "La trama",
    "question": "En «La Corazonada», ¿qué abre Sasha en Nuestra Utopía?",
    "options": [
-    "El café «Rojo Fuego»",
     "El centro cultural «Sueño Turquesa»",
-    "Un taller de armas",
-    "Una escuela de música"
+    "El café «Rojo Fuego»",
+    "Una escuela de música",
+    "Un taller de armas"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "El nombre es un homenaje a su cabello llameante."
   },
   {
@@ -3409,12 +3454,12 @@
    "prompt": "La trama",
    "question": "En «La Corazonada», ¿qué crean juntas Natalia y Oxana?",
    "options": [
-    "Un centro cultural llamado «Sueño Turquesa»",
+    "Un hospital de campaña",
     "Un café junto al lago",
-    "Una biblioteca subterránea",
-    "Un hospital de campaña"
+    "Un centro cultural llamado «Sueño Turquesa»",
+    "Una biblioteca subterránea"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "Natalia aporta la música y Oxana sus pinturas del lago y la fortaleza."
   }
  ]
