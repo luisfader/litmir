@@ -215,6 +215,12 @@ html,body{overflow-anchor:none}
 .btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--sans);font-size:14px;font-weight:600;background:var(--accent);color:#fff;text-decoration:none;padding:11px 18px;border-radius:8px;border:0;cursor:pointer}
 .btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
 .actions{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:36px}
+.share-box{margin:-24px 0 36px;padding:14px;border:1px solid var(--line);border-radius:12px;background:var(--paper);font-family:var(--sans);display:flex;flex-direction:column;gap:10px}
+.share-box[hidden]{display:none}
+.share-box small{color:var(--muted);font-size:13px}
+.share-row{display:flex;gap:8px;flex-wrap:wrap}
+.share-url{flex:1 1 220px;min-width:0;font:inherit;font-size:14px;padding:9px 11px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
+.share-ok{color:var(--accent);font-size:13px;min-height:1em}
 .toc h2{font-family:var(--sans);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:0 0 8px;font-weight:600}
 .toc ol{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
 .toc li a{display:flex;gap:16px;padding:13px 4px;border-bottom:1px solid var(--line);text-decoration:none;font-size:18px}
@@ -1733,6 +1739,50 @@ const FAV_T = {
   bg:["Любими","Добави в любими","Премахни от любими","Все още нямаш любими романи."]
 };
 const ft = (i, l=lang) => (FAV_T[l] || FAV_T.en)[i];
+/* Compartir novela: [botón, enviar a una app, copiar enlace, copiado, aviso si no se pudo copiar] */
+const SHARE_T = {
+  es:["Compartir","Enviar a una app","Copiar enlace","¡Enlace copiado!","Mantené apretado el enlace para copiarlo.","Mandá la novela a cualquier app o copiá el enlace para abrirlo en el navegador que quieras."],
+  ru:["Поделиться","Отправить в приложение","Скопировать ссылку","Ссылка скопирована!","Нажмите и удерживайте ссылку, чтобы скопировать.","Отправьте роман в любое приложение или скопируйте ссылку и откройте её в любом браузере."],
+  en:["Share","Send to an app","Copy link","Link copied!","Press and hold the link to copy it.","Send the novel to any app, or copy the link and open it in any browser."],
+  it:["Condividi","Invia a un'app","Copia link","Link copiato!","Tieni premuto il link per copiarlo.","Invia il romanzo a qualsiasi app o copia il link per aprirlo nel browser che vuoi."],
+  fr:["Partager","Envoyer vers une app","Copier le lien","Lien copié !","Appuyez longuement sur le lien pour le copier.","Envoyez le roman vers n'importe quelle app ou copiez le lien pour l'ouvrir dans le navigateur de votre choix."],
+  tr:["Paylaş","Bir uygulamaya gönder","Bağlantıyı kopyala","Bağlantı kopyalandı!","Kopyalamak için bağlantıya basılı tutun.","Romanı herhangi bir uygulamaya gönderin ya da bağlantıyı kopyalayıp istediğiniz tarayıcıda açın."],
+  pt:["Compartilhar","Enviar para um app","Copiar link","Link copiado!","Toque e segure o link para copiá-lo.","Envie o romance para qualquer app ou copie o link para abrir no navegador que quiser."],
+  cs:["Sdílet","Poslat do aplikace","Kopírovat odkaz","Odkaz zkopírován!","Odkaz zkopírujete podržením prstu.","Pošlete román do libovolné aplikace nebo zkopírujte odkaz a otevřete ho v libovolném prohlížeči."],
+  sr:["Подели","Пошаљи у апликацију","Копирај линк","Линк је копиран!","Држите прст на линку да бисте га копирали.","Пошаљите роман у било коју апликацију или копирајте линк и отворите га у прегледачу по жељи."],
+  eo:["Kunhavigi","Sendi al aplikaĵo","Kopii ligilon","Ligilo kopiita!","Longe premu la ligilon por kopii ĝin.","Sendu la romanon al iu ajn aplikaĵo aŭ kopiu la ligilon kaj malfermu ĝin en ajna retumilo."],
+  isv:["Poděliti","Poslati v aplikaciju","Kopirovati link","Link jest kopirovany!","Držite prst na linku, da by go kopirovati.","Pošlite roman v koju-libo aplikaciju ili kopirujte link i otvorite go v ljubom prěglědniku."],
+  de:["Teilen","An eine App senden","Link kopieren","Link kopiert!","Link gedrückt halten, um ihn zu kopieren.","Sende den Roman an eine beliebige App oder kopiere den Link für einen beliebigen Browser."],
+  pl:["Udostępnij","Wyślij do aplikacji","Kopiuj link","Link skopiowany!","Przytrzymaj link, aby go skopiować.","Wyślij powieść do dowolnej aplikacji lub skopiuj link i otwórz go w dowolnej przeglądarce."],
+  bg:["Сподели","Изпрати към приложение","Копирай връзката","Връзката е копирана!","Задръжте върху връзката, за да я копирате.","Изпратете романа към всяко приложение или копирайте връзката и я отворете в браузър по избор."]
+};
+const sht = (i, l=lang) => (SHARE_T[l] || SHARE_T.en)[i];
+const novelShareUrl = n => location.origin + location.pathname.replace(/index\.html$/, "") + "#/" + encodeURIComponent(n.slug);
+function shareBoxHTML(n){
+  const canSend = typeof navigator.share === "function";
+  return `<div class="share-box" id="share-box" hidden>
+    <small>${esc(sht(5, n.lang))}</small>
+    <div class="share-row"><input class="share-url" id="share-url" type="text" readonly value="${esc(novelShareUrl(n))}" aria-label="${esc(sht(2, n.lang))}"></div>
+    <div class="share-row">
+      ${canSend ? `<button type="button" class="btn" id="share-send">${esc(sht(1, n.lang))}</button>` : ""}
+      <button type="button" class="btn ${canSend ? "ghost" : ""}" id="share-copy">${esc(sht(2, n.lang))}</button></div>
+    <div class="share-ok" id="share-ok" role="status" aria-live="polite"></div></div>`;
+}
+function setupShare(n){
+  const tg = document.getElementById("share-toggle"), box = document.getElementById("share-box"); if (!tg || !box) return;
+  const url = novelShareUrl(n), inp = box.querySelector("#share-url"), ok = box.querySelector("#share-ok");
+  tg.onclick = () => { const open = box.hidden; box.hidden = !open; tg.setAttribute("aria-expanded", open); ok.textContent = ""; };
+  const send = box.querySelector("#share-send");
+  if (send) send.onclick = () => navigator.share({title: n.title, text: n.title + " — " + author(n), url}).catch(() => {});
+  box.querySelector("#share-copy").onclick = async () => {
+    let done = false;
+    try { if (navigator.clipboard && window.isSecureContext) { await navigator.clipboard.writeText(url); done = true; } } catch (e) {}
+    if (!done) { try { inp.focus(); inp.select(); inp.setSelectionRange(0, url.length); done = document.execCommand("copy"); } catch (e) {} }
+    ok.textContent = sht(done ? 3 : 4, n.lang);
+    if (done) setTimeout(() => { if (ok.isConnected) ok.textContent = ""; }, 2500);
+  };
+  inp.onclick = () => inp.select();
+}
 const favorites = () => { const a=store.get("favorites",[]); return Array.isArray(a) ? a.filter(v=>typeof v==="string") : []; };
 const isFavorite = slug => favorites().includes(slug);
 function toggleFavorite(slug){
@@ -2313,7 +2363,9 @@ function novelPage(n){
       <div class="actions">
         ${last ? `<a class="btn" href="${resumeHref(n, last)}">${esc(t("cont"))} · ${esc(chapterTitle(n, chs[last-1] || {}, last))}</a>` : ""}
         <a class="btn ${last ? "ghost" : ""}" href="${chapterHref(n, firstStory)}">${esc(t("start"))}</a>
-        <button type="button" class="btn ghost" id="favorite-toggle" aria-pressed="${isFavorite(n.slug)}">${isFavorite(n.slug) ? "★" : "☆"} ${esc(ft(isFavorite(n.slug)?2:1,n.lang))}</button></div>
+        <button type="button" class="btn ghost" id="favorite-toggle" aria-pressed="${isFavorite(n.slug)}">${isFavorite(n.slug) ? "★" : "☆"} ${esc(ft(isFavorite(n.slug)?2:1,n.lang))}</button>
+        <button type="button" class="btn ghost" id="share-toggle" aria-expanded="false" aria-controls="share-box">⤴ ${esc(sht(0, n.lang))}</button></div>
+      ${shareBoxHTML(n)}
       ${n.gamebook ? "" : `<div class="toc" data-auth-dep><h2>${esc(t("contents"))}</h2><ol>
         ${chs.map((c,i) => `<li class="${done.includes(i+1)?"done":""} ${c.label?"extra":""}"><a href="${chapterHref(n, i+1)}"><span class="n">${c.type === "quiz" ? "★" : c.label ? "·" : chapterNo(n, i+1)}</span><span>${esc(chapterTitle(n, c, chapterNo(n, i+1)))}${(()=>{const songs=(n.soundtrack||[]).filter(tk=>(tk.chapters||[]).includes(c.file)).map(tk=>tk.title);return songs.length?` <span class="note-mus" title="${esc(songs.join(" · "))}" aria-label="${esc(songs.join(", "))}">♪</span>`:"";})()}${(!signedIn() && chapterLocked(n, i+1)) || (pwLocked(n, i+1) && !pwOpen(n)) ? ' <span class="lock" aria-hidden="true">🔒</span>' : ""}</span></a></li>`).join("")}
       </ol></div>`}
@@ -2321,6 +2373,7 @@ function novelPage(n){
     </div>
   </section>`;
   document.getElementById("favorite-toggle").onclick = () => toggleFavorite(n.slug);
+  setupShare(n);
   setupExtras(n);
 }
 
