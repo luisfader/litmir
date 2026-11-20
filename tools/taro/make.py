@@ -997,6 +997,20 @@ def back():
     return s + "</svg>"
 
 
+def fade(svg, i):
+    grey = {"#f7e2a8": "#dcdad4", "#d9b062": "#a9a7a2", "#a8823e": "#7d7b77", GOLD: "#a9a7a2", GOLD3: "#7d7b77"}
+    for a, b in grey.items():
+        svg = svg.replace(f'stop-color="{a}"', f'stop-color="{b}"').replace(f'stroke="{a}"', f'stroke="{b}"')
+    if i == 19:  # солнце стало белым
+        svg = svg.replace('fill="url(#sunG)"', f'fill="{WHITE}"').replace(f'fill="{SUN}"', f'fill="{WHITE}"').replace(f'stroke="{SUN}"', 'stroke="#e6e3da"')
+        svg = svg.replace(f'stroke="{SUN2}"', 'stroke="#c9c6bd"')
+    if i == 17:  # звезда опустела: только контур
+        svg = svg.replace(f'fill="{GOLD2}" stroke="#a9a7a2"', 'fill="none" stroke="#c9c6bd"')
+        svg = svg.replace(f'fill="{SUN}"', 'fill="none"').replace(f'fill="{GOLD2}"', 'fill="none" stroke="#c9c6bd" stroke-width=".8"')
+    svg = svg.replace('fill="url(#glow)"', 'fill="none"')
+    return svg.replace('aria-label="', 'aria-label="выцветшая: ')
+
+
 def main():
     os.makedirs(OUT, exist_ok=True)
     png = None
@@ -1012,6 +1026,12 @@ def main():
     p = os.path.join(OUT, "back.svg")
     open(p, "w").write(back())
     files.append(p)
+    # «выцветшие» карты сестёр Ферри (гл. 5): золото ушло, солнце побелело, звезда опустела
+    for i in (17, 19):
+        svg = open(os.path.join(OUT, f"{i:02d}.svg")).read()
+        p = os.path.join(OUT, f"{i:02d}-faded.svg")
+        open(p, "w").write(fade(svg, i))
+        files.append(p)
     if png:
         for p in files:
             subprocess.run(["rsvg-convert", "-w", "300", "-o", os.path.join(png, os.path.basename(p)[:-4] + ".png"), p], check=True)
