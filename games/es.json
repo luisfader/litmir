@@ -3312,41 +3312,27 @@
    "type": "story",
    "kind": "quote",
    "prompt": "¿De qué novela es esta frase?",
-   "question": "«Esa noche, Leonardo está en su casa y mira las noticias en la televisión.»",
+   "question": "«Elige la opción correcta 1. ¿Dónde se arrodilla Leonardo? 2. ¿Qué dice el horóscopo de Sofía? 3. ¿Quién encuentra la caja en el restaurante? 3.»",
    "options": [
+    "El misterio de los Fader: Operación Londres",
     "La Corazonada",
+    "La Corazonada 2: El Refugio",
+    "El impostor"
+   ],
+   "answer": 3,
+   "why": "Es de «El impostor»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "¿De qué novela es esta frase?",
+   "question": "«Elige la opción correcta 1. ¿Cuánto tiempo llevan juntos Juan Carlos y Florencia? 2. ¿Cómo es el coche de Andrés? 3. ¿Qué hacen los dos hermanos por la noche? 3.»",
+   "options": [
+    "Amor en el cosmos",
     "El impostor",
     "Ondas de amor",
-    "La chica del retrato"
-   ],
-   "answer": 1,
-   "why": "Es de «El impostor»."
-  },
-  {
-   "type": "story",
-   "kind": "quote",
-   "prompt": "¿De qué novela es esta frase?",
-   "question": "«Juan Carlos sigue de rodillas, mojándose bajo la lluvia, con la caja abierta en la mano.»",
-   "options": [
-    "La Corazonada 2: El Refugio",
-    "El tren fantasma",
-    "El impostor",
     "El misterio de los Fader"
    ],
-   "answer": 2,
-   "why": "Es de «El impostor»."
-  },
-  {
-   "type": "story",
-   "kind": "quote",
-   "prompt": "¿De qué novela es esta frase?",
-   "question": "«Él sabe que a Florencia le gustan las cosas caras, pero la ama de todo corazón.»",
-   "options": [
-    "La chica del retrato",
-    "El impostor",
-    "El tren fantasma",
-    "Ondas de amor"
-   ],
    "answer": 1,
    "why": "Es de «El impostor»."
   },
@@ -3354,25 +3340,25 @@
    "type": "story",
    "kind": "quote",
    "prompt": "¿De qué novela es esta frase?",
-   "question": "«—Lo que entiendo yo es que algo así vale una fortuna —murmuró Igor, sin quitarle los ojos de encima.»",
+   "question": "«Nos conocimos el martes en la librería, ¿recuerdas? ¿Cenamos juntos esta noche?»",
    "options": [
-    "El tren fantasma",
-    "El misterio de los Fader: Operación Londres",
-    "Las coordenadas del amor",
-    "La chica del retrato"
+    "El tren",
+    "La ciudad secreta",
+    "Ondas de amor",
+    "El impostor"
    ],
-   "answer": 2,
-   "why": "Es de «Las coordenadas del amor»."
+   "answer": 3,
+   "why": "Es de «El impostor»."
   },
   {
    "type": "story",
    "kind": "quote",
    "prompt": "¿De qué novela es esta frase?",
-   "question": "«Entre las raíces de una ceiba, Matías sostenía un objeto de metal cubierto de barro.»",
+   "question": "«—insistió Matías—. ¿Un camino de verdad, en el bosque? ¿O el camino de la vida?»",
    "options": [
-    "La ciudad secreta",
-    "Anomalía",
+    "El misterio de los Fader",
     "Lluvia de meteoritos",
+    "La ciudad secreta",
     "Las coordenadas del amor"
    ],
    "answer": 3,
@@ -3382,14 +3368,28 @@
    "type": "story",
    "kind": "quote",
    "prompt": "¿De qué novela es esta frase?",
-   "question": "«—insistió Matías—. ¿Un camino de verdad, en el bosque? ¿O el camino de la vida?»",
+   "question": "«Entre las raíces de una ceiba, Matías sostenía un objeto de metal cubierto de barro.»",
    "options": [
+    "La chica del retrato",
     "El tren",
-    "Las coordenadas del amor",
-    "Lluvia de meteoritos",
-    "Amor en el cosmos"
+    "Anomalía",
+    "Las coordenadas del amor"
    ],
-   "answer": 1,
+   "answer": 3,
+   "why": "Es de «Las coordenadas del amor»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "¿De qué novela es esta frase?",
+   "question": "«Igor se encogió de hombros y se sentó a la sombra de un árbol, aunque sus ojos siguieron a Alejandro hasta que desapareció entre la vegetación.»",
+   "options": [
+    "Lluvia de meteoritos",
+    "Amor en el cosmos",
+    "La chica del retrato",
+    "Las coordenadas del amor"
+   ],
+   "answer": 3,
    "why": "Es de «Las coordenadas del amor»."
   },
   {
@@ -3398,12 +3398,12 @@
    "prompt": "La trama",
    "question": "En «La Corazonada», ¿cómo llama Robert a la fortaleza que quieren construir?",
    "options": [
-    "Nueva Misión",
     "Nuestra Utopía",
-    "Rojo Fuego",
-    "Kilómetro Cero"
+    "Kilómetro Cero",
+    "Nueva Misión",
+    "Rojo Fuego"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "«Una fortaleza, un nuevo comienzo. Lo llamamos “Nuestra Utopía”»."
   },
   {
@@ -3412,12 +3412,12 @@
    "prompt": "La trama",
    "question": "En «La Corazonada», ¿qué instrumento toca Natalia?",
    "options": [
-    "La flauta",
-    "El piano",
+    "La guitarra",
     "El violín",
-    "La guitarra"
+    "La flauta",
+    "El piano"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "Natalia llena el atardecer con su violín eléctrico portátil."
   },
   {
@@ -3426,12 +3426,12 @@
    "prompt": "La trama",
    "question": "En «La Corazonada», ¿cómo llegan las tres mujeres al grupo de Robert?",
    "options": [
-    "En un camión de la Central",
-    "En motos que robaron a los salvajes",
     "En un tren abandonado",
-    "A caballo por el desierto"
+    "A caballo por el desierto",
+    "En motos que robaron a los salvajes",
+    "En un camión de la Central"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "«Las robamos», confiesa Natalia: escaparon de un grupo de salvajes."
   },
   {
@@ -3440,12 +3440,12 @@
    "prompt": "La trama",
    "question": "En «La Corazonada», ¿qué abre Sasha en Nuestra Utopía?",
    "options": [
-    "El centro cultural «Sueño Turquesa»",
     "El café «Rojo Fuego»",
-    "Una escuela de música",
-    "Un taller de armas"
+    "El centro cultural «Sueño Turquesa»",
+    "Un taller de armas",
+    "Una escuela de música"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "El nombre es un homenaje a su cabello llameante."
   },
   {
@@ -3454,12 +3454,12 @@
    "prompt": "La trama",
    "question": "En «La Corazonada», ¿qué crean juntas Natalia y Oxana?",
    "options": [
-    "Un hospital de campaña",
-    "Un café junto al lago",
     "Un centro cultural llamado «Sueño Turquesa»",
-    "Una biblioteca subterránea"
+    "Un café junto al lago",
+    "Una biblioteca subterránea",
+    "Un hospital de campaña"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "Natalia aporta la música y Oxana sus pinturas del lago y la fortaleza."
   }
  ]

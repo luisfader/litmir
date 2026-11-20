@@ -1,0 +1,347 @@
+{
+ "title": "Test final",
+ "subtitle": "¿Cuánto entendiste de «El impostor»? Responde cada pregunta una sola vez: al final verás tu puntaje y tu nivel.",
+ "speak": "es-ES",
+ "hero": "cover.jpg",
+ "exam": true,
+ "ui": {
+  "min": "≈ 10 minutos",
+  "great": [
+   "¡Correcto!",
+   "¡Muy bien!",
+   "¡Exacto!",
+   "¡Así es!",
+   "¡Excelente!"
+  ],
+  "again": "Repetir el test",
+  "back": "Volver a la novela"
+ },
+ "levels": [
+  {
+   "min": 90,
+   "title": "Detective de impostores",
+   "text": "Comprensión excelente: no se te escapó ningún detalle. Estás listo para el nivel B1."
+  },
+  {
+   "min": 70,
+   "title": "Alumno avanzado del taller",
+   "text": "Muy buena comprensión: entendiste la historia y a sus personajes."
+  },
+  {
+   "min": 50,
+   "title": "Alumno de primera clase",
+   "text": "Comprensión aceptable: captaste lo esencial. Repasa los ejercicios de los capítulos."
+  },
+  {
+   "min": 0,
+   "title": "Lector del horóscopo",
+   "text": "Te conviene releer algunos capítulos y hacer otra vez los ejercicios. ¡Ánimo!"
+  }
+ ],
+ "exercises": [
+  {
+   "type": "story",
+   "prompt": "Elige la respuesta correcta",
+   "question": "¿Por qué Sofía le dice que no a Leonardo?",
+   "options": [
+    "Por su horóscopo de la app Destino",
+    "Porque no lo quiere",
+    "Porque los anillos son feos"
+   ],
+   "answer": 0,
+   "why": "El horóscopo decía: «Si un hombre te pide matrimonio, responde que no» (cap. 1)."
+  },
+  {
+   "type": "tf",
+   "prompt": "¿Verdadero o falso?",
+   "statement": "Leonardo y Daniel saben desde el principio que salen con la misma chica.",
+   "answer": false,
+   "why": "Ninguno de los dos lo sabe hasta el capítulo 12."
+  },
+  {
+   "type": "story",
+   "prompt": "Elige la respuesta correcta",
+   "question": "¿Quién encuentra la caja en el restaurante?",
+   "options": [
+    "Juan Carlos, el camarero",
+    "Andrés Cortés",
+    "Valeria"
+   ],
+   "answer": 0,
+   "why": "Juan Carlos la ve al limpiar la mesa (cap. 1)."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa la frase",
+   "before": "Florencia deja a Juan Carlos por un hombre con un coche",
+   "after": "que huele a perfume caro.",
+   "options": [
+    "rojo",
+    "azul",
+    "viejo"
+   ],
+   "answer": 0,
+   "es": "«Se llama Andrés. Es rico, elegante, tiene un coche rojo…» (cap. 2)."
+  },
+  {
+   "type": "tf",
+   "prompt": "¿Verdadero o falso?",
+   "statement": "Según las noticias, ochenta y siete mujeres dijeron que no en un solo día.",
+   "answer": true,
+   "why": "Es la «epidemia de rechazos matrimoniales» (cap. 2)."
+  },
+  {
+   "type": "match",
+   "prompt": "Une cada personaje con su descripción",
+   "pairs": [
+    [
+     "Leonardo",
+     "el novio de Sofía"
+    ],
+    [
+     "Juan Carlos",
+     "el camarero"
+    ],
+    [
+     "Valeria",
+     "la asistente"
+    ],
+    [
+     "Púas",
+     "el puercoespín"
+    ],
+    [
+     "Andrés",
+     "el impostor"
+    ]
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Elige la respuesta correcta",
+   "question": "¿Qué promete Andrés Cortés si su taller no funciona?",
+   "options": [
+    "Devolver el doble del dinero",
+    "Regalar un coche",
+    "Dar clases gratis para siempre"
+   ],
+   "answer": 0,
+   "why": "Lo dice en su anuncio de la televisión (cap. 4)."
+  },
+  {
+   "type": "story",
+   "prompt": "Elige la respuesta correcta",
+   "question": "¿Cuál es la primera lección práctica de Andrés?",
+   "options": [
+    "Silbar ópera",
+    "Hacer muchas preguntas",
+    "Escribir poemas"
+   ],
+   "answer": 0,
+   "why": "«A las mujeres les encantan los hombres que silban ópera» (cap. 5)."
+  },
+  {
+   "type": "tf",
+   "prompt": "¿Verdadero o falso?",
+   "statement": "El verdadero nombre de Andrés Cortés es Aníbal Benítez.",
+   "answer": true,
+   "why": "Lo descubre Juan Carlos en la revista Desenmascarando (cap. 6)."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa la frase",
+   "before": "De niño, Andrés vendía flores de",
+   "after": "en el metro.",
+   "options": [
+    "plástico",
+    "papel",
+    "chocolate"
+   ],
+   "answer": 0,
+   "es": "Decía que estaban bendecidas por el Papa (cap. 6)."
+  },
+  {
+   "type": "story",
+   "prompt": "Elige la respuesta correcta",
+   "question": "¿Qué hace la mujer de negro con el horóscopo de Destino?",
+   "options": [
+    "Les dice a las mujeres que rechacen a los hombres",
+    "Predice el tiempo",
+    "Vende anillos"
+   ],
+   "answer": 0,
+   "why": "«Cada mañana mi horóscopo les dice lo mismo: rechacen a los hombres» (cap. 6)."
+  },
+  {
+   "type": "tf",
+   "prompt": "¿Verdadero o falso?",
+   "statement": "Leonardo conquista a Valeria en el café hablando de su vida sin parar.",
+   "answer": false,
+   "why": "Valeria se va rápidamente: la técnica no funciona (cap. 7)."
+  },
+  {
+   "type": "story",
+   "prompt": "Elige la respuesta correcta",
+   "question": "¿Qué dice el decreto que aparece en todas las pantallas?",
+   "options": [
+    "Que está prohibido enamorarse",
+    "Que hay que leer el horóscopo",
+    "Que el taller está cerrado"
+   ],
+   "answer": 0,
+   "why": "«Desde hoy está prohibido enamorarse. Está prohibido casarse» (cap. 7)."
+  },
+  {
+   "type": "story",
+   "prompt": "Elige la respuesta correcta",
+   "question": "¿Para qué sirve la Esfera de Energía?",
+   "options": [
+    "Guarda la tristeza de los hombres de Sinea",
+    "Da luz a la ciudad",
+    "Fabrica anillos"
+   ],
+   "answer": 0,
+   "why": "Con esa energía, Doña Destino activa a las Cupidronas (cap. 8)."
+  },
+  {
+   "type": "match",
+   "prompt": "Une cada palabra con su significado",
+   "pairs": [
+    [
+     "el decreto",
+     "orden oficial"
+    ],
+    [
+     "la multa",
+     "dinero por romper una regla"
+    ],
+    [
+     "el sótano",
+     "parte de la casa bajo el suelo"
+    ],
+    [
+     "la grieta",
+     "línea de algo roto"
+    ],
+    [
+     "la boda",
+     "fiesta para casarse"
+    ]
+   ]
+  },
+  {
+   "type": "tf",
+   "prompt": "¿Verdadero o falso?",
+   "statement": "En la reunión secreta, los alumnos piden que Andrés conquiste a Doña Destino.",
+   "answer": true,
+   "why": "Lo propone Leonardo para no devolver el dinero (cap. 9)."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa la frase",
+   "before": "Las dos hermanas",
+   "after": "la aplicación Destino al mismo tiempo.",
+   "options": [
+    "borran",
+    "descargan",
+    "compran"
+   ],
+   "answer": 0,
+   "es": "Sofía entiende que los horóscopos no los escriben los planetas (cap. 10)."
+  },
+  {
+   "type": "story",
+   "prompt": "Elige la respuesta correcta",
+   "question": "¿Por qué se ríen las Cupidronas con el espectáculo de Andrés?",
+   "options": [
+    "Porque es tan ridículo que lo detectan como humor",
+    "Porque Doña Destino lo ordena",
+    "Porque tienen un virus"
+   ],
+   "answer": 0,
+   "why": "Sus luces cambian de rojo a amarillo (cap. 11)."
+  },
+  {
+   "type": "story",
+   "prompt": "Elige la respuesta correcta",
+   "question": "¿Con qué conquista Daniel a Valeria?",
+   "options": [
+    "Con chistes malos",
+    "Con flores",
+    "Con ópera"
+   ],
+   "answer": 0,
+   "why": "«¿Sabes por qué los robots nunca tienen miedo? Porque tienen nervios de acero» (cap. 11)."
+  },
+  {
+   "type": "build",
+   "prompt": "Ordena la frase",
+   "es": "Lo que le dice Florencia a Juan Carlos en el restaurante (cap. 12)",
+   "answer": [
+    "Fui",
+    "una",
+    "tonta"
+   ],
+   "extra": [
+    "eres",
+    "fue"
+   ]
+  },
+  {
+   "type": "story",
+   "prompt": "Elige la respuesta correcta",
+   "question": "¿Qué rompe la Esfera de Energía?",
+   "options": [
+    "La caja con los anillos",
+    "Un cóctel de piña",
+    "Una silla"
+   ],
+   "answer": 0,
+   "why": "Los anillos tienen dentro el amor de todas las propuestas sinceras (cap. 13)."
+  },
+  {
+   "type": "tf",
+   "prompt": "¿Verdadero o falso?",
+   "statement": "Doña Destino escapa por una puerta secreta.",
+   "answer": false,
+   "why": "Valeria cierra la puerta: «Esta puerta está cerrada. Para siempre» (cap. 14)."
+  },
+  {
+   "type": "fill",
+   "prompt": "Completa la frase",
+   "before": "«El amor no es un",
+   "after": "», dice Sofía.",
+   "options": [
+    "decreto",
+    "negocio",
+    "juego"
+   ],
+   "answer": 0,
+   "es": "«Tampoco es un horóscopo ni un algoritmo» (cap. 14)."
+  },
+  {
+   "type": "story",
+   "prompt": "Elige la respuesta correcta",
+   "question": "¿Con quién se casa Daniel?",
+   "options": [
+    "Con Valeria",
+    "Con Florencia",
+    "Con Sofía"
+   ],
+   "answer": 0,
+   "why": "Hay tres bodas: Leonardo y Sofía, Daniel y Valeria, Juan Carlos y Florencia (cap. 16)."
+  },
+  {
+   "type": "story",
+   "prompt": "Elige la respuesta correcta",
+   "question": "¿Cómo se va Andrés de Sinea?",
+   "options": [
+    "En una moto, con Púas en una cesta",
+    "En el coche rojo",
+    "En tren, solo"
+   ],
+   "answer": 0,
+   "why": "Púas lleva unas pequeñas gafas de sol (cap. 16)."
+  }
+ ]
+}

@@ -314,6 +314,29 @@ article.chapter .bdbank{display:flex;flex-wrap:wrap;gap:6px;min-height:38px}
 article.chapter .bdt{font:500 15px/1 var(--sans);padding:0 12px;height:38px;border-radius:9px;border:1px solid var(--line);border-bottom-width:3px;background:var(--paper);color:var(--ink);cursor:pointer;touch-action:manipulation}
 article.chapter .bdt:hover{border-color:var(--accent)}
 article.chapter .bdline .bdt{border-color:var(--accent)}
+article.chapter div.dd{text-align:left;margin:.4em 0 1.4em;padding:14px 14px 4px;border-radius:14px;border:1px solid var(--line);background:color-mix(in srgb,var(--accent) 5%,var(--paper))}
+article.chapter div.dd.done{border-color:#9cc8a9;background:color-mix(in srgb,#3f9a5c 8%,var(--paper))}
+article.chapter .ddhint{margin:0 0 10px;font:13.5px/1.4 var(--sans);color:var(--muted)}
+article.chapter .ddbank{display:flex;flex-wrap:wrap;gap:7px;min-height:44px;padding:8px;margin:0 0 12px;border-radius:10px;border:1.5px dashed var(--line);background:var(--paper);transition:border-color .15s,background .15s}
+article.chapter .ddbank:empty::before{content:"✓";color:var(--muted);font:600 15px/28px var(--sans);padding-left:4px}
+article.chapter .ddbank.over{border-color:var(--accent)}
+article.chapter .ddc{font:500 15px/1 var(--sans);padding:0 12px;height:36px;border-radius:9px;border:1px solid var(--line);border-bottom-width:3px;background:var(--paper);color:var(--ink);cursor:grab;touch-action:manipulation;user-select:none;-webkit-user-select:none;transition:transform .1s,box-shadow .1s,border-color .1s}
+article.chapter .ddc:hover{border-color:var(--accent)}
+article.chapter .ddc.on{background:var(--accent);border-color:var(--accent);color:#fff;transform:translateY(-2px);box-shadow:0 4px 10px -4px var(--accent)}
+article.chapter .ddc.drag{opacity:.45}
+article.chapter .ddline{margin:0 0 .75em;line-height:2.3}
+article.chapter .dds{display:inline-flex;align-items:center;justify-content:center;vertical-align:middle;min-width:96px;min-height:36px;margin:0 3px;padding:0 2px;border-radius:9px;border:1.5px dashed color-mix(in srgb,var(--accent) 55%,var(--line));background:color-mix(in srgb,var(--accent) 7%,var(--paper));cursor:pointer;transition:border-color .15s,background .15s;line-height:1}
+article.chapter .dds .ddc{height:30px;border-bottom-width:1px;margin:0}
+article.chapter .dds.over,article.chapter .dds.armed{border-style:solid;border-color:var(--accent);background:color-mix(in srgb,var(--accent) 16%,var(--paper))}
+article.chapter .dds.ok{border-style:solid;border-color:#5fa877;background:#e3efe6}
+article.chapter .dds.bad{border-style:solid;border-color:#d27a6e;background:#f6e0dd}
+:root[data-theme="dark"] article.chapter .dds.ok{background:#23382b;border-color:#3f6b4d}
+:root[data-theme="dark"] article.chapter .dds.bad{background:#3d2420;border-color:#7a3f36}
+@media (prefers-color-scheme: dark){:root:not([data-theme]) article.chapter .dds.ok{background:#23382b;border-color:#3f6b4d}:root:not([data-theme]) article.chapter .dds.bad{background:#3d2420;border-color:#7a3f36}}
+article.chapter .ddrow{display:grid;grid-template-columns:minmax(120px,auto) 1fr;align-items:center;gap:10px;margin:0 0 8px;padding:6px 8px;border-radius:10px;background:var(--paper);border:1px solid var(--line)}
+article.chapter .ddrow .dds{margin:0;min-width:120px}
+article.chapter .dddef{font:15px/1.4 var(--sans)}
+@media (max-width:520px){article.chapter .ddrow{grid-template-columns:1fr;gap:6px}article.chapter .ddrow .dds{justify-self:start}}
 article.chapter .exfix{flex-basis:100%;margin-top:6px;font:14px/1.35 var(--sans);color:var(--muted)}
 article.chapter .exfix b{color:var(--ink)}
 article.chapter div.bd.ok,article.chapter div.tx.ok{background:#e3efe6;border-color:#9cc8a9}
@@ -586,6 +609,54 @@ article.chapter h3{font-family:var(--sans);font-size:.72em;letter-spacing:.12em;
 .music .m-status:empty{display:none}
 /* Разделы романа: саундтрек, игры, галерея */
 /* Энциклопедия романа */
+.cq{--cq-ink:#2b2118;--cq-mut:#7a6554;--cq-line:#ecdccb;--cq-acc:#e8546a;max-width:640px;margin:0 auto;padding:20px 16px 22px;border-radius:20px;color:var(--cq-ink);font-family:var(--sans);background:radial-gradient(110% 60% at 0% 0%,#fff1e4 0%,transparent 60%),radial-gradient(90% 60% at 100% 100%,#fde4ea 0%,transparent 60%),#fffaf5;border:1px solid var(--cq-line)}
+.cq button{font:inherit;color:inherit}
+.cq-hero{text-align:center}
+.cq-art{width:200px;max-width:70%;height:auto;display:block;margin:0 auto 4px}
+.cq-heart{transform-origin:120px 50px;animation:cqBeat 1.6s ease-in-out infinite}@keyframes cqBeat{0%,100%{transform:scale(1)}15%{transform:scale(1.12)}30%{transform:scale(.97)}}
+.cq-steam{animation:cqSteam 2.4s ease-in-out infinite;opacity:.8}@keyframes cqSteam{0%,100%{transform:translateY(0);opacity:.75}50%{transform:translateY(-3px);opacity:.35}}
+.cq-title{font-family:var(--display);font-size:clamp(24px,5.4vw,32px);line-height:1.12;margin:4px 0 8px;color:#8c2a3c}
+.cq-intro{max-width:500px;margin:0 auto;font-size:15px;line-height:1.55;color:var(--cq-mut)}
+.cq-choose{text-align:center;margin:18px 0 10px;font-weight:700;font-size:14px;letter-spacing:.04em;text-transform:uppercase;color:var(--cq-mut)}
+.cq-roles{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.cq-role{position:relative;display:flex;flex-direction:column;align-items:center;gap:6px;padding:18px 12px 16px;border-radius:16px;border:2px solid var(--cq-line);background:#fff;cursor:pointer;text-align:center;transition:transform .15s,border-color .15s,box-shadow .15s}
+.cq-role:hover{transform:translateY(-3px);box-shadow:0 10px 22px -14px #8c2a3c}
+.cq-role-h:hover{border-color:#4a7fc2}.cq-role-m:hover{border-color:#e8546a}
+.cq-ricon{font-size:44px;line-height:1}.cq-ricon.big{font-size:52px;margin-top:2px}
+.cq-role b{font-size:17px}.cq-role small{font-size:13px;line-height:1.4;color:var(--cq-mut)}
+.cq-role i{position:absolute;top:8px;right:10px;font-style:normal;font-size:12px;font-weight:700;color:#b07a1e}
+.cq-top{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.cq-home{flex:none;width:34px;height:34px;border-radius:50%;border:1px solid var(--cq-line);background:#fff;cursor:pointer}
+.cq-prog{flex:1;height:8px;border-radius:8px;background:#0000000d;overflow:hidden}.cq-prog i{display:block;height:100%;border-radius:8px;background:linear-gradient(90deg,#f29a6b,var(--cq-acc));transition:width .3s}
+.cq-of{flex:none;font-size:12.5px;font-weight:600;color:var(--cq-mut)}
+.cq-scene{position:relative;height:130px;border-radius:16px;background:radial-gradient(60px 60px at 18% 30%,#ffffff70,transparent),radial-gradient(80px 80px at 85% 75%,#ffffff55,transparent),var(--bg);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.cq-emoji{font-size:64px;line-height:1;filter:drop-shadow(0 6px 8px #0000002a);animation:cqPop .35s ease}@keyframes cqPop{from{transform:scale(.6);opacity:0}to{transform:none;opacity:1}}
+.cq-place{position:absolute;left:12px;bottom:10px;padding:3px 10px;border-radius:12px;background:#ffffffcc;font-size:12.5px;font-weight:700}
+.cq-q{font-size:17.5px;line-height:1.45;font-weight:600;margin:14px 2px 12px}
+.cq-opts{display:flex;flex-direction:column;gap:8px}
+.cq-opt{display:flex;align-items:flex-start;gap:10px;width:100%;padding:11px 12px;border-radius:12px;border:1.5px solid var(--cq-line);background:#fff;text-align:left;font-size:15px;line-height:1.4;cursor:pointer;transition:border-color .15s,background .15s}
+.cq-opt:hover:not(:disabled){border-color:var(--cq-acc)}
+.cq-opt:disabled{cursor:default;opacity:.55}.cq-opt.pick{opacity:1}
+.cq-l{flex:none;width:24px;height:24px;border-radius:50%;background:#f6e7da;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:#8c5a3c}
+.cq-opt.p3{border-color:#3fa26a;background:#e6f4ea}.cq-opt.p2{border-color:#8cbf5a;background:#eff6e3}.cq-opt.p1{border-color:#f2b84b;background:#fdf3dc}.cq-opt.p0{border-color:#e5534b;background:#fbe3e1}
+.cq-fb{display:grid;grid-template-columns:auto 1fr;gap:4px 10px;align-items:start;margin-top:12px;padding:12px 14px;border-radius:14px;border:1px solid var(--cq-line);background:#fff;animation:cqPop .25s ease}
+.cq-fb.p3{border-color:#9fd3b1}.cq-fb.p0{border-color:#efb0ab}
+.cq-fbi{font-size:24px;line-height:1.2}.cq-fb p{margin:0;font-size:14.5px;line-height:1.5}
+.cq-next{grid-column:1/-1;justify-self:end;margin-top:6px;padding:9px 16px;border-radius:10px;border:0;background:var(--cq-acc);color:#fff!important;font-weight:700;cursor:pointer}
+.cq-res{text-align:center}
+.cq-rk{margin:0 0 4px;font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--cq-mut)}
+.cq-gauge{width:220px;max-width:80%;height:auto;display:block;margin:0 auto}
+.cq-gnum{font:800 30px/1 var(--sans);margin:2px 0 4px;color:#2b2118}
+.cq-res h3{font-family:var(--display);font-size:26px;margin:4px 0 6px;color:#8c2a3c}
+.cq-rtext{max-width:500px;margin:0 auto 14px;font-size:15px;line-height:1.55}
+.cq-bars{max-width:420px;margin:0 auto 16px;display:flex;flex-direction:column;gap:8px;text-align:left}
+.cq-bar{display:grid;grid-template-columns:90px 1fr 42px;align-items:center;gap:10px;font-size:13.5px}
+.cq-bar div{height:10px;border-radius:10px;background:#0000000d;overflow:hidden}.cq-bar i{display:block;height:100%;border-radius:10px;background:linear-gradient(90deg,#f29a6b,#e8546a)}
+.cq-bar b{text-align:right}
+.cq-btns{display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
+.cq-btns button{padding:10px 16px;border-radius:10px;border:0;background:var(--cq-acc);color:#fff;font-weight:700;cursor:pointer}
+.cq-btns .ghost{background:#fff;color:var(--cq-ink);border:1.5px solid var(--cq-line)}
+@media (max-width:420px){.cq-roles{grid-template-columns:1fr}.cq-role{flex-direction:row;text-align:left;flex-wrap:wrap}.cq-role small{flex-basis:100%}}
 .ex:has(.enc){overflow:clip}
 .enc{--eb:#f7f1e4;--ep:#fffdf8;--ei:#2b2118;--em:#7a6650;--ea:#a87b2f;--er:#9b3b2c;--el:#e3d5b8;box-sizing:border-box;width:100%;max-width:620px;aspect-ratio:1/1;min-height:460px;max-height:min(620px,82vh);margin:0 auto;display:flex;flex-direction:column;overflow:hidden;border-radius:18px;border:1.5px solid var(--el);color:var(--ei);font-family:var(--sans);background:radial-gradient(120% 60% at 10% 0%,#fdf6e6 0%,transparent 60%),radial-gradient(90% 50% at 100% 100%,#efe3cb 0%,transparent 60%),var(--eb);box-shadow:inset 0 1px 0 #fff}
 .enc-hero{flex:0 0 auto;display:flex;align-items:center;gap:10px;padding:14px 16px 0;text-align:left}
@@ -1228,6 +1299,8 @@ function renderText(md){
     if (lk) return `<figure class="linked"><a href="${esc(lk[3])}"><img src="${esc(lk[2])}" alt="${esc(lk[1])}" loading="lazy"></a></figure>`;
     if (/^:::\s*gallery\s*\n/i.test(b)) { const items = b.split("\n").slice(1).map(r => r.trim().match(/^!\[([^\]]*)\]\(([^)\s]+)\)$/)).filter(Boolean);
       return `<div class="gallery">${items.map(x => `<figure><a href="${esc(x[2])}" target="_blank" rel="noopener"><img src="${esc(x[2])}" alt="${esc(x[1])}" loading="lazy"></a>${x[1] ? `<figcaption>${inline(x[1])}</figcaption>` : ""}</figure>`).join("")}</div>`; }
+    const ddm = b.match(/^:::\s*(arrastrar|unir)\s*\n([\s\S]*)$/i);
+    if (ddm) return ddHTML(ddm[1].toLowerCase(), ddm[2]);
     const au = b.match(/^!audio\[([^\]]*)\]\(([^)\s]+)\)$/);
     /* !audio[título](carpeta/#N): canción guardada en N trozos (000.part…) en el repositorio de audio; se arma al tocar ▶ */
     const auP = au && au[2].match(/^(.+?)\/?#(\d+)$/);
@@ -1369,6 +1442,66 @@ function setupQuizzes(root, lang){
       let ok = 0;
       g.forEach(p => { const r = exRight(p); if (r) ok++; exMark(p, r, EX[2]); });
       res.textContent = `${ok} / ${g.length} ${T[1]}`; go.textContent = T[2]; checked = true;
+    };
+  });
+}
+
+/* Drag-and-drop exercises (blocks ":::arrastrar" and ":::unir").
+   :::arrastrar — each line is a sentence with gaps [[word]]; optional line "+ extra, extra" adds distractors to the bank.
+   :::unir — each line "term = definition": drag the term onto its definition.
+   Works with the mouse (drag and drop) and with taps (tap a word, then tap the gap). */
+const DD_T = {es:["Arrastra cada palabra a su lugar. También puedes tocar una palabra y después el hueco.","Arrastra cada palabra hasta su definición. También puedes tocar una palabra y después la definición.","Comprobar","correctas","Corregir los errores","¡Perfecto!"],
+  it:["Trascina ogni parola al suo posto (oppure tocca la parola e poi lo spazio).","Trascina ogni parola sulla sua definizione.","Verifica","corrette","Correggi gli errori","Perfetto!"],
+  en:["Drag each word into place (or tap a word, then the gap).","Drag each word onto its definition.","Check","correct","Fix the mistakes","Perfect!"],
+  ru:["Перетащите слова на место (или нажмите на слово, а потом на пропуск).","Перетащите слово к его определению.","Проверить","правильно","Исправить ошибки","Отлично!"]};
+function ddHTML(kind, body){
+  const lines = body.split("\n").map(s => s.trim()).filter(s => s && s !== ":::");
+  const extra = [], rows = [], words = [];
+  lines.forEach(l => {
+    if (/^\+\s*/.test(l)) { extra.push(...l.replace(/^\+\s*/, "").split(",").map(s => s.trim()).filter(Boolean)); return; }
+    if (kind === "unir") { const m = l.match(/^(.+?)\s+=\s+(.+)$/); if (!m) return; words.push(m[1].trim());
+      rows.push(`<div class="ddrow"><span class="dds" role="button" tabindex="0" data-a="${esc(m[1].trim())}"></span><span class="dddef">${inline(m[2].trim())}</span></div>`); return; }
+    let html = "", last = 0; const re = /\[\[([^\]]+)\]\]/g; let m;
+    while ((m = re.exec(l))) { html += inline(l.slice(last, m.index)) + `<span class="dds" role="button" tabindex="0" data-a="${esc(m[1].trim())}"></span>`; words.push(m[1].trim()); last = re.lastIndex; }
+    rows.push(`<p class="ddline">${html + inline(l.slice(last))}</p>`);
+  });
+  const bank = [...words, ...extra];
+  for (let i = bank.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [bank[i], bank[j]] = [bank[j], bank[i]]; }
+  return `<div class="dd dd-${kind}"><p class="ddhint"></p><div class="ddbank">${bank.map((w, i) => `<button type="button" class="ddc" draggable="true" data-id="${i}">${esc(w)}</button>`).join("")}</div><div class="ddbody">${rows.join("")}</div><div class="vfcheck"><button type="button" class="vfgo"></button><span class="vfres" aria-live="polite"></span></div></div>`;
+}
+function setupDD(root, lang){
+  const T = DD_T[lang] || DD_T.es, nm = s => String(s).normalize("NFC").toLowerCase().trim();
+  root.querySelectorAll("div.dd").forEach(box => {
+    const bank = box.querySelector(".ddbank"), go = box.querySelector(".vfgo"), res = box.querySelector(".vfres");
+    const slots = [...box.querySelectorAll(".dds")];
+    box.querySelector(".ddhint").textContent = box.classList.contains("dd-unir") ? T[1] : T[0];
+    go.textContent = T[2];
+    let picked = null, armed = null, checked = false;
+    const clearMarks = () => { if (!checked) return; checked = false; slots.forEach(s => s.classList.remove("ok", "bad")); box.classList.remove("done"); res.textContent = ""; go.textContent = T[2]; };
+    const pick = c => { if (picked) picked.classList.remove("on"); picked = c && c !== picked ? c : null; if (picked) picked.classList.add("on"); };
+    const arm = s => { if (armed) armed.classList.remove("armed"); armed = s && s !== armed ? s : null; if (armed) armed.classList.add("armed"); };
+    const toBank = c => { const after = [...bank.children].find(x => +x.dataset.id > +c.dataset.id); bank.insertBefore(c, after || null); };
+    const place = (c, s) => { clearMarks(); const old = s.querySelector(".ddc"); if (old && old !== c) toBank(old); s.appendChild(c); c.classList.remove("on"); picked = null; arm(null); };
+    box.addEventListener("click", e => {
+      const c = e.target.closest(".ddc"), s = e.target.closest(".dds");
+      if (c && c.parentNode === bank) { if (armed) place(c, armed); else pick(c); return; }
+      if (s) { if (picked) { place(picked, s); return; } const inside = s.querySelector(".ddc"); if (inside) { clearMarks(); toBank(inside); return; } arm(s); }
+    });
+    box.addEventListener("keydown", e => { const s = e.target.closest(".dds"); if (s && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); s.click(); } });
+    let dragged = null;
+    box.addEventListener("dragstart", e => { const c = e.target.closest(".ddc"); if (!c) return; dragged = c; c.classList.add("drag"); try { e.dataTransfer.setData("text/plain", c.textContent); e.dataTransfer.effectAllowed = "move"; } catch(x) {} });
+    box.addEventListener("dragend", () => { if (dragged) dragged.classList.remove("drag"); dragged = null; box.querySelectorAll(".over").forEach(x => x.classList.remove("over")); });
+    box.addEventListener("dragover", e => { if (!dragged) return; const t = e.target.closest(".dds, .ddbank"); if (!t) return; e.preventDefault(); box.querySelectorAll(".over").forEach(x => x !== t && x.classList.remove("over")); t.classList.add("over"); });
+    box.addEventListener("dragleave", e => { const t = e.target.closest(".dds, .ddbank"); if (t && !t.contains(e.relatedTarget)) t.classList.remove("over"); });
+    box.addEventListener("drop", e => { if (!dragged) return; const t = e.target.closest(".dds, .ddbank"); if (!t) return; e.preventDefault(); t.classList.remove("over");
+      if (t.classList.contains("ddbank")) { clearMarks(); toBank(dragged); } else place(dragged, t); });
+    go.onclick = () => {
+      if (checked) { slots.forEach(s => { if (s.classList.contains("bad")) { const c = s.querySelector(".ddc"); if (c) toBank(c); } }); clearMarks(); return; }
+      let ok = 0;
+      slots.forEach(s => { const c = s.querySelector(".ddc"), r = !!c && nm(c.textContent) === nm(s.dataset.a); s.classList.toggle("ok", r); s.classList.toggle("bad", !r); if (r) ok++; });
+      checked = true; const all = ok === slots.length; box.classList.toggle("done", all);
+      res.textContent = `${ok} / ${slots.length} ${T[3]}` + (all ? " · " + T[5] : ""); go.textContent = all ? T[2] : T[4];
+      if (all) go.disabled = true;
     };
   });
 }
@@ -2549,6 +2682,75 @@ function setupMap(pane, M){
   pane.querySelectorAll(".mp-step,.mp-nb").forEach(b => b.onclick = () => pick(+b.dataset.i, true));
   const h = pane.querySelector(".mp-pin.home"); pick(h ? +h.dataset.i : 0, false);
 }
+/* Role-based scenario test (sec.style "conquista"): novels/<slug>/<file>.json —
+   {title, intro, choose, next, result, again, other, of, roles:{<key>:{label, icon, pitch, title, cats:{c:name}, questions:[{scene, bg, place, q, cat, options:[{t, p(0–3), f}]}], results:[{min, icon, title, text}]}}}.
+   The reader first picks a role (e.g. man / woman); each role has its own scenes and results. */
+const CQ_ART = `<svg class="cq-art" viewBox="0 0 240 120" aria-hidden="true">
+  <ellipse cx="120" cy="108" rx="104" ry="9" fill="#00000010"/>
+  <g transform="translate(46 44)"><path d="M0 8h44v30a14 14 0 0 1-14 14H14A14 14 0 0 1 0 38Z" fill="#fff" stroke="#c26a4a" stroke-width="3"/><path d="M44 16h6a9 9 0 0 1 0 18h-6" fill="none" stroke="#c26a4a" stroke-width="3"/><path d="M4 14h36" stroke="#e9b48f" stroke-width="5"/>
+    <path class="cq-steam" d="M14 0c-4-6 4-8 0-14M28 0c-4-6 4-8 0-14" fill="none" stroke="#d8a48a" stroke-width="2.5" stroke-linecap="round"/></g>
+  <g transform="translate(150 44)"><path d="M0 8h44v30a14 14 0 0 1-14 14H14A14 14 0 0 1 0 38Z" fill="#fff" stroke="#4a7fc2" stroke-width="3"/><path d="M0 16h-6a9 9 0 0 0 0 18h6" fill="none" stroke="#4a7fc2" stroke-width="3"/><path d="M4 14h36" stroke="#9cc0e9" stroke-width="5"/>
+    <path class="cq-steam" d="M16 0c-4-6 4-8 0-14M30 0c-4-6 4-8 0-14" fill="none" stroke="#8fb0d8" stroke-width="2.5" stroke-linecap="round"/></g>
+  <path class="cq-heart" d="M120 40c-6-10-22-8-22 4 0 10 14 18 22 26 8-8 22-16 22-26 0-12-16-14-22-4Z" fill="#e8546a"/>
+</svg>`;
+function cqGauge(pct){
+  const a = Math.PI * (1 - pct / 100), x = 100 + 72 * Math.cos(a), y = 100 - 72 * Math.sin(a);
+  return `<svg class="cq-gauge" viewBox="0 0 200 116" role="img" aria-label="${pct}%">
+    <defs><linearGradient id="cqg" x1="0" x2="1"><stop offset="0" stop-color="#e5534b"/><stop offset=".45" stop-color="#f2b84b"/><stop offset="1" stop-color="#3fa26a"/></linearGradient></defs>
+    <path d="M18 100a82 82 0 0 1 164 0" fill="none" stroke="#0000000f" stroke-width="18" stroke-linecap="round"/>
+    <path d="M18 100a82 82 0 0 1 164 0" fill="none" stroke="url(#cqg)" stroke-width="18" stroke-linecap="round" pathLength="100" stroke-dasharray="${pct} 100"/>
+    <line x1="100" y1="100" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}" stroke="#2b2118" stroke-width="4" stroke-linecap="round"/><circle cx="100" cy="100" r="8" fill="#2b2118"/></svg><div class="cq-gnum">${pct}%</div>`;
+}
+function setupConquista(pane, D, n){
+  const L = ["A", "B", "C", "D", "E"], key = k => "cq:" + n.slug + ":" + k;
+  const root = document.createElement("div"); root.className = "cq"; root.lang = n.lang; pane.innerHTML = ""; pane.appendChild(root);
+  const roles = Object.keys(D.roles);
+  const start = () => {
+    root.innerHTML = `<div class="cq-hero">${CQ_ART}<h2 class="cq-title">${esc(D.title)}</h2><p class="cq-intro">${esc(D.intro)}</p></div>
+      <p class="cq-choose">${esc(D.choose)}</p>
+      <div class="cq-roles">${roles.map(k => { const R = D.roles[k], b = store.get(key(k), null);
+        return `<button type="button" class="cq-role cq-role-${esc(k)}" data-r="${esc(k)}"><span class="cq-ricon">${R.icon}</span><b>${esc(R.label)}</b><small>${esc(R.pitch)}</small>${b !== null ? `<i>★ ${b}%</i>` : ""}</button>`; }).join("")}</div>`;
+    root.querySelectorAll(".cq-role").forEach(b => b.onclick = () => run(b.dataset.r));
+  };
+  const run = rk => {
+    const R = D.roles[rk], Q = R.questions; let i = 0; const got = [];
+    const show = () => {
+      const q = Q[i], pct = Math.round(i / Q.length * 100);
+      root.innerHTML = `<div class="cq-top"><button type="button" class="cq-home" aria-label="←">←</button><div class="cq-prog"><i style="width:${pct}%"></i></div><span class="cq-of">${esc(D.of.replace("{a}", i + 1).replace("{b}", Q.length))}</span></div>
+        <div class="cq-scene" style="--bg:${esc(q.bg || "#f3e6d8")}"><span class="cq-emoji">${q.scene}</span><span class="cq-place">${esc(q.place || "")}</span></div>
+        <p class="cq-q">${esc(q.q)}</p>
+        <div class="cq-opts">${q.options.map((o, k) => `<button type="button" class="cq-opt" data-k="${k}"><span class="cq-l">${L[k]}</span><span>${esc(o.t)}</span></button>`).join("")}</div>
+        <div class="cq-fb" hidden></div>`;
+      root.querySelector(".cq-home").onclick = start;
+      const fb = root.querySelector(".cq-fb"), opts = [...root.querySelectorAll(".cq-opt")];
+      opts.forEach(b => b.onclick = () => {
+        const o = q.options[+b.dataset.k]; got[i] = {p:o.p, cat:q.cat};
+        opts.forEach(x => { x.disabled = true; x.classList.toggle("pick", x === b); });
+        b.classList.add("p" + o.p);
+        fb.className = "cq-fb p" + o.p; fb.hidden = false;
+        fb.innerHTML = `<span class="cq-fbi">${["🚩", "🤔", "👍", "✅"][o.p] || "✦"}</span><p>${esc(o.f)}</p><button type="button" class="cq-next">${esc(i + 1 < Q.length ? D.next : D.result)} →</button>`;
+        fb.querySelector(".cq-next").onclick = () => { i++; if (i < Q.length) show(); else result(); };
+        fb.scrollIntoView({block:"nearest", behavior:"smooth"});
+      });
+    };
+    const result = () => {
+      const pct = Math.round(got.reduce((s, g) => s + g.p, 0) / (3 * Q.length) * 100);
+      const res = R.results.slice().sort((a, b) => b.min - a.min).find(r => pct >= r.min) || R.results[R.results.length - 1];
+      const prev = store.get(key(rk), null); if (prev === null || pct > prev) store.set(key(rk), pct);
+      const cats = Object.keys(R.cats || {}).map(c => { const gs = got.filter(g => g.cat === c); return {name:R.cats[c], v:gs.length ? Math.round(gs.reduce((s, g) => s + g.p, 0) / (3 * gs.length) * 100) : 0}; });
+      const other = roles.find(k => k !== rk);
+      root.innerHTML = `<div class="cq-res"><p class="cq-rk">${esc(R.title)}</p>${cqGauge(pct)}
+        <div class="cq-ricon big">${res.icon}</div><h3>${esc(res.title)}</h3><p class="cq-rtext">${esc(res.text)}</p>
+        <div class="cq-bars">${cats.map(c => `<div class="cq-bar"><span>${esc(c.name)}</span><div><i style="width:${c.v}%"></i></div><b>${c.v}%</b></div>`).join("")}</div>
+        <div class="cq-btns"><button type="button" class="cq-again">↻ ${esc(D.again)}</button>${other ? `<button type="button" class="cq-other ghost">${D.roles[other].icon} ${esc(D.other)}</button>` : ""}</div></div>`;
+      root.querySelector(".cq-again").onclick = () => run(rk);
+      const ob = root.querySelector(".cq-other"); if (ob) ob.onclick = () => run(other);
+      root.scrollIntoView({block:"start", behavior:"smooth"});
+    };
+    show();
+  };
+  start();
+}
 async function exSection(n, sec, pane){
   pane.innerHTML = `<div class="loading">…</div>`;
   let md = "*—*";
@@ -2558,6 +2760,7 @@ async function exSection(n, sec, pane){
   if (sec.style === "wagons") { pane.innerHTML = wagonsHTML(md, sec, n); setupWagons(pane); return; }
   if (sec.style === "map") { let D; try { D = JSON.parse(md); } catch(e) { D = null; } if (D) { const M = mapHTML(D, sec, n); pane.innerHTML = M.html; setupMap(pane, M); return; } }
   if (sec.style === "chess-puzzles" || sec.style === "trivia") { let D; try { D = JSON.parse(md); } catch(e) { D = null; } if (D) { exQuizRun(n, sec, D, pane, sec.style === "trivia" ? "trivia" : "chess"); return; } }
+  if (sec.style === "conquista") { let D; try { D = JSON.parse(md); } catch(e) { D = null; } if (D) { setupConquista(pane, D, n); return; } }
   if (sec.style === "encyclopedia") { const E = encyclopediaHTML(md, sec, n); pane.innerHTML = E.html; setupEncyclopedia(pane, E.render); return; }
   pane.innerHTML = `<article class="chapter ex-sec" lang="${esc(n.lang)}"><h2>${esc(sec.title)}</h2>${renderText(md)}</article>`;
   pane.querySelectorAll(".ex-sec img").forEach(im => { im.onclick = () => window.open(im.src, "_blank"); const z = document.createElement("span"); z.className = "ex-zoom"; z.textContent = "⤢"; im.after(z); });
@@ -2639,7 +2842,7 @@ function exNotebook(n, pane){
   if (window.LitmirNotebook) return go();
   const s = document.createElement("script"); s.src = "games/notebook/notebook.js"; s.onload = go; document.head.appendChild(s);
 }
-/* Карта Мендосы («Тайна семьи Фадер», «Дикий час 2») — games/maps/mendoza.js */
+/* Карта Мендосы («Тайна семьи Фадер», «Дикий час: Духи гор») — games/maps/mendoza.js */
 /* Videoclip de una canción (n.clip = {audio, image, lines, title, about}) — games/clip/clip.js */
 function exClip(n, pane){
   pane.innerHTML = `<div class="loading">…</div>`;
@@ -2887,6 +3090,7 @@ async function reader(n, idx, page){
   window.__activeChapterFile = c.file;
   if (n.slug === "predchuvstvie" && c.file === "28.md") setupPredchuvstvieReflection(app);
   setupQuizzes(app, n.lang);
+  setupDD(app, n.lang);
   setupPsy(app, n.lang);
   setupGlossPick(n, app);
   if (lastPage) mountComments(n, c);
