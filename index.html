@@ -779,6 +779,54 @@ article.chapter h3{font-family:var(--sans);font-size:.72em;letter-spacing:.12em;
 .mp-row{margin:10px 0}.mp-row b{display:block;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:#7a5c2e;margin-bottom:3px}.mp-row p{margin:0;font-size:16px;line-height:1.55}
 .mp-sec{background:#f3ead8;border-radius:10px;padding:8px 10px}.mp-reveal{border:2px solid #8c2f2f;background:none;color:#8c2f2f;border-radius:18px;padding:6px 14px;font-weight:700;font-size:14px;cursor:pointer}
 .mp-more,.mp-first{font-size:14px;color:#6d5b47;margin:8px 0 4px}.mp-first a,.mp-lk a{color:#8c2f2f;font-weight:700}
+.sk,.hz{--sk-ink:#e9edff;--sk-dim:#a9b4dc;--sk-gold:#ffd27a;--sk-card:#111a38;--sk-line:#2a3768}
+.sk-hero,.hz-hero{text-align:center;color:var(--sk-ink);padding:18px 14px 16px;margin:0 -12px 12px;background:radial-gradient(120% 140% at 50% 0%,#24346b 0%,#0b1230 70%)}
+.sk-title,.hz-title{font-family:var(--serif);font-size:24px;font-weight:700;letter-spacing:.02em}.sk-intro,.hz-intro{font-size:14.5px;line-height:1.5;opacity:.88;margin-top:6px}
+.sk-tools{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 8px}
+.sk-tools button,.hz-days button{border:1px solid var(--sk-line);background:#0d1534;color:var(--sk-dim);border-radius:18px;padding:6px 12px;font-size:13.5px;font-weight:600;cursor:pointer}
+.sk-tools button.on,.hz-days button.on{background:#2b3c7a;color:#fff;border-color:#4d63b5}
+.sk-box{position:relative;border-radius:16px;overflow:hidden;border:1px solid var(--sk-line);box-shadow:0 10px 28px rgba(5,10,30,.35);background:#060b1d}
+.sk-cv{display:block;width:100%;cursor:grab;user-select:none;-webkit-user-select:none}.sk-cv:active{cursor:grabbing}
+.sk-zoom{position:absolute;right:10px;top:10px;display:flex;flex-direction:column;gap:6px}
+.sk-zoom button{width:36px;height:36px;border-radius:50%;border:1px solid #3a4a86;background:rgba(13,21,52,.85);color:#fff;font-size:20px;line-height:1;cursor:pointer}
+.sk-hint{position:absolute;left:50%;bottom:10px;transform:translateX(-50%);background:rgba(13,21,52,.85);color:var(--sk-dim);font-size:13px;padding:5px 12px;border-radius:14px;pointer-events:none}
+.sk-vnote{margin:8px 2px 0;font-size:14px;line-height:1.45;color:#c58a3e}
+.sk-card{margin-top:12px;background:var(--sk-card);color:var(--sk-ink);border:1px solid var(--sk-line);border-radius:14px;padding:14px 14px 10px;min-height:60px}
+.sk-top{display:flex;gap:12px;align-items:center;margin-bottom:6px}.sk-sg{font-size:30px;line-height:1;color:var(--sk-gold);width:36px;text-align:center}
+.sk-top h3{margin:0;font-family:var(--serif);font-size:21px;color:#fff}.sk-top small{color:var(--sk-dim);font-style:italic;font-size:13.5px}
+.sk-txt{margin:6px 0 8px;font-size:16px;line-height:1.55}
+.sk-facts{list-style:none;margin:0;padding:0;font-size:14.5px;line-height:1.5;color:#cfd6f5}.sk-facts li{margin:3px 0}.sk-facts b{color:var(--sk-gold);font-weight:600}
+.sk-novel{margin:10px 0 4px;background:#1b2550;border-radius:10px;padding:9px 11px}.sk-novel b{display:block;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--sk-gold);margin-bottom:3px}
+.sk-novel p{margin:0;font-size:15px;line-height:1.5}.sk-novel.lk{opacity:.85}.sk-novel a{color:var(--sk-gold);font-weight:700}
+.sk-h,.hz-pick{margin:16px 2px 6px;font-size:13px;letter-spacing:.07em;text-transform:uppercase;color:#6d78a8}
+.sk-chips{display:flex;flex-wrap:wrap;gap:6px}
+.sk-chip{border:1px solid #c9cfe6;background:transparent;color:inherit;border-radius:16px;padding:5px 11px;font-size:14px;cursor:pointer}
+.sk-chip span{color:#c58a3e;margin-right:4px}.sk-chip.on{background:#2b3c7a;border-color:#2b3c7a;color:#fff}.sk-chip.on span{color:var(--sk-gold)}
+.hz-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(102px,1fr));gap:8px}
+.hz-sign{display:flex;flex-direction:column;align-items:center;gap:1px;border:1px solid var(--sk-line);background:#0d1534;color:var(--sk-ink);border-radius:14px;padding:10px 4px 8px;font-size:14.5px;font-weight:600;cursor:pointer}
+.hz-sign span{font-size:26px;line-height:1.1;color:var(--sk-gold)}.hz-sign small{font-weight:400;font-size:11.5px;color:var(--sk-dim)}
+.hz-sign.on{background:#2b3c7a;border-color:#5a71c8}.hz-sign.oph{border-style:dashed;border-color:#7a6a3a}
+.hz-bd{margin:10px 2px 0;font-size:14px;color:#6d78a8}.hz-bd input{margin-left:6px;font:inherit;padding:4px 6px;border-radius:8px;border:1px solid #c9cfe6;background:transparent;color:inherit}
+.hz-card{background:var(--sk-card);color:var(--sk-ink);border:1px solid var(--sk-line);border-radius:16px;padding:14px 14px 12px;box-shadow:0 10px 28px rgba(5,10,30,.3)}
+.hz-days{display:flex;gap:6px;justify-content:center;margin-bottom:12px}
+.hz-head{display:flex;gap:12px;align-items:center}.hz-big{font-size:44px;line-height:1;color:var(--sk-gold)}.hz-head h3{margin:0;font-family:var(--serif);font-size:24px;color:#fff}.hz-head small{color:var(--sk-dim);font-size:13.5px}
+.hz-oph{margin:10px 0 0;font-size:14.5px;line-height:1.5;background:#2a2410;border:1px dashed #7a6a3a;border-radius:10px;padding:8px 10px;color:#f2e2b0}
+.hz-lead{font-family:var(--serif);font-size:18px;line-height:1.55;margin:12px 0 8px}
+.hz-pow{font-size:14.5px;margin:0 0 10px;color:#cfd6f5}.hz-pow b{color:var(--sk-gold)}.hz-pow span{color:var(--sk-dim)}
+.hz-sub{background:#162a55;border-radius:10px;padding:9px 11px;margin:0 0 10px}.hz-sub b{color:#8fd3ff}.hz-sub small{color:var(--sk-dim)}.hz-sub p{margin:4px 0 0;font-size:15px;line-height:1.5}
+.hz-row{border-top:1px solid var(--sk-line);padding:9px 0}.hz-row p{margin:3px 0 0;font-size:15.5px;line-height:1.5}
+.hz-k{display:flex;justify-content:space-between;align-items:center;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--sk-gold);font-weight:700}
+.hz-st{letter-spacing:2px;font-size:15px;color:var(--sk-gold)}.hz-st i{font-style:normal;color:#3a4675}
+.hz-tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;margin:10px 0 6px}
+.hz-tiles div{background:#0d1534;border:1px solid var(--sk-line);border-radius:10px;padding:8px 10px}.hz-tiles b{display:block;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--sk-dim);font-weight:600}
+.hz-tiles span{font-size:15.5px;font-weight:600}.hz-tiles i{display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:6px;vertical-align:-1px;border:1px solid rgba(255,255,255,.35)}
+.hz-moon{font-size:14px;color:var(--sk-dim);margin:6px 0 10px}
+.hz-q{background:#1b2550;border-radius:10px;padding:9px 11px}.hz-q b{font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--sk-gold)}.hz-q p{margin:3px 0 0;font-family:var(--serif);font-size:17px;font-style:italic}
+.hz-wink{font-size:14.5px;line-height:1.5;color:#cfd6f5;margin:10px 0 4px}.hz-wink b{color:var(--sk-gold)}
+.hz-sun{font-size:13.5px;color:var(--sk-dim);margin:6px 0 10px}
+.hz-change{border:1px solid #4d63b5;background:none;color:#cfd6f5;border-radius:18px;padding:6px 14px;font-weight:600;font-size:14px;cursor:pointer}
+.hz-all{margin-top:12px}.hz-all summary{cursor:pointer;color:#6d78a8;font-size:14px;margin-bottom:8px}
+.hz-note{font-size:13px;color:#7c86b0;text-align:center;margin:14px 0 2px;font-style:italic}
 .mp-lk{text-align:center;padding:12px 6px}.mp-lk div{font-size:38px}.mp-lk p{margin:6px 0 10px;color:#6d5b47}
 .mp-h{margin:20px 4px 8px;font-family:var(--serif);font-size:18px;color:#174d4f}.mp-ladder{display:flex;flex-direction:column;gap:6px}
 .mp-scale{display:flex;justify-content:space-between;font-size:12.5px;color:#7a5c2e;padding:0 4px}
@@ -2761,9 +2809,224 @@ async function exSection(n, sec, pane){
   if (sec.style === "map") { let D; try { D = JSON.parse(md); } catch(e) { D = null; } if (D) { const M = mapHTML(D, sec, n); pane.innerHTML = M.html; setupMap(pane, M); return; } }
   if (sec.style === "chess-puzzles" || sec.style === "trivia") { let D; try { D = JSON.parse(md); } catch(e) { D = null; } if (D) { exQuizRun(n, sec, D, pane, sec.style === "trivia" ? "trivia" : "chess"); return; } }
   if (sec.style === "conquista") { let D; try { D = JSON.parse(md); } catch(e) { D = null; } if (D) { setupConquista(pane, D, n); return; } }
+  if (sec.style === "sky") { let D; try { D = JSON.parse(md); } catch(e) { D = null; } if (D) { const M = skyHTML(D, sec, n); pane.innerHTML = M.html; setupSky(pane, D, n, M); return; } }
+  if (sec.style === "horoscope") { let D; try { D = JSON.parse(md); } catch(e) { D = null; } if (D) { setupHoroscope(pane, D, n, sec); return; } }
   if (sec.style === "encyclopedia") { const E = encyclopediaHTML(md, sec, n); pane.innerHTML = E.html; setupEncyclopedia(pane, E.render); return; }
   pane.innerHTML = `<article class="chapter ex-sec" lang="${esc(n.lang)}"><h2>${esc(sec.title)}</h2>${renderText(md)}</article>`;
   pane.querySelectorAll(".ex-sec img").forEach(im => { im.onclick = () => window.open(im.src, "_blank"); const z = document.createElement("span"); z.className = "ex-zoom"; z.textContent = "⤢"; im.after(z); });
+}
+/* Звёздное небо (sec.style "sky"): novels/<slug>/<file>.json —
+   {title, intro, lat, groups, ui, signs, zodiacOrder, constellations:[{id, name, lat, g, s:[[ra_ч, dec_°, mag, имя, цвет]], l:[[i,j]], text, best, note, at, sign}]}.
+   Стереографическая проекция на canvas: тянуть — поворот неба, колёсико или два пальца — масштаб, нажатие — созвездие.
+   note открывается после главы at. «Небо сейчас» — зенит для широты lat и долготы часового пояса устройства. */
+const SK_R = Math.PI / 180, SK_EPS = 23.4393 * SK_R;
+const skNorm = h => ((h % 24) + 24) % 24, skG = g => g ? g + "\uFE0E" : "";
+const skVec = (ra, dec) => { const a = ra * 15 * SK_R, d = dec * SK_R; return [Math.cos(d) * Math.cos(a), Math.cos(d) * Math.sin(a), Math.sin(d)]; };
+const skRD = v => { const n = Math.hypot(v[0], v[1], v[2]) || 1; return [skNorm(Math.atan2(v[1], v[0]) / SK_R / 15), Math.asin(Math.max(-1, Math.min(1, v[2] / n))) / SK_R]; };
+const skEcl = (lam, bet) => { lam *= SK_R; bet *= SK_R;
+  const sd = Math.sin(bet) * Math.cos(SK_EPS) + Math.cos(bet) * Math.sin(SK_EPS) * Math.sin(lam);
+  return [skNorm(Math.atan2(Math.sin(lam) * Math.cos(SK_EPS) - Math.tan(bet) * Math.sin(SK_EPS), Math.cos(lam)) / SK_R / 15), Math.asin(sd) / SK_R]; };
+const skGal = (l, b) => { const aG = 192.85948 * SK_R, dG = 27.12825 * SK_R, lN = 122.93192 * SK_R; l *= SK_R; b *= SK_R;
+  const sd = Math.sin(b) * Math.sin(dG) + Math.cos(b) * Math.cos(dG) * Math.cos(lN - l);
+  const a = aG + Math.atan2(Math.cos(b) * Math.sin(lN - l), Math.sin(b) * Math.cos(dG) - Math.cos(b) * Math.sin(dG) * Math.cos(lN - l));
+  return [skNorm(a / SK_R / 15), Math.asin(sd) / SK_R]; };
+/* Звёздное время для долготы часового пояса устройства (Москва → 45° в.д.) */
+const skLST = t => { const d = t / 864e5 - 10957.5, lon = -new Date(t).getTimezoneOffset() / 4; return skNorm(18.697374558 + 24.06570982441908 * d + lon / 15); };
+const skAltAz = (ra, dec, lst, lat) => { const H = (lst - ra) * 15 * SK_R, d = dec * SK_R, f = lat * SK_R;
+  const alt = Math.asin(Math.sin(f) * Math.sin(d) + Math.cos(f) * Math.cos(d) * Math.cos(H));
+  const az = Math.atan2(Math.sin(H), Math.cos(H) * Math.sin(f) - Math.tan(d) * Math.cos(f)) / SK_R + 180;
+  return [alt / SK_R, (az + 360) % 360]; };
+const skFromAltAz = (alt, az, lst, lat) => { const h = alt * SK_R, A = az * SK_R, f = lat * SK_R;
+  const sd = Math.sin(f) * Math.sin(h) + Math.cos(f) * Math.cos(h) * Math.cos(A);
+  const H = Math.atan2(-Math.sin(A) * Math.cos(h), Math.cos(f) * Math.sin(h) - Math.sin(f) * Math.cos(h) * Math.cos(A));
+  return [skNorm(lst - H / SK_R / 15), Math.asin(sd) / SK_R]; };
+function skyHTML(D, sec, n){
+  const U = D.ui, G = D.groups;
+  const done = store.get("done:" + n.slug, []), maxDone = Math.max(0, ...done);
+  const posOf = f => n.chapters.findIndex(x => x.file === f) + 1;
+  const C = D.constellations.map(c => { const v = c.s.reduce((a, s) => { const w = skVec(s[0], s[1]); return [a[0] + w[0], a[1] + w[1], a[2] + w[2]]; }, [0, 0, 0]);
+    const [ra, dec] = skRD(v), cv = skVec(ra, dec);
+    const rad = Math.max(...c.s.map(s => { const w = skVec(s[0], s[1]); return Math.acos(Math.max(-1, Math.min(1, w[0] * cv[0] + w[1] * cv[1] + w[2] * cv[2]))) / SK_R; }));
+    const p = c.at ? posOf(c.at) : 0;
+    return {...c, ra, dec, rad, pos:p, open:!c.note || p <= 1 || maxDone >= p}; });
+  const order = Object.keys(G);
+  const chips = order.map(g => { const L = g === "z" ? D.zodiacOrder.map(id => C.find(c => c.id === id)).filter(Boolean) : C.filter(c => c.g === g);
+    return `<h4 class="sk-h">${esc(G[g])}</h4><div class="sk-chips">${L.map(c => `<button type="button" class="sk-chip" data-c="${C.indexOf(c)}">${c.sign ? `<span>${skG(c.sign)}</span>` : ""}${esc(c.name)}</button>`).join("")}</div>`; }).join("");
+  const html = `<div class="sk" lang="${esc(n.lang)}">
+    <div class="sk-hero"><div class="sk-title">${esc(sec.icon || "✦")} ${esc(D.title || sec.title)}</div>${D.intro ? `<div class="sk-intro">${wgInline(D.intro)}</div>` : ""}</div>
+    <div class="sk-tools" role="toolbar">
+      <button type="button" data-t="now">🌍 ${esc(U.now)}</button><button type="button" data-t="eclip" class="on">☀ ${esc(U.eclip)}</button>
+      <button type="button" data-t="vault">◠ ${esc(U.vault)}</button><button type="button" data-t="names">✦ ${esc(U.names)}</button></div>
+    <div class="sk-box"><canvas class="sk-cv" aria-label="${esc(D.title || sec.title)}"></canvas>
+      <div class="sk-zoom"><button type="button" data-z="in" aria-label="${esc(U.zoomIn)}">+</button><button type="button" data-z="out" aria-label="${esc(U.zoomOut)}">−</button><button type="button" data-z="home" aria-label="${esc(U.home)}" title="${esc(U.home)}">◯</button></div>
+      <div class="sk-hint">${esc(U.hint)}</div></div>
+    <p class="sk-vnote" hidden>${esc(U.vaultNote)}</p>
+    <div class="sk-card" aria-live="polite"></div>${chips}</div>`;
+  return {html, C};
+}
+function setupSky(pane, D, n, M){
+  const U = D.ui, C = M.C, cv = pane.querySelector(".sk-cv"), box = pane.querySelector(".sk-box"), card = pane.querySelector(".sk-card"), ctx = cv.getContext("2d");
+  const lat = D.lat || 45;
+  let W = 0, H = 0, base = 1, S = 1, ra0 = 22, dec0 = 0, sel = -1, raf = 0, anim = 0;
+  const T = {eclip:true, vault:false, names:false, now:false};
+  const rnd = (s => () => (s = (s * 16807) % 2147483647) / 2147483647)(20240207);
+  const BG = Array.from({length:650}, () => { const z = rnd() * 2 - 1, a = rnd() * 24; return [a, Math.asin(z) / SK_R, rnd()]; });
+  const MW = Array.from({length:121}, (_, i) => skGal(i * 3, 0));
+  const ECL = Array.from({length:181}, (_, i) => skEcl(i * 2, 0));
+  const VAULT = Array.from({length:12}, (_, k) => ({edge:Array.from({length:13}, (_, j) => skEcl(k * 30, -12 + j * 2)), mid:skEcl(k * 30 + 15, 9.5), g:skG((D.signs || [])[k])}));
+  const VB = [-12, 12].map(b => Array.from({length:181}, (_, i) => skEcl(i * 2, b)));
+  const col = {b:"#cfe0ff", o:"#ffd49a", r:"#ff9b7d"};
+  const resize = () => { const w = box.clientWidth || 600, h = Math.round(Math.min(620, Math.max(340, w * .72))), dpr = Math.min(2, window.devicePixelRatio || 1);
+    const k = W ? S / base : 1; W = w; H = h; cv.width = w * dpr; cv.height = h * dpr; cv.style.height = h + "px"; ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    base = (Math.min(W, H) / 2) / (2 * Math.tan(25 * SK_R)); S = base * k; draw(); };
+  const P = (ra, dec) => { const a = (ra - ra0) * 15 * SK_R, d = dec * SK_R, d0 = dec0 * SK_R, sd = Math.sin(d), cd = Math.cos(d);
+    const cosc = Math.sin(d0) * sd + Math.cos(d0) * cd * Math.cos(a); if (cosc < -.35) return null; const k = 2 / (1 + cosc);
+    return [W / 2 - k * cd * Math.sin(a) * S, H / 2 - k * (Math.cos(d0) * sd - Math.sin(d0) * cd * Math.cos(a)) * S]; };
+  const line = (pts, close) => { let on = false, prev = null; ctx.beginPath();
+    for (const [ra, dec] of pts) { const p = P(ra, dec); if (!p || (prev && Math.hypot(p[0] - prev[0], p[1] - prev[1]) > W)) { on = false; prev = null; continue; }
+      if (!on) { ctx.moveTo(p[0], p[1]); on = true; } else ctx.lineTo(p[0], p[1]); prev = p; } if (close) ctx.closePath(); ctx.stroke(); };
+  let hits = [], labels = [], segs = [];
+  function draw(){ raf = 0; if (!W) return;
+    const g = ctx.createRadialGradient(W / 2, H * .45, 10, W / 2, H / 2, Math.max(W, H) * .75); g.addColorStop(0, "#14234a"); g.addColorStop(1, "#060b1d");
+    ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+    const zf = Math.sqrt(Math.max(1, Math.min(2.2, S / base)));
+    const lst = skLST(Date.now()), alt = (ra, dec) => T.now ? skAltAz(ra, dec, lst, lat)[0] : 90;
+    ctx.lineCap = "round"; ctx.lineJoin = "round";
+    ctx.save(); ctx.filter = `blur(${Math.round(Math.max(6, 4 * SK_R * S))}px)`; [[24, .05], [11, .06]].forEach(([w, a]) => { ctx.strokeStyle = `rgba(170,190,255,${a})`; ctx.lineWidth = w * SK_R * S; line(MW); }); ctx.restore();
+    for (const [ra, dec, m] of BG) { const p = P(ra, dec); if (!p || p[0] < 0 || p[1] < 0 || p[0] > W || p[1] > H) continue;
+      ctx.fillStyle = `rgba(220,228,255,${(.18 + m * .35) * (alt(ra, dec) < 0 ? .3 : 1)})`; ctx.fillRect(p[0], p[1], .6 + m * .9, .6 + m * .9); }
+    if (T.vault) { ctx.setLineDash([3, 7]); ctx.strokeStyle = "rgba(255,190,120,.45)"; ctx.lineWidth = 1.2; VB.forEach(L => line(L)); VAULT.forEach(v => line(v.edge)); ctx.setLineDash([]);
+      ctx.font = `${Math.round(15 * zf)}px var(--sans),sans-serif`; ctx.textAlign = "center"; ctx.textBaseline = "middle"; ctx.fillStyle = "rgba(255,200,140,.85)";
+      VAULT.forEach(v => { const p = P(...v.mid); if (p) ctx.fillText(v.g, p[0], p[1]); }); }
+    if (T.eclip || T.vault) { ctx.setLineDash([8, 6]); ctx.strokeStyle = "rgba(255,214,120,.55)"; ctx.lineWidth = 1.4; line(ECL); ctx.setLineDash([]); }
+    if (T.now) { const hz = Array.from({length:121}, (_, i) => skFromAltAz(0, i * 3, lst, lat));
+      ctx.strokeStyle = "rgba(120,220,170,.75)"; ctx.lineWidth = 2; line(hz);
+      ctx.font = `700 ${Math.round(14 * zf)}px var(--sans),sans-serif`; ctx.fillStyle = "rgba(140,235,185,.95)"; ctx.textAlign = "center"; ctx.textBaseline = "middle";
+      (U.horizon || []).forEach((t, i) => { const p = P(...skFromAltAz(4, i * 90, lst, lat)); if (p) ctx.fillText(t, p[0], p[1]); }); }
+    hits = []; labels = []; segs = [];
+    C.forEach((c, ci) => { const on = ci === sel, pts = c.s.map(s => P(s[0], s[1]));
+      ctx.strokeStyle = on ? "rgba(255,206,110,.95)" : "rgba(150,180,255,.38)"; ctx.lineWidth = on ? 2.4 : 1.1;
+      ctx.beginPath(); c.l.forEach(([i, j]) => { const a = pts[i], b = pts[j]; if (!a || !b || Math.hypot(a[0] - b[0], a[1] - b[1]) > W) return; ctx.moveTo(a[0], a[1]); ctx.lineTo(b[0], b[1]); segs.push([a, b, ci]); }); ctx.stroke(); });
+    C.forEach((c, ci) => c.s.forEach((s, si) => { const p = P(s[0], s[1]); if (!p || p[0] < -20 || p[1] < -20 || p[0] > W + 20 || p[1] > H + 20) return;
+      const dim = alt(s[0], s[1]) < 0 ? .3 : 1, r = Math.max(.9, Math.min(6.5, 3.7 - .62 * s[2])) * zf, cc = col[s[4]] || "#fff7e8";
+      if (s[2] < 2) { const gl = ctx.createRadialGradient(p[0], p[1], 0, p[0], p[1], r * 4); gl.addColorStop(0, cc); gl.addColorStop(1, "rgba(0,0,0,0)"); ctx.globalAlpha = .35 * dim; ctx.fillStyle = gl; ctx.beginPath(); ctx.arc(p[0], p[1], r * 4, 0, 7); ctx.fill(); }
+      ctx.globalAlpha = dim; ctx.fillStyle = cc; ctx.beginPath(); ctx.arc(p[0], p[1], r, 0, 7); ctx.fill(); ctx.globalAlpha = 1;
+      hits.push([p[0], p[1], ci]);
+      if (s[3] && (ci === sel || (T.names && (s[2] < 2.2 || S > base * 2.2)))) { ctx.font = `${ci === sel ? 600 : 400} ${Math.round((ci === sel ? 12.5 : 11) * Math.min(zf, 1.25))}px var(--sans),sans-serif`;
+        ctx.textAlign = "left"; ctx.textBaseline = "middle"; ctx.fillStyle = ci === sel ? "rgba(255,226,170,.95)" : "rgba(200,212,255,.75)"; ctx.fillText(s[3], p[0] + r + 4, p[1] - r - 2); } }));
+    C.forEach((c, ci) => { const p = P(c.ra, c.dec); if (!p || p[0] < 0 || p[1] < 0 || p[0] > W || p[1] > H) return; const on = ci === sel;
+      const t = (c.sign ? skG(c.sign) + " " : "") + c.name.toUpperCase(); ctx.font = `${on ? 700 : 600} ${on ? 15 : 11}px var(--sans),sans-serif`; ctx.textAlign = "center"; ctx.textBaseline = "middle";
+      const y = p[1] + (on ? 0 : 0), w = ctx.measureText(t).width; ctx.lineWidth = 4; ctx.strokeStyle = "rgba(6,11,29,.75)"; ctx.strokeText(t, p[0], y);
+      ctx.fillStyle = on ? "#ffd27a" : "rgba(160,190,255,.7)"; ctx.fillText(t, p[0], y); labels.push([p[0], y, w, ci]); });
+  }
+  const redraw = () => { if (!raf) raf = requestAnimationFrame(draw); };
+  const clampS = s => Math.max(base * .55, Math.min(base * 9, s));
+  const flyTo = (ra, dec, s1, ms = 700) => { cancelAnimationFrame(anim); const v0 = skVec(ra0, dec0), v1 = skVec(ra, dec), s0 = S, t0 = performance.now();
+    const step = t => { const k = Math.min(1, (t - t0) / ms), e = k < .5 ? 2 * k * k : 1 - Math.pow(-2 * k + 2, 2) / 2;
+      [ra0, dec0] = skRD([v0[0] + (v1[0] - v0[0]) * e, v0[1] + (v1[1] - v0[1]) * e, v0[2] + (v1[2] - v0[2]) * e]); S = s0 * Math.pow(s1 / s0, e); draw(); if (k < 1) anim = requestAnimationFrame(step); };
+    anim = requestAnimationFrame(step); };
+  const fit = c => clampS((Math.min(W, H) / 2 * .78) / (2 * Math.tan(Math.min(80, c.rad + 6) * SK_R / 2)));
+  const dirName = az => (U.dirs || [])[Math.round(az / 45) % 8] || "";
+  const tonight = c => { const d = new Date(); d.setHours(22, 0, 0, 0); const [a, az] = skAltAz(c.ra, c.dec, skLST(d.getTime()), lat);
+    return a > 30 ? `${U.up}, ${dirName(az)}` : a > 0 ? `${U.low}, ${dirName(az)}` : U.down; };
+  const cardHTML = c => { const br = c.s.slice().sort((a, b) => a[2] - b[2])[0];
+    const note = !c.note ? "" : c.open ? `<div class="sk-novel"><b>📖 ${esc(U.novel)}</b><p>${wgInline(c.note)}</p></div>`
+      : `<div class="sk-novel lk"><b>🔒 ${esc(U.novel)}</b><p>${esc(U.locked)} ${chapterNo(n, c.pos)} «${esc(n.chapters[c.pos - 1].title)}». <a href="${chapterHref(n, c.pos)}">${esc(U.read)} →</a></p></div>`;
+    return `<div class="sk-top">${c.sign ? `<span class="sk-sg">${skG(c.sign)}</span>` : `<span class="sk-sg">✦</span>`}<div><h3>${esc(c.name)}</h3><small>${esc(c.lat)}</small></div></div>
+      <p class="sk-txt">${wgInline(c.text)}</p>
+      <ul class="sk-facts">${br && br[3] ? `<li><b>${esc(U.brightest)}:</b> ${esc(br[3])}</li>` : ""}<li><b>${esc(U.best)}:</b> ${esc(c.best)}</li><li><b>${esc(U.tonight)}:</b> ${esc(tonight(c))}</li></ul>${note}`; };
+  const select = (ci, fly) => { sel = ci; const c = C[ci]; card.innerHTML = cardHTML(c); pane.querySelectorAll(".sk-chip").forEach(b => b.classList.toggle("on", +b.dataset.c === ci));
+    pane.querySelector(".sk-hint").hidden = true; if (fly) flyTo(c.ra, c.dec, fit(c)); else redraw(); };
+  /* жесты */
+  const pts = new Map(); let moved = 0, t0 = 0, pinch0 = 0, S0 = 0;
+  cv.addEventListener("pointerdown", e => { cv.setPointerCapture(e.pointerId); pts.set(e.pointerId, [e.clientX, e.clientY]); cancelAnimationFrame(anim);
+    if (pts.size === 1) { moved = 0; t0 = performance.now(); } if (pts.size === 2) { const [a, b] = [...pts.values()]; pinch0 = Math.hypot(a[0] - b[0], a[1] - b[1]); S0 = S; } });
+  cv.addEventListener("pointermove", e => { if (!pts.has(e.pointerId)) return; const pr = pts.get(e.pointerId), dx = e.clientX - pr[0], dy = e.clientY - pr[1]; pts.set(e.pointerId, [e.clientX, e.clientY]);
+    if (pts.size === 2) { const [a, b] = [...pts.values()]; S = clampS(S0 * Math.hypot(a[0] - b[0], a[1] - b[1]) / (pinch0 || 1)); moved = 99; redraw(); return; }
+    moved += Math.abs(dx) + Math.abs(dy); const k = 1 / S / SK_R; dec0 = Math.max(-89, Math.min(89, dec0 + dy * k)); ra0 = skNorm(ra0 + dx * k / 15 / Math.max(.2, Math.cos(dec0 * SK_R))); redraw(); });
+  const up = e => { if (!pts.has(e.pointerId)) return; pts.delete(e.pointerId);
+    if (!pts.size && moved < 8 && performance.now() - t0 < 600) { const r = cv.getBoundingClientRect(), x = e.clientX - r.left, y = e.clientY - r.top; let best = -1, bd = 26;
+      hits.forEach(([hx, hy, ci]) => { const d = Math.hypot(hx - x, hy - y); if (d < bd) { bd = d; best = ci; } });
+      if (best < 0) { bd = 14; segs.forEach(([a, b, ci]) => { const vx = b[0] - a[0], vy = b[1] - a[1], L = vx * vx + vy * vy || 1, t = Math.max(0, Math.min(1, ((x - a[0]) * vx + (y - a[1]) * vy) / L)); const d = Math.hypot(a[0] + t * vx - x, a[1] + t * vy - y); if (d < bd) { bd = d; best = ci; } }); }
+      if (best < 0) labels.forEach(([lx, ly, w, ci]) => { if (Math.abs(x - lx) < w / 2 + 6 && Math.abs(y - ly) < 12) best = ci; });
+      if (best >= 0) select(best, true); } };
+  cv.addEventListener("pointerup", up); cv.addEventListener("pointercancel", e => pts.delete(e.pointerId));
+  cv.addEventListener("wheel", e => { e.preventDefault(); S = clampS(S * Math.exp(-e.deltaY * .0015)); redraw(); }, {passive:false});
+  cv.style.touchAction = "none";
+  pane.querySelectorAll("[data-z]").forEach(b => b.onclick = () => { const z = b.dataset.z; if (z === "home") flyTo(ra0, dec0, base * .6, 500); else flyTo(ra0, dec0, clampS(S * (z === "in" ? 1.5 : 1 / 1.5)), 250); });
+  pane.querySelectorAll("[data-t]").forEach(b => b.onclick = () => { const t = b.dataset.t; T[t] = !T[t]; b.classList.toggle("on", T[t]);
+    if (t === "vault") pane.querySelector(".sk-vnote").hidden = !T.vault;
+    if (t === "now" && T.now) { const [ra, dec] = skFromAltAz(90, 0, skLST(Date.now()), lat); flyTo(ra, dec, base * .55); } else redraw(); });
+  pane.querySelectorAll(".sk-chip").forEach(b => b.onclick = () => { select(+b.dataset.c, true); box.scrollIntoView({block:"nearest", behavior:"smooth"}); });
+  if (window.ResizeObserver) new ResizeObserver(() => { if (box.clientWidth && Math.abs(box.clientWidth - W) > 2) resize(); }).observe(box); else window.addEventListener("resize", resize);
+  resize();
+  const start = C.findIndex(c => c.id === (D.start || "aqr")); if (start >= 0) { const c = C[start]; ra0 = c.ra; dec0 = c.dec; S = fit(c); select(start, false); }
+}
+
+/* Гороскоп на каждый день (sec.style "horoscope"): novels/<slug>/<file>.json — фразы, знаки и обереги.
+   Ничего не хранится по дням: текст складывается из фраз по дате и знаку (один и тот же весь день, в полночь — новый).
+   Обереги и ключи из «Звёздного оберегария» — после главы sec.unlock (по умолчанию 10.md), Змееносец — после D.oph.at. */
+function hzRand(str){ let h = 1779033703 ^ str.length; for (let i = 0; i < str.length; i++) { h = Math.imul(h ^ str.charCodeAt(i), 3432918353); h = h << 13 | h >>> 19; }
+  let a = h >>> 0; return () => { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+function setupHoroscope(pane, D, n, sec){
+  const U = D.ui, key = "hz:" + n.slug;
+  const done = store.get("done:" + n.slug, []), maxDone = Math.max(0, ...done), posOf = f => n.chapters.findIndex(x => x.file === f) + 1;
+  const opened = f => { const p = posOf(f); return p <= 1 || maxDone >= p; };
+  const book = opened(sec.unlock || "10.md");
+  const signs = D.signs.slice(); if (D.oph && opened(D.oph.at)) signs.splice(9, 0, D.oph);
+  const md = (a, b) => a[0] * 100 + a[1] <= b[0] * 100 + b[1];
+  const inRange = (s, m, d) => { const x = [m, d]; return md(s.from, s.to) ? md(s.from, x) && md(x, s.to) : md(s.from, x) || md(x, s.to); };
+  const signOf = (m, d) => (D.signs.find(s => inRange(s, m, d)) || D.signs[0]);
+  const ophOf = (m, d) => signs.includes(D.oph) && inRange(D.oph, m, d);
+  let cur = store.get(key, null), off = 0;
+  if (!signs.some(s => s.id === cur)) cur = null;
+  const MON = ["января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября", "декабря"];
+  const dayOf = k => { const d = new Date(); d.setHours(12, 0, 0, 0); d.setDate(d.getDate() + k); return d; };
+  const dkey = d => `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
+  const fmt = (a) => `${a[1]} ${MON[a[0] - 1]}`;
+  const moon = d => { const age = ((d.getTime() / 864e5 + 2440587.5 - 2451550.1) / 29.530588853) % 1; return Math.floor(((age + 1) % 1) * 8 + .5) % 8; };
+  const starsRow = v => `<span class="hz-st" aria-label="${v}/5">${"★".repeat(v)}<i>${"★".repeat(5 - v)}</i></span>`;
+  const reading = (s, d) => { const r = hzRand(dkey(d) + "|" + s.id), pick = a => a[Math.floor(r() * a.length)];
+    const o = {open:pick(D.open), el:pick(D.elements[s.el] || D.elements["вода"]), love:pick(D.love), work:pick(D.work), advice:pick(D.advice),
+      rl:2 + Math.floor(r() * 4), rw:2 + Math.floor(r() * 4), rk:2 + Math.floor(r() * 4), color:pick(D.colors), num:1 + Math.floor(r() * 99),
+      q:book && r() < .4 ? s.key : pick(D.questions), amulet:pick(s.amulets), wink:pick(D.wink), sub:pick(D.subtypes)};
+    return o; };
+  const render = () => {
+    const d = dayOf(off), today = signOf(d.getMonth() + 1, d.getDate()), ph = moon(d);
+    const grid = `<div class="hz-grid">${signs.map(s => `<button type="button" class="hz-sign${s.id === cur ? " on" : ""}${s.id === "oph" ? " oph" : ""}" data-s="${s.id}"><span>${skG(s.g)}</span>${esc(s.name)}<small>${fmt(s.from)} – ${fmt(s.to)}</small></button>`).join("")}</div>
+      <div class="hz-bd"><label>${esc(U.byDate)} <input type="date" class="hz-date"></label></div>`;
+    const s = signs.find(x => x.id === cur);
+    let body = "";
+    if (s) { const o = reading(s, d);
+      body = `<div class="hz-card">
+        <div class="hz-days" role="tablist">${[[-1, U.yesterday], [0, U.today], [1, U.tomorrow]].map(([k, t]) => `<button type="button" data-o="${k}" class="${k === off ? "on" : ""}">${esc(t)}</button>`).join("")}</div>
+        <div class="hz-head"><span class="hz-big">${skG(s.g)}</span><div><h3>${esc(s.name)}</h3><small>${d.getDate()} ${MON[d.getMonth()]} ${d.getFullYear()} · ${fmt(s.from)} – ${fmt(s.to)}</small></div></div>
+        ${s.id === "oph" ? `<p class="hz-oph">${skG("⛎")} <b>${esc(U.thirteen)}.</b> ${esc(D.oph.note)}</p>` : ""}
+        <p class="hz-lead">${esc(o.open)} ${esc(o.el)}</p>
+        ${book ? `<p class="hz-pow"><b>${esc(U.power)}:</b> ${esc(s.power)}. <span>${esc(s.role)} · ★ ${esc(s.star)}</span></p>` : ""}
+        ${s.id === "aqr" ? `<div class="hz-sub"><b>${skG("♒")} ${esc(U.subtype)}: ${esc(o.sub[0])}</b> <small>★ ${esc(o.sub[1])}</small><p>${esc(o.sub[2])}</p></div>` : ""}
+        <div class="hz-row"><div class="hz-k">❤ ${esc(U.love)} ${starsRow(o.rl)}</div><p>${esc(o.love)}</p></div>
+        <div class="hz-row"><div class="hz-k">⚒ ${esc(U.work)} ${starsRow(o.rw)}</div><p>${esc(o.work)}</p></div>
+        <div class="hz-row"><div class="hz-k">✦ ${esc(U.luck)} ${starsRow(o.rk)}</div><p>${esc(o.advice)}</p></div>
+        <div class="hz-tiles"><div><b>${esc(U.color)}</b><span><i style="background:${esc(o.color[1])}"></i>${esc(o.color[0])}</span></div><div><b>${esc(U.number)}</b><span>${o.num}</span></div>
+          ${book ? `<div><b>${esc(U.amulet)}</b><span>${esc(o.amulet)}</span></div>` : ""}<div><b>${esc(U.moon)}</b><span>${["🌑", "🌒", "🌓", "🌔", "🌕", "🌖", "🌗", "🌘"][ph]} ${esc(D.moonNames[ph])}</span></div></div>
+        <p class="hz-moon">${esc(D.moon[ph])}</p>
+        <div class="hz-q"><b>${esc(U.question)}</b><p>«${esc(o.q)}»</p></div>
+        <p class="hz-wink"><b>${esc(U.wink)}:</b> ${esc(o.wink)}</p>
+        <p class="hz-sun">☀ ${esc(U.sun)}: ${skG(today.g)} ${esc(today.name)}</p>
+        <button type="button" class="hz-change">↺ ${esc(U.change)}</button></div>`; }
+    pane.querySelector(".hz-body").innerHTML = (s ? "" : `<h4 class="hz-pick">${esc(U.pick)}</h4>${grid}`) + body + (s ? "" : "");
+    if (s) pane.querySelector(".hz-body").insertAdjacentHTML("beforeend", `<details class="hz-all"><summary>${esc(U.change)}</summary>${grid}</details>`);
+    pane.querySelectorAll(".hz-sign").forEach(b => b.onclick = () => { cur = b.dataset.s; store.set(key, cur); render(); pane.querySelector(".hz-body").scrollIntoView({block:"nearest", behavior:"smooth"}); });
+    pane.querySelectorAll(".hz-days button").forEach(b => b.onclick = () => { off = +b.dataset.o; render(); });
+    const ch = pane.querySelector(".hz-change"); if (ch) ch.onclick = () => { const det = pane.querySelector(".hz-all"); det.open = true; det.scrollIntoView({block:"nearest", behavior:"smooth"}); };
+    pane.querySelectorAll(".hz-date").forEach(inp => inp.onchange = () => { const m = /^(\d{4})-(\d\d)-(\d\d)$/.exec(inp.value); if (!m) return;
+      const mm = +m[2], dd = +m[3]; cur = ophOf(mm, dd) ? "oph" : signOf(mm, dd).id; store.set(key, cur); render(); });
+  };
+  pane.innerHTML = `<div class="hz" lang="${esc(n.lang)}"><div class="hz-hero"><div class="hz-title">${esc(sec.icon || "☾")} ${esc(D.title || sec.title)}</div><div class="hz-intro">${esc(D.intro)}</div></div>
+    <div class="hz-body"></div><p class="hz-note">${esc(U.note)}</p></div>`;
+  render();
+  let lastDay = dkey(dayOf(0)); const tick = setInterval(() => { if (!pane.isConnected) return clearInterval(tick); const k = dkey(dayOf(0)); if (k !== lastDay) { lastDay = k; render(); } }, 60000);
 }
 /* Задачи и викторина (sec.style "chess-puzzles" / "trivia"): JSON в папке романа.
    Задачи: {title, intro, ui, puzzles:[{level, name, fen, flip, goal, options:[{uci, san}], answer, explain}]};
