@@ -2,6 +2,9 @@
  "lang": "it",
  "covers": [
   "novels/onde-d-amore/cover.jpg",
+  "novels/onde-d-amore-2/cover.jpg",
+  "novels/onde-d-amore-3/cover.jpg",
+  "novels/chi-ha-visto-sasha/cover.jpg",
   "novels/la-citta-triste/cover.jpg",
   "novels/il-treno-fantasma/cover.jpg",
   "novels/la-nevicata-rosa/cover.jpg",
@@ -23,10 +26,10 @@
    "prompt": "Chi è?",
    "question": "Architetto argentino e uno dei fondatori di Utopia: disegna le mura della fortezza. Ambizioso e tormentato, entra in rivalità con Robert.",
    "options": [
-    "Larissa",
+    "Enrico",
     "Luis",
-    "Vanessa",
-    "Il Direttore"
+    "Marco Dandolo",
+    "Ernesto Valli"
    ],
    "answer": 1,
    "why": "È Luis, da «Presentimento»."
@@ -38,8 +41,8 @@
    "question": "Sopravvissuto alla catastrofe che attraversa le rovine sulla sua vecchia moto e fonda «La Nostra Utopia», una fortezza dove vivere senza paura né avidità. Guida idealista e riflessivo, ancora legato alla moglie perduta.",
    "options": [
     "Stella",
-    "Vanessa",
-    "Marco",
+    "Enrico Vitale",
+    "Natalia",
     "Robert"
    ],
    "answer": 3,
@@ -51,12 +54,12 @@
    "prompt": "Chi è?",
    "question": "Abitante di Utopia dai lunghi capelli castano scuro e dagli intensi occhi azzurri: dipinge la fortezza e suona il violino. Indossa una giacca di pelle verde scuro ricamata a fiori e una gonna blu con l’orlo ricamato. Divisa tra Robert e Luis, sceglie…",
    "options": [
-    "Aurora",
-    "Luciana",
-    "Marco",
-    "Natalia"
+    "Ernesto Valli",
+    "Sasha",
+    "Natalia",
+    "Alberto Menichetti"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "È Natalia, da «Presentimento»."
   },
   {
@@ -65,12 +68,12 @@
    "prompt": "Chi è?",
    "question": "Guerriera dai lunghi capelli rossi raccolti in una treccia, con lentiggini e occhi verdi, tra i primi compagni di Robert. Coordina le risorse di Utopia e combatte in prima linea, ma il suo cuore fragile viene ferito dall’amore per Luis.",
    "options": [
-    "Luca",
-    "Marco",
-    "Ludovico",
-    "Sasha"
+    "Il commissario Rinaldi",
+    "Fabrizio",
+    "Sasha",
+    "Il Porpora"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "È Sasha, da «Presentimento»."
   },
   {
@@ -79,12 +82,12 @@
    "prompt": "Chi è?",
    "question": "Fiorentino innamorato dell’arte e ladro gentiluomo. Entra nella villa di Laura per rubare un quadro e ne esce con un amore; insieme a lei aiuta Lorenzo e Carlotta contro i Cromatisti e accompagna Roberto nel Carnevale di Venezia. In Ladro di cuori 2 vive a…",
    "options": [
-    "Larissa",
-    "Alessio",
-    "Vanessa",
-    "Clara"
+    "Chiara",
+    "Antonio",
+    "Robert",
+    "Alessio"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "È Alessio, da «Ladro di cuori»."
   },
   {
@@ -93,12 +96,12 @@
    "prompt": "Chi è?",
    "question": "Detective triste e geloso di 35 anni che vive a Sinea. Insegue il treno fantasma che porta via le persone, e con loro la sua ragazza Alice.",
    "options": [
-    "Alberto Menichetti",
     "Marco",
-    "Carlotta",
-    "Aurora"
+    "Vittorio",
+    "Don Salvatore",
+    "Alessio"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "È Marco, da «Il treno fantasma»."
   },
   {
@@ -107,12 +110,12 @@
    "prompt": "Chi è?",
    "question": "Astrologa di 30 anni, stanca della gelosia di Marco. Sale sul treno fantasma in cerca di una vita nuova e vive un viaggio pieno di vagoni assurdi e prove d’amore.",
    "options": [
+    "Matteo",
+    "Carla",
     "Alice",
-    "Luciana",
-    "Don Salvatore",
-    "Carlotta"
+    "Antonio"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "È Alice, da «Il treno fantasma»."
   },
   {
@@ -121,12 +124,12 @@
    "prompt": "Chi è?",
    "question": "Veneziana enigmatica dall’abito blu notte, figlia di un antico Duca. Trascina Roberto nella lotta contro la Loggia, lo riporta in vita e accoglie nel suo palazzo gli eroi dell’Ora selvaggia, risvegliando la gelosia di Nataša.",
    "options": [
-    "Il Duca",
-    "Robert",
+    "Il Porpora",
     "Natalia",
-    "Il Direttore"
+    "Il Presidente",
+    "Ael"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "È Natalia, da «Maschera di Venezia»."
   },
   {
@@ -135,13 +138,55 @@
    "prompt": "Chi è?",
    "question": "… Maiani, restauratrice senior agli Uffizi. Dopo un omicidio davanti alla Calunnia di Botticelli fugge con Lorenzo, sfida la setta dei Cromatisti e finisce per diventare regina del Regno Atelier.",
    "options": [
-    "Enrico",
+    "Fabrizio",
+    "Giulia",
     "Carlotta",
-    "La signora Teresa",
-    "Il commissario Zancan"
+    "Natalia"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "È Carlotta, da «La Nevicata Rosa»."
+  },
+  {
+   "type": "story",
+   "kind": "who",
+   "prompt": "Chi è?",
+   "question": "Vive al Faro di Ael. Due anni fa ha sentito la voce dei delfini e ha aiutato a salvare Sinea. Una notte di novembre scende in mare con il Cuore del Mare e sparisce.",
+   "options": [
+    "Paolo",
+    "Il Duca",
+    "Enrico",
+    "Sasha"
+   ],
+   "answer": 3,
+   "why": "È Sasha, da «Chi ha visto Sasha?»."
+  },
+  {
+   "type": "story",
+   "kind": "who",
+   "prompt": "Chi è?",
+   "question": "La migliore amica di Sasha. Non è la sindaca, ma a Sinea tutti vanno da lei. Non crede alle voci, ma chiama il detective Vasily.",
+   "options": [
+    "Chiara",
+    "Vasily",
+    "Il Direttore",
+    "Oxana"
+   ],
+   "answer": 3,
+   "why": "È Oxana, da «Chi ha visto Sasha?»."
+  },
+  {
+   "type": "story",
+   "kind": "who",
+   "prompt": "Chi è?",
+   "question": "Il compagno di Sasha. Due anni fa ha combattuto con lei contro le ombre. Adesso studia i delfini e le balene su una nave, nel Mare del Nord.",
+   "options": [
+    "Enrico Vitale",
+    "Stella",
+    "Dima",
+    "Don Salvatore"
+   ],
+   "answer": 2,
+   "why": "È Dima, da «Chi ha visto Sasha?»."
   },
   {
    "type": "story",
@@ -149,12 +194,12 @@
    "prompt": "Chi è?",
    "question": "Ragazzo di 24 anni, impiegato al Ministero dei Sentimenti. Buono e un po’ timido, ma coraggioso: quando il presidente vieta i sorrisi, decide di restituire la felicità a Sinea e alla fine ne diventa presidente.",
    "options": [
+    "Carlotta",
     "Franco",
-    "Marco",
-    "Alessio",
-    "Vittorio"
+    "Il Direttore",
+    "Kennet"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "È Franco, da «La città triste»."
   },
   {
@@ -163,12 +208,12 @@
    "prompt": "Chi è?",
    "question": "Ribelle allegra e determinata, la prima persona che sorride nella metro di Sinea. Insieme a Franco riporta la luce in città e ne diventa vicepresidente.",
    "options": [
-    "Alberto Menichetti",
-    "Enrico",
-    "Matteo",
-    "Chiara"
+    "Oxana",
+    "Fabio",
+    "Chiara",
+    "Marina"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "È Chiara, da «La città triste»."
   },
   {
@@ -177,12 +222,12 @@
    "prompt": "Chi è?",
    "question": "Vecchio inventore ed ex collega di Franco, licenziato perché sorrideva troppo. Nel suo nascondiglio costruisce macchine strampalate per far ridere la gente.",
    "options": [
-    "Carlotta",
-    "Marco",
-    "Il Duca",
-    "Sasha"
+    "Chiara",
+    "Vittorio",
+    "Sofia Ricci",
+    "Marco"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "È Marco, da «La città triste»."
   },
   {
@@ -191,12 +236,12 @@
    "prompt": "Chi è?",
    "question": "Comico che fa ridere le riunioni segrete di Sinea e poi il nuovo Teatro delle Risate, dove aiuta Franco a fare la sua proposta a Chiara.",
    "options": [
-    "Fabio",
-    "Natalia (moglie di Robert)",
+    "Il Duca",
     "Lorenzo",
-    "Luca"
+    "Luca",
+    "Ael"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "È Luca, da «La città triste»."
   },
   {
@@ -205,12 +250,12 @@
    "prompt": "Chi è?",
    "question": "Presidente serio e severo che vieta i sorrisi a Sinea. Alla fine capisce di aver sbagliato e diventa un felice venditore di gelati.",
    "options": [
-    "Franco",
-    "Il Presidente",
-    "Luis",
-    "Il Porpora"
+    "Il Duca",
+    "Alice",
+    "Paolo",
+    "Il Presidente"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "È Il Presidente, da «La città triste»."
   },
   {
@@ -219,12 +264,12 @@
    "prompt": "Chi è?",
    "question": "Passeggero triste e affamato che accompagna Alice tra i vagoni e si finge il suo nuovo ragazzo. Alla fine rivela la vera missione del treno fantasma: risolvere le crisi d’amore.",
    "options": [
-    "Matteo",
-    "Il signor Gallo",
-    "Franco",
-    "Ludovico"
+    "La signora Teresa",
+    "Alberto Menichetti",
+    "Robert",
+    "Matteo"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "È Matteo, da «Il treno fantasma»."
   },
   {
@@ -233,9 +278,9 @@
    "prompt": "Chi è?",
    "question": "L’uomo grasso ma molto bello che accoglie Alice sul treno. Fratello di Matteo, prende il controllo dei comandi del treno fantasma.",
    "options": [
-    "Luca",
-    "Kennet",
-    "Enrico",
+    "Il Duca",
+    "Ettore",
+    "Oxana",
     "Vittorio"
    ],
    "answer": 3,
@@ -247,9 +292,9 @@
    "prompt": "Chi è?",
    "question": "Uomo vestito di nero, direttore del vagone confessionale: nessuno passa senza confessare i propri peccati.",
    "options": [
-    "Fabrizio",
-    "Giulia",
-    "Il Duca",
+    "Il Porpora",
+    "Nira",
+    "Ernesto Valli",
     "Il Direttore"
    ],
    "answer": 3,
@@ -261,12 +306,12 @@
    "prompt": "Chi è?",
    "question": "… Fader, artista e professore argentino. Incontra Carlotta a Firenze dopo mesi di lettere digitali, fugge con lei accusato ingiustamente e diventa il guerriero e re del Regno Atelier.",
    "options": [
-    "Il Duca",
-    "Il Direttore",
+    "Irina",
     "Lorenzo",
-    "Giulia"
+    "Marina",
+    "Enrico"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "È Lorenzo, da «La Nevicata Rosa»."
   },
   {
@@ -275,12 +320,12 @@
    "prompt": "Chi è?",
    "question": "Ricca collezionista che vive in una villa sulle colline di Firenze. Sorprende Alessio mentre ruba un suo quadro e diventa la sua complice e il suo amore: elegante, leale e coraggiosa, conosce l’arte quanto lui.",
    "options": [
-    "Sasha",
-    "Alberto Menichetti",
-    "Luis",
-    "Laura"
+    "Laura",
+    "Sofia Ricci",
+    "Fabio",
+    "Alessio"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "È Laura, da «Ladro di cuori»."
   },
   {
@@ -289,12 +334,12 @@
    "prompt": "Chi è?",
    "question": "Direttore degli Uffizi, freddo e calcolatore, legato alla setta dei Cromatisti. Trasforma Carlotta e Lorenzo in ricercati con prove digitali false.",
    "options": [
-    "Fabrizio",
-    "Lorenzo",
-    "Ludovico",
-    "Alberto Menichetti"
+    "Chiara",
+    "Alberto Menichetti",
+    "Larissa",
+    "Ettore"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "È Alberto Menichetti, da «La Nevicata Rosa»."
   },
   {
@@ -303,12 +348,12 @@
    "prompt": "Chi è?",
    "question": "Capo della setta dei Cromatisti, che vuole rubare i colori del mondo grazie al Pennello di Eos, un cristallo a forma di prisma.",
    "options": [
-    "Carlotta",
-    "Marina",
+    "Il Duca",
     "Il Porpora",
-    "Irina"
+    "Marina",
+    "Marco Dandolo"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "È Il Porpora, da «La Nevicata Rosa»."
   },
   {
@@ -317,10 +362,10 @@
    "prompt": "Chi è?",
    "question": "Assistente personale di Menichetti: mingherlino, silenzioso, sempre con un’espressione di lieve indigestione.",
    "options": [
-    "Marina",
-    "Pietro",
+    "Il commissario Rinaldi",
+    "Larissa",
     "Fabrizio",
-    "Carlotta"
+    "Sasha"
    ],
    "answer": 2,
    "why": "È Fabrizio, da «La Nevicata Rosa»."
@@ -331,12 +376,12 @@
    "prompt": "Chi è?",
    "question": "Figlia di Carlotta e Lorenzo, nata nel nuovo campo di energia del Regno Atelier: un ponte vivente tra il mondo reale e quello delle idee creative.",
    "options": [
-    "Sasha",
-    "Carlotta",
+    "Luis",
     "Aurora",
-    "Don Salvatore"
+    "Nira",
+    "Maria"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "È Aurora, da «La Nevicata Rosa»."
   },
   {
@@ -345,10 +390,10 @@
    "prompt": "Chi è?",
    "question": "Argentino con l’anima del viaggiatore. Al Carnevale di Venezia si innamora di Natalia, scopre il potere della Maschera di Venezia e guida la rivolta contro la Loggia. Vive a Venezia e chiama Luis in aiuto contro la macchina che ruba le anime.",
    "options": [
-    "Don Salvatore",
+    "Il Porpora",
     "Roberto",
-    "Pietro",
-    "Ludovico"
+    "Ael",
+    "Enrico Vitale"
    ],
    "answer": 1,
    "why": "È Roberto, da «Maschera di Venezia»."
@@ -359,12 +404,12 @@
    "prompt": "Chi è?",
    "question": "Erede ambizioso della famiglia Dandolo, nipote dell’ultimo Doge. Si allea con la Loggia per riportare Venezia alla sua gloria e governarla.",
    "options": [
-    "Alessio",
-    "Marco Dandolo",
+    "Il Presidente",
     "Clara",
-    "Il Direttore"
+    "Marco Dandolo",
+    "Il Duca"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "È Marco Dandolo, da «Maschera di Venezia»."
   },
   {
@@ -373,12 +418,12 @@
    "prompt": "Chi è?",
    "question": "Commissario corrotto della questura di Venezia, padre rinnegato di Marco Dandolo. Vuole la maschera a ogni costo.",
    "options": [
-    "Carla",
-    "Natalia (moglie di Robert)",
-    "Il Duca",
-    "Il commissario Zancan"
+    "Il commissario Zancan",
+    "Paolo",
+    "Roberto",
+    "Il commissario Rinaldi"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "È Il commissario Zancan, da «Maschera di Venezia»."
   },
   {
@@ -387,12 +432,12 @@
    "prompt": "Chi è?",
    "question": "Capo della Loggia, gruppo di potenti che vogliono tenere Venezia sotto il loro controllo e uccidono chiunque li minacci.",
    "options": [
+    "Oxana",
     "Ludovico",
-    "Lorenzo",
-    "Sasha",
-    "Kennet"
+    "Roberto",
+    "Vasily"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "È Ludovico, da «Maschera di Venezia»."
   },
   {
@@ -401,12 +446,12 @@
    "prompt": "Chi è?",
    "question": "Padre di Natalia e vero Duca di un antico lignaggio segreto veneziano.",
    "options": [
-    "Il Duca",
-    "Alice",
-    "Vittorio",
-    "Marco"
+    "Il signor Gallo",
+    "Carlotta",
+    "Lorenzo",
+    "Il Duca"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "È Il Duca, da «Maschera di Venezia»."
   },
   {
@@ -416,11 +461,11 @@
    "question": "Pittore e amico di Alessio: dipinge copie perfette e custodisce il quadro rubato. È lui a proporre di restituirlo.",
    "options": [
     "Il signor Gallo",
-    "Luciana",
     "Luca",
-    "Irina"
+    "Ludovico",
+    "Carla"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "È Luca, da «Ladro di cuori»."
   },
   {
@@ -430,9 +475,9 @@
    "question": "Amica di Laura e proprietaria dell’Estate, un quadro attribuito a Botticelli. Quando il dipinto sparisce denuncia il furto.",
    "options": [
     "Sofia Ricci",
-    "Aurora",
-    "Alice",
-    "Francesca"
+    "Don Salvatore",
+    "Enrico Vitale",
+    "Fabio"
    ],
    "answer": 0,
    "why": "È Sofia Ricci, da «Ladro di cuori»."
@@ -443,12 +488,12 @@
    "prompt": "Chi è?",
    "question": "Giovane violinista argentina, bellissima e talentuosa. La sua musica commuove Laura e affascina Alessio, creando tensione tra loro.",
    "options": [
+    "Paolo",
     "Maria",
-    "Carlotta",
-    "Alessio",
-    "Paolo"
+    "Aurora",
+    "Giulia"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "È Maria, da «Ladro di cuori 2»."
   },
   {
@@ -457,9 +502,9 @@
    "prompt": "Chi è?",
    "question": "Intermediario elegante e calcolatore della galleria «Arte del Sole». Scopre Alessio e Laura a Malaga e propone loro il colpo del violino d’oro.",
    "options": [
-    "Luis",
-    "Il Presidente",
-    "Clara",
+    "Nira",
+    "Larissa",
+    "Don Salvatore",
     "Enrico Vitale"
    ],
    "answer": 3,
@@ -471,10 +516,10 @@
    "prompt": "Chi è?",
    "question": "Salvatore Ricci, boss mafioso e collezionista d’arte, proprietario del violino d’oro. Potente, autoritario e spietato.",
    "options": [
-    "Il commissario Rinaldi",
+    "Il commissario Zancan",
     "Don Salvatore",
-    "Natalia",
-    "Antonio"
+    "Carlotta",
+    "Roberto"
    ],
    "answer": 1,
    "why": "È Don Salvatore, da «Ladro di cuori 2»."
@@ -485,12 +530,12 @@
    "prompt": "Chi è?",
    "question": "Fedele assistente di Enrico, magro e con gli occhiali da sole anche di notte. Guida la fuga per le strade di Malaga.",
    "options": [
-    "Ludovico",
     "Roberto",
-    "Vanessa",
-    "Chiara"
+    "Vittorio",
+    "Paolo",
+    "Francesca"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "È Roberto, da «Ladro di cuori 2»."
   },
   {
@@ -499,12 +544,12 @@
    "prompt": "Chi è?",
    "question": "Psicologa che sogna lo stesso incubo di una paziente. Con la macchina di Pietro entra nei sogni e lotta per chiudere la porta tra il mondo dei sogni e quello reale.",
    "options": [
+    "Franco",
     "Vanessa",
-    "Irina",
-    "Enrico",
-    "Il commissario Zancan"
+    "Il Direttore",
+    "Irina"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "È Irina, da «La macchina dei sogni»."
   },
   {
@@ -513,9 +558,9 @@
    "prompt": "Chi è?",
    "question": "Ricercatore che studia i sogni e ha costruito una macchina per entrarci restando coscienti.",
    "options": [
-    "Stella",
-    "Don Salvatore",
-    "Robert",
+    "Ernesto Valli",
+    "Enrico",
+    "Il signor Gallo",
     "Pietro"
    ],
    "answer": 3,
@@ -527,10 +572,10 @@
    "prompt": "Chi è?",
    "question": "Amica di Irina: nel sogno è una pedina bloccata su una scacchiera vivente. Nella realtà la sostiene e la avverte dei pericoli.",
    "options": [
-    "Il Porpora",
-    "Enrico Vitale",
+    "Stella",
+    "Ludovico",
     "Marina",
-    "Natalia"
+    "Clara"
    ],
    "answer": 2,
    "why": "È Marina, da «La macchina dei sogni»."
@@ -541,10 +586,10 @@
    "prompt": "Chi è?",
    "question": "Paziente di Irina, vedova, che sogna il marito come un tiranno e i quattro cavalieri dell’apocalisse.",
    "options": [
-    "Aurora",
-    "Fabio",
+    "Lume",
+    "Luis",
     "Clara",
-    "Il commissario Rinaldi"
+    "Nira"
    ],
    "answer": 2,
    "why": "È Clara, da «La macchina dei sogni»."
@@ -555,12 +600,12 @@
    "prompt": "Chi è?",
    "question": "Fuggito dalla Centrale, viene salvato da Robert e diventa uno dei primi compagni di Utopia: la sua vista è la migliore della fortezza. È innamorato di Oxana.",
    "options": [
-    "Luca",
-    "Antonio",
-    "Robert",
-    "Kennet"
+    "Chiara",
+    "Kennet",
+    "Matteo",
+    "Luis"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "È Kennet, da «Presentimento»."
   },
   {
@@ -569,12 +614,12 @@
    "prompt": "Chi è?",
    "question": "Donna dalla bellezza sorprendente, l’unica bionda del gruppo, con lunghi capelli color grano e occhi color marrone caldo. Cantante. Gentile e comprensiva, è contesa tra Kennet e Robert.",
    "options": [
-    "Oxana",
-    "Il Direttore",
-    "Irina",
-    "Alessio"
+    "Robert",
+    "Carlotta",
+    "Marco",
+    "Oxana"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "È Oxana, da «Presentimento»."
   },
   {
@@ -583,12 +628,12 @@
    "prompt": "Chi è?",
    "question": "Amico di Luis e programmatore: riattiva Internet, pilota i droni e mimetizza la fortezza.",
    "options": [
-    "Vittorio",
-    "Carla",
     "Dima",
-    "Antonio"
+    "Alessio",
+    "Don Salvatore",
+    "Aurora"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "È Dima, da «Presentimento»."
   },
   {
@@ -597,10 +642,10 @@
    "prompt": "Chi è?",
    "question": "Cardiologa dai lunghi capelli rosso scuro, quasi color vino, e moglie di Robert, partita per curare i soldati durante la guerra. Riappare alla fine alla guida dei ribelli, ma sceglie una missione più grande.",
    "options": [
-    "Fabrizio",
+    "Enrico Vitale",
     "Natalia (moglie di Robert)",
-    "Matteo",
-    "Il signor Gallo"
+    "Ludovico",
+    "Il commissario Rinaldi"
    ],
    "answer": 1,
    "why": "È Natalia (moglie di Robert), da «Presentimento»."
@@ -611,10 +656,10 @@
    "prompt": "Chi è?",
    "question": "Ex prigioniero di Necropoli, la città sotterranea, costretto a costruire una piattaforma missilistica. Rivela a Utopia i piani del nemico.",
    "options": [
-    "Roberto",
-    "Giulia",
+    "Alice",
+    "Chiara",
     "Alessio",
-    "Natalia"
+    "Lorenzo"
    ],
    "answer": 2,
    "why": "È Alessio, da «Presentimento»."
@@ -625,12 +670,12 @@
    "prompt": "Chi è?",
    "question": "Portiere orgoglioso dei Leoni. Dopo la sconfitta 5-1 contro le Aquile vuole scoprire il loro segreto e finisce in un gioco molto più grande.",
    "options": [
-    "Paolo",
-    "Sofia Ricci",
-    "Enrico",
-    "Fabio"
+    "Larissa",
+    "Carla",
+    "Fabio",
+    "Sasha"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "È Fabio, da «La squadra invincibile»."
   },
   {
@@ -639,12 +684,12 @@
    "prompt": "Chi è?",
    "question": "Sorella di Fabio, che si infiltra tra le ragazze delle Aquile e si ritrova divisa tra le due squadre.",
    "options": [
-    "Luca",
-    "Ettore",
-    "Lorenzo",
-    "Stella"
+    "Don Salvatore",
+    "Irina",
+    "Stella",
+    "Fabrizio"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "È Stella, da «La squadra invincibile»."
   },
   {
@@ -653,12 +698,12 @@
    "prompt": "Chi è?",
    "question": "Attaccante e capitana delle Aquile: per lei il segreto non è la forza, ma la squadra. Rivale di Fabio, poi sua alleata.",
    "options": [
-    "Irina",
-    "Stella",
     "Maria",
-    "Pietro"
+    "Dima",
+    "Giulia",
+    "Lume"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "È Maria, da «La squadra invincibile»."
   },
   {
@@ -667,12 +712,12 @@
    "prompt": "Chi è?",
    "question": "Ex ragazza di Fabio, che la allena insieme ad altre ragazze per battere le Aquile.",
    "options": [
-    "Carlotta",
+    "Matteo",
+    "Paolo",
     "Carla",
-    "Lorenzo",
-    "Oxana"
+    "Robert"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "È Carla, da «La squadra invincibile»."
   },
   {
@@ -681,10 +726,10 @@
    "prompt": "Chi è?",
    "question": "Ragazza di Fabio che passa alla squadra avversaria e si allea con Maria per vendicarsi.",
    "options": [
-    "Franco",
+    "Alessio",
     "Natalia (moglie di Robert)",
     "Francesca",
-    "Clara"
+    "Alice"
    ],
    "answer": 2,
    "why": "È Francesca, da «La squadra invincibile»."
@@ -695,12 +740,12 @@
    "prompt": "Chi è?",
    "question": "Bugiarda professionista e stratega legata al «Consiglio», l’organizzazione che trucca le partite. Vuole Fabio come futuro marito.",
    "options": [
-    "Luca",
-    "Il Direttore",
+    "Ael",
+    "Vanessa",
     "Maria",
-    "Vanessa"
+    "Nira"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "È Vanessa, da «La squadra invincibile»."
   },
   {
@@ -709,10 +754,10 @@
    "prompt": "Chi è?",
    "question": "Agente della Polizia Calcistica ed ex contabile: chiede aiuto alle squadre per smascherare Vanessa e il Consiglio.",
    "options": [
-    "Sofia Ricci",
-    "Laura",
+    "Maria Conti",
+    "Vanessa",
     "Enrico",
-    "Il signor Gallo"
+    "Enrico Vitale"
    ],
    "answer": 2,
    "why": "È Enrico, da «La squadra invincibile»."
@@ -723,9 +768,9 @@
    "prompt": "Chi è?",
    "question": "Pizzaiolo di 28 anni di Trastevere. Per conquistare Larissa le promette tutti i segreti di Roma, ma quando sparisce il Calice d’Oro dei Papi la polizia cerca proprio lui.",
    "options": [
-    "Sofia Ricci",
-    "Alice",
-    "Paolo",
+    "Il Presidente",
+    "Luca",
+    "Natalia (moglie di Robert)",
     "Antonio"
    ],
    "answer": 3,
@@ -737,12 +782,12 @@
    "prompt": "Chi è?",
    "question": "Ragazza russa bella e colta che Antonio incontra ai Musei Vaticani. In realtà è Elena Ferri, ladra detta «il Camaleonte», che cambia sempre nome, capelli e nazionalità.",
    "options": [
-    "Robert",
-    "Alessio",
     "Larissa",
-    "Il Porpora"
+    "Vittorio",
+    "Giulia",
+    "Il Direttore"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "È Larissa, da «Antonio e il segreto di Roma»."
   },
   {
@@ -751,10 +796,10 @@
    "prompt": "Chi è?",
    "question": "Vecchio amico di Antonio, genio dei computer con un appartamento pieno di cavi e un gatto nero di nome Bit. Lo aiuta a dimostrare la sua innocenza.",
    "options": [
-    "Alessio",
+    "Robert",
     "Matteo",
-    "Maria",
-    "Kennet"
+    "Sasha",
+    "Luciana"
    ],
    "answer": 1,
    "why": "È Matteo, da «Antonio e il segreto di Roma»."
@@ -765,12 +810,12 @@
    "prompt": "Chi è?",
    "question": "Cugino di Antonio e guardia dei Musei Vaticani: un uomo grande e simpatico in divisa blu.",
    "options": [
-    "Enrico Vitale",
     "Paolo",
-    "Pietro",
-    "Lorenzo"
+    "Laura",
+    "Irina",
+    "Matteo"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "È Paolo, da «Antonio e il segreto di Roma»."
   },
   {
@@ -779,12 +824,12 @@
    "prompt": "Chi è?",
    "question": "Studentessa di storia dell’arte di 25 anni che il sabato fa la guida ai Musei Vaticani. Figlia del commissario Rinaldi, è il nuovo amore di Antonio.",
    "options": [
+    "Luca",
+    "La signora Teresa",
     "Luciana",
-    "Maria",
-    "Natalia (moglie di Robert)",
-    "Alessio"
+    "Stella"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "È Luciana, da «Antonio e il segreto di Roma»."
   },
   {
@@ -793,12 +838,12 @@
    "prompt": "Chi è?",
    "question": "Commissario della polizia di Roma, con baffi e impermeabile grigio. Arresta il Camaleonte ed è il padre di Luciana.",
    "options": [
+    "Il Direttore",
+    "La signora Teresa",
     "Il commissario Rinaldi",
-    "Antonio",
-    "Laura",
-    "Il Presidente"
+    "Vanessa"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "È Il commissario Rinaldi, da «Antonio e il segreto di Roma»."
   },
   {
@@ -807,13 +852,97 @@
    "prompt": "Chi è?",
    "question": "Amica di Matteo che fa il trucco agli attori in un teatro: trasforma Antonio in un anziano collezionista.",
    "options": [
-    "Clara",
-    "Enrico",
-    "Laura",
-    "Giulia"
+    "Giulia",
+    "Matteo",
+    "Vasily",
+    "Maria"
+   ],
+   "answer": 0,
+   "why": "È Giulia, da «Antonio e il segreto di Roma»."
+  },
+  {
+   "type": "story",
+   "kind": "who",
+   "prompt": "Chi è?",
+   "question": "Detective privato russo che vive a Sinea. Ha una regola: per un anno, niente amore. Cerca Sasha, sparita dal Faro di Ael, e di notte comincia a sentire la sua voce.",
+   "options": [
+    "Pietro",
+    "Il commissario Zancan",
+    "Vasily",
+    "Il Porpora"
+   ],
+   "answer": 2,
+   "why": "È Vasily, da «Chi ha visto Sasha?»."
+  },
+  {
+   "type": "story",
+   "kind": "who",
+   "prompt": "Chi è?",
+   "question": "Il capo dei delfini. È morto per salvare Sinea, e il faro porta il suo nome. Suo figlio Lume ha la sua macchia bianca sulla schiena.",
+   "options": [
+    "Marco",
+    "Ael",
+    "Sasha",
+    "Laura"
+   ],
+   "answer": 1,
+   "why": "È Ael, da «Chi ha visto Sasha?»."
+  },
+  {
+   "type": "story",
+   "kind": "who",
+   "prompt": "Chi è?",
+   "question": "La più saggia dei delfini e la mamma di Lume. Due anni fa ha fatto un patto con Sinea.",
+   "options": [
+    "Chiara",
+    "Nira",
+    "Carla",
+    "Dima"
+   ],
+   "answer": 1,
+   "why": "È Nira, da «Chi ha visto Sasha?»."
+  },
+  {
+   "type": "story",
+   "kind": "who",
+   "prompt": "Chi è?",
+   "question": "Ha lavorato con Sasha in ufficio. Due anni fa ha sognato i delfini, e tutti hanno riso. Adesso li sogna di nuovo, e conosce la canzone di Sasha.",
+   "options": [
+    "Maria Conti",
+    "Luca",
+    "Carlotta",
+    "Il Porpora"
+   ],
+   "answer": 0,
+   "why": "È Maria Conti, da «Chi ha visto Sasha?»."
+  },
+  {
+   "type": "story",
+   "kind": "who",
+   "prompt": "Chi è?",
+   "question": "Un piccolo delfino con una macchia bianca sulla schiena, come suo padre Ael. Chiama Sasha sotto il mare e fa le bolle di luce per respirare sott'acqua.",
+   "options": [
+    "Pietro",
+    "Alberto Menichetti",
+    "Giulia",
+    "Lume"
    ],
    "answer": 3,
-   "why": "È Giulia, da «Antonio e il segreto di Roma»."
+   "why": "È Lume, da «Chi ha visto Sasha?»."
+  },
+  {
+   "type": "story",
+   "kind": "who",
+   "prompt": "Chi è?",
+   "question": "Un signore gentile con il cappotto grigio e gli occhiali d'oro. Due anni fa ha lavorato nel laboratorio segreto della vecchia centrale. Adesso è tornato a Sinea e vuole il Cuore del Mare.",
+   "options": [
+    "Marco Dandolo",
+    "Stella",
+    "Ernesto Valli",
+    "Il Duca"
+   ],
+   "answer": 2,
+   "why": "È Ernesto Valli, da «Chi ha visto Sasha?»."
   },
   {
    "type": "story",
@@ -822,9 +951,9 @@
    "question": "Il maestro di Pietro, morto alle tre di notte. Nel suo ultimo quaderno ci sono formule che nessuno capisce.",
    "options": [
     "Ettore",
+    "Vanessa",
     "Irina",
-    "Enrico",
-    "Stella"
+    "Ael"
    ],
    "answer": 0,
    "why": "È Ettore, da «La macchina dei sogni»."
@@ -835,12 +964,12 @@
    "prompt": "Chi è?",
    "question": "Paziente di Irina che, dopo un sogno bellissimo, va davvero al mare in treno con sua moglie.",
    "options": [
-    "Luis",
     "Il signor Gallo",
-    "La signora Teresa",
-    "Enrico Vitale"
+    "Lume",
+    "Enrico Vitale",
+    "Larissa"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "È Il signor Gallo, da «La macchina dei sogni»."
   },
   {
@@ -849,10 +978,10 @@
    "prompt": "Chi è?",
    "question": "Anziana che racconta di un Natale di guerra e applaude più forte di tutti.",
    "options": [
-    "Aurora",
+    "Marina",
     "La signora Teresa",
-    "Ettore",
-    "Don Salvatore"
+    "Giulia",
+    "Sofia Ricci"
    ],
    "answer": 1,
    "why": "È La signora Teresa, da «La macchina dei sogni»."
@@ -864,12 +993,12 @@
    "word": "",
    "img": "characters/img/luis-utopia-1.jpg",
    "options": [
-    "Il Direttore",
-    "Oxana",
-    "Luis",
-    "Maria"
+    "Enrico Vitale",
+    "Carlotta",
+    "Vasily",
+    "Luis"
    ],
-   "answer": 2,
+   "answer": 3,
    "why": "È Luis, da «Presentimento»."
   },
   {
@@ -879,12 +1008,12 @@
    "word": "",
    "img": "characters/img/luis-utopia-2.jpg",
    "options": [
+    "Sasha",
+    "Ernesto Valli",
     "Luis",
-    "Paolo",
-    "Ludovico",
-    "Il commissario Rinaldi"
+    "Dima"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "È Luis, da «Presentimento»."
   },
   {
@@ -894,10 +1023,10 @@
    "word": "",
    "img": "characters/img/robert-1.jpg",
    "options": [
-    "Chiara",
+    "Antonio",
     "Robert",
-    "Ludovico",
-    "Ettore"
+    "Sasha",
+    "Carla"
    ],
    "answer": 1,
    "why": "È Robert, da «Presentimento»."
@@ -909,12 +1038,12 @@
    "word": "",
    "img": "characters/img/robert-2.jpg",
    "options": [
+    "Enrico",
     "Robert",
-    "Franco",
-    "Sasha",
-    "Il Porpora"
+    "Ernesto Valli",
+    "Giulia"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "È Robert, da «Presentimento»."
   },
   {
@@ -924,12 +1053,12 @@
    "word": "",
    "img": "characters/img/natalia-cellist-1.jpg",
    "options": [
-    "Natalia",
-    "Marco",
-    "Vanessa",
-    "Pietro"
+    "Franco",
+    "Larissa",
+    "Ludovico",
+    "Natalia"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "È Natalia, da «Presentimento»."
   },
   {
@@ -939,10 +1068,10 @@
    "word": "",
    "img": "characters/img/natalia-cellist-2.jpg",
    "options": [
-    "Paolo",
+    "Vasily",
     "Natalia",
-    "Il commissario Zancan",
-    "Giulia"
+    "Alberto Menichetti",
+    "Sasha"
    ],
    "answer": 1,
    "why": "È Natalia, da «Presentimento»."
@@ -954,12 +1083,12 @@
    "word": "",
    "img": "characters/img/sasha-1.jpg",
    "options": [
-    "La signora Teresa",
-    "Larissa",
-    "Pietro",
-    "Sasha"
+    "Sasha",
+    "Fabrizio",
+    "Marco",
+    "Larissa"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "È Sasha, da «Presentimento»."
   },
   {
@@ -969,12 +1098,12 @@
    "word": "",
    "img": "characters/img/sasha-2.jpg",
    "options": [
-    "Sofia Ricci",
     "Sasha",
-    "Franco",
-    "Ludovico"
+    "Il Direttore",
+    "Chiara",
+    "Luca"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "È Sasha, da «Presentimento»."
   },
   {
@@ -984,12 +1113,12 @@
    "word": "",
    "img": "characters/img/alessio-1.jpg",
    "options": [
+    "Oxana",
     "Alessio",
-    "Laura",
-    "Paolo",
-    "Francesca"
+    "La signora Teresa",
+    "Marco Dandolo"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "È Alessio, da «Ladro di cuori»."
   },
   {
@@ -999,12 +1128,12 @@
    "word": "",
    "img": "characters/img/alessio-2.jpg",
    "options": [
-    "Il Presidente",
-    "Vanessa",
-    "Alberto Menichetti",
-    "Alessio"
+    "Lorenzo",
+    "Alessio",
+    "Alice",
+    "Il commissario Rinaldi"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "È Alessio, da «Ladro di cuori»."
   },
   {
@@ -1014,12 +1143,12 @@
    "word": "",
    "img": "characters/img/marcos-1.jpg",
    "options": [
-    "Enrico",
-    "Ettore",
-    "Fabio",
-    "Marco"
+    "Marco",
+    "Nira",
+    "Luca",
+    "Stella"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "È Marco, da «Il treno fantasma»."
   },
   {
@@ -1029,12 +1158,12 @@
    "word": "",
    "img": "characters/img/alicia-1.jpg",
    "options": [
-    "Stella",
-    "Maria",
+    "Luciana",
     "Alice",
-    "Oxana"
+    "Il Presidente",
+    "Paolo"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "È Alice, da «Il treno fantasma»."
   },
   {
@@ -1044,12 +1173,12 @@
    "word": "",
    "img": "characters/img/alicia-2.jpg",
    "options": [
-    "La signora Teresa",
-    "Matteo",
-    "Luis",
-    "Alice"
+    "Irina",
+    "Ettore",
+    "Alice",
+    "Carlotta"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "È Alice, da «Il treno fantasma»."
   },
   {
@@ -1059,12 +1188,12 @@
    "word": "",
    "img": "characters/img/natalia-venice-1.jpg",
    "options": [
-    "Matteo",
     "Natalia",
-    "Lorenzo",
-    "Luis"
+    "Don Salvatore",
+    "Pietro",
+    "Lorenzo"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "È Natalia, da «Maschera di Venezia»."
   },
   {
@@ -1074,12 +1203,12 @@
    "word": "",
    "img": "characters/img/natalia-venice-2.jpg",
    "options": [
-    "Robert",
-    "Franco",
-    "Alice",
-    "Natalia"
+    "Fabrizio",
+    "Natalia",
+    "Luciana",
+    "Luca"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "È Natalia, da «Maschera di Venezia»."
   },
   {
@@ -1089,12 +1218,12 @@
    "word": "",
    "img": "characters/img/carlotta-1.jpg",
    "options": [
-    "Carlotta",
-    "Alessio",
-    "Pietro",
-    "Marco Dandolo"
+    "Il Duca",
+    "Enrico",
+    "Sasha",
+    "Carlotta"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "È Carlotta, da «La Nevicata Rosa»."
   },
   {
@@ -1104,10 +1233,10 @@
    "word": "",
    "img": "characters/img/carlotta-2.jpg",
    "options": [
-    "Pietro",
+    "Luis",
     "Carlotta",
-    "Maria",
-    "Il commissario Rinaldi"
+    "Giulia",
+    "Ael"
    ],
    "answer": 1,
    "why": "È Carlotta, da «La Nevicata Rosa»."
@@ -1117,14 +1246,74 @@
    "kind": "who",
    "prompt": "Chi è questo personaggio?",
    "word": "",
+   "img": "characters/img/sasha-voice-1.jpg",
+   "options": [
+    "Sasha",
+    "Natalia",
+    "Fabrizio",
+    "La signora Teresa"
+   ],
+   "answer": 0,
+   "why": "È Sasha, da «Chi ha visto Sasha?»."
+  },
+  {
+   "type": "choice",
+   "kind": "who",
+   "prompt": "Chi è questo personaggio?",
+   "word": "",
+   "img": "characters/img/sasha-voice-2.jpg",
+   "options": [
+    "Sasha",
+    "Carla",
+    "Marco Dandolo",
+    "Il Porpora"
+   ],
+   "answer": 0,
+   "why": "È Sasha, da «Chi ha visto Sasha?»."
+  },
+  {
+   "type": "choice",
+   "kind": "who",
+   "prompt": "Chi è questo personaggio?",
+   "word": "",
+   "img": "characters/img/oxana-voice-1.jpg",
+   "options": [
+    "Vittorio",
+    "Alberto Menichetti",
+    "Carlotta",
+    "Oxana"
+   ],
+   "answer": 3,
+   "why": "È Oxana, da «Chi ha visto Sasha?»."
+  },
+  {
+   "type": "choice",
+   "kind": "who",
+   "prompt": "Chi è questo personaggio?",
+   "word": "",
+   "img": "characters/img/dima-voice-1.jpg",
+   "options": [
+    "Vasily",
+    "Dima",
+    "Francesca",
+    "Giulia"
+   ],
+   "answer": 1,
+   "why": "È Dima, da «Chi ha visto Sasha?»."
+  },
+  {
+   "type": "choice",
+   "kind": "who",
+   "prompt": "Chi è questo personaggio?",
+   "word": "",
    "img": "characters/img/franco-1.jpg",
    "options": [
-    "Marco",
-    "Il Presidente",
     "Franco",
-    "Alberto Menichetti"
+    "Luciana",
+    "Chiara",
+    "Il signor Gallo"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "È Franco, da «La città triste»."
   },
   {
@@ -1134,12 +1323,12 @@
    "word": "",
    "img": "characters/img/chiara-1.jpg",
    "options": [
-    "Larissa",
-    "Carla",
     "Chiara",
-    "Sasha"
+    "Vanessa",
+    "Pietro",
+    "Fabrizio"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "È Chiara, da «La città triste»."
   },
   {
@@ -1149,12 +1338,12 @@
    "word": "",
    "img": "characters/img/lorenzo-1.jpg",
    "options": [
-    "Marina",
-    "Clara",
+    "Oxana",
     "Lorenzo",
-    "Marco Dandolo"
+    "Clara",
+    "Vittorio"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "È Lorenzo, da «La Nevicata Rosa»."
   },
   {
@@ -1164,12 +1353,12 @@
    "word": "",
    "img": "characters/img/lorenzo-2.jpg",
    "options": [
+    "La signora Teresa",
     "Lorenzo",
-    "Chiara",
-    "Giulia",
-    "Larissa"
+    "Ernesto Valli",
+    "Roberto"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "È Lorenzo, da «La Nevicata Rosa»."
   },
   {
@@ -1179,12 +1368,12 @@
    "word": "",
    "img": "characters/img/laura-bellini-1.jpg",
    "options": [
-    "Il Direttore",
-    "Paolo",
-    "Laura",
-    "Robert"
+    "Ettore",
+    "Ernesto Valli",
+    "Il commissario Rinaldi",
+    "Laura"
    ],
-   "answer": 2,
+   "answer": 3,
    "why": "È Laura, da «Ladro di cuori»."
   },
   {
@@ -1194,12 +1383,12 @@
    "word": "",
    "img": "characters/img/laura-bellini-2.jpg",
    "options": [
-    "Alessio",
-    "Fabio",
+    "Aurora",
     "Laura",
-    "Alice"
+    "Don Salvatore",
+    "Ael"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "È Laura, da «Ladro di cuori»."
   },
   {
@@ -1209,12 +1398,12 @@
    "word": "",
    "img": "characters/img/menichetti-1.jpg",
    "options": [
-    "Il signor Gallo",
+    "Marco Dandolo",
+    "Aurora",
     "Alberto Menichetti",
-    "Irina",
-    "La signora Teresa"
+    "Luciana"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "È Alberto Menichetti, da «La Nevicata Rosa»."
   },
   {
@@ -1224,12 +1413,12 @@
    "word": "",
    "img": "characters/img/porpora-1.jpg",
    "options": [
-    "Enrico",
-    "Pietro",
-    "Il Porpora",
-    "Natalia (moglie di Robert)"
+    "Carlotta",
+    "Fabrizio",
+    "Il signor Gallo",
+    "Il Porpora"
    ],
-   "answer": 2,
+   "answer": 3,
    "why": "È Il Porpora, da «La Nevicata Rosa»."
   },
   {
@@ -1239,9 +1428,9 @@
    "word": "",
    "img": "characters/img/aurora-1.jpg",
    "options": [
-    "Vittorio",
-    "Matteo",
-    "Fabio",
+    "Alessio",
+    "Carla",
+    "Marco Dandolo",
     "Aurora"
    ],
    "answer": 3,
@@ -1255,9 +1444,9 @@
    "img": "characters/img/roberto-venezia-1.jpg",
    "options": [
     "Roberto",
-    "Lorenzo",
-    "Giulia",
-    "Laura"
+    "Ettore",
+    "Luca",
+    "Enrico Vitale"
    ],
    "answer": 0,
    "why": "È Roberto, da «Maschera di Venezia»."
@@ -1269,12 +1458,12 @@
    "word": "",
    "img": "characters/img/roberto-venezia-2.jpg",
    "options": [
-    "Robert",
     "Roberto",
-    "Sasha",
-    "Luciana"
+    "Alberto Menichetti",
+    "Il commissario Zancan",
+    "Francesca"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "È Roberto, da «Maschera di Venezia»."
   },
   {
@@ -1284,12 +1473,12 @@
    "word": "",
    "img": "characters/img/marco-dandolo-1.jpg",
    "options": [
+    "Luciana",
     "Marco Dandolo",
-    "Il Porpora",
-    "Clara",
-    "Il Direttore"
+    "Alberto Menichetti",
+    "Lume"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "È Marco Dandolo, da «Maschera di Venezia»."
   },
   {
@@ -1299,12 +1488,12 @@
    "word": "",
    "img": "characters/img/zancan-1.jpg",
    "options": [
-    "Il commissario Zancan",
-    "Matteo",
-    "Il Presidente",
-    "Carla"
+    "Lume",
+    "Fabio",
+    "Stella",
+    "Il commissario Zancan"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "È Il commissario Zancan, da «Maschera di Venezia»."
   },
   {
@@ -1314,12 +1503,12 @@
    "word": "",
    "img": "characters/img/luca-pittore-1.jpg",
    "options": [
+    "Il signor Gallo",
+    "Luis",
     "Luca",
-    "Il Presidente",
-    "Sasha",
-    "Franco"
+    "Il Duca"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "È Luca, da «Ladro di cuori»."
   },
   {
@@ -1329,24 +1518,9 @@
    "word": "",
    "img": "characters/img/kennet-1.jpg",
    "options": [
-    "Kennet",
-    "Larissa",
-    "Paolo",
-    "Antonio"
-   ],
-   "answer": 0,
-   "why": "È Kennet, da «Presentimento»."
-  },
-  {
-   "type": "choice",
-   "kind": "who",
-   "prompt": "Chi è questo personaggio?",
-   "word": "",
-   "img": "characters/img/kennet-2.jpg",
-   "options": [
-    "Fabrizio",
-    "Clara",
-    "Luciana",
+    "Roberto",
+    "Enrico",
+    "Marina",
     "Kennet"
    ],
    "answer": 3,
@@ -1357,14 +1531,29 @@
    "kind": "who",
    "prompt": "Chi è questo personaggio?",
    "word": "",
+   "img": "characters/img/kennet-2.jpg",
+   "options": [
+    "Maria",
+    "Fabio",
+    "Kennet",
+    "Natalia (moglie di Robert)"
+   ],
+   "answer": 2,
+   "why": "È Kennet, da «Presentimento»."
+  },
+  {
+   "type": "choice",
+   "kind": "who",
+   "prompt": "Chi è questo personaggio?",
+   "word": "",
    "img": "characters/img/oxana-utopia-2.jpg",
    "options": [
-    "Marco",
     "Oxana",
-    "Sasha",
-    "Il Porpora"
+    "Sofia Ricci",
+    "Luca",
+    "Marco"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "È Oxana, da «Presentimento»."
   },
   {
@@ -1374,12 +1563,12 @@
    "word": "",
    "img": "characters/img/oxana-utopia-3.jpg",
    "options": [
-    "Il Presidente",
-    "Oxana",
-    "Francesca",
-    "Chiara"
+    "Vittorio",
+    "Alice",
+    "Ael",
+    "Oxana"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "È Oxana, da «Presentimento»."
   },
   {
@@ -1389,13 +1578,43 @@
    "word": "",
    "img": "characters/img/natalia-cardiologa-1.jpg",
    "options": [
+    "Il commissario Rinaldi",
     "Natalia (moglie di Robert)",
-    "Matteo",
-    "Carlotta",
-    "Aurora"
+    "Il Duca",
+    "Il signor Gallo"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "È Natalia (moglie di Robert), da «Presentimento»."
+  },
+  {
+   "type": "choice",
+   "kind": "who",
+   "prompt": "Chi è questo personaggio?",
+   "word": "",
+   "img": "characters/img/vasily-1.jpg",
+   "options": [
+    "Il Porpora",
+    "Vasily",
+    "Ludovico",
+    "Luca"
+   ],
+   "answer": 1,
+   "why": "È Vasily, da «Chi ha visto Sasha?»."
+  },
+  {
+   "type": "choice",
+   "kind": "who",
+   "prompt": "Chi è questo personaggio?",
+   "word": "",
+   "img": "characters/img/vasily-2.jpg",
+   "options": [
+    "Don Salvatore",
+    "Il commissario Rinaldi",
+    "Marina",
+    "Vasily"
+   ],
+   "answer": 3,
+   "why": "È Vasily, da «Chi ha visto Sasha?»."
   },
   {
    "type": "story",
@@ -1403,12 +1622,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Luis?",
    "options": [
-    "Ladro di cuori 2",
-    "Onde d'amore 2: Oscurità e armonia",
-    "La Nevicata Rosa",
-    "Presentimento"
+    "Maschera di Venezia: La Roma sotterranea",
+    "La squadra invincibile",
+    "Presentimento",
+    "La macchina dei sogni"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "Luis compare in «Presentimento»."
   },
   {
@@ -1417,10 +1636,10 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Robert?",
    "options": [
-    "Maschera di Venezia: La Roma sotterranea",
-    "Ladro di cuori 3",
+    "Chi ha visto Sasha?",
+    "Ladro di cuori",
     "Presentimento",
-    "Antonio e il segreto di Roma"
+    "La squadra invincibile"
    ],
    "answer": 2,
    "why": "Robert compare in «Presentimento»."
@@ -1432,9 +1651,9 @@
    "question": "In quale romanzo compare Natalia?",
    "options": [
     "Presentimento",
-    "La squadra invincibile",
-    "Ladro di cuori 3",
-    "Ti amo in silenzio"
+    "Onde d'amore",
+    "Ladro di cuori",
+    "Chi ha visto Sasha?"
    ],
    "answer": 0,
    "why": "Natalia compare in «Presentimento»."
@@ -1445,12 +1664,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Sasha?",
    "options": [
-    "Presentimento",
-    "Ti amo in silenzio",
     "Ladro di cuori",
-    "La squadra invincibile"
+    "Onde d'amore 3: Il viso del male",
+    "Presentimento",
+    "Ti amo in silenzio"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "Sasha compare in «Presentimento»."
   },
   {
@@ -1459,12 +1678,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Alessio?",
    "options": [
-    "La squadra invincibile",
-    "Antonio e il segreto di Roma",
     "Ladro di cuori 3",
-    "Ladro di cuori"
+    "Antonio e il segreto di Roma",
+    "Ladro di cuori",
+    "Onde d'amore"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "Alessio compare in «Ladro di cuori»."
   },
   {
@@ -1473,10 +1692,10 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Marco?",
    "options": [
-    "Maschera di Venezia: La Roma sotterranea",
-    "La squadra invincibile",
+    "La Nevicata Rosa",
+    "Ladro di cuori 3",
     "Il treno fantasma",
-    "Onde d'amore 2: Oscurità e armonia"
+    "Chi ha visto Sasha?"
    ],
    "answer": 2,
    "why": "Marco compare in «Il treno fantasma»."
@@ -1487,7 +1706,7 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Alice?",
    "options": [
-    "Ladro di cuori 2",
+    "Ti amo in silenzio",
     "Presentimento",
     "Onde d'amore 2: Oscurità e armonia",
     "Il treno fantasma"
@@ -1501,12 +1720,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Natalia?",
    "options": [
-    "Ti amo in silenzio",
+    "La macchina dei sogni",
+    "Chi ha visto Sasha?",
     "Maschera di Venezia",
-    "La squadra invincibile",
-    "Maschera di Venezia: La Roma sotterranea"
+    "La squadra invincibile"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Natalia compare in «Maschera di Venezia»."
   },
   {
@@ -1515,13 +1734,55 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Carlotta?",
    "options": [
-    "La città triste",
-    "La squadra invincibile",
-    "Ladro di cuori",
-    "La Nevicata Rosa"
+    "Onde d'amore 3: Il viso del male",
+    "La Nevicata Rosa",
+    "Ladro di cuori 2",
+    "Maschera di Venezia: La Roma sotterranea"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "Carlotta compare in «La Nevicata Rosa»."
+  },
+  {
+   "type": "story",
+   "kind": "where",
+   "prompt": "La trama",
+   "question": "In quale romanzo compare Sasha?",
+   "options": [
+    "Chi ha visto Sasha?",
+    "Maschera di Venezia: La Roma sotterranea",
+    "Ti amo in silenzio",
+    "La macchina dei sogni"
+   ],
+   "answer": 0,
+   "why": "Sasha compare in «Chi ha visto Sasha?»."
+  },
+  {
+   "type": "story",
+   "kind": "where",
+   "prompt": "La trama",
+   "question": "In quale romanzo compare Oxana?",
+   "options": [
+    "Ladro di cuori",
+    "Ti amo in silenzio",
+    "Chi ha visto Sasha?",
+    "Onde d'amore"
+   ],
+   "answer": 2,
+   "why": "Oxana compare in «Chi ha visto Sasha?»."
+  },
+  {
+   "type": "story",
+   "kind": "where",
+   "prompt": "La trama",
+   "question": "In quale romanzo compare Dima?",
+   "options": [
+    "Onde d'amore 2: Oscurità e armonia",
+    "Antonio e il segreto di Roma",
+    "Chi ha visto Sasha?",
+    "Ti amo in silenzio"
+   ],
+   "answer": 2,
+   "why": "Dima compare in «Chi ha visto Sasha?»."
   },
   {
    "type": "story",
@@ -1529,12 +1790,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Franco?",
    "options": [
-    "Presentimento",
     "La città triste",
-    "Maschera di Venezia",
-    "Onde d'amore"
+    "Ladro di cuori 3",
+    "Onde d'amore 3: Il viso del male",
+    "Antonio e il segreto di Roma"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "Franco compare in «La città triste»."
   },
   {
@@ -1543,12 +1804,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Chiara?",
    "options": [
+    "La macchina dei sogni",
+    "Presentimento",
     "La città triste",
-    "Maschera di Venezia: La Roma sotterranea",
-    "Onde d'amore 2: Oscurità e armonia",
     "La squadra invincibile"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "Chiara compare in «La città triste»."
   },
   {
@@ -1558,9 +1819,9 @@
    "question": "In quale romanzo compare Marco?",
    "options": [
     "La città triste",
-    "Maschera di Venezia",
-    "La Nevicata Rosa",
-    "Ti amo in silenzio"
+    "Onde d'amore 3: Il viso del male",
+    "Maschera di Venezia: La Roma sotterranea",
+    "Antonio e il segreto di Roma"
    ],
    "answer": 0,
    "why": "Marco compare in «La città triste»."
@@ -1571,10 +1832,10 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Luca?",
    "options": [
-    "Maschera di Venezia: La Roma sotterranea",
+    "Ti amo in silenzio",
     "La città triste",
-    "Onde d'amore 2: Oscurità e armonia",
-    "La Nevicata Rosa"
+    "Onde d'amore 3: Il viso del male",
+    "Il treno fantasma"
    ],
    "answer": 1,
    "why": "Luca compare in «La città triste»."
@@ -1585,12 +1846,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Il Presidente?",
    "options": [
-    "Maschera di Venezia",
+    "Ladro di cuori 2",
+    "Il treno fantasma",
     "La città triste",
-    "Onde d'amore 2: Oscurità e armonia",
-    "La squadra invincibile"
+    "Chi ha visto Sasha?"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Il Presidente compare in «La città triste»."
   },
   {
@@ -1599,12 +1860,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Matteo?",
    "options": [
-    "La macchina dei sogni",
     "Il treno fantasma",
-    "La città triste",
-    "Maschera di Venezia"
+    "Onde d'amore 3: Il viso del male",
+    "Maschera di Venezia",
+    "Maschera di Venezia: La Roma sotterranea"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "Matteo compare in «Il treno fantasma»."
   },
   {
@@ -1613,10 +1874,10 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Vittorio?",
    "options": [
-    "Antonio e il segreto di Roma",
-    "Il treno fantasma",
     "La città triste",
-    "La squadra invincibile"
+    "Il treno fantasma",
+    "Maschera di Venezia: La Roma sotterranea",
+    "Ti amo in silenzio"
    ],
    "answer": 1,
    "why": "Vittorio compare in «Il treno fantasma»."
@@ -1627,12 +1888,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Il Direttore?",
    "options": [
-    "Ladro di cuori 3",
-    "Maschera di Venezia: La Roma sotterranea",
     "Il treno fantasma",
-    "Ti amo in silenzio"
+    "La Nevicata Rosa",
+    "Onde d'amore 2: Oscurità e armonia",
+    "Chi ha visto Sasha?"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "Il Direttore compare in «Il treno fantasma»."
   },
   {
@@ -1642,9 +1903,9 @@
    "question": "In quale romanzo compare Lorenzo?",
    "options": [
     "La Nevicata Rosa",
-    "La squadra invincibile",
-    "Ladro di cuori 2",
-    "Ladro di cuori 3"
+    "Onde d'amore 3: Il viso del male",
+    "Onde d'amore 2: Oscurità e armonia",
+    "Maschera di Venezia"
    ],
    "answer": 0,
    "why": "Lorenzo compare in «La Nevicata Rosa»."
@@ -1655,12 +1916,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Laura?",
    "options": [
-    "Ladro di cuori",
     "Ti amo in silenzio",
-    "La città triste",
-    "Ladro di cuori 3"
+    "Ladro di cuori",
+    "Maschera di Venezia: La Roma sotterranea",
+    "Il treno fantasma"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "Laura compare in «Ladro di cuori»."
   },
   {
@@ -1669,12 +1930,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Alberto Menichetti?",
    "options": [
-    "Il treno fantasma",
-    "Onde d'amore",
     "La Nevicata Rosa",
-    "Ti amo in silenzio"
+    "La squadra invincibile",
+    "Onde d'amore 2: Oscurità e armonia",
+    "Presentimento"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "Alberto Menichetti compare in «La Nevicata Rosa»."
   },
   {
@@ -1683,12 +1944,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Il Porpora?",
    "options": [
-    "Antonio e il segreto di Roma",
-    "La macchina dei sogni",
+    "La città triste",
     "La Nevicata Rosa",
-    "Onde d'amore"
+    "Ladro di cuori 2",
+    "La squadra invincibile"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "Il Porpora compare in «La Nevicata Rosa»."
   },
   {
@@ -1697,12 +1958,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Fabrizio?",
    "options": [
+    "Ladro di cuori 3",
     "La Nevicata Rosa",
-    "Maschera di Venezia: La Roma sotterranea",
-    "Ti amo in silenzio",
-    "Maschera di Venezia"
+    "La città triste",
+    "Il treno fantasma"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "Fabrizio compare in «La Nevicata Rosa»."
   },
   {
@@ -1711,12 +1972,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Aurora?",
    "options": [
-    "Ladro di cuori",
-    "Ti amo in silenzio",
-    "Maschera di Venezia",
-    "La Nevicata Rosa"
+    "Ladro di cuori 3",
+    "La Nevicata Rosa",
+    "Presentimento",
+    "Onde d'amore 3: Il viso del male"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "Aurora compare in «La Nevicata Rosa»."
   },
   {
@@ -1725,12 +1986,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Roberto?",
    "options": [
-    "Ti amo in silenzio",
-    "Maschera di Venezia",
-    "Ladro di cuori",
-    "La squadra invincibile"
+    "Onde d'amore 3: Il viso del male",
+    "La città triste",
+    "Onde d'amore 2: Oscurità e armonia",
+    "Maschera di Venezia"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "Roberto compare in «Maschera di Venezia»."
   },
   {
@@ -1739,12 +2000,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Marco Dandolo?",
    "options": [
-    "Maschera di Venezia",
     "Antonio e il segreto di Roma",
-    "La squadra invincibile",
-    "La città triste"
+    "Maschera di Venezia",
+    "Ti amo in silenzio",
+    "Maschera di Venezia: La Roma sotterranea"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "Marco Dandolo compare in «Maschera di Venezia»."
   },
   {
@@ -1753,12 +2014,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Il commissario Zancan?",
    "options": [
-    "Ti amo in silenzio",
-    "La Nevicata Rosa",
     "Maschera di Venezia",
+    "La macchina dei sogni",
+    "Antonio e il segreto di Roma",
     "Ladro di cuori"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "Il commissario Zancan compare in «Maschera di Venezia»."
   },
   {
@@ -1767,12 +2028,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Ludovico?",
    "options": [
-    "Onde d'amore",
     "Maschera di Venezia",
-    "Maschera di Venezia: La Roma sotterranea",
-    "Presentimento"
+    "Chi ha visto Sasha?",
+    "Il treno fantasma",
+    "La città triste"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "Ludovico compare in «Maschera di Venezia»."
   },
   {
@@ -1781,12 +2042,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Il Duca?",
    "options": [
-    "Presentimento",
-    "Ti amo in silenzio",
-    "La squadra invincibile",
-    "Maschera di Venezia"
+    "Il treno fantasma",
+    "Onde d'amore",
+    "Maschera di Venezia",
+    "Presentimento"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "Il Duca compare in «Maschera di Venezia»."
   },
   {
@@ -1795,12 +2056,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Luca?",
    "options": [
-    "Ladro di cuori",
-    "Antonio e il segreto di Roma",
-    "Ladro di cuori 3",
-    "Maschera di Venezia: La Roma sotterranea"
+    "Ladro di cuori 2",
+    "La macchina dei sogni",
+    "La squadra invincibile",
+    "Ladro di cuori"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "Luca compare in «Ladro di cuori»."
   },
   {
@@ -1809,12 +2070,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Sofia Ricci?",
    "options": [
-    "Il treno fantasma",
+    "Ladro di cuori",
     "Maschera di Venezia",
-    "Onde d'amore 2: Oscurità e armonia",
-    "Ladro di cuori"
+    "La squadra invincibile",
+    "Ladro di cuori 2"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "Sofia Ricci compare in «Ladro di cuori»."
   },
   {
@@ -1823,10 +2084,10 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Maria?",
    "options": [
-    "Onde d'amore",
-    "Il treno fantasma",
+    "Chi ha visto Sasha?",
+    "Onde d'amore 2: Oscurità e armonia",
     "Ladro di cuori 2",
-    "Ti amo in silenzio"
+    "Onde d'amore"
    ],
    "answer": 2,
    "why": "Maria compare in «Ladro di cuori 2»."
@@ -1837,12 +2098,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Enrico Vitale?",
    "options": [
+    "Ti amo in silenzio",
+    "Chi ha visto Sasha?",
     "Ladro di cuori 2",
-    "La squadra invincibile",
-    "Onde d'amore",
-    "Ladro di cuori"
+    "La città triste"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "Enrico Vitale compare in «Ladro di cuori 2»."
   },
   {
@@ -1851,12 +2112,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Don Salvatore?",
    "options": [
-    "Ladro di cuori 2",
-    "Antonio e il segreto di Roma",
-    "La Nevicata Rosa",
-    "Ladro di cuori"
+    "Maschera di Venezia: La Roma sotterranea",
+    "Onde d'amore 2: Oscurità e armonia",
+    "La macchina dei sogni",
+    "Ladro di cuori 2"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "Don Salvatore compare in «Ladro di cuori 2»."
   },
   {
@@ -1865,12 +2126,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Roberto?",
    "options": [
-    "Maschera di Venezia: La Roma sotterranea",
-    "Ladro di cuori 2",
+    "Onde d'amore 3: Il viso del male",
     "La Nevicata Rosa",
-    "Ti amo in silenzio"
+    "Ladro di cuori 2",
+    "La squadra invincibile"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Roberto compare in «Ladro di cuori 2»."
   },
   {
@@ -1879,12 +2140,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Irina?",
    "options": [
-    "Ladro di cuori 2",
-    "Ti amo in silenzio",
-    "Ladro di cuori 3",
-    "La macchina dei sogni"
+    "Onde d'amore 2: Oscurità e armonia",
+    "La macchina dei sogni",
+    "La Nevicata Rosa",
+    "Presentimento"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "Irina compare in «La macchina dei sogni»."
   },
   {
@@ -1893,12 +2154,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Pietro?",
    "options": [
-    "Presentimento",
+    "Ladro di cuori",
     "Onde d'amore",
-    "La macchina dei sogni",
-    "Maschera di Venezia: La Roma sotterranea"
+    "Onde d'amore 2: Oscurità e armonia",
+    "La macchina dei sogni"
    ],
-   "answer": 2,
+   "answer": 3,
    "why": "Pietro compare in «La macchina dei sogni»."
   },
   {
@@ -1907,12 +2168,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Marina?",
    "options": [
-    "Maschera di Venezia",
-    "Ti amo in silenzio",
-    "Ladro di cuori 2",
-    "La macchina dei sogni"
+    "Onde d'amore",
+    "Il treno fantasma",
+    "La macchina dei sogni",
+    "Onde d'amore 2: Oscurità e armonia"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "Marina compare in «La macchina dei sogni»."
   },
   {
@@ -1921,12 +2182,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Clara?",
    "options": [
-    "Ladro di cuori",
-    "Ladro di cuori 3",
     "La macchina dei sogni",
-    "Antonio e il segreto di Roma"
+    "Onde d'amore 3: Il viso del male",
+    "Onde d'amore 2: Oscurità e armonia",
+    "Il treno fantasma"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "Clara compare in «La macchina dei sogni»."
   },
   {
@@ -1936,8 +2197,8 @@
    "question": "In quale romanzo compare Kennet?",
    "options": [
     "Presentimento",
-    "Maschera di Venezia: La Roma sotterranea",
-    "La città triste",
+    "Il treno fantasma",
+    "La Nevicata Rosa",
     "Onde d'amore 2: Oscurità e armonia"
    ],
    "answer": 0,
@@ -1950,11 +2211,11 @@
    "question": "In quale romanzo compare Oxana?",
    "options": [
     "Il treno fantasma",
-    "Onde d'amore 2: Oscurità e armonia",
-    "La squadra invincibile",
-    "Presentimento"
+    "Presentimento",
+    "Maschera di Venezia: La Roma sotterranea",
+    "Maschera di Venezia"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "Oxana compare in «Presentimento»."
   },
   {
@@ -1963,12 +2224,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Dima?",
    "options": [
-    "La squadra invincibile",
+    "Onde d'amore 3: Il viso del male",
+    "La macchina dei sogni",
     "Presentimento",
-    "Maschera di Venezia: La Roma sotterranea",
-    "La città triste"
+    "Ladro di cuori 3"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Dima compare in «Presentimento»."
   },
   {
@@ -1977,12 +2238,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Natalia (moglie di Robert)?",
    "options": [
-    "Maschera di Venezia",
-    "Presentimento",
-    "Maschera di Venezia: La Roma sotterranea",
-    "Il treno fantasma"
+    "Ladro di cuori 2",
+    "Ti amo in silenzio",
+    "Ladro di cuori 3",
+    "Presentimento"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "Natalia (moglie di Robert) compare in «Presentimento»."
   },
   {
@@ -1991,12 +2252,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Alessio?",
    "options": [
-    "Presentimento",
-    "Onde d'amore",
-    "Antonio e il segreto di Roma",
-    "La squadra invincibile"
+    "La squadra invincibile",
+    "La macchina dei sogni",
+    "Ladro di cuori 3",
+    "Presentimento"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "Alessio compare in «Presentimento»."
   },
   {
@@ -2005,12 +2266,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Fabio?",
    "options": [
-    "La città triste",
-    "Ladro di cuori 2",
     "La squadra invincibile",
-    "Ti amo in silenzio"
+    "Onde d'amore",
+    "Ladro di cuori 2",
+    "Ladro di cuori"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "Fabio compare in «La squadra invincibile»."
   },
   {
@@ -2019,12 +2280,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Stella?",
    "options": [
-    "Ti amo in silenzio",
-    "Ladro di cuori 3",
-    "Maschera di Venezia",
-    "La squadra invincibile"
+    "Presentimento",
+    "La squadra invincibile",
+    "Onde d'amore",
+    "La città triste"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "Stella compare in «La squadra invincibile»."
   },
   {
@@ -2033,12 +2294,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Maria?",
    "options": [
-    "La squadra invincibile",
-    "Ti amo in silenzio",
-    "Onde d'amore",
-    "Ladro di cuori 3"
+    "La macchina dei sogni",
+    "Onde d'amore 3: Il viso del male",
+    "La Nevicata Rosa",
+    "La squadra invincibile"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "Maria compare in «La squadra invincibile»."
   },
   {
@@ -2047,12 +2308,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Carla?",
    "options": [
-    "Ladro di cuori 2",
-    "Il treno fantasma",
     "La squadra invincibile",
-    "La città triste"
+    "Ti amo in silenzio",
+    "La Nevicata Rosa",
+    "Ladro di cuori 3"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "Carla compare in «La squadra invincibile»."
   },
   {
@@ -2062,9 +2323,9 @@
    "question": "In quale romanzo compare Francesca?",
    "options": [
     "La squadra invincibile",
-    "Maschera di Venezia: La Roma sotterranea",
-    "Onde d'amore",
-    "Antonio e il segreto di Roma"
+    "Il treno fantasma",
+    "Maschera di Venezia",
+    "Presentimento"
    ],
    "answer": 0,
    "why": "Francesca compare in «La squadra invincibile»."
@@ -2075,12 +2336,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Vanessa?",
    "options": [
+    "Chi ha visto Sasha?",
     "La Nevicata Rosa",
-    "Ladro di cuori 3",
-    "La squadra invincibile",
-    "Il treno fantasma"
+    "La città triste",
+    "La squadra invincibile"
    ],
-   "answer": 2,
+   "answer": 3,
    "why": "Vanessa compare in «La squadra invincibile»."
   },
   {
@@ -2089,12 +2350,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Enrico?",
    "options": [
-    "Onde d'amore",
     "La squadra invincibile",
-    "Ti amo in silenzio",
-    "Onde d'amore 2: Oscurità e armonia"
+    "Ladro di cuori 2",
+    "La macchina dei sogni",
+    "Ti amo in silenzio"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "Enrico compare in «La squadra invincibile»."
   },
   {
@@ -2103,12 +2364,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Antonio?",
    "options": [
-    "Presentimento",
-    "Il treno fantasma",
+    "Ladro di cuori",
     "Antonio e il segreto di Roma",
-    "La squadra invincibile"
+    "Il treno fantasma",
+    "Presentimento"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "Antonio compare in «Antonio e il segreto di Roma»."
   },
   {
@@ -2117,12 +2378,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Larissa?",
    "options": [
-    "La città triste",
-    "Antonio e il segreto di Roma",
-    "Ladro di cuori 3",
-    "Il treno fantasma"
+    "La squadra invincibile",
+    "Ti amo in silenzio",
+    "Presentimento",
+    "Antonio e il segreto di Roma"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "Larissa compare in «Antonio e il segreto di Roma»."
   },
   {
@@ -2132,9 +2393,9 @@
    "question": "In quale romanzo compare Matteo?",
    "options": [
     "Antonio e il segreto di Roma",
-    "Ladro di cuori 2",
-    "La macchina dei sogni",
-    "La squadra invincibile"
+    "Onde d'amore 2: Oscurità e armonia",
+    "Presentimento",
+    "Ladro di cuori 2"
    ],
    "answer": 0,
    "why": "Matteo compare in «Antonio e il segreto di Roma»."
@@ -2145,12 +2406,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Paolo?",
    "options": [
-    "Onde d'amore",
+    "Onde d'amore 2: Oscurità e armonia",
     "Ladro di cuori",
-    "Ladro di cuori 2",
-    "Antonio e il segreto di Roma"
+    "Antonio e il segreto di Roma",
+    "Onde d'amore"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "Paolo compare in «Antonio e il segreto di Roma»."
   },
   {
@@ -2159,12 +2420,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Luciana?",
    "options": [
-    "Onde d'amore 2: Oscurità e armonia",
-    "Ti amo in silenzio",
     "Antonio e il segreto di Roma",
-    "Ladro di cuori 2"
+    "La squadra invincibile",
+    "Maschera di Venezia: La Roma sotterranea",
+    "Onde d'amore 2: Oscurità e armonia"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "Luciana compare in «Antonio e il segreto di Roma»."
   },
   {
@@ -2173,12 +2434,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Il commissario Rinaldi?",
    "options": [
+    "Onde d'amore 3: Il viso del male",
+    "Maschera di Venezia",
     "Antonio e il segreto di Roma",
-    "La macchina dei sogni",
-    "La città triste",
-    "Ladro di cuori"
+    "Ladro di cuori 3"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "Il commissario Rinaldi compare in «Antonio e il segreto di Roma»."
   },
   {
@@ -2187,10 +2448,10 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Giulia?",
    "options": [
-    "Presentimento",
-    "La squadra invincibile",
+    "Ti amo in silenzio",
+    "Ladro di cuori 3",
     "Antonio e il segreto di Roma",
-    "Maschera di Venezia: La Roma sotterranea"
+    "Presentimento"
    ],
    "answer": 2,
    "why": "Giulia compare in «Antonio e il segreto di Roma»."
@@ -2199,14 +2460,98 @@
    "type": "story",
    "kind": "where",
    "prompt": "La trama",
-   "question": "In quale romanzo compare Ettore?",
+   "question": "In quale romanzo compare Vasily?",
    "options": [
-    "La macchina dei sogni",
-    "Maschera di Venezia: La Roma sotterranea",
-    "La città triste",
-    "Maschera di Venezia"
+    "Presentimento",
+    "Ladro di cuori",
+    "Chi ha visto Sasha?",
+    "Il treno fantasma"
+   ],
+   "answer": 2,
+   "why": "Vasily compare in «Chi ha visto Sasha?»."
+  },
+  {
+   "type": "story",
+   "kind": "where",
+   "prompt": "La trama",
+   "question": "In quale romanzo compare Ael?",
+   "options": [
+    "Chi ha visto Sasha?",
+    "Ladro di cuori 3",
+    "Ladro di cuori",
+    "Maschera di Venezia: La Roma sotterranea"
    ],
    "answer": 0,
+   "why": "Ael compare in «Chi ha visto Sasha?»."
+  },
+  {
+   "type": "story",
+   "kind": "where",
+   "prompt": "La trama",
+   "question": "In quale romanzo compare Nira?",
+   "options": [
+    "Chi ha visto Sasha?",
+    "La macchina dei sogni",
+    "Onde d'amore",
+    "La città triste"
+   ],
+   "answer": 0,
+   "why": "Nira compare in «Chi ha visto Sasha?»."
+  },
+  {
+   "type": "story",
+   "kind": "where",
+   "prompt": "La trama",
+   "question": "In quale romanzo compare Maria Conti?",
+   "options": [
+    "Chi ha visto Sasha?",
+    "Ladro di cuori 2",
+    "La squadra invincibile",
+    "Onde d'amore 2: Oscurità e armonia"
+   ],
+   "answer": 0,
+   "why": "Maria Conti compare in «Chi ha visto Sasha?»."
+  },
+  {
+   "type": "story",
+   "kind": "where",
+   "prompt": "La trama",
+   "question": "In quale romanzo compare Lume?",
+   "options": [
+    "La squadra invincibile",
+    "Il treno fantasma",
+    "Maschera di Venezia: La Roma sotterranea",
+    "Chi ha visto Sasha?"
+   ],
+   "answer": 3,
+   "why": "Lume compare in «Chi ha visto Sasha?»."
+  },
+  {
+   "type": "story",
+   "kind": "where",
+   "prompt": "La trama",
+   "question": "In quale romanzo compare Ernesto Valli?",
+   "options": [
+    "Onde d'amore 2: Oscurità e armonia",
+    "Onde d'amore",
+    "Antonio e il segreto di Roma",
+    "Chi ha visto Sasha?"
+   ],
+   "answer": 3,
+   "why": "Ernesto Valli compare in «Chi ha visto Sasha?»."
+  },
+  {
+   "type": "story",
+   "kind": "where",
+   "prompt": "La trama",
+   "question": "In quale romanzo compare Ettore?",
+   "options": [
+    "Ladro di cuori 3",
+    "Ti amo in silenzio",
+    "Antonio e il segreto di Roma",
+    "La macchina dei sogni"
+   ],
+   "answer": 3,
    "why": "Ettore compare in «La macchina dei sogni»."
   },
   {
@@ -2215,10 +2560,10 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare Il signor Gallo?",
    "options": [
-    "La città triste",
-    "Presentimento",
+    "Ladro di cuori",
+    "La squadra invincibile",
     "La macchina dei sogni",
-    "Il treno fantasma"
+    "Ladro di cuori 2"
    ],
    "answer": 2,
    "why": "Il signor Gallo compare in «La macchina dei sogni»."
@@ -2229,12 +2574,12 @@
    "prompt": "La trama",
    "question": "In quale romanzo compare La signora Teresa?",
    "options": [
-    "Maschera di Venezia",
+    "Maschera di Venezia: La Roma sotterranea",
+    "La macchina dei sogni",
     "Il treno fantasma",
-    "Ladro di cuori 3",
-    "La macchina dei sogni"
+    "La squadra invincibile"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "La signora Teresa compare in «La macchina dei sogni»."
   },
   {
@@ -2244,9 +2589,9 @@
    "question": "«E Luis, senza rendersene conto, si avvicinava sempre di più a quella luce.»",
    "options": [
     "Onde d'amore",
-    "Ladro di cuori 2",
-    "Ladro di cuori",
-    "Antonio e il segreto di Roma"
+    "Ti amo in silenzio",
+    "La squadra invincibile",
+    "Maschera di Venezia: La Roma sotterranea"
    ],
    "answer": 0,
    "why": "È da «Onde d'amore»."
@@ -2257,26 +2602,26 @@
    "prompt": "Da quale romanzo è questa frase?",
    "question": "«In mezzo a quel movimento, a quella luce e a quel freddo, Natalia camminava verso un piccolo caffè all'angolo.»",
    "options": [
-    "Ladro di cuori 2",
+    "Chi ha visto Sasha?",
+    "Onde d'amore 3: Il viso del male",
     "Onde d'amore",
-    "Ladro di cuori 3",
-    "La Nevicata Rosa"
+    "La città triste"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "È da «Onde d'amore»."
   },
   {
    "type": "story",
    "kind": "quote",
    "prompt": "Da quale romanzo è questa frase?",
-   "question": "«Il quartiere della Mente, con la scuola, la biblioteca e l'osservatorio.»",
+   "question": "«Una sera aveva bussato alla mia porta, qui a Verdegrado, con una borsa piena di strani strumenti.»",
    "options": [
     "La squadra invincibile",
-    "Ladro di cuori",
+    "Onde d'amore 2: Oscurità e armonia",
     "Maschera di Venezia: La Roma sotterranea",
-    "Onde d'amore 2: Oscurità e armonia"
+    "Antonio e il segreto di Roma"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "È da «Onde d'amore 2: Oscurità e armonia»."
   },
   {
@@ -2285,12 +2630,12 @@
    "prompt": "Da quale romanzo è questa frase?",
    "question": "«Solo che viveva a Sinea, vicino al mare, e che aveva un compagno, Dima.»",
    "options": [
+    "La città triste",
     "Onde d'amore 2: Oscurità e armonia",
-    "Ladro di cuori",
-    "Maschera di Venezia: La Roma sotterranea",
-    "La squadra invincibile"
+    "Presentimento",
+    "Ladro di cuori 3"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "È da «Onde d'amore 2: Oscurità e armonia»."
   },
   {
@@ -2299,9 +2644,9 @@
    "prompt": "Da quale romanzo è questa frase?",
    "question": "«Qui qualcuno mi chiama ancora «il Sole», ma io non ci faccio più caso.»",
    "options": [
-    "Il treno fantasma",
-    "Presentimento",
-    "Ladro di cuori 2",
+    "Ti amo in silenzio",
+    "Ladro di cuori",
+    "Chi ha visto Sasha?",
     "Onde d'amore 2: Oscurità e armonia"
    ],
    "answer": 3,
@@ -2311,53 +2656,95 @@
    "type": "story",
    "kind": "quote",
    "prompt": "Da quale romanzo è questa frase?",
-   "question": "«SORPRESA! 🎉 La coordinatrice è... la ragazza della metro! 😳 \"Chiara?!»",
+   "question": "«In piazza Dante, davanti alla vecchia fontana, avevano messo uno schermo nuovo.»",
    "options": [
-    "La città triste",
-    "Ladro di cuori 3",
-    "Maschera di Venezia: La Roma sotterranea",
-    "Presentimento"
+    "Onde d'amore 3: Il viso del male",
+    "Maschera di Venezia",
+    "Onde d'amore 2: Oscurità e armonia",
+    "La macchina dei sogni"
    ],
    "answer": 0,
+   "why": "È da «Onde d'amore 3: Il viso del male»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "Da quale romanzo è questa frase?",
+   "question": "«In fondo al viale un vicino portava a spasso il cane, e quando vide Natalia alla finestra alzò la mano.»",
+   "options": [
+    "Maschera di Venezia",
+    "Onde d'amore 3: Il viso del male",
+    "Ladro di cuori 2",
+    "Ladro di cuori 3"
+   ],
+   "answer": 1,
+   "why": "È da «Onde d'amore 3: Il viso del male»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "Da quale romanzo è questa frase?",
+   "question": "«Marisa gridò così forte che il signor Fedor, in fondo al viale, si girò a guardare la casa.»",
+   "options": [
+    "Maschera di Venezia: La Roma sotterranea",
+    "La città triste",
+    "Ladro di cuori 3",
+    "Onde d'amore 3: Il viso del male"
+   ],
+   "answer": 3,
+   "why": "È da «Onde d'amore 3: Il viso del male»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "Da quale romanzo è questa frase?",
+   "question": "«— E qui, — dice Oxana, e tocca il tavolo, — c'è sempre la pietra di Ael.»",
+   "options": [
+    "Ladro di cuori 3",
+    "Chi ha visto Sasha?",
+    "Maschera di Venezia: La Roma sotterranea",
+    "La macchina dei sogni"
+   ],
+   "answer": 1,
+   "why": "È da «Chi ha visto Sasha?»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "Da quale romanzo è questa frase?",
+   "question": "«— Allora sabato notte qualcuno ha tagliato il cavo, e il faro è rimasto al buio per sette minuti.»",
+   "options": [
+    "Chi ha visto Sasha?",
+    "La città triste",
+    "Ladro di cuori 2",
+    "La macchina dei sogni"
+   ],
+   "answer": 0,
+   "why": "È da «Chi ha visto Sasha?»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "Da quale romanzo è questa frase?",
+   "question": "«SORPRESA! 🎉 La coordinatrice è... la ragazza della metro! 😳 \"Chiara?!»",
+   "options": [
+    "La macchina dei sogni",
+    "Ladro di cuori 2",
+    "Maschera di Venezia: La Roma sotterranea",
+    "La città triste"
+   ],
+   "answer": 3,
    "why": "È da «La città triste»."
   },
   {
    "type": "story",
    "kind": "quote",
    "prompt": "Da quale romanzo è questa frase?",
-   "question": "«Cosa sta succedendo, Carlotta?», la sua domanda era una lama che tagliava via ogni possibilità che fosse tutto una tragica coincidenza.»",
+   "question": "«Non guardare», disse, ma la sua voce era tesa, gli occhi già a caccia di dettagli, di incongruenze, come un soldato addestrato a valutare un campo di battaglia.»",
    "options": [
-    "Ti amo in silenzio",
-    "La Nevicata Rosa",
-    "Ladro di cuori",
-    "Ladro di cuori 3"
-   ],
-   "answer": 1,
-   "why": "È da «La Nevicata Rosa»."
-  },
-  {
-   "type": "story",
-   "kind": "quote",
-   "prompt": "Da quale romanzo è questa frase?",
-   "question": "«Niente è stato normale da quando ci siamo lasciati il caffè, Carlotta», rispose lui, osservando gli agenti che interrogavano i testimoni.»",
-   "options": [
-    "La Nevicata Rosa",
-    "Onde d'amore",
-    "La città triste",
-    "Antonio e il segreto di Roma"
-   ],
-   "answer": 0,
-   "why": "È da «La Nevicata Rosa»."
-  },
-  {
-   "type": "story",
-   "kind": "quote",
-   "prompt": "Da quale romanzo è questa frase?",
-   "question": "«Stava guardando il profilo di Carlotta, illuminato dalla stessa luce pallida, e per un attimo le parve che stesse cercando di memorizzarne ogni curva, ogni ombra.»",
-   "options": [
-    "Maschera di Venezia: La Roma sotterranea",
     "Maschera di Venezia",
-    "Ladro di cuori 2",
+    "Onde d'amore",
+    "Ladro di cuori",
     "La Nevicata Rosa"
    ],
    "answer": 3,
@@ -2367,124 +2754,124 @@
    "type": "story",
    "kind": "quote",
    "prompt": "Da quale romanzo è questa frase?",
-   "question": "«Piazza San Marco era un turbinio di luci, colori e risate, ma nelle calli più strette, lontano dalla folla, regnava l’oscurità.»",
+   "question": "«Un freddo umido di novembre avvolse Firenze, impregnando l’aria di odore di terra bagnata e di pietra antica.»",
    "options": [
-    "Maschera di Venezia: La Roma sotterranea",
-    "La Nevicata Rosa",
-    "Maschera di Venezia",
-    "Ti amo in silenzio"
-   ],
-   "answer": 2,
-   "why": "È da «Maschera di Venezia»."
-  },
-  {
-   "type": "story",
-   "kind": "quote",
-   "prompt": "Da quale romanzo è questa frase?",
-   "question": "«Davvero?» disse Alessio, alzando un sopracciglio, visibilmente sorpreso.»",
-   "options": [
-    "Il treno fantasma",
-    "Onde d'amore 2: Oscurità e armonia",
-    "Maschera di Venezia",
-    "Onde d'amore"
-   ],
-   "answer": 2,
-   "why": "È da «Maschera di Venezia»."
-  },
-  {
-   "type": "story",
-   "kind": "quote",
-   "prompt": "Da quale romanzo è questa frase?",
-   "question": "«Be’, noi andiamo a prendere qualcosa da bere», disse Alessio, indicando un chiosco poco distante.»",
-   "options": [
-    "La Nevicata Rosa",
-    "Il treno fantasma",
-    "Maschera di Venezia",
-    "La città triste"
-   ],
-   "answer": 2,
-   "why": "È da «Maschera di Venezia»."
-  },
-  {
-   "type": "story",
-   "kind": "quote",
-   "prompt": "Da quale romanzo è questa frase?",
-   "question": "«Trovarono un piccolo albergo in una strada laterale vicino al Pantheon, un palazzo color ocra con le persiane verdi e i gerani sui balconi.»",
-   "options": [
-    "Presentimento",
     "Onde d'amore",
-    "Maschera di Venezia: La Roma sotterranea",
-    "Ladro di cuori 2"
-   ],
-   "answer": 2,
-   "why": "È da «Maschera di Venezia: La Roma sotterranea»."
-  },
-  {
-   "type": "story",
-   "kind": "quote",
-   "prompt": "Da quale romanzo è questa frase?",
-   "question": "«Sarà facilissimo fare tutto con la marea di turisti che c'è in questa città a qualsiasi ora.\" Fece un gesto ampio, come ad abbracciare una folla immaginaria.»",
-   "options": [
-    "Antonio e il segreto di Roma",
+    "La Nevicata Rosa",
     "Maschera di Venezia",
-    "La città triste",
-    "Maschera di Venezia: La Roma sotterranea"
-   ],
-   "answer": 3,
-   "why": "È da «Maschera di Venezia: La Roma sotterranea»."
-  },
-  {
-   "type": "story",
-   "kind": "quote",
-   "prompt": "Da quale romanzo è questa frase?",
-   "question": "«Quindi fai quello che sai fare meglio.\" Alessio annuì, ma c'era in lui una tensione nuova, diversa dal solito nervosismo prima di uno spettacolo.»",
-   "options": [
-    "Ladro di cuori 3",
-    "Ladro di cuori 2",
-    "Antonio e il segreto di Roma",
-    "Maschera di Venezia: La Roma sotterranea"
-   ],
-   "answer": 3,
-   "why": "È da «Maschera di Venezia: La Roma sotterranea»."
-  },
-  {
-   "type": "story",
-   "kind": "quote",
-   "prompt": "Da quale romanzo è questa frase?",
-   "question": "«La stessa notte · Il salotto di Laura Laura apre un cassetto e prende un catalogo d'arte.»",
-   "options": [
-    "La squadra invincibile",
-    "La città triste",
-    "Maschera di Venezia: La Roma sotterranea",
     "Ladro di cuori"
    ],
-   "answer": 3,
-   "why": "È da «Ladro di cuori»."
+   "answer": 1,
+   "why": "È da «La Nevicata Rosa»."
   },
   {
    "type": "story",
    "kind": "quote",
    "prompt": "Da quale romanzo è questa frase?",
-   "question": "«Il giorno dopo prepara la borsa e guarda a lungo la fotografia di L'Estate.»",
+   "question": "«Fuori, nel freddo della notte fiorentina, il fiume Arno scorreva nero e indifferente.»",
    "options": [
-    "Ti amo in silenzio",
-    "Ladro di cuori",
-    "Antonio e il segreto di Roma",
+    "Chi ha visto Sasha?",
+    "Ladro di cuori 2",
+    "La Nevicata Rosa",
+    "Onde d'amore"
+   ],
+   "answer": 2,
+   "why": "È da «La Nevicata Rosa»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "Da quale romanzo è questa frase?",
+   "question": "«La gondola scivolava silenziosa lungo il Canal Grande, cullata dalle acque scure che riflettevano le luci della città.»",
+   "options": [
+    "La città triste",
+    "La Nevicata Rosa",
+    "Il treno fantasma",
     "Maschera di Venezia"
    ],
-   "answer": 1,
-   "why": "È da «Ladro di cuori»."
+   "answer": 3,
+   "why": "È da «Maschera di Venezia»."
   },
   {
    "type": "story",
    "kind": "quote",
    "prompt": "Da quale romanzo è questa frase?",
-   "question": "«Pensa al quadro che vuole rubare, ma ricorda anche il sorriso di Laura nella fotografia.»",
+   "question": "«Piazza San Marco era un turbinio di luci, colori e risate, ma nelle calli più strette, lontano dalla folla, regnava l’oscurità.»",
+   "options": [
+    "Ladro di cuori 2",
+    "La squadra invincibile",
+    "Maschera di Venezia",
+    "Ladro di cuori"
+   ],
+   "answer": 2,
+   "why": "È da «Maschera di Venezia»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "Da quale romanzo è questa frase?",
+   "question": "«Non puoi scappare», disse con voce bassa e minacciosa, un tono che non ammetteva repliche.»",
+   "options": [
+    "Maschera di Venezia",
+    "Onde d'amore 3: Il viso del male",
+    "La macchina dei sogni",
+    "Ladro di cuori"
+   ],
+   "answer": 0,
+   "why": "È da «Maschera di Venezia»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "Da quale romanzo è questa frase?",
+   "question": "«Ma rubare il 'Fiore di Firenze' dalla Galleria degli Uffizi non ti faceva problema?\" \"Basta,\" tagliò corto Natalia, con un tono che non ammetteva repliche.»",
+   "options": [
+    "Presentimento",
+    "Il treno fantasma",
+    "Onde d'amore 3: Il viso del male",
+    "Maschera di Venezia: La Roma sotterranea"
+   ],
+   "answer": 3,
+   "why": "È da «Maschera di Venezia: La Roma sotterranea»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "Da quale romanzo è questa frase?",
+   "question": "«O voleva che trovassimo proprio questo?\" \"E ora?\" chiese Roberto, sentendo il peso della missione diventare improvvisamente più incerto.»",
+   "options": [
+    "La città triste",
+    "La squadra invincibile",
+    "Presentimento",
+    "Maschera di Venezia: La Roma sotterranea"
+   ],
+   "answer": 3,
+   "why": "È da «Maschera di Venezia: La Roma sotterranea»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "Da quale romanzo è questa frase?",
+   "question": "«Con le mani che tremavano leggermente per l'eccitazione, Roberto srotolò il documento.»",
+   "options": [
+    "Maschera di Venezia: La Roma sotterranea",
+    "Ladro di cuori 3",
+    "Onde d'amore 3: Il viso del male",
+    "Maschera di Venezia"
+   ],
+   "answer": 0,
+   "why": "È da «Maschera di Venezia: La Roma sotterranea»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "Da quale romanzo è questa frase?",
+   "question": "«Laura gli spiega che Sofia abita in un'altra villa, a pochi chilometri dalla sua.»",
    "options": [
     "Ladro di cuori",
-    "Maschera di Venezia: La Roma sotterranea",
-    "La macchina dei sogni",
-    "La squadra invincibile"
+    "Onde d'amore 2: Oscurità e armonia",
+    "Onde d'amore",
+    "Ladro di cuori 3"
    ],
    "answer": 0,
    "why": "È da «Ladro di cuori»."
@@ -2493,11 +2880,67 @@
    "type": "story",
    "kind": "quote",
    "prompt": "Da quale romanzo è questa frase?",
-   "question": "«La sera era calda e silenziosa quando Alessio e Laura si ritrovarono sul piccolo balcone del loro appartamento.»",
+   "question": "«Non ha visto la telecamera, ma Laura gli mostra sul telefono un'immagine del suo viso.»",
    "options": [
-    "Presentimento",
-    "La Nevicata Rosa",
+    "Ladro di cuori",
+    "Chi ha visto Sasha?",
+    "Ladro di cuori 3",
+    "Il treno fantasma"
+   ],
+   "answer": 0,
+   "why": "È da «Ladro di cuori»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "Da quale romanzo è questa frase?",
+   "question": "«Lunedì notte · La villa di Laura Quando Alessio arriva alla villa, è già notte.»",
+   "options": [
+    "Antonio e il segreto di Roma",
+    "Onde d'amore 2: Oscurità e armonia",
+    "Ladro di cuori",
+    "Chi ha visto Sasha?"
+   ],
+   "answer": 2,
+   "why": "È da «Ladro di cuori»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "Da quale romanzo è questa frase?",
+   "question": "«— Mi chiamo Enrico — si presentò lo sconosciuto, estraendo un biglietto da visita con il logo della galleria \"Arte del Sole\".»",
+   "options": [
+    "Ladro di cuori 2",
     "Il treno fantasma",
+    "Antonio e il segreto di Roma",
+    "Ladro di cuori"
+   ],
+   "answer": 0,
+   "why": "È da «Ladro di cuori 2»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "Da quale romanzo è questa frase?",
+   "question": "«Una bottiglia di Chianti Classico toscano, rubacchiata qualche giorno prima da una cantina di Firenze, stappata tra loro due.»",
+   "options": [
+    "Ladro di cuori 2",
+    "Maschera di Venezia",
+    "Onde d'amore",
+    "La Nevicata Rosa"
+   ],
+   "answer": 0,
+   "why": "È da «Ladro di cuori 2»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "Da quale romanzo è questa frase?",
+   "question": "«Poi, senza dire una parola, Alessio le accarezzò la guancia e la baciò.»",
+   "options": [
+    "Onde d'amore 3: Il viso del male",
+    "Ti amo in silenzio",
+    "Onde d'amore 2: Oscurità e armonia",
     "Ladro di cuori 2"
    ],
    "answer": 3,
@@ -2507,99 +2950,43 @@
    "type": "story",
    "kind": "quote",
    "prompt": "Da quale romanzo è questa frase?",
-   "question": "«Alessio, adesso conosciuto come Marcos Sierra era in piedi sul balcone della loro casa bianca, osservando le onde turchesi del Mar Mediterraneo.»",
+   "question": "«Non sono parenti stretti, ma finalmente sono riuscita a contattarli» spiega.»",
    "options": [
-    "Ladro di cuori 2",
-    "Maschera di Venezia",
+    "Onde d'amore 3: Il viso del male",
+    "Presentimento",
     "Ladro di cuori 3",
-    "Presentimento"
+    "Onde d'amore 2: Oscurità e armonia"
    ],
-   "answer": 0,
-   "why": "È da «Ladro di cuori 2»."
+   "answer": 2,
+   "why": "È da «Ladro di cuori 3»."
   },
   {
    "type": "story",
    "kind": "quote",
    "prompt": "Da quale romanzo è questa frase?",
-   "question": "«— Non possiamo fidarci di Enrico — disse lei, ruotando lentamente il bicchiere tra le dita.»",
+   "question": "«Un giornale di Mendoza scrive che l'Interpol cerca un uomo conosciuto come «Don Sergio».»",
    "options": [
     "La macchina dei sogni",
-    "Ladro di cuori 2",
-    "La città triste",
-    "Ladro di cuori 3"
+    "Ladro di cuori 3",
+    "Maschera di Venezia",
+    "Ladro di cuori"
    ],
    "answer": 1,
-   "why": "È da «Ladro di cuori 2»."
-  },
-  {
-   "type": "story",
-   "kind": "quote",
-   "prompt": "Da quale romanzo è questa frase?",
-   "question": "«Laura guarda dal finestrino e racconta ad Alessio della sua famiglia argentina.»",
-   "options": [
-    "Onde d'amore 2: Oscurità e armonia",
-    "Maschera di Venezia",
-    "Presentimento",
-    "Ladro di cuori 3"
-   ],
-   "answer": 3,
    "why": "È da «Ladro di cuori 3»."
   },
   {
    "type": "story",
    "kind": "quote",
    "prompt": "Da quale romanzo è questa frase?",
-   "question": "«Secondo la polizia, i ladri appartengono a una banda internazionale e potrebbero essere già in Argentina.»",
+   "question": "«Il suo soprannome è El Fantasma, il Fantasma, perché nessuno conosce il suo vero volto.»",
    "options": [
-    "Ladro di cuori 3",
-    "Presentimento",
-    "Il treno fantasma",
-    "Onde d'amore 2: Oscurità e armonia"
-   ],
-   "answer": 0,
-   "why": "È da «Ladro di cuori 3»."
-  },
-  {
-   "type": "story",
-   "kind": "quote",
-   "prompt": "Da quale romanzo è questa frase?",
-   "question": "«Quando Laura torna con i sacchetti, lo trova assorto davanti al computer.»",
-   "options": [
-    "Ladro di cuori 3",
-    "Il treno fantasma",
-    "Ladro di cuori 2",
-    "Antonio e il segreto di Roma"
-   ],
-   "answer": 0,
-   "why": "È da «Ladro di cuori 3»."
-  },
-  {
-   "type": "story",
-   "kind": "quote",
-   "prompt": "Da quale romanzo è questa frase?",
-   "question": "«È al secondo piano di un vecchio palazzo in via Santo Stefano, sotto i portici.»",
-   "options": [
-    "La macchina dei sogni",
-    "La squadra invincibile",
-    "Onde d'amore",
-    "Onde d'amore 2: Oscurità e armonia"
-   ],
-   "answer": 0,
-   "why": "È da «La macchina dei sogni»."
-  },
-  {
-   "type": "story",
-   "kind": "quote",
-   "prompt": "Da quale romanzo è questa frase?",
-   "question": "«Nello studio ci sono due poltrone verdi, una libreria piena di libri e una pianta che Irina dimentica sempre di bagnare.»",
-   "options": [
+    "Ti amo in silenzio",
     "La macchina dei sogni",
     "Ladro di cuori 3",
-    "Ladro di cuori 2",
-    "Onde d'amore"
+    "La Nevicata Rosa"
    ],
-   "answer": 0,
-   "why": "È da «La macchina dei sogni»."
+   "answer": 2,
+   "why": "È da «Ladro di cuori 3»."
   },
   {
    "type": "story",
@@ -2607,37 +2994,51 @@
    "prompt": "Da quale romanzo è questa frase?",
    "question": "«Il venerdì sera incontra la sua amica Marina in un piccolo bar in piazza Santo Stefano.»",
    "options": [
-    "La Nevicata Rosa",
-    "Il treno fantasma",
+    "La macchina dei sogni",
+    "Chi ha visto Sasha?",
     "Ti amo in silenzio",
-    "La macchina dei sogni"
+    "La squadra invincibile"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "È da «La macchina dei sogni»."
   },
   {
    "type": "story",
    "kind": "quote",
    "prompt": "Da quale romanzo è questa frase?",
-   "question": "«Robert, distratto dalla caduta di Luis, ricevette un forte colpo alla mano da una clave.»",
+   "question": "«Ha avuto un fidanzato, Luca, ma due anni fa lui è partito per Londra e la loro storia è finita.»",
    "options": [
-    "Ladro di cuori 2",
-    "Presentimento",
+    "Chi ha visto Sasha?",
+    "Onde d'amore 2: Oscurità e armonia",
     "La macchina dei sogni",
-    "La città triste"
+    "Presentimento"
    ],
-   "answer": 1,
-   "why": "È da «Presentimento»."
+   "answer": 2,
+   "why": "È da «La macchina dei sogni»."
   },
   {
    "type": "story",
    "kind": "quote",
    "prompt": "Da quale romanzo è questa frase?",
-   "question": "«Il respiro affannoso di Kennet era l'unico suono dopo il rumore della battaglia.»",
+   "question": "«Alle sette di sera Irina sta per chiudere lo studio quando qualcuno bussa alla porta.»",
+   "options": [
+    "Ti amo in silenzio",
+    "Onde d'amore",
+    "La macchina dei sogni",
+    "Onde d'amore 3: Il viso del male"
+   ],
+   "answer": 2,
+   "why": "È da «La macchina dei sogni»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "Da quale romanzo è questa frase?",
+   "question": "«Mi chiamo Kennet... vengo... vengo dalla Centrale», disse l'uomo, cadendo in ginocchio.»",
    "options": [
     "Presentimento",
+    "Antonio e il segreto di Roma",
     "Il treno fantasma",
-    "Ladro di cuori",
     "La città triste"
    ],
    "answer": 0,
@@ -2647,12 +3048,26 @@
    "type": "story",
    "kind": "quote",
    "prompt": "Da quale romanzo è questa frase?",
-   "question": "«Maneggiava la spada con una rapidità e una precisione che Robert non aveva mai visto.»",
+   "question": "«Con Robert, Kennet e Luis in testa, il piccolo gruppo di sopravvissuti lasciò La Nostra Missione, pronto ad affrontare insieme le incertezze del mondo desolato.»",
+   "options": [
+    "Maschera di Venezia: La Roma sotterranea",
+    "Presentimento",
+    "La città triste",
+    "Onde d'amore"
+   ],
+   "answer": 1,
+   "why": "È da «Presentimento»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "Da quale romanzo è questa frase?",
+   "question": "«Luis, con gli occhi pieni di una luce che Robert non gli aveva mai visto, disegnava mappe e progetti nella polvere con un bastone.»",
    "options": [
     "La città triste",
-    "Onde d'amore",
+    "Onde d'amore 2: Oscurità e armonia",
     "Presentimento",
-    "Il treno fantasma"
+    "Maschera di Venezia: La Roma sotterranea"
    ],
    "answer": 2,
    "why": "È da «Presentimento»."
@@ -2663,12 +3078,12 @@
    "prompt": "Da quale romanzo è questa frase?",
    "question": "«Voi uomini non siete così bravi come credete!\", dice una di loro ridendo.»",
    "options": [
-    "Ladro di cuori 3",
-    "Ladro di cuori",
     "La squadra invincibile",
-    "Ladro di cuori 2"
+    "Maschera di Venezia",
+    "Maschera di Venezia: La Roma sotterranea",
+    "Ladro di cuori 3"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "È da «La squadra invincibile»."
   },
   {
@@ -2677,26 +3092,12 @@
    "prompt": "Da quale romanzo è questa frase?",
    "question": "«Abita a Roma, nel quartiere di Trastevere, in un piccolo appartamento al terzo piano.»",
    "options": [
-    "Onde d'amore",
-    "La macchina dei sogni",
-    "Antonio e il segreto di Roma",
-    "Presentimento"
-   ],
-   "answer": 2,
-   "why": "È da «Antonio e il segreto di Roma»."
-  },
-  {
-   "type": "story",
-   "kind": "quote",
-   "prompt": "Da quale romanzo è questa frase?",
-   "question": "«Ehm… sai che se metti la mano nella Bocca della Verità e dici una bugia, la bocca ti mangia la mano?»",
-   "options": [
+    "Presentimento",
+    "La Nevicata Rosa",
     "Ladro di cuori",
-    "Il treno fantasma",
-    "Antonio e il segreto di Roma",
-    "Ladro di cuori 2"
+    "Antonio e il segreto di Roma"
    ],
-   "answer": 2,
+   "answer": 3,
    "why": "È da «Antonio e il segreto di Roma»."
   },
   {
@@ -2705,24 +3106,38 @@
    "prompt": "Da quale romanzo è questa frase?",
    "question": "«I \"segreti\" di Roma «Allora… quali sono questi segreti di Roma?» chiede Larissa con un sorriso.»",
    "options": [
-    "Maschera di Venezia",
-    "Maschera di Venezia: La Roma sotterranea",
     "Antonio e il segreto di Roma",
+    "Ti amo in silenzio",
+    "Ladro di cuori 3",
     "Ladro di cuori 2"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "È da «Antonio e il segreto di Roma»."
   },
   {
    "type": "story",
    "kind": "quote",
    "prompt": "Da quale romanzo è questa frase?",
-   "question": "«Poi prendevo un sacchetto di pane caldo, spingevo la moto del nonno fino all'officina di Bruno e facevo lezione fino alle otto.»",
+   "question": "«Ehm… sai che se metti la mano nella Bocca della Verità e dici una bugia, la bocca ti mangia la mano?»",
    "options": [
-    "Onde d'amore",
-    "Maschera di Venezia",
     "Ti amo in silenzio",
-    "La squadra invincibile"
+    "Antonio e il segreto di Roma",
+    "Ladro di cuori 3",
+    "La città triste"
+   ],
+   "answer": 1,
+   "why": "È da «Antonio e il segreto di Roma»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "Da quale romanzo è questa frase?",
+   "question": "«Dietro di lei c'è Tommaso, il cameraman, con la telecamera sulla spalla e una faccia molto infelice.»",
+   "options": [
+    "Onde d'amore 2: Oscurità e armonia",
+    "Il treno fantasma",
+    "Ti amo in silenzio",
+    "Maschera di Venezia"
    ],
    "answer": 2,
    "why": "È da «Ti amo in silenzio»."
@@ -2731,12 +3146,12 @@
    "type": "story",
    "kind": "quote",
    "prompt": "Da quale romanzo è questa frase?",
-   "question": "«Sinea · oggi La casa di Fabrizio Orsini è gialla, piccola e un po' storta, come un dente che non vuole stare in fila.»",
+   "question": "«Poi prendevo un sacchetto di pane caldo, spingevo la moto del nonno fino all'officina di Bruno e facevo lezione fino alle otto.»",
    "options": [
     "Ti amo in silenzio",
-    "Onde d'amore 2: Oscurità e armonia",
-    "Ladro di cuori",
-    "La Nevicata Rosa"
+    "Onde d'amore",
+    "Ladro di cuori 3",
+    "Antonio e il segreto di Roma"
    ],
    "answer": 0,
    "why": "È da «Ti amo in silenzio»."
@@ -2745,12 +3160,12 @@
    "type": "story",
    "kind": "quote",
    "prompt": "Da quale romanzo è questa frase?",
-   "question": "«Ragazzo mio», ha detto, «in questo bar sono passate tre generazioni di innamorati.»",
+   "question": "«E intanto, ogni mattina alle sette e un quarto, Lucia entrava, si sedeva al suo tavolino e Gino le preparava «il solito».»",
    "options": [
-    "La macchina dei sogni",
+    "La città triste",
     "Ti amo in silenzio",
-    "Il treno fantasma",
-    "Ladro di cuori"
+    "La Nevicata Rosa",
+    "La squadra invincibile"
    ],
    "answer": 1,
    "why": "È da «Ti amo in silenzio»."
@@ -2761,12 +3176,12 @@
    "prompt": "La trama",
    "question": "In «La città triste», che cosa vieta il nuovo presidente di Sinea?",
    "options": [
+    "I cellulari",
     "I sorrisi in luoghi pubblici",
     "La musica di notte",
-    "I cellulari",
     "Le automobili in centro"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "«La felicità è pericolosa», dice il presidente."
   },
   {
@@ -2777,8 +3192,8 @@
    "options": [
     "Alla stazione della metro",
     "Nel Ministero dei Sentimenti",
-    "In un bar di Sinea",
-    "In un ufficio postale"
+    "In un ufficio postale",
+    "In un bar di Sinea"
    ],
    "answer": 1,
    "why": "È un ministero speciale che si occupa della felicità della gente."
@@ -2789,12 +3204,12 @@
    "prompt": "La trama",
    "question": "Nel «Treno fantasma», che lavoro fa Marco?",
    "options": [
-    "Il capostazione",
     "Il cameriere",
     "Il detective",
-    "L’astrologo"
+    "L’astrologo",
+    "Il capostazione"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "«Sono un detective. Vivo a Sinea.»"
   },
   {
@@ -2803,12 +3218,12 @@
    "prompt": "La trama",
    "question": "Nel «Treno fantasma», chi cerca Marco?",
    "options": [
-    "Suo fratello Matteo",
     "Il capostazione",
     "Un uomo grasso",
-    "La sua ragazza, Alice"
+    "La sua ragazza, Alice",
+    "Suo fratello Matteo"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "«Cerco la mia ragazza. È scomparsa la settimana scorsa.»"
   },
   {
@@ -2817,12 +3232,12 @@
    "prompt": "La trama",
    "question": "Nel «Treno fantasma», che cosa studia Alice?",
    "options": [
-    "La musica",
-    "Le stelle: è un’astrologa",
+    "La storia dei treni",
     "La medicina",
-    "La storia dei treni"
+    "Le stelle: è un’astrologa",
+    "La musica"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "«Sono un’astrologa. Studio le stelle.»"
   }
  ]

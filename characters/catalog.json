@@ -774,7 +774,8 @@
     "anomalnyj-chas",
     "el-misterio-de-los-fader",
     "tajna-semi-fader",
-    "amor-en-el-cosmos"
+    "amor-en-el-cosmos",
+    "znak"
    ],
    "localizations": {
     "es": {
@@ -809,7 +810,8 @@
     "prizrachnyj-poezd",
     "anomalnyj-chas",
     "epicheskij-match",
-    "amor-en-el-cosmos"
+    "amor-en-el-cosmos",
+    "znak"
    ],
    "localizations": {
     "es": {
@@ -822,7 +824,7 @@
     },
     "ru": {
      "name": "Алисия",
-     "description": "Астролог, нумеролог и исследовательница загадок, возлюбленная Марка. Мечтает о свободе и садится в Призрачный поезд; позже помогает Луису и Наталье в Москве и выступает экспертом на чемпионате мира.",
+     "description": "Астролог, нумеролог и исследовательница загадок, возлюбленная Марка. Мечтает о свободе и садится в Призрачный поезд; позже помогает Луису и Наталье в Москве и выступает экспертом на чемпионате мира. В «Знаке» — главная героиня: выступает на астрологической конференции на Холме Звездочётов с докладом «Четыре Водолея» и спасает Синею от невидимого свода.",
      "images": [
       "characters/img/alicia-3.jpg",
       "characters/img/alicia-1.jpg",
@@ -3432,7 +3434,8 @@
    "novels": [
     "opasnoe-svidanie",
     "epicheskij-match",
-    "chi-ha-visto-sasha"
+    "chi-ha-visto-sasha",
+    "znak"
    ],
    "localizations": {
     "ru": {
@@ -3825,12 +3828,13 @@
    ],
    "role": "Amiga y psicóloga de Vasili.",
    "novels": [
-    "opasnoe-svidanie"
+    "opasnoe-svidanie",
+    "znak"
    ],
    "localizations": {
     "ru": {
      "name": "Надя",
-     "description": "Подруга Василия с ироничным взглядом, видящая людей насквозь. Именно она строила психологические схемы таинственной «Марии».",
+     "description": "Подруга Василия с ироничным взглядом, видящая людей насквозь. Именно она строила психологические схемы таинственной «Марии». В «Знаке» — астролог и Скорпион, хранительница «Звёздного оберегария» своей прапрабабушки Аурелии Бранкати.",
      "images": [
       "characters/img/nadya-date-1.jpg",
       "characters/img/nadya-date-2.jpg"
