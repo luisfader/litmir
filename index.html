@@ -2903,7 +2903,7 @@ function setupSky(pane, D, n, M){
       ctx.strokeStyle = "rgba(120,220,170,.75)"; ctx.lineWidth = 2; line(hz);
       ctx.font = `700 ${Math.round(14 * zf)}px var(--sans),sans-serif`; ctx.fillStyle = "rgba(140,235,185,.95)"; ctx.textAlign = "center"; ctx.textBaseline = "middle";
       (U.horizon || []).forEach((t, i) => { const p = P(...skFromAltAz(4, i * 90, lst, lat)); if (p) ctx.fillText(t, p[0], p[1]); }); }
-    hits = []; labels = []; segs = [];
+    hits = []; labels = []; segs = []; const placed = [];
     C.forEach((c, ci) => { const on = ci === sel, pts = c.s.map(s => P(s[0], s[1]));
       ctx.strokeStyle = on ? "rgba(255,206,110,.95)" : "rgba(150,180,255,.38)"; ctx.lineWidth = on ? 2.4 : 1.1;
       ctx.beginPath(); c.l.forEach(([i, j]) => { const a = pts[i], b = pts[j]; if (!a || !b || Math.hypot(a[0] - b[0], a[1] - b[1]) > W) return; ctx.moveTo(a[0], a[1]); ctx.lineTo(b[0], b[1]); segs.push([a, b, ci]); }); ctx.stroke(); });
@@ -2913,11 +2913,16 @@ function setupSky(pane, D, n, M){
       ctx.globalAlpha = dim; ctx.fillStyle = cc; ctx.beginPath(); ctx.arc(p[0], p[1], r, 0, 7); ctx.fill(); ctx.globalAlpha = 1;
       hits.push([p[0], p[1], ci]);
       if (s[3] && (ci === sel || (T.names && (s[2] < 2.2 || S > base * 2.2)))) { ctx.font = `${ci === sel ? 600 : 400} ${Math.round((ci === sel ? 12.5 : 11) * Math.min(zf, 1.25))}px var(--sans),sans-serif`;
-        ctx.textAlign = "left"; ctx.textBaseline = "middle"; ctx.fillStyle = ci === sel ? "rgba(255,226,170,.95)" : "rgba(200,212,255,.75)"; ctx.fillText(s[3], p[0] + r + 4, p[1] - r - 2); } }));
-    C.forEach((c, ci) => { const p = P(c.ra, c.dec); if (!p || p[0] < 0 || p[1] < 0 || p[0] > W || p[1] > H) return; const on = ci === sel;
+        ctx.textAlign = "left"; ctx.textBaseline = "middle"; const tw = ctx.measureText(s[3]).width, bx = [p[0] + r + 4, p[1] - r - 9, tw, 14];
+        if (!placed.some(q => bx[0] < q[0] + q[2] && q[0] < bx[0] + bx[2] && bx[1] < q[1] + q[3] && q[1] < bx[1] + bx[3])) { placed.push(bx);
+        ctx.fillStyle = ci === sel ? "rgba(255,226,170,.95)" : "rgba(200,212,255,.75)"; ctx.fillText(s[3], p[0] + r + 4, p[1] - r - 2); } } }));
+    C.forEach((c, ci) => { const p = c.lab ? P(c.lab[0], c.lab[1]) : P(c.ra, c.dec); if (!p || p[0] < 0 || p[1] < 0 || p[0] > W || p[1] > H) return; const on = ci === sel;
       const t = (c.sign ? skG(c.sign) + " " : "") + c.name.toUpperCase(); ctx.font = `${on ? 700 : 600} ${on ? 15 : 11}px var(--sans),sans-serif`; ctx.textAlign = "center"; ctx.textBaseline = "middle";
       const y = p[1] + (on ? 0 : 0), w = ctx.measureText(t).width; ctx.lineWidth = 4; ctx.strokeStyle = "rgba(6,11,29,.75)"; ctx.strokeText(t, p[0], y);
       ctx.fillStyle = on ? "#ffd27a" : "rgba(160,190,255,.7)"; ctx.fillText(t, p[0], y); labels.push([p[0], y, w, ci]); });
+    (D.asterisms || []).forEach(A => { const p = P(A.ra, A.dec); if (!p || p[0] < 0 || p[1] < 0 || p[0] > W || p[1] > H) return;
+      ctx.font = `italic 600 ${Math.round(12 * Math.min(zf, 1.2))}px var(--sans),sans-serif`; ctx.textAlign = "center"; ctx.textBaseline = "middle";
+      ctx.lineWidth = 4; ctx.strokeStyle = "rgba(6,11,29,.8)"; ctx.strokeText(A.name, p[0], p[1]); ctx.fillStyle = "rgba(255,226,170,.9)"; ctx.fillText(A.name, p[0], p[1]); });
   }
   const redraw = () => { if (!raf) raf = requestAnimationFrame(draw); };
   const clampS = s => Math.max(base * .55, Math.min(base * 9, s));
@@ -2960,7 +2965,7 @@ function setupSky(pane, D, n, M){
   pane.querySelectorAll(".sk-chip").forEach(b => b.onclick = () => { select(+b.dataset.c, true); box.scrollIntoView({block:"nearest", behavior:"smooth"}); });
   if (window.ResizeObserver) new ResizeObserver(() => { if (box.clientWidth && Math.abs(box.clientWidth - W) > 2) resize(); }).observe(box); else window.addEventListener("resize", resize);
   resize();
-  const start = C.findIndex(c => c.id === (D.start || "aqr")); if (start >= 0) { const c = C[start]; ra0 = c.ra; dec0 = c.dec; S = fit(c); select(start, false); }
+  const start = C.findIndex(c => c.id === (D.start || "aqr")); if (start >= 0) { const c = C[start]; ra0 = c.ra; dec0 = c.dec; S = clampS(fit(c) * .7); select(start, false); }
 }
 
 /* Гороскоп на каждый день (sec.style "horoscope"): novels/<slug>/<file>.json — фразы, знаки и обереги.
