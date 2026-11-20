@@ -1,0 +1,154 @@
+{
+ "title": "¿Qué tan buen conquistador eres?",
+ "intro": "Andrés Cortés dice que conquistar es una ciencia. ¿Tú qué crees? Elige quién eres y responde con sinceridad. Al final verás tu resultado… y lo que pensaría el maestro.",
+ "choose": "¿Quién hace el test?",
+ "next": "Siguiente",
+ "result": "Ver mi resultado",
+ "again": "Hacer el test otra vez",
+ "other": "Probar la otra versión",
+ "of": "Escena {a} de {b}",
+ "roles": {
+  "h": {
+   "label": "Soy hombre",
+   "icon": "🙋‍♂️",
+   "pitch": "¿Sabes conquistar sin trucos? Ocho escenas de la vida real.",
+   "title": "¿Qué tan buen conquistador eres?",
+   "cats": {"r": "Respeto", "h": "Humor", "e": "Escucha"},
+   "questions": [
+    {"scene": "☕", "bg": "#f6d9b8", "place": "En un café", "q": "Ves a una chica que toma un café sola y lee un libro. ¿Qué le dices?", "cat": "r",
+     "options": [
+      {"t": "«Hola, eres muy bonita».", "p": 1, "f": "No está mal, pero es lo que oye todos los días. Y no sabe nada de ti."},
+      {"t": "«Hola, ¿qué lees? Lo vi en la librería y no sé si comprarlo».", "p": 3, "f": "¡Muy bien! Una pregunta sobre algo que a ella le interesa abre una conversación de verdad."},
+      {"t": "«Hola, ¿vamos a mi casa?».", "p": 0, "f": "Uy. Acabas de conocerla. Esto no es conquista: es una forma rápida de recibir un no."},
+      {"t": "«¿Qué onda? ¿Me das tu número?».", "p": 1, "f": "Demasiado rápido. Primero, una conversación; el número llega solo, si llega."}
+     ]},
+    {"scene": "🗣️", "bg": "#d7e7f7", "place": "En la primera cita", "q": "En la primera cita, ¿de qué hablas?", "cat": "e",
+     "options": [
+      {"t": "De mí: mi perro, mi color favorito, lo que comí ayer…", "p": 0, "f": "¡Es la técnica de Leonardo en el capítulo 7! Cinco minutos de monólogo y Valeria se fue corriendo."},
+      {"t": "Hago preguntas y escucho sus respuestas.", "p": 3, "f": "Perfecto. A todo el mundo le gusta alguien que escucha de verdad."},
+      {"t": "De mi coche y de cuánto dinero gano.", "p": 0, "f": "Eso es puro Andrés Cortés… y su coche rojo era alquilado."},
+      {"t": "Un poco de todo: cuento algo de mí y le pregunto a ella.", "p": 2, "f": "Bien: una conversación es como un partido de tenis, la pelota va y viene."}
+     ]},
+    {"scene": "😂", "bg": "#fbe7a1", "place": "En la fiesta", "q": "Hay un silencio incómodo. ¿Qué haces?", "cat": "h",
+     "options": [
+      {"t": "Cuento un chiste malo, como Daniel.", "p": 3, "f": "¡Funciona! Valeria se enamoró de los chistes malos de Daniel. El humor rompe el hielo."},
+      {"t": "Silbo ópera.", "p": 0, "f": "Lección número uno de Andrés… y en el autobús le pusieron una multa a un alumno."},
+      {"t": "Miro el teléfono.", "p": 0, "f": "El teléfono no te va a salvar. La otra persona va a pensar que te aburres."},
+      {"t": "Le pregunto algo divertido: «¿Cuál es tu peor cita?».", "p": 2, "f": "Buena idea: una pregunta divertida invita a reír juntos."}
+     ]},
+    {"scene": "🙅‍♀️", "bg": "#f4c9cf", "place": "En el parque", "q": "Le pides una cita y te dice: «No, gracias». ¿Qué haces?", "cat": "r",
+     "options": [
+      {"t": "Insisto tres veces más. ¡Quizás cambia de opinión!", "p": 0, "f": "No. Un «no» es un «no». Insistir solo hace que la otra persona se sienta incómoda."},
+      {"t": "Sonrío, le digo «vale, que tengas un buen día» y me voy.", "p": 3, "f": "Muy bien. Aceptar un no con elegancia también dice mucho de ti."},
+      {"t": "Me arrodillo en el parque bajo la lluvia, como Juan Carlos.", "p": 1, "f": "Muy romántico… pero te vas a mojar. Y mañana es otro día."},
+      {"t": "Le digo que su horóscopo está equivocado.", "p": 0, "f": "Aunque tengas razón (¡en Sinea la tenías!), la decisión es de ella."}
+     ]},
+    {"scene": "💬", "bg": "#dcd3f2", "place": "Por mensaje", "q": "Te escribe ella. ¿Cuánto tardas en contestar?", "cat": "e",
+     "options": [
+      {"t": "Tres días: así parezco interesante.", "p": 0, "f": "Los juegos de espera son trucos de taller. Ella puede pensar que no te importa."},
+      {"t": "Contesto cuando puedo, con un mensaje normal y sincero.", "p": 3, "f": "Perfecto. Ser natural es la mejor estrategia."},
+      {"t": "Le mando cuarenta mensajes en un minuto.", "p": 0, "f": "Calma. Cuarenta mensajes son como hablar cinco minutos sin parar."},
+      {"t": "Le contesto con un audio de diez minutos.", "p": 1, "f": "Mejor algo corto. Si quiere más, te lo va a pedir."}
+     ]},
+    {"scene": "🎁", "bg": "#cfeedd", "place": "Un regalo", "q": "Es su cumpleaños. ¿Qué le regalas?", "cat": "e",
+     "options": [
+      {"t": "Algo que ella mencionó una vez y que yo recordé.", "p": 3, "f": "¡Excelente! El mejor regalo dice: «te escuché»."},
+      {"t": "Un perfume carísimo, como el de Andrés.", "p": 1, "f": "Caro no es lo mismo que especial. Florencia lo entendió al final."},
+      {"t": "Un curso de un experto en relaciones.", "p": 0, "f": "Mmm… ¿y si el experto se llama Aníbal Benítez?"},
+      {"t": "Una tarjeta escrita a mano.", "p": 2, "f": "Bonito y sencillo. Las palabras sinceras valen mucho."}
+     ]},
+    {"scene": "🍽️", "bg": "#f7d6c3", "place": "En el restaurante", "q": "Llega la cuenta de la cena. ¿Qué haces?", "cat": "r",
+     "options": [
+      {"t": "Le pregunto: «¿Cómo prefieres? ¿Pago yo o pagamos a medias?».", "p": 3, "f": "Muy bien: preguntar es respetar lo que piensa la otra persona."},
+      {"t": "Me voy al baño y espero que pague ella.", "p": 0, "f": "Eso no es conquista: es desaparecer como un mago malo."},
+      {"t": "Pago yo y digo: «Soy rico, tengo un coche rojo».", "p": 0, "f": "Mismo discurso que Andrés Cortés. Ya sabemos cómo terminó."},
+      {"t": "Pago yo, sin hacer un espectáculo.", "p": 2, "f": "Un gesto amable, sin presumir. Bien."}
+     ]},
+    {"scene": "💍", "bg": "#f1e1b0", "place": "La gran pregunta", "q": "Quieres pedirle matrimonio. ¿Cómo lo haces?", "cat": "h",
+     "options": [
+      {"t": "Con los anillos que encontré en un banco del parque.", "p": 0, "f": "Como Daniel en el capítulo 1… y Sofía reconoció los anillos."},
+      {"t": "En un lugar especial para los dos, con palabras sinceras.", "p": 3, "f": "¡Así lo hizo Leonardo al final! Y la tercera fue la vencida."},
+      {"t": "Después de leer mi horóscopo, solo si los planetas dicen sí.", "p": 0, "f": "En Sinea, los horóscopos los escribía Doña Destino. Mejor decide tú."},
+      {"t": "Con una canción y un poco de humor, para los dos.", "p": 2, "f": "Original y divertido. Si la conoces bien, ¡puede funcionar!"}
+     ]}
+   ],
+   "results": [
+    {"min": 85, "icon": "🏆", "title": "Conquistador de verdad", "text": "Escuchas, respetas y tienes humor. No necesitas ningún taller: eres como Leonardo al final de la novela, valiente y sincero. ¡Andrés Cortés debería tomar clases contigo!"},
+    {"min": 60, "icon": "😎", "title": "Buen conquistador", "text": "Vas por buen camino. A veces usas algún truco que no hace falta, pero en general la gente se siente cómoda contigo. Un poco más de escucha y serás imbatible."},
+    {"min": 35, "icon": "🎭", "title": "Conquistador en prácticas", "text": "Tienes buenas intenciones, pero todavía haces cosas del taller de Andrés: hablar demasiado, presumir o insistir. Relee el capítulo 7… y prueba a escuchar más."},
+    {"min": 0, "icon": "🦔", "title": "Alumno de Andrés Cortés", "text": "Silbas ópera, hablas de tu coche y no aceptas un no. ¡Cuidado, que Púas te espera! La buena noticia: todo se aprende. Empieza por preguntar y escuchar."}
+   ]
+  },
+  "m": {
+   "label": "Soy mujer",
+   "icon": "🙋‍♀️",
+   "pitch": "¿Sabes reconocer a un falso conquistador? ¿Y cómo reaccionar?",
+   "title": "¿Sabes reconocer a un conquistador?",
+   "cats": {"r": "Intuición", "h": "Humor", "e": "Límites"},
+   "questions": [
+    {"scene": "☕", "bg": "#f6d9b8", "place": "En un café", "q": "Un hombre se acerca y dice: «Hola, eres la mujer más bonita del planeta. ¿Vamos a mi casa?». ¿Qué piensas?", "cat": "r",
+     "options": [
+      {"t": "¡Qué romántico! Voy con él.", "p": 0, "f": "Cuidado: no te conoce. Un cumplido exagerado en el primer minuto es una señal de alarma."},
+      {"t": "Frase de manual. Le digo «no, gracias» y sigo con mi café.", "p": 3, "f": "Exacto. Tu café, tu tiempo, tu decisión."},
+      {"t": "Le pregunto su nombre para saber un poco más.", "p": 2, "f": "Bien, sin prisa. Pero lo de «vamos a mi casa» ya es una pista."},
+      {"t": "Me río tanto que me duele la barriga.", "p": 1, "f": "¡Como Sofía y Florencia en el capítulo 10! Reírse está bien, pero dile claramente que no."}
+     ]},
+    {"scene": "🗣️", "bg": "#d7e7f7", "place": "En la primera cita", "q": "En la primera cita, él habla de sí mismo durante una hora y no te hace ni una pregunta. ¿Qué significa?", "cat": "r",
+     "options": [
+      {"t": "Que está nervioso. Le doy una segunda oportunidad.", "p": 2, "f": "Puede ser. ¡A Leonardo le pasaba eso! Pero fíjate si en la segunda cita te escucha."},
+      {"t": "Que es un hombre muy interesante.", "p": 0, "f": "Interesante para él mismo, quizás. Una buena cita es una conversación, no un discurso."},
+      {"t": "Que no le interesa conocerme de verdad.", "p": 3, "f": "Buena intuición. Quien te quiere conocer, pregunta."},
+      {"t": "Que debo hablar todavía más que él.", "p": 1, "f": "Un concurso de monólogos no ayuda a nadie. Mejor, pregúntale algo."}
+     ]},
+    {"scene": "🚗", "bg": "#f4c9cf", "place": "El coche rojo", "q": "Te dice: «Soy rico, tengo un coche rojo y soy doctor en Amorología». ¿Qué haces?", "cat": "r",
+     "options": [
+      {"t": "Busco su nombre en internet, como Juan Carlos.", "p": 3, "f": "¡Excelente! Juan Carlos descubrió así que Andrés era Aníbal Benítez."},
+      {"t": "Me impresiona: ¡doctor en algo!", "p": 0, "f": "Su título es de una universidad de internet… y el coche, alquilado."},
+      {"t": "Le pregunto qué es la Amorología.", "p": 2, "f": "Buena pregunta. Si la respuesta es muy rara, ya sabes."},
+      {"t": "Le digo que prefiero las bicicletas.", "p": 1, "f": "Divertido, pero lo importante no es el coche: es si te dice la verdad."}
+     ]},
+    {"scene": "💬", "bg": "#dcd3f2", "place": "Por mensaje", "q": "Te escribe: «Perdóname, mi reina, esta noche tengo una reunión de negocios». Es la tercera vez esta semana. ¿Qué piensas?", "cat": "e",
+     "options": [
+      {"t": "Pobrecito, trabaja mucho.", "p": 0, "f": "Eso le escribió Andrés a Florencia… mientras cenaba con Sofía."},
+      {"t": "Algo no está claro. Hablo con él directamente.", "p": 3, "f": "Muy bien. Hablar claro protege tu tiempo y tu corazón."},
+      {"t": "Lo comento con mi hermana o con una amiga.", "p": 2, "f": "Buena idea: las hermanas de la novela descubrieron juntas la verdad."},
+      {"t": "Le mando cuarenta mensajes enojados.", "p": 1, "f": "Se entiende el enojo, pero una conversación tranquila funciona mejor."}
+     ]},
+    {"scene": "📱", "bg": "#cfeedd", "place": "El horóscopo", "q": "Una aplicación te dice cada mañana a quién decirle que sí y a quién que no. ¿La sigues?", "cat": "e",
+     "options": [
+      {"t": "Sí, los planetas nunca se equivocan.", "p": 0, "f": "En Sinea, los planetas eran Doña Destino con un puercoespín."},
+      {"t": "No. Mis decisiones las tomo yo.", "p": 3, "f": "Como dijo Sofía: «¡Nosotras decidimos a quién amar!»."},
+      {"t": "La leo para divertirme, pero decido yo.", "p": 2, "f": "Perfecto equilibrio: un poco de juego, cero obediencia."},
+      {"t": "La borro con mi hermana, al mismo tiempo.", "p": 3, "f": "¡Exactamente lo que hicieron Sofía y Florencia en el capítulo 10!"}
+     ]},
+    {"scene": "🙅‍♀️", "bg": "#fbe7a1", "place": "Un no claro", "q": "Le dices que no quieres otra cita. Él insiste: «Dame solo una oportunidad más». ¿Qué haces?", "cat": "e",
+     "options": [
+      {"t": "Repito mi no, tranquila y clara.", "p": 3, "f": "Muy bien. No necesitas dar explicaciones largas."},
+      {"t": "Digo que sí para no ser maleducada.", "p": 0, "f": "Decir que no no es maleducado. Tu tiempo también es importante."},
+      {"t": "Le digo que lo voy a pensar, aunque no es verdad.", "p": 1, "f": "Es más fácil hoy, pero mañana va a volver a preguntar."},
+      {"t": "Le cuento un chiste malo para cambiar de tema.", "p": 1, "f": "El humor ayuda, pero aquí lo mejor es un no claro."}
+     ]},
+    {"scene": "😂", "bg": "#f7d6c3", "place": "El chiste", "q": "Otro chico te cuenta un chiste malísimo, se pone rojo y te pregunta cómo estás. ¿Qué piensas?", "cat": "h",
+     "options": [
+      {"t": "Qué ridículo. Nunca más.", "p": 1, "f": "Puede ser… pero Valeria se casó con el de los chistes malos, ¡y es feliz!"},
+      {"t": "Es tímido, pero sincero. Le doy una oportunidad.", "p": 3, "f": "Muy buena intuición. Lo torpe y sincero vale más que lo perfecto y falso."},
+      {"t": "Le cuento un chiste todavía peor.", "p": 3, "f": "¡Ja! Así empieza una buena historia: riendo juntos."},
+      {"t": "Prefiero al del coche rojo.", "p": 0, "f": "Recuerda: el coche era alquilado."}
+     ]},
+    {"scene": "💍", "bg": "#f1e1b0", "place": "La gran pregunta", "q": "Tu novio se arrodilla con unos anillos que tú ya viste… en la mano de otro hombre. ¿Qué haces?", "cat": "h",
+     "options": [
+      {"t": "Le pregunto de dónde sacó los anillos.", "p": 3, "f": "¡Lo mismo que preguntó Sofía! «¿De dónde sacaste estos anillos?»."},
+      {"t": "Digo que sí: los anillos son bonitos.", "p": 0, "f": "Primero, la historia de los anillos. ¡Puede ser muy larga!"},
+      {"t": "Me río y le pido que me cuente toda la historia.", "p": 2, "f": "Con humor y curiosidad. Muy buena reacción."},
+      {"t": "Miro mi horóscopo antes de contestar.", "p": 0, "f": "En Sinea eso terminó en una epidemia de noes."}
+     ]}
+   ],
+   "results": [
+    {"min": 85, "icon": "🕵️‍♀️", "title": "Detectora de impostores", "text": "Nadie te engaña: reconoces las frases de manual, pones límites claros y, además, tienes humor. Como Sofía al final de la novela: decides tú."},
+    {"min": 60, "icon": "😎", "title": "Buen radar", "text": "Tu intuición funciona muy bien. A veces das una oportunidad de más, pero siempre te das cuenta a tiempo."},
+    {"min": 35, "icon": "📡", "title": "Radar en pruebas", "text": "Un perfume caro y una frase bonita todavía te pueden confundir. Pregunta más, busca en internet y escucha a tu hermana."},
+    {"min": 0, "icon": "🔮", "title": "Leyendo el horóscopo", "text": "Como Florencia al principio: el coche rojo y la app Destino deciden por ti. La buena noticia: ella también aprendió… y terminó casándose con el camarero."}
+   ]
+  }
+ }
+}
