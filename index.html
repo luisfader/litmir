@@ -394,6 +394,14 @@ article.chapter figure{margin:2em -20px;text-align:center}
 article.chapter figure.mid{margin:1.8em auto;max-width:520px}
 article.chapter figure.mid img{max-height:none;width:100%}
 article.chapter figure.audio{margin:1.8em auto;max-width:520px}
+article.chapter figure.wide{margin:1.8em auto;max-width:760px}article.chapter figure.wide img{max-height:none;width:100%}
+article.chapter figure.cap figcaption{font-size:.85em;opacity:.78;margin:.55em auto 0;font-style:italic;line-height:1.4;max-width:34em}
+article.chapter figure.mid.cap img,article.chapter figure.wide.cap img{border-radius:12px}
+article.chapter .gallery.cards{columns:auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));gap:12px 10px;margin:1.8em 0}
+article.chapter .gallery.cards figure{margin:0}article.chapter .gallery.cards figcaption{text-align:center;font-size:.75em}
+article.chapter .gallery.pair{columns:auto;display:grid;grid-template-columns:repeat(2,minmax(0,220px));justify-content:center;gap:16px;margin:1.8em 0}
+article.chapter .gallery.pages{columns:auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin:1.8em 0}
+article.chapter .gallery.trio{columns:auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;margin:1.8em 0}
 article.chapter figure.audio audio{width:100%}
 article.chapter figure.au-parts{display:flex;flex-direction:column;align-items:center;gap:8px;padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:var(--paper)}
 article.chapter figure.au-parts .au-go{font:inherit;font-size:.95em;color:var(--ink);background:var(--accent-soft);border:1px solid var(--accent);border-radius:999px;padding:10px 18px;cursor:pointer}
@@ -1398,8 +1406,9 @@ function renderText(md){
     if (/^(\*\s*){3,}$|^(-\s*){3,}$|^⁂$/.test(b)) return "<hr>";
     let lk = b.match(/^\[!\[([^\]]*)\]\(([^)\s]+)\)\]\(((?:#|https?:\/\/)[^)\s]*)\)$/);
     if (lk) return `<figure class="linked"><a href="${esc(lk[3])}"><img src="${esc(lk[2])}" alt="${esc(lk[1])}" loading="lazy"></a></figure>`;
-    if (/^:::\s*gallery\s*\n/i.test(b)) { const items = b.split("\n").slice(1).map(r => r.trim().match(/^!\[([^\]]*)\]\(([^)\s]+)\)$/)).filter(Boolean);
-      return `<div class="gallery">${items.map(x => `<figure><a href="${esc(x[2])}" target="_blank" rel="noopener"><img src="${esc(x[2])}" alt="${esc(x[1])}" loading="lazy"></a>${x[1] ? `<figcaption>${inline(x[1])}</figcaption>` : ""}</figure>`).join("")}</div>`; }
+    const gm = b.match(/^:::\s*gallery(?:\s+([a-z-]+))?\s*\n/i);
+    if (gm) { const items = b.split("\n").slice(1).map(r => r.trim().match(/^!\[([^\]]*)\]\(([^)\s]+)\)$/)).filter(Boolean);
+      return `<div class="gallery${gm[1] ? " " + esc(gm[1]) : ""}">${items.map(x => `<figure><a href="${esc(x[2])}" target="_blank" rel="noopener"><img src="${esc(x[2])}" alt="${esc(x[1])}" loading="lazy"></a>${x[1] ? `<figcaption>${inline(x[1])}</figcaption>` : ""}</figure>`).join("")}</div>`; }
     const ddm = b.match(/^:::\s*(arrastrar|unir)\s*\n([\s\S]*)$/i);
     if (ddm) return ddHTML(ddm[1].toLowerCase(), ddm[2]);
     const au = b.match(/^!audio\[([^\]]*)\]\(([^)\s]+)\)$/);
@@ -1408,6 +1417,9 @@ function renderText(md){
     if (auP) return `<figure class="audio au-parts" data-folder="${esc(auP[1])}" data-n="${auP[2]}"><button type="button" class="au-go">▶ <span>${au[1] ? inline(au[1]) : "♪"}</span></button><audio controls preload="none" hidden></audio><small class="au-st" aria-live="polite"></small></figure>`;
     if (au) return `<figure class="audio"><audio controls preload="none" src="${esc(audioUrl(au[2]))}"></audio>${au[1] ? `<figcaption>${inline(au[1])}</figcaption>` : ""}</figure>`;
     let m = b.match(/^!\[([^\]]*)\]\(([^)\s]+)\)$/);
+    /* ![m|Подпись](src) — картинка среднего размера с подписью; ![w|Подпись](src) — широкая с подписью */
+    const mcap = m && m[1].match(/^([mw])\|(.+)$/);
+    if (mcap) return `<figure class="${mcap[1] === "m" ? "mid" : "wide"} cap"><img src="${esc(m[2])}" alt="${esc(mcap[2])}" loading="lazy"><figcaption>${inline(mcap[2])}</figcaption></figure>`;
     if (m) return m[1] === "m" ? `<figure class="mid"><img src="${esc(m[2])}" alt="" loading="lazy"></figure>` : `<figure><img src="${esc(m[2])}" alt="${esc(m[1])}" loading="lazy"></figure>`;
     if (/^##\s/.test(b)) return "<h2>" + inline(b.replace(/^#+\s*/,"")) + "</h2>";
     if (/^#{3,6}\s/.test(b)) return "<h3>" + inline(b.replace(/^#+\s*/,"")) + "</h3>";
