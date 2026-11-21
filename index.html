@@ -950,7 +950,7 @@ body.tr-lock{overflow:hidden}
 .ex-open:hover .ex-ic i{transform:translateY(-2px) rotate(-6deg)}
 .ex-open:focus-visible{outline:2px solid var(--accent);outline-offset:-4px;border-radius:18px}
 .ex-ic{display:flex}.ex-ic i{font-style:normal;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font-size:20px;color:#fff;background:var(--accent);border:2.5px solid var(--paper);margin-left:-12px;box-shadow:0 4px 12px rgba(0,0,0,.18);transition:transform .2s}.ex-ic i:first-child{margin-left:0}
-.ex-ic .ex-i-compass{background:linear-gradient(135deg,#e3b65a,#8a5a1c)}.ex-ic .ex-i-music{background:linear-gradient(135deg,#9b6bd6,#6a3fb0)}.ex-ic .ex-i-games{background:linear-gradient(135deg,#f6a53a,#e0632a)}.ex-ic .ex-i-gallery{background:linear-gradient(135deg,#3fb6a8,#2a7f9e)}.ex-ic .ex-i-riddles{background:linear-gradient(135deg,#e9637a,#b8325a);font-weight:800}.ex-ic .ex-i-notebook{background:linear-gradient(135deg,#7a5238,#3a2418)}.ex-ic .ex-i-who{background:linear-gradient(135deg,#e86a5c,#3fbfb0)}.ex-ic .ex-i-quiz{background:linear-gradient(135deg,#4a5568,#1a202c)}.ex-ic .ex-i-why{background:linear-gradient(135deg,#7a3e95,#4d2160);font-weight:800}.ex-ic .ex-i-queen{background:linear-gradient(135deg,#f2c14e,#c98a1b)}.ex-ic .ex-i-fox{background:linear-gradient(135deg,#f08a3c,#c4521d)}.ex-ic .ex-i-map{background:linear-gradient(135deg,#c9a66b,#7a5a2a)}.ex-ic .ex-i-diary{background:linear-gradient(135deg,#6a4b9a,#2f2140)}.ex-ic .ex-i-mendoza{background:linear-gradient(135deg,#7a2e5a,#3f7a34)}.ex-ic .ex-i-clip{background:linear-gradient(135deg,#0b3d1e,#39b86a)}.ex-ic .ex-i-cube{background:linear-gradient(135deg,#e0453a,#2f6fd6)}.ex-ic .ex-i-hack{background:linear-gradient(135deg,#07110b,#39e27a)}
+:is(.ex-ic,.ex-menu) .ex-i-compass{background:linear-gradient(135deg,#e3b65a,#8a5a1c)}:is(.ex-ic,.ex-menu) .ex-i-music{background:linear-gradient(135deg,#9b6bd6,#6a3fb0)}:is(.ex-ic,.ex-menu) .ex-i-games{background:linear-gradient(135deg,#f6a53a,#e0632a)}:is(.ex-ic,.ex-menu) .ex-i-gallery{background:linear-gradient(135deg,#3fb6a8,#2a7f9e)}:is(.ex-ic,.ex-menu) .ex-i-riddles{background:linear-gradient(135deg,#e9637a,#b8325a);font-weight:800}:is(.ex-ic,.ex-menu) .ex-i-notebook{background:linear-gradient(135deg,#7a5238,#3a2418)}:is(.ex-ic,.ex-menu) .ex-i-who{background:linear-gradient(135deg,#e86a5c,#3fbfb0)}:is(.ex-ic,.ex-menu) .ex-i-quiz{background:linear-gradient(135deg,#4a5568,#1a202c)}:is(.ex-ic,.ex-menu) .ex-i-why{background:linear-gradient(135deg,#7a3e95,#4d2160);font-weight:800}:is(.ex-ic,.ex-menu) .ex-i-queen{background:linear-gradient(135deg,#f2c14e,#c98a1b)}:is(.ex-ic,.ex-menu) .ex-i-fox{background:linear-gradient(135deg,#f08a3c,#c4521d)}:is(.ex-ic,.ex-menu) .ex-i-map{background:linear-gradient(135deg,#c9a66b,#7a5a2a)}:is(.ex-ic,.ex-menu) .ex-i-diary{background:linear-gradient(135deg,#6a4b9a,#2f2140)}:is(.ex-ic,.ex-menu) .ex-i-mendoza{background:linear-gradient(135deg,#7a2e5a,#3f7a34)}:is(.ex-ic,.ex-menu) .ex-i-clip{background:linear-gradient(135deg,#0b3d1e,#39b86a)}:is(.ex-ic,.ex-menu) .ex-i-cube{background:linear-gradient(135deg,#e0453a,#2f6fd6)}:is(.ex-ic,.ex-menu) .ex-i-hack{background:linear-gradient(135deg,#07110b,#39e27a)}
 .ex-qz h3{font:400 22px var(--serif);color:var(--ink);margin:2px 0 8px}.ex-qz .qn{font:600 12px var(--sans);color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin:0 0 6px}.ex-qz .qbar{height:4px;background:var(--bg);border-radius:4px;margin:0 0 14px;overflow:hidden}.ex-qz .qbar i{display:block;height:100%;background:var(--accent);transition:width .3s}
 .ex-qz .qq{font:500 18px/1.4 var(--serif);color:var(--ink);margin:0 0 12px}.ex-qz .qa{display:grid;gap:8px}.ex-qz .qa button{text-align:left;font:15px/1.4 var(--sans);color:var(--ink);background:var(--bg);border:1px solid transparent;border-radius:12px;padding:12px 14px;cursor:pointer}.ex-qz .qa button:hover{border-color:var(--accent)}
 .ex-qz .qa button:disabled{cursor:default}.ex-qz .qa button.ok{border-color:#2f8a57;background:rgba(47,138,87,.14)}.ex-qz .qa button.no{border-color:#c0392b;background:rgba(192,57,43,.12)}.ex-qz .qa button.dim{opacity:.55}
@@ -969,9 +969,56 @@ body.tr-lock{overflow:hidden}
 .ex-lbl{flex:1;display:flex;flex-direction:column;gap:2px;font-family:var(--sans)}.ex-lbl b{font-size:17px;color:var(--accent)}.ex-lbl small{font-size:13px;color:var(--muted)}
 .ex-ch{font-size:24px;color:#fff;background:var(--accent);width:36px;height:36px;border-radius:50%;display:grid;place-items:center;transition:transform .2s;line-height:1;flex:none;box-shadow:0 4px 12px color-mix(in srgb,var(--accent) 40%,transparent)}.ex.on .ex-ch{transform:rotate(90deg)}
 .ex-body{border-top:1px solid var(--line);padding:14px 16px 18px}
-.ex-tabs{display:flex;gap:6px;background:var(--bg);border-radius:999px;padding:4px;margin-bottom:14px}.ex-tabs{overflow-x:auto;scrollbar-width:none;overscroll-behavior-x:contain}.ex-tabs::-webkit-scrollbar{display:none}.ex-tabs button{flex:1 0 auto}
-.ex-tabs button{flex:1;font:600 13px var(--sans);border:0;border-radius:999px;padding:9px 6px;background:transparent;color:var(--muted);cursor:pointer;white-space:nowrap}
-.ex-tabs button[aria-selected="true"]{background:var(--paper);color:var(--accent);box-shadow:0 1px 4px rgba(0,0,0,.08)}
+/* Menú de secciones: una fila por sección, una arriba de la otra; al tocar una, se abre sola con «‹ Todas las secciones» */
+.ex-menu{display:grid;gap:10px}.ex-menu[hidden]{display:none}
+.ex-mh{font:600 12px var(--sans);text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:2px 2px 2px}
+.ex-mi{all:unset;box-sizing:border-box;display:flex;align-items:center;gap:14px;width:100%;padding:12px 14px;border-radius:16px;background:var(--paper);border:1.5px solid var(--line);cursor:pointer;transition:transform .15s,border-color .15s,box-shadow .15s}
+.ex-mi:hover{transform:translateY(-1px);border-color:color-mix(in srgb,var(--accent) 55%,var(--line));box-shadow:0 6px 18px color-mix(in srgb,var(--accent) 16%,transparent)}
+.ex-mi:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.ex-mic{font-style:normal;flex:none;width:48px;height:48px;border-radius:14px;display:grid;place-items:center;font-size:22px;color:#fff;background:var(--accent);box-shadow:0 4px 12px rgba(0,0,0,.16)}
+.ex-mic.ex-s-map{background:linear-gradient(135deg,#c9a66b,#7a5a2a)}.ex-mic.ex-s-audiobook{background:radial-gradient(circle at 70% 25%,#3a5fc8,#0b1430 70%);box-shadow:0 4px 14px rgba(20,35,90,.45),inset 0 0 0 1.5px rgba(216,180,106,.6)}
+.ex-mt{flex:1;display:flex;flex-direction:column;gap:3px;min-width:0}.ex-mt b{font:600 16.5px var(--sans);color:var(--ink)}.ex-mt small{font:13.5px/1.35 var(--sans);color:var(--muted)}
+.ex-mgo{flex:none;font-size:22px;color:var(--accent);width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:color-mix(in srgb,var(--accent) 12%,transparent)}
+.ex-back{all:unset;box-sizing:border-box;display:inline-flex;align-items:center;gap:6px;font:600 14px var(--sans);color:var(--accent);padding:8px 14px;border-radius:999px;background:color-mix(in srgb,var(--accent) 10%,transparent);cursor:pointer;margin:0 0 14px}.ex-back[hidden]{display:none}.ex-back:hover{background:color-mix(in srgb,var(--accent) 18%,transparent)}
+.ex-pane[hidden]{display:none}
+/* Audionovela — cielo de noche de Natalia: azul noche, plata y oro */
+.ab{--ab-g:#d8b46a;--ab-s:#c9d3ea;--ab-t:#e9edf8;--ab-m:#9aa8cc;position:relative;overflow:hidden;border-radius:20px;padding:22px 20px 24px;color:var(--ab-t);background:radial-gradient(120% 70% at 80% 0%,#24387a 0%,rgba(36,56,122,0) 60%),linear-gradient(180deg,#060b1e 0%,#0c1638 45%,#142257 100%);box-shadow:0 18px 40px rgba(8,14,40,.45),inset 0 0 0 1px rgba(216,180,106,.25);font-family:var(--sans)}
+.ab-stars{position:absolute;inset:0;pointer-events:none;opacity:.9;background-image:radial-gradient(1.2px 1.2px at 12% 18%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 27% 62%,#dfe6ff 50%,transparent 51%),radial-gradient(1.5px 1.5px at 41% 9%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 58% 34%,#cfd8ff 50%,transparent 51%),radial-gradient(1.3px 1.3px at 73% 71%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 88% 44%,#e8ecff 50%,transparent 51%),radial-gradient(1px 1px at 6% 83%,#fff 50%,transparent 51%),radial-gradient(1.4px 1.4px at 50% 90%,#f3e2b8 50%,transparent 51%),radial-gradient(1px 1px at 95% 92%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 34% 40%,#fff 50%,transparent 51%);background-size:260px 260px;animation:abTw 6s ease-in-out infinite alternate}
+@keyframes abTw{to{opacity:.55}}
+.ab-moon{position:absolute;top:-38px;right:-30px;width:150px;height:150px;border-radius:50%;pointer-events:none;background:radial-gradient(circle at 40% 40%,#fdf6e3 0 22%,rgba(253,246,227,.35) 30%,rgba(120,150,230,.12) 52%,transparent 70%)}
+.ab-one .ab-moon{top:-70px;right:auto;left:42%;opacity:.55}.ab>*:not(.ab-stars):not(.ab-moon){position:relative}.ab-nav span{text-shadow:0 1px 6px rgba(5,9,26,.9)}
+@media (prefers-reduced-motion:reduce){.ab-stars{animation:none}}
+.ab h3{font:400 30px/1.15 var(--serif);color:#fff;margin:2px 0 8px;letter-spacing:.01em}.ab h4{font:600 12px var(--sans);text-transform:uppercase;letter-spacing:.12em;color:var(--ab-g);margin:0 0 10px}
+.ab-hd{display:flex;gap:18px;align-items:flex-start;margin-bottom:20px}
+.ab-cv{flex:none;width:118px;border-radius:10px;box-shadow:0 10px 26px rgba(0,0,0,.5),0 0 0 1px rgba(216,180,106,.55);display:block}
+.ab-k{font:600 11.5px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--ab-g);margin:2px 0 4px}
+.ab-in{font:15px/1.6 var(--sans);color:var(--ab-s);margin:0 0 12px}.ab-in em{color:#fff}
+.ab-pr{display:flex;align-items:center;gap:10px;font:600 12.5px var(--sans);color:var(--ab-m);margin:0}.ab-bar{flex:1;max-width:160px;height:5px;border-radius:5px;background:rgba(255,255,255,.12);overflow:hidden}.ab-bar i{display:block;height:100%;background:linear-gradient(90deg,var(--ab-g),#f3dca0);border-radius:5px}
+.ab-list{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.ab-ep{all:unset;box-sizing:border-box;width:100%;display:flex;align-items:center;gap:14px;padding:10px 14px 10px 10px;border-radius:16px;cursor:pointer;background:linear-gradient(135deg,rgba(255,255,255,.07),rgba(255,255,255,.025));border:1px solid rgba(201,211,234,.16);transition:transform .15s,border-color .15s,background .15s}
+.ab-ep:hover{transform:translateY(-1px);border-color:rgba(216,180,106,.6);background:linear-gradient(135deg,rgba(216,180,106,.14),rgba(255,255,255,.04))}.ab-ep:focus-visible{outline:2px solid var(--ab-g);outline-offset:2px}
+.ab-th{position:relative;flex:none;width:96px;height:72px;border-radius:11px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,.4)}.ab-th img{width:100%;height:100%;object-fit:cover;display:block}
+.ab-th b{position:absolute;left:6px;bottom:5px;font:700 12px var(--sans);color:#0b1430;background:var(--ab-g);border-radius:6px;padding:1px 6px}
+.ab-et{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}.ab-et small{font:600 11.5px var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--ab-m)}.ab-et strong{font:400 19px/1.25 var(--serif);color:#fff}.ab-et em{font:italic 13px var(--sans);color:var(--ab-s);opacity:.85;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ab-st{flex:none;font:600 12.5px var(--sans);color:var(--ab-g);border:1px solid rgba(216,180,106,.5);border-radius:999px;padding:6px 11px;white-space:nowrap}.ab-ep.done .ab-st{color:#9fd8b4;border-color:rgba(159,216,180,.45)}
+.ab-note{font:italic 13px/1.5 var(--sans);color:var(--ab-m);margin:18px 2px 0;text-align:center}
+.ab-nav{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px}.ab-nav span{font:600 12px var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--ab-m)}
+.ab-all{all:unset;cursor:pointer;font:600 14px var(--sans);color:var(--ab-g);padding:7px 14px;border-radius:999px;background:rgba(216,180,106,.12);border:1px solid rgba(216,180,106,.35)}.ab-all:hover{background:rgba(216,180,106,.22)}
+.ab-hero{position:relative;margin:0 0 16px;border-radius:16px;overflow:hidden;box-shadow:0 12px 30px rgba(0,0,0,.5),0 0 0 1px rgba(216,180,106,.3)}.ab-hero img{display:block;width:100%;height:auto;cursor:zoom-in}
+.ab-hero figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 18px 14px;background:linear-gradient(180deg,transparent,rgba(5,9,26,.92))}.ab-hero small{font:600 11.5px var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--ab-g)}.ab-hero h3{margin:2px 0 2px;font-size:28px}.ab-hero em{font:italic 13.5px var(--sans);color:var(--ab-s)}
+.ab-pl{display:flex;align-items:center;gap:14px;margin:0 0 18px;padding:14px 16px;border-radius:18px;background:rgba(255,255,255,.06);border:1px solid rgba(201,211,234,.16)}
+.ab-go{all:unset;cursor:pointer;flex:none;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;font-size:20px;color:#0b1430;background:radial-gradient(circle at 35% 30%,#fbe9bd,var(--ab-g) 60%,#a67f37);box-shadow:0 6px 18px rgba(216,180,106,.35),0 0 0 4px rgba(216,180,106,.15)}.ab-go.on{animation:abPulse 2.2s ease-in-out infinite}.ab-go:focus-visible{outline:2px solid #fff;outline-offset:3px}
+@keyframes abPulse{50%{box-shadow:0 6px 22px rgba(216,180,106,.55),0 0 0 9px rgba(216,180,106,.08)}}
+.ab-tl{flex:1;min-width:0}.ab-rg{--p:0%;width:100%;-webkit-appearance:none;appearance:none;height:6px;border-radius:6px;background:linear-gradient(90deg,var(--ab-g) var(--p),rgba(255,255,255,.15) var(--p));outline:none;margin:6px 0 8px;cursor:pointer}
+.ab-rg::-webkit-slider-thumb{-webkit-appearance:none;width:16px;height:16px;border-radius:50%;background:#fff;box-shadow:0 0 0 3px rgba(216,180,106,.5)}.ab-rg::-moz-range-thumb{width:16px;height:16px;border:0;border-radius:50%;background:#fff;box-shadow:0 0 0 3px rgba(216,180,106,.5)}
+.ab-tm{display:flex;justify-content:space-between;align-items:center;font:600 12.5px var(--sans);color:var(--ab-m)}.ab-sp{all:unset;cursor:pointer;font:700 12px var(--sans);color:var(--ab-s);padding:3px 9px;border-radius:999px;border:1px solid rgba(201,211,234,.3)}
+.ab-tx{padding:18px 18px 6px;border-radius:16px;background:rgba(4,8,24,.45);border:1px solid rgba(201,211,234,.12);margin-bottom:14px}.ab-tx p{font:17px/1.75 var(--serif);color:var(--ab-t);margin:0 0 14px}
+.ab-cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px}.ab-cd{padding:14px 16px;border-radius:14px;background:linear-gradient(135deg,rgba(216,180,106,.1),rgba(255,255,255,.03));border:1px solid rgba(216,180,106,.28)}.ab-cd p{font:14.5px/1.55 var(--sans);color:var(--ab-s);margin:0}
+.ab-ws{display:flex;flex-wrap:wrap;gap:6px}.ab-ws span{font:600 13.5px var(--sans);color:#fff;padding:4px 10px;border-radius:999px;background:rgba(58,95,200,.35);border:1px solid rgba(201,211,234,.25)}
+.ab-read{display:block;text-align:center;font:600 14.5px var(--sans);color:var(--ab-g);text-decoration:none;padding:11px;border-radius:12px;border:1px dashed rgba(216,180,106,.5);margin-bottom:14px}.ab-read:hover{background:rgba(216,180,106,.1)}
+.ab-pn{display:grid;grid-template-columns:1fr 1fr;gap:10px}.ab-pn button{all:unset;box-sizing:border-box;cursor:pointer;display:flex;flex-direction:column;gap:3px;padding:12px 14px;border-radius:14px;font:600 14px var(--sans);color:var(--ab-g);background:rgba(255,255,255,.05);border:1px solid rgba(201,211,234,.15)}.ab-pn .ab-next{text-align:right;align-items:flex-end}.ab-pn button:hover{border-color:rgba(216,180,106,.55)}.ab-pn small{font:400 13px var(--serif);color:var(--ab-s);font-size:14px}
+@media (max-width:560px){.ab{padding:18px 14px 20px;border-radius:16px}.ab-hd{flex-direction:column;align-items:center;text-align:center}.ab-cv{width:150px}.ab-pr{justify-content:center}.ab-th{width:78px;height:60px}.ab-et strong{font-size:16.5px}.ab-st{display:none}.ab-cards{grid-template-columns:1fr}.ab-hero h3{font-size:22px}.ab-tx p{font-size:16px}.ab-go{width:52px;height:52px}}
+.ex-pane .ab{margin:0 -2px}
 .ex-p{font:14px/1.55 var(--sans);color:var(--muted);margin:0 0 12px}.ex-p a{color:var(--accent);font-weight:600;text-decoration:none}.ex-p b{color:var(--ink);font-weight:600}
 .ex-tracks{list-style:none;margin:0 0 10px;padding:0;display:flex;flex-direction:column;gap:2px}
 .ex-tr{all:unset;box-sizing:border-box;width:100%;display:flex;align-items:center;gap:12px;padding:9px 10px;border-radius:12px;cursor:pointer;font-family:var(--sans)}
@@ -1004,7 +1051,7 @@ body.tr-lock{overflow:hidden}
 .ex-note{max-width:680px;margin:0 auto 18px;padding:12px 16px;border:1px dashed var(--line);border-radius:12px;font:14px var(--sans);color:var(--muted);text-align:center}
 .ex-note a{color:var(--accent);font-weight:600;text-decoration:none}
 @media (max-width:720px){.ex-note{margin:0 16px 18px}}
-@media (max-width:560px){.ex-games{grid-template-columns:1fr 1fr}.ex-tabs button{font-size:12px}.ex-gal{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:560px){.ex-games{grid-template-columns:1fr 1fr}.ex-mi{padding:11px 12px}.ex-mic{width:44px;height:44px;font-size:20px}.ex-gal{grid-template-columns:repeat(3,1fr)}}
 .soundtrack-panel{margin:20px 0 24px;padding:19px 22px;border:1px solid var(--line);border-radius:15px;background:var(--paper)}
 .soundtrack-panel h2{margin:0 0 8px;font-size:21px}
 .soundtrack-panel p{font-size:14px;color:var(--muted);line-height:1.6;margin:0 0 12px}
@@ -2460,6 +2507,8 @@ const exT = l => XT[l] || XT.en;
 const exSec = (n, k) => /^sec\d+$/.test(k) ? (n.sections || [])[+k.slice(3)] : null;
 const exIc = (n, k) => { const s = exSec(n, k); return s ? (s.icon || "✦") : k === "quiz" && n.quizIcon ? n.quizIcon : k === "clip" && n.clip ? (n.clip.icon || "🎵") : k === "hack" && n.hack ? (n.hack.icon || "🔓") : EX_IC[k]; };
 const exLb = (n, T, k) => { const s = exSec(n, k); return s ? s.title : k === "compass" ? ({es:"La brújula",ru:"Компас",it:"La bussola"}[n.lang] || "Compass") : k === "quiz" && n.quizTitle ? n.quizTitle : k === "clip" && n.clip ? n.clip.title : k === "hack" && n.hack ? (n.hack.title || "El hackeo") : T[k]; };
+const EX_ALL = {it:{all:"Tutte le sezioni", pick:"Scegli una sezione"}, es:{all:"Todas las secciones", pick:"Elegí una sección"}, ru:{all:"Все разделы", pick:"Выберите раздел"}, en:{all:"All sections", pick:"Choose a section"}, pt:{all:"Todas as seções", pick:"Escolha uma seção"}, fr:{all:"Toutes les sections", pick:"Choisis une section"}, tr:{all:"Tüm bölümler", pick:"Bir bölüm seç"}, cs:{all:"Všechny oddíly", pick:"Vyber oddíl"}, sr:{all:"Сви одељци", pick:"Изабери одељак"}, de:{all:"Alle Bereiche", pick:"Wähle einen Bereich"}};
+const exAll = l => EX_ALL[l] || EX_ALL.en;
 const EX_IC = {compass:"🧭", music:"♫", games:"🎮", gallery:"▦", riddles:"?", who:"💬", notebook:"📓", quiz:"🕵", why:"🍇", queen:"👑", fox:"🦊", map:"🗺", diary:"✒", mendoza:"📍", belgrade:"🌙", cube:"🧊"};
 let exReturn = null, exJump = null;
 function exTabs(n){ const t = []; if (n.soundtrack && n.soundtrack.length) t.push("music"); if (n.compass) t.push("compass"); if (n.clip) t.push("clip"); (n.sections || []).forEach((x, i) => t.push("sec" + i)); if (n.runner || n.fight || n.moto) t.push("games"); if (n.riddles) t.push("riddles"); if (n.whoSaid) t.push("who"); if (n.notebook) t.push("notebook"); if (n.quiz) t.push("quiz"); if (n.hack) t.push("hack"); if (n.why) t.push("why"); if (n.queen) t.push("queen"); if (n.fox) t.push("fox"); if (n.moscowMap) t.push("map"); if (n.diary) t.push("diary"); if (n.mendozaMap) t.push("mendoza"); if (n.belgradeMap) t.push("belgrade"); if (n.cube) t.push("cube"); if (n.gallery) t.push("gallery"); return t; }
@@ -2472,21 +2521,26 @@ function extrasHTML(n){
       <span class="ex-lbl"><b>${esc(T.btn)}</b><small>${tabs.map(k => esc(exLb(n, T, k))).join(" · ")}</small></span>
       <span class="ex-ch" aria-hidden="true">›</span></button>
     <div class="ex-body" id="exBody" hidden>
-      ${tabs.length > 1 ? `<div class="ex-tabs" role="tablist">${tabs.map(k => `<button type="button" role="tab" data-ex="${k}" aria-selected="false">${exIc(n, k)} ${esc(exLb(n, T, k))}</button>`).join("")}</div>` : ""}
+      ${tabs.length > 1 ? `<nav class="ex-menu" aria-label="${esc(T.btn)}"><p class="ex-mh">${esc(exAll(n.lang).pick)}</p>${tabs.map(k => { const d = (exSec(n, k) || {}).desc;
+        return `<button type="button" class="ex-mi" data-ex="${k}"><i class="ex-mic ex-i-${k}${exSec(n, k) && exSec(n, k).style ? " ex-s-" + esc(exSec(n, k).style) : ""}" aria-hidden="true">${exIc(n, k)}</i><span class="ex-mt"><b>${esc(exLb(n, T, k))}</b>${d ? `<small>${esc(d)}</small>` : ""}</span><span class="ex-mgo" aria-hidden="true">›</span></button>`; }).join("")}</nav>
+      <button type="button" class="ex-back" hidden>‹ ${esc(exAll(n.lang).all)}</button>` : ""}
       <div class="ex-pane" id="exPane"></div></div></section>`;
 }
 function readChapters(n){ const d = new Set(store.get("done:" + n.slug, [])), last = store.get("last:" + n.slug, 0) || 0; return ch => d.has(ch) || ch < last; }
 function setupExtras(n){
   const box = document.getElementById("ex"); if (!box) return;
   const tabs = exTabs(n), body = box.querySelector(".ex-body"), pane = box.querySelector("#exPane"), opener = box.querySelector(".ex-open"), T = exT(n.lang);
+  const menu = box.querySelector(".ex-menu"), backB = box.querySelector(".ex-back");
+  const showMenu = () => { if (!menu) return; menu.hidden = false; backB.hidden = true; pane.innerHTML = ""; pane.hidden = true; };
+  if (backB) backB.onclick = () => { showMenu(); box.scrollIntoView({block:"start", behavior:"smooth"}); };
   const show = k => {
     store.set("exTab:" + n.slug, k);
-    box.querySelectorAll("[data-ex]").forEach(b => b.setAttribute("aria-selected", b.dataset.ex === k));
+    if (menu) { menu.hidden = true; backB.hidden = false; } pane.hidden = false;
     if (exSec(n, k)) exSection(n, exSec(n, k), pane); else if (k === "compass") exCompass(n, pane); else if (k === "music") exMusic(n, pane, T); else if (k === "games") exGames(n, pane, T); else if (k === "riddles") exRiddles(n, pane, T); else if (k === "who") exWho(n, pane); else if (k === "notebook") exNotebook(n, pane); else if (k === "quiz") exQuiz(n, pane, T); else if (k === "why" || k === "queen" || k === "fox") exFader(k, n, pane); else if (k === "map" || k === "diary") exAnomal(k, n, pane); else if (k === "mendoza") exMendoza(n, pane); else if (k === "belgrade") exBelgrade(n, pane); else if (k === "clip") exClip(n, pane); else if (k === "hack") exHack(n, pane); else if (k === "cube") exCube(n, pane); else exGallery(n, pane, T);
   };
-  const open = (yes, k) => { body.hidden = !yes; box.classList.toggle("on", yes); opener.setAttribute("aria-expanded", yes); if (yes) show(k || (tabs.includes(store.get("exTab:" + n.slug)) ? store.get("exTab:" + n.slug) : tabs[0])); };
+  const open = (yes, k) => { body.hidden = !yes; box.classList.toggle("on", yes); opener.setAttribute("aria-expanded", yes); if (yes) { if (k && tabs.includes(k)) show(k); else if (tabs.length === 1) show(tabs[0]); else showMenu(); } };
   opener.onclick = () => open(body.hidden);
-  box.querySelectorAll("[data-ex]").forEach(b => b.onclick = () => show(b.dataset.ex));
+  box.querySelectorAll("[data-ex]").forEach(b => b.onclick = () => { show(b.dataset.ex); box.scrollIntoView({block:"start", behavior:"smooth"}); });
   if (exReturn === n.slug) { exReturn = null; open(true, "games"); setTimeout(() => box.scrollIntoView({block:"start"}), 50); }
   else if (exJump && exJump.slug === n.slug) { const k = exJump.k; exJump = null; if (tabs.includes(k)) { open(true, k); setTimeout(() => box.scrollIntoView({block:"start"}), 50); } }
 }
@@ -2953,6 +3007,63 @@ function setupConquista(pane, D, n){
   };
   start();
 }
+/* Audionovela (sec.style "audiobook"): novels/<slug>/<file>.json — {title, subtitle, cover, intro, note, ui, episodes:[{n, title, lettura, img, audio, duration, text:[…], words:[…], fact, read, ch}]}.
+   Primero la lista de episodios; cada episodio se abre solo, con su reproductor, el texto y «anterior / siguiente». Colores: cielo de noche (Natalia).
+   Episodios escuchados: ab:<slug> en el navegador. El audio va en luisfader/podcasts (audioUrl). */
+function setupAudiobook(pane, D, n){
+  const U = Object.assign({episode:"Episode", all:"All episodes", prev:"Previous", next:"Next", words:"Words", fact:"Did you know?", text:"Text", listened:"Listened", new:"New", play:"Play", pause:"Pause", count:"{n} episodes"}, D.ui || {});
+  const E = D.episodes || [], key = "ab:" + n.slug;
+  const heard = () => new Set(store.get(key, []));
+  const mark = i => { const h = heard(); if (!h.has(i)) { h.add(i); store.set(key, [...h]); } };
+  const fmt = t => !isFinite(t) ? "0:00" : Math.floor(t / 60) + ":" + String(Math.floor(t % 60)).padStart(2, "0");
+  const sky = `<div class="ab-stars" aria-hidden="true"></div><div class="ab-moon" aria-hidden="true"></div>`;
+  const stop = () => pane.querySelectorAll(".ab audio").forEach(a => { try { a.pause(); } catch {} });
+  const top = () => { const r = pane.closest(".ex") || pane; r.scrollIntoView({block:"start", behavior:"smooth"}); };
+  const list = () => {
+    stop(); const h = heard();
+    pane.innerHTML = `<div class="ab">${sky}
+      <header class="ab-hd">${D.cover ? `<img class="ab-cv" src="${esc(D.cover)}" alt="">` : ""}
+        <div class="ab-ht"><p class="ab-k">✦ ${esc(D.subtitle || "")}</p><h3>${esc(D.title || "")}</h3>
+          <p class="ab-in">${inline(D.intro || "")}</p>
+          <p class="ab-pr"><span>${esc(U.count.replace("{n}", E.length))}</span><span class="ab-bar"><i style="width:${E.length ? Math.round(h.size / E.length * 100) : 0}%"></i></span><span>${h.size}/${E.length} ${esc(U.listened.toLowerCase())}</span></p></div></header>
+      <ol class="ab-list">${E.map((e, i) => `<li><button type="button" class="ab-ep${h.has(i) ? " done" : ""}" data-i="${i}">
+        <span class="ab-th"><img src="${esc(e.img)}" alt="" loading="lazy"><b>${String(e.n).padStart(2, "0")}</b></span>
+        <span class="ab-et"><small>${esc(U.episode)} ${e.n} · ${esc(e.duration || "")}</small><strong>${esc(e.title)}</strong><em>${esc(e.lettura || "")}</em></span>
+        <span class="ab-st">${h.has(i) ? `✓ ${esc(U.listened)}` : `▶ ${esc(U.play)}`}</span></button></li>`).join("")}</ol>
+      ${D.note ? `<p class="ab-note">${inline(D.note)}</p>` : ""}</div>`;
+    pane.querySelectorAll(".ab-ep").forEach(b => b.onclick = () => { ep(+b.dataset.i); top(); });
+  };
+  const ep = i => {
+    stop(); const e = E[i], h = heard();
+    pane.innerHTML = `<div class="ab ab-one">${sky}
+      <div class="ab-nav"><button type="button" class="ab-all">‹ ${esc(U.all)}</button><span>${esc(U.episode)} ${e.n} / ${E.length}</span></div>
+      <figure class="ab-hero"><img src="${esc(e.img)}" alt=""><figcaption><small>${esc(U.episode)} ${e.n}${h.has(i) ? ` · ✓ ${esc(U.listened)}` : ""}</small><h3>${esc(e.title)}</h3><em>${esc(e.lettura || "")}</em></figcaption></figure>
+      <figure class="audio ab-pl"><audio preload="metadata" src="${esc(audioUrl(e.audio))}"></audio>
+        <button type="button" class="ab-go" aria-label="${esc(U.play)}">▶</button>
+        <div class="ab-tl"><input type="range" class="ab-rg" min="0" max="1000" value="0" aria-label="${esc(e.title)}"><div class="ab-tm"><span class="ab-cur">0:00</span><button type="button" class="ab-sp" title="Velocità">1×</button><span class="ab-dur">${esc(e.duration || "0:00")}</span></div></div></figure>
+      <section class="ab-tx"><h4>${esc(U.text)}</h4>${(e.text || []).map(t => `<p>${inline(t)}</p>`).join("")}</section>
+      ${(e.words && e.words.length) || e.fact ? `<div class="ab-cards">${e.words && e.words.length ? `<div class="ab-cd"><h4>${esc(U.words)}</h4><p class="ab-ws">${e.words.map(w => `<span>${esc(w)}</span>`).join("")}</p></div>` : ""}${e.fact ? `<div class="ab-cd"><h4>${esc(U.fact)}</h4><p>${inline(e.fact)}</p></div>` : ""}</div>` : ""}
+      ${e.ch ? `<a class="ab-read" href="${esc(chapterHref(n, e.ch))}">📖 ${esc(e.read || "")}</a>` : ""}
+      <div class="ab-pn">${i > 0 ? `<button type="button" class="ab-prev">‹ ${esc(U.prev)}<small>${esc(E[i - 1].title)}</small></button>` : "<span></span>"}${i < E.length - 1 ? `<button type="button" class="ab-next">${esc(U.next)} ›<small>${esc(E[i + 1].title)}</small></button>` : "<span></span>"}</div></div>`;
+    const a = pane.querySelector(".ab-pl audio"), go = pane.querySelector(".ab-go"), rg = pane.querySelector(".ab-rg"), cur = pane.querySelector(".ab-cur"), dur = pane.querySelector(".ab-dur"), sp = pane.querySelector(".ab-sp");
+    const speeds = [1, 0.85, 1.25]; let si = 0, drag = false;
+    go.onclick = () => { if (a.paused) a.play().catch(() => {}); else a.pause(); };
+    a.onplay = () => { go.textContent = "❚❚"; go.setAttribute("aria-label", U.pause); go.classList.add("on"); };
+    a.onpause = () => { go.textContent = "▶"; go.setAttribute("aria-label", U.play); go.classList.remove("on"); };
+    a.onloadedmetadata = () => { dur.textContent = fmt(a.duration); };
+    a.ontimeupdate = () => { if (!drag && a.duration) rg.value = Math.round(a.currentTime / a.duration * 1000); cur.textContent = fmt(a.currentTime); rg.style.setProperty("--p", (rg.value / 10) + "%"); if (a.duration && a.currentTime / a.duration > .9) mark(i); };
+    a.onended = () => { mark(i); a.onpause(); };
+    rg.oninput = () => { drag = true; rg.style.setProperty("--p", (rg.value / 10) + "%"); if (a.duration) cur.textContent = fmt(rg.value / 1000 * a.duration); };
+    rg.onchange = () => { if (a.duration) a.currentTime = rg.value / 1000 * a.duration; drag = false; };
+    sp.onclick = () => { si = (si + 1) % speeds.length; a.playbackRate = speeds[si]; sp.textContent = String(speeds[si]).replace(".", ",") + "×"; };
+    pane.querySelector(".ab-all").onclick = () => { list(); top(); };
+    const pv = pane.querySelector(".ab-prev"), nx = pane.querySelector(".ab-next");
+    if (pv) pv.onclick = () => { ep(i - 1); top(); };
+    if (nx) nx.onclick = () => { ep(i + 1); top(); };
+    pane.querySelectorAll(".ab-hero img").forEach(im => im.onclick = () => window.open(im.src, "_blank"));
+  };
+  list();
+}
 async function exSection(n, sec, pane){
   pane.innerHTML = `<div class="loading">…</div>`;
   let md = "*—*";
@@ -2967,6 +3078,7 @@ async function exSection(n, sec, pane){
   if (sec.style === "sky") { let D; try { D = JSON.parse(md); } catch(e) { D = null; } if (D) { const M = skyHTML(D, sec, n); pane.innerHTML = M.html; setupSky(pane, D, n, M); return; } }
   if (sec.style === "tarot" || sec.style === "tarot-read") { let D; try { D = JSON.parse(md); } catch(e) { D = null; } if (D) { (sec.style === "tarot" ? setupTarot : setupTarotRead)(pane, D, n, sec); return; } }
   if (sec.style === "horoscope") { let D; try { D = JSON.parse(md); } catch(e) { D = null; } if (D) { setupHoroscope(pane, D, n, sec); return; } }
+  if (sec.style === "audiobook") { let D; try { D = JSON.parse(md); } catch(e) { D = null; } if (D) { setupAudiobook(pane, D, n); return; } }
   if (sec.style === "encyclopedia") { const E = encyclopediaHTML(md, sec, n); pane.innerHTML = E.html; setupEncyclopedia(pane, E.render); return; }
   pane.innerHTML = `<article class="chapter ex-sec" lang="${esc(n.lang)}"><h2>${esc(sec.title)}</h2>${renderText(md)}</article>`;
   pane.querySelectorAll(".ex-sec img").forEach(im => { im.onclick = () => window.open(im.src, "_blank"); const z = document.createElement("span"); z.className = "ex-zoom"; z.textContent = "⤢"; im.after(z); });
