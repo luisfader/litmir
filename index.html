@@ -921,6 +921,13 @@ body.tr-lock{overflow:hidden}
 .mp-s-bg{fill:#e9e4dc}.mp-s-block rect{fill:#d8d0c3;stroke:#c2b7a6;stroke-width:1.2}.mp-s-road{fill:none;stroke:#f7f3ec;stroke-width:11;stroke-linecap:round}.mp-s-ring{fill:none;stroke:#f7f3ec;stroke-width:9}
 .mp-s-park{fill:#b9cf9c;stroke:#93ad73;stroke-width:2}.mp-s-tree circle{fill:#6f9a5c;opacity:.85}.mp-s-bank{fill:none;stroke:#c2b7a6;stroke-width:54}.mp-s-river{fill:none;stroke:#9cc9cf;stroke-width:44}.mp-s-bridge{fill:#efe9df;stroke:#a89c8a;stroke-width:2}
 .mp-s-rail{stroke:#6b5f55;stroke-width:4}.mp-s-ties path{stroke:#6b5f55;stroke-width:3}
+/* Дикий час: Карнавал раздора (RU): Мадрид, карнавальный красный с золотом */
+.mp-md-west{fill:#cfd8b4}.mp-md-bank{fill:none;stroke:#b9c7a0;stroke-width:46}.mp-md-river{fill:none;stroke:#8fc0cc;stroke-width:30}
+.mp-md-av{fill:none;stroke:#fff7e6;stroke-width:17;stroke-linecap:round;stroke-linejoin:round}.mp-md-metro{fill:none;stroke:#2f8fd1;stroke-width:4;stroke-dasharray:10 7;opacity:.8}
+.mp-md-palace{fill:#d9c39a;stroke:#9b7f52;stroke-width:2}.mp-md-plaza{fill:#efd29a;stroke:#b28a45;stroke-width:2}.mp-md-star path{fill:#e0a526;stroke:#8a1426;stroke-width:1}
+.mp-t-madrid{background:#f4e9d8}.mp-t-madrid .mp-hero{background:linear-gradient(135deg,#6e0f1e,#b3122e 55%,#e0a526)}.mp-t-madrid .mp-title{color:#fff6e0}
+.mp-t-madrid .mp-scroll{border-color:#b3122e}.mp-t-madrid .mp-dist{fill:#7a2a2a;font-family:var(--serif);font-size:21px;opacity:.85}
+.mp-t-madrid .mp-lb{font-size:22px}.mp-t-madrid .mp-pin circle{stroke:#b3122e}.mp-t-madrid .mp-pin.home circle{fill:#f2c14e;stroke:#6e0f1e}.mp-t-madrid .mp-pin.lk circle{stroke:#9a8a6c}
 .mp-t-sinea{background:#efe9e2}.mp-t-sinea .mp-hero{background:linear-gradient(135deg,#0f4a52,#2a7d80 55%,#a8507a)}.mp-t-sinea .mp-title{color:#fff4f8}
 .mp-t-sinea .mp-scroll{border-color:#2a7d80;box-shadow:inset 0 0 40px rgba(20,70,80,.18)}.mp-t-sinea .mp-dist{fill:#5d6f70;font-family:var(--serif);font-size:26px}
 .mp-t-sinea .mp-pin circle{stroke:#1f6b70}.mp-t-sinea .mp-pin.home circle{fill:#f6c1d3;stroke:#a8507a}.mp-t-sinea .mp-pin.on circle,.mp-t-sinea .mp-pin:hover circle{stroke:#d0467f}.mp-t-sinea .mp-pin.on .mp-lb{fill:#a8507a}
@@ -2734,6 +2741,39 @@ const MP_ART = {
     const lbl = (D.labels || []).map(l => `<text x="${l.x}" y="${l.y}" class="mp-dist">${esc(l.t)}</text>`).join("");
     return `<rect width="1000" height="780" class="mp-g-land"/>${sea ? `<path d="${sea}" class="mp-g-sea"/>` : ""}${waves}${rivers}${woods}${mnt}${lbl}
       <g class="mp-rose" transform="translate(${(D.rose || [930, 700]).join(" ")})"><circle r="34"/><path d="M0 -30L7 0L0 30L-7 0Z"/><text y="-38">${D.lang === "ru" ? "С" : "N"}</text></g>`;
+  },
+  /* Мадрид («Карнавал раздора»): Мансанарес на западе, парки Оэсте и Ретиро, главные улицы центра.
+     Точки стоят примерно там же, где на настоящей карте; восток — справа, север — сверху. */
+  madrid(home, far, rnd, D){
+    const river = "M18 0C30 140 50 300 70 430S150 650 230 780";
+    const riverX = y => y < 430 ? 18 + 52 * y / 430 : 70 + 160 * (y - 430) / 350;
+    const parks = [[95, 95, 100, 105], [940, 480, 92, 140]];
+    const inPark = (x, y) => parks.some(([cx, cy, rx, ry]) => ((x - cx) / (rx + 18)) ** 2 + ((y - cy) / (ry + 18)) ** 2 < 1);
+    let blocks = "";
+    for (let y = 8; y < 770; y += 48) for (let x = 6; x < 995; x += 58) {
+      if (rnd() < .16) continue; const w = 36 + rnd() * 12, h = 28 + rnd() * 10, bx = x + rnd() * 6, by = y + rnd() * 6;
+      if (bx < riverX(by + h / 2) + 34 || inPark(bx + w / 2, by + h / 2)) continue;
+      blocks += `<rect x="${bx.toFixed(1)}" y="${by.toFixed(1)}" width="${w.toFixed(1)}" height="${h.toFixed(1)}" rx="3"/>`; }
+    const trees = parks.map(([cx, cy, rx, ry]) => Array.from({length:18}, () => { const a = rnd() * 6.28, d = Math.sqrt(rnd()) * .82;
+      return `<circle cx="${(cx + Math.cos(a) * rx * d).toFixed(1)}" cy="${(cy + Math.sin(a) * ry * d).toFixed(1)}" r="${(7 + rnd() * 5).toFixed(1)}"/>`; }).join("")).join("");
+    const west = `M0 0H${riverX(0) - 22}C${30 - 22} 140 ${50 - 22} 300 ${70 - 22} 430S${150 - 22} 650 ${230 - 22} 780H0Z`;
+    /* Улицы: Гран-Виа, Алькала, ось Реколетос — Прадо, Майор, Толедо, Аточа, Принсеса, Байлен, Фуэнкарраль, Хенова, рондас */
+    const avenues = ["M278 171Q360 232 433 273T600 262T736 291", "M488 363Q610 325 736 291L860 300L1000 300", "M822 0L802 111L736 291Q762 405 800 520T860 780"];
+    const streets = ["M488 363L395 410L215 392", "M395 410L352 545L309 660L285 780", "M488 363L600 500L829 672L1000 705", "M278 171L212 0", "M278 171L232 300L240 520L300 700",
+      "M470 0L505 262", "M640 0L585 258", "M560 112L802 111L1000 96", "M309 660Q560 705 829 672", "M488 363L548 610L560 780", "M352 545L548 610"];
+    const stars = [[300, 34], [360, 22], [425, 40], [490, 18], [555, 36], [620, 20], [690, 38]].map(([x, y]) =>
+      `<path d="M${x} ${y - 9}L${x + 3} ${y - 3}L${x + 9} ${y}L${x + 3} ${y + 3}L${x} ${y + 9}L${x - 3} ${y + 3}L${x - 9} ${y}L${x - 3} ${y - 3}Z"/>`).join("");
+    const lbl = (D.labels || []).map(l => `<text x="${l.x}" y="${l.y}" class="mp-dist">${esc(l.t)}</text>`).join("");
+    return `<rect width="1000" height="780" class="mp-s-bg"/><path d="${west}" class="mp-md-west"/>
+      <g class="mp-s-block">${blocks}</g>
+      ${parks.map(([cx, cy, rx, ry]) => `<ellipse cx="${cx}" cy="${cy}" rx="${rx}" ry="${ry}" class="mp-s-park"/>`).join("")}<g class="mp-s-tree">${trees}</g>
+      <path d="${river}" class="mp-md-bank"/><path d="${river}" class="mp-md-river"/>
+      ${[[66, 400], [192, 705]].map(([x, y]) => `<rect x="${x - 40}" y="${y - 8}" width="80" height="16" rx="3" class="mp-s-bridge"/>`).join("")}
+      <path d="${streets.join("")}" class="mp-s-road"/><path d="${avenues.join("")}" class="mp-md-av"/>
+      <path d="M560 112L802 111L1000 96" class="mp-md-metro"/>
+      <rect x="196" y="318" width="48" height="40" rx="3" class="mp-md-palace"/><rect x="372" y="392" width="46" height="36" rx="2" class="mp-md-plaza"/>
+      <g class="mp-md-star">${stars}</g>
+      ${lbl}<g class="mp-rose" transform="translate(${(D.rose || [70, 700]).join(" ")})"><circle r="34"/><path d="M0 -30L7 0L0 30L-7 0Z"/><text y="-38">${D.lang === "ru" ? "С" : "N"}</text></g>`;
   },
   /* Город (Синея и т. п.): река с мостами на севере, кварталы, парки, железная дорога к краю карты. D.labels: [{x,y,t}] — подписи районов */
   city(home, far, rnd, D){
