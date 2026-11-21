@@ -3,7 +3,7 @@
  "subtitle": "Maschera di Venezia · letture graduate B1",
  "cover": "novels/maschera-di-venezia/img/audio/copertina.jpg",
  "intro": "Ascolta *Maschera di Venezia* nella versione a letture graduate (livello B1) del quaderno «Ciao, amore! 2». Una voce narrante femminile racconta la storia, e i personaggi parlano con la loro voce. Scegli un episodio: sotto l’audio trovi il testo, per leggere mentre ascolti.",
- "note": "Testi adattati dal romanzo originale · Quaderno degli esercizi «Ciao, amore! 2», pagine 23–33. Nuovi episodi in arrivo.",
+ "note": "Testi adattati dal romanzo originale · Quaderno degli esercizi «Ciao, amore! 2», pagine 23–35. Nuovi episodi in arrivo.",
  "ui": {
   "episode": "Episodio",
   "all": "Tutti gli episodi",
@@ -131,6 +131,30 @@
    "fact": "Nella Repubblica c’erano le «bocche di leone»: cassette di pietra dove si potevano lasciare denunce segrete.",
    "read": "Leggi i capitoli 6 e 7 completi",
    "ch": 6
+  },
+  {
+   "n": 6,
+   "title": "Il bacio nel caos",
+   "lettura": "Lettura 06 · Un incontro decisivo",
+   "img": "novels/maschera-di-venezia/img/audio/lettura-06.jpg",
+   "audio": "novels/maschera-di-venezia/audionovela/capitolo-06.mp3",
+   "duration": "1:26",
+   "text": [
+    "La festa del Carnevale era al culmine. Roberto guardava le maschere di Piazza San Marco, ma continuava a pensare a Natalia. Durante uno spettacolo notturno, una voce familiare gli sussurrò: «Balla con me».",
+    "Era Natalia. Quella sera indossava un vestito rosso con ricami dorati. Si avvicinò e diede a Roberto un bacio breve, ma molto deciso. Lui non riuscì a parlare. «Vieni con me», disse Natalia. «Non abbiamo tempo».",
+    "Attraversarono la folla fino a un piccolo canale. Li aspettava una gondola senza gondoliere. Roberto ormai sapeva che quella barca non era normale. Salì e chiese a Natalia dove lo stesse portando.",
+    "«Dove tutto è iniziato», rispose lei. «Se vuoi conoscere la verità, devi fidarti di me». La gondola passò sotto ponti scuri e seguì canali sempre più stretti. Le luci della festa rimasero lontane.",
+    "Roberto provava paura e curiosità. La donna misteriosa, però, era diventata la sua unica guida verso ciò che aveva cercato per anni."
+   ],
+   "words": [
+    "culmine",
+    "sussurrare",
+    "fidarsi",
+    "guida"
+   ],
+   "fact": "Piazza San Marco è l’unica «piazza» di Venezia: gli altri spazi si chiamano «campi», perché un tempo erano coperti d’erba.",
+   "read": "Leggi il capitolo 8 completo",
+   "ch": 8
   }
  ]
 }
