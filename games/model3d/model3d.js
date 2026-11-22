@@ -9,8 +9,9 @@ let libs = null;
 const loadLibs = () => libs || (libs = Promise.all([
   import(`${CDN}/+esm`),
   import(`${CDN}/examples/jsm/controls/OrbitControls.js/+esm`),
-  import(`${CDN}/examples/jsm/loaders/GLTFLoader.js/+esm`)
-]).then(([THREE, oc, gl]) => ({THREE, OrbitControls: oc.OrbitControls, GLTFLoader: gl.GLTFLoader})));
+  import(`${CDN}/examples/jsm/loaders/GLTFLoader.js/+esm`),
+  import(`${CDN}/examples/jsm/environments/RoomEnvironment.js/+esm`)
+]).then(([THREE, oc, gl, re]) => ({THREE, OrbitControls: oc.OrbitControls, GLTFLoader: gl.GLTFLoader, RoomEnvironment: re.RoomEnvironment})));
 
 const TX = {
   ru:{load:"Загружаю модель…", err:"Не удалось загрузить 3D-модель. Проверьте интернет и попробуйте ещё раз.", anim:"Анимация", still:"Стоит", Respirar:"Дышит", Caminar:"Идёт", Saludar:"Машет рукой", Bailar:"Танцует",
@@ -73,7 +74,7 @@ function mount(el, opts){
   fsB.onclick = () => { try { if (document.fullscreenElement) document.exitFullscreen(); else stage.requestFullscreen(); } catch(e){} };
   document.addEventListener("fullscreenchange", () => { fsB.textContent = (document.fullscreenElement ? "✕ " + T.exit : "⛶ " + T.full); });
 
-  loadLibs().then(({THREE, OrbitControls, GLTFLoader}) => {
+  loadLibs().then(({THREE, OrbitControls, GLTFLoader, RoomEnvironment}) => {
     if (!stage.isConnected) return;
     const renderer = new THREE.WebGLRenderer({antialias:true, alpha:true});
     renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
@@ -87,7 +88,8 @@ function mount(el, opts){
     const controls = new OrbitControls(camera, renderer.domElement);
     controls.target.set(0, 0.95, 0); controls.enableDamping = true;
     controls.minDistance = 0.6; controls.maxDistance = 9; controls.maxPolarAngle = Math.PI * 0.495; controls.autoRotateSpeed = 1.2;
-    scene.add(new THREE.HemisphereLight("#fff6e8", "#b69a7c", 1.25));
+    try { const pm = new THREE.PMREMGenerator(renderer); scene.environment = pm.fromScene(new RoomEnvironment(), 0.04).texture; scene.environmentIntensity = 0.55; } catch(e){}
+    scene.add(new THREE.HemisphereLight("#fff6e8", "#b69a7c", 0.9));
     const sun = new THREE.DirectionalLight("#fff1dc", 2.4); sun.position.set(2.5, 4.5, 3); sun.castShadow = true;
     sun.shadow.mapSize.set(2048, 2048); Object.assign(sun.shadow.camera, {left:-4, right:4, top:4, bottom:-4, near:.5, far:15});
     sun.shadow.bias = -0.0004; sun.shadow.normalBias = 0.02; scene.add(sun);
