@@ -1,4 +1,4 @@
-Il sindaco di Venezia Luigi Rossini si è dimesso. Terrorizzato dal Matevirus, secondo quanto riferito si è chiuso in casa con dodici barattoli di Nutella. Il consiglio comunale ha nominato al suo posto l'attore di teatro Marco Dandolo.
+Il sindaco di Venezia Luigi Rossini si è dimesso. Terrorizzato dal Matevirus, secondo quanto riferito si è chiuso in casa con dodici barattoli di Nutella. Il consiglio comunale ha nominato al suo posto l'attore di teatro Nicolò Dandolo.
 
 Il nuovo sindaco si è presentato in diretta nazionale, con la fascia tricolore sul petto, accanto a una gabbia in cui erano rinchiusi quattro prigionieri: l'argentino Roberto, Natalia, Laura e Alessio. Dandolo li ha indicati come i responsabili del Matevirus e ha annunciato che saranno processati e poi «eliminati».
 

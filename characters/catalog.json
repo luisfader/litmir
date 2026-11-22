@@ -1475,7 +1475,7 @@
   },
   {
    "id": "marco-dandolo",
-   "name": "Marco Dandolo",
+   "name": "Nicolò Dandolo",
    "langs": [
     "ru",
     "it"
@@ -1487,14 +1487,14 @@
    ],
    "localizations": {
     "it": {
-     "name": "Marco Dandolo",
+     "name": "Nicolò Dandolo",
      "description": "Erede ambizioso della famiglia Dandolo, discendente di grandi Dogi. Si allea con la Loggia per riportare Venezia alla sua gloria e governarla.",
      "images": [
       "characters/img/marco-dandolo-1.jpg"
      ]
     },
     "ru": {
-     "name": "Марко Дандоло",
+     "name": "Никколо Дандоло",
      "description": "Наследник древнего венецианского рода Дандоло, внук последнего дожа до катастрофы. Появляется в тайном зале Ордена с золотым медальоном и требует Маску по праву крови. Честолюбивый, хладнокровный и опасно обаятельный.",
      "images": [
       "characters/img/marco-dandolo-1.jpg"
@@ -1517,14 +1517,14 @@
    "localizations": {
     "it": {
      "name": "Il commissario Zancan",
-     "description": "Commissario corrotto della questura di Venezia, padre rinnegato di Marco Dandolo. Vuole la maschera a ogni costo.",
+     "description": "Commissario corrotto della questura di Venezia, padre rinnegato di Nicolò Dandolo. Vuole la maschera a ogni costo.",
      "images": [
       "characters/img/zancan-1.jpg"
      ]
     },
     "ru": {
      "name": "Комиссар Занкан",
-     "description": "Коррумпированный комиссар венецианской квестуры, отрёкшийся отец Марко Дандоло. Готов на всё, чтобы завладеть Маской.",
+     "description": "Коррумпированный комиссар венецианской квестуры, отрёкшийся отец Никколо Дандоло. Готов на всё, чтобы завладеть Маской.",
      "images": [
       "characters/img/zancan-1.jpg"
      ]

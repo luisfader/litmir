@@ -66,7 +66,7 @@
     {"id": "loggia", "icon": "🕯️", "name": "La sala della Loggia", "x": 395, "y": 390, "at": "06.md",
      "sub": "Nascosta nel cuore di Venezia",
      "what": "Uomini vestiti di nero attorno a un tavolo di legno antico, libri polverosi e mappe ingiallite. Il capo segreto è il Provveditore.",
-     "who": "La Loggia, il Provveditore Ludovico Gradenigo, poi Marco Dandolo.",
+     "who": "La Loggia, il Provveditore Ludovico Gradenigo, poi Nicolò Dandolo.",
      "secrets": [
        {"at": "15.md", "text": "Zancan confessa: «Un antico palazzo vicino a San Polo. È lì che si riuniscono»."},
        {"at": "22.md", "text": "Nella prigione della Loggia, Alessio si presenta come esperto di vini toscani e offre ai guardiani una «degustazione» di Chianti."},
@@ -124,6 +124,6 @@
     {"icon": "⬅", "name": "Firenze", "x": 30, "y": 470, "at": "04.md",
      "text": "Alessio e Laura partono per Firenze all'alba — «Ci vediamo tra un paio di giorni» — e lasciano Roberto solo a Venezia."},
     {"icon": "⬇", "name": "Roma", "x": 120, "y": 760, "at": "30.md",
-     "text": "La Duchessa, la madre di Natalia, guarda verso sud: la radice del potere di Marco e della Loggia è a Roma. Roberto e Natalia dovranno andarci. «Roma la conosco come le mie tasche», dice Alessio, un po' troppo in fretta."}
+     "text": "La Duchessa, la madre di Natalia, guarda verso sud: la radice del potere di Nicolò e della Loggia è a Roma. Roberto e Natalia dovranno andarci. «Roma la conosco come le mie tasche», dice Alessio, un po' troppo in fretta."}
   ]
 }
