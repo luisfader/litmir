@@ -41,6 +41,7 @@ function addCss(){
 .m3d-stage canvas{display:block;width:100%;height:100%;touch-action:none}
 .m3d-stage:fullscreen{height:100%;border-radius:0}
 .m3d-msg{position:absolute;inset:0;display:grid;place-items:center;padding:20px;text-align:center;color:#6b5848;font-size:15px}
+.m3d-msg[hidden]{display:none}
 .m3d-fs{position:absolute;top:10px;right:10px;font:inherit;font-size:12.5px;padding:6px 10px;border-radius:8px;border:1px solid rgba(0,0,0,.12);background:rgba(255,250,243,.9);color:#3a2a1f;cursor:pointer}
 .m3d-note{position:absolute;left:10px;bottom:10px;right:10px;font-size:12px;color:#6b5848;pointer-events:none;text-shadow:0 1px 0 rgba(255,255,255,.6)}
 .m3d-ctl{display:flex;flex-direction:column;gap:10px}
