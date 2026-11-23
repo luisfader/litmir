@@ -3085,6 +3085,7 @@ async function exSection(n, sec, pane){
   if (sec.style === "audiobook") { let D; try { D = JSON.parse(md); } catch(e) { D = null; } if (D) { setupAudiobook(pane, D, n); return; } }
   if (sec.style === "encyclopedia") { const E = encyclopediaHTML(md, sec, n); pane.innerHTML = E.html; setupEncyclopedia(pane, E.render); return; }
   pane.innerHTML = `<article class="chapter ex-sec" lang="${esc(n.lang)}"><h2>${esc(sec.title)}</h2>${renderText(md)}</article>`;
+  setupPsy(pane, n.lang);
   pane.querySelectorAll(".ex-sec img").forEach(im => { im.onclick = () => window.open(im.src, "_blank"); const z = document.createElement("span"); z.className = "ex-zoom"; z.textContent = "⤢"; im.after(z); });
 }
 /* Звёздное небо (sec.style "sky"): novels/<slug>/<file>.json —
