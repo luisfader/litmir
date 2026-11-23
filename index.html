@@ -1964,6 +1964,9 @@ const mt = i => (MENU_T[lang] || MENU_T.en)[i];
 const SIDE_T = {ru:["Романы","Разделы"], es:["Novelas","Secciones"], it:["Romanzi","Sezioni"], en:["Novels","Sections"], fr:["Romans","Rubriques"], tr:["Romanlar","Bölümler"], pt:["Romances","Secções"], cs:["Romány","Sekce"], sr:["Романи","Одељци"], eo:["Romanoj","Sekcioj"], isv:["Romany","Razděly"], de:["Romane","Bereiche"], pl:["Powieści","Działy"]};
 const st = i => (SIDE_T[lang] || SIDE_T.en)[i];
 const CHAR_LABELS = {vec:"Personagi",ru:"Персонажи",es:"Personajes",it:"Personaggi",en:"Characters",de:"Figuren",fr:"Personnages",tr:"Karakterler",pt:"Personagens",cs:"Postavy",pl:"Postacie",sr:"Ликови",eo:"Roluloj",isv:"Postavy",vo:"Pösods",ia:"Personages",ld:"Personajenes",bg:"Герои"};
+/* Mapas 3D de las novelas (repo luisfader/sinea). Solo en los idiomas que tiene el mapa: para sumar uno, agregalo acá. */
+const MAPS_URL = "https://luisfader.github.io/sinea/";
+const MAPS_T = {es:"Mapas de las novelas", ru:"Карты романов"};
 function navItems(){
   const it = [["#/", "📚", st(0), ""], ["characters.html?lang=" + encodeURIComponent(lang), "✧", CHAR_LABELS[lang] || "Characters", "characters"], ["#/blog", "✎", bt("title"), "blog"]];
   if (newsPaper(lang)) it.push(["#/news", "📰", nt("btn"), "news"]);
@@ -1971,6 +1974,7 @@ function navItems(){
   if (hasGames(lang)) it.push(["#/juegos", "🎲", jt("btn"), "juegos"]);
   if (MAGAZINES[lang]) it.push(["#/magazine", "📖", MAGAZINES[lang].btn, "magazine"]);
   if (PODCASTS[lang]) it.push(["#/podcast", "🎙", PODCASTS[lang].btn, "podcast"]);
+  if (MAPS_T[lang]) it.push([MAPS_URL + "?lang=" + lang, "🗺", MAPS_T[lang], "mapas"]);
   it.push(["#/mis-lecturas", "★", ft(0) + " · " + rt(1), "mis-lecturas"]);
   return it;
 }
@@ -1982,7 +1986,7 @@ function renderSiteNav(){
   const known = new Set(["blog","news","learn","juegos","magazine","podcast","mis-lecturas"]);
   const cur = GAME_SECS.has(sec) ? "juegos" : known.has(sec) ? sec : "";
   box.innerHTML = `<h2>${esc(st(1))}</h2>` + navItems().map(([h, i, l, k]) =>
-    `<a href="${esc(h)}"${k === cur ? ' aria-current="page"' : ""}><span class="i">${i}</span><span>${esc(l)}</span></a>`).join("");
+    `<a href="${esc(h)}"${/^https?:/.test(h) ? ' target="_blank" rel="noopener"' : ""}${k === cur ? ' aria-current="page"' : ""}><span class="i">${i}</span><span>${esc(l)}</span></a>`).join("");
   document.getElementById("snavBtn").setAttribute("aria-label", st(1));
 }
 (function(){
