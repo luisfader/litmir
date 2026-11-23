@@ -1218,6 +1218,92 @@ body.snav-open .snav{transform:none;visibility:visible}
 #install{margin-top:10px;text-align:center}
 #install button{font:600 14px var(--sans);border:1px solid var(--accent);background:var(--accent);color:#fff;border-radius:999px;padding:10px 18px;cursor:pointer}
 #install p{font:13px var(--sans);color:var(--muted);margin:0}
+/* «Голос»: приложение «Дельфин» */
+.dl-wrap{max-width:420px;margin:0 auto;font-family:var(--sans)}
+.dl-intro{font-size:13.5px;line-height:1.5;color:var(--muted);margin:0 0 14px;text-align:center}
+.dl-phone{position:relative;border-radius:34px;padding:10px;background:#05070d;box-shadow:0 0 0 2px #2a3345,0 18px 40px -12px rgba(0,20,60,.55);color:#e6eefc}
+.dl-status{display:flex;justify-content:space-between;padding:4px 18px 6px;font-size:11px;color:#9fb3d1;letter-spacing:.04em}
+.dl-head{display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:22px 22px 0 0;background:linear-gradient(135deg,#0b2b55,#0e4f7a)}
+.dl-head b{display:block;font-size:16px;letter-spacing:.02em}.dl-head small{display:block;font-size:11px;color:#a9cbe8}
+.dl-logo{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;font-size:22px;background:#0a1a33;box-shadow:inset 0 0 0 1px #4f86c6}
+.dl-screen{height:min(480px,62vh);overflow-y:auto;overscroll-behavior:contain;background:#0a1222;padding:10px 12px;scrollbar-width:thin;scrollbar-color:#2a3e63 transparent}
+.dl-center{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:10px;border-radius:0 0 24px 24px;color:#9fb3d1;font-size:14px;line-height:1.5}
+.dl-bigic{font-size:40px}.dl-go{color:#7cc4ff;font-weight:700}
+.dl-tabs{display:flex;border-radius:0 0 24px 24px;background:#0d1730;border-top:1px solid #1d2c4d}
+.dl-tabs button{flex:1;border:0;background:none;color:#7f93b5;padding:9px 0 11px;cursor:pointer;font-size:17px;display:flex;flex-direction:column;align-items:center;gap:2px}
+.dl-tabs button span{font-size:11px;font-weight:600}.dl-tabs button.on{color:#7cc4ff}
+.dl-threads{list-style:none;margin:0;padding:0}
+.dl-th{display:flex;gap:10px;width:100%;text-align:left;border:0;background:none;color:inherit;padding:10px 4px;border-bottom:1px solid #18233d;cursor:pointer}
+.dl-th:hover{background:#101b33}
+.dl-tt{min-width:0;flex:1}.dl-tt b{display:block;font-size:14px}.dl-tt small{display:block;font-size:11px;color:#7f93b5;margin:1px 0 3px}
+.dl-tt i{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-style:normal;font-size:12.5px;color:#a7b7d2;line-height:1.4}
+.dl-ava{flex:none;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;font-size:14px;font-weight:700;background:#24365c;color:#cfe0ff}
+.dl-ava.bot{background:#0e4f7a;font-size:17px}
+.dl-more{margin:12px 2px 4px;padding:9px 11px;border-radius:10px;border:1px dashed #2a3e63;font-size:12.5px;color:#8fa4c6;line-height:1.45}.dl-more a{color:#7cc4ff;font-weight:700;white-space:nowrap}
+.dl-back{border:0;background:none;color:#7cc4ff;font-weight:600;padding:2px 0 8px;cursor:pointer;font-size:14px}
+.dl-post h3{margin:0 0 10px;font-size:16px;letter-spacing:.02em}
+.dl-by{display:flex;gap:9px;align-items:center;margin-bottom:12px}.dl-by b{display:block;font-size:13px}.dl-by small{font-size:11px;color:#7f93b5}
+.dl-post p{margin:0 0 10px;font-size:14px;line-height:1.55;color:#d4def0}
+.dl-chat{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.dl-msg{display:flex;gap:7px;align-items:flex-end;max-width:88%}.dl-msg.me{align-self:flex-end}
+.dl-msg .dl-ava{width:26px;height:26px;font-size:12px}
+.dl-bub{padding:7px 10px 5px;border-radius:14px 14px 14px 4px;background:#17243f;font-size:13.5px;line-height:1.4}
+.dl-msg.me .dl-bub{background:#1d5fa8;border-radius:14px 14px 4px 14px}
+.dl-msg.bot .dl-bub{background:#0d3a5c;box-shadow:inset 0 0 0 1px #2b6c9a}
+.dl-bub b{display:block;font-size:11.5px;color:#7cc4ff;margin-bottom:1px}.dl-bub small{display:block;text-align:right;font-size:10px;color:#9fb3d1;margin-top:2px}
+.dl-msg.glitch .dl-bub span{animation:dlGlitch 1.6s steps(2) infinite;letter-spacing:.06em;color:#bfe7ff}
+@keyframes dlGlitch{0%{opacity:1;filter:none}40%{opacity:.35;filter:blur(1px)}60%{opacity:.9;transform:translateX(1px)}100%{opacity:.6}}
+.dl-sys{align-self:center;font-size:11.5px;color:#9fb3d1;background:#121c33;border-radius:10px;padding:3px 10px}
+.dl-input{display:flex;justify-content:space-between;margin-top:12px;padding:8px 12px;border-radius:18px;background:#121c33;color:#5f7299;font-size:13px}
+.dl-map svg{display:block;width:100%;height:auto;border-radius:12px}
+.dl-pt{cursor:pointer;outline:none}.dl-pt.on circle:last-child,.dl-pt:focus-visible circle:last-child{stroke:#fff;stroke-width:2}
+.dl-pulse{animation:dlPulse 2.4s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+.dl-breathe{animation:dlPulse 4s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+.dl-beam{animation:dlBeam 5s ease-in-out infinite;transform-box:view-box;transform-origin:205px 300px}
+@keyframes dlPulse{50%{transform:scale(1.35);opacity:.55}}
+@keyframes dlBeam{0%,100%{transform:rotate(-8deg)}50%{transform:rotate(8deg)}}
+.dl-pinfo{margin:8px 2px;font-size:13px;color:#a7b7d2;line-height:1.4;min-height:2.8em}
+.dl-legend{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:4px 12px;font-size:11.5px;color:#8fa4c6}
+.dl-legend i{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px}
+/* «Голос»: шёпоты */
+.wh{max-width:640px;margin:0 auto;font-family:var(--sans);border-radius:18px;overflow:hidden;background:#071a2b;color:#dbeaf5;box-shadow:0 14px 36px -16px rgba(0,30,60,.6)}
+.wh-hero{position:relative;padding:22px 20px 16px;text-align:center;background:radial-gradient(120% 90% at 50% 0%,#12507a 0%,#0a2a45 55%,#071a2b 100%)}
+.wh-waves{position:absolute;inset:auto 0 0 0;height:22px;opacity:.35;background:radial-gradient(14px 8px at 14px 0,transparent 12px,#7fd3ff 13px,transparent 14px) 0 0/28px 22px repeat-x;animation:whWave 6s linear infinite}
+@keyframes whWave{to{background-position:28px 0}}
+.wh-title{font-family:var(--display);font-size:30px;font-weight:600;letter-spacing:.02em;color:#eaf6ff}
+.wh-hero p{margin:6px auto 10px;max-width:480px;font-size:13.5px;line-height:1.5;color:#a8c6dc}
+.wh-score{font-size:13px;color:#a8c6dc}.wh-score b{color:#7fe0ff;font-size:15px}
+.wh-reset{border:0;background:none;color:#7fd3ff;cursor:pointer;font-size:12.5px;margin-left:6px}
+.wh-list{list-style:none;margin:0;padding:10px 14px 18px}
+.wh-it{display:flex;gap:12px;padding:16px 4px;border-bottom:1px solid #12324d}
+.wh-n{flex:none;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-weight:700;font-size:13px;background:#0e3352;color:#7fd3ff;box-shadow:0 0 0 1px #1f5b86}
+.wh-it.ok .wh-n{background:#1d7a5a;color:#eafff5}.wh-it.no .wh-n{background:#5a3550;color:#ffe9f3}
+.wh-b{flex:1;min-width:0}
+.wh-w{margin:0 0 8px;font-style:italic;color:#7fbfe0;font-size:13.5px}
+.wh-w span{display:inline-block;opacity:.35;animation:whEcho 3.2s ease-in-out infinite}
+@keyframes whEcho{40%{opacity:1;filter:blur(0)}0%,100%{opacity:.35;filter:blur(.6px)}}
+.wh-v{margin:0 0 10px;padding:8px 0 8px 14px;border-left:3px solid #3aa7e0;font-family:var(--serif);font-style:italic;font-size:16px;line-height:1.55;color:#eaf6ff}
+.wh-q{margin:0 0 8px;font-weight:600;font-size:14.5px}
+.wh-opts{display:grid;gap:6px}
+.wh-opts button{text-align:left;padding:9px 12px;border-radius:10px;border:1px solid #1f4a6d;background:#0b2539;color:#dbeaf5;font:inherit;font-size:14px;cursor:pointer;transition:background .15s,border-color .15s}
+.wh-opts button:hover:not(:disabled){border-color:#3aa7e0;background:#0f3050}
+.wh-opts button:disabled{cursor:default;opacity:.6}
+.wh-opts button.right{opacity:1;border-color:#3ddc97;background:#0f3d33}.wh-opts button.wrong{opacity:1;border-color:#e26b8f;background:#3d1527}
+.wh-res{margin-top:10px;padding:10px 12px;border-radius:10px;background:#0c2c45;font-size:13.5px;line-height:1.5;color:#c4dbea}
+.wh-res b{color:#eaf6ff}.wh-res small{display:block;margin-top:5px;color:#7fa9c6;font-size:12px}
+.wh-lk .wh-w{letter-spacing:.3em}.wh-lt{margin:0 0 4px;font-size:13px;color:#8fb0c8}.wh-lk a{color:#7fd3ff;font-weight:700;font-size:13px}
+@media (prefers-reduced-motion:reduce){.dl-pulse,.dl-breathe,.dl-beam,.wh-waves,.wh-w span,.dl-msg.glitch .dl-bub span{animation:none}.wh-w span{opacity:1}}
+/* Энциклопедия: глубоководная тема (sec.theme "deep") */
+.enc.enc-deep{--eb:#0a1d30;--ep:#0f2840;--ei:#dbeaf5;--em:#8fb0c8;--ea:#3aa7e0;--er:#7fd3ff;--el:#1d4566;background:radial-gradient(120% 60% at 10% 0%,#12507a 0%,transparent 60%),radial-gradient(90% 50% at 100% 100%,#1b1236 0%,transparent 60%),var(--eb);box-shadow:none}
+.enc-deep .enc-title{color:#eaf6ff}.enc-deep .enc-cat h3{color:#cfe6f7}
+.enc-deep .enc-prog{background:#ffffff18}.enc-deep .enc-prog i{background:linear-gradient(90deg,#1f6fa3,#7fd3ff)}
+.enc-deep .enc-q,.enc-deep .enc-chips button,.enc-deep .enc-cat h3 small,.enc-deep .enc-see button{background-color:#0f2840;color:#cfe0ee}
+.enc-deep .enc-q::placeholder{color:#6f8fa8}
+.enc-deep .enc-chips button.on{background:var(--ea);color:#041321}
+.enc-deep .enc-list{scrollbar-color:#24557c transparent}
+.enc-deep .enc-e{box-shadow:0 4px 14px -10px #000}
+.enc-deep .enc-b strong{color:#ffd9a0}.enc-deep .enc-b blockquote{color:#b7d3e6}
+.enc-deep .enc-more{background:#0b2236}.enc-deep .enc-lk{background:#0b2236;border-color:#24557c}
 </style>
 </head>
 <body>
@@ -2719,7 +2805,7 @@ function encyclopediaHTML(md, sec, n){
     return D.cats.map((c, ci) => cat !== "all" && +cat !== ci ? "" : `<section class="enc-cat"><h3><span aria-hidden="true">${esc(c.ic)}</span>${esc(c.name)}<small>${c.entries.filter(e => e.open).length}/${c.entries.length}</small></h3>
       ${c.entries.filter(e => e.open).map(e => card(e, c.ic)).join("")}${lockRow(c.entries)}</section>`).join("");
   };
-  return {render, html:`<div class="enc" lang="${esc(n.lang)}">
+  return {render, html:`<div class="enc${sec.theme ? " enc-" + esc(sec.theme) : ""}" lang="${esc(n.lang)}">
     <div class="enc-hero"><div class="enc-kick">${esc(sec.icon || "📖")}</div><div class="enc-hx"><div class="enc-title">${esc(sec.title)}</div>
       ${D.intro ? `<div class="enc-intro">${wgInline(D.intro)}</div>` : ""}
       <div class="enc-prog" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${pct}"><i style="width:${pct}%"></i></div><small class="enc-pt">${esc(T.read(openN, all.length))}</small></div></div>
@@ -3072,6 +3158,103 @@ function setupAudiobook(pane, D, n){
   };
   list();
 }
+/* «Голос»: приложение «Дельфин» (sec.style "dolphin-app") и загадки-шёпоты (sec.style "whispers").
+   JSON в папке романа; всё открывается по главам (поле at = файл главы), как в энциклопедии. */
+function glReach(n){
+  const done = new Set(store.get("done:" + n.slug, [])), last = store.get("last:" + n.slug, 0) || 0;
+  const pos = f => f ? n.chapters.findIndex(x => x.file === f) + 1 : 0;
+  const open = f => { const p = pos(f); return p <= 1 || done.has(p) || p <= last; };
+  const near = f => { const p = pos(f); return p <= 1 || done.has(p - 1) || done.has(p) || p <= last; };
+  const ref = p => { const no = chapterNo(n, p); return {no, t: chapterTitle(n, n.chapters[p - 1], no), href: chapterHref(n, p)}; };
+  return {pos, open, near, ref};
+}
+function setupDolphinApp(pane, D, n){
+  const R = glReach(n), threads = D.threads.filter(t => R.open(t.at)), chat = D.chat.filter(m => R.open(m.at));
+  const first = Math.min(...D.chat.concat(D.threads).map(x => R.pos(x.at)));
+  const nextP = (list) => { const lk = list.filter(x => !R.open(x.at)).map(x => R.pos(x.at)); return lk.length ? Math.min(...lk) : 0; };
+  const lockNote = list => { const p = nextP(list); if (!p) return ""; const r = R.ref(p);
+    return `<div class="dl-more">🔒 Новые сообщения — после главы ${r.no} «${esc(r.t)}». <a href="${r.href}">Читать →</a></div>`; };
+  const ava = (name, bot) => `<span class="dl-ava${bot ? " bot" : ""}" aria-hidden="true">${bot ? "🐬" : esc((name || "?")[0])}</span>`;
+  const head = `<div class="dl-status"><span>${esc(D.app)}</span><span>▂▄▆ 📶 🔋</span></div>
+    <div class="dl-head"><span class="dl-logo" aria-hidden="true">🐬</span><div><b>${esc(D.app)}</b><small>${esc(D.tagline)}</small></div></div>`;
+  if (!threads.length && !chat.length) {
+    const r = R.ref(first);
+    pane.innerHTML = `<div class="dl-wrap"><div class="dl-phone dl-off">${head}<div class="dl-screen dl-center"><div class="dl-bigic">🔒</div>
+      <p>${esc(D.lockText.replace("{n}", r.no).replace("{t}", r.t))}</p><a class="dl-go" href="${r.href}">Читать →</a></div></div></div>`;
+    return;
+  }
+  const P = D.map.points.filter(p => R.open(p.at) && !(p.until && R.open(p.until)));
+  const forum = () => `<ul class="dl-threads">${threads.map((t, i) => `<li><button type="button" class="dl-th" data-th="${i}">${ava(t.author, t.bot || t.author === "Совет Дельфинов")}
+      <span class="dl-tt"><b>${t.pin ? "📌 " : ""}${esc(t.title)}</b><small>${esc(t.author)} · ${esc(t.time)}</small><i>${esc(t.body[0])}</i></span></button></li>`).join("")}</ul>${lockNote(D.threads)}`;
+  const thread = i => { const t = threads[i]; return `<button type="button" class="dl-back">‹ Форум</button><article class="dl-post">
+      <h3>${t.pin ? "📌 " : ""}${esc(t.title)}</h3><div class="dl-by">${ava(t.author, t.bot || t.author === "Совет Дельфинов")}<span><b>${esc(t.author)}</b><small>${esc(t.time)}</small></span></div>
+      ${t.body.map(p => `<p>${esc(p)}</p>`).join("")}</article>`; };
+  const talk = () => `<ol class="dl-chat">${chat.map(m => m.sys ? `<li class="dl-sys">${esc(m.text)}</li>` :
+      `<li class="dl-msg${m.me ? " me" : ""}${m.bot ? " bot" : ""}${m.glitch ? " glitch" : ""}">${m.me ? "" : ava(m.from, m.bot)}<div class="dl-bub">${m.me ? "" : `<b>${esc(m.from)}</b>`}<span>${esc(m.text)}</span><small>${esc(m.time)}</small></div></li>`).join("")}</ol>${lockNote(D.chat)}
+      <div class="dl-input" aria-hidden="true"><span>Сообщение…</span><i>➤</i></div>`;
+  const KC = {me:"#4aa3ff", ally:"#3ddc84", rift:"#ff3b4e", danger:"#ff8a3d", sea:"#8fe3ff", place:"#e6d8ff", empty:"#8b93a7", light:"#ffd45e"};
+  const rift = P.find(p => p.kind === "rift");
+  const map = () => `<div class="dl-map"><svg viewBox="0 0 400 420" role="img" aria-label="Карта Синеи">
+      <defs><radialGradient id="dlr"><stop offset="0" stop-color="#ff3b4e" stop-opacity=".55"/><stop offset="1" stop-color="#ff3b4e" stop-opacity="0"/></radialGradient>
+      <radialGradient id="dll"><stop offset="0" stop-color="#ffd45e" stop-opacity=".6"/><stop offset="1" stop-color="#ffd45e" stop-opacity="0"/></radialGradient></defs>
+      <rect width="400" height="420" fill="#0b2a44"/>
+      <path d="M0 0H300C280 60 300 120 270 170C250 205 290 240 260 290C240 330 300 370 280 420H0Z" fill="#14203a" stroke="#2c4a7a" stroke-width="2"/>
+      <path d="M60 0C80 90 40 170 110 240C150 280 150 330 120 420" fill="none" stroke="#1d3d66" stroke-width="7" opacity=".8"/>
+      ${[40,90,140,190,240,290,340,390].map(y => `<line x1="0" y1="${y}" x2="290" y2="${y}" stroke="#1f2d4d" stroke-width="1"/>`).join("")}
+      ${[50,100,150,200,250].map(x => `<line x1="${x}" y1="0" x2="${x}" y2="420" stroke="#1f2d4d" stroke-width="1"/>`).join("")}
+      ${rift ? `<circle cx="${rift.x}" cy="${rift.y}" r="70" fill="url(#dlr)" class="dl-breathe"/>${R.open("10.md") ? [[-120,-160],[-150,40],[-40,-260],[30,-120],[-90,110]].map(([dx, dy]) => `<path d="M${rift.x} ${rift.y}l${dx * .35} ${dy * .3}l${dx * .25} ${dy * .3}l${dx * .4} ${dy * .4}" fill="none" stroke="#5b1730" stroke-width="2" opacity=".9"/>`).join("") : ""}` : ""}
+      ${P.filter(p => p.kind === "light").map(p => `<circle cx="${p.x}" cy="${p.y}" r="80" fill="url(#dll)" class="dl-breathe"/><path d="M${p.x} ${p.y}L400 ${p.y - 70}L400 ${p.y + 10}Z" fill="#ffd45e" opacity=".18" class="dl-beam"/>`).join("")}
+      <text x="340" y="30" fill="#5f8fbf" font-size="13" text-anchor="middle" font-style="italic">море</text>
+      ${P.map((p, i) => `<g class="dl-pt dl-k-${p.kind}" data-pt="${i}" tabindex="0" role="button" aria-label="${esc(p.label)}"><circle cx="${p.x}" cy="${p.y}" r="14" fill="${KC[p.kind]}" opacity=".18" class="dl-pulse"/><circle cx="${p.x}" cy="${p.y}" r="6" fill="${KC[p.kind]}"/></g>`).join("")}
+    </svg><div class="dl-pinfo">Нажмите на точку</div>
+    <ul class="dl-legend">${[...new Set(P.map(p => p.kind))].map(k => { const p = P.find(x => x.kind === k); return `<li><i style="background:${KC[k]}"></i>${esc(p.label)}</li>`; }).join("")}</ul></div>`;
+  pane.innerHTML = `<div class="dl-wrap"><p class="dl-intro">${esc(D.intro)}</p><div class="dl-phone">${head}
+    <div class="dl-screen" id="dlScreen"></div>
+    <nav class="dl-tabs" role="tablist"><button type="button" data-tab="forum" class="on">💬<span>Форум</span></button><button type="button" data-tab="chat">✉<span>Чат</span></button><button type="button" data-tab="map">🗺<span>Карта</span></button></nav></div></div>`;
+  const scr = pane.querySelector("#dlScreen"), tabs = [...pane.querySelectorAll(".dl-tabs button")];
+  const show = k => { tabs.forEach(b => b.classList.toggle("on", b.dataset.tab === k)); store.set("dlTab:" + n.slug, k);
+    scr.innerHTML = k === "chat" ? talk() : k === "map" ? map() : forum(); scr.scrollTop = k === "chat" ? scr.scrollHeight : 0;
+    scr.querySelectorAll("[data-th]").forEach(b => b.onclick = () => { scr.innerHTML = thread(+b.dataset.th); scr.scrollTop = 0; scr.querySelector(".dl-back").onclick = () => show("forum"); });
+    scr.querySelectorAll("[data-pt]").forEach(g => { const pick = () => { const p = P[+g.dataset.pt]; scr.querySelectorAll(".dl-pt").forEach(x => x.classList.toggle("on", x === g));
+      scr.querySelector(".dl-pinfo").innerHTML = `<b style="color:${KC[p.kind]}">● ${esc(p.label)}</b> — ${esc(p.note)}`; };
+      g.onclick = pick; g.onkeydown = e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); pick(); } }; });
+  };
+  tabs.forEach(b => b.onclick = () => show(b.dataset.tab));
+  show(store.get("dlTab:" + n.slug, "forum"));
+}
+function setupWhispers(pane, D, n){
+  const R = glReach(n), key = "wh:" + n.slug, saved = store.get(key, {});
+  const items = D.items.map((x, i) => ({...x, i, ok: R.near(x.at), p: R.pos(x.at)}));
+  const solved = () => Object.keys(saved).filter(k => saved[k] === "ok").length;
+  const card = x => {
+    if (!x.ok) { const r = R.ref(x.p - 1 || 1); return `<li class="wh-it wh-lk"><div class="wh-n">${x.i + 1}</div><div class="wh-b"><p class="wh-w">… … …</p>
+      <p class="wh-lt">🔒 Этот шёпот прозвучит после главы ${r.no} «${esc(r.t)}».</p><a href="${r.href}">Читать →</a></div></li>`; }
+    const st = saved[x.i], r = R.ref(x.p);
+    return `<li class="wh-it${st ? " done " + st : ""}" data-i="${x.i}"><div class="wh-n">${x.i + 1}</div><div class="wh-b">
+      <p class="wh-w">${x.whisper.map((w, j) => `<span style="animation-delay:${j * .6}s">${esc(w)}</span>`).join(" ")}</p>
+      <blockquote class="wh-v">${x.verse.split("\n").map(esc).join("<br>")}</blockquote>
+      <p class="wh-q">${esc(x.q)}</p>
+      <div class="wh-opts">${x.options.map((o, j) => `<button type="button" data-o="${j}"${st ? " disabled" : ""} class="${st && j === x.answer ? "right" : ""}">${esc(o)}</button>`).join("")}</div>
+      <div class="wh-res"${st ? "" : " hidden"}><b>${st === "ok" ? "🐬 " + esc(D.right) : "🌊 " + esc(D.wrong)}</b> ${esc(x.why)}
+        <small>Глава ${r.no} «${esc(r.t)}»</small></div></div></li>`;
+  };
+  const draw = () => {
+    const avail = items.filter(x => x.ok).length;
+    pane.innerHTML = `<div class="wh"><div class="wh-hero"><div class="wh-waves" aria-hidden="true"></div><div class="wh-title">🌊 ${esc(D.title)}</div><p>${esc(D.intro)}</p>
+      <div class="wh-score">Услышано: <b>${solved()}</b> из ${items.length}${avail < items.length ? ` · открыто ${avail}` : ""}${Object.keys(saved).length ? ` <button type="button" class="wh-reset">↺ заново</button>` : ""}</div></div>
+      <ol class="wh-list">${items.map(card).join("")}</ol></div>`;
+    pane.querySelectorAll(".wh-it[data-i] .wh-opts button").forEach(b => b.onclick = () => {
+      const li = b.closest(".wh-it"), x = items[+li.dataset.i], j = +b.dataset.o;
+      saved[x.i] = j === x.answer ? "ok" : "no"; store.set(key, saved);
+      li.querySelectorAll(".wh-opts button").forEach((c, k) => { c.disabled = true; if (k === x.answer) c.classList.add("right"); if (k === j && j !== x.answer) c.classList.add("wrong"); });
+      li.classList.add("done", saved[x.i]); const res = li.querySelector(".wh-res");
+      res.querySelector("b").textContent = saved[x.i] === "ok" ? "🐬 " + D.right : "🌊 " + D.wrong; res.hidden = false;
+      pane.querySelector(".wh-score b").textContent = solved();
+    });
+    const rs = pane.querySelector(".wh-reset"); if (rs) rs.onclick = () => { Object.keys(saved).forEach(k => delete saved[k]); store.set(key, saved); draw(); };
+  };
+  draw();
+}
 async function exSection(n, sec, pane){
   pane.innerHTML = `<div class="loading">…</div>`;
   let md = "*—*";
@@ -3087,6 +3270,8 @@ async function exSection(n, sec, pane){
   if (sec.style === "tarot" || sec.style === "tarot-read") { let D; try { D = JSON.parse(md); } catch(e) { D = null; } if (D) { (sec.style === "tarot" ? setupTarot : setupTarotRead)(pane, D, n, sec); return; } }
   if (sec.style === "horoscope") { let D; try { D = JSON.parse(md); } catch(e) { D = null; } if (D) { setupHoroscope(pane, D, n, sec); return; } }
   if (sec.style === "audiobook") { let D; try { D = JSON.parse(md); } catch(e) { D = null; } if (D) { setupAudiobook(pane, D, n); return; } }
+  if (sec.style === "dolphin-app") { let D; try { D = JSON.parse(md); } catch(e) { D = null; } if (D) { setupDolphinApp(pane, D, n); return; } }
+  if (sec.style === "whispers") { let D; try { D = JSON.parse(md); } catch(e) { D = null; } if (D) { setupWhispers(pane, D, n); return; } }
   if (sec.style === "encyclopedia") { const E = encyclopediaHTML(md, sec, n); pane.innerHTML = E.html; setupEncyclopedia(pane, E.render); return; }
   pane.innerHTML = `<article class="chapter ex-sec" lang="${esc(n.lang)}"><h2>${esc(sec.title)}</h2>${renderText(md)}</article>`;
   setupPsy(pane, n.lang);
