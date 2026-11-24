@@ -2143,6 +2143,8 @@ const CHAR_LABELS = {vec:"Personagi",ru:"Персонажи",es:"Personajes",it:
 /* Mapas 3D de las novelas (repo luisfader/sinea). Solo en los idiomas que tiene el mapa: para sumar uno, agregalo acá. */
 const MAPS_URL = "https://luisfader.github.io/sinea/";
 const MAPS_T = {es:"Mapas de las novelas", ru:"Карты романов"};
+/* Donaciones en el menú lateral: enlace externo a Boosty, en todos los idiomas */
+const DONATE_NAV = {ru:"Поддержать автора", es:"Donaciones", it:"Donazioni", en:"Donate", fr:"Faire un don", tr:"Bağış yap", pt:"Doações", cs:"Podpořit autora", sr:"Донације", eo:"Donacoj", isv:"Podpora avtora", de:"Spenden", pl:"Wesprzyj autora", bg:"Дарения"};
 function navItems(){
   const it = [["#/", "📚", st(0), ""], ["characters.html?lang=" + encodeURIComponent(lang), "✧", CHAR_LABELS[lang] || "Characters", "characters"], ["#/blog", "✎", bt("title"), "blog"]];
   if (newsPaper(lang)) it.push(["#/news", "📰", nt("btn"), "news"]);
@@ -2152,6 +2154,7 @@ function navItems(){
   if (PODCASTS[lang]) it.push(["#/podcast", "🎙", PODCASTS[lang].btn, "podcast"]);
   if (MAPS_T[lang]) it.push([MAPS_URL + "?lang=" + lang, "🗺", MAPS_T[lang], "mapas"]);
   it.push(["#/mis-lecturas", "★", ft(0) + " · " + rt(1), "mis-lecturas"]);
+  it.push(["https://boosty.to/fader26/donate", "♥", DONATE_NAV[lang] || DONATE_NAV.en, "donate"]);
   return it;
 }
 const wideNav = matchMedia("(min-width:1180px)");

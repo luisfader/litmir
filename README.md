@@ -51,7 +51,7 @@ Un idioma también puede ofrecer pódcasts: en el menú de la portada aparece «
 
 ## Donaciones
 
-Al final del último capítulo de cada novela en ruso, español, inglés e italiano aparece un recuadro para apoyar al autor: un botón a https://boosty.to/fader26/donate y el código QR (`app/donate-qr.png`). Los textos están en `DONATE_TXT` y el enlace en `DONATE_URL`, dentro de `index.html`; para sumar otro idioma basta con añadir su entrada a `DONATE_TXT`.
+Al final del último capítulo de cada novela en ruso, español, inglés e italiano aparece un recuadro para apoyar al autor: un botón a https://boosty.to/fader26/donate y el código QR (`app/donate-qr.png`). Además, el menú lateral tiene «♥ Donaciones» (enlace directo a Boosty) en todos los idiomas: textos en `DONATE_NAV` de `index.html` y en `app/nav.json`. Los textos están en `DONATE_TXT` y el enlace en `DONATE_URL`, dentro de `index.html`; para sumar otro idioma basta con añadir su entrada a `DONATE_TXT`.
 
 ## Secciones de la novela (banda sonora, juegos, galería)
 
