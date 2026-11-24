@@ -102,7 +102,7 @@ grid.innerHTML=found.length?found.map(({p,profile,linked})=>'<article class="car
 }
 grid.addEventListener("click",e=>{const b=e.target.closest(".thumbs button");if(!b)return;const g=b.closest(".gallery");const m=g.querySelector(".main");m.src=b.dataset.src;m.parentNode.href=b.dataset.src;g.querySelectorAll(".thumbs button").forEach(x=>x.classList.toggle("on",x===b))});
 sel.addEventListener("change",()=>{language=sel.value;localStorage.setItem("litmir-lang",language);params.set("lang",language);history.replaceState(null,"","?"+params.toString());draw()});search.addEventListener("input",draw);
-Promise.all([fetch("./novels/catalog.json",{cache:"no-cache"}).then(r=>r.json()),fetch("./characters/catalog.json",{cache:"no-cache"}).then(r=>r.json())]).then(([a,b])=>{books=a.novels;people=b.characters;draw()}).catch(()=>{grid.innerHTML='<p class="empty">'+E((X[language]||X.es)[3])+'</p>'});
+Promise.all([fetch("./novels/catalog.json",{cache:"no-cache"}).then(r=>r.json()),fetch("./characters/catalog.json",{cache:"no-cache"}).then(r=>r.json())]).then(([a,b])=>{books=a.novels;people=b.characters;people.forEach(p=>{const L=Object.values(p.localizations||{}).filter(Boolean),im=(L.find(l=>l.images&&l.images.length)||{}).images;if(im)L.forEach(l=>{if(!l.images||!l.images.length)l.images=im})});draw()}).catch(()=>{grid.innerHTML='<p class="empty">'+E((X[language]||X.es)[3])+'</p>'});
 /* Menú lateral */
 const SN={get(k,d){try{const v=localStorage.getItem("lm:"+k);return v===null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem("lm:"+k,JSON.stringify(v))}catch(e){}}};
 let navAll=null;const wideNav=matchMedia("(min-width:1180px)");
