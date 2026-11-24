@@ -2153,6 +2153,8 @@ function renderSiteNav(){
   const sec = location.hash.replace(/^#\/?/, "").split("/")[0];
   const known = new Set(["blog","news","learn","juegos","magazine","podcast","mis-lecturas"]);
   const cur = GAME_SECS.has(sec) ? "juegos" : known.has(sec) ? sec : "";
+  /* Se guarda para que characters.html muestre el mismo menú lateral (ver app/nav.json) */
+  store.set("nav:" + lang, {h: st(1), items: navItems()});
   box.innerHTML = `<h2>${esc(st(1))}</h2>` + navItems().map(([h, i, l, k]) =>
     `<a href="${esc(h)}"${/^https?:/.test(h) ? ' target="_blank" rel="noopener"' : ""}${k === cur ? ' aria-current="page"' : ""}><span class="i">${i}</span><span>${esc(l)}</span></a>`).join("");
   document.getElementById("snavBtn").setAttribute("aria-label", st(1));

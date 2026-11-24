@@ -13,6 +13,20 @@
 .stats{font:13px system-ui,sans-serif;color:var(--muted);margin-bottom:16px}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(245px,1fr));gap:18px;padding-bottom:70px}
 .card{background:var(--paper);border:1px solid var(--line);border-radius:13px;padding:23px;box-shadow:0 6px 18px rgba(50,35,25,.035);display:flex;flex-direction:column;gap:12px}.monogram{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;font:28px Georgia,serif;color:var(--accent);background:color-mix(in srgb,var(--accent) 12%,var(--paper))}.card h2{font-size:24px;font-weight:normal;line-height:1.2;margin:0}.card h2 .in{display:block;font-size:14px;color:var(--muted);font-style:italic;margin-top:4px}.card p{font-size:15px;color:var(--muted);margin:0;flex:1}.novels{display:flex;flex-wrap:wrap;gap:7px}.novels a{font:12px system-ui,sans-serif;text-decoration:none;border:1px solid var(--line);border-radius:20px;padding:6px 9px;color:var(--accent)}.novels a:hover{background:var(--bg)}.gallery{margin:-23px -23px 0;border-radius:13px 13px 0 0;overflow:hidden;background:var(--bg)}.gallery .main{display:block;width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center top}.thumbs{display:flex;gap:6px;padding:8px}.thumbs button{border:2px solid transparent;border-radius:7px;padding:0;background:none;cursor:pointer;width:52px;height:52px;overflow:hidden}.thumbs button.on{border-color:var(--accent)}.thumbs img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
 .empty{padding:55px 0;color:var(--muted)}footer{border-top:1px solid var(--line);padding:24px 0;font:13px system-ui,sans-serif;color:var(--muted)}
+/* Menú lateral: el mismo que en index.html (los enlaces salen de lm:nav:<idioma> o de app/nav.json) */
+header{position:sticky;top:0;z-index:10}.brandbox{display:flex;align-items:center;gap:6px}
+.snav-toggle{border:0;background:none;font-size:21px;line-height:1;cursor:pointer;padding:7px 9px;border-radius:9px;color:var(--ink);flex:none}
+.snav-toggle:hover,.snav-toggle[aria-expanded="true"]{background:color-mix(in srgb,var(--accent) 12%,var(--paper));color:var(--accent)}
+.snav{position:fixed;top:var(--hh,66px);left:0;bottom:0;width:240px;z-index:9;background:var(--paper);border-right:1px solid var(--line);overflow-y:auto;padding:16px 10px 90px;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;transform:translateX(-100%);visibility:hidden;transition:transform .22s ease,visibility .22s}
+body.snav-open .snav{transform:none;visibility:visible}
+.snav h2{font:600 11px system-ui,sans-serif;text-transform:uppercase;letter-spacing:.14em;color:var(--muted);margin:2px 12px 10px}
+.snav a{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:10px;text-decoration:none;font-size:14.5px;line-height:1.3;color:var(--ink)}
+.snav a .i{width:20px;text-align:center;flex:none}
+.snav a:hover,.snav a:focus-visible{background:var(--bg);color:var(--accent)}
+.snav a[aria-current="page"]{background:color-mix(in srgb,var(--accent) 12%,var(--paper));color:var(--accent);font-weight:600}
+.snav-back{display:none}
+@media (min-width:1180px){main,footer{transition:margin-left .22s ease}body.snav-open main,body.snav-open footer{margin-left:240px}}
+@media (max-width:1179px){.snav{box-shadow:0 8px 24px rgba(0,0,0,.18);width:min(280px,84vw)}body.snav-open .snav-back{display:block;position:fixed;inset:var(--hh,66px) 0 0 0;z-index:8;background:rgba(0,0,0,.4)}}
 </style><link rel="manifest" href="manifest.webmanifest">
 <meta name="theme-color" content="#8c2f2f">
 <link rel="icon" type="image/png" sizes="32x32" href="app/favicon-32.png">
@@ -21,7 +35,8 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="LitFader">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
-</head><body><header><div class="wrap"><a class="brand" id="brand" href="./index.html">✦ LitFader</a><a class="back" id="back" href="./index.html">← Volver a las novelas</a></div></header>
+</head><body><header><div class="wrap"><div class="brandbox"><button type="button" class="snav-toggle" id="snavBtn" aria-controls="siteNav" aria-expanded="false" aria-label="Menú">☰</button><a class="brand" id="brand" href="./index.html">✦ LitFader</a></div><a class="back" id="back" href="./index.html">← Volver a las novelas</a></div></header>
+<aside class="snav" id="siteNav" aria-label="Menú"></aside><div class="snav-back" id="snavBack"></div>
 <main class="wrap"><section class="hero"><div class="eyebrow" id="eyebrow">Universo literario</div><h1 id="heading">Personajes</h1><p class="lead" id="lead">Descubrí a los protagonistas y personajes de las novelas. Elegí un idioma para explorar sus historias.</p></section>
 <div class="tools"><select id="lang" aria-label="Idioma"></select><input id="search" type="search" placeholder="Buscar personajes o novelas…" aria-label="Buscar personajes"></div>
 <div class="stats" id="stats"></div><div class="grid" id="grid"></div></main><footer><div class="wrap">© Robert Fader · <span id="footerText">Personajes del universo literario</span></div></footer>
@@ -76,6 +91,7 @@ const params=new URLSearchParams(location.search);let language=params.get("lang"
 const sel=document.getElementById("lang");sel.innerHTML=Object.entries(NAMES).map(([k,v])=>'<option value="'+k+'">'+E(v)+'</option>').join("");sel.value=language;
 let books=[],people=[];const search=document.getElementById("search");const grid=document.getElementById("grid");
 function draw(){
+if(typeof renderNav==="function")renderNav();
 const ui=I[language]||I.es,x=X[language]||X.es;document.getElementById("brand").textContent="✦ "+x[0];document.getElementById("footerText").textContent=x[1];document.documentElement.lang=language;document.title=ui[0]+" · Robert Fader";
 document.getElementById("heading").textContent=ui[0];document.getElementById("eyebrow").textContent=ui[1];document.getElementById("lead").textContent=ui[2];search.placeholder=ui[3];document.getElementById("back").textContent="← "+ui[4];document.getElementById("back").href="./index.html#/";
 const available=new Map(books.filter(b=>b.lang===language&&!b.hidden).map(b=>[b.slug,b]));
@@ -87,4 +103,19 @@ grid.innerHTML=found.length?found.map(({p,profile,linked})=>'<article class="car
 grid.addEventListener("click",e=>{const b=e.target.closest(".thumbs button");if(!b)return;const g=b.closest(".gallery");const m=g.querySelector(".main");m.src=b.dataset.src;m.parentNode.href=b.dataset.src;g.querySelectorAll(".thumbs button").forEach(x=>x.classList.toggle("on",x===b))});
 sel.addEventListener("change",()=>{language=sel.value;localStorage.setItem("litmir-lang",language);params.set("lang",language);history.replaceState(null,"","?"+params.toString());draw()});search.addEventListener("input",draw);
 Promise.all([fetch("./novels/catalog.json",{cache:"no-cache"}).then(r=>r.json()),fetch("./characters/catalog.json",{cache:"no-cache"}).then(r=>r.json())]).then(([a,b])=>{books=a.novels;people=b.characters;draw()}).catch(()=>{grid.innerHTML='<p class="empty">'+E((X[language]||X.es)[3])+'</p>'});
+/* Menú lateral */
+const SN={get(k,d){try{const v=localStorage.getItem("lm:"+k);return v===null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem("lm:"+k,JSON.stringify(v))}catch(e){}}};
+let navAll=null;const wideNav=matchMedia("(min-width:1180px)");
+function navOpen(v){document.body.classList.toggle("snav-open",!!v);document.getElementById("snavBtn").setAttribute("aria-expanded",!!v)}
+function renderNav(){const box=document.getElementById("siteNav");const d=SN.get("nav:"+language,null)||(navAll&&(navAll[language]||navAll.es));if(!d){box.innerHTML="";return}
+box.innerHTML='<h2>'+E(d.h)+'</h2>'+d.items.map(([h,i,l,k])=>{const ext=/^https?:/.test(h),href=h.charAt(0)==="#"?"./index.html?lang="+encodeURIComponent(language)+h:k==="characters"?"characters.html?lang="+encodeURIComponent(language):h;
+return '<a href="'+E(href)+'"'+(ext?' target="_blank" rel="noopener"':'')+(k==="characters"?' aria-current="page"':'')+'><span class="i">'+i+'</span><span>'+E(l)+'</span></a>'}).join("");document.getElementById("snavBtn").setAttribute("aria-label",d.h)}
+(function(){const hh=()=>document.documentElement.style.setProperty("--hh",document.querySelector("header").offsetHeight+"px");hh();addEventListener("resize",hh);
+const btn=document.getElementById("snavBtn"),box=document.getElementById("siteNav");navOpen(wideNav.matches&&SN.get("snav",true));
+btn.addEventListener("click",()=>{const v=!document.body.classList.contains("snav-open");navOpen(v);if(wideNav.matches)SN.set("snav",v)});
+document.getElementById("snavBack").addEventListener("click",()=>navOpen(false));
+box.addEventListener("click",e=>{if(e.target.closest("a")&&!wideNav.matches)navOpen(false)});
+addEventListener("keydown",e=>{if(e.key==="Escape"&&!wideNav.matches&&document.body.classList.contains("snav-open"))navOpen(false)});
+const sync=()=>navOpen(wideNav.matches&&SN.get("snav",true));if(wideNav.addEventListener)wideNav.addEventListener("change",sync);else wideNav.addListener(sync);
+renderNav();fetch("./app/nav.json",{cache:"no-cache"}).then(r=>r.json()).then(j=>{navAll=j;renderNav()}).catch(()=>{});})();
 </script></body></html>
