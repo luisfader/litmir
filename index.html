@@ -1304,6 +1304,37 @@ body.snav-open .snav{transform:none;visibility:visible}
 .enc-deep .enc-e{box-shadow:0 4px 14px -10px #000}
 .enc-deep .enc-b strong{color:#ffd9a0}.enc-deep .enc-b blockquote{color:#b7d3e6}
 .enc-deep .enc-more{background:#0b2236}.enc-deep .enc-lk{background:#0b2236;border-color:#24557c}
+/* «Голос»: блок разделов в цветах обложки — штормовая ночь, морская волна, янтарные глаза лешего */
+.ex.ex-nv-golos{--paper:#0f2135;--bg:#0b192a;--ink:#e9eef4;--muted:#9fb7cc;--line:#23476a;--accent:#ff8a3d;--accent-soft:#2a2420;
+  color:var(--ink);border:1.5px solid #2e5f88;
+  background:radial-gradient(70% 90% at 100% 0%,rgba(255,138,61,.16),transparent 60%),radial-gradient(90% 70% at 0% 100%,rgba(63,170,214,.28),transparent 65%),linear-gradient(160deg,#16263c 0%,#0d1b2c 55%,#0a2236 100%);
+  box-shadow:0 14px 34px -10px rgba(5,20,40,.55),inset 0 1px 0 rgba(255,255,255,.06);animation:exgGlow 4s ease-in-out infinite}
+@keyframes exgGlow{50%{box-shadow:0 0 0 4px rgba(79,179,224,.16),0 18px 42px -10px rgba(10,60,100,.65),inset 0 1px 0 rgba(255,255,255,.06)}}
+.ex.ex-nv-golos::after{background:linear-gradient(110deg,transparent 38%,rgba(160,220,255,.16) 50%,transparent 62%)}
+.ex.ex-nv-golos::before{content:"";position:absolute;left:0;right:0;bottom:0;height:46px;pointer-events:none;opacity:.5;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='46'%3E%3Cpath d='M0 26 Q30 12 60 26 T120 26 V46 H0Z' fill='%23164a6e' fill-opacity='.55'/%3E%3Cpath d='M0 34 Q30 22 60 34 T120 34 V46 H0Z' fill='%231f6f9c' fill-opacity='.45'/%3E%3C/svg%3E") repeat-x 0 100%/120px 46px;animation:exgWave 9s linear infinite}
+@keyframes exgWave{to{background-position:120px 100%}}
+.ex.ex-nv-golos.on::before{opacity:.18}
+.ex-nv-golos .ex-open{padding:20px 18px}
+.ex-nv-golos .ex-open::after{content:"";position:absolute;top:16px;right:66px;width:30px;height:8px;pointer-events:none;
+  background:radial-gradient(circle at 4px 4px,#ffb15c 0 2.4px,rgba(255,120,40,.5) 3.5px,transparent 6px),radial-gradient(circle at 26px 4px,#ffb15c 0 2.4px,rgba(255,120,40,.5) 3.5px,transparent 6px);animation:exgEyes 6s ease-in-out infinite}
+@keyframes exgEyes{0%,38%,100%{opacity:0;transform:scaleY(1)}44%,70%{opacity:.95}73%{opacity:.95;transform:scaleY(.1)}76%{transform:scaleY(1)}}
+.ex-nv-golos .ex-lbl b{font:600 25px/1.1 var(--display);letter-spacing:.01em;color:#f4efe6;text-shadow:0 2px 14px rgba(79,179,224,.35)}
+.ex-nv-golos .ex-lbl small{color:#9fc3dc}
+.ex-nv-golos .ex-ic i{border-color:#0d1b2c;box-shadow:0 4px 14px rgba(0,0,0,.4)}
+.ex-nv-golos .ex-ch{background:linear-gradient(135deg,#ffae5c,#e2552b);box-shadow:0 0 18px rgba(255,138,61,.55);color:#1a0d06}
+.ex-nv-golos :is(.ex-ic,.ex-menu) .ex-i-music{background:linear-gradient(135deg,#8a6bd6,#3c2a8a)}
+.ex-nv-golos :is(.ex-ic,.ex-menu) .ex-i-sec0{background:linear-gradient(135deg,#5cc8f2,#1f5fa8)}
+.ex-nv-golos :is(.ex-ic,.ex-menu) .ex-i-sec1{background:linear-gradient(135deg,#4fd8c8,#16708a)}
+.ex-nv-golos :is(.ex-ic,.ex-menu) .ex-i-sec2{background:linear-gradient(135deg,#ffae5c,#b8361f)}
+.ex-nv-golos .ex-body{border-top-color:rgba(120,180,230,.18)}
+.ex-nv-golos .ex-mh{color:#7fa9c9}
+.ex-nv-golos .ex-mi{background:rgba(255,255,255,.035);border-color:#21466a}
+.ex-nv-golos .ex-mi:hover{border-color:#4fb3e0;background:rgba(79,179,224,.08);box-shadow:0 8px 22px -8px rgba(79,179,224,.45)}
+.ex-nv-golos .ex-mgo{color:#ffae5c;background:rgba(255,138,61,.14)}
+.ex-nv-golos .ex-back{color:#ffae5c;background:rgba(255,138,61,.12)}
+@media (max-width:520px){.ex-nv-golos .ex-lbl b{font-size:21px}.ex-nv-golos .ex-ic i{width:38px;height:38px;font-size:17px;margin-left:-14px}.ex-nv-golos .ex-ic i:first-child{margin-left:0}.ex-nv-golos .ex-open::after{right:58px;top:10px}}
+@media (prefers-reduced-motion:reduce){.ex.ex-nv-golos,.ex.ex-nv-golos::before,.ex-nv-golos .ex-open::after{animation:none}.ex-nv-golos .ex-open::after{opacity:.8}}
 </style>
 </head>
 <body>
@@ -2609,7 +2640,7 @@ function exTabs(n){ const t = []; if (n.soundtrack && n.soundtrack.length) t.pus
 function extrasHTML(n){
   const tabs = exTabs(n); if (!tabs.length) return "";
   const T = exT(n.lang);
-  return `<section class="ex" id="ex">
+  return `<section class="ex ex-nv-${esc(n.slug)}" id="ex">
     <button type="button" class="ex-open" aria-expanded="false" aria-controls="exBody">
       <span class="ex-ic">${tabs.map(k => `<i class="ex-i-${k}">${exIc(n, k)}</i>`).join("")}</span>
       <span class="ex-lbl"><b>${esc(T.btn)}</b><small>${tabs.map(k => esc(exLb(n, T, k))).join(" · ")}</small></span>
