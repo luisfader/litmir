@@ -697,19 +697,35 @@
    "localizations": {
     "sr": {
      "name": "Змај",
-     "description": "Змај и савезник јунака „Дивљег часа“. Његова снага помаже пријатељима у пресудним тренуцима."
+     "description": "Змај и савезник јунака „Дивљег часа“. Његова снага помаже пријатељима у пресудним тренуцима.",
+     "images": [
+      "characters/img/zmaj-1.jpg",
+      "characters/img/zmaj-2.jpg"
+     ]
     },
     "eo": {
      "name": "Zmaj",
-     "description": "Drako kaj aliancano de la herooj de La Sovaĝa Horo. Lia forto helpas ilin en decidaj momentoj."
+     "description": "Drako kaj aliancano de la herooj de La Sovaĝa Horo. Lia forto helpas ilin en decidaj momentoj.",
+     "images": [
+      "characters/img/zmaj-1.jpg",
+      "characters/img/zmaj-2.jpg"
+     ]
     },
     "it": {
      "name": "Zmaj",
-     "description": "Drago alleato di Luis e Nataša. Con i suoi occhi di fuoco azzurro e le sue ali porta gli eroi sopra i canali di Venezia nella battaglia contro McGregor."
+     "description": "Drago alleato di Luis e Nataša. Con i suoi occhi di fuoco azzurro e le sue ali porta gli eroi sopra i canali di Venezia nella battaglia contro McGregor.",
+     "images": [
+      "characters/img/zmaj-1.jpg",
+      "characters/img/zmaj-2.jpg"
+     ]
     },
     "ru": {
      "name": "Змай",
-     "description": "Огромный древний дракон, союзник Луиса и Наташи. Охраняет их дом, приходит на помощь в решающих битвах, а в «Эпическом матче» становится символом и талисманом сборной Человечества."
+     "description": "Огромный древний дракон, союзник Луиса и Наташи. Охраняет их дом, приходит на помощь в решающих битвах, а в «Эпическом матче» становится символом и талисманом сборной Человечества.",
+     "images": [
+      "characters/img/zmaj-1.jpg",
+      "characters/img/zmaj-2.jpg"
+     ]
     }
    }
   },
@@ -3013,11 +3029,19 @@
    "localizations": {
     "ru": {
      "name": "Луис Фадер",
-     "description": "Обаятельный сотрудник с очень странным чувством юмора, которого Наталья встречает в весеннем Петербурге. Помогает городу, где оживают сфинксы и атланты, а затем вместе с Натальей сражается с Хмурью от Москвы до Ярославля. В «Карнавале раздора» появляется рядом с другим Луисом — под именем агента Л."
+     "description": "Обаятельный сотрудник с очень странным чувством юмора, которого Наталья встречает в весеннем Петербурге. Помогает городу, где оживают сфинксы и атланты, а затем вместе с Натальей сражается с Хмурью от Москвы до Ярославля. В «Карнавале раздора» появляется рядом с другим Луисом — под именем агента Л.",
+     "images": [
+      "characters/img/luis-rezonans-1.jpg",
+      "characters/img/luis-rezonans-2.jpg"
+     ]
     },
     "pt": {
      "name": "Luiz Fader",
-     "description": "Agente de Assuntos Celestiais, de cabelo prateado e capa escura. Pega esfinges com uma boleadeira e deixa cartões sem telefone. Em São Petersburgo, cruza o caminho de Rita e Mateus."
+     "description": "Agente de Assuntos Celestiais, de cabelo prateado e capa escura. Pega esfinges com uma boleadeira e deixa cartões sem telefone. Em São Petersburgo, cruza o caminho de Rita e Mateus.",
+     "images": [
+      "characters/img/luis-rezonans-1.jpg",
+      "characters/img/luis-rezonans-2.jpg"
+     ]
     }
    }
   },
@@ -3084,11 +3108,19 @@
    "localizations": {
     "ru": {
      "name": "Ирина",
-     "description": "Руководитель Министерства мистических дел Востока. Родом из сибирской деревни, училась на юриста, пока не столкнулась с первой аномалией. Сначала хочет заполучить силу Наташи, потом становится союзницей героев."
+     "description": "Руководитель Министерства мистических дел Востока. Родом из сибирской деревни, училась на юриста, пока не столкнулась с первой аномалией. Сначала хочет заполучить силу Наташи, потом становится союзницей героев.",
+     "images": [
+      "characters/img/irina-ministry-1.jpg",
+      "characters/img/irina-ministry-2.jpg"
+     ]
     },
     "sr": {
      "name": "Ирина",
-     "description": "Шефица из Москве која прати догађаје у Мендози. Наташа јој не верује."
+     "description": "Шефица из Москве која прати догађаје у Мендози. Наташа јој не верује.",
+     "images": [
+      "characters/img/irina-ministry-1.jpg",
+      "characters/img/irina-ministry-2.jpg"
+     ]
     }
    }
   },
@@ -3157,11 +3189,17 @@
    "localizations": {
     "ru": {
      "name": "Артан",
-     "description": "Высокий мужчина с длинной чёрной бородой и властным взглядом, родом из далёкого горного края. Заговорщик, который хочет захватить Белград в Дикий час."
+     "description": "Высокий мужчина с длинной чёрной бородой и властным взглядом, родом из далёкого горного края. Заговорщик, который хочет захватить Белград в Дикий час.",
+     "images": [
+      "characters/img/artan-1.jpg"
+     ]
     },
     "sr": {
      "name": "Артан",
-     "description": "Брадати завереник из далеког планинског краја, који жели да у Дивљи час преузме Београд."
+     "description": "Брадати завереник из далеког планинског краја, који жели да у Дивљи час преузме Београд.",
+     "images": [
+      "characters/img/artan-1.jpg"
+     ]
     }
    }
   },
@@ -3180,11 +3218,19 @@
    "localizations": {
     "ru": {
      "name": "София",
-     "description": "Светловолосая и сосредоточенная участница заговора в башне Небойша. Осторожная и всё больше сомневающаяся в своих союзниках."
+     "description": "Светловолосая и сосредоточенная участница заговора в башне Небойша. Осторожная и всё больше сомневающаяся в своих союзниках.",
+     "images": [
+      "characters/img/sofia-conspirator-1.jpg",
+      "characters/img/sofia-conspirator-2.jpg"
+     ]
     },
     "sr": {
      "name": "Софија",
-     "description": "Завереница која носи магично камење и оставља га по Београду, да би у Час дивљака контролисала људе."
+     "description": "Завереница која носи магично камење и оставља га по Београду, да би у Час дивљака контролисала људе.",
+     "images": [
+      "characters/img/sofia-conspirator-1.jpg",
+      "characters/img/sofia-conspirator-2.jpg"
+     ]
     }
    }
   },
@@ -3523,11 +3569,19 @@
    "localizations": {
     "ru": {
      "name": "Наталья",
-     "description": "Москвичка, красивая, умная и с характером. Приезжает весной в Петербург, встречает там Луиса Фадера и оказывается самым сильным резонантом города. Не позволяет говорить за себя и не хочет быть удобной фигурой в чужом плане. В «Против мрака» вместе с Луисом ищет древний артефакт от Москвы до Ярославля."
+     "description": "Москвичка, красивая, умная и с характером. Приезжает весной в Петербург, встречает там Луиса Фадера и оказывается самым сильным резонантом города. Не позволяет говорить за себя и не хочет быть удобной фигурой в чужом плане. В «Против мрака» вместе с Луисом ищет древний артефакт от Москвы до Ярославля.",
+     "images": [
+      "characters/img/natalia-rezonans-1.jpg",
+      "characters/img/natalia-rezonans-2.jpg"
+     ]
     },
     "pt": {
      "name": "Natalia",
-     "description": "Moscovita de camisa branca e saia vermelha que veio a São Petersburgo para descansar. A cidade escuta essa moça: quando ela fica brava, até as xícaras tremem."
+     "description": "Moscovita de camisa branca e saia vermelha que veio a São Petersburgo para descansar. A cidade escuta essa moça: quando ela fica brava, até as xícaras tremem.",
+     "images": [
+      "characters/img/natalia-rezonans-1.jpg",
+      "characters/img/natalia-rezonans-2.jpg"
+     ]
     }
    }
   },
@@ -4227,15 +4281,27 @@
    "localizations": {
     "ru": {
      "name": "Аэль",
-     "description": "Вожак дельфинов с заметной отметиной, чей голос звучит в сознании Саши и указывает путь к тайной лаборатории."
+     "description": "Вожак дельфинов с заметной отметиной, чей голос звучит в сознании Саши и указывает путь к тайной лаборатории.",
+     "images": [
+      "characters/img/ael-1.jpg",
+      "characters/img/ael-2.jpg"
+     ]
     },
     "fr": {
      "name": "Ael",
-     "description": "Le dauphin meneur, à la marque bien visible, dont la voix résonne dans l’esprit de Sasha. Le Phare d’Ael porte son nom."
+     "description": "Le dauphin meneur, à la marque bien visible, dont la voix résonne dans l’esprit de Sasha. Le Phare d’Ael porte son nom.",
+     "images": [
+      "characters/img/ael-1.jpg",
+      "characters/img/ael-2.jpg"
+     ]
     },
     "it": {
      "name": "Ael",
-     "description": "Il capo dei delfini. È morto per salvare Sinea, e il faro porta il suo nome. Suo figlio Lume ha la sua macchia bianca sulla schiena."
+     "description": "Il capo dei delfini. È morto per salvare Sinea, e il faro porta il suo nome. Suo figlio Lume ha la sua macchia bianca sulla schiena.",
+     "images": [
+      "characters/img/ael-1.jpg",
+      "characters/img/ael-2.jpg"
+     ]
     }
    }
   },
@@ -4256,15 +4322,24 @@
    "localizations": {
     "ru": {
      "name": "Нира",
-     "description": "Мудрая представительница народа дельфинов, заключившая договор с людьми."
+     "description": "Мудрая представительница народа дельфинов, заключившая договор с людьми.",
+     "images": [
+      "characters/img/nira-1.jpg"
+     ]
     },
     "fr": {
      "name": "Nyra",
-     "description": "Conscience du peuple des dauphins, liée à Ael. Elle fait ses adieux à Sasha dans une dernière danse."
+     "description": "Conscience du peuple des dauphins, liée à Ael. Elle fait ses adieux à Sasha dans une dernière danse.",
+     "images": [
+      "characters/img/nira-1.jpg"
+     ]
     },
     "it": {
      "name": "Nira",
-     "description": "La più saggia dei delfini e la mamma di Lume. Due anni fa ha fatto un patto con Sinea."
+     "description": "La più saggia dei delfini e la mamma di Lume. Due anni fa ha fatto un patto con Sinea.",
+     "images": [
+      "characters/img/nira-1.jpg"
+     ]
     }
    }
   },
@@ -4402,7 +4477,11 @@
    "localizations": {
     "ru": {
      "name": "Альфредо",
-     "description": "Отец Франко, крупный мужчина с густыми бровями и тёмными вьющимися волосами с сильной проседью, который сердито ворчит над городскими новостями."
+     "description": "Отец Франко, крупный мужчина с густыми бровями и тёмными вьющимися волосами с сильной проседью, который сердито ворчит над городскими новостями.",
+     "images": [
+      "characters/img/alfredo-1.jpg",
+      "characters/img/alfredo-2.jpg"
+     ]
     }
    }
   },
@@ -4494,7 +4573,10 @@
    "localizations": {
     "ru": {
      "name": "Октавио Гранде",
-     "description": "Строгий мэр Синеи с лозунгом «Порядок. Дисциплина. Будущее», запретивший смех и улыбки."
+     "description": "Строгий мэр Синеи с лозунгом «Порядок. Дисциплина. Будущее», запретивший смех и улыбки.",
+     "images": [
+      "characters/img/octavio-grande-1.jpg"
+     ]
     }
    }
   },
@@ -6638,11 +6720,19 @@
    "localizations": {
     "fr": {
      "name": "Le Leshy",
-     "description": "Esprit de la forêt déformé, immense, fait d’écorce et de terre, qui mène l’invasion de Sinea."
+     "description": "Esprit de la forêt déformé, immense, fait d’écorce et de terre, qui mène l’invasion de Sinea.",
+     "images": [
+      "characters/img/leshy-1.jpg",
+      "characters/img/leshy-2.jpg"
+     ]
     },
     "ru": {
      "name": "Леший",
-     "description": "Тёмный леший — искажённый лесной дух из бабушкиных сказок, огромный, сплетённый из коры, камня и земли. Возглавляет вторжение в Синею."
+     "description": "Тёмный леший — искажённый лесной дух из бабушкиных сказок, огромный, сплетённый из коры, камня и земли. Возглавляет вторжение в Синею.",
+     "images": [
+      "characters/img/leshy-1.jpg",
+      "characters/img/leshy-2.jpg"
+     ]
     }
    }
   },
