@@ -2,9 +2,13 @@
 <html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Personajes · LitFader</title>
 <meta name="description" content="Conocé a los personajes de las novelas de Robert Fader, organizados por idioma y obra.">
+<script>try{var th=JSON.parse(localStorage.getItem("lm:theme"));if(th==="dark"||th==="sepia"||th==="light")document.documentElement.dataset.theme=th}catch(e){}</script>
 <style>
-:root{--bg:#f7f3ed;--paper:#fffdf9;--ink:#292520;--muted:#70685f;--line:#e6ddd2;--accent:#904c45}
-@media(prefers-color-scheme:dark){:root{--bg:#171513;--paper:#231f1b;--ink:#eee7dd;--muted:#b2a79c;--line:#3d342d;--accent:#e0a394}}
+:root{--bg:#f6f1e7;--paper:#fbf8f2;--ink:#2a2420;--muted:#7a6f64;--line:#e2d8c8;--accent:#8c2f2f}
+/* Mismos temas que index.html (claro, sepia, oscuro): se eligen en el lector y se guardan en lm:theme */
+:root[data-theme="dark"]{--bg:#16130f;--paper:#1d1914;--ink:#e9e1d4;--muted:#a19584;--line:#332c24;--accent:#d98c7a}
+:root[data-theme="sepia"]{--bg:#efe2c8;--paper:#f4e9d3;--ink:#3b2f22;--muted:#7d6a52;--line:#dcc9a6;--accent:#8a4b20}
+@media(prefers-color-scheme:dark){:root:not([data-theme]){--bg:#16130f;--paper:#1d1914;--ink:#e9e1d4;--muted:#a19584;--line:#332c24;--accent:#d98c7a}}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Georgia,serif;line-height:1.6}a{color:inherit}button,input,select{font:inherit}
 .wrap{max-width:1100px;margin:auto;padding:0 22px}header{border-bottom:1px solid var(--line);background:var(--paper)}header .wrap{min-height:65px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:12px;padding-bottom:12px}
 .brand{text-decoration:none;font-size:23px}.back{font:14px system-ui,sans-serif;text-decoration:none;color:var(--accent)}
