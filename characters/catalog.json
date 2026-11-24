@@ -174,7 +174,8 @@
    "novels": [
     "tajna-semi-fader",
     "el-misterio-de-los-fader",
-    "operacion-londres"
+    "operacion-londres",
+    "tajna-semi-fader-2"
    ],
    "localizations": {
     "es": {
@@ -2663,7 +2664,8 @@
    "novels": [
     "tajna-semi-fader",
     "el-misterio-de-los-fader",
-    "operacion-londres"
+    "operacion-londres",
+    "tajna-semi-fader-2"
    ],
    "localizations": {
     "es": {
@@ -2716,7 +2718,8 @@
    "novels": [
     "tajna-semi-fader",
     "el-misterio-de-los-fader",
-    "operacion-londres"
+    "operacion-londres",
+    "tajna-semi-fader-2"
    ],
    "localizations": {
     "es": {
@@ -3262,7 +3265,8 @@
    "novels": [
     "dikij-chas-2",
     "el-misterio-de-los-fader",
-    "tajna-semi-fader"
+    "tajna-semi-fader",
+    "tajna-semi-fader-2"
    ],
    "localizations": {
     "ru": {
@@ -6412,7 +6416,8 @@
    "novels": [
     "el-misterio-de-los-fader",
     "operacion-londres",
-    "tajna-semi-fader"
+    "tajna-semi-fader",
+    "tajna-semi-fader-2"
    ],
    "localizations": {
     "es": {
@@ -6866,7 +6871,8 @@
    "role": "Zorro de montaña que custodia la finca Fader.",
    "novels": [
     "el-misterio-de-los-fader",
-    "tajna-semi-fader"
+    "tajna-semi-fader",
+    "tajna-semi-fader-2"
    ],
    "localizations": {
     "es": {

@@ -15,9 +15,9 @@
    "prompt": "Who is it?",
    "question": "A stranger who frees Vasily from forced labour and begins building Our Utopia, a fortress for survivors. He wants specialists, not soldiers: “Ask what they need, and tell me.”",
    "options": [
-    "Daria Sokolova",
+    "Nadia",
     "Robert",
-    "Veronica",
+    "Olga",
     "Frank Stevenson"
    ],
    "answer": 1,
@@ -29,10 +29,10 @@
    "prompt": "Who is it?",
    "question": "A 29-year-old computer repairman from Moscow in 3024, a lonely world where all the women disappeared twenty years ago. He finds an old red time machine, travels to Moscow in 2024 and falls in love with Olga.",
    "options": [
-    "Inspector Vega",
+    "Tom Stevenson",
     "Alex",
-    "Susan",
-    "Leo"
+    "Maksim Orlov",
+    "Anna"
    ],
    "answer": 1,
    "why": "It’s Alex, from «A Man from the Future»."
@@ -43,12 +43,12 @@
    "prompt": "Who is it?",
    "question": "A young woman who works in her aunt Nina’s café and draws when it is quiet. She helps Alex in 2024, secretly travels to his future and meets herself on the way back. In the end she chooses to build a life with Alex in her own time.",
    "options": [
+    "Clara",
+    "Alex",
     "Olga",
-    "Maksim Orlov",
-    "Svetlana",
-    "Martin"
+    "Nadia"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "It’s Olga, from «A Man from the Future»."
   },
   {
@@ -58,9 +58,9 @@
    "question": "Olga’s aunt, who owns the café where Alex first meets Olga. She asks Alex to repair her computer and pays him for the work.",
    "options": [
     "Nina",
-    "Tom Stevenson",
-    "Inspector Vega",
-    "Nadia"
+    "Pavel",
+    "Maksim Orlov",
+    "Vanessa"
    ],
    "answer": 0,
    "why": "It’s Nina, from «A Man from the Future»."
@@ -71,12 +71,12 @@
    "prompt": "Who is it?",
    "question": "A young woman Alex approaches outside a bookshop on his first day in 2024. He asks her to leave her whole life behind for him, and she tells him to stop following her.",
    "options": [
+    "Tom Stevenson",
     "Svetlana",
-    "Pavel",
-    "Susan",
-    "Dr. Irina Morozova"
+    "Veronica",
+    "Clara"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "It’s Svetlana, from «A Man from the Future»."
   },
   {
@@ -85,9 +85,9 @@
    "prompt": "Who is it?",
    "question": "Alex’s colleague in 3024. He is the first man to see Olga when she arrives from the past, and he promises to tell everyone at work that Alex is alive.",
    "options": [
-    "Vasily",
-    "Frank Stevenson",
-    "Alex",
+    "Svetlana",
+    "Nadia",
+    "Vanessa",
     "Pavel"
    ],
    "answer": 3,
@@ -99,12 +99,12 @@
    "prompt": "Who is it?",
    "question": "A private detective who believes a woman killed his brother Tom two years ago. He creates a fake dating profile as “Mark” and goes on one strange date after another to find the killer.",
    "options": [
-    "Dr. Irina Morozova",
-    "Svetlana",
     "Frank Stevenson",
-    "Leo"
+    "Tom Stevenson",
+    "Anna",
+    "Rosa"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "It’s Frank Stevenson, from «The Date»."
   },
   {
@@ -115,8 +115,8 @@
    "options": [
     "Robert",
     "Tom Stevenson",
-    "Maksim Orlov",
-    "Leo"
+    "Leo",
+    "Martin"
    ],
    "answer": 1,
    "why": "It’s Tom Stevenson, from «The Date»."
@@ -127,10 +127,10 @@
    "prompt": "Who is it?",
    "question": "Frank’s first date: beautiful, with long black hair and red lips. She likes expensive wine and asks too many questions about money and dogs.",
    "options": [
-    "Vasily",
-    "Tom Stevenson",
+    "Pavel",
+    "Rosa",
     "Clara",
-    "Anna"
+    "Martin"
    ],
    "answer": 2,
    "why": "It’s Clara, from «The Date»."
@@ -141,12 +141,12 @@
    "prompt": "Who is it?",
    "question": "A strange woman with a strange profile who loves dead bugs and crazy games. When “Mark” tries to leave, she screams “Nobody rejects me!” and chases him.",
    "options": [
-    "Susan",
-    "Daria Sokolova",
-    "Maksim Orlov",
-    "Veronica"
+    "Martin",
+    "Pavel",
+    "Veronica",
+    "Charles"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "It’s Veronica, from «The Date»."
   },
   {
@@ -155,12 +155,12 @@
    "prompt": "Who is it?",
    "question": "A woman with short blonde hair who writes to “Mark” first. Her story sounds like Tom’s, she thinks a man should be quiet and handsome, and she kisses Frank and runs away.",
    "options": [
+    "Nadia",
+    "Nina",
     "Rosa",
-    "Olga",
-    "Robert",
-    "Nadia"
+    "Dr. Irina Morozova"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "It’s Nadia, from «The Date»."
   },
   {
@@ -169,10 +169,10 @@
    "prompt": "Who is it?",
    "question": "A talker with a very normal profile who loves sunsets, pizza and her cat, Mr. Snuffles, and never stops talking about her ex-boyfriends. At the end she comes to apologise and helps Frank and Tom make peace.",
    "options": [
-    "Veronica",
+    "Martin",
     "Susan",
-    "Clara",
-    "Inspector Vega"
+    "Daria Sokolova",
+    "Nina"
    ],
    "answer": 1,
    "why": "It’s Susan, from «The Date»."
@@ -183,10 +183,10 @@
    "prompt": "Who is it?",
    "question": "A smart lawyer who writes everything in a small notebook. She brings a contract that says “Mark” broke the rules of dating.",
    "options": [
-    "Frank Stevenson",
+    "Robert",
     "Rosa",
-    "Maksim Orlov",
-    "Anna"
+    "Nadia",
+    "Charles"
    ],
    "answer": 1,
    "why": "It’s Rosa, from «The Date»."
@@ -197,12 +197,12 @@
    "prompt": "Who is it?",
    "question": "A violin player with long white hair and a smile that is too big. She lives in a big old house, plays scary music and ties “Mark” to a chair — “for the drama”.",
    "options": [
-    "Tom Stevenson",
-    "Alex",
+    "Dr. Irina Morozova",
     "Vanessa",
-    "Veronica"
+    "Maksim Orlov",
+    "Vasily"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "It’s Vanessa, from «The Date»."
   },
   {
@@ -212,9 +212,9 @@
    "question": "An immigrant who arrives in Sinea by ship with a small bag, no money and no papers. He finds the stolen turquoise diamond, gives it back, and becomes the honest new Mayor of Sinea.",
    "options": [
     "Charles",
-    "Svetlana",
-    "Maksim Orlov",
-    "Rosa"
+    "Inspector Vega",
+    "Veronica",
+    "Nina"
    ],
    "answer": 0,
    "why": "It’s Charles, from «The Immigrant»."
@@ -225,12 +225,12 @@
    "prompt": "Who is it?",
    "question": "A kind teacher who listens to Charles and helps him return the diamond. When her father has Charles arrested, she helps him escape and convinces him to run for Mayor.",
    "options": [
+    "Vanessa",
+    "Inspector Vega",
     "Frank Stevenson",
-    "Anna",
-    "Clara",
-    "Tom Stevenson"
+    "Anna"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "It’s Anna, from «The Immigrant»."
   },
   {
@@ -240,11 +240,11 @@
    "question": "The Mayor of Sinea and Anna’s father. In Charles’s country he ran an illegal diamond business with slaves; in Sinea he blames immigrants for everything and loses the election to Charles.",
    "options": [
     "Svetlana",
-    "Veronica",
-    "Rosa",
-    "Martin"
+    "Pavel",
+    "Martin",
+    "Leo"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "It’s Martin, from «The Immigrant»."
   },
   {
@@ -253,12 +253,12 @@
    "prompt": "Who is it?",
    "question": "Anna’s friend, a hacker with a room full of computers. Click, click, click: he fixes Charles’s papers so he can be a candidate for Mayor.",
    "options": [
-    "Leo",
-    "Frank Stevenson",
-    "Charles",
-    "Susan"
+    "Rosa",
+    "Clara",
+    "Svetlana",
+    "Leo"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "It’s Leo, from «The Immigrant»."
   },
   {
@@ -267,12 +267,12 @@
    "prompt": "Who is it?",
    "question": "The narrator. Four years after the Devastation he survives among armed gangs until Robert saves him from forced labour. Robert gives him a motorcycle and a mission: recruit three specialists for Our Utopia.",
    "options": [
-    "Robert",
     "Vasily",
-    "Martin",
-    "Anna"
+    "Anna",
+    "Dr. Irina Morozova",
+    "Pavel"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "It’s Vasily, from «The Foreboding»."
   },
   {
@@ -281,10 +281,10 @@
    "prompt": "Who is it?",
    "question": "Physician and emergency surgeon who refuses to abandon her patients at the old railway hospital near North Station.",
    "options": [
-    "Pavel",
-    "Susan",
+    "Nina",
+    "Robert",
     "Dr. Irina Morozova",
-    "Anna"
+    "Frank Stevenson"
    ],
    "answer": 2,
    "why": "It’s Dr. Irina Morozova, from «The Foreboding»."
@@ -295,12 +295,12 @@
    "prompt": "Who is it?",
    "question": "Civil engineer and water systems specialist at the Raven Dam maintenance compound.",
    "options": [
-    "Anna",
-    "Pavel",
+    "Leo",
     "Maksim Orlov",
+    "Frank Stevenson",
     "Vanessa"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "It’s Maksim Orlov, from «The Foreboding»."
   },
   {
@@ -309,12 +309,12 @@
    "prompt": "Who is it?",
    "question": "Agronomist and former biology teacher protecting a seed collection at the Pinefield research station.",
    "options": [
+    "Maksim Orlov",
     "Daria Sokolova",
-    "Nina",
-    "Susan",
-    "Vasily"
+    "Vasily",
+    "Pavel"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "It’s Daria Sokolova, from «The Foreboding»."
   },
   {
@@ -323,12 +323,12 @@
    "prompt": "Who is it?",
    "question": "The police inspector who brings news from Charles’s country, puts handcuffs on Martin and helps Anna.",
    "options": [
-    "Anna",
     "Inspector Vega",
     "Maksim Orlov",
-    "Nina"
+    "Olga",
+    "Anna"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "It’s Inspector Vega, from «The Immigrant»."
   },
   {
@@ -338,12 +338,12 @@
    "word": "",
    "img": "characters/img/robert-1.jpg",
    "options": [
-    "Alex",
-    "Robert",
-    "Susan",
-    "Charles"
+    "Pavel",
+    "Veronica",
+    "Vasily",
+    "Robert"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "It’s Robert, from «The Foreboding»."
   },
   {
@@ -353,10 +353,10 @@
    "word": "",
    "img": "characters/img/robert-2.jpg",
    "options": [
-    "Dr. Irina Morozova",
+    "Nina",
     "Robert",
-    "Maksim Orlov",
-    "Vasily"
+    "Tom Stevenson",
+    "Clara"
    ],
    "answer": 1,
    "why": "It’s Robert, from «The Foreboding»."
@@ -368,12 +368,12 @@
    "word": "",
    "img": "characters/img/alex-future-1.jpg",
    "options": [
+    "Frank Stevenson",
+    "Veronica",
     "Alex",
-    "Inspector Vega",
-    "Nadia",
-    "Svetlana"
+    "Martin"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "It’s Alex, from «A Man from the Future»."
   },
   {
@@ -383,12 +383,12 @@
    "word": "",
    "img": "characters/img/alex-future-2.jpg",
    "options": [
-    "Charles",
-    "Inspector Vega",
-    "Tom Stevenson",
-    "Alex"
+    "Alex",
+    "Rosa",
+    "Clara",
+    "Anna"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "It’s Alex, from «A Man from the Future»."
   },
   {
@@ -398,24 +398,9 @@
    "word": "",
    "img": "characters/img/olga-future-1.jpg",
    "options": [
-    "Pavel",
-    "Frank Stevenson",
-    "Olga",
-    "Leo"
-   ],
-   "answer": 2,
-   "why": "It’s Olga, from «A Man from the Future»."
-  },
-  {
-   "type": "choice",
-   "kind": "who",
-   "prompt": "Who is this character?",
-   "word": "",
-   "img": "characters/img/olga-future-2.jpg",
-   "options": [
-    "Vanessa",
-    "Veronica",
-    "Pavel",
+    "Clara",
+    "Robert",
+    "Svetlana",
     "Olga"
    ],
    "answer": 3,
@@ -426,12 +411,27 @@
    "kind": "who",
    "prompt": "Who is this character?",
    "word": "",
+   "img": "characters/img/olga-future-2.jpg",
+   "options": [
+    "Martin",
+    "Robert",
+    "Olga",
+    "Anna"
+   ],
+   "answer": 2,
+   "why": "It’s Olga, from «A Man from the Future»."
+  },
+  {
+   "type": "choice",
+   "kind": "who",
+   "prompt": "Who is this character?",
+   "word": "",
    "img": "characters/img/svetlana-future-1.jpg",
    "options": [
     "Svetlana",
-    "Martin",
-    "Dr. Irina Morozova",
-    "Frank Stevenson"
+    "Alex",
+    "Susan",
+    "Vanessa"
    ],
    "answer": 0,
    "why": "It’s Svetlana, from «A Man from the Future»."
@@ -442,12 +442,12 @@
    "prompt": "The plot",
    "question": "In which novel does Robert appear?",
    "options": [
-    "A Man from the Future",
     "The Immigrant",
-    "The Foreboding",
-    "The Date"
+    "A Man from the Future 2: The Invasion",
+    "A Man from the Future 3: The Alien Hunt",
+    "The Foreboding"
    ],
-   "answer": 2,
+   "answer": 3,
    "why": "Robert appears in «The Foreboding»."
   },
   {
@@ -456,12 +456,12 @@
    "prompt": "The plot",
    "question": "In which novel does Alex appear?",
    "options": [
-    "The Foreboding",
     "A Man from the Future",
-    "A Man from the Future 2: The Invasion",
+    "The Foreboding",
+    "A Man from the Future 3: The Alien Hunt",
     "The Immigrant"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "Alex appears in «A Man from the Future»."
   },
   {
@@ -470,9 +470,9 @@
    "prompt": "The plot",
    "question": "In which novel does Olga appear?",
    "options": [
-    "The Date",
+    "A Man from the Future 2: The Invasion",
     "A Man from the Future",
-    "The Foreboding",
+    "The Date",
     "A Man from the Future 3: The Alien Hunt"
    ],
    "answer": 1,
@@ -484,12 +484,12 @@
    "prompt": "The plot",
    "question": "In which novel does Nina appear?",
    "options": [
+    "The Immigrant",
     "A Man from the Future",
-    "The Date",
-    "A Man from the Future 2: The Invasion",
-    "The Immigrant"
+    "The Foreboding",
+    "A Man from the Future 2: The Invasion"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "Nina appears in «A Man from the Future»."
   },
   {
@@ -498,12 +498,12 @@
    "prompt": "The plot",
    "question": "In which novel does Svetlana appear?",
    "options": [
-    "A Man from the Future 3: The Alien Hunt",
+    "A Man from the Future 2: The Invasion",
+    "A Man from the Future",
     "The Date",
-    "The Immigrant",
-    "A Man from the Future"
+    "The Immigrant"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "Svetlana appears in «A Man from the Future»."
   },
   {
@@ -513,11 +513,11 @@
    "question": "In which novel does Pavel appear?",
    "options": [
     "A Man from the Future 2: The Invasion",
-    "The Foreboding",
+    "A Man from the Future",
     "A Man from the Future 3: The Alien Hunt",
-    "A Man from the Future"
+    "The Immigrant"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "Pavel appears in «A Man from the Future»."
   },
   {
@@ -527,11 +527,11 @@
    "question": "In which novel does Frank Stevenson appear?",
    "options": [
     "A Man from the Future 3: The Alien Hunt",
-    "The Date",
     "A Man from the Future 2: The Invasion",
-    "A Man from the Future"
+    "The Immigrant",
+    "The Date"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "Frank Stevenson appears in «The Date»."
   },
   {
@@ -541,11 +541,11 @@
    "question": "In which novel does Tom Stevenson appear?",
    "options": [
     "A Man from the Future",
-    "A Man from the Future 3: The Alien Hunt",
     "The Date",
+    "A Man from the Future 2: The Invasion",
     "The Immigrant"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "Tom Stevenson appears in «The Date»."
   },
   {
@@ -554,8 +554,8 @@
    "prompt": "The plot",
    "question": "In which novel does Clara appear?",
    "options": [
-    "A Man from the Future 2: The Invasion",
-    "The Foreboding",
+    "A Man from the Future 3: The Alien Hunt",
+    "The Immigrant",
     "A Man from the Future",
     "The Date"
    ],
@@ -568,12 +568,12 @@
    "prompt": "The plot",
    "question": "In which novel does Veronica appear?",
    "options": [
-    "The Foreboding",
-    "A Man from the Future",
+    "A Man from the Future 3: The Alien Hunt",
     "The Date",
-    "The Immigrant"
+    "A Man from the Future 2: The Invasion",
+    "A Man from the Future"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "Veronica appears in «The Date»."
   },
   {
@@ -582,12 +582,12 @@
    "prompt": "The plot",
    "question": "In which novel does Nadia appear?",
    "options": [
-    "The Date",
-    "A Man from the Future",
+    "The Foreboding",
     "A Man from the Future 3: The Alien Hunt",
-    "A Man from the Future 2: The Invasion"
+    "A Man from the Future",
+    "The Date"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "Nadia appears in «The Date»."
   },
   {
@@ -596,12 +596,12 @@
    "prompt": "The plot",
    "question": "In which novel does Susan appear?",
    "options": [
-    "The Foreboding",
-    "A Man from the Future 2: The Invasion",
+    "The Date",
     "A Man from the Future 3: The Alien Hunt",
-    "The Date"
+    "A Man from the Future 2: The Invasion",
+    "The Foreboding"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "Susan appears in «The Date»."
   },
   {
@@ -612,8 +612,8 @@
    "options": [
     "The Date",
     "The Foreboding",
-    "A Man from the Future 2: The Invasion",
-    "The Immigrant"
+    "A Man from the Future",
+    "A Man from the Future 3: The Alien Hunt"
    ],
    "answer": 0,
    "why": "Rosa appears in «The Date»."
@@ -624,12 +624,12 @@
    "prompt": "The plot",
    "question": "In which novel does Vanessa appear?",
    "options": [
-    "A Man from the Future",
+    "The Foreboding",
+    "The Immigrant",
     "The Date",
-    "A Man from the Future 3: The Alien Hunt",
-    "A Man from the Future 2: The Invasion"
+    "A Man from the Future"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Vanessa appears in «The Date»."
   },
   {
@@ -638,12 +638,12 @@
    "prompt": "The plot",
    "question": "In which novel does Charles appear?",
    "options": [
-    "The Date",
     "The Immigrant",
-    "The Foreboding",
-    "A Man from the Future"
+    "A Man from the Future 3: The Alien Hunt",
+    "A Man from the Future 2: The Invasion",
+    "The Foreboding"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "Charles appears in «The Immigrant»."
   },
   {
@@ -652,10 +652,10 @@
    "prompt": "The plot",
    "question": "In which novel does Anna appear?",
    "options": [
-    "A Man from the Future",
+    "The Foreboding",
     "The Immigrant",
-    "A Man from the Future 3: The Alien Hunt",
-    "The Date"
+    "A Man from the Future",
+    "A Man from the Future 3: The Alien Hunt"
    ],
    "answer": 1,
    "why": "Anna appears in «The Immigrant»."
@@ -666,7 +666,7 @@
    "prompt": "The plot",
    "question": "In which novel does Martin appear?",
    "options": [
-    "A Man from the Future",
+    "The Foreboding",
     "The Immigrant",
     "A Man from the Future 2: The Invasion",
     "The Date"
@@ -680,12 +680,12 @@
    "prompt": "The plot",
    "question": "In which novel does Leo appear?",
    "options": [
-    "A Man from the Future 3: The Alien Hunt",
     "A Man from the Future 2: The Invasion",
+    "The Immigrant",
     "The Date",
-    "The Immigrant"
+    "The Foreboding"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "Leo appears in «The Immigrant»."
   },
   {
@@ -694,12 +694,12 @@
    "prompt": "The plot",
    "question": "In which novel does Vasily appear?",
    "options": [
+    "The Immigrant",
     "A Man from the Future",
-    "The Foreboding",
     "A Man from the Future 2: The Invasion",
-    "The Date"
+    "The Foreboding"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "Vasily appears in «The Foreboding»."
   },
   {
@@ -710,7 +710,7 @@
    "options": [
     "A Man from the Future 3: The Alien Hunt",
     "The Date",
-    "A Man from the Future",
+    "The Immigrant",
     "The Foreboding"
    ],
    "answer": 3,
@@ -722,12 +722,12 @@
    "prompt": "The plot",
    "question": "In which novel does Maksim Orlov appear?",
    "options": [
+    "The Immigrant",
     "A Man from the Future 3: The Alien Hunt",
-    "The Foreboding",
-    "A Man from the Future 2: The Invasion",
-    "A Man from the Future"
+    "The Date",
+    "The Foreboding"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "Maksim Orlov appears in «The Foreboding»."
   },
   {
@@ -736,8 +736,8 @@
    "prompt": "The plot",
    "question": "In which novel does Daria Sokolova appear?",
    "options": [
-    "The Immigrant",
-    "A Man from the Future 3: The Alien Hunt",
+    "A Man from the Future 2: The Invasion",
+    "The Date",
     "A Man from the Future",
     "The Foreboding"
    ],
@@ -750,37 +750,23 @@
    "prompt": "The plot",
    "question": "In which novel does Inspector Vega appear?",
    "options": [
-    "The Immigrant",
-    "A Man from the Future 3: The Alien Hunt",
+    "The Foreboding",
     "A Man from the Future 2: The Invasion",
-    "The Foreboding"
+    "A Man from the Future 3: The Alien Hunt",
+    "The Immigrant"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "Inspector Vega appears in «The Immigrant»."
   },
   {
    "type": "story",
    "kind": "quote",
    "prompt": "Which novel is this line from?",
-   "question": "«Stop following me!” Her voice is loud enough to bring the bookseller to the door.»",
+   "question": "«Would you like to ...? • No, thank you. • That's all right. • Have a nice day.»",
    "options": [
-    "A Man from the Future",
-    "A Man from the Future 2: The Invasion",
-    "A Man from the Future 3: The Alien Hunt",
-    "The Immigrant"
-   ],
-   "answer": 0,
-   "why": "It’s from «A Man from the Future»."
-  },
-  {
-   "type": "story",
-   "kind": "quote",
-   "prompt": "Which novel is this line from?",
-   "question": "«He hopes Olga will still be there, because he needs to tell someone what happened.»",
-   "options": [
-    "A Man from the Future 2: The Invasion",
-    "The Immigrant",
+    "The Foreboding",
     "The Date",
+    "A Man from the Future 2: The Invasion",
     "A Man from the Future"
    ],
    "answer": 3,
@@ -792,10 +778,24 @@
    "prompt": "Which novel is this line from?",
    "question": "«Behind some empty boxes, Alex finds a red machine with a door and a small window.»",
    "options": [
-    "A Man from the Future",
-    "A Man from the Future 3: The Alien Hunt",
+    "A Man from the Future 2: The Invasion",
+    "The Immigrant",
     "The Date",
-    "A Man from the Future 2: The Invasion"
+    "A Man from the Future"
+   ],
+   "answer": 3,
+   "why": "It’s from «A Man from the Future»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "Which novel is this line from?",
+   "question": "«For now, I work here and draw when it's quiet.” Before Alex leaves, Olga writes the café's address on a card.»",
+   "options": [
+    "A Man from the Future",
+    "The Foreboding",
+    "The Date",
+    "A Man from the Future 3: The Alien Hunt"
    ],
    "answer": 0,
    "why": "It’s from «A Man from the Future»."
@@ -804,12 +804,26 @@
    "type": "story",
    "kind": "quote",
    "prompt": "Which novel is this line from?",
-   "question": "«How did you get here?” The third man, young and round-faced, smiled happily.»",
+   "question": "«Everybody's talking about it.” “Fedya,” Alex said quickly, “that isn't what—” But at that moment, the window shook.»",
    "options": [
-    "The Foreboding",
     "A Man from the Future 2: The Invasion",
     "A Man from the Future",
-    "The Immigrant"
+    "The Immigrant",
+    "The Date"
+   ],
+   "answer": 0,
+   "why": "It’s from «A Man from the Future 2: The Invasion»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "Which novel is this line from?",
+   "question": "«We have very limited information about women.” Nina put down the rolling pin and poured herself a large glass of water.»",
+   "options": [
+    "The Date",
+    "A Man from the Future 2: The Invasion",
+    "The Immigrant",
+    "A Man from the Future 3: The Alien Hunt"
    ],
    "answer": 1,
    "why": "It’s from «A Man from the Future 2: The Invasion»."
@@ -818,12 +832,12 @@
    "type": "story",
    "kind": "quote",
    "prompt": "Which novel is this line from?",
-   "question": "«Are you available for marriage?” “Why is he saying it like that?” Olga whispered.»",
+   "question": "«You tried to pay with your wrist.” “He's eating flowers, Olga.” Olga thought about it.»",
    "options": [
-    "The Immigrant",
-    "The Date",
+    "A Man from the Future 3: The Alien Hunt",
+    "The Foreboding",
     "A Man from the Future 2: The Invasion",
-    "A Man from the Future"
+    "The Immigrant"
    ],
    "answer": 2,
    "why": "It’s from «A Man from the Future 2: The Invasion»."
@@ -832,26 +846,40 @@
    "type": "story",
    "kind": "quote",
    "prompt": "Which novel is this line from?",
-   "question": "«While I was trying to take it back, he was already photographing every page.»",
+   "question": "«First, Alex went to the bakery across the street and bought a loaf of bread.»",
    "options": [
-    "The Date",
-    "A Man from the Future 2: The Invasion",
+    "The Foreboding",
+    "The Immigrant",
     "A Man from the Future 3: The Alien Hunt",
-    "A Man from the Future"
+    "The Date"
    ],
-   "answer": 1,
-   "why": "It’s from «A Man from the Future 2: The Invasion»."
+   "answer": 2,
+   "why": "It’s from «A Man from the Future 3: The Alien Hunt»."
   },
   {
    "type": "story",
    "kind": "quote",
    "prompt": "Which novel is this line from?",
-   "question": "«Witnesses report that, on his first day in Moscow, he tried to pay for a croissant with his wrist.” “That's true,” Olga admitted quietly.»",
+   "question": "«Moscow · The Next Day By the next morning, Moscow had gone completely mad.»",
+   "options": [
+    "A Man from the Future 2: The Invasion",
+    "The Date",
+    "A Man from the Future 3: The Alien Hunt",
+    "The Immigrant"
+   ],
+   "answer": 2,
+   "why": "It’s from «A Man from the Future 3: The Alien Hunt»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "Which novel is this line from?",
+   "question": "«All my reference photos are on it.” Alex came out from behind the counter.»",
    "options": [
     "A Man from the Future 3: The Alien Hunt",
     "A Man from the Future",
-    "The Foreboding",
-    "The Immigrant"
+    "The Date",
+    "A Man from the Future 2: The Invasion"
    ],
    "answer": 0,
    "why": "It’s from «A Man from the Future 3: The Alien Hunt»."
@@ -860,42 +888,28 @@
    "type": "story",
    "kind": "quote",
    "prompt": "Which novel is this line from?",
-   "question": "«From the sun.” Alex, who was reading the news on his phone, didn't hear her.»",
+   "question": "«My name is \"Mark.\" I look for women who like expensive restaurants and quiet private places.»",
    "options": [
-    "The Foreboding",
-    "The Date",
-    "The Immigrant",
-    "A Man from the Future 3: The Alien Hunt"
-   ],
-   "answer": 3,
-   "why": "It’s from «A Man from the Future 3: The Alien Hunt»."
-  },
-  {
-   "type": "story",
-   "kind": "quote",
-   "prompt": "Which novel is this line from?",
-   "question": "«Then they watched the programme. → They watched the programme after Nina … 4.»",
-   "options": [
-    "The Immigrant",
-    "A Man from the Future 2: The Invasion",
-    "The Date",
-    "A Man from the Future 3: The Alien Hunt"
-   ],
-   "answer": 3,
-   "why": "It’s from «A Man from the Future 3: The Alien Hunt»."
-  },
-  {
-   "type": "story",
-   "kind": "quote",
-   "prompt": "Which novel is this line from?",
-   "question": "«A car?\" \"Yes, a black one.\" She nodded, then asked, \"Do you like dogs?\" Dogs?»",
-   "options": [
-    "The Date",
+    "A Man from the Future",
     "A Man from the Future 3: The Alien Hunt",
-    "The Immigrant",
+    "The Date",
     "The Foreboding"
    ],
-   "answer": 0,
+   "answer": 2,
+   "why": "It’s from «The Date»."
+  },
+  {
+   "type": "story",
+   "kind": "quote",
+   "prompt": "Which novel is this line from?",
+   "question": "«Draw and Describe Draw Clara based on the description and write 3 sentences about her.»",
+   "options": [
+    "A Man from the Future 2: The Invasion",
+    "The Immigrant",
+    "The Date",
+    "The Foreboding"
+   ],
+   "answer": 2,
    "why": "It’s from «The Date»."
   },
   {
@@ -904,10 +918,10 @@
    "prompt": "Which novel is this line from?",
    "question": "«Frank creates a fake profile named \"Mark.\" Tom was killed two years ago.»",
    "options": [
-    "A Man from the Future",
+    "The Immigrant",
     "The Date",
     "A Man from the Future 2: The Invasion",
-    "A Man from the Future 3: The Alien Hunt"
+    "The Foreboding"
    ],
    "answer": 1,
    "why": "It’s from «The Date»."
@@ -916,38 +930,24 @@
    "type": "story",
    "kind": "quote",
    "prompt": "Which novel is this line from?",
-   "question": "«My name is \"Mark.\" I look for women who like expensive restaurants and quiet private places.»",
-   "options": [
-    "The Date",
-    "A Man from the Future 3: The Alien Hunt",
-    "The Immigrant",
-    "A Man from the Future"
-   ],
-   "answer": 0,
-   "why": "It’s from «The Date»."
-  },
-  {
-   "type": "story",
-   "kind": "quote",
-   "prompt": "Which novel is this line from?",
    "question": "«But maybe... we can find a solution for your problem.\" Charles understands again.»",
    "options": [
-    "The Foreboding",
     "A Man from the Future 2: The Invasion",
-    "The Immigrant",
-    "The Date"
+    "The Date",
+    "A Man from the Future 3: The Alien Hunt",
+    "The Immigrant"
    ],
-   "answer": 2,
+   "answer": 3,
    "why": "It’s from «The Immigrant»."
   },
   {
    "type": "story",
    "kind": "quote",
    "prompt": "Which novel is this line from?",
-   "question": "«Everybody wants food.\" \"I can pay you back.\" \"With what?\" It was a reasonable question, and I hated him for asking it.»",
+   "question": "«She knows how to grow things in difficult conditions.\" \"We could just plant potatoes.\" Robert looked at me with an expression of profound disappointment.»",
    "options": [
-    "A Man from the Future 2: The Invasion",
-    "The Date",
+    "A Man from the Future",
+    "A Man from the Future 3: The Alien Hunt",
     "The Foreboding",
     "The Immigrant"
    ],
@@ -958,12 +958,12 @@
    "type": "story",
    "kind": "quote",
    "prompt": "Which novel is this line from?",
-   "question": "«Vasya, how long do you think people can survive on potatoes alone?\" \"Depends how many potatoes.\" He shook his head.»",
+   "question": "«You like it.\" \"No.\" \"You're smiling.\" \"I'm checking the carburetor.\" \"Of course.\" I switched off the engine.»",
    "options": [
     "The Foreboding",
-    "A Man from the Future",
     "The Immigrant",
-    "The Date"
+    "A Man from the Future",
+    "A Man from the Future 2: The Invasion"
    ],
    "answer": 0,
    "why": "It’s from «The Foreboding»."
@@ -972,14 +972,14 @@
    "type": "story",
    "kind": "quote",
    "prompt": "Which novel is this line from?",
-   "question": "«Can you fix it?\" \"Stop asking me that.\" \"Why?\" \"Because every time I say yes, you find another broken machine.\" He laughed.»",
+   "question": "«Are they going to kill us?\" \"That's usually what shooting means!\" \"Do you have a plan?\" \"Yes!\" \"What is it?\" \"Hold on!\" This didn't inspire much confidence.»",
    "options": [
     "A Man from the Future 3: The Alien Hunt",
-    "A Man from the Future",
+    "The Foreboding",
     "A Man from the Future 2: The Invasion",
-    "The Foreboding"
+    "The Date"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "It’s from «The Foreboding»."
   },
   {
@@ -988,12 +988,12 @@
    "prompt": "The plot",
    "question": "In «A Man from the Future», in which year does Alex live?",
    "options": [
-    "2524",
-    "2124",
     "1924",
-    "3024"
+    "2524",
+    "3024",
+    "2124"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "«Alex lives in Moscow in the year 3024.»"
   },
   {
@@ -1003,9 +1003,9 @@
    "question": "In «A Man from the Future», what happened to the women in Alex’s world?",
    "options": [
     "They moved to another planet",
-    "They work in the time machine",
+    "They live only in the past",
     "They disappeared twenty years ago",
-    "They live only in the past"
+    "They work in the time machine"
    ],
    "answer": 2,
    "why": "«Twenty years ago, all the women and girls in his world disappeared.»"
@@ -1017,11 +1017,11 @@
    "question": "In «A Man from the Future», where does the time machine take Alex?",
    "options": [
     "To Prague in 1924",
+    "To London in 3000",
     "To Moscow in 2024",
-    "To Buenos Aires in 2004",
-    "To London in 3000"
+    "To Buenos Aires in 2004"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "He chooses Moscow, June 20, 2024, at nine in the morning."
   },
   {
@@ -1030,12 +1030,12 @@
    "prompt": "The plot",
    "question": "In «A Man from the Future», who does Alex meet in 2024?",
    "options": [
+    "Olga",
     "Nina",
-    "Clara",
     "Susan",
-    "Olga"
+    "Clara"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "Meeting Olga makes him rethink his plans."
   }
  ]
