@@ -1335,6 +1335,57 @@ body.snav-open .snav{transform:none;visibility:visible}
 .ex-nv-golos .ex-back{color:#ffae5c;background:rgba(255,138,61,.12)}
 @media (max-width:520px){.ex-nv-golos .ex-lbl b{font-size:21px}.ex-nv-golos .ex-ic i{width:38px;height:38px;font-size:17px;margin-left:-14px}.ex-nv-golos .ex-ic i:first-child{margin-left:0}.ex-nv-golos .ex-open::after{right:58px;top:10px}}
 @media (prefers-reduced-motion:reduce){.ex.ex-nv-golos,.ex.ex-nv-golos::before,.ex-nv-golos .ex-open::after{animation:none}.ex-nv-golos .ex-open::after{opacity:.8}}
+/* Энциклопедия: тема «зверь» (sec.theme "beast") — кора, мох, туман и янтарные глаза лешего */
+.enc.enc-beast{--eb:#0b0a07;--ep:#15120d;--ei:#e6dcc8;--em:#9c8f78;--ea:#e88a2e;--er:#ff6a3d;--el:#2e2619;position:relative;border:1.5px solid #3a2c1a;
+  background:radial-gradient(60% 40% at 85% 0%,rgba(232,120,40,.16),transparent 70%),radial-gradient(80% 50% at 0% 100%,rgba(70,96,52,.22),transparent 70%),
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.012 .32' numOctaves='3' seed='7' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .32 0 0 0 0 .24 0 0 0 0 .14 0 0 0 .3 0'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)'/%3E%3C/svg%3E"),var(--eb);
+  box-shadow:inset 0 0 60px rgba(0,0,0,.85),0 16px 40px -14px rgba(0,0,0,.8)}
+.enc.enc-beast::before{content:"";position:absolute;inset:auto -20% -10% -20%;height:55%;pointer-events:none;z-index:2;opacity:.55;
+  background:radial-gradient(40% 50% at 30% 70%,rgba(120,140,110,.22),transparent 70%),radial-gradient(35% 45% at 75% 80%,rgba(110,125,100,.18),transparent 70%);filter:blur(8px);animation:ebFog 16s ease-in-out infinite alternate}
+@keyframes ebFog{to{transform:translateX(12%)}}
+.enc-beast::after{content:"";position:absolute;top:-6px;right:18px;width:70px;height:96px;pointer-events:none;z-index:3;opacity:.5;
+  background:linear-gradient(104deg,transparent 46%,#000 47%,#5a1a10 49%,transparent 52%) 0 0/24px 100% no-repeat,linear-gradient(104deg,transparent 46%,#000 47%,#5a1a10 49%,transparent 52%) 22px 8px/24px 100% no-repeat,linear-gradient(104deg,transparent 46%,#000 47%,#5a1a10 49%,transparent 52%) 44px 2px/24px 100% no-repeat}
+.enc-beast .enc-hero{position:relative;z-index:1;padding:16px 16px 0}
+.enc-beast .enc-kick{position:relative;width:54px;height:30px;font-size:0;flex:0 0 auto}
+.enc-beast .enc-kick::before,.enc-beast .enc-kick::after{content:"";position:absolute;top:9px;width:17px;height:9px;border-radius:50% 50% 45% 45%/70% 70% 40% 40%;
+  background:radial-gradient(circle at 50% 55%,#fff3c4 0 1.5px,#ffb23e 2.5px,#e3561c 5px,#5a1206 8px);box-shadow:0 0 10px 3px rgba(255,120,30,.55),0 0 26px 6px rgba(255,80,20,.25);animation:ebBlink 7s infinite}
+.enc-beast .enc-kick::before{left:3px;transform:rotate(12deg)}.enc-beast .enc-kick::after{right:3px;transform:rotate(-12deg) scaleX(-1)}
+@keyframes ebBlink{0%,46%,52%,100%{scale:1 1}48%,50%{scale:1 .08}}
+.enc-beast .enc-title{font-size:clamp(21px,5vw,27px);font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#efe2c6;text-shadow:0 0 1px #000,0 0 14px rgba(232,120,40,.45);animation:ebFlicker 9s infinite}
+@keyframes ebFlicker{0%,90%,100%{opacity:1}91%{opacity:.55}92%{opacity:1}94%{opacity:.7}95%{opacity:1}}
+.enc-beast .enc-prog{height:4px;background:#2a2016;border-radius:0}.enc-beast .enc-prog i{border-radius:0;background:linear-gradient(90deg,#5a1206,#e3561c 70%,#ffb23e);box-shadow:0 0 8px rgba(255,110,30,.7)}
+.enc-beast .enc-pt{color:#8f7f63;font-style:italic}
+.enc-beast .enc-tools{position:relative;z-index:1;border-bottom:1px solid #2a2116}
+.enc-beast .enc-q{background-color:#100e0a;border-color:#3a2c1a;color:#e6dcc8}.enc-beast .enc-q::placeholder{color:#6e6250}
+.enc-beast .enc-q:focus{border-color:#e88a2e;box-shadow:0 0 0 3px rgba(232,138,46,.15)}
+.enc-beast .enc-chips button{background:#14110c;border-color:#3a2c1a;color:#bfae8e}
+.enc-beast .enc-chips button.on{background:linear-gradient(135deg,#e88a2e,#a8341a);border-color:#e88a2e;color:#140a04}
+.enc-beast .enc-list{position:relative;z-index:1;scrollbar-color:#4a3620 transparent}
+.enc-beast .enc-cat h3{color:#d9c7a3;letter-spacing:.04em;padding-bottom:6px;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='8'%3E%3Cpath d='M0 4 Q20 0 40 4 T80 3 T120 5 T160 3 T200 4' fill='none' stroke='%235a4326' stroke-width='1.6'/%3E%3Cpath d='M40 4 l6 4 M120 5 l-5 3 M160 3 l4 4' stroke='%235a4326' stroke-width='1'/%3E%3C/svg%3E") repeat-x 0 100%/200px 8px}
+.enc-beast .enc-cat h3 small{background:#14110c;border-color:#3a2c1a;color:#bfae8e}
+.enc-beast .enc-l{color:#e88a2e;border-color:#2e2619}
+.enc-beast .enc-e{border:1px solid #2a2116;border-left:0;padding-left:10px;border-radius:4px 12px 12px 4px;box-shadow:0 6px 16px -10px #000;
+  background:linear-gradient(104deg,transparent 0 2px,#4a1408 3px,transparent 5px) 0 0/6px 100% no-repeat,linear-gradient(104deg,transparent 0 2px,#4a1408 3px,transparent 5px) 4px 4px/6px 100% no-repeat,linear-gradient(180deg,#17130e,#110e0a)}
+.enc-beast .enc-e:hover{box-shadow:0 0 0 1px #4a3620,0 8px 22px -10px rgba(232,110,30,.5)}
+.enc-beast .enc-e[open]{border-color:#5a2a14;box-shadow:0 0 0 1px #6b2a12,0 0 26px -6px rgba(255,90,30,.45);
+  background:linear-gradient(104deg,transparent 0 2px,#ff6a3d 3px,transparent 5px) 0 0/6px 100% no-repeat,linear-gradient(104deg,transparent 0 2px,#ff6a3d 3px,transparent 5px) 4px 4px/6px 100% no-repeat,linear-gradient(180deg,#1b150e,#120e09)}
+.enc-beast .enc-ic{filter:grayscale(1) brightness(.75);transition:filter .3s}
+.enc-beast .enc-e:hover .enc-ic,.enc-beast .enc-e[open] .enc-ic{filter:drop-shadow(0 0 5px rgba(255,130,40,.9))}
+.enc-beast .enc-h b{color:#efe2c6;letter-spacing:.02em}.enc-beast .enc-e[open] .enc-h b{color:#ffcf8a;text-shadow:0 0 10px rgba(255,120,40,.35)}
+.enc-beast .enc-h small{color:#9c8f78;font-style:italic}
+.enc-beast .enc-ch{color:#6e5a3a}.enc-beast .enc-e[open] .enc-ch{color:#ff6a3d}
+.enc-beast .enc-b{color:#d8ccb4}.enc-beast .enc-b strong{color:#ffb26a}.enc-beast .enc-b blockquote{color:#c7b28c;border-color:#e88a2e}
+.enc-beast .enc-more{background:#0e0c08;color:#9c8f78;border:1px dashed #3a2c1a}
+.enc-beast .enc-meta{border-color:#2e2619}.enc-beast .enc-see button{background:#14110c;border-color:#3a2c1a;color:#d9c7a3}
+.enc-beast .enc-see button:hover:not(:disabled){border-color:#ff6a3d;color:#ff9a5c}
+.enc-beast .enc-lk{background:rgba(0,0,0,.55);border:1px solid #241c12;color:#7d705b;font-style:italic}
+.enc-beast .enc-lk span{position:relative;width:30px;height:12px;font-size:0;flex:0 0 auto}
+.enc-beast .enc-lk span::before,.enc-beast .enc-lk span::after{content:"";position:absolute;top:3px;width:9px;height:5px;border-radius:50%;background:radial-gradient(circle,#ffcf6a 0 1px,#e3561c 2px,#5a1206 4px);box-shadow:0 0 7px 2px rgba(255,100,20,.5);animation:ebBlink 5s infinite}
+.enc-beast .enc-lk span::before{left:2px}.enc-beast .enc-lk span::after{right:2px}
+.enc-beast .enc-lk a{color:#e88a2e}
+.enc-beast .enc-none{color:#7d705b}
+@media (prefers-reduced-motion:reduce){.enc.enc-beast::before,.enc-beast .enc-kick::before,.enc-beast .enc-kick::after,.enc-beast .enc-title,.enc-beast .enc-lk span::before,.enc-beast .enc-lk span::after{animation:none}}
 </style>
 </head>
 <body>
