@@ -3360,6 +3360,7 @@ async function exSection(n, sec, pane){
   if (sec.style === "map") { let D; try { D = JSON.parse(md); } catch(e) { D = null; } if (D) { const M = mapHTML(D, sec, n); pane.innerHTML = M.html; setupMap(pane, M); return; } }
   if (sec.style === "chess-puzzles" || sec.style === "trivia") { let D; try { D = JSON.parse(md); } catch(e) { D = null; } if (D) { exQuizRun(n, sec, D, pane, sec.style === "trivia" ? "trivia" : "chess"); return; } }
   if (sec.style === "chess-play") { let D; try { D = JSON.parse(md); } catch(e) { D = null; } if (D) { exChessPlay(n, D, pane); return; } }
+  if (sec.style === "piano-game") { let D; try { D = JSON.parse(md); } catch(e) { D = null; } if (D) { exPiano(n, D, pane); return; } }
   if (sec.style === "conquista") { let D; try { D = JSON.parse(md); } catch(e) { D = null; } if (D) { setupConquista(pane, D, n); return; } }
   if (sec.style === "sky") { let D; try { D = JSON.parse(md); } catch(e) { D = null; } if (D) { const M = skyHTML(D, sec, n); pane.innerHTML = M.html; setupSky(pane, D, n, M); return; } }
   if (sec.style === "tarot" || sec.style === "tarot-read") { let D; try { D = JSON.parse(md); } catch(e) { D = null; } if (D) { (sec.style === "tarot" ? setupTarot : setupTarotRead)(pane, D, n, sec); return; } }
@@ -3785,6 +3786,12 @@ function exChessPlay(n, D, pane){
   const go = () => { if (pane.isConnected && window.LitmirChessPlay) window.LitmirChessPlay.mount(pane, {slug:n.slug, store, data:D}); };
   if (window.LitmirChessPlay) return go();
   const s = document.createElement("script"); s.src = "games/chess-play/play.js"; s.onload = go; document.head.appendChild(s);
+}
+/* Музыкальная игра «сыграй мелодию» (sec.style "piano-game") — games/piano/piano.js */
+function exPiano(n, D, pane){
+  const go = () => { if (pane.isConnected && window.LitmirPiano) window.LitmirPiano.mount(pane, {slug:n.slug, store, data:D}); };
+  if (window.LitmirPiano) return go();
+  const s = document.createElement("script"); s.src = "games/piano/piano.js"; s.onload = go; document.head.appendChild(s);
 }
 function exWho(n, pane){
   pane.innerHTML = `<div class="loading">…</div>`;
