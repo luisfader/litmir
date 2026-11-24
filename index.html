@@ -424,6 +424,14 @@ article.chapter h3{font-family:var(--sans);font-size:.72em;letter-spacing:.12em;
 .pill.wip{background:var(--accent-soft);color:var(--accent);border-color:transparent}
 .pill.done{color:var(--muted)}
 .wipnote{max-width:680px;margin:0 auto 28px;padding:0 20px}
+.donate{max-width:680px;margin:0 auto 32px;padding:0 20px}
+.donate>div{font-family:var(--sans);border:1px solid var(--line);border-radius:12px;padding:22px 20px;text-align:center;background:var(--accent-soft)}
+.donate h3{font-family:var(--serif);font-weight:400;font-size:21px;margin:0 0 8px;color:var(--ink)}
+.donate p{font-size:14px;line-height:1.55;color:var(--muted);margin:0 auto 16px;max-width:460px}
+.donate .dn-btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;border-radius:999px;padding:11px 24px;font-size:15px;font-weight:600}
+.donate .dn-btn:hover{opacity:.9}
+.donate .dn-qr{margin-top:18px;font-size:12px;color:var(--muted)}
+.donate .dn-qr img{display:block;margin:0 auto 6px;width:132px;height:132px;background:#fff;padding:8px;border-radius:8px;image-rendering:pixelated}
 /* Gamebooks (n.gamebook): choices at the end of each section, endings tracked in this browser */
 .chapter.gb ul{list-style:none;padding:0;margin:36px 0 0;display:grid;gap:10px}
 .chapter.gb ul li{margin:0}
@@ -3955,6 +3963,22 @@ function motoPage(n){
   css("mtCss", "games/moto/moto.css"); if (n.moto.css) css("mtCss-" + G, n.moto.css);
   const s = document.createElement("script"); s.src = n.moto.js || "games/moto/moto.js"; s.onload = go; document.head.appendChild(s);
 }
+/* Donations: shown after the last chapter of every novel in RU, ES, EN and IT. */
+const DONATE_URL = "https://boosty.to/fader26/donate";
+const DONATE_TXT = {
+  ru:{h:"Понравился роман?", p:"Все романы на сайте бесплатные. Если хотите поддержать автора и помочь появиться новым историям, можно отправить донат.", b:"Поддержать автора", q:"Или отсканируйте QR-код"},
+  es:{h:"¿Te gustó la novela?", p:"Todas las novelas del sitio son gratis. Si quieres apoyar al autor y ayudar a que lleguen nuevas historias, puedes enviar una donación.", b:"Apoyar al autor", q:"O escanea el código QR"},
+  en:{h:"Did you enjoy the novel?", p:"All the novels on this site are free. If you'd like to support the author and help new stories get written, you can send a donation.", b:"Support the author", q:"Or scan the QR code"},
+  it:{h:"Ti è piaciuto il romanzo?", p:"Tutti i romanzi del sito sono gratuiti. Se vuoi sostenere l'autore e aiutare la nascita di nuove storie, puoi fare una donazione.", b:"Sostieni l'autore", q:"Oppure scansiona il codice QR"}
+};
+function donateHTML(n){
+  const d = DONATE_TXT[n.lang]; if (!d) return "";
+  return `<aside class="donate"><div>
+    <h3>${esc(d.h)}</h3><p>${esc(d.p)}</p>
+    <a class="dn-btn" href="${DONATE_URL}" target="_blank" rel="noopener">♥ ${esc(d.b)}</a>
+    <div class="dn-qr"><img src="app/donate-qr.png" alt="QR" width="132" height="132" loading="lazy">${esc(d.q)}</div>
+  </div></aside>`;
+}
 function chapterGameNote(n, i){
   if (n.compass && n.compass[i]) { const T = exT(n.lang); return `<div class="ex-note">🧭 ${esc(n.compass[i])} <a href="#/${n.slug}" data-xj="compass" data-slug="${esc(n.slug)}">${esc({es:"Ver la brújula",ru:"Открыть компас",it:"Apri la bussola"}[n.lang] || "Open the compass")} →</a></div>`; }
   if (n.moto && i === n.moto.ch) { const T = exT(n.lang); return `<div class="ex-note">🏍️ ${esc(n.moto.note || n.moto.title)} <a href="#/${n.slug}/juego/moto">${esc(T.gameGo)} →</a> <small>(${esc(T.opt)})</small></div>`; }
@@ -4045,6 +4069,7 @@ async function reader(n, idx, page){
   </article>${n.glossPick ? `<aside class="gl-side" id="glSide"></aside></div>` : ""}
   ${pagesNav}
   ${lastPage ? `${n.wip && i === chs.length ? `<div class="wipnote"><div>✎ ${esc(L.wipNote)}</div></div>` : ""}
+  ${i === chs.length ? donateHTML(n) : ""}
   ${chapterGameNote(n, i)}
   ${n.gamebook ? gbFooter(n, c) : `<nav class="pager">
     ${i>1 ? `<a href="${chapterHref(n, i-1)}">← ${esc(t("prev"))}<b>${esc(titleOf(i-1))}</b></a>` : `<span style="flex:1"></span>`}
