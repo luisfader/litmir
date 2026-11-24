@@ -181,7 +181,7 @@ En RU, ES, IT, SR y CS hay un periódico serio (`#/news`, botón «📰» en la 
 
 Reglas: solo hechos que están en el texto, comprobados capítulo por capítulo; nada inventado. Solo personajes de las novelas, nunca personas reales. Las novelas 18+ quedan fuera.
 
-**Al publicar capítulos nuevos** de una novela en RU, ES, IT, SR o CS, revisar si traen acontecimientos políticos de fondo y, si los hay, añadir o actualizar la noticia (por ejemplo, *Дикий час: Карнавал раздора* está en proceso y su noticia dice que se va actualizando). La primera tanda (noviembre de 2026) salió de las 5 novelas actualizadas más recientemente de cada idioma.
+**Al publicar capítulos nuevos** de una novela en RU, ES, IT, SR o CS, revisar si traen acontecimientos políticos de fondo y, si los hay, añadir o actualizar la noticia (por ejemplo, *Дикий час: Карнавал раздора* está en proceso y su noticia dice que se va actualizando). La primera tanda (noviembre de 2026) salió de las 5 novelas actualizadas más recientemente de cada idioma. La tanda del 24 de noviembre de 2026 suma Venecia (*Венецианская маска*: la ciudad cerrada por Zancan y la vuelta del alcalde Rossini), el final de Madrid en *Карнавал раздора*, la liberación de Serbia en *Дикий час: Тайна пирамид*, el juicio a Ottavio Neri en *Тихая любовь* y la continuación de *Чёрный рынок*. En *Карнавал раздора* se dejó fuera la abdicación del monarca español y la proclamación de la república (cap. 38), porque el periódico no trata de personas ni cargos reales.
 
 ## Recomendación del día
 
