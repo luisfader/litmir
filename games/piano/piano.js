@@ -3,8 +3,9 @@
    chords:[[бас, [ноты аккорда]]] (по такту, повторяются), chordNames, rounds:[сколько нот в раунде], phraseEnds:[индексы],
    keys:[[midi, "до", "A"]], black:[[midi, индекс белой клавиши слева]], about, ui:{...}}.
    Небо над фьордом: каждая верная нота поднимает столбы сияния (высокие для высоких нот).
-   full (необязательно): {audio, sync, duration} — полная запись (mp3 через opt.audioUrl) и тайминг нот для неба/клавиш
-   (sync: {melody:[[сек, длит, midi]], glow:[[сек, midi]]}); кнопка «whole» тогда играет запись, а не синтезатор.
+   full (необязательно): [{id, label, title, sub, audio, sync, duration}] — полные записи (mp3 через opt.audioUrl) и тайминг нот
+   для неба/клавиш (sync: {melody:[[сек, длит, midi]], glow:[[сек, midi]]}). id "whole" — кнопка «whole» играет запись вместо
+   синтезатора; другие id получают свою кнопку с label.
    Сохраняется в браузере: lm:piano:<slug> — лучшие звёзды по режимам. */
 (function () {
 "use strict";
@@ -68,6 +69,7 @@ function css() {
 function mount(pane, opt) {
   css();
   const D = opt.data, store = opt.store, key = "piano:" + opt.slug, U = D.ui || {};
+  const FULLS = opt.audioUrl && D.full ? [].concat(D.full).map(v => Object.assign({ id: "whole" }, v)) : [];
   const MEL = D.notes, ROUNDS = D.rounds, PH = D.phraseEnds || [], BEAT = 60 / (D.tempo || 100);
   pane.innerHTML = `<div class="pg">
   <div class="pg-head"><h3>${esc(D.title)}<i>${esc(D.subtitle)}</i></h3>
@@ -77,7 +79,7 @@ function mount(pane, opt) {
   <div class="pg-thread"></div>
   <div class="pg-kb"></div>
   <div class="pg-ctrl"><button class="pg-btn main" data-act="start">${esc(U.start)}</button><button class="pg-btn" data-act="again" disabled>${esc(U.again)}</button>
-    <button class="pg-btn" data-act="labels">${esc(U.hideNames)}</button><button class="pg-btn" data-act="whole">${esc(U.whole)}</button></div>
+    <button class="pg-btn" data-act="labels">${esc(U.hideNames)}</button><button class="pg-btn" data-act="whole">${esc(U.whole)}</button>${FULLS.filter(v => v.id !== "whole").map(v => `<button class="pg-btn" data-full="${esc(v.id)}">${esc(v.label)}</button>`).join("")}</div>
   <div class="pg-best"></div>
   <p class="pg-about">${D.about}</p></div>`;
   const q = s => pane.querySelector(s), root = q(".pg"), kb = q(".pg-kb"), thread = q(".pg-thread"), cv = q("canvas"), cx = cv.getContext("2d");
@@ -181,10 +183,12 @@ function mount(pane, opt) {
   bStart.onclick = start;
   bAgain.onclick = () => { if (state === "play") listen(); };
   // полная запись (D.full)
-  const F = D.full && opt.audioUrl ? D.full : null, fbar = q(".pg-full"), fbtn = q('[data-act=fpause]'), fseek = q(".pg-full input"), ftime = q(".pg-full span");
-  let full = null, sync = null;
+  const fbar = q(".pg-full"), fbtn = q('[data-act=fpause]'), fseek = q(".pg-full input"), ftime = q(".pg-full span");
+  let full = null; const players = {}, syncs = {}; let sync = null;
+  const fbtnOf = v => v.id === "whole" ? bWhole : q(`[data-full="${v.id}"]`);
+  const fLabel = v => v.id === "whole" ? U.whole : v.label;
   const mmss = t => Math.floor(t / 60) + ":" + String(Math.floor(t % 60)).padStart(2, "0");
-  const fdur = () => (full && isFinite(full.el.duration) && full.el.duration) || F.duration || 1;
+  const fdur = () => (full && isFinite(full.el.duration) && full.el.duration) || (full && full.v.duration) || 1;
   const firstAfter = (arr, t) => { let a = 0, b = arr.length; while (a < b) { const c = (a + b) >> 1; if (arr[c][0] < t) a = c + 1; else b = c; } return a; };
   function fullSeekIdx() { if (!sync) return; const t = full.el.currentTime; full.i = firstAfter(sync.melody, t); full.j = firstAfter(sync.glow, t); }
   function fullUI() { if (!full) return; const t = full.el.currentTime, d = fdur(); if (!full.drag) fseek.value = Math.round(t / d * 1000);
@@ -195,24 +199,30 @@ function mount(pane, opt) {
     while (full.i < M.length && M[full.i][0] <= t) { const [, l, m] = M[full.i++]; const e = keyEl(m);
       if (e) { e.classList.add("on"); timers.push(setTimeout(() => e.classList.remove("on"), Math.max(l * 1000 - 60, 160))); } burst(m, .9); }
     while (full.j < G.length && G[full.j][0] <= t) burst(G[full.j++][1], .35); }
-  function stopFull(restore = true) { if (!full || !full.on) return; full.on = false; full.el.pause(); fbar.hidden = true; bWhole.textContent = U.whole; clearT();
+  function stopFull(restore = true) { if (!full || !full.on) return; full.on = false; full.el.pause(); fbar.hidden = true; fbtnOf(full.v).textContent = fLabel(full.v); clearT();
     if (restore) { state = full.was; bAgain.disabled = state !== "play"; if (state === "play") setMsg(U.yourTurn, U.resume); else if (state === "idle") setMsg(U.introTitle, U.introSub); } }
-  function startFull() { audio(); clearT();
-    if (!full) { full = { el: new Audio(opt.audioUrl(F.audio)), i: 0, j: 0, on: false, drag: false };
-      full.el.preload = "auto";
-      full.el.addEventListener("ended", () => stopFull());
-      full.el.addEventListener("loadedmetadata", fullUI);
-      full.el.addEventListener("pause", fullUI); full.el.addEventListener("play", () => { fullSeekIdx(); fullUI(); });
-      if (F.sync) fetch(F.sync).then(r => r.json()).then(j => { sync = j; fullSeekIdx(); }).catch(() => {}); }
-    full.was = state; full.on = true; state = "wait"; bAgain.disabled = true; full.el.currentTime = 0; full.i = full.j = 0;
-    fbar.hidden = false; bWhole.textContent = U.wholeStop; setMsg(U.fullTitle, U.fullSub); fullUI();
-    full.el.play().catch(() => { stopFull(false); state = full.was; setMsg(D.title, U.fullError); synthWhole(full.was); }); }
+  function startFull(v) { audio(); clearT();
+    let p = players[v.id];
+    if (!p) { p = players[v.id] = { v, el: new Audio(opt.audioUrl(v.audio)), i: 0, j: 0, on: false, drag: false };
+      p.el.preload = "auto";
+      p.el.addEventListener("ended", () => { if (full === p) stopFull(); });
+      p.el.addEventListener("loadedmetadata", () => { if (full === p) fullUI(); });
+      p.el.addEventListener("pause", () => { if (full === p) fullUI(); }); p.el.addEventListener("play", () => { if (full === p) { fullSeekIdx(); fullUI(); } });
+      if (v.sync && !syncs[v.sync]) syncs[v.sync] = fetch(v.sync).then(r => r.json()).catch(() => null); }
+    full = p; sync = null; if (v.sync) syncs[v.sync].then(j => { if (full === p) { sync = j; fullSeekIdx(); } });
+    p.was = state; p.on = true; state = "wait"; bAgain.disabled = true; p.el.currentTime = 0; p.i = p.j = 0;
+    fbar.hidden = false; fbtnOf(v).textContent = U.wholeStop; setMsg(v.title || D.title, v.sub || ""); fullUI();
+    p.el.play().catch(() => { stopFull(false); state = p.was; setMsg(D.title, U.fullError); synthWhole(p.was); }); }
+  function toggleFull(v) { if (full && full.on) { const same = full.v === v; stopFull(); if (same) return; }
+    if (state === "listen" || state === "wait") return; startFull(v); }
+  FULLS.forEach(v => { if (v.id !== "whole") fbtnOf(v).onclick = () => toggleFull(v); });
   fbtn.onclick = () => { if (!full) return; if (full.el.paused) full.el.play().catch(() => {}); else full.el.pause(); };
   fseek.addEventListener("input", () => { if (!full) return; full.drag = true; const t = fseek.value / 1000 * fdur(); ftime.textContent = mmss(t) + " / " + mmss(fdur()); });
   fseek.addEventListener("change", () => { if (!full) return; full.drag = false; full.el.currentTime = fseek.value / 1000 * fdur(); clearT(); fullSeekIdx(); fullUI(); });
   function synthWhole(was) { state = "wait"; bAgain.disabled = true;
     playNotes(MEL, true, () => { state = was; bAgain.disabled = was !== "play"; if (was === "play") setMsg(U.yourTurn, U.resume); }); }
-  bWhole.onclick = () => { if (full && full.on) return stopFull(); if (state === "listen" || state === "wait") return; if (F) return startFull(); const was = state; state = "wait"; bAgain.disabled = true; setMsg(D.title, D.author);
+  const FW = FULLS.find(v => v.id === "whole");
+  bWhole.onclick = () => { if (FW) return toggleFull(FW); if (state === "listen" || state === "wait") return; const was = state; state = "wait"; bAgain.disabled = true; setMsg(D.title, D.author);
     playNotes(MEL, true, () => { state = was; bAgain.disabled = was !== "play"; if (was === "play") setMsg(U.yourTurn, U.resume); }); };
   bLabels.onclick = () => { const off = kb.classList.toggle("nolabel"); bLabels.textContent = off ? U.showNames : U.hideNames; };
   function setMode(m) { if (full && full.on) stopFull(false); mode = m; pane.querySelectorAll(".pg-modes button").forEach(b => b.setAttribute("aria-pressed", b.dataset.mode === m)); clearT();

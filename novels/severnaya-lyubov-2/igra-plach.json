@@ -293,16 +293,28 @@
   "masterTitle": "Режим «Мастер»",
   "masterSub": "Без подсказок и названий нот. Три снежинки на раунд.",
   "wholeStop": "Остановить",
-  "fullTitle": "«Плач с севера» целиком",
-  "fullSub": "Вся мелодия с аккордами и оркестром. Можно подыгрывать на клавишах.",
   "fullPause": "Пауза",
   "fullPlay": "Продолжить",
   "fullSeek": "Перемотка",
   "fullError": "Запись не загрузилась — играем короткую версию."
  },
- "full": {
-  "audio": "novels/severnaya-lyubov-2/music/plach-s-severa-polnaya.mp3",
-  "sync": "novels/severnaya-lyubov-2/plach-polnaya.json",
-  "duration": 165.5
- }
+ "full": [
+  {
+   "id": "whole",
+   "audio": "novels/severnaya-lyubov-2/music/plach-s-severa-polnaya.mp3",
+   "sync": "novels/severnaya-lyubov-2/plach-polnaya.json",
+   "duration": 165.5,
+   "title": "«Плач с севера» целиком",
+   "sub": "Вся мелодия с аккордами и оркестром. Можно подыгрывать на клавишах."
+  },
+  {
+   "id": "solo",
+   "label": "Только фортепиано",
+   "audio": "novels/severnaya-lyubov-2/music/plach-s-severa-fortepiano.mp3",
+   "sync": "novels/severnaya-lyubov-2/plach-polnaya.json",
+   "duration": 165.5,
+   "title": "«Плач с севера» для фортепиано",
+   "sub": "Вся пьеса на одном рояле: мелодия, аккорды и бас. Можно подыгрывать на клавишах."
+  }
+ ]
 }
