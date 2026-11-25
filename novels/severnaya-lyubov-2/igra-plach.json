@@ -291,6 +291,18 @@
   "learnTitle": "Режим «Ученик»",
   "learnSub": "После ошибки подскажем нужную клавишу.",
   "masterTitle": "Режим «Мастер»",
-  "masterSub": "Без подсказок и названий нот. Три снежинки на раунд."
+  "masterSub": "Без подсказок и названий нот. Три снежинки на раунд.",
+  "wholeStop": "Остановить",
+  "fullTitle": "«Плач с севера» целиком",
+  "fullSub": "Вся мелодия с аккордами и оркестром. Можно подыгрывать на клавишах.",
+  "fullPause": "Пауза",
+  "fullPlay": "Продолжить",
+  "fullSeek": "Перемотка",
+  "fullError": "Запись не загрузилась — играем короткую версию."
+ },
+ "full": {
+  "audio": "novels/severnaya-lyubov-2/music/plach-s-severa-polnaya.mp3",
+  "sync": "novels/severnaya-lyubov-2/plach-polnaya.json",
+  "duration": 165.5
  }
 }

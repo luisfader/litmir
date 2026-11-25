@@ -3,6 +3,8 @@
    chords:[[бас, [ноты аккорда]]] (по такту, повторяются), chordNames, rounds:[сколько нот в раунде], phraseEnds:[индексы],
    keys:[[midi, "до", "A"]], black:[[midi, индекс белой клавиши слева]], about, ui:{...}}.
    Небо над фьордом: каждая верная нота поднимает столбы сияния (высокие для высоких нот).
+   full (необязательно): {audio, sync, duration} — полная запись (mp3 через opt.audioUrl) и тайминг нот для неба/клавиш
+   (sync: {melody:[[сек, длит, midi]], glow:[[сек, midi]]}); кнопка «whole» тогда играет запись, а не синтезатор.
    Сохраняется в браузере: lm:piano:<slug> — лучшие звёзды по режимам. */
 (function () {
 "use strict";
@@ -52,6 +54,11 @@ function css() {
 .pg button:focus-visible{outline:3px solid var(--fire);outline-offset:2px}
 .pg-about{color:var(--pmute);font-size:14.5px;max-width:640px;margin:18px auto 0;text-align:center;line-height:1.55}
 .pg-about b{color:var(--pink)}
+.pg-full{display:flex;align-items:center;gap:10px;margin-top:10px;padding:6px 12px 6px 6px;background:var(--pbg2);border:1px solid var(--pline);border-radius:999px}
+.pg-full[hidden]{display:none}
+.pg-full button{flex:none;width:40px;height:40px;border-radius:50%;border:0;background:var(--aur);color:#04201a;font:700 15px var(--sans,sans-serif);cursor:pointer}
+.pg-full input{flex:1;accent-color:var(--aur);min-height:30px}
+.pg-full span{flex:none;color:var(--pmute);font:500 13px var(--sans,sans-serif);font-variant-numeric:tabular-nums}
 .pg-best{color:var(--pmute);font-size:13px;text-align:center;margin-top:8px}
 @media(max-width:600px){.pg-w kbd{display:none}.pg-w{font-size:11px;margin:0 1px}}
 @media(prefers-reduced-motion:reduce){.pg *{animation:none!important;transition:none!important}}`;
@@ -66,6 +73,7 @@ function mount(pane, opt) {
   <div class="pg-head"><h3>${esc(D.title)}<i>${esc(D.subtitle)}</i></h3>
     <div class="pg-modes" role="group"><button data-mode="learn" aria-pressed="true">${esc(U.learn)}</button><button data-mode="master" aria-pressed="false">${esc(U.master)}</button></div></div>
   <div class="pg-sky"><canvas></canvas><div class="pg-msg"><b class="pg-t"></b><span class="pg-s"></span></div><div class="pg-round"></div><div class="pg-lives"></div></div>
+  <div class="pg-full" hidden><button data-act="fpause"></button><input type="range" min="0" max="1000" value="0"><span></span></div>
   <div class="pg-thread"></div>
   <div class="pg-kb"></div>
   <div class="pg-ctrl"><button class="pg-btn main" data-act="start">${esc(U.start)}</button><button class="pg-btn" data-act="again" disabled>${esc(U.again)}</button>
@@ -101,10 +109,11 @@ function mount(pane, opt) {
   const sro = new ResizeObserver(size); sro.observe(cv); size();
   for (let i = 0; i < 90; i++) stars.push([Math.random(), Math.random() * .6, Math.random() * 1.3 + .3, Math.random() * 6]);
   const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
-  function burst(m, strong = 1) { const r = (m - lo) / span, h = .25 + .7 * r, c = .15 + .7 * r + (Math.random() - .5) * .15;
+  function burst(m, strong = 1) { const r = Math.min(1, Math.max(0, (m - lo) / span)), h = .25 + .7 * r, c = .15 + .7 * r + (Math.random() - .5) * .15;
     for (let i = 0; i < 5; i++) pillars.push({ x: c + (i - 2.5) * .035 + (Math.random() - .5) * .02, h: h * (.75 + Math.random() * .3), a: strong, w: 10 + Math.random() * 16, v: Math.random() < .25 }); }
   function frame(ts) {
-    if (!pane.isConnected || !root.isConnected) { kro.disconnect(); sro.disconnect(); clearT(); removeEventListener("keydown", onKey); return; }
+    if (!pane.isConnected || !root.isConnected) { kro.disconnect(); sro.disconnect(); clearT(); removeEventListener("keydown", onKey); if (full) full.el.pause(); return; }
+    if (full && full.on && !full.el.paused) fullTick();
     cx.clearRect(0, 0, W, H);
     stars.forEach(([x, y, r, p]) => { cx.globalAlpha = .4 + .4 * Math.sin(ts / 900 + p); cx.fillStyle = "#e8f3f4"; cx.beginPath(); cx.arc(x * W, y * H, r, 0, 7); cx.fill(); });
     cx.globalAlpha = 1; const base = H * .78;
@@ -143,7 +152,7 @@ function mount(pane, opt) {
   function listen() { state = "listen"; pos = 0; lives = 3; drawStatus(); bAgain.disabled = true; kb.querySelectorAll(".hint").forEach(e => e.classList.remove("hint"));
     setMsg(U.listen, fmt(U.listenSub, { n: ROUNDS[round] }));
     playNotes(MEL.slice(0, ROUNDS[round]), false, () => { state = "play"; drawStatus(); bAgain.disabled = false; setMsg(U.yourTurn, U.yourTurnSub); }); }
-  function start() { audio(); clearT(); round = 0; lives = 3; errors = 0; bStart.textContent = U.restart; listen(); }
+  function start() { if (full && full.on) stopFull(false); audio(); clearT(); round = 0; lives = 3; errors = 0; bStart.textContent = U.restart; listen(); }
   function win() { state = "done"; drawStatus(); bAgain.disabled = true;
     const s = errors === 0 ? 3 : errors <= 4 ? 2 : 1; setMsg(U.won, fmt(U.wonSub, { stars: "★".repeat(s) + "☆".repeat(3 - s), errors }));
     if (s > (best[mode] || 0)) { best[mode] = s; store.set(key, best); } showBest();
@@ -171,10 +180,42 @@ function mount(pane, opt) {
   addEventListener("keydown", onKey);
   bStart.onclick = start;
   bAgain.onclick = () => { if (state === "play") listen(); };
-  bWhole.onclick = () => { if (state === "listen" || state === "wait") return; const was = state; state = "wait"; bAgain.disabled = true; setMsg(D.title, D.author);
+  // полная запись (D.full)
+  const F = D.full && opt.audioUrl ? D.full : null, fbar = q(".pg-full"), fbtn = q('[data-act=fpause]'), fseek = q(".pg-full input"), ftime = q(".pg-full span");
+  let full = null, sync = null;
+  const mmss = t => Math.floor(t / 60) + ":" + String(Math.floor(t % 60)).padStart(2, "0");
+  const fdur = () => (full && isFinite(full.el.duration) && full.el.duration) || F.duration || 1;
+  const firstAfter = (arr, t) => { let a = 0, b = arr.length; while (a < b) { const c = (a + b) >> 1; if (arr[c][0] < t) a = c + 1; else b = c; } return a; };
+  function fullSeekIdx() { if (!sync) return; const t = full.el.currentTime; full.i = firstAfter(sync.melody, t); full.j = firstAfter(sync.glow, t); }
+  function fullUI() { if (!full) return; const t = full.el.currentTime, d = fdur(); if (!full.drag) fseek.value = Math.round(t / d * 1000);
+    ftime.textContent = mmss(t) + " / " + mmss(d); fbtn.textContent = full.el.paused ? "▶" : "❚❚"; fbtn.setAttribute("aria-label", full.el.paused ? U.fullPlay : U.fullPause); }
+  function fullTick() { const t = full.el.currentTime; fullUI(); if (!sync) return;
+    const M = sync.melody, G = sync.glow;
+    if (full.i < M.length && t - M[full.i][0] > 1) fullSeekIdx();
+    while (full.i < M.length && M[full.i][0] <= t) { const [, l, m] = M[full.i++]; const e = keyEl(m);
+      if (e) { e.classList.add("on"); timers.push(setTimeout(() => e.classList.remove("on"), Math.max(l * 1000 - 60, 160))); } burst(m, .9); }
+    while (full.j < G.length && G[full.j][0] <= t) burst(G[full.j++][1], .35); }
+  function stopFull(restore = true) { if (!full || !full.on) return; full.on = false; full.el.pause(); fbar.hidden = true; bWhole.textContent = U.whole; clearT();
+    if (restore) { state = full.was; bAgain.disabled = state !== "play"; if (state === "play") setMsg(U.yourTurn, U.resume); else if (state === "idle") setMsg(U.introTitle, U.introSub); } }
+  function startFull() { audio(); clearT();
+    if (!full) { full = { el: new Audio(opt.audioUrl(F.audio)), i: 0, j: 0, on: false, drag: false };
+      full.el.preload = "auto";
+      full.el.addEventListener("ended", () => stopFull());
+      full.el.addEventListener("loadedmetadata", fullUI);
+      full.el.addEventListener("pause", fullUI); full.el.addEventListener("play", () => { fullSeekIdx(); fullUI(); });
+      if (F.sync) fetch(F.sync).then(r => r.json()).then(j => { sync = j; fullSeekIdx(); }).catch(() => {}); }
+    full.was = state; full.on = true; state = "wait"; bAgain.disabled = true; full.el.currentTime = 0; full.i = full.j = 0;
+    fbar.hidden = false; bWhole.textContent = U.wholeStop; setMsg(U.fullTitle, U.fullSub); fullUI();
+    full.el.play().catch(() => { stopFull(false); state = full.was; setMsg(D.title, U.fullError); synthWhole(full.was); }); }
+  fbtn.onclick = () => { if (!full) return; if (full.el.paused) full.el.play().catch(() => {}); else full.el.pause(); };
+  fseek.addEventListener("input", () => { if (!full) return; full.drag = true; const t = fseek.value / 1000 * fdur(); ftime.textContent = mmss(t) + " / " + mmss(fdur()); });
+  fseek.addEventListener("change", () => { if (!full) return; full.drag = false; full.el.currentTime = fseek.value / 1000 * fdur(); clearT(); fullSeekIdx(); fullUI(); });
+  function synthWhole(was) { state = "wait"; bAgain.disabled = true;
+    playNotes(MEL, true, () => { state = was; bAgain.disabled = was !== "play"; if (was === "play") setMsg(U.yourTurn, U.resume); }); }
+  bWhole.onclick = () => { if (full && full.on) return stopFull(); if (state === "listen" || state === "wait") return; if (F) return startFull(); const was = state; state = "wait"; bAgain.disabled = true; setMsg(D.title, D.author);
     playNotes(MEL, true, () => { state = was; bAgain.disabled = was !== "play"; if (was === "play") setMsg(U.yourTurn, U.resume); }); };
   bLabels.onclick = () => { const off = kb.classList.toggle("nolabel"); bLabels.textContent = off ? U.showNames : U.hideNames; };
-  function setMode(m) { mode = m; pane.querySelectorAll(".pg-modes button").forEach(b => b.setAttribute("aria-pressed", b.dataset.mode === m)); clearT();
+  function setMode(m) { if (full && full.on) stopFull(false); mode = m; pane.querySelectorAll(".pg-modes button").forEach(b => b.setAttribute("aria-pressed", b.dataset.mode === m)); clearT();
     state = "idle"; round = 0; pos = 0; lives = 3; bStart.textContent = U.start; bAgain.disabled = true;
     setMsg(m === "learn" ? U.learnTitle : U.masterTitle, m === "learn" ? U.learnSub : U.masterSub);
     kb.classList.toggle("nolabel", m === "master"); bLabels.textContent = m === "master" ? U.showNames : U.hideNames; drawStatus(); showBest(); }
