@@ -23,7 +23,8 @@
     "ora-selvaggia-venezia",
     "la-savo-de-zmaj",
     "dikij-chas-venecianskoe-koldovstvo",
-    "volny-lyubvi-labirint-zabveniya"
+    "volny-lyubvi-labirint-zabveniya",
+    "rezonans-lyubvi-volshebnye-struny"
    ],
    "localizations": {
     "sr": {
@@ -175,7 +176,8 @@
     "tajna-semi-fader",
     "el-misterio-de-los-fader",
     "operacion-londres",
-    "tajna-semi-fader-2"
+    "tajna-semi-fader-2",
+    "rezonans-lyubvi-volshebnye-struny"
    ],
    "localizations": {
     "es": {
@@ -281,7 +283,8 @@
     "divlji-chas-malbec",
     "ora-selvaggia-venezia",
     "la-savo-de-zmaj",
-    "dikij-chas-venecianskoe-koldovstvo"
+    "dikij-chas-venecianskoe-koldovstvo",
+    "rezonans-lyubvi-volshebnye-struny"
    ],
    "localizations": {
     "sr": {
@@ -2719,7 +2722,8 @@
     "tajna-semi-fader",
     "el-misterio-de-los-fader",
     "operacion-londres",
-    "tajna-semi-fader-2"
+    "tajna-semi-fader-2",
+    "rezonans-lyubvi-volshebnye-struny"
    ],
    "localizations": {
     "es": {
@@ -3027,7 +3031,8 @@
     "rezonans-lyubvi",
     "rezonans-lyubvi-3-protiv-mraka",
     "dikij-chas-karnaval-razdora",
-    "do-outro-lado-do-mundo-2"
+    "do-outro-lado-do-mundo-2",
+    "rezonans-lyubvi-volshebnye-struny"
    ],
    "localizations": {
     "ru": {
@@ -3370,7 +3375,8 @@
    ],
    "role": "Jefe de los servicios especiales en Madrid.",
    "novels": [
-    "dikij-chas-karnaval-razdora"
+    "dikij-chas-karnaval-razdora",
+    "rezonans-lyubvi-volshebnye-struny"
    ],
    "localizations": {
     "ru": {
@@ -3390,15 +3396,33 @@
    ],
    "role": "Misterioso guitarrista de «El Legado de Pedro».",
    "novels": [
-    "dikij-chas-karnaval-razdora"
+    "dikij-chas-karnaval-razdora",
+    "rezonans-lyubvi-volshebnye-struny"
    ],
    "localizations": {
     "ru": {
      "name": "Агент Л",
-     "description": "Загадочный человек в длинном тёмном плаще из организации «Наследие Педро». Его гитара останавливает даже древнего бога-быка, а в телестудии он затмевает всех экспертов. Под этим именем скрывается Луис Фадер из «Резонанса любви» — другой Луис, не муж Наташи.",
+     "description": "Загадочный человек в длинном тёмном плаще из организации «Наследие Педро». Его гитара останавливает даже древнего бога-быка, а в телестудии он затмевает всех экспертов. Под этим именем скрывается Луис Фадер из «Резонанса любви» — другой Луис, не муж Наташи. В «Волшебных струнах» получает от Дмитрия Петровича гитару-резонатор из Толедо и визитки «Наследия Педро».",
      "images": [
       "characters/img/agente-l-1.jpg"
      ]
+    }
+   }
+  },
+  {
+   "id": "valeria-madrid",
+   "name": "Valeria",
+   "langs": [
+    "ru"
+   ],
+   "role": "Asistente del agente L en Madrid, valenciana que vive en Madrid.",
+   "novels": [
+    "rezonans-lyubvi-volshebnye-struny"
+   ],
+   "localizations": {
+    "ru": {
+     "name": "Валерия",
+     "description": "Ассистентка агента Л в Мадриде. Родом из Валенсии, но Мадрид любит больше. Толкает бронзовых коней «благодаря пилатесу», щелчком пальцев зажигает петарды, как на фальяс, и говорит, что лучшие свои навыки не может показать в машине."
     }
    }
   },
@@ -3427,7 +3451,8 @@
    ],
    "role": "Periodista de televisión en Madrid.",
    "novels": [
-    "dikij-chas-karnaval-razdora"
+    "dikij-chas-karnaval-razdora",
+    "rezonans-lyubvi-volshebnye-struny"
    ],
    "localizations": {
     "ru": {
@@ -3568,12 +3593,14 @@
    "novels": [
     "rezonans-lyubvi",
     "rezonans-lyubvi-3-protiv-mraka",
-    "do-outro-lado-do-mundo-2"
+    "do-outro-lado-do-mundo-2",
+    "rezonans-lyubvi-volshebnye-struny",
+    "dikij-chas-karnaval-razdora"
    ],
    "localizations": {
     "ru": {
      "name": "Наталья",
-     "description": "Москвичка, красивая, умная и с характером. Приезжает весной в Петербург, встречает там Луиса Фадера и оказывается самым сильным резонантом города. Не позволяет говорить за себя и не хочет быть удобной фигурой в чужом плане. В «Против мрака» вместе с Луисом ищет древний артефакт от Москвы до Ярославля.",
+     "description": "Москвичка, красивая, умная и с характером. Приезжает весной в Петербург, встречает там Луиса Фадера и оказывается самым сильным резонантом города. Не позволяет говорить за себя и не хочет быть удобной фигурой в чужом плане. В «Против мрака» вместе с Луисом ищет древний артефакт от Москвы до Ярославля. В «Волшебных струнах» тайком летит за Луисом в Мадрид, красится в рыжий и под именем Рыжая зашивает рану Луису из «Дикого часа» в метро «Колон».",
      "images": [
       "characters/img/natalia-rezonans-1.jpg",
       "characters/img/natalia-rezonans-2.jpg"
@@ -3621,7 +3648,8 @@
    ],
    "role": "Coordinador del Servicio de Asuntos Celestiales.",
    "novels": [
-    "rezonans-lyubvi"
+    "rezonans-lyubvi",
+    "rezonans-lyubvi-volshebnye-struny"
    ],
    "localizations": {
     "ru": {
