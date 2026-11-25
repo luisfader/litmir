@@ -301,7 +301,7 @@
  "full": [
   {
    "id": "whole",
-   "audio": "novels/severnaya-lyubov-2/music/plach-s-severa-polnaya.mp3",
+   "audio": "novels/severnaya-lyubov-2/music/plach-s-severa-polnaya-v2.mp3",
    "sync": "novels/severnaya-lyubov-2/plach-polnaya.json",
    "duration": 165.5,
    "title": "«Плач с севера» целиком",
@@ -310,7 +310,7 @@
   {
    "id": "solo",
    "label": "Только фортепиано",
-   "audio": "novels/severnaya-lyubov-2/music/plach-s-severa-fortepiano.mp3",
+   "audio": "novels/severnaya-lyubov-2/music/plach-s-severa-fortepiano-v2.mp3",
    "sync": "novels/severnaya-lyubov-2/plach-polnaya.json",
    "duration": 165.5,
    "title": "«Плач с севера» для фортепиано",
