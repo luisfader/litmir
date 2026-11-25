@@ -896,6 +896,81 @@ body.tr-lock{overflow:hidden}
 .tr-lead{font-family:var(--serif);font-size:17px;line-height:1.55;margin:8px 0}
 .tr-btns{display:flex;gap:10px;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:12px}.tr-btns .tr-go{margin:0}
 @media (prefers-reduced-motion:reduce){.tr-sc,.tr-face,.tr-big,.tr-th img{animation:none!important;transition:none!important}}
+/* Испанская колода (sec.style "baraja") */
+.bj{color:var(--ink)}
+.bj-hero{text-align:center;color:#fff3dc;padding:18px 14px 16px;margin:0 -12px 14px;background:radial-gradient(120% 140% at 50% 0%,#b0262c 0%,#5c0f14 72%)}
+.bj-title{font-family:var(--serif);font-size:24px;font-weight:700;color:#ffd36a;letter-spacing:.02em}.bj-intro{font-size:14.5px;line-height:1.5;opacity:.92;margin-top:6px}
+.bj-stage{min-height:200px}
+.bj-deck{display:flex;flex-direction:column;align-items:center;gap:6px;margin:6px auto 14px;border:0;background:none;cursor:pointer;color:var(--ink);font-family:var(--sans);padding:8px 8px 4px}
+.bj-deck b{font:700 18px/1.2 var(--serif);color:var(--accent)}.bj-deck small{color:var(--muted);font-size:13px}
+.bj-pile{position:relative;width:130px;height:201px;margin-bottom:10px}
+.bj-pile img{position:absolute;inset:0;width:100%;border-radius:9px;box-shadow:0 3px 10px rgba(40,10,10,.35);transform:translate(calc(var(--i)*-1.6px),calc(var(--i)*-1.6px));transition:transform .55s cubic-bezier(.3,.7,.3,1.2),opacity .55s}
+.bj-deck:hover .bj-pile img:last-child,.bj-deck:focus-visible .bj-pile img:last-child{transform:translate(-8px,-12px) rotate(-3deg)}
+.bj-deck:not(.split) .bj-pile{animation:bjBreath 2.6s ease-in-out infinite}
+@keyframes bjBreath{50%{transform:translateY(-4px)}}
+.bj-deck.split .bj-pile img:nth-child(2){transform:translate(-120%,-10%) rotate(-24deg)}
+.bj-deck.split .bj-pile img:nth-child(3){transform:translate(-45%,-30%) rotate(-8deg)}
+.bj-deck.split .bj-pile img:nth-child(4){transform:translate(45%,-30%) rotate(8deg)}
+.bj-deck.split .bj-pile img:nth-child(5){transform:translate(120%,-10%) rotate(24deg)}
+.bj-deck.split .bj-pile img:first-child{opacity:0}
+.bj-swipe{text-align:center;color:var(--muted);font-size:13px;margin:0 0 6px}
+.bj-suit{margin:0 -12px 10px;padding:12px 12px 8px;background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.bj-stage.open:not(.noanim) .bj-suits .bj-suit{animation:bjIn .5s calc(var(--d)*.14s) both cubic-bezier(.2,.8,.3,1)}
+@keyframes bjIn{from{opacity:0;transform:translateY(-36px) scale(.94)}}
+.bj-stage.open:not(.noanim) .bj-suits .bj-c{animation:bjDeal .45s calc(var(--d)*.14s + var(--k)*.05s + .15s) both cubic-bezier(.2,.8,.3,1)}
+@keyframes bjDeal{from{opacity:0;transform:translateX(calc(var(--k)*-60%)) rotate(-10deg)}}
+.bj-suit header{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:2px 10px}
+.bj-suit h3{margin:0;font:700 20px/1.2 var(--serif)}.bj-suit h3 i{font-weight:400;color:var(--muted);font-size:16px}
+.bj-suit header small{color:var(--muted);font-size:12.5px}.bj-suit header small b{color:var(--accent)}
+.bj-oros h3{color:#a8740c}.bj-copas h3{color:#b3242a}.bj-espadas h3{color:#1f4f9e}.bj-bastos h3{color:#2f6e2b}
+:root[data-theme="dark"] .bj-oros h3{color:#f3c34d}:root[data-theme="dark"] .bj-copas h3{color:#ff7a70}:root[data-theme="dark"] .bj-espadas h3{color:#86adf5}:root[data-theme="dark"] .bj-bastos h3{color:#8fcb7c}
+.bj-st{margin:4px 0 8px;font-size:14.5px;line-height:1.5;color:var(--ink)}
+.bj-rw{position:relative}
+.bj-row{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding:4px 2px 10px;scrollbar-width:thin;overscroll-behavior-x:contain}
+.bj-c{flex:0 0 auto;width:96px;scroll-snap-align:start;border:0;background:none;padding:0;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:4px;color:var(--ink);font:600 12.5px/1.2 var(--sans)}
+.bj-c img{width:100%;aspect-ratio:200/310;border-radius:7px;box-shadow:0 3px 9px rgba(40,25,10,.28);transition:transform .2s;background:#fffdf6}
+.bj-c:hover img,.bj-c:focus-visible img{transform:translateY(-5px) rotate(-1.5deg)}
+.bj-c.locked{cursor:default;opacity:.75}.bj-c.locked:hover img{transform:none}
+.bj-ar{position:absolute;top:calc(50% - 26px);z-index:2;width:34px;height:34px;border-radius:50%;border:1px solid var(--line);background:var(--paper);color:var(--ink);font-size:22px;line-height:1;cursor:pointer;box-shadow:var(--shadow);display:none}
+.bj-ar.l{left:-6px}.bj-ar.r{right:-6px}.bj-ar:disabled{opacity:0;pointer-events:none}
+@media (hover:hover) and (pointer:fine){.bj-ar{display:block}}
+.bj-gather{display:block;margin:4px auto 16px;border:1px solid var(--line);background:var(--paper);color:var(--muted);border-radius:18px;padding:7px 16px;font:600 13.5px var(--sans);cursor:pointer}
+.bj-novrow{background:var(--accent-soft)}
+.bj-story p{margin:4px 0;font-size:14.5px;line-height:1.5}.bj-story small,.bj-nov small{color:var(--muted);font-size:12px;white-space:nowrap}
+.bj-story .lock,.bj-nov .lock{color:var(--muted);font-style:italic}
+.bj-info{margin:10px 0;border:1px solid var(--line);border-radius:12px;background:var(--paper);overflow:hidden}
+.bj-info summary{cursor:pointer;padding:12px 14px;font:700 17px/1.3 var(--serif);list-style:none}.bj-info summary::-webkit-details-marker{display:none}
+.bj-info summary::after{content:"＋";float:right;color:var(--muted)}.bj-info[open] summary::after{content:"－"}
+.bj-locked{padding:12px 14px;font:600 15px var(--serif);color:var(--muted)}
+.bj-ib{padding:0 14px 12px}.bj-ib p{margin:0 0 10px;font-size:15.5px;line-height:1.6}
+.bj-tb{border-collapse:collapse;width:100%;margin:6px 0 4px;font-size:14.5px}.bj-tb th,.bj-tb td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left}.bj-tb th{color:var(--muted);font-weight:600;font-size:13px}
+.bj-games{display:grid;gap:10px}
+.bj-g{border:1px solid var(--line);border-radius:10px;padding:10px 12px;position:relative}.bj-g.nov{border-color:var(--accent);background:var(--accent-soft)}
+.bj-g h4{margin:0 0 4px;font:700 16.5px/1.3 var(--serif)}.bj-g h4 i{font-weight:400;color:var(--muted)}.bj-g h4 small{float:right;font:500 12.5px var(--sans);color:var(--muted)}
+.bj-g p{margin:0;font-size:14.5px;line-height:1.55}.bj-tag{display:inline-block;margin-top:6px;font-size:12px;font-weight:700;color:var(--accent)}
+.bj-rsub{color:var(--muted);font-style:italic}
+.bj-rbox{background:#2f5d34;background:radial-gradient(130% 120% at 50% 0%,#3b7341 0%,#1f4024 80%);border-radius:12px;padding:12px;color:#f3efe2}
+.bj-zone small{font-size:11.5px;letter-spacing:.07em;text-transform:uppercase;opacity:.75}
+.bj-tbl{display:flex;flex-wrap:wrap;gap:8px;margin:5px 0 10px;min-height:20px}.bj-tbl em{opacity:.6}
+.bj-m{width:64px;border-radius:5px;box-shadow:0 3px 8px rgba(0,0,0,.4);transition:transform .25s}.bj-tbl.sm .bj-m{width:40px}
+.bj-m.hl{transform:translateY(-6px);box-shadow:0 0 0 3px #ffd36a,0 6px 14px rgba(0,0,0,.5)}
+.bj-rt{font-size:15.5px;line-height:1.55;margin:4px 0 8px!important}.bj-fin{font:700 16px/1.5 var(--serif);color:#ffd36a}
+.bj-go{border:0;background:#ffd36a;color:#3b2a08;border-radius:18px;padding:8px 16px;font:700 14px var(--sans);cursor:pointer}
+.bj-view{position:fixed;inset:0;z-index:200;background:rgba(30,8,8,.84);overflow-y:auto;padding:18px 12px 40px;-webkit-overflow-scrolling:touch}
+.bj-vin{position:relative;max-width:520px;margin:0 auto;background:#fbf6ea;color:#2a2420;border:1px solid #e3d6bb;border-radius:18px;padding:18px 16px 16px;box-shadow:0 20px 50px rgba(0,0,0,.5)}
+.bj-x{position:absolute;top:10px;right:10px;border:1px solid #e3d6bb;background:#fff;color:#5a4a3a;border-radius:50%;width:36px;height:36px;font-size:16px;cursor:pointer}
+.bj-big{width:min(240px,64vw);margin:4px auto 10px;touch-action:pan-y}.bj-big img{width:100%;display:block;border-radius:12px;box-shadow:0 12px 30px rgba(60,20,10,.4)}
+.bj-alt{display:block;margin:-2px auto 10px;border:1px solid #c9b48a;background:#fff;color:#8c2f2f;border-radius:16px;padding:5px 12px;font:600 13px var(--sans);cursor:pointer}
+.bj-vin h3{margin:0;text-align:center;font:700 25px/1.2 var(--serif);color:#8c2f2f}
+.bj-es{text-align:center;margin:3px 0 12px;color:#6b5a48;font-size:14.5px}.bj-es span{color:#9a8a76}
+.bj-vals{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-bottom:12px}
+.bj-vals span{display:flex;flex-direction:column;align-items:center;background:#fff;border:1px solid #eadfc8;border-radius:10px;padding:6px 4px;font-size:11.5px;color:#7a6a58;text-align:center;line-height:1.25}
+.bj-vals b{font:700 22px/1.1 var(--serif);color:#2a2420}
+.bj-why,.bj-nov{border-top:1px solid #eadfc8;padding:10px 0 2px}.bj-why b,.bj-nov b{font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:#a8740c}
+.bj-why p,.bj-nov p{margin:5px 0 8px;font-size:15.5px;line-height:1.55}
+.bj-nov{background:#f3e6cf;border-radius:12px;padding:10px 12px 4px;margin-top:6px;border-top:0}.bj-nov b{color:#8c2f2f}
+.bj-nav{display:flex;justify-content:space-between;gap:8px;margin-top:12px}.bj-nav button{border:1px solid #d9c7a2;background:#fff;color:#5a4a3a;border-radius:18px;padding:7px 18px;font:700 16px var(--sans);cursor:pointer}
+@media (prefers-reduced-motion:reduce){.bj-pile,.bj-pile img,.bj-suit,.bj-c,.bj-c img,.bj-m{animation:none!important;transition:none!important}}
 .mp-lk{text-align:center;padding:12px 6px}.mp-lk div{font-size:38px}.mp-lk p{margin:6px 0 10px;color:#6d5b47}
 .mp-h{margin:20px 4px 8px;font-family:var(--serif);font-size:18px;color:#174d4f}.mp-ladder{display:flex;flex-direction:column;gap:6px}
 .mp-scale{display:flex;justify-content:space-between;font-size:12.5px;color:#7a5c2e;padding:0 4px}
@@ -3364,6 +3439,7 @@ async function exSection(n, sec, pane){
   if (sec.style === "conquista") { let D; try { D = JSON.parse(md); } catch(e) { D = null; } if (D) { setupConquista(pane, D, n); return; } }
   if (sec.style === "sky") { let D; try { D = JSON.parse(md); } catch(e) { D = null; } if (D) { const M = skyHTML(D, sec, n); pane.innerHTML = M.html; setupSky(pane, D, n, M); return; } }
   if (sec.style === "tarot" || sec.style === "tarot-read") { let D; try { D = JSON.parse(md); } catch(e) { D = null; } if (D) { (sec.style === "tarot" ? setupTarot : setupTarotRead)(pane, D, n, sec); return; } }
+  if (sec.style === "baraja") { let D; try { D = JSON.parse(md); } catch(e) { D = null; } if (D) { setupBaraja(pane, D, n, sec); return; } }
   if (sec.style === "horoscope") { let D; try { D = JSON.parse(md); } catch(e) { D = null; } if (D) { setupHoroscope(pane, D, n, sec); return; } }
   if (sec.style === "audiobook") { let D; try { D = JSON.parse(md); } catch(e) { D = null; } if (D) { setupAudiobook(pane, D, n); return; } }
   if (sec.style === "dolphin-app") { let D; try { D = JSON.parse(md); } catch(e) { D = null; } if (D) { setupDolphinApp(pane, D, n); return; } }
@@ -3590,6 +3666,132 @@ function setupHoroscope(pane, D, n, sec){
     <div class="hz-body"></div><p class="hz-note">${esc(U.note)}</p></div>`;
   render();
   let lastDay = dkey(dayOf(0)); const tick = setInterval(() => { if (!pane.isConnected) return clearInterval(tick); const k = dkey(dayOf(0)); if (k !== lastDay) { lastDay = k; render(); } }, 60000);
+}
+/* Испанская колода (sec.style "baraja"): novels/<slug>/<file>.json —
+   {title, intro, dir, deckHint, deckSub, swipe, lockedNovel, ui, suits:[{id, name, es, gen, fr, gaps, text}],
+    ranks:[{n, ru, es, escoba, brisca, media, why}], extra:{id: текст}, novel:{id:[{at, t}]}, variants:{id:{img, at}},
+    deckStory:[{at, t}], info:[{id, icon, title, p, table, games}], replay:{at, table, hand, steps, ...}, note}.
+   Картинки — novels/<slug>/<dir>/<масть>-NN.svg и back.svg. Нажатие на колоду раскладывает её по мастям;
+   ряды листаются пальцем. Всё, что связано с сюжетом, открывается после главы at. */
+function bjCtx(D, n){
+  const done = store.get("done:" + n.slug, []), maxDone = Math.max(0, ...done);
+  const posN = f => n.chapters.findIndex(x => x.file === f) + 1;
+  const opened = f => { const p = posN(f); return p <= 1 || maxDone >= p; };
+  const dir = `novels/${n.slug}/${D.dir || "baraja"}/`;
+  const cards = [];
+  D.suits.forEach(s => D.ranks.forEach(r => cards.push({id: `${s.id}-${String(r.n).padStart(2, "0")}`, s, r})));
+  const byId = Object.fromEntries(cards.map(c => [c.id, c]));
+  const name = c => `${c.r.ru} ${c.s.gen}`;
+  const img = c => dir + c.id + ".svg";
+  const lock = f => `🔒 ${esc(qzFmt(D.lockedNovel, {n: posN(f)}))}`;
+  const chap = f => { const p = posN(f), ch = n.chapters[p - 1]; return ch ? `Глава ${p} «${esc(ch.title)}»` : ""; };
+  return {U: D.ui || {}, opened, posN, dir, cards, byId, name, img, lock, chap, back: dir + "back.svg"};
+}
+function bjViewer(D, n, X, idx){
+  const U = X.U, C = X.cards;
+  const box = document.createElement("div"); box.className = "bj-view"; box.setAttribute("role", "dialog"); box.setAttribute("aria-modal", "true");
+  let alt = false;
+  const draw = () => {
+    const c = C[idx], V = (D.variants || {})[c.id], canAlt = V && X.opened(V.at);
+    const src = alt && canAlt ? X.dir + V.img : X.img(c);
+    const ment = (D.novel || {})[c.id] || [];
+    const why = [c.r.why, (D.extra || {})[c.id]].filter(Boolean).map(t => `<p>${wgInline(t)}</p>`).join("");
+    const nov = ment.length ? `<div class="bj-nov"><b>📖 ${esc(U.novel)}</b>${ment.map(m => X.opened(m.at)
+      ? `<p>${wgInline(m.t)} <small>${X.chap(m.at)}</small></p>` : `<p class="lock">${X.lock(m.at)}</p>`).join("")}</div>` : "";
+    box.innerHTML = `<div class="bj-vin" lang="${esc(n.lang)}">
+      <button type="button" class="bj-x" aria-label="${esc(U.close)}">✕</button>
+      <div class="bj-big"><img src="${esc(src)}" alt="${esc(X.name(c))}"></div>
+      ${canAlt ? `<button type="button" class="bj-alt">${esc(alt ? U.variantOff : U.variant)}</button>` : ""}
+      <h3>${esc(X.name(c))}</h3>
+      <p class="bj-es"><i>${esc(c.r.es)} de ${esc(c.s.es.toLowerCase())}</i> · ${esc(c.s.name)} · <span>${esc(qzFmt(U.count, {n: idx + 1}))}</span></p>
+      <div class="bj-vals"><span><b>${c.r.escoba}</b>${esc(U.escoba)}</span><span><b>${c.r.brisca}</b>${esc(U.brisca)}, ${esc(U.pts)}</span><span><b>${esc(c.r.media)}</b>${esc(U.media)}</span></div>
+      <div class="bj-why"><b>${esc(U.why)}</b>${why}</div>
+      ${nov}
+      <div class="bj-nav"><button type="button" class="bj-p" aria-label="prev">${esc(U.prev)}</button><button type="button" class="bj-n" aria-label="next">${esc(U.next)}</button></div></div>`;
+    box.querySelector(".bj-x").onclick = close;
+    const a = box.querySelector(".bj-alt"); if (a) a.onclick = () => { alt = !alt; draw(); };
+    box.querySelector(".bj-p").onclick = () => go(-1);
+    box.querySelector(".bj-n").onclick = () => go(1);
+  };
+  const go = d => { idx = (idx + C.length + d) % C.length; alt = false; draw(); box.scrollTop = 0; };
+  const key = e => { if (!box.isConnected) return document.removeEventListener("keydown", key);
+    if (e.key === "Escape") close(); else if (e.key === "ArrowLeft") go(-1); else if (e.key === "ArrowRight") go(1); };
+  let tx = null, ty = 0;
+  box.addEventListener("touchstart", e => { if (e.target.closest(".bj-big")) { tx = e.touches[0].clientX; ty = e.touches[0].clientY; } }, {passive: true});
+  box.addEventListener("touchend", e => { if (tx == null) return; const dx = e.changedTouches[0].clientX - tx, dy = e.changedTouches[0].clientY - ty; tx = null;
+    if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.5) go(dx < 0 ? 1 : -1); });
+  function close(){ box.remove(); document.removeEventListener("keydown", key); document.body.classList.remove("tr-lock"); }
+  box.onclick = e => { if (e.target === box) close(); };
+  document.addEventListener("keydown", key);
+  draw(); document.body.appendChild(box); document.body.classList.add("tr-lock");
+  box.querySelector(".bj-x").focus();
+}
+function setupBaraja(pane, D, n, sec){
+  const X = bjCtx(D, n), U = X.U;
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const th = (c, k, src) => `<button type="button" class="bj-c" data-id="${c.id}" style="--k:${k}"><img loading="lazy" src="${esc(src || X.img(c))}" alt="${esc(X.name(c))}"><span>${esc(c.r.ru)}</span></button>`;
+  const suits = D.suits.map((s, i) => `<section class="bj-suit bj-${s.id}" style="--d:${i}">
+      <header><h3>${esc(s.name)} <i>${esc(s.es)}</i></h3><small>${esc(U.pausas)}: <b>${s.gaps}</b> · ${esc(U.fr)}: ${esc(s.fr)}</small></header>
+      <p class="bj-st">${wgInline(s.text)}</p>
+      <div class="bj-rw"><button type="button" class="bj-ar l" aria-label="←">‹</button>
+        <div class="bj-row">${X.cards.filter(c => c.s === s).map((c, k) => th(c, k)).join("")}</div>
+        <button type="button" class="bj-ar r" aria-label="→">›</button></div></section>`).join("");
+  const nIds = Object.keys(D.novel || {});
+  const firstAt = id => D.novel[id].map(m => X.posN(m.at)).sort((a, b) => a - b)[0];
+  nIds.sort((a, b) => firstAt(a) - firstAt(b));
+  const novRow = `<section class="bj-suit bj-novrow"><header><h3>🚇 ${esc(U.novelRow)}</h3></header><p class="bj-st">${esc(U.novelRowSub)}</p>
+    <div class="bj-story">${(D.deckStory || []).map(m => X.opened(m.at) ? `<p>${wgInline(m.t)} <small>${X.chap(m.at)}</small></p>` : `<p class="lock">${X.lock(m.at)}</p>`).join("")}</div>
+    <div class="bj-rw"><div class="bj-row">${nIds.map((id, k) => { const c = X.byId[id], f = D.novel[id].map(m => m.at).sort((a, b) => X.posN(a) - X.posN(b))[0];
+      const V = (D.variants || {})[id];
+      return X.opened(f) ? th(c, k, V && X.opened(V.at) ? X.dir + V.img : "") : `<button type="button" class="bj-c locked" disabled style="--k:${k}"><img src="${esc(X.back)}" alt=""><span>🔒 ${X.posN(f)}</span></button>`; }).join("")}</div></div></section>`;
+  const R = D.replay;
+  const info = (D.info || []).map(b => {
+    let body = (b.p || []).map(t => `<p>${wgInline(t)}</p>`).join("");
+    if (b.table) body += `<table class="bj-tb">${b.table.map((r, i) => `<tr>${r.map(x => i ? `<td>${esc(x)}</td>` : `<th>${esc(x)}</th>`).join("")}</tr>`).join("")}</table>`;
+    if (b.games) body += `<div class="bj-games">${b.games.map(g => `<div class="bj-g${g.novel ? " nov" : ""}"><h4>${esc(g.name)} <i>${esc(g.es)}</i><small>👥 ${esc(g.who)}</small></h4><p>${wgInline(g.t)}</p>${g.novel ? `<span class="bj-tag">📖 ${esc(U.novel)}</span>` : ""}</div>`).join("")}</div>`;
+    return `<details class="bj-info"${b.id === "origin" ? " open" : ""}><summary>${esc(b.icon)} ${esc(b.title)}</summary><div class="bj-ib">${body}</div></details>`;
+  }).join("");
+  const rep = R ? (X.opened(R.at) ? `<details class="bj-info bj-rep"><summary>🃏 ${esc(R.title)}</summary><div class="bj-ib"><p class="bj-rsub">${esc(R.sub)}</p><div class="bj-rbox"></div></div></details>`
+    : `<div class="bj-info bj-locked">🃏 ${esc(R.title)} · ${X.lock(R.at)}</div>`) : "";
+  pane.innerHTML = `<div class="bj" lang="${esc(n.lang)}">
+    <div class="bj-hero"><div class="bj-title">${esc(sec.icon || "🂡")} ${esc(D.title || sec.title)}</div><div class="bj-intro">${wgInline(D.intro)}</div></div>
+    <div class="bj-stage">
+      <button type="button" class="bj-deck" aria-label="${esc(D.deckHint)}"><span class="bj-pile">${[0, 1, 2, 3, 4].map(k => `<img src="${esc(X.back)}" alt="" style="--i:${k}">`).join("")}</span>
+        <b>${esc(D.deckHint)}</b><small>${esc(D.deckSub)}</small></button>
+      <div class="bj-suits" hidden><p class="bj-swipe">${esc(D.swipe)}</p>${suits}<button type="button" class="bj-gather">${esc(U.gather)}</button></div>
+    </div>
+    ${novRow}${rep}${info}
+    <p class="hz-note">${esc(D.note || "")}</p></div>`;
+  const stage = pane.querySelector(".bj-stage"), deck = pane.querySelector(".bj-deck"), box = pane.querySelector(".bj-suits");
+  const open = () => { box.hidden = false; deck.hidden = true; stage.classList.add("open"); store.set("baraja:" + n.slug, 1); };
+  deck.onclick = () => { if (reduce) return open(); deck.classList.add("split"); setTimeout(() => { if (pane.isConnected) open(); }, 650); };
+  pane.querySelector(".bj-gather").onclick = () => { stage.classList.remove("open"); box.hidden = true; deck.hidden = false; deck.classList.remove("split"); store.set("baraja:" + n.slug, 0); stage.scrollIntoView({block: "nearest"}); };
+  if (store.get("baraja:" + n.slug, 0)) { stage.classList.add("noanim"); open(); }
+  pane.querySelectorAll(".bj-c[data-id]").forEach(b => b.onclick = () => bjViewer(D, n, X, X.cards.findIndex(c => c.id === b.dataset.id)));
+  pane.querySelectorAll(".bj-rw").forEach(w => { const row = w.querySelector(".bj-row"), l = w.querySelector(".l"), r = w.querySelector(".r"); if (!l) return;
+    const step = () => Math.max(120, row.clientWidth * .8);
+    const upd = () => { l.disabled = row.scrollLeft < 4; r.disabled = row.scrollLeft + row.clientWidth > row.scrollWidth - 4; };
+    l.onclick = () => row.scrollBy({left: -step(), behavior: "smooth"}); r.onclick = () => row.scrollBy({left: step(), behavior: "smooth"});
+    row.addEventListener("scroll", upd, {passive: true}); setTimeout(upd, 50); });
+  const rb = pane.querySelector(".bj-rbox"); if (rb) bjReplay(rb, R, X, D, n);
+}
+function bjReplay(box, R, X, D, n){
+  let k = 0;
+  const mini = (id, cls = "") => { const c = X.byId[id], V = (D.variants || {})[id];
+    const src = V && X.opened(V.at) ? X.dir + V.img : X.img(c);
+    return `<img class="bj-m ${cls}" src="${esc(src)}" alt="${esc(X.name(c))}" title="${esc(X.name(c))} · ${c.r.escoba}">`; };
+  const draw = () => {
+    const done = R.steps.slice(0, k), played = done.map(s => s.play), taken = done.flatMap(s => s.take);
+    const st = R.steps[k], table = R.table.filter(id => !taken.includes(id)), hand = R.hand.filter(id => !played.includes(id));
+    const text = k === 0 ? R.start : R.steps[k - 1].t;
+    box.innerHTML = `<div class="bj-zone"><small>${esc(R.tableLabel)}</small><div class="bj-tbl">${table.map(id => mini(id, st && st.take.includes(id) ? "hl" : "")).join("") || "<em>—</em>"}</div></div>
+      <div class="bj-zone"><small>${esc(R.handLabel)}</small><div class="bj-tbl">${hand.map(id => mini(id, st && st.play === id ? "hl" : "")).join("") || "<em>—</em>"}</div></div>
+      ${taken.length ? `<div class="bj-zone"><small>${esc(R.takenLabel)}</small><div class="bj-tbl sm">${[...played, ...taken].map(id => mini(id)).join("")}</div></div>` : ""}
+      <p class="bj-rt">${wgInline(text)}</p>${k === R.steps.length ? `<p class="bj-fin">${wgInline(R.final)}</p>` : ""}
+      <button type="button" class="bj-go">${esc(k < R.steps.length ? R.next : R.again)}</button>`;
+    box.querySelector(".bj-go").onclick = () => { k = k < R.steps.length ? k + 1 : 0; draw(); };
+  };
+  draw();
 }
 /* Колода таро (sec.style "tarot") и расклад (sec.style "tarot-read"): один и тот же novels/<slug>/<file>.json —
    {title, intro, readTitle, readIntro, ui, cards:[{n, name, sign, keys, up, rev, alicia, mark, at, novel, sayUp, sayRev}],
