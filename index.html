@@ -64,6 +64,7 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-family:var(--san
 .character-entry{display:inline-block;margin-top:20px;border:1px solid var(--line);border-radius:30px;padding:11px 23px;text-decoration:none;font-family:var(--sans);font-size:14px;color:var(--accent);background:var(--paper);transition:transform .2s,box-shadow .2s}
 .rec{display:grid;grid-template-columns:110px 1fr;gap:20px;align-items:center;max-width:720px;margin:0 auto 34px;padding:18px;border:1px solid var(--line);border-radius:14px;background:var(--paper);box-shadow:var(--shadow);text-decoration:none;color:var(--ink);transition:transform .2s}
 .rec:hover{transform:translateY(-2px)}
+.shorts-ann{margin-top:48px;padding-top:36px;border-top:1px solid var(--line)}
 .rec .cover{width:110px;margin:0}
 .rec-k{font-family:var(--sans);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
 .rec h3{margin:6px 0 6px;font-size:22px}
@@ -2245,7 +2246,7 @@ function shortsIndex(){
 function shortsBanner(){
   const list = shortsOf(lang); if (!list.length) return "";
   const n = list[0];
-  return `<section class="wrap"><a class="rec" href="#/rasskazy">${coverHTML(n)}<div>
+  return `<section class="wrap shorts-ann"><a class="rec" href="#/rasskazy">${coverHTML(n)}<div>
     <div class="rec-k">✒ ${esc(shT("newSec"))}</div>
     <h3>${esc(shT("btn"))}</h3><p>${esc(shT("ann").replace("%s", n.title))}</p><span class="rec-go">${esc(shT("go"))} →</span></div></a></section>`;
 }
@@ -2427,11 +2428,11 @@ function home(){
     <p>${esc(t("sub"))}</p>
     <div class="ornament">✦ ✦ ✦</div>
   </section>
-  ${shortsBanner()}
   <section class="wrap" id="rec"></section>
   <section class="wrap" data-auth-dep>
     ${list.length ? homeViewSwitch(list) + homeListHTML(list) : `<div class="empty">${esc(t("empty"))}</div>`}
-  </section>`;
+  </section>
+  ${shortsBanner()}`;
   renderRec();
 }
 
