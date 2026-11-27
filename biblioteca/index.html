@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Biblioteca del Amor · Catálogo universal</title>
+<meta name="description" content="Catálogo oficial de la Biblioteca del Amor de Sinea: todos los libros, reales o imaginarios, que aparecen en las novelas de Robert Fader.">
+<meta name="theme-color" content="#5b1a2a">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%235b1a2a'/%3E%3Cpath d='M32 50C16 39 12 30 14 23c2-7 12-9 18-1 6-8 16-6 18 1 2 7-2 16-18 27z' fill='%23f0d48a'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>try{var th=localStorage.getItem("bib:theme");if(th==="dark"||th==="light")document.documentElement.dataset.theme=th}catch(e){}</script>
+<style>
+:root{--bg:#f3ebe0;--paper:#fbf6ee;--ink:#2b211c;--muted:#7b6c60;--line:#e3d5c3;--rose:#b5605a;--rose-d:#8c3d3a;--ivy:#3d6a4a;--gold:#b08436;--wood:#7a4f30;--wood-d:#4d2f1b;--shadow:rgba(60,35,20,.16)}
+:root[data-theme="dark"]{--bg:#16110f;--paper:#1f1916;--ink:#efe5d8;--muted:#a8998a;--line:#372c25;--rose:#e0938a;--rose-d:#f0b0a6;--ivy:#86b892;--gold:#e0b664;--wood:#5a3a24;--wood-d:#2e1c10;--shadow:rgba(0,0,0,.45)}
+@media(prefers-color-scheme:dark){:root:not([data-theme]){--bg:#16110f;--paper:#1f1916;--ink:#efe5d8;--muted:#a8998a;--line:#372c25;--rose:#e0938a;--rose-d:#f0b0a6;--ivy:#86b892;--gold:#e0b664;--wood:#5a3a24;--wood-d:#2e1c10;--shadow:rgba(0,0,0,.45)}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 "PT Serif",Georgia,serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}button,input,select{font:inherit;color:inherit}
+.ui{font-family:Inter,system-ui,sans-serif}
+.wrap{max-width:1180px;margin:auto;padding:0 22px}
+/* Cabecera */
+header.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;gap:16px;min-height:62px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font:600 22px/1 "Cormorant Garamond",serif;letter-spacing:.01em}
+.brand svg{width:30px;height:30px;flex:none}
+nav.main{display:flex;gap:4px;margin-left:auto;flex-wrap:wrap}
+nav.main a,.chip,.tbtn{white-space:nowrap;font:500 14px Inter,system-ui,sans-serif;text-decoration:none;padding:8px 12px;border-radius:999px;border:1px solid transparent;background:none;cursor:pointer;color:var(--ink)}
+nav.main a:hover,.tbtn:hover{background:color-mix(in srgb,var(--rose) 10%,transparent);color:var(--rose-d)}
+nav.main a[aria-current]{background:color-mix(in srgb,var(--rose) 14%,transparent);color:var(--rose-d)}
+.tools-top{display:flex;gap:4px;align-items:center;flex:none}
+.tbtn{padding:7px 10px}
+@media(max-width:760px){.shelf{grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:28px 16px;padding:18px 8px 0}header.top .wrap{flex-wrap:wrap;padding-top:8px;padding-bottom:6px}nav.main{order:3;width:100%;margin:0;overflow-x:auto;flex-wrap:nowrap}.tools-top{margin-left:auto}}
+/* Portada del sitio */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line);background:
+ radial-gradient(1200px 400px at 50% -10%,color-mix(in srgb,var(--gold) 22%,transparent),transparent 70%),
+ linear-gradient(180deg,color-mix(in srgb,var(--rose) 12%,var(--bg)),var(--bg))}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:40px;align-items:center;padding-top:56px;padding-bottom:56px}
+.eyebrow{font:700 12px Inter,system-ui,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--rose-d)}
+h1{font:600 clamp(44px,7.2vw,86px)/.98 "Cormorant Garamond",serif;margin:.18em 0 .2em;letter-spacing:-.01em}
+h1 em{font-style:italic;color:var(--rose-d)}
+.sign{display:inline-block;font:italic 500 21px/1.35 "Cormorant Garamond",serif;color:var(--muted);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:10px 2px;margin:6px 0 22px}
+.lead{font-size:18.5px;max-width:42em;margin:0 0 18px}
+.stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:22px}
+.stat b{display:block;font:600 38px/1 "Cormorant Garamond",serif;color:var(--rose-d)}
+.stat span{font:500 12px Inter,system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.door{width:100%;max-width:380px;justify-self:center;filter:drop-shadow(0 20px 30px var(--shadow))}
+.petal{position:absolute;width:14px;height:10px;border-radius:70% 0 70% 0;background:var(--rose);opacity:.45;animation:fall linear infinite;pointer-events:none}
+@keyframes fall{from{transform:translateY(-40px) rotate(0)}to{transform:translateY(560px) rotate(540deg)}}
+@media(prefers-reduced-motion:reduce){.petal{display:none}}
+@media(max-width:860px){.hero .wrap{grid-template-columns:1fr;padding-top:34px;padding-bottom:34px}.door{max-width:250px;order:-1}}
+/* Buscador y filtros */
+.finder{border-bottom:1px solid var(--line);padding:14px 0}
+.finder .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.search{flex:1 1 260px;display:flex;align-items:center;gap:8px;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:0 14px}
+.search input{flex:1;border:0;background:none;padding:11px 0;outline:none;font-family:Inter,system-ui,sans-serif;font-size:15px}
+select.sel{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:10px 12px;font:14px Inter,system-ui,sans-serif;max-width:100%}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+.chip{border-color:var(--line);background:var(--paper);font-size:13px;padding:6px 11px}
+.chip[aria-pressed="true"]{background:var(--rose-d);border-color:var(--rose-d);color:#fff}
+.viewsw{display:flex;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.viewsw button{border:0;background:var(--paper);padding:9px 12px;cursor:pointer;font:500 13px Inter,system-ui,sans-serif}
+.viewsw button[aria-pressed="true"]{background:color-mix(in srgb,var(--rose) 16%,var(--paper));color:var(--rose-d)}
+.count{font:13px Inter,system-ui,sans-serif;color:var(--muted);margin:18px 0 6px}
+/* Estantería */
+.shelf-group{margin:30px 0 46px}
+.shelf-head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:6px}
+.shelf-head h2{font:600 32px/1.1 "Cormorant Garamond",serif;margin:0}
+.shelf-head p{margin:0;color:var(--muted);font-size:15px;flex:1 1 300px}
+.shelf{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:34px 22px;padding:22px 20px 0;position:relative;
+ background:linear-gradient(180deg,transparent calc(100% - 0px),transparent);}
+.shelf::after{content:"";display:block}
+.book{display:flex;flex-direction:column;text-decoration:none;position:relative}
+.book .spine{position:relative;aspect-ratio:2/3;border-radius:4px 6px 6px 4px;box-shadow:0 1px 0 rgba(255,255,255,.2) inset,0 12px 18px -6px var(--shadow),0 3px 4px rgba(0,0,0,.12);transition:transform .25s ease,box-shadow .25s ease;transform-origin:left bottom;overflow:hidden}
+.book:hover .spine,.book:focus-visible .spine{transform:translateY(-6px) rotate(-1.2deg);box-shadow:0 22px 30px -10px var(--shadow),0 4px 8px rgba(0,0,0,.18)}
+.book svg,.book img{display:block;width:100%;height:100%;object-fit:cover}
+.book .plank{height:14px;margin:0 -12px;border-radius:2px;background:linear-gradient(180deg,var(--wood),var(--wood-d));box-shadow:0 6px 10px -4px var(--shadow)}
+.book .meta{padding-top:10px}
+.book .t{font:600 17px/1.2 "Cormorant Garamond",serif;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.book .s{font:12px/1.4 Inter,system-ui,sans-serif;color:var(--muted);margin-top:3px}
+.badge{display:inline-block;font:600 10.5px Inter,system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase;padding:3px 7px;border-radius:999px;border:1px solid currentColor}
+.badge.real{color:var(--ivy)}.badge.ficticio{color:var(--rose-d)}.badge.fader{color:var(--gold)}
+.book .badge{font-size:9.5px;padding:2px 6px;margin-top:6px}
+/* Fichas */
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:16px}
+.card{display:grid;grid-template-columns:84px 1fr;gap:16px;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:14px;text-decoration:none;transition:border-color .2s,transform .2s}
+.card:hover{border-color:var(--rose);transform:translateY(-2px)}
+.card .mini{aspect-ratio:2/3;border-radius:4px;overflow:hidden;box-shadow:0 6px 12px -6px var(--shadow)}
+.card h3{font:600 20px/1.15 "Cormorant Garamond",serif;margin:2px 0 4px}
+.card .o{font-style:italic;color:var(--muted);font-size:13.5px;line-height:1.35}
+.card .who{font:12.5px Inter,system-ui,sans-serif;color:var(--muted);margin-top:6px}
+.empty{padding:60px 0;text-align:center;color:var(--muted)}
+/* Ficha del libro */
+.crumbs{font:13px Inter,system-ui,sans-serif;color:var(--muted);padding:22px 0 0}
+.crumbs a{color:var(--rose-d);text-decoration:none}
+.detail{display:grid;grid-template-columns:minmax(220px,340px) 1fr;gap:48px;padding:24px 0 40px}
+.detail .big{position:sticky;top:90px;align-self:start}
+.detail .big .spine{aspect-ratio:2/3;border-radius:6px 9px 9px 6px;overflow:hidden;box-shadow:0 30px 40px -16px var(--shadow),0 6px 10px rgba(0,0,0,.2);transform:perspective(900px) rotateY(-7deg);transform-origin:left center}
+.detail .big svg,.detail .big img{display:block;width:100%;height:100%;object-fit:cover}
+.fiche{font:12.5px/1.5 Inter,system-ui,sans-serif;margin-top:22px;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.fiche div{display:flex;justify-content:space-between;gap:12px;padding:5px 0;border-bottom:1px dashed var(--line)}.fiche div:last-child{border:0}
+.fiche span:first-child{color:var(--muted);text-transform:uppercase;letter-spacing:.06em;font-size:11px;padding-top:2px}
+.fiche span:last-child{text-align:right}
+.detail h1{font-size:clamp(36px,5vw,58px);margin:.1em 0 .1em}
+.orig{font:italic 500 22px/1.35 "Cormorant Garamond",serif;color:var(--muted);margin:0 0 4px}
+.by{font:500 14px Inter,system-ui,sans-serif;color:var(--rose-d);margin:10px 0 20px}
+.desc{font-size:18.5px;max-width:40em}
+.desc::first-letter{font:600 3.4em/.8 "Cormorant Garamond",serif;float:left;margin:.08em .08em 0 0;color:var(--rose-d)}
+h2.sec{font:600 28px/1.2 "Cormorant Garamond",serif;margin:38px 0 12px;display:flex;align-items:center;gap:12px}
+h2.sec::after{content:"";flex:1;height:1px;background:var(--line)}
+.apps{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.apps li{background:var(--paper);border:1px solid var(--line);border-left:3px solid var(--rose);border-radius:10px;padding:12px 16px}
+.apps a.nov{font:600 19px/1.2 "Cormorant Garamond",serif;text-decoration:none}
+.apps a.nov:hover{color:var(--rose-d)}
+.apps .chp{font:12px Inter,system-ui,sans-serif;color:var(--muted);margin-left:8px}
+.apps .note{margin:4px 0 0;font-size:15.5px}
+.apps .read{font:600 12.5px Inter,system-ui,sans-serif;color:var(--rose-d);text-decoration:none;white-space:nowrap}
+.related{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:16px}
+.related .book .t{font-size:15px}
+.navbook{display:flex;justify-content:space-between;gap:12px;margin-top:36px;font:500 14px Inter,system-ui,sans-serif}
+.navbook a{text-decoration:none;color:var(--rose-d);max-width:48%}
+@media(max-width:760px){.detail{grid-template-columns:1fr;gap:26px}.detail .big{position:static;max-width:240px;margin:auto}}
+/* Salas */
+.halls{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:18px;padding:30px 0 60px}
+.hall{position:relative;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:22px;text-decoration:none;overflow:hidden;display:flex;flex-direction:column;gap:10px;min-height:250px}
+.hall:hover{border-color:var(--rose)}
+.hall .ic{font-size:30px}
+.hall h3{font:600 27px/1.1 "Cormorant Garamond",serif;margin:0}
+.hall p{margin:0;color:var(--muted);font-size:15.5px}
+.hall .row{display:flex;gap:6px;margin-top:auto}
+.hall .row .mini{width:44px;aspect-ratio:2/3;border-radius:3px;overflow:hidden;box-shadow:0 4px 8px -4px var(--shadow)}
+.hall .n{font:600 12px Inter,system-ui,sans-serif;color:var(--rose-d);letter-spacing:.06em;text-transform:uppercase}
+/* Acerca */
+.prose{max-width:44em;padding:30px 0 70px}
+.prose h2{font:600 34px/1.15 "Cormorant Garamond",serif;margin:1.4em 0 .4em}
+.prose blockquote{margin:1.2em 0;padding:4px 0 4px 20px;border-left:3px solid var(--rose);font:italic 500 22px/1.4 "Cormorant Garamond",serif;color:var(--muted)}
+.prose .rule{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px 22px;margin:18px 0}
+footer{border-top:1px solid var(--line);padding:28px 0 40px;font:13px Inter,system-ui,sans-serif;color:var(--muted)}
+footer a{color:var(--rose-d)}
+.fade{animation:fd .35s ease}@keyframes fd{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+:focus-visible{outline:2px solid var(--rose);outline-offset:2px}
+</style></head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="#/"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#5b1a2a"/><path d="M32 50C16 39 12 30 14 23c2-7 12-9 18-1 6-8 16-6 18 1 2 7-2 16-18 27z" fill="#f0d48a"/></svg><span id="brandName">Biblioteca del Amor</span></a>
+  <nav class="main" id="mainNav"></nav>
+  <div class="tools-top"><button class="tbtn" id="langBtn" title="Idioma"></button><button class="tbtn" id="themeBtn" title="Tema" aria-label="Tema">☾</button></div>
+</div></header>
+<main id="app"></main>
+<footer><div class="wrap" id="foot"></div></footer>
+<script src="covers.js"></script>
+<script>
+/* Biblioteca del Amor — catálogo oficial.
+   Datos: biblioteca/libros.json (libros) y ../novels/catalog.json (títulos de las novelas y enlaces a los capítulos). */
+const T = {
+ es:{name:"Biblioteca del Amor", nav:["Catálogo","Salas","La Biblioteca"], eyebrow:"Sinea · Catálogo universal", h1:"Biblioteca <em>del Amor</em>",
+  sign:"«Todos los tomos. Todas las ediciones. Catálogo universal».",
+  lead:"Detrás de una puerta de roble, entre dos casas comunes de la calle de los Castaños, empieza una biblioteca más grande por dentro que por fuera. Este es su catálogo oficial: cada libro, real o imaginario, que alguna vez se abrió, se citó o se perdió en las novelas de Robert Fader.",
+  st:["libros","salas","novelas"], search:"Buscar un título, un autor, una novela…", allHalls:"Todas las salas", allKinds:"Todos", kinds:{ficticio:"Imaginarios",real:"Reales",fader:"De mundos vecinos"},
+  kind1:{ficticio:"Imaginario",real:"Real",fader:"Mundo vecino"}, allNovels:"Todas las novelas", shelf:"Estantería", cards:"Fichas",
+  found:n=>n===1?"1 libro":n+" libros", none:"Ningún libro coincide con la búsqueda. Quizá todavía no lo escribieron.",
+  author:"Autor", year:"Año", hall:"Sala", kind:"Tipo", appears:"Aparece en", read:"Leer →", ch:"cap.", sec:"sección", same:"En la misma sala", back:"Catálogo",
+  prev:"← Anterior", next:"Siguiente →", orig:"Título original", count:n=>n===1?"1 libro":n+" libros", enter:"Entrar a la sala →", toLit:"← LitFader",
+  foot:'Catálogo de la Biblioteca del Amor, según las novelas de Robert Fader. Las portadas son provisionales y se generan solas. <a href="../">Volver a LitFader</a>.',
+  lang:"RU", theme:"Tema"},
+ ru:{name:"Библиотека Любви", nav:["Каталог","Залы","О Библиотеке"], eyebrow:"Синея · Вселенский каталог", h1:"Библиотека <em>Любви</em>",
+  sign:"«Все тома. Все издания. Вселенский каталог».",
+  lead:"За дубовой дверью, в глухом переулке между двумя обычными домами на улице Каштанов, начинается библиотека, которая внутри больше, чем снаружи. Это её официальный каталог: каждая книга — настоящая или вымышленная, — которую когда-либо открывали, цитировали или теряли в романах Роберта Фадера.",
+  st:["книг","залов","романов"], search:"Название, автор, роман…", allHalls:"Все залы", allKinds:"Все", kinds:{ficticio:"Вымышленные",real:"Настоящие",fader:"Из соседних миров"},
+  kind1:{ficticio:"Вымышленная",real:"Настоящая",fader:"Соседний мир"}, allNovels:"Все романы", shelf:"Полки", cards:"Карточки",
+  found:n=>n+" "+plural(n,"книга","книги","книг"), none:"Ни одна книга не подходит. Возможно, её ещё не написали.",
+  author:"Автор", year:"Год", hall:"Зал", kind:"Тип", appears:"Где встречается", read:"Читать →", ch:"гл.", sec:"раздел", same:"В том же зале", back:"Каталог",
+  prev:"← Предыдущая", next:"Следующая →", orig:"Оригинальное название", count:n=>n+" "+plural(n,"книга","книги","книг"), enter:"Войти в зал →", toLit:"← ЛитФадер",
+  foot:'Каталог Библиотеки Любви по романам Роберта Фадера. Обложки временные и рисуются автоматически. <a href="../">Вернуться на ЛитФадер</a>.',
+  lang:"ES", theme:"Тема"}
+};
+function plural(n,a,b,c){n=Math.abs(n)%100;const m=n%10;return n>10&&n<20?c:m>1&&m<5?b:m===1?a:c}
+const HALLS = [
+ {id:"fuente", ic:"🌹", es:["Sala del Manantial","Los tratados de la propia Biblioteca: la ciencia más exacta sobre el sentimiento más irracional, y la Crónica que lo explica todo."], ru:["Зал Истока","Трактаты самой Библиотеки — точнейшая наука о самом иррациональном из чувств — и Хроника, которая объясняет всё."]},
+ {id:"grimorios", ic:"🗝", es:["Sala de Grimorios y Enciclopedias","Bestiarios, diarios de guardianes, enciclopedias secretas y libros que escriben solos. Se ruega no leer en voz alta."], ru:["Зал гримуаров и энциклопедий","Бестиарии, дневники хранителей, тайные энциклопедии и книги, которые пишут сами себя. Просьба не читать вслух."]},
+ {id:"astros", ic:"✦", es:["Sala de los Astros","Atlas, manuales y folletos para mirar el cielo, y alguno que se coló por error."], ru:["Звёздный зал","Атласы, справочники и брошюры для тех, кто смотрит на небо, — и одна, попавшая сюда по ошибке."]},
+ {id:"ingenio", ic:"♞", es:["Sala del Ingenio","Ajedrez, criptografía, hackers y un manual de italiano con nombre frívolo."], ru:["Зал ума","Шахматы, криптография, хакеры и учебник итальянского с легкомысленным названием."]},
+ {id:"tren", ic:"🚂", es:["Vagón-biblioteca","Los libros que viajan en el tren fantasma. Si huele raro, la bibliotecaria dice que quizá es una rata. Muerta."], ru:["Вагон-библиотека","Книги, которые ездят в призрачном поезде. Если странно пахнет, библиотекарша говорит, что это, возможно, крыса. Мёртвая."]},
+ {id:"infantil", ic:"🐇", es:["Sala Infantil","Conejos astutos, zorros ofendidos, una máquina roja y un manual de modales para hombres del futuro."], ru:["Детский зал","Хитрые зайцы, обиженные лисы, красная машина и учебник вежливости для мужчин из будущего."]},
+ {id:"mundo", ic:"📜", es:["Sala de los Libros del Mundo","Clásicos de verdad —Pushkin, Montaigne, Galeano, Nietzsche— y algún libro que sus personajes llevaron al fin del mundo."], ru:["Зал книг мира","Настоящая классика — Пушкин, Монтень, Галеано, Ницше — и книги, которые герои унесли с собой на край света."]},
+ {id:"porescribir", ic:"✒", es:["Sala de los Libros por Escribir","Tratados que todavía no existen, diarios que se volvieron best sellers y libros que eran cartas."], ru:["Зал ненаписанных книг","Трактаты, которых ещё нет, дневники, ставшие бестселлерами, и книги, которые были письмами."]},
+ {id:"otrosmundos", ic:"🌀", es:["Sala de los Mundos Vecinos","Mundos que nunca se cruzan con Sinea. Por eso, aquí, sus historias son simplemente libros."], ru:["Зал соседних миров","Миры, которые никогда не пересекаются с Синеей. Поэтому здесь их истории — просто книги."]}
+];
+let lang = "es"; try{ const q = new URLSearchParams(location.search).get("lang"); const s = localStorage.getItem("bib:lang"); lang = q === "ru" || q === "es" ? q : s === "ru" ? "ru" : "es"; }catch(e){}
+const t = k => T[lang][k];
+const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]));
+const app = document.getElementById("app");
+let BOOKS = [], NOV = {}, view = "shelf", F = {q:"", hall:"", kind:"", novel:""};
+try{ view = localStorage.getItem("bib:view") || "shelf"; }catch(e){}
+const hallOf = id => HALLS.find(h => h.id === id) || HALLS[0];
+const hallName = id => hallOf(id)[lang][0];
+const bTitle = b => lang === "ru" ? b.title_ru : b.title_es;
+const bDesc = b => lang === "ru" ? b.desc_ru : b.desc_es;
+const bAuthor = b => lang === "ru" ? b.author : (b.author_es || b.author);
+const novTitle = s => NOV[s] ? NOV[s].title : s;
+function novLink(a){ const n = NOV[a.n]; if (!n) return "../#/" + a.n;
+  const i = (n.chapters || []).findIndex(c => c.file === a.ch); if (i < 0) return "../#/" + a.n;
+  let k = 0; for (let j = 0; j <= i; j++) if (!n.chapters[j].label) k++;
+  return "../#/" + a.n + "/" + k; }
+function chLabel(a){ const m = /^(\d+)\.md$/.exec(a.ch); return m ? t("ch") + " " + (+m[1]) : t("sec"); }
+function cover(b, label){ return bookCover(b, {label: label === false ? "" : (lang === "ru" ? "БИБЛИОТЕКА ЛЮБВИ" : "BIBLIOTECA DEL AMOR")}); }
+const norm = s => String(s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/ё/g, "е");
+
+function chrome(){
+  document.documentElement.lang = lang; document.title = t("name") + (lang === "ru" ? " · Вселенский каталог" : " · Catálogo universal");
+  document.getElementById("brandName").textContent = t("name");
+  const sec = location.hash.replace(/^#\/?/, "").split("/")[0];
+  const cur = sec === "salas" || sec === "sala" ? 1 : sec === "acerca" ? 2 : 0;
+  document.getElementById("mainNav").innerHTML = [["#/", 0], ["#/salas", 1], ["#/acerca", 2]].map(([h, i]) => `<a href="${h}"${i === cur ? ' aria-current="page"' : ""}>${t("nav")[i]}</a>`).join("") + `<a href="../?lang=${lang}">${t("toLit")}</a>`;
+  document.getElementById("langBtn").textContent = t("lang");
+  document.getElementById("foot").innerHTML = t("foot");
+}
+function filtered(){
+  const q = norm(F.q);
+  return BOOKS.filter(b => (!F.hall || b.sala === F.hall) && (!F.kind || b.kind === F.kind) && (!F.novel || b.apps.some(a => a.n === F.novel)) &&
+    (!q || norm([b.title, b.title_es, b.title_ru, b.author, b.author_es, b.desc_es, b.desc_ru, ...b.apps.map(a => novTitle(a.n))].join(" ")).includes(q)));
+}
+function bookTile(b){
+  return `<a class="book" href="#/libro/${b.id}"><div class="spine">${cover(b)}</div><div class="plank"></div>
+    <div class="meta"><div class="t">${esc(bTitle(b))}</div><div class="s">${esc(bAuthor(b) !== "—" ? bAuthor(b) : hallName(b.sala))}</div><span class="badge ${b.kind}">${esc(t("kind1")[b.kind])}</span></div></a>`;
+}
+function bookCard(b){
+  return `<a class="card" href="#/libro/${b.id}"><div class="mini">${cover(b, false)}</div><div><span class="badge ${b.kind}">${esc(t("kind1")[b.kind])}</span>
+    <h3>${esc(bTitle(b))}</h3>${b.title !== bTitle(b) ? `<div class="o">${esc(b.title)}</div>` : ""}
+    <div class="who">${esc(bAuthor(b))}${b.year ? " · " + b.year : ""} · ${esc(b.apps.map(a => novTitle(a.n)).filter((v, i, s) => s.indexOf(v) === i).join(", "))}</div></div></a>`;
+}
+function home(){
+  const novels = new Set(BOOKS.flatMap(b => b.apps.map(a => a.n)));
+  const novOpts = [...novels].sort((a, b) => novTitle(a).localeCompare(novTitle(b))).map(s => `<option value="${s}"${F.novel === s ? " selected" : ""}>${esc(novTitle(s))}</option>`).join("");
+  app.innerHTML = `<section class="hero">${petals()}<div class="wrap fade">
+    <div><div class="eyebrow">${t("eyebrow")}</div><h1>${t("h1")}</h1><div class="sign">${t("sign")}</div><p class="lead">${t("lead")}</p>
+    <div class="stats"><div class="stat"><b>${BOOKS.length}</b><span>${t("st")[0]}</span></div><div class="stat"><b>${HALLS.length}</b><span>${t("st")[1]}</span></div><div class="stat"><b>${novels.size}</b><span>${t("st")[2]}</span></div></div></div>
+    ${doorSvg()}</div></section>
+  <section class="finder"><div class="wrap">
+    <div class="row"><label class="search"><span aria-hidden="true">⌕</span><input id="q" type="search" placeholder="${esc(t("search"))}" value="${esc(F.q)}"></label>
+      <select class="sel" id="fn"><option value="">${t("allNovels")}</option>${novOpts}</select>
+      <div class="viewsw ui"><button data-v="shelf" aria-pressed="${view === "shelf"}">${t("shelf")}</button><button data-v="cards" aria-pressed="${view === "cards"}">${t("cards")}</button></div></div>
+    <div class="chips" id="hallChips"><button class="chip" data-h="" aria-pressed="${!F.hall}">${t("allHalls")}</button>${HALLS.map(h => `<button class="chip" data-h="${h.id}" aria-pressed="${F.hall === h.id}">${h.ic} ${esc(h[lang][0])}</button>`).join("")}</div>
+    <div class="chips" id="kindChips"><button class="chip" data-k="" aria-pressed="${!F.kind}">${t("allKinds")}</button>${Object.entries(t("kinds")).map(([k, v]) => `<button class="chip" data-k="${k}" aria-pressed="${F.kind === k}">${esc(v)}</button>`).join("")}</div>
+  </div></section>
+  <section class="wrap" id="results"></section>`;
+  const q = document.getElementById("q");
+  q.addEventListener("input", () => { F.q = q.value; results(); });
+  document.getElementById("fn").addEventListener("change", e => { F.novel = e.target.value; results(); });
+  app.querySelectorAll(".viewsw button").forEach(b => b.onclick = () => { view = b.dataset.v; try{ localStorage.setItem("bib:view", view); }catch(e){} app.querySelectorAll(".viewsw button").forEach(x => x.setAttribute("aria-pressed", x === b)); results(); });
+  app.querySelectorAll("#hallChips .chip").forEach(b => b.onclick = () => { F.hall = b.dataset.h; app.querySelectorAll("#hallChips .chip").forEach(x => x.setAttribute("aria-pressed", x === b)); results(); });
+  app.querySelectorAll("#kindChips .chip").forEach(b => b.onclick = () => { F.kind = b.dataset.k; app.querySelectorAll("#kindChips .chip").forEach(x => x.setAttribute("aria-pressed", x === b)); results(); });
+  results();
+}
+function results(){
+  const box = document.getElementById("results"); const list = filtered();
+  if (!list.length){ box.innerHTML = `<div class="empty">${t("none")}</div>`; return; }
+  let html = `<div class="count">${t("found")(list.length)}</div>`;
+  if (view === "cards") html += `<div class="cards fade">${list.map(bookCard).join("")}</div><div style="height:60px"></div>`;
+  else HALLS.forEach(h => { const g = list.filter(b => b.sala === h.id); if (!g.length) return;
+    html += `<div class="shelf-group fade"><div class="shelf-head"><h2>${h.ic} ${esc(h[lang][0])}</h2><p>${esc(h[lang][1])}</p></div><div class="shelf">${g.map(bookTile).join("")}</div></div>`; });
+  box.innerHTML = html;
+}
+function detail(id){
+  const b = BOOKS.find(x => x.id === id); if (!b){ app.innerHTML = `<div class="wrap empty">${t("none")}</div>`; return; }
+  const i = BOOKS.indexOf(b), prev = BOOKS[i - 1], next = BOOKS[i + 1];
+  const same = BOOKS.filter(x => x.sala === b.sala && x.id !== b.id);
+  document.title = bTitle(b) + " · " + t("name");
+  const apps = b.apps.map(a => `<li><div style="display:flex;justify-content:space-between;gap:12px;align-items:baseline;flex-wrap:wrap"><span><a class="nov" href="${novLink(a)}">${esc(novTitle(a.n))}</a><span class="chp">${esc(chLabel(a))}</span></span><a class="read" href="${novLink(a)}">${t("read")}</a></div><p class="note">${esc(lang === "ru" ? a.ru : a.es)}</p></li>`).join("");
+  app.innerHTML = `<div class="wrap fade"><div class="crumbs"><a href="#/">${t("back")}</a> · <a href="#/sala/${b.sala}">${esc(hallName(b.sala))}</a></div>
+  <article class="detail"><div class="big"><div class="spine">${cover(b)}</div>
+    <div class="fiche"><div><span>${t("author")}</span><span>${esc(bAuthor(b))}</span></div>${b.year ? `<div><span>${t("year")}</span><span>${b.year}</span></div>` : ""}
+    <div><span>${t("hall")}</span><span>${esc(hallName(b.sala))}</span></div><div><span>${t("kind")}</span><span><span class="badge ${b.kind}">${esc(t("kind1")[b.kind])}</span></span></div>
+    ${b.title !== bTitle(b) ? `<div><span>${t("orig")}</span><span>${esc(b.title)}</span></div>` : ""}</div></div>
+  <div><div class="eyebrow">${hallOf(b.sala).ic} ${esc(hallName(b.sala))}</div><h1>${esc(bTitle(b))}</h1>${b.title !== bTitle(b) ? `<p class="orig">${esc(b.title)}</p>` : ""}
+    <div class="by">${esc(bAuthor(b))}${b.year ? " · " + b.year : ""}</div><p class="desc">${esc(bDesc(b))}</p>
+    <h2 class="sec">${t("appears")}</h2><ul class="apps">${apps}</ul>
+    ${same.length ? `<h2 class="sec">${t("same")}</h2><div class="related">${same.slice(0, 8).map(bookTile).join("")}</div>` : ""}
+    <div class="navbook">${prev ? `<a href="#/libro/${prev.id}">${t("prev")}<br><b>${esc(bTitle(prev))}</b></a>` : "<span></span>"}${next ? `<a style="text-align:right" href="#/libro/${next.id}">${t("next")}<br><b>${esc(bTitle(next))}</b></a>` : ""}</div>
+  </div></article></div>`;
+}
+function halls(){
+  app.innerHTML = `<div class="wrap fade"><div class="halls">${HALLS.map(h => { const g = BOOKS.filter(b => b.sala === h.id);
+    return `<a class="hall" href="#/sala/${h.id}"><div class="ic">${h.ic}</div><div class="n">${t("count")(g.length)}</div><h3>${esc(h[lang][0])}</h3><p>${esc(h[lang][1])}</p>
+      <div class="row">${g.slice(0, 6).map(b => `<div class="mini">${cover(b, false)}</div>`).join("")}</div></a>`; }).join("")}</div></div>`;
+}
+function about(){
+  const es = `<h2>Una biblioteca que no estaba ayer</h2>
+   <p>Está en Sinea, en un callejón sin salida entre dos casas comunes: paredes viejas de piedra rosada y tibia cubiertas de hiedra, una puerta de roble y un cartel desteñido en un idioma olvidado cuyo sentido llega directo a la conciencia, sin pasar por los ojos.</p>
+   <blockquote>«Biblioteca del Amor. Todos los tomos. Todas las ediciones. Catálogo universal».</blockquote>
+   <p>Adentro es infinita. Los estantes de madera oscura suben hasta perderse en una altura de niebla dorada, y los pasillos se alejan tanto que al final de cada uno parece empezar otra ciudad. Huele a polvo de siglos, a madera vieja, a pétalos secos y a algo dulce, como el primer enamoramiento. La luz parece salir de los propios libros.</p>
+   <p>Una vez cada cien años, los lugares de Sinea recuerdan para qué fueron inventados: la estación recuerda los trenes, el mar recuerda las voces, y la biblioteca recuerda que es todos los libros a la vez. Esa noche de guardia estaba Rosa, la de los ojos color tierra mojada, con pétalos luminosos girando a su alrededor, y un zorro pelirrojo que parecía apenas dibujado a lápiz por los bordes. Las reglas, según el zorro, son simples: un libro solo te deja salir por un señalador; «cuanto más cerca está un libro de Sinea, más fina es la página».</p>
+   <p>La Biblioteca aparece en <a href="../#/zhenshchina-iz-lepestkov">«Женщина из лепестков»</a>, donde Rosa y Alex encuentran en ella la Crónica del Origen, y en <a href="../#/tajna-v-biblioteke">«Тайна в библиотеке»</a>, el libro-juego en el que el lector entra por esa misma puerta.</p>
+   <h2>Cómo se hizo este catálogo</h2>
+   <div class="rule"><p><b>Entran</b> todos los libros —reales o imaginarios— que se abren, se citan, se buscan o se pierden dentro de las novelas: tratados, enciclopedias secretas, diarios, manuales, cuentos infantiles y clásicos de verdad.</p>
+   <p><b>No entran</b> las novelas de Robert Fader. Un catálogo de Sinea que tuviera en sus estantes las historias de Sinea sería una paradoja.</p>
+   <p><b>Con una excepción:</b> los mundos que nunca se cruzan con Sinea. Para los habitantes de Sinea, el mundo de «Presentimiento» no existe; existe un libro llamado «Presentimiento», que media ciudad lee y con el que media ciudad sueña. Esos libros viven en la Sala de los Mundos Vecinos.</p></div>
+   <p>Cada ficha dice en qué novelas aparece el libro y lleva directo al capítulo. Las portadas son provisionales: se dibujan solas a partir del color y el motivo de cada libro, hasta que alguien pinte las verdaderas.</p>`;
+  const ru = `<h2>Библиотека, которой вчера не было</h2>
+   <p>Она стоит в Синее, в глухом переулке между двумя обычными домами: старые стены из тёплого розоватого камня, увитые плющом, дубовая дверь и выцветшая вывеска на забытом языке, смысл которой доходит до сознания сам, минуя глаза.</p>
+   <blockquote>«Библиотека Любви. Все тома. Все издания. Вселенский каталог».</blockquote>
+   <p>Внутри она бесконечна. Стеллажи из тёмного дерева уходят ввысь, в золотистую туманную высоту, а проходы тянутся так далеко, что в конце каждого, кажется, начинается другой город. Пахнет пылью веков, старым деревом, сухими лепестками и чем-то сладким, как первая влюблённость. Свет будто исходит от самих книг.</p>
+   <p>Раз в сто лет места в Синее вспоминают, для чего их придумали: вокзал вспоминает поезда, море — голоса, а библиотека — что она все книги сразу. В ту ночь дежурила Роза с глазами цвета влажной земли, вокруг которой кружились светящиеся лепестки, и рыжий лис, чуть-чуть, по краям, похожий на рисунок карандашом. Правила, по словам лиса, простые: книга отпускает только через закладку, а «чем ближе книга к Синее, тем тоньше страница».</p>
+   <p>Библиотека появляется в романе <a href="../#/zhenshchina-iz-lepestkov">«Женщина из лепестков»</a>, где Роза и Алекс находят в ней Хронику Истока, и в книге-игре <a href="../#/tajna-v-biblioteke">«Тайна в библиотеке»</a>, где читатель сам входит в ту же дверь.</p>
+   <h2>Как составлен этот каталог</h2>
+   <div class="rule"><p><b>Сюда входят</b> все книги — настоящие и вымышленные, — которые открывают, цитируют, ищут или теряют герои романов: трактаты, тайные энциклопедии, дневники, учебники, детские книжки и настоящая классика.</p>
+   <p><b>Сюда не входят</b> романы Роберта Фадера. Каталог Синеи, на полках которого стояли бы истории о Синее, был бы парадоксом.</p>
+   <p><b>С одним исключением:</b> миры, которые никогда не пересекаются с Синеей. Для жителей Синеи мира «Предчувствия» не существует — существует книга «Предчувствие», которую читает полгорода и которая снится полгороду. Такие книги живут в Зале соседних миров.</p></div>
+   <p>В каждой карточке указано, в каких романах встречается книга, со ссылкой прямо на главу. Обложки временные: они рисуются сами по цвету и мотиву каждой книги, пока кто-нибудь не нарисует настоящие.</p>`;
+  app.innerHTML = `<div class="wrap fade"><article class="prose">${lang === "ru" ? ru : es}</article></div>`;
+}
+function petals(){ let s = ""; for (let i = 0; i < 14; i++) s += `<span class="petal" style="left:${(i * 7.3 + 3) % 100}%;top:-20px;animation-duration:${9 + (i * 1.7) % 8}s;animation-delay:-${(i * 2.3) % 12}s;transform:scale(${.7 + (i % 4) * .15})"></span>`; return s; }
+function doorSvg(){ return `<svg class="door" viewBox="0 0 320 400" aria-hidden="true">
+  <defs><linearGradient id="dg" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#c98b78"/><stop offset="1" stop-color="#a86a5a"/></linearGradient>
+  <linearGradient id="oak" x1="0" x2="1"><stop offset="0" stop-color="#6a4022"/><stop offset=".5" stop-color="#83532e"/><stop offset="1" stop-color="#5b361c"/></linearGradient>
+  <radialGradient id="glow" cx=".5" cy="1" r=".8"><stop offset="0" stop-color="#ffd987" stop-opacity=".9"/><stop offset="1" stop-color="#ffd987" stop-opacity="0"/></radialGradient></defs>
+  <clipPath id="wallc"><rect x="10" y="40" width="300" height="360" rx="6"/></clipPath><rect x="10" y="40" width="300" height="360" rx="6" fill="url(#dg)"/>
+  <g clip-path="url(#wallc)">${Array.from({length: 11}, (_, r) => Array.from({length: 7}, (_, c) => `<rect x="${10 + c * 44 + (r % 2 ? 22 : 0) - 22}" y="${40 + r * 33}" width="42" height="31" rx="3" fill="#000" opacity="${.04 + ((r * 7 + c * 3) % 5) * .015}"/>`).join("")).join("")}</g>
+  <path d="M80 400V170a80 80 0 01160 0v230z" fill="#3b2416"/>
+  <path d="M90 400V172a70 70 0 01140 0v228z" fill="url(#oak)"/>
+  <path d="M160 102v298" stroke="#3b2416" stroke-width="3"/>
+  ${[0,1,2,3,4,5].map(i => `<path d="M${96 + i * 22} ${i === 0 || i === 5 ? 220 : 180}V400" stroke="#4a2c17" stroke-width="1" opacity=".5"/>`).join("")}
+  <circle cx="146" cy="280" r="5" fill="#e0b664"/><circle cx="174" cy="280" r="5" fill="#e0b664"/>
+  <rect x="96" y="58" width="128" height="30" rx="4" fill="#f3e4c4" stroke="#8c5b2e"/>
+  <text x="160" y="79" text-anchor="middle" font-family="Cormorant Garamond,serif" font-style="italic" font-size="15" fill="#6b3a24">Biblioteca del Amor</text>
+  <path d="M86 400q-6-4-4-10" stroke="#ffd987" stroke-width="0"/>
+  <rect x="90" y="392" width="140" height="8" fill="url(#glow)"/>
+  <ellipse cx="160" cy="400" rx="110" ry="22" fill="url(#glow)"/>
+  ${ivy()}
+  </svg>`; }
+function ivy(){ let s = ""; const pts = [[16,46],[30,70],[22,100],[40,128],[26,160],[46,186],[30,220],[52,250],[34,286],[56,320],[300,52],[284,80],[296,112],[276,140],[294,170],[272,200],[290,236],[268,270],[286,306],[70,48],[110,44],[150,42],[200,46],[244,50]];
+  s += `<path d="M14 40q20 40 10 80t20 80-10 80 20 80M306 44q-24 40-10 80t-20 70 14 90" fill="none" stroke="#2f5a38" stroke-width="2.5"/>`;
+  pts.forEach(([x, y], i) => { const r = (i * 47) % 360; s += `<path transform="translate(${x} ${y}) rotate(${r})" d="M0 0c6-8 16-6 16 2-2 8-10 10-16 6 2-2 2-6 0-8z" fill="${i % 3 ? "#3d6a4a" : "#557f5a"}"/>`; });
+  [[30,104],[290,180],[48,250],[278,92]].forEach(([x, y]) => s += `<g transform="translate(${x} ${y})"><circle r="7" fill="#b5605a"/><circle r="3.5" fill="#8c3d3a"/></g>`);
+  return s; }
+function route(){
+  chrome(); const p = location.hash.replace(/^#\/?/, "").split("/").filter(Boolean);
+  if (p[0] === "libro") detail(decodeURIComponent(p[1] || ""));
+  else if (p[0] === "salas") halls();
+  else if (p[0] === "sala"){ F.hall = p[1] || ""; F.kind = ""; F.novel = ""; F.q = ""; home(); document.getElementById("results").scrollIntoView(); }
+  else if (p[0] === "acerca") about();
+  else home();
+  if (p[0] !== "sala") scrollTo(0, 0);
+}
+document.getElementById("langBtn").onclick = () => { lang = lang === "es" ? "ru" : "es"; try{ localStorage.setItem("bib:lang", lang); }catch(e){} route(); };
+document.getElementById("themeBtn").onclick = () => { const r = document.documentElement, dark = r.dataset.theme ? r.dataset.theme === "dark" : matchMedia("(prefers-color-scheme:dark)").matches;
+  r.dataset.theme = dark ? "light" : "dark"; try{ localStorage.setItem("bib:theme", r.dataset.theme); }catch(e){} };
+addEventListener("hashchange", route);
+Promise.all([fetch("libros.json", {cache:"no-cache"}).then(r => r.json()), fetch("../novels/catalog.json", {cache:"no-cache"}).then(r => r.json()).catch(() => ({novels: []}))])
+ .then(([b, c]) => { BOOKS = b; (c.novels || []).forEach(n => NOV[n.slug] = n); route(); })
+ .catch(() => { app.innerHTML = '<div class="wrap empty">No se pudo abrir el catálogo.</div>'; });
+</script>
+</body></html>

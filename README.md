@@ -108,6 +108,15 @@ Cada idioma tiene su propio blog (`#/blog`), al que se llega desde el botón «B
 
 `excerpt` e `image` son opcionales. Las entradas se ordenan por fecha, la más reciente primero, y cada una tiene sus propios comentarios.
 
+## Biblioteca del Amor (`biblioteca/`)
+
+Sitio propio, enlazado desde el menú lateral («🌹 Biblioteca del Amor»): el catálogo oficial de la Biblioteca del Amor de Sinea (la de *Женщина из лепестков* y *Тайна в библиотеке*). Reúne los libros, reales o imaginarios, que se abren, se citan o se buscan dentro de las novelas, ordenados en salas, con ficha propia y enlaces a los capítulos donde aparecen. Textos en ES y RU (botón de idioma; `?lang=ru` o `?lang=es`).
+
+- `biblioteca/libros.json`: un objeto por libro: `id`, `sala`, `kind` (`ficticio`, `real` o `fader`), `title` (título original, el que se ve en la tapa), `title_es`, `title_ru`, `author`, `author_es`, `year`, `desc_es`, `desc_ru`, `apps` (`[{n: slug de la novela, ch: "08.md", es, ru}]`; el enlace al capítulo se calcula con `novels/catalog.json`) y `cover`.
+- `cover`: `{c1, c2, ink, motif, style}` dibuja una portada provisional (motivos y estilos en `biblioteca/covers.js`). Para usar una portada pintada, guardarla en `biblioteca/covers/<id>.jpg` y añadir `"img": "covers/<id>.jpg"` dentro de `cover`.
+- Salas: `HALLS` en `biblioteca/index.html`.
+- Regla: **las novelas de Robert Fader no entran en el catálogo** (dentro de Sinea serían una paradoja). Excepción: las de mundos que no se cruzan con Sinea, cuando dentro de una novela son un libro que los personajes leen (*Предчувствие* en *Машина снов*; *Дикий час 4* en *Призрачный поезд*). Van con `"kind": "fader"` en la sala `otrosmundos`.
+
 ## Cursos de idiomas
 
 Cada idioma puede tener su curso (`#/learn`), con la teoría explicada en otros idiomas que el estudiante elige (por ejemplo, español con explicaciones en ruso o inglés). El botón aparece en la portada del idioma solo si existe un curso.

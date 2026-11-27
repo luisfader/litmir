@@ -1,0 +1,2048 @@
+[
+ {
+  "id": "anatomia-primera-mirada",
+  "sala": "fuente",
+  "kind": "ficticio",
+  "title": "Анатомия первого взгляда: карты пересекающихся судеб",
+  "title_es": "Anatomía de la primera mirada: mapas de destinos que se cruzan",
+  "title_ru": "Анатомия первого взгляда: карты пересекающихся судеб",
+  "author": "Anónimo de la Biblioteca",
+  "author_es": "Anónimo de la Biblioteca",
+  "year": null,
+  "desc_es": "El primer tomo que Rosa saca de los estantes infinitos. Sus páginas no tienen solo letras: hay esquemas parecidos a cartas del cielo, gráficos de ritmos cardíacos y manchas de color que señalan los sentimientos. Más tarde, en brazos de Alex, Rosa siente que vive exactamente esos «mapas de destinos que se cruzan».",
+  "desc_ru": "Первый том, который Роза снимает с бесконечных стеллажей. На его страницах не только буквы: схемы, похожие на карты звёздного неба, графики сердечных ритмов, всплески цвета, обозначающие чувства. Позже, в объятиях Алекса, Роза понимает, что проживает те самые «карты пересекающихся судеб».",
+  "apps": [
+   {
+    "n": "zhenshchina-iz-lepestkov",
+    "ch": "06.md",
+    "es": "Rosa lo encuentra al entrar en la Biblioteca y lo recuerda en la noche con Alex.",
+    "ru": "Роза находит его, войдя в Библиотеку, и вспоминает о нём той же ночью."
+   }
+  ],
+  "cover": {
+   "c1": "#5b1a2a",
+   "c2": "#2a0c14",
+   "ink": "#f3d9a4",
+   "motif": "heart",
+   "style": "leather"
+  }
+ },
+ {
+  "id": "dinamica-roces",
+  "sala": "fuente",
+  "kind": "ficticio",
+  "title": "Динамика случайных прикосновений и их последующие резонансы",
+  "title_es": "Dinámica de los roces casuales y sus resonancias posteriores",
+  "title_ru": "Динамика случайных прикосновений и их последующие резонансы",
+  "author": "Anónimo de la Biblioteca",
+  "author_es": "Anónimo de la Biblioteca",
+  "year": null,
+  "desc_es": "Un tratado sobre lo que queda vibrando después de un roce sin querer: la mano que toca otra al buscar el mismo libro, el hombro que casi se apoya. Uno de los títulos que hacían que a Rosa se le encogiera el corazón.",
+  "desc_ru": "Трактат о том, что продолжает звучать после случайного касания: рука, задевшая чужую руку у одной и той же полки, плечо, которое почти коснулось плеча. Одно из названий, от которых у Розы сжималось сердце.",
+  "apps": [
+   {
+    "n": "zhenshchina-iz-lepestkov",
+    "ch": "06.md",
+    "es": "Entre los primeros títulos que Rosa y Alex ven en la sala.",
+    "ru": "Среди первых названий, которые видят Роза и Алекс."
+   }
+  ],
+  "cover": {
+   "c1": "#1f3b4d",
+   "c2": "#0d1c26",
+   "ink": "#e9d8b0",
+   "motif": "wave",
+   "style": "leather"
+  }
+ },
+ {
+  "id": "tratado-temblor-rodillas",
+  "sala": "fuente",
+  "kind": "ficticio",
+  "title": "Трактат о дрожи в коленях: физика и метафизика",
+  "title_es": "Tratado del temblor de rodillas: física y metafísica",
+  "title_ru": "Трактат о дрожи в коленях: физика и метафизика",
+  "author": "Anónimo de la Biblioteca",
+  "author_es": "Anónimo de la Biblioteca",
+  "year": null,
+  "desc_es": "La ciencia más exacta sobre el sentimiento más irracional: por qué las rodillas tiemblan ante cierta persona y no ante otra. La Biblioteca lo guarda junto a la física de verdad, porque para ella no hay diferencia.",
+  "desc_ru": "Самая точная наука о самом иррациональном из чувств: почему колени дрожат рядом с одним человеком и не дрожат рядом с другим. Библиотека держит этот трактат рядом с настоящей физикой — для неё разницы нет.",
+  "apps": [
+   {
+    "n": "zhenshchina-iz-lepestkov",
+    "ch": "06.md",
+    "es": "Uno de los seis títulos que se nombran en la primera visita.",
+    "ru": "Одно из шести названий, упомянутых при первом посещении."
+   }
+  ],
+  "cover": {
+   "c1": "#e8d6b8",
+   "c2": "#c9ad84",
+   "ink": "#4a2418",
+   "motif": "scales",
+   "style": "paper"
+  }
+ },
+ {
+  "id": "cronicas-encuentros",
+  "sala": "fuente",
+  "kind": "ficticio",
+  "title": "Хроники несвоевременных встреч и их скрытая гармония",
+  "title_es": "Crónicas de los encuentros inoportunos y su armonía oculta",
+  "title_ru": "Хроники несвоевременных встреч и их скрытая гармония",
+  "author": "Anónimo de la Biblioteca",
+  "author_es": "Anónimo de la Biblioteca",
+  "year": null,
+  "desc_es": "Registro de los encuentros que llegaron demasiado pronto o demasiado tarde, y de la música secreta que, a pesar de todo, los unía. Un libro que se lee mejor con paciencia.",
+  "desc_ru": "Летопись встреч, случившихся слишком рано или слишком поздно, — и тайной музыки, которая всё равно их связывала. Книга, которую лучше читать терпеливо.",
+  "apps": [
+   {
+    "n": "zhenshchina-iz-lepestkov",
+    "ch": "06.md",
+    "es": "En los estantes de la primera sala.",
+    "ru": "На стеллажах первого зала."
+   }
+  ],
+  "cover": {
+   "c1": "#3d2b4f",
+   "c2": "#1a1023",
+   "ink": "#e6cf9a",
+   "motif": "hourglass",
+   "style": "leather"
+  }
+ },
+ {
+  "id": "alquimia-silencios",
+  "sala": "fuente",
+  "kind": "ficticio",
+  "title": "Алхимия общих молчаний: превращение одиночества в союз",
+  "title_es": "Alquimia de los silencios compartidos: cómo la soledad se vuelve unión",
+  "title_ru": "Алхимия общих молчаний: превращение одиночества в союз",
+  "author": "Anónimo de la Biblioteca",
+  "author_es": "Anónimo de la Biblioteca",
+  "year": null,
+  "desc_es": "Cómo dos silencios, puestos uno al lado del otro, dejan de ser soledad. Rosa y Alex casi no hablan mientras buscan entre los estantes; el libro parece describirlos.",
+  "desc_ru": "О том, как два молчания, поставленные рядом, перестают быть одиночеством. Пока Роза и Алекс ищут среди полок, они почти не разговаривают — и книга будто описывает их самих.",
+  "apps": [
+   {
+    "n": "zhenshchina-iz-lepestkov",
+    "ch": "06.md",
+    "es": "Entre los tratados de la primera visita.",
+    "ru": "Среди трактатов первого посещения."
+   }
+  ],
+  "cover": {
+   "c1": "#2f4a3a",
+   "c2": "#13231a",
+   "ink": "#e9dcb5",
+   "motif": "flask",
+   "style": "leather"
+  }
+ },
+ {
+  "id": "diccionario-aromas",
+  "sala": "fuente",
+  "kind": "ficticio",
+  "title": "Словарь неуловимых ароматов: как запах дождя на коже другого становится домом",
+  "title_es": "Diccionario de aromas esquivos: cómo el olor de la lluvia en la piel del otro se vuelve hogar",
+  "title_ru": "Словарь неуловимых ароматов: как запах дождя на коже другого становится домом",
+  "author": "Anónimo de la Biblioteca",
+  "author_es": "Anónimo de la Biblioteca",
+  "year": null,
+  "desc_es": "Un diccionario de olores que no tienen nombre en ningún otro diccionario. Encaja con la propia Biblioteca, que huele a polvo de siglos, madera vieja, pétalos secos y algo dulce, como el primer enamoramiento.",
+  "desc_ru": "Словарь запахов, у которых нет названия ни в одном другом словаре. Под стать самой Библиотеке, где пахнет пылью веков, старым деревом, сухими лепестками и чем-то сладким, как первая влюблённость.",
+  "apps": [
+   {
+    "n": "zhenshchina-iz-lepestkov",
+    "ch": "06.md",
+    "es": "El sexto título que se nombra al entrar.",
+    "ru": "Шестое из названий, увиденных при входе."
+   }
+  ],
+  "cover": {
+   "c1": "#f0dcd4",
+   "c2": "#d6a99b",
+   "ink": "#5a2630",
+   "motif": "drop",
+   "style": "paper"
+  }
+ },
+ {
+  "id": "cronica-del-origen",
+  "sala": "fuente",
+  "kind": "ficticio",
+  "title": "Хроника Истока",
+  "title_es": "Crónica del Origen",
+  "title_ru": "Хроника Истока",
+  "author": "Sin firma",
+  "author_es": "Sin firma",
+  "year": null,
+  "desc_es": "El libro más importante de la Biblioteca. Encuadernación de cuero gris, agrietada, sin una sola letra en el lomo; descansa en un pedestal de piedra, como en un altar, y se encendió con luz dorada en el instante en que Rosa y Alex se unieron. Su texto parece tejido de luz y sombra. Revela que Rosa desciende de las Jardineras del Corazón, explica qué son las Brujas de la Discordia y cómo nace la Semilla de la Eternidad.",
+  "desc_ru": "Главная книга Библиотеки. Серый потрескавшийся кожаный переплёт без единой надписи на корешке; лежит на каменном постаменте, как на алтаре, и вспыхнула золотым светом в миг, когда Роза и Алекс соединились. Текст будто соткан из света и тени. Хроника открывает, что Роза — наследница Сердечных Садовниц, рассказывает о Ведьмах Раздора и о Семени Вечности.",
+  "apps": [
+   {
+    "n": "zhenshchina-iz-lepestkov",
+    "ch": "06.md",
+    "es": "Se enciende en lo alto del estante más lejano.",
+    "ru": "Вспыхивает на самой дальней верхней полке."
+   },
+   {
+    "n": "zhenshchina-iz-lepestkov",
+    "ch": "07.md",
+    "es": "Rosa y Alex la leen y descubren la verdad.",
+    "ru": "Роза и Алекс читают её и узнают правду."
+   }
+  ],
+  "cover": {
+   "c1": "#8a8a86",
+   "c2": "#4a4a48",
+   "ink": "#fff3c4",
+   "motif": "sun",
+   "style": "relic"
+  }
+ },
+ {
+  "id": "oberegario-estelar",
+  "sala": "grimorios",
+  "kind": "ficticio",
+  "title": "Звёздный оберегарий, или Полная энциклопедия талисманов двенадцати домов неба",
+  "title_es": "Amuletario estelar, o Enciclopedia completa de los talismanes de las doce casas del cielo",
+  "title_ru": "Звёздный оберегарий, или Полная энциклопедия талисманов двенадцати домов неба",
+  "author": "Аурелия Бранкати",
+  "author_es": "Aurelia Brancati",
+  "year": 1887,
+  "desc_es": "Pesado como un ladrillo, encuadernado en cuero azul gastado hasta el blanco en las esquinas; huele a polvo, cera y hierbas. Lo escribió a mano, «para el caso de una gran desgracia», la última verdadera astróloga de Sinea, antes de «Urania» y del Planetario. Para cada signo da piedra, metal, hierba y color, y cierra con un párrafo enmarcado; de él salen las doce llaves-preguntas («¿A quién proteges?», «¿Qué amas?»). Lo guarda Nadia, su tataranieta.",
+  "desc_ru": "Тяжёлая, как кирпич, книга в синей коже, вытертой на углах до белизны; пахнет пылью, воском и травами. Её написала от руки «на случай большой беды» последняя настоящая звездочётша Синеи — ещё до «Урании» и Планетария. Для каждого знака — камень, металл, трава, цвет и абзац в тонкой рамке; отсюда двенадцать ключей-вопросов («Кого ты защищаешь?», «Что ты любишь?»). Хранится у Нади, её праправнучки.",
+  "apps": [
+   {
+    "n": "znak",
+    "ch": "10.md",
+    "es": "Marco la baja del estante; Alicia lee el título.",
+    "ru": "Марк достаёт её с полки, Алисия читает название."
+   },
+   {
+    "n": "znak",
+    "ch": "11.md",
+    "es": "Las doce llaves del libro.",
+    "ru": "Двенадцать ключей из книги."
+   },
+   {
+    "n": "znak",
+    "ch": "12.md",
+    "es": "Alicia la lee desde el tranvía número siete.",
+    "ru": "Алисия читает её с подножки трамвая номер семь."
+   }
+  ],
+  "cover": {
+   "c1": "#1e3a6e",
+   "c2": "#0b1736",
+   "ink": "#f0d48a",
+   "motif": "stars",
+   "style": "leather"
+  }
+ },
+ {
+  "id": "faterpedia",
+  "sala": "grimorios",
+  "kind": "ficticio",
+  "title": "Фатерпедия",
+  "title_es": "Faterpedia",
+  "title_ru": "Фатерпедия",
+  "author": "Mujeres del Norte, de generación en generación",
+  "author_es": "Mujeres del Norte, de generación en generación",
+  "year": null,
+  "desc_es": "Enorme, pesada, con tapas de cuero oscurecido y esquinas de cobre verdes por el tiempo; las letras doradas del título casi se han borrado. Pasó de bisabuela en bisabuela hasta llegar a Sofía, y dicen que contiene todo lo que la gente del Norte supo, vio y oyó. Allí está, por ejemplo, el fénix de hielo, el «pájaro centinela».",
+  "desc_ru": "Огромная тяжёлая книга в потемневшей коже, с медными уголками, позеленевшими от времени; золото букв почти стёрлось. Переходила от прабабушки к прабабушке, пока не досталась Софии; говорят, в ней записано всё, что знали, видели и слышали люди Севера. Например, ледяной феникс — «птица-дозорный».",
+  "apps": [
+   {
+    "n": "severnaya-lyubov-2",
+    "ch": "03.md",
+    "es": "Sofía la baja y se la muestra a Román.",
+    "ru": "София приносит её и показывает Роману."
+   },
+   {
+    "n": "severnaya-lyubov-3",
+    "ch": "04.md",
+    "es": "Describe al fénix de hielo.",
+    "ru": "Описывает ледяного феникса."
+   }
+  ],
+  "cover": {
+   "c1": "#3c4f5c",
+   "c2": "#16222b",
+   "ink": "#cfe6f2",
+   "motif": "snow",
+   "style": "leather"
+  }
+ },
+ {
+  "id": "faderpedia",
+  "sala": "grimorios",
+  "kind": "ficticio",
+  "title": "Faderpedia",
+  "title_es": "Faderpedia",
+  "title_ru": "Фадерпедия",
+  "author": "Luis Fader",
+  "author_es": "Luis Fader",
+  "year": null,
+  "desc_es": "La enciclopedia secreta de Luis: la empezó de estudiante, en Argentina, y durante años juntó en ella todo lo que encontraba sobre misterios, leyendas antiguas, lugares secretos y sucesos extraños. Miles de artículos. Vive en su tableta, con el ícono de un libro viejo y el nombre escrito con su letra.",
+  "desc_ru": "Тайная энциклопедия Луиса: он начал её ещё студентом в Аргентине и годами собирал туда всё о загадках, старых легендах, тайных местах и странных событиях. Тысячи статей. Живёт в его планшете — с иконкой старой книги и названием, выведенным его почерком.",
+  "apps": [
+   {
+    "n": "ostrovy-nad-prahou",
+    "ch": "04.md",
+    "es": "Luis la consulta sobre los misterios de Praga.",
+    "ru": "Луис ищет в ней ответы о тайнах Праги."
+   },
+   {
+    "n": "divlji-chas-malbec",
+    "ch": "13.md",
+    "es": "Natasha la encuentra en la tableta de Luis.",
+    "ru": "Наташа находит её в планшете Луиса."
+   }
+  ],
+  "cover": {
+   "c1": "#2a1f3d",
+   "c2": "#0e0a17",
+   "ink": "#b9e3ff",
+   "motif": "galaxy",
+   "style": "modern"
+  }
+ },
+ {
+  "id": "yugopedia",
+  "sala": "grimorios",
+  "kind": "ficticio",
+  "title": "Югопедия",
+  "title_es": "Surpedia (Yugopedia)",
+  "title_ru": "Югопедия",
+  "author": "Místico Sur",
+  "author_es": "Místico Sur",
+  "year": null,
+  "desc_es": "La enciclopedia cerrada de la organización Místico Sur: anomalías, artefactos, criaturas, operaciones antiguas, mitología y rituales prohibidos; todo lo que la gente normal preferiría no saber nunca. Se abre con el emblema de la Cruz del Sur. El nombre lo inventó algún brasileño, y desde entonces todos fingen que no les gusta.",
+  "desc_ru": "Закрытая энциклопедия организации «Мистический Юг»: аномалии, артефакты, существа, старые операции, мифология, запрещённые ритуалы — всё, что нормальные люди предпочли бы никогда не знать. Открывается эмблемой Южного Креста. Название придумал кто-то из бразильцев, и с тех пор все делают вид, что оно им не нравится.",
+  "apps": [
+   {
+    "n": "dikij-chas-bolshoj-udar",
+    "ch": "01.md",
+    "es": "Se presenta la organización y su enciclopedia.",
+    "ru": "Описание организации и её энциклопедии."
+   },
+   {
+    "n": "dikij-chas-karnaval-razdora",
+    "ch": "07.md",
+    "es": "Luis la abre para estudiar Madrid.",
+    "ru": "Луис открывает её, чтобы разобраться с Мадридом."
+   },
+   {
+    "n": "dikij-chas-karnaval-razdora",
+    "ch": "10.md",
+    "es": "Indica dónde está el manuscrito de los dioses cornudos.",
+    "ru": "Подсказывает, где искать рукопись о рогатых богах."
+   }
+  ],
+  "cover": {
+   "c1": "#0f3d3a",
+   "c2": "#06201e",
+   "ink": "#ffd27a",
+   "motif": "cross",
+   "style": "modern"
+  }
+ },
+ {
+  "id": "enciclopedia-resonancias",
+  "sala": "grimorios",
+  "kind": "ficticio",
+  "title": "Энциклопедия мистических резонансов и городской памяти",
+  "title_es": "Enciclopedia de las resonancias místicas y de la memoria de las ciudades",
+  "title_ru": "Энциклопедия мистических резонансов и городской памяти",
+  "author": "Varios autores (notas al margen de muchas manos)",
+  "author_es": "Varios autores (notas al margen de muchas manos)",
+  "year": null,
+  "desc_es": "Un libro gordo con tapas verde oscuro gastadas, de la biblioteca que Sasha dejó en San Petersburgo junto con las llaves y una advertencia: «Si algún día internet empieza a mentir y la ciudad a decir la verdad, buscá las respuestas acá». Tiene índice alfabético; sus páginas huelen a polvo, hierbas y algo apenas metálico.",
+  "desc_ru": "Толстая книга в потёртом тёмно-зелёном переплёте из библиотеки Саши, который оставил Луису ключи и наказ: «Если когда-нибудь интернет начнёт врать, а город — говорить правду, ищи ответы здесь». Алфавитный указатель; страницы пахнут пылью, травами и чем-то едва металлическим; на полях — пометки разных людей.",
+  "apps": [
+   {
+    "n": "rezonans-lyubvi",
+    "ch": "20.md",
+    "es": "Luis la saca del estante para explicar a Natalia qué es una resonante.",
+    "ru": "Луис достаёт её, чтобы объяснить Наталье, кто такие резонанты."
+   }
+  ],
+  "cover": {
+   "c1": "#264d2f",
+   "c2": "#0f2414",
+   "ink": "#efe2b6",
+   "motif": "sphinx",
+   "style": "leather"
+  }
+ },
+ {
+  "id": "enciclopedia-tascabile",
+  "sala": "grimorios",
+  "kind": "ficticio",
+  "title": "Enciclopedia tascabile dei misteri e delle arti occulte – Edizione riveduta",
+  "title_es": "Enciclopedia de bolsillo de los misterios y las artes ocultas (edición revisada)",
+  "title_ru": "Карманная энциклопедия тайн и оккультных искусств (исправленное издание)",
+  "author": "Anónimo",
+  "author_es": "Anónimo",
+  "year": null,
+  "desc_es": "«De bolsillo» solo de nombre: es un tomo grueso, de cuero oscuro gastado y título en oro desvaído. Se la regaló a Roberto su abuela, que decía que el mundo era más raro de lo que parecía. Él nunca creyó que le serviría… hasta Roma subterránea. «El libro sabe».",
+  "desc_ru": "Карманная только по названию: толстый том в потёртой тёмной коже с выцветшим золотым тиснением. Роберто подарила её бабушка, говорившая, что мир страннее, чем кажется. Он не верил, что она когда-нибудь пригодится, — пока не оказался в подземном Риме. «Книга знает».",
+  "apps": [
+   {
+    "n": "la-roma-sotterranea",
+    "ch": "03.md",
+    "es": "Roberto la saca de su bolso.",
+    "ru": "Роберто достаёт её из сумки."
+   },
+   {
+    "n": "la-roma-sotterranea",
+    "ch": "15.md",
+    "es": "«Il libro sa».",
+    "ru": "«Книга знает»."
+   }
+  ],
+  "cover": {
+   "c1": "#402417",
+   "c2": "#1d0f08",
+   "ink": "#e6c27a",
+   "motif": "eye",
+   "style": "leather"
+  }
+ },
+ {
+  "id": "bestiario-todor",
+  "sala": "grimorios",
+  "kind": "ficticio",
+  "title": "Књига о звѣрехь незнаемыхь",
+  "title_es": "Libro de las bestias desconocidas (Bestiario de Tódor el Escriba)",
+  "title_ru": "Книга о неведомых зверях (Бестиарий Тодора Писаря)",
+  "author": "Тодор Писар",
+  "author_es": "Tódor el Escriba",
+  "year": null,
+  "desc_es": "Un bestiario serbio que «no puede existir»: 142 hojas, tapas de cuero y un dragón que se muerde la cola. Lo escribió Tódor el Escriba, que hace mil años anotó las bestias en un libro para salvarlas del olvido; fray Giacomo de Dubrovnik lo halló entre las ruinas de una iglesia junto a la torre Nebojša y llenó los márgenes de notas en italiano veneciano. No figura en ningún catálogo. «Quien lee este libro con el corazón, a ese la Hora no se lo lleva».",
+  "desc_ru": "Сербский бестиарий, которого «не может быть»: сто сорок два листа, кожаные корки и змей, держащий хвост во рту. Его написал Тодор Писарь, тысячу лет назад «записавший зверей в книгу, чтобы сберечь их от забвения»; фра Джакомо из Дубровника нашёл её в развалинах церкви у башни Небойша и исписал поля заметками на венецианском итальянском. В каталоге её нет. «Кто читает эту книгу сердцем, того Час не возьмёт».",
+  "apps": [
+   {
+    "n": "divlji-chas-bestijarijum",
+    "ch": "01.md",
+    "es": "Milena y Milica la descubren en la biblioteca.",
+    "ru": "Милена и Милица находят её в библиотеке."
+   },
+   {
+    "n": "divlji-chas-bestijarijum",
+    "ch": "05.md",
+    "es": "El libro las protege.",
+    "ru": "Книга защищает их."
+   },
+   {
+    "n": "divlji-chas-bestijarijum",
+    "ch": "22.md",
+    "es": "«Toda bestia vuelve al libro cuando canta el gallo».",
+    "ru": "«Каждый зверь возвращается в книгу, когда запоёт петух»."
+   }
+  ],
+  "cover": {
+   "c1": "#5a3a1a",
+   "c2": "#24160a",
+   "ink": "#f0c86e",
+   "motif": "ouroboros",
+   "style": "relic"
+  }
+ },
+ {
+  "id": "libro-de-leyendas",
+  "sala": "grimorios",
+  "kind": "ficticio",
+  "title": "Книга о легендах",
+  "title_es": "El libro ruso de las leyendas",
+  "title_ru": "Книга о легендах",
+  "author": "Anónimo",
+  "author_es": "Anónimo",
+  "year": null,
+  "desc_es": "Un libro viejo en ruso que Natasha baja de su estante en Belgrado y Luis lee en voz alta: cuenta que hace mil años llegó la última Hora Salvaje y que solo Zmaj Ognjeni Vuk, hijo de un dragón y de un hombre, puede detenerla, aunque antes deben reunirse cinco piedras. Más tarde, a una de sus páginas le falta un pedazo.",
+  "desc_ru": "Старая книга на русском языке, которую Наташа снимает с полки в Белграде, а Луис читает вслух: тысячу лет назад пришёл последний Дикий час, и остановить его может только Змай Огненный Волк, сын змея и человека, — но сначала нужно собрать пять камней. Позже у одной из страниц не хватает куска.",
+  "apps": [
+   {
+    "n": "divlji-chas",
+    "ch": "16.md",
+    "es": "Luis la lee en voz alta.",
+    "ru": "Луис читает её вслух."
+   },
+   {
+    "n": "divlji-chas",
+    "ch": "27.md",
+    "es": "Falta parte de una página.",
+    "ru": "Части страницы не хватает."
+   }
+  ],
+  "cover": {
+   "c1": "#6b1f1f",
+   "c2": "#2b0a0a",
+   "ink": "#f2cf8a",
+   "motif": "flame",
+   "style": "leather"
+  }
+ },
+ {
+  "id": "libro-de-temporadas",
+  "sala": "grimorios",
+  "kind": "ficticio",
+  "title": "Libro de Temporadas",
+  "title_es": "Libro de Temporadas",
+  "title_ru": "Книга сезонов",
+  "author": "Desconocido",
+  "author_es": "Desconocido",
+  "year": null,
+  "desc_es": "Sus hojas son de hielo. Marcos y Alicia las rescatan y las esconden debajo del saco; en la Plaza de las Constelaciones aparecen en todas las pantallas como prueba, junto a la aguja de Franco, el cristal de Luciano y el frasco de Natalia. En uno de los caminos, Marcos ya no sabe si las encontró de verdad.",
+  "desc_ru": "Её листы — изо льда. Маркос и Алисия добывают их и прячут под пиджаком; на Площади Созвездий они появляются на всех экранах как доказательство — рядом со стрелкой Франко, кристаллом Лучано и флаконом Натальи. В одной из ветвей Маркос уже не уверен, нашёл ли он их на самом деле.",
+  "apps": [
+   {
+    "n": "amor-en-el-cosmos",
+    "ch": "18.md",
+    "es": "Las hojas como prueba en la plaza.",
+    "ru": "Листы как доказательство на площади."
+   },
+   {
+    "n": "amor-en-el-cosmos",
+    "ch": "24.md",
+    "es": "Se muestran en el Norte y en Sinea.",
+    "ru": "Их видят и на Севере, и в Синее."
+   },
+   {
+    "n": "amor-en-el-cosmos",
+    "ch": "42.md",
+    "es": "¿Las encontró o no?",
+    "ru": "Нашёл ли он их?"
+   }
+  ],
+  "cover": {
+   "c1": "#cfe7f3",
+   "c2": "#8fb9d1",
+   "ink": "#183547",
+   "motif": "snow",
+   "style": "ice"
+  }
+ },
+ {
+  "id": "paris-subterraneo",
+  "sala": "grimorios",
+  "kind": "ficticio",
+  "title": "Kniha o podzemních dějinách Paříže",
+  "title_es": "El libro de la historia subterránea de París",
+  "title_ru": "Книга о подземной истории Парижа",
+  "author": "Anónimo",
+  "author_es": "Anónimo",
+  "year": null,
+  "desc_es": "Un volumen amarillento que Jana encuentra en una librería de viejo. Entre dos páginas alguien dibujó hace mucho siete notas: las tres primeras son las que Luis oyó. Después, en una página en blanco, aparece escrito con tinta oscura: «DEVUÉLVANME MI CANCIÓN». Gaspard Morel lo quiere a toda costa: «Un libro así no se compra. Se hereda. O se roba».",
+  "desc_ru": "Пожелтевший том, который Яна находит у букиниста. Между двумя страницами кто-то давным-давно нарисовал семь нот — первые три Луис уже слышал. Потом на чистой странице проступают тёмные чернила: «ВЕРНИТЕ МНЕ МОЮ ПЕСНЮ». Гаспар Морель хочет заполучить её любой ценой: «Такую книгу не купишь. Её наследуют. Или крадут».",
+  "apps": [
+   {
+    "n": "tajemstvi-pod-parizi",
+    "ch": "03.md",
+    "es": "Jana la encuentra con las siete notas.",
+    "ru": "Яна находит её с семью нотами."
+   },
+   {
+    "n": "tajemstvi-pod-parizi",
+    "ch": "04.md",
+    "es": "Aparece el mensaje.",
+    "ru": "Появляется надпись."
+   },
+   {
+    "n": "tajemstvi-pod-parizi",
+    "ch": "06.md",
+    "es": "Morel la reclama.",
+    "ru": "Морель требует книгу."
+   },
+   {
+    "n": "misteroj-sub-parizo",
+    "ch": "03.md",
+    "es": "La misma escena, en esperanto.",
+    "ru": "Та же сцена на эсперанто."
+   }
+  ],
+  "cover": {
+   "c1": "#d9c79b",
+   "c2": "#a88c58",
+   "ink": "#2b2014",
+   "motif": "notes",
+   "style": "paper"
+  }
+ },
+ {
+  "id": "diario-del-guardian",
+  "sala": "grimorios",
+  "kind": "ficticio",
+  "title": "Об Аномальном часе (дневник хранителя)",
+  "title_es": "Sobre la Hora Anómala (diario del guardián)",
+  "title_ru": "Об Аномальном часе (дневник хранителя)",
+  "author": "Никита и другие хранители",
+  "author_es": "Nikita y otros guardianes",
+  "year": 1876,
+  "desc_es": "Un cuaderno grueso de cuero oscurecido, con el lomo pegado con una tira de papel; entre sus hojas hay cartas, recortes, una hoja de arce seca y copias de documentos viejos. En la primera página, un círculo con una corona y una palabra: «Moscú». Empieza el 3 de octubre de 1876, cuando Nikita hereda el oficio de guardián, e incluye un tratado escrito en otoño de 1884. Los viejos guardianes decían que el diario «conoce el camino».",
+  "desc_ru": "Толстая тетрадь в потемневшем кожаном переплёте, корешок подклеен бумажной полосой; между листами — письма, вырезки, засушенный кленовый лист, копии старых документов. На первом листе — круг с короной и слово «Москва». Начинается 3 октября 1876 года, когда хранителем становится Никита; внутри — статья «Об Аномальном часе», осень 1884 года. Старые хранители говорили, что дневник «знает дорогу».",
+  "apps": [
+   {
+    "n": "anomalnyj-chas",
+    "ch": "04.md",
+    "es": "Natalia lo saca del cajón familiar.",
+    "ru": "Наталья достаёт его из семейного ящика."
+   },
+   {
+    "n": "anomalnyj-chas",
+    "ch": "12.md",
+    "es": "El acertijo de la casa número veintisiete.",
+    "ru": "Загадка двадцать седьмого дома слова."
+   },
+   {
+    "n": "anomalnyj-chas",
+    "ch": "30.md",
+    "es": "El diario completo.",
+    "ru": "Дневник целиком."
+   }
+  ],
+  "cover": {
+   "c1": "#3a2a20",
+   "c2": "#17100b",
+   "ink": "#e8cf9c",
+   "motif": "crown",
+   "style": "relic"
+  }
+ },
+ {
+  "id": "libro-fuera-de-catalogo",
+  "sala": "grimorios",
+  "kind": "ficticio",
+  "title": "Книга, которой нет в каталоге",
+  "title_es": "El libro que no está en el catálogo",
+  "title_ru": "Книга, которой нет в каталоге",
+  "author": "—",
+  "author_es": "—",
+  "year": null,
+  "desc_es": "La ficha más rara de este catálogo: un libro que, por definición, no debería tener ficha. El diario del guardián manda buscarlo en «la vigésima séptima casa de la palabra», donde «los libros hacen de centinelas y la lengua ajena oculta lo que no debe leerse»: la Biblioteca n.º 27 de Jóvrino, en Moscú. Allí estaba escondido uno de los pergaminos.",
+  "desc_ru": "Самая странная карточка этого каталога: книга, у которой по определению не должно быть карточки. Дневник хранителя велит искать её в «двадцать седьмом доме слова», где «книги стоят вместо стражей, а чужая речь скрывает то, что не должно быть прочитано», — в библиотеке № 27 в Ховрине. Там и был спрятан один из пергаментов.",
+  "apps": [
+   {
+    "n": "anomalnyj-chas",
+    "ch": "12.md",
+    "es": "El acertijo.",
+    "ru": "Загадка."
+   },
+   {
+    "n": "anomalnyj-chas",
+    "ch": "13.md",
+    "es": "La búsqueda en la Biblioteca n.º 27.",
+    "ru": "Поиски в библиотеке № 27."
+   },
+   {
+    "n": "anomalnyj-chas",
+    "ch": "29.md",
+    "es": "«Los libros hacen de centinelas».",
+    "ru": "«Книги стоят вместо стражей»."
+   }
+  ],
+  "cover": {
+   "c1": "#f4efe4",
+   "c2": "#ddd4c2",
+   "ink": "#8a7f70",
+   "motif": "blank",
+   "style": "ghost"
+  }
+ },
+ {
+  "id": "cultos-dioses-cornudos",
+  "sala": "grimorios",
+  "kind": "ficticio",
+  "title": "О культах рогатых богов западного Средиземноморья",
+  "title_es": "Sobre los cultos de los dioses cornudos del Mediterráneo occidental",
+  "title_ru": "О культах рогатых богов западного Средиземноморья",
+  "author": "Anónimo (manuscrito)",
+  "author_es": "Anónimo (manuscrito)",
+  "year": null,
+  "desc_es": "Un manuscrito que, según la Surpedia, debía estar en el departamento de manuscritos de la Biblioteca Nacional de España. Luis y Natasha lo buscan en salas tan silenciosas que hasta el bibliotecario les pide que susurren más bajo.",
+  "desc_ru": "Рукопись, которая, по данным Югопедии, должна храниться в отделе рукописей Национальной библиотеки Испании. Луис и Наташа ищут её в залах, где так тихо, что библиотекарь просит их шептать ещё тише.",
+  "apps": [
+   {
+    "n": "dikij-chas-karnaval-razdora",
+    "ch": "10.md",
+    "es": "La búsqueda en la Biblioteca Nacional.",
+    "ru": "Поиски в Национальной библиотеке."
+   }
+  ],
+  "cover": {
+   "c1": "#7a3b12",
+   "c2": "#331806",
+   "ink": "#f6d9a0",
+   "motif": "horns",
+   "style": "relic"
+  }
+ },
+ {
+  "id": "receptor-oscilaciones",
+  "sala": "grimorios",
+  "kind": "ficticio",
+  "title": "Приёмник небесных колебаний",
+  "title_es": "Receptor de oscilaciones celestes",
+  "title_ru": "Приёмник небесных колебаний",
+  "author": "Anónimo",
+  "author_es": "Anónimo",
+  "year": null,
+  "desc_es": "Un librito viejo encontrado en el desván de la estación, con el esquema de un aparato que nadie se tomaría en serio. Ella lo armó dentro de una caja de zapatos con una bobina de cobre, convencida de que era una broma. «Ja».",
+  "desc_ru": "Старая книжка с чердака станции со схемой прибора, который никто не принял бы всерьёз. Она собрала его в коробке из-под обуви с медной катушкой — думала, что это шутка. «Ха».",
+  "apps": [
+   {
+    "n": "znak",
+    "ch": "11.md",
+    "es": "El aparato armado según el librito.",
+    "ru": "Прибор, собранный по схеме из книжки."
+   }
+  ],
+  "cover": {
+   "c1": "#b87333",
+   "c2": "#5c3412",
+   "ink": "#fff1d6",
+   "motif": "radio",
+   "style": "paper"
+  }
+ },
+ {
+  "id": "astronomia-recreativa",
+  "sala": "astros",
+  "kind": "real",
+  "title": "Занимательная астрономия",
+  "title_es": "Astronomía recreativa",
+  "title_ru": "Занимательная астрономия",
+  "author": "Яков Перельман",
+  "author_es": "Yakov Perelman",
+  "year": 1958,
+  "desc_es": "Edición de 1958, de páginas amarillas, con el sello de «Dado de baja» tachado y corregido a mano: «¡No está de baja! ¡Es un buen libro!». Una de las cuatro obras sobre estrellas de la biblioteca de Verdegrado; Natalia armó el telescopio siguiéndola y resultó «el mejor manual del mundo».",
+  "desc_ru": "Издание 1958 года, жёлтые страницы, штамп «Списано», перечёркнутый от руки: «Не списано! Хорошая книга!». Одна из четырёх книг о звёздах в библиотеке Вердеграда; Наталья настраивала по ней телескоп, и она оказалась «лучшим учебником на свете».",
+  "apps": [
+   {
+    "n": "volny-lyubvi-narisovannyj-mir",
+    "ch": "09.md",
+    "es": "Natalia se lleva las cuatro obras sobre estrellas.",
+    "ru": "Наталья забирает все четыре книги о звёздах."
+   }
+  ],
+  "cover": {
+   "c1": "#14223f",
+   "c2": "#060c1c",
+   "ink": "#ffe9a8",
+   "motif": "telescope",
+   "style": "leather"
+  }
+ },
+ {
+  "id": "cielo-estrellado",
+  "sala": "astros",
+  "kind": "ficticio",
+  "title": "Звёздное небо",
+  "title_es": "El cielo estrellado (atlas infantil)",
+  "title_ru": "Звёздное небо (детский атлас)",
+  "author": "—",
+  "author_es": "—",
+  "year": null,
+  "desc_es": "Un atlas para chicos donde las constelaciones están dibujadas como animales y héroes de verdad. La Osa Mayor tiene unos ojos muy tristes.",
+  "desc_ru": "Детский атлас, где созвездия нарисованы настоящими зверями и героями. У Большой Медведицы очень грустные глаза.",
+  "apps": [
+   {
+    "n": "volny-lyubvi-narisovannyj-mir",
+    "ch": "09.md",
+    "es": "En la biblioteca de Verdegrado.",
+    "ru": "В библиотеке Вердеграда."
+   }
+  ],
+  "cover": {
+   "c1": "#2d3f8c",
+   "c2": "#101a4a",
+   "ink": "#ffe08a",
+   "motif": "bear",
+   "style": "kids"
+  }
+ },
+ {
+  "id": "manual-aficionado",
+  "sala": "astros",
+  "kind": "ficticio",
+  "title": "Справочник любителя астрономии",
+  "title_es": "Manual del aficionado a la astronomía",
+  "title_ru": "Справочник любителя астрономии",
+  "author": "—",
+  "author_es": "—",
+  "year": null,
+  "desc_es": "Un manual gordo que, a juzgar por el polvo, nadie había abierto desde que llegó a la biblioteca de Verdegrado. Natalia fue la primera.",
+  "desc_ru": "Толстый справочник, который, судя по пыли, никто не открывал со дня поступления в библиотеку Вердеграда. Наталья стала первой.",
+  "apps": [
+   {
+    "n": "volny-lyubvi-narisovannyj-mir",
+    "ch": "09.md",
+    "es": "El tercero de los cuatro libros.",
+    "ru": "Третья из четырёх книг."
+   }
+  ],
+  "cover": {
+   "c1": "#5c6670",
+   "c2": "#2b3138",
+   "ink": "#f1f1e6",
+   "motif": "planet",
+   "style": "leather"
+  }
+ },
+ {
+  "id": "horoscopo-cada-dia",
+  "sala": "astros",
+  "kind": "ficticio",
+  "title": "Гороскоп на каждый день",
+  "title_es": "Horóscopo para cada día",
+  "title_ru": "Гороскоп на каждый день",
+  "author": "—",
+  "author_es": "—",
+  "year": null,
+  "desc_es": "Un folleto de tapa blanda que estaba en el estante de astronomía «solo por error»: es de la bibliotecaria Anna Serguéyevna, que lo dejó para leer en el trabajo. Dice que este mes los Piscis tendrán un encuentro inesperado. Ella es Piscis. Espera.",
+  "desc_ru": "Тонкая брошюрка в мягкой обложке, стоявшая на полке по астрономии «исключительно по ошибке»: это брошюра библиотекарши Анны Сергеевны, поставленная, чтобы читать на работе. Там написано, что у Рыб в этом месяце будет неожиданная встреча. Анна Сергеевна — Рыба. Ждёт.",
+  "apps": [
+   {
+    "n": "volny-lyubvi-narisovannyj-mir",
+    "ch": "09.md",
+    "es": "La bibliotecaria se la presta a Natalia.",
+    "ru": "Библиотекарша отдаёт её Наталье."
+   }
+  ],
+  "cover": {
+   "c1": "#f2c4d6",
+   "c2": "#d98bb0",
+   "ink": "#4a1530",
+   "motif": "fish",
+   "style": "kids"
+  }
+ },
+ {
+  "id": "marte-dios-guerra",
+  "sala": "astros",
+  "kind": "ficticio",
+  "title": "Марс, планета и бог войны. Любовь и предательство",
+  "title_es": "Marte, planeta y dios de la guerra. Amor y traición",
+  "title_ru": "Марс, планета и бог войны. Любовь и предательство",
+  "author": "—",
+  "author_es": "—",
+  "year": null,
+  "desc_es": "Está en la biblioteca de Luciano, entre historias de civilizaciones antiguas, continentes hundidos y enigmas del cosmos. Laura la abre casi al azar en plena noche y lee una escena: «María tomó los cristales y, sonriendo un poco, decidió por broma ponerlos en la máquina…». Se queda dormida con el libro abierto en las manos.",
+  "desc_ru": "Стоит в библиотеке Лусиано среди книг о древних цивилизациях, затонувших континентах и загадках космоса. Ночью Лаура открывает её почти наугад и читает: «Мария взяла кристаллы и, немного улыбнувшись, решила из шутки поместить их в машину…». И засыпает с раскрытой книгой в руках.",
+  "apps": [
+   {
+    "n": "argenta",
+    "ch": "03.md",
+    "es": "Laura la lee de noche.",
+    "ru": "Лаура читает её ночью."
+   }
+  ],
+  "cover": {
+   "c1": "#9a2e1c",
+   "c2": "#3d0f07",
+   "ink": "#ffd9b0",
+   "motif": "mars",
+   "style": "modern"
+  }
+ },
+ {
+  "id": "ajedrez-pequenos",
+  "sala": "ingenio",
+  "kind": "ficticio",
+  "title": "Шахматы для самых маленьких",
+  "title_es": "Ajedrez para los más chiquitos",
+  "title_ru": "Шахматы для самых маленьких",
+  "author": "—",
+  "author_es": "—",
+  "year": null,
+  "desc_es": "Uno de los tres libros de ajedrez de la biblioteca escolar, con un caballo sonriente dibujado en la tapa. Miguel se los llevó todos.",
+  "desc_ru": "Одна из трёх шахматных книг школьной библиотеки — с нарисованным улыбающимся конём на обложке. Мигель взял все три.",
+  "apps": [
+   {
+    "n": "strateg",
+    "ch": "02.md",
+    "es": "Miguel lo saca de la biblioteca escolar.",
+    "ru": "Мигель берёт её в школьной библиотеке."
+   }
+  ],
+  "cover": {
+   "c1": "#f5e6a8",
+   "c2": "#e0bd55",
+   "ink": "#3a2a08",
+   "motif": "knight",
+   "style": "kids"
+  }
+ },
+ {
+  "id": "cien-partidas",
+  "sala": "ingenio",
+  "kind": "ficticio",
+  "title": "Сто красивейших партий века",
+  "title_es": "Las cien partidas más bellas del siglo",
+  "title_ru": "Сто красивейших партий века",
+  "author": "—",
+  "author_es": "—",
+  "year": null,
+  "desc_es": "Sin tapas y sin las últimas cuarenta páginas: Miguel nunca sabrá cómo terminan algunas de las partidas más bellas del siglo.",
+  "desc_ru": "Без обложки и без последних сорока страниц: Мигель так и не узнает, чем закончились некоторые красивейшие партии века.",
+  "apps": [
+   {
+    "n": "strateg",
+    "ch": "02.md",
+    "es": "El segundo de los tres libros.",
+    "ru": "Вторая из трёх книг."
+   }
+  ],
+  "cover": {
+   "c1": "#ece4d4",
+   "c2": "#c8b896",
+   "ink": "#2a2218",
+   "motif": "board",
+   "style": "torn"
+  }
+ },
+ {
+  "id": "mi-sistema",
+  "sala": "ingenio",
+  "kind": "real",
+  "title": "Мой метод",
+  "title_es": "Mi sistema",
+  "title_ru": "Мой метод",
+  "author": "Арон Нимцович",
+  "author_es": "Aron Nimzowitsch",
+  "year": 1925,
+  "desc_es": "El tercero de los libros de ajedrez de la escuela, con tantas palabras incomprensibles que Miguel primero pensó que era de medicina. La señora Campo, la bibliotecaria, recuerda que antes de él lo había retirado alguien en 1986: «Después se hizo gran maestro. O se volvió loco. No me acuerdo». En el mundo real es «Mein System», el clásico de Aron Nimzowitsch.",
+  "desc_ru": "Третья шахматная книга школьной библиотеки, в ней было столько непонятных слов, что Мигель сначала решил, что она про медицину. Библиотекарша синьора Кампо помнит, что до него Нимцовича брали в 1986 году: «Человек потом стал гроссмейстером. Или сошёл с ума. Я точно не помню». В реальном мире это классика Арона Нимцовича.",
+  "apps": [
+   {
+    "n": "strateg",
+    "ch": "02.md",
+    "es": "«En el ajedrez se puede las dos cosas».",
+    "ru": "«В шахматах — можно и то и другое»."
+   },
+   {
+    "n": "strateg",
+    "ch": "09.md",
+    "es": "Brando lo encuentra en la mochila de Miguel.",
+    "ru": "Брандо находит его в рюкзаке Мигеля."
+   }
+  ],
+  "cover": {
+   "c1": "#26323a",
+   "c2": "#0f1418",
+   "ink": "#e8e1cf",
+   "motif": "knight",
+   "style": "leather"
+  }
+ },
+ {
+  "id": "seguridad-redes",
+  "sala": "ingenio",
+  "kind": "ficticio",
+  "title": "Сетевая безопасность",
+  "title_es": "Seguridad de redes",
+  "title_ru": "Сетевая безопасность",
+  "author": "—",
+  "author_es": "—",
+  "year": null,
+  "desc_es": "Uno de los tres lomos que Laura alcanza a leer en la pila de libros sobre el escritorio, cuando el dron «Albatros-3» entra por la ventana de Tatiana y casi choca con el cactus. Junto a ellos: una laptop, dos monitores y un tablero de corcho lleno de notas.",
+  "desc_ru": "Один из трёх корешков, которые Лаура успевает разглядеть в стопке на столе, когда дрон «Альбатрос-3» влетает в окно Татьяны и чуть не врезается в кактус. Рядом — ноутбук, два монитора и пробковая доска с записками.",
+  "apps": [
+   {
+    "n": "pokhititel-serdec-portret-osnovatelya",
+    "ch": "16.md",
+    "es": "El dron entra en la habitación.",
+    "ru": "Дрон влетает в комнату."
+   }
+  ],
+  "cover": {
+   "c1": "#0c2b2a",
+   "c2": "#05080a",
+   "ink": "#7cffc4",
+   "motif": "lock",
+   "style": "modern"
+  }
+ },
+ {
+  "id": "criptografia-principiantes",
+  "sala": "ingenio",
+  "kind": "ficticio",
+  "title": "Криптография для начинающих",
+  "title_es": "Criptografía para principiantes",
+  "title_ru": "Криптография для начинающих",
+  "author": "—",
+  "author_es": "—",
+  "year": null,
+  "desc_es": "Uno de los tres lomos que Laura alcanza a leer en la pila de libros sobre el escritorio, cuando el dron «Albatros-3» entra por la ventana de Tatiana y casi choca con el cactus. Junto a ellos: una laptop, dos monitores y un tablero de corcho lleno de notas.",
+  "desc_ru": "Один из трёх корешков, которые Лаура успевает разглядеть в стопке на столе, когда дрон «Альбатрос-3» влетает в окно Татьяны и чуть не врезается в кактус. Рядом — ноутбук, два монитора и пробковая доска с записками.",
+  "apps": [
+   {
+    "n": "pokhititel-serdec-portret-osnovatelya",
+    "ch": "16.md",
+    "es": "El dron entra en la habitación.",
+    "ru": "Дрон влетает в комнату."
+   }
+  ],
+  "cover": {
+   "c1": "#1b1b2f",
+   "c2": "#05080a",
+   "ink": "#7cffc4",
+   "motif": "key",
+   "style": "modern"
+  }
+ },
+ {
+  "id": "psicologia-hacker",
+  "sala": "ingenio",
+  "kind": "ficticio",
+  "title": "Психология хакера",
+  "title_es": "Psicología del hacker",
+  "title_ru": "Психология хакера",
+  "author": "—",
+  "author_es": "—",
+  "year": null,
+  "desc_es": "Uno de los tres lomos que Laura alcanza a leer en la pila de libros sobre el escritorio, cuando el dron «Albatros-3» entra por la ventana de Tatiana y casi choca con el cactus. Junto a ellos: una laptop, dos monitores y un tablero de corcho lleno de notas.",
+  "desc_ru": "Один из трёх корешков, которые Лаура успевает разглядеть в стопке на столе, когда дрон «Альбатрос-3» влетает в окно Татьяны и чуть не врезается в кактус. Рядом — ноутбук, два монитора и пробковая доска с записками.",
+  "apps": [
+   {
+    "n": "pokhititel-serdec-portret-osnovatelya",
+    "ch": "16.md",
+    "es": "El dron entra en la habitación.",
+    "ru": "Дрон влетает в комнату."
+   }
+  ],
+  "cover": {
+   "c1": "#2a0f2f",
+   "c2": "#05080a",
+   "ink": "#7cffc4",
+   "motif": "mask",
+   "style": "modern"
+  }
+ },
+ {
+  "id": "ciao-amore",
+  "sala": "ingenio",
+  "kind": "ficticio",
+  "title": "Ciao, amore!",
+  "title_es": "Ciao, amore!",
+  "title_ru": "Ciao, amore!",
+  "author": "—",
+  "author_es": "—",
+  "year": null,
+  "desc_es": "El manual de italiano que Natasha compró antes de viajar a Venecia: un título muy frívolo para un manual, pero adentro todo es serio, verbos, artículos y ejercicios sin fin. Uno de sus textos de lectura trataba de un detective que vivía en una ciudad llamada Sinea, donde todos hablaban en voz baja de su propia ciudad. Así empezó todo.",
+  "desc_ru": "Учебник итальянского, который Наташа купила перед поездкой в Венецию: очень легкомысленное название для учебника, но внутри всё серьёзно — глаголы, артикли, бесконечные упражнения. В одном из текстов для чтения был детектив из города Синея, где все говорили о своём городе шёпотом. С этого всё и началось.",
+  "apps": [
+   {
+    "n": "grustnyj-gorod",
+    "ch": "21.md",
+    "es": "Natasha cuenta cómo llegó a Sinea.",
+    "ru": "Наташа рассказывает, как попала в Синею."
+   }
+  ],
+  "cover": {
+   "c1": "#e94b3c",
+   "c2": "#a01f15",
+   "ink": "#fff6e8",
+   "motif": "heart",
+   "style": "kids"
+  }
+ },
+ {
+  "id": "maneras-paella",
+  "sala": "tren",
+  "kind": "ficticio",
+  "title": "10 способов приготовить паэлью",
+  "title_es": "20 maneras de preparar paella",
+  "title_ru": "10 способов приготовить паэлью",
+  "author": "—",
+  "author_es": "—",
+  "year": null,
+  "desc_es": "Un libro de cocina de recetas sospechosas: la paella italiana resulta ser un risotto, la uzbeka un plov, y la madrileña se presenta con honestidad como la peor paella del mundo. De sus páginas saltan camarones vivos, y uno le entrega a Marcos una nota: la respuesta está en la página 23 de «Presentimiento». En la edición española del tren son veinte maneras, no diez.",
+  "desc_ru": "Кулинарная книга с подозрительными рецептами: итальянская паэлья оказывается ризотто, узбекская — пловом, а мадридская честно названа худшей паэльей в мире. Из страниц выпрыгивают живые креветки, и одна протягивает Марку записку: ответ — на странице 23 книги «Предчувствие». В испанском издании поезда способов не десять, а двадцать.",
+  "apps": [
+   {
+    "n": "prizrachnyj-poezd",
+    "ch": "08.md",
+    "es": "Los camarones y la nota.",
+    "ru": "Креветки и записка."
+   },
+   {
+    "n": "el-tren-fantasma",
+    "ch": "09.md",
+    "es": "Marcos la hojea en el vagón biblioteca.",
+    "ru": "Маркос листает её в вагоне-библиотеке."
+   },
+   {
+    "n": "el-tren",
+    "ch": "33.md",
+    "es": "Entre las lecturas del protagonista.",
+    "ru": "Среди того, что прочитал герой."
+   },
+   {
+    "n": "el-tren",
+    "ch": "53.md",
+    "es": "«Un libro grande y raro».",
+    "ru": "«Большая и странная книга»."
+   }
+  ],
+  "cover": {
+   "c1": "#f2a516",
+   "c2": "#c2410c",
+   "ink": "#3b1404",
+   "motif": "pan",
+   "style": "kids"
+  }
+ },
+ {
+  "id": "chica-en-fuga",
+  "sala": "tren",
+  "kind": "ficticio",
+  "title": "Come trovare una ragazza in fuga",
+  "title_es": "Cómo encontrar a una chica que huye",
+  "title_ru": "Как найти сбежавшую девушку",
+  "author": "—",
+  "author_es": "—",
+  "year": null,
+  "desc_es": "En el vagón biblioteca del tren fantasma, donde una lectora le chista a Marco porque habla, este título le salta a la vista entre los estantes. Lo abre con esperanza, buscando una pista para encontrar a Alice.",
+  "desc_ru": "В вагоне-библиотеке призрачного поезда, где читательница шикает на Марко за разговоры, это название бросается ему в глаза среди полок. Он открывает книгу с надеждой найти подсказку, где искать Алису.",
+  "apps": [
+   {
+    "n": "il-treno-fantasma",
+    "ch": "12.md",
+    "es": "Marco la encuentra en el vagón biblioteca.",
+    "ru": "Марко находит её в вагоне-библиотеке."
+   },
+   {
+    "n": "il-treno-fantasma",
+    "ch": "vagoni.md",
+    "es": "Uno de los dos títulos especiales del vagón.",
+    "ru": "Одно из двух особых названий вагона."
+   }
+  ],
+  "cover": {
+   "c1": "#4b2a5e",
+   "c2": "#1c0f24",
+   "ink": "#f7d6ff",
+   "motif": "footsteps",
+   "style": "modern"
+  }
+ },
+ {
+  "id": "instrucciones-tren",
+  "sala": "tren",
+  "kind": "ficticio",
+  "title": "Istruzioni per guidare il treno",
+  "title_es": "Instrucciones para conducir el tren",
+  "title_ru": "Инструкция по управлению поездом",
+  "author": "—",
+  "author_es": "—",
+  "year": null,
+  "desc_es": "Mientras huyen del camarero sin pagar la cuenta, Alice y Matteo se esconden en el vagón biblioteca, lleno de libros antiguos. Matteo ve este título; Alice tiene una idea: si lee el libro, quizá pueda conducir el tren y cambiar su destino. «Se leggo il libro, posso guidare il treno».",
+  "desc_ru": "Убегая от официанта, не заплатив по счёту, Алиса и Маттео прячутся в вагоне-библиотеке, полном старинных книг. Маттео замечает это название, у Алисы появляется идея: если прочесть книгу, можно повести поезд и изменить его маршрут.",
+  "apps": [
+   {
+    "n": "il-treno-fantasma",
+    "ch": "09.md",
+    "es": "Alice abre el libro.",
+    "ru": "Алиса открывает книгу."
+   },
+   {
+    "n": "il-treno-fantasma",
+    "ch": "vagoni.md",
+    "es": "El otro título especial del vagón.",
+    "ru": "Второе особое название вагона."
+   }
+  ],
+  "cover": {
+   "c1": "#2b3a42",
+   "c2": "#0e1519",
+   "ink": "#ffcf6b",
+   "motif": "train",
+   "style": "leather"
+  }
+ },
+ {
+  "id": "mis-dulces-pecados",
+  "sala": "tren",
+  "kind": "ficticio",
+  "title": "Мои сладкие грехи",
+  "title_es": "Mis dulces pecados",
+  "title_ru": "Мои сладкие грехи",
+  "author": "Лукреция",
+  "author_es": "Lucrecia",
+  "year": null,
+  "desc_es": "El diario de Lucrecia, la pastelera del tren fantasma, con el contenido en parte cifrado en metáforas de comida. Viaja en su bolsa de tela, junto a migas de medialunas y una libretita manchada de cacao. Un fragmento: «Si todo alrededor se vuelve demasiado serio, hay que agregar azúcar. Aunque nadie lo haya pedido».",
+  "desc_ru": "Дневник Лукреции, кондитерши из призрачного поезда; содержание частично зашифровано метафорами еды. Лежит в её тканевой сумке рядом с крошками от медиалун и блокнотом в пятнах какао. Фрагмент: «Если всё вокруг становится слишком серьёзным, значит, нужно добавить сахара. Даже если никто не просил».",
+  "apps": [
+   {
+    "n": "prizrachnyj-poezd",
+    "ch": "10.md",
+    "es": "El expediente de Lucrecia.",
+    "ru": "Досье Лукреции."
+   }
+  ],
+  "cover": {
+   "c1": "#f7d3c8",
+   "c2": "#e8a2a2",
+   "ink": "#5a1e2a",
+   "motif": "cupcake",
+   "style": "kids"
+  }
+ },
+ {
+  "id": "casas-olvidadas",
+  "sala": "tren",
+  "kind": "ficticio",
+  "title": "Записная книжка забытых домов",
+  "title_es": "La libreta de las casas olvidadas",
+  "title_ru": "Записная книжка забытых домов",
+  "author": "Muchas manos",
+  "author_es": "Muchas manos",
+  "year": null,
+  "desc_es": "Una libreta con renglones corridos y letras de distintas personas, sacada del primer departamento que se tragó el tren. Explica las reglas: «Si una casa se queda vacía demasiado tiempo, empieza a escuchar los rieles…». En la Estación Cero se abre sola en la última página: es la memoria del camino.",
+  "desc_ru": "Книжка с расплывшимися строками разных почерков из первой втянутой квартиры. В ней — правила: «Если дом остаётся пустым слишком долго, он начинает слушать рельсы…». На Нулевой станции она сама раскрывается на последней странице: это память дороги.",
+  "apps": [
+   {
+    "n": "prizrachnyj-poezd",
+    "ch": "43.md",
+    "es": "Se encuentra la libreta.",
+    "ru": "Книжка найдена."
+   },
+   {
+    "n": "prizrachnyj-poezd",
+    "ch": "45.md",
+    "es": "Se abre en la última página.",
+    "ru": "Раскрывается на последней странице."
+   },
+   {
+    "n": "prizrachnyj-poezd",
+    "ch": "46.md",
+    "es": "Uno de los objetos de la llave de la ruta.",
+    "ru": "Один из предметов маршрутного ключа."
+   }
+  ],
+  "cover": {
+   "c1": "#6e6658",
+   "c2": "#38332b",
+   "ink": "#efe6cf",
+   "motif": "house",
+   "style": "torn"
+  }
+ },
+ {
+  "id": "historias-conejitos",
+  "sala": "infantil",
+  "kind": "ficticio",
+  "title": "Зайкины истории",
+  "title_es": "Historias de conejitos",
+  "title_ru": "Зайкины истории",
+  "author": "Ната (ilustraciones)",
+  "author_es": "Nata (ilustraciones)",
+  "year": null,
+  "desc_es": "La serie de cuentos de conejos que ilustra Nata. El zorro de madera escucha los títulos con creciente desconfianza.",
+  "desc_ru": "Серия детских книжек про зайцев, которые иллюстрирует Ната. Деревянный лис выслушивает названия со всё большим подозрением.",
+  "apps": [
+   {
+    "n": "volny-lyubvi-narisovannyj-mir",
+    "ch": "28.md",
+    "es": "Nata cuenta qué libros ilustra.",
+    "ru": "Ната рассказывает, какие книжки она иллюстрирует."
+   }
+  ],
+  "cover": {
+   "c1": "#bfe3c0",
+   "c2": "#7dbb83",
+   "ink": "#2b2416",
+   "motif": "rabbit",
+   "style": "kids"
+  }
+ },
+ {
+  "id": "conejito-gran-mundo",
+  "sala": "infantil",
+  "kind": "ficticio",
+  "title": "Зайчонок и большой мир",
+  "title_es": "El conejito y el gran mundo",
+  "title_ru": "Зайчонок и большой мир",
+  "author": "Ната (ilustraciones)",
+  "author_es": "Nata (ilustraciones)",
+  "year": null,
+  "desc_es": "Otro de los libros que ilustró Nata, la ilustradora de libros infantiles «sobre todo de conejos».",
+  "desc_ru": "Ещё одна книжка с иллюстрациями Наты — иллюстратора детских книг «в основном про зайцев».",
+  "apps": [
+   {
+    "n": "volny-lyubvi-narisovannyj-mir",
+    "ch": "28.md",
+    "es": "Nata cuenta qué libros ilustra.",
+    "ru": "Ната рассказывает, какие книжки она иллюстрирует."
+   }
+  ],
+  "cover": {
+   "c1": "#c9dff5",
+   "c2": "#86b2de",
+   "ink": "#2b2416",
+   "motif": "rabbit",
+   "style": "kids"
+  }
+ },
+ {
+  "id": "conejos-contra-zorro",
+  "sala": "infantil",
+  "kind": "ficticio",
+  "title": "Зайцы против лиса",
+  "title_es": "Los conejos contra el zorro",
+  "title_ru": "Зайцы против лиса",
+  "author": "Ната (ilustraciones)",
+  "author_es": "Nata (ilustraciones)",
+  "year": null,
+  "desc_es": "—¿Ahí pierde el zorro? —pregunta el zorro, con tono helado. —Bueno… en cada capítulo. Es la trama: los conejos son astutos, y el zorro… Lo que Nata no sabía es que el zorro de los libros es primo del zorro que tenía delante.",
+  "desc_ru": "— Там лис проигрывает? — ледяным тоном спрашивает лис. — Ну… в каждой главе. Такой сюжет: зайцы хитрые, а лис… Ната не знала, что книжный лис — кузен того, кто сидит перед ней.",
+  "apps": [
+   {
+    "n": "volny-lyubvi-narisovannyj-mir",
+    "ch": "28.md",
+    "es": "Nata cuenta qué libros ilustra.",
+    "ru": "Ната рассказывает, какие книжки она иллюстрирует."
+   }
+  ],
+  "cover": {
+   "c1": "#f6d8a8",
+   "c2": "#e3a24a",
+   "ink": "#2b2416",
+   "motif": "fox",
+   "style": "kids"
+  }
+ },
+ {
+  "id": "conejos-gran-caceria",
+  "sala": "infantil",
+  "kind": "ficticio",
+  "title": "Зайцы и большая охота",
+  "title_es": "Los conejos y la gran cacería",
+  "title_ru": "Зайцы и большая охота",
+  "author": "Ната (ilustraciones)",
+  "author_es": "Nata (ilustraciones)",
+  "year": null,
+  "desc_es": "El librito número treinta y dos de la serie. Rodeado de garabatos espinosos, el primo del zorro recuerda que allí también lo rodearon los conejos por todos lados, y perdió, como siempre, por un truco. Por primera vez, sonríe: ahora conoce el truco.",
+  "desc_ru": "Тридцать вторая книжка серии. Окружённый колючими каракулями, кузен лиса вспоминает, что и там зайцы окружили его со всех сторон, и он проиграл, как всегда, из-за одной хитрости. И впервые улыбается: теперь он эту хитрость знает.",
+  "apps": [
+   {
+    "n": "volny-lyubvi-narisovannyj-mir",
+    "ch": "36.md",
+    "es": "El primo del zorro recuerda el libro 32.",
+    "ru": "Кузен лиса вспоминает тридцать вторую книжку."
+   }
+  ],
+  "cover": {
+   "c1": "#f3c1b0",
+   "c2": "#d9785c",
+   "ink": "#2b2416",
+   "motif": "rabbit",
+   "style": "kids"
+  }
+ },
+ {
+  "id": "the-red-machine",
+  "sala": "infantil",
+  "kind": "ficticio",
+  "title": "The Red Machine",
+  "title_es": "La máquina roja",
+  "title_ru": "Красная машина",
+  "author": "Olga Kovaleva",
+  "author_es": "Olga Kovaliova",
+  "year": null,
+  "desc_es": "Un libro infantil delgado y colorido: en la tapa, una máquina roja en un callejón y un gatito pelirrojo sentado detrás. «Texto e ilustraciones de Olga Kovaleva». El doctor Grumov usó ese mismo dibujo, con un poco de brillo plateado, como «foto de la nave espacial»; Olga lo desenmascara en vivo con el libro en la mano. Lucy lo llevaba en la cartera desde el primer día.",
+  "desc_ru": "Тонкая яркая детская книжка: на обложке красная машина в переулке и рыжий котёнок за ней. «Слова и рисунки — Ольга Ковалёва». Доктор Грумов выдал этот рисунок, добавив серебристого света, за «фотографию космического корабля»; Ольга разоблачает его в прямом эфире с книгой в руках. А Люси носила её в сумке с первого дня.",
+  "apps": [
+   {
+    "n": "a-man-from-the-future-3",
+    "ch": "10.md",
+    "es": "Olga reconoce su ilustración.",
+    "ru": "Ольга узнаёт свою иллюстрацию."
+   },
+   {
+    "n": "a-man-from-the-future-3",
+    "ch": "11.md",
+    "es": "Lucy confiesa que es su fan.",
+    "ru": "Люси признаётся, что она её поклонница."
+   },
+   {
+    "n": "a-man-from-the-future-3",
+    "ch": "19.md",
+    "es": "La prueba en el programa de Grumov.",
+    "ru": "Доказательство на шоу Грумова."
+   }
+  ],
+  "cover": {
+   "c1": "#e53935",
+   "c2": "#8e1414",
+   "ink": "#fff3e0",
+   "motif": "car",
+   "style": "kids"
+  }
+ },
+ {
+  "id": "please-and-thank-you",
+  "sala": "infantil",
+  "kind": "ficticio",
+  "title": "Please and Thank You",
+  "title_es": "Por favor y gracias",
+  "title_ru": "Пожалуйста и спасибо",
+  "author": "—",
+  "author_es": "—",
+  "year": null,
+  "desc_es": "Aparece en uno de los dibujos que Olga hizo de noche para la votación de Moscú: en la opción «ADAPTARSE», un hombre del futuro con traje plateado lee con mucho cuidado un libro llamado «Please and Thank You». Un manual de modales para viajeros del año 3024.",
+  "desc_ru": "Появляется на одной из картинок, которые Ольга нарисовала ночью для московского голосования: в варианте «АДАПТИРОВАТЬ» человек из будущего в серебристом костюме старательно читает книгу «Please and Thank You». Учебник вежливости для гостей из 3024 года.",
+  "apps": [
+   {
+    "n": "a-man-from-the-future-2",
+    "ch": "07.md",
+    "es": "La votación de Moscú.",
+    "ru": "Голосование в Москве."
+   }
+  ],
+  "cover": {
+   "c1": "#c7d9f2",
+   "c2": "#8fa9d6",
+   "ink": "#1d2a44",
+   "motif": "flower",
+   "style": "kids"
+  }
+ },
+ {
+  "id": "venas-abiertas",
+  "sala": "mundo",
+  "kind": "real",
+  "title": "Las venas abiertas de América Latina",
+  "title_es": "Las venas abiertas de América Latina",
+  "title_ru": "Вскрытые вены Латинской Америки",
+  "author": "Eduardo Galeano",
+  "author_es": "Eduardo Galeano",
+  "year": 1971,
+  "desc_es": "Luis y Natasha buscan este libro en una biblioteca y lo encuentran enseguida; él lo abre con cuidado y ella se inclina para ver la página. Un clásico real de 1971 en la estantería de una aventura de la Hora Salvaje.",
+  "desc_ru": "Луис и Наташа быстро находят эту книгу в библиотеке; он бережно открывает её, она наклоняется к странице. Настоящая классика 1971 года на полке приключений «Дикого часа».",
+  "apps": [
+   {
+    "n": "dikij-chas-2",
+    "ch": "29.md",
+    "es": "Luis la abre en la biblioteca.",
+    "ru": "Луис открывает её в библиотеке."
+   }
+  ],
+  "cover": {
+   "c1": "#8b1e1e",
+   "c2": "#3a0909",
+   "ink": "#ffe0b0",
+   "motif": "map",
+   "style": "leather"
+  }
+ },
+ {
+  "id": "folla-delinquente",
+  "sala": "mundo",
+  "kind": "real",
+  "title": "La folla delinquente",
+  "title_es": "La muchedumbre delincuente",
+  "title_ru": "Преступная толпа",
+  "author": "Scipio Sighele",
+  "author_es": "Scipio Sighele",
+  "year": 1891,
+  "desc_es": "Natalia la cita para explicar lo que pasa en Venecia: según Sighele, la masa obedece con facilidad a la sugestión cuando aparece alguien dispuesto a cargar con la responsabilidad. Obra real de la psicología italiana de las multitudes (1891).",
+  "desc_ru": "Наталья ссылается на неё, объясняя происходящее в Венеции: по Сигеле, масса легко подчиняется внушению, если рядом появляется фигура, готовая взять на себя ответственность. Реальная книга итальянской психологии толпы (1891).",
+  "apps": [
+   {
+    "n": "dikij-chas-venecianskoe-koldovstvo",
+    "ch": "30.md",
+    "es": "Natalia explica la psicología de la masa.",
+    "ru": "Наталья объясняет психологию толпы."
+   }
+  ],
+  "cover": {
+   "c1": "#3b3b3b",
+   "c2": "#121212",
+   "ink": "#e8d39a",
+   "motif": "crowd",
+   "style": "leather"
+  }
+ },
+ {
+  "id": "hija-del-capitan",
+  "sala": "mundo",
+  "kind": "real",
+  "title": "Капитанская дочка",
+  "title_es": "La hija del capitán",
+  "title_ru": "Капитанская дочка",
+  "author": "Александр Пушкин",
+  "author_es": "Aleksandr Pushkin",
+  "year": 1836,
+  "desc_es": "En la primera cita, en la torre OKO, Natalia le pide a Roberto que le recite a Pushkin. Él no sabe versos, pero confiesa haber leído «La hija del capitán», y eso a ella le encanta. Más adelante, en el viejo sanatorio junto al Volga, alguien deja «para que no se aburra» una colección completa de Pushkin encuadernada en cuero.",
+  "desc_ru": "На первом свидании, в башне ОКО, Наталья просит Роберто прочитать Пушкина. Стихов он не знает, но признаётся, что читал «Капитанскую дочку», — и это ей очень нравится. Позже, в старом санатории над Волгой, кто-то оставляет «чтобы не скучал» полное собрание Пушкина в кожаном переплёте.",
+  "apps": [
+   {
+    "n": "la-gran-conspiracion",
+    "ch": "01.md",
+    "es": "La primera cita.",
+    "ru": "Первое свидание."
+   },
+   {
+    "n": "la-gran-conspiracion",
+    "ch": "20.md",
+    "es": "La sala de lectura con el Pushkin en cuero.",
+    "ru": "Читальный зал с Пушкиным в коже."
+   },
+   {
+    "n": "la-gran-conspiracion",
+    "ch": "21.md",
+    "es": "La colección en la habitación del sanatorio.",
+    "ru": "Собрание в комнате санатория."
+   }
+  ],
+  "cover": {
+   "c1": "#1d3a5a",
+   "c2": "#0a1726",
+   "ink": "#f0d79a",
+   "motif": "quill",
+   "style": "leather"
+  }
+ },
+ {
+  "id": "ensayos-montaigne",
+  "sala": "mundo",
+  "kind": "real",
+  "title": "Essais",
+  "title_es": "Ensayos",
+  "title_ru": "Опыты",
+  "author": "Michel de Montaigne",
+  "author_es": "Michel de Montaigne",
+  "year": 1580,
+  "desc_es": "El ejemplar de Camille, con la tapa rota, siempre en el bolsillo interior del abrigo. Lee una página cada noche y tiene una frase subrayada dos veces: «Cada hombre lleva en sí la forma entera de la condición humana». Una noche lo tira a la arena, junto al fuego… y después descubre que todavía no fue capaz de deshacerse de él.",
+  "desc_ru": "Экземпляр Камиллы с порванной обложкой — всегда во внутреннем кармане пальто. Каждый вечер она читает по странице; одна фраза подчёркнута дважды: «Каждый человек носит в себе всю полноту человеческого удела». Однажды она бросает книгу в песок у костра… и потом понимает, что так и не смогла с ней расстаться.",
+  "apps": [
+   {
+    "n": "reve-turquoise",
+    "ch": "01.md",
+    "es": "La frase subrayada dos veces.",
+    "ru": "Фраза, подчёркнутая дважды."
+   },
+   {
+    "n": "reve-turquoise",
+    "ch": "16.md",
+    "es": "Luis se los devuelve.",
+    "ru": "Луис сам отдаёт ей книгу."
+   },
+   {
+    "n": "reve-turquoise",
+    "ch": "17.md",
+    "es": "Los tira a la arena.",
+    "ru": "Бросает в песок."
+   },
+   {
+    "n": "reve-turquoise",
+    "ch": "21.md",
+    "es": "Todavía no pudo tirarlos.",
+    "ru": "Так и не смогла выбросить."
+   }
+  ],
+  "cover": {
+   "c1": "#7a6a4f",
+   "c2": "#3a3022",
+   "ink": "#f5ead0",
+   "motif": "feather",
+   "style": "torn"
+  }
+ },
+ {
+  "id": "un-victor-hugo",
+  "sala": "mundo",
+  "kind": "real",
+  "title": "Victor Hugo (volume à moitié brûlé)",
+  "title_es": "Un Victor Hugo medio quemado",
+  "title_ru": "Том Виктора Гюго, наполовину сгоревший",
+  "author": "Victor Hugo",
+  "author_es": "Victor Hugo",
+  "year": null,
+  "desc_es": "El libro que Alizé leyó junto al fuego la primera noche del verano, cuando grabaron la carta de la fortaleza. Por las noches se leía en voz alta —Victor Hugo, Jules Verne, Montaigne— y los antiguos prisioneros escuchaban al fondo, sin moverse, como si cada frase fuera un pedazo de pan. Al final, medio quemado y con la tapa ennegrecida, Alizé se lo devuelve a Camille: «On garde les livres» — los libros se guardan.",
+  "desc_ru": "Книга, которую Ализе читала у костра в первый летний вечер, когда вырезали хартию крепости. По вечерам читали вслух — Гюго, Жюля Верна, Монтеня, — и бывшие пленники слушали, не шевелясь, будто каждая фраза была куском хлеба. В конце Ализе протягивает Камилле этот наполовину сгоревший том: «Книги мы сохраняем».",
+  "apps": [
+   {
+    "n": "reve-turquoise",
+    "ch": "03.md",
+    "es": "La primera lectura junto al fuego.",
+    "ru": "Первое чтение у костра."
+   },
+   {
+    "n": "reve-turquoise",
+    "ch": "15.md",
+    "es": "Lecturas en voz alta.",
+    "ru": "Чтение вслух."
+   },
+   {
+    "n": "reve-turquoise",
+    "ch": "30.md",
+    "es": "«On garde les livres».",
+    "ru": "«Книги мы сохраняем»."
+   }
+  ],
+  "cover": {
+   "c1": "#2b2420",
+   "c2": "#0d0a08",
+   "ink": "#ffb46b",
+   "motif": "flame",
+   "style": "burnt"
+  }
+ },
+ {
+  "id": "apocalipsis",
+  "sala": "mundo",
+  "kind": "real",
+  "title": "Откровение святого Иоанна Богослова",
+  "title_es": "Apocalipsis de san Juan",
+  "title_ru": "Откровение святого Иоанна Богослова (Апокалипсис)",
+  "author": "Juan de Patmos",
+  "author_es": "Juan de Patmos",
+  "year": null,
+  "desc_es": "El último libro de la Biblia de la abuela de Irina. Para entender por qué media ciudad sueña con cuatro jinetes, Irina lo lee y estudia: «apocalipsis» no significa fin del mundo sino «revelación»; fue escrito para siete iglesias asustadas de Asia Menor; Babilonia sobre siete montes es Roma; y ya en el siglo II san Ireneo discutía con quienes leían «616» en lugar de 666.",
+  "desc_ru": "Последняя книга бабушкиной Библии. Чтобы понять, почему полгорода видит во сне четырёх всадников, Ирина читает и изучает его: «апокалипсис» означает не конец света, а «откровение»; текст написан для семи испуганных церквей Малой Азии; Вавилон на семи горах — это Рим; а ещё во II веке святой Ириней спорил с теми, кто читал «616» вместо 666.",
+  "apps": [
+   {
+    "n": "mashina-snov",
+    "ch": "04.md",
+    "es": "Irina estudia el libro.",
+    "ru": "Ирина изучает книгу."
+   },
+   {
+    "n": "la-macchina-dei-sogni",
+    "ch": "19.md",
+    "es": "«I Cavalieri dell’Apocalisse».",
+    "ru": "«Всадники Апокалипсиса»."
+   }
+  ],
+  "cover": {
+   "c1": "#4a1010",
+   "c2": "#1a0404",
+   "ink": "#e9c46a",
+   "motif": "horse",
+   "style": "relic"
+  }
+ },
+ {
+  "id": "asi-hablo-zaratustra",
+  "sala": "mundo",
+  "kind": "real",
+  "title": "Also sprach Zarathustra",
+  "title_es": "Así habló Zaratustra",
+  "title_ru": "Так говорил Заратустра",
+  "author": "Фридрих Ницше",
+  "author_es": "Friedrich Nietzsche",
+  "year": 1883,
+  "desc_es": "Una de las cuatro citas en las que se apoya Luis en su carta a una ciudad donde está prohibido reír: «Y falsa sea para nosotros toda verdad que no haya traído consigo una carcajada».",
+  "desc_ru": "Одна из четырёх цитат, на которые опирается Луис в письме городу, где запрещено смеяться: «И ложной да будет для нас всякая истина, у которой не было смеха!»",
+  "apps": [
+   {
+    "n": "grustnyj-gorod",
+    "ch": "15.md",
+    "es": "«Las citas en las que se apoya Luis».",
+    "ru": "«Цитаты, на которые опирается Луис»."
+   }
+  ],
+  "cover": {
+   "c1": "#33415c",
+   "c2": "#111",
+   "ink": "#f2e3bf",
+   "motif": "mountain",
+   "style": "leather"
+  }
+ },
+ {
+  "id": "la-risa-bergson",
+  "sala": "mundo",
+  "kind": "real",
+  "title": "Le Rire",
+  "title_es": "La risa",
+  "title_ru": "Смех",
+  "author": "Анри Бергсон",
+  "author_es": "Henri Bergson",
+  "year": 1900,
+  "desc_es": "Una de las cuatro citas en las que se apoya Luis en su carta a una ciudad donde está prohibido reír: «Lo cómico es lo mecánico sobrepuesto a lo vivo».",
+  "desc_ru": "Одна из четырёх цитат, на которые опирается Луис в письме городу, где запрещено смеяться: «Комическое — это механическое, наложенное на живое».",
+  "apps": [
+   {
+    "n": "grustnyj-gorod",
+    "ch": "15.md",
+    "es": "«Las citas en las que se apoya Luis».",
+    "ru": "«Цитаты, на которые опирается Луис»."
+   }
+  ],
+  "cover": {
+   "c1": "#5c2a4a",
+   "c2": "#111",
+   "ink": "#f2e3bf",
+   "motif": "mask",
+   "style": "leather"
+  }
+ },
+ {
+  "id": "partes-animales",
+  "sala": "mundo",
+  "kind": "real",
+  "title": "Περὶ ζῴων μορίων",
+  "title_es": "Sobre las partes de los animales",
+  "title_ru": "О частях животных",
+  "author": "Аристотель",
+  "author_es": "Aristóteles",
+  "year": null,
+  "desc_es": "Una de las cuatro citas en las que se apoya Luis en su carta a una ciudad donde está prohibido reír: «De todos los seres vivos, solo el hombre sabe reír» (libro III, cap. 10).",
+  "desc_ru": "Одна из четырёх цитат, на которые опирается Луис в письме городу, где запрещено смеяться: «Из всех живых существ только человек умеет смеяться» (кн. III, гл. 10).",
+  "apps": [
+   {
+    "n": "grustnyj-gorod",
+    "ch": "15.md",
+    "es": "«Las citas en las que se apoya Luis».",
+    "ru": "«Цитаты, на которые опирается Луис»."
+   }
+  ],
+  "cover": {
+   "c1": "#4d4030",
+   "c2": "#111",
+   "ink": "#f2e3bf",
+   "motif": "owl",
+   "style": "leather"
+  }
+ },
+ {
+  "id": "rabelais-bajtin",
+  "sala": "mundo",
+  "kind": "real",
+  "title": "Творчество Франсуа Рабле…",
+  "title_es": "La cultura popular en la Edad Media y en el Renacimiento: el contexto de François Rabelais",
+  "title_ru": "Творчество Франсуа Рабле и народная культура Средневековья и Ренессанса",
+  "author": "Михаил Бахтин",
+  "author_es": "Mijaíl Bajtín",
+  "year": 1965,
+  "desc_es": "Una de las cuatro citas en las que se apoya Luis en su carta a una ciudad donde está prohibido reír: «La risa libera… sobre todo del gran censor interior».",
+  "desc_ru": "Одна из четырёх цитат, на которые опирается Луис в письме городу, где запрещено смеяться: «Смех освобождает… прежде всего от большого внутреннего цензора».",
+  "apps": [
+   {
+    "n": "grustnyj-gorod",
+    "ch": "15.md",
+    "es": "«Las citas en las que se apoya Luis».",
+    "ru": "«Цитаты, на которые опирается Луис»."
+   }
+  ],
+  "cover": {
+   "c1": "#6b2f1a",
+   "c2": "#111",
+   "ink": "#f2e3bf",
+   "motif": "jester",
+   "style": "leather"
+  }
+ },
+ {
+  "id": "borodino",
+  "sala": "mundo",
+  "kind": "real",
+  "title": "Бородино",
+  "title_es": "Borodinó",
+  "title_ru": "Бородино",
+  "author": "Михаил Лермонтов",
+  "author_es": "Mijaíl Lérmontov",
+  "year": 1837,
+  "desc_es": "El poema que Natalia recitó de chica en un concurso escolar de declamación. Cuando le toca improvisar un rap, se tranquiliza: «Es casi lo mismo, solo que sin Kutúzov».",
+  "desc_ru": "Стихотворение, которое Наталья читала в школе на конкурсе чтецов. Когда ей приходится импровизировать рэп, она успокаивает себя: «Это почти то же самое, только без Кутузова».",
+  "apps": [
+   {
+    "n": "tajna-semi-fader",
+    "ch": "39.md",
+    "es": "Natalia y el rap.",
+    "ru": "Наталья и рэп."
+   }
+  ],
+  "cover": {
+   "c1": "#3f4a2e",
+   "c2": "#171c10",
+   "ink": "#f1e2b0",
+   "motif": "cannon",
+   "style": "leather"
+  }
+ },
+ {
+  "id": "julio-cesar",
+  "sala": "mundo",
+  "kind": "real",
+  "title": "Julius Caesar",
+  "title_es": "Julio César",
+  "title_ru": "Юлий Цезарь",
+  "author": "William Shakespeare",
+  "author_es": "William Shakespeare",
+  "year": null,
+  "desc_es": "En plena persecución por la Roma subterránea, alguien corre entre las filas de soldados de plástico con una trompeta bajo el brazo, gritando versos de Shakespeare que recuerda a medias: «¡Amigos, romanos, compatriotas! ¡Préstenme sus oídos! Mejor no, ¡quédenselos!».",
+  "desc_ru": "Посреди погони по подземному Риму кто-то бегает между рядами пластиковых солдатиков с трубой под мышкой и выкрикивает наполовину забытые строки Шекспира: «Друзья, римляне, сограждане! Одолжите мне ваши уши! Нет, оставьте себе!»",
+  "apps": [
+   {
+    "n": "la-roma-sotterranea",
+    "ch": "38.md",
+    "es": "La persecución.",
+    "ru": "Погоня."
+   }
+  ],
+  "cover": {
+   "c1": "#6d1b2b",
+   "c2": "#28070f",
+   "ink": "#f3d48c",
+   "motif": "laurel",
+   "style": "leather"
+  }
+ },
+ {
+  "id": "biblia-libertarismo",
+  "sala": "mundo",
+  "kind": "ficticio",
+  "title": "Библия Либертарианства",
+  "title_es": "La Biblia del Libertarismo",
+  "title_ru": "Библия Либертарианства",
+  "author": "—",
+  "author_es": "—",
+  "year": null,
+  "desc_es": "Robert la encuentra en el campo de batalla, junto a motos militares quemadas. En la tapa, una bandera amarilla y una serpiente: un símbolo que, según Kennet, se ve a menudo entre los salvajes. Una pista de que alguien está organizando a los salvajes.",
+  "desc_ru": "Роберт находит её на поле боя рядом с обгоревшими военными мотоциклами. На обложке — жёлтый флаг и змея: по словам Кеннета, этот символ часто встречается среди дикарей. Улика: кто-то формирует дикарей.",
+  "apps": [
+   {
+    "n": "predchuvstvie",
+    "ch": "25.md",
+    "es": "En el campo de batalla.",
+    "ru": "На поле боя."
+   }
+  ],
+  "cover": {
+   "c1": "#e8c21a",
+   "c2": "#a88300",
+   "ink": "#1c1600",
+   "motif": "snake",
+   "style": "modern"
+  }
+ },
+ {
+  "id": "politicos-hipocritas",
+  "sala": "porescribir",
+  "kind": "ficticio",
+  "title": "Политики-лицемеры: критика зависимого разума",
+  "title_es": "Políticos hipócritas: crítica de la razón dependiente",
+  "title_ru": "Политики-лицемеры: критика зависимого разума",
+  "author": "Луис Фадер (algún día)",
+  "author_es": "Luis Fader (algún día)",
+  "year": null,
+  "desc_es": "Un tratado filosófico que todavía no existe: Luis inventa el título en el sillón, en plena discusión sobre España. «¿Lo inventaste recién?» «Sí». «Compro la primera edición», dice Natasha. La Biblioteca ya le reservó un lugar en el estante.",
+  "desc_ru": "Философский трактат, которого ещё нет: Луис придумывает название прямо на диване, посреди спора об Испании. «Ты только что это придумал?» — «Да». — «Я куплю первое издание», — говорит Наташа. Библиотека уже оставила ему место на полке.",
+  "apps": [
+   {
+    "n": "dikij-chas-karnaval-razdora",
+    "ch": "04.md",
+    "es": "Luis inventa el título.",
+    "ru": "Луис придумывает название."
+   }
+  ],
+  "cover": {
+   "c1": "#e7e1d6",
+   "c2": "#c9bfae",
+   "ink": "#3a2f24",
+   "motif": "quill",
+   "style": "ghost"
+  }
+ },
+ {
+  "id": "protocolo-del-partido",
+  "sala": "porescribir",
+  "kind": "ficticio",
+  "title": "Протокол матча. Том 14",
+  "title_es": "Acta del partido. Tomo 14",
+  "title_ru": "Протокол матча. Том 14",
+  "author": "—",
+  "author_es": "—",
+  "year": null,
+  "desc_es": "Un rollo que sostiene entre las patas una esfinge tendida en un pedestal, entre héroes de caras muy serias y un centauro que todavía se cree arquero. Nadie sabe dónde están los tomos 1 al 13.",
+  "desc_ru": "Свиток в лапах сфинкса, лежащего на постаменте среди героев с очень серьёзными лицами, рядом с кентавром, который всё ещё считает себя вратарём. Где тома с первого по тринадцатый, неизвестно.",
+  "apps": [
+   {
+    "n": "dikij-chas-karnaval-razdora",
+    "ch": "20.md",
+    "es": "La esfinge y su rollo.",
+    "ru": "Сфинкс и свиток."
+   }
+  ],
+  "cover": {
+   "c1": "#c9b48a",
+   "c2": "#8a744a",
+   "ink": "#2a2010",
+   "motif": "scroll",
+   "style": "paper"
+  }
+ },
+ {
+  "id": "cuaderno-de-alex",
+  "sala": "porescribir",
+  "kind": "ficticio",
+  "title": "Дневник Алекса",
+  "title_es": "El cuaderno de Alex",
+  "title_ru": "Дневник Алекса",
+  "author": "Alex",
+  "author_es": "Alex",
+  "year": null,
+  "desc_es": "Era un diario. El jefe de Pavel lo leyó, fotografió todas sus páginas, y esa misma noche toda la ciudad lo estaba leyendo: la historia de amor de Alex y Olga se convirtió en el texto más popular del año 3024. Los hombres lo leían en el metro, en el trabajo; uno se lo leía a sus plantas («Ese era yo», dice Gleb). Los ingenieros lo tomaron por un manual de instrucciones —paso uno: viajar; paso dos: comprar café; paso tres: conseguir esposa— y así nació la «Operación Esposa».",
+  "desc_ru": "Это был дневник. Начальник Павла прочитал его, сфотографировал все страницы, и к вечеру его читал весь город: история любви Алекса и Ольги стала самым популярным текстом 3024 года. Его читали в метро и на работе, один человек читал его своим растениям («Это был я», — гордо говорит Глеб). Инженеры приняли его за инструкцию — шаг первый: путешествие; шаг второй: купить кофе; шаг третий: найти жену, — так родилась «Операция «Жена»».",
+  "apps": [
+   {
+    "n": "a-man-from-the-future-2",
+    "ch": "04.md",
+    "es": "Pavel cuenta lo que pasó en 3024.",
+    "ru": "Павел рассказывает, что случилось в 3024 году."
+   }
+  ],
+  "cover": {
+   "c1": "#c0c7d1",
+   "c2": "#7d8796",
+   "ink": "#14202e",
+   "motif": "clock",
+   "style": "modern"
+  }
+ },
+ {
+  "id": "libros-de-fabrizio",
+  "sala": "porescribir",
+  "kind": "ficticio",
+  "title": "I libri di Fabrizio",
+  "title_es": "Los libros de Fabrizio",
+  "title_ru": "Книги Фабрицио",
+  "author": "Fabrizio",
+  "author_es": "Fabrizio",
+  "year": null,
+  "desc_es": "«Vas a dibujar, Fabrizio. Y un día voy a entrar en una librería, voy a ver tu nombre en una tapa y le voy a decir a todos: ¡lo conozco, me arregló la moto!». Lucía tenía razón. Años después confiesa: «Desde ese día compré todos tus libros. Todos. En cada uno estaba yo, en algún lugar: en una moto, en un bar, bajo un faro. Cada libro era una carta».",
+  "desc_ru": "«Ты будешь рисовать, Фабрицио. И однажды я зайду в книжный магазин, увижу твоё имя на обложке и скажу всем: я его знаю! Он мне мотоцикл чинил!» Лючия оказалась права. Годы спустя она признаётся: «С того дня я покупала все твои книги. Все. В каждой где-то была я: на мотоцикле, в баре, под маяком. Каждая книга была письмом».",
+  "apps": [
+   {
+    "n": "ti-amo-in-silenzio",
+    "ch": "04.md",
+    "es": "La profecía de Lucía.",
+    "ru": "Пророчество Лючии."
+   },
+   {
+    "n": "ti-amo-in-silenzio",
+    "ch": "08.md",
+    "es": "Sobre aquella noche en Sinea se hicieron «una película, dos libros, una canción».",
+    "ru": "О той ночи в Синее сняли «фильм, написали две книги и песню»."
+   },
+   {
+    "n": "ti-amo-in-silenzio",
+    "ch": "10.md",
+    "es": "«Cada libro era una carta».",
+    "ru": "«Каждая книга была письмом»."
+   }
+  ],
+  "cover": {
+   "c1": "#2e5e4e",
+   "c2": "#123026",
+   "ink": "#f6e7c1",
+   "motif": "lighthouse",
+   "style": "leather"
+  }
+ },
+ {
+  "id": "presentimiento",
+  "sala": "otrosmundos",
+  "kind": "fader",
+  "title": "Предчувствие",
+  "title_es": "Presentimiento",
+  "title_ru": "Предчувствие",
+  "author": "Роберт Фадер",
+  "author_es": "Robert Fader",
+  "year": null,
+  "desc_es": "En Sinea, «Presentimiento» es solo un libro… y uno muy leído. El ejemplar de Mateo es un tomito gastado de tapa blanda, con una moto delante de una ciudad en ruinas; en poco tiempo lo lee media ciudad, y media ciudad empieza a soñar con el fin del mundo. Su autor lo presenta en el centro cultural del Barrio de los Locos: «No escribí este libro sobre el fin del mundo. Escribí sobre lo que viene después». En el tren fantasma, la respuesta a Marcos está en su página 23; en la Biblioteca del Amor, es un libro turquesa del que sale viento caliente del desierto y el sonido de un violonchelo.",
+  "desc_ru": "В Синее «Предчувствие» — просто книга, и очень читаемая. У Матео — потрёпанный томик в мягкой обложке с мотоциклом на фоне разрушенного города; вскоре его читает полгорода, и полгорода начинает видеть во сне конец света. Автор представляет роман в культурном центре Квартала сумасшедших: «Я писал эту книгу не о конце света. Я писал о том, что бывает после». В призрачном поезде ответ Марку спрятан на странице 23; в Библиотеке Любви это бирюзовая книга, из которой дует горячий ветер пустыни и звучит виолончель.",
+  "apps": [
+   {
+    "n": "mashina-snov",
+    "ch": "06.md",
+    "es": "Mateo se lo presta a Irina.",
+    "ru": "Матео даёт его Ирине."
+   },
+   {
+    "n": "mashina-snov",
+    "ch": "07.md",
+    "es": "La presentación del autor.",
+    "ru": "Презентация автора."
+   },
+   {
+    "n": "prizrachnyj-poezd",
+    "ch": "08.md",
+    "es": "La página 23.",
+    "ru": "Страница 23."
+   },
+   {
+    "n": "tajna-v-biblioteke",
+    "ch": "04.md",
+    "es": "El libro turquesa.",
+    "ru": "Бирюзовая книга."
+   },
+   {
+    "n": "tajna-semi-fader",
+    "ch": "17.md",
+    "es": "En el mundo de los Fader, es la novela que Luis escribió en Rusia.",
+    "ru": "В мире Фадеров — роман, который Луис написал в России."
+   }
+  ],
+  "cover": {
+   "c1": "#1aa39a",
+   "c2": "#0b4f4a",
+   "ink": "#fff4dc",
+   "motif": "moto",
+   "style": "modern"
+  }
+ },
+ {
+  "id": "hora-salvaje-4",
+  "sala": "otrosmundos",
+  "kind": "fader",
+  "title": "Дикий час 4. Венецианское колдовство",
+  "title_es": "La hora salvaje 4. La brujería veneciana",
+  "title_ru": "Дикий час 4. Венецианское колдовство",
+  "author": "Роберт Фадер",
+  "author_es": "Robert Fader",
+  "year": null,
+  "desc_es": "Un libro de tapa oscura escondido en la Estación de los Susurros, que aparece cuando Alicia vuelve los chismes contra las chismosas: el segundo artefacto del metro. Parece escuchar a quien lo sostiene. En la Estación Vacía, Alicia lee un fragmento en voz alta y el zorro de madera cobra vida. «El libro da el lenguaje —explica el zorro—. Sin lenguaje, la anomalía es solo ruido».",
+  "desc_ru": "Книга в тёмной обложке из тайника на Станции шёпота — второй артефакт метро, появившийся, когда Алисия обратила сплетни против самих сплетниц. Кажется, она прислушивается к тому, кто её держит. На Пустой станции Алисия читает отрывок вслух, и деревянный лис оживает. «Книга даёт язык, — объясняет лис. — Без языка аномалия остаётся шумом».",
+  "apps": [
+   {
+    "n": "prizrachnyj-poezd",
+    "ch": "35.md",
+    "es": "Aparece en la Estación de los Susurros.",
+    "ru": "Появляется на Станции шёпота."
+   },
+   {
+    "n": "prizrachnyj-poezd",
+    "ch": "36.md",
+    "es": "Alicia la lleva bajo la chaqueta.",
+    "ru": "Алисия прячет её под курткой."
+   },
+   {
+    "n": "prizrachnyj-poezd",
+    "ch": "40.md",
+    "es": "El zorro cobra vida.",
+    "ru": "Лис оживает."
+   },
+   {
+    "n": "prizrachnyj-poezd",
+    "ch": "45.md",
+    "es": "«El libro da el lenguaje».",
+    "ru": "«Книга даёт язык»."
+   }
+  ],
+  "cover": {
+   "c1": "#24173a",
+   "c2": "#0b0614",
+   "ink": "#ffcf7a",
+   "motif": "mask",
+   "style": "leather"
+  }
+ }
+]

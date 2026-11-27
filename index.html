@@ -2258,6 +2258,8 @@ const CHAR_LABELS = {vec:"Personagi",ru:"Персонажи",es:"Personajes",it:
 const MAPS_URL = "https://luisfader.github.io/sinea/";
 const MAPS_T = {es:"Mapas de las novelas", ru:"Карты романов"};
 /* Faderpedia (repo luisfader/faderpedia): enlace externo en el menú lateral, en todos los idiomas; se abre en pestaña nueva */
+/* Biblioteca del Amor: catálogo de los libros que aparecen en las novelas (biblioteca/index.html, solo ES y RU) */
+const LIB_T = {"es": "Biblioteca del Amor", "ru": "Библиотека Любви", "it": "Biblioteca dell’Amore", "en": "Library of Love", "fr": "Bibliothèque de l’Amour", "pt": "Biblioteca do Amor", "cs": "Knihovna lásky", "sr": "Библиотека љубави", "eo": "Biblioteko de l’ Amo", "tr": "Aşk Kütüphanesi", "isv": "Biblioteka Ljubvi", "de": "Bibliothek der Liebe", "pl": "Biblioteka Miłości"};
 const FADERPEDIA_URL = "https://luisfader.github.io/faderpedia/";
 /* Donaciones en el menú lateral: enlace externo a Boosty, en todos los idiomas */
 const DONATE_NAV = {ru:"Поддержать автора", es:"Donaciones", it:"Donazioni", en:"Donate", fr:"Faire un don", tr:"Bağış yap", pt:"Doações", cs:"Podpořit autora", sr:"Донације", eo:"Donacoj", isv:"Podpora avtora", de:"Spenden", pl:"Wesprzyj autora", bg:"Дарения"};
@@ -2298,6 +2300,7 @@ function navItems(){
   if (MAGAZINES[lang]) it.push(["#/magazine", "📖", MAGAZINES[lang].btn, "magazine"]);
   if (PODCASTS[lang]) it.push(["#/podcast", "🎙", PODCASTS[lang].btn, "podcast"]);
   if (MAPS_T[lang]) it.push([MAPS_URL + "?lang=" + lang, "🗺", MAPS_T[lang], "mapas"]);
+  it.push(["biblioteca/?lang=" + (lang === "ru" ? "ru" : "es"), "🌹", LIB_T[lang] || LIB_T.en, "biblioteca"]);
   it.push([FADERPEDIA_URL, "🌌", "Faderpedia", "faderpedia"]);
   it.push(["#/mis-lecturas", "★", ft(0) + " · " + rt(1), "mis-lecturas"]);
   it.push(["https://boosty.to/fader26/donate", "♥", DONATE_NAV[lang] || DONATE_NAV.en, "donate"]);
