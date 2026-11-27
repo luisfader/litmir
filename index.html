@@ -897,6 +897,44 @@ body.tr-lock{overflow:hidden}
 .tr-lead{font-family:var(--serif);font-size:17px;line-height:1.55;margin:8px 0}
 .tr-btns{display:flex;gap:10px;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:12px}.tr-btns .tr-go{margin:0}
 @media (prefers-reduced-motion:reduce){.tr-sc,.tr-face,.tr-big,.tr-th img{animation:none!important;transition:none!important}}
+/* Эстампиты (sec.style "estampitas") */
+.es{color:var(--ink)}
+.es-hero{text-align:center;color:#fff4de;padding:18px 14px 14px;margin:0 -12px 14px;background:radial-gradient(120% 140% at 50% 0%,#7a1a1f 0%,#2c0d10 75%)}
+.es-title{font:700 24px/1.2 var(--serif);color:#ffd36a}.es-intro{font-size:14.5px;line-height:1.5;opacity:.92;margin:6px auto 0;max-width:560px}
+.es-cnt{font-size:12.5px;color:#ffcf8a;margin:8px 0 0;opacity:.85}
+.es-grp{margin:0 0 18px}.es-grp header{margin:0 2px 10px}.es-grp h3{margin:0;font:700 19px/1.25 var(--serif);color:var(--accent)}.es-grp small{color:var(--muted);font-size:13px}
+.es-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(132px,1fr));gap:14px 12px}
+.es-it{display:flex;flex-direction:column;align-items:center;gap:4px;border:0;background:none;padding:4px;cursor:pointer;color:var(--ink);font-family:var(--sans);text-align:center}
+.es-it:hover .es-card{transform:translateY(-3px) rotate(-1deg)}
+.es-nm{font:700 14.5px/1.2 var(--serif)}.es-sub{font-size:11.5px;color:var(--muted)}
+.es-card{position:relative;width:100%;aspect-ratio:2/3;border-radius:6px;overflow:hidden;background:#f7efdc;box-shadow:0 2px 4px rgba(0,0,0,.18),0 8px 18px rgba(60,30,10,.18);transition:transform .2s;border:3px solid #fbf6ea;outline:1.5px solid #c9a24a;outline-offset:-7px}
+.es-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.es-ph{display:none;position:absolute;inset:0;flex-direction:column;align-items:center;justify-content:center;gap:10%;padding:12% 8%;color:#fff6e0;background:radial-gradient(90% 60% at 50% 38%,rgba(255,236,180,.55),transparent 70%),linear-gradient(160deg,var(--c),#1d0d0a 120%)}
+.es-ph i{font-style:normal;font-size:clamp(34px,40%,72px);line-height:1;filter:drop-shadow(0 2px 6px rgba(0,0,0,.4))}
+.es-ph b{font:700 12px/1.2 var(--serif);letter-spacing:.04em;text-transform:uppercase;border-top:1px solid rgba(255,220,150,.6);padding-top:6px}
+.es-card.big .es-ph b{font-size:17px}
+.es-card.noimg img{display:none}.es-card.noimg .es-ph{display:flex}
+.es-flame{display:none;position:absolute;right:6px;bottom:6px;width:16px;height:26px;border-radius:50% 50% 45% 45%/60% 60% 40% 40%;background:radial-gradient(circle at 50% 70%,#fff7c2 0 22%,#ffb02e 45%,rgba(255,80,0,.0) 72%);filter:drop-shadow(0 0 8px #ffae3a);animation:esFl 1.6s ease-in-out infinite alternate}
+.es-it.lit .es-flame,.es-bigw.lit .es-flame{display:block}.es-card.big .es-flame{width:24px;height:38px;right:12px;bottom:12px}
+@keyframes esFl{0%{transform:scale(1) rotate(-3deg)}50%{transform:scale(1.08,.94) rotate(2deg)}100%{transform:scale(.95,1.06) rotate(-1deg)}}
+.es-view{position:fixed;inset:0;z-index:200;background:rgba(20,8,6,.86);overflow-y:auto;padding:18px 12px 40px;-webkit-overflow-scrolling:touch}
+.es-vin{position:relative;max-width:520px;margin:0 auto;background:#fbf6ea;color:#2a2420;border:1px solid #e3d6bb;border-radius:18px;padding:18px 16px 16px;box-shadow:0 20px 50px rgba(0,0,0,.5)}
+.es-x{position:absolute;top:10px;right:10px;z-index:2;border:1px solid #e3d6bb;background:#fff;color:#5a4a3a;border-radius:50%;width:36px;height:36px;font-size:16px;cursor:pointer}
+.es-bigw{width:min(240px,62vw);margin:4px auto 10px}
+.es-candle{display:block;margin:0 auto 12px;border:1px solid #d9c28d;background:#fff;color:#6b4a12;border-radius:999px;padding:7px 16px;font:600 14px var(--sans);cursor:pointer}
+.es-candle.on{background:#fff1cf;border-color:#e0a83a;box-shadow:0 0 14px rgba(255,170,50,.45)}
+.es-vin h3{margin:0;text-align:center;font:700 24px/1.2 var(--serif);color:var(--c)}
+.es-es{text-align:center;margin:2px 0 6px;color:#6b5d4f}.es-meta{text-align:center;margin:0 0 10px}
+.es-kind{display:inline-block;font-size:12px;border-radius:999px;padding:3px 10px;background:#efe6d3;color:#5a4a3a}
+.es-kind.k-popular{background:#fbe3d6;color:#8a2b12}.es-kind.k-church{background:#e6e3f3;color:#43367a}
+.es-facts{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 14px;margin:0 0 12px;font-size:13.5px}.es-facts div{display:flex;gap:5px}.es-facts dt{color:#8a7a68}.es-facts dd{margin:0}
+.es-box{border-top:1px solid #eadfc8;padding:10px 2px 4px}.es-box>b{display:block;font:700 13px/1.3 var(--sans);text-transform:uppercase;letter-spacing:.05em;color:#8a6a3a;margin-bottom:4px}
+.es-box p{margin:6px 0;font-family:var(--serif);font-size:16px;line-height:1.55}.es-box ul{margin:4px 0;padding-left:20px;font-size:15px;line-height:1.5}
+.es-luis{background:#fff4e2;border:1px solid #f0dcb4;border-radius:12px;padding:10px 12px;margin:8px 0}
+.es-pr .es-pes{font-style:italic;color:#5b2a1a}.es-pr .es-pru{color:#5a4a3a;font-size:15px}.es-pr small,.es-nov small{color:#8a7a68;font-size:12.5px}
+.es-nov .lock{color:#9a8b78;font-family:var(--sans);font-size:14px}
+.es-nav{display:flex;justify-content:space-between;align-items:center;margin-top:12px;font-size:13px;color:#8a7a68}.es-nav button{border:1px solid #e3d6bb;background:#fff;border-radius:10px;padding:8px 18px;font-size:18px;cursor:pointer;color:#5a4a3a}
+@media (prefers-reduced-motion:reduce){.es-flame{animation:none}.es-card{transition:none}}
 /* Испанская колода (sec.style "baraja") */
 .bj{color:var(--ink)}
 .bj-hero{text-align:center;color:#fff3dc;padding:18px 14px 16px;margin:0 -12px 14px;background:radial-gradient(120% 140% at 50% 0%,#b0262c 0%,#5c0f14 72%)}
@@ -3478,6 +3516,7 @@ async function exSection(n, sec, pane){
   if (sec.style === "conquista") { let D; try { D = JSON.parse(md); } catch(e) { D = null; } if (D) { setupConquista(pane, D, n); return; } }
   if (sec.style === "sky") { let D; try { D = JSON.parse(md); } catch(e) { D = null; } if (D) { const M = skyHTML(D, sec, n); pane.innerHTML = M.html; setupSky(pane, D, n, M); return; } }
   if (sec.style === "tarot" || sec.style === "tarot-read") { let D; try { D = JSON.parse(md); } catch(e) { D = null; } if (D) { (sec.style === "tarot" ? setupTarot : setupTarotRead)(pane, D, n, sec); return; } }
+  if (sec.style === "estampitas") { let D; try { D = JSON.parse(md); } catch(e) { D = null; } if (D) { setupEstampitas(pane, D, n, sec); return; } }
   if (sec.style === "baraja") { let D; try { D = JSON.parse(md); } catch(e) { D = null; } if (D) { setupBaraja(pane, D, n, sec); return; } }
   if (sec.style === "horoscope") { let D; try { D = JSON.parse(md); } catch(e) { D = null; } if (D) { setupHoroscope(pane, D, n, sec); return; } }
   if (sec.style === "audiobook") { let D; try { D = JSON.parse(md); } catch(e) { D = null; } if (D) { setupAudiobook(pane, D, n); return; } }
@@ -3705,6 +3744,93 @@ function setupHoroscope(pane, D, n, sec){
     <div class="hz-body"></div><p class="hz-note">${esc(U.note)}</p></div>`;
   render();
   let lastDay = dkey(dayOf(0)); const tick = setInterval(() => { if (!pane.isConnected) return clearInterval(tick); const k = dkey(dayOf(0)); if (k !== lastDay) { lastDay = k; render(); } }, 60000);
+}
+/* Эстампиты — народные святые (sec.style "estampitas"): novels/<slug>/<file>.json —
+   {title, intro, dir, lockedNovel, groups:[{id, title, sub}], kinds:{id:{label, note}}, ui,
+    saints:[{id, group, name, es, kind, fem, color, symbol, life, place, day, asks:[], story:[], ritual,
+             prayer:{es, ru, src}, luis, novel:[{at, t}]}]}.
+   Картинка — novels/<slug>/<dir>/<id>.jpg (600×900); пока её нет, эстампита рисуется кодом.
+   Свечи (store "estampa:<slug>") зажигает читатель; всё про сюжет открывается после главы at. */
+function setupEstampitas(pane, D, n, sec){
+  const U = D.ui || {}, S = D.saints || [], K = D.kinds || {};
+  const done = store.get("done:" + n.slug, []), maxDone = Math.max(0, ...done);
+  const posN = f => n.chapters.findIndex(x => x.file === f) + 1;
+  const opened = f => { const p = posN(f); return p <= 1 || maxDone >= p; };
+  const dir = `novels/${n.slug}/${D.dir || "estampitas"}/`;
+  const key = "estampa:" + n.slug;
+  let lit = new Set(store.get(key, []));
+  const save = () => store.set(key, [...lit]);
+  const chap = f => { const p = posN(f), ch = n.chapters[p - 1]; return ch ? `Глава ${p} «${esc(ch.title)}»` : ""; };
+  const card = (s, big) => `<div class="es-card${big ? " big" : ""}" style="--c:${esc(s.color || "#8c2f2f")}">
+      <img src="${esc(dir + s.id + ".jpg")}" alt="${esc(s.name)}" loading="lazy">
+      <div class="es-ph" aria-hidden="true"><i>${esc(s.symbol || "✝")}</i><b>${esc(s.es)}</b></div>
+      <span class="es-flame" aria-hidden="true"></span></div>`;
+  const fixImgs = root => root.querySelectorAll(".es-card img").forEach(im => {
+    const bad = () => im.closest(".es-card").classList.add("noimg");
+    if (im.complete && !im.naturalWidth) bad(); else im.addEventListener("error", bad, {once: true});
+  });
+  const kindTag = s => { const k = K[s.kind] || {}; return `<span class="es-kind k-${esc(s.kind)}">${esc(k.label || "")}${k.note ? ` · ${esc(k.note)}` : ""}</span>`; };
+  const groups = (D.groups || [{id: "", title: ""}]).map(g => {
+    const list = S.filter(s => (s.group || "") === g.id);
+    if (!list.length) return "";
+    return `<section class="es-grp"><header><h3>${esc(g.title)}</h3>${g.sub ? `<small>${esc(g.sub)}</small>` : ""}</header>
+      <div class="es-grid">${list.map(s => `<button type="button" class="es-it${lit.has(s.id) ? " lit" : ""}" data-id="${esc(s.id)}">
+        ${card(s)}<span class="es-nm">${esc(s.name)}</span><span class="es-sub">${esc(K[s.kind] ? K[s.kind].label : "")}</span></button>`).join("")}</div></section>`;
+  }).join("");
+  const count = () => qzFmt(U.candles || "{n}", {n: lit.size});
+  pane.innerHTML = `<div class="es" lang="${esc(n.lang)}">
+    <div class="es-hero"><div class="es-title">🕯 ${esc(D.title || sec.title)}</div><p class="es-intro">${wgInline(D.intro || "")}</p>
+      <p class="es-cnt">${esc(count())}</p></div>
+    ${groups}</div>`;
+  fixImgs(pane);
+  const refresh = () => {
+    pane.querySelectorAll(".es-it").forEach(b => b.classList.toggle("lit", lit.has(b.dataset.id)));
+    const c = pane.querySelector(".es-cnt"); if (c) c.textContent = count();
+  };
+  pane.querySelectorAll(".es-it").forEach(b => b.onclick = () => view(S.findIndex(s => s.id === b.dataset.id)));
+
+  function view(idx){
+    const box = document.createElement("div"); box.className = "es-view"; box.setAttribute("role", "dialog"); box.setAttribute("aria-modal", "true");
+    const draw = () => {
+      const s = S[idx], on = lit.has(s.id);
+      const para = a => (a || []).map(t => `<p>${wgInline(t)}</p>`).join("");
+      const P = s.prayer;
+      const nov = (s.novel || []).length ? `<div class="es-box es-nov"><b>📖 ${esc(U.novel)}</b>${s.novel.map(m => opened(m.at)
+        ? `<p>${wgInline(m.t)} <small>${chap(m.at)}</small></p>` : `<p class="lock">🔒 ${esc(qzFmt(D.lockedNovel || "", {n: posN(m.at)}))}</p>`).join("")}</div>` : "";
+      box.innerHTML = `<div class="es-vin" lang="${esc(n.lang)}" style="--c:${esc(s.color || "#8c2f2f")}">
+        <button type="button" class="es-x" aria-label="${esc(U.close)}">✕</button>
+        <div class="es-bigw${on ? " lit" : ""}">${card(s, true)}</div>
+        <button type="button" class="es-candle${on ? " on" : ""}">🕯 ${esc(on ? U.candleOn : U.candle)}</button>
+        <h3>${esc(s.name)}</h3>
+        <p class="es-es"><i>${esc(s.es)}</i></p>
+        <p class="es-meta">${kindTag(s)}</p>
+        <dl class="es-facts">${s.life ? `<div><dt>⏳</dt><dd>${esc(s.life)}</dd></div>` : ""}${s.place ? `<div><dt>📍</dt><dd>${esc(s.place)}</dd></div>` : ""}${s.day ? `<div><dt>📅 ${esc(U.day)}</dt><dd>${esc(s.day)}</dd></div>` : ""}</dl>
+        ${(s.asks || []).length ? `<div class="es-box"><b>${esc(U.asks)}</b><ul>${s.asks.map(a => `<li>${esc(a)}</li>`).join("")}</ul></div>` : ""}
+        ${s.luis ? `<div class="es-box es-luis"><b>🏠 ${esc(U.luis)}</b><p>${wgInline(s.luis)}</p></div>` : ""}
+        ${(s.story || []).length ? `<div class="es-box"><b>${esc(U.story)}</b>${para(s.story)}</div>` : ""}
+        ${s.ritual ? `<div class="es-box"><b>${esc(U.ritual)}</b><p>${wgInline(s.ritual)}</p></div>` : ""}
+        ${P ? `<div class="es-box es-pr"><b>🙏 ${esc(s.fem ? (U.prayerF || U.prayer) : U.prayer)}</b><p class="es-pes" lang="es">${esc(P.es)}</p>${P.ru ? `<p class="es-pru">${esc(P.ru)}</p>` : ""}${P.src ? `<small>${esc(P.src)}</small>` : ""}</div>` : ""}
+        ${nov}
+        <div class="es-nav"><button type="button" class="es-p" aria-label="prev">${esc(U.prev || "←")}</button><span>${esc(qzFmt(U.count || "{n}/{t}", {n: idx + 1, t: S.length}))}</span><button type="button" class="es-n" aria-label="next">${esc(U.next || "→")}</button></div></div>`;
+      fixImgs(box);
+      box.querySelector(".es-x").onclick = close;
+      box.querySelector(".es-p").onclick = () => go(-1);
+      box.querySelector(".es-n").onclick = () => go(1);
+      box.querySelector(".es-candle").onclick = () => { lit.has(s.id) ? lit.delete(s.id) : lit.add(s.id); save(); refresh(); draw(); };
+    };
+    const go = d => { idx = (idx + S.length + d) % S.length; draw(); box.scrollTop = 0; };
+    const onKey = e => { if (!box.isConnected) return document.removeEventListener("keydown", onKey);
+      if (e.key === "Escape") close(); else if (e.key === "ArrowLeft") go(-1); else if (e.key === "ArrowRight") go(1); };
+    let tx = null, ty = 0;
+    box.addEventListener("touchstart", e => { if (e.target.closest(".es-bigw")) { tx = e.touches[0].clientX; ty = e.touches[0].clientY; } }, {passive: true});
+    box.addEventListener("touchend", e => { if (tx == null) return; const dx = e.changedTouches[0].clientX - tx, dy = e.changedTouches[0].clientY - ty; tx = null;
+      if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.5) go(dx < 0 ? 1 : -1); });
+    function close(){ box.remove(); document.removeEventListener("keydown", onKey); document.body.classList.remove("tr-lock"); }
+    box.onclick = e => { if (e.target === box) close(); };
+    document.addEventListener("keydown", onKey);
+    draw(); document.body.appendChild(box); document.body.classList.add("tr-lock");
+    box.querySelector(".es-x").focus();
+  }
 }
 /* Испанская колода (sec.style "baraja"): novels/<slug>/<file>.json —
    {title, intro, dir, deckHint, deckSub, swipe, lockedNovel, ui, suits:[{id, name, es, gen, fr, gaps, text}],
