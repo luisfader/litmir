@@ -18,6 +18,10 @@ novels/catalog.json         lista de novelas, títulos, descripciones y capítul
 novels/<novela>/            un archivo .md por capítulo (01.md, 02.md, …)
 ```
 
+## Relatos cortos
+
+Sección propia (`#/rasskazy`, «Рассказы» en ruso), en el menú lateral y anunciada en la portada. Un relato es una entrada normal de `novels/catalog.json` con `"short": true`: no aparece en la lista de novelas de la portada, sino en esa sección. Los textos de la sección están en `SHORTS_T` en `index.html`; por ahora solo existe en ruso. Para abrirla en otro idioma, añadir ese idioma a `SHORTS_T`.
+
 ## Añadir una novela
 
 1. Crear la carpeta `novels/<nombre-corto>/<idioma>/` con un archivo por capítulo.

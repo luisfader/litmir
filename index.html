@@ -1996,7 +1996,7 @@ function renderChrome(){
 document.getElementById("langs").addEventListener("click", e => {
   const l = e.target.dataset && e.target.dataset.l; if (!l) return;
   setLang(l);
-  const home = location.hash.startsWith("#/magazine") && MAGAZINES[l] ? "#/magazine" : location.hash.startsWith("#/podcast") && PODCASTS[l] ? "#/podcast" : GAME_SECS.has(location.hash.replace(/^#\/?/, "").split("/")[0]) && hasGames(l) ? "#/juegos" : location.hash.startsWith("#/blog") ? "#/blog" : location.hash.startsWith("#/news") && newsPaper(l) ? "#/news" : location.hash.startsWith("#/learn") && learnCat && learnCat.courses.some(c => c.lang === l) ? "#/learn" : "#/";
+  const home = location.hash.startsWith("#/magazine") && MAGAZINES[l] ? "#/magazine" : location.hash.startsWith("#/podcast") && PODCASTS[l] ? "#/podcast" : GAME_SECS.has(location.hash.replace(/^#\/?/, "").split("/")[0]) && hasGames(l) ? "#/juegos" : location.hash.startsWith("#/rasskazy") && SHORTS_T[l] ? "#/rasskazy" : location.hash.startsWith("#/blog") ? "#/blog" : location.hash.startsWith("#/news") && newsPaper(l) ? "#/news" : location.hash.startsWith("#/learn") && learnCat && learnCat.courses.some(c => c.lang === l) ? "#/learn" : "#/";
   if (location.hash && location.hash !== home) location.hash = home; else route();
 });
 
@@ -2222,8 +2222,37 @@ const MAPS_T = {es:"Mapas de las novelas", ru:"Карты романов"};
 const FADERPEDIA_URL = "https://luisfader.github.io/faderpedia/";
 /* Donaciones en el menú lateral: enlace externo a Boosty, en todos los idiomas */
 const DONATE_NAV = {ru:"Поддержать автора", es:"Donaciones", it:"Donazioni", en:"Donate", fr:"Faire un don", tr:"Bağış yap", pt:"Doações", cs:"Podpořit autora", sr:"Донације", eo:"Donacoj", isv:"Podpora avtora", de:"Spenden", pl:"Wesprzyj autora", bg:"Дарения"};
+/* Relatos cortos: entradas de novels/catalog.json con "short": true. No salen en la lista de novelas de la portada,
+   sino en su propia sección (#/rasskazy), con un anuncio en la portada. Solo en los idiomas que tienen textos en SHORTS_T. */
+const SHORTS_T = {ru:{btn:"Рассказы", sub:"Короткие истории из миров Роберта Фадера — на один вечер и одну чашку чая.", back:"Все рассказы", newSec:"Новый раздел", ann:"Короткие истории, которые читаются за один вечер. Первый рассказ — «%s»: Марк, Алисия и самый страшный вагон Призрачного поезда.", go:"Открыть раздел", empty:"Скоро здесь появятся рассказы."}};
+const shT = k => (SHORTS_T[lang] || {})[k] || "";
+const shortsOf = l => SHORTS_T[l] && catalog ? catalog.novels.filter(n => n.short && !n.hidden && n.lang === l) : [];
+function shortsIndex(){
+  const list = shortsOf(lang);
+  if (!SHORTS_T[lang]) { location.hash = "#/"; return; }
+  document.title = shT("btn") + " — " + t("author");
+  app.innerHTML = `
+  <section class="hero wrap">
+    <div class="eyebrow">${esc(t("hero"))}</div>
+    <h1>${esc(shT("btn"))}</h1>
+    <p>${esc(shT("sub"))}</p>
+    <div class="ornament">✦ ✦ ✦</div>
+  </section>
+  <section class="wrap">
+    ${list.length ? `<div class="grid">${list.map(cardHTML).join("")}</div>` : `<div class="empty">${esc(shT("empty"))}</div>`}
+  </section>`;
+}
+function shortsBanner(){
+  const list = shortsOf(lang); if (!list.length) return "";
+  const n = list[0];
+  return `<section class="wrap"><a class="rec" href="#/rasskazy">${coverHTML(n)}<div>
+    <div class="rec-k">✒ ${esc(shT("newSec"))}</div>
+    <h3>${esc(shT("btn"))}</h3><p>${esc(shT("ann").replace("%s", n.title))}</p><span class="rec-go">${esc(shT("go"))} →</span></div></a></section>`;
+}
 function navItems(){
-  const it = [["#/", "📚", st(0), ""], ["characters.html?lang=" + encodeURIComponent(lang), "✧", CHAR_LABELS[lang] || "Characters", "characters"], ["#/blog", "✎", bt("title"), "blog"]];
+  const it = [["#/", "📚", st(0), ""], ["characters.html?lang=" + encodeURIComponent(lang), "✧", CHAR_LABELS[lang] || "Characters", "characters"]];
+  if (shortsOf(lang).length) it.push(["#/rasskazy", "✒", shT("btn"), "rasskazy"]);
+  it.push(["#/blog", "✎", bt("title"), "blog"]);
   if (newsPaper(lang)) it.push(["#/news", "📰", nt("btn"), "news"]);
   if (course()) it.push(["#/learn", "🎓", course().title[lang], "learn"]);
   if (hasGames(lang)) it.push(["#/juegos", "🎲", jt("btn"), "juegos"]);
@@ -2240,7 +2269,7 @@ function navOpen(v){ document.body.classList.toggle("snav-open", !!v); const b =
 function renderSiteNav(){
   const box = document.getElementById("siteNav"); if (!box || !catalog) return;
   const sec = location.hash.replace(/^#\/?/, "").split("/")[0];
-  const known = new Set(["blog","news","learn","juegos","magazine","podcast","mis-lecturas"]);
+  const known = new Set(["rasskazy","blog","news","learn","juegos","magazine","podcast","mis-lecturas"]);
   const cur = GAME_SECS.has(sec) ? "juegos" : known.has(sec) ? sec : "";
   /* Se guarda para que characters.html muestre el mismo menú lateral (ver app/nav.json) */
   store.set("nav:" + lang, {h: st(1), items: navItems()});
@@ -2390,7 +2419,7 @@ function podcastPage(){
 }
 function home(){
   document.title = t("hero") + " — " + t("author");
-  const list = catalog.novels.filter(n => !n.hidden && n.lang === lang).map((n,i)=>[n,i]).sort((a,b)=>(b[0].stars||0)-(a[0].stars||0)||a[1]-b[1]).map(x=>x[0]);
+  const list = catalog.novels.filter(n => !n.hidden && !n.short && n.lang === lang).map((n,i)=>[n,i]).sort((a,b)=>(b[0].stars||0)-(a[0].stars||0)||a[1]-b[1]).map(x=>x[0]);
   app.innerHTML = `
   <section class="hero wrap">
     <div class="eyebrow">${esc(t("tag"))}</div>
@@ -2398,6 +2427,7 @@ function home(){
     <p>${esc(t("sub"))}</p>
     <div class="ornament">✦ ✦ ✦</div>
   </section>
+  ${shortsBanner()}
   <section class="wrap" id="rec"></section>
   <section class="wrap" data-auth-dep>
     ${list.length ? homeViewSwitch(list) + homeListHTML(list) : `<div class="empty">${esc(t("empty"))}</div>`}
@@ -4302,7 +4332,7 @@ async function reader(n, idx, page){
   ${chapterGameNote(n, i)}
   ${n.gamebook ? gbFooter(n, c) : `<nav class="pager">
     ${i>1 ? `<a href="${chapterHref(n, i-1)}">← ${esc(t("prev"))}<b>${esc(titleOf(i-1))}</b></a>` : `<span style="flex:1"></span>`}
-    ${i<chs.length ? `<a class="next" href="${chapterHref(n, i+1)}">${esc(t("next"))} →<b>${esc(titleOf(i+1))}</b></a>` : `<a class="next" href="#/">${esc(t("back"))} →<b>${esc(t("hero"))}</b></a>`}
+    ${i<chs.length ? `<a class="next" href="${chapterHref(n, i+1)}">${esc(t("next"))} →<b>${esc(titleOf(i+1))}</b></a>` : (n.short && shortsOf(n.lang).length ? `<a class="next" href="#/rasskazy">${esc(shT("back"))} →<b>${esc(shT("btn"))}</b></a>` : `<a class="next" href="#/">${esc(t("back"))} →<b>${esc(t("hero"))}</b></a>`)}
   </nav>`}
   <section class="comments" id="comments"></section>` : ""}`;
   if (document.activeElement && document.activeElement !== document.body) document.activeElement.blur();
@@ -5433,6 +5463,7 @@ function route(){
   renderSiteNav();
   const parts = location.hash.replace(/^#\/?/, "").split("/").filter(Boolean);
   if (parts[0] === "news") { setSoundtrack(null); return parts[1] ? newsArticle(decodeURIComponent(parts[1])) : newsIndex(); }
+  if (parts[0] === "rasskazy") { setSoundtrack(null); return shortsIndex(); }
   if (parts[0] === "blog") { setSoundtrack(null); return parts[1] ? blogPost(decodeURIComponent(parts[1])) : blogIndex(); }
   if (parts[0] === "magazine") { setSoundtrack(null); return magazinePage(); }
   if (parts[0] === "podcast") { setSoundtrack(null); return podcastPage(); }
