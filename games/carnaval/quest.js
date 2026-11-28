@@ -456,7 +456,7 @@ SC.lavapies = async () => {
       {t:T("«¿Para qué organización trabaja?»","«На кого вы работаете?»"), off:asked[1]},
       {t:T("«¿Somos aliados, enemigos o qué?»","«Мы союзники, враги или что?»")}], "luis");
     asked[q] = 1;
-    if (q === 0) await talk([["agl","Mi jefe. El señor Petrović.","Мой начальник. Господин Петрович."]]);
+    if (q === 0) await talk([["agl","Mi jefe. El señor Oblakov.","Мой начальник. Господин Облаков."]]);
     if (q === 1) await talk([["agl","Es una estructura secreta. Se llama «El Legado de Pedro».","Это секретная структура. Она называется «Наследие Педро»."],["nat","Perdón… ¿qué?","Простите… что?"],["agl","«El Legado de Pedro».","«Наследие Педро»."],["nat","¿Es un chiste?","Это шутка?"],["agl","No.","Нет."]]);
     if (q === 2) break;
   }
