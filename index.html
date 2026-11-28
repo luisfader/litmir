@@ -2744,7 +2744,7 @@ function sagaHTML(n){
     const parallelUniverses = s.id === "predchuvstvie";
     const seen = new Set();
     const items = s.novels.map(m => {
-      let x = bySlug[m]; if (!x) return null;
+      let x = bySlug[m]; if (!x || (x.hidden && !mine.has(x.slug))) return null;
       // Other sagas show the reader's language where a translation exists.
       // Turquoise Fortress novels are independent alternate universes, not duplicates.
       if (!parallelUniverses && x.lang !== n.lang && x.translations && x.translations[n.lang] && bySlug[x.translations[n.lang]]) x = bySlug[x.translations[n.lang]];
